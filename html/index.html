@@ -1,7 +1,33 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {% block title %}Wammu{% endblock %}
 
 {% block content %}
-Hola
+<h2>{% trans "About" %}</h2>
+
+<p>
+{% blocktrans %}
+Wammu is a program to manage data in your cell phone such as contacts,
+calendar or messages. It is built on Gammu library, which provides abstraction
+layer to work with different cell phones from different vendors (including
+Nokia, Sony-Ericssonn, Motorola, Samsung, Siemens, Huawei and others).
+{% endblocktrans %}
+</p>
+
+<div class="floatbox">
+    <h2>Features</h2>
+    <ul>
+        <li>Foo</li>
+    </ul>
+</div>
+
+<div class="floatbox">
+    <h2>News</h2>
+    <ul>
+    {% for item in news %}
+        <li>{{ item.title }}</li>
+    {% endfor %}
+    </ul>
+</div>
 {% endblock %}
