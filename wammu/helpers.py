@@ -6,6 +6,11 @@ class WammuContext(RequestContext):
     def __init__(self, request, context):
         context['current_year'] = datetime.now().strftime('%Y')
         context['generated'] = datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')
-        context['menu'] = [{'title': 'Gammu', 'link': '/gammu/'}]
+        context['menu'] = [
+            {'title': 'About', 'link': '/'},
+            {'title': 'Download', 'link': '/download/'},
+            {'title': 'Contribute', 'link': '/contribute/'},
+            {'title': 'Documentation', 'link': '/documentation/'},
+            ]
         RequestContext.__init__(self, request, context)
 
