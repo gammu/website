@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-07 15:49+0200\n"
+"POT-Creation-Date: 2009-08-07 16:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,16 +58,112 @@ msgstr ""
 msgid ""
 "\n"
 "Wammu is a program to manage data in your cell phone such as contacts,\n"
-"calendar or messages. It is built on Gammu library, which provides "
-"abstraction\n"
-"layer to work with different cell phones from different vendors (including\n"
-"Nokia, Sony-Ericssonn, Motorola, Samsung, Siemens, Huawei and others).\n"
+"calendar or messages. It is built on <a href=\"/libgammu\">Gammu library</"
+"a>, which\n"
+"provides abstraction layer to work with different cell phones from "
+"different\n"
+"vendors (including Nokia, Sony-Ericssonn, Motorola, Samsung, Siemens, "
+"Huawei\n"
+"and others).\n"
 msgstr ""
 
-#: html/index.html:31
+#: html/index.html:20
+msgid "Gammu family"
+msgstr ""
+
+#: html/index.html:22
+msgid ""
+"\n"
+"Gammu is now not only a single program but there is lot of useful tools\n"
+"sharing same library.\n"
+msgstr ""
+
+#: html/index.html:30
+msgid ""
+"\n"
+"GUI program to manage contacts, todos, calendar and messages in your phone.\n"
+msgstr ""
+
+#: html/index.html:36
+msgid ""
+"\n"
+"Command line utility which allows to use all libGammu features.\n"
+msgstr ""
+
+#: html/index.html:42
+msgid ""
+"\n"
+"Library exporting C API to talk to cell phones.\n"
+msgstr ""
+
+#: html/index.html:48
+msgid ""
+"\n"
+"SMS daemon service to receive and send messages automatically.\n"
+msgstr ""
+
+#: html/index.html:54
+msgid ""
+"\n"
+"Python bindings for libGammu, so that you can use it from Python scripts.\n"
+msgstr ""
+
+#: html/index.html:66
 #, python-format
 msgid ""
 "\n"
 "    Published on %(date)s by %(author)s\n"
 "    "
+msgstr ""
+
+#: html/libgammu.html:7
+msgid "libGammu"
+msgstr ""
+
+#: html/libgammu.html:10
+msgid ""
+"\n"
+"libGammu is core library of Gammu project. It provides abstraction layer to\n"
+"work with different cell phones from different vendors (including Nokia,\n"
+"Sony-Ericssonn, Motorola, Samsung, Siemens, Huawei and others). Using this\n"
+"library you can talk to any phone using standard API.\n"
+msgstr ""
+
+#: html/libgammu.html:18 html/python-gammu.html:17
+msgid "Documentation"
+msgstr ""
+
+#: html/libgammu.html:20
+msgid ""
+"\n"
+"API documentation is available as well as internal documentation.\n"
+msgstr ""
+
+#: html/python-gammu.html:4 html/python-gammu.html.py:7
+msgid "Python bindings for Gammu"
+msgstr ""
+
+#: html/python-gammu.html:10
+msgid ""
+"\n"
+"Gammu also includes Python bindings which allow you to use (most) of <a\n"
+"href=\"/libgammu\">Gammu</a> functionality from <a\n"
+"href=\"http://python.org\">Python</a> language.\n"
+msgstr ""
+
+#: html/python-gammu.html:19
+msgid ""
+"\n"
+"API documentation is available.\n"
+msgstr ""
+
+#: html/news/index.html:7
+msgid "News"
+msgstr ""
+
+#: html/news/index.html:13
+#, python-format
+msgid ""
+"\n"
+"Published on %(date)s by %(author)s\n"
 msgstr ""
