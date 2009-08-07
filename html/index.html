@@ -24,10 +24,14 @@ Nokia, Sony-Ericssonn, Motorola, Samsung, Siemens, Huawei and others).
 
 <div class="floatbox">
     <h2>News</h2>
-    <ul>
     {% for item in news %}
-        <li>{{ item.title }}</li>
+    <h3><a href="{{ item.get_absolute_url }}">{{ item.title }}</a></h3>
+    {{ item.excerpt_html|safe }}
+    <p class="published">
+    {% blocktrans with item.pub_date.date as date and item.author.get_full_name as author%}
+    Published on {{ date }} by {{ author }}
+    {% endblocktrans %}
+    </p>
     {% endfor %}
-    </ul>
 </div>
 {% endblock %}

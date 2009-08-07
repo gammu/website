@@ -80,11 +80,12 @@ class Entry(models.Model):
         self.body_html = markdown.markdown(self.body)
         super(Entry, self).save()
 
-#    @models.permalink
-#    def get_absolute_url(self):
-#         return ('news.views.entry', (), { 'year': self.pub_date.strftime('%Y'),
-#                                               'month': self.pub_date.strftime('%b').lower(),
-#                                               'day': self.pub_date.strftime('%d'),
-#                                               'slug': self.slug })
+    @models.permalink
+    def get_absolute_url(self):
+         return ('news.views.entry', (), {
+                'year': self.pub_date.strftime('%Y'),
+                'month': self.pub_date.strftime('%m'),
+                'day': self.pub_date.strftime('%d'),
+                'slug': self.slug })
 
 
