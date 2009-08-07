@@ -1,0 +1,431 @@
+body {
+    background: url('/media/images/logo.png') no-repeat fixed bottom right;
+}
+
+#header {
+    margin: 0px;
+    padding: 1em 2em 1.5em 2em;
+	background: #036;
+	border: 0px;
+    border-bottom: 1px solid black;
+}
+
+#header h1 {
+    float: left;
+    padding: 0;
+    margin: 0;
+    margin-right: 1em;
+    color: #fff;
+}
+
+#header h1 a {
+	color: #7584b3;
+}
+
+#header h1 a .myadmin {
+	color: #ffad17;
+}
+
+#header ul#links {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#header #links li {
+    list-style: none;
+    display: inline; 
+	font-weight: bold;
+	padding: 0.5em;
+}
+
+#header #links li a {
+	color: #ffffff;
+    font-size: larger;
+}
+
+#header #links li.active a {
+	color: #c17d11;
+    font-size: larger;
+}
+
+div.planet#body {
+    margin-right: 20em;
+}
+div.demo#body {
+    margin-right: 20em;
+}
+
+#body {
+	margin: 2em 1em 1em 1em;
+	padding: 0px;
+}
+
+a {
+	color: #c17d11;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #8f5902;
+}
+
+img {
+	border: 0px;
+}
+
+h2, h2 a {
+	color: #727e0a;
+}
+
+h3, h3 a {
+	color: #727e0a;
+}
+
+body {
+	margin: 0px;
+	background-color: white;
+	font-family: sans-serif;
+	color: black;
+}
+
+div.banner {
+    width: 80em;
+    max-width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.bannerimg {
+    float: right;
+    clear: both;
+    margin: 0;
+}
+
+/* For planet */
+div.sidebar {
+	position: absolute;
+	top: 4em;
+	right: 0px;
+	width: 20em;
+
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
+
+	padding-top: 20px;
+	padding-left: 0px;
+
+	font-size: smaller;
+}
+
+div.rightbuttons {
+    float: right;
+    clear: both;
+    margin: 0 0 1em 1em;
+}
+
+div.rightbutton {
+    padding: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 2em;
+    border: 1px solid #8dea34;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #62a324;
+    color: white;
+    font-weight: bolder;
+    width: 12em;
+    text-align: center;
+}
+
+div.rightbutton a {
+    color: white;
+}
+
+div.tip {
+    border: 1px solid black;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #ffff87;
+    font-size: smaller;
+    padding: 0.2em;
+    width: 15em;
+}
+
+ul#footer {
+    padding: 0;
+    margin: 0;
+    max-width: none;
+}
+
+#footer li {
+    font-size: smaller;
+    list-style: none;
+    float: left;
+	padding: 1em;
+    color: gray;
+    border: none;
+}
+
+#footer a {
+	color: #c19e66;
+}
+
+ul.dllist {
+	padding: 0.5em;
+    margin: 0;
+}
+
+ul.dllist li {
+    margin: 0;
+    list-style: none;
+    display: inline;
+}
+
+#left {
+	margin: 2em 1em 1em 1em;
+    float: left;
+	padding: 0 2em 0 2em;
+}
+#left ul {
+    margin: 0;
+    padding: 0;
+}
+#left li {
+    margin: 0;
+    padding: 0;
+}
+
+div.clearer {
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+
+div.themeimgborder {
+    float: right;
+    border: 1px solid #7584b3;
+    margin: 0.2em;
+    padding: 0.2em;
+}
+
+div.themeimg {
+    overflow: hidden;
+    height: 8em;
+    max-width: 30em;
+}
+
+div.theme {
+    float: left;
+    width: 70em;
+    max-width: none;
+    border: 1px solid #7584b3;
+    margin: 0.2em;
+    padding: 0.2em;
+}
+
+a.themelink {
+    padding-left: 0.5em;
+}
+
+div.filedetails {
+    font-size: smaller;
+}
+
+p.date {
+    font-size: smaller;
+}
+
+p.comments {
+    font-size: smaller;
+}
+
+p {
+    max-width: 70em;
+    margin: 1em;
+}
+
+ul, dl {
+    margin: 1em;
+    max-width: 70em;
+}
+div.sidebar ul {
+    margin: 0;
+}
+
+ul ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul.security li.active a {
+	color: black;
+}
+
+p.signature {
+    text-align: right;
+    font-style: italic;
+}
+
+div.floatbox {
+    float: left;
+    width: 50em;
+    margin: 0.2em;
+    padding: 0.2em;
+}
+
+div.book img {
+    margin: 1em;
+    float: left;
+    border: 1px solid black;
+}
+
+dl.cvslist dt {
+    font-family: monospace;
+}
+
+div.screenshot {
+    float: left;
+    border: 1px solid #7584b3;
+    margin: 0.2em;
+    padding: 0.2em;
+}
+
+div.screenshot img {
+    max-height: 150px;
+    overflow: hidden;
+}
+
+div.bookbanner img {
+    border: 1px solid black;
+}
+
+div.bookbanner {
+    float: left;
+    margin: 1em;
+    width: 110px;
+    height: 133px;
+    overflow: hidden;
+}
+
+div.themeimgborder {
+    border: 1px solid #7584b3;
+    margin: 0.2em;
+    padding: 0.2em;
+}
+
+div.themeimg {
+    overflow: hidden;
+    height: 8em;
+}
+
+div.award p {
+    /* This has to fit for a.awardlink */
+    margin-left: 310px;
+}
+
+p.award {
+    font-size: large;
+    font-weight: bold;
+}
+
+div.award {
+    margin: 4em 1em 4em 1em;
+}
+
+a.awardlink {
+    float: left;
+    height: 100%;
+    display: block;
+    margin: 5px;
+    width: 300px;
+}
+
+img.head {
+    float: left;
+    border: none;
+    margin: 0.2em;
+    padding: 0.2em;
+}
+
+pre {
+    border: 1px solid black;
+    margin: 1em;
+    background: #ccc;
+    width: auto;
+    padding: 0.5em;
+}
+
+table.graph td.bar {
+    width: 400px;
+}
+
+table.graph td.bar div {
+    border-top: solid 2px #0077DD;
+    background-color: #004080;
+    border-bottom: solid 2px #002266;
+    text-align: right;
+    color: white;
+    float: left;
+    padding-top: 0;
+    height: 1em;
+}
+
+table.graph td.b80 div {
+    border-top: solid 2px #dd7700;
+    background-color: #804000;
+    border-bottom: solid 2px #662200;
+}
+
+table.graph td.b50 div {
+    border-top: solid 2px #ff7700;
+    background-color: #d04000;
+    border-bottom: solid 2px #882200;
+}
+
+table.sortable thead th {
+    background: url(/media/images/icon-table-sort.png) no-repeat 2px 8px;
+    padding: 4px 4px 4px 14px;
+}
+
+table.sortable thead th.forward_sort {
+    background: url(/media/images/icon-table-sort-asc.png) no-repeat 2px 4px;
+}
+
+table.sortable thead th.reverse_sort {
+    background: url(/media/images/icon-table-sort-desc.png) no-repeat 2px 10px;
+}
+
+ul.select {
+    padding: 0;
+    margin: 0;
+}
+
+ul.select li {
+    list-style: none;
+    float: left;
+    margin: 0.2em;
+}
+
+ul.select li a {
+    display: block;
+	padding: 0.2em;
+}
+
+table.dllist td { 
+    padding: 2px;
+}
+
+td.size {
+    text-align: right;
+}
+
+td.count {
+    text-align: right;
+}
