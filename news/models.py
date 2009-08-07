@@ -1,0 +1,90 @@
+from django.db import models
+
+from django.contrib.auth.models import User
+
+import markdown
+
+# Create your models here.
+
+class Category(models.Model):
+    """
+    A category that an entry can belong to.
+
+    """
+    title = models.CharField(
+        max_length = 250
+        )
+    slug = models.SlugField(
+        unique = True,
+        help_text = u'Used in the URL for the category. Must be unique.'
+        )
+    description = models.TextField(
+        help_text = u'A short description of the category, to be used in list pages.'
+        )
+    description_html = models.TextField(
+        editable = False,
+        blank = True
+        )
+
+    class Meta:
+        verbose_name_plural = 'Categories'
+        ordering = ['title']
+
+    def __unicode__(self):
+        return self.title
+
+    def save(self):
+        self.description_html = markdown.markdown(self.description)
+        super(Category, self).save()
+
+#    @models.permalink
+#    def get_absolute_url(self):
+#         return ('news.views.category', (), { 'slug': self.slug })
+
+class Entry(models.Model):
+    # Metadata.
+    author = models.ForeignKey(User)
+    pub_date = models.DateTimeField(
+        u'Date posted',
+        auto_now_add = True
+        )
+    slug = models.SlugField(
+        unique_for_date = 'pub_date',
+        help_text = u'Used in the URL of the entry. Must be unique for the publication date of the entry.'
+        )
+    title = models.CharField(max_length=250)
+
+    # The actual entry bits.
+    body = models.TextField()
+    body_html = models.TextField(editable = False, blank = True)
+    excerpt = models.TextField(blank = True, null = True)
+    excerpt_html = models.TextField(blank = True, null = True, editable = False)
+
+    # Categorization.
+    categories = models.ManyToManyField(
+        Category,
+        blank = False
+        )
+
+    class Meta:
+        get_latest_by = 'pub_date'
+        ordering = ['-pub_date']
+        verbose_name_plural = 'Entries'
+
+    def __unicode__(self):
+        return self.title
+
+    def save(self):
+        if self.excerpt:
+            self.excerpt_html = markdown.markdown(self.excerpt)
+        self.body_html = markdown.markdown(self.body)
+        super(Entry, self).save()
+
+#    @models.permalink
+#    def get_absolute_url(self):
+#         return ('news.views.entry', (), { 'year': self.pub_date.strftime('%Y'),
+#                                               'month': self.pub_date.strftime('%b').lower(),
+#                                               'day': self.pub_date.strftime('%d'),
+#                                               'slug': self.slug })
+
+
