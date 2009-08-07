@@ -429,3 +429,9 @@ td.size {
 td.count {
     text-align: right;
 }
+
+div.excerpt {
+    border: 1px solid #7584b3;
+    margin: 0.2em;
+    padding: 0.2em;
+}

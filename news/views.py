@@ -10,5 +10,11 @@ def entry(request, slug, day = None, month = None, year = None):
         'entry': entry,
     }))
 
+def index(request):
+    news = Entry.objects.order_by('-pub_date')[:10]
+    return render_to_response('news/index.html', WammuContext(request, {
+        'news': news,
+    }))
+
 def category(request, slug):
     return ''

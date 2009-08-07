@@ -23,7 +23,7 @@ Nokia, Sony-Ericssonn, Motorola, Samsung, Siemens, Huawei and others).
 </div>
 
 <div class="floatbox">
-    <h2>News</h2>
+    <h2><a href="/news/">News</a></h2>
     {% for item in news %}
     <h3><a href="{{ item.get_absolute_url }}">{{ item.title }}</a></h3>
     {{ item.excerpt_html|safe }}
