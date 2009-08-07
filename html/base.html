@@ -1,4 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+{% load i18n %}
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
       xmlns:py="http://genshi.edgewall.org/"
       xmlns:xi="http://www.w3.org/2001/XInclude">
@@ -8,7 +9,7 @@
   <meta name="author" content="Michal Čihař" />
   <meta name="copyright" content="Copyright &copy; 2003 - {{ current_year }} Michal Čihař" />
   <link rel="copyright" href="/copyright" />
-  <title>Gammu{% if page_title %} - {{ page_title }}{% endif %}</title>
+  <title>Gammu - {% block title %}Main{% endblock %}</title>
   {%if page_rss %}<link rel="alternate" type="application/rss+xml" href="{{ page_rss }}" title="{{ page_rss_title }}"/>{% endif %}
   <link rel="stylesheet" type="text/css" href="/media/css/style.css" />
   <link rel="stylesheet" type="text/css" href="/media/css/slimbox.css" media="screen" />

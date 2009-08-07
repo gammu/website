@@ -90,4 +90,5 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'wammu_web.news',
+    'wammu_web.wammu',
 )
