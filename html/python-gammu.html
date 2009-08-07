@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Python bindings for Gammu" %}{% endblock %}
+
+{% block content %}
+<h2>{% trans "Python bindings for Gammu" %}</h2>
+
+<p>
+{% blocktrans %}
+Gammu also includes Python bindings which allow you to use (most) of <a
+href="/libgammu">Gammu</a> functionality from <a
+href="http://python.org">Python</a> language.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "Documentation" %}</h3>
+<p>
+{% blocktrans %}
+API documentation is available.
+{% endblocktrans %}
+</p>
+
+{% endblock %}
+
+

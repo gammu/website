@@ -9,3 +9,15 @@ def index(request):
     return render_to_response('index.html', WammuContext(request, {
         'news': news,
     }))
+
+def gammu(request):
+    return render_to_response('gammu.html', WammuContext(request, {
+    }))
+
+def pygammu(request):
+    return render_to_response('python-gammu.html', WammuContext(request, {
+    }))
+
+def libgammu(request):
+    return render_to_response('libgammu.html', WammuContext(request, {
+    }))

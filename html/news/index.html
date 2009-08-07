@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}Wammu{% endblock %}
+
+{% block content %}
+<h2>{% trans "News" %}</h2>
+
+{% for item in news %}
+<h3><a href="{{ item.get_absolute_url }}">{{ item.title }}</a></h3>
+{{ item.body_html|safe }}
+<p class="published">
+{% blocktrans with item.pub_date.date as date and item.author.get_full_name as author%}
+Published on {{ date }} by {{ author }}
+{% endblocktrans %}
+</p>
+{% endfor %}
+
+{% endblock %}
+

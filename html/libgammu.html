@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}libGammu{% endblock %}
+
+{% block content %}
+<h2>{% trans "libGammu" %}</h2>
+
+<p>
+{% blocktrans %}
+libGammu is core library of Gammu project. It provides abstraction layer to
+work with different cell phones from different vendors (including Nokia,
+Sony-Ericssonn, Motorola, Samsung, Siemens, Huawei and others). Using this
+library you can talk to any phone using standard API.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "Documentation" %}</h3>
+<p>
+{% blocktrans %}
+API documentation is available as well as internal documentation.
+{% endblocktrans %}
+</p>
+
+{% endblock %}
+

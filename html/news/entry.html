@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ entry.title }}{% endblock %}
+
+{% block content %}
+<h2>{{ entry.title }}</h2>
+
+<div class="excerpt">
+{{ entry.excerpt_html|safe }}
+</div>
+
+{{ entry.body_html|safe }}
+
+{% endblock %}
