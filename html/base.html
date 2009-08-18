@@ -39,6 +39,21 @@
   <div id="body">
   {% block content %}{% endblock %}
   </div>
+<div class="sidebar">
+  {% block sidebar_top %}{% endblock %}
+<h3>Advertisement</h3>
+<p>
+  <!--Ad Bard advertisement snippet, begin -->
+<script type='text/javascript'>
+ var ab_h = '22e342dc6a6a99267a46f18fc5dcecf1';
+ var ab_s = 'e82cfb1437be1062e3c8e3a0a8a2604e';
+</script>
+<script type='text/javascript' src='http://cdn1.adbard.net/js/ab1.js'></script>
+<!--Ad Bard, end -->
+</p>
+  {% block sidebar %}{% endblock %}
+</div>
+
 
   <ul id="footer">
     <li>Copyright &copy; 2003 - {{ current_year }} <span class="vcard"><a class="url fn" href="http://cihar.com/">Michal Čihař</a><a href="mailto:michal@cihar.com" class="email"></a></span></li>
