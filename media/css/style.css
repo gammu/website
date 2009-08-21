@@ -158,6 +158,7 @@ ul#footer {
     padding: 0;
     margin: 0;
     max-width: none;
+    clear: both;
 }
 
 #footer li {
@@ -432,4 +433,37 @@ div.excerpt {
     border: 1px solid #7584b3;
     margin: 0.2em;
     padding: 0.2em;
+}
+
+div.col {
+    vertical-align: text-top;
+    display: inline-block;
+    margin: 0.2em;
+    padding: 0.2em;
+}
+
+div.footnavi h6 {
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0px 0px 0.5em 1em;
+}
+div.footnavi ul {
+    margin-top: 0px;
+    border-left: 1px dotted #7C0000;
+    padding-left: 0.5em;
+    margin-left: 1em;
+}
+div.footnavi ul li {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    color: #7C0000;
+}
+div.wide {
+	background: #ffd480;
+	background: #fbb400; /*#036;*/
+    width: 100%;
+    border-top: 1px solid #7C0000;
+    border-bottom: 1px solid #7C0000;
+    margin: 0 auto;
 }
