@@ -14,7 +14,7 @@ Download {{ program }}
 
 <form action="." method="GET" class="mirrorselect" id="mirrorselect">
 {% blocktrans with mirror.name as name %}
-Currently downloading chosen mirror:
+Currently downloading from mirror:
 {% endblocktrans %}
 <select name="mirror">
 {% for item in mirrors %}
