@@ -6,6 +6,8 @@ from django.utils.datastructures import MultiValueDictKeyError
 
 def list(request, program, platform):
     downloads = Download.objects.filter(program = program, platform = platform)
+    if downloads.count() == 0:
+        raise Http404('No such download option %s/%s.' % (program, platform))
     # Get latest release
     latest = downloads.order_by('release_int')[0]
     # Limit us only on latest major version + testing one
@@ -25,8 +27,6 @@ def list(request, program, platform):
         mirror = Mirror.objects.get(slug = mirror_id)
     except Mirror.DoesNotExist:
         mirror = Mirror.objects.get(slug = 'cihar-com')
-    if downloads.count() == 0:
-        raise Http404('No such download option %s/%s.' % (program, platform))
 
     result = render_to_response('downloads/list.html', WammuContext(request, {
         'downloads': downloads,
