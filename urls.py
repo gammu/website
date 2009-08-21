@@ -13,7 +13,7 @@ urlpatterns = patterns('',
     (r'^python-gammu/$', 'wammu.views.pygammu'),
 
     (r'^news/$', 'news.views.index'),
-    (r'^news/archive/(?P<year>\d{4})/(?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<slug>[^/]*)/$',
+    (r'^news/(?P<year>\d{4})/(?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<slug>[^/]*)/$',
         'news.views.entry'),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs'
