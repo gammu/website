@@ -12,9 +12,25 @@ Download {{ program }}
 
 {% include program_include %}
 
+<p>
+{% blocktrans with mirror.name as name %}
+You are currently downloading from mirror {{ name }}. You can choose different
+one:
+{% endblocktrans %}
+</p>
+
+<form action="." method="GET" class="mirrorselect">
+<select name="mirror">
+{% for item in mirrors %}
+<option value="{{ item.slug }}">{{ item.name }}</option>
+{% endfor %}
+</select>
+<input type="submit" value="{% trans "Change" %}" />
+</form>
+
 <ul>
 {% for item in downloads %}
-<li><a href="{{ item.location }}">{{ item.location }}</a></li>
+<li><a href="{{ mirror.url }}{{ item.location }}">{{ item.location }}</a></li>
 {% endfor %}
 </ul>
 
