@@ -423,9 +423,9 @@ td.count {
 }
 
 div.excerpt {
-    border: 1px solid #7584b3;
     margin: 0.2em;
     padding: 0.2em;
+    font-style: italic;
 }
 
 div.col {
