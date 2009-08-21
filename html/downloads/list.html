@@ -28,11 +28,21 @@ one:
 <input type="submit" value="{% trans "Change" %}" />
 </form>
 
+{% regroup downloads by get_state as dl_list %}
+{% for dl_group in dl_list %}
+<h3>{{ dl_group.grouper }}</h3>
+<p>
+{% blocktrans with dl_group.list.0.released|date as released %}
+Released on {{ released }}.
+{% endblocktrans %}
+</p>
 <ul>
-{% for item in downloads %}
+
+{% for item in dl_group.list %}
 <li><a href="{{ mirror.url }}{{ item.location }}">{{ item.location }}</a></li>
 {% endfor %}
 </ul>
+{% endfor %}
 
 {% endblock %}
 

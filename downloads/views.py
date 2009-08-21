@@ -5,7 +5,12 @@ from django.http import Http404
 from django.utils.datastructures import MultiValueDictKeyError
 
 def list(request, program, platform):
-    downloads = Download.objects.filter(program = program, platform = platform).order_by('location')
+    downloads = Download.objects.filter(program = program, platform = platform)
+    # Get latest release
+    latest = downloads.order_by('release_int')[0]
+    # Limit us only on latest major version + testing one
+    limit = (latest.release_int / 100) * 100
+    downloads = downloads.filter(release_int__gte = limit).order_by('location')
     mirrors = Mirror.objects.all().order_by('id')
     set_mirror = False
     try:

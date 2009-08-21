@@ -38,6 +38,8 @@ class Download(models.Model):
     platform = models.CharField(max_length = 100, choices = PLATFORM_CHOICES)
     location = models.CharField(max_length = 250)
     md5 = models.CharField(max_length = 250)
+    size = models.IntegerField()
+    released = models.DateTimeField(auto_now_add = True)
 
     def __unicode__(self):
         return '%s-%s (%s): %s' % (self.program, self.release, self.platform, self.location)
@@ -48,3 +50,9 @@ class Download(models.Model):
         for num in release:
             self.release_int = (100 * self.release_int) + int(num)
         super(Download, self).save()
+
+    def get_state(self):
+        if self.program == 'gammu' and self.release_int % 100 > 90:
+            return 'Testing release'
+        else:
+            return 'Stable release'
