@@ -452,6 +452,7 @@ div.footnavi ul li {
     color: #7C0000;
 }
 div.wide {
+    clear: both;
 	background: #ffd480;
 	background: #fbb400; /*#036;*/
     width: 100%;
