@@ -1,5 +1,27 @@
 from django.db import models
 
+PROGRAM_CHOICES = (
+    ('gammu', 'Gammu'),
+    ('wammu', 'Wammu'),
+    ('python-gammu', 'python-gammu'),
+    )
+
+RTYPE_CHOICES = (
+    ('stable', 'Stable'),
+    ('testing', 'Testing'),
+    )
+
+PLATFORM_CHOICES = (
+    ('source', 'Source'),
+    ('win32', 'Windows binary'),
+    )
+
+def get_program(name):
+    for c in PROGRAM_CHOICES:
+        if c[0] == name:
+            return c[1]
+    raise IndexError('Program does not exist!')
+
 class Mirror(models.Model):
     name = models.CharField(max_length = 250)
     slug = models.SlugField(unique = True)
@@ -8,47 +30,21 @@ class Mirror(models.Model):
     def __unicode__(self):
         return self.name
 
-
-class Program(models.Model):
-    name = models.CharField(max_length = 250)
-    slug = models.SlugField(unique = True)
-    url = models.CharField(max_length = 200)
-
-    def __unicode__(self):
-        return self.name
-
-class ReleaseType(models.Model):
-    name = models.CharField(max_length = 250)
-
-    def __unicode__(self):
-        return self.name
-
-class Release(models.Model):
-    program = models.ForeignKey(Program)
-    version = models.CharField(max_length = 100)
-    type = models.ForeignKey(ReleaseType)
-
-    def __unicode__(self):
-        return '%s %s' % (self.program.name, self.version)
-
-class DownloadKind(models.Model):
-    name = models.CharField(max_length = 250)
-
-    def __unicode__(self):
-        return self.name
-
-class DownloadType(models.Model):
-    name = models.CharField(max_length = 250)
-    kind = models.ForeignKey(DownloadKind)
-
-    def __unicode__(self):
-        return '%s (%s)' % (self.name, self.kind.name)
-
 class Download(models.Model):
+    release = models.CharField(max_length = 100)
+    release_int = models.IntegerField(editable = False, blank = True)
+    type = models.CharField("release type", max_length = 100, choices = RTYPE_CHOICES)
+    program = models.CharField(max_length = 100, choices = PROGRAM_CHOICES)
+    platform = models.CharField(max_length = 100, choices = PLATFORM_CHOICES)
     location = models.CharField(max_length = 250)
-    release = models.ForeignKey(Release)
-    type = models.ForeignKey(DownloadType)
     md5 = models.CharField(max_length = 250)
 
     def __unicode__(self):
-        return self.location
+        return '%s-%s (%s): %s' % (self.program, self.release, self.platform, self.location)
+
+    def save(self):
+        release = self.release.split('.')
+        self.release_int = 0
+        for num in release:
+            self.release_int = (100 * self.release_int) + int(num)
+        super(Download, self).save()
