@@ -10,6 +10,7 @@ def list(request, program, platform):
 
     return render_to_response('downloads/list.html', WammuContext(request, {
         'downloads': downloads,
+        'program_include': 'downloads/programs/%s-%s.html' % (program, platform),
         'program': get_program(program),
     }))
 
