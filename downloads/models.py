@@ -47,6 +47,6 @@ class Download(models.Model):
 
     def get_state(self):
         if self.program == 'gammu' and self.release_int % 100 > 90:
-            return 'Testing release'
+            return 'Testing release %s' % self.release
         else:
-            return 'Stable release'
+            return 'Stable release %s' % self.release
