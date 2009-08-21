@@ -6,6 +6,14 @@
 {% block content %}
 <h2>{% trans "News" %}</h2>
 
+<p>
+{% blocktrans %}
+You can also follow the news using RSS or get the basic information using 
+<a href="http://identi.ca/gammu">identi.ca</a> or
+<a href="http://twitter.com/wammu">Twitter</a>.
+{% endblocktrans %}
+</p>
+
 {% for item in news %}
 <h3><a href="{{ item.get_absolute_url }}">{{ item.title }}</a></h3>
 {% with item as entry %}
