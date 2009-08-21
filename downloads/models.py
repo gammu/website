@@ -6,11 +6,6 @@ PROGRAM_CHOICES = (
     ('python-gammu', 'python-gammu'),
     )
 
-RTYPE_CHOICES = (
-    ('stable', 'Stable'),
-    ('testing', 'Testing'),
-    )
-
 PLATFORM_CHOICES = (
     ('source', 'Source'),
     ('win32', 'Windows binary'),
@@ -33,7 +28,6 @@ class Mirror(models.Model):
 class Download(models.Model):
     release = models.CharField(max_length = 100)
     release_int = models.IntegerField(editable = False, blank = True)
-    type = models.CharField("release type", max_length = 100, choices = RTYPE_CHOICES)
     program = models.CharField(max_length = 100, choices = PROGRAM_CHOICES)
     platform = models.CharField(max_length = 100, choices = PLATFORM_CHOICES)
     location = models.CharField(max_length = 250)
