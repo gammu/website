@@ -45,15 +45,8 @@ body {
     font-size: larger;
 }
 
-div.planet#body {
-    margin-right: 20em;
-}
-div.demo#body {
-    margin-right: 20em;
-}
-
 #body {
-	margin: 2em 1em 1em 1em;
+	margin: 2em 20em 1em 1em;
 	padding: 0px;
 }
 
