@@ -41,6 +41,15 @@
   </div>
 <div class="sidebar">
   {% block sidebar_top %}{% endblock %}
+{% if downloads_side %}
+<h3>{% trans "Downloads" %}</h3>
+<ul>
+{% for item in downloads_side %}
+<li><a href="{{ mirror.url }}{{ item.location }}">{{ item.location }}</a></li>
+{% endfor %}
+</ul>
+{% endif %}
+
 <h3>Advertisement</h3>
 <p>
   <!--Ad Bard advertisement snippet, begin -->
