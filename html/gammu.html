@@ -3,6 +3,14 @@
 
 {% block title %}Gammu{% endblock %}
 
+{% block sidebar_top %}
+<h3>{% trans "More information" %}</h3>
+<ul>
+<li><a href="/phonedb">{% trans "Supported phones" %}</a></li>
+<li><a href="/contribute">{% trans "How to contribute" %}</a></li>
+</ul>
+
+{% endblock %}
 {% block content %}
 <h2>{% trans "Gammu" %}</h2>
 
