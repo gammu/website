@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}Gammu SMSD{% endblock %}
+
+{% block sidebar_top %}
+<h3>{% trans "More information" %}</h3>
+<ul>
+<li><a href="/phonedb">{% trans "Supported phones" %}</a></li>
+<li><a href="/contribute">{% trans "How to contribute" %}</a></li>
+</ul>
+
+{% endblock %}
+{% block content %}
+<h2>{% trans "Gammu SMSD" %}</h2>
+
+<p>
+{% blocktrans %}
+Gammu SMS Daemon is a program that periodically scans GSM modem for received
+messages, stores them in defined storage and also sends messages enqueued in
+this storage. It is perfect tool for managing big amounts of received or sent
+messages and automatically process them.
+{% endblocktrans %} 
+</p>
+
+<h3>{% trans "Documentation" %}</h3>
+<p>
+{% blocktrans %}
+API documentation is available as well as internal documentation.
+{% endblocktrans %}
+</p>
+
+
+{% endblock %}
+
+
+
+
