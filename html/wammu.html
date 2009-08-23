@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}Wammu{% endblock %}
+
+{% block sidebar_top %}
+<h3>{% trans "More information" %}</h3>
+<ul>
+<li><a href="/screnshots/wammu">{% trans "Screenshots" %}</a></li>
+<li><a href="/phonedb">{% trans "Supported phones" %}</a></li>
+<li><a href="/contribute">{% trans "How to contribute" %}</a></li>
+</ul>
+
+{% endblock %}
+{% block content %}
+<h2>{% trans "Wammu" %}</h2>
+
+<p>
+{% blocktrans %}
+Wammu is mobile phone manager running on Linux, Windows and possibly other
+platforms, where <a href="/libgammu">libGammu</a> and wxPython works. The
+communication is made by Gammu library. Currently supported features: 
+{% endblocktrans %} 
+</p>
+
+<ul>
+<li>{% blocktrans %}complete support (can read/edit/delete/copy) for contacts, todo, calendar{% endblocktrans %}</li>
+<li>{% blocktrans %}can read/create/save/send/backup smses{% endblocktrans %}</li>
+<li>{% blocktrans %}sending files to phone (OBEX and Sony Ericsson phones only){% endblocktrans %}</li>
+<li>{% blocktrans %}sms composer for multi part smses (currently only text and predefined bitmap/sound can be edited){% endblocktrans %}</li>
+<li>{% blocktrans %}display message including pictures and ringtones playback{% endblocktrans %}</li>
+<li>{% blocktrans %}support for backup and import in various formats (vCard, vCalendar, vTodo, iCalendar, gammu own backup,...){% endblocktrans %}</li>
+<li>{% blocktrans %}export messages to mail (IMAP4, maildir and mailbox storages are supported){% endblocktrans %}</li>
+<li>{% blocktrans %}searching for phone{% endblocktrans %}</li>
+<li>{% blocktrans %}translated into several languages{% endblocktrans %}</li>
+<li>{% blocktrans %}rated as best on many software servers{% endblocktrans %}</li>
+</ul>
+
+<h3>{% trans "Documentation" %}</h3>
+<p>
+{% blocktrans %}
+API documentation is available as well as internal documentation.
+{% endblocktrans %}
+</p>
+
+
+{% endblock %}
+
+
+

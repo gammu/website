@@ -10,6 +10,10 @@ def index(request):
         'news': news,
     }))
 
+def wammu(request):
+    return render_to_response('wammu.html', WammuContext(request, {
+    }))
+
 def gammu(request):
     return render_to_response('gammu.html', WammuContext(request, {
     }))
