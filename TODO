@@ -1,0 +1,25 @@
+- split downloads to release / file
+    - release
+        - program
+        - version
+        - version_int
+        - description
+        - changelog
+        - date
+    - file
+        - release
+        - url
+        - size
+        - md5
+        - sha1
+        - platform
+- application for screenshots
+    - program (gammu/wammu/third party)
+    - picture url/thumbnail url
+    - title
+- application for links
+    - screenshot
+    - url
+    - description
+    - title
+- phonedb
