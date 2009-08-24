@@ -1,10 +1,19 @@
 {% extends "base.html" %}
 {% load i18n %}
 
-{% block title %}Wammu{% endblock %}
+{% block title %}{% trans "Wammu and Gammu News" %}{% endblock %}
+
+{% block sidebar_top %}
+<h3>{% trans "Follow us on" %}</h3>
+<ul>
+<li><a href="http://identi.ca/gammu">{% trans "identi.ca" %}</a></li>
+<li><a href="http://twitter.com/wammu">{% trans "Twitter" %}</a></li>
+</ul>
+
+{% endblock %}
 
 {% block content %}
-<h2>{% trans "News" %}</h2>
+<h2>{% trans "Wammu and Gammu News" %}</h2>
 
 <p>
 {% blocktrans %}
