@@ -7,7 +7,8 @@ class EntryAdmin(admin.ModelAdmin):
     list_filter = ('categories', )
     search_fields = ('excerpt', 'body', 'title')
     prepopulated_fields = {
-        'slug': ('title', )
+        'slug': ('title', ),
+        'identica_text': ('title', ),
     }
 
 admin.site.register(Entry, EntryAdmin)

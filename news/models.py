@@ -2,7 +2,13 @@ from django.db import models
 
 from django.contrib.auth.models import User
 
+from django.conf import settings
+
 import markdown
+
+import twitter
+
+import datetime
 
 # Create your models here.
 
@@ -66,6 +72,10 @@ class Entry(models.Model):
         blank = False
         )
 
+    # Identi.ca integration
+    identica_post = models.BooleanField('post to identi.ca', default = False)
+    identica_text = models.CharField('identi.ca post text', max_length = 100)
+
     class Meta:
         get_latest_by = 'pub_date'
         ordering = ['-pub_date']
@@ -75,8 +85,17 @@ class Entry(models.Model):
         return self.title
 
     def save(self):
+        if self.pub_date is None:
+            self.pub_date = datetime.datetime.now()
         if self.excerpt:
             self.excerpt_html = markdown.markdown(self.excerpt)
+        if self.identica_post:
+            api = twitter.Api(username = settings.IDENTICA_USER,
+                password = settings.IDENTICA_PASSWORD,
+                twitterserver='identi.ca/api')
+            api.SetSource('Wammu website')
+            api.PostUpdate('%s - http://example.net/%s' % (self.identica_text, self.get_absolute_url()))
+            self.identica_post = False
         self.body_html = markdown.markdown(self.body)
         super(Entry, self).save()
 

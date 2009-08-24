@@ -95,3 +95,12 @@ INSTALLED_APPS = (
     'wammu_web.wammu',
     'wammu_web.downloads',
 )
+
+import gobject
+import gnomekeyring
+gobject.set_application_name('Wammu-web')
+IDENTICA_USER = 'gammu'
+IDENTICA_PASSWORD = gnomekeyring.find_network_password_sync(
+        user = IDENTICA_USER,
+        domain = 'identi.ca',
+        protocol = 'https')[0]['password']
