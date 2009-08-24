@@ -16,30 +16,16 @@ def entry(request, slug, day = None, month = None, year = None):
     }))
 
 def index(request):
-    allnews = Entry.objects.order_by('-pub_date')
-    paginator = Paginator(allnews, settings.NEWS_PER_PAGE, orphans = 1)
-    try:
-        page = int(request.GET.get('page', '1'))
-        if page < 1:
-            page = 0
-        elif page > paginator.num_pages:
-            page = paginator.num_pages
-    except ValueError:
-        page = 1
-
-    try:
-        news = paginator.page(page)
-    except (EmptyPage, InvalidPage):
-        news = paginator.page(1)
-
-    return render_to_response('news/index.html', WammuContext(request, {
-        'news': news,
-    }))
+    objects = Entry.objects.order_by('-pub_date')
+    return render_news(request, objects, 'news/index.html')
 
 def category(request, slug):
     category = get_object_or_404(Category, slug = slug)
-    allnews = Entry.objects.filter(categories = category)
-    paginator = Paginator(allnews, settings.NEWS_PER_PAGE, orphans = 1)
+    objects = Entry.objects.filter(categories = category)
+    return render_news(request, objects, 'news/%s_index.html' % slug)
+
+def render_news(request, objects, template):
+    paginator = Paginator(objects, settings.NEWS_PER_PAGE, orphans = 1)
     try:
         page = int(request.GET.get('page', '1'))
         if page < 1:
@@ -54,6 +40,9 @@ def category(request, slug):
     except (EmptyPage, InvalidPage):
         news = paginator.page(1)
 
-    return render_to_response('news/%s_index.html' % slug, WammuContext(request, {
+    news_categories = Category.objects.order_by('slug')
+
+    return render_to_response(template, WammuContext(request, {
         'news': news,
+        'news_categories': news_categories,
     }))

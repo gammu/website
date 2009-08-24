@@ -43,9 +43,9 @@ class Category(models.Model):
         self.description_html = markdown.markdown(self.description)
         super(Category, self).save()
 
-#    @models.permalink
-#    def get_absolute_url(self):
-#         return ('news.views.category', (), { 'slug': self.slug })
+    @models.permalink
+    def get_absolute_url(self):
+         return ('news.views.category', (), { 'slug': self.slug })
 
 class Entry(models.Model):
     # Metadata.
