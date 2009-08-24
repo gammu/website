@@ -2,11 +2,12 @@
 from django.contrib.syndication.feeds import Feed
 from news.models import Entry, Category
 from django.utils.feedgenerator import Atom1Feed
+from django.utils.translation import ugettext as _
 
 class RssNewsFeed(Feed):
-    title = 'Wammu and Gammu News'
+    title = _('Wammu and Gammu News')
     link = '/news/'
-    description = 'Updates about Wammu and Gammu programs.'
+    description = _('Updates about Wammu and Gammu programs.')
     copyright = 'Copyright © 2003 - 2009 Michal Čihař'
     item_copyright = copyright
 
