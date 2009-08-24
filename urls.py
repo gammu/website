@@ -40,4 +40,8 @@ urlpatterns = patterns('',
     (r'^news/(?P<url>(rss|atom).*)/$', 'django.contrib.syndication.views.feed',
         {'feed_dict': feeds}),
     (r'^news/(?P<slug>.*)/$', 'news.views.category'),
+
+    # Donations
+    (r'^donate/$', 'donate.views.donate'),
+    (r'^donate/done/', include('paypal.standard.pdt.urls')),
 )

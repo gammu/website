@@ -91,6 +91,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.admindocs',
+    'paypal.standard.pdt',
     'wammu_web.news',
     'wammu_web.wammu',
     'wammu_web.downloads',
@@ -106,3 +107,6 @@ IDENTICA_PASSWORD = gnomekeyring.find_network_password_sync(
         protocol = 'https')[0]['password']
 
 NEWS_PER_PAGE = 2
+
+PAYPAL_IDENTITY_TOKEN = '1kbDRn7TJ6ikJcqyxZ8AdOUMMT56S7gm8mq3OIHZTFS8ymCulm6IGMW70zu'
+PAYPAL_RECEIVER_EMAIL = 'nijel_1251117651_biz@cihar.com'
