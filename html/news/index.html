@@ -10,19 +10,6 @@
 <li><a href="http://twitter.com/wammu">{% trans "Twitter" %}</a></li>
 </ul>
 <h3>{% trans "Other News" %}</h3>
-<p>
-{% blocktrans with news.number as number and news.paginator.num_pages as num_pages %}
-Page {{ number }} of {{ num_pages }}.
-{% endblocktrans %}
-</p>
-<ul>
-{% if news.has_previous %}
-<li><a href="?page={{ news.previous_page_number }}">{% trans "Previous" %}</a></li>
-{% endif %}
-{% if news.has_next %}
-<li><a href="?page={{ news.next_page_number }}">{% trans "Next" %}</a></li>
-{% endif %}
-</ul>
 
 {% endblock %}
 
@@ -43,6 +30,22 @@ You can also follow the news using RSS or get the basic information using
 {% include "news/body.html" %}
 {% endwith %}
 {% endfor %}
+
+<ul class="pages">
+{% if news.has_previous %}
+<li><a href="?page={{ news.previous_page_number }}">&laquo;</a></li>
+{% else %}
+<li class="disabled"><span>&laquo;</span></li>
+{% endif %}
+{% for page in news.paginator.page_range %}
+<li {% ifequal page news.number %} class="active" {% endifequal %}><a href="?page={{ page }}">{{ page }}</a></li>
+{% endfor %}
+{% if news.has_next %}
+<li><a href="?page={{ news.next_page_number }}">&raquo;</a></li>
+{% else %}
+<li class="disabled"><span>&raquo;</span></li>
+{% endif %}
+</ul>
 
 {% endblock %}
 

@@ -453,10 +453,37 @@ div.footnavi ul li {
 }
 div.wide {
     clear: both;
-	background: #ffd480;
-	background: #fbb400; /*#036;*/
+	background: #fbb400;
     width: 100%;
     border-top: 1px solid #7C0000;
     border-bottom: 1px solid #7C0000;
     margin: 0 auto;
+}
+
+ul.pages {
+    display: inline-block;
+    list-style: none;
+    display: inline; 
+    margin: 0;
+    padding: 1em;
+}
+ul.pages li {
+    display: inline-block;
+}
+ul.pages li a {
+    padding: 0.2em;
+    border: 1px solid #7C0000;
+    background: #ffd480;
+}
+ul.pages li.active a {
+    background: #fbb400;
+    font-weight: bolder;
+}
+ul.pages li a:hover {
+    background: #fbb400;
+}
+ul.pages li.disabled span {
+    padding: 0.2em;
+    border: 1px solid #7C0000;
+    background: #ffd480;
 }
