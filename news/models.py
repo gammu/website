@@ -94,7 +94,11 @@ class Entry(models.Model):
                 password = settings.IDENTICA_PASSWORD,
                 twitterserver='identi.ca/api')
             api.SetSource('Wammu website')
-            api.PostUpdate('%s - http://example.net/%s' % (self.identica_text, self.get_absolute_url()))
+            if Site._meta.installed:
+                current_site = Site.objects.get_current()
+            else:
+                current_site = RequestSite(self.request)
+            api.PostUpdate('%s - http://%s/%s' % (self.identica_text, current_site.domain, self.get_absolute_url()))
             self.identica_post = False
         self.body_html = markdown.markdown(self.body)
         super(Entry, self).save()
