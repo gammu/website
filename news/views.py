@@ -6,6 +6,7 @@ from django.core.paginator import Paginator, InvalidPage, EmptyPage
 
 from django.conf import settings
 
+
 # Create your views here.
 
 def entry(request, slug, day = None, month = None, year = None):
