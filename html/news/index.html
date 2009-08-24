@@ -9,6 +9,20 @@
 <li><a href="http://identi.ca/gammu">{% trans "identi.ca" %}</a></li>
 <li><a href="http://twitter.com/wammu">{% trans "Twitter" %}</a></li>
 </ul>
+<h3>{% trans "Other News" %}</h3>
+<p>
+{% blocktrans with news.number as number and news.paginator.num_pages as num_pages %}
+Page {{ number }} of {{ num_pages }}.
+{% endblocktrans %}
+</p>
+<ul>
+{% if news.has_previous %}
+<li><a href="?page={{ news.previous_page_number }}">{% trans "Previous" %}</a></li>
+{% endif %}
+{% if news.has_next %}
+<li><a href="?page={{ news.next_page_number }}">{% trans "Next" %}</a></li>
+{% endif %}
+</ul>
 
 {% endblock %}
 
@@ -23,7 +37,7 @@ You can also follow the news using RSS or get the basic information using
 {% endblocktrans %}
 </p>
 
-{% for item in news %}
+{% for item in news.object_list %}
 <h3><a href="{{ item.get_absolute_url }}">{{ item.title }}</a></h3>
 {% with item as entry %}
 {% include "news/body.html" %}

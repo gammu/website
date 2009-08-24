@@ -104,3 +104,5 @@ IDENTICA_PASSWORD = gnomekeyring.find_network_password_sync(
         user = IDENTICA_USER,
         domain = 'identi.ca',
         protocol = 'https')[0]['password']
+
+NEWS_PER_PAGE = 2
