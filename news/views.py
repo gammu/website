@@ -2,7 +2,7 @@ from django.shortcuts import render_to_response, get_object_or_404
 from wammu_web.wammu.helpers import WammuContext
 from wammu_web.news.models import Entry, Category
 
-from django.core.paginator import Paginator
+from django.core.paginator import Paginato, InvalidPage, EmptyPage
 
 from django.conf import settings
 
