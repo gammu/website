@@ -18,7 +18,9 @@
 {% endblock %}
 
 {% block content %}
+{% block listhead %}
 <h2>{% trans "Wammu and Gammu News" %}</h2>
+{% endblock %}
 
 {% for item in news.object_list %}
 <h3><a href="{{ item.get_absolute_url }}">{{ item.title }}</a></h3>

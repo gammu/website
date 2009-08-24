@@ -37,4 +37,23 @@ def index(request):
     }))
 
 def category(request, slug):
-    return ''
+    category = get_object_or_404(Category, slug = slug)
+    allnews = Entry.objects.filter(categories = category)
+    paginator = Paginator(allnews, settings.NEWS_PER_PAGE, orphans = 1)
+    try:
+        page = int(request.GET.get('page', '1'))
+        if page < 1:
+            page = 0
+        elif page > paginator.num_pages:
+            page = paginator.num_pages
+    except ValueError:
+        page = 1
+
+    try:
+        news = paginator.page(page)
+    except (EmptyPage, InvalidPage):
+        news = paginator.page(1)
+
+    return render_to_response('news/%s_index.html' % slug, WammuContext(request, {
+        'news': news,
+    }))

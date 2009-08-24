@@ -37,6 +37,7 @@ urlpatterns = patterns('',
         {'document_root': './media'}),
 
     # RSS feeds
-    (r'^news/(?P<url>[a-z].*)/$', 'django.contrib.syndication.views.feed',
+    (r'^news/(?P<url>(rss|atom).*)/$', 'django.contrib.syndication.views.feed',
         {'feed_dict': feeds}),
+    (r'^news/(?P<slug>.*)/$', 'news.views.category'),
 )
