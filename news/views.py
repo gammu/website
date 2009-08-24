@@ -16,7 +16,7 @@ def entry(request, slug, day = None, month = None, year = None):
 
 def index(request):
     allnews = Entry.objects.order_by('-pub_date')
-    paginator = Paginator(allnews, settings.NEWS_PER_PAGE)
+    paginator = Paginator(allnews, settings.NEWS_PER_PAGE, orphans = 1)
     try:
         page = int(request.GET.get('page', '1'))
         if page < 1:
