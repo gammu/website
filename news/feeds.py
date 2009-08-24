@@ -8,6 +8,7 @@ class RssNewsFeed(Feed):
     link = '/news/'
     description = 'Updates about Wammu and Gammu programs.'
     copyright = 'Copyright © 2003 - 2009 Michal Čihař'
+    item_copyright = copyright
 
     def categories(self):
         print [x.title for x in Category.objects.all()]
@@ -24,6 +25,8 @@ class RssNewsFeed(Feed):
     def item_categories(self, obj):
         return [x.title for x in obj.categories.get_query_set()]
 
+    def item_pubdate(self, obj):
+        return obj.pub_date
 
 class AtomNewsFeed(RssNewsFeed):
     feed_type = Atom1Feed
