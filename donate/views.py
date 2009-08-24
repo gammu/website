@@ -14,6 +14,8 @@ def donate(request):
         'amount': '10.00',
         'item_name': 'Gammu/Wammu donation',
         'currency_code': 'EUR',
+        'no_note': '1',
+        'page_style': 'Wammu',
     }
 
     # Create the instance.
