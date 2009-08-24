@@ -1,6 +1,11 @@
 from django.conf.urls.defaults import *
+from news.feeds import RssNewsFeed, AtomNewsFeed
 
-# Uncomment the next two lines to enable the admin:
+feeds = {
+    'rss': RssNewsFeed,
+    'atom': AtomNewsFeed,
+}
+
 from django.contrib import admin
 admin.autodiscover()
 
@@ -30,4 +35,8 @@ urlpatterns = patterns('',
     # Media files
     (r'^media/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root': './media'}),
+
+    # RSS feeds
+    (r'^news/(?P<url>[a-z].*)/$', 'django.contrib.syndication.views.feed',
+        {'feed_dict': feeds}),
 )
