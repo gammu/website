@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-07 16:24+0200\n"
+"POT-Creation-Date: 2009-08-25 17:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,45 +16,138 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: html/base.html:45
-msgid "License"
+#: donate/forms.py:14
+msgid "Amount (EUR)"
 msgstr ""
 
-#: html/base.html:46
-msgid "Support Gammu/Wammu by donating money!"
+#: donate/forms.py:16
+msgid "Message from you"
 msgstr ""
 
-#: html/base.html:46
+#: donate/forms.py:27 donate/forms.py:38 html/base.html:123
 msgid "Donate"
 msgstr ""
 
-#: html/base.html:47
+#: html/base.html:48 html/index.html:7
+msgid "Downloads"
+msgstr ""
+
+#: html/base.html:122
+msgid "License"
+msgstr ""
+
+#: html/base.html:123
+msgid "Support Gammu/Wammu by donating money!"
+msgstr ""
+
+#: html/base.html:124
 msgid "Sitemap"
 msgstr ""
 
-#: html/base.html:48
+#: html/base.html:125
 msgid "Search for Gammu/Wammu related questions"
 msgstr ""
 
-#: html/base.html:48
+#: html/base.html:125
 msgid "Search"
 msgstr ""
 
-#: html/base.html:49
+#: html/base.html:126
 msgid "Information about website, Gammu and Wammu"
 msgstr ""
 
-#: html/base.html:49 html/index.html:7
+#: html/base.html:126 html/index.html:18
 msgid "About"
 msgstr ""
 
-#: html/base.html:50
+#: html/base.html:127
 msgid ""
 "Valid <a href=\"http://validator.w3.org/check/referer\">HTML</a> and <a href="
 "\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
 msgstr ""
 
-#: html/index.html:10
+#: html/donate.html:7
+msgid "Donate to Gammu"
+msgstr ""
+
+#: html/donate.html:9
+msgid "Donate money"
+msgstr ""
+
+#: html/donate.html:11
+msgid ""
+"\n"
+"Thank you for interesting in donating money to Gammu and Wammu projects. "
+"These\n"
+"money can serve as a motivation for developers as well as fund for buying "
+"some\n"
+"hardware which is required for testing. We already have some cell phones, "
+"but\n"
+"there is simply lot of them and having more available allows us to create\n"
+"better software.\n"
+msgstr ""
+
+#: html/donate.html:21
+msgid ""
+"\n"
+"The donation itself is being processed by <a\n"
+"href=\"http://www.paypal.com/\">PayPal</a> where you can pay either by "
+"their\n"
+"account or by using any major credit card.\n"
+msgstr ""
+
+#: html/donate.html:29
+msgid ""
+"\n"
+"Your name and message will be listed on <a href=\"/donate/list/\">List of\n"
+"Donors</a>, if you don't want to be listed, click here.\n"
+msgstr ""
+
+#: html/gammu.html:7 html/libgammu.html:7 html/python-gammu.html:7
+#: html/smsd.html:7 html/wammu.html:7
+msgid "More information"
+msgstr ""
+
+#: html/gammu.html:9 html/libgammu.html:9 html/python-gammu.html:9
+#: html/smsd.html:9 html/wammu.html:10
+msgid "Supported phones"
+msgstr ""
+
+#: html/gammu.html:10 html/libgammu.html:10 html/python-gammu.html:10
+#: html/smsd.html:10 html/wammu.html:11
+msgid "How to contribute"
+msgstr ""
+
+#: html/gammu.html:15
+msgid "Gammu"
+msgstr ""
+
+#: html/gammu.html:18
+msgid ""
+"\n"
+"Gammu is the name of the project as well as name of command line utility,\n"
+"which you can use to control your phone. It is written in C and built on "
+"top\n"
+"of <a href=\"/libgammu\">libGammu</a>.\n"
+msgstr ""
+
+#: html/gammu.html:25 html/libgammu.html:26 html/python-gammu.html:26
+#: html/smsd.html:26 html/wammu.html:39
+msgid "Documentation"
+msgstr ""
+
+#: html/gammu.html:27 html/libgammu.html:28 html/smsd.html:28
+#: html/wammu.html:41
+msgid ""
+"\n"
+"API documentation is available as well as internal documentation.\n"
+msgstr ""
+
+#: html/index.html:8 html/index.html.py:10 html/wammu.html:9
+msgid "Screenshots"
+msgstr ""
+
+#: html/index.html:21
 msgid ""
 "\n"
 "Wammu is a program to manage data in your cell phone such as contacts,\n"
@@ -67,48 +160,48 @@ msgid ""
 "and others).\n"
 msgstr ""
 
-#: html/index.html:20
+#: html/index.html:31
 msgid "Gammu family"
 msgstr ""
 
-#: html/index.html:22
+#: html/index.html:33
 msgid ""
 "\n"
 "Gammu is now not only a single program but there is lot of useful tools\n"
 "sharing same library.\n"
 msgstr ""
 
-#: html/index.html:30
+#: html/index.html:41
 msgid ""
 "\n"
 "GUI program to manage contacts, todos, calendar and messages in your phone.\n"
 msgstr ""
 
-#: html/index.html:36
+#: html/index.html:47
 msgid ""
 "\n"
 "Command line utility which allows to use all libGammu features.\n"
 msgstr ""
 
-#: html/index.html:42
+#: html/index.html:53
 msgid ""
 "\n"
 "Library exporting C API to talk to cell phones.\n"
 msgstr ""
 
-#: html/index.html:48
+#: html/index.html:59
 msgid ""
 "\n"
 "SMS daemon service to receive and send messages automatically.\n"
 msgstr ""
 
-#: html/index.html:54
+#: html/index.html:65
 msgid ""
 "\n"
 "Python bindings for libGammu, so that you can use it from Python scripts.\n"
 msgstr ""
 
-#: html/index.html:66
+#: html/index.html:77
 #, python-format
 msgid ""
 "\n"
@@ -116,11 +209,11 @@ msgid ""
 "    "
 msgstr ""
 
-#: html/libgammu.html:7
+#: html/libgammu.html:15
 msgid "libGammu"
 msgstr ""
 
-#: html/libgammu.html:10
+#: html/libgammu.html:18
 msgid ""
 "\n"
 "libGammu is core library of Gammu project. It provides abstraction layer to\n"
@@ -129,21 +222,11 @@ msgid ""
 "library you can talk to any phone using standard API.\n"
 msgstr ""
 
-#: html/libgammu.html:18 html/python-gammu.html:17
-msgid "Documentation"
-msgstr ""
-
-#: html/libgammu.html:20
-msgid ""
-"\n"
-"API documentation is available as well as internal documentation.\n"
-msgstr ""
-
-#: html/python-gammu.html:4 html/python-gammu.html.py:7
+#: html/python-gammu.html:4 html/python-gammu.html.py:16
 msgid "Python bindings for Gammu"
 msgstr ""
 
-#: html/python-gammu.html:10
+#: html/python-gammu.html:19
 msgid ""
 "\n"
 "Gammu also includes Python bindings which allow you to use (most) of <a\n"
@@ -151,19 +234,186 @@ msgid ""
 "href=\"http://python.org\">Python</a> language.\n"
 msgstr ""
 
-#: html/python-gammu.html:19
+#: html/python-gammu.html:28
 msgid ""
 "\n"
 "API documentation is available.\n"
 msgstr ""
 
-#: html/news/index.html:7
-msgid "News"
+#: html/smsd.html:15
+msgid "Gammu SMSD"
 msgstr ""
 
-#: html/news/index.html:13
+#: html/smsd.html:18
+msgid ""
+"\n"
+"Gammu SMS Daemon is a program that periodically scans GSM modem for "
+"received\n"
+"messages, stores them in defined storage and also sends messages enqueued "
+"in\n"
+"this storage. It is perfect tool for managing big amounts of received or "
+"sent\n"
+"messages and automatically process them.\n"
+msgstr ""
+
+#: html/wammu.html:16
+msgid "Wammu"
+msgstr ""
+
+#: html/wammu.html:19
+msgid ""
+"\n"
+"Wammu is mobile phone manager running on Linux, Windows and possibly other\n"
+"platforms, where <a href=\"/libgammu\">libGammu</a> and wxPython works. The\n"
+"communication is made by Gammu library. Currently supported features: \n"
+msgstr ""
+
+#: html/wammu.html:27
+msgid ""
+"complete support (can read/edit/delete/copy) for contacts, todo, calendar"
+msgstr ""
+
+#: html/wammu.html:28
+msgid "can read/create/save/send/backup smses"
+msgstr ""
+
+#: html/wammu.html:29
+msgid "sending files to phone (OBEX and Sony Ericsson phones only)"
+msgstr ""
+
+#: html/wammu.html:30
+msgid ""
+"sms composer for multi part smses (currently only text and predefined bitmap/"
+"sound can be edited)"
+msgstr ""
+
+#: html/wammu.html:31
+msgid "display message including pictures and ringtones playback"
+msgstr ""
+
+#: html/wammu.html:32
+msgid ""
+"support for backup and import in various formats (vCard, vCalendar, vTodo, "
+"iCalendar, gammu own backup,...)"
+msgstr ""
+
+#: html/wammu.html:33
+msgid ""
+"export messages to mail (IMAP4, maildir and mailbox storages are supported)"
+msgstr ""
+
+#: html/wammu.html:34
+msgid "searching for phone"
+msgstr ""
+
+#: html/wammu.html:35
+msgid "translated into several languages"
+msgstr ""
+
+#: html/wammu.html:36
+msgid "rated as best on many software servers"
+msgstr ""
+
+#: html/downloads/list.html:4
+msgid "Download"
+msgstr ""
+
+#: html/downloads/list.html:8
+#, python-format
+msgid ""
+"\n"
+"Download %(program)s\n"
+msgstr ""
+
+#: html/downloads/list.html:16
+msgid ""
+"\n"
+"Currently downloading from mirror:\n"
+msgstr ""
+
+#: html/downloads/list.html:26
+msgid "Change"
+msgstr ""
+
+#: html/downloads/list.html:33
+#, python-format
+msgid ""
+"\n"
+"Released on %(released)s.\n"
+msgstr ""
+
+#: html/downloads/programs/gammu-source.html:3
+msgid ""
+"\n"
+"You are downloading Gammu source code. To compile it you need some "
+"development\n"
+"environment for your platform and <a href=\"http://www.cmake.org/\">CMake</"
+"a>\n"
+"tool to configure the sources. There are also some optional requirements "
+"for\n"
+"additional features which are listed in INSTALL file in sources. This file\n"
+"also contains more detailed instructions about compiling Gammu.\n"
+msgstr ""
+
+#: html/news/body.html:4
 #, python-format
 msgid ""
 "\n"
 "Published on %(date)s by %(author)s\n"
+msgstr ""
+
+#: html/news/contrib_index.html:5 html/news/contrib_index.html.py:8
+msgid "Third Party News"
+msgstr ""
+
+#: html/news/gammu_index.html:5 html/news/gammu_index.html.py:8
+msgid "Gammu News"
+msgstr ""
+
+#: html/news/index.html:4 html/news/index.html.py:29 news/feeds.py:8
+msgid "Wammu and Gammu News"
+msgstr ""
+
+#: html/news/index.html:7
+msgid "Follow us on"
+msgstr ""
+
+#: html/news/index.html:9 html/news/index.html.py:14
+msgid "identi.ca"
+msgstr ""
+
+#: html/news/index.html:10 html/news/index.html.py:15
+msgid "Twitter"
+msgstr ""
+
+#: html/news/index.html:12
+msgid "RSS Feeds"
+msgstr ""
+
+#: html/news/index.html:17 html/screenshots/index.html:7
+msgid "Categories"
+msgstr ""
+
+#: html/news/wammu_index.html:5 html/news/wammu_index.html.py:8
+msgid "Wammu News"
+msgstr ""
+
+#: html/screenshots/index.html:4 html/screenshots/index.html.py:19
+msgid "Wammu and Gammu Screenshots"
+msgstr ""
+
+#: html/screenshots/index.html:9
+msgid "All screenshots"
+msgstr ""
+
+#: news/feeds.py:10
+msgid "Updates about Wammu and Gammu programs."
+msgstr ""
+
+#: wammu/helpers.py:18
+msgid "Gammu and Wammu News Feed (RSS)"
+msgstr ""
+
+#: wammu/helpers.py:19
+msgid "Gammu and Wammu News Feed (Atom)"
 msgstr ""
