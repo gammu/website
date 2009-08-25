@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Wammu and Gammu Screenshots" %}{% endblock %}
+
+{% block sidebar_top %}
+<h3>{% trans "Categories" %}</h3>
+<ul>
+<li><a href="/screenshots/">{% trans "All screenshots" %}</a></li>
+{% for cat in screenshot_categories %}
+<li><a href="{{ cat.get_absolute_url }}">{{ cat.title }}</a></li>
+{% endfor %}
+</ul>
+
+{% endblock %}
+
+{% block content %}
+{% block listhead %}
+<h2>{% trans "Wammu and Gammu Screenshots" %}</h2>
+{% endblock %}
+
+{% for item in screenshots.object_list %}
+<div class="screenshot">
+    <a href="{{ item.image.url }}"
+    rel="lightbox[screenshots]" title="{{ item.title }}">
+        <img src="{{ item.image.url_180x120 }}"
+        alt="{{ item.title }}" /><br />
+    {{ item.title }}
+    </a>
+</div>
+{% endfor %}
+<div class="clearer"></div>
+
+<ul class="pages">
+{% if screenshots.has_previous %}
+<li><a href="?page={{ screenshots.previous_page_number }}">&laquo;</a></li>
+{% else %}
+<li class="disabled"><span>&laquo;</span></li>
+{% endif %}
+{% for page in screenshots.paginator.page_range %}
+<li {% ifequal page screenshots.number %} class="active" {% endifequal %}><a href="?page={{ page }}">{{ page }}</a></li>
+{% endfor %}
+{% if screenshots.has_next %}
+<li><a href="?page={{ screenshots.next_page_number }}">&raquo;</a></li>
+{% else %}
+<li class="disabled"><span>&raquo;</span></li>
+{% endif %}
+</ul>
+
+{% endblock %}
+
+

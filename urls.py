@@ -19,9 +19,15 @@ urlpatterns = patterns('',
     (r'^libgammu/$', 'wammu.views.libgammu'),
     (r'^python-gammu/$', 'wammu.views.pygammu'),
 
+    # RSS feeds
+    (r'^news/(?P<url>(rss|atom).*)/$', 'django.contrib.syndication.views.feed',
+        {'feed_dict': feeds}),
+
+    # News
     (r'^news/$', 'news.views.index'),
     (r'^news/(?P<year>\d{4})/(?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<slug>[^/]*)/$',
         'news.views.entry'),
+    (r'^news/(?P<slug>.*)/$', 'news.views.category'),
 
     (r'^download/(?P<program>[^/]*)/(?P<platform>[^/]*)/$', 'downloads.views.list'),
 
@@ -36,12 +42,12 @@ urlpatterns = patterns('',
     (r'^media/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root': './media'}),
 
-    # RSS feeds
-    (r'^news/(?P<url>(rss|atom).*)/$', 'django.contrib.syndication.views.feed',
-        {'feed_dict': feeds}),
-    (r'^news/(?P<slug>.*)/$', 'news.views.category'),
 
     # Donations
     (r'^donate/$', 'donate.views.donate'),
     (r'^donate/done/', include('paypal.standard.pdt.urls')),
+
+    # Screenshots
+    (r'^screenshots/$', 'screenshots.views.index'),
+    (r'^screenshots/(?P<slug>.*)/$', 'screenshots.views.category'),
 )

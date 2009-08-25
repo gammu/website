@@ -21,7 +21,7 @@ def index(request):
 
 def category(request, slug):
     category = get_object_or_404(Category, slug = slug)
-    objects = Entry.objects.filter(categories = category)
+    objects = Entry.objects.filter(categories = category).order_by('-pub_date')
     return render_news(request, objects, 'news/%s_index.html' % slug)
 
 def render_news(request, objects, template):
