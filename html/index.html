@@ -5,6 +5,13 @@
 
 {% block sidebar_top %}
 <h3>{% trans "Downloads" %}</h3>
+<h3>{% trans "Screenshots" %}</h3>
+<p>
+<a href="/screenshots/" title="{% trans "Screenshots" %}">
+        <img src="{{ screenshot.image.url_180x120 }}"
+        alt="{{ screenshot.title }}" />
+</a>
+</p>
 {% endblock %}
 
 {% block content %}
