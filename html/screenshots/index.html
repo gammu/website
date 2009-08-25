@@ -7,7 +7,7 @@
 <h3>{% trans "Categories" %}</h3>
 <ul>
 <li><a href="/screenshots/">{% trans "All screenshots" %}</a></li>
-{% for cat in screenshot_categories %}
+{% for cat in screenshots_categories %}
 <li><a href="{{ cat.get_absolute_url }}">{{ cat.title }}</a></li>
 {% endfor %}
 </ul>
