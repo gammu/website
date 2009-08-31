@@ -94,10 +94,10 @@ class Release(models.Model):
         return '%s-%s' % (self.program, self.version)
 
     def get_state(self):
-        if self.program == 'gammu' and self.release_int % 100 > 90:
-            return 'Testing release %s' % self.release
+        if self.program == 'gammu' and self.version_int % 100 > 90:
+            return 'testing release %s' % self.version
         else:
-            return 'Stable release %s' % self.release
+            return 'stable release %s' % self.version
 
     def get_program(self):
         return get_program(self.program)
