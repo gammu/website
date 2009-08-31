@@ -15,20 +15,7 @@ def get_latest_releases(program):
         latest_stable = releases.filter(version_int__lt = 10 + ((latest_version.version_int / 100) * 100)).order_by('-version_int')[0]
     return (latest_stable, latest_testing)
 
-def list(request, program, platform):
-
-    stable_release, testing_release = get_latest_releases(program)
-
-    stable_downloads = Download.objects.filter(release = stable_release, platform = platform).order_by('location')
-
-    if testing_release is None:
-        testing_downloads = None
-    else:
-        testing_downloads = Download.objects.filter(release = testing_release, platform = platform).order_by('location')
-
-    if stable_downloads.count() == 0:
-        raise Http404('No such download option %s/%s.' % (program, platform))
-
+def get_mirrors(request):
     mirrors = Mirror.objects.all().order_by('id')
     set_mirror = False
     try:
@@ -43,6 +30,24 @@ def list(request, program, platform):
         mirror = Mirror.objects.get(slug = mirror_id)
     except Mirror.DoesNotExist:
         mirror = Mirror.objects.get(slug = 'cihar-com')
+
+    return (mirror, mirrors, set_mirror, mirror_id)
+
+def list(request, program, platform):
+
+    stable_release, testing_release = get_latest_releases(program)
+
+    stable_downloads = Download.objects.filter(release = stable_release, platform = platform).order_by('location')
+
+    if testing_release is None:
+        testing_downloads = None
+    else:
+        testing_downloads = Download.objects.filter(release = testing_release, platform = platform).order_by('location')
+
+    if stable_downloads.count() == 0:
+        raise Http404('No such download option %s/%s.' % (program, platform))
+
+    mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
 
     result = render_to_response('downloads/list.html', WammuContext(request, {
         'stable_release': stable_release,
