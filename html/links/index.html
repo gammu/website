@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load i18n %}
 
-{% block title %}{% trans "Third Party Applications for Gammu" %}{% endblock %}
+{% block title %}{% trans "Third Party Applications using Gammu" %}{% endblock %}
 
 {% block sidebar_top %}
 <h3>{% trans "Follow us on" %}</h3>
@@ -20,7 +20,7 @@
 {% endblock %}
 
 {% block content %}
-<h2>{% trans "Third Party Applications for Gammu" %}</h2>
+<h2>{% trans "Third Party Applications using Gammu" %}</h2>
 
 {% for item in links %}
 <h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
@@ -35,6 +35,7 @@
 </div>
 {% endif %}
 {{ item.description|safe }}
+<p>{% trans "Website:" %} <a href="{{ item.url }}">{{ item.url }}</a></p>
 <div class="clearer"></div>
 {% endfor %}
 
