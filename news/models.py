@@ -85,7 +85,7 @@ class Entry(models.Model):
     def __unicode__(self):
         return self.title
 
-    def save(self):
+    def save(self, *args, **kwargs):
         if self.pub_date is None:
             self.pub_date = datetime.datetime.now()
         if self.excerpt:
@@ -102,7 +102,7 @@ class Entry(models.Model):
             api.PostUpdate('%s - http://%s%s' % (self.identica_text, current_site.domain, self.get_absolute_url()))
             self.identica_post = False
         self.body_html = markdown.markdown(self.body)
-        super(Entry, self).save()
+        super(Entry, self).save(*args, **kwargs)
 
     @models.permalink
     def get_absolute_url(self):
