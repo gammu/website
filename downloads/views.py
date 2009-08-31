@@ -62,3 +62,25 @@ def list(request, program, platform):
     if set_mirror:
         result.set_cookie('mirror', mirror_id, max_age = 3600 * 24 * 365)
     return result
+
+def release(request, program,  version):
+
+    release = get_object_or_404(Release, program = program, version = version)
+    downloads = Download.objects.filter(release = release).order_by('location')
+
+    if downloads.count() == 0:
+        raise Http404('No such download option %s/%s.' % (program, version))
+
+    mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
+
+    result = render_to_response('downloads/release.html', WammuContext(request, {
+        'release': release,
+        'downloads': downloads,
+#        'program_include': 'downloads/programs/%s-%s.html' % (program, platform),
+        'program': get_program(program),
+        'mirrors': mirrors,
+        'mirror': mirror,
+    }))
+    if set_mirror:
+        result.set_cookie('mirror', mirror_id, max_age = 3600 * 24 * 365)
+    return result

@@ -29,6 +29,7 @@ urlpatterns = patterns('',
         'news.views.entry'),
     (r'^news/(?P<slug>.*)/$', 'news.views.category'),
 
+    (r'^download/(?P<program>[^/]*)/(?P<version>[0-9.]*)/$', 'downloads.views.release'),
     (r'^download/(?P<program>[^/]*)/(?P<platform>[^/]*)/$', 'downloads.views.list'),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs'
