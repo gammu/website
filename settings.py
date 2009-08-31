@@ -96,6 +96,7 @@ INSTALLED_APPS = (
     'wammu_web.wammu',
     'wammu_web.downloads',
     'wammu_web.screenshots',
+    'wammu_web.links',
 )
 
 import gobject
