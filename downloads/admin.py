@@ -1,4 +1,4 @@
-from wammu_web.downloads.models import Mirror, Download
+from wammu_web.downloads.models import Mirror, Download, Release
 from django.contrib import admin
 
 class MirrorAdmin(admin.ModelAdmin):
@@ -9,3 +9,5 @@ class MirrorAdmin(admin.ModelAdmin):
 admin.site.register(Mirror, MirrorAdmin)
 
 admin.site.register(Download)
+
+admin.site.register(Release)
