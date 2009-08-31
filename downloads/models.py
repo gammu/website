@@ -99,6 +99,9 @@ class Release(models.Model):
         else:
             return 'Stable release %s' % self.release
 
+    def get_program(self):
+        return get_program(self.program)
+
 
 class Download(models.Model):
     release = models.ForeignKey(Release)

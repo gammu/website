@@ -26,21 +26,19 @@ Currently downloading from mirror:
 <input type="submit" value="{% trans "Change" %}" />
 </form>
 
-{% regroup downloads by get_state as dl_list %}
-{% for dl_group in dl_list %}
-<h3>{{ dl_group.grouper }}</h3>
-<p>
-{% blocktrans with dl_group.list.0.released|date as released %}
-Released on {{ released }}.
-{% endblocktrans %}
-</p>
-<ul>
+{% with stable_release as release %}
+{% with stable_downloads as downloads %}
+{% include "downloads/dlinfo.html" %}
+{% endwith %}
+{% endwith %}
 
-{% for item in dl_group.list %}
-<li><a href="{{ mirror.url }}{{ item.location }}">{{ item.location }}</a></li>
-{% endfor %}
-</ul>
-{% endfor %}
+{% if testing_release %}
+{% with testing_release as release %}
+{% with testing_downloads as downloads %}
+{% include "downloads/dlinfo.html" %}
+{% endwith %}
+{% endwith %}
+{% endif %}
 
 {% endblock %}
 

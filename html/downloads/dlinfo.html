@@ -1,0 +1,12 @@
+{% load i18n %}
+<h3>{{release.get_program}} {{release.version}}</h3>
+<p>
+{% blocktrans with release.date|date as released %}
+Released on {{ released }}.
+{% endblocktrans %}
+</p>
+<ul>
+{% for item in downloads %}
+<li><a href="{{ mirror.url }}{{ item.location }}">{{ item.location }}</a></li>
+{% endfor %}
+</ul>
