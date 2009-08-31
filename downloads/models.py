@@ -6,6 +6,8 @@ from django.contrib.auth.models import User
 
 import markdown
 
+import os
+
 PROGRAM_CHOICES = (
     ('gammu', 'Gammu'),
     ('wammu', 'Wammu'),
@@ -123,3 +125,12 @@ class Download(models.Model):
     def __unicode__(self):
         return '%s (%s): %s' % (self.release.__unicode__(), self.platform, self.location)
 
+    def get_filename(self):
+        return os.path.split(self.location)[1]
+
+    def get_size(self):
+        if self.size > 4 * 1024 * 1024:
+            return '%d MiB' % (self.size / (1024 * 1024))
+        if self.size > 4 * 1024:
+            return '%d kiB' % (self.size / 1024)
+        return '%d B' % self.size
