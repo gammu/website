@@ -76,7 +76,6 @@ def release(request, program,  version):
     result = render_to_response('downloads/release.html', WammuContext(request, {
         'release': release,
         'downloads': downloads,
-#        'program_include': 'downloads/programs/%s-%s.html' % (program, platform),
         'program': get_program(program),
         'mirrors': mirrors,
         'mirror': mirror,
