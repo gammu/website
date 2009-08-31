@@ -4,6 +4,8 @@ from wammu_web.news.models import Entry, Category
 
 from django.contrib.auth.models import User
 
+import markdown
+
 PROGRAM_CHOICES = (
     ('gammu', 'Gammu'),
     ('wammu', 'Wammu'),
@@ -88,6 +90,8 @@ class Release(models.Model):
                 )
         self.post_news = False
         self.post_tweet = False
+        self.changelog_html = markdown.markdown(self.changelog)
+        self.description_html = markdown.markdown(self.description)
         super(Release, self).save()
 
     def __unicode__(self):
