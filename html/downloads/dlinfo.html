@@ -5,8 +5,4 @@
 Released on {{ released }}.
 {% endblocktrans %}
 </p>
-<ul>
-{% for item in downloads %}
-<li><a href="{{ mirror.url }}{{ item.location }}">{{ item.location }}</a></li>
-{% endfor %}
-</ul>
+{% include "downloads/dllist.html" %}

@@ -1,0 +1,6 @@
+<ul>
+{% for item in downloads %}
+<li><a href="{{ mirror.url }}{{ item.location }}">{{ item.location }}</a></li>
+{% endfor %}
+</ul>
+
