@@ -106,6 +106,10 @@ class Release(models.Model):
     def get_program(self):
         return get_program(self.program)
 
+    @models.permalink
+    def get_absolute_url(self):
+         return ('downloads.views.release', (), { 'version': self.version, 'program': self.program })
+
 
 class Download(models.Model):
     release = models.ForeignKey(Release)
