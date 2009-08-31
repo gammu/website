@@ -50,4 +50,7 @@ urlpatterns = patterns('',
     # Screenshots
     (r'^screenshots/$', 'screenshots.views.index'),
     (r'^screenshots/(?P<slug>.*)/$', 'screenshots.views.category'),
+
+    # Links
+    (r'^links/$', 'links.views.index'),
 )
