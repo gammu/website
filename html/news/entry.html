@@ -6,10 +6,6 @@
 {% block content %}
 <h2>{{ entry.title }}</h2>
 
-<div class="excerpt">
-{{ entry.excerpt_html|safe }}
-</div>
-
 {% include "news/body.html" %}
 
 {% endblock %}
