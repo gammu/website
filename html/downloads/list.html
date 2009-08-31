@@ -13,6 +13,7 @@ Download {{ program }}
 {% include program_include %}
 
 <form action="." method="GET" class="mirrorselect" id="mirrorselect">
+<p>
 {% blocktrans with mirror.name as name %}
 Currently downloading from mirror:
 {% endblocktrans %}
@@ -24,6 +25,7 @@ Currently downloading from mirror:
 {% endfor %}
 </select>
 <input type="submit" value="{% trans "Change" %}" />
+</p>
 </form>
 
 {% with stable_release as release %}
