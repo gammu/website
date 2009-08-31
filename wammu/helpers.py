@@ -11,6 +11,7 @@ class WammuContext(RequestContext):
         context['menu'] = [
             {'title': 'Support', 'link': '/support/'},
             {'title': 'Download', 'link': '/download/'},
+            {'title': 'Screenshots', 'link': '/screenshots/'},
             {'title': 'Documentation', 'link': '/docs/'},
             {'title': 'Contribute', 'link': '/contribute/'},
             ]
