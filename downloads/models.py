@@ -58,11 +58,12 @@ class Release(models.Model):
             self.version_int = (100 * self.version_int) + int(num)
         if self.post_news:
             author = self.author
-            excerpt = '[%s][1] %s has been just released. %s\n\n[1]: %s' % (
+            excerpt = '[%s][1] [%s][2] has been just released. %s\n\n[1]: %s\n[2]:%s' % (
                 get_program(self.program),
                 self.version,
                 self.description,
                 PROGRAM_URLS[self.program],
+                self.get_absolute_url(),
                 )
             body = 'Full list of changes:\n\n%s\n\nYou can download it from <http://wammu.eu/download/>.' % self.changelog
             identica_post = self.post_tweet
