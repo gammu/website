@@ -2,7 +2,7 @@ from wammu_web.screenshots.models import Category, Screenshot
 from django.contrib import admin
 
 class ScreenshotAdmin(admin.ModelAdmin):
-    list_display = ('title', 'image')
+    list_display = ('title', 'image', 'featured')
     list_filter = ('categories', )
     search_fields = ('image', 'description', 'title')
 
