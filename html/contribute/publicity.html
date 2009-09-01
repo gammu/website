@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}Publicity for Wammu and Gammu{% endblock %}
+
+{% block sidebar_top %}
+{% include "contribute/sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "Publicity for Wammu and Gammu" %}</h2>
+
+<p>
+{% blocktrans %}
+Publicity is vital for any project. If nobody would know about the project,
+nobody would use it. So spreading word about Gammu and Wammu might help a lot
+to gain new users and developers. 
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+On the other side, if you found a bug, please do not leave it described just
+in your weblog, but <a href="/support/bugs/">report it</a> to us. We really do
+not follow all blogs in the world to scan for bug reports.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "Third Party Applications" %}</h3>
+
+<p>
+{% blocktrans %}
+You've made some great tool using Gammu?  Don't hesitate to write about it. We
+can also list your tool on our <a href="/links/">third party applications</a>
+page, what will in reward bring users to your project. Just <a
+href="/support">let us know</a> about it!
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "Logos or Screenshots" %}</h3>
+<p>
+{% blocktrans %}
+You can use any screenshots available on this website for your publicity posts
+as long as you follow <a href="/license">license terms</a>. Gammu and Wammu
+logos are available in various resolutions as well as in scalable format in
+<a href="/contribute/code/#vcs">wammu source repository</a>.
+{% endblocktrans %}
+</p>
+
+{% endblock %}
+

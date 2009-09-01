@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}Coding for Wammu and Gammu{% endblock %}
+
+{% block sidebar_top %}
+{% include "contribute/sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "Coding for Wammu and Gammu" %}</h2>
+
+<p>
+{% blocktrans %}
+Gammu is written in C and Wammu in <a
+href="http://www.python.org/">Python</a>, so you will need knowledge of one of
+these languages to contribute code directly to the project. You will probably
+use some parts of <a href="/docs/devel/">developer documentation</a> to
+understand the code.
+{% endblocktrans %}
+</p>
+
+<a name="vcs"></a>
+<h3>{% trans "Version Control System" %}</h3>
+<p>
+{% blocktrans %}
+We currently use <a href="http://git-scm.com/">Git</a> as a version control
+system. It allows you create own local branch, develop the code and then
+submit us patches or merge request for the changes.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+The Git repositories are being hosted on <a
+href="http://gitorious.org/">Gitorious</a> service, having there <a
+href="http://gitorious.org/wammu">Wammu</a> and <a
+href="http://gitorious.org/gammu">Gammu</a> projects. You can browse the code
+on their site or just clone the repository and investigate it locally. To
+clone Wammu and Gammu sources, use following commands:
+{% endblocktrans %}
+</p>
+
+<pre>
+git clone git://gitorious.org/wammu/mainline.git wammu
+git clone git://gitorious.org/gammu/mainline.git gammu
+</pre>
+
+<h3>{% trans "Code Snapshots" %}</h3>
+<p>
+{% blocktrans %}
+If you for some reason do not want to use version control system, you can
+always download fresh snapshots of current code. They are available on our
+download server - for <a href="http://dl.cihar.com/gammu/snapshot/">Gammu</a>
+and <a href="http://dl.cihar.com/wammu/snapshot/">Wammu</a>. These snapshots
+are update several times a day, so they should always contain up to date copy
+of the code.
+{% endblocktrans %}
+</p>
+
+
+<h3>{% trans "Patch Submission" %}</h3>
+<p>
+{% blocktrans %}
+We really do not care much about the way you deliver us patches. However the
+easiest thing is you use <code>git format-patch</code>, which allows us to
+easily include your changes. If you do not use git, any unified diff will
+serve it's purpose also very well. You can send patches to <a
+href="/support/lists">mailing lists</a> or to the <a
+href="/support/bugs">bug tracker</a>.
+{% endblocktrans %}
+</p>
+
+
+
+{% endblock %}
+
+

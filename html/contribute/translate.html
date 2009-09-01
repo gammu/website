@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}Translating Wammu and Gammu{% endblock %}
+
+{% block sidebar_top %}
+{% include "contribute/sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "Translating Wammu and Gammu" %}</h2>
+
+<p>
+{% blocktrans %}
+If you know English and some other language, you can just bring Gammu and
+Wammu closer to the users who don't know English. Translating process is
+really easy and you can just occasionally translate few texts and do not have
+to spend much time on it.
+{% endblocktrans %}
+</p>
+<h3>{% trans "Gettext" %}</h3>
+<p>
+{% blocktrans %}
+Both Gammu and Wammu use <a
+href="http://en.wikipedia.org/wiki/GNU_gettext">gettext</a> framework for
+translation of messages in user interface. In addition, Gammu uses gettext
+together with <a href="http://po4a.alioth.debian.org/">po4a</a> to translate
+documentation. There exists variety of tools which can handle gettext
+translations, so you can choose the one which fits your needs.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "Translating po Files" %}</h3>
+<p>
+{% blocktrans %}
+Traditional way of doing translations is to download po file, translate it
+using some editor (for example <a href="http://www.poedit.net/">Poedit</a>)
+and then send updated po file to the author. You can do this when you are
+offline, but on the other side, it somehow prevents collaboration.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "Pootle" %}</h3>
+<p>
+{% blocktrans %}
+Another option is to use some web based system for translation, where lot of
+people can work on single translation as they just translate one text at once.
+We currently use <a href="https://l10n.cihar.com/projects/wammu">Pootle</a> to
+manage translations. To start translating just create an account there and
+start translating. You can already see dozens of languages there, but if your
+one is missing, just <a href="/support">tell us</a> and we will add it.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+All languages are open to translated for anybody logged in by default. However
+if you want to have better control on some language <a href="/support">tell
+us</a> to allow others only to suggest translations. This usually brings
+better quality of translation and slower progress, so it's up to each
+translator to define policy.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "Hints for Translators" %}</h3>
+<p>
+{% blocktrans %}
+In menu items, there is often used ampresand (&amp;), it means keybord
+shortcut for menu item. Please make those shortcuts unique in each menu. 
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+Please test the translations in the program. Just download mo file from
+translation system and place it under
+<code>/usr/share/locale/aa/LC_MESSAGES/wammu.mo</code>, where <code>aa</code>
+is two letter code of your translation.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+You should follow terminology as defined for your language in <a
+href="https://l10n.cihar.com/projects/terminology/">Terminology project</a>.
+If it is not defined, you can help creating one!
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "What is Important?" %}</h3>
+<p>
+{% blocktrans %}
+If you will get to translation in bad shape, there is too much work. Use the
+following rules to find the most important things:
+{% endblocktrans %}
+</p>
+
+<ol>
+<li>{% blocktrans %}
+libgammu messages - there is just few of them and they are used also in Wammu.
+It is just good place to start and get to know some basic terminology.
+{% endblocktrans %}</li>
+<li>{% blocktrans %}
+Wammu translation - the is the application which is most frequently used by
+users with little English knowledge.
+{% endblocktrans %}</li>
+<li>{% blocktrans %}
+gammu translation - it's nice to have but not really a high priority.
+{% endblocktrans %}</li>
+<li>{% blocktrans %}
+Gammu documentation - it would be great to have this translated to many
+languages, but it is huge amount of text to translate.
+{% endblocktrans %}</li>
+</ol>
+
+
+{% endblock %}
+
+
