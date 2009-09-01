@@ -10,7 +10,7 @@
 {% block content %}
 <h2>{% trans "Donate to Gammu" %}</h2>
 
-<h3>{% trans "Donate money" %}</h3>
+<h3>{% trans "Donate Money" %}</h3>
 <p>
 {% blocktrans %}
 Thank you for interesting in donating money to Gammu and Wammu projects. These
@@ -37,5 +37,15 @@ Donors</a>, if you don't want to be listed, click here.
 </p>
 
 {{ form.sandbox }}
+
+<h3>{% trans "Other Options" %}</h3>
+<p>
+{% blocktrans %}
+You can also give some presents to developers, currently here is <a
+href="http://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1">Amazon wishlist for
+Michal Čihař</a>.
+{% endblocktrans %}
+</p>
+
 {% endblock %}
 
