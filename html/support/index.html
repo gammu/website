@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}Support for Wammu and Gammu{% endblock %}
+
+{% block sidebar_top %}
+{% include "support/sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "Support for Wammu and Gammu" %}</h2>
+
+<p>
+{% blocktrans %}
+Gammu and Wammu are free software projects. As such you can get some support
+from the community which is behind the project. The best way where to start is
+usually to check <a href="/docs/">documentation</a> whether you problem is not
+just a configuration issue or some well known situation.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "Communication with Community" %}</h3>
+
+<p>
+{% blocktrans %}
+If the <a href="/docs/">documentation</a> does not help, you can try to look
+at <a href="/support/lists">mailing lists</a>, first looking in the archives
+if somebody did not face the problem. You can also try reaching us on some 
+<a href="/support/online">online communications channels</a> such as Jabber or
+IRC.
+{% endblocktrans %}
+</p>
+
+<h3><a href="/support/bugs">{% trans "Reporting Bugs" %}</a></h3>
+
+<p>
+{% blocktrans %}
+Once you think you have hit a bug or want to file a feature request, please
+use a <a href="/support/bugs">bug tracker</a> to report them. Please be as
+descriptive as possible and do not forget include necessary information to
+reproduce the bug such as debug logs.
+{% endblocktrans %}
+</p>
+
+<h3><a href="/support/buy">{% trans "Commercial Support" %}</a></h3>
+
+<p>
+{% blocktrans %}
+Running some business application using Gammu, you might be interested in
+getting better level of support. Just <a href="/support/buy">contact the
+developers</a> and try to ask them for this.
+{% endblocktrans %}
+</p>
+
+{% endblock %}
+

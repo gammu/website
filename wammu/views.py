@@ -32,3 +32,7 @@ def pygammu(request):
 def libgammu(request):
     return render_to_response('libgammu.html', WammuContext(request, {
     }))
+
+def static(request, page):
+    return render_to_response(page, WammuContext(request, {
+    }))

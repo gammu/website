@@ -19,6 +19,8 @@ urlpatterns = patterns('',
     (r'^libgammu/$', 'wammu.views.libgammu'),
     (r'^python-gammu/$', 'wammu.views.pygammu'),
 
+    (r'^support/$', 'wammu.views.static', {'page': 'support/index.html'}),
+
     # RSS feeds
     (r'^news/(?P<url>(rss|atom).*)/$', 'django.contrib.syndication.views.feed',
         {'feed_dict': feeds}),
