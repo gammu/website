@@ -349,6 +349,7 @@ pre {
     background: #ffe3ad;
     width: auto;
     padding: 0.5em;
+    max-width: 70em;
 }
 
 table.graph td.bar {
