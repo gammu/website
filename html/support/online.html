@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}Online Communication for Wammu and Gammu{% endblock %}
+
+{% block sidebar_top %}
+{% include "support/sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "Online Communication for Wammu and Gammu" %}</h2>
+
+<p>
+{% blocktrans %}
+Online communication is sometimes the best way to diagnose problems, but it is
+not always available, for example you might be in different time zone that
+people you want to chat with or simply the people are busy in this time. You
+can try asking here, but if you do not get any reaction, you should retry
+later or try to use <a href="/support/lists">mailing list</a>.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "Jabber conference room" %}</h3>
+
+<p>
+{% blocktrans %}
+You can solve issues interactively using Jabber conference room <a
+href="xmpp:gammu@conference.cihar.com?join">gammu@conference.cihar.com</a>,
+logs are available at <a
+href="http://logs.cihar.com/jabber/gammu@conference.cihar.com/">logs.cihar.com</a>.
+You can also use web based access to this room using <a
+href="http://jabber.cihar.com/muckl/">MUCkl</a>.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "IRC" %}</h3>
+
+<p>
+{% blocktrans %}
+You are very welcome to #gammu at irc.freenode.net. Feel free to ask there
+your questions. If you don't get the answer immediately, don't worry and
+patiently wait until someone answers. The channel is low volume and it may
+take a while until someone notices your question.
+{% endblocktrans %}
+</p>
+
+
+<p>
+{% blocktrans %}
+You can also find a robot called like CIA-42, which just sends a notifications
+there about every commit made to the Gammu source repository.
+{% endblocktrans %}
+</p>
+
+{% endblock %}
