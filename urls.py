@@ -21,6 +21,7 @@ urlpatterns = patterns('',
 
     (r'^authors/$', 'wammu.views.static', {'page': 'authors.html'}),
     (r'^license/$', 'wammu.views.static', {'page': 'license.html'}),
+    (r'^search/$', 'wammu.views.static', {'page': 'search.html'}),
 
     (r'^support/$', 'wammu.views.static', {'page': 'support/index.html'}),
     (r'^support/bugs/$', 'wammu.views.static', {'page': 'support/bugs.html'}),

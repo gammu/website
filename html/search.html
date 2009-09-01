@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}Wammu and Gammu Search{% endblock %}
+
+{% block content %}
+<h2>{% trans "Wammu and Gammu Search" %}</h2>
+
+<p>
+{% blocktrans %}
+This page provides Google Custom Search optimized for searching about Gammu.
+{% endblocktrans %}
+</p>
+
+<noscript>
+<form action="http://www.google.com/cse" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="008688692096734274889:xuvlsu_agkm" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="31" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+</noscript>
+
+<div id="cse" style="width: 100%;">Loading</div>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+   google.load('search', '1');
+   google.setOnLoadCallback(function(){
+      new google.search.CustomSearchControl('008688692096734274889:xuvlsu_agkm').draw('cse');
+   }, true);
+</script>
+
+{% endblock %}
+
