@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}Mailing Lists for Wammu and Gammu{% endblock %}
+
+{% block sidebar_top %}
+{% include "support/sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "Mailing Lists for Wammu and Gammu" %}</h2>
+
+
+<p>
+{% blocktrans %}
+Mailing lists are the main communication place for the community. Before
+asking questions there, you should search in the <a
+href="http://dir.gmane.org/gmane.linux.drivers.gammu">archives</a> if somebody
+did not already solve similar issue. It sometimes happen that some version has
+well known problems which was faced by many users.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+To post a message to the <a
+href="https://lists.sourceforge.net/lists/listinfo/gammu-users">mailing
+list</a>, you need to be subscribed. While posting a message, please try to
+describe well your problem (basically you should follow same rules as when <a
+href="/support/bugs/">reporting a bug</a>), avoid sending HTML mails and do
+proper quoting of replies, so that it is easy for others to follow the
+discussion.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+Sometimes you can not expect immediate answers on the mailing list, so please
+be patient. People might be on vacation or simply busy with other things.
+Reposting the same message again to the mailing list or directly to authors
+will usually not give you faster answer, it might just upset involved people.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "Other Mailing Lists" %}</h3>
+
+<p>
+{% blocktrans %}
+The main list where the discussion is being held is <a
+href="https://lists.sourceforge.net/lists/listinfo/gammu-users">gammu-users@lists.sourceforge.net</a>.
+It's just generic place where users or developers can discuss anything related
+to Gammu (this includes Wammu or third party frontends like Kalkun).
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+In past, there used to be some problems with licensing of some code in Gammu
+and separate lists for this purpose has been created - <a
+href="https://lists.sourceforge.net/lists/listinfo/gammu-legal">gammu-legal@lists.sourceforge.net</a>.
+It is not much used nowadays, but should you find any legal problems with
+Gammu, please use this mailing list.
+{% endblocktrans %}
+</p>
+
+{% endblock %}
+
+
