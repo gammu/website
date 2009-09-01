@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}Commercial Support for Wammu and Gammu{% endblock %}
+
+{% block sidebar_top %}
+{% include "support/sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "Commercial Support for Wammu and Gammu" %}</h2>
+
+<p>
+{% blocktrans %}
+Want to use Gammu in your commercial product? As long as you obey license
+terms, you are very welcome to do so. The software is licensed under GNU
+General Public License version 2 and there is no option to relicense it for
+you (basically it is technically impossible to get agreement from all
+contributors to change the license).
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+However we can provide you some higher class support for your application.
+Should you need something like this, please do not hesitate to contact us
+either on some public place like <a href="/support/lists/">mailing lists</a>
+or <a href="/support/online/">Jabber or IRC chats</a> or if you do not want to
+disclose you project, you can contact directly <a href="/authors/">authors</a>.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+We do not provide any fixed price support packages, simply because every
+project is really different and it's best to arrange conditions separately to
+match everybody needs.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+If you just want to appreciate level of support you got for free, you can also
+<a href="/donate">donate</a> some money to the project.
+{% endblocktrans %}
+</p>
+
+
+{% endblock %}
+
