@@ -9,6 +9,9 @@
 <p>
 {% blocktrans %}
 This page provides Google Custom Search optimized for searching about Gammu.
+You can also use same search engine directly on <a
+href="http://www.google.com/coop/cse?cx=008688692096734274889%3Axuvlsu_agkm">Google
+pages</a>.
 {% endblocktrans %}
 </p>
 
@@ -31,6 +34,13 @@ This page provides Google Custom Search optimized for searching about Gammu.
       new google.search.CustomSearchControl('008688692096734274889:xuvlsu_agkm').draw('cse');
    }, true);
 </script>
+
+<p>
+{% blocktrans %}
+Please note that the search results are also from third party domains and we
+have no control over the content there.
+{% endblocktrans %}
+</p>
 
 {% endblock %}
 
