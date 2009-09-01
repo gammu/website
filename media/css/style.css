@@ -344,9 +344,9 @@ img.head {
 }
 
 pre {
-    border: 1px solid black;
+    border: 1px solid #7C0000;
     margin: 1em;
-    background: #ccc;
+    background: #ffe3ad;
     width: auto;
     padding: 0.5em;
 }
