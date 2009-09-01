@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}Reporting Bugs in Wammu and Gammu{% endblock %}
+
+{% block sidebar_top %}
+{% include "support/sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "Reporting Bugs in Wammu and Gammu" %}</h2>
+
+<p>
+{% blocktrans %}
+Use <a href="http://bugs.cihar.com/">bug tracker</a> to report a bug or a
+feature requests. Please take care that you include all information necessary
+for the developer to investigate the problem. The most important things to
+include are:
+{% endblocktrans %}
+</p>
+
+<ul>
+<li>
+{% blocktrans %}
+Phone information such as manufacturer and model are really necessary.
+{% endblocktrans %}
+</li>
+<li>
+{% blocktrans %}
+Information about your system and it's version, do you use Windows, some Linux
+distribution, Mac OS X, BSD?
+{% endblocktrans %}
+</li>
+<li>
+{% blocktrans %}
+Configuration you use, you can just include Gammu configuration file.
+{% endblocktrans %}
+</li>
+<li>
+{% blocktrans %}
+Debugging log of the communication, please see bellow how to obtain that.
+{% endblocktrans %}
+</li>
+</ul>
+
+<h3>{% trans "Obtaining Debugging Log" %}</h3>
+
+<p>
+{% blocktrans %}
+Debugging log contains transcription of communication between Gammu and your
+phone. As such it might contain your private data. If it is the case or you
+are not sure, you should mark the bug private, so that only developers are
+allowed to see the data in it, but it is not publicly accessible as other bug
+reports.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+To make Gammu generate debug log, you need to tell it to do so. It is possible
+either by command line (<code>gammu --debug textalldate --debug-file
+/tmp/gammu.log identify</code>) or using configuration file:
+{% endblocktrans %}
+</p>
+
+<pre>
+[gammu]
+connection = your connection setting
+port = your port name
+logformat = textalldate
+logfile = /tmp/gammu.log
+</pre>
+
+<p>
+{% blocktrans %}
+Wammu automatically creates debugging log in temporary directory
+(<code>/tmp</code> on Unix systems or Windows it is usually placed under
+<code>Application Data</code> folder in your profile), where it is kept in
+case Wammu has crashed. You can also save the current debug log while running
+Wammu from Help menu.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+Gammu SMSD logging is configured in more levels, to include all messages, set
+<code>debuglevel</code> to 255:
+{% endblocktrans %}
+</p>
+
+<pre>
+[smsd]
+debuglevel = 255
+logfile = /tmp/smsd.log
+</pre>
+
+{% endblock %}
+
+

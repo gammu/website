@@ -20,6 +20,10 @@ urlpatterns = patterns('',
     (r'^python-gammu/$', 'wammu.views.pygammu'),
 
     (r'^support/$', 'wammu.views.static', {'page': 'support/index.html'}),
+    (r'^support/bugs/$', 'wammu.views.static', {'page': 'support/bugs.html'}),
+    (r'^support/lists/$', 'wammu.views.static', {'page': 'support/lists.html'}),
+    (r'^support/online/$', 'wammu.views.static', {'page': 'support/online.html'}),
+    (r'^support/buy/$', 'wammu.views.static', {'page': 'support/buy.html'}),
 
     # RSS feeds
     (r'^news/(?P<url>(rss|atom).*)/$', 'django.contrib.syndication.views.feed',
