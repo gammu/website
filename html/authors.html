@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}Wammu and Gammu{% endblock %}
+
+{% block content %}
+<h2>{% trans "Authors" %}</h2>
+
+<p>
+{% blocktrans %}
+Lot of people contributed to Gammu, python-gammu and Wammu in the past. You
+can find the most visible here.
+{% endblocktrans %}
+</p>
+
+<h3><a href="http://cihar.com/">Michal Čihař</a></h3>
+
+<p>
+{% blocktrans %}
+Michal has started to contribute somewhere in 2002 with improvements to AT
+module and later contributed module for Alcatel phone. Later he wrote <a
+href="/python-gammu/">Python bindings for Gammu</a> and <a href="/wammu/">GUI
+application on top of it</a>. In 2007 he has become maintainer of the Gammu
+project and he is still in the charge here.
+{% endblocktrans %}
+</p>
+
+<h3><a href="http://www.mwiacek.com/">Marcin Wiącek</a></h3>
+
+<p>
+{% blocktrans %}
+Marcin has originally started the project as fork of Gnokii because he was not
+happy with some parts of the existing code. He did contribute most of core and
+Nokia modules and he did lead the project till January 2007, when he resigned
+because lack of time. He is not active in the project anymore.
+{% endblocktrans %}
+</p>
+
+<h3>Gnokii authors</h3>
+
+<p>
+{% blocktrans %}
+As the code orignally started as the fork of the Gnokii project, we would like
+to thank all contributors there, especially Pavel Janík, Pawel Kot and Manfred
+Jonsson.
+{% endblocktrans %}
+</p>
+
+{% endblock %}

@@ -19,6 +19,8 @@ urlpatterns = patterns('',
     (r'^libgammu/$', 'wammu.views.libgammu'),
     (r'^python-gammu/$', 'wammu.views.pygammu'),
 
+    (r'^authors/$', 'wammu.views.static', {'page': 'authors.html'}),
+
     (r'^support/$', 'wammu.views.static', {'page': 'support/index.html'}),
     (r'^support/bugs/$', 'wammu.views.static', {'page': 'support/bugs.html'}),
     (r'^support/lists/$', 'wammu.views.static', {'page': 'support/lists.html'}),
