@@ -1,10 +1,6 @@
-body {
-    background: url('/media/images/logo.png') no-repeat fixed bottom right;
-}
-
 #header {
     margin: 0px;
-    padding: 1em 2em 1.5em 2em;
+    padding: 1em 2em 0.5em 2em;
 	background: #fbb400; /*#036;*/
 	border: 0px;
     border-bottom: 1px solid #7C0000;
@@ -19,7 +15,7 @@ body {
 }
 
 #header h1 a {
-    color: white;
+	color: #7C0000;
 }
 
 #header ul#links {
@@ -36,7 +32,7 @@ body {
 }
 
 #header #links li a {
-	color: #ffffff;
+	color: #7C0000;
     font-size: larger;
 }
 
@@ -196,6 +192,7 @@ div.clearer {
     clear: both;
     padding: 0;
     margin: 0;
+    height: 0;
 }
 
 div.themeimgborder {
