@@ -1,7 +1,7 @@
 {% load i18n %}
 <ul>
 {% for platform in platforms %}
-<li><a href="./{{ platform.0 }}">{{ platform.1}}</a></li>
+<li><a href="/download/{{ program_name }}/{{ platform.0 }}">{{ platform.1}}</a></li>
 {% endfor %}
 <li><a href="http://packages.debian.org/{{ program_name}}">
     {% trans "Debian packages" %}
