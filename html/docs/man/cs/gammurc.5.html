@@ -1,0 +1,903 @@
+<div class="manpage">
+	
+
+	<h2>
+		GAMMURC
+	</h2>
+	
+Section: Dokumentace Gammu (5)
+	<br/>
+	
+Updated: Leden 4, 2009
+	<br/>
+	
+
+	<a href="#index">
+		Index
+	</a>
+	 
+	<a href="../index.html">
+		Return to Main
+Contents
+	</a>
+	
+
+	<hr/>
+	
+
+	<a id="lbAB" name="lbAB"/>
+	
+
+	<h3>
+		JMÉNO
+	</h3>
+	
+
+	<p>
+		gammurc - konfigurační soubor 
+		<a href="gammu.1.html">
+			gammu
+		</a>
+		(1)
+	</p>
+	
+
+	<p>
+		<a id="lbAC" name="lbAC"/>
+	</p>
+	
+
+	<h3>
+		SYNTAXE
+	</h3>
+	
+
+	<i>
+		/etc/gammurc
+	</i>
+	 nebo 
+	<i>
+		~/.gammurc
+	</i>
+	 
+	<a id="lbAD" name="lbAD"/>
+	
+
+	<h3>
+		POPIS
+	</h3>
+	
+
+	<a href="gammu.1.html">
+		gammu
+	</a>
+	(1) načítá konfiguraci z
+konfiguračního souboru. Jeho umístění je zjištěno přispuštění. Na
+Unixových sytémech se nejdříve zkouší ~/.gammurc a pokud to
+neexistuje, použije se /etc/gammurc.
+
+	<p>
+		Na Windows uživatelská konfigurace je hledána jako profil/Data
+Aplikací/gammurc a poku není nelezen, použije Gammu aktuální
+adresář (./gammurc).
+	</p>
+	
+
+	<p>
+		Tento soubor používá syntaxi ini souborů, komentáře mohou být
+značeny buď ; nebo #. Sekce souboru jsou zapsány v hranatých
+závorkách jako [toto].Všechny hodnoty klíčů nerozlišují velikost
+písmen.
+	</p>
+	
+
+	<p>
+		Konfigurační soubor pro gammu může obsahovat několik sekcí -
+[gammu], [gammu1], [gammuN], ... Každá sekce definuje jedno
+připojení a ve výchozím režime gammu postupně zkouší všechny podle
+čísel. Můžete také zadat parametrem pro 
+		<a href="gammu.1.html">
+			gammu
+		</a>
+		(1), které číslo sekce ([gammu] je číslo 0)
+má použít a pak se použije jen tato sekce.
+	</p>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				Connection
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Protokol, který se použije pro komunikaci s telefonem.
+			</p>
+			
+
+			<p>
+				Pro telefony Nokia připojené kabelem budete chtít použít jedno z
+následujících:
+			</p>
+			
+
+			<p>
+				<b>
+					fbus
+				</b>
+				 - sériové připojení protokolem FBUS
+				<br/>
+				
+
+				<b>
+					fbususb
+				</b>
+				 - FBUS přes USB kabel (experimentální, pro kabely
+Nokia na Linuxu včetně DKU-2)
+				<br/>
+				
+
+				<b>
+					dlr3
+				</b>
+				 - DLR-3 a kompatibilní kabely
+				<br/>
+				
+
+				<b>
+					dku2
+				</b>
+				 - DKU-2 a kompatibilní kabely
+				<br/>
+				
+
+				<b>
+					dku5
+				</b>
+				 - DKU-5 a kompatibilní kabely
+				<br/>
+				
+
+				<b>
+					mbus
+				</b>
+				 - sériové připojení protokolem MBUS
+			</p>
+			
+
+			<p>
+				Pokud nepoužíváte originální kabel, možná budete potřebovat
+připojit -nodtr (například pro kabely používající ARK3116) nebo
+-nopower. Toto nastavení použijte jen v případě, že Gammu správně
+parametery nezjistí automaticky.
+			</p>
+			
+
+			<p>
+				Pro ostatní telefony připojené kabelem budete chtít použít jedno
+z následujících:
+			</p>
+			
+
+			<p>
+				<b>
+					at
+				</b>
+				 - obecné připojení používající AT příkazy
+			</p>
+			
+
+			<p>
+				Můžete volitelně zadat rychlost připojení, například at19200,
+ale toto není nutné pro USB kabely.
+			</p>
+			
+
+			<p>
+				Pro připojení pomocí IrDA použijte jednu z následujících
+možností:
+			</p>
+			
+
+			<p>
+				<b>
+					irdaphonet
+				</b>
+				 - protokol Phonet používaný telefony
+Nokia
+				<br/>
+				
+
+				<b>
+					irdaat
+				</b>
+				 - AT příkazy pro připojení k většině telefonů (toto
+není podporované na Linuxu).
+				<br/>
+				
+
+				<b>
+					irdaobex
+				</b>
+				 - připojení protokolem OBEX (IrMC nebo přenos
+souborů), použitelné pro většinu telefonů.
+				<br/>
+				
+
+				<b>
+					irdagnapbus
+				</b>
+				 - připojení k GNappletu běžícím na telefonech se
+Symbianem.
+			</p>
+			
+
+			<p>
+				Pro připojení pomocí Bluetooth použijte jednu z následujících
+možností:
+			</p>
+			
+
+			<p>
+				<b>
+					bluephonet
+				</b>
+				 - protokol Phonet používaný telefony
+Nokia
+				<br/>
+				
+
+				<b>
+					blueat
+				</b>
+				 - AT příkazy pro připojení k většině telefonů.
+				<br/>
+				
+
+				<b>
+					irdaobex
+				</b>
+				 - připojení protokolem OBEX (IrMC nebo přenos
+souborů), použitelné pro většinu telefonů.
+				<br/>
+				
+
+				<b>
+					bluerfgnapbus
+				</b>
+				 - připojení k GNappletu běžícím na telefonech
+se Symbianem.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				Port
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Zařízení kde je přístupný telefon nebo adresa telefonu, záleží
+na typu připojení.
+			</p>
+			
+
+			<p>
+				Pro kabely nebo emulovaný sériový port zadejte jméno zařízení
+(například /dev/ttyS0, /dev/ttyACM0, /dev/ircomm0, /dev/rfcomm0 na
+Linuxu, /dev/cuad0 na FreeBSD nebo COM1: na Windows). Speciální
+výjjímkou jsou DKU-2 a DKU-5 kabely na Windows, kde je zařízení
+automaticky zjištěno z informací ovladače a tento parametr je
+ignorován.
+			</p>
+			
+
+			<p>
+				Při připojení přes Bluetooth musíte zadat Bluetooth adresu
+vašeho telefonu (na Linuxu můžete zjistit seznam zařízení v dosahu
+pomocí příkazu &quot;hcitool scan&quot;). Volitelně můžete Gammu přinutit
+používat jiný kanál zadáním jeho čísla za lomítko.
+			</p>
+			
+
+			<p>
+				Před použitím Gammu, by vaše zařízení mělo být spárováno s
+počítačem, nebo byste měli mít zapnuto automatické párování.
+			</p>
+			
+
+			<p>
+				Pro připojení přes IrDA se tento parametr vůbec nepoužije.
+			</p>
+			
+
+			<p>
+				Pokud vám IrDA na Linuxu nefunguje, možná potřebujete zapnout
+rozhraní a zapnout objevování zařízení (tyto příkazy musíte
+spouštět jako root):
+			</p>
+			
+
+			<p>
+				<br/>
+				
+iplsdevirda0up
+				<br/>
+				
+
+sysctlnet.irda.discovery=1
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				Model
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Nepoužívejte tento parametr, pokud to není opravdu nutné! Jediná
+situace, kdy může být dobré ho použít, je, když Gammu nezná váš
+telefon a špatně detekuje jeho vlastnosti.
+			</p>
+			
+
+			<p>
+				Speciální případ použití parametru Model je vynucení typu
+připojení přes OBEX namísto ponechání rozhodnutí na Gammu:
+			</p>
+			
+
+			<p>
+				<b>
+					obexfs
+				</b>
+				 - vynutí použití služby na procházení souborů
+(podpora přístupu k souborům)
+				<br/>
+				
+
+				<b>
+					obexirmc
+				</b>
+				 - vynutí použití služby IrMC (kontakty, kalendář a
+poznámky)
+				<br/>
+				
+
+				<b>
+					obexnone
+				</b>
+				 - nebube vybrána žádná služba, toto má jen omezené
+použití pro posílání souborů (příkaz 
+				<b>
+					sendfile
+				</b>
+				)
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				SynchronizeTime
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Určí, zda chcete nastavit čas v telefonu při připojení.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				StartInfo
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Tato volba umožní nastavit (při nastavení na &quot;yes&quot;) zobrazení
+zprávy na displeji telefonu nebo rozsvítit jeho podsvícení při
+připojení. Telefon nebude během připojení vydávat žádné zvuky. Tato
+volba funguje jen s některými telefony Nokia.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				GammuCoding
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Vynutí použití zadaného kódování (například &quot;1250&quot; vynutí
+CP-1250 nebo &quot;utf8&quot; pro UTF-8). Tato volba by obvykle neměla být
+potřeba, Gammu kódování zjištuje podle nastavených locales.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				GammuLoc
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Cesta k adresáři s lokalizačními soubory (adresář by měl
+obsahovat LANG/LC_MESSAGES/gammu.mo). Pokud je gammu správně
+instalované, mělo bypřeklady najít automaticky.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				LogFile
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Cesta k souboru, kde budou uloženy informace o komunikaci s
+telefonem.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				LogFormat
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Určuje co vše se bude logovat do souboru LogFile. Možné hodnoty
+jsou:
+			</p>
+			
+
+			<p>
+				<b>
+					nothing
+				</b>
+				 - žádné ladicí informace
+				<br/>
+				
+
+				<b>
+					text
+				</b>
+				 - základní informace o přenosu v textové podobě
+				<br/>
+				
+
+				<b>
+					textall
+				</b>
+				 - prodrobné informace o přenosu v textové
+podobě
+				<br/>
+				
+
+				<b>
+					textalldate
+				</b>
+				 - prodrobné informace o přenosu v textové
+podobě, s časovou značkou
+				<br/>
+				
+
+				<b>
+					errors
+				</b>
+				 - chyby v textovém formátu
+				<br/>
+				
+
+				<b>
+					errorsdate
+				</b>
+				 - chyby v textovém formátu, s časovou
+značkou
+				<br/>
+				
+
+				<b>
+					binary
+				</b>
+				 - obsah komunikace v binárním formátu
+			</p>
+			
+
+			<p>
+				Pro ladění použijte buď 
+				<b>
+					textalldate
+				</b>
+				 nebo 
+				<b>
+					textall
+				</b>
+				,
+tím budou v logu obsaženy všechny informace potřebné pro
+diagnostiku problému.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				Features
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Vlastní parametry telefonu. Toto může být použito pro přepsání
+parametrů zadaných v common/gsmphones.c, které jsou chybné. Pro
+seznam hodnot se můžete podívat to include/gammu-info.h (všechny
+hodnot GSM_Feature bez prefixu F_). Prosím nahlašte správné hodnoty
+autorům Gammu.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				Use_Locking
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Na Posixových systémech můžete chtít použít zamykání zařízení
+pomocí UUCP zámků. Zapnutím této volby (nastavením na yes) bude
+Gammu dodržovat tyto zámky a vytvářet je při připojování. Na
+většině distribucí pro vytvoření zámku potřebujete dodatečná
+oprávnění (například být členem skupiny uucp).
+			</p>
+			
+
+			<p>
+				Tento parametr nemá na Windows žádný význam.
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAE" name="lbAE"/>
+	
+
+	<h3>
+		PŘÍKLAD
+	</h3>
+	
+
+	<p>
+		Podrobnější příklady jsou dostupné v dokumentaci Gammu.
+	</p>
+	
+
+	<p>
+		Konfigurace Gammu pro telefon Nokia připojený kabelem DLR-3:
+	</p>
+	
+
+	<dl compact="compact">
+		
+
+		<dd>
+			
+
+			<pre>
+				
+[gammu]
+port = /dev/ttyACM0
+connection = dlr3
+
+			</pre>
+		</dd>
+		
+
+	</dl>
+	
+
+	<p>
+		Konfigurace Gammu pro telefon Sony-Ericsson (nebo jiný
+používající AT příkazy) připojený pomocí USB kabelu:
+	</p>
+	
+
+	<dl compact="compact">
+		
+
+		<dd>
+			
+
+			<pre>
+				
+[gammu]
+port = /dev/ttyACM0
+connection = at
+
+			</pre>
+		</dd>
+		
+
+	</dl>
+	
+
+	<p>
+		Konfigurace Gammu pro telefon Sony-Ericsson (nebo jiný
+používající AT příkazy) připojený pomocí Bluetooth:
+	</p>
+	
+
+	<dl compact="compact">
+		
+
+		<dd>
+			
+
+			<pre>
+				
+[gammu]
+port = B0:0B:00:00:FA:CE
+connection = blueat
+
+			</pre>
+		</dd>
+		
+
+	</dl>
+	
+
+	<p>
+		Nastavení Gammu pro telefon, ke kterému se musí připojovan na
+Bluetooth kanálu 42:
+	</p>
+	
+
+	<dl compact="compact">
+		
+
+		<dd>
+			
+
+			<pre>
+				
+[gammu]
+port = B0:0B:00:00:FA:CE/42
+connection = blueat
+
+			</pre>
+		</dd>
+		
+
+	</dl>
+	
+
+	<p>
+		<a id="lbAF" name="lbAF"/>
+	</p>
+	
+
+	<h3>
+		DALŠÍ INFORMACE
+	</h3>
+	
+
+	<a href="gammu-smsd.1.html">
+		gammu-smsd
+	</a>
+	(1), 
+	<a href="gammu.1.html">
+		gammu
+	</a>
+	(1), 
+	<a href="gammurc.5.html">
+		gammurc
+	</a>
+	(5) 
+	<a id="lbAG" name="lbAG"/>
+	
+
+	<h3>
+		AUTOR
+	</h3>
+	
+gammu-smsd a tuto manuálovou stránku napsal Michal Čihař
+&lt;
+	<a href="mailto:michal@cihar.com">
+		michal@cihar.com
+	</a>
+	&gt;.
+
+	<a id="lbAH" name="lbAH"/>
+	
+
+	<h3>
+		COPYRIGHT
+	</h3>
+	
+Copyright © 2009 Michal Čihař a další autoři. Licence GPLv2: GNU
+GPL verze 2 &lt;
+	<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">
+		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+	</a>
+	&gt;
+	<br/>
+	
+
+Tento program je volný software; můžete jej šířit a modifikovat.
+Není poskytována ŽÁDNÁ ZÁRUKA, v rozsahu jaký je povolen zákonem.
+
+	<a id="lbAI" name="lbAI"/>
+	
+
+	<h3>
+		HLÁŠENÍ CHYB
+	</h3>
+	
+Prosím hlašte chyby na &lt;
+	<a href="http://bugs.cihar.com">
+		http://bugs.cihar.com
+	</a>
+	&gt;.
+
+	<hr/>
+	
+
+	<a id="index" name="index"/>
+	
+
+	<h3>
+		Index
+	</h3>
+	
+
+	<dl>
+		
+
+		<dt>
+			<a href="#lbAB">
+				JMÉNO
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAC">
+				SYNTAXE
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAD">
+				POPIS
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAE">
+				PŘÍKLAD
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAF">
+				DALŠÍ INFORMACE
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAG">
+				AUTOR
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAH">
+				COPYRIGHT
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAI">
+				HLÁŠENÍ CHYB
+			</a>
+		</dt>
+		
+
+	</dl>
+	
+
+	<hr/>
+	
+This document was created by man2html, using the manual
+pages.
+	<br/>
+	
+Time: 21:20:27 GMT, September 03, 2009
+
+</div>
+

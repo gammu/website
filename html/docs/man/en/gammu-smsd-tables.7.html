@@ -1,0 +1,1663 @@
+<div class="manpage">
+	
+
+	<h2>
+		GAMMU-SMSD-TABLES
+	</h2>
+	
+Section: Gammu Documentation (7)
+	<br/>
+	
+Updated: August 17, 2009
+	<br/>
+	
+
+	<a href="#index">
+		Index
+	</a>
+	 
+	<a href="../index.html">
+		Return to Main
+Contents
+	</a>
+	
+
+	<hr/>
+	
+
+	<a id="lbAB" name="lbAB"/>
+	
+
+	<h3>
+		NAME
+	</h3>
+	
+
+	<p>
+		gammu-smsd-tables - description of tables for database backends
+of 
+		<a href="gammu-smsd.1.html">
+			gammu-smsd
+		</a>
+		(1)
+	</p>
+	
+
+	<p>
+		<a id="lbAC" name="lbAC"/>
+	</p>
+	
+
+	<h3>
+		DESCRIPTION
+	</h3>
+	
+
+	<a href="gammu-smsd.1.html">
+		gammu-smsd
+	</a>
+	(1) supports several
+backends. Actual backend is chosen in a config file 
+	<a href="gammu-smsdrc.5.html">
+		gammu-smsdrc
+	</a>
+	(5).
+
+	<p>
+		Separate backends are described in their appropriate man pages.
+This manual page describes general database structure and required
+tables.
+	</p>
+	
+
+	<p>
+		More SMS daemons can share single database. If you do not
+specify PhoneID in their configuration, all are treated equally and
+you have no guarantee which one sends outgoing message. If you
+configure PhoneID and use it when inserting message to the outbox
+table (
+		<a href="gammu-smsd-inject.1.html">
+			gammu-smsd-inject
+		</a>
+		(1)
+does this), each SMS daemon will have separate outbox queue.
+	</p>
+	
+
+	<p>
+		<a id="lbAD" name="lbAD"/>
+	</p>
+	
+
+	<h4>
+		Receiving of messages
+	</h4>
+	
+
+	<p>
+		Received messages are stored in inbox table.
+	</p>
+	
+
+	<p>
+		<a id="lbAE" name="lbAE"/>
+	</p>
+	
+
+	<h4>
+		Transmitting of messages
+	</h4>
+	
+
+	<p>
+		Transmitted messages are read from table outbox and possible
+subsequent parts of the same message from outbox_multipart.
+	</p>
+	
+
+	<p>
+		<a id="lbAF" name="lbAF"/>
+	</p>
+	
+
+	<h4>
+		Description of tables
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				daemons
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Information about running daemons.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				gammu
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Table holding single value - version of a database schema. See
+HISTORY for details what has changed.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				inbox
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Table where received messages will be stored.
+			</p>
+			
+
+			<p>
+				Fields description:
+			</p>
+			
+
+			<p>
+				<b>
+					UpdatedInDB
+				</b>
+				 (timestamp)
+				<br/>
+				
+when somebody (daemon, user, etc.) updated it
+			</p>
+			
+
+			<p>
+				<b>
+					ReceivingDateTime
+				</b>
+				 (timestamp)
+				<br/>
+				
+when SMS was received
+			</p>
+			
+
+			<p>
+				<b>
+					Text
+				</b>
+				 (text)
+				<br/>
+				
+encoded SMS text (for all SMS)
+			</p>
+			
+
+			<p>
+				<b>
+					SenderNumber
+				</b>
+				 (varchar(20))
+				<br/>
+				
+decoded SMS sender number
+			</p>
+			
+
+			<p>
+				<b>
+					Coding
+				</b>
+				 (enum('Default_No_Compression',
+'Unicode_No_Compression', '8bit', 'Default_Compression',
+'Unicode_Compression'))
+				<br/>
+				
+SMS text coding
+			</p>
+			
+
+			<p>
+				<b>
+					UDH
+				</b>
+				 (text)
+				<br/>
+				
+encoded User Data Header text
+			</p>
+			
+
+			<p>
+				<b>
+					SMSCNumber
+				</b>
+				 (varchar(20))
+				<br/>
+				
+decoded SMSC number
+			</p>
+			
+
+			<p>
+				<b>
+					Class
+				</b>
+				 (integer)
+				<br/>
+				
+SMS class or -1 (0 is flash SMS, 1 is normal one)
+			</p>
+			
+
+			<p>
+				<b>
+					TextDecoded
+				</b>
+				 (varchar(160))
+				<br/>
+				
+decoded SMS text (for Default Alphabet/Unicode SMS)
+			</p>
+			
+
+			<p>
+				<b>
+					ID
+				</b>
+				 (integer unsigned)
+				<br/>
+				
+SMS identificator (for using with external applications)
+			</p>
+			
+
+			<p>
+				<b>
+					RecipientID
+				</b>
+				 (text)
+				<br/>
+				
+which Gammu daemon has added it
+			</p>
+			
+
+			<p>
+				<b>
+					Processed
+				</b>
+				 (enum('false', 'true'))
+				<br/>
+				
+you can use for marking, whether SMS was processed or not
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				outbox
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Messages enqueued for sending should be placed in this table. If
+message is multipart, subsequent parts are stored in table
+outbox_multipart.
+			</p>
+			
+
+			<p>
+				Fields description:
+			</p>
+			
+
+			<p>
+				<b>
+					UpdatedInDB
+				</b>
+				 (timestamp)
+				<br/>
+				
+when somebody (daemon, user, etc.) updated it
+			</p>
+			
+
+			<p>
+				<b>
+					InsertIntoDB
+				</b>
+				 (timestamp)
+				<br/>
+				
+when message was inserted into database
+			</p>
+			
+
+			<p>
+				<b>
+					SendingDateTime
+				</b>
+				 (timestamp)
+				<br/>
+				
+set it to some value, when want to force sending after some planned
+time
+			</p>
+			
+
+			<p>
+				<b>
+					Text
+				</b>
+				 (text)
+				<br/>
+				
+SMS text encoded using hex values in proper coding. If you want to
+use TextDecoded field, keep this NULL (or empty).
+			</p>
+			
+
+			<p>
+				<b>
+					DestinationNumber
+				</b>
+				 (varchar(20))
+				<br/>
+				
+recipient number
+			</p>
+			
+
+			<p>
+				<b>
+					Coding
+				</b>
+				 (enum('Default_No_Compression',
+'Unicode_No_Compression', '8bit', 'Default_Compression',
+'Unicode_Compression'))
+				<br/>
+				
+SMS text coding
+			</p>
+			
+
+			<p>
+				<b>
+					UDH
+				</b>
+				 (text)
+				<br/>
+				
+User Data Header encoded using hex values which will be used for
+constructing the message. Without this, message will be sent as
+plain text.
+			</p>
+			
+
+			<p>
+				<b>
+					Class
+				</b>
+				 (integer)
+				<br/>
+				
+SMS class or -1 (0 is normal SMS, 1 is flash one)
+			</p>
+			
+
+			<p>
+				<b>
+					TextDecoded
+				</b>
+				 (varchar(160))
+				<br/>
+				
+SMS text in &quot;human readable&quot; form
+			</p>
+			
+
+			<p>
+				<b>
+					ID
+				</b>
+				 (integer unsigned)
+				<br/>
+				
+SMS/SMS sequence ID
+			</p>
+			
+
+			<p>
+				Please note that this number has to be unique also for sentitems
+table, so reusing message IDs might not be a good idea.
+			</p>
+			
+
+			<p>
+				<b>
+					MultiPart
+				</b>
+				 (enum('false','true'))
+				<br/>
+				
+info, whether there are more SMS from this sequence in
+outbox_multipart
+			</p>
+			
+
+			<p>
+				<b>
+					RelativeValidity
+				</b>
+				 (integer)
+				<br/>
+				
+SMS relative validity like encoded using GSM specs
+			</p>
+			
+
+			<p>
+				<b>
+					SenderID
+				</b>
+				 (text)
+				<br/>
+				
+which SMSD instance should send this one sequence
+			</p>
+			
+
+			<p>
+				<b>
+					SendingTimeOut
+				</b>
+				 (timestamp)
+				<br/>
+				
+used by SMSD instance for own targets
+			</p>
+			
+
+			<p>
+				<b>
+					DeliveryReport
+				</b>
+				 (enum('default','yes','no'))
+				<br/>
+				
+when default is used, Delivery Report is used or not according to
+SMSD instance settings; yes forces Delivery Report.
+			</p>
+			
+
+			<p>
+				<b>
+					CreatorID
+				</b>
+				 (text)
+				<br/>
+				
+sender identification, it has to match PhoneID in SMSD
+configuration to make SMSD process this message
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				outbox_multipart
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Data for outgoing multipart messages.
+			</p>
+			
+
+			<p>
+				Fields description:
+			</p>
+			
+
+			<p>
+				<b>
+					ID
+				</b>
+				 (integer unsigned)
+				<br/>
+				
+
+				<b>
+					Text
+				</b>
+				 (text)
+				<br/>
+				
+
+				<b>
+					Coding
+				</b>
+				 (enum('Default_No_Compression',
+'Unicode_No_Compression', '8bit', 'Default_Compression',
+'Unicode_Compression'))
+				<br/>
+				
+
+				<b>
+					UDH
+				</b>
+				 (text)
+				<br/>
+				
+
+				<b>
+					Class
+				</b>
+				 (integer)
+				<br/>
+				
+
+				<b>
+					TextDecoded
+				</b>
+				 (varchar(160))
+				<br/>
+				
+
+				<b>
+					ID
+				</b>
+				 (integer unsigned)
+				<br/>
+				
+the same meaning as values in outbox table
+			</p>
+			
+
+			<p>
+				<b>
+					SequencePosition
+				</b>
+				 (integer)
+				<br/>
+				
+info, what is SMS number in SMS sequence (start at 2, first part is
+in outbox table).
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				phones
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Information about connected phones. This table is periodically
+refreshed and you can get information such as battery or signal
+level from here.
+			</p>
+			
+
+			<p>
+				Fields description:
+			</p>
+			
+
+			<p>
+				<b>
+					ID
+				</b>
+				 (text)
+				<br/>
+				
+PhoneID value
+			</p>
+			
+
+			<p>
+				<b>
+					UpdatedInDB
+				</b>
+				 (timestamp)
+				<br/>
+				
+when this record has been updated
+			</p>
+			
+
+			<p>
+				<b>
+					InsertIntoDB
+				</b>
+				 (timestamp)
+				<br/>
+				
+when this record has been created (when phone has been
+connected)
+			</p>
+			
+
+			<p>
+				<b>
+					TimeOut
+				</b>
+				 (timestamp)
+				<br/>
+				
+when this record expires
+			</p>
+			
+
+			<p>
+				<b>
+					Send
+				</b>
+				 (boolean)
+				<br/>
+				
+currently always true
+			</p>
+			
+
+			<p>
+				<b>
+					Receive
+				</b>
+				 (boolean)
+				<br/>
+				
+currently always true
+			</p>
+			
+
+			<p>
+				<b>
+					IMEI
+				</b>
+				 (text)
+				<br/>
+				
+IMEI of phone
+			</p>
+			
+
+			<p>
+				<b>
+					Client
+				</b>
+				 (text)
+				<br/>
+				
+client name, usually string Gammu with version
+			</p>
+			
+
+			<p>
+				<b>
+					Battery
+				</b>
+				 (integer)
+				<br/>
+				
+battery level in percent (or -1 if unknown)
+			</p>
+			
+
+			<p>
+				<b>
+					Signal
+				</b>
+				 (integer)
+				<br/>
+				
+signal level in percent (or -1 if unknown)
+			</p>
+			
+
+			<p>
+				<b>
+					Sent
+				</b>
+				 (integer)
+				<br/>
+				
+Number of sent SMS messages (SMSD does not reset this counter, so
+it might overflow).
+			</p>
+			
+
+			<p>
+				<b>
+					Received
+				</b>
+				 (integer)
+				<br/>
+				
+Number of received SMS messages (SMSD does not reset this counter,
+so it might overflow).
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sentitems
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Log of sent messages (and unsent ones with error code). Also if
+delivery reports are enabled, message state is updated after
+receiving delivery report.
+			</p>
+			
+
+			<p>
+				Fields description:
+			</p>
+			
+
+			<p>
+				<b>
+					UpdatedInDB
+				</b>
+				 (timestamp)
+				<br/>
+				
+when somebody (daemon, user, etc.) updated it
+			</p>
+			
+
+			<p>
+				<b>
+					InsertIntoDB
+				</b>
+				 (timestamp)
+				<br/>
+				
+when message was inserted into database
+			</p>
+			
+
+			<p>
+				<b>
+					SendingDateTime
+				</b>
+				 (timestamp)
+				<br/>
+				
+when message has been sent
+			</p>
+			
+
+			<p>
+				<b>
+					DeliveryDateTime
+				</b>
+				 (timestamp)
+				<br/>
+				
+Time of receiving delivery report (if it has been enabled).
+			</p>
+			
+
+			<p>
+				<b>
+					Status
+				</b>
+				 (enum('SendingOK', 'SendingOKNoReport',
+'SendingError', 'DeliveryOK', 'DeliveryFailed', 'DeliveryPending',
+'DeliveryUnknown', 'Error'))
+				<br/>
+				
+Status of message sending. SendingError mens that phone failed to
+send the message, Error indicates some other error while processing
+message.
+			</p>
+			
+
+			<p>
+				- 
+				<b>
+					SendingOK
+				</b>
+				 - Message has been sent, waiting for delivery
+report.
+				<br/>
+				
+- 
+				<b>
+					SendingOKNoReport
+				</b>
+				 - Message has been sent without asking
+for delivery report.
+				<br/>
+				
+- 
+				<b>
+					SendingError
+				</b>
+				 - Sending has failed.
+				<br/>
+				
+- 
+				<b>
+					DeliveryOK
+				</b>
+				 - Delivery report arrived and reported
+success.
+				<br/>
+				
+- 
+				<b>
+					DeliveryFailed
+				</b>
+				 - Delivery report arrived and reports
+failure.
+				<br/>
+				
+- 
+				<b>
+					DeliveryPending
+				</b>
+				 - Delivery report announced pending
+deliver.
+				<br/>
+				
+- 
+				<b>
+					DeliveryUnknown
+				</b>
+				 - Delivery report reported unknown
+status.
+				<br/>
+				
+- 
+				<b>
+					Error
+				</b>
+				 - Some other error happened during sending (usually
+bug in SMSD).
+			</p>
+			
+
+			<p>
+				<b>
+					StatusError
+				</b>
+				 (integer)
+				<br/>
+				
+Status of delivery from delivery report message, codes are defined
+in GSM specification.
+			</p>
+			
+
+			<p>
+				<b>
+					Text
+				</b>
+				 (text)
+				<br/>
+				
+SMS text encoded using hex values
+			</p>
+			
+
+			<p>
+				<b>
+					DestinationNumber
+				</b>
+				 (varchar(20))
+				<br/>
+				
+decoded destination number for SMS
+			</p>
+			
+
+			<p>
+				<b>
+					Coding
+				</b>
+				 (enum('Default_No_Compression',
+'Unicode_No_Compression', '8bit', 'Default_Compression',
+'Unicode_Compression'))
+				<br/>
+				
+SMS text coding
+			</p>
+			
+
+			<p>
+				<b>
+					UDH
+				</b>
+				 (text)
+				<br/>
+				
+User Data Header encoded using hex values
+			</p>
+			
+
+			<p>
+				<b>
+					SMSCNumber
+				</b>
+				 (varchar(20))
+				<br/>
+				
+decoded number of SMSC, which sent SMS
+			</p>
+			
+
+			<p>
+				<b>
+					Class
+				</b>
+				 (integer)
+				<br/>
+				
+SMS class or -1 (0 is normal SMS, 1 is flash one)
+			</p>
+			
+
+			<p>
+				<b>
+					TextDecoded
+				</b>
+				 (varchar(160))
+				<br/>
+				
+SMS text in &quot;human readable&quot; form
+			</p>
+			
+
+			<p>
+				<b>
+					ID
+				</b>
+				 (integer unsigned)
+				<br/>
+				
+SMS ID
+			</p>
+			
+
+			<p>
+				<b>
+					SenderID
+				</b>
+				 (text)
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAG" name="lbAG"/>
+	
+
+	<h4>
+		Injecting a message using SQL
+	</h4>
+	
+
+	<p>
+		<br/>
+		
+which SMSD instance sent this one sequence
+	</p>
+	
+
+	<p>
+		<b>
+			SequencePosition
+		</b>
+		 (integer)
+		<br/>
+		
+SMS number in SMS sequence
+	</p>
+	
+
+	<p>
+		<b>
+			TPMR
+		</b>
+		 (integer)
+		<br/>
+		
+Message Reference like in GSM specs
+	</p>
+	
+
+	<p>
+		<b>
+			RelativeValidity
+		</b>
+		 (integer)
+		<br/>
+		
+SMS relative validity like encoded using GSM specs
+	</p>
+	
+
+	<p>
+		<b>
+			CreatorID
+		</b>
+		 (text)
+		<br/>
+		
+copied from CreatorID from outbox table, matches PhoneID
+	</p>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				pbk
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Not used by SMSD currently, included only for application
+usage.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				pbk_groups
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Not used by SMSD currently, included only for application
+usage.
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAH" name="lbAH"/>
+	
+
+	<h3>
+		HISTORY
+	</h3>
+	
+
+	<p>
+		History of schema versions:
+	</p>
+	
+
+	<p>
+		11 - all fields for storing message text are no longer limited
+to 160 chars, but are arbitrary length text fields (1.25.92)
+	</p>
+	
+
+	<p>
+		10 - DeliveryDateTime is now NULL when message is not delivered,
+added several indexes
+	</p>
+	
+
+	<p>
+		9 - added sent/received counters to phones table
+	</p>
+	
+
+	<p>
+		8 - introduced phones table
+	</p>
+	
+
+	<p>
+		7 - added CreatorID to tables (it holds PhoneID if set)
+	</p>
+	
+
+	<p>
+		<a id="lbAI" name="lbAI"/>
+	</p>
+	
+
+	<h3>
+		EXAMPLE
+	</h3>
+	
+
+	<p>
+		<a id="lbAJ" name="lbAJ"/>
+	</p>
+	
+
+	<h4>
+		Creating tables
+	</h4>
+	
+
+	<p>
+		SQL scripts to create all needed tables for most databases are
+included in Gammu documentation (docs/sql). As well as some PHP
+scripts interacting with the database.
+	</p>
+	
+
+	<p>
+		For example to create SQLite tables, issue following
+command:
+		<br/>
+		
+
+		<br/>
+		
+sqlite3smsd.db&lt;docs/sql/sqlite.sql
+	</p>
+	
+
+	<p>
+		<a id="lbAK" name="lbAK"/>
+	</p>
+	
+
+	<h4>
+		Injecting a message using SQL
+	</h4>
+	
+
+	<p>
+		To send a message, you can either use 
+		<a href="gammu-smsd-inject.1.html">
+			gammu-smsd-inject
+		</a>
+		(1), which does all
+the magic for you, or you can insert the message manually. The
+simplest example is short text message:
+	</p>
+	
+
+	<p>
+		<br/>
+		
+INSERTINTOoutbox(
+		<br/>
+		
+DestinationNumber,
+		<br/>
+		
+
+TextDecoded,
+		<br/>
+		
+CreatorID,
+		<br/>
+		
+Coding
+		<br/>
+		
+)VALUES(
+		<br/>
+		
+'800123465',
+		<br/>
+		
+
+'ThisisaSQLtestmessage',
+		<br/>
+		
+
+'Program',
+		<br/>
+		
+'Default_No_Compression'
+		<br/>
+		
+
+);
+	</p>
+	
+
+	<p>
+		<a id="lbAL" name="lbAL"/>
+	</p>
+	
+
+	<h4>
+		Injecting long message using SQL
+	</h4>
+	
+
+	<p>
+		Inserting multipart messages is a bit more tricky, you need to
+construct also UDH header. For example long text message would look
+like (please note that each UDH needs to contain number of parts
+and sequence position as last two bytes, the D3 value in example is
+message reference number, it can be anything):
+	</p>
+	
+
+	<p>
+		<br/>
+		
+INSERTINTOoutbox(
+		<br/>
+		
+CreatorID,
+		<br/>
+		
+MultiPart,
+		<br/>
+		
+DestinationNumber,
+		<br/>
+		
+
+UDH,
+		<br/>
+		
+TextDecoded,
+		<br/>
+		
+Coding
+		<br/>
+		
+)VALUES(
+		<br/>
+		
+'Gammu1.23.91',
+		<br/>
+		
+
+'true',
+		<br/>
+		
+'123465',
+		<br/>
+		
+'050003D30201',
+		<br/>
+		
+
+'Mqukqiripyakonejeqniurejropocejorhugiygydewltfejnrupxujobxuemymiyliralj.TetvyjuhqaxumuribewfoiwszuucoztdygugelumLejqigqesyklkyajdytbez',
+		<br/>
+		
+
+'Default_No_Compression'
+		<br/>
+		
+
+)
+	</p>
+	
+
+	<p>
+		<br/>
+		
+INSERTINTOoutbox_multipart(
+		<br/>
+		
+
+SequencePosition,
+		<br/>
+		
+
+UDH,
+		<br/>
+		
+Class,
+		<br/>
+		
+TextDecoded,
+		<br/>
+		
+ID,
+		<br/>
+		
+Coding
+		<br/>
+		
+)VALUES(
+		<br/>
+		
+2,
+		<br/>
+		
+'050003D30202',
+		<br/>
+		
+
+'uxewzqisubevumxyzkufuylehyzc.Nsexobqdfolizygqysjtbvowsyhyhyemimovutpapeaempyegiuuwbib.',
+		<br/>
+		
+
+&lt;ID_OF_INSERTED_RECORD_IN_OUBOX_TABLE&gt;,
+		<br/>
+		
+
+'Default_No_Compression'
+		<br/>
+		
+
+)
+	</p>
+	
+
+	<p>
+		<a id="lbAM" name="lbAM"/>
+	</p>
+	
+
+	<h3>
+		SEE ALSO
+	</h3>
+	
+Database backends: 
+	<a href="gammu-smsd-mysql.7.html">
+		gammu-smsd-mysql
+	</a>
+	(7), 
+	<a href="gammu-smsd-pgsql.7.html">
+		gammu-smsd-pgsql
+	</a>
+	(7), 
+	<a href="gammu-smsd-dbi.7.html">
+		gammu-smsd-dbi
+	</a>
+	(7)
+
+	<p>
+		<a href="gammu-smsd.1.html">
+			gammu-smsd
+		</a>
+		(1), 
+		<a href="gammu-smsdrc.5.html">
+			gammu-smsdrc
+		</a>
+		(5), 
+		<a href="gammu.1.html">
+			gammu
+		</a>
+		(1), 
+		<a href="gammurc.5.html">
+			gammurc
+		</a>
+		(5) 
+		<a id="lbAN" name="lbAN"/>
+	</p>
+	
+
+	<h3>
+		AUTHOR
+	</h3>
+	
+gammu-smsd and this manual page were written by Michal Cihar
+&lt;
+	<a href="mailto:michal@cihar.com">
+		michal@cihar.com
+	</a>
+	&gt;.
+
+	<a id="lbAO" name="lbAO"/>
+	
+
+	<h3>
+		COPYRIGHT
+	</h3>
+	
+Copyright © 2009 Michal Cihar and other authors. License GPLv2: GNU
+GPL version 2 &lt;
+	<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">
+		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+	</a>
+	&gt;
+	<br/>
+	
+
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law. 
+	<a id="lbAP" name="lbAP"/>
+	
+
+	<h3>
+		REPORTING BUGS
+	</h3>
+	
+Please report bugs to &lt;
+	<a href="http://bugs.cihar.com">
+		http://bugs.cihar.com
+	</a>
+	&gt;.
+
+	<hr/>
+	
+
+	<a id="index" name="index"/>
+	
+
+	<h3>
+		Index
+	</h3>
+	
+
+	<dl>
+		
+
+		<dt>
+			<a href="#lbAB">
+				NAME
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAC">
+				DESCRIPTION
+			</a>
+		</dt>
+		
+
+		<dd>
+			
+
+			<dl>
+				
+
+				<dt>
+					<a href="#lbAD">
+						Receiving of messages
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAE">
+						Transmitting of messages
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAF">
+						Description of tables
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAG">
+						Injecting a message using SQL
+					</a>
+				</dt>
+				
+
+			</dl>
+			
+
+		</dd>
+		
+
+		<dt>
+			<a href="#lbAH">
+				HISTORY
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAI">
+				EXAMPLE
+			</a>
+		</dt>
+		
+
+		<dd>
+			
+
+			<dl>
+				
+
+				<dt>
+					<a href="#lbAJ">
+						Creating tables
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAK">
+						Injecting a message using SQL
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAL">
+						Injecting long message using SQL
+					</a>
+				</dt>
+				
+
+			</dl>
+			
+
+		</dd>
+		
+
+		<dt>
+			<a href="#lbAM">
+				SEE ALSO
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAN">
+				AUTHOR
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAO">
+				COPYRIGHT
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAP">
+				REPORTING BUGS
+			</a>
+		</dt>
+		
+
+	</dl>
+	
+
+	<hr/>
+	
+This document was created by man2html, using the manual
+pages.
+	<br/>
+	
+Time: 21:20:27 GMT, September 03, 2009
+
+</div>
+

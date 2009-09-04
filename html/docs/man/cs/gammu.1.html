@@ -1,0 +1,8859 @@
+<div class="manpage">
+	
+
+	<h2>
+		GAMMU
+	</h2>
+	
+Section: Dokumentace Gammu (1)
+	<br/>
+	
+Updated: Srpen 11 2009
+	<br/>
+	
+
+	<a href="#index">
+		Index
+	</a>
+	 
+	<a href="../index.html">
+		Return to Main
+Contents
+	</a>
+	
+
+	<hr/>
+	
+
+	<p>
+		<a id="lbAB" name="lbAB"/>
+	</p>
+	
+
+	<h3>
+		JMÉNO
+	</h3>
+	
+
+	<p>
+		Gammu - Provádí různé zajímavé věci s vaším mobilním telefonem
+nebo modemem.
+	</p>
+	
+
+	<p>
+		<a id="lbAC" name="lbAC"/>
+	</p>
+	
+
+	<h3>
+		SYNTAXE
+	</h3>
+	
+
+	<p>
+		Použití: gammu [
+		<i>
+			parametry
+		</i>
+		] &lt;příkaz&gt;
+[
+		<i>
+			volby
+		</i>
+		]
+	</p>
+	
+
+	<p>
+		<a id="lbAD" name="lbAD"/>
+	</p>
+	
+
+	<h3>
+		POPIS
+	</h3>
+	
+
+	<p>
+		Tento program pracuje s mobilními telefony. Podporováno je mnoho
+výrobců, pro aktuální seznam se podívejte na &lt;
+		<a href="http://cz.cihar.com/gammu/phonedb/">
+			http://cz.cihar.com/gammu/phonedb/
+		</a>
+		&gt;.
+	</p>
+	
+
+	<p>
+		<a id="lbAE" name="lbAE"/>
+	</p>
+	
+
+	<h3>
+		PARAMETRY
+	</h3>
+	
+
+	<p>
+		Parametry před příkazem upravují chování gammu:
+		<br/>
+		
+-c / --config &lt;soubor&gt; ... jméno konfiguračního souboru
+		<br/>
+		
+-s / --section &lt;číslokonf&gt; ... číslo konfigurace, která se má
+použít, např. 42
+		<br/>
+		
+-d / --debug &lt;úroveň&gt; ... ladicí úroveň (v 
+		<a href="gammurc.5.html">
+			gammurc
+		</a>
+		(5) jsou popsány možné hodnoty)
+		<br/>
+		
+-f / --debug-file &lt;soubor&gt; ... soubor pro zapisování ladicích
+zpráv
+	</p>
+	
+
+	<p>
+		<a id="lbAF" name="lbAF"/>
+	</p>
+	
+
+	<h4>
+		Příkazy
+	</h4>
+	
+
+	<p>
+		Příkazy mohou být zadány s i bez úvodního --.
+	</p>
+	
+
+	<p>
+		<a id="lbAG" name="lbAG"/>
+	</p>
+	
+
+	<h4>
+		Hovory
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				answercall
+			</b>
+			 
+			<i>
+				[ID]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přijmout příchozí hovor.
+		</dd>
+		
+
+		<dt>
+			<b>
+				cancelcall
+			</b>
+			 
+			<i>
+				[ID]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zrušit příchozí hovor.
+		</dd>
+		
+
+		<dt>
+			<b>
+				canceldiverts
+			</b>
+		</dt>
+		
+
+		<dd>
+			Zruší všechna přesměrování hovorů.
+		</dd>
+		
+
+		<dt>
+			<b>
+				conferencecall
+			</b>
+			 
+			<i>
+				ID
+			</i>
+		</dt>
+		
+
+		<dd>
+			Začne konferenční hovor.
+		</dd>
+		
+
+		<dt>
+			<b>
+				dialvoice
+			</b>
+			 
+			<i>
+				number [show|hide]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Začne hlasový hovor prostřednictvím linky nastavené na SIM
+kartě.
+
+			<p>
+				<b>
+					show|hide
+				</b>
+				 - volitelný parametry jestli zakázat zobrazení
+čísla volanému.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				divert
+			</b>
+			 
+			<i>
+				get|set all|busy|noans|outofreach
+all|voice|fax|data [number timeout]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Upraví nebo zobrazí přesměrování hovorů.
+
+			<p>
+				<b>
+					get|set
+				</b>
+				 - jestli načíst informace o přesměrováních nebo
+je změnít.
+			</p>
+			
+
+			<p>
+				<b>
+					all|busy|noans|outofreach
+				</b>
+				 - podmínka kdy se provede
+přesměrování
+			</p>
+			
+
+			<p>
+				<b>
+					all|voice|fax|data
+				</b>
+				 - typ hovoru při kterém se má
+přesměrovat
+			</p>
+			
+
+			<p>
+				number - číslo kam chcete přesměrovat
+			</p>
+			
+
+			<p>
+				timeout - doba po které se má přesměrování provést
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				getspeeddial
+			</b>
+			 
+			<i>
+				start [stop]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte seznam rychlého vytáčení.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getussd
+			</b>
+			 
+			<i>
+				code
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte USSD informace - vytvočí servisní číslo a načtě
+odpověď.
+		</dd>
+		
+
+		<dt>
+			<b>
+				holdcall
+			</b>
+			 
+			<i>
+				ID
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidrží hovor.
+		</dd>
+		
+
+		<dt>
+			<b>
+				maketerminatedcall
+			</b>
+			 
+			<i>
+				number length [show|hide]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Začne hlasový hovor prostřednictvím linky nastavené na SIM
+kartě, který bude ukončen po 
+			<b>
+				length
+			</b>
+			 sekundách.
+		</dd>
+		
+
+		<dt>
+			<b>
+				monitor
+			</b>
+			 
+			<i>
+				[times]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Periodicky zobrazuje informace o stavu telefonu. Program
+přerušíte stisknutím Ctrl+C.
+		</dd>
+		
+
+		<dt>
+			<b>
+				senddtmf
+			</b>
+			 
+			<i>
+				sequence
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přehraje DTMF tóny. V některých telefonech je toto k dispozici
+jen během hovoru.
+		</dd>
+		
+
+		<dt>
+			<b>
+				splitcall
+			</b>
+			 
+			<i>
+				ID
+			</i>
+		</dt>
+		
+
+		<dd>
+			Rozdělí hovor.
+		</dd>
+		
+
+		<dt>
+			<b>
+				switchcall
+			</b>
+			 
+			<i>
+				[ID]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přepne hovor.
+		</dd>
+		
+
+		<dt>
+			<b>
+				transfercall
+			</b>
+			 
+			<i>
+				[ID]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přenese hovor.
+		</dd>
+		
+
+		<dt>
+			<b>
+				unholdcall
+			</b>
+			 
+			<i>
+				ID
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zruší přdržení hovoru.
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAH" name="lbAH"/>
+	
+
+	<h4>
+		SMS a EMS
+	</h4>
+	
+
+	<p>
+		Posílání zpráv může na první pohled vypadat komplikovaně. Ale
+buďte trpěliví, parametry byly navrženy tak, aby umožňovaly téměř
+libovolné použití. V části PŘÍKLAD naleznete některé ukázky
+posílání zpráv.
+	</p>
+	
+
+	<p>
+		Pokud chcete posílat nebo přijímat více zpráv a zpracovávat je
+automaticky, máte také možnost použít 
+		<a href="gammu-smsd.1.html">
+			gammu-smsd
+		</a>
+		(1).
+	</p>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				Společné parametry pro sendsms a savesms
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				<b>
+					-smscset number
+				</b>
+				 - číslo centra zpráv (SMSC) bude načteno
+ze zadané pozice v telefonu. Výchozí je 1
+			</p>
+			
+
+			<p>
+				<b>
+					-smscnumber number
+				</b>
+				 - číslo centra zpráv (SMSC)
+			</p>
+			
+
+			<p>
+				<b>
+					-reply
+				</b>
+				 - vynutit odpověď přes stejné SMSC
+			</p>
+			
+
+			<p>
+				<b>
+					-maxnum number
+				</b>
+				 - Omezí maximální počet zpráv, které budou
+vytvořeny. Pokud by jich bylo více, Gammu skončí s chybou.
+			</p>
+			
+
+			<p>
+				<b>
+					-folder number
+				</b>
+				 - uloží do zadané složky
+			</p>
+			
+
+			<p>
+				Složky číslujte od 1.
+			</p>
+			
+
+			<p>
+				Nejčastěji jsou složky 1 = &quot;Příchozí&quot;, 2 = &quot;Odchozí&quot;,atd.
+Použijte 
+				<b>
+					getsmsfolders
+				</b>
+				 pro zjištění skutečného seznamu
+složek pro váš telefon.
+			</p>
+			
+
+			<p>
+				<b>
+					-unread
+				</b>
+				 - označí zprávu jako nepřečtenou. U některých
+telefonů (jako 6210) však neuvidíte indikaci nepřečtené zprávy v
+telefonu. U některých telefonů s interní pamětí na SMS (jako 6210)
+bude po použití složky 1 uložena zpráva na SIM kartu.
+			</p>
+			
+
+			<p>
+				<b>
+					-read
+				</b>
+				 - označí zprávu jako přečtenou. U některých
+telefonů s interní pamětí na SMS (jako 6210) bude po použití složky
+1 uložena zpráva na SIM kartu.
+			</p>
+			
+
+			<p>
+				<b>
+					-unsent
+				</b>
+				 - označí zprávu jako neodeslanou
+			</p>
+			
+
+			<p>
+				<b>
+					-sent
+				</b>
+				 - označí zprávu jako odeslanou
+			</p>
+			
+
+			<p>
+				<b>
+					-sender number
+				</b>
+				 - nastaví číslo odesílatele
+			</p>
+			
+
+			<p>
+				<b>
+					-smsname name
+				</b>
+				 - nastaví jméno zprávy
+			</p>
+			
+
+			<p>
+				<b>
+					-sender number
+				</b>
+				 - nastaví odesílatele na number (výchozí:
+&quot;Gammu&quot;)
+			</p>
+			
+
+			<p>
+				<b>
+					-report
+				</b>
+				 - vyžadovat doručenku pro zprávu
+			</p>
+			
+
+			<p>
+				<b>
+					-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX
+				</b>
+				 - nastaví jak
+dlouho bude zpráva platná (SMSC zruší zprávu po této době pokud se
+jí nepodařilo doručit).
+			</p>
+			
+
+			<p>
+				<b>
+					-save
+				</b>
+				 - zpráva bude před odesláním uložena do
+telefonu
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				addsms
+			</b>
+			 
+			<i>
+				folder file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá SMS zprávy ze souboru (formát jako používá backupsms) do
+zvolené složky v telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				addsmsfolder
+			</b>
+			 
+			<i>
+				name
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				backupsms
+			</b>
+			 
+			<i>
+				file [-yes|-all]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Uloží všechny SMS z telefonu do souboru.
+
+			<p>
+				Použijte -yes pro odpověď ano na všechny otázky (zazálohovat
+všechny zprávy a odstranit je z telefonu) nebo -all pro zálohu
+všech zpráv a ponechání jich v telefonu.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				deleteallsms
+			</b>
+			 
+			<i>
+				folder
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odstraní všechny SMS ze zadané složky.
+		</dd>
+		
+
+		<dt>
+			<b>
+				deletesms
+			</b>
+			 
+			<i>
+				folder start [stop]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Ostraní SMS z telefonu. Popis zadávání umístění a složek v
+telefonu naleznete u 
+			<b>
+				getsms
+			</b>
+			.
+
+			<p>
+				Umístění číslujte od 1.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				displaysms
+			</b>
+			 
+			<i>
+				... (options like in sendsms)
+			</i>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Zobrazí PDU data zakódované SMS zprávy. Používá stejné parametry
+a chová se stejně jako sendsms.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				getallsms
+			</b>
+			 
+			<i>
+				-pbk
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte všechny zprávy z telefonu. U některých telefonu načte
+také šablony zpráv a informace o uložených obrázcích. U každé
+zprávy uvidíte umístění, pokud chcete získat jednotlivou zprávu,
+použijte 
+			<b>
+				gammu getsms 0 location
+			</b>
+		</dd>
+		
+
+		<dt>
+			<b>
+				geteachsms
+			</b>
+			 
+			<i>
+				-pbk
+			</i>
+		</dt>
+		
+
+		<dd>
+			Podobné jako 
+			<b>
+				getallsms
+			</b>
+			, jen dlouhé zprávy budu spojeny a
+dekódovány dohromady.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getsms
+			</b>
+			 
+			<i>
+				folder start [stop]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte SMS.
+
+			<p>
+				Umístění číslujte od 1.
+			</p>
+			
+
+			<p>
+				Pokud zadáte složku 0, sms bude načtena z &quot;jednolité&quot; paměti
+(všechny SMS ze všech složek mají unikátní čísla). V některých
+případech je toto chování emulováno Gammu. Můžete ho proto použít
+se všemi telefony.
+			</p>
+			
+
+			<p>
+				When give folder 1, 2, etc. sms are taken from Inbox, Outbox,
+etc. and each sms has unique number in his folder. Name of folders
+can depend on your phone (the most often 1=&quot;Inbox&quot;, 2=&quot;Outbox&quot;,
+etc.). This method is not supported by all phones (for example, not
+supported by Nokia 3310, 5110, 6110). If work with your phone, use
+
+				<b>
+					getsmsfolders
+				</b>
+				 to get folders list.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				getsmsc
+			</b>
+			 
+			<i>
+				[start [stop]]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte nastavení SMS zpráv ze SIM karty.
+
+			<p>
+				Umístění číslujte od 1.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				getsmsfolders
+			</b>
+		</dt>
+		
+
+		<dd>
+			Načte s telefonu názvy složek se zprávami.
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokiagett9
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				restoresms
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Obnoví SMS zprávy ze souboru (z formátu který používá příkaz
+backupsms) do zvolené složky v telefonu. Pokud to telefon
+podporuje, budou stávající zprávy ve složce přepsány!
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms ANIMATION
+			</b>
+			 
+			<i>
+				frames file1 file2... [-folder id]
+[-unread] [-read] [-unsent] [-sent] [-sender number] [-smsname
+name] [-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Uloží animaci jako SMS. Musíte zadat počet snímků a obrázek pro
+každý snímek. Každý obrázek může být v libovolném formátu, který
+Gammu podporuje (ČB bmp, gif, wbmp, nol, nlm,...).
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms BOOKMARK
+			</b>
+			 
+			<i>
+				file location [-folder id] [-unread]
+[-read] [-unsent] [-sent] [-sender number] [-smsname name]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte WAP záložky ze souboru vytvořeného příkazem 
+			<b>
+				backup
+			</b>
+			
+a uloží je ve formátu Nokie jako SMS
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms CALENDAR
+			</b>
+			 
+			<i>
+				file location [-folder id] [-unread]
+[-read] [-unsent] [-sent] [-sender number] [-smsname name]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte kalendář ze zálohy (formáty jaké vytváří funkce
+
+			<b>
+				backup
+			</b>
+			) a uloží ho do telefonu jako SMS ve formátu VCALENDAR
+1.0.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms CALLER
+			</b>
+			 
+			<i>
+				file [-folder id] [-unread] [-read]
+[-unsent] [-sent] [-sender number] [-smsname name] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Uloží logo volajícího jako SMS (formát pro Nokia - velikost
+72x14).
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms EMS
+			</b>
+			 
+			<i>
+				[-folder id] [-unread] [-read] [-unsent]
+[-sent] [-sender number] [-smsname name] [-smscset number]
+[-smscnumber number] [-reply] [-maxsms num] [-unicode] [-16bit]
+[-format lcrasbiut] [-text text] [-unicodefiletext file] [-defsound
+ID] [-defanimation ID] [-tone10 file] [-tone10long file] [-tone12
+file] [-tone12long file] [-toneSE file] [-toneSElong file]
+[-fixedbitmap file] [-variablebitmap file] [-variablebitmaplong
+file] [-animation frames file1 ...] [-protected number]
+			</i>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Uloží EMS zprávu. Všechny parametry uvedené za 
+				<b>
+					-unread
+				</b>
+				
+(například 
+				<b>
+					-defsound
+				</b>
+				) mohou být použity opakovaně.
+			</p>
+			
+
+			<p>
+				<b>
+					-text
+				</b>
+				 - přidá text
+			</p>
+			
+
+			<p>
+				<b>
+					-unicodefiletext
+				</b>
+				 - přidá text ze souboru v unicode
+			</p>
+			
+
+			<p>
+				<b>
+					-defanimation
+				</b>
+				 - přidá předdefinovanou animaci podle
+zadaného ID. Některé telefony mohou podporovat více ID a ty nemusí
+odpovídat jiným značkám telefonů.
+			</p>
+			
+
+			<p>
+				<b>
+					-animation
+				</b>
+				 - přidá &quot;frames&quot; snímků animace načtených ze
+souborů file1, file2, atd.
+			</p>
+			
+
+			<p>
+				<b>
+					-defsound
+				</b>
+				 - přidá předdefinovaný zvuk podle zadaného ID.
+Některé telefony mohou podporovat více ID a ty nemusí odpovídat
+jiným značkám telefonů.
+			</p>
+			
+
+			<p>
+				<b>
+					-tone10
+				</b>
+				 - přidá vyzvánění ve formátu iMelody verze 1.0
+načtené z RTTL nebo komatibilního souboru.
+			</p>
+			
+
+			<p>
+				<b>
+					-tone10long
+				</b>
+				 - přidá vyzvánění ve formátu iMelody verze
+1.0 ve formátu s UPI v několika SMS zprávách. Telefony podporující
+UPI (například Sony-Ericsson) načtou takové vyzvánění jako
+jedno.
+			</p>
+			
+
+			<p>
+				<b>
+					-tone12
+				</b>
+				 - přidá vyzvánění ve formátu iMelody verze 1.2s
+načtené z RTTL nebo komatibilního souboru.
+			</p>
+			
+
+			<p>
+				<b>
+					-tone12long
+				</b>
+				 - přidá vyzvánění ve formátu iMelody verze
+1.2 ve formátu s UPI v několika SMS zprávách. Telefony podporující
+UPI (například Sony-Ericsson) načtou takové vyzvánění jako
+jedno.
+			</p>
+			
+
+			<p>
+				<b>
+					-toneSE
+				</b>
+				 - přidá vyzvánění ve formátu iMelody v &quot;krátké&quot;
+formě jak je podporováno telefony Sony-Ericssonn.
+			</p>
+			
+
+			<p>
+				<b>
+					-variablebitmap
+				</b>
+				 - obrázek libovolné velikosti uložený v
+jedné SMS
+			</p>
+			
+
+			<p>
+				<b>
+					-variablebitmaplong
+				</b>
+				 - obrázek o maximální velikosti
+96x128 uložený v jedné nebo více zpráv
+			</p>
+			
+
+			<p>
+				<b>
+					-fixedbitmap
+				</b>
+				 - obrázek o velikosti 16x16 nebo 32x32
+			</p>
+			
+
+			<p>
+				<b>
+					-protected
+				</b>
+				 - all ringtones and bitmaps after this
+parameter (excluding default ringtones and logos) will be
+&quot;protected&quot; (in phones compatible with ODI like SonyEricsson
+products it won't be possible to forward them from phone menu)
+			</p>
+			
+
+			<p>
+				<i>
+					Příklad:
+				</i>
+				 gammu savesms EMS -text &quot;Pozdrav&quot; -defsound 1
+-text &quot;od Gammu&quot; -tone10 axelf.txt -animation 2 file1.bmp
+file2.bmp
+			</p>
+			
+
+			<p>
+				vytvoří EMS zprávu s textem &quot;Pozdrav&quot;, předdefinovaným zvukem 1,
+textem &quot;od Gammu&quot;, vyzvánění axelf.txt a animací o dvou obrázcích
+složených ze souborů (1. snímek) 1.bmp a (2. snímek) 2.bmp
+			</p>
+			
+
+			<p>
+				<i>
+					Příklad:
+				</i>
+				 gammu savesms EMS -protected 2
+-variablebitmaplong ala.bmp -toneSElong axelf.txt -toneSE
+ring.txt
+			</p>
+			
+
+			<p>
+				ala.bmp a axelf.txt budouch &quot;chráněné&quot;
+			</p>
+			
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms MMSINDICATOR
+			</b>
+			 
+			<i>
+				URL Title Sender [-folder id]
+[-unread] [-read] [-unsent] [-sent] [-sender number] [-smsname
+name] [-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Uloží zprávu s indikací MMS zprávy. Příjemcův telefon poté stáhe
+MMS se zadané adresy a zobrazí ji.
+			</p>
+			
+
+			<p>
+				Prosím uvědomte si, že na zadaném URL by měla být platná smil
+data.
+			</p>
+			
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms MMSSETTINGS
+			</b>
+			 
+			<i>
+				file location [-folder id]
+[-unread] [-read] [-unsent] [-sent] [-sender number] [-smsname
+name] [-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Uloží zprávu s nastavením MMS. Nastavení bude načteno ze zálohy
+Gammu ze zadaného umístění.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms OPERATOR
+			</b>
+			 
+			<i>
+				file [-folder id] [-unread] [-read]
+[-unsent] [-sent] [-sender number] [-smsname name] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num] [-netcode
+netcode] [-biglogo]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Uloži logo operátora jako SMS (formát pro Nokie - velikost
+72x14 nebo 78x21 po použití 
+			<b>
+				-biglogo
+			</b>
+			).
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms PICTURE
+			</b>
+			 
+			<i>
+				file [-folder id] [-unread] [-read]
+[-unsent] [-sent] [-sender number] [-smsname name] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num] [-text text]
+[-unicode] [-alcatelbmmi]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Uloží obrázek jako SMS (formát Nokie - velikost 72x28).
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms PROFILE
+			</b>
+			 
+			<i>
+				[-folder id] [-unread] [-read]
+[-unsent] [-sent] [-sender number] [-smsname name] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num] [-name name]
+[-bitmap bitmap] [-ringtone ringtone]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte vyzvánění (RTTL), obrázek a jméno a uloží je jako profil
+pro Nokii.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms RINGTONE
+			</b>
+			 
+			<i>
+				file [-folder id] [-unread] [-read]
+[-unsent] [-sent] [-sender number] [-smsname name] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num] [-long]
+[-scale]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Našte RTTL vyzvánění ze souboru a uloží ho jako SMS. Vyzvánění
+je uloženo ve formátu pro Nokii.
+
+			<p>
+				<b>
+					-long
+				</b>
+				 - vyzvánění je uloženo v podobě profilo. Může být
+delší (a uloženo do 2 SMS), ale umí s ním pracovat jen novější
+telefony (jako 33xx).
+			</p>
+			
+
+			<p>
+				<b>
+					-scale
+				</b>
+				 - ringtone will have Scale info for each note. It
+will allow to edit it correctly later in phone composer (for
+example, in 33xx)
+			</p>
+			
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms SMSTEMPLATE
+			</b>
+			 
+			<i>
+				[-folder id] [-unread] [-read]
+[-unsent] [-sent] [-sender number] [-smsname name] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num] [-unicode]
+[-text text] [-unicodefiletext file] [-defsound ID] [-defanimation
+ID] [-tone10 file] [-tone10long file] [-tone12 file] [-tone12long
+file] [-toneSE file] [-toneSElong file] [-variablebitmap file]
+[-variablebitmaplong file] [-animation frames file1 ...]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Uloží SMS šablonu pro telefony Alcatel.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms TEXT
+			</b>
+			 
+			<i>
+				[-folder id] [-unread] [-read] [-unsent]
+[-sent] [-sender number] [-smsname name] [-smscset number]
+[-smscnumber number] [-reply] [-maxsms num] [-inputunicode]
+[-16bit] [-flash] [-len len] [-autolen len] [-unicode]
+[-enablevoice] [-disablevoice] [-enablefax] [-disablefax]
+[-enableemail] [-disableemail] [-voidsms] [-replacemessages ID]
+[-replacefile file] [-text msgtext] [-textutf8 msgtext]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte text ze standardního vstupu (nebo příkazové řádky, pokud
+je použito -text) a uloží ho jako textovou zprávu do telefonu nebo
+na SIM kartu.
+
+			<p>
+				<b>
+					-flash
+				</b>
+				 - SMS třídy 0 (zobrazení jen na displej)
+			</p>
+			
+
+			<p>
+				<b>
+					-len len
+				</b>
+				 - specify, how many chars will be read. When use
+this option and text will be longer than 1 SMS, will be splitted
+into more linked SMS
+			</p>
+			
+
+			<p>
+				<b>
+					-autolen len
+				</b>
+				 - specify, how many chars will be read. When
+use this option and text will be longer than 1 SMS, will be
+splitted into more linked SMS.Coding type (SMS default
+alphabet/Unicode) is set according to input text
+			</p>
+			
+
+			<p>
+				<b>
+					-enablevoice
+				</b>
+				 | 
+				<b>
+					-disablevoice
+				</b>
+				 | 
+				<b>
+					-enablefax
+				</b>
+				 |
+
+				<b>
+					-disablefax
+				</b>
+				 | 
+				<b>
+					-enableemail
+				</b>
+				 | 
+				<b>
+					-disableemail
+				</b>
+				 -
+nastaví tyto indikátory. Text bude zkrácen na 1 SMS.
+			</p>
+			
+
+			<p>
+				<b>
+					-voidsms
+				</b>
+				 - many phones after receiving it won't display
+anything, only beep, vibrate or turn on light. Text will be cut to
+1 sms.
+			</p>
+			
+
+			<p>
+				<b>
+					-unicode
+				</b>
+				 - SMS bude uložena v unicode.
+			</p>
+			
+
+			<p>
+				<b>
+					-inputunicode
+				</b>
+				 - zadaný text je v Unicode.
+			</p>
+			
+
+			<p>
+				<b>
+					-text
+				</b>
+				 - načte text z příkazové řádky místo standardního
+vstupu.
+			</p>
+			
+
+			<p>
+				<b>
+					-textutf8
+				</b>
+				 - načte text v UTF-8 z příkazové řádky místo
+standardního vstupu.
+			</p>
+			
+
+			<p>
+				<i>
+					TIP:
+				</i>
+				 Soubor v Unicode můžete na Windows vytvořit
+například pomocí WordPadu (zvolte volbu &quot;Uložit jako unicode
+text&quot;). Na Linuxu můžete použít třeba YUdit nebo Vim.
+			</p>
+			
+
+			<p>
+				<b>
+					-replacemessages ID
+				</b>
+				 - 
+				<b>
+					ID
+				</b>
+				 can be 1..7. When you
+will use option and send more single SMS to one recipient with the
+same ID, each another SMS will replace each previous with the same
+ID
+			</p>
+			
+
+			<p>
+				<b>
+					-replacefile file
+				</b>
+				 - when you want, you can make file in
+such format: 
+				<b>
+					src_unicode_char1, dest_unicode_char1,
+src_unicode_char2, dest_unicode_char2
+				</b>
+				 (everything in one line).
+After reading text for SMS from stdin there will be made
+translation and each src char will be converted to dest char. In
+docs there is example file (
+				<i>
+					replace.txt
+				</i>
+				), which will change
+all &quot;a&quot; chars to &quot;1&quot;
+			</p>
+			
+
+			<p>
+				<i>
+					TIP:
+				</i>
+				 pokud použijete ve textu zprávy znak ~ a přepínač
+
+				<b>
+					-unicode
+				</b>
+				, bude text za znakem ~ u některých telefonů blikat
+(například 33xx)
+			</p>
+			
+
+			<p>
+				<i>
+					Příklad:
+				</i>
+				 echo some_text | gammu savesms TEXT
+			</p>
+			
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms TODO
+			</b>
+			 
+			<i>
+				file location [-folder id] [-unread]
+[-read] [-unsent] [-sent] [-sender number] [-smsname name]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Uloží zprávu s úkolem. Obsah bude načten ze souboru v některém
+z formátů podporovaných Gammu a ze zadaného umístění.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms VCARD10|VCARD21
+			</b>
+			 
+			<i>
+				file SM|ME location [-nokia]
+[-folder id] [-unread] [-read] [-unsent] [-sent] [-sender number]
+[-smsname name] [-smscset number] [-smscnumber number] [-reply]
+[-maxsms num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte kontakt ze zálohy (formáty jaké vytváří funkce
+
+			<b>
+				backup
+			</b>
+			) a uloží ho do telefonu jako SMS ve formátu VCARD 1.0
+(jen jméno a výchozí číslo) nebo VCARD 2.1 (všechny informace o
+kontaktu).
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms WAPINDICATOR
+			</b>
+			 
+			<i>
+				URL Title [-folder id] [-unread]
+[-read] [-unsent] [-sent] [-sender number] [-smsname name]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Uloží SMS s indikací WAP pro zadané URL a titulek.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms WAPSETTINGS
+			</b>
+			 
+			<i>
+				file location DATA|GPRS [-folder
+id] [-unread] [-read] [-unsent] [-sent] [-sender number] [-smsname
+name] [-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte nastavení WAPu ze souboru vytvořeného příkazem
+
+			<b>
+				backup
+			</b>
+			 a uloží je ve formátu Nokie jako SMS.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms ANIMATION
+			</b>
+			 
+			<i>
+				destination frames file1 file2...
+[-report] [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save
+[-folder number]] [-smscset number] [-smscnumber number] [-reply]
+[-maxsms num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+ANIMATION
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms BOOKMARK
+			</b>
+			 
+			<i>
+				destination file location [-report]
+[-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+BOOKMARK
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms CALENDAR
+			</b>
+			 
+			<i>
+				destination file location [-report]
+[-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+CALENDAR
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms CALLER
+			</b>
+			 
+			<i>
+				destination file [-report] [-validity
+HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+CALLER
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms EMS
+			</b>
+			 
+			<i>
+				destination [-report] [-validity
+HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num] [-unicode]
+[-16bit] [-format lcrasbiut] [-text text] [-unicodefiletext file]
+[-defsound ID] [-defanimation ID] [-tone10 file] [-tone10long file]
+[-tone12 file] [-tone12long file] [-toneSE file] [-toneSElong file]
+[-fixedbitmap file] [-variablebitmap file] [-variablebitmaplong
+file] [-animation frames file1 ...] [-protected number]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+EMS
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms MMSINDICATOR
+			</b>
+			 
+			<i>
+				destination URL Title Sender
+[-report] [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save
+[-folder number]] [-smscset number] [-smscnumber number] [-reply]
+[-maxsms num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+MMSINDICATOR
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms MMSSETTINGS
+			</b>
+			 
+			<i>
+				destination file location
+[-report] [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save
+[-folder number]] [-smscset number] [-smscnumber number] [-reply]
+[-maxsms num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+MMSSETTINGS
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms OPERATOR
+			</b>
+			 
+			<i>
+				destination file [-report]
+[-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms num]
+[-netcode netcode] [-biglogo]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+OPERATOR
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms PICTURE
+			</b>
+			 
+			<i>
+				destination file [-report] [-validity
+HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num] [-text text]
+[-unicode] [-alcatelbmmi]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+PICTURE
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms PROFILE
+			</b>
+			 
+			<i>
+				destination [-report] [-validity
+HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num] [-name name]
+[-bitmap bitmap] [-ringtone ringtone]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+PROFILE
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms RINGTONE
+			</b>
+			 
+			<i>
+				destination file [-report]
+[-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms num]
+[-long] [-scale]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+RINGTONE
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms SMSTEMPLATE
+			</b>
+			 
+			<i>
+				destination [-report] [-validity
+HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num] [-unicode]
+[-text text] [-unicodefiletext file] [-defsound ID] [-defanimation
+ID] [-tone10 file] [-tone10long file] [-tone12 file] [-tone12long
+file] [-toneSE file] [-toneSElong file] [-variablebitmap file]
+[-variablebitmaplong file] [-animation frames file1 ...]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+SMSTEMPLATE
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms TEXT
+			</b>
+			 
+			<i>
+				destination [-report] [-validity
+HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num] [-inputunicode]
+[-16bit] [-flash] [-len len] [-autolen len] [-unicode]
+[-enablevoice] [-disablevoice] [-enablefax] [-disablefax]
+[-enableemail] [-disableemail] [-voidsms] [-replacemessages ID]
+[-replacefile file] [-text msgtext] [-textutf8 msgtext]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+TEXT
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms TODO
+			</b>
+			 
+			<i>
+				destination file location [-report]
+[-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+TODO
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms VCARD10|VCARD21
+			</b>
+			 
+			<i>
+				destination file SM|ME
+location [-nokia] [-report] [-validity
+HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+VCARD10|VCARD21
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms WAPINDICATOR
+			</b>
+			 
+			<i>
+				destination URL Title [-report]
+[-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+WAPINDICATOR
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms WAPSETTINGS
+			</b>
+			 
+			<i>
+				destination file location
+DATA|GPRS [-report] [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX]
+[-save [-folder number]] [-smscset number] [-smscnumber number]
+[-reply] [-maxsms num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+WAPSETTINGS
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				setsmsc
+			</b>
+			 
+			<i>
+				location number
+			</i>
+		</dt>
+		
+
+		<dd>
+			Nastaví SMSC na SIM kartě. Toto volání zachová veškeré
+parametry SMSC, jen změní číslo SMSC.
+
+			<p>
+				Umístění číslujte od 1.
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAI" name="lbAI"/>
+	
+
+	<h4>
+		Paměť (kontakty a hovory)
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				addcategory TODO|PHONEBOOK
+			</b>
+			 
+			<i>
+				text
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				addnew
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá data ze souboru vytvořeného pomocí fuknce 
+			<b>
+				backup
+			</b>
+			.
+
+			<p>
+				Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
+o stávající obsah v telefonu (tedy ani nejsou detekovány
+duplicity).
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				backup
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zazálohuje obsah telefonu do souboru. Je možné zálohovat
+(závisí na telefonu a formátu zálohy):
+
+			<p>
+				* kontakty ze SIM karty a z telefonu
+				<br/>
+				
+* události z kalendáře
+				<br/>
+				
+* nastavení SMS zpráv
+				<br/>
+				
+* loga operátora
+				<br/>
+				
+* úvodní logo a text
+				<br/>
+				
+* WAP záložky
+				<br/>
+				
+* nastavení WAPu
+				<br/>
+				
+* loga volajících a skupiny
+				<br/>
+				
+* uživatelská vyzvánění
+				<br/>
+			</p>
+			
+
+			<p>
+				Je podporování několik formátů pro zálohy a formát je určen
+podle přípony souboru:
+			</p>
+			
+
+			<p>
+				* .lmb - Záloha Nokia, podporuje kontakty, loga volajících a
+uvodní logo.
+				<br/>
+				
+* .vcs - vCalendar, podporuje kalendář a úkoly.
+				<br/>
+				
+* .vcf - vCard, podporuje kontakty.
+				<br/>
+				
+* .ldif - LDAP import, podporuje kontakty.
+				<br/>
+				
+* .ics - iCalendar, podporuje kalendář a úkoly.
+				<br/>
+				
+* Jakákoliv jiná přípona je vlastní formát Gammu, který podporuje
+všechna data zmíněná výše.
+			</p>
+			
+
+			<p>
+				V části 
+				<b>
+					PŘÍKLAD
+				</b>
+				 naleznete nějaké tipy pro práci se
+souborem záloh Gammu.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				clearall
+			</b>
+		</dt>
+		
+
+		<dd>
+			Odstraní všechna uživatelská data z telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				deleteallmemory
+			</b>
+			
+
+			<i>
+				DC|MC|RC|ON|VM|SM|ME|MT|FD|SL
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odstraní všechny položky ze zadané paměti.
+		</dd>
+		
+
+		<dt>
+			<b>
+				deletememory DC|MC|RC|ON|VM|SM|ME|MT|FD|SL
+			</b>
+			 
+			<i>
+				start
+[stop]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odstraní položky v zadaném rozsahu ze zadané paměti.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getallcategory
+			</b>
+			 
+			<i>
+				TODO|PHONEBOOK
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				getallmemory
+			</b>
+			 
+			<i>
+				DC|MC|RC|ON|VM|SM|ME|MT|FD|SL
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte všechny položky paměti (kontakt nebo hovor) z telefonu..
+Pro popis typů paměti se podívejte na 
+			<b>
+				getmemory
+			</b>
+			.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getcategory TODO|PHONEBOOK
+			</b>
+			 
+			<i>
+				start [stop]
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				getmemory DC|MC|RC|ON|VM|SM|ME|MT|FD|SL
+			</b>
+			 
+			<i>
+				start [stop
+[-nonempty]]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte položku paměti (kontakt nebo hovor) z telefonu.
+
+			<p>
+				Umístění číslujte od 1.
+			</p>
+			
+
+			<p>
+				<b>
+					DC
+				</b>
+				 = Odchozí hovory
+				<br/>
+				
+
+				<b>
+					MC
+				</b>
+				 = Zmeškané hovory
+				<br/>
+				
+
+				<b>
+					RC
+				</b>
+				 = Přijaté hovory
+				<br/>
+				
+
+				<b>
+					ON
+				</b>
+				 = Vlastní čísla
+				<br/>
+				
+
+				<b>
+					VM
+				</b>
+				 = Hlasová schránka
+				<br/>
+				
+
+				<b>
+					SM
+				</b>
+				 = Kontantky na SIM kartě
+				<br/>
+				
+
+				<b>
+					ME
+				</b>
+				 = Kontakty v telefonu
+				<br/>
+				
+
+				<b>
+					FD
+				</b>
+				 = Pevné předvolby
+				<br/>
+				
+
+				<b>
+					SL
+				</b>
+				 = Log odeslaných SMS zpráv
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				getspeeddial
+			</b>
+			 
+			<i>
+				start [stop]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte seznam rychlého vytáčení.
+		</dd>
+		
+
+		<dt>
+			<b>
+				listmemorycategory
+			</b>
+			 
+			<i>
+				text|number
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiagetpbkfeatures
+			</b>
+			 
+			<i>
+				memorytype
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				restore
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá data ze souboru vytvořeného pomocí fuknce 
+			<b>
+				backup
+			</b>
+			.
+
+			<p>
+				Prosím uvědomte si, že obnovení znamená odstranění dat, která
+jsou v telefonu obsažena. Pokud chcete jen přidat nové záznamy,
+použijte addnew.
+			</p>
+			
+
+			<p>
+				Některé telefony neobnoví korektně události v kalendáři, pokud v
+telefonu není nastaven čas a datum.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savefile VCARD10|VCARD21
+			</b>
+			 
+			<i>
+				target.vcf file SM|ME
+location
+			</i>
+		</dt>
+		
+
+		<dd>
+			Umožní převádět mezi různými formáty pro zálohy, které Gammu
+podporuje pro kontakty. Typ souboru je odhadnut (pro vstupní soubor
+podle přípony a obsahu, pro výstupní jen podle přípony).
+
+			<p>
+				For example if you want to convert single entry from gammu
+native backup to vCard, you need following command:
+			</p>
+			
+
+			<p>
+				<br/>
+				
+gammusavefileCALENDARoutput.vcfmyPhonebook.backupME42
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms VCARD10|VCARD21
+			</b>
+			 
+			<i>
+				file SM|ME location [-nokia]
+[-folder id] [-unread] [-read] [-unsent] [-sent] [-sender number]
+[-smsname name] [-smscset number] [-smscnumber number] [-reply]
+[-maxsms num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte kontakt ze zálohy (formáty jaké vytváří funkce
+
+			<b>
+				backup
+			</b>
+			) a uloží ho do telefonu jako SMS ve formátu VCARD 1.0
+(jen jméno a výchozí číslo) nebo VCARD 2.1 (všechny informace o
+kontaktu).
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				searchmemory
+			</b>
+			 
+			<i>
+				text
+			</i>
+		</dt>
+		
+
+		<dd>
+			Projde všechny kontakty v telefonu a hledá zadaný text (bez
+rozlišení velikosti písmen). Vyhledávání můžete kdykoliv přerušit
+pomocí Ctrl+C.
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms VCARD10|VCARD21
+			</b>
+			 
+			<i>
+				destination file SM|ME
+location [-nokia] [-report] [-validity
+HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+VCARD10|VCARD21
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAJ" name="lbAJ"/>
+	
+
+	<h4>
+		Soubory
+	</h4>
+	
+
+	<p>
+		Gammu allows to access phones using native protocol (Nokias) or
+OBEX. Your phone can also support usb storage, which is handled on
+the operating system level and Gammu does not use that.
+	</p>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				addfile
+			</b>
+			 
+			<i>
+				folderID name [-type
+JAR|BMP|PNG|GIF|JPG|MIDI|WBMP|AMR|3GP|NRT] [-readonly] [-protected]
+[-system] [-hidden] [-newtime]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá soubor se zadaným jménem do adresáře se zvoleným ID.
+
+			<p>
+				<b>
+					-type
+				</b>
+				 - file type was required for filesystem 1 in Nokia
+phones (current filesystem 2 doesn't need this)
+			</p>
+			
+
+			<p>
+				<b>
+					-readonly, -protected, -system, -hidden
+				</b>
+				 - you can set
+readonly, protected (file can't be for example forwarded from phone
+menu), system and hidden (file is hidden from phone menu) file
+attributes
+			</p>
+			
+
+			<p>
+				<b>
+					-newtime
+				</b>
+				 - after using it date/time of file modification
+will be set to moment of uploading
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				addfolder
+			</b>
+			 
+			<i>
+				parentfolderID name
+			</i>
+		</dt>
+		
+
+		<dd>
+			Vytvoří složku v telefonu se zadaným jménem ve složce se
+zadaným ID.
+		</dd>
+		
+
+		<dt>
+			<b>
+				deletefiles
+			</b>
+			 
+			<i>
+				fileID
+			</i>
+		</dt>
+		
+
+		<dd>
+			Vymaže soubory se zadanými ID.
+		</dd>
+		
+
+		<dt>
+			<b>
+				deletefolder
+			</b>
+			 
+			<i>
+				name
+			</i>
+		</dt>
+		
+
+		<dd>
+			Vymaže složku se zadaným ID.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getfilefolder
+			</b>
+			 
+			<i>
+				ID1, ID2, ...
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte ze souborového systému telefonu soubory nebo všechny
+soubory ze složky se zadaným ID.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getfiles
+			</b>
+			 
+			<i>
+				ID1, ID2, ...
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte ze souborového systému telefonu soubory se zadanými
+ID.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getfilesystem
+			</b>
+			 
+			<i>
+				[-flatall|-flat]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Display info about all folders and files in phone memory/memory
+card. By default there is tree displayed, you can change it:
+
+			<p>
+				<b>
+					-flatall
+				</b>
+				 there are displayed full file/folder details
+like ID (first parameter in line)
+			</p>
+			
+
+			<p>
+				<b>
+					-flat
+				</b>
+			</p>
+			
+
+			<p>
+				Please note, that in some phones (like N6230) content of some
+folders (with more files) can be cut (only part of files will be
+displayed) for example on infrared connection. This is not Gammu
+issue, but phone firmware problem.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				getfilesystemstatus
+			</b>
+		</dt>
+		
+
+		<dd>
+			Zobrazí informace o stavu systému souborů - volné a obsazené
+místo a místo obsazené různými druhy obsahu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getfolderlisting
+			</b>
+			 
+			<i>
+				folderID
+			</i>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Display files and folders available in folder with given folder
+ID. You can get ID's using getfilesystem -flatall.
+			</p>
+			
+
+			<p>
+				Please note, that in some phones (like N6230) content of some
+folders (with more files) can be cut (only part of files will be
+displayed) for example on infrared connection. This is not Gammu
+issue, but phone firmware problem.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				getrootfolders
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Zobrazí informace o kořenových složkách dostupných v
+telefonu.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokiaaddfile
+			</b>
+			
+
+			<i>
+				Gallery|Gallery2|Camera|Tones|Tones2|Records|Video|Playlist|MemoryCard
+file [-name name] [-protected] [-readonly] [-system] [-hidden]
+[-newtime]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Install the *.jar/*.jad file pair of a midlet in the
+application or game menu of the phone. You have to give the name
+without the jar/jad suffix, otherwise you will get the slightly
+confusing error message Can't open specified file. Read only ?
+
+			<p>
+				The option 
+				<i>
+					-overwrite
+				</i>
+				 deletes the application's .jad and
+.jar files bevor installing, but doesn't delete the application
+data. Option 
+				<i>
+					-overwriteall
+				</i>
+				 will also delete all data. Both
+these options work only for Application or Game upload.
+			</p>
+			
+
+			<p>
+				<i>
+					Example:
+				</i>
+				 gammu nokiaaddfile Application Alien načte
+Alien.JAD a Alien.JAR a přidá ho do složky Applications
+			</p>
+			
+
+			<p>
+				<i>
+					Příklad:
+				</i>
+				 gammu nokiaaddfile Tones file.mid načte soubor
+file.mid a přidá ho do složky Tones
+			</p>
+			
+
+			<p>
+				Pro vygenerování jad souboru z jar souboru můžete použít
+
+				<a href="jadmaker.1.html">
+					jadmaker
+				</a>
+				(1).
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokiaaddplaylists
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				sendfile
+			</b>
+			 
+			<i>
+				name
+			</i>
+		</dt>
+		
+
+		<dd>
+			Sends file to a phone. It's up to phone to decide where to
+store this file and how to handle it (for example when you send
+vCard or vCalendar, most of phones will offer you to import
+it.
+		</dd>
+		
+
+		<dt>
+			<b>
+				setfileattrib
+			</b>
+			 
+			<i>
+				folderID [-system] [-readonly]
+[-hidden] [-protected]
+			</i>
+		</dt>
+		
+
+	</dl>
+	
+
+	<a id="lbAK" name="lbAK"/>
+	
+
+	<h4>
+		Loga a obrázky
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				copybitmap
+			</b>
+			 
+			<i>
+				inputfile [outputfile
+[OPERATOR|PICTURE|STARTUP|CALLER]]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Allow to convert logos files to another. When give ONLY
+inputfile, output will be written to stdout using ASCII art. When
+give output file and format, in some file formats (like NLM) will
+be set indicator informing about logo type to given.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getbitmap
+			</b>
+			 
+			<i>
+				DEALER
+			</i>
+		</dt>
+		
+
+		<dd>
+			In some models it's possible to save dealer welcome note - text
+displayed during enabling phone, which can't be edited from phone
+menu. Here you can get it.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getbitmap CALLER
+			</b>
+			 
+			<i>
+				location [file]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte logo skupiny z telefonu. Umístění 1-5.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getbitmap OPERATOR
+			</b>
+			 
+			<i>
+				[file]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte logo operátora (obrázek zobrazený místo jména operátora)
+z telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getbitmap PICTURE
+			</b>
+			 
+			<i>
+				location [file]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte obrázek z telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getbitmap STARTUP
+			</b>
+			 
+			<i>
+				[file]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte statické startovací logo z telefonu. Umožní jeho uložení
+do souboru.
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms ANIMATION
+			</b>
+			 
+			<i>
+				frames file1 file2... [-folder id]
+[-unread] [-read] [-unsent] [-sent] [-sender number] [-smsname
+name] [-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Uloží animaci jako SMS. Musíte zadat počet snímků a obrázek pro
+každý snímek. Každý obrázek může být v libovolném formátu, který
+Gammu podporuje (ČB bmp, gif, wbmp, nol, nlm,...).
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms CALLER
+			</b>
+			 
+			<i>
+				file [-folder id] [-unread] [-read]
+[-unsent] [-sent] [-sender number] [-smsname name] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Uloží logo volajícího jako SMS (formát pro Nokia - velikost
+72x14).
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms OPERATOR
+			</b>
+			 
+			<i>
+				file [-folder id] [-unread] [-read]
+[-unsent] [-sent] [-sender number] [-smsname name] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num] [-netcode
+netcode] [-biglogo]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Uloži logo operátora jako SMS (formát pro Nokie - velikost
+72x14 nebo 78x21 po použití 
+			<b>
+				-biglogo
+			</b>
+			).
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms PICTURE
+			</b>
+			 
+			<i>
+				file [-folder id] [-unread] [-read]
+[-unsent] [-sent] [-sender number] [-smsname name] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num] [-text text]
+[-unicode] [-alcatelbmmi]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Uloží obrázek jako SMS (formát Nokie - velikost 72x28).
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms ANIMATION
+			</b>
+			 
+			<i>
+				destination frames file1 file2...
+[-report] [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save
+[-folder number]] [-smscset number] [-smscnumber number] [-reply]
+[-maxsms num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+ANIMATION
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms CALLER
+			</b>
+			 
+			<i>
+				destination file [-report] [-validity
+HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+CALLER
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms OPERATOR
+			</b>
+			 
+			<i>
+				destination file [-report]
+[-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms num]
+[-netcode netcode] [-biglogo]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+OPERATOR
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms PICTURE
+			</b>
+			 
+			<i>
+				destination file [-report] [-validity
+HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num] [-text text]
+[-unicode] [-alcatelbmmi]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+PICTURE
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				setbitmap CALLER
+			</b>
+			 
+			<i>
+				location [file]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Nastaví logo volajícího.
+		</dd>
+		
+
+		<dt>
+			<b>
+				setbitmap COLOUROPERATOR
+			</b>
+			 
+			<i>
+				[fileID [netcode]]
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				setbitmap COLOURSTARTUP
+			</b>
+			 
+			<i>
+				[fileID]
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				setbitmap DEALER
+			</b>
+			 
+			<i>
+				text
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				setbitmap OPERATOR
+			</b>
+			 
+			<i>
+				[file [netcode]]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Set operator logo in phone. When won't give file and netcode,
+operator logo will be removed from phone. When will give only
+filename, operator logo will be displayed for your current GSM
+operator. When give additionaly network code, it will be displayed
+for this operator: 
+			<b>
+				gammu setbitmap OPERATOR file &quot;260
+02&quot;
+			</b>
+		</dd>
+		
+
+		<dt>
+			<b>
+				setbitmap PICTURE
+			</b>
+			 
+			<i>
+				file location [text]
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				setbitmap STARTUP
+			</b>
+			 
+			<i>
+				file|1|2|3
+			</i>
+		</dt>
+		
+
+		<dd>
+			Set startup logo in phone. It can be static (then you will have
+to give file name) or one of predefined animated (only some phones
+like Nokia 3310 or 3330 supports it)
+		</dd>
+		
+
+		<dt>
+			<b>
+				setbitmap TEXT
+			</b>
+			 
+			<i>
+				text
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				setbitmap WALLPAPER
+			</b>
+			 
+			<i>
+				fileID
+			</i>
+		</dt>
+		
+
+	</dl>
+	
+
+	<a id="lbAL" name="lbAL"/>
+	
+
+	<h4>
+		Zvonění
+	</h4>
+	
+
+	<p>
+		Vyzvánění jsou většinou podporována jen pro starší telefony. Pro
+novější je obvykle jen musíte nahrát do správné složky v
+telefonu.
+	</p>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				addnew
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá data ze souboru vytvořeného pomocí fuknce 
+			<b>
+				backup
+			</b>
+			.
+
+			<p>
+				Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
+o stávající obsah v telefonu (tedy ani nejsou detekovány
+duplicity).
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				backup
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zazálohuje obsah telefonu do souboru. Je možné zálohovat
+(závisí na telefonu a formátu zálohy):
+
+			<p>
+				* kontakty ze SIM karty a z telefonu
+				<br/>
+				
+* události z kalendáře
+				<br/>
+				
+* nastavení SMS zpráv
+				<br/>
+				
+* loga operátora
+				<br/>
+				
+* úvodní logo a text
+				<br/>
+				
+* WAP záložky
+				<br/>
+				
+* nastavení WAPu
+				<br/>
+				
+* loga volajících a skupiny
+				<br/>
+				
+* uživatelská vyzvánění
+				<br/>
+			</p>
+			
+
+			<p>
+				Je podporování několik formátů pro zálohy a formát je určen
+podle přípony souboru:
+			</p>
+			
+
+			<p>
+				* .lmb - Záloha Nokia, podporuje kontakty, loga volajících a
+uvodní logo.
+				<br/>
+				
+* .vcs - vCalendar, podporuje kalendář a úkoly.
+				<br/>
+				
+* .vcf - vCard, podporuje kontakty.
+				<br/>
+				
+* .ldif - LDAP import, podporuje kontakty.
+				<br/>
+				
+* .ics - iCalendar, podporuje kalendář a úkoly.
+				<br/>
+				
+* Jakákoliv jiná přípona je vlastní formát Gammu, který podporuje
+všechna data zmíněná výše.
+			</p>
+			
+
+			<p>
+				V části 
+				<b>
+					PŘÍKLAD
+				</b>
+				 naleznete nějaké tipy pro práci se
+souborem záloh Gammu.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				clearall
+			</b>
+		</dt>
+		
+
+		<dd>
+			Odstraní všechna uživatelská data z telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				copyringtone
+			</b>
+			 
+			<i>
+				source destination
+[RTTL|BINARY]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zkopíruje vyzvánění do jiného souboru.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getphoneringtone
+			</b>
+			 
+			<i>
+				location [file]
+			</i>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Načte jedno z &quot;výchozích&quot; vyzvánění a uloží ho do souboru
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				getringtone
+			</b>
+			 
+			<i>
+				location [file]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte vyzvánění z telefonu ve formátu RTTL nebo BINARY.
+
+			<p>
+				Umístění číslujte od 1.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				getringtoneslist
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiacomposer
+			</b>
+			 
+			<i>
+				file
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zobrazí jak zadat RTTL vyzvánění ve skladateli dostupném v
+mnoha telefonech Nokia (a jak by mělo vypadat).
+		</dd>
+		
+
+		<dt>
+			<b>
+				playringtone
+			</b>
+			 
+			<i>
+				file
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přehraje vyzvánění přes reproduktor telefonu. Soubor může být
+buď ve formátu RTTL nebo BINARY (Nokia DCT3).
+		</dd>
+		
+
+		<dt>
+			<b>
+				playsavedringtone
+			</b>
+			 
+			<i>
+				number
+			</i>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Přehraje jedno z &quot;vestavěných&quot; vyzvánění. Tento příkaz je
+dostupný pro telefonu DCT4. Pro získání seznamu vyzvánění použijte
+příkaz getringtoneslist.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				restore
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá data ze souboru vytvořeného pomocí fuknce 
+			<b>
+				backup
+			</b>
+			.
+
+			<p>
+				Prosím uvědomte si, že obnovení znamená odstranění dat, která
+jsou v telefonu obsažena. Pokud chcete jen přidat nové záznamy,
+použijte addnew.
+			</p>
+			
+
+			<p>
+				Některé telefony neobnoví korektně události v kalendáři, pokud v
+telefonu není nastaven čas a datum.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms RINGTONE
+			</b>
+			 
+			<i>
+				file [-folder id] [-unread] [-read]
+[-unsent] [-sent] [-sender number] [-smsname name] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num] [-long]
+[-scale]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Našte RTTL vyzvánění ze souboru a uloží ho jako SMS. Vyzvánění
+je uloženo ve formátu pro Nokii.
+
+			<p>
+				<b>
+					-long
+				</b>
+				 - vyzvánění je uloženo v podobě profilo. Může být
+delší (a uloženo do 2 SMS), ale umí s ním pracovat jen novější
+telefony (jako 33xx).
+			</p>
+			
+
+			<p>
+				<b>
+					-scale
+				</b>
+				 - ringtone will have Scale info for each note. It
+will allow to edit it correctly later in phone composer (for
+example, in 33xx)
+			</p>
+			
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms RINGTONE
+			</b>
+			 
+			<i>
+				destination file [-report]
+[-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms num]
+[-long] [-scale]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+RINGTONE
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				setringtone
+			</b>
+			 
+			<i>
+				file [-location location] [-scale] [-name
+name]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Set ringtone in phone. When don't give location, it will be
+written &quot;with preview&quot; (in phones supporting this feature like 61xx
+or 6210). When use RTTL ringtones, give location and use
+
+			<b>
+				-scale
+			</b>
+			, there will be written scale info with each note. It
+will avoid scale problems available during editing ringtone in
+composer from phone menu (for example, in N33xx).
+
+			<p>
+				<i>
+					TIP:
+				</i>
+				 pokud použijete ve názvu vyzvánění znak ~, bude
+tento název v menu některých telefonů blikat (například 33xx)
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAM" name="lbAM"/>
+	
+
+	<h4>
+		Kalendář
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				addnew
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá data ze souboru vytvořeného pomocí fuknce 
+			<b>
+				backup
+			</b>
+			.
+
+			<p>
+				Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
+o stávající obsah v telefonu (tedy ani nejsou detekovány
+duplicity).
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				backup
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zazálohuje obsah telefonu do souboru. Je možné zálohovat
+(závisí na telefonu a formátu zálohy):
+
+			<p>
+				* kontakty ze SIM karty a z telefonu
+				<br/>
+				
+* události z kalendáře
+				<br/>
+				
+* nastavení SMS zpráv
+				<br/>
+				
+* loga operátora
+				<br/>
+				
+* úvodní logo a text
+				<br/>
+				
+* WAP záložky
+				<br/>
+				
+* nastavení WAPu
+				<br/>
+				
+* loga volajících a skupiny
+				<br/>
+				
+* uživatelská vyzvánění
+				<br/>
+			</p>
+			
+
+			<p>
+				Je podporování několik formátů pro zálohy a formát je určen
+podle přípony souboru:
+			</p>
+			
+
+			<p>
+				* .lmb - Záloha Nokia, podporuje kontakty, loga volajících a
+uvodní logo.
+				<br/>
+				
+* .vcs - vCalendar, podporuje kalendář a úkoly.
+				<br/>
+				
+* .vcf - vCard, podporuje kontakty.
+				<br/>
+				
+* .ldif - LDAP import, podporuje kontakty.
+				<br/>
+				
+* .ics - iCalendar, podporuje kalendář a úkoly.
+				<br/>
+				
+* Jakákoliv jiná přípona je vlastní formát Gammu, který podporuje
+všechna data zmíněná výše.
+			</p>
+			
+
+			<p>
+				V části 
+				<b>
+					PŘÍKLAD
+				</b>
+				 naleznete nějaké tipy pro práci se
+souborem záloh Gammu.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				clearall
+			</b>
+		</dt>
+		
+
+		<dd>
+			Odstraní všechna uživatelská data z telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				deletecalendar
+			</b>
+			 
+			<i>
+				start [stop]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odstraní vybrané poznámky v kalendáři z telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getallcalendar
+			</b>
+		</dt>
+		
+
+		<dd>
+			Načte všechny poznámky v kalendáři z telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getcalendar
+			</b>
+			 
+			<i>
+				start [stop]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte vybrané poznámky v kalendáři z telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getcalendarsettings
+			</b>
+		</dt>
+		
+
+		<dd>
+			Zobrazí nastavení kalendáře jako první den v týdnu nebo
+odstraňování starých položek.
+		</dd>
+		
+
+		<dt>
+			<b>
+				restore
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá data ze souboru vytvořeného pomocí fuknce 
+			<b>
+				backup
+			</b>
+			.
+
+			<p>
+				Prosím uvědomte si, že obnovení znamená odstranění dat, která
+jsou v telefonu obsažena. Pokud chcete jen přidat nové záznamy,
+použijte addnew.
+			</p>
+			
+
+			<p>
+				Některé telefony neobnoví korektně události v kalendáři, pokud v
+telefonu není nastaven čas a datum.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savefile CALENDAR
+			</b>
+			 
+			<i>
+				target.vcs file location
+			</i>
+		</dt>
+		
+
+		<dd>
+			Umožní převádět mezi různými formáty pro zálohy, které Gammu
+podporuje pro kalendář. Typ souboru je odhadnut (pro vstupní soubor
+podle přípony a obsahu, pro výstupní jen podle přípony).
+
+			<p>
+				For example if you want to convert single entry from gammu
+native backup to vCalendar, you need following command:
+			</p>
+			
+
+			<p>
+				<br/>
+				
+gammusavefileCALENDARoutput.vcsmyCalendar.backup260
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms CALENDAR
+			</b>
+			 
+			<i>
+				file location [-folder id] [-unread]
+[-read] [-unsent] [-sent] [-sender number] [-smsname name]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte kalendář ze zálohy (formáty jaké vytváří funkce
+
+			<b>
+				backup
+			</b>
+			) a uloží ho do telefonu jako SMS ve formátu VCALENDAR
+1.0.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms CALENDAR
+			</b>
+			 
+			<i>
+				destination file location [-report]
+[-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+CALENDAR
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAN" name="lbAN"/>
+	
+
+	<h4>
+		Úkoly
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				addcategory TODO|PHONEBOOK
+			</b>
+			 
+			<i>
+				text
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				addnew
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá data ze souboru vytvořeného pomocí fuknce 
+			<b>
+				backup
+			</b>
+			.
+
+			<p>
+				Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
+o stávající obsah v telefonu (tedy ani nejsou detekovány
+duplicity).
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				backup
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zazálohuje obsah telefonu do souboru. Je možné zálohovat
+(závisí na telefonu a formátu zálohy):
+
+			<p>
+				* kontakty ze SIM karty a z telefonu
+				<br/>
+				
+* události z kalendáře
+				<br/>
+				
+* nastavení SMS zpráv
+				<br/>
+				
+* loga operátora
+				<br/>
+				
+* úvodní logo a text
+				<br/>
+				
+* WAP záložky
+				<br/>
+				
+* nastavení WAPu
+				<br/>
+				
+* loga volajících a skupiny
+				<br/>
+				
+* uživatelská vyzvánění
+				<br/>
+			</p>
+			
+
+			<p>
+				Je podporování několik formátů pro zálohy a formát je určen
+podle přípony souboru:
+			</p>
+			
+
+			<p>
+				* .lmb - Záloha Nokia, podporuje kontakty, loga volajících a
+uvodní logo.
+				<br/>
+				
+* .vcs - vCalendar, podporuje kalendář a úkoly.
+				<br/>
+				
+* .vcf - vCard, podporuje kontakty.
+				<br/>
+				
+* .ldif - LDAP import, podporuje kontakty.
+				<br/>
+				
+* .ics - iCalendar, podporuje kalendář a úkoly.
+				<br/>
+				
+* Jakákoliv jiná přípona je vlastní formát Gammu, který podporuje
+všechna data zmíněná výše.
+			</p>
+			
+
+			<p>
+				V části 
+				<b>
+					PŘÍKLAD
+				</b>
+				 naleznete nějaké tipy pro práci se
+souborem záloh Gammu.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				clearall
+			</b>
+		</dt>
+		
+
+		<dd>
+			Odstraní všechna uživatelská data z telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				deletetodo
+			</b>
+			 
+			<i>
+				start [stop]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odstraní vybrané úkoly z telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getallcategory
+			</b>
+			 
+			<i>
+				TODO|PHONEBOOK
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				getalltodo
+			</b>
+		</dt>
+		
+
+		<dd>
+			Načte všechny úkoly z telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getcategory TODO|PHONEBOOK
+			</b>
+			 
+			<i>
+				start [stop]
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				gettodo
+			</b>
+			 
+			<i>
+				start [stop]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte vybrané úkoly z telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				listtodocategory
+			</b>
+			 
+			<i>
+				text|number
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				restore
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá data ze souboru vytvořeného pomocí fuknce 
+			<b>
+				backup
+			</b>
+			.
+
+			<p>
+				Prosím uvědomte si, že obnovení znamená odstranění dat, která
+jsou v telefonu obsažena. Pokud chcete jen přidat nové záznamy,
+použijte addnew.
+			</p>
+			
+
+			<p>
+				Některé telefony neobnoví korektně události v kalendáři, pokud v
+telefonu není nastaven čas a datum.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savefile TODO
+			</b>
+			 
+			<i>
+				target.vcs file location
+			</i>
+		</dt>
+		
+
+		<dd>
+			Umožní převádět mezi různými formáty pro zálohy, které Gammu
+podporuje pro úkoly. Typ souboru je odhadnut (pro vstupní soubor
+podle přípony a obsahu, pro výstupní jen podle přípony).
+
+			<p>
+				For example if you want to convert single entry from gammu
+native backup to vCalendar, you need following command:
+			</p>
+			
+
+			<p>
+				<br/>
+				
+gammusavefileCALENDARoutput.vcsmyCalendar.backup260
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms TODO
+			</b>
+			 
+			<i>
+				file location [-folder id] [-unread]
+[-read] [-unsent] [-sent] [-sender number] [-smsname name]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Uloží zprávu s úkolem. Obsah bude načten ze souboru v některém
+z formátů podporovaných Gammu a ze zadaného umístění.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms TODO
+			</b>
+			 
+			<i>
+				destination file location [-report]
+[-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+TODO
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAO" name="lbAO"/>
+	
+
+	<h4>
+		Poznámky
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				getallnotes
+			</b>
+		</dt>
+		
+
+		<dd>
+			Zobrazí všechny poznámky z telefonu.
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAP" name="lbAP"/>
+	
+
+	<h4>
+		Čas, datum a budíky
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				getalarm
+			</b>
+			 
+			<i>
+				[start]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte budík z telfonu, pokud není zadáno umístění je použita
+1.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getdatetime
+			</b>
+		</dt>
+		
+
+		<dd>
+			Načte datum a čas z telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				setalarm
+			</b>
+			 
+			<i>
+				hour minute
+			</i>
+		</dt>
+		
+
+		<dd>
+			Nastaví opakující se budík v telefonu na zadaný čas.
+		</dd>
+		
+
+		<dt>
+			<b>
+				setdatetime
+			</b>
+			 
+			<i>
+				[HH:MM[:SS]] [YYYY/MM/DD]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Nastaví datum a čas v telefonu podle času v počítači. Tato
+volba nezobrazí hodiny na displeji mobilu, jen nastaví datum a čas.
+
+			<p>
+				<i>
+					TIP:
+				</i>
+				 můžete si také nastavit tuto synchronizaci při
+každém připojení telefonu ke Gammu. Více podrobností naleznete v
+
+				<a href="gammurc.5.html">
+					gammurc
+				</a>
+				(5).
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAQ" name="lbAQ"/>
+	
+
+	<h4>
+		Kategorie
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				addcategory TODO|PHONEBOOK
+			</b>
+			 
+			<i>
+				text
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				addnew
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá data ze souboru vytvořeného pomocí fuknce 
+			<b>
+				backup
+			</b>
+			.
+
+			<p>
+				Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
+o stávající obsah v telefonu (tedy ani nejsou detekovány
+duplicity).
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				backup
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zazálohuje obsah telefonu do souboru. Je možné zálohovat
+(závisí na telefonu a formátu zálohy):
+
+			<p>
+				* kontakty ze SIM karty a z telefonu
+				<br/>
+				
+* události z kalendáře
+				<br/>
+				
+* nastavení SMS zpráv
+				<br/>
+				
+* loga operátora
+				<br/>
+				
+* úvodní logo a text
+				<br/>
+				
+* WAP záložky
+				<br/>
+				
+* nastavení WAPu
+				<br/>
+				
+* loga volajících a skupiny
+				<br/>
+				
+* uživatelská vyzvánění
+				<br/>
+			</p>
+			
+
+			<p>
+				Je podporování několik formátů pro zálohy a formát je určen
+podle přípony souboru:
+			</p>
+			
+
+			<p>
+				* .lmb - Záloha Nokia, podporuje kontakty, loga volajících a
+uvodní logo.
+				<br/>
+				
+* .vcs - vCalendar, podporuje kalendář a úkoly.
+				<br/>
+				
+* .vcf - vCard, podporuje kontakty.
+				<br/>
+				
+* .ldif - LDAP import, podporuje kontakty.
+				<br/>
+				
+* .ics - iCalendar, podporuje kalendář a úkoly.
+				<br/>
+				
+* Jakákoliv jiná přípona je vlastní formát Gammu, který podporuje
+všechna data zmíněná výše.
+			</p>
+			
+
+			<p>
+				V části 
+				<b>
+					PŘÍKLAD
+				</b>
+				 naleznete nějaké tipy pro práci se
+souborem záloh Gammu.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				clearall
+			</b>
+		</dt>
+		
+
+		<dd>
+			Odstraní všechna uživatelská data z telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getallcategory
+			</b>
+			 
+			<i>
+				TODO|PHONEBOOK
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				getcategory TODO|PHONEBOOK
+			</b>
+			 
+			<i>
+				start [stop]
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				listmemorycategory
+			</b>
+			 
+			<i>
+				text|number
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				listtodocategory
+			</b>
+			 
+			<i>
+				text|number
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				restore
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá data ze souboru vytvořeného pomocí fuknce 
+			<b>
+				backup
+			</b>
+			.
+
+			<p>
+				Prosím uvědomte si, že obnovení znamená odstranění dat, která
+jsou v telefonu obsažena. Pokud chcete jen přidat nové záznamy,
+použijte addnew.
+			</p>
+			
+
+			<p>
+				Některé telefony neobnoví korektně události v kalendáři, pokud v
+telefonu není nastaven čas a datum.
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAR" name="lbAR"/>
+	
+
+	<h4>
+		Záloha a obnovení
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				addnew
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá data ze souboru vytvořeného pomocí fuknce 
+			<b>
+				backup
+			</b>
+			.
+
+			<p>
+				Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
+o stávající obsah v telefonu (tedy ani nejsou detekovány
+duplicity).
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				addsms
+			</b>
+			 
+			<i>
+				folder file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá SMS zprávy ze souboru (formát jako používá backupsms) do
+zvolené složky v telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				backup
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zazálohuje obsah telefonu do souboru. Je možné zálohovat
+(závisí na telefonu a formátu zálohy):
+
+			<p>
+				* kontakty ze SIM karty a z telefonu
+				<br/>
+				
+* události z kalendáře
+				<br/>
+				
+* nastavení SMS zpráv
+				<br/>
+				
+* loga operátora
+				<br/>
+				
+* úvodní logo a text
+				<br/>
+				
+* WAP záložky
+				<br/>
+				
+* nastavení WAPu
+				<br/>
+				
+* loga volajících a skupiny
+				<br/>
+				
+* uživatelská vyzvánění
+				<br/>
+			</p>
+			
+
+			<p>
+				Je podporování několik formátů pro zálohy a formát je určen
+podle přípony souboru:
+			</p>
+			
+
+			<p>
+				* .lmb - Záloha Nokia, podporuje kontakty, loga volajících a
+uvodní logo.
+				<br/>
+				
+* .vcs - vCalendar, podporuje kalendář a úkoly.
+				<br/>
+				
+* .vcf - vCard, podporuje kontakty.
+				<br/>
+				
+* .ldif - LDAP import, podporuje kontakty.
+				<br/>
+				
+* .ics - iCalendar, podporuje kalendář a úkoly.
+				<br/>
+				
+* Jakákoliv jiná přípona je vlastní formát Gammu, který podporuje
+všechna data zmíněná výše.
+			</p>
+			
+
+			<p>
+				V části 
+				<b>
+					PŘÍKLAD
+				</b>
+				 naleznete nějaké tipy pro práci se
+souborem záloh Gammu.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				backupsms
+			</b>
+			 
+			<i>
+				file [-yes|-all]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Uloží všechny SMS z telefonu do souboru.
+
+			<p>
+				Použijte -yes pro odpověď ano na všechny otázky (zazálohovat
+všechny zprávy a odstranit je z telefonu) nebo -all pro zálohu
+všech zpráv a ponechání jich v telefonu.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				restore
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá data ze souboru vytvořeného pomocí fuknce 
+			<b>
+				backup
+			</b>
+			.
+
+			<p>
+				Prosím uvědomte si, že obnovení znamená odstranění dat, která
+jsou v telefonu obsažena. Pokud chcete jen přidat nové záznamy,
+použijte addnew.
+			</p>
+			
+
+			<p>
+				Některé telefony neobnoví korektně události v kalendáři, pokud v
+telefonu není nastaven čas a datum.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				restoresms
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Obnoví SMS zprávy ze souboru (z formátu který používá příkaz
+backupsms) do zvolené složky v telefonu. Pokud to telefon
+podporuje, budou stávající zprávy ve složce přepsány!
+		</dd>
+		
+
+		<dt>
+			<b>
+				savefile BOOKMARK
+			</b>
+			 
+			<i>
+				target.url file location
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				savefile CALENDAR
+			</b>
+			 
+			<i>
+				target.vcs file location
+			</i>
+		</dt>
+		
+
+		<dd>
+			Umožní převádět mezi různými formáty pro zálohy, které Gammu
+podporuje pro kalendář. Typ souboru je odhadnut (pro vstupní soubor
+podle přípony a obsahu, pro výstupní jen podle přípony).
+
+			<p>
+				For example if you want to convert single entry from gammu
+native backup to vCalendar, you need following command:
+			</p>
+			
+
+			<p>
+				<br/>
+				
+gammusavefileCALENDARoutput.vcsmyCalendar.backup260
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savefile TODO
+			</b>
+			 
+			<i>
+				target.vcs file location
+			</i>
+		</dt>
+		
+
+		<dd>
+			Umožní převádět mezi různými formáty pro zálohy, které Gammu
+podporuje pro úkoly. Typ souboru je odhadnut (pro vstupní soubor
+podle přípony a obsahu, pro výstupní jen podle přípony).
+
+			<p>
+				For example if you want to convert single entry from gammu
+native backup to vCalendar, you need following command:
+			</p>
+			
+
+			<p>
+				<br/>
+				
+gammusavefileCALENDARoutput.vcsmyCalendar.backup260
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savefile VCARD10|VCARD21
+			</b>
+			 
+			<i>
+				target.vcf file SM|ME
+location
+			</i>
+		</dt>
+		
+
+		<dd>
+			Umožní převádět mezi různými formáty pro zálohy, které Gammu
+podporuje pro kontakty. Typ souboru je odhadnut (pro vstupní soubor
+podle přípony a obsahu, pro výstupní jen podle přípony).
+
+			<p>
+				For example if you want to convert single entry from gammu
+native backup to vCard, you need following command:
+			</p>
+			
+
+			<p>
+				<br/>
+				
+gammusavefileCALENDARoutput.vcfmyPhonebook.backupME42
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAS" name="lbAS"/>
+	
+
+	<h4>
+		Specifické pro Nokii
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				nokiaaddfile
+			</b>
+			
+
+			<i>
+				Gallery|Gallery2|Camera|Tones|Tones2|Records|Video|Playlist|MemoryCard
+file [-name name] [-protected] [-readonly] [-system] [-hidden]
+[-newtime]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Install the *.jar/*.jad file pair of a midlet in the
+application or game menu of the phone. You have to give the name
+without the jar/jad suffix, otherwise you will get the slightly
+confusing error message Can't open specified file. Read only ?
+
+			<p>
+				The option 
+				<i>
+					-overwrite
+				</i>
+				 deletes the application's .jad and
+.jar files bevor installing, but doesn't delete the application
+data. Option 
+				<i>
+					-overwriteall
+				</i>
+				 will also delete all data. Both
+these options work only for Application or Game upload.
+			</p>
+			
+
+			<p>
+				<i>
+					Example:
+				</i>
+				 gammu nokiaaddfile Application Alien načte
+Alien.JAD a Alien.JAR a přidá ho do složky Applications
+			</p>
+			
+
+			<p>
+				<i>
+					Příklad:
+				</i>
+				 gammu nokiaaddfile Tones file.mid načte soubor
+file.mid a přidá ho do složky Tones
+			</p>
+			
+
+			<p>
+				Pro vygenerování jad souboru z jar souboru můžete použít
+
+				<a href="jadmaker.1.html">
+					jadmaker
+				</a>
+				(1).
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokiaaddplaylists
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiacomposer
+			</b>
+			 
+			<i>
+				file
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zobrazí jak zadat RTTL vyzvánění ve skladateli dostupném v
+mnoha telefonech Nokia (a jak by mělo vypadat).
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokiadebug
+			</b>
+			 
+			<i>
+				filename [[v11-22] [,v33-44]...]
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiadisplayoutput
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiadisplaytest
+			</b>
+			 
+			<i>
+				number
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiagetadc
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiagetoperatorname
+			</b>
+		</dt>
+		
+
+		<dd>
+			6110.c phones have place for name for one GSM network (of
+course, with flashing it's possible to change all names, but Gammu
+is not flasher ;-)). You can get this name using this option.
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokiagetpbkfeatures
+			</b>
+			 
+			<i>
+				memorytype
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiagetscreendump
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiagett9
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiagetvoicerecord
+			</b>
+			 
+			<i>
+				location
+			</i>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Get voice record from location and save to WAV file. File is
+coded using GSM 6.10 codec (available for example in win32). Name
+of file is like name of voice record in phone.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokiamakecamerashoot
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokianetmonitor
+			</b>
+			 
+			<i>
+				test
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zobrazí výstup nebo nastaví netmonitor na telefonech Nokia
+DCT3.
+
+			<p>
+				<i>
+					TIP:
+				</i>
+				 Pro více informací se podívejte na stránky
+
+				<i>
+					<a href="http://www.mwiacek.com">
+						http://www.mwiacek.com
+					</a>
+				</i>
+				,
+kde naleznete manuál k netmonitoru.
+			</p>
+			
+
+			<p>
+				<i>
+					TIP:
+				</i>
+				 test 
+				<b>
+					243
+				</b>
+				 enables all tests (after using
+command 
+				<b>
+					gammu nokianetmonitor 243
+				</b>
+				 in some phones like 6210
+or 9210 have to reboot them to see netmonitor menu)
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokianetmonitor36
+			</b>
+		</dt>
+		
+
+		<dd>
+			Vynuluje čítače z testu 36 v netmonitoru telefonů Nokia DCT3.
+
+			<p>
+				<i>
+					TIP:
+				</i>
+				 Pro více informací se podívejte na stránky
+
+				<i>
+					<a href="http://www.mwiacek.com">
+						http://www.mwiacek.com
+					</a>
+				</i>
+				,
+kde naleznete manuál k netmonitoru.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokiasecuritycode
+			</b>
+		</dt>
+		
+
+		<dd>
+			Přečte bezpečnostní kód nebo ho nastaví na &quot;12345&quot;.
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokiaselftests
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiasetlights
+			</b>
+			 
+			<i>
+				keypad|display|torch on|off
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiasetoperatorname
+			</b>
+			 
+			<i>
+				[networkcode name]
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiasetphonemenus
+			</b>
+		</dt>
+		
+
+		<dd>
+			Zapne všechny (?) dostupné nabídky na telefonech Nokia DCT3.
+
+			<p>
+				1. Nabídka nastavení ALS (Alternative Line Service)
+				<br/>
+				
+2. Nastavení vibračního vyzvánění pro 3210
+				<br/>
+				
+3. vlastnosti 3315 v 3310 5.45 a novějších
+				<br/>
+				
+4. dvě další hry (React a Logic) pro 3210 5.31 a novější
+				<br/>
+				
+5. Nabídka WellMate 6150
+				<br/>
+				
+6. NetMonitor
+			</p>
+			
+
+			<p>
+				a pro DCT4:
+			</p>
+			
+
+			<p>
+				1. Nabídka nastavení ALS (Alternative Line Service)
+				<br/>
+				
+2. Nabídka Bluetooth, záložky WAP a nastavení, ... (6310i)
+				<br/>
+				
+3. GPRS vždy zapnuté
+				<br/>
+				
+...
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokiasetvibralevel
+			</b>
+			 
+			<i>
+				level
+			</i>
+		</dt>
+		
+
+		<dd>
+			Nastaví úrověň vibrací na úroveň &quot;level&quot; (v procentech)
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokiatuneradio
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiavibratest
+			</b>
+		</dt>
+		
+
+	</dl>
+	
+
+	<a id="lbAT" name="lbAT"/>
+	
+
+	<h4>
+		Specifické pro Siemens
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				siemensnetmonact
+			</b>
+			 
+			<i>
+				netmon_type (1-full,
+2-simple)
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				siemensnetmonitor
+			</b>
+			 
+			<i>
+				test
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				siemenssatnetmon
+			</b>
+		</dt>
+		
+
+	</dl>
+	
+
+	<a id="lbAU" name="lbAU"/>
+	
+
+	<h4>
+		Síť
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				getgprspoint
+			</b>
+			 
+			<i>
+				start [stop]
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				listnetworks
+			</b>
+			 
+			<i>
+				[country]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zobrazí názvy GSM sítí známých Gammu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				monitor
+			</b>
+			 
+			<i>
+				[times]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Periodicky zobrazuje informace o stavu telefonu. Program
+přerušíte stisknutím Ctrl+C.
+		</dd>
+		
+
+		<dt>
+			<b>
+				networkinfo
+			</b>
+		</dt>
+		
+
+		<dd>
+			Zobrazí informace o stavu sítě z telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokiadebug
+			</b>
+			 
+			<i>
+				filename [[v11-22] [,v33-44]...]
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiagetoperatorname
+			</b>
+		</dt>
+		
+
+		<dd>
+			6110.c phones have place for name for one GSM network (of
+course, with flashing it's possible to change all names, but Gammu
+is not flasher ;-)). You can get this name using this option.
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokianetmonitor
+			</b>
+			 
+			<i>
+				test
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zobrazí výstup nebo nastaví netmonitor na telefonech Nokia
+DCT3.
+
+			<p>
+				<i>
+					TIP:
+				</i>
+				 Pro více informací se podívejte na stránky
+
+				<i>
+					<a href="http://www.mwiacek.com">
+						http://www.mwiacek.com
+					</a>
+				</i>
+				,
+kde naleznete manuál k netmonitoru.
+			</p>
+			
+
+			<p>
+				<i>
+					TIP:
+				</i>
+				 test 
+				<b>
+					243
+				</b>
+				 enables all tests (after using
+command 
+				<b>
+					gammu nokianetmonitor 243
+				</b>
+				 in some phones like 6210
+or 9210 have to reboot them to see netmonitor menu)
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokiasetoperatorname
+			</b>
+			 
+			<i>
+				[networkcode name]
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				setautonetworklogin
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				siemensnetmonact
+			</b>
+			 
+			<i>
+				netmon_type (1-full,
+2-simple)
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				siemensnetmonitor
+			</b>
+			 
+			<i>
+				test
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				siemenssatnetmon
+			</b>
+		</dt>
+		
+
+	</dl>
+	
+
+	<a id="lbAV" name="lbAV"/>
+	
+
+	<h4>
+		Nastavení WAPu a záložky
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				addnew
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá data ze souboru vytvořeného pomocí fuknce 
+			<b>
+				backup
+			</b>
+			.
+
+			<p>
+				Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
+o stávající obsah v telefonu (tedy ani nejsou detekovány
+duplicity).
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				backup
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zazálohuje obsah telefonu do souboru. Je možné zálohovat
+(závisí na telefonu a formátu zálohy):
+
+			<p>
+				* kontakty ze SIM karty a z telefonu
+				<br/>
+				
+* události z kalendáře
+				<br/>
+				
+* nastavení SMS zpráv
+				<br/>
+				
+* loga operátora
+				<br/>
+				
+* úvodní logo a text
+				<br/>
+				
+* WAP záložky
+				<br/>
+				
+* nastavení WAPu
+				<br/>
+				
+* loga volajících a skupiny
+				<br/>
+				
+* uživatelská vyzvánění
+				<br/>
+			</p>
+			
+
+			<p>
+				Je podporování několik formátů pro zálohy a formát je určen
+podle přípony souboru:
+			</p>
+			
+
+			<p>
+				* .lmb - Záloha Nokia, podporuje kontakty, loga volajících a
+uvodní logo.
+				<br/>
+				
+* .vcs - vCalendar, podporuje kalendář a úkoly.
+				<br/>
+				
+* .vcf - vCard, podporuje kontakty.
+				<br/>
+				
+* .ldif - LDAP import, podporuje kontakty.
+				<br/>
+				
+* .ics - iCalendar, podporuje kalendář a úkoly.
+				<br/>
+				
+* Jakákoliv jiná přípona je vlastní formát Gammu, který podporuje
+všechna data zmíněná výše.
+			</p>
+			
+
+			<p>
+				V části 
+				<b>
+					PŘÍKLAD
+				</b>
+				 naleznete nějaké tipy pro práci se
+souborem záloh Gammu.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				clearall
+			</b>
+		</dt>
+		
+
+		<dd>
+			Odstraní všechna uživatelská data z telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				deletewapbookmark
+			</b>
+			 
+			<i>
+				start [stop]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odstraní WAP záložky z telefonu.
+
+			<p>
+				Umístění číslujte od 1.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				getchatsettings
+			</b>
+			 
+			<i>
+				start [stop]
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				getsyncmlsettings
+			</b>
+			 
+			<i>
+				start [stop]
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				getwapbookmark
+			</b>
+			 
+			<i>
+				start [stop]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte WAP záložky z telefonu.
+
+			<p>
+				Umístění číslujte od 1.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				getwapsettings
+			</b>
+			 
+			<i>
+				start [stop]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte nastavení WAPu z telefonu.
+
+			<p>
+				Umístění číslujte od 1.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				restore
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá data ze souboru vytvořeného pomocí fuknce 
+			<b>
+				backup
+			</b>
+			.
+
+			<p>
+				Prosím uvědomte si, že obnovení znamená odstranění dat, která
+jsou v telefonu obsažena. Pokud chcete jen přidat nové záznamy,
+použijte addnew.
+			</p>
+			
+
+			<p>
+				Některé telefony neobnoví korektně události v kalendáři, pokud v
+telefonu není nastaven čas a datum.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savefile BOOKMARK
+			</b>
+			 
+			<i>
+				target.url file location
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				savesms BOOKMARK
+			</b>
+			 
+			<i>
+				file location [-folder id] [-unread]
+[-read] [-unsent] [-sent] [-sender number] [-smsname name]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte WAP záložky ze souboru vytvořeného příkazem 
+			<b>
+				backup
+			</b>
+			
+a uloží je ve formátu Nokie jako SMS
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms WAPINDICATOR
+			</b>
+			 
+			<i>
+				URL Title [-folder id] [-unread]
+[-read] [-unsent] [-sent] [-sender number] [-smsname name]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Uloží SMS s indikací WAP pro zadané URL a titulek.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms WAPSETTINGS
+			</b>
+			 
+			<i>
+				file location DATA|GPRS [-folder
+id] [-unread] [-read] [-unsent] [-sent] [-sender number] [-smsname
+name] [-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte nastavení WAPu ze souboru vytvořeného příkazem
+
+			<b>
+				backup
+			</b>
+			 a uloží je ve formátu Nokie jako SMS.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms BOOKMARK
+			</b>
+			 
+			<i>
+				destination file location [-report]
+[-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+BOOKMARK
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms WAPINDICATOR
+			</b>
+			 
+			<i>
+				destination URL Title [-report]
+[-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
+[-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+WAPINDICATOR
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms WAPSETTINGS
+			</b>
+			 
+			<i>
+				destination file location
+DATA|GPRS [-report] [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX]
+[-save [-folder number]] [-smscset number] [-smscnumber number]
+[-reply] [-maxsms num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+WAPSETTINGS
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAW" name="lbAW"/>
+	
+
+	<h4>
+		MMS a jejich nastavení
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				getallmms
+			</b>
+			 
+			<i>
+				[-save]
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				geteachmms
+			</b>
+			 
+			<i>
+				[-save]
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				getmmsfolders
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				getmmssettings
+			</b>
+			 
+			<i>
+				start [stop]
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				readmmsfile
+			</b>
+			 
+			<i>
+				file [-save]
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				savesms MMSINDICATOR
+			</b>
+			 
+			<i>
+				URL Title Sender [-folder id]
+[-unread] [-read] [-unsent] [-sent] [-sender number] [-smsname
+name] [-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Uloží zprávu s indikací MMS zprávy. Příjemcův telefon poté stáhe
+MMS se zadané adresy a zobrazí ji.
+			</p>
+			
+
+			<p>
+				Prosím uvědomte si, že na zadaném URL by měla být platná smil
+data.
+			</p>
+			
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms MMSSETTINGS
+			</b>
+			 
+			<i>
+				file location [-folder id]
+[-unread] [-read] [-unsent] [-sent] [-sender number] [-smsname
+name] [-smscset number] [-smscnumber number] [-reply] [-maxsms
+num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Uloží zprávu s nastavením MMS. Nastavení bude načteno ze zálohy
+Gammu ze zadaného umístění.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms MMSINDICATOR
+			</b>
+			 
+			<i>
+				destination URL Title Sender
+[-report] [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save
+[-folder number]] [-smscset number] [-smscnumber number] [-reply]
+[-maxsms num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+MMSINDICATOR
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms MMSSETTINGS
+			</b>
+			 
+			<i>
+				destination file location
+[-report] [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save
+[-folder number]] [-smscset number] [-smscnumber number] [-reply]
+[-maxsms num]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+MMSSETTINGS
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAX" name="lbAX"/>
+	
+
+	<h4>
+		Testy telefonu
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				nokiadisplaytest
+			</b>
+			 
+			<i>
+				number
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiagetadc
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiaselftests
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiasetlights
+			</b>
+			 
+			<i>
+				keypad|display|torch on|off
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiavibratest
+			</b>
+		</dt>
+		
+
+	</dl>
+	
+
+	<a id="lbAY" name="lbAY"/>
+	
+
+	<h4>
+		FM rádio
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				addnew
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá data ze souboru vytvořeného pomocí fuknce 
+			<b>
+				backup
+			</b>
+			.
+
+			<p>
+				Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
+o stávající obsah v telefonu (tedy ani nejsou detekovány
+duplicity).
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				backup
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zazálohuje obsah telefonu do souboru. Je možné zálohovat
+(závisí na telefonu a formátu zálohy):
+
+			<p>
+				* kontakty ze SIM karty a z telefonu
+				<br/>
+				
+* události z kalendáře
+				<br/>
+				
+* nastavení SMS zpráv
+				<br/>
+				
+* loga operátora
+				<br/>
+				
+* úvodní logo a text
+				<br/>
+				
+* WAP záložky
+				<br/>
+				
+* nastavení WAPu
+				<br/>
+				
+* loga volajících a skupiny
+				<br/>
+				
+* uživatelská vyzvánění
+				<br/>
+			</p>
+			
+
+			<p>
+				Je podporování několik formátů pro zálohy a formát je určen
+podle přípony souboru:
+			</p>
+			
+
+			<p>
+				* .lmb - Záloha Nokia, podporuje kontakty, loga volajících a
+uvodní logo.
+				<br/>
+				
+* .vcs - vCalendar, podporuje kalendář a úkoly.
+				<br/>
+				
+* .vcf - vCard, podporuje kontakty.
+				<br/>
+				
+* .ldif - LDAP import, podporuje kontakty.
+				<br/>
+				
+* .ics - iCalendar, podporuje kalendář a úkoly.
+				<br/>
+				
+* Jakákoliv jiná přípona je vlastní formát Gammu, který podporuje
+všechna data zmíněná výše.
+			</p>
+			
+
+			<p>
+				V části 
+				<b>
+					PŘÍKLAD
+				</b>
+				 naleznete nějaké tipy pro práci se
+souborem záloh Gammu.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				clearall
+			</b>
+		</dt>
+		
+
+		<dd>
+			Odstraní všechna uživatelská data z telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getfmstation
+			</b>
+			 
+			<i>
+				start [stop]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zobrazí informace o FM stanicích v telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokiatuneradio
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				restore
+			</b>
+			 
+			<i>
+				file [-yes]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přidá data ze souboru vytvořeného pomocí fuknce 
+			<b>
+				backup
+			</b>
+			.
+
+			<p>
+				Prosím uvědomte si, že obnovení znamená odstranění dat, která
+jsou v telefonu obsažena. Pokud chcete jen přidat nové záznamy,
+použijte addnew.
+			</p>
+			
+
+			<p>
+				Některé telefony neobnoví korektně události v kalendáři, pokud v
+telefonu není nastaven čas a datum.
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAZ" name="lbAZ"/>
+	
+
+	<h4>
+		Informace o telefonu
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				checkfirmware
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Gammu se připojí na 
+				<a href="http://www.gammu.org">
+					www.gammu.org
+				</a>
+				 a zkontroluje poslední
+dostupnou verzi firmware pro váš telefon. Stáhne se soubor
+&lt;
+				<a href="http://www.gammu.org/support/phones/phonedbxml.php?model=x">
+					http://www.gammu.org/support/phones/phonedbxml.php?model=x
+				</a>
+				&gt;
+a načtou se z něj informace o telefonu. Nejsou odesílána žádná
+soukromá data. Musí být povolen přístup na 
+				<a href="http://www.gammu.org">
+					www.gammu.org
+				</a>
+				 na portu 80.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				getdisplaystatus
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				getsecuritystatus
+			</b>
+		</dt>
+		
+
+		<dd>
+			Zobrazí, jestli telefon čeká na bezpečnostní kód (PIN, PUK a
+podobně).
+		</dd>
+		
+
+		<dt>
+			<b>
+				identify
+			</b>
+		</dt>
+		
+
+		<dd>
+			Zobrazí základní informace o telefonu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				monitor
+			</b>
+			 
+			<i>
+				[times]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Periodicky zobrazuje informace o stavu telefonu. Program
+přerušíte stisknutím Ctrl+C.
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokiasecuritycode
+			</b>
+		</dt>
+		
+
+		<dd>
+			Přečte bezpečnostní kód nebo ho nastaví na &quot;12345&quot;.
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbBA" name="lbBA"/>
+	
+
+	<h4>
+		Nastavení telefonu
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				getcalendarsettings
+			</b>
+		</dt>
+		
+
+		<dd>
+			Zobrazí nastavení kalendáře jako první den v týdnu nebo
+odstraňování starých položek.
+		</dd>
+		
+
+		<dt>
+			<b>
+				getprofile
+			</b>
+			 
+			<i>
+				start [stop]
+			</i>
+		</dt>
+		
+
+		<dt>
+			<b>
+				resetphonesettings
+			</b>
+			 
+			<i>
+				PHONE|DEV|UIF|ALL|FACTORY
+			</i>
+		</dt>
+		
+
+		<dd>
+			Obnoví výchozí nastavení telefonu. 
+			<i>
+				BUĎTE OPATRNÍ !!!!
+			</i>
+			
+
+			<p>
+				<b>
+					PHONE:
+				</b>
+				<br/>
+			</p>
+			
+
+			<p>
+				<b>
+					DEV:
+				</b>
+				<br/>
+			</p>
+			
+
+			<p>
+				<b>
+					ALL:
+				</b>
+			</p>
+			
+
+			<p>
+				Odstraní uživatelská nastavení
+				<br/>
+				
+* odstraní nebo obnoví výchozí loga
+				<br/>
+				
+* obnoví výchozí nastavení kontaktů a menu
+				<br/>
+				
+* vyprázdní slovník T9
+				<br/>
+				
+* vymaže informace o hovorech
+				<br/>
+				
+* obnoví výchozí nastavení profilů
+				<br/>
+				
+* odstraní uživatelská vyzvánění
+			</p>
+			
+
+			<p>
+				<b>
+					UIF:
+				</b>
+				<br/>
+				
+* změny jako 
+				<b>
+					ALL
+				</b>
+				<br/>
+				
+* vypne netmonitor a PPS (všechna &quot;skrytá&quot; menu)
+			</p>
+			
+
+			<p>
+				<b>
+					FACTORY:
+				</b>
+				<br/>
+				
+* změny jako 
+				<b>
+					UIF
+				</b>
+				<br/>
+				
+* vymaže datum a čas
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				savesms PROFILE
+			</b>
+			 
+			<i>
+				[-folder id] [-unread] [-read]
+[-unsent] [-sent] [-sender number] [-smsname name] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num] [-name name]
+[-bitmap bitmap] [-ringtone ringtone]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Načte vyzvánění (RTTL), obrázek a jméno a uloží je jako profil
+pro Nokii.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				sendsms PROFILE
+			</b>
+			 
+			<i>
+				destination [-report] [-validity
+HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
+number] [-smscnumber number] [-reply] [-maxsms num] [-name name]
+[-bitmap bitmap] [-ringtone ringtone]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Odešle zprávu, pro popis parametrů se podívejte na 
+			<b>
+				savesms
+PROFILE
+			</b>
+			.
+
+			<p>
+				Popis společných parametrů naleznete v sekci 
+				<b>
+					Společné
+parametry pro sendsms a savesms
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbBB" name="lbBB"/>
+	
+
+	<h4>
+		Dekódování výpisů
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				decodebinarydump
+			</b>
+			 
+			<i>
+				file [phonemodel]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Dekóduje dump vytvořený Gammu s 
+			<b>
+				logformat
+			</b>
+			 nastaveným na
+
+			<b>
+				binary
+			</b>
+			 (více informací o tomto způsobu hlášení chyb
+naleznete v 
+			<i>
+				README
+			</i>
+			).
+
+			<p>
+				Tento příkaz je dostupný jen pokud bylo Gammu kompilováno s
+ladicími volbami.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				decodesniff MBUS2|IRDA
+			</b>
+			 
+			<i>
+				file [phonemodel]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Tato volba je dostupná jen pokud bylo Gammu zkompilováno s
+ladicím kódem a umožní dekódovat odposlechy komunikace s některými
+telefony. Více detailů naleznete v
+
+			<i>
+				docs/develop/develop.txt
+			</i>
+			.
+		</dd>
+		
+
+		<dt>
+			<b>
+				makeconverttable
+			</b>
+			 
+			<i>
+				file
+			</i>
+		</dt>
+		
+
+	</dl>
+	
+
+	<a id="lbBC" name="lbBC"/>
+	
+
+	<h4>
+		Fuknce, které se nevešly jinam
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				batch
+			</b>
+			 
+			<i>
+				[file]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Spustí Gammu v dávkovém režimu, kdy můžete provést více
+příkazů, každý na jedné řádce. Řádky začínající # jsou považovány
+za komentáře.
+
+			<p>
+				Pokud nezadáte jméno souboru, jsou příkazy čteny ze standardního
+vstupu. Jinak jsou čteny z tohoto souboru, speciální případ -
+znamená čtení ze standardního vstupu.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				entersecuritycode PIN|PUK|PIN2|PUK2|PHONE|NETWORK
+			</b>
+			
+
+			<i>
+				code|-
+			</i>
+		</dt>
+		
+
+		<dd>
+			Umožní zadat bezpečností kód z PC. Pokud je jako kód zadáno -,
+je načten ze standardního vstupu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokiagetscreendump
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiagetvoicerecord
+			</b>
+			 
+			<i>
+				location
+			</i>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Get voice record from location and save to WAV file. File is
+coded using GSM 6.10 codec (available for example in win32). Name
+of file is like name of voice record in phone.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokiamakecamerashoot
+			</b>
+		</dt>
+		
+
+		<dt>
+			<b>
+				nokiasetphonemenus
+			</b>
+		</dt>
+		
+
+		<dd>
+			Zapne všechny (?) dostupné nabídky na telefonech Nokia DCT3.
+
+			<p>
+				1. Nabídka nastavení ALS (Alternative Line Service)
+				<br/>
+				
+2. Nastavení vibračního vyzvánění pro 3210
+				<br/>
+				
+3. vlastnosti 3315 v 3310 5.45 a novějších
+				<br/>
+				
+4. dvě další hry (React a Logic) pro 3210 5.31 a novější
+				<br/>
+				
+5. Nabídka WellMate 6150
+				<br/>
+				
+6. NetMonitor
+			</p>
+			
+
+			<p>
+				a pro DCT4:
+			</p>
+			
+
+			<p>
+				1. Nabídka nastavení ALS (Alternative Line Service)
+				<br/>
+				
+2. Nabídka Bluetooth, záložky WAP a nastavení, ... (6310i)
+				<br/>
+				
+3. GPRS vždy zapnuté
+				<br/>
+				
+...
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				nokiasetvibralevel
+			</b>
+			 
+			<i>
+				level
+			</i>
+		</dt>
+		
+
+		<dd>
+			Nastaví úrověň vibrací na úroveň &quot;level&quot; (v procentech)
+		</dd>
+		
+
+		<dt>
+			<b>
+				presskeysequence
+			</b>
+			
+
+			<i>
+				mMnNpPuUdD+-123456789*0#gGrR&lt;&gt;[]hHcCjJfFoOmMdD@
+			</i>
+		</dt>
+		
+
+		<dd>
+			Simuluje stisk kláves na klávesnici telefonu
+
+			<p>
+				<b>
+					mM
+				</b>
+				 - Menu
+				<br/>
+				
+
+				<b>
+					nN
+				</b>
+				 - Klávesa pro jména
+				<br/>
+				
+
+				<b>
+					pP
+				</b>
+				 - Vypínač
+				<br/>
+				
+
+				<b>
+					uU
+				</b>
+				 - Nahoru
+				<br/>
+				
+
+				<b>
+					dD
+				</b>
+				 - Dolů
+				<br/>
+				
+
+				<b>
+					+-
+				</b>
+				 - +-
+				<br/>
+				
+
+				<b>
+					gG
+				</b>
+				 - Zelené
+				<br/>
+				
+
+				<b>
+					rR
+				</b>
+				 - Červené
+				<br/>
+				
+
+				<b>
+					123456789*0#
+				</b>
+				 číslicová klávesnice
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				reset
+			</b>
+			 
+			<i>
+				SOFT|HARD
+			</i>
+		</dt>
+		
+
+		<dd>
+			Provede reset telefonu, buď rychlý (SOFT, bez ptaní na PIN)
+nebo trvdý (HARD, s požadavkem na PIN).
+
+			<p>
+				<i>
+					Poznámka:
+				</i>
+				 některé telefony provedou tvrdý reset i při
+zadání parametru 
+				<b>
+					SOFT
+				</b>
+				.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				searchphone
+			</b>
+			 
+			<i>
+				[-debug]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Pokusí se vyhledat připojený telefon. Uvědomte si, že tato
+oprace může trvat velmi dlouho, ale v případě, že nevíte jak
+nastavit připojení k telefonu, se může jednat o pohodlnou cestu jak
+zístak funkční nastavení Gammu.
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbBD" name="lbBD"/>
+	
+
+	<h4>
+		Informace o Gammu
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				checkversion
+			</b>
+			 
+			<i>
+				[STABLE]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zkontroluje jesti není dostupná novější verze Gammu (pro tuto
+funkci muselo být Gammu zkompilováno s podporou pro CURL). Pokud
+použijete volitelný parametr 
+			<b>
+				STABLE
+			</b>
+			, budou kontrolovány jen
+stabilní verze.
+		</dd>
+		
+
+		<dt>
+			<b>
+				features
+			</b>
+		</dt>
+		
+
+		<dd>
+			Zobrazí informace o zakompilovaných funkcích.
+		</dd>
+		
+
+		<dt>
+			<b>
+				help
+			</b>
+			 
+			<i>
+				[topic]
+			</i>
+		</dt>
+		
+
+		<dd>
+			Zobrazí nápovědu. Bez parametrů je zobrazena obecná nápověda,
+zadáním tématu můžete získat podrobnější informace o vybraném
+tématu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				version
+			</b>
+		</dt>
+		
+
+		<dd>
+			Zobrazí informace o verzi a licenci
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbBE" name="lbBE"/>
+	
+
+	<h3>
+		SOUBORY
+	</h3>
+	
+
+	<p>
+		<i>
+			~/.gammurc
+		</i>
+		<br/>
+		
+
+		<i>
+			/usr/share/doc/gammu/*
+		</i>
+		<br/>
+		
+
+		<i>
+			/dev/ircomm?
+		</i>
+		<br/>
+		
+
+		<i>
+			/dev/ttyS?
+		</i>
+		<br/>
+		
+
+		<i>
+			/dev/ttyACM?
+		</i>
+	</p>
+	
+
+	<p>
+		<a id="lbBF" name="lbBF"/>
+	</p>
+	
+
+	<h3>
+		PŘÍKLAD
+	</h3>
+	
+
+	<p>
+		<a id="lbBG" name="lbBG"/>
+	</p>
+	
+
+	<h4>
+		Nastavení
+	</h4>
+	
+
+	<p>
+		Pro vyzkoušení potřebujete vytvořit konfigurační soubor pro
+gammu, který je podrobně popsán v 
+		<a href="gammurc.5.html">
+			gammurc
+		</a>
+		(5).
+	</p>
+	
+
+	<p>
+		<a id="lbBH" name="lbBH"/>
+	</p>
+	
+
+	<h4>
+		Posílání zpráv
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			Uložení standardní textové zprávy s maximální délkou 160
+znaků:
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				echo &quot;All your base are belong to us&quot; | gammu savesms TEXT
+			</p>
+			
+
+			<p>
+				nebo
+			</p>
+			
+
+			<p>
+				gammu savesms TEXT -text &quot;All your base are belong to us&quot;
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			Uložení dlouhé textové zprávy:
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				echo &quot;All your base are belong to us&quot; | gammu savesms TEXT -len
+400
+			</p>
+			
+
+			<p>
+				nebo
+			</p>
+			
+
+			<p>
+				gammu savesms TEXT -len 400 -text &quot;All your base are belong to
+us&quot;
+			</p>
+			
+
+			<p>
+				nebo
+			</p>
+			
+
+			<p>
+				gammu savesms EMS -text &quot;All your base are belong to us&quot;
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			Uložení zprávy s předdefinovaným zvukem a animací ze 2
+obrázků:
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				gammu savesms EMS -text &quot;Greetings&quot; -defsound 1 -text &quot;from
+Gammu&quot; -tone10 axelf.txt -animation 2 file1.bmp file2.bmp
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			Uložení chráněné zprávy s vyzváněním:
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				gammu savesms EMS -protected 2 -variablebitmaplong ala.bmp
+-toneSElong axelf.txt -toneSE ring.txt
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbBI" name="lbBI"/>
+	
+
+	<h4>
+		Zálohy
+	</h4>
+	
+
+	<p>
+		If you will backup settings to Gammu text file, it will be
+possible to edit it. It's easy: many things in this file will be
+written double - once in Unicode, once in ASCII. When you will
+remove Unicode version Gammu will use ASCII on 
+		<b>
+			restore
+		</b>
+		 (and
+you can easy edit ASCII text) and will convert it according to your
+OS locale. When will be available Unicode version of text, it will
+be used instead of ASCII (usefull with Unicode phones - it isn't
+important, what locale is set in computer and no conversion Unicode
+-&gt; ASCII and ASCII -&gt; Unicode is done).
+	</p>
+	
+
+	<p>
+		You can use any editor with regular expressions function to edit
+backup text file. Examples of such editors can be vim &lt;
+		<a href="http://www.vim.org/">
+			http://www.vim.org/
+		</a>
+		&gt; or TextPad
+&lt;
+		<a href="http://www.textpad.com/">
+			http://www.textpad.com/
+		</a>
+		&gt; which
+both do support regular expressions.
+	</p>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			Odstranit hlasové vytáření
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Hledat: ^Entry\([0-9][0-9]\)VoiceTag = \(.*\)\n
+			</p>
+			
+
+			<p>
+				Nahradit:
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			Změnit všechna čísla začínající na +3620, +3630, +3660, +3670
+na +3620
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Hledat: Type = NumberGeneral\nEntry\([0-9][0-9]\)Text =
+&quot;\+36\(20\|30\|60\|70\)\n
+			</p>
+			
+
+			<p>
+				Nahradit: Replace: Type = NumberMobile\nEntry\1Text =
+&quot;\+3620
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			Změnit typ čísla na mobilní pro čísla začínající na +3620,
++3630,... a odstranit odpovídající řádku TextUnicode
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Hledat: Type = NumberGeneral\nEntry\([0-9][0-9]\)Text =
+&quot;\+36\([2367]0\)\([^\&quot;]*\)&quot;\nEntry\([0-9][0-9]\)TextUnicode =
+\([^\n]*\)\n
+			</p>
+			
+
+			<p>
+				Nahradit: Replace: Type = NumberMobile\nEntry\1Text =
+&quot;\+36\2\3&quot;\n
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbBJ" name="lbBJ"/>
+	
+
+	<h3>
+		COPYRIGHT
+	</h3>
+	
+
+	<p>
+		Copyright © 2003-2009 Marcin Wiacek, Michal Čihař a další
+autoři. Licence GPLv2: GNU GPL verze 2 &lt;
+		<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">
+			http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+		</a>
+		&gt;
+		<br/>
+		
+
+Tento program je volný software; můžete jej šířit a modifikovat.
+Není poskytována ŽÁDNÁ ZÁRUKA, v rozsahu jaký je povolen
+zákonem.
+	</p>
+	
+
+	<p>
+		<a id="lbBK" name="lbBK"/>
+	</p>
+	
+
+	<h3>
+		HLÁŠENÍ CHYB
+	</h3>
+	
+
+	<p>
+		V programu je určitě mnoho chyb a jejich hlášení autorům je
+vítáno. Prosím nezapomeňte na užitečné informace v hlášení o chybě
+(obzvlášť užitečné jsou ladicí log, informace o operačním systému,
+jeho verzi a informace o telefonu).
+	</p>
+	
+
+	<p>
+		Pro vytvoření ladicího logu zapněte logování v gammurc (můžete
+ho také zapnout na příkazové řádce pomocí -d textall -f
+/tmp/gammu.log):
+	</p>
+	
+
+	<p>
+		<br/>
+		
+[gammu]
+		<br/>
+		
+...vašenastavenípřipojení...
+		<br/>
+		
+
+logfile=/tmp/gammu.log
+		<br/>
+		
+logformat=textall
+	</p>
+	
+
+	<p>
+		S tímto nastavení Gammu vytvoří /tmp/gammu.log při každém
+připojení k telefonu a uloží do něj obsah komunikace. V tomto logu
+také mohou být obsaženy rady pro vylepšení podpory pro váš
+telefon.
+	</p>
+	
+
+	<p>
+		Prosím hlašte chyby na &lt;
+		<a href="http://bugs.cihar.com">
+			http://bugs.cihar.com
+		</a>
+		&gt;.
+	</p>
+	
+
+	<p>
+		<a id="lbBL" name="lbBL"/>
+	</p>
+	
+
+	<h3>
+		AUTOR
+	</h3>
+	
+
+	<p>
+		Autory můžete kontaktovat na &lt;
+		<a href="mailto:gammu-users@lists.sourceforge.net">
+			gammu-users@lists.sourceforge.net
+		</a>
+		&gt;.
+	</p>
+	
+
+	<p>
+		<i>
+			Michal Čihař
+		</i>
+		 &lt;
+		<a href="mailto:michal@cihar.com">
+			michal@cihar.com
+		</a>
+		&gt; je v současné
+době správce projektu a autor většiny kódu pro práci s AT příkazy a
+OBEXem.
+	</p>
+	
+
+	<p>
+		<i>
+			Marcin Wiącek
+		</i>
+		 &lt;
+		<a href="mailto:marcin@mwiacek.com">
+			marcin@mwiacek.com
+		</a>
+		&gt; založil
+projekt a napsal většinu kódu pro telefony Nokia.
+	</p>
+	
+
+	<p>
+		Protože tento projekt vznikl z Gnokii, rádi bychom poděkovali
+všem vývojářům Gnokii, hlavně 
+		<i>
+			Pavlu Janíkovi
+		</i>
+		, 
+		<i>
+			Pawolu
+Kotovi
+		</i>
+		 a 
+		<i>
+			Manfredu Jonssonovi
+		</i>
+		 (v souboru CREDITS v Gnokii
+najdete kompletní seznam přispěvatelů).
+	</p>
+	
+
+	<p>
+		Mnoho dalších lidí pomohlo s různými funkcemi, podívejte se do
+ChangeLogu pro více podrobností.
+	</p>
+	
+
+	<p>
+		<a id="lbBM" name="lbBM"/>
+	</p>
+	
+
+	<h3>
+		DALŠÍ INFORMACE
+	</h3>
+	
+
+	<p>
+		<a href="gammu-smsd.1.html">
+			gammu-smsd
+		</a>
+		(1), 
+		<a href="gammu-smsd-inject.1.html">
+			gammu-smsd-inject
+		</a>
+		(1), 
+		<a href="gammurc.5.html">
+			gammurc
+		</a>
+		(5), 
+		<a href="jadmaker.1.html">
+			jadmaker
+		</a>
+		(1)
+	</p>
+	
+
+	<p>
+		Nějaké další triky naleznete v souboru README nebo na wiki
+stránce &lt;
+		<a href="http://www.gammu.org/">
+			http://www.gammu.org/
+		</a>
+		&gt;.
+	</p>
+	
+
+	<p>
+		Související programy, které mohou být použity s GSM modemem:
+	</p>
+	
+
+	<p>
+		minicom(1)
+	</p>
+	
+
+	<p>
+		Grafické nadstavby pro Gammu:
+	</p>
+	
+
+	<p>
+		gmobilemedia(1)
+	</p>
+	
+
+	<hr/>
+	
+
+	<a id="index" name="index"/>
+	
+
+	<h3>
+		Index
+	</h3>
+	
+
+	<dl>
+		
+
+		<dt>
+			<a href="#lbAB">
+				JMÉNO
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAC">
+				SYNTAXE
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAD">
+				POPIS
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAE">
+				PARAMETRY
+			</a>
+		</dt>
+		
+
+		<dd>
+			
+
+			<dl>
+				
+
+				<dt>
+					<a href="#lbAF">
+						Příkazy
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAG">
+						Hovory
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAH">
+						SMS a EMS
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAI">
+						Paměť (kontakty a hovory)
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAJ">
+						Soubory
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAK">
+						Loga a obrázky
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAL">
+						Zvonění
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAM">
+						Kalendář
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAN">
+						Úkoly
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAO">
+						Poznámky
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAP">
+						Čas, datum a budíky
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAQ">
+						Kategorie
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAR">
+						Záloha a obnovení
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAS">
+						Specifické pro Nokii
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAT">
+						Specifické pro Siemens
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAU">
+						Síť
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAV">
+						Nastavení WAPu a záložky
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAW">
+						MMS a jejich nastavení
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAX">
+						Testy telefonu
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAY">
+						FM rádio
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAZ">
+						Informace o telefonu
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbBA">
+						Nastavení telefonu
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbBB">
+						Dekódování výpisů
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbBC">
+						Fuknce, které se nevešly jinam
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbBD">
+						Informace o Gammu
+					</a>
+				</dt>
+				
+
+			</dl>
+			
+
+		</dd>
+		
+
+		<dt>
+			<a href="#lbBE">
+				SOUBORY
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbBF">
+				PŘÍKLAD
+			</a>
+		</dt>
+		
+
+		<dd>
+			
+
+			<dl>
+				
+
+				<dt>
+					<a href="#lbBG">
+						Nastavení
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbBH">
+						Posílání zpráv
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbBI">
+						Zálohy
+					</a>
+				</dt>
+				
+
+			</dl>
+			
+
+		</dd>
+		
+
+		<dt>
+			<a href="#lbBJ">
+				COPYRIGHT
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbBK">
+				HLÁŠENÍ CHYB
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbBL">
+				AUTOR
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbBM">
+				DALŠÍ INFORMACE
+			</a>
+		</dt>
+		
+
+	</dl>
+	
+
+	<hr/>
+	
+This document was created by man2html, using the manual
+pages.
+	<br/>
+	
+Time: 21:20:27 GMT, September 03, 2009
+
+</div>
+

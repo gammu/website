@@ -1,0 +1,758 @@
+<div class="manpage">
+	
+
+	<h2>
+		GAMMU-SMSD
+	</h2>
+	
+Section: Gammu Documentation (1)
+	<br/>
+	
+Updated: January 15, 2009
+	<br/>
+	
+
+	<a href="#index">
+		Index
+	</a>
+	 
+	<a href="../index.html">
+		Return to Main
+Contents
+	</a>
+	
+
+	<hr/>
+	
+
+	<a id="lbAB" name="lbAB"/>
+	
+
+	<h3>
+		NAME
+	</h3>
+	
+gammu-smsd - SMS daemon for Gammu 
+	<a id="lbAC" name="lbAC"/>
+	
+
+	<h3>
+		SYNOPSIS
+	</h3>
+	
+
+	<b>
+		gammu-smsd
+	</b>
+	 [
+	<i>
+		OPTION
+	</i>
+	]... 
+	<a id="lbAD" name="lbAD"/>
+	
+
+	<h3>
+		DESCRIPTION
+	</h3>
+	
+This manual page documents briefly the 
+	<b>
+		gammu-smsd
+	</b>
+	 command.
+
+	<p>
+		<b>
+			gammu-smsd
+		</b>
+		 is a program that periodically scans GSM modem
+for received messages, stores them in defined storage and also
+sends messages enqueued in this storage.
+	</p>
+	
+
+	<p>
+		The daemon can reload configuration file after sending hangup
+signal (SIGHUP) and properly terminates itself on SIGINT and
+SIGTERM.
+	</p>
+	
+
+	<p>
+		Program accepts following options (please note that long options
+might be not accepted on some platforms):
+	</p>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				-h
+			</b>
+			, 
+			<b>
+				--help
+			</b>
+		</dt>
+		
+
+		<dd>
+			Shows help.
+		</dd>
+		
+
+		<dt>
+			<b>
+				-v
+			</b>
+			, 
+			<b>
+				--version
+			</b>
+		</dt>
+		
+
+		<dd>
+			Shows version information and compiled in features.
+		</dd>
+		
+
+		<dt>
+			<b>
+				-c
+			</b>
+			, 
+			<b>
+				--config
+			</b>
+			=
+			<i>
+				file
+			</i>
+		</dt>
+		
+
+		<dd>
+			Configuration file to use, default is /etc/gammu-smsdrc, on
+Windows there is no default and configuration file path has to be
+always specified.
+		</dd>
+		
+
+		<dt>
+			<b>
+				-p
+			</b>
+			, 
+			<b>
+				--pid
+			</b>
+			=
+			<i>
+				file
+			</i>
+		</dt>
+		
+
+		<dd>
+			Lock file for storing pid, empty for no locking. Not supported
+on Windows.
+		</dd>
+		
+
+		<dt>
+			<b>
+				-U
+			</b>
+			, 
+			<b>
+				--user
+			</b>
+			=
+			<i>
+				user
+			</i>
+		</dt>
+		
+
+		<dd>
+			Drop daemon privileges to chosed user after starting.
+		</dd>
+		
+
+		<dt>
+			<b>
+				-G
+			</b>
+			, 
+			<b>
+				--group
+			</b>
+			=
+			<i>
+				group
+			</i>
+		</dt>
+		
+
+		<dd>
+			Drop daemon privileges to chosen group after starting.
+		</dd>
+		
+
+		<dt>
+			<b>
+				-d
+			</b>
+			, 
+			<b>
+				--daemon
+			</b>
+		</dt>
+		
+
+		<dd>
+			Daemonize program on startup. Not supported on Windows.
+		</dd>
+		
+
+		<dt>
+			<b>
+				-i
+			</b>
+			, 
+			<b>
+				--install-service
+			</b>
+		</dt>
+		
+
+		<dd>
+			Installs SMSD as a Windows service.
+		</dd>
+		
+
+		<dt>
+			<b>
+				-u
+			</b>
+			, 
+			<b>
+				--uninstall-service
+			</b>
+		</dt>
+		
+
+		<dd>
+			Uninstalls SMSD as a Windows service.
+		</dd>
+		
+
+		<dt>
+			<b>
+				-s
+			</b>
+			, 
+			<b>
+				--start-service
+			</b>
+		</dt>
+		
+
+		<dd>
+			Starts SMSD Windows service.
+		</dd>
+		
+
+		<dt>
+			<b>
+				-k
+			</b>
+			, 
+			<b>
+				--stop-service
+			</b>
+		</dt>
+		
+
+		<dd>
+			Stops SMSD Windows service.
+		</dd>
+		
+
+		<dt>
+			<b>
+				-X
+			</b>
+			, 
+			<b>
+				--suicide
+			</b>
+			=
+			<i>
+				seconds
+			</i>
+		</dt>
+		
+
+		<dd>
+			Kills itself after number of seconds.
+		</dd>
+		
+
+		<dt>
+			<b>
+				-S
+			</b>
+			, 
+			<b>
+				--run-service
+			</b>
+		</dt>
+		
+
+		<dd>
+			Runs pogram as SMSD Windows service. This should not be used
+manually, but only Windows Service manager should use this
+command.
+		</dd>
+		
+
+		<dt>
+			<b>
+				-n
+			</b>
+			, 
+			<b>
+				--service-name
+			</b>
+			=
+			<i>
+				name
+			</i>
+		</dt>
+		
+
+		<dd>
+			Defines name of a Windows service. Each service requires an
+unique name, so if you want to run several SMSD instances, you have
+to name each service differently. Default is &quot;GammuSMSD&quot;.
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAE" name="lbAE"/>
+	
+
+	<h3>
+		EXAMPLE
+	</h3>
+	
+
+	<p>
+		<a id="lbAF" name="lbAF"/>
+	</p>
+	
+
+	<h4>
+		Linux/Unix Examples
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			Start SMSD as a deamon on Linux:
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				gammu-smsd --config /etc/gammu-smsdrc --pid
+/var/run/gammu-smsd.pid --daemon
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			Start SMSD as a deamon on Linux with reduced privileges:
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				gammu-smsd --config /etc/gammu-smsdrc --pid
+/var/run/gammu-smsd.pid --daemon --user gammu --group gammu
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			SMSD as a system wide daemon
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				To use SMSD as a daemon, you might want to use init script which
+is shipped with Gammu in contrib/init directory. It is not
+installed by default, either install it manually or check INSTALL
+file for instructions.
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAG" name="lbAG"/>
+	
+
+	<h4>
+		Windows Service Examples
+	</h4>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			Install Gammu SMSD Windows service:
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				gammu-smsd.exe -c c:\Gammu\smsdrc -i
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			Install two instances of SMSD Windows service:
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				gammu-smsd.exe -c c:\Gammu\smsdrc-1 -n Gammu-first-phone -i
+			</p>
+			
+
+			<p>
+				gammu-smsd.exe -c c:\Gammu\smsdrc-2 -n Gammu-second-phone -i
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			To uninstall a Windows service:
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				gammu-smsd.exe -u
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAH" name="lbAH"/>
+	
+
+	<h4>
+		Troubleshooting Windows Service
+	</h4>
+	
+
+	<p>
+		If Gammu fails to start as a Windows service (you will usually
+get &quot;Error 1053: The service did not respond to the start or
+control request in a timely fashion&quot;), first check your SMSD logs.
+If they do not contain any useful hint, try starting SMSD manually
+with exactly same parameters as you installed the service (without
+-i), for example:
+	</p>
+	
+
+	<p>
+		<br/>
+		
+gammu-smsd.exe-csmsdrc
+	</p>
+	
+
+	<p>
+		You now should be able to get errors from SMSD even if it fails
+to start as a service.
+	</p>
+	
+
+	<p>
+		<a id="lbAI" name="lbAI"/>
+	</p>
+	
+
+	<h3>
+		SEE ALSO
+	</h3>
+	
+
+	<a href="gammu-smsdrc.5.html">
+		gammu-smsdrc
+	</a>
+	(5), 
+	<a href="gammu.1.html">
+		gammu
+	</a>
+	(1), 
+	<a href="gammu-smsd-inject.1.html">
+		gammu-smsd-inject
+	</a>
+	(1), 
+	<a href="gammu-smsd-monitor.1.html">
+		gammu-smsd-monitor
+	</a>
+	(1)
+
+	<p>
+		<a href="gammu-smsd-files.7.html">
+			gammu-smsd-files
+		</a>
+		(7),
+
+		<a href="gammu-smsd-mysql.7.html">
+			gammu-smsd-mysql
+		</a>
+		(7), 
+		<a href="gammu-smsd-pgsql.7.html">
+			gammu-smsd-pgsql
+		</a>
+		(7), 
+		<a href="gammu-smsd-dbi.7.html">
+			gammu-smsd-dbi
+		</a>
+		(7), 
+		<a href="gammu-smsd-tables.7.html">
+			gammu-smsd-tables
+		</a>
+		(7) 
+		<a id="lbAJ" name="lbAJ"/>
+	</p>
+	
+
+	<h3>
+		AUTHOR
+	</h3>
+	
+gammu-smsd and this manual page were written by Michal Cihar
+&lt;
+	<a href="mailto:michal@cihar.com">
+		michal@cihar.com
+	</a>
+	&gt;.
+
+	<a id="lbAK" name="lbAK"/>
+	
+
+	<h3>
+		COPYRIGHT
+	</h3>
+	
+Copyright © 2009 Michal Cihar and other authors. License GPLv2: GNU
+GPL version 2 &lt;
+	<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">
+		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+	</a>
+	&gt;
+	<br/>
+	
+
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law. 
+	<a id="lbAL" name="lbAL"/>
+	
+
+	<h3>
+		REPORTING BUGS
+	</h3>
+	
+Please report bugs to &lt;
+	<a href="http://bugs.cihar.com">
+		http://bugs.cihar.com
+	</a>
+	&gt;.
+
+	<p>
+		Before reporting a bug, please enable verbose logging in SMSD
+configuration:
+	</p>
+	
+
+	<p>
+		<br/>
+		
+[smsd]
+		<br/>
+		
+debuglevel=255
+		<br/>
+		
+logfile=smsd.log
+	</p>
+	
+
+	<p>
+		and include this verbose log within bug report.
+	</p>
+	
+
+	<hr/>
+	
+
+	<a id="index" name="index"/>
+	
+
+	<h3>
+		Index
+	</h3>
+	
+
+	<dl>
+		
+
+		<dt>
+			<a href="#lbAB">
+				NAME
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAC">
+				SYNOPSIS
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAD">
+				DESCRIPTION
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAE">
+				EXAMPLE
+			</a>
+		</dt>
+		
+
+		<dd>
+			
+
+			<dl>
+				
+
+				<dt>
+					<a href="#lbAF">
+						Linux/Unix Examples
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAG">
+						Windows Service Examples
+					</a>
+				</dt>
+				
+
+				<dt>
+					<a href="#lbAH">
+						Troubleshooting Windows Service
+					</a>
+				</dt>
+				
+
+			</dl>
+			
+
+		</dd>
+		
+
+		<dt>
+			<a href="#lbAI">
+				SEE ALSO
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAJ">
+				AUTHOR
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAK">
+				COPYRIGHT
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAL">
+				REPORTING BUGS
+			</a>
+		</dt>
+		
+
+	</dl>
+	
+
+	<hr/>
+	
+This document was created by man2html, using the manual
+pages.
+	<br/>
+	
+Time: 21:20:27 GMT, September 03, 2009
+
+</div>
+

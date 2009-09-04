@@ -35,6 +35,7 @@ urlpatterns = patterns('',
     (r'^contribute/publicity/$', 'wammu.views.static', {'page': 'contribute/publicity.html'}),
 
     (r'^docs/$', 'wammu.views.static', {'page': 'docs/index.html'}),
+    (r'^docs/man/(?P<lang>[a-z]*)/(?P<page>[a-z_-]*\.[0-9])/$', 'manpages.views.show_page'),
 
     # RSS feeds
     (r'^news/(?P<url>(rss|atom).*)/$', 'django.contrib.syndication.views.feed',

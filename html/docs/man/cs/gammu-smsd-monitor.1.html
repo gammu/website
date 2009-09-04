@@ -1,0 +1,369 @@
+<div class="manpage">
+	
+
+	<h2>
+		GAMMU-SMSD-MONITOR
+	</h2>
+	
+Section: Dokumentace Gammu (1)
+	<br/>
+	
+Updated: Leden 30, 2009
+	<br/>
+	
+
+	<a href="#index">
+		Index
+	</a>
+	 
+	<a href="../index.html">
+		Return to Main
+Contents
+	</a>
+	
+
+	<hr/>
+	
+
+	<a id="lbAB" name="lbAB"/>
+	
+
+	<h3>
+		JMÉNO
+	</h3>
+	
+gammu-smsd-monitor - Monitoruje stav SMS démona Gammu 
+	<a id="lbAC" name="lbAC"/>
+	
+
+	<h3>
+		SYNTAXE
+	</h3>
+	
+
+	<b>
+		gammu-smsd-monitor
+	</b>
+	 [
+	<i>
+		OPTION
+	</i>
+	]... 
+	<a id="lbAD" name="lbAD"/>
+	
+
+	<h3>
+		POPIS
+	</h3>
+	
+Tato manuálová stránka stručně popisuje příkaz
+
+	<b>
+		gammu-smsd-monitor
+	</b>
+	.
+
+	<p>
+		<b>
+			gammu-smsd-monitor
+		</b>
+		 je program, který monitoruje stav
+Gammu SMS démona, pravidelně zobrazuje informace o telefonu a
+zpracovaných zprávách.
+	</p>
+	
+
+	<p>
+		Program přijímá následující parametry (dlouhé parametry nemusí
+být podporovány na všechplatformách):
+	</p>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				-h
+			</b>
+			, 
+			<b>
+				--help
+			</b>
+		</dt>
+		
+
+		<dd>
+			Zobrazí nápovědu.
+		</dd>
+		
+
+		<dt>
+			<b>
+				-v
+			</b>
+			, 
+			<b>
+				--version
+			</b>
+		</dt>
+		
+
+		<dd>
+			Zobrazí informace o verzi a zakompilované funkcionalitě.
+		</dd>
+		
+
+		<dt>
+			<b>
+				-c
+			</b>
+			, 
+			<b>
+				--config
+			</b>
+			=
+			<i>
+				soubor
+			</i>
+		</dt>
+		
+
+		<dd>
+			Jaký konfigurační soubor se má použít, výchozí je
+/etc/gammu-smsdrc, na systému Windows není žádná výchozí cesta a
+cesta ke konfiguračnímu souboru musí být zadána vždy.
+		</dd>
+		
+
+		<dt>
+			<b>
+				-l
+			</b>
+			, 
+			<b>
+				--loops
+			</b>
+			=
+			<i>
+				počet
+			</i>
+		</dt>
+		
+
+		<dd>
+			Počet cyklů, výchozí je vypisovat informace donekonečna.
+		</dd>
+		
+
+		<dt>
+			<b>
+				-d
+			</b>
+			, 
+			<b>
+				--delay
+			</b>
+			=
+			<i>
+				sekundy
+			</i>
+		</dt>
+		
+
+		<dd>
+			Přestávka mezi zobrazováním stavu SMSD, výchozí je 20
+sekund.
+		</dd>
+		
+
+		<dt>
+			<b>
+				-C
+			</b>
+			, 
+			<b>
+				--csv
+			</b>
+		</dt>
+		
+
+		<dd>
+			Vypisuje hodnoty v textu odděleným středníky:
+
+			<p>
+				client;phone ID;IMEI;sent;received;failed;battery;signal
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAE" name="lbAE"/>
+	
+
+	<h3>
+		DALŠÍ INFORMACE
+	</h3>
+	
+
+	<a href="gammu-smsdrc.5.html">
+		gammu-smsdrc
+	</a>
+	(5), 
+	<a href="gammu.1.html">
+		gammu
+	</a>
+	(1), 
+	<a href="gammu-smsd.1.html">
+		gammu-smsd
+	</a>
+	(1) 
+	<a id="lbAF" name="lbAF"/>
+	
+
+	<h3>
+		AUTOR
+	</h3>
+	
+gammu-smsd a tuto manuálovou stránku napsal Michal Čihař
+&lt;
+	<a href="mailto:michal@cihar.com">
+		michal@cihar.com
+	</a>
+	&gt;.
+
+	<a id="lbAG" name="lbAG"/>
+	
+
+	<h3>
+		COPYRIGHT
+	</h3>
+	
+Copyright © 2009 Michal Čihař a další autoři. Licence GPLv2: GNU
+GPL verze 2 &lt;
+	<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">
+		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+	</a>
+	&gt;
+	<br/>
+	
+
+Tento program je volný software; můžete jej šířit a modifikovat.
+Není poskytována ŽÁDNÁ ZÁRUKA, v rozsahu jaký je povolen zákonem.
+
+	<a id="lbAH" name="lbAH"/>
+	
+
+	<h3>
+		HLÁŠENÍ CHYB
+	</h3>
+	
+Prosím hlašte chyby na &lt;
+	<a href="http://bugs.cihar.com">
+		http://bugs.cihar.com
+	</a>
+	&gt;.
+
+	<p>
+		Před hlášením chyb prosím zapněte logovaní v nastavení SMSD:
+	</p>
+	
+
+	<p>
+		<br/>
+		
+[smsd]
+		<br/>
+		
+debuglevel=255
+		<br/>
+		
+logfile=smsd.log
+	</p>
+	
+
+	<p>
+		a přiložte tento log k hlášení chyby.
+	</p>
+	
+
+	<hr/>
+	
+
+	<a id="index" name="index"/>
+	
+
+	<h3>
+		Index
+	</h3>
+	
+
+	<dl>
+		
+
+		<dt>
+			<a href="#lbAB">
+				JMÉNO
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAC">
+				SYNTAXE
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAD">
+				POPIS
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAE">
+				DALŠÍ INFORMACE
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAF">
+				AUTOR
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAG">
+				COPYRIGHT
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAH">
+				HLÁŠENÍ CHYB
+			</a>
+		</dt>
+		
+
+	</dl>
+	
+
+	<hr/>
+	
+This document was created by man2html, using the manual
+pages.
+	<br/>
+	
+Time: 21:20:27 GMT, September 03, 2009
+
+</div>
+

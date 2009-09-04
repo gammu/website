@@ -1,0 +1,899 @@
+<div class="manpage">
+	
+
+	<h2>
+		GAMMURC
+	</h2>
+	
+Section: Gammu Documentation (5)
+	<br/>
+	
+Updated: January 4, 2009
+	<br/>
+	
+
+	<a href="#index">
+		Index
+	</a>
+	 
+	<a href="../index.html">
+		Return to Main
+Contents
+	</a>
+	
+
+	<hr/>
+	
+
+	<a id="lbAB" name="lbAB"/>
+	
+
+	<h3>
+		NAME
+	</h3>
+	
+
+	<p>
+		gammurc - 
+		<a href="gammu.1.html">
+			gammu
+		</a>
+		(1) configuration
+file
+	</p>
+	
+
+	<p>
+		<a id="lbAC" name="lbAC"/>
+	</p>
+	
+
+	<h3>
+		SYNOPSIS
+	</h3>
+	
+
+	<i>
+		/etc/gammurc
+	</i>
+	 or 
+	<i>
+		~/.gammurc
+	</i>
+	 
+	<a id="lbAD" name="lbAD"/>
+	
+
+	<h3>
+		DESCRIPTION
+	</h3>
+	
+
+	<a href="gammu.1.html">
+		gammu
+	</a>
+	(1) reads configuration from a
+config file. It's location is determined on runtime. On Unix
+systems, it first tries ~/.gammurc and then falls back to
+/etc/gammurc.
+
+	<p>
+		On Windows, user configuration is tried at profile/Application
+Data/gammurc and then gammu falls back to current directory
+(./gammurc).
+	</p>
+	
+
+	<p>
+		This file use ini file syntax, with comment parts being marked
+with both ; and #. Sections of config file are identified in square
+brackets line [this]. All key values are case insensitive.
+	</p>
+	
+
+	<p>
+		Configuration file for gammu can contain several sections -
+[gammu], [gammu1], [gammuN], ... Each section configures one
+connection setup and in default mode gammu tries all of them in
+numerical order. You can also specify which configuration section
+to use by giving it's number ([gammu] has number 0) as a parameter
+to 
+		<a href="gammu.1.html">
+			gammu
+		</a>
+		(1) and it will then use only
+this section.
+	</p>
+	
+
+	<dl compact="compact">
+		
+
+		<dt>
+			<b>
+				Connection
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Protocol which will be used to talk to your phone.
+			</p>
+			
+
+			<p>
+				For Nokia cables you want to use one of following:
+			</p>
+			
+
+			<p>
+				<b>
+					fbus
+				</b>
+				 - serial FBUS connection
+				<br/>
+				
+
+				<b>
+					fbususb
+				</b>
+				 - FBUS over USB cable (experimental, for Nokia
+cables on Linux, including DKU-2)
+				<br/>
+				
+
+				<b>
+					dlr3
+				</b>
+				 - DLR-3 and compatible cables
+				<br/>
+				
+
+				<b>
+					dku2
+				</b>
+				 - DKU-2 and compatible cables
+				<br/>
+				
+
+				<b>
+					dku5
+				</b>
+				 - DKU-5 and compatible cables
+				<br/>
+				
+
+				<b>
+					mbus
+				</b>
+				 - serial MBUS connection
+			</p>
+			
+
+			<p>
+				If you use some non original cable, you might need to append
+-nodtr (eg. for ARK3116 based cables) or -nopower, but Gammu should
+be able to detect this automatically.
+			</p>
+			
+
+			<p>
+				For non-Nokia phones connected using cable you generally
+want:
+			</p>
+			
+
+			<p>
+				<b>
+					at
+				</b>
+				 - generic AT commands based connection
+			</p>
+			
+
+			<p>
+				You can optionally specify speed of the connection, eg. at19200,
+but it is not needed for modern USB cables.
+			</p>
+			
+
+			<p>
+				For IrDA connections use one of following:
+			</p>
+			
+
+			<p>
+				<b>
+					irdaphonet
+				</b>
+				 - Phonet connection for Nokia phones.
+				<br/>
+				
+
+				<b>
+					irdaat
+				</b>
+				 - AT commands connection for most of phones (this is
+not supported on Linux).
+				<br/>
+				
+
+				<b>
+					irdaobex
+				</b>
+				 - OBEX (IrMC or file transfer) connection for most
+of phones.
+				<br/>
+				
+
+				<b>
+					irdagnapbus
+				</b>
+				 - GNapplet based connection for Symbian
+phones
+			</p>
+			
+
+			<p>
+				For Bluetooth connection use one of following:
+			</p>
+			
+
+			<p>
+				<b>
+					bluephonet
+				</b>
+				 - Phonet connection for Nokia phones.
+				<br/>
+				
+
+				<b>
+					blueat
+				</b>
+				 - AT commands connection for most of phones.
+				<br/>
+				
+
+				<b>
+					blueobex
+				</b>
+				 - OBEX (IrMC or file transfer) connection for most
+of phones.
+				<br/>
+				
+
+				<b>
+					bluerfgnapbus
+				</b>
+				 - GNapplet based connection for Symbian
+phones
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				Port
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Device node or address of phone. It depends on used
+connection.
+			</p>
+			
+
+			<p>
+				For cables or emulated serial ports, you enter device name (for
+example /dev/ttyS0, /dev/ttyACM0, /dev/ircomm0, /dev/rfcomm0 on
+Linux, /dev/cuad0 on FreeBSD or COM1: on Windows). The special
+exception are DKU-2 and DKU-5 cables on Windows, where the device
+is automatically detected from driver information and this
+parameters is ignored.
+			</p>
+			
+
+			<p>
+				For Bluetooth connection you have to enter Bluetooth address of
+your phone (you can list Bluetooth devices in range on Linux using
+&quot;hcitool scan&quot; command). Optionally you can also force Gammu to use
+specified channel by includig channel number after slash.
+			</p>
+			
+
+			<p>
+				Before using Gammu, your device should be paired with computer
+or you should have set up automatic pairing.
+			</p>
+			
+
+			<p>
+				For IrDA connections, this parameters is not used at all.
+			</p>
+			
+
+			<p>
+				If IrDA does not work on Linux, you might need to bring up the
+interface and enable discovery (you need to run these commands as
+root):
+			</p>
+			
+
+			<p>
+				<br/>
+				
+iplsdevirda0up
+				<br/>
+				
+
+sysctlnet.irda.discovery=1
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				Model
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Do not use this parameter unless really needed! The only use
+case for this is when Gammu does not know your phone and misdetects
+it's features.
+			</p>
+			
+
+			<p>
+				The only special case for using model is to force special type
+of OBEX connection instead of letting Gammu try the best suited for
+selected operation:
+			</p>
+			
+
+			<p>
+				<b>
+					obexfs
+				</b>
+				 - force using of file browsing service (file
+system support)
+				<br/>
+				
+
+				<b>
+					obexirmc
+				</b>
+				 - force using of IrMC service (contacts, calendar
+and notes support)
+				<br/>
+				
+
+				<b>
+					obexnone
+				</b>
+				 - none service chosen, this has only limited use
+for sending file (
+				<b>
+					sendfile
+				</b>
+				 command)
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				SynchronizeTime
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				If you want to set time from computer to phone during starting
+connection.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				StartInfo
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				This option allow to set, that you want (setting &quot;yes&quot;) to see
+message on the phone screen or phone should enable light for a
+moment during starting connection. Phone will not beep during
+starting connection with this option. This works only with some
+Nokia phones.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				GammuCoding
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Forces using specified codepage (for example &quot;1250&quot; will force
+CP-1250 or &quot;utf8&quot; for UTF-8). This should not be needed in most
+cases, Gammu should detect it according to your locales.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				GammuLoc
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Path to directory with localisation files (the directory should
+contain LANG/LC_MESSAGES/gammu.mo). If gammu is properly installed
+it should find these files automatically.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				LogFile
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Path to file where information about communication will be
+stored.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				LogFormat
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Determines what all will be logged to LogFile. Possible values
+are:
+			</p>
+			
+
+			<p>
+				<b>
+					nothing
+				</b>
+				 - no debug level
+				<br/>
+				
+
+				<b>
+					text
+				</b>
+				 - transmission dump in text format
+				<br/>
+				
+
+				<b>
+					textall
+				</b>
+				 - all possible info in text format
+				<br/>
+				
+
+				<b>
+					textalldate
+				</b>
+				 - all possible info in text format, with time
+stamp
+				<br/>
+				
+
+				<b>
+					errors
+				</b>
+				 - errors in text format
+				<br/>
+				
+
+				<b>
+					errorsdate
+				</b>
+				 - errors in text format, with time stamp
+				<br/>
+				
+
+				<b>
+					binary
+				</b>
+				 - transmission dump in binary format
+			</p>
+			
+
+			<p>
+				For debugging use either 
+				<b>
+					textalldate
+				</b>
+				 or 
+				<b>
+					textall
+				</b>
+				,
+it contains all needed information to diagnose problems.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				Features
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				Custom features for phone. This can be used as override when
+values coded in common/gsmphones.c are bad or missing. Consult
+include/gammu-info.h for possible values (all GSM_Feature values
+without leading F_ prefix). Please report correct values to Gammu
+authors.
+			</p>
+			
+
+		</dd>
+		
+
+		<dt>
+			<b>
+				Use_Locking
+			</b>
+		</dt>
+		
+
+		<dd>
+			
+
+			<p>
+				On Posix systems, you might want to lock serial device when it
+is being used using UUCP-style lock files. Enabling this option
+(setting to yes) will make Gammu honor these locks and create it on
+startup. On most distributions you need additional privileges to
+use locking (eg. you need to be member of uucp group).
+			</p>
+			
+
+			<p>
+				This option has no meaning on Windows.
+			</p>
+			
+
+		</dd>
+		
+
+	</dl>
+	
+
+	<a id="lbAE" name="lbAE"/>
+	
+
+	<h3>
+		EXAMPLE
+	</h3>
+	
+
+	<p>
+		There is more complete example available in Gammu
+documentation.
+	</p>
+	
+
+	<p>
+		Gammu configuration for Nokia phone using DLR-3 cable:
+	</p>
+	
+
+	<dl compact="compact">
+		
+
+		<dd>
+			
+
+			<pre>
+				
+[gammu]
+port = /dev/ttyACM0
+connection = dlr3
+
+			</pre>
+		</dd>
+		
+
+	</dl>
+	
+
+	<p>
+		Gammu configuration for Sony-Ericsson phone (or any other AT
+compatible phone) connected using USB cable:
+	</p>
+	
+
+	<dl compact="compact">
+		
+
+		<dd>
+			
+
+			<pre>
+				
+[gammu]
+port = /dev/ttyACM0
+connection = at
+
+			</pre>
+		</dd>
+		
+
+	</dl>
+	
+
+	<p>
+		Gammu configuration for Sony-Ericsson (or any other AT
+compatible phone) connected using bluetooth:
+	</p>
+	
+
+	<dl compact="compact">
+		
+
+		<dd>
+			
+
+			<pre>
+				
+[gammu]
+port = B0:0B:00:00:FA:CE
+connection = blueat
+
+			</pre>
+		</dd>
+		
+
+	</dl>
+	
+
+	<p>
+		Gammu configuration for phone which needs to manually adjust
+Bluetooth channel to use channel 42:
+	</p>
+	
+
+	<dl compact="compact">
+		
+
+		<dd>
+			
+
+			<pre>
+				
+[gammu]
+port = B0:0B:00:00:FA:CE/42
+connection = blueat
+
+			</pre>
+		</dd>
+		
+
+	</dl>
+	
+
+	<p>
+		<a id="lbAF" name="lbAF"/>
+	</p>
+	
+
+	<h3>
+		SEE ALSO
+	</h3>
+	
+
+	<a href="gammu-smsd.1.html">
+		gammu-smsd
+	</a>
+	(1), 
+	<a href="gammu.1.html">
+		gammu
+	</a>
+	(1), 
+	<a href="gammurc.5.html">
+		gammurc
+	</a>
+	(5) 
+	<a id="lbAG" name="lbAG"/>
+	
+
+	<h3>
+		AUTHOR
+	</h3>
+	
+gammu-smsd and this manual page were written by Michal Cihar
+&lt;
+	<a href="mailto:michal@cihar.com">
+		michal@cihar.com
+	</a>
+	&gt;.
+
+	<a id="lbAH" name="lbAH"/>
+	
+
+	<h3>
+		COPYRIGHT
+	</h3>
+	
+Copyright © 2009 Michal Cihar and other authors. License GPLv2: GNU
+GPL version 2 &lt;
+	<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">
+		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+	</a>
+	&gt;
+	<br/>
+	
+
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law. 
+	<a id="lbAI" name="lbAI"/>
+	
+
+	<h3>
+		REPORTING BUGS
+	</h3>
+	
+Please report bugs to &lt;
+	<a href="http://bugs.cihar.com">
+		http://bugs.cihar.com
+	</a>
+	&gt;.
+
+	<hr/>
+	
+
+	<a id="index" name="index"/>
+	
+
+	<h3>
+		Index
+	</h3>
+	
+
+	<dl>
+		
+
+		<dt>
+			<a href="#lbAB">
+				NAME
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAC">
+				SYNOPSIS
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAD">
+				DESCRIPTION
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAE">
+				EXAMPLE
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAF">
+				SEE ALSO
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAG">
+				AUTHOR
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAH">
+				COPYRIGHT
+			</a>
+		</dt>
+		
+
+		<dt>
+			<a href="#lbAI">
+				REPORTING BUGS
+			</a>
+		</dt>
+		
+
+	</dl>
+	
+
+	<hr/>
+	
+This document was created by man2html, using the manual
+pages.
+	<br/>
+	
+Time: 21:20:26 GMT, September 03, 2009
+
+</div>
+
