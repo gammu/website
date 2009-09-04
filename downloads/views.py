@@ -84,6 +84,7 @@ def program(request, program):
         'testing_release': testing_release,
         'platforms': PLATFORM_CHOICES,
         'program': get_program(program),
+        'program_name': program,
         'mirrors': mirrors,
         'mirror': mirror,
         'program_include': 'downloads/programs/%s.html' % program,

@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.html" %} 
 {% load i18n %}
 
 {% block title %}{{ program }} - {% trans "Download" %}{% endblock %}
@@ -13,10 +13,32 @@ Download {{ program }}
 {% include program_include %}
 
 <h2>{% trans "Downloads" %}</h2>
+<p>
+{% blocktrans %}
+Please select download option best fitting your platform. If t
+{% endblocktrans %}
+</p>
 <ul>
 {% for platform in platforms %}
 <li><a href="./{{ platform.0 }}">{{ platform.1}}</a></li>
 {% endfor %}
+<li><a href="http://packages.debian.org/{{ program_name}}">
+    {% trans "Debian packages" %}
+    </a></li>
+<li><a href="http://packages.ubuntu.com/{{ program_name}}">
+    {% trans "Ubuntu packages" %}
+    </a></li>
+<li><a href="https://launchpad.net/~nijel/+archive/ppa">
+    {% trans "Ubuntu packages in PPA (latest stable version)" %}
+    </a></li>
+<li>
+    <a href="http://software.opensuse.org/search?baseproject=home:Nijel&amp;q={{ program_name }}">
+    {% trans "RPM packages (openSUSE, Fedora, Madriva) (latest stable version)" %}
+    </a></li>
+<li>
+    <a href="http://software.opensuse.org/search?baseproject=home:Nijel:experimental&amp;q={{ program_name }}">
+    {% trans "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)" %}
+    </a></li>
 </ul>
 
 <h2>{% trans "Current Releases" %}</h2>
