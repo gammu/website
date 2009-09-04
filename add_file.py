@@ -17,9 +17,8 @@ import hashlib
 
 from downloads.models import Release, Download
 
-if len(sys.argv) < 5:
-    print 'Usage: add_file.py /base/path program version file...'
-    print '       file can containt type as file:type, eg. setup-1.2.3.exe:win32'
+if len(sys.argv) < 6:
+    print 'Usage: add_file.py /base/path program version type file...'
     sys.exit(1)
 
 release = Release.objects.get(program = sys.argv[2], version = sys.argv[3])
@@ -29,14 +28,9 @@ dlpath = sys.argv[1]
 while dlpath[-1] == '/':
     dlpath = dlpath[:-1]
 
-for f in sys.argv[4:]:
+for f in sys.argv[5:]:
     print "Adding %s..." % f
-    path, filename_type = os.path.split(f)
-    try:
-        filename, type = filename_type.split(':')
-    except ValueError:
-        filename = filename_type
-        type = 'source'
+    path, filename = os.path.split(f)
 
     data = open(f).read()
 
@@ -53,7 +47,7 @@ for f in sys.argv[4:]:
 
     dl.size = len(data)
 
-    dl.platform = type
+    dl.platform = sys.argv[4]
 
     dl.location = '%s/%s' % (dlpath, filename)
 
