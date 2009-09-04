@@ -97,6 +97,9 @@ class Release(models.Model):
         self.version_int = 0
         for num in version:
             self.version_int = (100 * self.version_int) + int(num)
+        # Implicit .0
+        if len(version) == 2:
+            self.version_int = 100 * self.version_int
         if self.post_news:
             author = self.author
             excerpt = '[%s][1] [%s][2] has been just released. %s\n\n[1]: %s\n[2]:%s' % (
