@@ -5,6 +5,11 @@ from django.conf import settings
 
 import os
 
+langnames = {
+    'cs': 'Czech',
+    'en': 'English',
+}
+
 # Create your views here.
 
 def show_page(request, page, lang = 'en'):
@@ -24,4 +29,13 @@ def list_pages(lang = 'en'):
     ret = [x[:-5] for x in os.listdir('%s/docs/man/%s' % (settings.HTML_ROOT, lang))]
     ret.sort()
     return ret
+
+def list_lang_mans():
+    langs = list_langs()
+    return [(lang, langnames[lang], list_pages(lang)) for lang in langs]
+
+def show_pages(request):
+    return render_to_response('docs/list_man.html', WammuContext(request, {
+        'manpages': list_lang_mans(),
+    }))
 

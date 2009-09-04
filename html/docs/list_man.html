@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Wammu and Gammu Man Pages" %}{% endblock %}
+
+{% block content %}
+<h2>{% trans "Wammu and Gammu Man Pages" %}</h2>
+
+{% for lang in manpages %}
+<h3>{{ lang.1 }}</h3>
+<ul>
+{% for page in lang.2 %}
+<li><a href="{{ lang.0 }}/{{ page }}">{{ page }}</a></li>
+{% endfor %}
+</ul>
+{% endfor %}
+
+{% endblock %}
+
+
