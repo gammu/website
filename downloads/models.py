@@ -8,6 +8,8 @@ import markdown
 
 import os
 
+from wammu_web.wammu.helpers import process_bug_links
+
 PROGRAM_CHOICES = (
     ('gammu', 'Gammu'),
     ('wammu', 'Wammu'),
@@ -85,7 +87,7 @@ class Release(models.Model):
             entry = category.entry_set.create(
                 author = author,
                 excerpt = excerpt,
-                body = body,
+                body = process_bug_links(body),
                 identica_post = identica_post,
                 identica_text = identica_text,
                 title = title,
@@ -93,7 +95,7 @@ class Release(models.Model):
                 )
         self.post_news = False
         self.post_tweet = False
-        self.changelog_html = markdown.markdown(self.changelog)
+        self.changelog_html = markdown.markdown(process_bug_links(self.changelog))
         self.description_html = markdown.markdown(self.description)
         super(Release, self).save()
 

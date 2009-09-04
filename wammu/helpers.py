@@ -4,6 +4,10 @@ from datetime import datetime, timedelta
 
 from django.utils.translation import ugettext as _
 
+import re
+
+BUG_RE = re.compile('(bug ?#([0-9]*))')
+
 class WammuContext(RequestContext):
     def __init__(self, request, context):
         context['current_year'] = datetime.now().strftime('%Y')
@@ -21,3 +25,8 @@ class WammuContext(RequestContext):
         ]
         RequestContext.__init__(self, request, context)
 
+def process_bug_links(text):
+    '''
+    Makes links in form bug #123 clickable to bugs.cihar.com.
+    '''
+    return BUG_RE.sub(r'[\1](https://bugs.cihar.com/\2)', text)
