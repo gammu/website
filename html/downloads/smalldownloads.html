@@ -1,0 +1,10 @@
+{% load i18n %}
+<h3><a href="/download/">{% trans "Source Downloads" %}</a></h3>
+{% for relinfo in downloads %}
+{% with relinfo.0 as release %}
+{% with relinfo.1 as downloads %}
+{% include "dlbox.html" %}
+{% endwith %}
+{% endwith %}
+{% endfor %}
+
