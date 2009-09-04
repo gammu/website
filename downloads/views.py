@@ -87,5 +87,4 @@ def program(request, program):
         'program_name': program,
         'mirrors': mirrors,
         'mirror': mirror,
-        'program_include': 'downloads/programs/%s.html' % program,
     }))
