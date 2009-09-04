@@ -39,3 +39,9 @@ def show_pages(request):
         'manpages': list_lang_mans(),
     }))
 
+
+def show_lang_pages(request, lang):
+    return render_to_response('docs/list_man.html', WammuContext(request, {
+        'manpages': [('.', langnames[lang], list_pages(lang))],
+    }))
+

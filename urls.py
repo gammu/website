@@ -36,6 +36,7 @@ urlpatterns = patterns('',
 
     (r'^docs/$', 'wammu.views.static', {'page': 'docs/index.html'}),
     (r'^docs/man/$', 'manpages.views.show_pages'),
+    (r'^docs/man/(?P<lang>[a-z]*)/$', 'manpages.views.show_lang_pages'),
     (r'^docs/man/(?P<lang>[a-z]*)/(?P<page>[a-z_-]*\.[0-9])/$', 'manpages.views.show_page'),
 
     # RSS feeds
