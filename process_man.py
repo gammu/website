@@ -24,9 +24,12 @@ for idx in xrange(7, 0, -1):
     for el in body.getElementsByTagName('h%d' % idx):
         el.tagName = 'h%d' % (idx + 1)
 for el in body.getElementsByTagName('a'):
-    if el.getAttribute('href') == '':
+    href = el.getAttribute('href')
+    if href == '':
         el.setAttribute('class', 'aname')
-    elif el.getAttribute('href') == '../index.html':
+    elif href == '../index.html':
         el.parentNode.removeChild(el)
+    elif href[-5:] == '.html' and href.find('://') == -1:
+        el.setAttribute('href', '../%s/' % href[:-5])
 print body.toprettyxml(encoding = 'utf-8')
 
