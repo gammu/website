@@ -10,7 +10,10 @@
 {% endblocktrans %}
 </h2>
 
+{{ release.description_html|safe }}
+
 <h3>{% trans "Changes" %}</h3>
+
 
 {{ release.changelog_html|safe }}
 
