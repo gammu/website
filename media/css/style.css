@@ -499,3 +499,8 @@ div.appshot img {
 div.checksums {
     font-size: smaller;
 }
+
+a.aname {
+    color: black;
+    text-decoration: none;
+}

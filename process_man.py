@@ -23,5 +23,8 @@ body.setAttribute('class', 'manpage')
 for idx in xrange(7, 0, -1):
     for el in body.getElementsByTagName('h%d' % idx):
         el.tagName = 'h%d' % (idx + 1)
+for el in body.getElementsByTagName('a'):
+    if el.getAttribute('href') == '':
+        el.setAttribute('class', 'aname')
 print body.toprettyxml(encoding = 'utf-8')
 
