@@ -26,5 +26,7 @@ for idx in xrange(7, 0, -1):
 for el in body.getElementsByTagName('a'):
     if el.getAttribute('href') == '':
         el.setAttribute('class', 'aname')
+    elif el.getAttribute('href') == '../index.html':
+        el.parentNode.removeChild(el)
 print body.toprettyxml(encoding = 'utf-8')
 
