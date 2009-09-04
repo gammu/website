@@ -1,5 +1,10 @@
 from django.shortcuts import render_to_response, get_object_or_404
 from wammu_web.wammu.helpers import WammuContext
+
+from django.conf import settings
+
+import os
+
 # Create your views here.
 
 def show_page(request, page, lang = 'en'):
@@ -7,4 +12,16 @@ def show_page(request, page, lang = 'en'):
     return render_to_response('docs/show_man.html', WammuContext(request, {
         'manpage': manpage,
         'page': page,
+        'others': list_pages(lang),
     }))
+
+def list_langs():
+    ret = os.listdir('%s/docs/man' % settings.HTML_ROOT)
+    ret.sort()
+    return ret
+
+def list_pages(lang = 'en'):
+    ret = [x[:-5] for x in os.listdir('%s/docs/man/%s' % (settings.HTML_ROOT, lang))]
+    ret.sort()
+    return ret
+

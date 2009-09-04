@@ -3,6 +3,15 @@
 
 {% block title %}{{ page }}{% endblock %}
 
+{% block sidebar_top %}
+<h3>{% trans "Other man pages" %}</a></h3>
+<ul>
+{% for page in others %}
+<li><a href="../{{ page }}">{{ page }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}
+
 {% block content %}
 {% include manpage %}
 {% endblock %}

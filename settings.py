@@ -1,6 +1,8 @@
 # Django settings for wammu website project.
 # -*- coding: UTF-8 -*-
 
+from socket import gethostname
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -35,10 +37,19 @@ SITE_ID = 1
 # to load the internationalization machinery.
 USE_I18N = True
 
+HOSTNAME = gethostname()
+if HOSTNAME == 'rincewind':
+    WEB_ROOT = '/home/mcihar/private/wammu_web/'
+elif HOSTNAME == 'raptor':
+    WEB_ROOT = '/home/nijel/work/gammu/wammu_web/'
+else:
+    WEB_ROOT = '/home/nijel/work/gammu/wammu_web/'
+
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
-MEDIA_ROOT = '/home/nijel/work/gammu/wammu_web/media/'
-MEDIA_ROOT = '/home/mcihar/private/wammu_web/media/'
+MEDIA_ROOT = '%s/media/' % WEB_ROOT
+
+HTML_ROOT= '%s/html/' % WEB_ROOT
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
@@ -77,8 +88,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     )
 
 TEMPLATE_DIRS = (
-    '/home/mcihar/private/wammu_web/html/',
-    '/home/nijel/work/gammu/wammu_web/html/',
+    HTML_ROOT,
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
