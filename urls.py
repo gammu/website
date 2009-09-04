@@ -34,6 +34,8 @@ urlpatterns = patterns('',
     (r'^contribute/translate/$', 'wammu.views.static', {'page': 'contribute/translate.html'}),
     (r'^contribute/publicity/$', 'wammu.views.static', {'page': 'contribute/publicity.html'}),
 
+    (r'^docs/$', 'wammu.views.static', {'page': 'docs/index.html'}),
+
     # RSS feeds
     (r'^news/(?P<url>(rss|atom).*)/$', 'django.contrib.syndication.views.feed',
         {'feed_dict': feeds}),
