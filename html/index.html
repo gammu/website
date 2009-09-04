@@ -5,6 +5,19 @@
 
 {% block sidebar_top %}
 <h3><a href="/download/">{% trans "Downloads" %}</a></h3>
+{% with gammu_stable_release as release %}
+{% with gammu_stable_downloads as downloads %}
+{% include "dlbox.html" %}
+{% endwith %}
+{% endwith %}
+
+{% if gammu_testing_release %}
+{% with gammu_testing_release as release %}
+{% with gammu_testing_downloads as downloads %}
+{% include "dlbox.html" %}
+{% endwith %}
+{% endwith %}
+{% endif %}
 <h3><a href="/screenshots/">{% trans "Screenshots" %}</a></h3>
 <p>
 <a href="/screenshots/" title="{% trans "Screenshots" %}">
