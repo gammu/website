@@ -496,3 +496,6 @@ div.appshot img {
     max-height: 150px;
     overflow: hidden;
 }
+div.checksums {
+    font-size: smaller;
+}

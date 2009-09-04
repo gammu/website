@@ -1,6 +1,7 @@
 <ul>
 {% for item in downloads %}
-<li><a href="{{ mirror.url }}{{ item.location }}#!md5!{{ item.md5 }}">{{ item.get_filename }}</a> ({{ item.get_size }})</li>
+<li><a href="{{ mirror.url }}{{ item.location }}#!md5!{{ item.md5 }}">{{ item.get_filename }}</a> ({{ item.get_size }})
+    <div class="checksums">MD5: <code>{{ item.md5 }}</code>, SHA1: <code>{{ item.sha1 }}</code></div></li>
 {% endfor %}
 </ul>
 
