@@ -1,8896 +1,2045 @@
 <div class="manpage">
-	
-
-	<h2>
-		GAMMU
-	</h2>
-	
-Section: Gammu Documentation (1)
-	<br/>
-	
-Updated: Aug 11 2009
-	<br/>
-	
-
-	<a href="#index">
-		Index
-	</a>
-	 
-	
-
-	<hr/>
-	
-
-	<p>
-		<a class="aname" id="lbAB" name="lbAB"/>
-	</p>
-	
-
-	<h3>
-		NAME
-	</h3>
-	
-
-	<p>
-		Gammu - Does some neat things with your cellular phone or
-modem.
-	</p>
-	
-
-	<p>
-		<a class="aname" id="lbAC" name="lbAC"/>
-	</p>
-	
-
-	<h3>
-		SYNOPSIS
-	</h3>
-	
-
-	<p>
-		Usage: gammu [
-		<i>
-			parameters
-		</i>
-		] &lt;command&gt;
-[
-		<i>
-			options
-		</i>
-		]
-	</p>
-	
-
-	<p>
-		<a class="aname" id="lbAD" name="lbAD"/>
-	</p>
-	
-
-	<h3>
-		DESCRIPTION
-	</h3>
-	
-
-	<p>
-		This program is a tool for mobile phones. Many vendors and
-phones are supported, for actual listing see &lt;
-		<a href="http://cihar.com/gammu/phonedb/">
-			http://cihar.com/gammu/phonedb/
-		</a>
-		&gt;.
-	</p>
-	
-
-	<p>
-		<a class="aname" id="lbAE" name="lbAE"/>
-	</p>
-	
-
-	<h3>
-		OPTIONS
-	</h3>
-	
-
-	<p>
-		Parameters before command configure gammu behaviour:
-		<br/>
-		
--c / --config &lt;filename&gt; ... name of configuration file
-		<br/>
-		
+<h2>GAMMU</h2>
+Section: Gammu Documentation (1)<br/>
+Updated: Aug 11 2009<br/>
+<a href="#index">Index</a> 
+<hr/>
+<p><a class="aname" id="lbAB" name="lbAB"/></p>
+<h3>NAME</h3>
+<p>Gammu - Does some neat things with your cellular phone or
+modem.</p>
+<p><a class="aname" id="lbAC" name="lbAC"/></p>
+<h3>SYNOPSIS</h3>
+<p>Usage: gammu [<i>parameters</i>] &lt;command&gt;
+[<i>options</i>]</p>
+<p><a class="aname" id="lbAD" name="lbAD"/></p>
+<h3>DESCRIPTION</h3>
+<p>This program is a tool for mobile phones. Many vendors and
+phones are supported, for actual listing see &lt;<a href="http://cihar.com/gammu/phonedb/">http://cihar.com/gammu/phonedb/</a>&gt;.</p>
+<p><a class="aname" id="lbAE" name="lbAE"/></p>
+<h3>OPTIONS</h3>
+<p>Parameters before command configure gammu behaviour:<br/>
+-c / --config &lt;filename&gt; ... name of configuration file<br/>
 -s / --section &lt;confign&gt; ... section of config file to use,
-eg. 42
-		<br/>
-		
--d / --debug &lt;level&gt; ... debug level (see 
-		<a href="../gammurc.5/">
-			gammurc
-		</a>
-		(5) for possible values)
-		<br/>
-		
+eg. 42<br/>
+-d / --debug &lt;level&gt; ... debug level (see <a href="../gammurc.5/">gammurc</a>(5) for possible values)<br/>
 -f / --debug-file &lt;filename&gt; ... file for logging debug
-messages
-	</p>
-	
-
-	<p>
-		<a class="aname" id="lbAF" name="lbAF"/>
-	</p>
-	
-
-	<h4>
-		Commands
-	</h4>
-	
-
-	<p>
-		Commands can be specified with or without leading --.
-	</p>
-	
-
-	<p>
-		<a class="aname" id="lbAG" name="lbAG"/>
-	</p>
-	
-
-	<h4>
-		Calls
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				answercall
-			</b>
-			 
-			<i>
-				[ID]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Answer incoming call.
-		</dd>
-		
-
-		<dt>
-			<b>
-				cancelcall
-			</b>
-			 
-			<i>
-				[ID]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Cancel incoming call
-		</dd>
-		
-
-		<dt>
-			<b>
-				canceldiverts
-			</b>
-		</dt>
-		
-
-		<dd>
-			Cancel all existing call diverts.
-		</dd>
-		
-
-		<dt>
-			<b>
-				conferencecall
-			</b>
-			 
-			<i>
-				ID
-			</i>
-		</dt>
-		
-
-		<dd>
-			Initiates a conference call.
-		</dd>
-		
-
-		<dt>
-			<b>
-				dialvoice
-			</b>
-			 
-			<i>
-				number [show|hide]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Make voice call from SIM card line set in phone.
-
-			<p>
-				<b>
-					show|hide
-				</b>
-				 - optional parameter whether to disable call
-number indication.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				divert
-			</b>
-			 
-			<i>
-				get|set all|busy|noans|outofreach
-all|voice|fax|data [number timeout]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Manage or display call diverts.
-
-			<p>
-				<b>
-					get|set
-				</b>
-				 - whether to get divert information or to set
-it.
-			</p>
-			
-
-			<p>
-				<b>
-					all|busy|noans|outofreach
-				</b>
-				 - condition when apply
-divert
-			</p>
-			
-
-			<p>
-				<b>
-					all|voice|fax|data
-				</b>
-				 - call type when apply divert
-			</p>
-			
-
-			<p>
-				number - number where to divert
-			</p>
-			
-
-			<p>
-				timeout - timeout when the diversion will happen
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				getspeeddial
-			</b>
-			 
-			<i>
-				start [stop]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Gets speed dial choices.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getussd
-			</b>
-			 
-			<i>
-				code
-			</i>
-		</dt>
-		
-
-		<dd>
-			Retrieves USSD information - dials a service number and reads
-response.
-		</dd>
-		
-
-		<dt>
-			<b>
-				holdcall
-			</b>
-			 
-			<i>
-				ID
-			</i>
-		</dt>
-		
-
-		<dd>
-			Holds call.
-		</dd>
-		
-
-		<dt>
-			<b>
-				maketerminatedcall
-			</b>
-			 
-			<i>
-				number length [show|hide]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Make voice call from SIM card line set in phone which will be
-terminated after 
-			<b>
-				length
-			</b>
-			 seconds.
-		</dd>
-		
-
-		<dt>
-			<b>
-				monitor
-			</b>
-			 
-			<i>
-				[times]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Get phone status and writes continuously to standard output.
-Press Ctrl+C to break this state.
-		</dd>
-		
-
-		<dt>
-			<b>
-				senddtmf
-			</b>
-			 
-			<i>
-				sequence
-			</i>
-		</dt>
-		
-
-		<dd>
-			Plays DTMF sequence. In some phones available only during
-calls
-		</dd>
-		
-
-		<dt>
-			<b>
-				splitcall
-			</b>
-			 
-			<i>
-				ID
-			</i>
-		</dt>
-		
-
-		<dd>
-			Splits call.
-		</dd>
-		
-
-		<dt>
-			<b>
-				switchcall
-			</b>
-			 
-			<i>
-				[ID]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Switches call.
-		</dd>
-		
-
-		<dt>
-			<b>
-				transfercall
-			</b>
-			 
-			<i>
-				[ID]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Transfers call.
-		</dd>
-		
-
-		<dt>
-			<b>
-				unholdcall
-			</b>
-			 
-			<i>
-				ID
-			</i>
-		</dt>
-		
-
-		<dd>
-			Unholds call.
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAH" name="lbAH"/>
-	
-
-	<h4>
-		SMS and EMS
-	</h4>
-	
-
-	<p>
-		Sending messages might look a bit complicated on first attempt
+messages</p>
+<p><a class="aname" id="lbAF" name="lbAF"/></p>
+<h4>Commands</h4>
+<p>Commands can be specified with or without leading --.</p>
+<p><a class="aname" id="lbAG" name="lbAG"/></p>
+<h4>Calls</h4>
+<dl compact="compact">
+<dt><b>answercall</b> <i>[ID]</i></dt>
+<dd>Answer incoming call.</dd>
+<dt><b>cancelcall</b> <i>[ID]</i></dt>
+<dd>Cancel incoming call</dd>
+<dt><b>canceldiverts</b></dt>
+<dd>Cancel all existing call diverts.</dd>
+<dt><b>conferencecall</b> <i>ID</i></dt>
+<dd>Initiates a conference call.</dd>
+<dt><b>dialvoice</b> <i>number [show|hide]</i></dt>
+<dd>Make voice call from SIM card line set in phone.
+<p><b>show|hide</b> - optional parameter whether to disable call
+number indication.</p>
+</dd>
+<dt><b>divert</b> <i>get|set all|busy|noans|outofreach
+all|voice|fax|data [number timeout]</i></dt>
+<dd>Manage or display call diverts.
+<p><b>get|set</b> - whether to get divert information or to set
+it.</p>
+<p><b>all|busy|noans|outofreach</b> - condition when apply
+divert</p>
+<p><b>all|voice|fax|data</b> - call type when apply divert</p>
+<p>number - number where to divert</p>
+<p>timeout - timeout when the diversion will happen</p>
+</dd>
+<dt><b>getspeeddial</b> <i>start [stop]</i></dt>
+<dd>Gets speed dial choices.</dd>
+<dt><b>getussd</b> <i>code</i></dt>
+<dd>Retrieves USSD information - dials a service number and reads
+response.</dd>
+<dt><b>holdcall</b> <i>ID</i></dt>
+<dd>Holds call.</dd>
+<dt><b>maketerminatedcall</b> <i>number length [show|hide]</i></dt>
+<dd>Make voice call from SIM card line set in phone which will be
+terminated after <b>length</b> seconds.</dd>
+<dt><b>monitor</b> <i>[times]</i></dt>
+<dd>Get phone status and writes continuously to standard output.
+Press Ctrl+C to break this state.</dd>
+<dt><b>senddtmf</b> <i>sequence</i></dt>
+<dd>Plays DTMF sequence. In some phones available only during
+calls</dd>
+<dt><b>splitcall</b> <i>ID</i></dt>
+<dd>Splits call.</dd>
+<dt><b>switchcall</b> <i>[ID]</i></dt>
+<dd>Switches call.</dd>
+<dt><b>transfercall</b> <i>[ID]</i></dt>
+<dd>Transfers call.</dd>
+<dt><b>unholdcall</b> <i>ID</i></dt>
+<dd>Unholds call.</dd>
+</dl>
+<a class="aname" id="lbAH" name="lbAH"/>
+<h4>SMS and EMS</h4>
+<p>Sending messages might look a bit complicated on first attempt
 to use. But be patient, the command line has been written in order
 to allow almost every usage. See EXAMPLE section for some hints on
-usage.
-	</p>
-	
-
-	<p>
-		There is also an option to use 
-		<a href="../gammu-smsd.1/">
-			gammu-smsd
-		</a>
-		(1) when you want to send or
-receive more messages and process them automatically.
-	</p>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				Common parameters for sendsms and savesms
-			</b>
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				<b>
-					-smscset number
-				</b>
-				 - SMSC will be taken from set
-
-				<b>
-					number
-				</b>
-				. Default set: 1
-			</p>
-			
-
-			<p>
-				<b>
-					-smscnumber number
-				</b>
-				 - SMSC number
-			</p>
-			
-
-			<p>
-				<b>
-					-reply
-				</b>
-				 - reply SMSC is set
-			</p>
-			
-
-			<p>
-				<b>
-					-maxnum number
-				</b>
-				 - Limit maximal number of messages which
+usage.</p>
+<p>There is also an option to use <a href="../gammu-smsd.1/">gammu-smsd</a>(1) when you want to send or
+receive more messages and process them automatically.</p>
+<dl compact="compact">
+<dt><b>Common parameters for sendsms and savesms</b></dt>
+<dd>
+<p><b>-smscset number</b> - SMSC will be taken from set
+<b>number</b>. Default set: 1</p>
+<p><b>-smscnumber number</b> - SMSC number</p>
+<p><b>-reply</b> - reply SMSC is set</p>
+<p><b>-maxnum number</b> - Limit maximal number of messages which
 will be created. If there are more messages, Gammu will terminate
-with failure.
-			</p>
-			
-
-			<p>
-				<b>
-					-folder number
-				</b>
-				 - save to specified folder.
-			</p>
-			
-
-			<p>
-				Folders are numerated from 1.
-			</p>
-			
-
-			<p>
-				The most often folder 1 = &quot;Inbox&quot;, 2 = &quot;Outbox&quot;,etc. Use
-
-				<b>
-					getsmsfolders
-				</b>
-				 to get folder list.
-			</p>
-			
-
-			<p>
-				<b>
-					-unread
-				</b>
-				 - makes message unread. In some phones (like
+with failure.</p>
+<p><b>-folder number</b> - save to specified folder.</p>
+<p>Folders are numerated from 1.</p>
+<p>The most often folder 1 = &quot;Inbox&quot;, 2 = &quot;Outbox&quot;,etc. Use
+<b>getsmsfolders</b> to get folder list.</p>
+<p><b>-unread</b> - makes message unread. In some phones (like
 6210) you won't see unread sms envelope after saving such sms. In
 some phones with internal SMS memory (like 6210) after using it
-with folder 1 SIM SMS memory will be used
-			</p>
-			
-
-			<p>
-				<b>
-					-read
-				</b>
-				 - makes message read. In some phones with internal
+with folder 1 SIM SMS memory will be used</p>
+<p><b>-read</b> - makes message read. In some phones with internal
 SMS memory (like 6210) after using it with folder 1 SIM SMS memory
-will be used
-			</p>
-			
-
-			<p>
-				<b>
-					-unsent
-				</b>
-				 - makes message unsent
-			</p>
-			
-
-			<p>
-				<b>
-					-sent
-				</b>
-				 - makes message sent
-			</p>
-			
-
-			<p>
-				<b>
-					-sender number
-				</b>
-				 - set sender number
-			</p>
-			
-
-			<p>
-				<b>
-					-smsname name
-				</b>
-				 - set message name
-			</p>
-			
-
-			<p>
-				<b>
-					-sender number
-				</b>
-				 - set sender number (default: &quot;Gammu&quot;)
-			</p>
-			
-
-			<p>
-				<b>
-					-report
-				</b>
-				 - request delivery report for message
-			</p>
-			
-
-			<p>
-				<b>
-					-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX
-				</b>
-				 - sets how long
+will be used</p>
+<p><b>-unsent</b> - makes message unsent</p>
+<p><b>-sent</b> - makes message sent</p>
+<p><b>-sender number</b> - set sender number</p>
+<p><b>-smsname name</b> - set message name</p>
+<p><b>-sender number</b> - set sender number (default: &quot;Gammu&quot;)</p>
+<p><b>-report</b> - request delivery report for message</p>
+<p><b>-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX</b> - sets how long
 will be the message valid (SMSC will the discard the message after
-this time if it could not deliver it).
-			</p>
-			
-
-			<p>
-				<b>
-					-save
-				</b>
-				 - will also save message which is being sent
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				addsms
-			</b>
-			 
-			<i>
-				folder file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Adds SMSes from file (format like backupsms uses) to selected
-folder in phone.
-		</dd>
-		
-
-		<dt>
-			<b>
-				addsmsfolder
-			</b>
-			 
-			<i>
-				name
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				backupsms
-			</b>
-			 
-			<i>
-				file [-yes|-all]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Stores all SMSes from phone to file.
-
-			<p>
-				Use -yes for answering yes to all questions (backup all messages
+this time if it could not deliver it).</p>
+<p><b>-save</b> - will also save message which is being sent</p>
+</dd>
+<dt><b>addsms</b> <i>folder file [-yes]</i></dt>
+<dd>Adds SMSes from file (format like backupsms uses) to selected
+folder in phone.</dd>
+<dt><b>addsmsfolder</b> <i>name</i></dt>
+<dt><b>backupsms</b> <i>file [-yes|-all]</i></dt>
+<dd>Stores all SMSes from phone to file.
+<p>Use -yes for answering yes to all questions (backup all messages
 and delete them from phone), or -all to just backup all folders
-while keeping messages in phone.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				deleteallsms
-			</b>
-			 
-			<i>
-				folder
-			</i>
-		</dt>
-		
-
-		<dd>
-			Delete all SMS from specified SMS folder.
-		</dd>
-		
-
-		<dt>
-			<b>
-				deletesms
-			</b>
-			 
-			<i>
-				folder start [stop]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Delete SMS from phone. See description for 
-			<b>
-				getsms
-			</b>
-			 for
+while keeping messages in phone.</p>
+</dd>
+<dt><b>deleteallsms</b> <i>folder</i></dt>
+<dd>Delete all SMS from specified SMS folder.</dd>
+<dt><b>deletesms</b> <i>folder start [stop]</i></dt>
+<dd>Delete SMS from phone. See description for <b>getsms</b> for
 info about sms folders naming convention.
-
-			<p>
-				Locations are numerated from 1.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				displaysms
-			</b>
-			 
-			<i>
-				... (options like in sendsms)
-			</i>
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				Displays PDU data of encoded SMS messages. It accepts same
-parameters and behaves same like sendsms.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				getallsms
-			</b>
-			 
-			<i>
-				-pbk
-			</i>
-		</dt>
-		
-
-		<dd>
-			Get all SMS from phone. In some phones you will have also SMS
+<p>Locations are numerated from 1.</p>
+</dd>
+<dt><b>displaysms</b> <i>... (options like in sendsms)</i></dt>
+<dd>
+<p>Displays PDU data of encoded SMS messages. It accepts same
+parameters and behaves same like sendsms.</p>
+</dd>
+<dt><b>getallsms</b> <i>-pbk</i></dt>
+<dd>Get all SMS from phone. In some phones you will have also SMS
 templates and info about locations used to save Picture Images.
 With each sms you will see location. If you want to get such sms
-from phone alone, use 
-			<b>
-				gammu getsms 0 location
-			</b>
-		</dd>
-		
-
-		<dt>
-			<b>
-				geteachsms
-			</b>
-			 
-			<i>
-				-pbk
-			</i>
-		</dt>
-		
-
-		<dd>
-			Similiary to 
-			<b>
-				getallsms
-			</b>
-			. Difference is, that links all
-contacenated sms
-		</dd>
-		
-
-		<dt>
-			<b>
-				getsms
-			</b>
-			 
-			<i>
-				folder start [stop]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Get SMS.
-
-			<p>
-				Locations are numerated from 1.
-			</p>
-			
-
-			<p>
-				When give folder 0, sms is given from &quot;flat&quot; memory (all sms
+from phone alone, use <b>gammu getsms 0 location</b></dd>
+<dt><b>geteachsms</b> <i>-pbk</i></dt>
+<dd>Similiary to <b>getallsms</b>. Difference is, that links all
+contacenated sms</dd>
+<dt><b>getsms</b> <i>folder start [stop]</i></dt>
+<dd>Get SMS.
+<p>Locations are numerated from 1.</p>
+<p>When give folder 0, sms is given from &quot;flat&quot; memory (all sms
 from all folders have unique numbers). It's sometimes emulated by
-Gammu. You can use it with all phones.
-			</p>
-			
-
-			<p>
-				When give folder 1, 2, etc. sms are taken from Inbox, Outbox,
+Gammu. You can use it with all phones.</p>
+<p>When give folder 1, 2, etc. sms are taken from Inbox, Outbox,
 etc. and each sms has unique number in his folder. Name of folders
 can depend on your phone (the most often 1=&quot;Inbox&quot;, 2=&quot;Outbox&quot;,
 etc.). This method is not supported by all phones (for example, not
 supported by Nokia 3310, 5110, 6110). If work with your phone, use
-
-				<b>
-					getsmsfolders
-				</b>
-				 to get folders list.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				getsmsc
-			</b>
-			 
-			<i>
-				[start [stop]]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Get SMSC settings from SIM card.
-
-			<p>
-				Locations are numerated from 1.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				getsmsfolders
-			</b>
-		</dt>
-		
-
-		<dd>
-			Get names for SMS folders in phone
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokiagett9
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				restoresms
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Restores SMSes from file (format like backupsms uses) to
+<b>getsmsfolders</b> to get folders list.</p>
+</dd>
+<dt><b>getsmsc</b> <i>[start [stop]]</i></dt>
+<dd>Get SMSC settings from SIM card.
+<p>Locations are numerated from 1.</p>
+</dd>
+<dt><b>getsmsfolders</b></dt>
+<dd>Get names for SMS folders in phone</dd>
+<dt><b>nokiagett9</b></dt>
+<dt><b>restoresms</b> <i>file [-yes]</i></dt>
+<dd>Restores SMSes from file (format like backupsms uses) to
 selected folder in phone. Please note that this overwrites existing
-messages in phone (if it supports it).
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms ANIMATION
-			</b>
-			 
-			<i>
-				frames file1 file2... [-folder id]
+messages in phone (if it supports it).</dd>
+<dt><b>savesms ANIMATION</b> <i>frames file1 file2... [-folder id]
 [-unread] [-read] [-unsent] [-sent] [-sender number] [-smsname
 name] [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Save an animation as a SMS. You need to give number of frames
+num]</i></dt>
+<dd>Save an animation as a SMS. You need to give number of frames
 and picture for each frame. Each picture can be in any picture
 format which Gammu supports (B/W bmp, gif, wbmp, nol, nlm...).
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms BOOKMARK
-			</b>
-			 
-			<i>
-				file location [-folder id] [-unread]
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms BOOKMARK</b> <i>file location [-folder id] [-unread]
 [-read] [-unsent] [-sent] [-sender number] [-smsname name]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Read WAP bookmark from file created by 
-			<b>
-				backup
-			</b>
-			 option and
+num]</i></dt>
+<dd>Read WAP bookmark from file created by <b>backup</b> option and
 saves in Nokia format as SMS
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms CALENDAR
-			</b>
-			 
-			<i>
-				file location [-folder id] [-unread]
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms CALENDAR</b> <i>file location [-folder id] [-unread]
 [-read] [-unsent] [-sent] [-sender number] [-smsname name]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Read calendar note from file created by 
-			<b>
-				backup
-			</b>
-			 option
+num]</i></dt>
+<dd>Read calendar note from file created by <b>backup</b> option
 and saves in VCALENDAR 1.0 format as SMS.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms CALLER
-			</b>
-			 
-			<i>
-				file [-folder id] [-unread] [-read]
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms CALLER</b> <i>file [-folder id] [-unread] [-read]
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
-number] [-smscnumber number] [-reply] [-maxsms num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Save caller logo as sms (Nokia format - size 72x14).
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms EMS
-			</b>
-			 
-			<i>
-				[-folder id] [-unread] [-read] [-unsent]
+number] [-smscnumber number] [-reply] [-maxsms num]</i></dt>
+<dd>Save caller logo as sms (Nokia format - size 72x14).
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms EMS</b> <i>[-folder id] [-unread] [-read] [-unsent]
 [-sent] [-sender number] [-smsname name] [-smscset number]
 [-smscnumber number] [-reply] [-maxsms num] [-unicode] [-16bit]
 [-format lcrasbiut] [-text text] [-unicodefiletext file] [-defsound
 ID] [-defanimation ID] [-tone10 file] [-tone10long file] [-tone12
 file] [-tone12long file] [-toneSE file] [-toneSElong file]
 [-fixedbitmap file] [-variablebitmap file] [-variablebitmaplong
-file] [-animation frames file1 ...] [-protected number]
-			</i>
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				Saves EMS sequence. All parameters after 
-				<b>
-					-unread
-				</b>
-				 (like
-
-				<b>
-					-defsound
-				</b>
-				) can be used few times.
-			</p>
-			
-
-			<p>
-				<b>
-					-text
-				</b>
-				 - adds text
-			</p>
-			
-
-			<p>
-				<b>
-					-unicodefiletext
-				</b>
-				 - adds text from Unicode file
-			</p>
-			
-
-			<p>
-				<b>
-					-defanimation
-				</b>
-				 - adds default animation with ID specified
-by user.ID for different phones are different.
-			</p>
-			
-
-			<p>
-				<b>
-					-animation
-				</b>
-				 - adds &quot;frames&quot; frames read from file1, file2,
-etc.
-			</p>
-			
-
-			<p>
-				<b>
-					-defsound
-				</b>
-				 - adds default sound with ID specified by user.
-ID for different phones are different.
-			</p>
-			
-
-			<p>
-				<b>
-					-tone10
-				</b>
-				 - adds IMelody version 1.0 read from RTTL or
-other compatible file
-			</p>
-			
-
-			<p>
-				<b>
-					-tone10long
-				</b>
-				 - IMelody version 1.0 saved in one of few SMS
+file] [-animation frames file1 ...] [-protected number]</i></dt>
+<dd>
+<p>Saves EMS sequence. All parameters after <b>-unread</b> (like
+<b>-defsound</b>) can be used few times.</p>
+<p><b>-text</b> - adds text</p>
+<p><b>-unicodefiletext</b> - adds text from Unicode file</p>
+<p><b>-defanimation</b> - adds default animation with ID specified
+by user.ID for different phones are different.</p>
+<p><b>-animation</b> - adds &quot;frames&quot; frames read from file1, file2,
+etc.</p>
+<p><b>-defsound</b> - adds default sound with ID specified by user.
+ID for different phones are different.</p>
+<p><b>-tone10</b> - adds IMelody version 1.0 read from RTTL or
+other compatible file</p>
+<p><b>-tone10long</b> - IMelody version 1.0 saved in one of few SMS
 with UPI. Phones compatible with UPI (like SonyEricsson phones)
-will read such ringtone as one
-			</p>
-			
-
-			<p>
-				<b>
-					-tone12
-				</b>
-				 - adds IMelody version 1.2 read from RTTL or
-other compatible file
-			</p>
-			
-
-			<p>
-				<b>
-					-tone12long
-				</b>
-				 - IMelody version 1.2 saved in one of few SMS
+will read such ringtone as one</p>
+<p><b>-tone12</b> - adds IMelody version 1.2 read from RTTL or
+other compatible file</p>
+<p><b>-tone12long</b> - IMelody version 1.2 saved in one of few SMS
 with UPI. Phones compatible with UPI (like SonyEricsson phones)
-will read such ringtone as one
-			</p>
-			
-
-			<p>
-				<b>
-					-toneSE
-				</b>
-				 - adds IMelody in &quot;short&quot; form supported by
-SonyEricsson phones
-			</p>
-			
-
-			<p>
-				<b>
-					-variablebitmap
-				</b>
-				 - bitmap in any size saved in one SMS
-			</p>
-			
-
-			<p>
-				<b>
-					-variablebitmaplong
-				</b>
-				 - bitmap with maximal size 96x128
-saved in one or few sms
-			</p>
-			
-
-			<p>
-				<b>
-					-fixedbitmap
-				</b>
-				 - bitmap 16x16 or 32x32
-			</p>
-			
-
-			<p>
-				<b>
-					-protected
-				</b>
-				 - all ringtones and bitmaps after this
+will read such ringtone as one</p>
+<p><b>-toneSE</b> - adds IMelody in &quot;short&quot; form supported by
+SonyEricsson phones</p>
+<p><b>-variablebitmap</b> - bitmap in any size saved in one SMS</p>
+<p><b>-variablebitmaplong</b> - bitmap with maximal size 96x128
+saved in one or few sms</p>
+<p><b>-fixedbitmap</b> - bitmap 16x16 or 32x32</p>
+<p><b>-protected</b> - all ringtones and bitmaps after this
 parameter (excluding default ringtones and logos) will be
 &quot;protected&quot; (in phones compatible with ODI like SonyEricsson
-products it won't be possible to forward them from phone menu)
-			</p>
-			
-
-			<p>
-				<i>
-					Example:
-				</i>
-				 gammu savesms EMS -text &quot;Greetings&quot; -defsound 1
+products it won't be possible to forward them from phone menu)</p>
+<p><i>Example:</i> gammu savesms EMS -text &quot;Greetings&quot; -defsound 1
 -text &quot;from Gammu&quot; -tone10 axelf.txt -animation 2 file1.bmp
-file2.bmp
-			</p>
-			
-
-			<p>
-				will create EMS sequence with text &quot;Greetings&quot; and default sound
+file2.bmp</p>
+<p>will create EMS sequence with text &quot;Greetings&quot; and default sound
 1 and text &quot;from Gammu&quot; and ringtone axelf.txt and 2 frame
 animation read from (1'st frame) file1.bmp and (2'nd frame)
-file2.bmp
-			</p>
-			
-
-			<p>
-				<i>
-					Example:
-				</i>
-				 gammu savesms EMS -protected 2
+file2.bmp</p>
+<p><i>Example:</i> gammu savesms EMS -protected 2
 -variablebitmaplong ala.bmp -toneSElong axelf.txt -toneSE
-ring.txt
-			</p>
-			
-
-			<p>
-				ala.bmp and axelf.txt will be &quot;protected&quot;
-			</p>
-			
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms MMSINDICATOR
-			</b>
-			 
-			<i>
-				URL Title Sender [-folder id]
+ring.txt</p>
+<p>ala.bmp and axelf.txt will be &quot;protected&quot;</p>
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms MMSINDICATOR</b> <i>URL Title Sender [-folder id]
 [-unread] [-read] [-unsent] [-sent] [-sender number] [-smsname
 name] [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				Saves a message with MMS indication. The recipient phone will
-then download MMS from given URL and display it.
-			</p>
-			
-
-			<p>
-				Please note that you should provide valid smil data on that
-URL.
-			</p>
-			
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms MMSSETTINGS
-			</b>
-			 
-			<i>
-				file location [-folder id]
+num]</i></dt>
+<dd>
+<p>Saves a message with MMS indication. The recipient phone will
+then download MMS from given URL and display it.</p>
+<p>Please note that you should provide valid smil data on that
+URL.</p>
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms MMSSETTINGS</b> <i>file location [-folder id]
 [-unread] [-read] [-unsent] [-sent] [-sender number] [-smsname
 name] [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Saves a message with MMS configuration. The configuration will
+num]</i></dt>
+<dd>Saves a message with MMS configuration. The configuration will
 be read from Gammu backup file from given location.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms OPERATOR
-			</b>
-			 
-			<i>
-				file [-folder id] [-unread] [-read]
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms OPERATOR</b> <i>file [-folder id] [-unread] [-read]
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-netcode
-netcode] [-biglogo]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Save operator logo as sms (Nokia format - size 72x14 or 78x21
-after using 
-			<b>
-				-biglogo
-			</b>
-			).
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms PICTURE
-			</b>
-			 
-			<i>
-				file [-folder id] [-unread] [-read]
+netcode] [-biglogo]</i></dt>
+<dd>Save operator logo as sms (Nokia format - size 72x14 or 78x21
+after using <b>-biglogo</b>).
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms PICTURE</b> <i>file [-folder id] [-unread] [-read]
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-text text]
-[-unicode] [-alcatelbmmi]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Save Picture Image as sms (Nokia format - size 72x28).
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms PROFILE
-			</b>
-			 
-			<i>
-				[-folder id] [-unread] [-read]
+[-unicode] [-alcatelbmmi]</i></dt>
+<dd>Save Picture Image as sms (Nokia format - size 72x28).
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms PROFILE</b> <i>[-folder id] [-unread] [-read]
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-name name]
-[-bitmap bitmap] [-ringtone ringtone]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Read ringtone (RTTL) format and bitmap (Picture Image size) and
+[-bitmap bitmap] [-ringtone ringtone]</i></dt>
+<dd>Read ringtone (RTTL) format and bitmap (Picture Image size) and
 name and save as Nokia profile.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms RINGTONE
-			</b>
-			 
-			<i>
-				file [-folder id] [-unread] [-read]
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms RINGTONE</b> <i>file [-folder id] [-unread] [-read]
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-long]
-[-scale]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Read RTTL ringtone from file and save as SMS into SIM/phone
+[-scale]</i></dt>
+<dd>Read RTTL ringtone from file and save as SMS into SIM/phone
 memory. Ringtone is saved in Nokia format.
-
-			<p>
-				<b>
-					-long
-				</b>
-				 - ringtone is saved using Profile style. It can be
+<p><b>-long</b> - ringtone is saved using Profile style. It can be
 longer (and saved in 2 SMS), but decoded only by newer phones (like
-33xx)
-			</p>
-			
-
-			<p>
-				<b>
-					-scale
-				</b>
-				 - ringtone will have Scale info for each note. It
+33xx)</p>
+<p><b>-scale</b> - ringtone will have Scale info for each note. It
 will allow to edit it correctly later in phone composer (for
-example, in 33xx)
-			</p>
-			
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms SMSTEMPLATE
-			</b>
-			 
-			<i>
-				[-folder id] [-unread] [-read]
+example, in 33xx)</p>
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms SMSTEMPLATE</b> <i>[-folder id] [-unread] [-read]
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-unicode]
 [-text text] [-unicodefiletext file] [-defsound ID] [-defanimation
 ID] [-tone10 file] [-tone10long file] [-tone12 file] [-tone12long
 file] [-toneSE file] [-toneSElong file] [-variablebitmap file]
-[-variablebitmaplong file] [-animation frames file1 ...]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Saves a SMS template (for Alcatel phones).
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms TEXT
-			</b>
-			 
-			<i>
-				[-folder id] [-unread] [-read] [-unsent]
+[-variablebitmaplong file] [-animation frames file1 ...]</i></dt>
+<dd>Saves a SMS template (for Alcatel phones).
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms TEXT</b> <i>[-folder id] [-unread] [-read] [-unsent]
 [-sent] [-sender number] [-smsname name] [-smscset number]
 [-smscnumber number] [-reply] [-maxsms num] [-inputunicode]
 [-16bit] [-flash] [-len len] [-autolen len] [-unicode]
 [-enablevoice] [-disablevoice] [-enablefax] [-disablefax]
 [-enableemail] [-disableemail] [-voidsms] [-replacemessages ID]
-[-replacefile file] [-text msgtext] [-textutf8 msgtext]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Take text from stdin (or commandline if -text specified) and
+[-replacefile file] [-text msgtext] [-textutf8 msgtext]</i></dt>
+<dd>Take text from stdin (or commandline if -text specified) and
 save as text SMS into SIM/phone memory.
-
-			<p>
-				<b>
-					-flash
-				</b>
-				 - Class 0 SMS
-			</p>
-			
-
-			<p>
-				<b>
-					-len len
-				</b>
-				 - specify, how many chars will be read. When use
+<p><b>-flash</b> - Class 0 SMS</p>
+<p><b>-len len</b> - specify, how many chars will be read. When use
 this option and text will be longer than 1 SMS, will be splitted
-into more linked SMS
-			</p>
-			
-
-			<p>
-				<b>
-					-autolen len
-				</b>
-				 - specify, how many chars will be read. When
+into more linked SMS</p>
+<p><b>-autolen len</b> - specify, how many chars will be read. When
 use this option and text will be longer than 1 SMS, will be
 splitted into more linked SMS.Coding type (SMS default
-alphabet/Unicode) is set according to input text
-			</p>
-			
-
-			<p>
-				<b>
-					-enablevoice
-				</b>
-				 | 
-				<b>
-					-disablevoice
-				</b>
-				 | 
-				<b>
-					-enablefax
-				</b>
-				 |
-
-				<b>
-					-disablefax
-				</b>
-				 | 
-				<b>
-					-enableemail
-				</b>
-				 | 
-				<b>
-					-disableemail
-				</b>
-				 -
-sms will set such indicators. Text will be cut to 1 sms.
-			</p>
-			
-
-			<p>
-				<b>
-					-voidsms
-				</b>
-				 - many phones after receiving it won't display
+alphabet/Unicode) is set according to input text</p>
+<p><b>-enablevoice</b> | <b>-disablevoice</b> | <b>-enablefax</b> |
+<b>-disablefax</b> | <b>-enableemail</b> | <b>-disableemail</b> -
+sms will set such indicators. Text will be cut to 1 sms.</p>
+<p><b>-voidsms</b> - many phones after receiving it won't display
 anything, only beep, vibrate or turn on light. Text will be cut to
-1 sms.
-			</p>
-			
-
-			<p>
-				<b>
-					-unicode
-				</b>
-				 - SMS will be saved in Unicode format
-			</p>
-			
-
-			<p>
-				<b>
-					-inputunicode
-				</b>
-				 - input text is in Unicode.
-			</p>
-			
-
-			<p>
-				<b>
-					-text
-				</b>
-				 - get text from command line instead of stdin.
-			</p>
-			
-
-			<p>
-				<b>
-					-textutf8
-				</b>
-				 - get text in UTF-8 from command line instead
-of stdin.
-			</p>
-			
-
-			<p>
-				<i>
-					TIP:
-				</i>
-				 You can create Unicode file using WordPad in Windows
+1 sms.</p>
+<p><b>-unicode</b> - SMS will be saved in Unicode format</p>
+<p><b>-inputunicode</b> - input text is in Unicode.</p>
+<p><b>-text</b> - get text from command line instead of stdin.</p>
+<p><b>-textutf8</b> - get text in UTF-8 from command line instead
+of stdin.</p>
+<p><i>TIP:</i> You can create Unicode file using WordPad in Windows
 (during saving select &quot;Unicode Text Document&quot; format). In Unix can
-use for example YUdit.
-			</p>
-			
-
-			<p>
-				<b>
-					-replacemessages ID
-				</b>
-				 - 
-				<b>
-					ID
-				</b>
-				 can be 1..7. When you
+use for example YUdit.</p>
+<p><b>-replacemessages ID</b> - <b>ID</b> can be 1..7. When you
 will use option and send more single SMS to one recipient with the
 same ID, each another SMS will replace each previous with the same
-ID
-			</p>
-			
-
-			<p>
-				<b>
-					-replacefile file
-				</b>
-				 - when you want, you can make file in
-such format: 
-				<b>
-					src_unicode_char1, dest_unicode_char1,
-src_unicode_char2, dest_unicode_char2
-				</b>
-				 (everything in one line).
+ID</p>
+<p><b>-replacefile file</b> - when you want, you can make file in
+such format: <b>src_unicode_char1, dest_unicode_char1,
+src_unicode_char2, dest_unicode_char2</b> (everything in one line).
 After reading text for SMS from stdin there will be made
 translation and each src char will be converted to dest char. In
-docs there is example file (
-				<i>
-					replace.txt
-				</i>
-				), which will change
-all &quot;a&quot; chars to &quot;1&quot;
-			</p>
-			
-
-			<p>
-				<i>
-					TIP:
-				</i>
-				 when use ~ char in sms text and 
-				<b>
-					-unicode
-				</b>
-				
+docs there is example file (<i>replace.txt</i>), which will change
+all &quot;a&quot; chars to &quot;1&quot;</p>
+<p><i>TIP:</i> when use ~ char in sms text and <b>-unicode</b>
 option (Unicode coding required), text of sms after ~ char will
-blink in some phones (like N33xx)
-			</p>
-			
-
-			<p>
-				<i>
-					Example:
-				</i>
-				 echo some_text | gammu savesms TEXT
-			</p>
-			
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms TODO
-			</b>
-			 
-			<i>
-				file location [-folder id] [-unread]
+blink in some phones (like N33xx)</p>
+<p><i>Example:</i> echo some_text | gammu savesms TEXT</p>
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms TODO</b> <i>file location [-folder id] [-unread]
 [-read] [-unsent] [-sent] [-sender number] [-smsname name]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Saves a message with a todo entry. The content will be read
+num]</i></dt>
+<dd>Saves a message with a todo entry. The content will be read
 from any backup format which Gammu supports and from given
 location.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms VCARD10|VCARD21
-			</b>
-			 
-			<i>
-				file SM|ME location [-nokia]
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms VCARD10|VCARD21</b> <i>file SM|ME location [-nokia]
 [-folder id] [-unread] [-read] [-unsent] [-sent] [-sender number]
 [-smsname name] [-smscset number] [-smscnumber number] [-reply]
-[-maxsms num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Read phonebook entry from file created by 
-			<b>
-				backup
-			</b>
-			 option
+[-maxsms num]</i></dt>
+<dd>Read phonebook entry from file created by <b>backup</b> option
 and saves in VCARD 1.0 (only name and default number) or VCARD 2.1
 (all entry details with all numbers, text and name) format as SMS
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms WAPINDICATOR
-			</b>
-			 
-			<i>
-				URL Title [-folder id] [-unread]
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms WAPINDICATOR</b> <i>URL Title [-folder id] [-unread]
 [-read] [-unsent] [-sent] [-sender number] [-smsname name]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Saves a SMS with a WAP indication for given URL and title.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms WAPSETTINGS
-			</b>
-			 
-			<i>
-				file location DATA|GPRS [-folder
+num]</i></dt>
+<dd>Saves a SMS with a WAP indication for given URL and title.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms WAPSETTINGS</b> <i>file location DATA|GPRS [-folder
 id] [-unread] [-read] [-unsent] [-sent] [-sender number] [-smsname
 name] [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Read WAP settings from file created by 
-			<b>
-				backup
-			</b>
-			 option and
+num]</i></dt>
+<dd>Read WAP settings from file created by <b>backup</b> option and
 saves in Nokia format as SMS
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms ANIMATION
-			</b>
-			 
-			<i>
-				destination frames file1 file2...
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms ANIMATION</b> <i>destination frames file1 file2...
 [-report] [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save
 [-folder number]] [-smscset number] [-smscnumber number] [-reply]
-[-maxsms num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms ANIMATION
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms BOOKMARK
-			</b>
-			 
-			<i>
-				destination file location [-report]
+[-maxsms num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms ANIMATION</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms BOOKMARK</b> <i>destination file location [-report]
 [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms BOOKMARK
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms CALENDAR
-			</b>
-			 
-			<i>
-				destination file location [-report]
+num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms BOOKMARK</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms CALENDAR</b> <i>destination file location [-report]
 [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms CALENDAR
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms CALLER
-			</b>
-			 
-			<i>
-				destination file [-report] [-validity
+num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms CALENDAR</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms CALLER</b> <i>destination file [-report] [-validity
 HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
-number] [-smscnumber number] [-reply] [-maxsms num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms CALLER
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms EMS
-			</b>
-			 
-			<i>
-				destination [-report] [-validity
+number] [-smscnumber number] [-reply] [-maxsms num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms CALLER</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms EMS</b> <i>destination [-report] [-validity
 HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-unicode]
 [-16bit] [-format lcrasbiut] [-text text] [-unicodefiletext file]
 [-defsound ID] [-defanimation ID] [-tone10 file] [-tone10long file]
 [-tone12 file] [-tone12long file] [-toneSE file] [-toneSElong file]
 [-fixedbitmap file] [-variablebitmap file] [-variablebitmaplong
-file] [-animation frames file1 ...] [-protected number]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms EMS
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms MMSINDICATOR
-			</b>
-			 
-			<i>
-				destination URL Title Sender
+file] [-animation frames file1 ...] [-protected number]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms EMS</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms MMSINDICATOR</b> <i>destination URL Title Sender
 [-report] [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save
 [-folder number]] [-smscset number] [-smscnumber number] [-reply]
-[-maxsms num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms MMSINDICATOR
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms MMSSETTINGS
-			</b>
-			 
-			<i>
-				destination file location
+[-maxsms num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms MMSINDICATOR</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms MMSSETTINGS</b> <i>destination file location
 [-report] [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save
 [-folder number]] [-smscset number] [-smscnumber number] [-reply]
-[-maxsms num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms MMSSETTINGS
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms OPERATOR
-			</b>
-			 
-			<i>
-				destination file [-report]
+[-maxsms num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms MMSSETTINGS</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms OPERATOR</b> <i>destination file [-report]
 [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms num]
-[-netcode netcode] [-biglogo]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms OPERATOR
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms PICTURE
-			</b>
-			 
-			<i>
-				destination file [-report] [-validity
+[-netcode netcode] [-biglogo]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms OPERATOR</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms PICTURE</b> <i>destination file [-report] [-validity
 HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-text text]
-[-unicode] [-alcatelbmmi]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms PICTURE
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms PROFILE
-			</b>
-			 
-			<i>
-				destination [-report] [-validity
+[-unicode] [-alcatelbmmi]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms PICTURE</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms PROFILE</b> <i>destination [-report] [-validity
 HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-name name]
-[-bitmap bitmap] [-ringtone ringtone]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms PROFILE
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms RINGTONE
-			</b>
-			 
-			<i>
-				destination file [-report]
+[-bitmap bitmap] [-ringtone ringtone]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms PROFILE</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms RINGTONE</b> <i>destination file [-report]
 [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms num]
-[-long] [-scale]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms RINGTONE
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms SMSTEMPLATE
-			</b>
-			 
-			<i>
-				destination [-report] [-validity
+[-long] [-scale]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms RINGTONE</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms SMSTEMPLATE</b> <i>destination [-report] [-validity
 HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-unicode]
 [-text text] [-unicodefiletext file] [-defsound ID] [-defanimation
 ID] [-tone10 file] [-tone10long file] [-tone12 file] [-tone12long
 file] [-toneSE file] [-toneSElong file] [-variablebitmap file]
-[-variablebitmaplong file] [-animation frames file1 ...]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms SMSTEMPLATE
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms TEXT
-			</b>
-			 
-			<i>
-				destination [-report] [-validity
+[-variablebitmaplong file] [-animation frames file1 ...]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms SMSTEMPLATE</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms TEXT</b> <i>destination [-report] [-validity
 HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-inputunicode]
 [-16bit] [-flash] [-len len] [-autolen len] [-unicode]
 [-enablevoice] [-disablevoice] [-enablefax] [-disablefax]
 [-enableemail] [-disableemail] [-voidsms] [-replacemessages ID]
-[-replacefile file] [-text msgtext] [-textutf8 msgtext]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms TEXT
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms TODO
-			</b>
-			 
-			<i>
-				destination file location [-report]
+[-replacefile file] [-text msgtext] [-textutf8 msgtext]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms TEXT</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms TODO</b> <i>destination file location [-report]
 [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms TODO
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms VCARD10|VCARD21
-			</b>
-			 
-			<i>
-				destination file SM|ME
+num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms TODO</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms VCARD10|VCARD21</b> <i>destination file SM|ME
 location [-nokia] [-report] [-validity
 HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
-number] [-smscnumber number] [-reply] [-maxsms num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms VCARD10|VCARD21
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms WAPINDICATOR
-			</b>
-			 
-			<i>
-				destination URL Title [-report]
+number] [-smscnumber number] [-reply] [-maxsms num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms VCARD10|VCARD21</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms WAPINDICATOR</b> <i>destination URL Title [-report]
 [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms WAPINDICATOR
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms WAPSETTINGS
-			</b>
-			 
-			<i>
-				destination file location
+num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms WAPINDICATOR</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms WAPSETTINGS</b> <i>destination file location
 DATA|GPRS [-report] [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX]
 [-save [-folder number]] [-smscset number] [-smscnumber number]
-[-reply] [-maxsms num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms WAPSETTINGS
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				setsmsc
-			</b>
-			 
-			<i>
-				location number
-			</i>
-		</dt>
-		
-
-		<dd>
-			Set SMSC settings on SIM card. This keeps all SMSC
+[-reply] [-maxsms num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms WAPSETTINGS</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>setsmsc</b> <i>location number</i></dt>
+<dd>Set SMSC settings on SIM card. This keeps all SMSC
 configuration intact, it just changes the SMSC number.
-
-			<p>
-				Locations are numerated from 1.
-			</p>
-			
-
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAI" name="lbAI"/>
-	
-
-	<h4>
-		Memory (phonebooks and calls)
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				addcategory TODO|PHONEBOOK
-			</b>
-			 
-			<i>
-				text
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				addnew
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Adds data written in file created using 
-			<b>
-				backup option
-			</b>
-			.
-All things backup'ed by 
-			<b>
-				backup
-			</b>
-			 can be restored (when made
+<p>Locations are numerated from 1.</p>
+</dd>
+</dl>
+<a class="aname" id="lbAI" name="lbAI"/>
+<h4>Memory (phonebooks and calls)</h4>
+<dl compact="compact">
+<dt><b>addcategory TODO|PHONEBOOK</b> <i>text</i></dt>
+<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dd>Adds data written in file created using <b>backup option</b>.
+All things backup'ed by <b>backup</b> can be restored (when made
 backup to Gammu text file).
-
-			<p>
-				Please note that this adds all content of backup file to phone
+<p>Please note that this adds all content of backup file to phone
 and does not care about current data in the phone (no duplicates
-are detected).
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				backup
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Backup your phone to file. It's possible to backup (depends on
+are detected).</p>
+</dd>
+<dt><b>backup</b> <i>file [-yes]</i></dt>
+<dd>Backup your phone to file. It's possible to backup (depends on
 phone and backup format):
-
-			<p>
-				* phonebook from SIM and phone memory
-				<br/>
-				
-* calendar notes
-				<br/>
-				
-* SMSC settings
-				<br/>
-				
-* operator logo
-				<br/>
-				
-* startup (static) logo or startup text
-				<br/>
-				
-* WAP bookmarks
-				<br/>
-				
-* WAP settings
-				<br/>
-				
-* caller logos and groups
-				<br/>
-				
-* user ringtones
-				<br/>
-			</p>
-			
-
-			<p>
-				There are various backup formats supported and the backup format
-is guessed based on file extension:
-			</p>
-			
-
-			<p>
-				* .lmb - Nokia backup, supports contacts, caller logos and
-startup logo.
-				<br/>
-				
-* .vcs - vCalendar, supports calendar and todo.
-				<br/>
-				
-* .vcf - vCard, supports contacts.
-				<br/>
-				
-* .ldif - LDAP import, supports contacts.
-				<br/>
-				
-* .ics - iCalendar, supports calendar and todo.
-				<br/>
-				
+<p>* phonebook from SIM and phone memory<br/>
+* calendar notes<br/>
+* SMSC settings<br/>
+* operator logo<br/>
+* startup (static) logo or startup text<br/>
+* WAP bookmarks<br/>
+* WAP settings<br/>
+* caller logos and groups<br/>
+* user ringtones<br/></p>
+<p>There are various backup formats supported and the backup format
+is guessed based on file extension:</p>
+<p>* .lmb - Nokia backup, supports contacts, caller logos and
+startup logo.<br/>
+* .vcs - vCalendar, supports calendar and todo.<br/>
+* .vcf - vCard, supports contacts.<br/>
+* .ldif - LDAP import, supports contacts.<br/>
+* .ics - iCalendar, supports calendar and todo.<br/>
 * Any other extension is Gammu backup file and it supports all data
-mentioned above.
-			</p>
-			
-
-			<p>
-				See 
-				<b>
-					EXAMPLE
-				</b>
-				 section for some hints on manipulating Gammu
-backup format.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				clearall
-			</b>
-		</dt>
-		
-
-		<dd>
-			Deletes all private data from the phone.
-		</dd>
-		
-
-		<dt>
-			<b>
-				deleteallmemory
-			</b>
-			
-
-			<i>
-				DC|MC|RC|ON|VM|SM|ME|MT|FD|SL
-			</i>
-		</dt>
-		
-
-		<dd>
-			Deletes all entries from specified memory type.
-		</dd>
-		
-
-		<dt>
-			<b>
-				deletememory DC|MC|RC|ON|VM|SM|ME|MT|FD|SL
-			</b>
-			 
-			<i>
-				start
-[stop]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Deletes entries in specified range from specified memory
-type.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getallcategory
-			</b>
-			 
-			<i>
-				TODO|PHONEBOOK
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				getallmemory
-			</b>
-			 
-			<i>
-				DC|MC|RC|ON|VM|SM|ME|MT|FD|SL
-			</i>
-		</dt>
-		
-
-		<dd>
-			Get all memory locations from phone. For memory types see
-
-			<b>
-				getmemory
-			</b>
-			.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getcategory TODO|PHONEBOOK
-			</b>
-			 
-			<i>
-				start [stop]
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				getmemory DC|MC|RC|ON|VM|SM|ME|MT|FD|SL
-			</b>
-			 
-			<i>
-				start [stop
-[-nonempty]]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Get memory location from phone.
-
-			<p>
-				Locations are numerated from 1.
-			</p>
-			
-
-			<p>
-				<b>
-					DC
-				</b>
-				 = Dialled calls
-				<br/>
-				
-
-				<b>
-					MC
-				</b>
-				 = Missed calls
-				<br/>
-				
-
-				<b>
-					RC
-				</b>
-				 = Received calls
-				<br/>
-				
-
-				<b>
-					ON
-				</b>
-				 = Own numbers
-				<br/>
-				
-
-				<b>
-					VM
-				</b>
-				 = voice mailbox
-				<br/>
-				
-
-				<b>
-					SM
-				</b>
-				 = SIM phonebook
-				<br/>
-				
-
-				<b>
-					ME
-				</b>
-				 = phone internal phonebook
-				<br/>
-				
-
-				<b>
-					FD
-				</b>
-				 = fixed dialling
-				<br/>
-				
-
-				<b>
-					SL
-				</b>
-				 = sent SMS log
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				getspeeddial
-			</b>
-			 
-			<i>
-				start [stop]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Gets speed dial choices.
-		</dd>
-		
-
-		<dt>
-			<b>
-				listmemorycategory
-			</b>
-			 
-			<i>
-				text|number
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiagetpbkfeatures
-			</b>
-			 
-			<i>
-				memorytype
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				restore
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Restore settings written in file created using 
-			<b>
-				backup
-			</b>
-			
+mentioned above.</p>
+<p>See <b>EXAMPLE</b> section for some hints on manipulating Gammu
+backup format.</p>
+</dd>
+<dt><b>clearall</b></dt>
+<dd>Deletes all private data from the phone.</dd>
+<dt><b>deleteallmemory</b>
+<i>DC|MC|RC|ON|VM|SM|ME|MT|FD|SL</i></dt>
+<dd>Deletes all entries from specified memory type.</dd>
+<dt><b>deletememory DC|MC|RC|ON|VM|SM|ME|MT|FD|SL</b> <i>start
+[stop]</i></dt>
+<dd>Deletes entries in specified range from specified memory
+type.</dd>
+<dt><b>getallcategory</b> <i>TODO|PHONEBOOK</i></dt>
+<dt><b>getallmemory</b> <i>DC|MC|RC|ON|VM|SM|ME|MT|FD|SL</i></dt>
+<dd>Get all memory locations from phone. For memory types see
+<b>getmemory</b>.</dd>
+<dt><b>getcategory TODO|PHONEBOOK</b> <i>start [stop]</i></dt>
+<dt><b>getmemory DC|MC|RC|ON|VM|SM|ME|MT|FD|SL</b> <i>start [stop
+[-nonempty]]</i></dt>
+<dd>Get memory location from phone.
+<p>Locations are numerated from 1.</p>
+<p><b>DC</b> = Dialled calls<br/>
+<b>MC</b> = Missed calls<br/>
+<b>RC</b> = Received calls<br/>
+<b>ON</b> = Own numbers<br/>
+<b>VM</b> = voice mailbox<br/>
+<b>SM</b> = SIM phonebook<br/>
+<b>ME</b> = phone internal phonebook<br/>
+<b>FD</b> = fixed dialling<br/>
+<b>SL</b> = sent SMS log</p>
+</dd>
+<dt><b>getspeeddial</b> <i>start [stop]</i></dt>
+<dd>Gets speed dial choices.</dd>
+<dt><b>listmemorycategory</b> <i>text|number</i></dt>
+<dt><b>nokiagetpbkfeatures</b> <i>memorytype</i></dt>
+<dt><b>restore</b> <i>file [-yes]</i></dt>
+<dd>Restore settings written in file created using <b>backup</b>
 option.
-
-			<p>
-				Please note that restoring deletes all current content in phone.
-If you want only to add entries to phone, use addnew.
-			</p>
-			
-
-			<p>
-				In some phones restoring calendar notes will not show error, but
-won't be done, when phone doesn't have set clock inside.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savefile VCARD10|VCARD21
-			</b>
-			 
-			<i>
-				target.vcf file SM|ME
-location
-			</i>
-		</dt>
-		
-
-		<dd>
-			Allows to convert between various backup formats which gammu
+<p>Please note that restoring deletes all current content in phone.
+If you want only to add entries to phone, use addnew.</p>
+<p>In some phones restoring calendar notes will not show error, but
+won't be done, when phone doesn't have set clock inside.</p>
+</dd>
+<dt><b>savefile VCARD10|VCARD21</b> <i>target.vcf file SM|ME
+location</i></dt>
+<dd>Allows to convert between various backup formats which gammu
 supports for phonebook events. The file type is guessed (for input
 file guess is based on extension and file content, for output
 solely on extension).
-
-			<p>
-				For example if you want to convert single entry from gammu
-native backup to vCard, you need following command:
-			</p>
-			
-
-			<p>
-				<br/>
-				
-gammusavefileCALENDARoutput.vcfmyPhonebook.backupME42
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms VCARD10|VCARD21
-			</b>
-			 
-			<i>
-				file SM|ME location [-nokia]
+<p>For example if you want to convert single entry from gammu
+native backup to vCard, you need following command:</p>
+<p><br/>
+gammusavefileCALENDARoutput.vcfmyPhonebook.backupME42</p>
+</dd>
+<dt><b>savesms VCARD10|VCARD21</b> <i>file SM|ME location [-nokia]
 [-folder id] [-unread] [-read] [-unsent] [-sent] [-sender number]
 [-smsname name] [-smscset number] [-smscnumber number] [-reply]
-[-maxsms num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Read phonebook entry from file created by 
-			<b>
-				backup
-			</b>
-			 option
+[-maxsms num]</i></dt>
+<dd>Read phonebook entry from file created by <b>backup</b> option
 and saves in VCARD 1.0 (only name and default number) or VCARD 2.1
 (all entry details with all numbers, text and name) format as SMS
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				searchmemory
-			</b>
-			 
-			<i>
-				text
-			</i>
-		</dt>
-		
-
-		<dd>
-			Scans all memory entries for given text. It performs case
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>searchmemory</b> <i>text</i></dt>
+<dd>Scans all memory entries for given text. It performs case
 insensitive substring lookup. You can interrupt searching by
-pressing Ctrl+C.
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms VCARD10|VCARD21
-			</b>
-			 
-			<i>
-				destination file SM|ME
+pressing Ctrl+C.</dd>
+<dt><b>sendsms VCARD10|VCARD21</b> <i>destination file SM|ME
 location [-nokia] [-report] [-validity
 HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
-number] [-smscnumber number] [-reply] [-maxsms num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms VCARD10|VCARD21
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAJ" name="lbAJ"/>
-	
-
-	<h4>
-		Filesystem
-	</h4>
-	
-
-	<p>
-		Gammu allows to access phones using native protocol (Nokias) or
+number] [-smscnumber number] [-reply] [-maxsms num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms VCARD10|VCARD21</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+</dl>
+<a class="aname" id="lbAJ" name="lbAJ"/>
+<h4>Filesystem</h4>
+<p>Gammu allows to access phones using native protocol (Nokias) or
 OBEX. Your phone can also support usb storage, which is handled on
-the operating system level and Gammu does not use that.
-	</p>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				addfile
-			</b>
-			 
-			<i>
-				folderID name [-type
+the operating system level and Gammu does not use that.</p>
+<dl compact="compact">
+<dt><b>addfile</b> <i>folderID name [-type
 JAR|BMP|PNG|GIF|JPG|MIDI|WBMP|AMR|3GP|NRT] [-readonly] [-protected]
-[-system] [-hidden] [-newtime]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Add file with specified name to folder with specified folder
+[-system] [-hidden] [-newtime]</i></dt>
+<dd>Add file with specified name to folder with specified folder
 ID.
-
-			<p>
-				<b>
-					-type
-				</b>
-				 - file type was required for filesystem 1 in Nokia
-phones (current filesystem 2 doesn't need this)
-			</p>
-			
-
-			<p>
-				<b>
-					-readonly, -protected, -system, -hidden
-				</b>
-				 - you can set
+<p><b>-type</b> - file type was required for filesystem 1 in Nokia
+phones (current filesystem 2 doesn't need this)</p>
+<p><b>-readonly, -protected, -system, -hidden</b> - you can set
 readonly, protected (file can't be for example forwarded from phone
 menu), system and hidden (file is hidden from phone menu) file
-attributes
-			</p>
-			
-
-			<p>
-				<b>
-					-newtime
-				</b>
-				 - after using it date/time of file modification
-will be set to moment of uploading
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				addfolder
-			</b>
-			 
-			<i>
-				parentfolderID name
-			</i>
-		</dt>
-		
-
-		<dd>
-			Create a folder in phone with specified name in a folder with
-specified folder ID.
-		</dd>
-		
-
-		<dt>
-			<b>
-				deletefiles
-			</b>
-			 
-			<i>
-				fileID
-			</i>
-		</dt>
-		
-
-		<dd>
-			Delete files with given IDs.
-		</dd>
-		
-
-		<dt>
-			<b>
-				deletefolder
-			</b>
-			 
-			<i>
-				name
-			</i>
-		</dt>
-		
-
-		<dd>
-			Delete folder with given ID.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getfilefolder
-			</b>
-			 
-			<i>
-				ID1, ID2, ...
-			</i>
-		</dt>
-		
-
-		<dd>
-			Retrieve files or all files from folder with given IDs from a
-phone filesytem.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getfiles
-			</b>
-			 
-			<i>
-				ID1, ID2, ...
-			</i>
-		</dt>
-		
-
-		<dd>
-			Retrieve files with given IDs from a phone filesytem.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getfilesystem
-			</b>
-			 
-			<i>
-				[-flatall|-flat]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Display info about all folders and files in phone memory/memory
+attributes</p>
+<p><b>-newtime</b> - after using it date/time of file modification
+will be set to moment of uploading</p>
+</dd>
+<dt><b>addfolder</b> <i>parentfolderID name</i></dt>
+<dd>Create a folder in phone with specified name in a folder with
+specified folder ID.</dd>
+<dt><b>deletefiles</b> <i>fileID</i></dt>
+<dd>Delete files with given IDs.</dd>
+<dt><b>deletefolder</b> <i>name</i></dt>
+<dd>Delete folder with given ID.</dd>
+<dt><b>getfilefolder</b> <i>ID1, ID2, ...</i></dt>
+<dd>Retrieve files or all files from folder with given IDs from a
+phone filesytem.</dd>
+<dt><b>getfiles</b> <i>ID1, ID2, ...</i></dt>
+<dd>Retrieve files with given IDs from a phone filesytem.</dd>
+<dt><b>getfilesystem</b> <i>[-flatall|-flat]</i></dt>
+<dd>Display info about all folders and files in phone memory/memory
 card. By default there is tree displayed, you can change it:
-
-			<p>
-				<b>
-					-flatall
-				</b>
-				 there are displayed full file/folder details
-like ID (first parameter in line)
-			</p>
-			
-
-			<p>
-				<b>
-					-flat
-				</b>
-			</p>
-			
-
-			<p>
-				Please note, that in some phones (like N6230) content of some
+<p><b>-flatall</b> there are displayed full file/folder details
+like ID (first parameter in line)</p>
+<p><b>-flat</b></p>
+<p>Please note, that in some phones (like N6230) content of some
 folders (with more files) can be cut (only part of files will be
 displayed) for example on infrared connection. This is not Gammu
-issue, but phone firmware problem.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				getfilesystemstatus
-			</b>
-		</dt>
-		
-
-		<dd>
-			Display info filesystem status - number of bytes available,
-used or used by some specific content.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getfolderlisting
-			</b>
-			 
-			<i>
-				folderID
-			</i>
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				Display files and folders available in folder with given folder
-ID. You can get ID's using getfilesystem -flatall.
-			</p>
-			
-
-			<p>
-				Please note, that in some phones (like N6230) content of some
+issue, but phone firmware problem.</p>
+</dd>
+<dt><b>getfilesystemstatus</b></dt>
+<dd>Display info filesystem status - number of bytes available,
+used or used by some specific content.</dd>
+<dt><b>getfolderlisting</b> <i>folderID</i></dt>
+<dd>
+<p>Display files and folders available in folder with given folder
+ID. You can get ID's using getfilesystem -flatall.</p>
+<p>Please note, that in some phones (like N6230) content of some
 folders (with more files) can be cut (only part of files will be
 displayed) for example on infrared connection. This is not Gammu
-issue, but phone firmware problem.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				getrootfolders
-			</b>
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				Display info about drives available in phone/memory card.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokiaaddfile
-			</b>
-			
-
-			<i>
-				Gallery|Gallery2|Camera|Tones|Tones2|Records|Video|Playlist|MemoryCard
+issue, but phone firmware problem.</p>
+</dd>
+<dt><b>getrootfolders</b></dt>
+<dd>
+<p>Display info about drives available in phone/memory card.</p>
+</dd>
+<dt><b>nokiaaddfile</b>
+<i>Gallery|Gallery2|Camera|Tones|Tones2|Records|Video|Playlist|MemoryCard
 file [-name name] [-protected] [-readonly] [-system] [-hidden]
-[-newtime]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Install the *.jar/*.jad file pair of a midlet in the
+[-newtime]</i></dt>
+<dd>Install the *.jar/*.jad file pair of a midlet in the
 application or game menu of the phone. You have to give the name
 without the jar/jad suffix, otherwise you will get the slightly
 confusing error message Can't open specified file. Read only ?
-
-			<p>
-				The option 
-				<i>
-					-overwrite
-				</i>
-				 deletes the application's .jad and
+<p>The option <i>-overwrite</i> deletes the application's .jad and
 .jar files bevor installing, but doesn't delete the application
-data. Option 
-				<i>
-					-overwriteall
-				</i>
-				 will also delete all data. Both
-these options work only for Application or Game upload.
-			</p>
-			
-
-			<p>
-				<i>
-					Example:
-				</i>
-				 gammu nokiaaddfile Application Alien will read
-Alien.JAD and Alien.JAR and add to Applications
-			</p>
-			
-
-			<p>
-				<i>
-					Example:
-				</i>
-				 gammu nokiaaddfile Tones file.mid will read
-file.mid and add to Tones folder
-			</p>
-			
-
-			<p>
-				You can use 
-				<a href="../jadmaker.1/">
-					jadmaker
-				</a>
-				(1) to
-generate a .jad file from a .jar file.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokiaaddplaylists
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				sendfile
-			</b>
-			 
-			<i>
-				name
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends file to a phone. It's up to phone to decide where to
+data. Option <i>-overwriteall</i> will also delete all data. Both
+these options work only for Application or Game upload.</p>
+<p><i>Example:</i> gammu nokiaaddfile Application Alien will read
+Alien.JAD and Alien.JAR and add to Applications</p>
+<p><i>Example:</i> gammu nokiaaddfile Tones file.mid will read
+file.mid and add to Tones folder</p>
+<p>You can use <a href="../jadmaker.1/">jadmaker</a>(1) to
+generate a .jad file from a .jar file.</p>
+</dd>
+<dt><b>nokiaaddplaylists</b></dt>
+<dt><b>sendfile</b> <i>name</i></dt>
+<dd>Sends file to a phone. It's up to phone to decide where to
 store this file and how to handle it (for example when you send
 vCard or vCalendar, most of phones will offer you to import
-it.
-		</dd>
-		
-
-		<dt>
-			<b>
-				setfileattrib
-			</b>
-			 
-			<i>
-				folderID [-system] [-readonly]
-[-hidden] [-protected]
-			</i>
-		</dt>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAK" name="lbAK"/>
-	
-
-	<h4>
-		Logo and pictures
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				copybitmap
-			</b>
-			 
-			<i>
-				inputfile [outputfile
-[OPERATOR|PICTURE|STARTUP|CALLER]]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Allow to convert logos files to another. When give ONLY
+it.</dd>
+<dt><b>setfileattrib</b> <i>folderID [-system] [-readonly]
+[-hidden] [-protected]</i></dt>
+</dl>
+<a class="aname" id="lbAK" name="lbAK"/>
+<h4>Logo and pictures</h4>
+<dl compact="compact">
+<dt><b>copybitmap</b> <i>inputfile [outputfile
+[OPERATOR|PICTURE|STARTUP|CALLER]]</i></dt>
+<dd>Allow to convert logos files to another. When give ONLY
 inputfile, output will be written to stdout using ASCII art. When
 give output file and format, in some file formats (like NLM) will
-be set indicator informing about logo type to given.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getbitmap
-			</b>
-			 
-			<i>
-				DEALER
-			</i>
-		</dt>
-		
-
-		<dd>
-			In some models it's possible to save dealer welcome note - text
+be set indicator informing about logo type to given.</dd>
+<dt><b>getbitmap</b> <i>DEALER</i></dt>
+<dd>In some models it's possible to save dealer welcome note - text
 displayed during enabling phone, which can't be edited from phone
-menu. Here you can get it.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getbitmap CALLER
-			</b>
-			 
-			<i>
-				location [file]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Get caller group logo from phone. Locations 1-5.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getbitmap OPERATOR
-			</b>
-			 
-			<i>
-				[file]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Get operator logo (picture displayed instead of operator name)
-from phone.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getbitmap PICTURE
-			</b>
-			 
-			<i>
-				location [file]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Get Picture Image from phone.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getbitmap STARTUP
-			</b>
-			 
-			<i>
-				[file]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Get static startup logo from phone. Allow to save it in
-file.
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms ANIMATION
-			</b>
-			 
-			<i>
-				frames file1 file2... [-folder id]
+menu. Here you can get it.</dd>
+<dt><b>getbitmap CALLER</b> <i>location [file]</i></dt>
+<dd>Get caller group logo from phone. Locations 1-5.</dd>
+<dt><b>getbitmap OPERATOR</b> <i>[file]</i></dt>
+<dd>Get operator logo (picture displayed instead of operator name)
+from phone.</dd>
+<dt><b>getbitmap PICTURE</b> <i>location [file]</i></dt>
+<dd>Get Picture Image from phone.</dd>
+<dt><b>getbitmap STARTUP</b> <i>[file]</i></dt>
+<dd>Get static startup logo from phone. Allow to save it in
+file.</dd>
+<dt><b>savesms ANIMATION</b> <i>frames file1 file2... [-folder id]
 [-unread] [-read] [-unsent] [-sent] [-sender number] [-smsname
 name] [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Save an animation as a SMS. You need to give number of frames
+num]</i></dt>
+<dd>Save an animation as a SMS. You need to give number of frames
 and picture for each frame. Each picture can be in any picture
 format which Gammu supports (B/W bmp, gif, wbmp, nol, nlm...).
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms CALLER
-			</b>
-			 
-			<i>
-				file [-folder id] [-unread] [-read]
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms CALLER</b> <i>file [-folder id] [-unread] [-read]
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
-number] [-smscnumber number] [-reply] [-maxsms num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Save caller logo as sms (Nokia format - size 72x14).
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms OPERATOR
-			</b>
-			 
-			<i>
-				file [-folder id] [-unread] [-read]
+number] [-smscnumber number] [-reply] [-maxsms num]</i></dt>
+<dd>Save caller logo as sms (Nokia format - size 72x14).
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms OPERATOR</b> <i>file [-folder id] [-unread] [-read]
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-netcode
-netcode] [-biglogo]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Save operator logo as sms (Nokia format - size 72x14 or 78x21
-after using 
-			<b>
-				-biglogo
-			</b>
-			).
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms PICTURE
-			</b>
-			 
-			<i>
-				file [-folder id] [-unread] [-read]
+netcode] [-biglogo]</i></dt>
+<dd>Save operator logo as sms (Nokia format - size 72x14 or 78x21
+after using <b>-biglogo</b>).
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms PICTURE</b> <i>file [-folder id] [-unread] [-read]
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-text text]
-[-unicode] [-alcatelbmmi]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Save Picture Image as sms (Nokia format - size 72x28).
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms ANIMATION
-			</b>
-			 
-			<i>
-				destination frames file1 file2...
+[-unicode] [-alcatelbmmi]</i></dt>
+<dd>Save Picture Image as sms (Nokia format - size 72x28).
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms ANIMATION</b> <i>destination frames file1 file2...
 [-report] [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save
 [-folder number]] [-smscset number] [-smscnumber number] [-reply]
-[-maxsms num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms ANIMATION
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms CALLER
-			</b>
-			 
-			<i>
-				destination file [-report] [-validity
+[-maxsms num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms ANIMATION</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms CALLER</b> <i>destination file [-report] [-validity
 HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
-number] [-smscnumber number] [-reply] [-maxsms num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms CALLER
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms OPERATOR
-			</b>
-			 
-			<i>
-				destination file [-report]
+number] [-smscnumber number] [-reply] [-maxsms num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms CALLER</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms OPERATOR</b> <i>destination file [-report]
 [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms num]
-[-netcode netcode] [-biglogo]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms OPERATOR
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms PICTURE
-			</b>
-			 
-			<i>
-				destination file [-report] [-validity
+[-netcode netcode] [-biglogo]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms OPERATOR</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms PICTURE</b> <i>destination file [-report] [-validity
 HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-text text]
-[-unicode] [-alcatelbmmi]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms PICTURE
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				setbitmap CALLER
-			</b>
-			 
-			<i>
-				location [file]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Set caller logo.
-		</dd>
-		
-
-		<dt>
-			<b>
-				setbitmap COLOUROPERATOR
-			</b>
-			 
-			<i>
-				[fileID [netcode]]
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				setbitmap COLOURSTARTUP
-			</b>
-			 
-			<i>
-				[fileID]
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				setbitmap DEALER
-			</b>
-			 
-			<i>
-				text
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				setbitmap OPERATOR
-			</b>
-			 
-			<i>
-				[file [netcode]]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Set operator logo in phone. When won't give file and netcode,
+[-unicode] [-alcatelbmmi]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms PICTURE</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>setbitmap CALLER</b> <i>location [file]</i></dt>
+<dd>Set caller logo.</dd>
+<dt><b>setbitmap COLOUROPERATOR</b> <i>[fileID [netcode]]</i></dt>
+<dt><b>setbitmap COLOURSTARTUP</b> <i>[fileID]</i></dt>
+<dt><b>setbitmap DEALER</b> <i>text</i></dt>
+<dt><b>setbitmap OPERATOR</b> <i>[file [netcode]]</i></dt>
+<dd>Set operator logo in phone. When won't give file and netcode,
 operator logo will be removed from phone. When will give only
 filename, operator logo will be displayed for your current GSM
 operator. When give additionaly network code, it will be displayed
-for this operator: 
-			<b>
-				gammu setbitmap OPERATOR file &quot;260
-02&quot;
-			</b>
-		</dd>
-		
-
-		<dt>
-			<b>
-				setbitmap PICTURE
-			</b>
-			 
-			<i>
-				file location [text]
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				setbitmap STARTUP
-			</b>
-			 
-			<i>
-				file|1|2|3
-			</i>
-		</dt>
-		
-
-		<dd>
-			Set startup logo in phone. It can be static (then you will have
+for this operator: <b>gammu setbitmap OPERATOR file &quot;260
+02&quot;</b></dd>
+<dt><b>setbitmap PICTURE</b> <i>file location [text]</i></dt>
+<dt><b>setbitmap STARTUP</b> <i>file|1|2|3</i></dt>
+<dd>Set startup logo in phone. It can be static (then you will have
 to give file name) or one of predefined animated (only some phones
-like Nokia 3310 or 3330 supports it)
-		</dd>
-		
-
-		<dt>
-			<b>
-				setbitmap TEXT
-			</b>
-			 
-			<i>
-				text
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				setbitmap WALLPAPER
-			</b>
-			 
-			<i>
-				fileID
-			</i>
-		</dt>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAL" name="lbAL"/>
-	
-
-	<h4>
-		Ringtones
-	</h4>
-	
-
-	<p>
-		Ringtones are mostly supported only for older phones. For recent
+like Nokia 3310 or 3330 supports it)</dd>
+<dt><b>setbitmap TEXT</b> <i>text</i></dt>
+<dt><b>setbitmap WALLPAPER</b> <i>fileID</i></dt>
+</dl>
+<a class="aname" id="lbAL" name="lbAL"/>
+<h4>Ringtones</h4>
+<p>Ringtones are mostly supported only for older phones. For recent
 phones you usually just upload them to some folder in phone
-filesystem.
-	</p>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				addnew
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Adds data written in file created using 
-			<b>
-				backup option
-			</b>
-			.
-All things backup'ed by 
-			<b>
-				backup
-			</b>
-			 can be restored (when made
+filesystem.</p>
+<dl compact="compact">
+<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dd>Adds data written in file created using <b>backup option</b>.
+All things backup'ed by <b>backup</b> can be restored (when made
 backup to Gammu text file).
-
-			<p>
-				Please note that this adds all content of backup file to phone
+<p>Please note that this adds all content of backup file to phone
 and does not care about current data in the phone (no duplicates
-are detected).
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				backup
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Backup your phone to file. It's possible to backup (depends on
+are detected).</p>
+</dd>
+<dt><b>backup</b> <i>file [-yes]</i></dt>
+<dd>Backup your phone to file. It's possible to backup (depends on
 phone and backup format):
-
-			<p>
-				* phonebook from SIM and phone memory
-				<br/>
-				
-* calendar notes
-				<br/>
-				
-* SMSC settings
-				<br/>
-				
-* operator logo
-				<br/>
-				
-* startup (static) logo or startup text
-				<br/>
-				
-* WAP bookmarks
-				<br/>
-				
-* WAP settings
-				<br/>
-				
-* caller logos and groups
-				<br/>
-				
-* user ringtones
-				<br/>
-			</p>
-			
-
-			<p>
-				There are various backup formats supported and the backup format
-is guessed based on file extension:
-			</p>
-			
-
-			<p>
-				* .lmb - Nokia backup, supports contacts, caller logos and
-startup logo.
-				<br/>
-				
-* .vcs - vCalendar, supports calendar and todo.
-				<br/>
-				
-* .vcf - vCard, supports contacts.
-				<br/>
-				
-* .ldif - LDAP import, supports contacts.
-				<br/>
-				
-* .ics - iCalendar, supports calendar and todo.
-				<br/>
-				
+<p>* phonebook from SIM and phone memory<br/>
+* calendar notes<br/>
+* SMSC settings<br/>
+* operator logo<br/>
+* startup (static) logo or startup text<br/>
+* WAP bookmarks<br/>
+* WAP settings<br/>
+* caller logos and groups<br/>
+* user ringtones<br/></p>
+<p>There are various backup formats supported and the backup format
+is guessed based on file extension:</p>
+<p>* .lmb - Nokia backup, supports contacts, caller logos and
+startup logo.<br/>
+* .vcs - vCalendar, supports calendar and todo.<br/>
+* .vcf - vCard, supports contacts.<br/>
+* .ldif - LDAP import, supports contacts.<br/>
+* .ics - iCalendar, supports calendar and todo.<br/>
 * Any other extension is Gammu backup file and it supports all data
-mentioned above.
-			</p>
-			
-
-			<p>
-				See 
-				<b>
-					EXAMPLE
-				</b>
-				 section for some hints on manipulating Gammu
-backup format.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				clearall
-			</b>
-		</dt>
-		
-
-		<dd>
-			Deletes all private data from the phone.
-		</dd>
-		
-
-		<dt>
-			<b>
-				copyringtone
-			</b>
-			 
-			<i>
-				source destination
-[RTTL|BINARY]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Copy source ringtone to destination.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getphoneringtone
-			</b>
-			 
-			<i>
-				location [file]
-			</i>
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				Get one of &quot;default&quot; ringtones and saves into file
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				getringtone
-			</b>
-			 
-			<i>
-				location [file]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Get ringtone from phone in RTTL or BINARY format.
-
-			<p>
-				Locations are numerated from 1.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				getringtoneslist
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiacomposer
-			</b>
-			 
-			<i>
-				file
-			</i>
-		</dt>
-		
-
-		<dd>
-			Show, how to enter RTTL ringtone in composer existing in many
-Nokia phones (and how should it look like).
-		</dd>
-		
-
-		<dt>
-			<b>
-				playringtone
-			</b>
-			 
-			<i>
-				file
-			</i>
-		</dt>
-		
-
-		<dd>
-			Play aproximation of ringtone over phone buzzer. File can be in
-RTTL or BINARY (Nokia DCT3) format.
-		</dd>
-		
-
-		<dt>
-			<b>
-				playsavedringtone
-			</b>
-			 
-			<i>
-				number
-			</i>
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				Play one of &quot;built&quot; ringtones. This option is available for DCT4
-phones. For getting ringtones list use getringtoneslist.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				restore
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Restore settings written in file created using 
-			<b>
-				backup
-			</b>
-			
+mentioned above.</p>
+<p>See <b>EXAMPLE</b> section for some hints on manipulating Gammu
+backup format.</p>
+</dd>
+<dt><b>clearall</b></dt>
+<dd>Deletes all private data from the phone.</dd>
+<dt><b>copyringtone</b> <i>source destination
+[RTTL|BINARY]</i></dt>
+<dd>Copy source ringtone to destination.</dd>
+<dt><b>getphoneringtone</b> <i>location [file]</i></dt>
+<dd>
+<p>Get one of &quot;default&quot; ringtones and saves into file</p>
+</dd>
+<dt><b>getringtone</b> <i>location [file]</i></dt>
+<dd>Get ringtone from phone in RTTL or BINARY format.
+<p>Locations are numerated from 1.</p>
+</dd>
+<dt><b>getringtoneslist</b></dt>
+<dt><b>nokiacomposer</b> <i>file</i></dt>
+<dd>Show, how to enter RTTL ringtone in composer existing in many
+Nokia phones (and how should it look like).</dd>
+<dt><b>playringtone</b> <i>file</i></dt>
+<dd>Play aproximation of ringtone over phone buzzer. File can be in
+RTTL or BINARY (Nokia DCT3) format.</dd>
+<dt><b>playsavedringtone</b> <i>number</i></dt>
+<dd>
+<p>Play one of &quot;built&quot; ringtones. This option is available for DCT4
+phones. For getting ringtones list use getringtoneslist.</p>
+</dd>
+<dt><b>restore</b> <i>file [-yes]</i></dt>
+<dd>Restore settings written in file created using <b>backup</b>
 option.
-
-			<p>
-				Please note that restoring deletes all current content in phone.
-If you want only to add entries to phone, use addnew.
-			</p>
-			
-
-			<p>
-				In some phones restoring calendar notes will not show error, but
-won't be done, when phone doesn't have set clock inside.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms RINGTONE
-			</b>
-			 
-			<i>
-				file [-folder id] [-unread] [-read]
+<p>Please note that restoring deletes all current content in phone.
+If you want only to add entries to phone, use addnew.</p>
+<p>In some phones restoring calendar notes will not show error, but
+won't be done, when phone doesn't have set clock inside.</p>
+</dd>
+<dt><b>savesms RINGTONE</b> <i>file [-folder id] [-unread] [-read]
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-long]
-[-scale]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Read RTTL ringtone from file and save as SMS into SIM/phone
+[-scale]</i></dt>
+<dd>Read RTTL ringtone from file and save as SMS into SIM/phone
 memory. Ringtone is saved in Nokia format.
-
-			<p>
-				<b>
-					-long
-				</b>
-				 - ringtone is saved using Profile style. It can be
+<p><b>-long</b> - ringtone is saved using Profile style. It can be
 longer (and saved in 2 SMS), but decoded only by newer phones (like
-33xx)
-			</p>
-			
-
-			<p>
-				<b>
-					-scale
-				</b>
-				 - ringtone will have Scale info for each note. It
+33xx)</p>
+<p><b>-scale</b> - ringtone will have Scale info for each note. It
 will allow to edit it correctly later in phone composer (for
-example, in 33xx)
-			</p>
-			
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms RINGTONE
-			</b>
-			 
-			<i>
-				destination file [-report]
+example, in 33xx)</p>
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms RINGTONE</b> <i>destination file [-report]
 [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms num]
-[-long] [-scale]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms RINGTONE
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				setringtone
-			</b>
-			 
-			<i>
-				file [-location location] [-scale] [-name
-name]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Set ringtone in phone. When don't give location, it will be
+[-long] [-scale]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms RINGTONE</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>setringtone</b> <i>file [-location location] [-scale] [-name
+name]</i></dt>
+<dd>Set ringtone in phone. When don't give location, it will be
 written &quot;with preview&quot; (in phones supporting this feature like 61xx
 or 6210). When use RTTL ringtones, give location and use
-
-			<b>
-				-scale
-			</b>
-			, there will be written scale info with each note. It
+<b>-scale</b>, there will be written scale info with each note. It
 will avoid scale problems available during editing ringtone in
 composer from phone menu (for example, in N33xx).
-
-			<p>
-				<i>
-					TIP:
-				</i>
-				 when use ~ char in ringtone name, in some phones
-(like 33xx) name will blink later in phone menus
-			</p>
-			
-
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAM" name="lbAM"/>
-	
-
-	<h4>
-		Calendar notes
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				addnew
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Adds data written in file created using 
-			<b>
-				backup option
-			</b>
-			.
-All things backup'ed by 
-			<b>
-				backup
-			</b>
-			 can be restored (when made
+<p><i>TIP:</i> when use ~ char in ringtone name, in some phones
+(like 33xx) name will blink later in phone menus</p>
+</dd>
+</dl>
+<a class="aname" id="lbAM" name="lbAM"/>
+<h4>Calendar notes</h4>
+<dl compact="compact">
+<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dd>Adds data written in file created using <b>backup option</b>.
+All things backup'ed by <b>backup</b> can be restored (when made
 backup to Gammu text file).
-
-			<p>
-				Please note that this adds all content of backup file to phone
+<p>Please note that this adds all content of backup file to phone
 and does not care about current data in the phone (no duplicates
-are detected).
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				backup
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Backup your phone to file. It's possible to backup (depends on
+are detected).</p>
+</dd>
+<dt><b>backup</b> <i>file [-yes]</i></dt>
+<dd>Backup your phone to file. It's possible to backup (depends on
 phone and backup format):
-
-			<p>
-				* phonebook from SIM and phone memory
-				<br/>
-				
-* calendar notes
-				<br/>
-				
-* SMSC settings
-				<br/>
-				
-* operator logo
-				<br/>
-				
-* startup (static) logo or startup text
-				<br/>
-				
-* WAP bookmarks
-				<br/>
-				
-* WAP settings
-				<br/>
-				
-* caller logos and groups
-				<br/>
-				
-* user ringtones
-				<br/>
-			</p>
-			
-
-			<p>
-				There are various backup formats supported and the backup format
-is guessed based on file extension:
-			</p>
-			
-
-			<p>
-				* .lmb - Nokia backup, supports contacts, caller logos and
-startup logo.
-				<br/>
-				
-* .vcs - vCalendar, supports calendar and todo.
-				<br/>
-				
-* .vcf - vCard, supports contacts.
-				<br/>
-				
-* .ldif - LDAP import, supports contacts.
-				<br/>
-				
-* .ics - iCalendar, supports calendar and todo.
-				<br/>
-				
+<p>* phonebook from SIM and phone memory<br/>
+* calendar notes<br/>
+* SMSC settings<br/>
+* operator logo<br/>
+* startup (static) logo or startup text<br/>
+* WAP bookmarks<br/>
+* WAP settings<br/>
+* caller logos and groups<br/>
+* user ringtones<br/></p>
+<p>There are various backup formats supported and the backup format
+is guessed based on file extension:</p>
+<p>* .lmb - Nokia backup, supports contacts, caller logos and
+startup logo.<br/>
+* .vcs - vCalendar, supports calendar and todo.<br/>
+* .vcf - vCard, supports contacts.<br/>
+* .ldif - LDAP import, supports contacts.<br/>
+* .ics - iCalendar, supports calendar and todo.<br/>
 * Any other extension is Gammu backup file and it supports all data
-mentioned above.
-			</p>
-			
-
-			<p>
-				See 
-				<b>
-					EXAMPLE
-				</b>
-				 section for some hints on manipulating Gammu
-backup format.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				clearall
-			</b>
-		</dt>
-		
-
-		<dd>
-			Deletes all private data from the phone.
-		</dd>
-		
-
-		<dt>
-			<b>
-				deletecalendar
-			</b>
-			 
-			<i>
-				start [stop]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Deletes selected calendar entries in phone.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getallcalendar
-			</b>
-		</dt>
-		
-
-		<dd>
-			Retrieves all calendar entries from phone.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getcalendar
-			</b>
-			 
-			<i>
-				start [stop]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Retrieves selected calendar entries from phone.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getcalendarsettings
-			</b>
-		</dt>
-		
-
-		<dd>
-			Displays calendar settings like first day of week or automatic
-deleting of old entries.
-		</dd>
-		
-
-		<dt>
-			<b>
-				restore
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Restore settings written in file created using 
-			<b>
-				backup
-			</b>
-			
+mentioned above.</p>
+<p>See <b>EXAMPLE</b> section for some hints on manipulating Gammu
+backup format.</p>
+</dd>
+<dt><b>clearall</b></dt>
+<dd>Deletes all private data from the phone.</dd>
+<dt><b>deletecalendar</b> <i>start [stop]</i></dt>
+<dd>Deletes selected calendar entries in phone.</dd>
+<dt><b>getallcalendar</b></dt>
+<dd>Retrieves all calendar entries from phone.</dd>
+<dt><b>getcalendar</b> <i>start [stop]</i></dt>
+<dd>Retrieves selected calendar entries from phone.</dd>
+<dt><b>getcalendarsettings</b></dt>
+<dd>Displays calendar settings like first day of week or automatic
+deleting of old entries.</dd>
+<dt><b>restore</b> <i>file [-yes]</i></dt>
+<dd>Restore settings written in file created using <b>backup</b>
 option.
-
-			<p>
-				Please note that restoring deletes all current content in phone.
-If you want only to add entries to phone, use addnew.
-			</p>
-			
-
-			<p>
-				In some phones restoring calendar notes will not show error, but
-won't be done, when phone doesn't have set clock inside.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savefile CALENDAR
-			</b>
-			 
-			<i>
-				target.vcs file location
-			</i>
-		</dt>
-		
-
-		<dd>
-			Allows to convert between various backup formats which gammu
+<p>Please note that restoring deletes all current content in phone.
+If you want only to add entries to phone, use addnew.</p>
+<p>In some phones restoring calendar notes will not show error, but
+won't be done, when phone doesn't have set clock inside.</p>
+</dd>
+<dt><b>savefile CALENDAR</b> <i>target.vcs file location</i></dt>
+<dd>Allows to convert between various backup formats which gammu
 supports for calendar events. The file type is guessed (for input
 file guess is based on extension and file content, for output
 solely on extension).
-
-			<p>
-				For example if you want to convert single entry from gammu
-native backup to vCalendar, you need following command:
-			</p>
-			
-
-			<p>
-				<br/>
-				
-gammusavefileCALENDARoutput.vcsmyCalendar.backup260
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms CALENDAR
-			</b>
-			 
-			<i>
-				file location [-folder id] [-unread]
+<p>For example if you want to convert single entry from gammu
+native backup to vCalendar, you need following command:</p>
+<p><br/>
+gammusavefileCALENDARoutput.vcsmyCalendar.backup260</p>
+</dd>
+<dt><b>savesms CALENDAR</b> <i>file location [-folder id] [-unread]
 [-read] [-unsent] [-sent] [-sender number] [-smsname name]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Read calendar note from file created by 
-			<b>
-				backup
-			</b>
-			 option
+num]</i></dt>
+<dd>Read calendar note from file created by <b>backup</b> option
 and saves in VCALENDAR 1.0 format as SMS.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms CALENDAR
-			</b>
-			 
-			<i>
-				destination file location [-report]
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms CALENDAR</b> <i>destination file location [-report]
 [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms CALENDAR
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAN" name="lbAN"/>
-	
-
-	<h4>
-		To do lists
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				addcategory TODO|PHONEBOOK
-			</b>
-			 
-			<i>
-				text
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				addnew
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Adds data written in file created using 
-			<b>
-				backup option
-			</b>
-			.
-All things backup'ed by 
-			<b>
-				backup
-			</b>
-			 can be restored (when made
+num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms CALENDAR</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+</dl>
+<a class="aname" id="lbAN" name="lbAN"/>
+<h4>To do lists</h4>
+<dl compact="compact">
+<dt><b>addcategory TODO|PHONEBOOK</b> <i>text</i></dt>
+<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dd>Adds data written in file created using <b>backup option</b>.
+All things backup'ed by <b>backup</b> can be restored (when made
 backup to Gammu text file).
-
-			<p>
-				Please note that this adds all content of backup file to phone
+<p>Please note that this adds all content of backup file to phone
 and does not care about current data in the phone (no duplicates
-are detected).
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				backup
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Backup your phone to file. It's possible to backup (depends on
+are detected).</p>
+</dd>
+<dt><b>backup</b> <i>file [-yes]</i></dt>
+<dd>Backup your phone to file. It's possible to backup (depends on
 phone and backup format):
-
-			<p>
-				* phonebook from SIM and phone memory
-				<br/>
-				
-* calendar notes
-				<br/>
-				
-* SMSC settings
-				<br/>
-				
-* operator logo
-				<br/>
-				
-* startup (static) logo or startup text
-				<br/>
-				
-* WAP bookmarks
-				<br/>
-				
-* WAP settings
-				<br/>
-				
-* caller logos and groups
-				<br/>
-				
-* user ringtones
-				<br/>
-			</p>
-			
-
-			<p>
-				There are various backup formats supported and the backup format
-is guessed based on file extension:
-			</p>
-			
-
-			<p>
-				* .lmb - Nokia backup, supports contacts, caller logos and
-startup logo.
-				<br/>
-				
-* .vcs - vCalendar, supports calendar and todo.
-				<br/>
-				
-* .vcf - vCard, supports contacts.
-				<br/>
-				
-* .ldif - LDAP import, supports contacts.
-				<br/>
-				
-* .ics - iCalendar, supports calendar and todo.
-				<br/>
-				
+<p>* phonebook from SIM and phone memory<br/>
+* calendar notes<br/>
+* SMSC settings<br/>
+* operator logo<br/>
+* startup (static) logo or startup text<br/>
+* WAP bookmarks<br/>
+* WAP settings<br/>
+* caller logos and groups<br/>
+* user ringtones<br/></p>
+<p>There are various backup formats supported and the backup format
+is guessed based on file extension:</p>
+<p>* .lmb - Nokia backup, supports contacts, caller logos and
+startup logo.<br/>
+* .vcs - vCalendar, supports calendar and todo.<br/>
+* .vcf - vCard, supports contacts.<br/>
+* .ldif - LDAP import, supports contacts.<br/>
+* .ics - iCalendar, supports calendar and todo.<br/>
 * Any other extension is Gammu backup file and it supports all data
-mentioned above.
-			</p>
-			
-
-			<p>
-				See 
-				<b>
-					EXAMPLE
-				</b>
-				 section for some hints on manipulating Gammu
-backup format.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				clearall
-			</b>
-		</dt>
-		
-
-		<dd>
-			Deletes all private data from the phone.
-		</dd>
-		
-
-		<dt>
-			<b>
-				deletetodo
-			</b>
-			 
-			<i>
-				start [stop]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Deletes selected todo entries in phone.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getallcategory
-			</b>
-			 
-			<i>
-				TODO|PHONEBOOK
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				getalltodo
-			</b>
-		</dt>
-		
-
-		<dd>
-			Retrieves all todo entries from phone.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getcategory TODO|PHONEBOOK
-			</b>
-			 
-			<i>
-				start [stop]
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				gettodo
-			</b>
-			 
-			<i>
-				start [stop]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Retrieves selected todo entries from phone.
-		</dd>
-		
-
-		<dt>
-			<b>
-				listtodocategory
-			</b>
-			 
-			<i>
-				text|number
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				restore
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Restore settings written in file created using 
-			<b>
-				backup
-			</b>
-			
+mentioned above.</p>
+<p>See <b>EXAMPLE</b> section for some hints on manipulating Gammu
+backup format.</p>
+</dd>
+<dt><b>clearall</b></dt>
+<dd>Deletes all private data from the phone.</dd>
+<dt><b>deletetodo</b> <i>start [stop]</i></dt>
+<dd>Deletes selected todo entries in phone.</dd>
+<dt><b>getallcategory</b> <i>TODO|PHONEBOOK</i></dt>
+<dt><b>getalltodo</b></dt>
+<dd>Retrieves all todo entries from phone.</dd>
+<dt><b>getcategory TODO|PHONEBOOK</b> <i>start [stop]</i></dt>
+<dt><b>gettodo</b> <i>start [stop]</i></dt>
+<dd>Retrieves selected todo entries from phone.</dd>
+<dt><b>listtodocategory</b> <i>text|number</i></dt>
+<dt><b>restore</b> <i>file [-yes]</i></dt>
+<dd>Restore settings written in file created using <b>backup</b>
 option.
-
-			<p>
-				Please note that restoring deletes all current content in phone.
-If you want only to add entries to phone, use addnew.
-			</p>
-			
-
-			<p>
-				In some phones restoring calendar notes will not show error, but
-won't be done, when phone doesn't have set clock inside.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savefile TODO
-			</b>
-			 
-			<i>
-				target.vcs file location
-			</i>
-		</dt>
-		
-
-		<dd>
-			Allows to convert between various backup formats which gammu
+<p>Please note that restoring deletes all current content in phone.
+If you want only to add entries to phone, use addnew.</p>
+<p>In some phones restoring calendar notes will not show error, but
+won't be done, when phone doesn't have set clock inside.</p>
+</dd>
+<dt><b>savefile TODO</b> <i>target.vcs file location</i></dt>
+<dd>Allows to convert between various backup formats which gammu
 supports for todo events. The file type is guessed (for input file
 guess is based on extension and file content, for output solely on
 extension).
-
-			<p>
-				For example if you want to convert single entry from gammu
-native backup to vCalendar, you need following command:
-			</p>
-			
-
-			<p>
-				<br/>
-				
-gammusavefileCALENDARoutput.vcsmyCalendar.backup260
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms TODO
-			</b>
-			 
-			<i>
-				file location [-folder id] [-unread]
+<p>For example if you want to convert single entry from gammu
+native backup to vCalendar, you need following command:</p>
+<p><br/>
+gammusavefileCALENDARoutput.vcsmyCalendar.backup260</p>
+</dd>
+<dt><b>savesms TODO</b> <i>file location [-folder id] [-unread]
 [-read] [-unsent] [-sent] [-sender number] [-smsname name]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Saves a message with a todo entry. The content will be read
+num]</i></dt>
+<dd>Saves a message with a todo entry. The content will be read
 from any backup format which Gammu supports and from given
 location.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms TODO
-			</b>
-			 
-			<i>
-				destination file location [-report]
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms TODO</b> <i>destination file location [-report]
 [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms TODO
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAO" name="lbAO"/>
-	
-
-	<h4>
-		Notes
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				getallnotes
-			</b>
-		</dt>
-		
-
-		<dd>
-			Reads all notes from the phone.
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAP" name="lbAP"/>
-	
-
-	<h4>
-		Date, time and alarms
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				getalarm
-			</b>
-			 
-			<i>
-				[start]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Get alarm from phone, if no location is specified, 1 is
-used.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getdatetime
-			</b>
-		</dt>
-		
-
-		<dd>
-			Get date and time from phone
-		</dd>
-		
-
-		<dt>
-			<b>
-				setalarm
-			</b>
-			 
-			<i>
-				hour minute
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sets repeating alarm in phone on selected time.
-		</dd>
-		
-
-		<dt>
-			<b>
-				setdatetime
-			</b>
-			 
-			<i>
-				[HH:MM[:SS]] [YYYY/MM/DD]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Set date and time in phone to date and time set in computer.
+num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms TODO</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+</dl>
+<a class="aname" id="lbAO" name="lbAO"/>
+<h4>Notes</h4>
+<dl compact="compact">
+<dt><b>getallnotes</b></dt>
+<dd>Reads all notes from the phone.</dd>
+</dl>
+<a class="aname" id="lbAP" name="lbAP"/>
+<h4>Date, time and alarms</h4>
+<dl compact="compact">
+<dt><b>getalarm</b> <i>[start]</i></dt>
+<dd>Get alarm from phone, if no location is specified, 1 is
+used.</dd>
+<dt><b>getdatetime</b></dt>
+<dd>Get date and time from phone</dd>
+<dt><b>setalarm</b> <i>hour minute</i></dt>
+<dd>Sets repeating alarm in phone on selected time.</dd>
+<dt><b>setdatetime</b> <i>[HH:MM[:SS]] [YYYY/MM/DD]</i></dt>
+<dd>Set date and time in phone to date and time set in computer.
 Please note, that this option doesn't show clock on phone screen.
 It only set date and time.
-
-			<p>
-				<i>
-					TIP:
-				</i>
-				 you can make such synchronization each time, when
-will connect your phone and use Gammu. See 
-				<a href="../gammurc.5/">
-					gammurc
-				</a>
-				(5) for details.
-			</p>
-			
-
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAQ" name="lbAQ"/>
-	
-
-	<h4>
-		Categories
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				addcategory TODO|PHONEBOOK
-			</b>
-			 
-			<i>
-				text
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				addnew
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Adds data written in file created using 
-			<b>
-				backup option
-			</b>
-			.
-All things backup'ed by 
-			<b>
-				backup
-			</b>
-			 can be restored (when made
+<p><i>TIP:</i> you can make such synchronization each time, when
+will connect your phone and use Gammu. See <a href="../gammurc.5/">gammurc</a>(5) for details.</p>
+</dd>
+</dl>
+<a class="aname" id="lbAQ" name="lbAQ"/>
+<h4>Categories</h4>
+<dl compact="compact">
+<dt><b>addcategory TODO|PHONEBOOK</b> <i>text</i></dt>
+<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dd>Adds data written in file created using <b>backup option</b>.
+All things backup'ed by <b>backup</b> can be restored (when made
 backup to Gammu text file).
-
-			<p>
-				Please note that this adds all content of backup file to phone
+<p>Please note that this adds all content of backup file to phone
 and does not care about current data in the phone (no duplicates
-are detected).
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				backup
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Backup your phone to file. It's possible to backup (depends on
+are detected).</p>
+</dd>
+<dt><b>backup</b> <i>file [-yes]</i></dt>
+<dd>Backup your phone to file. It's possible to backup (depends on
 phone and backup format):
-
-			<p>
-				* phonebook from SIM and phone memory
-				<br/>
-				
-* calendar notes
-				<br/>
-				
-* SMSC settings
-				<br/>
-				
-* operator logo
-				<br/>
-				
-* startup (static) logo or startup text
-				<br/>
-				
-* WAP bookmarks
-				<br/>
-				
-* WAP settings
-				<br/>
-				
-* caller logos and groups
-				<br/>
-				
-* user ringtones
-				<br/>
-			</p>
-			
-
-			<p>
-				There are various backup formats supported and the backup format
-is guessed based on file extension:
-			</p>
-			
-
-			<p>
-				* .lmb - Nokia backup, supports contacts, caller logos and
-startup logo.
-				<br/>
-				
-* .vcs - vCalendar, supports calendar and todo.
-				<br/>
-				
-* .vcf - vCard, supports contacts.
-				<br/>
-				
-* .ldif - LDAP import, supports contacts.
-				<br/>
-				
-* .ics - iCalendar, supports calendar and todo.
-				<br/>
-				
+<p>* phonebook from SIM and phone memory<br/>
+* calendar notes<br/>
+* SMSC settings<br/>
+* operator logo<br/>
+* startup (static) logo or startup text<br/>
+* WAP bookmarks<br/>
+* WAP settings<br/>
+* caller logos and groups<br/>
+* user ringtones<br/></p>
+<p>There are various backup formats supported and the backup format
+is guessed based on file extension:</p>
+<p>* .lmb - Nokia backup, supports contacts, caller logos and
+startup logo.<br/>
+* .vcs - vCalendar, supports calendar and todo.<br/>
+* .vcf - vCard, supports contacts.<br/>
+* .ldif - LDAP import, supports contacts.<br/>
+* .ics - iCalendar, supports calendar and todo.<br/>
 * Any other extension is Gammu backup file and it supports all data
-mentioned above.
-			</p>
-			
-
-			<p>
-				See 
-				<b>
-					EXAMPLE
-				</b>
-				 section for some hints on manipulating Gammu
-backup format.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				clearall
-			</b>
-		</dt>
-		
-
-		<dd>
-			Deletes all private data from the phone.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getallcategory
-			</b>
-			 
-			<i>
-				TODO|PHONEBOOK
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				getcategory TODO|PHONEBOOK
-			</b>
-			 
-			<i>
-				start [stop]
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				listmemorycategory
-			</b>
-			 
-			<i>
-				text|number
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				listtodocategory
-			</b>
-			 
-			<i>
-				text|number
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				restore
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Restore settings written in file created using 
-			<b>
-				backup
-			</b>
-			
+mentioned above.</p>
+<p>See <b>EXAMPLE</b> section for some hints on manipulating Gammu
+backup format.</p>
+</dd>
+<dt><b>clearall</b></dt>
+<dd>Deletes all private data from the phone.</dd>
+<dt><b>getallcategory</b> <i>TODO|PHONEBOOK</i></dt>
+<dt><b>getcategory TODO|PHONEBOOK</b> <i>start [stop]</i></dt>
+<dt><b>listmemorycategory</b> <i>text|number</i></dt>
+<dt><b>listtodocategory</b> <i>text|number</i></dt>
+<dt><b>restore</b> <i>file [-yes]</i></dt>
+<dd>Restore settings written in file created using <b>backup</b>
 option.
-
-			<p>
-				Please note that restoring deletes all current content in phone.
-If you want only to add entries to phone, use addnew.
-			</p>
-			
-
-			<p>
-				In some phones restoring calendar notes will not show error, but
-won't be done, when phone doesn't have set clock inside.
-			</p>
-			
-
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAR" name="lbAR"/>
-	
-
-	<h4>
-		Backing up and restoring
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				addnew
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Adds data written in file created using 
-			<b>
-				backup option
-			</b>
-			.
-All things backup'ed by 
-			<b>
-				backup
-			</b>
-			 can be restored (when made
+<p>Please note that restoring deletes all current content in phone.
+If you want only to add entries to phone, use addnew.</p>
+<p>In some phones restoring calendar notes will not show error, but
+won't be done, when phone doesn't have set clock inside.</p>
+</dd>
+</dl>
+<a class="aname" id="lbAR" name="lbAR"/>
+<h4>Backing up and restoring</h4>
+<dl compact="compact">
+<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dd>Adds data written in file created using <b>backup option</b>.
+All things backup'ed by <b>backup</b> can be restored (when made
 backup to Gammu text file).
-
-			<p>
-				Please note that this adds all content of backup file to phone
+<p>Please note that this adds all content of backup file to phone
 and does not care about current data in the phone (no duplicates
-are detected).
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				addsms
-			</b>
-			 
-			<i>
-				folder file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Adds SMSes from file (format like backupsms uses) to selected
-folder in phone.
-		</dd>
-		
-
-		<dt>
-			<b>
-				backup
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Backup your phone to file. It's possible to backup (depends on
+are detected).</p>
+</dd>
+<dt><b>addsms</b> <i>folder file [-yes]</i></dt>
+<dd>Adds SMSes from file (format like backupsms uses) to selected
+folder in phone.</dd>
+<dt><b>backup</b> <i>file [-yes]</i></dt>
+<dd>Backup your phone to file. It's possible to backup (depends on
 phone and backup format):
-
-			<p>
-				* phonebook from SIM and phone memory
-				<br/>
-				
-* calendar notes
-				<br/>
-				
-* SMSC settings
-				<br/>
-				
-* operator logo
-				<br/>
-				
-* startup (static) logo or startup text
-				<br/>
-				
-* WAP bookmarks
-				<br/>
-				
-* WAP settings
-				<br/>
-				
-* caller logos and groups
-				<br/>
-				
-* user ringtones
-				<br/>
-			</p>
-			
-
-			<p>
-				There are various backup formats supported and the backup format
-is guessed based on file extension:
-			</p>
-			
-
-			<p>
-				* .lmb - Nokia backup, supports contacts, caller logos and
-startup logo.
-				<br/>
-				
-* .vcs - vCalendar, supports calendar and todo.
-				<br/>
-				
-* .vcf - vCard, supports contacts.
-				<br/>
-				
-* .ldif - LDAP import, supports contacts.
-				<br/>
-				
-* .ics - iCalendar, supports calendar and todo.
-				<br/>
-				
+<p>* phonebook from SIM and phone memory<br/>
+* calendar notes<br/>
+* SMSC settings<br/>
+* operator logo<br/>
+* startup (static) logo or startup text<br/>
+* WAP bookmarks<br/>
+* WAP settings<br/>
+* caller logos and groups<br/>
+* user ringtones<br/></p>
+<p>There are various backup formats supported and the backup format
+is guessed based on file extension:</p>
+<p>* .lmb - Nokia backup, supports contacts, caller logos and
+startup logo.<br/>
+* .vcs - vCalendar, supports calendar and todo.<br/>
+* .vcf - vCard, supports contacts.<br/>
+* .ldif - LDAP import, supports contacts.<br/>
+* .ics - iCalendar, supports calendar and todo.<br/>
 * Any other extension is Gammu backup file and it supports all data
-mentioned above.
-			</p>
-			
-
-			<p>
-				See 
-				<b>
-					EXAMPLE
-				</b>
-				 section for some hints on manipulating Gammu
-backup format.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				backupsms
-			</b>
-			 
-			<i>
-				file [-yes|-all]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Stores all SMSes from phone to file.
-
-			<p>
-				Use -yes for answering yes to all questions (backup all messages
+mentioned above.</p>
+<p>See <b>EXAMPLE</b> section for some hints on manipulating Gammu
+backup format.</p>
+</dd>
+<dt><b>backupsms</b> <i>file [-yes|-all]</i></dt>
+<dd>Stores all SMSes from phone to file.
+<p>Use -yes for answering yes to all questions (backup all messages
 and delete them from phone), or -all to just backup all folders
-while keeping messages in phone.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				restore
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Restore settings written in file created using 
-			<b>
-				backup
-			</b>
-			
+while keeping messages in phone.</p>
+</dd>
+<dt><b>restore</b> <i>file [-yes]</i></dt>
+<dd>Restore settings written in file created using <b>backup</b>
 option.
-
-			<p>
-				Please note that restoring deletes all current content in phone.
-If you want only to add entries to phone, use addnew.
-			</p>
-			
-
-			<p>
-				In some phones restoring calendar notes will not show error, but
-won't be done, when phone doesn't have set clock inside.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				restoresms
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Restores SMSes from file (format like backupsms uses) to
+<p>Please note that restoring deletes all current content in phone.
+If you want only to add entries to phone, use addnew.</p>
+<p>In some phones restoring calendar notes will not show error, but
+won't be done, when phone doesn't have set clock inside.</p>
+</dd>
+<dt><b>restoresms</b> <i>file [-yes]</i></dt>
+<dd>Restores SMSes from file (format like backupsms uses) to
 selected folder in phone. Please note that this overwrites existing
-messages in phone (if it supports it).
-		</dd>
-		
-
-		<dt>
-			<b>
-				savefile BOOKMARK
-			</b>
-			 
-			<i>
-				target.url file location
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				savefile CALENDAR
-			</b>
-			 
-			<i>
-				target.vcs file location
-			</i>
-		</dt>
-		
-
-		<dd>
-			Allows to convert between various backup formats which gammu
+messages in phone (if it supports it).</dd>
+<dt><b>savefile BOOKMARK</b> <i>target.url file location</i></dt>
+<dt><b>savefile CALENDAR</b> <i>target.vcs file location</i></dt>
+<dd>Allows to convert between various backup formats which gammu
 supports for calendar events. The file type is guessed (for input
 file guess is based on extension and file content, for output
 solely on extension).
-
-			<p>
-				For example if you want to convert single entry from gammu
-native backup to vCalendar, you need following command:
-			</p>
-			
-
-			<p>
-				<br/>
-				
-gammusavefileCALENDARoutput.vcsmyCalendar.backup260
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savefile TODO
-			</b>
-			 
-			<i>
-				target.vcs file location
-			</i>
-		</dt>
-		
-
-		<dd>
-			Allows to convert between various backup formats which gammu
+<p>For example if you want to convert single entry from gammu
+native backup to vCalendar, you need following command:</p>
+<p><br/>
+gammusavefileCALENDARoutput.vcsmyCalendar.backup260</p>
+</dd>
+<dt><b>savefile TODO</b> <i>target.vcs file location</i></dt>
+<dd>Allows to convert between various backup formats which gammu
 supports for todo events. The file type is guessed (for input file
 guess is based on extension and file content, for output solely on
 extension).
-
-			<p>
-				For example if you want to convert single entry from gammu
-native backup to vCalendar, you need following command:
-			</p>
-			
-
-			<p>
-				<br/>
-				
-gammusavefileCALENDARoutput.vcsmyCalendar.backup260
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savefile VCARD10|VCARD21
-			</b>
-			 
-			<i>
-				target.vcf file SM|ME
-location
-			</i>
-		</dt>
-		
-
-		<dd>
-			Allows to convert between various backup formats which gammu
+<p>For example if you want to convert single entry from gammu
+native backup to vCalendar, you need following command:</p>
+<p><br/>
+gammusavefileCALENDARoutput.vcsmyCalendar.backup260</p>
+</dd>
+<dt><b>savefile VCARD10|VCARD21</b> <i>target.vcf file SM|ME
+location</i></dt>
+<dd>Allows to convert between various backup formats which gammu
 supports for phonebook events. The file type is guessed (for input
 file guess is based on extension and file content, for output
 solely on extension).
-
-			<p>
-				For example if you want to convert single entry from gammu
-native backup to vCard, you need following command:
-			</p>
-			
-
-			<p>
-				<br/>
-				
-gammusavefileCALENDARoutput.vcfmyPhonebook.backupME42
-			</p>
-			
-
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAS" name="lbAS"/>
-	
-
-	<h4>
-		Nokia specific
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				nokiaaddfile
-			</b>
-			
-
-			<i>
-				Gallery|Gallery2|Camera|Tones|Tones2|Records|Video|Playlist|MemoryCard
+<p>For example if you want to convert single entry from gammu
+native backup to vCard, you need following command:</p>
+<p><br/>
+gammusavefileCALENDARoutput.vcfmyPhonebook.backupME42</p>
+</dd>
+</dl>
+<a class="aname" id="lbAS" name="lbAS"/>
+<h4>Nokia specific</h4>
+<dl compact="compact">
+<dt><b>nokiaaddfile</b>
+<i>Gallery|Gallery2|Camera|Tones|Tones2|Records|Video|Playlist|MemoryCard
 file [-name name] [-protected] [-readonly] [-system] [-hidden]
-[-newtime]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Install the *.jar/*.jad file pair of a midlet in the
+[-newtime]</i></dt>
+<dd>Install the *.jar/*.jad file pair of a midlet in the
 application or game menu of the phone. You have to give the name
 without the jar/jad suffix, otherwise you will get the slightly
 confusing error message Can't open specified file. Read only ?
-
-			<p>
-				The option 
-				<i>
-					-overwrite
-				</i>
-				 deletes the application's .jad and
+<p>The option <i>-overwrite</i> deletes the application's .jad and
 .jar files bevor installing, but doesn't delete the application
-data. Option 
-				<i>
-					-overwriteall
-				</i>
-				 will also delete all data. Both
-these options work only for Application or Game upload.
-			</p>
-			
-
-			<p>
-				<i>
-					Example:
-				</i>
-				 gammu nokiaaddfile Application Alien will read
-Alien.JAD and Alien.JAR and add to Applications
-			</p>
-			
-
-			<p>
-				<i>
-					Example:
-				</i>
-				 gammu nokiaaddfile Tones file.mid will read
-file.mid and add to Tones folder
-			</p>
-			
-
-			<p>
-				You can use 
-				<a href="../jadmaker.1/">
-					jadmaker
-				</a>
-				(1) to
-generate a .jad file from a .jar file.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokiaaddplaylists
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiacomposer
-			</b>
-			 
-			<i>
-				file
-			</i>
-		</dt>
-		
-
-		<dd>
-			Show, how to enter RTTL ringtone in composer existing in many
-Nokia phones (and how should it look like).
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokiadebug
-			</b>
-			 
-			<i>
-				filename [[v11-22] [,v33-44]...]
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiadisplayoutput
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiadisplaytest
-			</b>
-			 
-			<i>
-				number
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiagetadc
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiagetoperatorname
-			</b>
-		</dt>
-		
-
-		<dd>
-			6110.c phones have place for name for one GSM network (of
+data. Option <i>-overwriteall</i> will also delete all data. Both
+these options work only for Application or Game upload.</p>
+<p><i>Example:</i> gammu nokiaaddfile Application Alien will read
+Alien.JAD and Alien.JAR and add to Applications</p>
+<p><i>Example:</i> gammu nokiaaddfile Tones file.mid will read
+file.mid and add to Tones folder</p>
+<p>You can use <a href="../jadmaker.1/">jadmaker</a>(1) to
+generate a .jad file from a .jar file.</p>
+</dd>
+<dt><b>nokiaaddplaylists</b></dt>
+<dt><b>nokiacomposer</b> <i>file</i></dt>
+<dd>Show, how to enter RTTL ringtone in composer existing in many
+Nokia phones (and how should it look like).</dd>
+<dt><b>nokiadebug</b> <i>filename [[v11-22] [,v33-44]...]</i></dt>
+<dt><b>nokiadisplayoutput</b></dt>
+<dt><b>nokiadisplaytest</b> <i>number</i></dt>
+<dt><b>nokiagetadc</b></dt>
+<dt><b>nokiagetoperatorname</b></dt>
+<dd>6110.c phones have place for name for one GSM network (of
 course, with flashing it's possible to change all names, but Gammu
-is not flasher ;-)). You can get this name using this option.
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokiagetpbkfeatures
-			</b>
-			 
-			<i>
-				memorytype
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiagetscreendump
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiagett9
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiagetvoicerecord
-			</b>
-			 
-			<i>
-				location
-			</i>
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				Get voice record from location and save to WAV file. File is
+is not flasher ;-)). You can get this name using this option.</dd>
+<dt><b>nokiagetpbkfeatures</b> <i>memorytype</i></dt>
+<dt><b>nokiagetscreendump</b></dt>
+<dt><b>nokiagett9</b></dt>
+<dt><b>nokiagetvoicerecord</b> <i>location</i></dt>
+<dd>
+<p>Get voice record from location and save to WAV file. File is
 coded using GSM 6.10 codec (available for example in win32). Name
-of file is like name of voice record in phone.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokiamakecamerashoot
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokianetmonitor
-			</b>
-			 
-			<i>
-				test
-			</i>
-		</dt>
-		
-
-		<dd>
-			Takes output or set netmonitor for Nokia DCT3 phones.
-
-			<p>
-				<i>
-					TIP:
-				</i>
-				 For more info about this option, please visit
-
-				<i>
-					<a href="http://www.mwiacek.com">
-						http://www.mwiacek.com
-					</a>
-				</i>
-				
-and read netmonitor manual.
-			</p>
-			
-
-			<p>
-				<i>
-					TIP:
-				</i>
-				 test 
-				<b>
-					243
-				</b>
-				 enables all tests (after using
-command 
-				<b>
-					gammu nokianetmonitor 243
-				</b>
-				 in some phones like 6210
-or 9210 have to reboot them to see netmonitor menu)
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokianetmonitor36
-			</b>
-		</dt>
-		
-
-		<dd>
-			Reset counters from netmonitor test 36 in Nokia DCT3 phones.
-
-			<p>
-				<i>
-					TIP:
-				</i>
-				 For more info about this option, please visit
-
-				<i>
-					<a href="http://www.mwiacek.com">
-						http://www.mwiacek.com
-					</a>
-				</i>
-				
-and read netmonitor manual.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokiasecuritycode
-			</b>
-		</dt>
-		
-
-		<dd>
-			Get/reset to &quot;12345&quot; security code
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokiaselftests
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiasetlights
-			</b>
-			 
-			<i>
-				keypad|display|torch on|off
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiasetoperatorname
-			</b>
-			 
-			<i>
-				[networkcode name]
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiasetphonemenus
-			</b>
-		</dt>
-		
-
-		<dd>
-			Enable all (?) possible menus for DCT3 Nokia phones:
-
-			<p>
-				1. ALS (Alternative Line Service) option menu
-				<br/>
-				
-2. vibra menu for 3210
-				<br/>
-				
-3. 3315 features in 3310 5.45 and higher
-				<br/>
-				
+of file is like name of voice record in phone.</p>
+</dd>
+<dt><b>nokiamakecamerashoot</b></dt>
+<dt><b>nokianetmonitor</b> <i>test</i></dt>
+<dd>Takes output or set netmonitor for Nokia DCT3 phones.
+<p><i>TIP:</i> For more info about this option, please visit
+<i><a href="http://www.mwiacek.com">http://www.mwiacek.com</a></i>
+and read netmonitor manual.</p>
+<p><i>TIP:</i> test <b>243</b> enables all tests (after using
+command <b>gammu nokianetmonitor 243</b> in some phones like 6210
+or 9210 have to reboot them to see netmonitor menu)</p>
+</dd>
+<dt><b>nokianetmonitor36</b></dt>
+<dd>Reset counters from netmonitor test 36 in Nokia DCT3 phones.
+<p><i>TIP:</i> For more info about this option, please visit
+<i><a href="http://www.mwiacek.com">http://www.mwiacek.com</a></i>
+and read netmonitor manual.</p>
+</dd>
+<dt><b>nokiasecuritycode</b></dt>
+<dd>Get/reset to &quot;12345&quot; security code</dd>
+<dt><b>nokiaselftests</b></dt>
+<dt><b>nokiasetlights</b> <i>keypad|display|torch on|off</i></dt>
+<dt><b>nokiasetoperatorname</b> <i>[networkcode name]</i></dt>
+<dt><b>nokiasetphonemenus</b></dt>
+<dd>Enable all (?) possible menus for DCT3 Nokia phones:
+<p>1. ALS (Alternative Line Service) option menu<br/>
+2. vibra menu for 3210<br/>
+3. 3315 features in 3310 5.45 and higher<br/>
 4. two additional games (React and Logic) for 3210 5.31 and
-higher
-				<br/>
-				
-5. WellMate menu for 6150
-				<br/>
-				
-6. NetMonitor
-			</p>
-			
-
-			<p>
-				and for DCT4:
-			</p>
-			
-
-			<p>
-				1. ALS (Alternative Line Service) option menu
-				<br/>
-				
-2. Bluetooth, WAP bookmarks and settings menu, ... (6310i)
-				<br/>
-				
-3. GPRS Always Online
-				<br/>
-				
-
-				<br/>
-				
-...
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokiasetvibralevel
-			</b>
-			 
-			<i>
-				level
-			</i>
-		</dt>
-		
-
-		<dd>
-			Set vibra power to &quot;level&quot; (given in percent)
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokiatuneradio
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiavibratest
-			</b>
-		</dt>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAT" name="lbAT"/>
-	
-
-	<h4>
-		Siemens specific
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				siemensnetmonact
-			</b>
-			 
-			<i>
-				netmon_type (1-full,
-2-simple)
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				siemensnetmonitor
-			</b>
-			 
-			<i>
-				test
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				siemenssatnetmon
-			</b>
-		</dt>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAU" name="lbAU"/>
-	
-
-	<h4>
-		Network
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				getgprspoint
-			</b>
-			 
-			<i>
-				start [stop]
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				listnetworks
-			</b>
-			 
-			<i>
-				[country]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Show names/codes of GSM networks known for Gammu
-		</dd>
-		
-
-		<dt>
-			<b>
-				monitor
-			</b>
-			 
-			<i>
-				[times]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Get phone status and writes continuously to standard output.
-Press Ctrl+C to break this state.
-		</dd>
-		
-
-		<dt>
-			<b>
-				networkinfo
-			</b>
-		</dt>
-		
-
-		<dd>
-			Show information about network status from the phone.
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokiadebug
-			</b>
-			 
-			<i>
-				filename [[v11-22] [,v33-44]...]
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiagetoperatorname
-			</b>
-		</dt>
-		
-
-		<dd>
-			6110.c phones have place for name for one GSM network (of
+higher<br/>
+5. WellMate menu for 6150<br/>
+6. NetMonitor</p>
+<p>and for DCT4:</p>
+<p>1. ALS (Alternative Line Service) option menu<br/>
+2. Bluetooth, WAP bookmarks and settings menu, ... (6310i)<br/>
+3. GPRS Always Online<br/>
+<br/>
+...</p>
+</dd>
+<dt><b>nokiasetvibralevel</b> <i>level</i></dt>
+<dd>Set vibra power to &quot;level&quot; (given in percent)</dd>
+<dt><b>nokiatuneradio</b></dt>
+<dt><b>nokiavibratest</b></dt>
+</dl>
+<a class="aname" id="lbAT" name="lbAT"/>
+<h4>Siemens specific</h4>
+<dl compact="compact">
+<dt><b>siemensnetmonact</b> <i>netmon_type (1-full,
+2-simple)</i></dt>
+<dt><b>siemensnetmonitor</b> <i>test</i></dt>
+<dt><b>siemenssatnetmon</b></dt>
+</dl>
+<a class="aname" id="lbAU" name="lbAU"/>
+<h4>Network</h4>
+<dl compact="compact">
+<dt><b>getgprspoint</b> <i>start [stop]</i></dt>
+<dt><b>listnetworks</b> <i>[country]</i></dt>
+<dd>Show names/codes of GSM networks known for Gammu</dd>
+<dt><b>monitor</b> <i>[times]</i></dt>
+<dd>Get phone status and writes continuously to standard output.
+Press Ctrl+C to break this state.</dd>
+<dt><b>networkinfo</b></dt>
+<dd>Show information about network status from the phone.</dd>
+<dt><b>nokiadebug</b> <i>filename [[v11-22] [,v33-44]...]</i></dt>
+<dt><b>nokiagetoperatorname</b></dt>
+<dd>6110.c phones have place for name for one GSM network (of
 course, with flashing it's possible to change all names, but Gammu
-is not flasher ;-)). You can get this name using this option.
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokianetmonitor
-			</b>
-			 
-			<i>
-				test
-			</i>
-		</dt>
-		
-
-		<dd>
-			Takes output or set netmonitor for Nokia DCT3 phones.
-
-			<p>
-				<i>
-					TIP:
-				</i>
-				 For more info about this option, please visit
-
-				<i>
-					<a href="http://www.mwiacek.com">
-						http://www.mwiacek.com
-					</a>
-				</i>
-				
-and read netmonitor manual.
-			</p>
-			
-
-			<p>
-				<i>
-					TIP:
-				</i>
-				 test 
-				<b>
-					243
-				</b>
-				 enables all tests (after using
-command 
-				<b>
-					gammu nokianetmonitor 243
-				</b>
-				 in some phones like 6210
-or 9210 have to reboot them to see netmonitor menu)
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokiasetoperatorname
-			</b>
-			 
-			<i>
-				[networkcode name]
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				setautonetworklogin
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				siemensnetmonact
-			</b>
-			 
-			<i>
-				netmon_type (1-full,
-2-simple)
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				siemensnetmonitor
-			</b>
-			 
-			<i>
-				test
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				siemenssatnetmon
-			</b>
-		</dt>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAV" name="lbAV"/>
-	
-
-	<h4>
-		WAP settings and bookmarks
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				addnew
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Adds data written in file created using 
-			<b>
-				backup option
-			</b>
-			.
-All things backup'ed by 
-			<b>
-				backup
-			</b>
-			 can be restored (when made
+is not flasher ;-)). You can get this name using this option.</dd>
+<dt><b>nokianetmonitor</b> <i>test</i></dt>
+<dd>Takes output or set netmonitor for Nokia DCT3 phones.
+<p><i>TIP:</i> For more info about this option, please visit
+<i><a href="http://www.mwiacek.com">http://www.mwiacek.com</a></i>
+and read netmonitor manual.</p>
+<p><i>TIP:</i> test <b>243</b> enables all tests (after using
+command <b>gammu nokianetmonitor 243</b> in some phones like 6210
+or 9210 have to reboot them to see netmonitor menu)</p>
+</dd>
+<dt><b>nokiasetoperatorname</b> <i>[networkcode name]</i></dt>
+<dt><b>setautonetworklogin</b></dt>
+<dt><b>siemensnetmonact</b> <i>netmon_type (1-full,
+2-simple)</i></dt>
+<dt><b>siemensnetmonitor</b> <i>test</i></dt>
+<dt><b>siemenssatnetmon</b></dt>
+</dl>
+<a class="aname" id="lbAV" name="lbAV"/>
+<h4>WAP settings and bookmarks</h4>
+<dl compact="compact">
+<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dd>Adds data written in file created using <b>backup option</b>.
+All things backup'ed by <b>backup</b> can be restored (when made
 backup to Gammu text file).
-
-			<p>
-				Please note that this adds all content of backup file to phone
+<p>Please note that this adds all content of backup file to phone
 and does not care about current data in the phone (no duplicates
-are detected).
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				backup
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Backup your phone to file. It's possible to backup (depends on
+are detected).</p>
+</dd>
+<dt><b>backup</b> <i>file [-yes]</i></dt>
+<dd>Backup your phone to file. It's possible to backup (depends on
 phone and backup format):
-
-			<p>
-				* phonebook from SIM and phone memory
-				<br/>
-				
-* calendar notes
-				<br/>
-				
-* SMSC settings
-				<br/>
-				
-* operator logo
-				<br/>
-				
-* startup (static) logo or startup text
-				<br/>
-				
-* WAP bookmarks
-				<br/>
-				
-* WAP settings
-				<br/>
-				
-* caller logos and groups
-				<br/>
-				
-* user ringtones
-				<br/>
-			</p>
-			
-
-			<p>
-				There are various backup formats supported and the backup format
-is guessed based on file extension:
-			</p>
-			
-
-			<p>
-				* .lmb - Nokia backup, supports contacts, caller logos and
-startup logo.
-				<br/>
-				
-* .vcs - vCalendar, supports calendar and todo.
-				<br/>
-				
-* .vcf - vCard, supports contacts.
-				<br/>
-				
-* .ldif - LDAP import, supports contacts.
-				<br/>
-				
-* .ics - iCalendar, supports calendar and todo.
-				<br/>
-				
+<p>* phonebook from SIM and phone memory<br/>
+* calendar notes<br/>
+* SMSC settings<br/>
+* operator logo<br/>
+* startup (static) logo or startup text<br/>
+* WAP bookmarks<br/>
+* WAP settings<br/>
+* caller logos and groups<br/>
+* user ringtones<br/></p>
+<p>There are various backup formats supported and the backup format
+is guessed based on file extension:</p>
+<p>* .lmb - Nokia backup, supports contacts, caller logos and
+startup logo.<br/>
+* .vcs - vCalendar, supports calendar and todo.<br/>
+* .vcf - vCard, supports contacts.<br/>
+* .ldif - LDAP import, supports contacts.<br/>
+* .ics - iCalendar, supports calendar and todo.<br/>
 * Any other extension is Gammu backup file and it supports all data
-mentioned above.
-			</p>
-			
-
-			<p>
-				See 
-				<b>
-					EXAMPLE
-				</b>
-				 section for some hints on manipulating Gammu
-backup format.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				clearall
-			</b>
-		</dt>
-		
-
-		<dd>
-			Deletes all private data from the phone.
-		</dd>
-		
-
-		<dt>
-			<b>
-				deletewapbookmark
-			</b>
-			 
-			<i>
-				start [stop]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Delete WAP bookmarks from phone.
-
-			<p>
-				Locations are numerated from 1.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				getchatsettings
-			</b>
-			 
-			<i>
-				start [stop]
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				getsyncmlsettings
-			</b>
-			 
-			<i>
-				start [stop]
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				getwapbookmark
-			</b>
-			 
-			<i>
-				start [stop]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Get WAP bookmarks from phone.
-
-			<p>
-				Locations are numerated from 1.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				getwapsettings
-			</b>
-			 
-			<i>
-				start [stop]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Get WAP settings from phone.
-
-			<p>
-				Locations are numerated from 1.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				restore
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Restore settings written in file created using 
-			<b>
-				backup
-			</b>
-			
+mentioned above.</p>
+<p>See <b>EXAMPLE</b> section for some hints on manipulating Gammu
+backup format.</p>
+</dd>
+<dt><b>clearall</b></dt>
+<dd>Deletes all private data from the phone.</dd>
+<dt><b>deletewapbookmark</b> <i>start [stop]</i></dt>
+<dd>Delete WAP bookmarks from phone.
+<p>Locations are numerated from 1.</p>
+</dd>
+<dt><b>getchatsettings</b> <i>start [stop]</i></dt>
+<dt><b>getsyncmlsettings</b> <i>start [stop]</i></dt>
+<dt><b>getwapbookmark</b> <i>start [stop]</i></dt>
+<dd>Get WAP bookmarks from phone.
+<p>Locations are numerated from 1.</p>
+</dd>
+<dt><b>getwapsettings</b> <i>start [stop]</i></dt>
+<dd>Get WAP settings from phone.
+<p>Locations are numerated from 1.</p>
+</dd>
+<dt><b>restore</b> <i>file [-yes]</i></dt>
+<dd>Restore settings written in file created using <b>backup</b>
 option.
-
-			<p>
-				Please note that restoring deletes all current content in phone.
-If you want only to add entries to phone, use addnew.
-			</p>
-			
-
-			<p>
-				In some phones restoring calendar notes will not show error, but
-won't be done, when phone doesn't have set clock inside.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savefile BOOKMARK
-			</b>
-			 
-			<i>
-				target.url file location
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				savesms BOOKMARK
-			</b>
-			 
-			<i>
-				file location [-folder id] [-unread]
+<p>Please note that restoring deletes all current content in phone.
+If you want only to add entries to phone, use addnew.</p>
+<p>In some phones restoring calendar notes will not show error, but
+won't be done, when phone doesn't have set clock inside.</p>
+</dd>
+<dt><b>savefile BOOKMARK</b> <i>target.url file location</i></dt>
+<dt><b>savesms BOOKMARK</b> <i>file location [-folder id] [-unread]
 [-read] [-unsent] [-sent] [-sender number] [-smsname name]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Read WAP bookmark from file created by 
-			<b>
-				backup
-			</b>
-			 option and
+num]</i></dt>
+<dd>Read WAP bookmark from file created by <b>backup</b> option and
 saves in Nokia format as SMS
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms WAPINDICATOR
-			</b>
-			 
-			<i>
-				URL Title [-folder id] [-unread]
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms WAPINDICATOR</b> <i>URL Title [-folder id] [-unread]
 [-read] [-unsent] [-sent] [-sender number] [-smsname name]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Saves a SMS with a WAP indication for given URL and title.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms WAPSETTINGS
-			</b>
-			 
-			<i>
-				file location DATA|GPRS [-folder
+num]</i></dt>
+<dd>Saves a SMS with a WAP indication for given URL and title.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms WAPSETTINGS</b> <i>file location DATA|GPRS [-folder
 id] [-unread] [-read] [-unsent] [-sent] [-sender number] [-smsname
 name] [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Read WAP settings from file created by 
-			<b>
-				backup
-			</b>
-			 option and
+num]</i></dt>
+<dd>Read WAP settings from file created by <b>backup</b> option and
 saves in Nokia format as SMS
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms BOOKMARK
-			</b>
-			 
-			<i>
-				destination file location [-report]
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms BOOKMARK</b> <i>destination file location [-report]
 [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms BOOKMARK
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms WAPINDICATOR
-			</b>
-			 
-			<i>
-				destination URL Title [-report]
+num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms BOOKMARK</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms WAPINDICATOR</b> <i>destination URL Title [-report]
 [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms WAPINDICATOR
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms WAPSETTINGS
-			</b>
-			 
-			<i>
-				destination file location
+num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms WAPINDICATOR</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms WAPSETTINGS</b> <i>destination file location
 DATA|GPRS [-report] [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX]
 [-save [-folder number]] [-smscset number] [-smscnumber number]
-[-reply] [-maxsms num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms WAPSETTINGS
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAW" name="lbAW"/>
-	
-
-	<h4>
-		MMS and MMS settings
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				getallmms
-			</b>
-			 
-			<i>
-				[-save]
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				geteachmms
-			</b>
-			 
-			<i>
-				[-save]
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				getmmsfolders
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				getmmssettings
-			</b>
-			 
-			<i>
-				start [stop]
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				readmmsfile
-			</b>
-			 
-			<i>
-				file [-save]
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				savesms MMSINDICATOR
-			</b>
-			 
-			<i>
-				URL Title Sender [-folder id]
+[-reply] [-maxsms num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms WAPSETTINGS</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+</dl>
+<a class="aname" id="lbAW" name="lbAW"/>
+<h4>MMS and MMS settings</h4>
+<dl compact="compact">
+<dt><b>getallmms</b> <i>[-save]</i></dt>
+<dt><b>geteachmms</b> <i>[-save]</i></dt>
+<dt><b>getmmsfolders</b></dt>
+<dt><b>getmmssettings</b> <i>start [stop]</i></dt>
+<dt><b>readmmsfile</b> <i>file [-save]</i></dt>
+<dt><b>savesms MMSINDICATOR</b> <i>URL Title Sender [-folder id]
 [-unread] [-read] [-unsent] [-sent] [-sender number] [-smsname
 name] [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				Saves a message with MMS indication. The recipient phone will
-then download MMS from given URL and display it.
-			</p>
-			
-
-			<p>
-				Please note that you should provide valid smil data on that
-URL.
-			</p>
-			
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms MMSSETTINGS
-			</b>
-			 
-			<i>
-				file location [-folder id]
+num]</i></dt>
+<dd>
+<p>Saves a message with MMS indication. The recipient phone will
+then download MMS from given URL and display it.</p>
+<p>Please note that you should provide valid smil data on that
+URL.</p>
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>savesms MMSSETTINGS</b> <i>file location [-folder id]
 [-unread] [-read] [-unsent] [-sent] [-sender number] [-smsname
 name] [-smscset number] [-smscnumber number] [-reply] [-maxsms
-num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Saves a message with MMS configuration. The configuration will
+num]</i></dt>
+<dd>Saves a message with MMS configuration. The configuration will
 be read from Gammu backup file from given location.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms MMSINDICATOR
-			</b>
-			 
-			<i>
-				destination URL Title Sender
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms MMSINDICATOR</b> <i>destination URL Title Sender
 [-report] [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save
 [-folder number]] [-smscset number] [-smscnumber number] [-reply]
-[-maxsms num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms MMSINDICATOR
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms MMSSETTINGS
-			</b>
-			 
-			<i>
-				destination file location
+[-maxsms num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms MMSINDICATOR</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms MMSSETTINGS</b> <i>destination file location
 [-report] [-validity HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save
 [-folder number]] [-smscset number] [-smscnumber number] [-reply]
-[-maxsms num]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms MMSSETTINGS
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAX" name="lbAX"/>
-	
-
-	<h4>
-		Phone tests
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				nokiadisplaytest
-			</b>
-			 
-			<i>
-				number
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiagetadc
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiaselftests
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiasetlights
-			</b>
-			 
-			<i>
-				keypad|display|torch on|off
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiavibratest
-			</b>
-		</dt>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAY" name="lbAY"/>
-	
-
-	<h4>
-		FM radio
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				addnew
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Adds data written in file created using 
-			<b>
-				backup option
-			</b>
-			.
-All things backup'ed by 
-			<b>
-				backup
-			</b>
-			 can be restored (when made
+[-maxsms num]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms MMSSETTINGS</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+</dl>
+<a class="aname" id="lbAX" name="lbAX"/>
+<h4>Phone tests</h4>
+<dl compact="compact">
+<dt><b>nokiadisplaytest</b> <i>number</i></dt>
+<dt><b>nokiagetadc</b></dt>
+<dt><b>nokiaselftests</b></dt>
+<dt><b>nokiasetlights</b> <i>keypad|display|torch on|off</i></dt>
+<dt><b>nokiavibratest</b></dt>
+</dl>
+<a class="aname" id="lbAY" name="lbAY"/>
+<h4>FM radio</h4>
+<dl compact="compact">
+<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dd>Adds data written in file created using <b>backup option</b>.
+All things backup'ed by <b>backup</b> can be restored (when made
 backup to Gammu text file).
-
-			<p>
-				Please note that this adds all content of backup file to phone
+<p>Please note that this adds all content of backup file to phone
 and does not care about current data in the phone (no duplicates
-are detected).
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				backup
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Backup your phone to file. It's possible to backup (depends on
+are detected).</p>
+</dd>
+<dt><b>backup</b> <i>file [-yes]</i></dt>
+<dd>Backup your phone to file. It's possible to backup (depends on
 phone and backup format):
-
-			<p>
-				* phonebook from SIM and phone memory
-				<br/>
-				
-* calendar notes
-				<br/>
-				
-* SMSC settings
-				<br/>
-				
-* operator logo
-				<br/>
-				
-* startup (static) logo or startup text
-				<br/>
-				
-* WAP bookmarks
-				<br/>
-				
-* WAP settings
-				<br/>
-				
-* caller logos and groups
-				<br/>
-				
-* user ringtones
-				<br/>
-			</p>
-			
-
-			<p>
-				There are various backup formats supported and the backup format
-is guessed based on file extension:
-			</p>
-			
-
-			<p>
-				* .lmb - Nokia backup, supports contacts, caller logos and
-startup logo.
-				<br/>
-				
-* .vcs - vCalendar, supports calendar and todo.
-				<br/>
-				
-* .vcf - vCard, supports contacts.
-				<br/>
-				
-* .ldif - LDAP import, supports contacts.
-				<br/>
-				
-* .ics - iCalendar, supports calendar and todo.
-				<br/>
-				
+<p>* phonebook from SIM and phone memory<br/>
+* calendar notes<br/>
+* SMSC settings<br/>
+* operator logo<br/>
+* startup (static) logo or startup text<br/>
+* WAP bookmarks<br/>
+* WAP settings<br/>
+* caller logos and groups<br/>
+* user ringtones<br/></p>
+<p>There are various backup formats supported and the backup format
+is guessed based on file extension:</p>
+<p>* .lmb - Nokia backup, supports contacts, caller logos and
+startup logo.<br/>
+* .vcs - vCalendar, supports calendar and todo.<br/>
+* .vcf - vCard, supports contacts.<br/>
+* .ldif - LDAP import, supports contacts.<br/>
+* .ics - iCalendar, supports calendar and todo.<br/>
 * Any other extension is Gammu backup file and it supports all data
-mentioned above.
-			</p>
-			
-
-			<p>
-				See 
-				<b>
-					EXAMPLE
-				</b>
-				 section for some hints on manipulating Gammu
-backup format.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				clearall
-			</b>
-		</dt>
-		
-
-		<dd>
-			Deletes all private data from the phone.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getfmstation
-			</b>
-			 
-			<i>
-				start [stop]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Show info about FM stations in phone
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokiatuneradio
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				restore
-			</b>
-			 
-			<i>
-				file [-yes]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Restore settings written in file created using 
-			<b>
-				backup
-			</b>
-			
+mentioned above.</p>
+<p>See <b>EXAMPLE</b> section for some hints on manipulating Gammu
+backup format.</p>
+</dd>
+<dt><b>clearall</b></dt>
+<dd>Deletes all private data from the phone.</dd>
+<dt><b>getfmstation</b> <i>start [stop]</i></dt>
+<dd>Show info about FM stations in phone</dd>
+<dt><b>nokiatuneradio</b></dt>
+<dt><b>restore</b> <i>file [-yes]</i></dt>
+<dd>Restore settings written in file created using <b>backup</b>
 option.
-
-			<p>
-				Please note that restoring deletes all current content in phone.
-If you want only to add entries to phone, use addnew.
-			</p>
-			
-
-			<p>
-				In some phones restoring calendar notes will not show error, but
-won't be done, when phone doesn't have set clock inside.
-			</p>
-			
-
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAZ" name="lbAZ"/>
-	
-
-	<h4>
-		Phone information
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				checkfirmware
-			</b>
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				Gammu connects to 
-				<a href="http://www.gammu.org">
-					www.gammu.org
-				</a>
-				 and checks for latest
-firmware versions available for the device. The file &lt;
-				<a href="http://www.gammu.org/support/phones/phonedbxml.php?model=x">
-					http://www.gammu.org/support/phones/phonedbxml.php?model=x
-				</a>
-				&gt;
+<p>Please note that restoring deletes all current content in phone.
+If you want only to add entries to phone, use addnew.</p>
+<p>In some phones restoring calendar notes will not show error, but
+won't be done, when phone doesn't have set clock inside.</p>
+</dd>
+</dl>
+<a class="aname" id="lbAZ" name="lbAZ"/>
+<h4>Phone information</h4>
+<dl compact="compact">
+<dt><b>checkfirmware</b></dt>
+<dd>
+<p>Gammu connects to <a href="http://www.gammu.org">www.gammu.org</a> and checks for latest
+firmware versions available for the device. The file &lt;<a href="http://www.gammu.org/support/phones/phonedbxml.php?model=x">http://www.gammu.org/support/phones/phonedbxml.php?model=x</a>&gt;
 will be downloaded and all phone details will be read from it. No
-private data are sent to server. Internet connection to 
-				<a href="http://www.gammu.org">
-					www.gammu.org
-				</a>
-				 on port 80 required.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				getdisplaystatus
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				getsecuritystatus
-			</b>
-		</dt>
-		
-
-		<dd>
-			Show, if phone wait for security code (like PIN, PUK, etc.) or
-not
-		</dd>
-		
-
-		<dt>
-			<b>
-				identify
-			</b>
-		</dt>
-		
-
-		<dd>
-			Show the most important phone data.
-		</dd>
-		
-
-		<dt>
-			<b>
-				monitor
-			</b>
-			 
-			<i>
-				[times]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Get phone status and writes continuously to standard output.
-Press Ctrl+C to break this state.
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokiasecuritycode
-			</b>
-		</dt>
-		
-
-		<dd>
-			Get/reset to &quot;12345&quot; security code
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbBA" name="lbBA"/>
-	
-
-	<h4>
-		Phone settings
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				getcalendarsettings
-			</b>
-		</dt>
-		
-
-		<dd>
-			Displays calendar settings like first day of week or automatic
-deleting of old entries.
-		</dd>
-		
-
-		<dt>
-			<b>
-				getprofile
-			</b>
-			 
-			<i>
-				start [stop]
-			</i>
-		</dt>
-		
-
-		<dt>
-			<b>
-				resetphonesettings
-			</b>
-			 
-			<i>
-				PHONE|DEV|UIF|ALL|FACTORY
-			</i>
-		</dt>
-		
-
-		<dd>
-			Reset phone settings. 
-			<i>
-				BE CAREFULL !!!!
-			</i>
-			
-
-			<p>
-				<b>
-					PHONE:
-				</b>
-				<br/>
-			</p>
-			
-
-			<p>
-				<b>
-					DEV:
-				</b>
-				<br/>
-			</p>
-			
-
-			<p>
-				<b>
-					ALL:
-				</b>
-			</p>
-			
-
-			<p>
-				Clear user settings
-				<br/>
-				
-* removes or set logos to default
-				<br/>
-				
-* set default phonebook and other menu settings
-				<br/>
-				
-* clear T9 words,
-				<br/>
-				
-* clear call register info
-				<br/>
-				
-* set default profiles settings
-				<br/>
-				
-* clear user ringtones
-			</p>
-			
-
-			<p>
-				<b>
-					UIF:
-				</b>
-				<br/>
-				
-* changes like after 
-				<b>
-					ALL
-				</b>
-				<br/>
-				
-* disables netmon and PPS (all &quot;hidden&quot; menus)
-			</p>
-			
-
-			<p>
-				<b>
-					FACTORY:
-				</b>
-				<br/>
-				
-* changes like after 
-				<b>
-					UIF
-				</b>
-				<br/>
-				
-* clear date/time
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				savesms PROFILE
-			</b>
-			 
-			<i>
-				[-folder id] [-unread] [-read]
+private data are sent to server. Internet connection to <a href="http://www.gammu.org">www.gammu.org</a> on port 80 required.</p>
+</dd>
+<dt><b>getdisplaystatus</b></dt>
+<dt><b>getsecuritystatus</b></dt>
+<dd>Show, if phone wait for security code (like PIN, PUK, etc.) or
+not</dd>
+<dt><b>identify</b></dt>
+<dd>Show the most important phone data.</dd>
+<dt><b>monitor</b> <i>[times]</i></dt>
+<dd>Get phone status and writes continuously to standard output.
+Press Ctrl+C to break this state.</dd>
+<dt><b>nokiasecuritycode</b></dt>
+<dd>Get/reset to &quot;12345&quot; security code</dd>
+</dl>
+<a class="aname" id="lbBA" name="lbBA"/>
+<h4>Phone settings</h4>
+<dl compact="compact">
+<dt><b>getcalendarsettings</b></dt>
+<dd>Displays calendar settings like first day of week or automatic
+deleting of old entries.</dd>
+<dt><b>getprofile</b> <i>start [stop]</i></dt>
+<dt><b>resetphonesettings</b> <i>PHONE|DEV|UIF|ALL|FACTORY</i></dt>
+<dd>Reset phone settings. <i>BE CAREFULL !!!!</i>
+<p><b>PHONE:</b><br/></p>
+<p><b>DEV:</b><br/></p>
+<p><b>ALL:</b></p>
+<p>Clear user settings<br/>
+* removes or set logos to default<br/>
+* set default phonebook and other menu settings<br/>
+* clear T9 words,<br/>
+* clear call register info<br/>
+* set default profiles settings<br/>
+* clear user ringtones</p>
+<p><b>UIF:</b><br/>
+* changes like after <b>ALL</b><br/>
+* disables netmon and PPS (all &quot;hidden&quot; menus)</p>
+<p><b>FACTORY:</b><br/>
+* changes like after <b>UIF</b><br/>
+* clear date/time</p>
+</dd>
+<dt><b>savesms PROFILE</b> <i>[-folder id] [-unread] [-read]
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-name name]
-[-bitmap bitmap] [-ringtone ringtone]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Read ringtone (RTTL) format and bitmap (Picture Image size) and
+[-bitmap bitmap] [-ringtone ringtone]</i></dt>
+<dd>Read ringtone (RTTL) format and bitmap (Picture Image size) and
 name and save as Nokia profile.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				sendsms PROFILE
-			</b>
-			 
-			<i>
-				destination [-report] [-validity
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+<dt><b>sendsms PROFILE</b> <i>destination [-report] [-validity
 HOUR|6HOURS|DAY|3DAYS|WEEK|MAX] [-save [-folder number]] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-name name]
-[-bitmap bitmap] [-ringtone ringtone]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Sends a message, for description of message specific parameters
-see 
-			<b>
-				savesms PROFILE
-			</b>
-			.
-
-			<p>
-				For description of shared parameters see 
-				<b>
-					Common parameters
-for sendsms and savesms
-				</b>
-				.
-			</p>
-			
-
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbBB" name="lbBB"/>
-	
-
-	<h4>
-		Dumps decoding
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				decodebinarydump
-			</b>
-			 
-			<i>
-				file [phonemodel]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Decodes a dump made by Gammu with 
-			<b>
-				logformat
-			</b>
-			 se to
-
-			<b>
-				binary
-			</b>
-			 (see 
-			<i>
-				README
-			</i>
-			 for info about this method of
+[-bitmap bitmap] [-ringtone ringtone]</i></dt>
+<dd>Sends a message, for description of message specific parameters
+see <b>savesms PROFILE</b>.
+<p>For description of shared parameters see <b>Common parameters
+for sendsms and savesms</b>.</p>
+</dd>
+</dl>
+<a class="aname" id="lbBB" name="lbBB"/>
+<h4>Dumps decoding</h4>
+<dl compact="compact">
+<dt><b>decodebinarydump</b> <i>file [phonemodel]</i></dt>
+<dd>Decodes a dump made by Gammu with <b>logformat</b> se to
+<b>binary</b> (see <i>README</i> for info about this method of
 reporting bugs).
-
-			<p>
-				This option is available only if Gammu was compiled with
-debuging options.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				decodesniff MBUS2|IRDA
-			</b>
-			 
-			<i>
-				file [phonemodel]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Option available only, if Gammu was compiled with debug. Allows
-to decode sniffs. See 
-			<i>
-				/docs/develop/develop.txt
-			</i>
-			 for more
-details.
-		</dd>
-		
-
-		<dt>
-			<b>
-				makeconverttable
-			</b>
-			 
-			<i>
-				file
-			</i>
-		</dt>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbBC" name="lbBC"/>
-	
-
-	<h4>
-		Functions that don't fit elsewhere
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				batch
-			</b>
-			 
-			<i>
-				[file]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Starts Gammu in a batch mode. In this mode you can issue
+<p>This option is available only if Gammu was compiled with
+debuging options.</p>
+</dd>
+<dt><b>decodesniff MBUS2|IRDA</b> <i>file [phonemodel]</i></dt>
+<dd>Option available only, if Gammu was compiled with debug. Allows
+to decode sniffs. See <i>/docs/develop/develop.txt</i> for more
+details.</dd>
+<dt><b>makeconverttable</b> <i>file</i></dt>
+</dl>
+<a class="aname" id="lbBC" name="lbBC"/>
+<h4>Functions that don't fit elsewhere</h4>
+<dl compact="compact">
+<dt><b>batch</b> <i>[file]</i></dt>
+<dd>Starts Gammu in a batch mode. In this mode you can issue
 several commands each on one line. Lines starting with # are
 treated as a comments.
-
-			<p>
-				By default, commands are read from standard input, but you can
+<p>By default, commands are read from standard input, but you can
 optionally specify a file from where they would be read (special
-case - means standard input).
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				entersecuritycode PIN|PUK|PIN2|PUK2|PHONE|NETWORK
-			</b>
-			
-
-			<i>
-				code|-
-			</i>
-		</dt>
-		
-
-		<dd>
-			Allow to enter security code from PC. When code is -, it is
-read from stdin.
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokiagetscreendump
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiagetvoicerecord
-			</b>
-			 
-			<i>
-				location
-			</i>
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				Get voice record from location and save to WAV file. File is
+case - means standard input).</p>
+</dd>
+<dt><b>entersecuritycode PIN|PUK|PIN2|PUK2|PHONE|NETWORK</b>
+<i>code|-</i></dt>
+<dd>Allow to enter security code from PC. When code is -, it is
+read from stdin.</dd>
+<dt><b>nokiagetscreendump</b></dt>
+<dt><b>nokiagetvoicerecord</b> <i>location</i></dt>
+<dd>
+<p>Get voice record from location and save to WAV file. File is
 coded using GSM 6.10 codec (available for example in win32). Name
-of file is like name of voice record in phone.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokiamakecamerashoot
-			</b>
-		</dt>
-		
-
-		<dt>
-			<b>
-				nokiasetphonemenus
-			</b>
-		</dt>
-		
-
-		<dd>
-			Enable all (?) possible menus for DCT3 Nokia phones:
-
-			<p>
-				1. ALS (Alternative Line Service) option menu
-				<br/>
-				
-2. vibra menu for 3210
-				<br/>
-				
-3. 3315 features in 3310 5.45 and higher
-				<br/>
-				
+of file is like name of voice record in phone.</p>
+</dd>
+<dt><b>nokiamakecamerashoot</b></dt>
+<dt><b>nokiasetphonemenus</b></dt>
+<dd>Enable all (?) possible menus for DCT3 Nokia phones:
+<p>1. ALS (Alternative Line Service) option menu<br/>
+2. vibra menu for 3210<br/>
+3. 3315 features in 3310 5.45 and higher<br/>
 4. two additional games (React and Logic) for 3210 5.31 and
-higher
-				<br/>
-				
-5. WellMate menu for 6150
-				<br/>
-				
-6. NetMonitor
-			</p>
-			
-
-			<p>
-				and for DCT4:
-			</p>
-			
-
-			<p>
-				1. ALS (Alternative Line Service) option menu
-				<br/>
-				
-2. Bluetooth, WAP bookmarks and settings menu, ... (6310i)
-				<br/>
-				
-3. GPRS Always Online
-				<br/>
-				
-
-				<br/>
-				
-...
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				nokiasetvibralevel
-			</b>
-			 
-			<i>
-				level
-			</i>
-		</dt>
-		
-
-		<dd>
-			Set vibra power to &quot;level&quot; (given in percent)
-		</dd>
-		
-
-		<dt>
-			<b>
-				presskeysequence
-			</b>
-			
-
-			<i>
-				mMnNpPuUdD+-123456789*0#gGrR&lt;&gt;[]hHcCjJfFoOmMdD@
-			</i>
-		</dt>
-		
-
-		<dd>
-			Press specified key sequence on phone keyboard
-
-			<p>
-				<b>
-					mM
-				</b>
-				 - Menu
-				<br/>
-				
-
-				<b>
-					nN
-				</b>
-				 - Names key
-				<br/>
-				
-
-				<b>
-					pP
-				</b>
-				 - Power
-				<br/>
-				
-
-				<b>
-					uU
-				</b>
-				 - Up
-				<br/>
-				
-
-				<b>
-					dD
-				</b>
-				 - Down
-				<br/>
-				
-
-				<b>
-					+-
-				</b>
-				 - +-
-				<br/>
-				
-
-				<b>
-					gG
-				</b>
-				 - Green
-				<br/>
-				
-
-				<b>
-					rR
-				</b>
-				 - Red
-				<br/>
-				
-
-				<b>
-					123456789*0#
-				</b>
-				 is numeric keyboard
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				reset
-			</b>
-			 
-			<i>
-				SOFT|HARD
-			</i>
-		</dt>
-		
-
-		<dd>
-			Make phone reset: soft (without asking for PIN) or hard (with
+higher<br/>
+5. WellMate menu for 6150<br/>
+6. NetMonitor</p>
+<p>and for DCT4:</p>
+<p>1. ALS (Alternative Line Service) option menu<br/>
+2. Bluetooth, WAP bookmarks and settings menu, ... (6310i)<br/>
+3. GPRS Always Online<br/>
+<br/>
+...</p>
+</dd>
+<dt><b>nokiasetvibralevel</b> <i>level</i></dt>
+<dd>Set vibra power to &quot;level&quot; (given in percent)</dd>
+<dt><b>presskeysequence</b>
+<i>mMnNpPuUdD+-123456789*0#gGrR&lt;&gt;[]hHcCjJfFoOmMdD@</i></dt>
+<dd>Press specified key sequence on phone keyboard
+<p><b>mM</b> - Menu<br/>
+<b>nN</b> - Names key<br/>
+<b>pP</b> - Power<br/>
+<b>uU</b> - Up<br/>
+<b>dD</b> - Down<br/>
+<b>+-</b> - +-<br/>
+<b>gG</b> - Green<br/>
+<b>rR</b> - Red<br/>
+<b>123456789*0#</b> is numeric keyboard</p>
+</dd>
+<dt><b>reset</b> <i>SOFT|HARD</i></dt>
+<dd>Make phone reset: soft (without asking for PIN) or hard (with
 PIN).
-
-			<p>
-				<i>
-					Note:
-				</i>
-				 some phones will make hard reset even with
-
-				<b>
-					SOFT
-				</b>
-				 option.
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			<b>
-				searchphone
-			</b>
-			 
-			<i>
-				[-debug]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Attempts to search for a connected phone. Please note that this
+<p><i>Note:</i> some phones will make hard reset even with
+<b>SOFT</b> option.</p>
+</dd>
+<dt><b>searchphone</b> <i>[-debug]</i></dt>
+<dd>Attempts to search for a connected phone. Please note that this
 can take a very long time, but in case you have no clue how to
 configure phone connection, this is a convenient way to find
-working setup for Gammu.
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbBD" name="lbBD"/>
-	
-
-	<h4>
-		Gammu information
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				checkversion
-			</b>
-			 
-			<i>
-				[STABLE]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Checks whether there is newer Gammu version available online
+working setup for Gammu.</dd>
+</dl>
+<a class="aname" id="lbBD" name="lbBD"/>
+<h4>Gammu information</h4>
+<dl compact="compact">
+<dt><b>checkversion</b> <i>[STABLE]</i></dt>
+<dd>Checks whether there is newer Gammu version available online
 (if Gammu has been compiled with CURL). If you pass additional
-parameter 
-			<b>
-				STABLE
-			</b>
-			, only stable versions will be checked.
-		</dd>
-		
-
-		<dt>
-			<b>
-				features
-			</b>
-		</dt>
-		
-
-		<dd>
-			Print information about compiled in features.
-		</dd>
-		
-
-		<dt>
-			<b>
-				help
-			</b>
-			 
-			<i>
-				[topic]
-			</i>
-		</dt>
-		
-
-		<dd>
-			Print help. By default general help is printed, but you can
+parameter <b>STABLE</b>, only stable versions will be checked.</dd>
+<dt><b>features</b></dt>
+<dd>Print information about compiled in features.</dd>
+<dt><b>help</b> <i>[topic]</i></dt>
+<dd>Print help. By default general help is printed, but you can
 also specify a help category to get more detailed help on some
-topic.
-		</dd>
-		
-
-		<dt>
-			<b>
-				version
-			</b>
-		</dt>
-		
-
-		<dd>
-			Print version information and license.
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbBE" name="lbBE"/>
-	
-
-	<h3>
-		FILES
-	</h3>
-	
-
-	<p>
-		<i>
-			~/.gammurc
-		</i>
-		<br/>
-		
-
-		<i>
-			/usr/share/doc/gammu/*
-		</i>
-		<br/>
-		
-
-		<i>
-			/dev/ircomm?
-		</i>
-		<br/>
-		
-
-		<i>
-			/dev/ttyS?
-		</i>
-		<br/>
-		
-
-		<i>
-			/dev/ttyACM?
-		</i>
-	</p>
-	
-
-	<p>
-		<a class="aname" id="lbBF" name="lbBF"/>
-	</p>
-	
-
-	<h3>
-		EXAMPLE
-	</h3>
-	
-
-	<p>
-		<a class="aname" id="lbBG" name="lbBG"/>
-	</p>
-	
-
-	<h4>
-		Configuration
-	</h4>
-	
-
-	<p>
-		To check it out, you need to have configuration file for gammu,
-see 
-		<a href="../gammurc.5/">
-			gammurc
-		</a>
-		(5) for more details about
-it.
-	</p>
-	
-
-	<p>
-		<a class="aname" id="lbBH" name="lbBH"/>
-	</p>
-	
-
-	<h4>
-		Sending messages
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			Save text message up to standard 160 chars:
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				echo &quot;All your base are belong to us&quot; | gammu savesms TEXT
-			</p>
-			
-
-			<p>
-				or
-			</p>
-			
-
-			<p>
-				gammu savesms TEXT -text &quot;All your base are belong to us&quot;
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			Save long text message:
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				echo &quot;All your base are belong to us&quot; | gammu savesms TEXT -len
-400
-			</p>
-			
-
-			<p>
-				or
-			</p>
-			
-
-			<p>
-				gammu savesms TEXT -len 400 -text &quot;All your base are belong to
-us&quot;
-			</p>
-			
-
-			<p>
-				or
-			</p>
-			
-
-			<p>
-				gammu savesms EMS -text &quot;All your base are belong to us&quot;
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			Save some funky message with predefined sound and animation
-from 2 bitmaps:
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				gammu savesms EMS -text &quot;Greetings&quot; -defsound 1 -text &quot;from
-Gammu&quot; -tone10 axelf.txt -animation 2 file1.bmp file2.bmp
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			Save protected message with ringtone:
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				gammu savesms EMS -protected 2 -variablebitmaplong ala.bmp
--toneSElong axelf.txt -toneSE ring.txt
-			</p>
-			
-
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbBI" name="lbBI"/>
-	
-
-	<h4>
-		Backups
-	</h4>
-	
-
-	<p>
-		If you will backup settings to Gammu text file, it will be
+topic.</dd>
+<dt><b>version</b></dt>
+<dd>Print version information and license.</dd>
+</dl>
+<a class="aname" id="lbBE" name="lbBE"/>
+<h3>FILES</h3>
+<p><i>~/.gammurc</i><br/>
+<i>/usr/share/doc/gammu/*</i><br/>
+<i>/dev/ircomm?</i><br/>
+<i>/dev/ttyS?</i><br/>
+<i>/dev/ttyACM?</i></p>
+<p><a class="aname" id="lbBF" name="lbBF"/></p>
+<h3>EXAMPLE</h3>
+<p><a class="aname" id="lbBG" name="lbBG"/></p>
+<h4>Configuration</h4>
+<p>To check it out, you need to have configuration file for gammu,
+see <a href="../gammurc.5/">gammurc</a>(5) for more details about
+it.</p>
+<p><a class="aname" id="lbBH" name="lbBH"/></p>
+<h4>Sending messages</h4>
+<dl compact="compact">
+<dt>Save text message up to standard 160 chars:</dt>
+<dd>
+<p>echo &quot;All your base are belong to us&quot; | gammu savesms TEXT</p>
+<p>or</p>
+<p>gammu savesms TEXT -text &quot;All your base are belong to us&quot;</p>
+</dd>
+<dt>Save long text message:</dt>
+<dd>
+<p>echo &quot;All your base are belong to us&quot; | gammu savesms TEXT -len
+400</p>
+<p>or</p>
+<p>gammu savesms TEXT -len 400 -text &quot;All your base are belong to
+us&quot;</p>
+<p>or</p>
+<p>gammu savesms EMS -text &quot;All your base are belong to us&quot;</p>
+</dd>
+<dt>Save some funky message with predefined sound and animation
+from 2 bitmaps:</dt>
+<dd>
+<p>gammu savesms EMS -text &quot;Greetings&quot; -defsound 1 -text &quot;from
+Gammu&quot; -tone10 axelf.txt -animation 2 file1.bmp file2.bmp</p>
+</dd>
+<dt>Save protected message with ringtone:</dt>
+<dd>
+<p>gammu savesms EMS -protected 2 -variablebitmaplong ala.bmp
+-toneSElong axelf.txt -toneSE ring.txt</p>
+</dd>
+</dl>
+<a class="aname" id="lbBI" name="lbBI"/>
+<h4>Backups</h4>
+<p>If you will backup settings to Gammu text file, it will be
 possible to edit it. It's easy: many things in this file will be
 written double - once in Unicode, once in ASCII. When you will
-remove Unicode version Gammu will use ASCII on 
-		<b>
-			restore
-		</b>
-		 (and
+remove Unicode version Gammu will use ASCII on <b>restore</b> (and
 you can easy edit ASCII text) and will convert it according to your
 OS locale. When will be available Unicode version of text, it will
 be used instead of ASCII (usefull with Unicode phones - it isn't
 important, what locale is set in computer and no conversion Unicode
--&gt; ASCII and ASCII -&gt; Unicode is done).
-	</p>
-	
-
-	<p>
-		You can use any editor with regular expressions function to edit
-backup text file. Examples of such editors can be vim &lt;
-		<a href="http://www.vim.org/">
-			http://www.vim.org/
-		</a>
-		&gt; or TextPad
-&lt;
-		<a href="http://www.textpad.com/">
-			http://www.textpad.com/
-		</a>
-		&gt; which
-both do support regular expressions.
-	</p>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			Remove info about voice tags
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				Find: ^Entry\([0-9][0-9]\)VoiceTag = \(.*\)\n
-			</p>
-			
-
-			<p>
-				Replace:
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			Change all numbers starting from +3620, +3630, +3660, +3670 to
-+3620
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				Find: Type = NumberGeneral\nEntry\([0-9][0-9]\)Text =
-&quot;\+36\(20\|30\|60\|70\)\n
-			</p>
-			
-
-			<p>
-				Replace: Type = NumberMobile\nEntry\1Text = &quot;\+3620
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			Change phone numbers type to mobile for numbers starting from
+-&gt; ASCII and ASCII -&gt; Unicode is done).</p>
+<p>You can use any editor with regular expressions function to edit
+backup text file. Examples of such editors can be vim &lt;<a href="http://www.vim.org/">http://www.vim.org/</a>&gt; or TextPad
+&lt;<a href="http://www.textpad.com/">http://www.textpad.com/</a>&gt; which
+both do support regular expressions.</p>
+<dl compact="compact">
+<dt>Remove info about voice tags</dt>
+<dd>
+<p>Find: ^Entry\([0-9][0-9]\)VoiceTag = \(.*\)\n</p>
+<p>Replace:</p>
+</dd>
+<dt>Change all numbers starting from +3620, +3630, +3660, +3670 to
++3620</dt>
+<dd>
+<p>Find: Type = NumberGeneral\nEntry\([0-9][0-9]\)Text =
+&quot;\+36\(20\|30\|60\|70\)\n</p>
+<p>Replace: Type = NumberMobile\nEntry\1Text = &quot;\+3620</p>
+</dd>
+<dt>Change phone numbers type to mobile for numbers starting from
 +3620, +3630,... and removing the corresponding TextUnicode
-line
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				Find: Type = NumberGeneral\nEntry\([0-9][0-9]\)Text =
+line</dt>
+<dd>
+<p>Find: Type = NumberGeneral\nEntry\([0-9][0-9]\)Text =
 &quot;\+36\([2367]0\)\([^\&quot;]*\)&quot;\nEntry\([0-9][0-9]\)TextUnicode =
-\([^\n]*\)\n
-			</p>
-			
-
-			<p>
-				Replace: Type = NumberMobile\nEntry\1Text = &quot;\+36\2\3&quot;\n
-			</p>
-			
-
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbBJ" name="lbBJ"/>
-	
-
-	<h3>
-		COPYRIGHT
-	</h3>
-	
-
-	<p>
-		Copyright © 2003-2009 Marcin Wiacek, Michal Cihar and other
-authors. License GPLv2: GNU GPL version 2 &lt;
-		<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">
-			http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-		</a>
-		&gt;
-		<br/>
-		
+\([^\n]*\)\n</p>
+<p>Replace: Type = NumberMobile\nEntry\1Text = &quot;\+36\2\3&quot;\n</p>
+</dd>
+</dl>
+<a class="aname" id="lbBJ" name="lbBJ"/>
+<h3>COPYRIGHT</h3>
+<p>Copyright © 2003-2009 Marcin Wiacek, Michal Cihar and other
+authors. License GPLv2: GNU GPL version 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
 
 This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.
-	</p>
-	
-
-	<p>
-		<a class="aname" id="lbBK" name="lbBK"/>
-	</p>
-	
-
-	<h3>
-		REPORTING BUGS
-	</h3>
-	
-
-	<p>
-		There are definitely many bugs, reporting to author is welcome.
+There is NO WARRANTY, to the extent permitted by law.</p>
+<p><a class="aname" id="lbBK" name="lbBK"/></p>
+<h3>REPORTING BUGS</h3>
+<p>There are definitely many bugs, reporting to author is welcome.
 Please include some useful information when sending bug reports
 (especially debug logs, operating system, it's version and phone
-information are needed).
-	</p>
-	
+information are needed).</p>
+<p>To generate debug log, enable it in gammurc (alternatively you
+can do it on command line using -d textall -f /tmp/gammu.log):</p>
+<p><br/>
+[gammu]<br/>
+...yourconnectionsettings...<br/>
 
-	<p>
-		To generate debug log, enable it in gammurc (alternatively you
-can do it on command line using -d textall -f /tmp/gammu.log):
-	</p>
-	
-
-	<p>
-		<br/>
-		
-[gammu]
-		<br/>
-		
-...yourconnectionsettings...
-		<br/>
-		
-
-logfile=/tmp/gammu.log
-		<br/>
-		
-logformat=textall
-	</p>
-	
-
-	<p>
-		With this settings, Gammu generates /tmp/gammu.log on each
+logfile=/tmp/gammu.log<br/>
+logformat=textall</p>
+<p>With this settings, Gammu generates /tmp/gammu.log on each
 connection to phone and stores dump of communication there. You can
 also find some hints for improving support for your phone in this
-log.
-	</p>
-	
-
-	<p>
-		Please report bugs to &lt;
-		<a href="http://bugs.cihar.com">
-			http://bugs.cihar.com
-		</a>
-		&gt;.
-	</p>
-	
-
-	<p>
-		<a class="aname" id="lbBL" name="lbBL"/>
-	</p>
-	
-
-	<h3>
-		AUTHOR
-	</h3>
-	
-
-	<p>
-		You can contact authors on &lt;
-		<a href="mailto:gammu-users@lists.sourceforge.net">
-			gammu-users@lists.sourceforge.net
-		</a>
-		&gt;.
-	</p>
-	
-
-	<p>
-		<i>
-			Michal Cihar
-		</i>
-		 &lt;
-		<a href="mailto:michal@cihar.com">
-			michal@cihar.com
-		</a>
-		&gt; is current
-project maintainer and contributor of most of AT and OBEX code.
-	</p>
-	
-
-	<p>
-		<i>
-			Marcin Wiacek
-		</i>
-		 &lt;
-		<a href="mailto:marcin@mwiacek.com">
-			marcin@mwiacek.com
-		</a>
-		&gt; is project
-iniciator and contributor of most Nokia code.
-	</p>
-	
-
-	<p>
-		As this project grew from Gnokii, we would like to thanks all
-Gnokii developers, especially 
-		<i>
-			Pavel Janik
-		</i>
-		, 
-		<i>
-			Pawel Kot
-		</i>
-		
-and 
-		<i>
-			Manfred Jonsson
-		</i>
-		 (see CREDITS from Gnokii for all their
-contributor).
-	</p>
-	
-
-	<p>
-		Many other people have helped with various features, check
-ChangeLog for more details.
-	</p>
-	
-
-	<p>
-		<a class="aname" id="lbBM" name="lbBM"/>
-	</p>
-	
-
-	<h3>
-		SEE ALSO
-	</h3>
-	
-
-	<p>
-		<a href="../gammu-smsd.1/">
-			gammu-smsd
-		</a>
-		(1), 
-		<a href="../gammu-smsd-inject.1/">
-			gammu-smsd-inject
-		</a>
-		(1), 
-		<a href="../gammurc.5/">
-			gammurc
-		</a>
-		(5), 
-		<a href="../jadmaker.1/">
-			jadmaker
-		</a>
-		(1)
-	</p>
-	
-
-	<p>
-		Some more hints can be found in README file or on wiki
-&lt;
-		<a href="http://www.gammu.org/">
-			http://www.gammu.org/
-		</a>
-		&gt;.
-	</p>
-	
-
-	<p>
-		Related programs which can be used with GSM modem:
-	</p>
-	
-
-	<p>
-		minicom(1)
-	</p>
-	
-
-	<p>
-		Graphical interfaces for Gammu:
-	</p>
-	
-
-	<p>
-		gmobilemedia(1)
-	</p>
-	
-
-	<hr/>
-	
-
-	<a class="aname" id="index" name="index"/>
-	
-
-	<h3>
-		Index
-	</h3>
-	
-
-	<dl>
-		
-
-		<dt>
-			<a href="#lbAB">
-				NAME
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAC">
-				SYNOPSIS
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAD">
-				DESCRIPTION
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAE">
-				OPTIONS
-			</a>
-		</dt>
-		
-
-		<dd>
-			
-
-			<dl>
-				
-
-				<dt>
-					<a href="#lbAF">
-						Commands
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAG">
-						Calls
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAH">
-						SMS and EMS
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAI">
-						Memory (phonebooks and calls)
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAJ">
-						Filesystem
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAK">
-						Logo and pictures
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAL">
-						Ringtones
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAM">
-						Calendar notes
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAN">
-						To do lists
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAO">
-						Notes
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAP">
-						Date, time and alarms
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAQ">
-						Categories
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAR">
-						Backing up and restoring
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAS">
-						Nokia specific
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAT">
-						Siemens specific
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAU">
-						Network
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAV">
-						WAP settings and bookmarks
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAW">
-						MMS and MMS settings
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAX">
-						Phone tests
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAY">
-						FM radio
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAZ">
-						Phone information
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbBA">
-						Phone settings
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbBB">
-						Dumps decoding
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbBC">
-						Functions that don't fit elsewhere
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbBD">
-						Gammu information
-					</a>
-				</dt>
-				
-
-			</dl>
-			
-
-		</dd>
-		
-
-		<dt>
-			<a href="#lbBE">
-				FILES
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbBF">
-				EXAMPLE
-			</a>
-		</dt>
-		
-
-		<dd>
-			
-
-			<dl>
-				
-
-				<dt>
-					<a href="#lbBG">
-						Configuration
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbBH">
-						Sending messages
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbBI">
-						Backups
-					</a>
-				</dt>
-				
-
-			</dl>
-			
-
-		</dd>
-		
-
-		<dt>
-			<a href="#lbBJ">
-				COPYRIGHT
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbBK">
-				REPORTING BUGS
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbBL">
-				AUTHOR
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbBM">
-				SEE ALSO
-			</a>
-		</dt>
-		
-
-	</dl>
-	
-
-	<hr/>
-	
+log.</p>
+<p>Please report bugs to &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.</p>
+<p><a class="aname" id="lbBL" name="lbBL"/></p>
+<h3>AUTHOR</h3>
+<p>You can contact authors on &lt;<a href="mailto:gammu-users@lists.sourceforge.net">gammu-users@lists.sourceforge.net</a>&gt;.</p>
+<p><i>Michal Cihar</i> &lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt; is current
+project maintainer and contributor of most of AT and OBEX code.</p>
+<p><i>Marcin Wiacek</i> &lt;<a href="mailto:marcin@mwiacek.com">marcin@mwiacek.com</a>&gt; is project
+iniciator and contributor of most Nokia code.</p>
+<p>As this project grew from Gnokii, we would like to thanks all
+Gnokii developers, especially <i>Pavel Janik</i>, <i>Pawel Kot</i>
+and <i>Manfred Jonsson</i> (see CREDITS from Gnokii for all their
+contributor).</p>
+<p>Many other people have helped with various features, check
+ChangeLog for more details.</p>
+<p><a class="aname" id="lbBM" name="lbBM"/></p>
+<h3>SEE ALSO</h3>
+<p><a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu-smsd-inject.1/">gammu-smsd-inject</a>(1), <a href="../gammurc.5/">gammurc</a>(5), <a href="../jadmaker.1/">jadmaker</a>(1)</p>
+<p>Some more hints can be found in README file or on wiki
+&lt;<a href="http://www.gammu.org/">http://www.gammu.org/</a>&gt;.</p>
+<p>Related programs which can be used with GSM modem:</p>
+<p>minicom(1)</p>
+<p>Graphical interfaces for Gammu:</p>
+<p>gmobilemedia(1)</p>
+<hr/>
+<a class="aname" id="index" name="index"/>
+<h3>Index</h3>
+<dl>
+<dt><a href="#lbAB">NAME</a></dt>
+<dt><a href="#lbAC">SYNOPSIS</a></dt>
+<dt><a href="#lbAD">DESCRIPTION</a></dt>
+<dt><a href="#lbAE">OPTIONS</a></dt>
+<dd>
+<dl>
+<dt><a href="#lbAF">Commands</a></dt>
+<dt><a href="#lbAG">Calls</a></dt>
+<dt><a href="#lbAH">SMS and EMS</a></dt>
+<dt><a href="#lbAI">Memory (phonebooks and calls)</a></dt>
+<dt><a href="#lbAJ">Filesystem</a></dt>
+<dt><a href="#lbAK">Logo and pictures</a></dt>
+<dt><a href="#lbAL">Ringtones</a></dt>
+<dt><a href="#lbAM">Calendar notes</a></dt>
+<dt><a href="#lbAN">To do lists</a></dt>
+<dt><a href="#lbAO">Notes</a></dt>
+<dt><a href="#lbAP">Date, time and alarms</a></dt>
+<dt><a href="#lbAQ">Categories</a></dt>
+<dt><a href="#lbAR">Backing up and restoring</a></dt>
+<dt><a href="#lbAS">Nokia specific</a></dt>
+<dt><a href="#lbAT">Siemens specific</a></dt>
+<dt><a href="#lbAU">Network</a></dt>
+<dt><a href="#lbAV">WAP settings and bookmarks</a></dt>
+<dt><a href="#lbAW">MMS and MMS settings</a></dt>
+<dt><a href="#lbAX">Phone tests</a></dt>
+<dt><a href="#lbAY">FM radio</a></dt>
+<dt><a href="#lbAZ">Phone information</a></dt>
+<dt><a href="#lbBA">Phone settings</a></dt>
+<dt><a href="#lbBB">Dumps decoding</a></dt>
+<dt><a href="#lbBC">Functions that don't fit elsewhere</a></dt>
+<dt><a href="#lbBD">Gammu information</a></dt>
+</dl>
+</dd>
+<dt><a href="#lbBE">FILES</a></dt>
+<dt><a href="#lbBF">EXAMPLE</a></dt>
+<dd>
+<dl>
+<dt><a href="#lbBG">Configuration</a></dt>
+<dt><a href="#lbBH">Sending messages</a></dt>
+<dt><a href="#lbBI">Backups</a></dt>
+</dl>
+</dd>
+<dt><a href="#lbBJ">COPYRIGHT</a></dt>
+<dt><a href="#lbBK">REPORTING BUGS</a></dt>
+<dt><a href="#lbBL">AUTHOR</a></dt>
+<dt><a href="#lbBM">SEE ALSO</a></dt>
+</dl>
+<hr/>
 This document was created by man2html, using the manual
-pages.
-	<br/>
-	
+pages.<br/>
 Time: 21:20:27 GMT, September 03, 2009
-
 </div>
-

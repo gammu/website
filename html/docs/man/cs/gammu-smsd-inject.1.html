@@ -1,466 +1,114 @@
 <div class="manpage">
-	
-
-	<h2>
-		GAMMU-SMSD-INJECT
-	</h2>
-	
-Section: Dokumentace Gammu (1)
-	<br/>
-	
-Updated: Leden 4, 2009
-	<br/>
-	
-
-	<a href="#index">
-		Index
-	</a>
-	 
-	
-
-	<hr/>
-	
-
-	<a class="aname" id="lbAB" name="lbAB"/>
-	
-
-	<h3>
-		JMÉNO
-	</h3>
-	
+<h2>GAMMU-SMSD-INJECT</h2>
+Section: Dokumentace Gammu (1)<br/>
+Updated: Leden 4, 2009<br/>
+<a href="#index">Index</a> 
+<hr/>
+<a class="aname" id="lbAB" name="lbAB"/>
+<h3>JMÉNO</h3>
 gammu-smsd-inject - Vloží zprávy do fronty SMS démona Gammu
-
-	<a class="aname" id="lbAC" name="lbAC"/>
-	
-
-	<h3>
-		SYNTAXE
-	</h3>
-	
-
-	<b>
-		gammu-smsd-inject
-	</b>
-	 [
-	<i>
-		PARAMETR
-	</i>
-	]... TYPZPRÁVY PŘÍJEMCE
-[
-	<i>
-		PARAMETR_ZPRÁVY
-	</i>
-	]... 
-	<a class="aname" id="lbAD" name="lbAD"/>
-	
-
-	<h3>
-		POPIS
-	</h3>
-	
+<a class="aname" id="lbAC" name="lbAC"/>
+<h3>SYNTAXE</h3>
+<b>gammu-smsd-inject</b> [<i>PARAMETR</i>]... TYPZPRÁVY PŘÍJEMCE
+[<i>PARAMETR_ZPRÁVY</i>]... <a class="aname" id="lbAD" name="lbAD"/>
+<h3>POPIS</h3>
 Tato manuálová stránka stručně popisuje příkaz
-
-	<b>
-		gammu-smsd-inject
-	</b>
-	.
-
-	<p>
-		<b>
-			gammu-smsd-inject
-		</b>
-		 je program, který přidá zprávy do
+<b>gammu-smsd-inject</b>.
+<p><b>gammu-smsd-inject</b> je program, který přidá zprávy do
 fronty Gammu SMS démona, který je později odešle pomocí připojeného
-GSM modemu.
-	</p>
-	
-
-	<p>
-		Podpora pro tento program záleží na vlastnostech použité SMSD
+GSM modemu.</p>
+<p>Podpora pro tento program záleží na vlastnostech použité SMSD
 služby. V současné době ho nepodporuje pouze služba využívající
-soubory (
-		<a href="../gammu-smsd-files.7/">
-			gammu-smsd-files
-		</a>
-		(7)).
-	</p>
-	
-
-	<p>
-		Program přijímá následující parametry (dlouhé parametry nemusí
-být podporovány na všechplatformách):
-	</p>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				-h
-			</b>
-			, 
-			<b>
-				--help
-			</b>
-		</dt>
-		
-
-		<dd>
-			Zobrazí nápovědu.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-v
-			</b>
-			, 
-			<b>
-				--version
-			</b>
-		</dt>
-		
-
-		<dd>
-			Zobrazí informace o verzi a zakompilované funkcionalitě.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-c
-			</b>
-			, 
-			<b>
-				--config
-			</b>
-			=
-			<i>
-				soubor
-			</i>
-		</dt>
-		
-
-		<dd>
-			Jaký konfigurační soubor se má použít, výchozí je
+soubory (<a href="../gammu-smsd-files.7/">gammu-smsd-files</a>(7)).</p>
+<p>Program přijímá následující parametry (dlouhé parametry nemusí
+být podporovány na všechplatformách):</p>
+<dl compact="compact">
+<dt><b>-h</b>, <b>--help</b></dt>
+<dd>Zobrazí nápovědu.</dd>
+<dt><b>-v</b>, <b>--version</b></dt>
+<dd>Zobrazí informace o verzi a zakompilované funkcionalitě.</dd>
+<dt><b>-c</b>, <b>--config</b>=<i>soubor</i></dt>
+<dd>Jaký konfigurační soubor se má použít, výchozí je
 /etc/gammu-smsdrc, na systému Windows není žádná výchozí cesta a
-cesta ke konfiguračnímu souboru musí být zadána vždy.
-		</dd>
-		
-
-	</dl>
-	
-
-	<p>
-		Pro popis typů zpráv a jejich parametrů se prosím podívejte na
-
-		<a href="../gammu.1/">
-			gammu
-		</a>
-		(1). Parametry jsou strjné jako
-používá gammu sendsms.
-	</p>
-	
-
-	<p>
-		<a class="aname" id="lbAE" name="lbAE"/>
-	</p>
-	
-
-	<h3>
-		PŘÍKLAD
-	</h3>
-	
-
-	<p>
-		Pro vyzkoušení potřebujete vytvořit konfigurační soubor pro
-SMSD, který je podrobně popsán v 
-		<a href="../gammu-smsdrc.5/">
-			gammu-smsdrc
-		</a>
-		(5).
-	</p>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			Vložení standardní textové zprávy s maximální délkou 160
-znaků:
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				echo &quot;All your base are belong to us&quot; | gammu-smsd-inject TEXT
-123456
-			</p>
-			
-
-			<p>
-				nebo
-			</p>
-			
-
-			<p>
-				gammu-smsd-inject TEXT 123456 -text &quot;All your base are belong to
-us&quot;
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			Vložení dlouhé textové zprávy:
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				echo &quot;All your base are belong to us&quot; | gammu-smsd-inject TEXT
-123456 -len 400
-			</p>
-			
-
-			<p>
-				nebo
-			</p>
-			
-
-			<p>
-				gammu-smsd-inject TEXT 123456 -len 400 -text &quot;All your base are
-belong to us&quot;
-			</p>
-			
-
-			<p>
-				nebo
-			</p>
-			
-
-			<p>
-				gammu-smsd-inject EMS 123456 -text &quot;All your base are belong to
-us&quot;
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			Vložení zprávy s předdefinovaným zvukem a animací ze 2
-obrázků:
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				gammu-smsd-inject EMS 123456 -text &quot;Greetings&quot; -defsound 1 -text
-&quot;from Gammu&quot; -tone10 axelf.txt -animation 2 file1.bmp file2.bmp
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			Vložení chráněné zprávy s vyzváněním:
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				gammu-smsd-inject EMS 123456 -protected 2 -variablebitmaplong
-ala.bmp -toneSElong axelf.txt -toneSE ring.txt
-			</p>
-			
-
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAF" name="lbAF"/>
-	
-
-	<h3>
-		DALŠÍ INFORMACE
-	</h3>
-	
-
-	<a href="../gammu-smsdrc.5/">
-		gammu-smsdrc
-	</a>
-	(5), 
-	<a href="../gammu.1/">
-		gammu
-	</a>
-	(1), 
-	<a href="../gammu-smsd.1/">
-		gammu-smsd
-	</a>
-	(1) 
-	<a class="aname" id="lbAG" name="lbAG"/>
-	
-
-	<h3>
-		AUTOR
-	</h3>
-	
+cesta ke konfiguračnímu souboru musí být zadána vždy.</dd>
+</dl>
+<p>Pro popis typů zpráv a jejich parametrů se prosím podívejte na
+<a href="../gammu.1/">gammu</a>(1). Parametry jsou strjné jako
+používá gammu sendsms.</p>
+<p><a class="aname" id="lbAE" name="lbAE"/></p>
+<h3>PŘÍKLAD</h3>
+<p>Pro vyzkoušení potřebujete vytvořit konfigurační soubor pro
+SMSD, který je podrobně popsán v <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5).</p>
+<dl compact="compact">
+<dt>Vložení standardní textové zprávy s maximální délkou 160
+znaků:</dt>
+<dd>
+<p>echo &quot;All your base are belong to us&quot; | gammu-smsd-inject TEXT
+123456</p>
+<p>nebo</p>
+<p>gammu-smsd-inject TEXT 123456 -text &quot;All your base are belong to
+us&quot;</p>
+</dd>
+<dt>Vložení dlouhé textové zprávy:</dt>
+<dd>
+<p>echo &quot;All your base are belong to us&quot; | gammu-smsd-inject TEXT
+123456 -len 400</p>
+<p>nebo</p>
+<p>gammu-smsd-inject TEXT 123456 -len 400 -text &quot;All your base are
+belong to us&quot;</p>
+<p>nebo</p>
+<p>gammu-smsd-inject EMS 123456 -text &quot;All your base are belong to
+us&quot;</p>
+</dd>
+<dt>Vložení zprávy s předdefinovaným zvukem a animací ze 2
+obrázků:</dt>
+<dd>
+<p>gammu-smsd-inject EMS 123456 -text &quot;Greetings&quot; -defsound 1 -text
+&quot;from Gammu&quot; -tone10 axelf.txt -animation 2 file1.bmp file2.bmp</p>
+</dd>
+<dt>Vložení chráněné zprávy s vyzváněním:</dt>
+<dd>
+<p>gammu-smsd-inject EMS 123456 -protected 2 -variablebitmaplong
+ala.bmp -toneSElong axelf.txt -toneSE ring.txt</p>
+</dd>
+</dl>
+<a class="aname" id="lbAF" name="lbAF"/>
+<h3>DALŠÍ INFORMACE</h3>
+<a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5), <a href="../gammu.1/">gammu</a>(1), <a href="../gammu-smsd.1/">gammu-smsd</a>(1) <a class="aname" id="lbAG" name="lbAG"/>
+<h3>AUTOR</h3>
 gammu-smsd a tuto manuálovou stránku napsal Michal Čihař
-&lt;
-	<a href="mailto:michal@cihar.com">
-		michal@cihar.com
-	</a>
-	&gt;.
-
-	<a class="aname" id="lbAH" name="lbAH"/>
-	
-
-	<h3>
-		COPYRIGHT
-	</h3>
-	
+&lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt;.
+<a class="aname" id="lbAH" name="lbAH"/>
+<h3>COPYRIGHT</h3>
 Copyright © 2009 Michal Čihař a další autoři. Licence GPLv2: GNU
-GPL verze 2 &lt;
-	<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">
-		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-	</a>
-	&gt;
-	<br/>
-	
+GPL verze 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
 
 Tento program je volný software; můžete jej šířit a modifikovat.
 Není poskytována ŽÁDNÁ ZÁRUKA, v rozsahu jaký je povolen zákonem.
-
-	<a class="aname" id="lbAI" name="lbAI"/>
-	
-
-	<h3>
-		HLÁŠENÍ CHYB
-	</h3>
-	
-Prosím hlašte chyby na &lt;
-	<a href="http://bugs.cihar.com">
-		http://bugs.cihar.com
-	</a>
-	&gt;.
-
-	<p>
-		Před hlášením chyb prosím zapněte logovaní v nastavení SMSD:
-	</p>
-	
-
-	<p>
-		<br/>
-		
-[smsd]
-		<br/>
-		
-debuglevel=255
-		<br/>
-		
-logfile=smsd.log
-	</p>
-	
-
-	<p>
-		a přiložte tento log k hlášení chyby.
-	</p>
-	
-
-	<hr/>
-	
-
-	<a class="aname" id="index" name="index"/>
-	
-
-	<h3>
-		Index
-	</h3>
-	
-
-	<dl>
-		
-
-		<dt>
-			<a href="#lbAB">
-				JMÉNO
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAC">
-				SYNTAXE
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAD">
-				POPIS
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAE">
-				PŘÍKLAD
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAF">
-				DALŠÍ INFORMACE
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAG">
-				AUTOR
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAH">
-				COPYRIGHT
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAI">
-				HLÁŠENÍ CHYB
-			</a>
-		</dt>
-		
-
-	</dl>
-	
-
-	<hr/>
-	
+<a class="aname" id="lbAI" name="lbAI"/>
+<h3>HLÁŠENÍ CHYB</h3>
+Prosím hlašte chyby na &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.
+<p>Před hlášením chyb prosím zapněte logovaní v nastavení SMSD:</p>
+<p><br/>
+[smsd]<br/>
+debuglevel=255<br/>
+logfile=smsd.log</p>
+<p>a přiložte tento log k hlášení chyby.</p>
+<hr/>
+<a class="aname" id="index" name="index"/>
+<h3>Index</h3>
+<dl>
+<dt><a href="#lbAB">JMÉNO</a></dt>
+<dt><a href="#lbAC">SYNTAXE</a></dt>
+<dt><a href="#lbAD">POPIS</a></dt>
+<dt><a href="#lbAE">PŘÍKLAD</a></dt>
+<dt><a href="#lbAF">DALŠÍ INFORMACE</a></dt>
+<dt><a href="#lbAG">AUTOR</a></dt>
+<dt><a href="#lbAH">COPYRIGHT</a></dt>
+<dt><a href="#lbAI">HLÁŠENÍ CHYB</a></dt>
+</dl>
+<hr/>
 This document was created by man2html, using the manual
-pages.
-	<br/>
-	
+pages.<br/>
 Time: 21:20:27 GMT, September 03, 2009
-
 </div>
-

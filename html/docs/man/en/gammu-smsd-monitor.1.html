@@ -1,364 +1,76 @@
 <div class="manpage">
-	
-
-	<h2>
-		GAMMU-SMSD-MONITOR
-	</h2>
-	
-Section: Gammu Documentation (1)
-	<br/>
-	
-Updated: January 30, 2009
-	<br/>
-	
-
-	<a href="#index">
-		Index
-	</a>
-	 
-	
-
-	<hr/>
-	
-
-	<a class="aname" id="lbAB" name="lbAB"/>
-	
-
-	<h3>
-		NAME
-	</h3>
-	
-gammu-smsd-monitor - Monitor state of SMS daemon for Gammu 
-	<a class="aname" id="lbAC" name="lbAC"/>
-	
-
-	<h3>
-		SYNOPSIS
-	</h3>
-	
-
-	<b>
-		gammu-smsd-monitor
-	</b>
-	 [
-	<i>
-		OPTION
-	</i>
-	]... 
-	<a class="aname" id="lbAD" name="lbAD"/>
-	
-
-	<h3>
-		DESCRIPTION
-	</h3>
-	
-This manual page documents briefly the 
-	<b>
-		gammu-smsd-monitor
-	</b>
-	
+<h2>GAMMU-SMSD-MONITOR</h2>
+Section: Gammu Documentation (1)<br/>
+Updated: January 30, 2009<br/>
+<a href="#index">Index</a> 
+<hr/>
+<a class="aname" id="lbAB" name="lbAB"/>
+<h3>NAME</h3>
+gammu-smsd-monitor - Monitor state of SMS daemon for Gammu <a class="aname" id="lbAC" name="lbAC"/>
+<h3>SYNOPSIS</h3>
+<b>gammu-smsd-monitor</b> [<i>OPTION</i>]... <a class="aname" id="lbAD" name="lbAD"/>
+<h3>DESCRIPTION</h3>
+This manual page documents briefly the <b>gammu-smsd-monitor</b>
 command.
-
-	<p>
-		<b>
-			gammu-smsd-monitor
-		</b>
-		 is a program that monitors state of
+<p><b>gammu-smsd-monitor</b> is a program that monitors state of
 Gammu SMS daemon. It periodically displays information about phone
-and number of processed messages.
-	</p>
-	
-
-	<p>
-		Program accepts following options (please note that long options
-might be not accepted on some platforms):
-	</p>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				-h
-			</b>
-			, 
-			<b>
-				--help
-			</b>
-		</dt>
-		
-
-		<dd>
-			Shows help.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-v
-			</b>
-			, 
-			<b>
-				--version
-			</b>
-		</dt>
-		
-
-		<dd>
-			Shows version information and compiled in features.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-c
-			</b>
-			, 
-			<b>
-				--config
-			</b>
-			=
-			<i>
-				file
-			</i>
-		</dt>
-		
-
-		<dd>
-			Configuration file to use, default is /etc/gammu-smsdrc, on
+and number of processed messages.</p>
+<p>Program accepts following options (please note that long options
+might be not accepted on some platforms):</p>
+<dl compact="compact">
+<dt><b>-h</b>, <b>--help</b></dt>
+<dd>Shows help.</dd>
+<dt><b>-v</b>, <b>--version</b></dt>
+<dd>Shows version information and compiled in features.</dd>
+<dt><b>-c</b>, <b>--config</b>=<i>file</i></dt>
+<dd>Configuration file to use, default is /etc/gammu-smsdrc, on
 Windows there is no default and configuration file path has to be
-always specified.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-l
-			</b>
-			, 
-			<b>
-				--loops
-			</b>
-			=
-			<i>
-				count
-			</i>
-		</dt>
-		
-
-		<dd>
-			Number of loops, by default monitor loops infinitely.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-d
-			</b>
-			, 
-			<b>
-				--delay
-			</b>
-			=
-			<i>
-				seconds
-			</i>
-		</dt>
-		
-
-		<dd>
-			Delay betwen polling SMSD state, default is 20 seconds.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-C
-			</b>
-			, 
-			<b>
-				--csv
-			</b>
-		</dt>
-		
-
-		<dd>
-			Print output in comma separated values format:
-
-			<p>
-				client;phone ID;IMEI;sent;received;failed;battery;signal
-			</p>
-			
-
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAE" name="lbAE"/>
-	
-
-	<h3>
-		SEE ALSO
-	</h3>
-	
-
-	<a href="../gammu-smsdrc.5/">
-		gammu-smsdrc
-	</a>
-	(5), 
-	<a href="../gammu.1/">
-		gammu
-	</a>
-	(1), 
-	<a href="../gammu-smsd.1/">
-		gammu-smsd
-	</a>
-	(1) 
-	<a class="aname" id="lbAF" name="lbAF"/>
-	
-
-	<h3>
-		AUTHOR
-	</h3>
-	
+always specified.</dd>
+<dt><b>-l</b>, <b>--loops</b>=<i>count</i></dt>
+<dd>Number of loops, by default monitor loops infinitely.</dd>
+<dt><b>-d</b>, <b>--delay</b>=<i>seconds</i></dt>
+<dd>Delay betwen polling SMSD state, default is 20 seconds.</dd>
+<dt><b>-C</b>, <b>--csv</b></dt>
+<dd>Print output in comma separated values format:
+<p>client;phone ID;IMEI;sent;received;failed;battery;signal</p>
+</dd>
+</dl>
+<a class="aname" id="lbAE" name="lbAE"/>
+<h3>SEE ALSO</h3>
+<a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5), <a href="../gammu.1/">gammu</a>(1), <a href="../gammu-smsd.1/">gammu-smsd</a>(1) <a class="aname" id="lbAF" name="lbAF"/>
+<h3>AUTHOR</h3>
 gammu-smsd and this manual page were written by Michal Cihar
-&lt;
-	<a href="mailto:michal@cihar.com">
-		michal@cihar.com
-	</a>
-	&gt;.
-
-	<a class="aname" id="lbAG" name="lbAG"/>
-	
-
-	<h3>
-		COPYRIGHT
-	</h3>
-	
+&lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt;.
+<a class="aname" id="lbAG" name="lbAG"/>
+<h3>COPYRIGHT</h3>
 Copyright © 2009 Michal Cihar and other authors. License GPLv2: GNU
-GPL version 2 &lt;
-	<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">
-		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-	</a>
-	&gt;
-	<br/>
-	
+GPL version 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
 
 This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law. 
-	<a class="aname" id="lbAH" name="lbAH"/>
-	
-
-	<h3>
-		REPORTING BUGS
-	</h3>
-	
-Please report bugs to &lt;
-	<a href="http://bugs.cihar.com">
-		http://bugs.cihar.com
-	</a>
-	&gt;.
-
-	<p>
-		Before reporting a bug, please enable verbose logging in SMSD
-configuration:
-	</p>
-	
-
-	<p>
-		<br/>
-		
-[smsd]
-		<br/>
-		
-debuglevel=255
-		<br/>
-		
-logfile=smsd.log
-	</p>
-	
-
-	<p>
-		and include this verbose log within bug report.
-	</p>
-	
-
-	<hr/>
-	
-
-	<a class="aname" id="index" name="index"/>
-	
-
-	<h3>
-		Index
-	</h3>
-	
-
-	<dl>
-		
-
-		<dt>
-			<a href="#lbAB">
-				NAME
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAC">
-				SYNOPSIS
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAD">
-				DESCRIPTION
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAE">
-				SEE ALSO
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAF">
-				AUTHOR
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAG">
-				COPYRIGHT
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAH">
-				REPORTING BUGS
-			</a>
-		</dt>
-		
-
-	</dl>
-	
-
-	<hr/>
-	
+There is NO WARRANTY, to the extent permitted by law. <a class="aname" id="lbAH" name="lbAH"/>
+<h3>REPORTING BUGS</h3>
+Please report bugs to &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.
+<p>Before reporting a bug, please enable verbose logging in SMSD
+configuration:</p>
+<p><br/>
+[smsd]<br/>
+debuglevel=255<br/>
+logfile=smsd.log</p>
+<p>and include this verbose log within bug report.</p>
+<hr/>
+<a class="aname" id="index" name="index"/>
+<h3>Index</h3>
+<dl>
+<dt><a href="#lbAB">NAME</a></dt>
+<dt><a href="#lbAC">SYNOPSIS</a></dt>
+<dt><a href="#lbAD">DESCRIPTION</a></dt>
+<dt><a href="#lbAE">SEE ALSO</a></dt>
+<dt><a href="#lbAF">AUTHOR</a></dt>
+<dt><a href="#lbAG">COPYRIGHT</a></dt>
+<dt><a href="#lbAH">REPORTING BUGS</a></dt>
+</dl>
+<hr/>
 This document was created by man2html, using the manual
-pages.
-	<br/>
-	
+pages.<br/>
 Time: 21:20:27 GMT, September 03, 2009
-
 </div>
-

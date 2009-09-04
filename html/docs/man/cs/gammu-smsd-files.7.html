@@ -1,305 +1,81 @@
 <div class="manpage">
-	
-
-	<h2>
-		GAMMU-SMSD-FILES
-	</h2>
-	
-Section: Dokumentace Gammu (7)
-	<br/>
-	
-Updated: Leden 8, 2009
-	<br/>
-	
-
-	<a href="#index">
-		Index
-	</a>
-	 
-	
-
-	<hr/>
-	
-
-	<a class="aname" id="lbAB" name="lbAB"/>
-	
-
-	<h3>
-		JMÉNO
-	</h3>
-	
-
-	<p>
-		gammu-smsd-files - služba pro 
-		<a href="../gammu-smsd.1/">
-			gammu-smsd
-		</a>
-		(1) používající k ukládání zpráv
-soubory
-	</p>
-	
-
-	<p>
-		<a class="aname" id="lbAC" name="lbAC"/>
-	</p>
-	
-
-	<h3>
-		POPIS
-	</h3>
-	
-
-	<a href="../gammu-smsd.1/">
-		gammu-smsd
-	</a>
-	(1) podporuje několik
+<h2>GAMMU-SMSD-FILES</h2>
+Section: Dokumentace Gammu (7)<br/>
+Updated: Leden 8, 2009<br/>
+<a href="#index">Index</a> 
+<hr/>
+<a class="aname" id="lbAB" name="lbAB"/>
+<h3>JMÉNO</h3>
+<p>gammu-smsd-files - služba pro <a href="../gammu-smsd.1/">gammu-smsd</a>(1) používající k ukládání zpráv
+soubory</p>
+<p><a class="aname" id="lbAC" name="lbAC"/></p>
+<h3>POPIS</h3>
+<a href="../gammu-smsd.1/">gammu-smsd</a>(1) podporuje několik
 služeb. Aktuálně použitá je zvolená v konfiguračním souboru
-
-	<a href="../gammu-smsdrc.5/">
-		gammu-smsdrc
-	</a>
-	(5).
-
-	<p>
-		Služba FILES ukládá všechna data na souborovém systému v
-adresářích zadaných v konfiguračním souboru (viz 
-		<a href="../gammu-smsdrc.5/">
-			gammu-smsdrc
-		</a>
-		(5) pro popis těchto
-parametrů).
-	</p>
-	
-
-	<p>
-		<a class="aname" id="lbAD" name="lbAD"/>
-	</p>
-	
-
-	<h4>
-		Omezení
-	</h4>
-	
-
-	<p>
-		Služba FILES nepodporuje program 
-		<a href="../gammu-smsd-inject.1/">
-			gammu-smsd-inject
-		</a>
-		(1). Podpora pro
-něj může být případně přidána v dalších verzích.
-	</p>
-	
-
-	<p>
-		<a class="aname" id="lbAE" name="lbAE"/>
-	</p>
-	
-
-	<h4>
-		Přijímání zpráv
-	</h4>
-	
-
-	<p>
-		Přijaté zprávy jsou uloženy v adresáři zadaném v konfiguraci.
+<a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5).
+<p>Služba FILES ukládá všechna data na souborovém systému v
+adresářích zadaných v konfiguračním souboru (viz <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5) pro popis těchto
+parametrů).</p>
+<p><a class="aname" id="lbAD" name="lbAD"/></p>
+<h4>Omezení</h4>
+<p>Služba FILES nepodporuje program <a href="../gammu-smsd-inject.1/">gammu-smsd-inject</a>(1). Podpora pro
+něj může být případně přidána v dalších verzích.</p>
+<p><a class="aname" id="lbAE" name="lbAE"/></p>
+<h4>Přijímání zpráv</h4>
+<p>Přijaté zprávy jsou uloženy v adresáři zadaném v konfiguraci.
 Jméno souboru bude ve tvaru
 IN&lt;date&gt;_&lt;time&gt;_&lt;serialno&gt;_&lt;phone_number&gt;_&lt;sequence&gt;.&lt;ext&gt;,
-například NN20021130_021531_00_+45409000931640979_00.txt.
-	</p>
-	
-
-	<p>
-		Vysvětlení položek:
-	</p>
-	
-
-	<p>
-		<b>
-			&lt;date&gt;
-		</b>
-		 - datum ve formátu RRRRMMDD
-		<br/>
-		
-
-		<b>
-			&lt;time&gt;
-		</b>
-		 - čas ve formátu HHMMSS
-		<br/>
-		
-
-		<b>
-			&lt;serialno&gt;
-		</b>
-		 - pořadí zprávy (v případě, že přišlo více
-zpráv ve stejný okamžik), ve formátu NN
-		<br/>
-		
-
-		<b>
-			&lt;sequence&gt;
-		</b>
-		 - část zprávy, pokud se zpráva skládá z
-více částí, ve formátu NN
-		<br/>
-		
-
-		<b>
-			&lt;ext&gt;
-		</b>
-		 - txt pro textové zprávy, 8-bitové zprávy jsou
-uloženy s příponou bin
-	</p>
-	
-
-	<p>
-		Souboru obsahuje připatou zprávu ve formátu definovaném
-nastavením InboxFormat (viz 
-		<a href="../gammu-smsdrc.5/">
-			gammu-smsdrc
-		</a>
-		(5)).
-	</p>
-	
-
-	<p>
-		<a class="aname" id="lbAF" name="lbAF"/>
-	</p>
-	
-
-	<h4>
-		Odesílání zpráv
-	</h4>
-	
-
-	<p>
-		Odesílané zprávy jsou čteny z adresáře zadaného v konfiguraci.
-Jméno by mělo být v jednom z následujících formátů:
-	</p>
-	
-
-	<p>
-		- OUT&lt;phone_number&gt;.&lt;ext&gt;&lt;options&gt;
-		<br/>
-		
+například NN20021130_021531_00_+45409000931640979_00.txt.</p>
+<p>Vysvětlení položek:</p>
+<p><b>&lt;date&gt;</b> - datum ve formátu RRRRMMDD<br/>
+<b>&lt;time&gt;</b> - čas ve formátu HHMMSS<br/>
+<b>&lt;serialno&gt;</b> - pořadí zprávy (v případě, že přišlo více
+zpráv ve stejný okamžik), ve formátu NN<br/>
+<b>&lt;sequence&gt;</b> - část zprávy, pokud se zpráva skládá z
+více částí, ve formátu NN<br/>
+<b>&lt;ext&gt;</b> - txt pro textové zprávy, 8-bitové zprávy jsou
+uloženy s příponou bin</p>
+<p>Souboru obsahuje připatou zprávu ve formátu definovaném
+nastavením InboxFormat (viz <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5)).</p>
+<p><a class="aname" id="lbAF" name="lbAF"/></p>
+<h4>Odesílání zpráv</h4>
+<p>Odesílané zprávy jsou čteny z adresáře zadaného v konfiguraci.
+Jméno by mělo být v jednom z následujících formátů:</p>
+<p>- OUT&lt;phone_number&gt;.&lt;ext&gt;&lt;options&gt;<br/>
 -
-OUT&lt;priority&gt;_&lt;phone_number&gt;_&lt;serialno&gt;.&lt;ext&gt;&lt;options&gt;
-		<br/>
-		
+OUT&lt;priority&gt;_&lt;phone_number&gt;_&lt;serialno&gt;.&lt;ext&gt;&lt;options&gt;<br/>
 
 -
-OUT&lt;priority&gt;&lt;date&gt;_&lt;time&gt;_&lt;serialno&gt;_&lt;phone_number&gt;_&lt;anything&gt;.&lt;ext&gt;&lt;options&gt;
-	</p>
-	
+OUT&lt;priority&gt;&lt;date&gt;_&lt;time&gt;_&lt;serialno&gt;_&lt;phone_number&gt;_&lt;anything&gt;.&lt;ext&gt;&lt;options&gt;</p>
+<p>Vysvětlení položek:</p>
+<p><b>&lt;priority&gt;</b> - znak abecedy (A-Z) A = nejvyšší
+priorita<br/>
+<b>&lt;ext&gt;</b> - txt pro normální textové SMS<br/>
+<b>&lt;options&gt;</b> - Parametry připojený k příponě pro textové
+SMS:<br/>
+<b>d</b>-vyžadovatdoručenku<br/>
+<b>f</b>-zprávajenprozobrazení<br/>
 
-	<p>
-		Vysvětlení položek:
-	</p>
-	
-
-	<p>
-		<b>
-			&lt;priority&gt;
-		</b>
-		 - znak abecedy (A-Z) A = nejvyšší
-priorita
-		<br/>
-		
-
-		<b>
-			&lt;ext&gt;
-		</b>
-		 - txt pro normální textové SMS
-		<br/>
-		
-
-		<b>
-			&lt;options&gt;
-		</b>
-		 - Parametry připojený k příponě pro textové
-SMS:
-		<br/>
-		
-
-		<b>
-			d
-		</b>
-		-vyžadovatdoručenku
-		<br/>
-		
-
-		<b>
-			f
-		</b>
-		-zprávajenprozobrazení
-		<br/>
-		
-
-
-		<b>
-			b
-		</b>
-		-WAPzáložka,vetvarujméno,URL
-	</p>
-	
-
-	<p>
-		Například OUTG20040620_193810_123_+4512345678_xpq.txtdf je
-textová SMS zpráva k zobrazení v telefonu vyžadující doručenku.
-	</p>
-	
-
-	<p>
-		Ostatní položky jsou stejné jako pro odeslané zprávy.
-	</p>
-	
-
-	<p>
-		SMS zprávy jsou odesílány postupně podle jména souboru. Obsah
+<b>b</b>-WAPzáložka,vetvarujméno,URL</p>
+<p>Například OUTG20040620_193810_123_+4512345678_xpq.txtdf je
+textová SMS zpráva k zobrazení v telefonu vyžadující doručenku.</p>
+<p>Ostatní položky jsou stejné jako pro odeslané zprávy.</p>
+<p>SMS zprávy jsou odesílány postupně podle jména souboru. Obsah
 souboru je do zprávy vložen (jako unicode nebo standardní znaková
-sada).
-	</p>
-	
-
-	<p>
-		Obsah tohoto souboru bude přenesen jako SMS zpráva (v Unicode
+sada).</p>
+<p>Obsah tohoto souboru bude přenesen jako SMS zpráva (v Unicode
 nebo jako standardní textová zpráva), pro WAP záložky bude obsah
-rozdělen na Název,URL, pro textové zprávy je použit celý obsah.
-	</p>
-	
-
-	<p>
-		Prosím uvědomte si, že pokud soubor není v Univode, je jeho
+rozdělen na Název,URL, pro textové zprávy je použit celý obsah.</p>
+<p>Prosím uvědomte si, že pokud soubor není v Univode, je jeho
 kódování zjištěno pomocí locales, které nemusí být správně
 nastaveny, pokud SMSD běží z init skriptu. Pokud s tím máte
-problémy, přidejte nastavení locales do init skriptu SMSD.
-	</p>
-	
-
-	<p>
-		<a class="aname" id="lbAG" name="lbAG"/>
-	</p>
-	
-
-	<h3>
-		PŘÍKLAD
-	</h3>
-	
-
-	<p>
-		Ukázka souboru se zprávou při použití formátu 'detail':
-	</p>
-	
-
-	<dl compact="compact">
-		
-
-		<dd>
-			
-
-			<pre>
-				
+problémy, přidejte nastavení locales do init skriptu SMSD.</p>
+<p><a class="aname" id="lbAG" name="lbAG"/></p>
+<h3>PŘÍKLAD</h3>
+<p>Ukázka souboru se zprávou při použití formátu 'detail':</p>
+<dl compact="compact">
+<dd>
+<pre>
 [SMSBackup000]
 #ABCDEFGHIJKLMNOPQRSTUVWXYZ
 #
@@ -320,192 +96,45 @@ ReplySMSC = False
 RejectDuplicates = True
 ReplaceMessage = 0
 MessageReference = 0
-
-			</pre>
-		</dd>
-		
-
-	</dl>
-	
-
-	<p>
-		<a class="aname" id="lbAH" name="lbAH"/>
-	</p>
-	
-
-	<h3>
-		DALŠÍ INFORMACE
-	</h3>
-	
-
-	<a href="../gammu-smsd.1/">
-		gammu-smsd
-	</a>
-	(1), 
-	<a href="../gammu-smsdrc.5/">
-		gammu-smsdrc
-	</a>
-	(5), 
-	<a href="../gammu.1/">
-		gammu
-	</a>
-	(1), 
-	<a href="../gammurc.5/">
-		gammurc
-	</a>
-	(5) 
-	<a class="aname" id="lbAI" name="lbAI"/>
-	
-
-	<h3>
-		AUTOR
-	</h3>
-	
+</pre></dd>
+</dl>
+<p><a class="aname" id="lbAH" name="lbAH"/></p>
+<h3>DALŠÍ INFORMACE</h3>
+<a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5), <a href="../gammu.1/">gammu</a>(1), <a href="../gammurc.5/">gammurc</a>(5) <a class="aname" id="lbAI" name="lbAI"/>
+<h3>AUTOR</h3>
 gammu-smsd a tuto manuálovou stránku napsal Michal Čihař
-&lt;
-	<a href="mailto:michal@cihar.com">
-		michal@cihar.com
-	</a>
-	&gt;.
-
-	<a class="aname" id="lbAJ" name="lbAJ"/>
-	
-
-	<h3>
-		COPYRIGHT
-	</h3>
-	
+&lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt;.
+<a class="aname" id="lbAJ" name="lbAJ"/>
+<h3>COPYRIGHT</h3>
 Copyright © 2009 Michal Čihař a další autoři. Licence GPLv2: GNU
-GPL verze 2 &lt;
-	<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">
-		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-	</a>
-	&gt;
-	<br/>
-	
+GPL verze 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
 
 Tento program je volný software; můžete jej šířit a modifikovat.
 Není poskytována ŽÁDNÁ ZÁRUKA, v rozsahu jaký je povolen zákonem.
-
-	<a class="aname" id="lbAK" name="lbAK"/>
-	
-
-	<h3>
-		HLÁŠENÍ CHYB
-	</h3>
-	
-Prosím hlašte chyby na &lt;
-	<a href="http://bugs.cihar.com">
-		http://bugs.cihar.com
-	</a>
-	&gt;.
-
-	<hr/>
-	
-
-	<a class="aname" id="index" name="index"/>
-	
-
-	<h3>
-		Index
-	</h3>
-	
-
-	<dl>
-		
-
-		<dt>
-			<a href="#lbAB">
-				JMÉNO
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAC">
-				POPIS
-			</a>
-		</dt>
-		
-
-		<dd>
-			
-
-			<dl>
-				
-
-				<dt>
-					<a href="#lbAD">
-						Omezení
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAE">
-						Přijímání zpráv
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAF">
-						Odesílání zpráv
-					</a>
-				</dt>
-				
-
-			</dl>
-			
-
-		</dd>
-		
-
-		<dt>
-			<a href="#lbAG">
-				PŘÍKLAD
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAH">
-				DALŠÍ INFORMACE
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAI">
-				AUTOR
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAJ">
-				COPYRIGHT
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAK">
-				HLÁŠENÍ CHYB
-			</a>
-		</dt>
-		
-
-	</dl>
-	
-
-	<hr/>
-	
+<a class="aname" id="lbAK" name="lbAK"/>
+<h3>HLÁŠENÍ CHYB</h3>
+Prosím hlašte chyby na &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.
+<hr/>
+<a class="aname" id="index" name="index"/>
+<h3>Index</h3>
+<dl>
+<dt><a href="#lbAB">JMÉNO</a></dt>
+<dt><a href="#lbAC">POPIS</a></dt>
+<dd>
+<dl>
+<dt><a href="#lbAD">Omezení</a></dt>
+<dt><a href="#lbAE">Přijímání zpráv</a></dt>
+<dt><a href="#lbAF">Odesílání zpráv</a></dt>
+</dl>
+</dd>
+<dt><a href="#lbAG">PŘÍKLAD</a></dt>
+<dt><a href="#lbAH">DALŠÍ INFORMACE</a></dt>
+<dt><a href="#lbAI">AUTOR</a></dt>
+<dt><a href="#lbAJ">COPYRIGHT</a></dt>
+<dt><a href="#lbAK">HLÁŠENÍ CHYB</a></dt>
+</dl>
+<hr/>
 This document was created by man2html, using the manual
-pages.
-	<br/>
-	
+pages.<br/>
 Time: 21:20:27 GMT, September 03, 2009
-
 </div>
-

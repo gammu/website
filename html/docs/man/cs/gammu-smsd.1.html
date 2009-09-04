@@ -1,754 +1,159 @@
 <div class="manpage">
-	
-
-	<h2>
-		GAMMU-SMSD
-	</h2>
-	
-Section: Dokumentace Gammu (1)
-	<br/>
-	
-Updated: Leden 15, 2009
-	<br/>
-	
-
-	<a href="#index">
-		Index
-	</a>
-	 
-	
-
-	<hr/>
-	
-
-	<a class="aname" id="lbAB" name="lbAB"/>
-	
-
-	<h3>
-		JMÉNO
-	</h3>
-	
-gammu-smsd - SMS démon pro Gammu 
-	<a class="aname" id="lbAC" name="lbAC"/>
-	
-
-	<h3>
-		SYNTAXE
-	</h3>
-	
-
-	<b>
-		gammu-smsd
-	</b>
-	 [
-	<i>
-		PARAMETR
-	</i>
-	]... 
-	<a class="aname" id="lbAD" name="lbAD"/>
-	
-
-	<h3>
-		POPIS
-	</h3>
-	
-Tato manuálová stránka stručně popisuje příkaz 
-	<b>
-		gammu-smsd
-	</b>
-	.
-
-	<p>
-		<b>
-			gammu-smsd
-		</b>
-		 je program, který pravidelně kontroluje GSM
+<h2>GAMMU-SMSD</h2>
+Section: Dokumentace Gammu (1)<br/>
+Updated: Leden 15, 2009<br/>
+<a href="#index">Index</a> 
+<hr/>
+<a class="aname" id="lbAB" name="lbAB"/>
+<h3>JMÉNO</h3>
+gammu-smsd - SMS démon pro Gammu <a class="aname" id="lbAC" name="lbAC"/>
+<h3>SYNTAXE</h3>
+<b>gammu-smsd</b> [<i>PARAMETR</i>]... <a class="aname" id="lbAD" name="lbAD"/>
+<h3>POPIS</h3>
+Tato manuálová stránka stručně popisuje příkaz <b>gammu-smsd</b>.
+<p><b>gammu-smsd</b> je program, který pravidelně kontroluje GSM
 modem a přijímá zprávy,ukládá je na zadaném místě a také odesílá
-zprávy, které jsou ve frontě.
-	</p>
-	
-
-	<p>
-		Démon umí znovu načíst konfigurační soubor pokud mu byl zaslán
+zprávy, které jsou ve frontě.</p>
+<p>Démon umí znovu načíst konfigurační soubor pokud mu byl zaslán
 signál hangup (SIGHUP) a korektně se ukončí při signálech SIGINT a
-SIGTERM.
-	</p>
-	
-
-	<p>
-		Program přijímá následující parametry (dlouhé parametry nemusí
-být podporovány na všechplatformách):
-	</p>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			<b>
-				-h
-			</b>
-			, 
-			<b>
-				--help
-			</b>
-		</dt>
-		
-
-		<dd>
-			Zobrazí nápovědu.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-v
-			</b>
-			, 
-			<b>
-				--version
-			</b>
-		</dt>
-		
-
-		<dd>
-			Zobrazí informace o verzi a zakompilované funkcionalitě.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-c
-			</b>
-			, 
-			<b>
-				--config
-			</b>
-			=
-			<i>
-				soubor
-			</i>
-		</dt>
-		
-
-		<dd>
-			Jaký konfigurační soubor se má použít, výchozí je
+SIGTERM.</p>
+<p>Program přijímá následující parametry (dlouhé parametry nemusí
+být podporovány na všechplatformách):</p>
+<dl compact="compact">
+<dt><b>-h</b>, <b>--help</b></dt>
+<dd>Zobrazí nápovědu.</dd>
+<dt><b>-v</b>, <b>--version</b></dt>
+<dd>Zobrazí informace o verzi a zakompilované funkcionalitě.</dd>
+<dt><b>-c</b>, <b>--config</b>=<i>soubor</i></dt>
+<dd>Jaký konfigurační soubor se má použít, výchozí je
 /etc/gammu-smsdrc, na systému Windows není žádná výchozí cesta a
-cesta ke konfiguračnímu souboru musí být zadána vždy.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-p
-			</b>
-			, 
-			<b>
-				--pid
-			</b>
-			=
-			<i>
-				soubor
-			</i>
-		</dt>
-		
-
-		<dd>
-			Zamykací soubor, kde bude uložený PID (id procesu), prázdná
-cesta vypne tuto funkci. Není podporováno na Windows.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-U
-			</b>
-			, 
-			<b>
-				--user
-			</b>
-			=
-			<i>
-				uživatel
-			</i>
-		</dt>
-		
-
-		<dd>
-			Omezí oprávění uživatele po spuštění na vybraného
-uživatele.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-G
-			</b>
-			, 
-			<b>
-				--group
-			</b>
-			=
-			<i>
-				skupina
-			</i>
-		</dt>
-		
-
-		<dd>
-			Omezí oprávění uživatele po spuštění na vybranou skupinu.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-d
-			</b>
-			, 
-			<b>
-				--daemon
-			</b>
-		</dt>
-		
-
-		<dd>
-			Spustí program jako démona. Není podporováno na Windows.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-i
-			</b>
-			, 
-			<b>
-				--install-service
-			</b>
-		</dt>
-		
-
-		<dd>
-			Nainstaluje SMSD jako službu ve Windows.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-u
-			</b>
-			, 
-			<b>
-				--uninstall-service
-			</b>
-		</dt>
-		
-
-		<dd>
-			Odinstaluje SMSD jako službu ve Windows.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-s
-			</b>
-			, 
-			<b>
-				--start-service
-			</b>
-		</dt>
-		
-
-		<dd>
-			Spustí SMSD službu ve Windows.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-k
-			</b>
-			, 
-			<b>
-				--stop-service
-			</b>
-		</dt>
-		
-
-		<dd>
-			Ukončí SMSD službu ve Windows.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-X
-			</b>
-			, 
-			<b>
-				--suicide
-			</b>
-			=
-			<i>
-				sekundy
-			</i>
-		</dt>
-		
-
-		<dd>
-			Zabije se po zadaném počtu sekund.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-S
-			</b>
-			, 
-			<b>
-				--run-service
-			</b>
-		</dt>
-		
-
-		<dd>
-			Spustí program jako službu Windows. Tato volba je určena pro
-spouštění ze správce služeb a neměla by být používana.
-		</dd>
-		
-
-		<dt>
-			<b>
-				-n
-			</b>
-			, 
-			<b>
-				--service-name
-			</b>
-			=
-			<i>
-				name
-			</i>
-		</dt>
-		
-
-		<dd>
-			Určí jméno služby ve Windows. Každá služba potřebuje unikátní
+cesta ke konfiguračnímu souboru musí být zadána vždy.</dd>
+<dt><b>-p</b>, <b>--pid</b>=<i>soubor</i></dt>
+<dd>Zamykací soubor, kde bude uložený PID (id procesu), prázdná
+cesta vypne tuto funkci. Není podporováno na Windows.</dd>
+<dt><b>-U</b>, <b>--user</b>=<i>uživatel</i></dt>
+<dd>Omezí oprávění uživatele po spuštění na vybraného
+uživatele.</dd>
+<dt><b>-G</b>, <b>--group</b>=<i>skupina</i></dt>
+<dd>Omezí oprávění uživatele po spuštění na vybranou skupinu.</dd>
+<dt><b>-d</b>, <b>--daemon</b></dt>
+<dd>Spustí program jako démona. Není podporováno na Windows.</dd>
+<dt><b>-i</b>, <b>--install-service</b></dt>
+<dd>Nainstaluje SMSD jako službu ve Windows.</dd>
+<dt><b>-u</b>, <b>--uninstall-service</b></dt>
+<dd>Odinstaluje SMSD jako službu ve Windows.</dd>
+<dt><b>-s</b>, <b>--start-service</b></dt>
+<dd>Spustí SMSD službu ve Windows.</dd>
+<dt><b>-k</b>, <b>--stop-service</b></dt>
+<dd>Ukončí SMSD službu ve Windows.</dd>
+<dt><b>-X</b>, <b>--suicide</b>=<i>sekundy</i></dt>
+<dd>Zabije se po zadaném počtu sekund.</dd>
+<dt><b>-S</b>, <b>--run-service</b></dt>
+<dd>Spustí program jako službu Windows. Tato volba je určena pro
+spouštění ze správce služeb a neměla by být používana.</dd>
+<dt><b>-n</b>, <b>--service-name</b>=<i>name</i></dt>
+<dd>Určí jméno služby ve Windows. Každá služba potřebuje unikátní
 jméno, takže pokud chcete mít spuštěných více instancí SMSD, musíte
 pojmenovat každou instanci jinak. Výchozí jméno je
-&quot;GammuSMSD&quot;.
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAE" name="lbAE"/>
-	
-
-	<h3>
-		PŘÍKLAD
-	</h3>
-	
-
-	<p>
-		<a class="aname" id="lbAF" name="lbAF"/>
-	</p>
-	
-
-	<h4>
-		Příklady pro Linux/Unix
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			Spuštění SMSD jako démon na Linuxu:
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				gammu-smsd --config /etc/gammu-smsdrc --pid
-/var/run/gammu-smsd.pid --daemon
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			Spuštění SMSD jako démon s omezenými právy na Linuxu:
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				gammu-smsd --config /etc/gammu-smsdrc --pid
-/var/run/gammu-smsd.pid --daemon --user gammu --group gammu
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			SMSD jako systémový démon
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				Pro spuštění SMSD při startu systému můžete použít init skript,
+&quot;GammuSMSD&quot;.</dd>
+</dl>
+<a class="aname" id="lbAE" name="lbAE"/>
+<h3>PŘÍKLAD</h3>
+<p><a class="aname" id="lbAF" name="lbAF"/></p>
+<h4>Příklady pro Linux/Unix</h4>
+<dl compact="compact">
+<dt>Spuštění SMSD jako démon na Linuxu:</dt>
+<dd>
+<p>gammu-smsd --config /etc/gammu-smsdrc --pid
+/var/run/gammu-smsd.pid --daemon</p>
+</dd>
+<dt>Spuštění SMSD jako démon s omezenými právy na Linuxu:</dt>
+<dd>
+<p>gammu-smsd --config /etc/gammu-smsdrc --pid
+/var/run/gammu-smsd.pid --daemon --user gammu --group gammu</p>
+</dd>
+<dt>SMSD jako systémový démon</dt>
+<dd>
+<p>Pro spuštění SMSD při startu systému můžete použít init skript,
 který je distribuován s Gammu v adresáři contrib/init. Při výchozí
 instalaci není instalován, můžete ho zkopírovat ručně, nebo se
-podívejte do souboru INSTALL.cs.
-			</p>
-			
-
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAG" name="lbAG"/>
-	
-
-	<h4>
-		Příklady se službou pro Windows
-	</h4>
-	
-
-	<dl compact="compact">
-		
-
-		<dt>
-			Instalace SMSD jako služba ve Windows:
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				gammu-smsd.exe -c c:\Gammu\smsdrc -i
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			Instalace dvou SMSD jako služby ve Windows.
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				gammu-smsd.exe -c c:\Gammu\smsdrc-1 -n Gammu-first-phone -i
-			</p>
-			
-
-			<p>
-				gammu-smsd.exe -c c:\Gammu\smsdrc-2 -n Gammu-second-phone -i
-			</p>
-			
-
-		</dd>
-		
-
-		<dt>
-			Odinstalace SMSD služby ve Windows.
-		</dt>
-		
-
-		<dd>
-			
-
-			<p>
-				gammu-smsd.exe -u
-			</p>
-			
-
-		</dd>
-		
-
-	</dl>
-	
-
-	<a class="aname" id="lbAH" name="lbAH"/>
-	
-
-	<h4>
-		Problémy se službou ve Windows
-	</h4>
-	
-
-	<p>
-		Pokud se Gammu nepodaří spustit jako služba ve Windows (obvykle
+podívejte do souboru INSTALL.cs.</p>
+</dd>
+</dl>
+<a class="aname" id="lbAG" name="lbAG"/>
+<h4>Příklady se službou pro Windows</h4>
+<dl compact="compact">
+<dt>Instalace SMSD jako služba ve Windows:</dt>
+<dd>
+<p>gammu-smsd.exe -c c:\Gammu\smsdrc -i</p>
+</dd>
+<dt>Instalace dvou SMSD jako služby ve Windows.</dt>
+<dd>
+<p>gammu-smsd.exe -c c:\Gammu\smsdrc-1 -n Gammu-first-phone -i</p>
+<p>gammu-smsd.exe -c c:\Gammu\smsdrc-2 -n Gammu-second-phone -i</p>
+</dd>
+<dt>Odinstalace SMSD služby ve Windows.</dt>
+<dd>
+<p>gammu-smsd.exe -u</p>
+</dd>
+</dl>
+<a class="aname" id="lbAH" name="lbAH"/>
+<h4>Problémy se službou ve Windows</h4>
+<p>Pokud se Gammu nepodaří spustit jako služba ve Windows (obvykle
 dostanete chybu 1053, říkající, že služba neodpověděla včas),
 zkontrolujte logy SMSD. Pokud neobsahují žádné informace, zkuste
 SMSD spustit ručně s přesně stejnými parametry jako jste
-nainstalovali službu (bez parametru -i), například:
-	</p>
-	
-
-	<p>
-		<br/>
-		
-gammu-smsd.exe-csmsdrc
-	</p>
-	
-
-	<p>
-		Nyní by mělo být možné dostat popis chyb i když SMSD nejde
-spustit jako služba.
-	</p>
-	
-
-	<p>
-		<a class="aname" id="lbAI" name="lbAI"/>
-	</p>
-	
-
-	<h3>
-		DALŠÍ INFORMACE
-	</h3>
-	
-
-	<a href="../gammu-smsdrc.5/">
-		gammu-smsdrc
-	</a>
-	(5), 
-	<a href="../gammu.1/">
-		gammu
-	</a>
-	(1), 
-	<a href="../gammu-smsd-inject.1/">
-		gammu-smsd-inject
-	</a>
-	(1), 
-	<a href="../gammu-smsd-monitor.1/">
-		gammu-smsd-monitor
-	</a>
-	(1)
-
-	<p>
-		<a href="../gammu-smsd-files.7/">
-			gammu-smsd-files
-		</a>
-		(7),
-
-		<a href="../gammu-smsd-mysql.7/">
-			gammu-smsd-mysql
-		</a>
-		(7), 
-		<a href="../gammu-smsd-pgsql.7/">
-			gammu-smsd-pgsql
-		</a>
-		(7), 
-		<a href="../gammu-smsd-dbi.7/">
-			gammu-smsd-dbi
-		</a>
-		(7), 
-		<a href="../gammu-smsd-tables.7/">
-			gammu-smsd-tables
-		</a>
-		(7) 
-		<a class="aname" id="lbAJ" name="lbAJ"/>
-	</p>
-	
-
-	<h3>
-		AUTOR
-	</h3>
-	
+nainstalovali službu (bez parametru -i), například:</p>
+<p><br/>
+gammu-smsd.exe-csmsdrc</p>
+<p>Nyní by mělo být možné dostat popis chyb i když SMSD nejde
+spustit jako služba.</p>
+<p><a class="aname" id="lbAI" name="lbAI"/></p>
+<h3>DALŠÍ INFORMACE</h3>
+<a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5), <a href="../gammu.1/">gammu</a>(1), <a href="../gammu-smsd-inject.1/">gammu-smsd-inject</a>(1), <a href="../gammu-smsd-monitor.1/">gammu-smsd-monitor</a>(1)
+<p><a href="../gammu-smsd-files.7/">gammu-smsd-files</a>(7),
+<a href="../gammu-smsd-mysql.7/">gammu-smsd-mysql</a>(7), <a href="../gammu-smsd-pgsql.7/">gammu-smsd-pgsql</a>(7), <a href="../gammu-smsd-dbi.7/">gammu-smsd-dbi</a>(7), <a href="../gammu-smsd-tables.7/">gammu-smsd-tables</a>(7) <a class="aname" id="lbAJ" name="lbAJ"/></p>
+<h3>AUTOR</h3>
 gammu-smsd a tuto manuálovou stránku napsal Michal Čihař
-&lt;
-	<a href="mailto:michal@cihar.com">
-		michal@cihar.com
-	</a>
-	&gt;.
-
-	<a class="aname" id="lbAK" name="lbAK"/>
-	
-
-	<h3>
-		COPYRIGHT
-	</h3>
-	
+&lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt;.
+<a class="aname" id="lbAK" name="lbAK"/>
+<h3>COPYRIGHT</h3>
 Copyright © 2009 Michal Čihař a další autoři. Licence GPLv2: GNU
-GPL verze 2 &lt;
-	<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">
-		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-	</a>
-	&gt;
-	<br/>
-	
+GPL verze 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
 
 Tento program je volný software; můžete jej šířit a modifikovat.
 Není poskytována ŽÁDNÁ ZÁRUKA, v rozsahu jaký je povolen zákonem.
-
-	<a class="aname" id="lbAL" name="lbAL"/>
-	
-
-	<h3>
-		HLÁŠENÍ CHYB
-	</h3>
-	
-Prosím hlašte chyby na &lt;
-	<a href="http://bugs.cihar.com">
-		http://bugs.cihar.com
-	</a>
-	&gt;.
-
-	<p>
-		Před hlášením chyb prosím zapněte logovaní v nastavení SMSD:
-	</p>
-	
-
-	<p>
-		<br/>
-		
-[smsd]
-		<br/>
-		
-debuglevel=255
-		<br/>
-		
-logfile=smsd.log
-	</p>
-	
-
-	<p>
-		a přiložte tento log k hlášení chyby.
-	</p>
-	
-
-	<hr/>
-	
-
-	<a class="aname" id="index" name="index"/>
-	
-
-	<h3>
-		Index
-	</h3>
-	
-
-	<dl>
-		
-
-		<dt>
-			<a href="#lbAB">
-				JMÉNO
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAC">
-				SYNTAXE
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAD">
-				POPIS
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAE">
-				PŘÍKLAD
-			</a>
-		</dt>
-		
-
-		<dd>
-			
-
-			<dl>
-				
-
-				<dt>
-					<a href="#lbAF">
-						Příklady pro Linux/Unix
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAG">
-						Příklady se službou pro Windows
-					</a>
-				</dt>
-				
-
-				<dt>
-					<a href="#lbAH">
-						Problémy se službou ve Windows
-					</a>
-				</dt>
-				
-
-			</dl>
-			
-
-		</dd>
-		
-
-		<dt>
-			<a href="#lbAI">
-				DALŠÍ INFORMACE
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAJ">
-				AUTOR
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAK">
-				COPYRIGHT
-			</a>
-		</dt>
-		
-
-		<dt>
-			<a href="#lbAL">
-				HLÁŠENÍ CHYB
-			</a>
-		</dt>
-		
-
-	</dl>
-	
-
-	<hr/>
-	
+<a class="aname" id="lbAL" name="lbAL"/>
+<h3>HLÁŠENÍ CHYB</h3>
+Prosím hlašte chyby na &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.
+<p>Před hlášením chyb prosím zapněte logovaní v nastavení SMSD:</p>
+<p><br/>
+[smsd]<br/>
+debuglevel=255<br/>
+logfile=smsd.log</p>
+<p>a přiložte tento log k hlášení chyby.</p>
+<hr/>
+<a class="aname" id="index" name="index"/>
+<h3>Index</h3>
+<dl>
+<dt><a href="#lbAB">JMÉNO</a></dt>
+<dt><a href="#lbAC">SYNTAXE</a></dt>
+<dt><a href="#lbAD">POPIS</a></dt>
+<dt><a href="#lbAE">PŘÍKLAD</a></dt>
+<dd>
+<dl>
+<dt><a href="#lbAF">Příklady pro Linux/Unix</a></dt>
+<dt><a href="#lbAG">Příklady se službou pro Windows</a></dt>
+<dt><a href="#lbAH">Problémy se službou ve Windows</a></dt>
+</dl>
+</dd>
+<dt><a href="#lbAI">DALŠÍ INFORMACE</a></dt>
+<dt><a href="#lbAJ">AUTOR</a></dt>
+<dt><a href="#lbAK">COPYRIGHT</a></dt>
+<dt><a href="#lbAL">HLÁŠENÍ CHYB</a></dt>
+</dl>
+<hr/>
 This document was created by man2html, using the manual
-pages.
-	<br/>
-	
+pages.<br/>
 Time: 21:20:27 GMT, September 03, 2009
-
 </div>
-
