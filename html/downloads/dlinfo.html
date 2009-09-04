@@ -1,8 +1,3 @@
 {% load i18n %}
-<h3><a href="{{ release.get_absolute_url }}">{{release.get_program}} {{release.get_state}}</a></h3>
-<p>
-{% blocktrans with release.date|date as released and release.get_absolute_url as url %}
-Released on {{ released }}, see <a href="{{ url }}">detailed information</a>.
-{% endblocktrans %}
-</p>
+{% include "downloads/relinfo.html" %}
 {% include "downloads/dllist.html" %}

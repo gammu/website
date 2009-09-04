@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ program }} - {% trans "Download" %}{% endblock %}
+
+{% block content %}
+<h2>
+{% blocktrans %}
+Download {{ program }}
+{% endblocktrans %}
+</h2>
+
+{% include program_include %}
+
+<h2>{% trans "Downloads" %}</h2>
+<ul>
+{% for platform in platforms %}
+<li><a href="./{{ platform.0 }}">{{ platform.1}}</a></li>
+{% endfor %}
+</ul>
+
+<h2>{% trans "Current Releases" %}</h2>
+
+{% with stable_release as release %}
+{% include "downloads/relinfo.html" %}
+{% endwith %}
+
+{% if testing_release %}
+{% with testing_release as release %}
+{% include "downloads/relinfo.html" %}
+{% endwith %}
+{% endif %}
+
+{% endblock %}
+

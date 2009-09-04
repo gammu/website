@@ -1,6 +1,6 @@
 from django.shortcuts import render_to_response, get_object_or_404
 from wammu_web.wammu.helpers import WammuContext
-from downloads.models import Download, Release, Mirror, get_program, get_latest_releases, get_current_downloads
+from downloads.models import Download, Release, Mirror, get_program, get_latest_releases, get_current_downloads, PLATFORM_CHOICES
 from django.http import Http404
 from django.utils.datastructures import MultiValueDictKeyError
 
@@ -71,3 +71,20 @@ def release(request, program,  version):
     if set_mirror:
         result.set_cookie('mirror', mirror_id, max_age = 3600 * 24 * 365)
     return result
+
+
+def program(request, program):
+
+    stable_release, testing_release = get_latest_releases(program)
+
+    mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
+
+    return render_to_response('downloads/program.html', WammuContext(request, {
+        'stable_release': stable_release,
+        'testing_release': testing_release,
+        'platforms': PLATFORM_CHOICES,
+        'program': get_program(program),
+        'mirrors': mirrors,
+        'mirror': mirror,
+        'program_include': 'downloads/programs/%s.html' % program,
+    }))
