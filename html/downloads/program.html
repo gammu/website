@@ -27,35 +27,8 @@ Thank you for interest in downloading <a href="/{{ program_name }}">{{ program }
 {% endblocktrans %}
 </p>
 
-<p>
-{% blocktrans %}
-Please select download option best fitting your platform. If you use Linux,
-your distribution most likely already contains {{ program }}, so the easiest
-way to get it is to install it directly from your distribution repositories.
-{% endblocktrans %}
-</p>
-<ul>
-{% for platform in platforms %}
-<li><a href="./{{ platform.0 }}">{{ platform.1}}</a></li>
-{% endfor %}
-<li><a href="http://packages.debian.org/{{ program_name}}">
-    {% trans "Debian packages" %}
-    </a></li>
-<li><a href="http://packages.ubuntu.com/{{ program_name}}">
-    {% trans "Ubuntu packages" %}
-    </a></li>
-<li><a href="https://launchpad.net/~nijel/+archive/ppa">
-    {% trans "Ubuntu packages in PPA (latest stable version)" %}
-    </a></li>
-<li>
-    <a href="http://software.opensuse.org/search?baseproject=home:Nijel&amp;q={{ program_name }}">
-    {% trans "RPM packages (openSUSE, Fedora, Madriva) (latest stable version)" %}
-    </a></li>
-<li>
-    <a href="http://software.opensuse.org/search?baseproject=home:Nijel:experimental&amp;q={{ program_name }}">
-    {% trans "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)" %}
-    </a></li>
-</ul>
+{% include "downloads/platformmessage.html" %}
+{% include "downloads/platformlinks.html" %}
 
 <h2>{% trans "Current Releases" %}</h2>
 

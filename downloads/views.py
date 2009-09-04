@@ -102,4 +102,5 @@ def download(request):
         'mirrors': mirrors,
         'mirror': mirror,
         'downloads': downloads,
+        'platforms': PLATFORM_CHOICES,
     }))
