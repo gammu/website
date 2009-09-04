@@ -3,32 +3,23 @@ from wammu_web.wammu.helpers import WammuContext
 from wammu_web.news.models import Entry
 from wammu_web.screenshots.models import Screenshot
 from wammu_web.downloads.models import Release
-from downloads.models import Download, Release, Mirror, get_program
-from downloads.views import get_mirrors, get_latest_releases
+from downloads.models import Download, Release, Mirror, get_current_downloads
+from downloads.views import get_mirrors
 
 # Create your views here.
 
 def index(request):
     mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
 
-    gammu_stable_release, gammu_testing_release = get_latest_releases('gammu')
-
-    gammu_stable_downloads = Download.objects.filter(release = gammu_stable_release, platform = 'source').order_by('location')
-
-    if gammu_testing_release is None:
-        gammu_testing_downloads = None
-    else:
-        gammu_testing_downloads = Download.objects.filter(release = gammu_testing_release, platform = 'source').order_by('location')
+    downloads = get_current_downloads('gammu', 'source')
 
     news = Entry.objects.order_by('-pub_date')[:5]
     screenshot = Screenshot.objects.filter(featured = True).order_by('?')[0]
     return render_to_response('index.html', WammuContext(request, {
         'news': news,
         'screenshot': screenshot,
-        'gammu_stable_release': gammu_stable_release,
-        'gammu_testing_release': gammu_testing_release,
-        'gammu_stable_downloads': gammu_stable_downloads,
-        'gammu_testing_downloads': gammu_testing_downloads,
+        'downloads': downloads,
+        'mirror': mirror,
     }))
 
 def wammu(request):

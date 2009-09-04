@@ -1,19 +1,8 @@
 from django.shortcuts import render_to_response, get_object_or_404
 from wammu_web.wammu.helpers import WammuContext
-from downloads.models import Download, Release, Mirror, get_program
+from downloads.models import Download, Release, Mirror, get_program, get_latest_releases, get_current_downloads
 from django.http import Http404
 from django.utils.datastructures import MultiValueDictKeyError
-
-def get_latest_releases(program):
-    releases = Release.objects.filter(program = program)
-    latest_version = releases.order_by('-version_int')[0]
-    if latest_version.version_int % 100 < 10:
-        latest_stable = latest_version
-        latest_testing = None
-    else:
-        latest_testing = latest_version
-        latest_stable = releases.filter(version_int__lt = 10 + ((latest_version.version_int / 100) * 100)).order_by('-version_int')[0]
-    return (latest_stable, latest_testing)
 
 def get_mirrors(request):
     mirrors = Mirror.objects.all().order_by('id')
@@ -35,14 +24,13 @@ def get_mirrors(request):
 
 def list(request, program, platform):
 
-    stable_release, testing_release = get_latest_releases(program)
+    downloads = get_current_downloads(program, platform)
 
-    stable_downloads = Download.objects.filter(release = stable_release, platform = platform).order_by('location')
-
-    if testing_release is None:
-        testing_downloads = None
-    else:
-        testing_downloads = Download.objects.filter(release = testing_release, platform = platform).order_by('location')
+    stable_release, stable_downloads = downloads[0]
+    try:
+        testing_release, testing_downloads = downloads[1]
+    except IndexError:
+        testing_release, testing_downloads = (None, None)
 
     if stable_downloads.count() == 0:
         raise Http404('No such download option %s/%s.' % (program, platform))

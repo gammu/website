@@ -27,11 +27,48 @@ PLATFORM_CHOICES = (
     ('win32', 'Windows binary'),
     )
 
+def get_latest_releases(program):
+    '''
+    Returns tuple with last release information for given program.
+    First is stable, second is testing, which can be None.
+    '''
+    releases = Release.objects.filter(program = program)
+    latest_version = releases.order_by('-version_int')[0]
+    if latest_version.version_int % 100 < 10:
+        latest_stable = latest_version
+        latest_testing = None
+    else:
+        latest_testing = latest_version
+        latest_stable = releases.filter(version_int__lt = 10 + ((latest_version.version_int / 100) * 100)).order_by('-version_int')[0]
+    return (latest_stable, latest_testing)
+
 def get_program(name):
     for c in PROGRAM_CHOICES:
         if c[0] == name:
             return c[1]
     raise IndexError('Program does not exist!')
+
+def get_current_downloads(program, platform = 'source'):
+    '''
+    Gets list of tuples for currently active downloads. The first one
+    is always present and it's the stable one, the second one is
+    testing if available.
+    '''
+
+    downloads = []
+
+    stable_release, testing_release = get_latest_releases(program)
+
+    stable_downloads = Download.objects.filter(release = stable_release, platform = platform).order_by('location')
+
+    downloads.append((stable_release, stable_downloads))
+
+    if testing_release is not None:
+        testing_downloads = Download.objects.filter(release = testing_release, platform = platform).order_by('location')
+        downloads.append((testing_release, testing_downloads))
+
+    return downloads
+
 
 class Mirror(models.Model):
     name = models.CharField(max_length = 250)
