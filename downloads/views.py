@@ -91,3 +91,15 @@ def program(request, program):
         'mirrors': mirrors,
         'mirror': mirror,
     }))
+
+def download(request):
+    mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
+
+    downloads = get_current_downloads('gammu', 'source')
+    downloads += get_current_downloads('wammu', 'source')
+
+    return render_to_response('downloads/index.html', WammuContext(request, {
+        'mirrors': mirrors,
+        'mirror': mirror,
+        'downloads': downloads,
+    }))

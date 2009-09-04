@@ -6,9 +6,8 @@
 {% block sidebar_top %}
 <h3>{% trans "More information" %}</h3>
 <ul>
-<li><a href="/screnshots/wammu">{% trans "Screenshots" %}</a></li>
-<li><a href="/phonedb">{% trans "Supported phones" %}</a></li>
-<li><a href="/contribute">{% trans "How to contribute" %}</a></li>
+{% include "sidebars/wammu.html" %}
+{% include "sidebars/common.html" %}
 </ul>
 
 {% endblock %}

@@ -12,6 +12,7 @@ def index(request):
     mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
 
     downloads = get_current_downloads('gammu', 'source')
+    downloads += get_current_downloads('wammu', 'source')
 
     news = Entry.objects.order_by('-pub_date')[:5]
     screenshot = Screenshot.objects.filter(featured = True).order_by('?')[0]
