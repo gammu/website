@@ -17,9 +17,9 @@ PROGRAM_CHOICES = (
     )
 
 PROGRAM_URLS = {
-    'gammu': 'http://wammu.eu/gammu/',
-    'wammu': 'http://wammu.eu/wammu/',
-    'python-gammu': 'http://wammu.eu/python-gammu/',
+    'gammu': '/gammu/',
+    'wammu': '/wammu/',
+    'python-gammu': '/python-gammu/',
 }
 
 PLATFORM_CHOICES = (
