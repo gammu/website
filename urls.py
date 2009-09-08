@@ -38,6 +38,7 @@ urlpatterns = patterns('',
     (r'^docs/man/$', 'manpages.views.show_pages'),
     (r'^docs/man/(?P<lang>[a-z]*)/$', 'manpages.views.show_lang_pages'),
     (r'^docs/man/(?P<lang>[a-z]*)/(?P<page>[a-z_-]*\.[0-9])/$', 'manpages.views.show_page'),
+    (r'^docs/devel/$', 'wammu.views.static', {'page': 'docs/devel.html'}),
 
     # RSS feeds
     (r'^news/(?P<url>(rss|atom).*)/$', 'django.contrib.syndication.views.feed',
