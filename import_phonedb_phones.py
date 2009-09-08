@@ -30,9 +30,9 @@ for (id, vendor, name, features, connection, model, comment, author, email, garb
     if connection != 'NULL' and connection != '':
         phone.connection = Connection.objects.get(name = connection)
     phone.model = model
-    phone.note = comment
-    phone.author_name = author
-    phone.author_email = email
+    phone.note = unicode(comment, 'utf-8')
+    phone.author_name = unicode(author, 'utf-8')
+    phone.author_email = unicode(email, 'utf-8')
     phone.email_garble = garble
     if phone.id >= 3038:
         phone.state = 'draft'
