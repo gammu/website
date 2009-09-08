@@ -3,6 +3,8 @@ from wammu_web.wammu.helpers import WammuContext
 
 from django.conf import settings
 
+from django.http import Http404
+
 import os
 
 langnames = {
@@ -14,6 +16,8 @@ langnames = {
 
 def show_page(request, page, lang = 'en'):
     manpage = 'docs/man/%s/%s.html' % (lang, page)
+    if not os.path.exists('%s/%s' % (settings.HTML_ROOT, manpage)):
+        raise Http404('No man page matching %s/%s found.' % (lang, page))
     return render_to_response('docs/show_man.html', WammuContext(request, {
         'manpage': manpage,
         'page': page,
