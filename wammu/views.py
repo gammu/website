@@ -6,6 +6,8 @@ from wammu_web.downloads.models import Release
 from downloads.models import Download, Release, Mirror, get_current_downloads
 from downloads.views import get_mirrors
 
+from django.conf import settings
+
 # Create your views here.
 
 def index(request):
@@ -14,7 +16,7 @@ def index(request):
     downloads = get_current_downloads('gammu', 'source')
     downloads += get_current_downloads('wammu', 'source')
 
-    news = Entry.objects.order_by('-pub_date')[:5]
+    news = Entry.objects.order_by('-pub_date')[:settings.NEWS_ON_MAIN_PAGE]
     screenshot = Screenshot.objects.filter(featured = True).order_by('?')[0]
     return render_to_response('index.html', WammuContext(request, {
         'news': news,

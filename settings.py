@@ -122,6 +122,7 @@ IDENTICA_PASSWORD = gnomekeyring.find_network_password_sync(
         protocol = 'https')[0]['password']
 
 NEWS_PER_PAGE = 5
+NEWS_ON_MAIN_PAGE = 5
 SCREENSHOTS_PER_PAGE = 20
 
 PAYPAL_IDENTITY_TOKEN = '1kbDRn7TJ6ikJcqyxZ8AdOUMMT56S7gm8mq3OIHZTFS8ymCulm6IGMW70zu'
