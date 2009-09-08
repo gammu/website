@@ -23,10 +23,42 @@ messages and automatically process them.
 {% endblocktrans %} 
 </p>
 
+<p>
+{% blocktrans %}
+You can currently store received messages in files or in various databases.
+<a href="http://www.mysql.com/">MySQL</a> and <a
+href="http://www.postgresql.org/">PostgreSQL</a> are supported natively and
+wide range of others (including <a href="http://www.sqlite.org/">SQLite</a>)
+through <a href="http://libdbi.sourceforge.net/">libdbi</a>.
+{% endblocktrans %} 
+</p>
+
+<p>
+{% blocktrans %}
+The package includes also tool <code>gammu-smsd-inject</code> which will help
+you creating long text messages and <code>gammu-smsd-monitor</code> which
+allows you to monitor current status of SMS Daemon or phone.
+{% endblocktrans %} 
+</p>
+
+<h3>{% trans "Download" %}</h3>
+<p>
+{% blocktrans %}
+SMS Daemon is distributed as part of <a href="/gammu">Gammu</a> so to download
+it just get <a href="/download/gammu">Gammu</a>. If you want to use binary
+package, the daemon might be included in separate binary package in your
+distribution, try looking for something like <code>gammu-smsd</code>.
+{% endblocktrans %} 
+</p>
+
 <h3>{% trans "Documentation" %}</h3>
 <p>
 {% blocktrans %}
-API documentation is available as well as internal documentation.
+The best documentation is available in form of <a href="/docs/man">man
+pages</a> which are distributed with the program. You can also view online
+documentation for <a href="/docs/man/en/gammu-smsd.1/">gammu-smsd (the
+daemon)</a> or <a href="/docs/man/en/gammu-smsdrc.5/">gammu-smsdrc (the
+configuration file)</a>.
 {% endblocktrans %}
 </p>
 
