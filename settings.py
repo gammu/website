@@ -42,6 +42,8 @@ if HOSTNAME == 'rincewind':
     WEB_ROOT = '/home/mcihar/private/wammu_web/'
 elif HOSTNAME == 'raptor':
     WEB_ROOT = '/home/nijel/work/gammu/wammu_web/'
+elif HOSTNAME == 'web':
+    WEB_ROOT = '/var/lib/django/wammu_web/'
 else:
     WEB_ROOT = '/home/nijel/work/gammu/wammu_web/'
 
