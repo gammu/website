@@ -69,7 +69,7 @@ urlpatterns = patterns('',
 
     # Donations
     (r'^donate/$', 'donate.views.donate'),
-    (r'^donate/done/', include('paypal.standard.pdt.urls')),
+    (r'^donate/thanks/$', 'donate.views.thanks'),
 
     # Screenshots
     (r'^screenshots/$', 'screenshots.views.index'),

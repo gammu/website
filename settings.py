@@ -103,7 +103,6 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.admindocs',
-    'paypal.standard.pdt',
     'wammu_web.news',
     'wammu_web.wammu',
     'wammu_web.downloads',

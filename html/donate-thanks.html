@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}Thank you for Donation{% endblock %}
+
+{% block sidebar_top %}
+{% include "contribute/sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+<h2>{% trans "Thank you for Donation" %}</h2>
+
+<p>
+{% blocktrans %}
+Thank you for donating to Gammu/Wammu! We will do our best to use the donated
+money in useful way.
+{% endblocktrans %}
+</p>
+
+{% endblock %}
+
+
