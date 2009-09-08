@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Page Not Found" %}{% endblock %}
+
+
+{% block content %}
+<h2>{% trans "Page Not Found" %}</h2>
+
+<p>
+{% blocktrans %}
+The page you are looking for was not found. Try choosing something from the
+navigation bellow or use <a href="/search">search facility</a>.
+{% endblocktrans %}
+</p>
+{% endblock %}
