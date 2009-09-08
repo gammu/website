@@ -77,4 +77,8 @@ urlpatterns = patterns('',
 
     # Links
     (r'^links/$', 'links.views.index'),
+
+    # Compatibility
+    (r'^install/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
+    (r'^improve/$', 'django.views.generic.simple.redirect_to', {'url': '/contribute/'}),
 )
