@@ -6,8 +6,4 @@
 
 {{ entry.body_html|safe }}
 
-<p class="published">
-{% blocktrans with entry.pub_date.date as date and entry.author.get_full_name as author%}
-Published on {{ date }} by {{ author }}
-{% endblocktrans %}
-</p>
+{% include "news/published.html" %}

@@ -1,0 +1,8 @@
+{% load i18n %}
+
+<p class="published">
+{% blocktrans with entry.pub_date.date as date and entry.author.get_full_name as author and entry.author.email as email %}
+Published on {{ date }} by <a href="mailto:{{ email }}">{{ author }}</a>
+{% endblocktrans %}
+</p>
+
