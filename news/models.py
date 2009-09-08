@@ -74,7 +74,7 @@ class Entry(models.Model):
         )
 
     # Identi.ca integration
-    identica_post = models.BooleanField('post to identi.ca', default = False, null = True)
+    identica_post = models.NullBooleanField('post to identi.ca', default = False, null = True)
     identica_text = models.CharField('identi.ca post text', max_length = 100, blank = True, null = True)
 
     class Meta:
