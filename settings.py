@@ -109,6 +109,7 @@ INSTALLED_APPS = (
     'wammu_web.screenshots',
     'wammu_web.links',
     'wammu_web.manpages',
+    'wammu_web.phonedb',
 )
 
 import gobject
