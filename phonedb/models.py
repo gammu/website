@@ -72,3 +72,7 @@ class Phone(models.Model):
         self.note_html = markdown.markdown(self.note)
         super(Phone, self).save(*args, **kwargs)
 
+
+    @models.permalink
+    def get_absolute_url(self):
+         return ('phonedb.views.phone', (), {'vendorname': self.vendor.slug, 'id': self.id })
