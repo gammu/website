@@ -2,6 +2,17 @@
 
 <h2>{{ vendor.name }} {{ phone.name }}</h2>
 
+<p>
+{% blocktrans %}
+More information about phone might be available on following sites:
+{% endblocktrans %}
+
+<ul>
+{% for link in phone.get_related_sites %}
+<li><a href="{{ link.url }}">{{ link.name }}</a></li>
+{% endfor %}
+</ul>
+
 <h3>{% trans "Supported Features" %}</h3>
 
 {% if phone.features %}

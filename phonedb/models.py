@@ -72,6 +72,33 @@ class Phone(models.Model):
         self.note_html = markdown.markdown(self.note)
         super(Phone, self).save(*args, **kwargs)
 
+    def get_related_sites(self):
+        result = []
+        name = self.__unicode__().replace(' ', '_').replace('-', '_')
+        result.append({
+            'url': 'http://wikipedia.org/wiki/%s' % name,
+            'name': 'Wikipedia',
+        })
+        name = self.name.replace(' ', '_').replace('-', '_')
+        vendor = self.vendor.name.replace('-', '_').replace(' ', '_')
+        result.append({
+            'url': 'http://www.mobile-phone-directory.org/Phones/%s/%s_%s.html' % (vendor, vendor, name),
+            'name': 'The Mobile Phone Directory',
+        })
+        name = self.name.replace(' ', '').replace('-', '').lower()
+        vendor = self.vendor.slug.replace('-', '_').replace(' ', '_')
+        result.append({
+            'url': 'http://www.mobiledia.com/phones/%s/%s.html' % (vendor, name),
+            'name': 'Mobilemedia',
+        })
+        if self.vendor.slug == 'nokia':
+            name = self.name.replace(' ', '_').replace('-', '_').upper()
+            result.append({
+                'url': 'http://www.forum.nokia.com/devices/%s' % name,
+                'name': 'Nokia Forum',
+            })
+
+        return result
 
     @models.permalink
     def get_absolute_url(self):
