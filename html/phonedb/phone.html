@@ -3,6 +3,20 @@
 
 {% block title %}{{ vendor.name }} {{ phone.name }}{% endblock %}
 
+{% block sidebar_top %}
+<h3>{% trans "Similar Phones" %}</h3>
+
+{% if related %}
+<ul>
+{% for phone in related %}
+<li><a href="{{ phone.get_absolute_url}}">{{ phone.vendor.name }} {{ phone.name }}</a></li>
+{% endfor %}
+</ul>
+{% else %}
+<p>{% trans "None found." %}</p>
+{% endif %}
+{% endblock %}
+
 {% block content %}
 {% include "phonedb/body.html" %}
 

@@ -20,7 +20,9 @@ def vendor(request, vendorname):
 def phone(request, vendorname, id):
     vendor = get_object_or_404(Vendor, slug = vendorname)
     phone = get_object_or_404(Phone, id = int(id), vendor = vendor)
+    related = Phone.objects.filter(vendor = vendor, name__icontains = phone.name)
     return render_to_response('phonedb/phone.html', WammuContext(request, {
         'vendor': vendor,
         'phone': phone,
+        'related': related,
     }))
