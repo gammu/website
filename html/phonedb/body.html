@@ -13,8 +13,10 @@ More information about phone might be available on following sites:
 {% endfor %}
 </ul>
 
+
 <h3>{% trans "Supported Features" %}</h3>
 
+{% if phone.connection %}
 {% if phone.features %}
 <ul>
 {% for feature in phone.features.all %}
@@ -32,6 +34,12 @@ More information about phone might be available on following sites:
 port = {% ifequal phone.connection.medium "bluetooth" %}BLUETOOTH ADDRESS OF PHONE{% else %}port = DEVICE NAME{% endifequal %}
 connection = {{ phone.connection.name }}
 {% if phone.model %}model = {{ phone.model }}{% endif %}</pre>
+
+{% endif %}
+
+<p>
+{% trans "Phone is reported not to be supported!" %}
+</p>
 
 {% if phone.note_html %}
 
