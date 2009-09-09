@@ -25,6 +25,14 @@ More information about phone might be available on following sites:
 <p>{% trans "No features supported!" %}</p>
 {% endif %}
 
+<h3>{% trans "Configuration" %}</h3>
+
+<pre>
+[gammu]
+port = {% ifequal phone.connection.medium "bluetooth" %}BLUETOOTH ADDRESS OF PHONE{% else %}port = DEVICE NAME{% endifequal %}
+connection = {{ phone.connection.name }}
+{% if phone.model %}model = {{ phone.model }}{% endif %}</pre>
+
 {% if phone.note_html %}
 
 <h3>{% trans "Reporter Note" %}</h3>
