@@ -36,7 +36,7 @@ for (id, vendor, name, features, connection, model, comment, author, email, garb
     phone.email_garble = garble
     if phone.id >= 3038:
         phone.state = 'draft'
-    elif deleted == 1:
+    elif deleted == '1':
         phone.state = 'deleted'
     else:
         phone.state = 'approved'
