@@ -18,7 +18,7 @@ def feature(request, featurename):
 
 def vendor(request, vendorname):
     vendor = get_object_or_404(Vendor, slug = vendorname)
-    phones = Phone.objects.filter(vendor = vendor, state = 'approved')
+    phones = Phone.objects.filter(vendor = vendor, state = 'approved').order_by('name')
 
     paginator = Paginator(phones, settings.PHONES_PER_PAGE, orphans = 5)
     try:
