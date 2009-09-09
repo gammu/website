@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ vendor.name }} - {% trans "Gammu Phone Database " %}{% endblock %}
+
+{% block sidebar_top %}
+<h3>{% trans "Navigation" %}</h3>
+<ul>
+<li><a href="/phones">Phones Database</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+
+<h2>{{ vendor.name }}</h2>
+
+{% for phone in phones.object_list %}
+<h3><a href="{{ phone.get_absolute_url }}">{{ phone.name }}</a></h3>
+{% endfor %}
+
+<ul class="pages">
+{% if phones.has_previous %}
+<li><a href="?page={{ phones.previous_page_number }}">&laquo;</a></li>
+{% else %}
+<li class="disabled"><span>&laquo;</span></li>
+{% endif %}
+{% for page in phones.paginator.page_range %}
+<li {% ifequal page phones.number %} class="active" {% endifequal %}><a href="?page={{ page }}">{{ page }}</a></li>
+{% endfor %}
+{% if phones.has_next %}
+<li><a href="?page={{ phones.next_page_number }}">&raquo;</a></li>
+{% else %}
+<li class="disabled"><span>&raquo;</span></li>
+{% endif %}
+</ul>
+
+{% endblock %}
+
+

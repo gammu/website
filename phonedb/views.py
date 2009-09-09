@@ -3,6 +3,8 @@ from wammu_web.wammu.helpers import WammuContext
 from wammu_web.phonedb.models import Vendor, Phone, Feature
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
 
+from django.conf import settings
+
 # Create your views here.
 
 def index(request):
@@ -15,7 +17,28 @@ def feature(request, featurename):
     return
 
 def vendor(request, vendorname):
-    return
+    vendor = get_object_or_404(Vendor, slug = vendorname)
+    phones = Phone.objects.filter(vendor = vendor, state = 'approved')
+
+    paginator = Paginator(phones, settings.PHONES_PER_PAGE, orphans = 5)
+    try:
+        page = int(request.GET.get('page', '1'))
+        if page < 1:
+            page = 0
+        elif page > paginator.num_pages:
+            page = paginator.num_pages
+    except ValueError:
+        page = 1
+
+    try:
+        phones = paginator.page(page)
+    except (EmptyPage, InvalidPage):
+        phones = paginator.page(1)
+
+    return render_to_response('phonedb/vendor.html', WammuContext(request, {
+        'vendor': vendor,
+        'phones': phones,
+    }))
 
 def phone(request, vendorname, id):
     id = int(id)
