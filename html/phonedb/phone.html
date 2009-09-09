@@ -22,6 +22,24 @@
 {% endif %}
 {% endblock %}
 
+{% block sidebar %}
+<h3>{% trans "About entry" %}</h3>
+{% if phone.get_author %}
+<p>
+{% blocktrans with phone.get_author|safe as author and phone.created as created %}
+Created by {{ author }} on {{ created }}.
+{% endblocktrans %}
+</p>
+{% else %}
+<p>
+{% blocktrans with phone.created as created %}
+Created on {{ created }}.
+{% endblocktrans %}
+</p>
+{% endif %}
+
+{% endblock %}
+
 {% block content %}
 {% include "phonedb/body.html" %}
 
