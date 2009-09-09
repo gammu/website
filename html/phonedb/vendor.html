@@ -14,6 +14,37 @@
 
 <h2>{{ vendor.name }}</h2>
 
+<p>
+{% trans "Website" %}: <a href="{{ vendor.url }}">{{ vendor.url }}</a>
+</p>
+
+{% if vendor.tuxmobil %}
+<p>
+{% blocktrans with vendor.tuxmobil as tuxurl %}
+Information about phones from this manufacturer is also available on <a
+href="http://tuxmobil.org/phones_survey_{{ tuxurl }}.html">TuxMobil</a>.
+{% endblocktrans %}
+</p>
+{% endif %}
+
+<p>
+{% if phones.object_list %}
+{% blocktrans with phones.paginator.count as count %}
+There is currently {{ count }} approved phone records from this vendor.
+{% endblocktrans %}
+{% else %}
+{% blocktrans %}
+There is currently none phone record from this vendor!
+{% endblocktrans %}
+{% endif %}
+
+{% blocktrans %}
+To change existing entries, simply add new one, they will be reviewed and the
+old ones will get deleted eventually.
+{% endblocktrans %}
+</p>
+
+{% if phones.object_list %}
 {% for phone in phones.object_list %}
 <h3><a href="{{ phone.get_absolute_url }}">{{ phone.name }}</a></h3>
 {% endfor %}
@@ -33,6 +64,7 @@
 <li class="disabled"><span>&raquo;</span></li>
 {% endif %}
 </ul>
+{% endif %}
 
 {% endblock %}
 
