@@ -18,7 +18,7 @@ More information about phone might be available on following sites:
 {% if phone.features %}
 <ul>
 {% for feature in phone.features.all %}
-<li>{{ feature.name }}</li>
+<li>{{ feature.get_description }}</li>
 {% endfor %}
 </ul>
 {% else %}

@@ -1,5 +1,7 @@
 from django.db import models
 
+from django.utils.translation import ugettext_lazy
+
 import markdown
 
 # Create your models here.
@@ -25,6 +27,19 @@ STATE_CHOICES = (
     ('deleted', 'Deleted'),
     )
 
+FEATURE_NAMES = {
+    'info': ugettext_lazy('Phone information'),
+    'sms': ugettext_lazy('Sending and saving SMS'),
+    'mms': ugettext_lazy('Multimedia messaging'),
+    'phonebook': ugettext_lazy('Basic phonebook functions (name and phone number)'),
+    'enhancedphonebook': ugettext_lazy('Enhanced phonebook entries (eg. several numbers per entry)'),
+    'calendar': ugettext_lazy('Calendar entries'),
+    'todo': ugettext_lazy('Todos'),
+    'filesystem': ugettext_lazy('Filesystem manipulation'),
+    'call': ugettext_lazy('Reading and making calls'),
+    'logo': ugettext_lazy('Logos'),
+    'ringtone': ugettext_lazy('Ringtones'),
+}
 
 class Vendor(models.Model):
     name = models.CharField(max_length = 250)
@@ -44,6 +59,9 @@ class Feature(models.Model):
 
     def __unicode__(self):
         return self.name
+
+    def get_description(self):
+        return FEATURE_NAMES[self.name]
 
 class Connection(models.Model):
     name = models.CharField(max_length = 250)
