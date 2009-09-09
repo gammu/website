@@ -55,6 +55,13 @@ urlpatterns = patterns('',
     (r'^download/(?P<program>[^/]*)/(?P<version>[0-9.]*)/$', 'downloads.views.release'),
     (r'^download/(?P<program>[^/]*)/(?P<platform>[^/]*)/$', 'downloads.views.list'),
 
+    # Phone database
+    (r'^phones/$', 'phonedb.views.index'),
+    (r'^phones/feature/(?P<featurename>[^/]*)/$', 'phonedb.views.feature'),
+    (r'^phones/search/$', 'phonedb.views.search'),
+    (r'^phones/(?P<vendorname>[^/]*)/$', 'phonedb.views.vendor'),
+    (r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/$', 'phonedb.views.phone'),
+
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs'
     # to INSTALLED_APPS to enable admin documentation:
     (r'^admin/doc/', include('django.contrib.admindocs.urls')),

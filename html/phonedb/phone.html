@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ vendor.name }} {{ phone.name }}{% endblock %}
+
+{% block content %}
+{% include "phonedb/body.html" %}
+
+{% endblock %}
+

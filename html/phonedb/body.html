@@ -1,0 +1,24 @@
+{% load i18n %}
+
+<h2>{{ vendor.name }} {{ phone.name }}</h2>
+
+<h3>{% trans "Supported Features" %}</h3>
+
+{% if phone.features %}
+<ul>
+{% for feature in phone.features.all %}
+<li>{{ feature.name }}</li>
+{% endfor %}
+</ul>
+{% else %}
+<p>{% trans "No features supported!" %}</p>
+{% endif %}
+
+{% if phone.note_html %}
+
+<h3>{% trans "Reporter Note" %}</h3>
+
+{{ phone.note_html|safe }}
+
+{% endif %}
+
