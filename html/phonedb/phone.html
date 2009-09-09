@@ -4,6 +4,11 @@
 {% block title %}{{ vendor.name }} {{ phone.name }}{% endblock %}
 
 {% block sidebar_top %}
+<h3>{% trans "Navigation" %}</h3>
+<ul>
+<li><a href="/phones">Phones Database</a></li>
+<li><a href="{{ vendor.get_absolute_url }}">{{ vendor.name }}</a></li>
+</ul>
 <h3>{% trans "Similar Phones" %}</h3>
 
 {% if related %}
