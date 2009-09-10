@@ -24,6 +24,14 @@ mailing list</a> is open to questions about supported phones.
 {% endblocktrans %}
 </p>
 
+<h3>{% trans "Manufacturers" %}</h3>
+
+{% for vendor in vendors %}
+<a class="vendor" href="{{ vendor.get_absolute_url }}">{{ vendor.name }}
+({{ vendor.get_models_count }})
+</a>
+{% endfor %}
+<div class="clearer"></div>
 
 <h3>{% trans "Recently Added Phones" %}</h3>
 {% include "phonedb/list.html" %}

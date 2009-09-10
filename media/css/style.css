@@ -504,3 +504,15 @@ a.aname {
     color: black;
     text-decoration: none;
 }
+a.vendor {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 10em;
+    margin: 0.4em;
+    padding: 0.4em;
+    border: 1px solid #7C0000;
+}
+a.vendor:hover {
+    background: #fbb400;
+}
