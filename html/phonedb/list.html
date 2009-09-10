@@ -1,0 +1,30 @@
+{% load i18n %}
+<table class="listing">
+<tr>
+<thead>
+<th>{% trans "Name" %}</th><th>{% trans "Connection" %}</th><th>{% trans "Supported features" %}</th></tr>
+</thead>
+
+<tbody>
+{% for phone in phones %}
+<tr>
+<td><a href="{{ phone.get_absolute_url }}">{{vendor.name }} {{ phone.name }}</a></td>
+{% if phone.connection %}
+<td>
+{{ phone.connection.name }}
+</td>
+<td>
+{{ phone.features.all|join:", " }}
+</td>
+{% else %}
+<td>
+{% trans "Not supported" %}
+</td>
+<td>
+</td>
+{% endif %}
+</tr>
+{% endfor %}
+</tbody>
+</table>
+

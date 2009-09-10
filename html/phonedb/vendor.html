@@ -45,34 +45,9 @@ old ones will get deleted eventually.
 </p>
 
 {% if phones.object_list %}
-<table class="listing">
-<tr>
-<thead>
-<th>{% trans "Name" %}</th><th>{% trans "Connection" %}</th><th>{% trans "Supported features" %}</th></tr>
-</thead>
-
-<tbody>
-{% for phone in phones.object_list %}
-<tr>
-<td><a href="{{ phone.get_absolute_url }}">{{vendor.name }} {{ phone.name }}</a></td>
-{% if phone.connection %}
-<td>
-{{ phone.connection.name }}
-</td>
-<td>
-{{ phone.features.all|join:", " }}
-</td>
-{% else %}
-<td>
-{% trans "Not supported" %}
-</td>
-<td>
-</td>
-{% endif %}
-</tr>
-{% endfor %}
-</tbody>
-</table>
+{% with phones.object_list as phones %}
+{% include "phonedb/list.html" %}
+{% endwith %}
 
 <ul class="pages">
 {% if phones.has_previous %}
