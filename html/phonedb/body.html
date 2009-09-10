@@ -35,11 +35,13 @@ port = {% ifequal phone.connection.medium "bluetooth" %}BLUETOOTH ADDRESS OF PHO
 connection = {{ phone.connection.name }}
 {% if phone.model %}model = {{ phone.model }}{% endif %}</pre>
 
-{% endif %}
+{% else %}
 
 <p>
 {% trans "Phone is reported not to be supported!" %}
 </p>
+
+{% endif %}
 
 {% if phone.note_html %}
 
