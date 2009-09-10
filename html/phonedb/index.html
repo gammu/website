@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Gammu Phone Database " %}{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "Gammu Phone Database " %}</h2>
+
+<p>
+{% blocktrans %}
+This page tries to collect list of phones supported by <a href="/libgammu">Gammu library</a>. To add model browse to manufacturer page, look whether model hasn't been entered yet and enter new model.
+You can find more information about mobile phones on <a
+href="http://tuxmobil.org/phones_linux.html">TuxMobil</a>.
+{% endblocktrans %}
+</p>
+<p>
+{% blocktrans %}
+This list is filled in by users and thus there can be no warranty
+whether entered information is correct and accurate. If author decided to
+publish his email, you might consider asking him for details. Also <a
+href="https://lists.sourceforge.net/lists/listinfo/gammu-users">gammu-users
+mailing list</a> is open to questions about supported phones.
+{% endblocktrans %}
+</p>
+
+
+<h3>{% trans "Recently Added Phones" %}</h3>
+{% include "phonedb/list.html" %}
+
+{% endblock %}
+
+
+

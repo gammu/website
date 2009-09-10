@@ -8,7 +8,12 @@ from django.conf import settings
 # Create your views here.
 
 def index(request):
-    return
+    vendors = Vendor.objects.all()
+    phones = Phone.objects.filter(state__in = ['approved', 'draft']).order_by('-created')[:settings.PHONES_ON_INDEX]
+    return render_to_response('phonedb/index.html', WammuContext(request, {
+        'vendors': vendors,
+        'phones': phones,
+    }))
 
 def search(request):
     return
