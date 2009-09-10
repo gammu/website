@@ -14,7 +14,9 @@
 {% if related %}
 <ul>
 {% for phone in related %}
-<li><a href="{{ phone.get_absolute_url}}">{{ phone.vendor.name }} {{ phone.name }}</a></li>
+<li><a href="{{ phone.get_absolute_url}}">{{ phone.vendor.name }} 
+{{ phone.name }} 
+({{ phone.connection.name }})</a></li>
 {% endfor %}
 </ul>
 {% else %}
