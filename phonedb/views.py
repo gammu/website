@@ -17,9 +17,12 @@ def index(request):
         'features': Feature.objects.all().order_by('name'),
     }))
 
-def search(request):
+def search(request, featurename = None):
     query = request.GET.get('q', None)
     features = request.GET.getlist('feature')
+
+    if featurename is not None:
+        features.append(featurename)
 
     phones = Phone.objects.exclude(state = 'deleted')
     urlparams = []
@@ -62,9 +65,6 @@ def search(request):
         'phones': phones,
         'urlparams': '&'.join(urlparams),
     }))
-
-def feature(request, featurename):
-    return
 
 def vendor(request, vendorname):
     vendor = get_object_or_404(Vendor, slug = vendorname)

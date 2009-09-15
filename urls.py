@@ -57,8 +57,8 @@ urlpatterns = patterns('',
 
     # Phone database
     (r'^phones/$', 'phonedb.views.index'),
-    (r'^phones/feature/(?P<featurename>[^/]*)/$', 'phonedb.views.feature'),
     (r'^phones/search/$', 'phonedb.views.search'),
+    (r'^phones/search/(?P<featurename>[^/]*)/$', 'phonedb.views.search'),
     (r'^phones/(?P<vendorname>[^/]*)/$', 'phonedb.views.vendor'),
     (r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/$', 'phonedb.views.phone'),
 
