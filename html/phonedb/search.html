@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Search Results" %} - {% trans "Gammu Phone Database " %}{% endblock %}
+
+{% block sidebar_top %}
+<h3>{% trans "Navigation" %}</h3>
+<ul>
+<li><a href="/phones">Phones Database</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "Search Results" %}</h2>
+
+<p>
+{% blocktrans with phones.paginator.count as count %}
+Found {{ count }} results matching your query.
+{% endblocktrans %}
+</p>
+
+{% if phones.object_list %}
+{% with phones.object_list as phones %}
+{% include "phonedb/list.html" %}
+{% endwith %}
+
+<ul class="pages">
+{% if phones.has_previous %}
+<li><a href="?page={{ phones.previous_page_number }}">&laquo;</a></li>
+{% else %}
+<li class="disabled"><span>&laquo;</span></li>
+{% endif %}
+{% for page in phones.paginator.page_range %}
+<li {% ifequal page phones.number %} class="active" {% endifequal %}><a href="?page={{ page }}&{{ urlparams }}">{{ page }}</a></li>
+{% endfor %}
+{% if phones.has_next %}
+<li><a href="?page={{ phones.next_page_number }}">&raquo;</a></li>
+{% else %}
+<li class="disabled"><span>&raquo;</span></li>
+{% endif %}
+</ul>
+{% endif %}
+
+{% endblock %}
+
+
+

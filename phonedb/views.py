@@ -22,15 +22,18 @@ def search(request):
     features = request.GET.getlist('feature')
 
     phones = Phone.objects.exclude(state = 'deleted')
+    urlparams = []
 
     # Filter for features
     if len(features) > 0:
         phones = phones.filter(connection__isnull = False)
         for feature in features:
+            urlparams.append('feature=%s' % feature)
             phones = phones.filter(features__name = feature)
 
     # Filter for query string
     if query is not None:
+        urlparams.append('q=%s' % query)
         query = query.strip()
         for part in query.split():
             phones = phones.filter(
@@ -52,8 +55,9 @@ def search(request):
     except (EmptyPage, InvalidPage):
         phones = paginator.page(1)
 
-    return render_to_response('phonedb/vendor.html', WammuContext(request, {
+    return render_to_response('phonedb/search.html', WammuContext(request, {
         'phones': phones,
+        'urlparams': '&'.join(urlparams),
     }))
 
 def feature(request, featurename):
