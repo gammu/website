@@ -6,7 +6,88 @@ from django.core.paginator import Paginator, InvalidPage, EmptyPage
 
 from django.conf import settings
 
+import datetime
+from pygooglechart import SimpleLineChart
+from pygooglechart import Axis
+from pygooglechart import Chart
+
 # Create your views here.
+
+def get_chart_url():
+    enddate = datetime.datetime.now()
+    # This works badly, we will rather render only chart for month after
+    # it has finished
+    #+ datetime.timedelta(days=30)
+    endyear = enddate.year
+    endmonthlast = enddate.month
+    endmonth = 12
+
+    dates = []
+    unsupported = []
+    supported = []
+    totals = []
+    alls = []
+    years = []
+
+    for year in xrange(2006, endyear + 1):
+        if year == endyear:
+            endmonth = endmonthlast
+        for month in xrange(1, endmonth + 1):
+            if month == 1:
+                years.append('%d' % year)
+            else:
+                years.append('')
+
+            time_range = (datetime.date(1900, 1, 1), datetime.date(year, month, 1))
+
+            supported_val = Phone.objects.exclude(state = 'deleted').filter(connection__isnull = False).filter(created__range = time_range).count()
+            unsupported_val = Phone.objects.exclude(state = 'deleted').filter(connection__isnull = True).filter(created__range = time_range).count()
+            all_val = Phone.objects.filter(created__lt = datetime.date(year, month, 1)).count()
+
+            print '%d-%02d: %d, %d, %d' % (year, month, all_val, supported_val, unsupported_val)
+            supported.append(supported_val)
+            unsupported.append(unsupported_val)
+            totals.append(unsupported_val + supported_val)
+            alls.append(all_val)
+            dates.append('%d-%02d' % (year, month))
+
+#print dates
+#print unsupported
+#print supported
+#print totals
+#print alls
+
+    max_y = ((max(alls) / 100) + 1) * 100
+
+    chart = SimpleLineChart(600, 300, y_range=[0, max_y])
+
+# Chart data
+    chart.add_data(supported)
+    chart.add_data(totals)
+    chart.add_data(alls)
+# Lowest value
+    chart.add_data([0] * 2)
+
+# Set the line colour to blue
+    chart.set_colours(['00FF00', 'FF0000', '0000FF', '00000000'])
+
+#chart.add_fill_range('76A4FB', 2, 3)
+# Set the vertical stripes
+    month_stripes = 3.0
+    chart.fill_linear_stripes(Chart.CHART, 0, 'CCCCCC', month_stripes / len(alls), 'FFFFFF', month_stripes / len(alls))
+
+# Set the horizontal dotted lines
+    chart.set_grid(0, 10, 5, 5)
+
+    chart.set_legend(['Supported phones', 'Valid records', 'Total records'])
+
+    left_axis = map(lambda x: '%d' % x, xrange(0, max_y + 1, max_y / 10))
+    left_axis[0] = ''
+    chart.set_axis_labels(Axis.LEFT, left_axis)
+
+    chart.set_axis_labels(Axis.BOTTOM, years)
+
+    return chart.get_url()
 
 def index(request):
     vendors = Vendor.objects.all().order_by('name')
@@ -15,6 +96,7 @@ def index(request):
         'vendors': vendors,
         'phones': phones,
         'features': Feature.objects.all().order_by('name'),
+        'chart_url': get_chart_url(),
     }))
 
 def search(request, featurename = None):
