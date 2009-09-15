@@ -524,3 +524,13 @@ p.warning {
     font-weight: bolder;
     padding: 0.5em;
 }
+ul.featuresearch {
+    padding: 0;
+    margin: 0;
+}
+ul.featuresearch li {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+}

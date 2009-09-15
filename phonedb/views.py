@@ -13,6 +13,7 @@ def index(request):
     return render_to_response('phonedb/index.html', WammuContext(request, {
         'vendors': vendors,
         'phones': phones,
+        'features': Feature.objects.all().order_by('name'),
     }))
 
 def search(request):
