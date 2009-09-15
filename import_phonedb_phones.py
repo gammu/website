@@ -15,6 +15,7 @@ sys.path = ['../'] + sys.path
 
 from phonedb.models import Phone, Connection, Vendor, Feature
 import csv
+import datetime
 
 if len(sys.argv) < 2:
     print 'Usage: import_phonedb_phones.py file.csv'
@@ -45,6 +46,8 @@ for (id, vendor, name, features, connection, model, comment, author, email, garb
     phone.hostname = hostname
     phone.gammu_version = gammuver
     phone.save()
+    if created != '':
+        phone.created = datetime.datetime.strptime(created, '%Y-%m-%d %H:%M:%S')
     # features
     if features != '':
         for feature in features.split(','):
