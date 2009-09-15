@@ -40,6 +40,9 @@ def search(request):
                 Q(vendor__name__icontains = part) |
                 Q(name__icontains = part))
 
+    # Sort results
+    phones = phones.order_by('vendor__name', 'name')
+
     paginator = Paginator(phones, settings.PHONES_PER_PAGE, orphans = 5)
     try:
         page = int(request.GET.get('page', '1'))
