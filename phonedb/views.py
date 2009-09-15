@@ -1,4 +1,5 @@
 from django.shortcuts import render_to_response, get_object_or_404
+from django.db.models import Q
 from wammu_web.wammu.helpers import WammuContext
 from wammu_web.phonedb.models import Vendor, Phone, Feature
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
@@ -17,7 +18,43 @@ def index(request):
     }))
 
 def search(request):
-    return
+    query = request.GET.get('q', None)
+    features = request.GET.getlist('feature')
+
+    phones = Phone.objects.exclude(state = 'deleted')
+
+    # Filter for features
+    if len(features) > 0:
+        phones = phones.filter(connection__isnull = False)
+        for feature in features:
+            phones = phones.filter(features__name = feature)
+
+    # Filter for query string
+    if query is not None:
+        query = query.strip()
+        for part in query.split():
+            phones = phones.filter(
+                Q(vendor__name__icontains = part) |
+                Q(name__icontains = part))
+
+    paginator = Paginator(phones, settings.PHONES_PER_PAGE, orphans = 5)
+    try:
+        page = int(request.GET.get('page', '1'))
+        if page < 1:
+            page = 0
+        elif page > paginator.num_pages:
+            page = paginator.num_pages
+    except ValueError:
+        page = 1
+
+    try:
+        phones = paginator.page(page)
+    except (EmptyPage, InvalidPage):
+        phones = paginator.page(1)
+
+    return render_to_response('phonedb/vendor.html', WammuContext(request, {
+        'phones': phones,
+    }))
 
 def feature(request, featurename):
     return
