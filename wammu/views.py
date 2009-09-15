@@ -3,6 +3,7 @@ from wammu_web.wammu.helpers import WammuContext
 from wammu_web.news.models import Entry
 from wammu_web.screenshots.models import Screenshot
 from wammu_web.downloads.models import Release
+from wammu_web.phonedb.models import Phone
 from downloads.models import Download, Release, Mirror, get_current_downloads
 from downloads.views import get_mirrors
 
@@ -18,11 +19,13 @@ def index(request):
 
     news = Entry.objects.order_by('-pub_date')[:settings.NEWS_ON_MAIN_PAGE]
     screenshot = Screenshot.objects.filter(featured = True).order_by('?')[0]
+    phones = Phone.objects.filter(state__in = ['approved', 'draft']).order_by('-created')[:settings.PHONES_ON_MAIN_PAGE]
     return render_to_response('index.html', WammuContext(request, {
         'news': news,
         'screenshot': screenshot,
         'downloads': downloads,
         'mirror': mirror,
+        'phones': phones,
     }))
 
 def wammu(request):
