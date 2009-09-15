@@ -516,3 +516,7 @@ a.vendor {
 a.vendor:hover {
     background: #fbb400;
 }
+table.listing { 
+    margin: 1em;
+}
+
