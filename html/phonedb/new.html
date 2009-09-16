@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Create New Record" %} - {% trans "Gammu Phone Database " %}{% endblock %}
+
+{% block sidebar_top %}
+<h3>{% trans "Navigation" %}</h3>
+<ul>
+<li><a href="/phones">Phones Database</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "Create New Record" %}</h2>
+
+<form action="/phones/new/" method="POST">
+<table>
+{{ form.as_table }}
+</table>
+<input type="submit" value="{% trans "Go" %}" />
+</form>
+
+
+{% endblock %}

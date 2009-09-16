@@ -1,15 +1,15 @@
-from django.forms import ModelForm
+from django.forms import ModelForm, Form
 from django.db import models
 from django import forms
 
-from wammu_web.phonedb.models import Feature
+from wammu_web.phonedb.models import Feature, Phone
 
 from django.utils.translation import ugettext_lazy
 from django.utils.safestring import mark_safe
 
 
 
-class SearchForm(forms.Form):
+class SearchForm(Form):
     q = forms.CharField(label = ugettext_lazy('Search text'), required = False)
     feature = forms.MultipleChoiceField(
         label = ugettext_lazy('Features'),
@@ -20,3 +20,19 @@ class SearchForm(forms.Form):
                 ) for f in Feature.objects.all()],
         widget = forms.CheckboxSelectMultiple
         )
+
+class NewForm(ModelForm):
+    class Meta:
+        model = Phone
+        fields = (
+            'name',
+            'vendor',
+            'connection',
+            'features',
+            'model',
+            'gammu_version',
+            'note',
+            'author_name',
+            'author_email',
+            'email_garble')
+

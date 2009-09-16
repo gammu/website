@@ -16,7 +16,7 @@ from pygooglechart import SimpleLineChart
 from pygooglechart import Axis
 from pygooglechart import Chart
 
-from wammu_web.phonedb.forms import SearchForm
+from wammu_web.phonedb.forms import SearchForm, NewForm
 
 # Create your views here.
 
@@ -247,3 +247,15 @@ def phones_csv(request):
 
     return response
 
+def create(request):
+    if request.method == 'POST':
+        form = NewForm(request.POST)
+        if form.is_valid():
+            return 'saved'
+    else:
+        form = NewForm()
+
+    return render_to_response('phonedb/new.html', WammuContext(request, {
+        'form': form,
+        'feeds': get_feeds(),
+    }))
