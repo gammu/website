@@ -106,7 +106,7 @@ def get_chart_url():
 
 def get_feeds():
     return [
-        {'url': '/phones/rss/', 'title': _('Gammu Phone Database News Feed (RSS)'), 'type': 'application/rss+xml'},
+        {'url': '/phones/rss/', 'title': _('Gammu Phone Database Feed (RSS)'), 'type': 'application/rss+xml'},
         {'url': '/phones/atom/', 'title': _('Gammu Phone Database Feed (Atom)'), 'type': 'application/atom+xml'},
         ]
 
