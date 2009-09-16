@@ -43,6 +43,39 @@ Created on {{ created }}.
 {% endblock %}
 
 {% block content %}
+<h2>{{ vendor.name }} {{ phone.name }}</h2>
+
+{% ifequal phone.state "deleted" %}
+<p class="warning">
+{% blocktrans %}
+This record has been rejected for some reasons, you might want to check other
+records for same model (you can see them on right side).
+{% endblocktrans %}
+</p>
+{% endifequal %}
+{% ifequal phone.state "draft" %}
+<p class="warning">
+{% blocktrans %}
+This record has not been approved yet. This means that it might contain false
+information or there are better records for the same model (you can see them
+on right side).
+{% endblocktrans %}
+</p>
+{% endifequal %}
+
+
+<p>
+{% blocktrans %}
+More information about phone might be available on following sites:
+{% endblocktrans %}
+
+<ul>
+{% for link in phone.get_related_sites %}
+<li><a href="{{ link.url }}">{{ link.name }}</a></li>
+{% endfor %}
+</ul>
+
+
 {% include "phonedb/body.html" %}
 
 {% endblock %}
