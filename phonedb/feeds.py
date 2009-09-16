@@ -11,6 +11,8 @@ class RssPhonesFeed(Feed):
     description = _('Gammu phone database updates.')
     copyright = 'Copyright © 2003 - 2009 Michal Čihař'
     item_copyright = copyright
+    title_template ='feeds/phones_title.html'
+    description_template = 'feeds/phones_description.html'
 
     def categories(self):
         print [x.name for x in Vendor.objects.all()]
