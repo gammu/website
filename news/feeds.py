@@ -11,6 +11,8 @@ class RssNewsFeed(Feed):
     description = _('Updates about Wammu and Gammu programs.')
     copyright = 'Copyright © 2003 - 2009 Michal Čihař'
     item_copyright = copyright
+    title_template ='feeds/news_title.html'
+    description_template = 'feeds/news_description.html'
 
     def categories(self):
         print [x.title for x in Category.objects.all()]
