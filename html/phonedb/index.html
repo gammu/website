@@ -57,6 +57,17 @@ mailing list</a> is open to questions about supported phones.
 <h3>{% trans "Recently Added Phones" %}</h3>
 {% include "phonedb/list.html" %}
 
+<h3>{% trans "Phone Records Summary" %}</h3>
+
+
+<p>
+{% blocktrans %}
+On following chart, you can see how number of records in phone database
+evolves over time. The rough step at the beginning is caused by absence of
+timestamp data.
+{% endblocktrans %}
+</p>
+
 <img src="{{ chart_url }}" />
 
 {% endblock %}
