@@ -4,6 +4,7 @@ from wammu_web.wammu.helpers import WammuContext
 from wammu_web.phonedb.models import Vendor, Phone, Feature
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from django.core.cache import cache
+from django.utils.translation import ugettext as _
 
 from django.conf import settings
 
@@ -98,6 +99,13 @@ def get_chart_url():
     cache.set('phonedb-chart-url', url, 3600)
     return url
 
+def get_feeds():
+    return [
+        {'url': '/phones/rss/', 'title': _('Gammu Phone Database News Feed (RSS)'), 'type': 'application/rss+xml'},
+        {'url': '/phones/atom/', 'title': _('Gammu Phone Database Feed (Atom)'), 'type': 'application/atom+xml'},
+        ]
+
+
 def index(request):
     vendors = Vendor.objects.all().order_by('name')
     phones = Phone.objects.filter(state__in = ['approved', 'draft']).order_by('-created')[:settings.PHONES_ON_INDEX]
@@ -106,6 +114,7 @@ def index(request):
         'phones': phones,
         'features': Feature.objects.all().order_by('name'),
         'chart_url': get_chart_url(),
+        'feeds': get_feeds(),
     }))
 
 def search(request, featurename = None):
@@ -155,6 +164,7 @@ def search(request, featurename = None):
     return render_to_response('phonedb/search.html', WammuContext(request, {
         'phones': phones,
         'urlparams': '&'.join(urlparams),
+        'feeds': get_feeds(),
     }))
 
 def vendor(request, vendorname):
@@ -179,6 +189,7 @@ def vendor(request, vendorname):
     return render_to_response('phonedb/vendor.html', WammuContext(request, {
         'vendor': vendor,
         'phones': phones,
+        'feeds': get_feeds(),
     }))
 
 def phone(request, vendorname, id):
@@ -190,4 +201,5 @@ def phone(request, vendorname, id):
         'vendor': vendor,
         'phone': phone,
         'related': related,
+        'feeds': get_feeds(),
     }))

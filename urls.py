@@ -1,9 +1,15 @@
 from django.conf.urls.defaults import *
 from news.feeds import RssNewsFeed, AtomNewsFeed
+from phonedb.feeds import RssPhonesFeed, AtomPhonesFeed
 
-feeds = {
+newsfeeds = {
     'rss': RssNewsFeed,
     'atom': AtomNewsFeed,
+}
+
+phonesfeeds = {
+    'rss': RssPhonesFeed,
+    'atom': AtomPhonesFeed,
 }
 
 from django.contrib import admin
@@ -42,7 +48,7 @@ urlpatterns = patterns('',
 
     # RSS feeds
     (r'^news/(?P<url>(rss|atom).*)/$', 'django.contrib.syndication.views.feed',
-        {'feed_dict': feeds}),
+        {'feed_dict': newsfeeds}),
 
     # News
     (r'^news/$', 'news.views.index'),
@@ -54,6 +60,10 @@ urlpatterns = patterns('',
     (r'^download/(?P<program>[^/]*)/$', 'downloads.views.program'),
     (r'^download/(?P<program>[^/]*)/(?P<version>[0-9.]*)/$', 'downloads.views.release'),
     (r'^download/(?P<program>[^/]*)/(?P<platform>[^/]*)/$', 'downloads.views.list'),
+
+    # RSS feeds
+    (r'^phones/(?P<url>(rss|atom).*)/$', 'django.contrib.syndication.views.feed',
+        {'feed_dict': phonesfeeds}),
 
     # Phone database
     (r'^phones/$', 'phonedb.views.index'),
