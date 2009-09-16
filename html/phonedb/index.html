@@ -24,6 +24,15 @@ href="/phones/search/{{ feature.name }}">link</a>]</label>
 </form>
 {% endblock %}
 
+{% block sidebar %}
+<h3>{% trans "Syndication" %}</h3>
+<ul>
+<li><a href="/phones/rss/">{% trans "RSS" %}</a></li>
+<li><a href="/phones/atom/">{% trans "Atom" %}</a></li>
+<li><a href="/phones/csv/">{% trans "CSV" %}</a></li>
+</ul>
+{% endblock %}
+
 {% block content %}
 
 <h2>{% trans "Gammu Phone Database " %}</h2>
