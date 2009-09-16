@@ -19,10 +19,14 @@ class WammuContext(RequestContext):
             {'title': 'Documentation', 'link': '/docs/'},
             {'title': 'Contribute', 'link': '/contribute/'},
             ]
-        context['feeds'] = [
-            {'url': '/news/rss/', 'title': _('Gammu and Wammu News Feed (RSS)'), 'type': 'application/rss+xml'},
-            {'url': '/news/atom/', 'title': _('Gammu and Wammu News Feed (Atom)'), 'type': 'application/atom+xml'},
-        ]
+        if not context.has_key('feeds'):
+            context['feeds'] = []
+        context['feeds'].append(
+            {'url': '/news/rss/', 'title': _('Gammu and Wammu News Feed (RSS)'), 'type': 'application/rss+xml'}
+            )
+        context['feeds'].append(
+            {'url': '/news/atom/', 'title': _('Gammu and Wammu News Feed (Atom)'), 'type': 'application/atom+xml'}
+            )
         RequestContext.__init__(self, request, context)
 
 def process_bug_links(text):
