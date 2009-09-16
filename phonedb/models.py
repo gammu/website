@@ -150,7 +150,7 @@ class Phone(models.Model):
             return self.get_author_email()
         return self.author_name
 
-    def get_author(self):
+    def get_author(self, html = True):
         if self.email_garble == 'hide':
             return None
 
@@ -160,4 +160,9 @@ class Phone(models.Model):
         if name is None:
             return None
 
-        return '<a href="mailto:%s">%s</a>' % (mail, name)
+        if html:
+            return '<a href="mailto:%s">%s</a>' % (mail, name)
+        else:
+            if mail == name:
+                return mail
+            return '%s (%s)' % (name, mail)
