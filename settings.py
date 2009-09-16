@@ -74,7 +74,9 @@ TEMPLATE_LOADERS = (
 )
 
 MIDDLEWARE_CLASSES = (
+    'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
 )
@@ -134,3 +136,5 @@ THUMBNAIL_SIZE = (180, 180)
 
 SEND_BROKEN_LINK_EMAILS = True
 SERVER_EMAIL = 'django@wammu.eu'
+
+CACHE_BACKEND = 'db://cache'
