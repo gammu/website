@@ -14,6 +14,13 @@
 
 <h2>{% trans "Search Results" %}</h2>
 
+<form action="/phones/search/" method="GET">
+<table>
+{{ form.as_table }}
+</table>
+<input type="submit" value="{% trans "Go" %}" />
+</form>
+
 <p>
 {% blocktrans with phones.paginator.count as count %}
 Found {{ count }} results matching your query.

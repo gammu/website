@@ -16,6 +16,8 @@ from pygooglechart import SimpleLineChart
 from pygooglechart import Axis
 from pygooglechart import Chart
 
+from wammu_web.phonedb.forms import SearchForm
+
 # Create your views here.
 
 def get_chart_url():
@@ -121,8 +123,11 @@ def index(request):
     }))
 
 def search(request, featurename = None):
-    query = request.GET.get('q', None)
-    features = request.GET.getlist('feature')
+    form = SearchForm(request.GET)
+    if not form.is_valid():
+        return ''
+    query = form.cleaned_data['q']
+    features = form.cleaned_data['feature']
 
     if featurename is not None:
         features.append(featurename)
@@ -168,6 +173,7 @@ def search(request, featurename = None):
         'phones': phones,
         'urlparams': '&'.join(urlparams),
         'feeds': get_feeds(),
+        'form': form,
     }))
 
 def vendor(request, vendorname):
