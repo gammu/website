@@ -64,6 +64,7 @@ urlpatterns = patterns('',
     # RSS feeds
     (r'^phones/(?P<url>(rss|atom).*)/$', 'django.contrib.syndication.views.feed',
         {'feed_dict': phonesfeeds}),
+    (r'^phones/csv/$', 'phonedb.views.phones_csv'),
 
     # Phone database
     (r'^phones/$', 'phonedb.views.index'),

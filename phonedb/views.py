@@ -5,8 +5,11 @@ from wammu_web.phonedb.models import Vendor, Phone, Feature
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from django.core.cache import cache
 from django.utils.translation import ugettext as _
+import csv
+from django.http import HttpResponse
 
 from django.conf import settings
+from django.contrib.sites.models import Site, RequestSite
 
 import datetime
 from pygooglechart import SimpleLineChart
@@ -203,3 +206,38 @@ def phone(request, vendorname, id):
         'related': related,
         'feeds': get_feeds(),
     }))
+
+def phones_csv(request):
+    # Create the HttpResponse object with the appropriate CSV header.
+    response = HttpResponse(mimetype='text/csv')
+    response['Content-Disposition'] = 'attachment; filename=gammu-phones.csv'
+
+    writer = csv.writer(response)
+    phones = Phone.objects.filter(state__in = ['approved', 'draft']).order_by('id')
+    writer.writerow(['Link','Manufacturer','Name','Author','Date','Connection','Features','Gammu-Version'])
+    if Site._meta.installed:
+        current_site = Site.objects.get_current()
+    else:
+        current_site = RequestSite(self.request)
+    for phone in phones:
+        if phone.connection is None:
+            conn = ''
+        else:
+            conn = phone.connection.name
+        author = phone.get_author(html = False)
+        if author is None:
+            author = ''
+        writer.writerow([
+            'http://%s%s' % (current_site, phone.get_absolute_url()),
+            phone.vendor.name.encode('utf8'),
+            phone.name.encode('utf8'),
+            author.encode('utf8'),
+            phone.created.isoformat().encode('utf8'),
+            conn.encode('utf8'),
+            u','.join([f.name for f in phone.features.all()]).encode('utf8'),
+            phone.gammu_version.encode('utf8')
+            ])
+
+
+    return response
+
