@@ -130,23 +130,34 @@ class Phone(models.Model):
     def get_absolute_url(self):
         return ('phonedb.views.phone', (), {'vendorname': self.vendor.slug, 'id': self.id })
 
+    def get_author_email(self):
+        if self.author_email == '':
+            return None
+        elif self.email_garble == 'hide':
+            return None
+        elif self.email_garble == 'none':
+            return self.author_email
+        elif self.email_garble == 'atdot':
+            return self.author_email.replace('@', '[at]').replace('.', '[dot]')
+        else:
+            pos = random.randint(0, len(self.author_email))
+            return self.author_email[:pos] + 'NOSPAM' + self.author_email[pos:]
+
+    def get_author_name(self):
+        if self.email_garble == 'hide':
+            return None
+        if self.author_name == '':
+            return self.get_author_email()
+        return self.author_name
+
     def get_author(self):
         if self.email_garble == 'hide':
             return None
 
-        if self.author_email == '':
-            if self.author_name == '':
-                return None
-            return self.author_name
+        mail = self.get_author_email()
+        name = self.get_author_name()
 
-        if self.email_garble == 'none':
-            mail = self.author_email
-        elif self.email_garble == 'atdot':
-            mail = self.author_email.replace('@', '[at]').replace('.', '[dot]')
-        else:
-            pos = random.randint(0, len(self.author_email))
-            mail = self.author_email[:pos] + 'NOSPAM' + self.author_email[pos:]
+        if name is None:
+            return None
 
-        if self.author_name == '':
-            return '<a href="mailto:%s">%s</a>' % (mail, mail)
-        return '<a href="mailto:%s">%s</a>' % (mail, self.author_name)
+        return '<a href="mailto:%s">%s</a>' % (mail, name)
