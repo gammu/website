@@ -81,7 +81,7 @@ class Phone(models.Model):
     features = models.ManyToManyField(Feature, blank = True)
     model = models.CharField(max_length = 100, blank = True)
     gammu_version = models.CharField(max_length = 100, blank = True)
-    note = models.TextField()
+    note = models.TextField(blank = True)
     note_html = models.TextField(editable = False, blank = True)
     author_name = models.CharField(max_length = 250, blank = True)
     author_email = models.EmailField(max_length = 250, blank = True)
