@@ -3,6 +3,7 @@ from django.db.models import Q
 from wammu_web.wammu.helpers import WammuContext
 from wammu_web.phonedb.models import Vendor, Phone, Feature
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
+from django.core.cache import cache
 
 from django.conf import settings
 
@@ -14,6 +15,9 @@ from pygooglechart import Chart
 # Create your views here.
 
 def get_chart_url():
+    url = cache.get('phonedb-chart-url')
+    if url is not None:
+        return url
     enddate = datetime.datetime.now()
     # This works badly, we will rather render only chart for month after
     # it has finished
@@ -90,7 +94,9 @@ def get_chart_url():
 
     chart.set_axis_labels(Axis.BOTTOM, years)
 
-    return chart.get_url()
+    url = chart.get_url()
+    cache.set('phonedb-chart-url', url, 3600)
+    return url
 
 def index(request):
     vendors = Vendor.objects.all().order_by('name')
