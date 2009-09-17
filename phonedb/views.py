@@ -54,7 +54,6 @@ def get_chart_url():
             unsupported_val = Phone.objects.exclude(state = 'deleted').filter(connection__isnull = True).filter(created__range = time_range).count()
             all_val = Phone.objects.filter(created__lt = datetime.date(year, month, 1)).count()
 
-            print '%d-%02d: %d, %d, %d' % (year, month, all_val, supported_val, unsupported_val)
             supported.append(supported_val)
             unsupported.append(unsupported_val)
             totals.append(unsupported_val + supported_val)
