@@ -1,5 +1,8 @@
 - phonedb
+    - add new
+    - interface for wammu
 - donations
     - listing on /donate/list
     - allow user to hide details
     - remeber settings (through session)
+- send email on new release to mailing list
