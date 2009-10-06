@@ -252,7 +252,11 @@ def create(request):
         if form.is_valid():
             return 'saved'
     else:
-        form = NewForm()
+        try:
+            vendor = Vendor.objects.get(slug = request.GET['vendor'])
+            form = NewForm(initial = {'vendor': vendor.id})
+        except:
+            form = NewForm()
 
     return render_to_response('phonedb/new.html', WammuContext(request, {
         'form': form,
