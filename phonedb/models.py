@@ -77,7 +77,7 @@ class Connection(models.Model):
 class Phone(models.Model):
     name = models.CharField(max_length = 250)
     vendor = models.ForeignKey(Vendor)
-    connection = models.ForeignKey(Connection, null = True)
+    connection = models.ForeignKey(Connection, null = True, blank = True)
     features = models.ManyToManyField(Feature, blank = True)
     model = models.CharField(max_length = 100, blank = True)
     gammu_version = models.CharField(max_length = 100, blank = True)
