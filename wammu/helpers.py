@@ -13,11 +13,11 @@ class WammuContext(RequestContext):
         context['current_year'] = datetime.now().strftime('%Y')
         context['generated'] = datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT')
         context['menu'] = [
-            {'title': 'Support', 'link': '/support/'},
-            {'title': 'Download', 'link': '/download/'},
-            {'title': 'Screenshots', 'link': '/screenshots/'},
-            {'title': 'Documentation', 'link': '/docs/'},
-            {'title': 'Contribute', 'link': '/contribute/'},
+            {'title': _('Support'), 'link': '/support/'},
+            {'title': _('Download'), 'link': '/download/'},
+            {'title': _('Screenshots'), 'link': '/screenshots/'},
+            {'title': _('Documentation'), 'link': '/docs/'},
+            {'title': _('Contribute'), 'link': '/contribute/'},
             ]
         if not context.has_key('feeds'):
             context['feeds'] = []
