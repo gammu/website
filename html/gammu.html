@@ -31,32 +31,7 @@ phones. Generally following features are supported:
 {% endblocktrans %}
 </p>
 
-<ul>
-<li>{% blocktrans %}
-Call listing, initiating and handling
-{% endblocktrans %}</li>
-<li>{% blocktrans %}
-SMS retrieval, backup and sending
-{% endblocktrans %}</li>
-<li>{% blocktrans %}
-MMS retrieval
-{% endblocktrans %}</li>
-<li>{% blocktrans %}
-Phonebook listing, export and import (also from standard formats such as
-vCard)
-{% endblocktrans %}</li>
-<li>{% blocktrans %}
-Calendar and tasks listing, export and import (also from standard formats such as
-vCalendar or iCalendar)
-{% endblocktrans %}</li>
-<li>{% blocktrans %}
-Retrieval of phone and network information
-{% endblocktrans %}</li>
-<li>{% blocktrans %}
-Access to phone file system (note that some phones work also as USB storage
-devices and those are not accessible through Gammu)
-{% endblocktrans %}</li>
-</ul>
+{% include "gammu-features.html" %}
 
 <p>
 {% blocktrans %}
