@@ -35,11 +35,11 @@ class NewForm(ModelForm):
     class Meta:
         model = Phone
         fields = (
-            'name',
             'vendor',
+            'name',
             'connection',
-            'features',
             'model',
+            'features',
             'gammu_version',
             'note',
             'author_name',
