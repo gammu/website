@@ -6,6 +6,7 @@ from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from django.core.cache import cache
 from django.utils.translation import ugettext as _
 import csv
+import socket
 from django.http import HttpResponse, HttpResponseRedirect
 
 
@@ -252,6 +253,9 @@ def create(request):
         form = NewForm(request.POST)
         if form.is_valid():
             newphone = form.save()
+            newphone.address = request.META.get('REMOTE_ADDR')
+            newphone.hostname = socket.gethostbyaddr(newphone.address)[0]
+            newphone.save()
             result = HttpResponseRedirect(newphone.get_absolute_url())
             request.session['message'] = _('Phone record has been created.')
             result.set_cookie('phonedb_garble', form.cleaned_data['email_garble'], max_age = 3600 * 24 * 365)
