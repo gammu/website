@@ -6,7 +6,8 @@ from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from django.core.cache import cache
 from django.utils.translation import ugettext as _
 import csv
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
+
 
 from django.conf import settings
 from django.contrib.sites.models import Site, RequestSite
@@ -250,8 +251,13 @@ def create(request):
     if request.method == 'POST':
         form = NewForm(request.POST)
         if form.is_valid():
-            form.save()
-#            return 'saved'
+            newphone = form.save()
+            result = HttpResponseRedirect(newphone.get_absolute_url())
+            request.session['message'] = _('Phone record has been created.')
+            result.set_cookie('phonedb_garble', form.cleaned_data['email_garble'], max_age = 3600 * 24 * 365)
+            result.set_cookie('phonedb_author', form.cleaned_data['author_name'], max_age = 3600 * 24 * 365)
+            result.set_cookie('phonedb_email', form.cleaned_data['author_email'], max_age = 3600 * 24 * 365)
+            return result
     else:
         try:
             vendor = Vendor.objects.get(slug = request.GET['vendor'])

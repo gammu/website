@@ -27,6 +27,9 @@ class WammuContext(RequestContext):
         context['feeds'].append(
             {'url': '/news/atom/', 'title': _('Gammu and Wammu News Feed (Atom)'), 'type': 'application/atom+xml'}
             )
+        if request.session.has_key('message'):
+            context['message'] = request.session['message']
+            del request.session['message']
         RequestContext.__init__(self, request, context)
 
 def process_bug_links(text):

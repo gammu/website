@@ -524,6 +524,11 @@ p.warning {
     font-weight: bolder;
     padding: 0.5em;
 }
+p.message {
+    border: 1px solid #7C0000;
+    font-weight: bolder;
+    padding: 0.5em;
+}
 ul.featuresearch {
     padding: 0;
     margin: 0;
