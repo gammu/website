@@ -406,7 +406,7 @@ msgid ""
 "\n"
 "libGammu is core library of Gammu project. It provides abstraction layer to\n"
 "work with different cell phones from different vendors (including Nokia,\n"
-"Sony-Ericssonn, Motorola, Samsung, Siemens, Huawei and others). Using this\n"
+"Sony-Ericsson, Motorola, Samsung, Siemens, Huawei and others). Using this\n"
 "library you can talk to any phone using standard API.\n"
 msgstr ""
 
