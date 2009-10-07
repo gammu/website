@@ -1724,8 +1724,9 @@ msgid ""
 msgstr ""
 
 #: html/screenshots/contrib_index.html:5 html/screenshots/contrib_index.html:8
+#, fuzzy
 msgid "Third Party Screenshots"
-msgstr ""
+msgstr "Obrázky"
 
 #: html/screenshots/gammu_index.html:5 html/screenshots/gammu_index.html:8
 #, fuzzy
