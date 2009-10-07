@@ -248,7 +248,7 @@ def phones_csv(request):
     return response
 
 def create(request):
-    if request.method == 'POST':
+    if request.method == 'POST' and request.POST.has_key('irobot') and request.POST['irobot'] in ['nospam', 'wammu']:
         form = NewForm(request.POST)
         if form.is_valid():
             newphone = form.save()

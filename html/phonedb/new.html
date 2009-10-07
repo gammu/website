@@ -17,8 +17,21 @@
 <form action="/phones/new/" method="POST">
 <table>
 {{ form.as_table }}
-</table>
+<tr><td colspan="2">
+<noscript>{% trans "Please enter text 'nospam':" %} <input name="irobot" size="6" /></noscript>
+<script type="text/javascript">
+//<![CDATA[
+document.write(String.fromCharCode(60) + 'input type="hidden" name="irobot" value="no' + 'spam" />');
+//]]>
+</script>
+</td>
+</tr>
+<tr><td></td>
+<td>
 <input type="submit" value="{% trans "Go" %}" />
+</td>
+</tr>
+</table>
 </form>
 
 
