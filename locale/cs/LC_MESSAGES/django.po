@@ -645,12 +645,16 @@ msgid "Wammu"
 msgstr "Wammu"
 
 #: html/wammu.html:18
+#, fuzzy
 msgid ""
 "\n"
 "Wammu is mobile phone manager running on Linux, Windows and possibly other\n"
 "platforms, where <a href=\"/libgammu\">libGammu</a> and wxPython works. The\n"
 "communication is made by Gammu library. Currently supported features: \n"
 msgstr ""
+"Wammu je program pro správu telefonů běžící pod Linuxem, Windows a "
+"pravděpodobně i dalšími platformami, kde fungují Gammu a wxPython. "
+"Komunikaci s telefonem obstarává knihovna Gammu."
 
 #: html/wammu.html:26
 #, fuzzy
@@ -776,8 +780,9 @@ msgid ""
 msgstr ""
 
 #: html/contribute/code.html:66
+#, fuzzy
 msgid "Code Snapshots"
-msgstr ""
+msgstr "Snapshoty SVN"
 
 #: html/contribute/code.html:68
 msgid ""
@@ -1163,8 +1168,9 @@ msgid ""
 msgstr ""
 
 #: html/docs/devel.html:32
+#, fuzzy
 msgid "Gammu Internals"
-msgstr ""
+msgstr "Portál Gammu"
 
 #: html/docs/devel.html:34
 msgid ""
@@ -1429,8 +1435,9 @@ msgid "Website:"
 msgstr "Stránky"
 
 #: html/news/contrib_index.html:5 html/news/contrib_index.html.py:8
+#, fuzzy
 msgid "Third Party News"
-msgstr ""
+msgstr "Obrázky"
 
 #: html/news/gammu_index.html:5 html/news/gammu_index.html.py:8
 #, fuzzy
@@ -1496,8 +1503,9 @@ msgid "Supported Features"
 msgstr "Podporované funkce"
 
 #: html/phonedb/body.html:13
+#, fuzzy
 msgid "No features supported!"
-msgstr ""
+msgstr "Nebyly zadány žádné funkce!"
 
 #: html/phonedb/body.html:16
 msgid "Configuration"
@@ -1618,8 +1626,9 @@ msgid "Navigation"
 msgstr "Omezení"
 
 #: html/phonedb/new.html:21
+#, fuzzy
 msgid "Please enter text 'nospam':"
-msgstr ""
+msgstr "Prosím zapište zde \"nospam\""
 
 #: html/phonedb/phone.html:11 html/phonedb/vendor.html:10
 msgid "Add new record"
@@ -2034,6 +2043,7 @@ msgid "Jabber conference room"
 msgstr "Konference přes Jabber"
 
 #: html/support/online.html:27
+#, fuzzy
 msgid ""
 "\n"
 "You can solve issues interactively using Jabber conference room <a\n"
@@ -2045,6 +2055,11 @@ msgid ""
 "You can also use web based access to this room using <a\n"
 "href=\"http://jabber.cihar.com/muckl/\">MUCkl</a>.\n"
 msgstr ""
+"Pokud chcete problémy řešit interaktivně, můžete použít Jabber konferenční "
+"místnost  <a "
+"href=\"xmpp:gammu@conference.cihar.com?join\">gammu@conference.cihar.com</a>, "
+"záznamy komunikace jsou dostupné na <a href=\"http://logs.cihar.com/jabber/ga"
+"mmu@conference.cihar.com/\">logs.cihar.com</a>."
 
 #: html/support/online.html:37
 msgid "IRC"
