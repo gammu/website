@@ -22,6 +22,16 @@ class SearchForm(Form):
         )
 
 class NewForm(ModelForm):
+    features = forms.MultipleChoiceField(
+        label = ugettext_lazy('Features'),
+        required = False,
+        choices = [(f.name,
+            ugettext_lazy('%s (%s)') %
+                (f.get_description(), f.name)
+                ) for f in Feature.objects.all()],
+        widget = forms.CheckboxSelectMultiple
+        )
+
     class Meta:
         model = Phone
         fields = (
@@ -36,3 +46,9 @@ class NewForm(ModelForm):
             'author_email',
             'email_garble')
 
+    def save(self, *args, **kwargs):
+        ret = super(ModelForm, self).save(*args, **kwargs)
+        features = self.cleaned_data['features']
+        for f in features:
+            ret.features.add(Feature.objects.get(name = f))
+        return ret

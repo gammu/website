@@ -250,7 +250,8 @@ def create(request):
     if request.method == 'POST':
         form = NewForm(request.POST)
         if form.is_valid():
-            return 'saved'
+            form.save()
+#            return 'saved'
     else:
         try:
             vendor = Vendor.objects.get(slug = request.GET['vendor'])
