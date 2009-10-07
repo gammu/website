@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-07 13:30+0200\n"
-"PO-Revision-Date: 2009-10-07 14:04+0200\n"
+"PO-Revision-Date: 2009-10-07 14:06+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -1269,9 +1269,8 @@ msgid ""
 msgstr ""
 
 #: html/downloads/mirror.html:15
-#, fuzzy
 msgid "Change"
-msgstr "češtině"
+msgstr "Změnit"
 
 #: html/downloads/platformlinks.html:7
 msgid "Debian packages"
