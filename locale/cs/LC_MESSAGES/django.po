@@ -2,7 +2,6 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 # Michal Čihař <michal@cihar.com>, 2009.
 msgid ""
 msgstr ""
@@ -124,8 +123,9 @@ msgid "Search"
 msgstr "Hledej"
 
 #: html/base.html:131
+#, fuzzy
 msgid "Gammu and Wammu authors"
-msgstr ""
+msgstr "Autoři Gammu a Wammu"
 
 #: html/base.html:131
 msgid "Authors"
@@ -240,8 +240,9 @@ msgstr ""
 
 #: html/gammu.html:7 html/libgammu.html:7 html/python-gammu.html:7
 #: html/smsd.html:7 html/wammu.html:7
+#, fuzzy
 msgid "More information"
-msgstr ""
+msgstr "Informace o telefonu"
 
 #: html/gammu.html:15
 msgid "Gammu"
@@ -641,9 +642,12 @@ msgid ""
 msgstr ""
 
 #: html/wammu.html:26
+#, fuzzy
 msgid ""
 "complete support (can read/edit/delete/copy) for contacts, todo, calendar"
 msgstr ""
+"kompletní podpora (čtení, zápis, mazání, kopírování) pro kontakty, úkoly, "
+"kalendář"
 
 #: html/wammu.html:27
 msgid "can read/create/save/send/backup smses"
@@ -691,8 +695,8 @@ msgstr "přeloženo do mnoha jazyků včetně češtiny"
 #: html/wammu.html:35
 msgid "rated as best on many software servers"
 msgstr ""
-"ohodnoceno jako nejlepší na mnoha softwarových serverech (např. slunečnice."
-"cz, instaluj.cz)"
+"ohodnoceno jako nejlepší na mnoha softwarových serverech (např. "
+"slunečnice.cz, instaluj.cz)"
 
 #: html/wammu.html:40
 msgid ""
@@ -898,8 +902,9 @@ msgid ""
 msgstr ""
 
 #: html/contribute/publicity.html:12
+#, fuzzy
 msgid "Publicity for Wammu and Gammu"
-msgstr ""
+msgstr "Podpora pro Wammu a Gammu"
 
 #: html/contribute/publicity.html:15
 msgid ""
@@ -1104,8 +1109,9 @@ msgid "Wammu and Gammu Developer Documentation"
 msgstr ""
 
 #: html/docs/devel.html:9
+#, fuzzy
 msgid "Python Bindings"
-msgstr ""
+msgstr "Modul pro Python"
 
 #: html/docs/devel.html:11
 msgid ""
@@ -1193,8 +1199,9 @@ msgid ""
 msgstr ""
 
 #: html/docs/index.html:29
+#, fuzzy
 msgid "Developer Documentation"
-msgstr ""
+msgstr "Dokumentace pro vývojáře"
 
 #: html/docs/index.html:32
 msgid ""
@@ -1217,10 +1224,11 @@ msgid "Download Wammu and Gammu"
 msgstr ""
 
 #: html/downloads/index.html:12
+#, fuzzy
 msgid ""
 "\n"
 "Download\n"
-msgstr ""
+msgstr "Stáhnout"
 
 #: html/downloads/index.html:18
 msgid ""
@@ -1322,8 +1330,9 @@ msgid ""
 msgstr ""
 
 #: html/downloads/release.html:15
+#, fuzzy
 msgid "Changes"
-msgstr ""
+msgstr "Změnit"
 
 #: html/downloads/release.html:21
 msgid "Files"
@@ -1394,8 +1403,9 @@ msgid "Third Party Applications using Gammu"
 msgstr ""
 
 #: html/links/index.html:22
+#, fuzzy
 msgid "Website:"
-msgstr ""
+msgstr "Stránky"
 
 #: html/news/contrib_index.html:5 html/news/contrib_index.html.py:8
 msgid "Third Party News"
@@ -1406,8 +1416,9 @@ msgid "Gammu News"
 msgstr ""
 
 #: html/news/index.html:4 html/news/index.html.py:31 news/feeds.py:9
+#, fuzzy
 msgid "Wammu and Gammu News"
-msgstr ""
+msgstr "Licence Gammu a Wammu"
 
 #: html/news/index.html:7
 msgid "Follow us on"
@@ -1457,8 +1468,9 @@ msgid "Wammu News"
 msgstr ""
 
 #: html/phonedb/body.html:3
+#, fuzzy
 msgid "Supported Features"
-msgstr ""
+msgstr "Podporované funkce"
 
 #: html/phonedb/body.html:13
 msgid "No features supported!"
@@ -1469,18 +1481,21 @@ msgid "Configuration"
 msgstr "Nastavení"
 
 #: html/phonedb/body.html:27
+#, fuzzy
 msgid "Phone is reported not to be supported!"
-msgstr ""
+msgstr "Tento model je nahlášen jako nepodporovaný."
 
 #: html/phonedb/body.html:34
+#, fuzzy
 msgid "Reporter Note"
-msgstr ""
+msgstr "Poznámka zadavatele (anglicky)"
 
 #: html/phonedb/index.html:4 html/phonedb/index.html.py:38
 #: html/phonedb/new.html:4 html/phonedb/phone.html:4
 #: html/phonedb/search.html:4 html/phonedb/vendor.html:4
+#, fuzzy
 msgid "Gammu Phone Database "
-msgstr ""
+msgstr "Databáze telefonů Gammu"
 
 #: html/phonedb/index.html:10 html/phonedb/index.html.py:23
 #: html/phonedb/new.html:31 html/phonedb/search.html:21
@@ -1510,6 +1525,7 @@ msgid ""
 msgstr ""
 
 #: html/phonedb/index.html:48
+#, fuzzy
 msgid ""
 "\n"
 "This list is filled in by users and thus there can be no warranty\n"
@@ -1519,26 +1535,37 @@ msgid ""
 "users\n"
 "mailing list</a> is open to questions about supported phones.\n"
 msgstr ""
+"Tento seznam je vyplňován uživateli a z toho důvodu nemůže být žádná záruka, "
+"že informace jsou správné a přesné. Pokud se autor rozhodl zveřejnit svůj "
+"email, můžete mu zkusit napsat a požádat o podrobnosti. V případě "
+"pochybností se můžete obrátit na <a "
+"href=\"https://lists.sourceforge.net/lists/listinfo/gammu-users\">mailing list "
+"gammu-users</a>, kde vám určitě někdo rád poradí."
 
 #: html/phonedb/index.html:57
+#, fuzzy
 msgid "Manufacturers"
-msgstr ""
+msgstr "Seznam výrobců"
 
 #: html/phonedb/index.html:66
 msgid "Recently Added Phones"
 msgstr ""
 
 #: html/phonedb/index.html:69
+#, fuzzy
 msgid "Phone Records Summary"
-msgstr ""
+msgstr "Souhrn záznamů v databázi"
 
 #: html/phonedb/index.html:73
+#, fuzzy
 msgid ""
 "\n"
 "On following chart, you can see how number of records in phone database\n"
 "evolves over time. The rough step at the beginning is caused by absence of\n"
 "timestamp data.\n"
 msgstr ""
+"Na následujícím grafu vidíte, jak se vyvíjí počet záznamů během času. Příkrý "
+"schod na začátku je způsoben chybějícími daty."
 
 #: html/phonedb/list.html:5
 msgid "Name"
@@ -1618,14 +1645,16 @@ msgid ""
 msgstr ""
 
 #: html/phonedb/phone.html:69
+#, fuzzy
 msgid ""
 "\n"
 "More information about phone might be available on following sites:\n"
-msgstr ""
+msgstr "Více informací o telefonu může být na následujících stránkách:"
 
 #: html/phonedb/search.html:4 html/phonedb/search.html.py:15
+#, fuzzy
 msgid "Search Results"
-msgstr ""
+msgstr "Výsledky hledání"
 
 #: html/phonedb/search.html:25
 #, python-format
@@ -1681,8 +1710,9 @@ msgid "Wammu and Gammu Screenshots"
 msgstr ""
 
 #: html/screenshots/index.html:9
+#, fuzzy
 msgid "All screenshots"
-msgstr ""
+msgstr "Obrázky programu %s"
 
 #: html/screenshots/wammu_index.html:5 html/screenshots/wammu_index.html:8
 msgid "Wammu Screenshots"
@@ -1988,6 +2018,7 @@ msgid "IRC"
 msgstr "IRC"
 
 #: html/support/online.html:40
+#, fuzzy
 msgid ""
 "\n"
 "You are very welcome to #gammu at irc.freenode.net. Feel free to ask there\n"
@@ -1995,6 +2026,10 @@ msgid ""
 "patiently wait until someone answers. The channel is low volume and it may\n"
 "take a while until someone notices your question.\n"
 msgstr ""
+"Rádi vás uvidíme na kanále #gammu v síti irc.freenode.net. Ptejte se na "
+"cokoliv co vás zajíma. Pokud nedostanete odpověď okamžitě, neděste se a "
+"počkejte dokud někdo odpoví. Na kanále se toho moc neděje a může chvíli "
+"trvat, než si nikdo všimne vašeho dotazu."
 
 #: html/support/online.html:50
 msgid ""
@@ -2025,8 +2060,9 @@ msgid "Updates about Wammu and Gammu programs."
 msgstr ""
 
 #: phonedb/feeds.py:9
+#, fuzzy
 msgid "Gammu Phone Database"
-msgstr ""
+msgstr "Databáze telefonů Gammu"
 
 #: phonedb/feeds.py:11
 msgid "Gammu phone database updates."
