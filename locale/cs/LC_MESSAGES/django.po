@@ -4,18 +4,20 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Michal Čihař <michal@cihar.com>, 2009.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-07 13:30+0200\n"
-"PO-Revision-Date: 2009-10-07 13:36+0200\n"
+"PO-Revision-Date: 2009-10-07 14:04+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Pootle 1.2.1\n"
 
 #: donate/forms.py:14
 msgid "Amount (EUR)"
@@ -671,7 +673,7 @@ msgid ""
 "iCalendar, gammu own backup,...)"
 msgstr ""
 "podpora pro zálohování a import (vCard, vCalendar, vTodo, iCalendar, vlastní "
-"formát Gammu, ...)"
+"formát Gammu,...)"
 
 #: html/wammu.html:32
 msgid ""
