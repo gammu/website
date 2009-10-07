@@ -734,8 +734,9 @@ msgid "Factoids"
 msgstr ""
 
 #: html/contribute/code.html:22
+#, fuzzy
 msgid "Coding for Wammu and Gammu"
-msgstr ""
+msgstr "Podpora pro Wammu a Gammu"
 
 #: html/contribute/code.html:25
 msgid ""
@@ -835,8 +836,9 @@ msgid ""
 msgstr ""
 
 #: html/contribute/index.html:12
+#, fuzzy
 msgid "Contribute to Wammu and Gammu"
-msgstr ""
+msgstr "Podpora pro Wammu a Gammu"
 
 #: html/contribute/index.html:15
 msgid ""
@@ -1138,8 +1140,9 @@ msgid ""
 msgstr ""
 
 #: html/docs/devel.html:20
+#, fuzzy
 msgid "libGammu API"
-msgstr ""
+msgstr "libGammu"
 
 #: html/docs/devel.html:22
 msgid ""
@@ -1181,12 +1184,14 @@ msgid ""
 msgstr ""
 
 #: html/docs/index.html:4 html/docs/index.html.py:7
+#, fuzzy
 msgid "Wammu and Gammu Documentation"
-msgstr ""
+msgstr "Licence Gammu a Wammu"
 
 #: html/docs/index.html:9
+#, fuzzy
 msgid "End User Documentation"
-msgstr ""
+msgstr "Dokumentace pro vývojáře"
 
 #: html/docs/index.html:11
 msgid ""
@@ -1223,16 +1228,18 @@ msgid ""
 msgstr ""
 
 #: html/docs/list_man.html:4 html/docs/list_man.html.py:7
+#, fuzzy
 msgid "Wammu and Gammu Man Pages"
-msgstr ""
+msgstr "Licence Gammu a Wammu"
 
 #: html/docs/show_man.html:7
 msgid "Other man pages"
 msgstr ""
 
 #: html/downloads/index.html:4
+#, fuzzy
 msgid "Download Wammu and Gammu"
-msgstr ""
+msgstr "Podpora pro Wammu a Gammu"
 
 #: html/downloads/index.html:12
 #, fuzzy
@@ -1423,8 +1430,9 @@ msgid "Third Party News"
 msgstr ""
 
 #: html/news/gammu_index.html:5 html/news/gammu_index.html.py:8
+#, fuzzy
 msgid "Gammu News"
-msgstr ""
+msgstr "Gammu SMSD"
 
 #: html/news/index.html:4 html/news/index.html.py:31 news/feeds.py:9
 #, fuzzy
@@ -1600,8 +1608,9 @@ msgstr ""
 
 #: html/phonedb/new.html:7 html/phonedb/phone.html:7
 #: html/phonedb/search.html:7 html/phonedb/vendor.html:7
+#, fuzzy
 msgid "Navigation"
-msgstr ""
+msgstr "Omezení"
 
 #: html/phonedb/new.html:21
 msgid "Please enter text 'nospam':"
@@ -1713,12 +1722,14 @@ msgid "Third Party Screenshots"
 msgstr ""
 
 #: html/screenshots/gammu_index.html:5 html/screenshots/gammu_index.html:8
+#, fuzzy
 msgid "Gammu Screenshots"
-msgstr ""
+msgstr "Obrázky"
 
 #: html/screenshots/index.html:4 html/screenshots/index.html.py:19
+#, fuzzy
 msgid "Wammu and Gammu Screenshots"
-msgstr ""
+msgstr "Licence Gammu a Wammu"
 
 #: html/screenshots/index.html:9
 #, fuzzy
@@ -1726,16 +1737,18 @@ msgid "All screenshots"
 msgstr "Obrázky programu %s"
 
 #: html/screenshots/wammu_index.html:5 html/screenshots/wammu_index.html:8
+#, fuzzy
 msgid "Wammu Screenshots"
-msgstr ""
+msgstr "Obrázky"
 
 #: html/sidebars/common.html:4
 msgid "How to contribute"
 msgstr ""
 
 #: html/support/bugs.html:12
+#, fuzzy
 msgid "Reporting Bugs in Wammu and Gammu"
-msgstr ""
+msgstr "Podpora pro Wammu a Gammu"
 
 #: html/support/bugs.html:15
 msgid ""
@@ -1821,8 +1834,9 @@ msgid ""
 msgstr ""
 
 #: html/support/buy.html:12
+#, fuzzy
 msgid "Commercial Support for Wammu and Gammu"
-msgstr ""
+msgstr "Podpora pro Wammu a Gammu"
 
 #: html/support/buy.html:15
 msgid ""
@@ -1992,8 +2006,9 @@ msgid ""
 msgstr ""
 
 #: html/support/online.html:12
+#, fuzzy
 msgid "Online Communication for Wammu and Gammu"
-msgstr ""
+msgstr "Mailing listy pro Wammu a Gammu"
 
 #: html/support/online.html:15
 msgid ""
@@ -2051,8 +2066,9 @@ msgid ""
 msgstr ""
 
 #: html/support/sidebar.html:2
+#, fuzzy
 msgid "Support links"
-msgstr ""
+msgstr "Podporované telefony"
 
 #: html/support/sidebar.html:5
 msgid "Mailing list"
@@ -2076,16 +2092,20 @@ msgid "Gammu Phone Database"
 msgstr "Databáze telefonů Gammu"
 
 #: phonedb/feeds.py:11
+#, fuzzy
 msgid "Gammu phone database updates."
-msgstr ""
+msgstr "Databáze telefonů Gammu"
 
 #: phonedb/forms.py:13
+#, fuzzy
 msgid "Search text"
-msgstr ""
+msgstr "Výsledky hledání"
 
+# type: TP
 #: phonedb/forms.py:15 phonedb/forms.py:26
+#, fuzzy
 msgid "Features"
-msgstr ""
+msgstr "B<Features>"
 
 #: phonedb/forms.py:18
 #, python-format
@@ -2142,16 +2162,20 @@ msgid "Ringtones"
 msgstr "Melodie"
 
 #: phonedb/views.py:109
+#, fuzzy
 msgid "Gammu Phone Database Feed (RSS)"
-msgstr ""
+msgstr "Databáze telefonů Gammu"
 
 #: phonedb/views.py:110
+#, fuzzy
 msgid "Gammu Phone Database Feed (Atom)"
-msgstr ""
+msgstr "Databáze telefonů Gammu"
 
+# type: Plain text
 #: phonedb/views.py:256
+#, fuzzy
 msgid "Phone record has been created."
-msgstr ""
+msgstr "kdy byl tento záznam aktualizován"
 
 #: wammu/helpers.py:25
 msgid "Gammu and Wammu News Feed (RSS)"
