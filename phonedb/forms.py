@@ -15,8 +15,8 @@ class SearchForm(Form):
         label = ugettext_lazy('Features'),
         required = False,
         choices = [(f.name,
-            mark_safe(ugettext_lazy('%s [<a href="%s">Link</a>]') %
-                (f.get_description(), '/phone/search/' + f.name))
+            mark_safe(ugettext_lazy('%(description)s [<a href="%(url)s">Link</a>]') %
+                {'description': f.get_description(), 'url': '/phone/search/' + f.name})
                 ) for f in Feature.objects.all()],
         widget = forms.CheckboxSelectMultiple
         )
@@ -26,8 +26,8 @@ class NewForm(ModelForm):
         label = ugettext_lazy('Features'),
         required = False,
         choices = [(f.name,
-            ugettext_lazy('%s (%s)') %
-                (f.get_description(), f.name)
+            ugettext_lazy('%(description)s (%(name)s)') %
+                {'description': f.get_description(), 'name': f.name}
                 ) for f in Feature.objects.all()],
         widget = forms.CheckboxSelectMultiple
         )
