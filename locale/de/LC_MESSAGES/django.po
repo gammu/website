@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-07 13:10+0200\n"
+"POT-Creation-Date: 2009-10-07 13:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -210,6 +210,63 @@ msgstr ""
 #: html/gammu.html:26
 msgid ""
 "\n"
+"Gammu command line utility provides access to wide range of phone features,\n"
+"however support level differs from phone to phone and you might want to "
+"check\n"
+"<a href=\"/phones/\">Gammu Phone Database</a> for user experiences with "
+"various\n"
+"phones. Generally following features are supported:\n"
+msgstr ""
+
+#: html/gammu.html:35
+msgid ""
+"\n"
+"Call listing, initiating and handling\n"
+msgstr ""
+
+#: html/gammu.html:38
+msgid ""
+"\n"
+"SMS retrieval, backup and sending\n"
+msgstr ""
+
+#: html/gammu.html:41
+msgid ""
+"\n"
+"MMS retrieval\n"
+msgstr ""
+
+#: html/gammu.html:44
+msgid ""
+"\n"
+"Phonebook listing, export and import (also from standard formats such as\n"
+"vCard)\n"
+msgstr ""
+
+#: html/gammu.html:48
+msgid ""
+"\n"
+"Calendar and tasks listing, export and import (also from standard formats "
+"such as\n"
+"vCalendar or iCalendar)\n"
+msgstr ""
+
+#: html/gammu.html:52
+msgid ""
+"\n"
+"Retrieval of phone and network information\n"
+msgstr ""
+
+#: html/gammu.html:55
+msgid ""
+"\n"
+"Access to phone file system (note that some phones work also as USB storage\n"
+"devices and those are not accessible through Gammu)\n"
+msgstr ""
+
+#: html/gammu.html:62
+msgid ""
+"\n"
 "This project has originally forked from Gnokii and up to version 0.58 has "
 "been\n"
 "named MyGnokii2. Then need for better name arrived and Gammu was chosen as "
@@ -219,7 +276,7 @@ msgid ""
 "from the \"Heretics of Dune\" book written by Frank Herbert exists.\n"
 msgstr ""
 
-#: html/gammu.html:35
+#: html/gammu.html:71
 msgid ""
 "\n"
 "The Gammu package does not include just this binary, but as well <a\n"
@@ -229,13 +286,13 @@ msgid ""
 "phone.\n"
 msgstr ""
 
-#: html/gammu.html:44 html/libgammu.html:33 html/smsd.html:44
+#: html/gammu.html:80 html/libgammu.html:33 html/smsd.html:44
 #: html/wammu.html:38 html/downloads/list.html:4 html/downloads/program.html:4
 #: html/downloads/release.html:4
 msgid "Download"
 msgstr ""
 
-#: html/gammu.html:46
+#: html/gammu.html:82
 msgid ""
 "\n"
 "Just download <a href=\"/download/gammu\">Gammu</a> for your platform and "
@@ -243,12 +300,12 @@ msgid ""
 "it.\n"
 msgstr ""
 
-#: html/gammu.html:52 html/libgammu.html:42 html/python-gammu.html:26
+#: html/gammu.html:88 html/libgammu.html:42 html/python-gammu.html:26
 #: html/smsd.html:54 html/wammu.html:48 html/support/sidebar.html:4
 msgid "Documentation"
 msgstr ""
 
-#: html/gammu.html:54
+#: html/gammu.html:90
 msgid ""
 "\n"
 "The best documentation is available in form of <a href=\"/docs/man\">man\n"
