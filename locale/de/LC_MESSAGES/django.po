@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-07 13:30+0200\n"
+"POT-Creation-Date: 2009-10-07 14:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -288,7 +288,7 @@ msgstr ""
 
 #: html/gammu.html:55 html/libgammu.html:43 html/smsd.html:44
 #: html/wammu.html:38 html/downloads/list.html:4 html/downloads/program.html:4
-#: html/downloads/release.html:4
+#: html/downloads/release.html:4 wammu/helpers.py:17
 msgid "Download"
 msgstr ""
 
@@ -302,6 +302,7 @@ msgstr ""
 
 #: html/gammu.html:63 html/libgammu.html:52 html/python-gammu.html:26
 #: html/smsd.html:54 html/wammu.html:48 html/support/sidebar.html:4
+#: wammu/helpers.py:19
 msgid "Documentation"
 msgstr ""
 
@@ -316,7 +317,7 @@ msgid ""
 msgstr ""
 
 #: html/index.html:9 html/index.html.py:11 html/sidebars/gammu.html:3
-#: html/sidebars/wammu.html:3
+#: html/sidebars/wammu.html:3 wammu/helpers.py:18
 msgid "Screenshots"
 msgstr ""
 
@@ -2088,6 +2089,14 @@ msgstr ""
 
 #: phonedb/views.py:256
 msgid "Phone record has been created."
+msgstr ""
+
+#: wammu/helpers.py:16
+msgid "Support"
+msgstr ""
+
+#: wammu/helpers.py:20
+msgid "Contribute"
 msgstr ""
 
 #: wammu/helpers.py:25

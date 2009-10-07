@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-07 13:30+0200\n"
+"POT-Creation-Date: 2009-10-07 14:39+0200\n"
 "PO-Revision-Date: 2009-10-07 14:30+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -290,7 +290,7 @@ msgstr ""
 
 #: html/gammu.html:55 html/libgammu.html:43 html/smsd.html:44
 #: html/wammu.html:38 html/downloads/list.html:4 html/downloads/program.html:4
-#: html/downloads/release.html:4
+#: html/downloads/release.html:4 wammu/helpers.py:17
 msgid "Download"
 msgstr "Stáhnout"
 
@@ -304,6 +304,7 @@ msgstr ""
 
 #: html/gammu.html:63 html/libgammu.html:52 html/python-gammu.html:26
 #: html/smsd.html:54 html/wammu.html:48 html/support/sidebar.html:4
+#: wammu/helpers.py:19
 msgid "Documentation"
 msgstr "Dokumentace"
 
@@ -318,7 +319,7 @@ msgid ""
 msgstr ""
 
 #: html/index.html:9 html/index.html.py:11 html/sidebars/gammu.html:3
-#: html/sidebars/wammu.html:3
+#: html/sidebars/wammu.html:3 wammu/helpers.py:18
 msgid "Screenshots"
 msgstr "Obrázky"
 
@@ -649,9 +650,9 @@ msgid ""
 msgstr ""
 "\n"
 "Wammu je program pro správu telefonů běžící pod Linuxem, Windows a "
-"pravděpodobně i dalšími platformami, kde fungují <a href=\"/libgammu"
-"\">libGammu</a> a wxPython. Komunikaci s telefonem obstarává knihovna Gammu. "
-"V současné době jsou podporovány tyto funkce: \n"
+"pravděpodobně i dalšími platformami, kde fungují <a "
+"href=\"/libgammu\">libGammu</a> a wxPython. Komunikaci s telefonem obstarává "
+"knihovna Gammu. V současné době jsou podporovány tyto funkce: \n"
 
 #: html/wammu.html:26
 msgid ""
@@ -706,8 +707,8 @@ msgstr "přeloženo do mnoha jazyků včetně češtiny"
 #: html/wammu.html:35
 msgid "rated as best on many software servers"
 msgstr ""
-"ohodnoceno jako nejlepší na mnoha softwarových serverech (např. slunečnice."
-"cz, instaluj.cz)"
+"ohodnoceno jako nejlepší na mnoha softwarových serverech (např. "
+"slunečnice.cz, instaluj.cz)"
 
 #: html/wammu.html:40
 msgid ""
@@ -936,8 +937,9 @@ msgid ""
 msgstr ""
 
 #: html/contribute/publicity.html:30
+#, fuzzy
 msgid "Third Party Applications"
-msgstr ""
+msgstr "Aplikace jiných výrobců používající Gammu"
 
 #: html/contribute/publicity.html:33
 msgid ""
@@ -1546,9 +1548,9 @@ msgstr ""
 "Tento seznam je vyplňován uživateli a z toho důvodu nemůže být žádná záruka, "
 "že informace jsou správné a přesné. Pokud se autor rozhodl zveřejnit svůj "
 "email, můžete mu zkusit napsat a požádat o podrobnosti. V případě "
-"pochybností se můžete obrátit na <a href=\"https://lists.sourceforge.net/"
-"lists/listinfo/gammu-users\">mailing list gammu-users</a>, kde vám určitě "
-"někdo rád poradí.\n"
+"pochybností se můžete obrátit na <a "
+"href=\"https://lists.sourceforge.net/lists/listinfo/gammu-users\">mailing list "
+"gammu-users</a>, kde vám určitě někdo rád poradí.\n"
 
 #: html/phonedb/index.html:57
 msgid "Manufacturers"
@@ -2019,9 +2021,10 @@ msgid ""
 msgstr ""
 "\n"
 "Pokud chcete problémy řešit interaktivně, můžete použít konferenční místnost "
-"na Jabberu <a href=\"xmpp:gammu@conference.cihar.com?join\">gammu@conference."
-"cihar.com</a>, záznamy komunikace jsou dostupné na <a href=\"http://logs."
-"cihar.com/jabber/gammu@conference.cihar.com/\">logs.cihar.com</a>.\n"
+"na Jabberu <a "
+"href=\"xmpp:gammu@conference.cihar.com?join\">gammu@conference.cihar.com</a>, "
+"záznamy komunikace jsou dostupné na <a href=\"http://logs.cihar.com/jabber/ga"
+"mmu@conference.cihar.com/\">logs.cihar.com</a>.\n"
 "Pro přístup můžete použít také webové rozhraní <a\n"
 "href=\"http://jabber.cihar.com/muckl/\">MUCkl</a>.\n"
 
@@ -2154,6 +2157,15 @@ msgstr "Databáze telefonů Gammu (Atom)"
 #: phonedb/views.py:256
 msgid "Phone record has been created."
 msgstr "Záznam v databázi byl vytvořen."
+
+#: wammu/helpers.py:16
+#, fuzzy
+msgid "Support"
+msgstr "Odkazy na podporu"
+
+#: wammu/helpers.py:20
+msgid "Contribute"
+msgstr ""
 
 #: wammu/helpers.py:25
 msgid "Gammu and Wammu News Feed (RSS)"
