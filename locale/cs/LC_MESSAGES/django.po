@@ -26,7 +26,7 @@ msgstr ""
 
 #: donate/forms.py:27 donate/forms.py:38 html/base.html:128
 msgid "Donate"
-msgstr ""
+msgstr "Přispějte"
 
 #: html/404.html:4 html/404.html.py:8
 msgid "Page Not Found"
@@ -102,7 +102,7 @@ msgstr ""
 
 #: html/base.html:127
 msgid "License"
-msgstr ""
+msgstr "Licence"
 
 #: html/base.html:128
 msgid "Support Gammu/Wammu by donating money!"
@@ -118,7 +118,7 @@ msgstr ""
 
 #: html/base.html:130 html/phonedb/index.html:7
 msgid "Search"
-msgstr ""
+msgstr "Hledej"
 
 #: html/base.html:131
 msgid "Gammu and Wammu authors"
@@ -196,7 +196,7 @@ msgstr ""
 
 #: html/gammu.html:15
 msgid "Gammu"
-msgstr ""
+msgstr "Gammu"
 
 #: html/gammu.html:18
 msgid ""
@@ -233,7 +233,7 @@ msgstr ""
 #: html/wammu.html:38 html/downloads/list.html:4 html/downloads/program.html:4
 #: html/downloads/release.html:4
 msgid "Download"
-msgstr ""
+msgstr "Stáhnout"
 
 #: html/gammu.html:46
 msgid ""
@@ -246,7 +246,7 @@ msgstr ""
 #: html/gammu.html:52 html/libgammu.html:42 html/python-gammu.html:26
 #: html/smsd.html:54 html/wammu.html:48 html/support/sidebar.html:4
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentace"
 
 #: html/gammu.html:54
 msgid ""
@@ -261,11 +261,11 @@ msgstr ""
 #: html/index.html:9 html/index.html.py:11 html/sidebars/gammu.html:3
 #: html/sidebars/wammu.html:3
 msgid "Screenshots"
-msgstr ""
+msgstr "Obrázky"
 
 #: html/index.html:18 html/sidebars/common.html:3
 msgid "Supported phones"
-msgstr ""
+msgstr "Podporované telefony"
 
 #: html/index.html:19
 msgid ""
@@ -275,7 +275,7 @@ msgstr ""
 
 #: html/index.html:30
 msgid "About"
-msgstr ""
+msgstr "O programu"
 
 #: html/index.html:33
 msgid ""
@@ -458,7 +458,7 @@ msgstr ""
 
 #: html/python-gammu.html:4 html/python-gammu.html.py:16
 msgid "Python bindings for Gammu"
-msgstr ""
+msgstr "Rozhraní mezi Pythonem a Gammu"
 
 #: html/python-gammu.html:19
 msgid ""
@@ -557,7 +557,7 @@ msgstr ""
 
 #: html/wammu.html:15
 msgid "Wammu"
-msgstr ""
+msgstr "Wammu"
 
 #: html/wammu.html:18
 msgid ""
@@ -574,44 +574,52 @@ msgstr ""
 
 #: html/wammu.html:27
 msgid "can read/create/save/send/backup smses"
-msgstr ""
+msgstr "umí číst, vytvářet, posílat a zálohovat SMS"
 
 #: html/wammu.html:28
 msgid "sending files to phone (OBEX and Sony Ericsson phones only)"
 msgstr ""
+"posílání souborů do telefonu (zatím jen pro telefony používající OBEX a Sony "
+"Ericsson)"
 
 #: html/wammu.html:29
 msgid ""
 "sms composer for multi part smses (currently only text and predefined bitmap/"
 "sound can be edited)"
 msgstr ""
+"vytváření zpráv z více částí (v současné době je podporován jen text a "
+"předdefinované animace a zvuky)"
 
 #: html/wammu.html:30
 msgid "display message including pictures and ringtones playback"
-msgstr ""
+msgstr "umí zobrazit zprávu včetně obrázků a přehrávání melodií"
 
 #: html/wammu.html:31
 msgid ""
 "support for backup and import in various formats (vCard, vCalendar, vTodo, "
 "iCalendar, gammu own backup,...)"
 msgstr ""
+"podpora pro zálohování a import (vCard, vCalendar, vTodo, iCalendar, vlastní "
+"formát Gammu, ...)"
 
 #: html/wammu.html:32
 msgid ""
 "export messages to mail (IMAP4, maildir and mailbox storages are supported)"
-msgstr ""
+msgstr "exportování zpráv do mailů (na IMAP4, maildir nebo mailbox)"
 
 #: html/wammu.html:33
 msgid "searching for phone"
-msgstr ""
+msgstr "vyhledávání telefonu"
 
 #: html/wammu.html:34
 msgid "translated into several languages"
-msgstr ""
+msgstr "přeloženo do mnoha jazyků včetně češtiny"
 
 #: html/wammu.html:35
 msgid "rated as best on many software servers"
 msgstr ""
+"ohodnoceno jako nejlepší na mnoha softwarových serverech (např. slunečnice."
+"cz, instaluj.cz)"
 
 #: html/wammu.html:40
 msgid ""
@@ -1188,16 +1196,17 @@ msgid ""
 msgstr ""
 
 #: html/downloads/mirror.html:15
+#, fuzzy
 msgid "Change"
-msgstr ""
+msgstr "češtině"
 
 #: html/downloads/platformlinks.html:7
 msgid "Debian packages"
-msgstr ""
+msgstr "Balíčky pro Debian"
 
 #: html/downloads/platformlinks.html:10
 msgid "Ubuntu packages"
-msgstr ""
+msgstr "Balíčky pro Ubuntu"
 
 #: html/downloads/platformlinks.html:13
 msgid "Ubuntu packages in PPA (latest stable version)"
@@ -1246,7 +1255,7 @@ msgstr ""
 
 #: html/downloads/release.html:21
 msgid "Files"
-msgstr ""
+msgstr "Soubory"
 
 #: html/downloads/relinfo.html:4
 #, python-format
@@ -1385,7 +1394,7 @@ msgstr ""
 
 #: html/phonedb/body.html:16
 msgid "Configuration"
-msgstr ""
+msgstr "Nastavení"
 
 #: html/phonedb/body.html:27
 msgid "Phone is reported not to be supported!"
@@ -1461,19 +1470,19 @@ msgstr ""
 
 #: html/phonedb/list.html:5
 msgid "Name"
-msgstr ""
+msgstr "Název"
 
 #: html/phonedb/list.html:5
 msgid "Connection"
-msgstr ""
+msgstr "Připojení"
 
 #: html/phonedb/list.html:5
 msgid "Supported features"
-msgstr ""
+msgstr "Podporované funkce"
 
 #: html/phonedb/list.html:21
 msgid "Not supported"
-msgstr ""
+msgstr "Není podporován"
 
 #: html/phonedb/new.html:4 html/phonedb/new.html.py:15
 msgid "Create New Record"
@@ -1555,7 +1564,7 @@ msgstr ""
 
 #: html/phonedb/vendor.html:19
 msgid "Website"
-msgstr ""
+msgstr "Stránky"
 
 #: html/phonedb/vendor.html:24
 #, python-format
@@ -1887,7 +1896,7 @@ msgstr ""
 
 #: html/support/online.html:24
 msgid "Jabber conference room"
-msgstr ""
+msgstr "Konference přes Jabber"
 
 #: html/support/online.html:27
 msgid ""
@@ -1904,7 +1913,7 @@ msgstr ""
 
 #: html/support/online.html:37
 msgid "IRC"
-msgstr ""
+msgstr "IRC"
 
 #: html/support/online.html:40
 msgid ""
@@ -1929,7 +1938,7 @@ msgstr ""
 
 #: html/support/sidebar.html:5
 msgid "Mailing list"
-msgstr ""
+msgstr "Mailing listy"
 
 #: html/support/sidebar.html:6
 msgid "Bug tracker"
@@ -1971,47 +1980,47 @@ msgstr ""
 
 #: phonedb/models.py:32
 msgid "Phone information"
-msgstr ""
+msgstr "Informace o telefonu"
 
 #: phonedb/models.py:33
 msgid "Sending and saving SMS"
-msgstr ""
+msgstr "Posílání a ukládání SMS"
 
 #: phonedb/models.py:34
 msgid "Multimedia messaging"
-msgstr ""
+msgstr "Multimediální zprávy"
 
 #: phonedb/models.py:35
 msgid "Basic phonebook functions (name and phone number)"
-msgstr ""
+msgstr "Základní funkce seznamu (jméno a telefonní číslo)"
 
 #: phonedb/models.py:36
 msgid "Enhanced phonebook entries (eg. several numbers per entry)"
-msgstr ""
+msgstr "Rozšířené záznamy v seznamu (např. více čísel na záznam)"
 
 #: phonedb/models.py:37
 msgid "Calendar entries"
-msgstr ""
+msgstr "Kalendář"
 
 #: phonedb/models.py:38
 msgid "Todos"
-msgstr ""
+msgstr "Úkoly"
 
 #: phonedb/models.py:39
 msgid "Filesystem manipulation"
-msgstr ""
+msgstr "Práce se soubory"
 
 #: phonedb/models.py:40
 msgid "Reading and making calls"
-msgstr ""
+msgstr "Čtení a provádění hovorů"
 
 #: phonedb/models.py:41
 msgid "Logos"
-msgstr ""
+msgstr "Loga"
 
 #: phonedb/models.py:42
 msgid "Ringtones"
-msgstr ""
+msgstr "Melodie"
 
 #: phonedb/views.py:109
 msgid "Gammu Phone Database Feed (RSS)"
