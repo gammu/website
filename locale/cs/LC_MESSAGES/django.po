@@ -508,6 +508,7 @@ msgid ""
 msgstr ""
 
 #: html/license.html:55
+#, fuzzy
 msgid ""
 "\n"
 "This program is free software; you can redistribute it and/or\n"
@@ -515,6 +516,10 @@ msgid ""
 "as published by the Free Software Foundation; either version 2\n"
 "of the License, or (at your option) any later version.\n"
 msgstr ""
+"\n"
+"Tento program je volný software; můžete jej šířit a modifikovat podle\n"
+"ustanovení Obecné veřejné licence GNU verze 2, vydané Free Software\n"
+"Foundation.\n"
 
 #: html/license.html:80
 msgid "Website Content"
