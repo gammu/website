@@ -954,8 +954,9 @@ msgid ""
 msgstr ""
 
 #: html/contribute/publicity.html:41
+#, fuzzy
 msgid "Logos or Screenshots"
-msgstr ""
+msgstr "Obrázky"
 
 #: html/contribute/publicity.html:43
 msgid ""
@@ -973,8 +974,9 @@ msgid "Ways to contribute"
 msgstr ""
 
 #: html/contribute/translate.html:12
+#, fuzzy
 msgid "Translating Wammu and Gammu"
-msgstr ""
+msgstr "Podpora pro Wammu a Gammu"
 
 #: html/contribute/translate.html:15
 msgid ""
@@ -1118,8 +1120,9 @@ msgid ""
 msgstr ""
 
 #: html/docs/devel.html:4 html/docs/devel.html.py:7
+#, fuzzy
 msgid "Wammu and Gammu Developer Documentation"
-msgstr ""
+msgstr "Licence Gammu a Wammu"
 
 #: html/docs/devel.html:9
 #, fuzzy
@@ -1483,8 +1486,9 @@ msgid ""
 msgstr ""
 
 #: html/news/wammu_index.html:5 html/news/wammu_index.html.py:8
+#, fuzzy
 msgid "Wammu News"
-msgstr ""
+msgstr "Gammu SMSD"
 
 #: html/phonedb/body.html:3
 #, fuzzy
@@ -1603,8 +1607,9 @@ msgid "Not supported"
 msgstr "Není podporován"
 
 #: html/phonedb/new.html:4 html/phonedb/new.html.py:15
+#, fuzzy
 msgid "Create New Record"
-msgstr ""
+msgstr "Vytvořit nový úkol."
 
 #: html/phonedb/new.html:7 html/phonedb/phone.html:7
 #: html/phonedb/search.html:7 html/phonedb/vendor.html:7
@@ -1625,8 +1630,9 @@ msgid "Similar Phones"
 msgstr ""
 
 #: html/phonedb/phone.html:24
+#, fuzzy
 msgid "None found."
-msgstr ""
+msgstr "Žádný telefon nenalezen!"
 
 #: html/phonedb/phone.html:29
 msgid "About entry"
@@ -2178,9 +2184,11 @@ msgid "Phone record has been created."
 msgstr "kdy byl tento záznam aktualizován"
 
 #: wammu/helpers.py:25
+#, fuzzy
 msgid "Gammu and Wammu News Feed (RSS)"
-msgstr ""
+msgstr "Databáze telefonů Gammu"
 
 #: wammu/helpers.py:28
+#, fuzzy
 msgid "Gammu and Wammu News Feed (Atom)"
-msgstr ""
+msgstr "Databáze telefonů Gammu"
