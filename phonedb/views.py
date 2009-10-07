@@ -259,11 +259,26 @@ def create(request):
             result.set_cookie('phonedb_email', form.cleaned_data['author_email'], max_age = 3600 * 24 * 365)
             return result
     else:
+        initial = {}
         try:
             vendor = Vendor.objects.get(slug = request.GET['vendor'])
-            form = NewForm(initial = {'vendor': vendor.id})
+            initial['vendor'] = vendor.id
         except:
-            form = NewForm()
+            pass
+        try:
+            initial['email_garble'] = request.COOKIES['phonedb_garble']
+        except:
+            pass
+        try:
+            initial['author_name'] = request.COOKIES['phonedb_author']
+        except:
+            pass
+        try:
+            initial['author_email'] = request.COOKIES['phonedb_email']
+        except:
+            pass
+
+        form = NewForm(initial = initial)
 
     return render_to_response('phonedb/new.html', WammuContext(request, {
         'form': form,
