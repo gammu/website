@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-07 14:42+0200\n"
-"PO-Revision-Date: 2009-10-07 14:45+0200\n"
+"PO-Revision-Date: 2009-10-07 14:47+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -109,7 +109,7 @@ msgstr "Reklama"
 
 #: html/base.html:78 html/index.html:30
 msgid "About"
-msgstr "O programu"
+msgstr "Informace"
 
 #: html/base.html:80 html/gammu.html:15
 msgid "Gammu"
@@ -137,7 +137,7 @@ msgstr "Mailing listy"
 
 #: html/base.html:90
 msgid "Online"
-msgstr ""
+msgstr "Online"
 
 #: html/base.html:91
 msgid "Reporting bugs"
@@ -162,7 +162,7 @@ msgstr "Dalších aplikace"
 
 #: html/base.html:101
 msgid "News"
-msgstr ""
+msgstr "Novinky"
 
 #: html/base.html:105 html/gammu.html:63 html/libgammu.html:52
 #: html/python-gammu.html:26 html/smsd.html:54 html/wammu.html:48
@@ -180,7 +180,7 @@ msgstr "Man stránky"
 
 #: html/base.html:109
 msgid "For developers"
-msgstr ""
+msgstr "Pro vývojáře"
 
 #: html/base.html:110
 msgid "Wiki"
@@ -196,11 +196,11 @@ msgstr "Překlad"
 
 #: html/base.html:117
 msgid "Develop"
-msgstr ""
+msgstr "Vývoj"
 
 #: html/base.html:119
 msgid "Publicity"
-msgstr ""
+msgstr "Publicita"
 
 #: html/base.html:127
 msgid "License"
@@ -235,6 +235,8 @@ msgid ""
 "Valid <a href=\"http://validator.w3.org/check/referer\">HTML</a> and <a href="
 "\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
 msgstr ""
+"Validní <a href=\"http://validator.w3.org/check/referer\">HTML</a> and <a "
+"href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
 
 #: html/donate-thanks.html:11
 msgid "Thank you for Donation"
@@ -1799,7 +1801,7 @@ msgstr "Obrázky Wammu"
 
 #: html/sidebars/common.html:4
 msgid "How to contribute"
-msgstr ""
+msgstr "Jak přispět"
 
 #: html/support/bugs.html:12
 msgid "Reporting Bugs in Wammu and Gammu"
