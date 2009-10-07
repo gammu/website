@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-07 13:26+0200\n"
+"POT-Creation-Date: 2009-10-07 13:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -189,6 +189,52 @@ msgid ""
 "Michal Čihař</a>.\n"
 msgstr ""
 
+#: html/gammu-features.html:3
+msgid ""
+"\n"
+"Call listing, initiating and handling\n"
+msgstr ""
+
+#: html/gammu-features.html:6
+msgid ""
+"\n"
+"SMS retrieval, backup and sending\n"
+msgstr ""
+
+#: html/gammu-features.html:9
+msgid ""
+"\n"
+"MMS retrieval\n"
+msgstr ""
+
+#: html/gammu-features.html:12
+msgid ""
+"\n"
+"Phonebook listing, export and import (also from standard formats such as\n"
+"vCard)\n"
+msgstr ""
+
+#: html/gammu-features.html:16
+msgid ""
+"\n"
+"Calendar and tasks listing, export and import (also from standard formats "
+"such as\n"
+"vCalendar or iCalendar)\n"
+msgstr ""
+
+#: html/gammu-features.html:20
+msgid ""
+"\n"
+"Retrieval of phone and network information\n"
+msgstr ""
+
+#: html/gammu-features.html:23
+msgid ""
+"\n"
+"Access to phone file system (note that some phones work also as USB storage\n"
+"devices and those are not accessible through Gammu)\n"
+msgstr ""
+
 #: html/gammu.html:7 html/libgammu.html:7 html/python-gammu.html:7
 #: html/smsd.html:7 html/wammu.html:7
 msgid "More information"
@@ -218,53 +264,7 @@ msgid ""
 "phones. Generally following features are supported:\n"
 msgstr ""
 
-#: html/gammu.html:35
-msgid ""
-"\n"
-"Call listing, initiating and handling\n"
-msgstr ""
-
-#: html/gammu.html:38
-msgid ""
-"\n"
-"SMS retrieval, backup and sending\n"
-msgstr ""
-
-#: html/gammu.html:41
-msgid ""
-"\n"
-"MMS retrieval\n"
-msgstr ""
-
-#: html/gammu.html:44
-msgid ""
-"\n"
-"Phonebook listing, export and import (also from standard formats such as\n"
-"vCard)\n"
-msgstr ""
-
-#: html/gammu.html:48
-msgid ""
-"\n"
-"Calendar and tasks listing, export and import (also from standard formats "
-"such as\n"
-"vCalendar or iCalendar)\n"
-msgstr ""
-
-#: html/gammu.html:52
-msgid ""
-"\n"
-"Retrieval of phone and network information\n"
-msgstr ""
-
-#: html/gammu.html:55
-msgid ""
-"\n"
-"Access to phone file system (note that some phones work also as USB storage\n"
-"devices and those are not accessible through Gammu)\n"
-msgstr ""
-
-#: html/gammu.html:62
+#: html/gammu.html:37
 msgid ""
 "\n"
 "This project has originally forked from Gnokii and up to version 0.58 has "
@@ -276,7 +276,7 @@ msgid ""
 "from the \"Heretics of Dune\" book written by Frank Herbert exists.\n"
 msgstr ""
 
-#: html/gammu.html:71
+#: html/gammu.html:46
 msgid ""
 "\n"
 "The Gammu package does not include just this binary, but as well <a\n"
@@ -286,13 +286,13 @@ msgid ""
 "phone.\n"
 msgstr ""
 
-#: html/gammu.html:80 html/libgammu.html:33 html/smsd.html:44
+#: html/gammu.html:55 html/libgammu.html:43 html/smsd.html:44
 #: html/wammu.html:38 html/downloads/list.html:4 html/downloads/program.html:4
 #: html/downloads/release.html:4
 msgid "Download"
 msgstr ""
 
-#: html/gammu.html:82
+#: html/gammu.html:57
 msgid ""
 "\n"
 "Just download <a href=\"/download/gammu\">Gammu</a> for your platform and "
@@ -300,12 +300,12 @@ msgid ""
 "it.\n"
 msgstr ""
 
-#: html/gammu.html:88 html/libgammu.html:42 html/python-gammu.html:26
+#: html/gammu.html:63 html/libgammu.html:52 html/python-gammu.html:26
 #: html/smsd.html:54 html/wammu.html:48 html/support/sidebar.html:4
 msgid "Documentation"
 msgstr ""
 
-#: html/gammu.html:90
+#: html/gammu.html:65
 msgid ""
 "\n"
 "The best documentation is available in form of <a href=\"/docs/man\">man\n"
@@ -409,7 +409,15 @@ msgid ""
 "library you can talk to any phone using standard API.\n"
 msgstr ""
 
-#: html/libgammu.html:27
+#: html/libgammu.html:28
+msgid ""
+"\n"
+"The API exposes all functionality you can do with the phone and among "
+"others\n"
+"it provides following features:\n"
+msgstr ""
+
+#: html/libgammu.html:37
 msgid ""
 "\n"
 "This library is used in all other tools like <a href=\"/gammu\">Gammu</a> or "
@@ -417,7 +425,7 @@ msgid ""
 "href=\"/smsd\">Gammu SMS Daemon</a>.\n"
 msgstr ""
 
-#: html/libgammu.html:35
+#: html/libgammu.html:45
 msgid ""
 "\n"
 "The library is obviously distributed as part of <a href=\"/gammu\">Gammu</a> "
@@ -425,7 +433,7 @@ msgid ""
 "it just get <a href=\"/download/gammu\">Gammu</a>.\n"
 msgstr ""
 
-#: html/libgammu.html:44
+#: html/libgammu.html:54
 msgid ""
 "\n"
 "<a href=\"/docs/devel/api/\">API documentation</a> is available as well as "
