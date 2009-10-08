@@ -1,7 +1,7 @@
 from django.shortcuts import render_to_response, get_object_or_404
 from django.db.models import Q
 from wammu_web.wammu.helpers import WammuContext
-from wammu_web.phonedb.models import Vendor, Phone, Feature
+from wammu_web.phonedb.models import Vendor, Phone, Feature, Connection, GARBLE_CHOICES
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from django.core.cache import cache
 from django.utils.translation import ugettext as _
@@ -248,8 +248,93 @@ def phones_csv(request):
 
     return response
 
+def create_wammu(request):
+    '''
+    Compatibility interface for Wammu.
+    '''
+    INVALID = 'Invalid values: %s'
+    OKAY = 'Entry created, id=%d, url=/gammu/phonedb/%s/%d'
+    OKAY_V2 = 'Entry created, id=%d, url=%s'
+    invalid = []
+    version = 1
+    response = HttpResponse(mimetype='text/plain')
+
+    if not request.POST.has_key('irobot') or request.POST['irobot'] != 'wammu':
+        invalid.append('irobot')
+
+    if not request.POST.has_key('version'):
+        version = int(request.POST['version'])
+
+    phone = Phone()
+
+    try:
+        phone.vendor = Vendor.objects.get(pk = int(request.POST['manufacturer']))
+    except:
+        invalid.append('vendor')
+
+    try:
+        phone.name = request.POST['name']
+        if len(phone.name) == 0:
+            invalid.append('name')
+    except:
+        invalid.append('name')
+
+    try:
+        phone.connection = Connection.objects.get(name = request.POST['connection'])
+    except:
+        invalid.append('connection')
+
+    try:
+        phone.model = request.POST['model']
+        if phone.model == 'auto':
+            phone.model = ''
+    except:
+        invalid.append('model')
+
+    try:
+        phone.note = request.POST['note']
+    except:
+        invalid.append('note')
+
+    try:
+        phone.author_name = request.POST['author_name']
+    except:
+        invalid.append('author_name')
+
+    try:
+        phone.author_email = request.POST['author_email']
+    except:
+        invalid.append('author_email')
+
+    try:
+        phone.email_garble = request.POST['email_garble']
+        if not phone.email_garble in [x[0] for x in GARBLE_CHOICES]:
+            invalid.append('email_garble')
+    except:
+        invalid.append('email_garble')
+
+    try:
+        phone.gammu_version = request.POST['gammu_version']
+    except:
+        invalid.append('gammu_version')
+
+    if len(invalid) > 0:
+        response.write(INVALID % ','.join(invalid))
+        return response
+
+    phone.save()
+    if version == 2:
+        response.write(OKAY_V2 % (phone.id, phone.get_absolute_url))
+    else:
+        response.write(OKAY % (phone.id, phone.vendor.slug, phone.id))
+    return response
+
 def create(request):
-    if request.method == 'POST' and request.POST.has_key('irobot') and request.POST['irobot'] in ['nospam', 'wammu']:
+    # Check if we did not receive legacy request
+    if request.POST.has_key('irobot') and request.POST['irobot'] == 'wammu':
+        return create_wammu(request)
+
+    if request.method == 'POST' and request.POST.has_key('irobot') and request.POST['irobot'] == 'nospam':
         form = NewForm(request.POST)
         if form.is_valid():
             newphone = form.save()
