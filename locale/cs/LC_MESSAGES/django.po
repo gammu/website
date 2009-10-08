@@ -1717,14 +1717,12 @@ msgid "Edit"
 msgstr ""
 
 #: html/phonedb/phone.html:15
-#, fuzzy
 msgid "Delete"
-msgstr "Smazáne"
+msgstr "Smazat"
 
 #: html/phonedb/phone.html:18
-#, fuzzy
 msgid "Approve"
-msgstr "Schváleno"
+msgstr "Schválit"
 
 #: html/phonedb/phone.html:22
 msgid "Similar Phones"
@@ -2261,7 +2259,7 @@ msgstr "Schváleno"
 
 #: phonedb/models.py:28
 msgid "Deleted"
-msgstr "Smazáne"
+msgstr "Smazané"
 
 #: phonedb/models.py:32
 msgid "Phone information"
