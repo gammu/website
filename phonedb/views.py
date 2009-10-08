@@ -212,6 +212,7 @@ def phone(request, vendorname, id):
         'phone': phone,
         'related': related,
         'feeds': get_feeds(),
+        'user': request.user,
     }))
 
 def phones_csv(request):
