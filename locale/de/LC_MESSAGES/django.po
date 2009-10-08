@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-08 12:08+0200\n"
+"POT-Creation-Date: 2009-10-08 17:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1656,32 +1656,26 @@ msgid "Add new record"
 msgstr ""
 
 #: html/phonedb/phone.html:13
+msgid "Edit"
+msgstr ""
+
+#: html/phonedb/phone.html:15
+msgid "Delete"
+msgstr ""
+
+#: html/phonedb/phone.html:18
+msgid "Approve"
+msgstr ""
+
+#: html/phonedb/phone.html:22
 msgid "Similar Phones"
 msgstr ""
 
-#: html/phonedb/phone.html:24
+#: html/phonedb/phone.html:33
 msgid "None found."
 msgstr ""
 
-#: html/phonedb/phone.html:29
-msgid "About entry"
-msgstr ""
-
-#: html/phonedb/phone.html:32
-#, python-format
-msgid ""
-"\n"
-"Created by %(author)s on %(created)s.\n"
-msgstr ""
-
-#: html/phonedb/phone.html:38
-#, python-format
-msgid ""
-"\n"
-"Created on %(created)s.\n"
-msgstr ""
-
-#: html/phonedb/phone.html:51
+#: html/phonedb/phone.html:46
 msgid ""
 "\n"
 "This record has been rejected for some reasons, you might want to check "
@@ -1689,7 +1683,7 @@ msgid ""
 "records for same model (you can see them on right side).\n"
 msgstr ""
 
-#: html/phonedb/phone.html:59
+#: html/phonedb/phone.html:54
 msgid ""
 "\n"
 "This record has not been approved yet. This means that it might contain "
@@ -1699,10 +1693,35 @@ msgid ""
 "on right side).\n"
 msgstr ""
 
-#: html/phonedb/phone.html:69
+#: html/phonedb/phone.html:64
 msgid ""
 "\n"
 "More information about phone might be available on following sites:\n"
+msgstr ""
+
+#: html/phonedb/phone.html:77
+msgid "About entry"
+msgstr ""
+
+#: html/phonedb/phone.html:80
+#, python-format
+msgid ""
+"\n"
+"Created by %(author)s on %(created)s.\n"
+msgstr ""
+
+#: html/phonedb/phone.html:86
+#, python-format
+msgid ""
+"\n"
+"Created on %(created)s.\n"
+msgstr ""
+
+#: html/phonedb/phone.html:93
+#, python-format
+msgid ""
+"\n"
+"Tested with Gammu %(version)s.\n"
 msgstr ""
 
 #: html/phonedb/search.html:4 html/phonedb/search.html.py:15
@@ -2242,7 +2261,7 @@ msgstr ""
 msgid "Gammu Phone Database Feed (Atom)"
 msgstr ""
 
-#: phonedb/views.py:262
+#: phonedb/views.py:401
 msgid "Phone record has been created."
 msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-08 12:08+0200\n"
+"POT-Creation-Date: 2009-10-08 17:04+0200\n"
 "PO-Revision-Date: 2009-10-08 12:08+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -1713,36 +1713,28 @@ msgid "Add new record"
 msgstr "Přidat nový záznam"
 
 #: html/phonedb/phone.html:13
+msgid "Edit"
+msgstr ""
+
+#: html/phonedb/phone.html:15
+#, fuzzy
+msgid "Delete"
+msgstr "Smazáne"
+
+#: html/phonedb/phone.html:18
+#, fuzzy
+msgid "Approve"
+msgstr "Schváleno"
+
+#: html/phonedb/phone.html:22
 msgid "Similar Phones"
 msgstr "Podobné telefony"
 
-#: html/phonedb/phone.html:24
+#: html/phonedb/phone.html:33
 msgid "None found."
 msgstr "Žádný telefon nenalezen."
 
-#: html/phonedb/phone.html:29
-msgid "About entry"
-msgstr "O záznamu"
-
-#: html/phonedb/phone.html:32
-#, python-format
-msgid ""
-"\n"
-"Created by %(author)s on %(created)s.\n"
-msgstr ""
-"\n"
-"Vytvořil %(author)s dne %(created)s.\n"
-
-#: html/phonedb/phone.html:38
-#, python-format
-msgid ""
-"\n"
-"Created on %(created)s.\n"
-msgstr ""
-"\n"
-"Vytvořeno dne %(created)s.\n"
-
-#: html/phonedb/phone.html:51
+#: html/phonedb/phone.html:46
 msgid ""
 "\n"
 "This record has been rejected for some reasons, you might want to check "
@@ -1750,7 +1742,7 @@ msgid ""
 "records for same model (you can see them on right side).\n"
 msgstr ""
 
-#: html/phonedb/phone.html:59
+#: html/phonedb/phone.html:54
 msgid ""
 "\n"
 "This record has not been approved yet. This means that it might contain "
@@ -1760,13 +1752,42 @@ msgid ""
 "on right side).\n"
 msgstr ""
 
-#: html/phonedb/phone.html:69
+#: html/phonedb/phone.html:64
 msgid ""
 "\n"
 "More information about phone might be available on following sites:\n"
 msgstr ""
 "\n"
 "Více informací o telefonu může být na následujících stránkách:\n"
+
+#: html/phonedb/phone.html:77
+msgid "About entry"
+msgstr "O záznamu"
+
+#: html/phonedb/phone.html:80
+#, python-format
+msgid ""
+"\n"
+"Created by %(author)s on %(created)s.\n"
+msgstr ""
+"\n"
+"Vytvořil %(author)s dne %(created)s.\n"
+
+#: html/phonedb/phone.html:86
+#, python-format
+msgid ""
+"\n"
+"Created on %(created)s.\n"
+msgstr ""
+"\n"
+"Vytvořeno dne %(created)s.\n"
+
+#: html/phonedb/phone.html:93
+#, python-format
+msgid ""
+"\n"
+"Tested with Gammu %(version)s.\n"
+msgstr ""
 
 #: html/phonedb/search.html:4 html/phonedb/search.html.py:15
 msgid "Search Results"
@@ -2321,7 +2342,7 @@ msgid "Gammu Phone Database Feed (Atom)"
 msgstr "Databáze telefonů Gammu (Atom)"
 
 # type: Plain text
-#: phonedb/views.py:262
+#: phonedb/views.py:401
 msgid "Phone record has been created."
 msgstr "Záznam v databázi byl vytvořen."
 
