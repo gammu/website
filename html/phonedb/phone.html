@@ -35,20 +35,6 @@
 {% endblock %}
 
 {% block sidebar %}
-<h3>{% trans "About entry" %}</h3>
-{% if phone.get_author %}
-<p>
-{% blocktrans with phone.get_author|safe as author and phone.created as created %}
-Created by {{ author }} on {{ created }}.
-{% endblocktrans %}
-</p>
-{% else %}
-<p>
-{% blocktrans with phone.created as created %}
-Created on {{ created }}.
-{% endblocktrans %}
-</p>
-{% endif %}
 
 {% endblock %}
 
@@ -87,6 +73,28 @@ More information about phone might be available on following sites:
 
 
 {% include "phonedb/body.html" %}
+
+<h3>{% trans "About entry" %}</h3>
+{% if phone.get_author %}
+<p>
+{% blocktrans with phone.get_author|safe as author and phone.created as created %}
+Created by {{ author }} on {{ created }}.
+{% endblocktrans %}
+</p>
+{% else %}
+<p>
+{% blocktrans with phone.created as created %}
+Created on {{ created }}.
+{% endblocktrans %}
+</p>
+{% endif %}
+{% if phone.gammu_version %}
+<p>
+{% blocktrans with phone.gammu_version as version %}
+Tested with Gammu {{ version }}.
+{% endblocktrans %}
+</p>
+{% endif %}
 
 {% endblock %}
 
