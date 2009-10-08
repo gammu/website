@@ -177,6 +177,33 @@ def search(request, featurename = None):
         'form': form,
     }))
 
+@login_required
+def review(request):
+    phones = Phone.objects.filter(state = 'draft')
+
+    # Sort results
+    phones = phones.order_by('vendor__name', 'name')
+
+    paginator = Paginator(phones, settings.PHONES_PER_PAGE, orphans = 5)
+    try:
+        page = int(request.GET.get('page', '1'))
+        if page < 1:
+            page = 0
+        elif page > paginator.num_pages:
+            page = paginator.num_pages
+    except ValueError:
+        page = 1
+
+    try:
+        phones = paginator.page(page)
+    except (EmptyPage, InvalidPage):
+        phones = paginator.page(1)
+
+    return render_to_response('phonedb/search.html', WammuContext(request, {
+        'phones': phones,
+        'feeds': get_feeds(),
+    }))
+
 def vendor(request, vendorname):
     vendor = get_object_or_404(Vendor, slug = vendorname)
     phones = Phone.objects.filter(vendor = vendor, state = 'approved').order_by('name')
