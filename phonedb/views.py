@@ -253,7 +253,7 @@ def approve(request, vendorname, id):
 
     phone.state = 'approved'
     phone.save()
-    return HttpResponseRedirect(phone.get_absolute_url())
+    return HttpResponseRedirect('/phones/review/')
 
 @login_required
 def delete(request, vendorname, id):
@@ -266,7 +266,7 @@ def delete(request, vendorname, id):
 
     phone.state = 'deleted'
     phone.save()
-    return HttpResponseRedirect(phone.get_absolute_url())
+    return HttpResponseRedirect('/phones/review/')
 
 def phones_csv(request):
     # Create the HttpResponse object with the appropriate CSV header.
