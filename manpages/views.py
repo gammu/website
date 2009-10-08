@@ -12,6 +12,13 @@ langnames = {
     'en': 'English',
 }
 
+def langcmp(a, b):
+    if a == 'en':
+        return -1
+    if b == 'en':
+        return 1
+    return cmp(a, b)
+
 # Create your views here.
 
 def show_page(request, page, lang = 'en'):
@@ -26,7 +33,7 @@ def show_page(request, page, lang = 'en'):
 
 def list_langs():
     ret = os.listdir('%s/docs/man' % settings.HTML_ROOT)
-    ret.sort()
+    ret.sort(cmp = langcmp)
     return ret
 
 def list_pages(lang = 'en'):
