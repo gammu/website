@@ -16,16 +16,16 @@ CONNECTION_CHOICES = (
     )
 
 GARBLE_CHOICES = (
-    ('atdot', 'atdot'),
-    ('none', 'none'),
-    ('hide', 'hide'),
-    ('nospam', 'nospam'),
+    ('atdot', ugettext_lazy('Use [at] and [dot]')),
+    ('none', ugettext_lazy('Display it normally')),
+    ('hide', ugettext_lazy('Don\'t show email at all')),
+    ('nospam', ugettext_lazy('Insert NOSPAM text at random position')),
     )
 
 STATE_CHOICES = (
-    ('draft', 'Draft'),
-    ('approved', 'Approved'),
-    ('deleted', 'Deleted'),
+    ('draft', ugettext_lazy('Draft')),
+    ('approved', ugettext_lazy('Approved')),
+    ('deleted', ugettext_lazy('Deleted')),
     )
 
 FEATURE_NAMES = {
@@ -75,16 +75,16 @@ class Connection(models.Model):
         return '%s (%s)' % (self.name, self.medium)
 
 class Phone(models.Model):
-    name = models.CharField(max_length = 250)
+    name = models.CharField(max_length = 250, help_text = ugettext_lazy('Phone name, please exclude vendor name.'))
     vendor = models.ForeignKey(Vendor)
-    connection = models.ForeignKey(Connection, null = True, blank = True)
-    features = models.ManyToManyField(Feature, blank = True)
-    model = models.CharField(max_length = 100, blank = True)
-    gammu_version = models.CharField(max_length = 100, blank = True)
-    note = models.TextField(blank = True)
+    connection = models.ForeignKey(Connection, null = True, blank = True, help_text = ugettext_lazy('Connection used in Gammu configuration.'))
+    features = models.ManyToManyField(Feature, help_text = ugettext_lazy('Features which are working in Gammu.'), blank = True)
+    model = models.CharField(max_length = 100, blank = True, help_text = ugettext_lazy('Model used in Gammu configuration, usually empty.'))
+    gammu_version = models.CharField(max_length = 100, blank = True, help_text = ugettext_lazy('Gammu version where you tested this phone.'))
+    note = models.TextField(blank = True, help_text = ugettext_lazy('Any note about this phone and Gammu support for it. You can use <a href="http://daringfireball.net/projects/markdown/syntax">markdown markup</a>.'))
     note_html = models.TextField(editable = False, blank = True)
     author_name = models.CharField(max_length = 250, blank = True)
-    author_email = models.EmailField(max_length = 250, blank = True)
+    author_email = models.EmailField(max_length = 250, blank = True, help_text = ugettext_lazy('Please choose how will be email handled in next field.'))
     email_garble = models.CharField(max_length = 100, choices = GARBLE_CHOICES, default = 'atdot')
     state = models.CharField(max_length = 100, choices = STATE_CHOICES, db_index = True, default = 'draft')
     created = models.DateTimeField(auto_now_add = True)

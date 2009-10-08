@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-08 11:21+0200\n"
+"POT-Creation-Date: 2009-10-08 11:35+0200\n"
 "PO-Revision-Date: 2009-10-07 14:47+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -2198,6 +2198,34 @@ msgstr ""
 msgid "%(description)s (%(name)s)"
 msgstr ""
 
+#: phonedb/models.py:19
+msgid "Use [at] and [dot]"
+msgstr ""
+
+#: phonedb/models.py:20
+msgid "Display it normally"
+msgstr ""
+
+#: phonedb/models.py:21
+msgid "Don't show email at all"
+msgstr ""
+
+#: phonedb/models.py:22
+msgid "Insert NOSPAM text at random position"
+msgstr ""
+
+#: phonedb/models.py:26
+msgid "Draft"
+msgstr ""
+
+#: phonedb/models.py:27
+msgid "Approved"
+msgstr ""
+
+#: phonedb/models.py:28
+msgid "Deleted"
+msgstr ""
+
 #: phonedb/models.py:32
 msgid "Phone information"
 msgstr "Informace o telefonu"
@@ -2241,6 +2269,36 @@ msgstr "Loga"
 #: phonedb/models.py:42
 msgid "Ringtones"
 msgstr "Melodie"
+
+#: phonedb/models.py:78
+msgid "Phone name, please exclude vendor name."
+msgstr ""
+
+#: phonedb/models.py:80
+msgid "Connection used in Gammu configuration."
+msgstr ""
+
+#: phonedb/models.py:81
+msgid "Features which are working in Gammu."
+msgstr ""
+
+#: phonedb/models.py:82
+msgid "Model used in Gammu configuration, usually empty."
+msgstr ""
+
+#: phonedb/models.py:83
+msgid "Gammu version where you tested this phone."
+msgstr ""
+
+#: phonedb/models.py:84
+msgid ""
+"Any note about this phone and Gammu support for it. You can use <a href="
+"\"http://daringfireball.net/projects/markdown/syntax\">markdown markup</a>."
+msgstr ""
+
+#: phonedb/models.py:87
+msgid "Please choose how will be email handled in next field."
+msgstr ""
 
 #: phonedb/views.py:110
 msgid "Gammu Phone Database Feed (RSS)"
