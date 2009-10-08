@@ -73,6 +73,7 @@ urlpatterns = patterns('',
     (r'^phones/search/(?P<featurename>[^/]*)/$', 'phonedb.views.search'),
     (r'^phones/(?P<vendorname>[^/]*)/$', 'phonedb.views.vendor'),
     (r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/$', 'phonedb.views.phone'),
+    (r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/delete/$', 'phonedb.views.delete'),
 
     # API for Wammu
     (r'^api/phones/new/$', 'phonedb.views.create_wammu'),

@@ -8,7 +8,7 @@ from django.utils.translation import ugettext as _
 import csv
 import socket
 from django.http import HttpResponse, HttpResponseRedirect
-
+from django.contrib.auth.decorators import login_required
 
 from django.conf import settings
 from django.contrib.sites.models import Site, RequestSite
@@ -214,6 +214,19 @@ def phone(request, vendorname, id):
         'feeds': get_feeds(),
         'user': request.user,
     }))
+
+@login_required
+def delete(request, vendorname, id):
+    id = int(id)
+    vendor = get_object_or_404(Vendor, slug = vendorname)
+    phone = get_object_or_404(Phone, id = id, vendor = vendor)
+
+    if not request.user.is_superuser:
+        return HttpResponseRedirect(phone.get_absolute_url())
+
+    phone.state = 'deleted'
+    phone.save()
+    return HttpResponseRedirect(phone.get_absolute_url())
 
 def phones_csv(request):
     # Create the HttpResponse object with the appropriate CSV header.
