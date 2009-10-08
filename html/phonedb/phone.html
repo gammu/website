@@ -10,9 +10,12 @@
 <li><a href="{{ vendor.get_absolute_url }}">{{ vendor.name }}</a></li>
 <li><a href="/phones/new?vendor={{ vendor.slug }}">{% trans "Add new record" %}</a></li>
 {% if user.is_superuser %}
-<li><a href="/admin/phonedb/phone/{{ phone.id }}/">Edit</a></li>
+<li><a href="/admin/phonedb/phone/{{ phone.id }}/">{% trans "Edit" %}</a></li>
 {% ifnotequal phone.state "deleted" %}
-<li><a href="{{ phone.get_absolute_url }}delete/">Delete</a></li>
+<li><a href="{{ phone.get_absolute_url }}delete/">{% trans "Delete" %}</a></li>
+{% endifnotequal %}
+{% ifnotequal phone.state "approved" %}
+<li><a href="{{ phone.get_absolute_url }}approve/">{% trans "Approve" %}</a></li>
 {% endifnotequal %}
 {% endif %}
 </ul>

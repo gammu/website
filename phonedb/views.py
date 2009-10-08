@@ -243,6 +243,19 @@ def phone(request, vendorname, id):
     }))
 
 @login_required
+def approve(request, vendorname, id):
+    id = int(id)
+    vendor = get_object_or_404(Vendor, slug = vendorname)
+    phone = get_object_or_404(Phone, id = id, vendor = vendor)
+
+    if not request.user.is_superuser:
+        return HttpResponseRedirect(phone.get_absolute_url())
+
+    phone.state = 'approved'
+    phone.save()
+    return HttpResponseRedirect(phone.get_absolute_url())
+
+@login_required
 def delete(request, vendorname, id):
     id = int(id)
     vendor = get_object_or_404(Vendor, slug = vendorname)
