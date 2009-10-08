@@ -25,6 +25,7 @@ class NewForm(ModelForm):
     features = forms.MultipleChoiceField(
         label = ugettext_lazy('Features'),
         required = False,
+        help_text = ugettext_lazy('Features which are working in Gammu.'),
         choices = [(f.name,
             ugettext_lazy('%(description)s (%(name)s)') %
                 {'description': f.get_description(), 'name': f.name}
