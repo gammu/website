@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-08 11:35+0200\n"
+"POT-Creation-Date: 2009-10-08 12:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2127,7 +2127,11 @@ msgstr ""
 msgid "%(description)s [<a href=\"%(url)s\">Link</a>]"
 msgstr ""
 
-#: phonedb/forms.py:29
+#: phonedb/forms.py:28 phonedb/models.py:81
+msgid "Features which are working in Gammu."
+msgstr ""
+
+#: phonedb/forms.py:30
 #, python-format
 msgid "%(description)s (%(name)s)"
 msgstr ""
@@ -2204,16 +2208,12 @@ msgstr ""
 msgid "Ringtones"
 msgstr ""
 
-#: phonedb/models.py:78
+#: phonedb/models.py:79
 msgid "Phone name, please exclude vendor name."
 msgstr ""
 
 #: phonedb/models.py:80
 msgid "Connection used in Gammu configuration."
-msgstr ""
-
-#: phonedb/models.py:81
-msgid "Features which are working in Gammu."
 msgstr ""
 
 #: phonedb/models.py:82

@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-08 11:35+0200\n"
-"PO-Revision-Date: 2009-10-08 11:37+0200\n"
+"POT-Creation-Date: 2009-10-08 12:08+0200\n"
+"PO-Revision-Date: 2009-10-08 12:08+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
-"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Pootle 1.2.1\n"
 
@@ -304,12 +304,16 @@ msgid ""
 "\n"
 "SMS retrieval, backup and sending\n"
 msgstr ""
+"\n"
+"Stahování, záloha a posílání SMS\n"
 
 #: html/gammu-features.html:9
 msgid ""
 "\n"
 "MMS retrieval\n"
 msgstr ""
+"\n"
+"Stahování MMS\n"
 
 #: html/gammu-features.html:12
 msgid ""
@@ -415,6 +419,8 @@ msgid ""
 "\n"
 "Recently enlisted:\n"
 msgstr ""
+"\n"
+"Nedávno přidané:\n"
 
 #: html/index.html:33
 msgid ""
@@ -1077,7 +1083,7 @@ msgstr ""
 
 #: html/contribute/translate.html:34
 msgid "Translating po Files"
-msgstr ""
+msgstr "Překlad po souborů"
 
 #: html/contribute/translate.html:36
 msgid ""
@@ -1091,7 +1097,7 @@ msgstr ""
 
 #: html/contribute/translate.html:44
 msgid "Pootle"
-msgstr ""
+msgstr "Pootle"
 
 #: html/contribute/translate.html:46
 msgid ""
@@ -1122,7 +1128,7 @@ msgstr ""
 
 #: html/contribute/translate.html:66
 msgid "Hints for Translators"
-msgstr ""
+msgstr "Rady pro překladatele"
 
 #: html/contribute/translate.html:68
 msgid ""
@@ -1152,7 +1158,7 @@ msgstr ""
 
 #: html/contribute/translate.html:91
 msgid "What is Important?"
-msgstr ""
+msgstr "Co je důležité?"
 
 #: html/contribute/translate.html:93
 msgid ""
@@ -1383,11 +1389,11 @@ msgstr ""
 
 #: html/downloads/platformlinks.html:17
 msgid "RPM packages (openSUSE, Fedora, Madriva) (latest stable version)"
-msgstr ""
+msgstr "RPM balíčky (openSUSE, Fedora, Madriva) (poslední stabilní verze)"
 
 #: html/downloads/platformlinks.html:21
 msgid "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)"
-msgstr ""
+msgstr "RPM balíčky (openSUSE, Fedora, Madriva) (poslední testovací verze)"
 
 #: html/downloads/platformmessage.html:3
 msgid ""
@@ -1584,19 +1590,19 @@ msgstr "Databáze telefonů Gammu"
 #: html/phonedb/index.html:10 html/phonedb/index.html.py:23
 #: html/phonedb/new.html:48 html/phonedb/search.html:21
 msgid "Go"
-msgstr ""
+msgstr "Odeslat"
 
 #: html/phonedb/index.html:12
 msgid "Feature Search"
-msgstr ""
+msgstr "Hledání podle vlastností"
 
 #: html/phonedb/index.html:28
 msgid "Syndication"
-msgstr ""
+msgstr "Syndikace"
 
 #: html/phonedb/index.html:32
 msgid "CSV"
-msgstr ""
+msgstr "CSV"
 
 #: html/phonedb/index.html:41
 msgid ""
@@ -1639,7 +1645,7 @@ msgstr "Výrobci"
 
 #: html/phonedb/index.html:71
 msgid "Recently Added Phones"
-msgstr ""
+msgstr "Nedávno přidané telefony"
 
 #: html/phonedb/index.html:74
 msgid "Phone Records Summary"
@@ -1704,11 +1710,11 @@ msgstr "Prosím zapište zde 'nospam':"
 
 #: html/phonedb/phone.html:11 html/phonedb/vendor.html:10
 msgid "Add new record"
-msgstr ""
+msgstr "Přidat nový záznam"
 
 #: html/phonedb/phone.html:13
 msgid "Similar Phones"
-msgstr ""
+msgstr "Podobné telefony"
 
 #: html/phonedb/phone.html:24
 msgid "None found."
@@ -1716,7 +1722,7 @@ msgstr "Žádný telefon nenalezen."
 
 #: html/phonedb/phone.html:29
 msgid "About entry"
-msgstr ""
+msgstr "O záznamu"
 
 #: html/phonedb/phone.html:32
 #, python-format
@@ -1724,6 +1730,8 @@ msgid ""
 "\n"
 "Created by %(author)s on %(created)s.\n"
 msgstr ""
+"\n"
+"Vytvořil %(author)s dne %(created)s.\n"
 
 #: html/phonedb/phone.html:38
 #, python-format
@@ -1731,6 +1739,8 @@ msgid ""
 "\n"
 "Created on %(created)s.\n"
 msgstr ""
+"\n"
+"Vytvořeno dne %(created)s.\n"
 
 #: html/phonedb/phone.html:51
 msgid ""
@@ -1768,6 +1778,8 @@ msgid ""
 "\n"
 "Found %(count)s results matching your query.\n"
 msgstr ""
+"\n"
+"Nalezeno %(count)s záznamů odpovídajících vašemu dotazu.\n"
 
 #: html/phonedb/vendor.html:19
 msgid "Website"
@@ -2161,11 +2173,11 @@ msgstr "Mailing listy"
 
 #: html/support/sidebar.html:6
 msgid "Bug tracker"
-msgstr ""
+msgstr "Sledování chyb"
 
 #: html/support/sidebar.html:7
 msgid "Jabber chat room"
-msgstr ""
+msgstr "Jabber konference"
 
 #: news/feeds.py:11
 msgid "Updates about Wammu and Gammu programs."
@@ -2191,12 +2203,16 @@ msgstr "Vlastnosti"
 #: phonedb/forms.py:18
 #, python-format
 msgid "%(description)s [<a href=\"%(url)s\">Link</a>]"
-msgstr ""
+msgstr "%(description)s [<a href=\"%(url)s\">Odkaz</a>]"
 
-#: phonedb/forms.py:29
+#: phonedb/forms.py:28 phonedb/models.py:81
+msgid "Features which are working in Gammu."
+msgstr "Funkcionalita, která je podporována Gammu."
+
+#: phonedb/forms.py:30
 #, python-format
 msgid "%(description)s (%(name)s)"
-msgstr ""
+msgstr "%(description)s (%(name)s)"
 
 #: phonedb/models.py:19
 msgid "Use [at] and [dot]"
@@ -2270,17 +2286,13 @@ msgstr "Loga"
 msgid "Ringtones"
 msgstr "Melodie"
 
-#: phonedb/models.py:78
+#: phonedb/models.py:79
 msgid "Phone name, please exclude vendor name."
-msgstr ""
+msgstr "Jméno telefonu, bez jména výrobce."
 
 #: phonedb/models.py:80
 msgid "Connection used in Gammu configuration."
 msgstr "Připojení použité v nastaveních Gammu."
-
-#: phonedb/models.py:81
-msgid "Features which are working in Gammu."
-msgstr ""
 
 #: phonedb/models.py:82
 msgid "Model used in Gammu configuration, usually empty."
@@ -2288,7 +2300,7 @@ msgstr "Model použitý v nastaveních Gammu, obvykle prázdné."
 
 #: phonedb/models.py:83
 msgid "Gammu version where you tested this phone."
-msgstr ""
+msgstr "Verze Gammu se kterou byl telefon testován."
 
 #: phonedb/models.py:84
 msgid ""
