@@ -14,6 +14,23 @@
 
 <h2>{% trans "Create New Record" %}</h2>
 
+<p>
+{% blocktrans %}
+Thank you for improving Gammu phones database, but please note that this is
+not bug tracking system. Should you have any problems with Gammu, please
+<a href="/support/bugs/">report them in the bug tracker</a>.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+Email and name fields are voluntary, you can choose how (and whether) the
+email will be shown to visitors. Email can be used by Gammu developers to
+contact you in case they want to test something with your phone or want to
+clarify some things you have entered.
+{% endblocktrans %}
+</p>
+
 <form action="/phones/new/" method="POST">
 <table>
 {{ form.as_table }}
