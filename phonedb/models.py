@@ -75,8 +75,8 @@ class Connection(models.Model):
         return '%s (%s)' % (self.name, self.medium)
 
 class Phone(models.Model):
-    name = models.CharField(max_length = 250, help_text = ugettext_lazy('Phone name, please exclude vendor name.'))
     vendor = models.ForeignKey(Vendor)
+    name = models.CharField(max_length = 250, help_text = ugettext_lazy('Phone name, please exclude vendor name.'))
     connection = models.ForeignKey(Connection, null = True, blank = True, help_text = ugettext_lazy('Connection used in Gammu configuration.'))
     features = models.ManyToManyField(Feature, help_text = ugettext_lazy('Features which are working in Gammu.'), blank = True)
     model = models.CharField(max_length = 100, blank = True, help_text = ugettext_lazy('Model used in Gammu configuration, usually empty.'))
