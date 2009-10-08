@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU</h2>
 Section: Gammu Documentation (1)<br/>
-Updated: Aug 11 2009<br/>
+Updated: Sep 14 2009<br/>
 <a href="#index">Index</a> 
 <hr/>
 <p><a class="aname" id="lbAB" name="lbAB"/></p>
@@ -153,15 +153,15 @@ contacenated sms</dd>
 <dt><b>getsms</b> <i>folder start [stop]</i></dt>
 <dd>Get SMS.
 <p>Locations are numerated from 1.</p>
-<p>When give folder 0, sms is given from &quot;flat&quot; memory (all sms
-from all folders have unique numbers). It's sometimes emulated by
-Gammu. You can use it with all phones.</p>
-<p>When give folder 1, 2, etc. sms are taken from Inbox, Outbox,
-etc. and each sms has unique number in his folder. Name of folders
-can depend on your phone (the most often 1=&quot;Inbox&quot;, 2=&quot;Outbox&quot;,
-etc.). This method is not supported by all phones (for example, not
-supported by Nokia 3310, 5110, 6110). If work with your phone, use
-<b>getsmsfolders</b> to get folders list.</p>
+<p>Folder 0 means that sms is being read from &quot;flat&quot; memory (all
+sms from all folders have unique numbers). It's sometimes emulated
+by Gammu. You can use it with all phones.</p>
+<p>Other folders like 1, 2, etc. match folders in phone such as
+Inbox, Outbox, etc. and each sms has unique number in his folder.
+Name of folders can depend on your phone (the most often 1=&quot;Inbox&quot;,
+2=&quot;Outbox&quot;, etc.). This method is not supported by all phones (for
+example, not supported by Nokia 3310, 5110, 6110). If work with
+your phone, use <b>getsmsfolders</b> to get folders list.</p>
 </dd>
 <dt><b>getsmsc</b> <i>[start [stop]]</i></dt>
 <dd>Get SMSC settings from SIM card.
@@ -593,13 +593,17 @@ configuration intact, it just changes the SMSC number.
 <h4>Memory (phonebooks and calls)</h4>
 <dl compact="compact">
 <dt><b>addcategory TODO|PHONEBOOK</b> <i>text</i></dt>
-<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Adds data written in file created using <b>backup option</b>.
 All things backup'ed by <b>backup</b> can be restored (when made
 backup to Gammu text file).
 <p>Please note that this adds all content of backup file to phone
 and does not care about current data in the phone (no duplicates
 are detected).</p>
+<p>Use -yes parameter to answer yes to all questions (you want to
+automatically restore all data).</p>
+<p>Use -memory parameter to force usage of defined memory type for
+storing entries regardless what backu format says.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Backup your phone to file. It's possible to backup (depends on
@@ -906,13 +910,17 @@ like Nokia 3310 or 3330 supports it)</dd>
 phones you usually just upload them to some folder in phone
 filesystem.</p>
 <dl compact="compact">
-<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Adds data written in file created using <b>backup option</b>.
 All things backup'ed by <b>backup</b> can be restored (when made
 backup to Gammu text file).
 <p>Please note that this adds all content of backup file to phone
 and does not care about current data in the phone (no duplicates
 are detected).</p>
+<p>Use -yes parameter to answer yes to all questions (you want to
+automatically restore all data).</p>
+<p>Use -memory parameter to force usage of defined memory type for
+storing entries regardless what backu format says.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Backup your phone to file. It's possible to backup (depends on
@@ -1011,13 +1019,17 @@ composer from phone menu (for example, in N33xx).
 <a class="aname" id="lbAM" name="lbAM"/>
 <h4>Calendar notes</h4>
 <dl compact="compact">
-<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Adds data written in file created using <b>backup option</b>.
 All things backup'ed by <b>backup</b> can be restored (when made
 backup to Gammu text file).
 <p>Please note that this adds all content of backup file to phone
 and does not care about current data in the phone (no duplicates
 are detected).</p>
+<p>Use -yes parameter to answer yes to all questions (you want to
+automatically restore all data).</p>
+<p>Use -memory parameter to force usage of defined memory type for
+storing entries regardless what backu format says.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Backup your phone to file. It's possible to backup (depends on
@@ -1096,13 +1108,17 @@ for sendsms and savesms</b>.</p>
 <h4>To do lists</h4>
 <dl compact="compact">
 <dt><b>addcategory TODO|PHONEBOOK</b> <i>text</i></dt>
-<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Adds data written in file created using <b>backup option</b>.
 All things backup'ed by <b>backup</b> can be restored (when made
 backup to Gammu text file).
 <p>Please note that this adds all content of backup file to phone
 and does not care about current data in the phone (no duplicates
 are detected).</p>
+<p>Use -yes parameter to answer yes to all questions (you want to
+automatically restore all data).</p>
+<p>Use -memory parameter to force usage of defined memory type for
+storing entries regardless what backu format says.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Backup your phone to file. It's possible to backup (depends on
@@ -1206,13 +1222,17 @@ will connect your phone and use Gammu. See <a href="../gammurc.5/">gammurc</a>(5
 <h4>Categories</h4>
 <dl compact="compact">
 <dt><b>addcategory TODO|PHONEBOOK</b> <i>text</i></dt>
-<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Adds data written in file created using <b>backup option</b>.
 All things backup'ed by <b>backup</b> can be restored (when made
 backup to Gammu text file).
 <p>Please note that this adds all content of backup file to phone
 and does not care about current data in the phone (no duplicates
 are detected).</p>
+<p>Use -yes parameter to answer yes to all questions (you want to
+automatically restore all data).</p>
+<p>Use -memory parameter to force usage of defined memory type for
+storing entries regardless what backu format says.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Backup your phone to file. It's possible to backup (depends on
@@ -1257,13 +1277,17 @@ won't be done, when phone doesn't have set clock inside.</p>
 <a class="aname" id="lbAR" name="lbAR"/>
 <h4>Backing up and restoring</h4>
 <dl compact="compact">
-<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Adds data written in file created using <b>backup option</b>.
 All things backup'ed by <b>backup</b> can be restored (when made
 backup to Gammu text file).
 <p>Please note that this adds all content of backup file to phone
 and does not care about current data in the phone (no duplicates
 are detected).</p>
+<p>Use -yes parameter to answer yes to all questions (you want to
+automatically restore all data).</p>
+<p>Use -memory parameter to force usage of defined memory type for
+storing entries regardless what backu format says.</p>
 </dd>
 <dt><b>addsms</b> <i>folder file [-yes]</i></dt>
 <dd>Adds SMSes from file (format like backupsms uses) to selected
@@ -1472,13 +1496,17 @@ or 9210 have to reboot them to see netmonitor menu)</p>
 <a class="aname" id="lbAV" name="lbAV"/>
 <h4>WAP settings and bookmarks</h4>
 <dl compact="compact">
-<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Adds data written in file created using <b>backup option</b>.
 All things backup'ed by <b>backup</b> can be restored (when made
 backup to Gammu text file).
 <p>Please note that this adds all content of backup file to phone
 and does not care about current data in the phone (no duplicates
 are detected).</p>
+<p>Use -yes parameter to answer yes to all questions (you want to
+automatically restore all data).</p>
+<p>Use -memory parameter to force usage of defined memory type for
+storing entries regardless what backu format says.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Backup your phone to file. It's possible to backup (depends on
@@ -1644,13 +1672,17 @@ for sendsms and savesms</b>.</p>
 <a class="aname" id="lbAY" name="lbAY"/>
 <h4>FM radio</h4>
 <dl compact="compact">
-<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Adds data written in file created using <b>backup option</b>.
 All things backup'ed by <b>backup</b> can be restored (when made
 backup to Gammu text file).
 <p>Please note that this adds all content of backup file to phone
 and does not care about current data in the phone (no duplicates
 are detected).</p>
+<p>Use -yes parameter to answer yes to all questions (you want to
+automatically restore all data).</p>
+<p>Use -memory parameter to force usage of defined memory type for
+storing entries regardless what backu format says.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Backup your phone to file. It's possible to backup (depends on
@@ -2041,5 +2073,5 @@ ChangeLog for more details.</p>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 11:28:44 GMT, September 08, 2009
+Time: 21:20:42 GMT, October 06, 2009
 </div>

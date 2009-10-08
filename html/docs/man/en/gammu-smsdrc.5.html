@@ -165,6 +165,11 @@ Additionally parameters with identifiers of received messages are
 appended to the command line. The identifiers depend on used
 service backend, typically it is ID of inserted row for database
 backends or file name for file based backends.</p>
+<p>Gammu SMSD waits for the script to terminate. If you make some
+time consuming there, it will make SMSD not receive new messages.
+However to limit breakage from this situation, the waiting time is
+limited to two minutes. After this time SMSD will continue in
+normal operation and might execute your script again.</p>
 </dd>
 </dl>
 <a class="aname" id="lbAF" name="lbAF"/>
@@ -371,5 +376,5 @@ logfile=smsd.log</p>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 11:28:44 GMT, September 08, 2009
+Time: 21:20:42 GMT, October 06, 2009
 </div>

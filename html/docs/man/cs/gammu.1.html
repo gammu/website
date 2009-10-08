@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU</h2>
 Section: Dokumentace Gammu (1)<br/>
-Updated: Srpen 11 2009<br/>
+Updated: Září 14, 2009<br/>
 <a href="#index">Index</a> 
 <hr/>
 <p><a class="aname" id="lbAB" name="lbAB"/></p>
@@ -161,12 +161,13 @@ dekódovány dohromady.</dd>
 (všechny SMS ze všech složek mají unikátní čísla). V některých
 případech je toto chování emulováno Gammu. Můžete ho proto použít
 se všemi telefony.</p>
-<p>When give folder 1, 2, etc. sms are taken from Inbox, Outbox,
-etc. and each sms has unique number in his folder. Name of folders
-can depend on your phone (the most often 1=&quot;Inbox&quot;, 2=&quot;Outbox&quot;,
-etc.). This method is not supported by all phones (for example, not
-supported by Nokia 3310, 5110, 6110). If work with your phone, use
-<b>getsmsfolders</b> to get folders list.</p>
+<p>Jiné složky jako 1, 2, atd. odpovídají složkám v telefonu jako
+Přijaté, Odeslané, atd. a každá SMS má unikátní číslo v dané
+složce. Jména složek závisí na použitém telefonu (většinou
+1=&quot;Přijaté&quot;, 2=&quot;Odeslané&quot;, atd.). Tato metoda není podporována
+všemi telefony (například Noka 3310, 5110 a 6110 jí nepodporují).
+Pokud s vaším telefonem funguje, můžete seznam složek získat
+příkazem <b>getsmsfolders</b>.</p>
 </dd>
 <dt><b>getsmsc</b> <i>[start [stop]]</i></dt>
 <dd>Načte nastavení SMS zpráv ze SIM karty.
@@ -606,11 +607,15 @@ parametry SMSC, jen změní číslo SMSC.
 <h4>Paměť (kontakty a hovory)</h4>
 <dl compact="compact">
 <dt><b>addcategory TODO|PHONEBOOK</b> <i>text</i></dt>
-<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Přidá data ze souboru vytvořeného pomocí fuknce <b>backup</b>.
 <p>Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
 o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
+<p>Use -yes parameter to answer yes to all questions (you want to
+automatically restore all data).</p>
+<p>Use -memory parameter to force usage of defined memory type for
+storing entries regardless what backu format says.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Zazálohuje obsah telefonu do souboru. Je možné zálohovat
@@ -681,8 +686,8 @@ location</i></dt>
 <dd>Umožní převádět mezi různými formáty pro zálohy, které Gammu
 podporuje pro kontakty. Typ souboru je odhadnut (pro vstupní soubor
 podle přípony a obsahu, pro výstupní jen podle přípony).
-<p>For example if you want to convert single entry from gammu
-native backup to vCard, you need following command:</p>
+<p>Například převod jednoho záznamu ze zálohy Gammu do vCardu
+provedete následujícím příkazem:</p>
 <p><br/>
 gammusavefileCALENDARoutput.vcfmyPhonebook.backupME42</p>
 </dd>
@@ -744,8 +749,9 @@ soubory ze složky se zadaným ID.</dd>
 <dd>Načte ze souborového systému telefonu soubory se zadanými
 ID.</dd>
 <dt><b>getfilesystem</b> <i>[-flatall|-flat]</i></dt>
-<dd>Display info about all folders and files in phone memory/memory
-card. By default there is tree displayed, you can change it:
+<dd>Zobrazí informace o všech souborech a složkách v telefonu
+a/nebo na paměťové kartě. Výchozí je stromové zobrazení, ale můžete
+ho změnit:
 <p><b>-flatall</b> there are displayed full file/folder details
 like ID (first parameter in line)</p>
 <p><b>-flat</b></p>
@@ -918,11 +924,15 @@ like Nokia 3310 or 3330 supports it)</dd>
 novější je obvykle jen musíte nahrát do správné složky v
 telefonu.</p>
 <dl compact="compact">
-<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Přidá data ze souboru vytvořeného pomocí fuknce <b>backup</b>.
 <p>Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
 o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
+<p>Use -yes parameter to answer yes to all questions (you want to
+automatically restore all data).</p>
+<p>Use -memory parameter to force usage of defined memory type for
+storing entries regardless what backu format says.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Zazálohuje obsah telefonu do souboru. Je možné zálohovat
@@ -1022,11 +1032,15 @@ tento název v menu některých telefonů blikat (například 33xx)</p>
 <a class="aname" id="lbAM" name="lbAM"/>
 <h4>Kalendář</h4>
 <dl compact="compact">
-<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Přidá data ze souboru vytvořeného pomocí fuknce <b>backup</b>.
 <p>Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
 o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
+<p>Use -yes parameter to answer yes to all questions (you want to
+automatically restore all data).</p>
+<p>Use -memory parameter to force usage of defined memory type for
+storing entries regardless what backu format says.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Zazálohuje obsah telefonu do souboru. Je možné zálohovat
@@ -1105,11 +1119,15 @@ parametry pro sendsms a savesms</b>.</p>
 <h4>Úkoly</h4>
 <dl compact="compact">
 <dt><b>addcategory TODO|PHONEBOOK</b> <i>text</i></dt>
-<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Přidá data ze souboru vytvořeného pomocí fuknce <b>backup</b>.
 <p>Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
 o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
+<p>Use -yes parameter to answer yes to all questions (you want to
+automatically restore all data).</p>
+<p>Use -memory parameter to force usage of defined memory type for
+storing entries regardless what backu format says.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Zazálohuje obsah telefonu do souboru. Je možné zálohovat
@@ -1211,11 +1229,15 @@ každém připojení telefonu ke Gammu. Více podrobností naleznete v
 <h4>Kategorie</h4>
 <dl compact="compact">
 <dt><b>addcategory TODO|PHONEBOOK</b> <i>text</i></dt>
-<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Přidá data ze souboru vytvořeného pomocí fuknce <b>backup</b>.
 <p>Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
 o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
+<p>Use -yes parameter to answer yes to all questions (you want to
+automatically restore all data).</p>
+<p>Use -memory parameter to force usage of defined memory type for
+storing entries regardless what backu format says.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Zazálohuje obsah telefonu do souboru. Je možné zálohovat
@@ -1260,11 +1282,15 @@ telefonu není nastaven čas a datum.</p>
 <a class="aname" id="lbAR" name="lbAR"/>
 <h4>Záloha a obnovení</h4>
 <dl compact="compact">
-<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Přidá data ze souboru vytvořeného pomocí fuknce <b>backup</b>.
 <p>Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
 o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
+<p>Use -yes parameter to answer yes to all questions (you want to
+automatically restore all data).</p>
+<p>Use -memory parameter to force usage of defined memory type for
+storing entries regardless what backu format says.</p>
 </dd>
 <dt><b>addsms</b> <i>folder file [-yes]</i></dt>
 <dd>Přidá SMS zprávy ze souboru (formát jako používá backupsms) do
@@ -1336,8 +1362,8 @@ location</i></dt>
 <dd>Umožní převádět mezi různými formáty pro zálohy, které Gammu
 podporuje pro kontakty. Typ souboru je odhadnut (pro vstupní soubor
 podle přípony a obsahu, pro výstupní jen podle přípony).
-<p>For example if you want to convert single entry from gammu
-native backup to vCard, you need following command:</p>
+<p>Například převod jednoho záznamu ze zálohy Gammu do vCardu
+provedete následujícím příkazem:</p>
 <p><br/>
 gammusavefileCALENDARoutput.vcfmyPhonebook.backupME42</p>
 </dd>
@@ -1470,11 +1496,15 @@ or 9210 have to reboot them to see netmonitor menu)</p>
 <a class="aname" id="lbAV" name="lbAV"/>
 <h4>Nastavení WAPu a záložky</h4>
 <dl compact="compact">
-<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Přidá data ze souboru vytvořeného pomocí fuknce <b>backup</b>.
 <p>Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
 o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
+<p>Use -yes parameter to answer yes to all questions (you want to
+automatically restore all data).</p>
+<p>Use -memory parameter to force usage of defined memory type for
+storing entries regardless what backu format says.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Zazálohuje obsah telefonu do souboru. Je možné zálohovat
@@ -1640,11 +1670,15 @@ parametry pro sendsms a savesms</b>.</p>
 <a class="aname" id="lbAY" name="lbAY"/>
 <h4>FM rádio</h4>
 <dl compact="compact">
-<dt><b>addnew</b> <i>file [-yes]</i></dt>
+<dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Přidá data ze souboru vytvořeného pomocí fuknce <b>backup</b>.
 <p>Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
 o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
+<p>Use -yes parameter to answer yes to all questions (you want to
+automatically restore all data).</p>
+<p>Use -memory parameter to force usage of defined memory type for
+storing entries regardless what backu format says.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Zazálohuje obsah telefonu do souboru. Je možné zálohovat
@@ -2040,5 +2074,5 @@ stránce &lt;<a href="http://www.gammu.org/">http://www.gammu.org/</a>&gt;.</p>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 13:58:00 GMT, September 04, 2009
+Time: 21:20:42 GMT, October 06, 2009
 </div>
