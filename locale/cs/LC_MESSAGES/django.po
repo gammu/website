@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-08 11:35+0200\n"
-"PO-Revision-Date: 2009-10-07 14:47+0200\n"
+"PO-Revision-Date: 2009-10-08 11:37+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -725,9 +725,9 @@ msgid ""
 msgstr ""
 "\n"
 "Wammu je program pro správu telefonů běžící pod Linuxem, Windows a "
-"pravděpodobně i dalšími platformami, kde fungují <a "
-"href=\"/libgammu\">libGammu</a> a wxPython. Komunikaci s telefonem obstarává "
-"knihovna Gammu. V současné době jsou podporovány tyto funkce: \n"
+"pravděpodobně i dalšími platformami, kde fungují <a href=\"/libgammu"
+"\">libGammu</a> a wxPython. Komunikaci s telefonem obstarává knihovna Gammu. "
+"V současné době jsou podporovány tyto funkce: \n"
 
 #: html/wammu.html:26
 msgid ""
@@ -782,8 +782,8 @@ msgstr "přeloženo do mnoha jazyků včetně češtiny"
 #: html/wammu.html:35
 msgid "rated as best on many software servers"
 msgstr ""
-"ohodnoceno jako nejlepší na mnoha softwarových serverech (např. "
-"slunečnice.cz, instaluj.cz)"
+"ohodnoceno jako nejlepší na mnoha softwarových serverech (např. slunečnice."
+"cz, instaluj.cz)"
 
 #: html/wammu.html:40
 msgid ""
@@ -1042,9 +1042,8 @@ msgid ""
 msgstr ""
 
 #: html/contribute/sidebar.html:2
-#, fuzzy
 msgid "Ways to contribute"
-msgstr "Jak přispět"
+msgstr "Možnosti jak přispět"
 
 #: html/contribute/translate.html:12
 msgid "Translating Wammu and Gammu"
@@ -1623,9 +1622,9 @@ msgstr ""
 "Tento seznam je vyplňován uživateli a z toho důvodu nemůže být žádná záruka, "
 "že informace jsou správné a přesné. Pokud se autor rozhodl zveřejnit svůj "
 "email, můžete mu zkusit napsat a požádat o podrobnosti. V případě "
-"pochybností se můžete obrátit na <a "
-"href=\"https://lists.sourceforge.net/lists/listinfo/gammu-users\">mailing list "
-"gammu-users</a>, kde vám určitě někdo rád poradí.\n"
+"pochybností se můžete obrátit na <a href=\"https://lists.sourceforge.net/"
+"lists/listinfo/gammu-users\">mailing list gammu-users</a>, kde vám určitě "
+"někdo rád poradí.\n"
 
 #: html/phonedb/index.html:57
 msgid ""
@@ -2120,10 +2119,9 @@ msgid ""
 msgstr ""
 "\n"
 "Pokud chcete problémy řešit interaktivně, můžete použít konferenční místnost "
-"na Jabberu <a "
-"href=\"xmpp:gammu@conference.cihar.com?join\">gammu@conference.cihar.com</a>, "
-"záznamy komunikace jsou dostupné na <a href=\"http://logs.cihar.com/jabber/ga"
-"mmu@conference.cihar.com/\">logs.cihar.com</a>.\n"
+"na Jabberu <a href=\"xmpp:gammu@conference.cihar.com?join\">gammu@conference."
+"cihar.com</a>, záznamy komunikace jsou dostupné na <a href=\"http://logs."
+"cihar.com/jabber/gammu@conference.cihar.com/\">logs.cihar.com</a>.\n"
 "Pro přístup můžete použít také webové rozhraní <a\n"
 "href=\"http://jabber.cihar.com/muckl/\">MUCkl</a>.\n"
 
@@ -2218,17 +2216,15 @@ msgstr "Vložit text NOSPAM na náhodnou pozici"
 
 #: phonedb/models.py:26
 msgid "Draft"
-msgstr ""
+msgstr "Návrh"
 
 #: phonedb/models.py:27
-#, fuzzy
 msgid "Approved"
-msgstr "Vylepšete"
+msgstr "Schváleno"
 
 #: phonedb/models.py:28
-#, fuzzy
 msgid "Deleted"
-msgstr "Mažu"
+msgstr "Smazáne"
 
 #: phonedb/models.py:32
 msgid "Phone information"
@@ -2279,18 +2275,16 @@ msgid "Phone name, please exclude vendor name."
 msgstr ""
 
 #: phonedb/models.py:80
-#, fuzzy
 msgid "Connection used in Gammu configuration."
-msgstr "Připojení použité v nastaveních Gammu"
+msgstr "Připojení použité v nastaveních Gammu."
 
 #: phonedb/models.py:81
 msgid "Features which are working in Gammu."
 msgstr ""
 
 #: phonedb/models.py:82
-#, fuzzy
 msgid "Model used in Gammu configuration, usually empty."
-msgstr "Model použitý v nastaveních Gammu"
+msgstr "Model použitý v nastaveních Gammu, obvykle prázdné."
 
 #: phonedb/models.py:83
 msgid "Gammu version where you tested this phone."
