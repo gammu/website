@@ -43,6 +43,7 @@ class PagesSitemap(Sitemap):
             ('/authors/', 'html/authors.html', 0.9),
             ('/license/', 'html/libgammu.html', 0.9),
             ('/search/', 'html/search.html', 0.3),
+            ('/donate/', 'html/donate.html', 0.3),
 
             ('/support/', 'html/support/index.html', 0.9),
             ('/support/bugs/', 'html/support/bugs.html', 0.9),
@@ -60,7 +61,7 @@ class PagesSitemap(Sitemap):
             ('/docs/devel/', 'html/docs/devel.html', 0.9),
 
             ('/screenshots/', 'html/screenshots/index.html', 0.8),
-            ('/links/', 'html/links/index.html', 0.8),
+            ('/links/', 'html/links/index.html', 0.4),
             ]
     def location(self, item):
         return item[0]
