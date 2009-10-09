@@ -179,6 +179,8 @@ urlpatterns = patterns('',
     # Compatibility
     (r'^install/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
     (r'^improve/$', 'django.views.generic.simple.redirect_to', {'url': '/contribute/'}),
+    (r'^wammu.xml$', 'django.views.generic.simple.redirect_to', {'url': '/api/pad/wammu.xml'}),
+    (r'^wammu.doap$', 'django.views.generic.simple.redirect_to', {'url': '/api/doap/wammu.xml'}),
 
     # Sitemap
     (r'^sitemap.xml$', 'django.contrib.sitemaps.views.index', {'sitemaps': sitemaps}),
