@@ -79,7 +79,7 @@ def program(request, program):
 
     mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
 
-    downloads = get_current_downloads('gammu', 'source')
+    downloads = get_current_downloads(program, 'source')
 
     return render_to_response('downloads/program.html', WammuContext(request, {
         'stable_release': stable_release,
