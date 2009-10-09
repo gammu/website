@@ -2,6 +2,7 @@ from django.conf.urls.defaults import *
 from news.feeds import RssNewsFeed, AtomNewsFeed, Entry
 from phonedb.feeds import RssPhonesFeed, AtomPhonesFeed, Phone, Vendor
 from django.contrib.sitemaps import GenericSitemap, Sitemap
+from manpages.views import list_langs, list_pages
 import os
 import datetime
 
@@ -73,13 +74,37 @@ class PagesSitemap(Sitemap):
     def priority(self, item):
         return item[2]
 
+class ManSitemap(Sitemap):
+    changefreq = 'monthly'
+
+    def items(self):
+        result = []
+        for lang in list_langs():
+            if lang == 'en':
+                priority = 1
+            else:
+                priority = 0.8
+            result += [('%s/%s' % (lang, page), priority) for page in list_pages(lang)]
+        return result
+
+    def location(self, item):
+        return '/docs/man/%s/' % item[0]
+
+    def lastmod(self, item):
+        (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat('html/docs/man/%s.html' % item[0])
+        return datetime.datetime.fromtimestamp(mtime)
+
+    def priority(self, item):
+        return item[1]
+
 
 sitemaps = {
     'news': GenericSitemap(news_dict, priority=0.8, changefreq='monthly'),
     'phones': GenericSitemap(phones_dict, priority=0.8, changefreq='monthly'),
     'vendors': GenericSitemap(vendors_dict, priority=0.2, changefreq='monthly'),
     'pages': PagesSitemap(),
-# todo: manpages, downloads
+    'manpages': ManSitemap(),
+# todo: downloads
 }
 
 from django.contrib import admin
