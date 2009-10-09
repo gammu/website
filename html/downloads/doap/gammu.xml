@@ -6,10 +6,11 @@
   <programming-language>C</programming-language>
   <download-page rdf:resource="http://wammu.eu/download/gammu/" />
   <homepage rdf:resource="http://wammu.eu/gammu/" />
-  <old-homepage rdf:resource="http://cihar.com/gammu/" />
   <license rdf:resource="http://usefulinc.com/doap/licenses/gpl" />
+  <mailing-list rdf:resource="http://wammu.eu/support/lists/" />
   <wiki rdf:resource="http://www.gammu.org/wiki/index.php?title=Gammu:Main_Page" />
   <screenshots rdf:resource="http://wammu.eu/screenshots/gammu/" />
+  <old-homepage rdf:resource="http://cihar.com/gammu/" />
   <category rdf:resource="http://freshmeat.net/browse/247/"/>
   <category rdf:resource="http://freshmeat.net/browse/130/"/>
   <category rdf:resource="http://freshmeat.net/browse/861/"/>
