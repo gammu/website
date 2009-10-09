@@ -3,6 +3,7 @@ from wammu_web.wammu.helpers import WammuContext
 from downloads.models import Download, Release, Mirror, get_program, get_latest_releases, get_current_downloads, PLATFORM_CHOICES
 from django.http import Http404
 from django.utils.datastructures import MultiValueDictKeyError
+from django.db.models import Q
 
 def get_mirrors(request):
     mirrors = Mirror.objects.all().order_by('id')
@@ -109,7 +110,6 @@ def doap(request, program):
     mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
 
     downloads = get_current_downloads(program, None)
-    print downloads
 
     return render_to_response('downloads/doap/%s.xml' % program, WammuContext(request, {
         'mirrors': mirrors,
@@ -120,4 +120,18 @@ def doap(request, program):
     }), mimetype = 'application/xml')
 
 def pad(request, program):
-    return ''
+    mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
+
+    downloads = get_current_downloads(program, 'win32')
+
+    release = downloads[0][0]
+    download = downloads[0][1].filter(Q(location__icontains = 'setup.exe') | Q(location__icontains = 'windows.exe'))[0]
+    print downloads
+
+    return render_to_response('downloads/pad/%s.xml' % program, WammuContext(request, {
+        'mirrors': mirrors,
+        'mirror': mirror,
+        'download': download,
+        'release': release,
+        'platforms': PLATFORM_CHOICES,
+    }), mimetype = 'application/xml')
