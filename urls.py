@@ -1,6 +1,7 @@
 from django.conf.urls.defaults import *
-from news.feeds import RssNewsFeed, AtomNewsFeed
+from news.feeds import RssNewsFeed, AtomNewsFeed, Entry
 from phonedb.feeds import RssPhonesFeed, AtomPhonesFeed
+from django.contrib.sitemaps import FlatPageSitemap, GenericSitemap
 
 newsfeeds = {
     'rss': RssNewsFeed,
@@ -10,6 +11,15 @@ newsfeeds = {
 phonesfeeds = {
     'rss': RssPhonesFeed,
     'atom': AtomPhonesFeed,
+}
+
+news_dict = {
+    'queryset': Entry.objects.all(),
+    'date_field': 'pub_date',
+}
+
+sitemaps = {
+    'news': GenericSitemap(news_dict, priority=0.6),
 }
 
 from django.contrib import admin
@@ -110,4 +120,7 @@ urlpatterns = patterns('',
     # Compatibility
     (r'^install/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
     (r'^improve/$', 'django.views.generic.simple.redirect_to', {'url': '/contribute/'}),
+
+    # Sitempa
+    (r'^sitemap.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
 )
