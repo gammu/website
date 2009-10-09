@@ -66,16 +66,18 @@ class PagesSitemap(Sitemap):
             ('/contribute/publicity/', 'html/contribute/publicity.html', 0.9),
 
             ('/docs/', 'html/docs/index.html', 0.9),
-            ('/docs/man/', 'html/docs/list_man.html', 0.9),
+            ('/docs/man/', None, 0.9),
             ('/docs/devel/', 'html/docs/devel.html', 0.9),
 
-            ('/screenshots/', 'html/screenshots/index.html', 0.8),
-            ('/links/', 'html/links/index.html', 0.4),
+            ('/screenshots/', None, 0.8),
+            ('/links/', None, 0.4),
             ]
     def location(self, item):
         return item[0]
 
     def lastmod(self, item):
+        if item[1] is None:
+            return None
         (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat(item[1])
         return datetime.datetime.fromtimestamp(mtime)
 
