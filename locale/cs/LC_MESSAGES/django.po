@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-08 17:04+0200\n"
+"POT-Creation-Date: 2009-10-09 13:43+0200\n"
 "PO-Revision-Date: 2009-10-08 12:08+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -111,11 +111,11 @@ msgstr "Reklama"
 msgid "About"
 msgstr "Informace"
 
-#: html/base.html:80 html/gammu.html:15
+#: html/base.html:80 html/gammu.html:19
 msgid "Gammu"
 msgstr "Gammu"
 
-#: html/base.html:81 html/wammu.html:15
+#: html/base.html:81 html/wammu.html:19
 msgid "Wammu"
 msgstr "Wammu"
 
@@ -164,8 +164,8 @@ msgstr "Dalších aplikace"
 msgid "News"
 msgstr "Novinky"
 
-#: html/base.html:105 html/gammu.html:63 html/libgammu.html:52
-#: html/python-gammu.html:26 html/smsd.html:54 html/wammu.html:48
+#: html/base.html:105 html/gammu.html:67 html/libgammu.html:52
+#: html/python-gammu.html:30 html/smsd.html:58 html/wammu.html:52
 #: html/support/sidebar.html:4 wammu/helpers.py:19
 msgid "Documentation"
 msgstr "Dokumentace"
@@ -343,12 +343,12 @@ msgid ""
 "devices and those are not accessible through Gammu)\n"
 msgstr ""
 
-#: html/gammu.html:7 html/libgammu.html:7 html/python-gammu.html:7
-#: html/smsd.html:7 html/wammu.html:7
+#: html/gammu.html:11 html/libgammu.html:7 html/python-gammu.html:11
+#: html/smsd.html:11 html/wammu.html:11
 msgid "More information"
 msgstr "Více informací"
 
-#: html/gammu.html:18
+#: html/gammu.html:22
 msgid ""
 "\n"
 "Gammu is the name of the project as well as name of command line utility,\n"
@@ -357,7 +357,7 @@ msgid ""
 "of <a href=\"/libgammu\">libGammu</a>.\n"
 msgstr ""
 
-#: html/gammu.html:26
+#: html/gammu.html:30
 msgid ""
 "\n"
 "Gammu command line utility provides access to wide range of phone features,\n"
@@ -368,7 +368,7 @@ msgid ""
 "phones. Generally following features are supported:\n"
 msgstr ""
 
-#: html/gammu.html:37
+#: html/gammu.html:41
 msgid ""
 "\n"
 "This project has originally forked from Gnokii and up to version 0.58 has "
@@ -380,7 +380,7 @@ msgid ""
 "from the \"Heretics of Dune\" book written by Frank Herbert exists.\n"
 msgstr ""
 
-#: html/gammu.html:46
+#: html/gammu.html:50
 msgid ""
 "\n"
 "The Gammu package does not include just this binary, but as well <a\n"
@@ -390,13 +390,13 @@ msgid ""
 "phone.\n"
 msgstr ""
 
-#: html/gammu.html:55 html/libgammu.html:43 html/smsd.html:44
-#: html/wammu.html:38 html/downloads/list.html:4 html/downloads/program.html:4
+#: html/gammu.html:59 html/libgammu.html:43 html/smsd.html:48
+#: html/wammu.html:42 html/downloads/list.html:4 html/downloads/program.html:4
 #: html/downloads/release.html:4 wammu/helpers.py:17
 msgid "Download"
 msgstr "Stáhnout"
 
-#: html/gammu.html:57
+#: html/gammu.html:61
 msgid ""
 "\n"
 "Just download <a href=\"/download/gammu\">Gammu</a> for your platform and "
@@ -404,7 +404,7 @@ msgid ""
 "it.\n"
 msgstr ""
 
-#: html/gammu.html:65
+#: html/gammu.html:69
 msgid ""
 "\n"
 "The best documentation is available in form of <a href=\"/docs/man\">man\n"
@@ -623,11 +623,11 @@ msgid ""
 "owners, where appropriate.\n"
 msgstr ""
 
-#: html/python-gammu.html:4 html/python-gammu.html.py:16
+#: html/python-gammu.html:4 html/python-gammu.html.py:20
 msgid "Python bindings for Gammu"
 msgstr "Rozhraní mezi Pythonem a Gammu"
 
-#: html/python-gammu.html:19
+#: html/python-gammu.html:23
 msgid ""
 "\n"
 "Gammu also includes Python bindings which allow you to use (most) of <a\n"
@@ -635,7 +635,7 @@ msgid ""
 "href=\"http://python.org\">Python</a> language.\n"
 msgstr ""
 
-#: html/python-gammu.html:28
+#: html/python-gammu.html:32
 msgid ""
 "\n"
 "API documentation is available.\n"
@@ -664,11 +664,11 @@ msgid ""
 "have no control over the content there.\n"
 msgstr ""
 
-#: html/smsd.html:15
+#: html/smsd.html:19
 msgid "Gammu SMSD"
 msgstr "Gammu SMSD"
 
-#: html/smsd.html:18
+#: html/smsd.html:22
 msgid ""
 "\n"
 "Gammu SMS Daemon is a program that periodically scans GSM modem for "
@@ -680,7 +680,7 @@ msgid ""
 "messages and automatically process them.\n"
 msgstr ""
 
-#: html/smsd.html:27
+#: html/smsd.html:31
 msgid ""
 "\n"
 "You can currently store received messages in files or in various databases.\n"
@@ -692,7 +692,7 @@ msgid ""
 "through <a href=\"http://libdbi.sourceforge.net/\">libdbi</a>.\n"
 msgstr ""
 
-#: html/smsd.html:37
+#: html/smsd.html:41
 msgid ""
 "\n"
 "The package includes also tool <code>gammu-smsd-inject</code> which will "
@@ -701,7 +701,7 @@ msgid ""
 "allows you to monitor current status of SMS Daemon or phone.\n"
 msgstr ""
 
-#: html/smsd.html:46
+#: html/smsd.html:50
 msgid ""
 "\n"
 "SMS Daemon is distributed as part of <a href=\"/gammu\">Gammu</a> so to "
@@ -712,7 +712,7 @@ msgid ""
 "distribution, try looking for something like <code>gammu-smsd</code>.\n"
 msgstr ""
 
-#: html/smsd.html:56
+#: html/smsd.html:60
 msgid ""
 "\n"
 "The best documentation is available in form of <a href=\"/docs/man\">man\n"
@@ -722,7 +722,7 @@ msgid ""
 "configuration file)</a>.\n"
 msgstr ""
 
-#: html/wammu.html:18
+#: html/wammu.html:22
 msgid ""
 "\n"
 "Wammu is mobile phone manager running on Linux, Windows and possibly other\n"
@@ -735,24 +735,24 @@ msgstr ""
 "\">libGammu</a> a wxPython. Komunikaci s telefonem obstarává knihovna Gammu. "
 "V současné době jsou podporovány tyto funkce: \n"
 
-#: html/wammu.html:26
+#: html/wammu.html:30
 msgid ""
 "complete support (can read/edit/delete/copy) for contacts, todo, calendar"
 msgstr ""
 "kompletní podpora (čtení, zápis, mazání, kopírování) pro kontakty, úkoly, "
 "kalendář"
 
-#: html/wammu.html:27
+#: html/wammu.html:31
 msgid "can read/create/save/send/backup smses"
 msgstr "umí číst, vytvářet, posílat a zálohovat SMS"
 
-#: html/wammu.html:28
+#: html/wammu.html:32
 msgid "sending files to phone (OBEX and Sony Ericsson phones only)"
 msgstr ""
 "posílání souborů do telefonu (zatím jen pro telefony používající OBEX a Sony "
 "Ericsson)"
 
-#: html/wammu.html:29
+#: html/wammu.html:33
 msgid ""
 "sms composer for multi part smses (currently only text and predefined bitmap/"
 "sound can be edited)"
@@ -760,11 +760,11 @@ msgstr ""
 "vytváření zpráv z více částí (v současné době je podporován jen text a "
 "předdefinované animace a zvuky)"
 
-#: html/wammu.html:30
+#: html/wammu.html:34
 msgid "display message including pictures and ringtones playback"
 msgstr "umí zobrazit zprávu včetně obrázků a přehrávání melodií"
 
-#: html/wammu.html:31
+#: html/wammu.html:35
 msgid ""
 "support for backup and import in various formats (vCard, vCalendar, vTodo, "
 "iCalendar, gammu own backup,...)"
@@ -772,26 +772,26 @@ msgstr ""
 "podpora pro zálohování a import (vCard, vCalendar, vTodo, iCalendar, vlastní "
 "formát Gammu,...)"
 
-#: html/wammu.html:32
+#: html/wammu.html:36
 msgid ""
 "export messages to mail (IMAP4, maildir and mailbox storages are supported)"
 msgstr "exportování zpráv do mailů (na IMAP4, maildir nebo mailbox)"
 
-#: html/wammu.html:33
+#: html/wammu.html:37
 msgid "searching for phone"
 msgstr "vyhledávání telefonu"
 
-#: html/wammu.html:34
+#: html/wammu.html:38
 msgid "translated into several languages"
 msgstr "přeloženo do mnoha jazyků včetně češtiny"
 
-#: html/wammu.html:35
+#: html/wammu.html:39
 msgid "rated as best on many software servers"
 msgstr ""
 "ohodnoceno jako nejlepší na mnoha softwarových serverech (např. slunečnice."
 "cz, instaluj.cz)"
 
-#: html/wammu.html:40
+#: html/wammu.html:44
 msgid ""
 "\n"
 "Wammu is included in many distributions, so please use the binary packages "
@@ -802,7 +802,7 @@ msgid ""
 "Windows</a>.\n"
 msgstr ""
 
-#: html/wammu.html:50
+#: html/wammu.html:54
 msgid ""
 "\n"
 "Wammu does not come with much documentation and there is hope that it will "
@@ -1341,6 +1341,28 @@ msgstr "Stáhnout Gammu"
 msgid "Download Wammu"
 msgstr "Stáhnout Wammu"
 
+#: html/downloads/index.html:43 html/phonedb/index.html:28
+msgid "Syndication"
+msgstr "Syndikace"
+
+#: html/downloads/index.html:45
+msgid "DOAP for Wammu"
+msgstr ""
+
+#: html/downloads/index.html:46
+#, fuzzy
+msgid "DOAP for Gammu"
+msgstr "Přispějte na Gammu"
+
+#: html/downloads/index.html:47
+msgid "PAD for Wammu"
+msgstr ""
+
+#: html/downloads/index.html:48
+#, fuzzy
+msgid "PAD for Gammu"
+msgstr "Přispějte na Gammu"
+
 #: html/downloads/list.html:8 html/downloads/program.html:19
 #, python-format
 msgid ""
@@ -1595,10 +1617,6 @@ msgstr "Odeslat"
 #: html/phonedb/index.html:12
 msgid "Feature Search"
 msgstr "Hledání podle vlastností"
-
-#: html/phonedb/index.html:28
-msgid "Syndication"
-msgstr "Syndikace"
 
 #: html/phonedb/index.html:32
 msgid "CSV"
