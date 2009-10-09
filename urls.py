@@ -1,7 +1,9 @@
 from django.conf.urls.defaults import *
 from news.feeds import RssNewsFeed, AtomNewsFeed, Entry
-from phonedb.feeds import RssPhonesFeed, AtomPhonesFeed
-from django.contrib.sitemaps import FlatPageSitemap, GenericSitemap
+from phonedb.feeds import RssPhonesFeed, AtomPhonesFeed, Phone, Vendor
+from django.contrib.sitemaps import GenericSitemap, Sitemap
+import os
+import datetime
 
 newsfeeds = {
     'rss': RssNewsFeed,
@@ -18,8 +20,62 @@ news_dict = {
     'date_field': 'pub_date',
 }
 
+phones_dict = {
+    'queryset': Phone.objects.all().exclude(state = 'deleted'),
+    'date_field': 'created',
+}
+
+vendors_dict = {
+    'queryset': Vendor.objects.all(),
+}
+
+class PagesSitemap(Sitemap):
+    changefreq = 'weekly'
+    def items(self):
+        return [
+            ('/', 'html/index.html', 1),
+            ('/gammu/', 'html/gammu.html', 1),
+            ('/libgammu/', 'html/libgammu.html', 1),
+            ('/wammu/', 'html/wammu.html', 1),
+            ('/smsd/', 'html/smsd.html', 1),
+            ('/python-gammu/', 'html/python-gammu.html', 1),
+
+            ('/authors/', 'html/authors.html', 0.9),
+            ('/license/', 'html/libgammu.html', 0.9),
+            ('/search/', 'html/search.html', 0.3),
+
+            ('/support/', 'html/support/index.html', 0.9),
+            ('/support/bugs/', 'html/support/bugs.html', 0.9),
+            ('/support/lists/', 'html/support/lists.html', 0.9),
+            ('/support/online/', 'html/support/online.html', 0.9),
+            ('/support/buy/', 'html/support/buy.html', 0.9),
+
+            ('/contribute/', 'html/contribute/index.html', 0.9),
+            ('/contribute/code/', 'html/contribute/code.html', 0.9),
+            ('/contribute/translate/', 'html/contribute/translate.html', 0.9),
+            ('/contribute/publicity/', 'html/contribute/publicity.html', 0.9),
+
+            ('/docs/', 'html/docs/index.html', 0.9),
+            ('/docs/man/', 'html/docs/list_man.html', 0.9),
+            ('/docs/devel/', 'html/docs/devel.html', 0.9),
+            ]
+    def location(self, item):
+        return item[0]
+
+    def lastmod(self, item):
+        (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat(item[1])
+        return datetime.datetime.fromtimestamp(mtime)
+
+    def priority(self, item):
+        return item[2]
+
+
 sitemaps = {
-    'news': GenericSitemap(news_dict, priority=0.6),
+    'news': GenericSitemap(news_dict, priority=0.8, changefreq='monthly'),
+    'phones': GenericSitemap(phones_dict, priority=0.6, changefreq='monthly'),
+    'vendors': GenericSitemap(vendors_dict, priority=0.4, changefreq='monthly'),
+    'pages': PagesSitemap(),
+# todo: manpages, downloads
 }
 
 from django.contrib import admin
@@ -121,6 +177,7 @@ urlpatterns = patterns('',
     (r'^install/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
     (r'^improve/$', 'django.views.generic.simple.redirect_to', {'url': '/contribute/'}),
 
-    # Sitempa
-    (r'^sitemap.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
+    # Sitemap
+    (r'^sitemap.xml$', 'django.contrib.sitemaps.views.index', {'sitemaps': sitemaps}),
+    (r'^sitemap-(?P<section>.+)\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
 )
