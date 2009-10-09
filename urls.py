@@ -1,4 +1,5 @@
 from django.conf.urls.defaults import *
+from django.conf import settings
 from news.feeds import RssNewsFeed, AtomNewsFeed
 from news.models import Entry
 from phonedb.feeds import RssPhonesFeed, AtomPhonesFeed
@@ -42,32 +43,32 @@ class PagesSitemap(Sitemap):
     changefreq = 'weekly'
     def items(self):
         return [
-            ('/', 'html/index.html', 1),
-            ('/gammu/', 'html/gammu.html', 1),
-            ('/libgammu/', 'html/libgammu.html', 1),
-            ('/wammu/', 'html/wammu.html', 1),
-            ('/smsd/', 'html/smsd.html', 1),
-            ('/python-gammu/', 'html/python-gammu.html', 1),
+            ('/', '%s/index.html' % settings.HTML_ROOT, 1),
+            ('/gammu/', '%s/gammu.html' % settings.HTML_ROOT, 1),
+            ('/libgammu/', '%s/libgammu.html' % settings.HTML_ROOT, 1),
+            ('/wammu/', '%s/wammu.html' % settings.HTML_ROOT, 1),
+            ('/smsd/', '%s/smsd.html' % settings.HTML_ROOT, 1),
+            ('/python-gammu/', '%s/python-gammu.html' % settings.HTML_ROOT, 1),
 
-            ('/authors/', 'html/authors.html', 0.9),
-            ('/license/', 'html/libgammu.html', 0.9),
-            ('/search/', 'html/search.html', 0.3),
-            ('/donate/', 'html/donate.html', 0.3),
+            ('/authors/', '%s/authors.html' % settings.HTML_ROOT, 0.9),
+            ('/license/', '%s/libgammu.html' % settings.HTML_ROOT, 0.9),
+            ('/search/', '%s/search.html' % settings.HTML_ROOT, 0.3),
+            ('/donate/', '%s/donate.html' % settings.HTML_ROOT, 0.3),
 
-            ('/support/', 'html/support/index.html', 0.9),
-            ('/support/bugs/', 'html/support/bugs.html', 0.9),
-            ('/support/lists/', 'html/support/lists.html', 0.9),
-            ('/support/online/', 'html/support/online.html', 0.9),
-            ('/support/buy/', 'html/support/buy.html', 0.9),
+            ('/support/', '%s/support/index.html' % settings.HTML_ROOT, 0.9),
+            ('/support/bugs/', '%s/support/bugs.html' % settings.HTML_ROOT, 0.9),
+            ('/support/lists/', '%s/support/lists.html' % settings.HTML_ROOT, 0.9),
+            ('/support/online/', '%s/support/online.html' % settings.HTML_ROOT, 0.9),
+            ('/support/buy/', '%s/support/buy.html' % settings.HTML_ROOT, 0.9),
 
-            ('/contribute/', 'html/contribute/index.html', 0.9),
-            ('/contribute/code/', 'html/contribute/code.html', 0.9),
-            ('/contribute/translate/', 'html/contribute/translate.html', 0.9),
-            ('/contribute/publicity/', 'html/contribute/publicity.html', 0.9),
+            ('/contribute/', '%s/contribute/index.html' % settings.HTML_ROOT, 0.9),
+            ('/contribute/code/', '%s/contribute/code.html' % settings.HTML_ROOT, 0.9),
+            ('/contribute/translate/', '%s/contribute/translate.html' % settings.HTML_ROOT, 0.9),
+            ('/contribute/publicity/', '%s/contribute/publicity.html' % settings.HTML_ROOT, 0.9),
 
-            ('/docs/', 'html/docs/index.html', 0.9),
+            ('/docs/', '%s/docs/index.html' % settings.HTML_ROOT, 0.9),
             ('/docs/man/', None, 0.9),
-            ('/docs/devel/', 'html/docs/devel.html', 0.9),
+            ('/docs/devel/', '%s/docs/devel.html' % settings.HTML_ROOT, 0.9),
 
             ('/screenshots/', None, 0.8),
             ('/downloads/gammu/', None, 0.7),
@@ -107,7 +108,7 @@ class ManSitemap(Sitemap):
         return '/docs/man/%s/' % item[0]
 
     def lastmod(self, item):
-        (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat('html/docs/man/%s.html' % item[0])
+        (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat('%s/docs/man/%s.html' % (settings.HTML_ROOT, item[0]))
         return datetime.datetime.fromtimestamp(mtime)
 
     def priority(self, item):
