@@ -16,7 +16,7 @@ class SearchForm(Form):
         required = False,
         choices = [(f.name,
             mark_safe(ugettext_lazy('%(description)s [<a href="%(url)s">Link</a>]') %
-                {'description': f.get_description(), 'url': '/phone/search/' + f.name})
+                {'description': f.get_description(), 'url': '/phone/search/%s/' % f.name})
                 ) for f in Feature.objects.all()],
         widget = forms.CheckboxSelectMultiple
         )
