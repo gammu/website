@@ -1,0 +1,136 @@
+<XML_DIZ_INFO>
+    <MASTER_PAD_VERSION_INFO>
+        <MASTER_PAD_VERSION>3.01</MASTER_PAD_VERSION>
+        <MASTER_PAD_EDITOR>vim http://www.vim.org</MASTER_PAD_EDITOR>
+        <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+    </MASTER_PAD_VERSION_INFO>
+    <Company_Info>
+        <Company_Name>Michal Čihař</Company_Name>
+        <Address_1>Zdiměřická 8</Address_1>
+        <Address_2 />
+        <City_Town>Praha 4</City_Town>
+        <State_Province />
+        <Zip_Postal_Code>14900</Zip_Postal_Code>
+        <Country>Czech Republic</Country>
+        <Company_WebSite_URL>http://cihar.com/</Company_WebSite_URL>
+        <Contact_Info>
+            <Author_First_Name>Michal</Author_First_Name>
+            <Author_Last_Name>Čihař</Author_Last_Name>
+            <Author_Email>michal@cihar.com</Author_Email>
+            <Contact_First_Name>Michal</Contact_First_Name>
+            <Contact_Last_Name>Čihař</Contact_Last_Name>
+            <Contact_Email>michal@cihar.com</Contact_Email>
+        </Contact_Info>
+        <Support_Info>
+            <Sales_Email>michal@cihar.com</Sales_Email>
+            <Support_Email>michal@cihar.com</Support_Email>
+            <General_Email>michal@cihar.com</General_Email>
+            <Sales_Phone />
+            <Support_Phone />
+            <General_Phone />
+            <Fax_Phone />
+        </Support_Info>
+    </Company_Info>
+    <Program_Info>
+        <Program_Name>Wammu</Program_Name>
+        <Program_Version>{{ release.version }}</Program_Version>
+        <Program_Release_Month>{{ release.date.month }}</Program_Release_Month>
+        <Program_Release_Day>{{ release.date.day }}</Program_Release_Day>
+        <Program_Release_Year>{{ release.date.year }}</Program_Release_Year>
+        <Program_Cost_Dollars />
+        <Program_Cost_Other_Code />
+        <Program_Cost_Other />
+        <Program_Type>Freeware</Program_Type>
+        <Program_Release_Status>Major Update</Program_Release_Status>
+        <Program_Install_Support>Install and Uninstall</Program_Install_Support>
+        <Program_OS_Support>Win95,Win98,WinME,WinNT 3.x,WinNT 4.x,Windows2000,WinXP,Windows2003,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,Linux,Linux Gnome,Linux GPL,Linux Open Source,Mac OS X,Mac OS X 10.1,Mac OS X 10.2,Mac OS X 10.3,Mac OS X 10.4,Mac OS X 10.5</Program_OS_Support>
+        <Program_Language>English,Afrikaans,Bulgarian,Catalan,ChineseSimplified,ChineseTraditional,Czech,Dutch,Estonian,Finnish,French,Galician,German,Greek,Hebrew,Hungarian,Indonesian,Italian,Korean,Polish,Portuguese,Russian,Slovak,Spanish,Swedish</Program_Language>
+        <Program_Change_Info />
+        <Program_Specific_Category>Business</Program_Specific_Category>
+        <Program_Category_Class>Business::PIMS &amp; Calendars</Program_Category_Class>
+        <Program_System_Requirements />
+        <Expire_Info>
+            <Has_Expire_Info>n</Has_Expire_Info>
+            <Expire_Count />
+            <Expire_Based_On>Days</Expire_Based_On>
+            <Expire_Other_Info />
+            <Expire_Month />
+            <Expire_Day />
+            <Expire_Year />
+        </Expire_Info>
+        <File_Info>
+            <File_Size_Bytes>{{ download.size }}</File_Size_Bytes>
+            <File_Size_K>{{ download.get_size_kib }}</File_Size_K>
+            <File_Size_MB>{{ download.get_size_mib }}</File_Size_MB>
+        </File_Info>
+    </Program_Info>
+    <Program_Descriptions>
+        <English>
+            <Keywords>mobile,phone,handy,cell,nokia,ericssonn,sony-ericssonn,alcatel,siemens,manager,calendar,contacts,sms,message</Keywords>
+            <Char_Desc_45>A mobile phone manager.</Char_Desc_45>
+            <Char_Desc_450>Wammu is a mobile phone manager that uses Gammu as its backend. It works with any phone that Gammu supports, including many models from Nokia, Siemens, and Alcatel. It has complete support (read, edit, delete, copy) for contacts, todo, and calendar. It can read, save, and send SMS. It includes an SMS composer for multi-part SMS messages, and it can display SMS messages that include pictures.</Char_Desc_450>
+            <Char_Desc_80>Wammu is a mobile phone manager that uses Gammu as its backend.</Char_Desc_80>
+            <Char_Desc_250>Wammu is a mobile phone manager that uses Gammu as its backend. It works with any phone that Gammu supports, including many models from Nokia, Siemens, Sony-Ericsson and Alcatel. It supports contacts, todo, messages and calendar.</Char_Desc_250>
+            <Char_Desc_2000>Wammu is a mobile phone manager that uses Gammu as its backend. It works with any phone that Gammu supports, including many models from Nokia, Siemens, and Alcatel. It has complete support (read, edit, delete, copy) for contacts, todo, and calendar. It can read, save, and send SMS. It includes an SMS composer for multi-part SMS messages, and it can display SMS messages that include pictures. Currently, only text and predefined bitmaps or sounds can be edited in the SMS composer. It can export messages to an IMAP4 server (or other email storage).</Char_Desc_2000>
+        </English>
+        <German>
+            <Keywords>mobile,handy,nokia,ericssonn,sony-ericssonn,alcatel,siemens,manager,kontakte,kalender,sms,nachricht</Keywords>
+            <Char_Desc_45>Mobiltelefon-Manager</Char_Desc_45>
+            <Char_Desc_80>Stellt eine Verbindung zwischen Rechner und angeschlossenem Mobiltelefon her.</Char_Desc_80>
+            <Char_Desc_250>Stellt mithilfe der Gammu-Bibliothek eine Verbindung zwischen Rechner und angeschlossenem Mobiltelefon her; bietet diverse Möglichkeiten zum Verwalten zahlreicher Daten, etwa von Kontakten, Kalenderdaten und Kurzmitteilungen.</Char_Desc_250>
+            <Char_Desc_450>Stellt mithilfe der Gammu-Bibliothek eine Verbindung zwischen Rechner und angeschlossenem Mobiltelefon her; bietet diverse Möglichkeiten zum Verwalten zahlreicher Daten, etwa von Kontakten, Kalenderdaten und Kurzmitteilungen (unter anderem Lesen, Erstellen und Speichern).</Char_Desc_450>
+            <Char_Desc_2000>Stellt mithilfe der Gammu-Bibliothek eine Verbindung zwischen Rechner und angeschlossenem Mobiltelefon her; bietet diverse Möglichkeiten zum Verwalten zahlreicher Daten, etwa von Kontakten, Kalenderdaten und Kurzmitteilungen (unter anderem Lesen, Erstellen und Speichern).</Char_Desc_2000>
+        </German>
+        <Czech>
+            <Keywords>mobil,telefon,nokia,ericssonn,sony-ericssonn,alcatel,siemens,manažer,kalendář,kontakty,sms,zpráva</Keywords>
+            <Char_Desc_45>Program pro práci s mobilními telefony.</Char_Desc_45>
+            <Char_Desc_80>Program pro práci s mnoha mobilními telefony všech značek.</Char_Desc_80>
+
+            <Char_Desc_250>Program pro práci s mnoha mobilními telefony všech značek. Mezi podporované patří Nokia, Alcatel, Siemens, Sagem, Samsung, Sony Ericson a další.</Char_Desc_250>
+            <Char_Desc_450>Program pro práci s mnoha mobilními telefony všech značek. Mezi podporované patří Nokia, Alcatel, Siemens, Sagem, Samsung, Sony Ericson a další. Snadná práce s s telefonním seznamem, zprávami, kalendářem a úkoly je samozřejmostí, veškerá data je možné exportovat do mnoha formátů (například SMS zprávy je možné exportovat i jako maily na IMAP server).</Char_Desc_450>
+            <Char_Desc_2000>Program pro práci s mnoha mobilními telefony všech značek. Mezi podporované patří Nokia, Alcatel, Siemens, Sagem, Samsung, Sony Ericson a další. Snadná práce s s telefonním seznamem, zprávami, kalendářem a úkoly je samozřejmostí, veškerá data je možné exportovat do mnoha formátů (například SMS zprávy je možné exportovat i jako maily na IMAP server).</Char_Desc_2000>
+        </Czech>
+    </Program_Descriptions>
+    <Web_Info>
+        <Application_URLs>
+            <Application_Info_URL>http://wammu.eu/</Application_Info_URL>
+            <Application_Order_URL>http://wammu.eu/donate/</Application_Order_URL>
+            <Application_Screenshot_URL>http://wammu.eu/screenshots/wammu-displaysms.png</Application_Screenshot_URL>
+            <Application_Icon_URL>http://wammu.eu/wammu-32x32.png</Application_Icon_URL>
+            <Application_XML_File_URL>http://wammu.eu/wammu.xml</Application_XML_File_URL>
+        </Application_URLs>
+        <Download_URLs>
+{% for mirror in mirrors %}
+            <{% cycle 'Primary_Download_URL' 'Secondary_Download_URL' 'Additional_Download_URL_1' 'Additional_Download_URL_2' 'Additional_Download_URL_3' 'Additional_Download_URL_4' 'Additional_Download_URL_5' %}>{{ mirror.url }}{{ download.location }}</{% cycle 'Primary_Download_URL' 'Secondary_Download_URL' 'Additional_Download_URL_1' 'Additional_Download_URL_2' 'Additional_Download_URL_3' 'Additional_Download_URL_4' 'Additional_Download_URL_5' %}>
+{% endfor %}
+        </Download_URLs>
+    </Web_Info>
+    <Permissions>
+        <Distribution_Permissions>This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License version 2 as published by
+the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+more details.
+
+You should have received a copy of the GNU General Public License along with
+this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+</Distribution_Permissions>
+        <EULA>This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License version 2 as published by
+the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+more details.
+
+You should have received a copy of the GNU General Public License along with
+this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+</EULA>
+    </Permissions>
+</XML_DIZ_INFO>
