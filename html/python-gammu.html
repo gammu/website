@@ -27,6 +27,31 @@ href="http://python.org">Python</a> language.
 {% endblocktrans %}
 </p>
 
+<h3>{% trans "Example" %}</h3>
+
+<p>
+{% blocktrans %}
+Using python-gammu is quite simple, for example seting text message can be
+done by following snippet:
+{% endblocktrans %}
+</p>
+
+<pre>
+import gammu
+
+sm = gammu.StateMachine()
+sm.ReadConfig()
+sm.Init()
+
+message = {
+    'Text': 'python-gammu testing message', 
+    'SMSC': {'Location': 1},
+    'Number': '+420800123465',
+}
+
+sm.SendSMS(message)
+</pre>
+
 <h3>{% trans "Documentation" %}</h3>
 <p>
 {% blocktrans %}

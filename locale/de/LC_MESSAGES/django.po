@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-09 16:34+0200\n"
+"POT-Creation-Date: 2009-10-09 16:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -170,7 +170,7 @@ msgid "News"
 msgstr ""
 
 #: html/base.html:105 html/gammu.html:67 html/libgammu.html:52
-#: html/python-gammu.html:30 html/smsd.html:58 html/wammu.html:52
+#: html/python-gammu.html:55 html/smsd.html:58 html/wammu.html:52
 #: html/support/sidebar.html:4 wammu/helpers.py:19
 msgid "Documentation"
 msgstr ""
@@ -614,7 +614,18 @@ msgid ""
 "href=\"http://python.org\">Python</a> language.\n"
 msgstr ""
 
-#: html/python-gammu.html:32
+#: html/python-gammu.html:30
+msgid "Example"
+msgstr ""
+
+#: html/python-gammu.html:33
+msgid ""
+"\n"
+"Using python-gammu is quite simple, for example seting text message can be\n"
+"done by following snippet:\n"
+msgstr ""
+
+#: html/python-gammu.html:57
 msgid ""
 "\n"
 "<a href=\"/docs/devel/python/\">API documentation</a> is available, but you\n"
