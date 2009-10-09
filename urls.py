@@ -231,4 +231,9 @@ urlpatterns = patterns('',
 
     # Robots
     (r'^robots.txt$', 'wammu.views.robots'),
+
+    # Redirects for crazy bots who investiage full urls
+    (r'^api/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
+    (r'^api/doap/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
+    (r'^api/pad/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
 )
