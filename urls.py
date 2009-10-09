@@ -80,6 +80,10 @@ urlpatterns = patterns('',
     # API for Wammu
     (r'^api/phones/new/$', 'phonedb.views.create_wammu'),
 
+    # DOAP/PAD syndication
+    (r'^api/doap/(?P<program>[^/.]*).xml$', 'downloads.views.doap'),
+    (r'^api/pad/(?P<program>[^/.]*).xml$', 'downloads.views.pad'),
+
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs'
     # to INSTALLED_APPS to enable admin documentation:
     (r'^admin/doc/', include('django.contrib.admindocs.urls')),

@@ -104,3 +104,20 @@ def download(request):
         'downloads': downloads,
         'platforms': PLATFORM_CHOICES,
     }))
+
+def doap(request, program):
+    mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
+
+    downloads = get_current_downloads(program, None)
+    print downloads
+
+    return render_to_response('downloads/doap/%s.xml' % program, WammuContext(request, {
+        'mirrors': mirrors,
+        'mirror': mirror,
+        'downloads': downloads[0][1],
+        'release': downloads[0][0],
+        'platforms': PLATFORM_CHOICES,
+    }), mimetype = 'application/xml')
+
+def pad(request, program):
+    return ''
