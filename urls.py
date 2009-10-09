@@ -58,6 +58,9 @@ class PagesSitemap(Sitemap):
             ('/docs/', 'html/docs/index.html', 0.9),
             ('/docs/man/', 'html/docs/list_man.html', 0.9),
             ('/docs/devel/', 'html/docs/devel.html', 0.9),
+
+            ('/screenshots/', 'html/screenshots/index.html', 0.8),
+            ('/links/', 'html/links/index.html', 0.8),
             ]
     def location(self, item):
         return item[0]
