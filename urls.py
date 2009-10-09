@@ -70,6 +70,8 @@ class PagesSitemap(Sitemap):
             ('/docs/devel/', 'html/docs/devel.html', 0.9),
 
             ('/screenshots/', None, 0.8),
+            ('/downloads/gammu/', None, 0.8),
+            ('/downloads/wammu/', None, 0.8),
             ('/links/', None, 0.4),
             ]
     def location(self, item):
@@ -115,7 +117,6 @@ sitemaps = {
     'vendors': GenericSitemap(vendors_dict, priority=0.2, changefreq='monthly'),
     'pages': PagesSitemap(),
     'manpages': ManSitemap(),
-# todo: downloads
 }
 
 from django.contrib import admin
