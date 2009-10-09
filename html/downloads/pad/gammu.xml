@@ -88,7 +88,7 @@
             <Application_Info_URL>http://wammu.eu/gammu/</Application_Info_URL>
             <Application_Order_URL>http://wammu.eu/donate/</Application_Order_URL>
             <Application_Screenshot_URL>http://wammu.eu/media/screenshots/gammu-screen.png</Application_Screenshot_URL>
-            <Application_Icon_URL>http://wammu.eu/wammu-32x32.png</Application_Icon_URL>
+            <Application_Icon_URL>http://wammu.eu/media/images/wammu-32x32.png</Application_Icon_URL>
             <Application_XML_File_URL>http://wammu.eu/api/pad/gammu.xml</Application_XML_File_URL>
         </Application_URLs>
         <Download_URLs>
