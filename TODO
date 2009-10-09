@@ -1,6 +1,3 @@
-- add XML exports
-    - DOAP
-    - PAD
 - donations
     - listing on /donate/list
     - allow user to hide details
