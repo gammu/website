@@ -76,7 +76,7 @@ class PagesSitemap(Sitemap):
 
 sitemaps = {
     'news': GenericSitemap(news_dict, priority=0.8, changefreq='monthly'),
-    'phones': GenericSitemap(phones_dict, priority=0.6, changefreq='monthly'),
+    'phones': GenericSitemap(phones_dict, priority=0.8, changefreq='monthly'),
     'vendors': GenericSitemap(vendors_dict, priority=0.2, changefreq='monthly'),
     'pages': PagesSitemap(),
 # todo: manpages, downloads
