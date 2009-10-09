@@ -1,6 +1,6 @@
 from django.db import models
 
-from wammu_web.news.models import Entry, Category
+from news.models import Entry, Category
 
 from django.contrib.auth.models import User
 
@@ -8,7 +8,7 @@ import markdown
 
 import os
 
-from wammu_web.wammu.helpers import process_bug_links
+from wammu.helpers import process_bug_links
 
 PROGRAM_CHOICES = (
     ('gammu', 'Gammu'),

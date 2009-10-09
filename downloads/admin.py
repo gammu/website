@@ -1,4 +1,4 @@
-from wammu_web.downloads.models import Mirror, Download, Release
+from downloads.models import Mirror, Download, Release
 from django.contrib import admin
 
 class MirrorAdmin(admin.ModelAdmin):

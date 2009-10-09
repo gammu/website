@@ -1,4 +1,4 @@
-from wammu_web.screenshots.models import Category, Screenshot
+from screenshots.models import Category, Screenshot
 from django.contrib import admin
 
 class ScreenshotAdmin(admin.ModelAdmin):

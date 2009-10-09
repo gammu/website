@@ -1,9 +1,9 @@
 from django.shortcuts import render_to_response
-from wammu_web.wammu.helpers import WammuContext
-from wammu_web.news.models import Entry
-from wammu_web.screenshots.models import Screenshot
-from wammu_web.downloads.models import Release
-from wammu_web.phonedb.models import Phone
+from wammu.helpers import WammuContext
+from news.models import Entry
+from screenshots.models import Screenshot
+from downloads.models import Release
+from phonedb.models import Phone
 from downloads.models import Download, Release, Mirror, get_current_downloads
 from downloads.views import get_mirrors
 

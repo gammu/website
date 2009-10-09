@@ -2,7 +2,7 @@ from django.db import models
 
 import markdown
 
-from wammu_web.screenshots.models import Screenshot
+from screenshots.models import Screenshot
 
 class Link(models.Model):
     title = models.CharField(max_length=250)

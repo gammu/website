@@ -1,4 +1,4 @@
-from wammu_web.phonedb.models import Vendor, Feature, Connection, Phone
+from phonedb.models import Vendor, Feature, Connection, Phone
 from django.contrib import admin
 
 class VendorAdmin(admin.ModelAdmin):

@@ -1,5 +1,5 @@
 from django.shortcuts import render_to_response, get_object_or_404
-from wammu_web.wammu.helpers import WammuContext
+from wammu.helpers import WammuContext
 
 from django.conf import settings
 

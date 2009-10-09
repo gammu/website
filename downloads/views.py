@@ -1,5 +1,5 @@
 from django.shortcuts import render_to_response, get_object_or_404
-from wammu_web.wammu.helpers import WammuContext
+from wammu.helpers import WammuContext
 from downloads.models import Download, Release, Mirror, get_program, get_latest_releases, get_current_downloads, PLATFORM_CHOICES
 from django.http import Http404
 from django.utils.datastructures import MultiValueDictKeyError

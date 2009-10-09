@@ -82,7 +82,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
 )
 
-ROOT_URLCONF = 'wammu_web.urls'
+ROOT_URLCONF = 'urls'
 
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.auth',
@@ -107,13 +107,13 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.sitemaps',
-    'wammu_web.news',
-    'wammu_web.wammu',
-    'wammu_web.downloads',
-    'wammu_web.screenshots',
-    'wammu_web.links',
-    'wammu_web.manpages',
-    'wammu_web.phonedb',
+    'news',
+    'wammu',
+    'downloads',
+    'screenshots',
+    'links',
+    'manpages',
+    'phonedb',
 )
 
 import gobject

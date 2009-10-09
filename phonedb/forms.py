@@ -2,7 +2,7 @@ from django.forms import ModelForm, Form
 from django.db import models
 from django import forms
 
-from wammu_web.phonedb.models import Feature, Phone
+from phonedb.models import Feature, Phone
 
 from django.utils.translation import ugettext_lazy
 from django.utils.safestring import mark_safe

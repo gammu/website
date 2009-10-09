@@ -1,4 +1,4 @@
-from wammu_web.news.models import Category, Entry
+from news.models import Category, Entry
 from django.contrib import admin
 
 class EntryAdmin(admin.ModelAdmin):

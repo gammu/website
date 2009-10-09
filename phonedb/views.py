@@ -1,7 +1,7 @@
 from django.shortcuts import render_to_response, get_object_or_404
 from django.db.models import Q
-from wammu_web.wammu.helpers import WammuContext
-from wammu_web.phonedb.models import Vendor, Phone, Feature, Connection, GARBLE_CHOICES
+from wammu.helpers import WammuContext
+from phonedb.models import Vendor, Phone, Feature, Connection, GARBLE_CHOICES
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from django.core.cache import cache
 from django.utils.translation import ugettext as _
@@ -18,7 +18,7 @@ from pygooglechart import SimpleLineChart
 from pygooglechart import Axis
 from pygooglechart import Chart
 
-from wammu_web.phonedb.forms import SearchForm, NewForm
+from phonedb.forms import SearchForm, NewForm
 
 # Create your views here.
 

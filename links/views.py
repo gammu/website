@@ -1,6 +1,6 @@
 from django.shortcuts import render_to_response, get_object_or_404
-from wammu_web.wammu.helpers import WammuContext
-from wammu_web.links.models import Link
+from wammu.helpers import WammuContext
+from links.models import Link
 
 from django.conf import settings
 
