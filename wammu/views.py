@@ -9,6 +9,7 @@ from downloads.views import get_mirrors
 
 from django.conf import settings
 
+from django.contrib.sites.models import Site, RequestSite
 # Create your views here.
 
 def index(request):
@@ -51,3 +52,12 @@ def libgammu(request):
 def static(request, page):
     return render_to_response(page, WammuContext(request, {
     }))
+
+def robots(request):
+    if Site._meta.installed:
+        current_site = Site.objects.get_current()
+    else:
+        current_site = RequestSite(self.request)
+    return render_to_response('robots.txt', WammuContext(request, {
+        'current_site': current_site,
+    }), mimetype = 'text/plain')

@@ -180,4 +180,7 @@ urlpatterns = patterns('',
     # Sitemap
     (r'^sitemap.xml$', 'django.contrib.sitemaps.views.index', {'sitemaps': sitemaps}),
     (r'^sitemap-(?P<section>.+)\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
+
+    # Robots
+    (r'^robots.txt$', 'wammu.views.robots'),
 )
