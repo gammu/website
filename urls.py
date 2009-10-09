@@ -1,8 +1,11 @@
 from django.conf.urls.defaults import *
-from news.feeds import RssNewsFeed, AtomNewsFeed, Entry
-from phonedb.feeds import RssPhonesFeed, AtomPhonesFeed, Phone, Vendor
+from news.feeds import RssNewsFeed, AtomNewsFeed
+from news.models import Entry
+from phonedb.feeds import RssPhonesFeed, AtomPhonesFeed
+from phonedb.models import Phone, Vendor
 from django.contrib.sitemaps import GenericSitemap, Sitemap
 from manpages.views import list_langs, list_pages
+from downloads.models import Release
 import os
 import datetime
 
@@ -28,6 +31,11 @@ phones_dict = {
 
 vendors_dict = {
     'queryset': Vendor.objects.all(),
+}
+
+releases_dict = {
+    'queryset': Release.objects.all(),
+    'date_field': 'date',
 }
 
 class PagesSitemap(Sitemap):
@@ -101,6 +109,7 @@ class ManSitemap(Sitemap):
 sitemaps = {
     'news': GenericSitemap(news_dict, priority=0.8, changefreq='monthly'),
     'phones': GenericSitemap(phones_dict, priority=0.8, changefreq='monthly'),
+    'releases': GenericSitemap(releases_dict, priority=0.9, changefreq='monthly'),
     'vendors': GenericSitemap(vendors_dict, priority=0.2, changefreq='monthly'),
     'pages': PagesSitemap(),
     'manpages': ManSitemap(),
