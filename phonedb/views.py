@@ -383,7 +383,7 @@ def create_wammu(request):
         response.write(OKAY % (phone.id, phone.vendor.slug, phone.id))
     return response
 
-def create(request):
+def create(request. vendorname = None):
     # Check if we did not receive legacy request
     if request.POST.has_key('irobot') and request.POST['irobot'] == 'wammu':
         return create_wammu(request)
@@ -406,7 +406,10 @@ def create(request):
     else:
         initial = {}
         try:
-            vendor = Vendor.objects.get(slug = request.GET['vendor'])
+            if vendorname is not None:
+                vendor = Vendor.objects.get(slug = vendorname)
+            else:
+                vendor = Vendor.objects.get(slug = request.GET['vendor'])
             initial['vendor'] = vendor.id
         except:
             pass
