@@ -1,3 +1,6 @@
+- wammu sends users to following pages to check version:
+    http://%swammu.eu/?version=%s
+    http://%swammu.eu/support?version=%s
 - donations
     - listing on /donate/list
     - allow user to hide details
