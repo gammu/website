@@ -1,0 +1,10 @@
+{% load i18n %}
+<h3><a href="/news/{{ news_category.slug }}/">{% trans "Latest News" %}</a></h3>
+
+{% for entry in news %}
+<h4><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h4>
+{{ entry.excerpt_html|safe }}
+{% include "news/published.html" %}
+{% endfor %}
+
+

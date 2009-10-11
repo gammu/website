@@ -1,6 +1,6 @@
 from django.shortcuts import render_to_response
 from wammu.helpers import WammuContext
-from news.models import Entry
+from news.models import Entry, Category
 from screenshots.models import Screenshot
 from downloads.models import Release
 from phonedb.models import Phone
@@ -30,23 +30,43 @@ def index(request):
     }))
 
 def wammu(request):
+    category = Category.objects.get(slug = 'wammu')
+    news = Entry.objects.filter(categories = category).order_by('-pub_date')[:settings.NEWS_ON_PRODUCT_PAGE]
     return render_to_response('wammu.html', WammuContext(request, {
+        'news': news,
+        'news_category': category,
     }))
 
 def smsd(request):
+    category = Category.objects.get(slug = 'gammu')
+    news = Entry.objects.filter(categories = category).order_by('-pub_date')[:settings.NEWS_ON_PRODUCT_PAGE]
     return render_to_response('smsd.html', WammuContext(request, {
+        'news': news,
+        'news_category': category,
     }))
 
 def gammu(request):
+    category = Category.objects.get(slug = 'gammu')
+    news = Entry.objects.filter(categories = category).order_by('-pub_date')[:settings.NEWS_ON_PRODUCT_PAGE]
     return render_to_response('gammu.html', WammuContext(request, {
+        'news': news,
+        'news_category': category,
     }))
 
 def pygammu(request):
+    category = Category.objects.get(slug = 'gammu')
+    news = Entry.objects.filter(categories = category).order_by('-pub_date')[:settings.NEWS_ON_PRODUCT_PAGE]
     return render_to_response('python-gammu.html', WammuContext(request, {
+        'news': news,
+        'news_category': category,
     }))
 
 def libgammu(request):
+    category = Category.objects.get(slug = 'gammu')
+    news = Entry.objects.filter(categories = category).order_by('-pub_date')[:settings.NEWS_ON_PRODUCT_PAGE]
     return render_to_response('libgammu.html', WammuContext(request, {
+        'news': news,
+        'news_category': category,
     }))
 
 def static(request, page):
