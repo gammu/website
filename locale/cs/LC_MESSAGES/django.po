@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-09 16:36+0200\n"
-"PO-Revision-Date: 2009-10-08 12:08+0200\n"
+"PO-Revision-Date: 2009-10-11 09:40+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -41,6 +41,9 @@ msgid ""
 "The page you are looking for was not found. Try choosing something from the\n"
 "navigation bellow or use <a href=\"/search\">search facility</a>.\n"
 msgstr ""
+"\n"
+"Požadovaná stránka nebyla nalezena. Zvolte jinou stránku z navigace níže "
+"nebo použijte <a href=\"/search\">vyhledávání</a>.\n"
 
 #: html/404.html:18
 msgid ""
@@ -1364,21 +1367,19 @@ msgstr "Syndikace"
 
 #: html/downloads/index.html:45
 msgid "DOAP for Wammu"
-msgstr ""
+msgstr "DOAP pro Wammu"
 
 #: html/downloads/index.html:46
-#, fuzzy
 msgid "DOAP for Gammu"
-msgstr "Přispějte na Gammu"
+msgstr "DOAP pro Gammu"
 
 #: html/downloads/index.html:47
 msgid "PAD for Wammu"
-msgstr ""
+msgstr "PAD pro Wammu"
 
 #: html/downloads/index.html:48
-#, fuzzy
 msgid "PAD for Gammu"
-msgstr "Přispějte na Gammu"
+msgstr "PAD pro Gammu"
 
 #: html/downloads/list.html:8 html/downloads/program.html:19
 #, python-format
@@ -1749,7 +1750,7 @@ msgstr "Přidat nový záznam"
 
 #: html/phonedb/phone.html:13
 msgid "Edit"
-msgstr ""
+msgstr "Upravit"
 
 #: html/phonedb/phone.html:15
 msgid "Delete"
@@ -1821,6 +1822,8 @@ msgid ""
 "\n"
 "Tested with Gammu %(version)s.\n"
 msgstr ""
+"\n"
+"Testováno na Gammu %(version)s.\n"
 
 #: html/phonedb/search.html:4 html/phonedb/search.html.py:15
 msgid "Search Results"
@@ -1859,6 +1862,8 @@ msgid ""
 "\n"
 "There is currently none phone record from this vendor!\n"
 msgstr ""
+"\n"
+"Není zde žádný záznam od tohoto výrobce!\n"
 
 #: html/phonedb/vendor.html:42
 #, python-format
@@ -2364,7 +2369,7 @@ msgstr ""
 
 #: phonedb/models.py:87
 msgid "Please choose how will be email handled in next field."
-msgstr ""
+msgstr "Prosím zvolte si v následující položce, jak bude email zobrazen."
 
 #: phonedb/views.py:110
 msgid "Gammu Phone Database Feed (RSS)"
