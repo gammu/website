@@ -4,13 +4,27 @@ from news.models import Entry, Category
 from screenshots.models import Screenshot
 from downloads.models import Release
 from phonedb.models import Phone
-from downloads.models import Download, Release, Mirror, get_current_downloads
+from downloads.models import Download, Release, Mirror, get_current_downloads, get_latest_releases
 from downloads.views import get_mirrors
 
 from django.conf import settings
 
 from django.contrib.sites.models import Site, RequestSite
 # Create your views here.
+
+def process_version_feedback(request):
+    '''
+    Handles feedback from Wammu, which includes version URL parameter. Return
+    value is dictionary to be fed to rendering context.
+    '''
+    result = {'feedback': False}
+    if request.GET.has_key('version'):
+        result['feedback'] = True
+        version = request.GET['version']
+        last_rel, testing_rel = get_latest_releases('wammu')
+        if last_rel.version != version:
+            result['update_release'] = last_rel
+    return result
 
 def index(request):
     mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
@@ -29,13 +43,17 @@ def index(request):
         'phones': phones,
     }))
 
+def support(request):
+    context  = process_version_feedback(request)
+    return render_to_response('support/index.html', WammuContext(request, context))
+
 def wammu(request):
     category = Category.objects.get(slug = 'wammu')
     news = Entry.objects.filter(categories = category).order_by('-pub_date')[:settings.NEWS_ON_PRODUCT_PAGE]
-    return render_to_response('wammu.html', WammuContext(request, {
-        'news': news,
-        'news_category': category,
-    }))
+    context  = process_version_feedback(request)
+    context['news'] = news
+    context['news_category'] = category
+    return render_to_response('wammu.html', WammuContext(request, context))
 
 def smsd(request):
     category = Category.objects.get(slug = 'gammu')

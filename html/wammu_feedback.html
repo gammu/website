@@ -1,0 +1,28 @@
+{% load i18n %}
+{% if feedback %}
+<h3>{% trans "Thank you for using Wammu" %}</h3>
+<p>
+{% blocktrans %}
+I hope you like Wammu, but maybe you miss some features or would like to see
+some improvements. If you have any ideas, please report them in <a
+href="http://bugs.cihar.com/">bug tracker</a>.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+You are also welcome to share experiences with your phone in <a
+href="/phones/">Gammu phone database</a> if you already haven't done so.
+{% endblocktrans %}
+</p>
+
+{% if update_release %}
+<p>
+{% blocktrans with update_release.get_absolute_url as url and update_release.version as version %}
+You are using older version, please upgrade to get most stable version with
+latest features. The latest stable version is <a href="{{ url }}">{{ version }}</a>.
+{% endblocktrans %}
+</p>
+{% endif %}
+
+{% endif %}

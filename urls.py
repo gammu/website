@@ -141,7 +141,7 @@ urlpatterns = patterns('',
     (r'^license/$', 'wammu.views.static', {'page': 'license.html'}),
     (r'^search/$', 'wammu.views.static', {'page': 'search.html'}),
 
-    (r'^support/$', 'wammu.views.static', {'page': 'support/index.html'}),
+    (r'^support/$', 'wammu.views.support'),
     (r'^support/bugs/$', 'wammu.views.static', {'page': 'support/bugs.html'}),
     (r'^support/lists/$', 'wammu.views.static', {'page': 'support/lists.html'}),
     (r'^support/online/$', 'wammu.views.static', {'page': 'support/online.html'}),
