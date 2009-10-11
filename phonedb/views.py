@@ -105,6 +105,10 @@ def get_chart_url():
     cache.set('phonedb-chart-url', url, 3600)
     return url
 
+
+def phones_chart(request):
+    return HttpResponseRedirect(get_chart_url())
+
 def get_feeds():
     return [
         {'url': '/phones/rss/', 'title': _('Gammu Phone Database Feed (RSS)'), 'type': 'application/rss+xml'},

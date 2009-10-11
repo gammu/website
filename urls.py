@@ -180,6 +180,7 @@ urlpatterns = patterns('',
 
     # Phone database
     (r'^phones/$', 'phonedb.views.index'),
+    (r'^phones/history.png$', 'phonedb.views.phones_chart'),
     (r'^phones/new/$', 'phonedb.views.create'),
     (r'^phones/search/$', 'phonedb.views.search'),
     (r'^phones/review/$', 'phonedb.views.review'),
