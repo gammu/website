@@ -2,7 +2,6 @@
     http://%swammu.eu/?version=%s
     http://%swammu.eu/support?version=%s
 - phonedb
-    - new shoud accept name get variable
     - records should link to above
 - donations
     - listing on /donate/list

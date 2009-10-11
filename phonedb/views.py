@@ -418,6 +418,10 @@ def create(request, vendorname = None):
         except:
             pass
         try:
+            inital['name'] = request.GET['name']
+        except:
+            pass
+        try:
             initial['email_garble'] = request.COOKIES['phonedb_garble']
         except:
             pass
