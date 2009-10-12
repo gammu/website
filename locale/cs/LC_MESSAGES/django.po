@@ -2333,7 +2333,7 @@ msgstr "Databáze telefonů Gammu"
 
 #: phonedb/feeds.py:11
 msgid "Gammu phone database updates."
-msgstr "Aktualizace databáze telefonů Gammu"
+msgstr "Aktualizace databáze telefonů Gammu."
 
 #: phonedb/forms.py:13
 msgid "Search text"
