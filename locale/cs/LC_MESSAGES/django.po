@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-12 16:50+0200\n"
-"PO-Revision-Date: 2009-10-12 16:50+0200\n"
+"PO-Revision-Date: 2009-10-12 16:51+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -671,7 +671,6 @@ msgid "Example"
 msgstr "Příklad"
 
 #: html/python-gammu.html:35
-#, fuzzy
 msgid ""
 "\n"
 "Using python-gammu is quite simple, for example sending of the text "
