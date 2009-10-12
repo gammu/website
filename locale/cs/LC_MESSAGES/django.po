@@ -42,7 +42,7 @@ msgid ""
 "navigation bellow or use <a href=\"/search\">search facility</a>.\n"
 msgstr ""
 "\n"
-"Požadovaná stránka nebyla nalezena. Zvolte jinou stránku z navigace níže "
+"Požadovaná stránka nebyla nalezena. Zvolte jinou stránku z navigace níže\n"
 "nebo použijte <a href=\"/search\">vyhledávání</a>.\n"
 
 #: html/404.html:18
