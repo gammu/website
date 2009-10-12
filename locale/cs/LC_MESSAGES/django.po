@@ -772,8 +772,7 @@ msgstr ""
 "dalšími platformami, kde fungují <a href=\"/libgammu\">libGammu</a> a "
 "wxPython.\n"
 "Komunikaci s telefonem obstarává knihovna Gammu. V současné době jsou "
-"podporovány\n"
-"tyto funkce: \n"
+"podporovány tyto funkce: \n"
 
 #: html/wammu.html:33
 msgid ""
