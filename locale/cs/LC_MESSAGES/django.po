@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-09 16:36+0200\n"
+"POT-Creation-Date: 2009-10-12 13:22+0200\n"
 "PO-Revision-Date: 2009-10-11 09:40+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -26,8 +26,8 @@ msgstr "Částka (EUR)"
 msgid "Message from you"
 msgstr "Zpráva pro autory"
 
-#: donate/forms.py:27 donate/forms.py:38 html/base.html:118
-#: html/base.html.py:128
+#: donate/forms.py:27 donate/forms.py:38 html/base.html:119
+#: html/base.html.py:129
 msgid "Donate"
 msgstr "Přispějte"
 
@@ -108,135 +108,135 @@ msgid ""
 "Jonsson.\n"
 msgstr ""
 
-#: html/base.html:53 html/base.html.py:98 html/downloads/program.html:7
+#: html/base.html:54 html/base.html.py:99 html/downloads/program.html:7
 #: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
 msgid "Downloads"
 msgstr "Stáhnout"
 
-#: html/base.html:61
+#: html/base.html:62
 msgid "Advertisement"
 msgstr "Reklama"
 
-#: html/base.html:78 html/index.html:30
+#: html/base.html:79 html/index.html:30
 msgid "About"
 msgstr "Informace"
 
-#: html/base.html:80 html/gammu.html:19
+#: html/base.html:81 html/gammu.html:19 html/contribute/translate.html:59
 msgid "Gammu"
 msgstr "Gammu"
 
-#: html/base.html:81 html/wammu.html:19
+#: html/base.html:82 html/wammu.html:22 html/contribute/translate.html:58
 msgid "Wammu"
 msgstr "Wammu"
 
-#: html/base.html:82
+#: html/base.html:83
 msgid "python-gammu"
 msgstr "python-gammu"
 
-#: html/base.html:83
+#: html/base.html:84
 msgid "SMSD"
 msgstr "SMSD"
 
-#: html/base.html:87 wammu/helpers.py:16
+#: html/base.html:88 wammu/helpers.py:16
 msgid "Support"
 msgstr "Podpora"
 
-#: html/base.html:89
+#: html/base.html:90
 msgid "Mailing lists"
 msgstr "Mailing listy"
 
-#: html/base.html:90
+#: html/base.html:91
 msgid "Online"
 msgstr "Online"
 
-#: html/base.html:91
+#: html/base.html:92
 msgid "Reporting bugs"
 msgstr "Hlášení chyb"
 
-#: html/base.html:92
+#: html/base.html:93
 msgid "Commercial support"
 msgstr "Komerční podpora"
 
-#: html/base.html:96
+#: html/base.html:97
 msgid "Media"
 msgstr "Média"
 
-#: html/base.html:99 html/index.html:9 html/index.html.py:11
+#: html/base.html:100 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3 wammu/helpers.py:18
 msgid "Screenshots"
 msgstr "Obrázky"
 
-#: html/base.html:100
+#: html/base.html:101
 msgid "Third party"
 msgstr "Dalších aplikace"
 
-#: html/base.html:101
+#: html/base.html:102
 msgid "News"
 msgstr "Novinky"
 
-#: html/base.html:105 html/gammu.html:67 html/libgammu.html:52
-#: html/python-gammu.html:55 html/smsd.html:58 html/wammu.html:52
+#: html/base.html:106 html/gammu.html:69 html/libgammu.html:54
+#: html/python-gammu.html:57 html/smsd.html:60 html/wammu.html:57
 #: html/support/sidebar.html:4 wammu/helpers.py:19
 msgid "Documentation"
 msgstr "Dokumentace"
 
-#: html/base.html:107 html/index.html:18 html/sidebars/common.html:3
+#: html/base.html:108 html/index.html:18 html/sidebars/common.html:3
 msgid "Supported phones"
 msgstr "Podporované telefony"
 
-#: html/base.html:108
+#: html/base.html:109
 msgid "Man pages"
 msgstr "Man stránky"
 
-#: html/base.html:109
+#: html/base.html:110
 msgid "For developers"
 msgstr "Pro vývojáře"
 
-#: html/base.html:110
+#: html/base.html:111
 msgid "Wiki"
 msgstr "Wiki"
 
-#: html/base.html:114 wammu/helpers.py:20
+#: html/base.html:115 wammu/helpers.py:20
 msgid "Contribute"
 msgstr "Přispějte"
 
-#: html/base.html:116
+#: html/base.html:117
 msgid "Translate"
 msgstr "Překlad"
 
-#: html/base.html:117
+#: html/base.html:118
 msgid "Develop"
 msgstr "Vývoj"
 
-#: html/base.html:119
+#: html/base.html:120
 msgid "Publicity"
 msgstr "Publicita"
 
-#: html/base.html:127
+#: html/base.html:128
 msgid "License"
 msgstr "Licence"
 
-#: html/base.html:128
+#: html/base.html:129
 msgid "Support Gammu/Wammu by donating money!"
 msgstr "Podpořte Gammu/Wammu přispěním peněz!"
 
-#: html/base.html:129
+#: html/base.html:130
 msgid "Search for Gammu/Wammu related questions"
 msgstr ""
 
-#: html/base.html:129 html/phonedb/index.html:7
+#: html/base.html:130 html/phonedb/index.html:7
 msgid "Search"
 msgstr "Hledej"
 
-#: html/base.html:130
+#: html/base.html:131
 msgid "Gammu and Wammu authors"
 msgstr "Autoři Gammu a Wammu"
 
-#: html/base.html:130
+#: html/base.html:131
 msgid "Authors"
 msgstr "Autoři"
 
-#: html/base.html:131
+#: html/base.html:132
 msgid ""
 "Valid <a href=\"http://validator.w3.org/check/referer\">HTML</a> and <a href="
 "\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
@@ -426,13 +426,13 @@ msgid ""
 "phone.\n"
 msgstr ""
 
-#: html/gammu.html:59 html/libgammu.html:43 html/smsd.html:48
-#: html/wammu.html:42 html/downloads/list.html:4 html/downloads/program.html:4
+#: html/gammu.html:61 html/libgammu.html:45 html/smsd.html:50
+#: html/wammu.html:47 html/downloads/list.html:4 html/downloads/program.html:4
 #: html/downloads/release.html:4 wammu/helpers.py:17
 msgid "Download"
 msgstr "Stáhnout"
 
-#: html/gammu.html:61
+#: html/gammu.html:63
 msgid ""
 "\n"
 "Just download <a href=\"/download/gammu\">Gammu</a> for your platform and "
@@ -440,7 +440,7 @@ msgid ""
 "it.\n"
 msgstr ""
 
-#: html/gammu.html:69
+#: html/gammu.html:71
 msgid ""
 "\n"
 "The best documentation is available in form of <a href=\"/docs/man\">man\n"
@@ -519,7 +519,7 @@ msgid ""
 "href=\"/smsd\">Gammu SMS Daemon</a>.\n"
 msgstr ""
 
-#: html/libgammu.html:45
+#: html/libgammu.html:47
 msgid ""
 "\n"
 "The library is obviously distributed as part of <a href=\"/gammu\">Gammu</a> "
@@ -527,7 +527,7 @@ msgid ""
 "it just get <a href=\"/download/gammu\">Gammu</a>.\n"
 msgstr ""
 
-#: html/libgammu.html:54
+#: html/libgammu.html:56
 msgid ""
 "\n"
 "<a href=\"/docs/devel/api/\">API documentation</a> is available as well as "
@@ -641,18 +641,18 @@ msgid ""
 "href=\"http://python.org\">Python</a> language.\n"
 msgstr ""
 
-#: html/python-gammu.html:30
+#: html/python-gammu.html:32
 msgid "Example"
 msgstr ""
 
-#: html/python-gammu.html:33
+#: html/python-gammu.html:35
 msgid ""
 "\n"
 "Using python-gammu is quite simple, for example seting text message can be\n"
 "done by following snippet:\n"
 msgstr ""
 
-#: html/python-gammu.html:57
+#: html/python-gammu.html:59
 msgid ""
 "\n"
 "<a href=\"/docs/devel/python/\">API documentation</a> is available, but you\n"
@@ -682,6 +682,10 @@ msgid ""
 "Please note that the search results are also from third party domains and "
 "we\n"
 "have no control over the content there.\n"
+msgstr ""
+
+#: html/shortnews.html:2
+msgid "Latest News"
 msgstr ""
 
 #: html/smsd.html:19
@@ -721,7 +725,7 @@ msgid ""
 "allows you to monitor current status of SMS Daemon or phone.\n"
 msgstr ""
 
-#: html/smsd.html:50
+#: html/smsd.html:52
 msgid ""
 "\n"
 "SMS Daemon is distributed as part of <a href=\"/gammu\">Gammu</a> so to "
@@ -732,7 +736,7 @@ msgid ""
 "distribution, try looking for something like <code>gammu-smsd</code>.\n"
 msgstr ""
 
-#: html/smsd.html:60
+#: html/smsd.html:62
 msgid ""
 "\n"
 "The best documentation is available in form of <a href=\"/docs/man\">man\n"
@@ -742,7 +746,7 @@ msgid ""
 "configuration file)</a>.\n"
 msgstr ""
 
-#: html/wammu.html:22
+#: html/wammu.html:25
 msgid ""
 "\n"
 "Wammu is mobile phone manager running on Linux, Windows and possibly other\n"
@@ -755,24 +759,24 @@ msgstr ""
 "\">libGammu</a> a wxPython. Komunikaci s telefonem obstarává knihovna Gammu. "
 "V současné době jsou podporovány tyto funkce: \n"
 
-#: html/wammu.html:30
+#: html/wammu.html:33
 msgid ""
 "complete support (can read/edit/delete/copy) for contacts, todo, calendar"
 msgstr ""
 "kompletní podpora (čtení, zápis, mazání, kopírování) pro kontakty, úkoly, "
 "kalendář"
 
-#: html/wammu.html:31
+#: html/wammu.html:34
 msgid "can read/create/save/send/backup smses"
 msgstr "umí číst, vytvářet, posílat a zálohovat SMS"
 
-#: html/wammu.html:32
+#: html/wammu.html:35
 msgid "sending files to phone (OBEX and Sony Ericsson phones only)"
 msgstr ""
 "posílání souborů do telefonu (zatím jen pro telefony používající OBEX a Sony "
 "Ericsson)"
 
-#: html/wammu.html:33
+#: html/wammu.html:36
 msgid ""
 "sms composer for multi part smses (currently only text and predefined bitmap/"
 "sound can be edited)"
@@ -780,11 +784,11 @@ msgstr ""
 "vytváření zpráv z více částí (v současné době je podporován jen text a "
 "předdefinované animace a zvuky)"
 
-#: html/wammu.html:34
+#: html/wammu.html:37
 msgid "display message including pictures and ringtones playback"
 msgstr "umí zobrazit zprávu včetně obrázků a přehrávání melodií"
 
-#: html/wammu.html:35
+#: html/wammu.html:38
 msgid ""
 "support for backup and import in various formats (vCard, vCalendar, vTodo, "
 "iCalendar, gammu own backup,...)"
@@ -792,26 +796,26 @@ msgstr ""
 "podpora pro zálohování a import (vCard, vCalendar, vTodo, iCalendar, vlastní "
 "formát Gammu,...)"
 
-#: html/wammu.html:36
+#: html/wammu.html:39
 msgid ""
 "export messages to mail (IMAP4, maildir and mailbox storages are supported)"
 msgstr "exportování zpráv do mailů (na IMAP4, maildir nebo mailbox)"
 
-#: html/wammu.html:37
+#: html/wammu.html:40
 msgid "searching for phone"
 msgstr "vyhledávání telefonu"
 
-#: html/wammu.html:38
+#: html/wammu.html:41
 msgid "translated into several languages"
 msgstr "přeloženo do mnoha jazyků včetně češtiny"
 
-#: html/wammu.html:39
+#: html/wammu.html:42
 msgid "rated as best on many software servers"
 msgstr ""
 "ohodnoceno jako nejlepší na mnoha softwarových serverech (např. slunečnice."
 "cz, instaluj.cz)"
 
-#: html/wammu.html:44
+#: html/wammu.html:49
 msgid ""
 "\n"
 "Wammu is included in many distributions, so please use the binary packages "
@@ -822,13 +826,43 @@ msgid ""
 "Windows</a>.\n"
 msgstr ""
 
-#: html/wammu.html:54
+#: html/wammu.html:59
 msgid ""
 "\n"
 "Wammu does not come with much documentation and there is hope that it will "
 "be\n"
 "intiutive enough. You can check it's command line parameters in <a\n"
 "href=\"/docs/man/en/wammu.1/\">wammu man page</a>.\n"
+msgstr ""
+
+#: html/wammu_feedback.html:3
+#, fuzzy
+msgid "Thank you for using Wammu"
+msgstr "Děkujeme Vám za váš příspěvek"
+
+#: html/wammu_feedback.html:5
+msgid ""
+"\n"
+"I hope you like Wammu, but maybe you miss some features or would like to "
+"see\n"
+"some improvements. If you have any ideas, please report them in <a\n"
+"href=\"http://bugs.cihar.com/\">bug tracker</a>.\n"
+msgstr ""
+
+#: html/wammu_feedback.html:13
+msgid ""
+"\n"
+"You are also welcome to share experiences with your phone in <a\n"
+"href=\"/phones/\">Gammu phone database</a> if you already haven't done so.\n"
+msgstr ""
+
+#: html/wammu_feedback.html:21
+#, python-format
+msgid ""
+"\n"
+"You are using older version, please upgrade to get most stable version with\n"
+"latest features. The latest stable version is <a href=\"%(url)s\">%(version)"
+"s</a>.\n"
 msgstr ""
 
 #: html/contribute/code.html:11
@@ -1126,15 +1160,21 @@ msgid ""
 "of\n"
 "people can work on single translation as they just translate one text at "
 "once.\n"
-"We currently use <a href=\"https://l10n.cihar.com/projects/wammu\">Pootle</"
-"a> to\n"
+"We currently use <a href=\"https://l10n.cihar.com/\">Pootle</a> to\n"
 "manage translations. To start translating just create an account there and\n"
 "start translating. You can already see dozens of languages there, but if "
 "your\n"
-"one is missing, just <a href=\"/support\">tell us</a> and we will add it.\n"
+"one is missing, just <a href=\"/support\">tell us</a> and we will add it. "
+"There\n"
+"are separate translations projects:\n"
 msgstr ""
 
-#: html/contribute/translate.html:57
+#: html/contribute/translate.html:60
+#, fuzzy
+msgid "This website"
+msgstr "Stránky"
+
+#: html/contribute/translate.html:64
 msgid ""
 "\n"
 "All languages are open to translated for anybody logged in by default. "
@@ -1146,18 +1186,18 @@ msgid ""
 "translator to define policy.\n"
 msgstr ""
 
-#: html/contribute/translate.html:66
+#: html/contribute/translate.html:73
 msgid "Hints for Translators"
 msgstr "Rady pro překladatele"
 
-#: html/contribute/translate.html:68
+#: html/contribute/translate.html:75
 msgid ""
 "\n"
 "In menu items, there is often used ampresand (&amp;), it means keybord\n"
 "shortcut for menu item. Please make those shortcuts unique in each menu. \n"
 msgstr ""
 
-#: html/contribute/translate.html:75
+#: html/contribute/translate.html:82
 msgid ""
 "\n"
 "Please test the translations in the program. Just download mo file from\n"
@@ -1167,7 +1207,7 @@ msgid ""
 "is two letter code of your translation.\n"
 msgstr ""
 
-#: html/contribute/translate.html:84
+#: html/contribute/translate.html:91
 msgid ""
 "\n"
 "You should follow terminology as defined for your language in <a\n"
@@ -1176,11 +1216,11 @@ msgid ""
 "If it is not defined, you can help creating one!\n"
 msgstr ""
 
-#: html/contribute/translate.html:91
+#: html/contribute/translate.html:98
 msgid "What is Important?"
 msgstr "Co je důležité?"
 
-#: html/contribute/translate.html:93
+#: html/contribute/translate.html:100
 msgid ""
 "\n"
 "If you will get to translation in bad shape, there is too much work. Use "
@@ -1188,7 +1228,7 @@ msgid ""
 "following rules to find the most important things:\n"
 msgstr ""
 
-#: html/contribute/translate.html:100
+#: html/contribute/translate.html:107
 msgid ""
 "\n"
 "libgammu messages - there is just few of them and they are used also in "
@@ -1196,20 +1236,28 @@ msgid ""
 "It is just good place to start and get to know some basic terminology.\n"
 msgstr ""
 
-#: html/contribute/translate.html:104
+#: html/contribute/translate.html:111
 msgid ""
 "\n"
 "Wammu translation - the is the application which is most frequently used by\n"
 "users with little English knowledge.\n"
 msgstr ""
 
-#: html/contribute/translate.html:108
+#: html/contribute/translate.html:115
 msgid ""
 "\n"
 "gammu translation - it's nice to have but not really a high priority.\n"
 msgstr ""
 
-#: html/contribute/translate.html:111
+#: html/contribute/translate.html:118
+msgid ""
+"\n"
+"Wammu website - there is lot of texts here and it's great to have the "
+"website\n"
+"translated for new users.\n"
+msgstr ""
+
+#: html/contribute/translate.html:122
 msgid ""
 "\n"
 "Gammu documentation - it would be great to have this translated to many\n"
@@ -1786,7 +1834,17 @@ msgid ""
 "on right side).\n"
 msgstr ""
 
-#: html/phonedb/phone.html:64
+#: html/phonedb/phone.html:63
+#, python-format
+msgid ""
+"\n"
+"If this record contains wrong information, please <a\n"
+"href=\"/phones/new?vendor=%(vendor)s&amp;name=%(phone)s\">add new record</"
+"a>\n"
+"with correct information and the record will be replaced after review.\n"
+msgstr ""
+
+#: html/phonedb/phone.html:71
 msgid ""
 "\n"
 "More information about phone might be available on following sites:\n"
@@ -1794,11 +1852,11 @@ msgstr ""
 "\n"
 "Více informací o telefonu může být na následujících stránkách:\n"
 
-#: html/phonedb/phone.html:77
+#: html/phonedb/phone.html:84
 msgid "About entry"
 msgstr "O záznamu"
 
-#: html/phonedb/phone.html:80
+#: html/phonedb/phone.html:87
 #, python-format
 msgid ""
 "\n"
@@ -1807,7 +1865,7 @@ msgstr ""
 "\n"
 "Vytvořil %(author)s dne %(created)s.\n"
 
-#: html/phonedb/phone.html:86
+#: html/phonedb/phone.html:93
 #, python-format
 msgid ""
 "\n"
@@ -1816,7 +1874,7 @@ msgstr ""
 "\n"
 "Vytvořeno dne %(created)s.\n"
 
-#: html/phonedb/phone.html:93
+#: html/phonedb/phone.html:100
 #, python-format
 msgid ""
 "\n"
@@ -2029,11 +2087,11 @@ msgid ""
 "<a href=\"/donate\">donate</a> some money to the project.\n"
 msgstr ""
 
-#: html/support/index.html:12
+#: html/support/index.html:14
 msgid "Support for Wammu and Gammu"
 msgstr "Podpora pro Wammu a Gammu"
 
-#: html/support/index.html:15
+#: html/support/index.html:17
 msgid ""
 "\n"
 "Gammu and Wammu are free software projects. As such you can get some "
@@ -2045,11 +2103,11 @@ msgid ""
 "just a configuration issue or some well known situation.\n"
 msgstr ""
 
-#: html/support/index.html:23
+#: html/support/index.html:25
 msgid "Communication with Community"
 msgstr "Komunikace s komunitou"
 
-#: html/support/index.html:26
+#: html/support/index.html:28
 msgid ""
 "\n"
 "If the <a href=\"/docs/\">documentation</a> does not help, you can try to "
@@ -2062,11 +2120,11 @@ msgid ""
 "IRC.\n"
 msgstr ""
 
-#: html/support/index.html:35
+#: html/support/index.html:37
 msgid "Reporting Bugs"
 msgstr "Hlášení chyb"
 
-#: html/support/index.html:38
+#: html/support/index.html:40
 msgid ""
 "\n"
 "Once you think you have hit a bug or want to file a feature request, please\n"
@@ -2076,11 +2134,11 @@ msgid ""
 "reproduce the bug such as debug logs.\n"
 msgstr ""
 
-#: html/support/index.html:46
+#: html/support/index.html:48
 msgid "Commercial Support"
 msgstr "Komerční podpora"
 
-#: html/support/index.html:49
+#: html/support/index.html:51
 msgid ""
 "\n"
 "Running some business application using Gammu, you might be interested in\n"
@@ -2371,16 +2429,16 @@ msgstr ""
 msgid "Please choose how will be email handled in next field."
 msgstr "Prosím zvolte si v následující položce, jak bude email zobrazen."
 
-#: phonedb/views.py:110
+#: phonedb/views.py:114
 msgid "Gammu Phone Database Feed (RSS)"
 msgstr "Databáze telefonů Gammu (RSS)"
 
-#: phonedb/views.py:111
+#: phonedb/views.py:115
 msgid "Gammu Phone Database Feed (Atom)"
 msgstr "Databáze telefonů Gammu (Atom)"
 
 # type: Plain text
-#: phonedb/views.py:401
+#: phonedb/views.py:405
 msgid "Phone record has been created."
 msgstr "Záznam v databázi byl vytvořen."
 
