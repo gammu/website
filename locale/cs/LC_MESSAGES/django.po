@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-12 13:22+0200\n"
+"POT-Creation-Date: 2009-10-12 13:24+0200\n"
 "PO-Revision-Date: 2009-10-11 09:40+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -685,8 +685,9 @@ msgid ""
 msgstr ""
 
 #: html/shortnews.html:2
+#, fuzzy
 msgid "Latest News"
-msgstr ""
+msgstr "Poslední verze:"
 
 #: html/smsd.html:19
 msgid "Gammu SMSD"
@@ -841,6 +842,7 @@ msgid "Thank you for using Wammu"
 msgstr "Děkujeme Vám za váš příspěvek"
 
 #: html/wammu_feedback.html:5
+#, fuzzy
 msgid ""
 "\n"
 "I hope you like Wammu, but maybe you miss some features or would like to "
@@ -848,22 +850,30 @@ msgid ""
 "some improvements. If you have any ideas, please report them in <a\n"
 "href=\"http://bugs.cihar.com/\">bug tracker</a>.\n"
 msgstr ""
+"Doufám, že se vám Wammu líbí, ale možná v něm postrádáte nějakou funkci, "
+"nebo byste v něm rádi viděli nějaké vylepšení. Pokud máte jakékoliv nápady, "
+"prosím zapište je do %ssystému sledování chyb%s."
 
 #: html/wammu_feedback.html:13
+#, fuzzy
 msgid ""
 "\n"
 "You are also welcome to share experiences with your phone in <a\n"
 "href=\"/phones/\">Gammu phone database</a> if you already haven't done so.\n"
 msgstr ""
+"Také uvítám, pokud se podělíte o zkušenosti se svým telefonem v %sdatabázi "
+"telefonů Gammu%s, pokud jste tak již neučinili."
 
 #: html/wammu_feedback.html:21
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "You are using older version, please upgrade to get most stable version with\n"
 "latest features. The latest stable version is <a href=\"%(url)s\">%(version)"
 "s</a>.\n"
 msgstr ""
+"Používáte starší verzi, prosím aktualizujte ji a získáte tím nejstabilnější "
+"verzi s nejnovějšími vlastnostmi. Můžete ji získat na %sstahovací stránce%s."
 
 #: html/contribute/code.html:11
 msgid "Factoids"
@@ -1909,11 +1919,13 @@ msgid ""
 msgstr ""
 
 #: html/phonedb/vendor.html:33
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "There is currently %(count)s approved phone records from this vendor.\n"
 msgstr ""
+"\n"
+"Není zde žádný záznam od tohoto výrobce!\n"
 
 #: html/phonedb/vendor.html:37
 msgid ""
