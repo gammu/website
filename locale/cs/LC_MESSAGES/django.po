@@ -865,9 +865,10 @@ msgid ""
 msgstr ""
 "\n"
 "Doufám, že se vám Wammu líbí, ale možná v něm postrádáte nějakou funkci, "
-"nebo byste v něm rádi viděli nějaké vylepšení. Pokud máte jakékoliv nápady, "
-"prosím zapište je do <a href=\"http://bugs.cihar.com/\">systému sledování "
-"chyb</a>.\n"
+"nebo byste\n"
+"v něm rádi viděli nějaké vylepšení. Pokud máte jakékoliv nápady, prosím "
+"zapište je do\n"
+"<a href=\"http://bugs.cihar.com/\">systému sledování chyb</a>.\n"
 
 #: html/wammu_feedback.html:13
 msgid ""
