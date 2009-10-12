@@ -876,9 +876,8 @@ msgid ""
 "href=\"/phones/\">Gammu phone database</a> if you already haven't done so.\n"
 msgstr ""
 "\n"
-"Také uvítám, pokud se podělíte o zkušenosti se svým telefonem v\n"
-"<a href=\"/phones/\">databázi telefonů Gammu</a>, pokud jste tak již "
-"neučinili.\n"
+"Také uvítám, pokud se podělíte o zkušenosti se svým telefonem v <a\n"
+"href=\"/phones/\">databázi telefonů Gammu</a>, pokud jste tak již neučinili.\n"
 
 #: html/wammu_feedback.html:21
 #, python-format
