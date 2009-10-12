@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-12 13:47+0200\n"
+"POT-Creation-Date: 2009-10-12 16:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,11 +116,13 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: html/base.html:81 html/gammu.html:19 html/contribute/translate.html:59
+#: html/base.html:81 html/gammu.html:4 html/gammu.html.py:19
+#: html/contribute/translate.html:59
 msgid "Gammu"
 msgstr ""
 
-#: html/base.html:82 html/wammu.html:22 html/contribute/translate.html:58
+#: html/base.html:82 html/wammu.html:4 html/wammu.html.py:22
+#: html/contribute/translate.html:58
 msgid "Wammu"
 msgstr ""
 
@@ -165,7 +167,7 @@ msgstr ""
 msgid "Third party"
 msgstr ""
 
-#: html/base.html:102
+#: html/base.html:102 html/index.html:63
 msgid "News"
 msgstr ""
 
@@ -439,6 +441,10 @@ msgid ""
 "configuration file)</a>.\n"
 msgstr ""
 
+#: html/index.html:4
+msgid "Wammu and Gammu"
+msgstr ""
+
 #: html/index.html:19
 msgid ""
 "\n"
@@ -477,7 +483,7 @@ msgid ""
 "sharing same library.\n"
 msgstr ""
 
-#: html/libgammu.html:15
+#: html/libgammu.html:4 html/libgammu.html.py:15
 msgid "libGammu"
 msgstr ""
 
@@ -1584,6 +1590,10 @@ msgstr ""
 
 #: html/news/index.html:19 html/screenshots/index.html:7
 msgid "Categories"
+msgstr ""
+
+#: html/news/index.html:21
+msgid "All news"
 msgstr ""
 
 #: html/news/published.html:4

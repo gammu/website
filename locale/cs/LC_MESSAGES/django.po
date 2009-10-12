@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-12 13:46+0200\n"
+"POT-Creation-Date: 2009-10-12 16:44+0200\n"
 "PO-Revision-Date: 2009-10-12 13:38+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -121,11 +121,13 @@ msgstr "Reklama"
 msgid "About"
 msgstr "Informace"
 
-#: html/base.html:81 html/gammu.html:19 html/contribute/translate.html:59
+#: html/base.html:81 html/gammu.html:4 html/gammu.html.py:19
+#: html/contribute/translate.html:59
 msgid "Gammu"
 msgstr "Gammu"
 
-#: html/base.html:82 html/wammu.html:22 html/contribute/translate.html:58
+#: html/base.html:82 html/wammu.html:4 html/wammu.html.py:22
+#: html/contribute/translate.html:58
 msgid "Wammu"
 msgstr "Wammu"
 
@@ -170,7 +172,7 @@ msgstr "Obrázky"
 msgid "Third party"
 msgstr "Dalších aplikace"
 
-#: html/base.html:102
+#: html/base.html:102 html/index.html:63
 msgid "News"
 msgstr "Novinky"
 
@@ -450,6 +452,11 @@ msgid ""
 "configuration file)</a>.\n"
 msgstr ""
 
+#: html/index.html:4
+#, fuzzy
+msgid "Wammu and Gammu"
+msgstr "Novinky o Wammu a Gammu"
+
 #: html/index.html:19
 msgid ""
 "\n"
@@ -490,7 +497,7 @@ msgid ""
 "sharing same library.\n"
 msgstr ""
 
-#: html/libgammu.html:15
+#: html/libgammu.html:4 html/libgammu.html.py:15
 msgid "libGammu"
 msgstr "libGammu"
 
@@ -1664,6 +1671,10 @@ msgstr "Twitter RSS"
 #: html/news/index.html:19 html/screenshots/index.html:7
 msgid "Categories"
 msgstr "Kategorie"
+
+#: html/news/index.html:21
+msgid "All news"
+msgstr ""
 
 #: html/news/published.html:4
 #, python-format

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load i18n %}
 
-{% block title %}Wammu and Gammu{% endblock %}
+{% block title %}{% trans "Wammu and Gammu" %}{% endblock %}
 
 {% block sidebar_top %}
 {% include "downloads/smalldownloads.html" %}
@@ -60,7 +60,7 @@ sharing same library.
 </div>
 
 <div class="floatbox">
-    <h2><a href="/news/">News</a></h2>
+    <h2><a href="/news/">{% trans "News" %}</a></h2>
     {% for entry in news %}
     <h3><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h3>
     {{ entry.excerpt_html|safe }}
