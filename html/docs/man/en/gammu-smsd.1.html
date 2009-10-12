@@ -27,7 +27,10 @@ might be not accepted on some platforms):</p>
 <dt><b>-c</b>, <b>--config</b>=<i>file</i></dt>
 <dd>Configuration file to use, default is /etc/gammu-smsdrc, on
 Windows there is no default and configuration file path has to be
-always specified.</dd>
+always specified.
+<p>See <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5) for config
+file documentation.</p>
+</dd>
 <dt><b>-p</b>, <b>--pid</b>=<i>file</i></dt>
 <dd>Lock file for storing pid, empty for no locking. Not supported
 on Windows.</dd>
@@ -103,9 +106,13 @@ get &quot;Error 1053: The service did not respond to the start or
 control request in a timely fashion&quot;), first check your SMSD logs.
 If they do not contain any useful hint, try starting SMSD manually
 with exactly same parameters as you installed the service (without
--i), for example:</p>
-<p><br/>
-gammu-smsd.exe-csmsdrc</p>
+-i).</p>
+<dl compact="compact">
+<dt>For example the command line can look like:</dt>
+<dd>
+<p>gammu-smsd.exe -c smsdrc</p>
+</dd>
+</dl>
 <p>You now should be able to get errors from SMSD even if it fails
 to start as a service.</p>
 <p><a class="aname" id="lbAI" name="lbAI"/></p>
@@ -155,5 +162,5 @@ logfile=smsd.log</p>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 21:20:42 GMT, October 06, 2009
+Time: 12:46:33 GMT, October 12, 2009
 </div>
