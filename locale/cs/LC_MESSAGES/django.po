@@ -610,8 +610,8 @@ msgid ""
 msgstr ""
 "\n"
 "Tento program je svobodný software; můžete jej šířit a modifikovat podle\n"
-"ustanovení Obecné veřejné licence GNU verze 2 nebo pozdější, vydané Free "
-"Software\n"
+"ustanovení Obecné veřejné licence GNU verze 2 nebo pozdější (podle vaší "
+"volby), vydané Free Software\n"
 "Foundation.\n"
 
 #: html/license.html:80
