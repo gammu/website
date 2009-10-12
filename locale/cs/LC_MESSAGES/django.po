@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-12 16:44+0200\n"
-"PO-Revision-Date: 2009-10-12 13:38+0200\n"
+"PO-Revision-Date: 2009-10-12 16:50+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -51,6 +51,9 @@ msgid ""
 "This site includes information about Gammu and Wammu, you might want to\n"
 "continue to pages of following projects:\n"
 msgstr ""
+"\n"
+"Tyto stránky obsahují informace o Gammu a Wammu, můžete chtít pokračovat\n"
+"na stránky následujících projektů:\n"
 
 #: html/500.html:4 html/500.html.py:8
 msgid "Server Error"
@@ -63,6 +66,9 @@ msgid ""
 "our\n"
 "trained monkeys to fix the issue.\n"
 msgstr ""
+"\n"
+"Server měl vážné problémy se zpracováním vašeho požadavku. Právě\n"
+"jsme vyslali vycvičené opice, aby tento problém opravily.\n"
 
 #: html/authors.html:7
 msgid "Wammu and Gammu Authors"
@@ -224,7 +230,7 @@ msgstr "Podpořte Gammu/Wammu přispěním peněz!"
 
 #: html/base.html:130
 msgid "Search for Gammu/Wammu related questions"
-msgstr ""
+msgstr "Vyhledávání dotazů souvisejících s Gammu a Wammu"
 
 #: html/base.html:130 html/phonedb/index.html:7
 msgid "Search"
@@ -453,9 +459,8 @@ msgid ""
 msgstr ""
 
 #: html/index.html:4
-#, fuzzy
 msgid "Wammu and Gammu"
-msgstr "Novinky o Wammu a Gammu"
+msgstr "Wammu a Gammu"
 
 #: html/index.html:19
 msgid ""
@@ -663,7 +668,7 @@ msgstr ""
 
 #: html/python-gammu.html:32
 msgid "Example"
-msgstr ""
+msgstr "Příklad"
 
 #: html/python-gammu.html:35
 msgid ""
@@ -671,6 +676,10 @@ msgid ""
 "Using python-gammu is quite simple, for example seting text message can be\n"
 "done by following snippet:\n"
 msgstr ""
+"\n"
+"Použití python-gammu je celkem jednoduché, například odeslání textové "
+"zprávy \n"
+"provedete následujícím kouskem kódu:\n"
 
 #: html/python-gammu.html:59
 msgid ""
@@ -922,7 +931,7 @@ msgstr ""
 
 #: html/contribute/code.html:35
 msgid "Version Control System"
-msgstr ""
+msgstr "Verzovací systém"
 
 #: html/contribute/code.html:37
 msgid ""
@@ -2477,6 +2486,9 @@ msgid ""
 "Any note about this phone and Gammu support for it. You can use <a href="
 "\"http://daringfireball.net/projects/markdown/syntax\">markdown markup</a>."
 msgstr ""
+"Jakákoliv poznámka o tomto telefonu a o jeho podpoře v Gammu. Můžete použít "
+"<a href=\"http://daringfireball.net/projects/markdown/syntax\">značky "
+"markdown</a>."
 
 #: phonedb/models.py:87
 msgid "Please choose how will be email handled in next field."
