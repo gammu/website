@@ -18,7 +18,7 @@ class ConnectionAdmin(admin.ModelAdmin):
 admin.site.register(Connection, ConnectionAdmin)
 
 class PhoneAdmin(admin.ModelAdmin):
-    list_display = ('name', 'vendor', 'connection', 'author_email', 'state')
+    list_display = ('name', 'vendor', 'connection', 'author_email', 'state', 'created')
     list_filter = ('state', 'vendor')
 
 admin.site.register(Phone, PhoneAdmin)
