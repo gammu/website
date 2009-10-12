@@ -4,6 +4,7 @@ from downloads.models import Download, Release, Mirror, get_program, get_latest_
 from django.http import Http404
 from django.utils.datastructures import MultiValueDictKeyError
 from django.db.models import Q
+import GeoIP
 
 def get_mirrors(request):
     mirrors = Mirror.objects.all().order_by('id')
@@ -15,7 +16,17 @@ def get_mirrors(request):
             mirror_id = request.COOKIES['mirror']
         set_mirror = True
     except (MultiValueDictKeyError, KeyError):
-        mirror_id = 'cihar-com'
+        gi = GeoIP.new(GeoIP.GEOIP_MEMORY_CACHE)
+        address = request.META.get('REMOTE_ADDR')
+        if address[:7] == '::ffff:':
+            address = address[7:]
+        country = gi.country_code_by_addr(address)
+        if country in ['CZ', 'SK', 'DE', 'PL', 'AT', 'HU', 'RU', 'UA', 'BL']:
+            mirror_id = 'cihar-com'
+        elif country in ['GB', 'US', 'FR', 'NL', 'CA', 'DK', 'SE', 'FI']:
+            mirror_id = 'clickcreations-com'
+        else:
+            mirror_id = 'coralcdn'
     try:
         mirror = Mirror.objects.get(slug = mirror_id)
     except Mirror.DoesNotExist:
