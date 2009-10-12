@@ -46,12 +46,19 @@ offline, but on the other side, it somehow prevents collaboration.
 {% blocktrans %}
 Another option is to use some web based system for translation, where lot of
 people can work on single translation as they just translate one text at once.
-We currently use <a href="https://l10n.cihar.com/projects/wammu">Pootle</a> to
+We currently use <a href="https://l10n.cihar.com/">Pootle</a> to
 manage translations. To start translating just create an account there and
 start translating. You can already see dozens of languages there, but if your
-one is missing, just <a href="/support">tell us</a> and we will add it.
+one is missing, just <a href="/support">tell us</a> and we will add it. There
+are separate translations projects:
 {% endblocktrans %}
 </p>
+
+<ul>
+<li><a href="https://l10n.cihar.com/projects/wammu">{% trans "Wammu" %}</a></li>
+<li><a href="https://l10n.cihar.com/projects/gammu">{% trans "Gammu" %}</a></li>
+<li><a href="https://l10n.cihar.com/projects/wammu_web">{% trans "This website" %}</a></li>
+</ul>
 
 <p>
 {% blocktrans %}
@@ -107,6 +114,10 @@ users with little English knowledge.
 {% endblocktrans %}</li>
 <li>{% blocktrans %}
 gammu translation - it's nice to have but not really a high priority.
+{% endblocktrans %}</li>
+<li>{% blocktrans %}
+Wammu website - there is lot of texts here and it's great to have the website
+translated for new users.
 {% endblocktrans %}</li>
 <li>{% blocktrans %}
 Gammu documentation - it would be great to have this translated to many
