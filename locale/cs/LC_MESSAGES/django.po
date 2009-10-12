@@ -639,8 +639,8 @@ msgid ""
 "owners, where appropriate.\n"
 msgstr ""
 "\n"
-"Všechny produkty zmíměné na těchto stránkách jsou ochranné známky jejich "
-"vlastníků.\n"
+"Všechny produkty zmíměné na těchto stránkách jsou ochranné\n"
+"známky jejich vlastníků.\n"
 
 #: html/python-gammu.html:4 html/python-gammu.html.py:20
 msgid "Python bindings for Gammu"
