@@ -557,8 +557,9 @@ msgid ""
 "of the License.\n"
 msgstr ""
 "\n"
-"Tento program je svobodný software; můžete jej šířit a modifikovat podle\n"
-"ustanovení Obecné veřejné licence GNU verze 2, vydané Free Software\n"
+"Tento program je svobodný software; můžete jej šířit a modifikovat\n"
+"podle ustanovení Obecné veřejné licence GNU verze 2, vydané\n"
+"Free Software\n"
 "Foundation.\n"
 
 #: html/license.html:27 html/license.html.py:64
