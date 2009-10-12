@@ -141,5 +141,6 @@ THUMBNAIL_SIZE = (180, 180)
 
 SEND_BROKEN_LINK_EMAILS = True
 SERVER_EMAIL = 'django@wammu.eu'
+IGNORABLE_404_STARTS = ('/js/','/common/')
 
 CACHE_BACKEND = 'db://cache'
