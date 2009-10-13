@@ -414,9 +414,9 @@ def create(request, vendorname = None):
             newphone.save()
             result = HttpResponseRedirect(newphone.get_absolute_url())
             request.session['message'] = _('Phone record has been created.')
-            result.set_cookie('phonedb_garble', form.cleaned_data['email_garble'], max_age = 3600 * 24 * 365)
-            result.set_cookie('phonedb_author', form.cleaned_data['author_name'], max_age = 3600 * 24 * 365)
-            result.set_cookie('phonedb_email', form.cleaned_data['author_email'], max_age = 3600 * 24 * 365)
+            result.set_cookie('phonedb_garble', form.cleaned_data['email_garble'].encode('utf-8'), max_age = 3600 * 24 * 365)
+            result.set_cookie('phonedb_author', form.cleaned_data['author_name'].encode('utf-8'), max_age = 3600 * 24 * 365)
+            result.set_cookie('phonedb_email', form.cleaned_data['author_email'].encode('utf-8'), max_age = 3600 * 24 * 365)
             return result
     else:
         initial = {}
