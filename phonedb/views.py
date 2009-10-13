@@ -399,7 +399,10 @@ def create(request, vendorname = None):
             newphone.address = request.META.get('REMOTE_ADDR')
             if newphone.address[:7] == '::ffff:':
                 newphone.address = newphone.address[7:]
-            newphone.hostname = socket.gethostbyaddr(newphone.address)[0]
+            try:
+                newphone.hostname = socket.gethostbyaddr(newphone.address)[0]
+            except socket.herror:
+                newphone.hostname newphone.address
             newphone.save()
             result = HttpResponseRedirect(newphone.get_absolute_url())
             request.session['message'] = _('Phone record has been created.')
