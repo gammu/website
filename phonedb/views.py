@@ -233,6 +233,14 @@ def vendor(request, vendorname):
         'feeds': get_feeds(),
     }))
 
+def phone_redirect(request):
+    try:
+        id = request.GET['id']
+    except:
+        raise Http404('No such page!')
+    phone = get_object_or_404(Phone, id = id)
+    return HttpResponseRedirect(phone.get_absolute_url())
+
 def phone(request, vendorname, id):
     id = int(id)
     vendor = get_object_or_404(Vendor, slug = vendorname)
