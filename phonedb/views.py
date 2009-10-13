@@ -328,7 +328,7 @@ def create_wammu(request):
     if not request.POST.has_key('irobot') or request.POST['irobot'] != 'wammu':
         invalid.append('irobot')
 
-    if not request.POST.has_key('version'):
+    if request.POST.has_key('version'):
         version = int(request.POST['version'])
 
     phone = Phone()
