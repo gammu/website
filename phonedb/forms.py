@@ -26,7 +26,7 @@ class NewForm(ModelForm):
         label = ugettext_lazy('Features'),
         required = False,
         help_text = ugettext_lazy('Features which are working in Gammu.'),
-        choices = [(f.name,
+        choices = [(f.id,
             ugettext_lazy('%(description)s (%(name)s)') %
                 {'description': f.get_description(), 'name': f.name}
                 ) for f in Feature.objects.all()],
@@ -46,10 +46,3 @@ class NewForm(ModelForm):
             'author_name',
             'author_email',
             'email_garble')
-
-    def save(self, *args, **kwargs):
-        ret = super(ModelForm, self).save(*args, **kwargs)
-        features = self.cleaned_data['features']
-        for f in features:
-            ret.features.add(Feature.objects.get(name = f))
-        return ret
