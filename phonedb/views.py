@@ -402,7 +402,7 @@ def create(request, vendorname = None):
             try:
                 newphone.hostname = socket.gethostbyaddr(newphone.address)[0]
             except socket.herror:
-                newphone.hostname newphone.address
+                newphone.hostname = newphone.address
             newphone.save()
             result = HttpResponseRedirect(newphone.get_absolute_url())
             request.session['message'] = _('Phone record has been created.')
