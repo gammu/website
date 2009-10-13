@@ -388,7 +388,17 @@ def create_wammu(request):
         response.write(INVALID % ','.join(invalid))
         return response
 
+    features = []
+    for feature in Feature.objects.all():
+        key = 'fts[%s]' % feature.name
+        if request.POST.has_key(key) and request.POST[key] == '1':
+            features.append(feature)
+
     phone.save()
+
+    for feature in features:
+        phone.features.add(feature)
+
     if version == 2:
         response.write(OKAY_V2 % (phone.id, phone.get_absolute_url))
     else:
