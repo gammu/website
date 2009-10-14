@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 12:02+0200\n"
+"POT-Creation-Date: 2009-10-14 13:41+0200\n"
 "PO-Revision-Date: 2009-10-14 13:35+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -88,7 +88,7 @@ msgstr ""
 "Server měl vážné problémy se zpracováním vašeho požadavku. Právě\n"
 "jsme vyslali vycvičené opice, aby tento problém opravily.\n"
 
-#: html/authors.html:7
+#: html/authors.html:4 html/authors.html.py:7
 msgid "Wammu and Gammu Authors"
 msgstr "Autoři Gammu a Wammu"
 
@@ -273,7 +273,7 @@ msgstr ""
 "Validní <a href=\"http://validator.w3.org/check/referer\">HTML</a> and <a "
 "href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
 
-#: html/donate-thanks.html:11
+#: html/donate-thanks.html:4 html/donate-thanks.html.py:11
 msgid "Thank you for Donation"
 msgstr "Děkujeme Vám za váš příspěvek"
 
@@ -285,7 +285,7 @@ msgid ""
 "money in useful way.\n"
 msgstr ""
 
-#: html/donate.html:11
+#: html/donate.html:4 html/donate.html.py:11
 msgid "Donate to Gammu"
 msgstr "Přispějte na Gammu"
 
@@ -617,7 +617,7 @@ msgid ""
 "href=\"/docs/devel/\">developer documentation page</a> for more details.\n"
 msgstr ""
 
-#: html/license.html:7
+#: html/license.html:4 html/license.html.py:7
 msgid "Wammu and Gammu License"
 msgstr "Licence Gammu a Wammu"
 
@@ -760,7 +760,7 @@ msgid ""
 "href=\"/docs/devel/\">developer documentation page</a> for more details.\n"
 msgstr ""
 
-#: html/search.html:7
+#: html/search.html:4 html/search.html.py:7
 msgid "Wammu and Gammu Search"
 msgstr "Vyhledávání pro Gammu a Wammu"
 
@@ -787,7 +787,7 @@ msgstr ""
 msgid "Latest News"
 msgstr "Poslední novinky"
 
-#: html/smsd.html:19
+#: html/smsd.html:4 html/smsd.html.py:19
 msgid "Gammu SMSD"
 msgstr "Gammu SMSD"
 
@@ -979,13 +979,13 @@ msgstr ""
 "verzi s nejnovějšími vlastnostmi. Poslední stabilní verze je \n"
 "<a href=\"%(url)s\">%(version)s</a>.\n"
 
+#: html/contribute/code.html:4 html/contribute/code.html.py:22
+msgid "Coding for Wammu and Gammu"
+msgstr "Programování Wammu a Gammu"
+
 #: html/contribute/code.html:11
 msgid "Factoids"
 msgstr ""
-
-#: html/contribute/code.html:22
-msgid "Coding for Wammu and Gammu"
-msgstr "Programování Wammu a Gammu"
 
 #: html/contribute/code.html:25
 msgid ""
@@ -1084,7 +1084,7 @@ msgid ""
 "being notified about every test failure which does happen.\n"
 msgstr ""
 
-#: html/contribute/index.html:12
+#: html/contribute/index.html:4 html/contribute/index.html.py:12
 msgid "Contribute to Wammu and Gammu"
 msgstr "Přispějte do Wammu a Gammu"
 
@@ -1162,7 +1162,7 @@ msgid ""
 "wishlist.\n"
 msgstr ""
 
-#: html/contribute/publicity.html:12
+#: html/contribute/publicity.html:4 html/contribute/publicity.html.py:12
 msgid "Publicity for Wammu and Gammu"
 msgstr "Publicita o Wammu a Gammu"
 
@@ -1219,7 +1219,7 @@ msgstr ""
 msgid "Ways to contribute"
 msgstr "Možnosti jak přispět"
 
-#: html/contribute/translate.html:12
+#: html/contribute/translate.html:4 html/contribute/translate.html.py:12
 msgid "Translating Wammu and Gammu"
 msgstr "Překládání Wammu a Gammu"
 
@@ -1703,11 +1703,11 @@ msgstr "Aplikace jiných výrobců používající Gammu"
 msgid "Website:"
 msgstr "Stránky:"
 
-#: html/news/contrib_index.html:5 html/news/contrib_index.html.py:8
+#: html/news/contrib_index.html:4 html/news/contrib_index.html.py:6
 msgid "Third Party News"
 msgstr "Novinky o dalších aplikacích"
 
-#: html/news/gammu_index.html:5 html/news/gammu_index.html.py:8
+#: html/news/gammu_index.html:4 html/news/gammu_index.html.py:6
 msgid "Gammu News"
 msgstr "Novinky o Gammu"
 
@@ -1764,7 +1764,7 @@ msgstr ""
 "\n"
 "Vydal <a href=\"mailto:%(email)s\">%(author)s</a> dne %(date)s\n"
 
-#: html/news/wammu_index.html:5 html/news/wammu_index.html.py:8
+#: html/news/wammu_index.html:4 html/news/wammu_index.html.py:6
 msgid "Wammu News"
 msgstr "Novinky o Wammu"
 
@@ -2060,11 +2060,11 @@ msgid ""
 "old ones will get deleted eventually.\n"
 msgstr ""
 
-#: html/screenshots/contrib_index.html:5 html/screenshots/contrib_index.html:8
+#: html/screenshots/contrib_index.html:4 html/screenshots/contrib_index.html:6
 msgid "Third Party Screenshots"
 msgstr "Obrázky dalších aplikací"
 
-#: html/screenshots/gammu_index.html:5 html/screenshots/gammu_index.html:8
+#: html/screenshots/gammu_index.html:4 html/screenshots/gammu_index.html:6
 msgid "Gammu Screenshots"
 msgstr "Obrázky Gammu"
 
@@ -2076,7 +2076,7 @@ msgstr "Obrázky Gammu a Wammu"
 msgid "All screenshots"
 msgstr "Všechny obrázky"
 
-#: html/screenshots/wammu_index.html:5 html/screenshots/wammu_index.html:8
+#: html/screenshots/wammu_index.html:4 html/screenshots/wammu_index.html:6
 msgid "Wammu Screenshots"
 msgstr "Obrázky Wammu"
 
@@ -2084,7 +2084,7 @@ msgstr "Obrázky Wammu"
 msgid "How to contribute"
 msgstr "Jak přispět"
 
-#: html/support/bugs.html:12
+#: html/support/bugs.html:4 html/support/bugs.html.py:12
 msgid "Reporting Bugs in Wammu and Gammu"
 msgstr "Hlášení chyb ve Wammu a Gammu"
 
@@ -2184,7 +2184,7 @@ msgid ""
 "<code>debuglevel</code> to 255:\n"
 msgstr ""
 
-#: html/support/buy.html:12
+#: html/support/buy.html:4 html/support/buy.html.py:12
 msgid "Commercial Support for Wammu and Gammu"
 msgstr "Komerční podpora pro Wammu a Gammu"
 
@@ -2228,7 +2228,7 @@ msgid ""
 "<a href=\"/donate\">donate</a> some money to the project.\n"
 msgstr ""
 
-#: html/support/index.html:14
+#: html/support/index.html:4 html/support/index.html.py:14
 msgid "Support for Wammu and Gammu"
 msgstr "Podpora pro Wammu a Gammu"
 
@@ -2287,7 +2287,7 @@ msgid ""
 "developers</a> and try to ask them for this.\n"
 msgstr ""
 
-#: html/support/lists.html:12
+#: html/support/lists.html:4 html/support/lists.html.py:12
 msgid "Mailing Lists for Wammu and Gammu"
 msgstr "Mailing listy pro Wammu a Gammu"
 
@@ -2355,7 +2355,7 @@ msgid ""
 "Gammu, please use this mailing list.\n"
 msgstr ""
 
-#: html/support/online.html:12
+#: html/support/online.html:4 html/support/online.html.py:12
 msgid "Online Communication for Wammu and Gammu"
 msgstr "Online komunikace pro Wammu a Gammu"
 

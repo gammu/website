@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 12:02+0200\n"
+"POT-Creation-Date: 2009-10-14 13:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgid ""
 "trained monkeys to fix the issue.\n"
 msgstr ""
 
-#: html/authors.html:7
+#: html/authors.html:4 html/authors.html.py:7
 msgid "Wammu and Gammu Authors"
 msgstr ""
 
@@ -257,7 +257,7 @@ msgid ""
 "\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
 msgstr ""
 
-#: html/donate-thanks.html:11
+#: html/donate-thanks.html:4 html/donate-thanks.html.py:11
 msgid "Thank you for Donation"
 msgstr ""
 
@@ -269,7 +269,7 @@ msgid ""
 "money in useful way.\n"
 msgstr ""
 
-#: html/donate.html:11
+#: html/donate.html:4 html/donate.html.py:11
 msgid "Donate to Gammu"
 msgstr ""
 
@@ -547,7 +547,7 @@ msgid ""
 "href=\"/docs/devel/\">developer documentation page</a> for more details.\n"
 msgstr ""
 
-#: html/license.html:7
+#: html/license.html:4 html/license.html.py:7
 msgid "Wammu and Gammu License"
 msgstr ""
 
@@ -659,7 +659,7 @@ msgid ""
 "href=\"/docs/devel/\">developer documentation page</a> for more details.\n"
 msgstr ""
 
-#: html/search.html:7
+#: html/search.html:4 html/search.html.py:7
 msgid "Wammu and Gammu Search"
 msgstr ""
 
@@ -686,7 +686,7 @@ msgstr ""
 msgid "Latest News"
 msgstr ""
 
-#: html/smsd.html:19
+#: html/smsd.html:4 html/smsd.html.py:19
 msgid "Gammu SMSD"
 msgstr ""
 
@@ -847,12 +847,12 @@ msgid ""
 "s</a>.\n"
 msgstr ""
 
-#: html/contribute/code.html:11
-msgid "Factoids"
+#: html/contribute/code.html:4 html/contribute/code.html.py:22
+msgid "Coding for Wammu and Gammu"
 msgstr ""
 
-#: html/contribute/code.html:22
-msgid "Coding for Wammu and Gammu"
+#: html/contribute/code.html:11
+msgid "Factoids"
 msgstr ""
 
 #: html/contribute/code.html:25
@@ -952,7 +952,7 @@ msgid ""
 "being notified about every test failure which does happen.\n"
 msgstr ""
 
-#: html/contribute/index.html:12
+#: html/contribute/index.html:4 html/contribute/index.html.py:12
 msgid "Contribute to Wammu and Gammu"
 msgstr ""
 
@@ -1030,7 +1030,7 @@ msgid ""
 "wishlist.\n"
 msgstr ""
 
-#: html/contribute/publicity.html:12
+#: html/contribute/publicity.html:4 html/contribute/publicity.html.py:12
 msgid "Publicity for Wammu and Gammu"
 msgstr ""
 
@@ -1087,7 +1087,7 @@ msgstr ""
 msgid "Ways to contribute"
 msgstr ""
 
-#: html/contribute/translate.html:12
+#: html/contribute/translate.html:4 html/contribute/translate.html.py:12
 msgid "Translating Wammu and Gammu"
 msgstr ""
 
@@ -1563,11 +1563,11 @@ msgstr ""
 msgid "Website:"
 msgstr ""
 
-#: html/news/contrib_index.html:5 html/news/contrib_index.html.py:8
+#: html/news/contrib_index.html:4 html/news/contrib_index.html.py:6
 msgid "Third Party News"
 msgstr ""
 
-#: html/news/gammu_index.html:5 html/news/gammu_index.html.py:8
+#: html/news/gammu_index.html:4 html/news/gammu_index.html.py:6
 msgid "Gammu News"
 msgstr ""
 
@@ -1622,7 +1622,7 @@ msgid ""
 "Published on %(date)s by <a href=\"mailto:%(email)s\">%(author)s</a>\n"
 msgstr ""
 
-#: html/news/wammu_index.html:5 html/news/wammu_index.html.py:8
+#: html/news/wammu_index.html:4 html/news/wammu_index.html.py:6
 msgid "Wammu News"
 msgstr ""
 
@@ -1887,11 +1887,11 @@ msgid ""
 "old ones will get deleted eventually.\n"
 msgstr ""
 
-#: html/screenshots/contrib_index.html:5 html/screenshots/contrib_index.html:8
+#: html/screenshots/contrib_index.html:4 html/screenshots/contrib_index.html:6
 msgid "Third Party Screenshots"
 msgstr ""
 
-#: html/screenshots/gammu_index.html:5 html/screenshots/gammu_index.html:8
+#: html/screenshots/gammu_index.html:4 html/screenshots/gammu_index.html:6
 msgid "Gammu Screenshots"
 msgstr ""
 
@@ -1903,7 +1903,7 @@ msgstr ""
 msgid "All screenshots"
 msgstr ""
 
-#: html/screenshots/wammu_index.html:5 html/screenshots/wammu_index.html:8
+#: html/screenshots/wammu_index.html:4 html/screenshots/wammu_index.html:6
 msgid "Wammu Screenshots"
 msgstr ""
 
@@ -1911,7 +1911,7 @@ msgstr ""
 msgid "How to contribute"
 msgstr ""
 
-#: html/support/bugs.html:12
+#: html/support/bugs.html:4 html/support/bugs.html.py:12
 msgid "Reporting Bugs in Wammu and Gammu"
 msgstr ""
 
@@ -1998,7 +1998,7 @@ msgid ""
 "<code>debuglevel</code> to 255:\n"
 msgstr ""
 
-#: html/support/buy.html:12
+#: html/support/buy.html:4 html/support/buy.html.py:12
 msgid "Commercial Support for Wammu and Gammu"
 msgstr ""
 
@@ -2042,7 +2042,7 @@ msgid ""
 "<a href=\"/donate\">donate</a> some money to the project.\n"
 msgstr ""
 
-#: html/support/index.html:14
+#: html/support/index.html:4 html/support/index.html.py:14
 msgid "Support for Wammu and Gammu"
 msgstr ""
 
@@ -2101,7 +2101,7 @@ msgid ""
 "developers</a> and try to ask them for this.\n"
 msgstr ""
 
-#: html/support/lists.html:12
+#: html/support/lists.html:4 html/support/lists.html.py:12
 msgid "Mailing Lists for Wammu and Gammu"
 msgstr ""
 
@@ -2169,7 +2169,7 @@ msgid ""
 "Gammu, please use this mailing list.\n"
 msgstr ""
 
-#: html/support/online.html:12
+#: html/support/online.html:4 html/support/online.html.py:12
 msgid "Online Communication for Wammu and Gammu"
 msgstr ""
 
