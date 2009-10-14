@@ -43,36 +43,72 @@ details about it.</p>
 <dl compact="compact">
 <dt>Inject text message up to standard 160 chars:</dt>
 <dd>
-<p>echo &quot;All your base are belong to us&quot; | gammu-smsd-inject TEXT
-123456</p>
-<p>or</p>
-<p>gammu-smsd-inject TEXT 123456 -text &quot;All your base are belong to
-us&quot;</p>
+<dl compact="compact">
+<dd>
+<pre>
+echo &quot;All your base are belong to us&quot; | gammu-smsd-inject TEXT 123456
+</pre></dd>
+</dl>
 </dd>
+</dl>
+<p>or</p>
+<dl compact="compact">
+<dd>
+<pre>
+gammu-smsd-inject TEXT 123456 -text &quot;All your base are belong to us&quot;
+</pre></dd>
+</dl>
+<dl compact="compact">
 <dt>Inject long text message:</dt>
 <dd>
-<p>echo &quot;All your base are belong to us&quot; | gammu-smsd-inject TEXT
-123456 -len 400</p>
-<p>or</p>
-<p>gammu-smsd-inject TEXT 123456 -len 400 -text &quot;All your base are
-belong to us&quot;</p>
-<p>or</p>
-<p>gammu-smsd-inject EMS 123456 -text &quot;All your base are belong to
-us&quot;</p>
+<dl compact="compact">
+<dd>
+<pre>
+echo &quot;All your base are belong to us&quot; | gammu-smsd-inject TEXT 123456 -len 400
+</pre></dd>
+</dl>
 </dd>
+</dl>
+<p>or</p>
+<dl compact="compact">
+<dd>
+<pre>
+gammu-smsd-inject TEXT 123456 -len 400 -text &quot;All your base are belong to us&quot;
+</pre></dd>
+</dl>
+<p>or</p>
+<dl compact="compact">
+<dd>
+<pre>
+gammu-smsd-inject EMS 123456 -text &quot;All your base are belong to us&quot;
+</pre></dd>
+</dl>
+<dl compact="compact">
 <dt>Inject some funky message with predefined sound and animation
 from 2 bitmaps:</dt>
 <dd>
-<p>gammu-smsd-inject EMS 123456 -text &quot;Greetings&quot; -defsound 1 -text
-&quot;from Gammu&quot; -tone10 axelf.txt -animation 2 file1.bmp file2.bmp</p>
-</dd>
-<dt>Inject protected message with ringtone:</dt>
+<dl compact="compact">
 <dd>
-<p>gammu-smsd-inject EMS 123456 -protected 2 -variablebitmaplong
-ala.bmp -toneSElong axelf.txt -toneSE ring.txt</p>
+<pre>
+gammu-smsd-inject EMS 123456 -text &quot;Greetings&quot; -defsound 1 -text &quot;from Gammu&quot;
+-tone10 axelf.txt -animation 2 file1.bmp file2.bmp
+</pre></dd>
+</dl>
 </dd>
 </dl>
-<a class="aname" id="lbAF" name="lbAF"/>
+<dl compact="compact">
+<dt>Inject protected message with ringtone:</dt>
+<dd>
+<dl compact="compact">
+<dd>
+<pre>
+gammu-smsd-inject EMS 123456 -protected 2 -variablebitmaplong ala.bmp
+-toneSElong axelf.txt -toneSE ring.txt
+</pre></dd>
+</dl>
+</dd>
+</dl>
+<p><a class="aname" id="lbAF" name="lbAF"/></p>
 <h3>SEE ALSO</h3>
 <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5), <a href="../gammu.1/">gammu</a>(1), <a href="../gammu-smsd.1/">gammu-smsd</a>(1) <a class="aname" id="lbAG" name="lbAG"/>
 <h3>AUTHOR</h3>
@@ -89,10 +125,14 @@ There is NO WARRANTY, to the extent permitted by law. <a class="aname" id="lbAI"
 Please report bugs to &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.
 <p>Before reporting a bug, please enable verbose logging in SMSD
 configuration:</p>
-<p><br/>
-[smsd]<br/>
-debuglevel=255<br/>
-logfile=smsd.log</p>
+<dl compact="compact">
+<dd>
+<pre>
+[smsd]
+debuglevel = 255
+logfile = smsd.log
+</pre></dd>
+</dl>
 <p>and include this verbose log within bug report.</p>
 <hr/>
 <a class="aname" id="index" name="index"/>
@@ -110,5 +150,5 @@ logfile=smsd.log</p>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 12:46:33 GMT, October 12, 2009
+Time: 13:56:51 GMT, October 14, 2009
 </div>

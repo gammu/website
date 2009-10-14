@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU</h2>
 Section: Dokumentace Gammu (1)<br/>
-Updated: Říjen 10, 2009<br/>
+Updated: Říjen 13, 2009<br/>
 <a href="#index">Index</a> 
 <hr/>
 <p><a class="aname" id="lbAB" name="lbAB"/></p>
@@ -612,8 +612,8 @@ parametry SMSC, jen změní číslo SMSC.
 <p>Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
 o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
-<p>Use -yes parameter to answer yes to all questions (you want to
-automatically restore all data).</p>
+<p>Použijte parametr -yes pro odověď ano na všechny dotazy (včetně
+dotazu jestli chcete vymazat všechna svoje data).</p>
 <p>Use -memory parameter to force usage of defined memory type for
 storing entries regardless what backu format says.</p>
 </dd>
@@ -929,8 +929,8 @@ telefonu.</p>
 <p>Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
 o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
-<p>Use -yes parameter to answer yes to all questions (you want to
-automatically restore all data).</p>
+<p>Použijte parametr -yes pro odověď ano na všechny dotazy (včetně
+dotazu jestli chcete vymazat všechna svoje data).</p>
 <p>Use -memory parameter to force usage of defined memory type for
 storing entries regardless what backu format says.</p>
 </dd>
@@ -1037,8 +1037,8 @@ tento název v menu některých telefonů blikat (například 33xx)</p>
 <p>Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
 o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
-<p>Use -yes parameter to answer yes to all questions (you want to
-automatically restore all data).</p>
+<p>Použijte parametr -yes pro odověď ano na všechny dotazy (včetně
+dotazu jestli chcete vymazat všechna svoje data).</p>
 <p>Use -memory parameter to force usage of defined memory type for
 storing entries regardless what backu format says.</p>
 </dd>
@@ -1124,8 +1124,8 @@ parametry pro sendsms a savesms</b>.</p>
 <p>Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
 o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
-<p>Use -yes parameter to answer yes to all questions (you want to
-automatically restore all data).</p>
+<p>Použijte parametr -yes pro odověď ano na všechny dotazy (včetně
+dotazu jestli chcete vymazat všechna svoje data).</p>
 <p>Use -memory parameter to force usage of defined memory type for
 storing entries regardless what backu format says.</p>
 </dd>
@@ -1234,8 +1234,8 @@ každém připojení telefonu ke Gammu. Více podrobností naleznete v
 <p>Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
 o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
-<p>Use -yes parameter to answer yes to all questions (you want to
-automatically restore all data).</p>
+<p>Použijte parametr -yes pro odověď ano na všechny dotazy (včetně
+dotazu jestli chcete vymazat všechna svoje data).</p>
 <p>Use -memory parameter to force usage of defined memory type for
 storing entries regardless what backu format says.</p>
 </dd>
@@ -1287,8 +1287,8 @@ telefonu není nastaven čas a datum.</p>
 <p>Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
 o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
-<p>Use -yes parameter to answer yes to all questions (you want to
-automatically restore all data).</p>
+<p>Použijte parametr -yes pro odověď ano na všechny dotazy (včetně
+dotazu jestli chcete vymazat všechna svoje data).</p>
 <p>Use -memory parameter to force usage of defined memory type for
 storing entries regardless what backu format says.</p>
 </dd>
@@ -1501,8 +1501,8 @@ or 9210 have to reboot them to see netmonitor menu)</p>
 <p>Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
 o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
-<p>Use -yes parameter to answer yes to all questions (you want to
-automatically restore all data).</p>
+<p>Použijte parametr -yes pro odověď ano na všechny dotazy (včetně
+dotazu jestli chcete vymazat všechna svoje data).</p>
 <p>Use -memory parameter to force usage of defined memory type for
 storing entries regardless what backu format says.</p>
 </dd>
@@ -1675,8 +1675,8 @@ parametry pro sendsms a savesms</b>.</p>
 <p>Tato funkce přidá veškerý obsah zálohy do telefonu a nezajímá se
 o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
-<p>Use -yes parameter to answer yes to all questions (you want to
-automatically restore all data).</p>
+<p>Použijte parametr -yes pro odověď ano na všechny dotazy (včetně
+dotazu jestli chcete vymazat všechna svoje data).</p>
 <p>Use -memory parameter to force usage of defined memory type for
 storing entries regardless what backu format says.</p>
 </dd>
@@ -1904,33 +1904,72 @@ gammu, který je podrobně popsán v <a href="../gammurc.5/">gammurc</a>(5).</p>
 <dt>Uložení standardní textové zprávy s maximální délkou 160
 znaků:</dt>
 <dd>
-<p>echo &quot;All your base are belong to us&quot; | gammu savesms TEXT</p>
-<p>nebo</p>
-<p>gammu savesms TEXT -text &quot;All your base are belong to us&quot;</p>
+<dl compact="compact">
+<dd>
+<pre>
+echo &quot;All your base are belong to us&quot; | gammu savesms TEXT
+</pre></dd>
+</dl>
 </dd>
+</dl>
+<p>nebo</p>
+<dl compact="compact">
+<dd>
+<pre>
+gammu savesms TEXT -text &quot;All your base are belong to us&quot;
+</pre></dd>
+</dl>
+<dl compact="compact">
 <dt>Uložení dlouhé textové zprávy:</dt>
 <dd>
-<p>echo &quot;All your base are belong to us&quot; | gammu savesms TEXT -len
-400</p>
-<p>nebo</p>
-<p>gammu savesms TEXT -len 400 -text &quot;All your base are belong to
-us&quot;</p>
-<p>nebo</p>
-<p>gammu savesms EMS -text &quot;All your base are belong to us&quot;</p>
+<dl compact="compact">
+<dd>
+<pre>
+echo &quot;All your base are belong to us&quot; | gammu savesms TEXT -len 400
+</pre></dd>
+</dl>
 </dd>
+</dl>
+<p>nebo</p>
+<dl compact="compact">
+<dd>
+<pre>
+gammu savesms TEXT -len 400 -text &quot;All your base are belong to us&quot;
+</pre></dd>
+</dl>
+<p>nebo</p>
+<dl compact="compact">
+<dd>
+<pre>
+gammu savesms EMS -text &quot;All your base are belong to us&quot;
+</pre></dd>
+</dl>
+<dl compact="compact">
 <dt>Uložení zprávy s předdefinovaným zvukem a animací ze 2
 obrázků:</dt>
 <dd>
-<p>gammu savesms EMS -text &quot;Greetings&quot; -defsound 1 -text &quot;from
-Gammu&quot; -tone10 axelf.txt -animation 2 file1.bmp file2.bmp</p>
-</dd>
-<dt>Uložení chráněné zprávy s vyzváněním:</dt>
+<dl compact="compact">
 <dd>
-<p>gammu savesms EMS -protected 2 -variablebitmaplong ala.bmp
--toneSElong axelf.txt -toneSE ring.txt</p>
+<pre>
+gammu savesms EMS -text &quot;Greetings&quot; -defsound 1 -text &quot;from Gammu&quot;
+-tone10 axelf.txt -animation 2 file1.bmp file2.bmp
+</pre></dd>
+</dl>
 </dd>
 </dl>
-<a class="aname" id="lbBI" name="lbBI"/>
+<dl compact="compact">
+<dt>Uložení chráněné zprávy s vyzváněním:</dt>
+<dd>
+<dl compact="compact">
+<dd>
+<pre>
+gammu savesms EMS -protected 2 -variablebitmaplong ala.bmp
+-toneSElong axelf.txt -toneSE ring.txt
+</pre></dd>
+</dl>
+</dd>
+</dl>
+<p><a class="aname" id="lbBI" name="lbBI"/></p>
 <h4>Zálohy</h4>
 <p>If you will backup settings to Gammu text file, it will be
 possible to edit it. It's easy: many things in this file will be
@@ -1986,12 +2025,16 @@ jeho verzi a informace o telefonu).</p>
 <p>Pro vytvoření ladicího logu zapněte logování v gammurc (můžete
 ho také zapnout na příkazové řádce pomocí -d textall -f
 /tmp/gammu.log):</p>
-<p><br/>
-[gammu]<br/>
-...vašenastavenípřipojení...<br/>
-
-logfile=/tmp/gammu.log<br/>
-logformat=textall</p>
+<dl compact="compact">
+<dd>
+<pre>
+[gammu]
+connection = vaše nastavení připojení
+port = vaše nastavení portu
+logfile = /tmp/gammu.log
+logformat = textall
+</pre></dd>
+</dl>
 <p>S tímto nastavení Gammu vytvoří /tmp/gammu.log při každém
 připojení k telefonu a uloží do něj obsah komunikace. V tomto logu
 také mohou být obsaženy rady pro vylepšení podpory pro váš
@@ -2021,7 +2064,7 @@ stránce &lt;<a href="http://www.gammu.org/">http://www.gammu.org/</a>&gt;.</p>
 <p>Související programy, které mohou být použity s GSM modemem:</p>
 <p>minicom(1)</p>
 <p>Grafické nadstavby pro Gammu:</p>
-<p>gmobilemedia(1)</p>
+<p><a href="../wammu.1/">wammu</a>(1), gmobilemedia(1)</p>
 <hr/>
 <a class="aname" id="index" name="index"/>
 <h3>Index</h3>
@@ -2076,5 +2119,5 @@ stránce &lt;<a href="http://www.gammu.org/">http://www.gammu.org/</a>&gt;.</p>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 12:46:33 GMT, October 12, 2009
+Time: 13:56:51 GMT, October 14, 2009
 </div>

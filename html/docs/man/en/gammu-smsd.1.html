@@ -66,14 +66,26 @@ to name each service differently. Default is &quot;GammuSMSD&quot;.</dd>
 <dl compact="compact">
 <dt>Start SMSD as a deamon on Linux:</dt>
 <dd>
-<p>gammu-smsd --config /etc/gammu-smsdrc --pid
-/var/run/gammu-smsd.pid --daemon</p>
+<dl compact="compact">
+<dd>
+<pre>
+gammu-smsd --config /etc/gammu-smsdrc --pid /var/run/gammu-smsd.pid --daemon
+</pre></dd>
+</dl>
 </dd>
+</dl>
+<dl compact="compact">
 <dt>Start SMSD as a deamon on Linux with reduced privileges:</dt>
 <dd>
-<p>gammu-smsd --config /etc/gammu-smsdrc --pid
-/var/run/gammu-smsd.pid --daemon --user gammu --group gammu</p>
+<dl compact="compact">
+<dd>
+<pre>
+gammu-smsd --config /etc/gammu-smsdrc --pid /var/run/gammu-smsd.pid --daemon --user gammu --group gammu
+</pre></dd>
+</dl>
 </dd>
+</dl>
+<dl compact="compact">
 <dt>SMSD as a system wide daemon</dt>
 <dd>
 <p>To use SMSD as a daemon, you might want to use init script which
@@ -87,19 +99,39 @@ file for instructions.</p>
 <dl compact="compact">
 <dt>Install Gammu SMSD Windows service:</dt>
 <dd>
-<p>gammu-smsd.exe -c c:\Gammu\smsdrc -i</p>
-</dd>
-<dt>Install two instances of SMSD Windows service:</dt>
+<dl compact="compact">
 <dd>
-<p>gammu-smsd.exe -c c:\Gammu\smsdrc-1 -n Gammu-first-phone -i</p>
-<p>gammu-smsd.exe -c c:\Gammu\smsdrc-2 -n Gammu-second-phone -i</p>
-</dd>
-<dt>To uninstall a Windows service:</dt>
-<dd>
-<p>gammu-smsd.exe -u</p>
+<pre>
+gammu-smsd.exe -c c:\Gammu\smsdrc -i
+</pre></dd>
+</dl>
 </dd>
 </dl>
-<a class="aname" id="lbAH" name="lbAH"/>
+<dl compact="compact">
+<dt>Install two instances of SMSD Windows service:</dt>
+<dd>
+<dl compact="compact">
+<dd>
+<pre>
+gammu-smsd.exe -c c:\Gammu\smsdrc-1 -n Gammu-first-phone -i
+
+gammu-smsd.exe -c c:\Gammu\smsdrc-2 -n Gammu-second-phone -i
+</pre></dd>
+</dl>
+</dd>
+</dl>
+<dl compact="compact">
+<dt>To uninstall a Windows service:</dt>
+<dd>
+<dl compact="compact">
+<dd>
+<pre>
+gammu-smsd.exe -u
+</pre></dd>
+</dl>
+</dd>
+</dl>
+<p><a class="aname" id="lbAH" name="lbAH"/></p>
 <h4>Troubleshooting Windows Service</h4>
 <p>If Gammu fails to start as a Windows service (you will usually
 get &quot;Error 1053: The service did not respond to the start or
@@ -110,7 +142,12 @@ with exactly same parameters as you installed the service (without
 <dl compact="compact">
 <dt>For example the command line can look like:</dt>
 <dd>
-<p>gammu-smsd.exe -c smsdrc</p>
+<dl compact="compact">
+<dd>
+<pre>
+gammu-smsd.exe -c smsdrc
+</pre></dd>
+</dl>
 </dd>
 </dl>
 <p>You now should be able to get errors from SMSD even if it fails
@@ -118,6 +155,7 @@ to start as a service.</p>
 <p><a class="aname" id="lbAI" name="lbAI"/></p>
 <h3>SEE ALSO</h3>
 <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5), <a href="../gammu.1/">gammu</a>(1), <a href="../gammu-smsd-inject.1/">gammu-smsd-inject</a>(1), <a href="../gammu-smsd-monitor.1/">gammu-smsd-monitor</a>(1)
+<p>Documentation for different backends:</p>
 <p><a href="../gammu-smsd-files.7/">gammu-smsd-files</a>(7),
 <a href="../gammu-smsd-mysql.7/">gammu-smsd-mysql</a>(7), <a href="../gammu-smsd-pgsql.7/">gammu-smsd-pgsql</a>(7), <a href="../gammu-smsd-dbi.7/">gammu-smsd-dbi</a>(7), <a href="../gammu-smsd-tables.7/">gammu-smsd-tables</a>(7) <a class="aname" id="lbAJ" name="lbAJ"/></p>
 <h3>AUTHOR</h3>
@@ -134,10 +172,14 @@ There is NO WARRANTY, to the extent permitted by law. <a class="aname" id="lbAL"
 Please report bugs to &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.
 <p>Before reporting a bug, please enable verbose logging in SMSD
 configuration:</p>
-<p><br/>
-[smsd]<br/>
-debuglevel=255<br/>
-logfile=smsd.log</p>
+<dl compact="compact">
+<dd>
+<pre>
+[smsd]
+debuglevel = 255
+logfile = smsd.log
+</pre></dd>
+</dl>
 <p>and include this verbose log within bug report.</p>
 <hr/>
 <a class="aname" id="index" name="index"/>
@@ -162,5 +204,5 @@ logfile=smsd.log</p>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 12:46:33 GMT, October 12, 2009
+Time: 13:56:51 GMT, October 14, 2009
 </div>

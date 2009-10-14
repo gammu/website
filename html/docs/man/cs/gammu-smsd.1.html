@@ -66,14 +66,26 @@ pojmenovat každou instanci jinak. Výchozí jméno je
 <dl compact="compact">
 <dt>Spuštění SMSD jako démon na Linuxu:</dt>
 <dd>
-<p>gammu-smsd --config /etc/gammu-smsdrc --pid
-/var/run/gammu-smsd.pid --daemon</p>
+<dl compact="compact">
+<dd>
+<pre>
+gammu-smsd --config /etc/gammu-smsdrc --pid /var/run/gammu-smsd.pid --daemon
+</pre></dd>
+</dl>
 </dd>
+</dl>
+<dl compact="compact">
 <dt>Spuštění SMSD jako démon s omezenými právy na Linuxu:</dt>
 <dd>
-<p>gammu-smsd --config /etc/gammu-smsdrc --pid
-/var/run/gammu-smsd.pid --daemon --user gammu --group gammu</p>
+<dl compact="compact">
+<dd>
+<pre>
+gammu-smsd --config /etc/gammu-smsdrc --pid /var/run/gammu-smsd.pid --daemon --user gammu --group gammu
+</pre></dd>
+</dl>
 </dd>
+</dl>
+<dl compact="compact">
 <dt>SMSD jako systémový démon</dt>
 <dd>
 <p>Pro spuštění SMSD při startu systému můžete použít init skript,
@@ -87,19 +99,39 @@ podívejte do souboru INSTALL.cs.</p>
 <dl compact="compact">
 <dt>Instalace SMSD jako služba ve Windows:</dt>
 <dd>
-<p>gammu-smsd.exe -c c:\Gammu\smsdrc -i</p>
-</dd>
-<dt>Instalace dvou SMSD jako služby ve Windows.</dt>
+<dl compact="compact">
 <dd>
-<p>gammu-smsd.exe -c c:\Gammu\smsdrc-1 -n Gammu-first-phone -i</p>
-<p>gammu-smsd.exe -c c:\Gammu\smsdrc-2 -n Gammu-second-phone -i</p>
-</dd>
-<dt>Odinstalace SMSD služby ve Windows.</dt>
-<dd>
-<p>gammu-smsd.exe -u</p>
+<pre>
+gammu-smsd.exe -c c:\Gammu\smsdrc -i
+</pre></dd>
+</dl>
 </dd>
 </dl>
-<a class="aname" id="lbAH" name="lbAH"/>
+<dl compact="compact">
+<dt>Instalace dvou SMSD jako služby ve Windows.</dt>
+<dd>
+<dl compact="compact">
+<dd>
+<pre>
+gammu-smsd.exe -c c:\Gammu\smsdrc-1 -n Gammu-first-phone -i
+
+gammu-smsd.exe -c c:\Gammu\smsdrc-2 -n Gammu-second-phone -i
+</pre></dd>
+</dl>
+</dd>
+</dl>
+<dl compact="compact">
+<dt>Odinstalace SMSD služby ve Windows.</dt>
+<dd>
+<dl compact="compact">
+<dd>
+<pre>
+gammu-smsd.exe -u
+</pre></dd>
+</dl>
+</dd>
+</dl>
+<p><a class="aname" id="lbAH" name="lbAH"/></p>
 <h4>Problémy se službou ve Windows</h4>
 <p>Pokud se Gammu nepodaří spustit jako služba ve Windows (obvykle
 dostanete chybu 1053, říkající, že služba neodpověděla včas),
@@ -109,7 +141,12 @@ nainstalovali službu (bez parametru -i).</p>
 <dl compact="compact">
 <dt>Příkazová řádka například může vypadat takto:</dt>
 <dd>
-<p>gammu-smsd.exe -c smsdrc</p>
+<dl compact="compact">
+<dd>
+<pre>
+gammu-smsd.exe -c smsdrc
+</pre></dd>
+</dl>
 </dd>
 </dl>
 <p>Nyní by mělo být možné dostat popis chyb i když SMSD nejde
@@ -117,6 +154,7 @@ spustit jako služba.</p>
 <p><a class="aname" id="lbAI" name="lbAI"/></p>
 <h3>DALŠÍ INFORMACE</h3>
 <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5), <a href="../gammu.1/">gammu</a>(1), <a href="../gammu-smsd-inject.1/">gammu-smsd-inject</a>(1), <a href="../gammu-smsd-monitor.1/">gammu-smsd-monitor</a>(1)
+<p>Documentation for different backends:</p>
 <p><a href="../gammu-smsd-files.7/">gammu-smsd-files</a>(7),
 <a href="../gammu-smsd-mysql.7/">gammu-smsd-mysql</a>(7), <a href="../gammu-smsd-pgsql.7/">gammu-smsd-pgsql</a>(7), <a href="../gammu-smsd-dbi.7/">gammu-smsd-dbi</a>(7), <a href="../gammu-smsd-tables.7/">gammu-smsd-tables</a>(7) <a class="aname" id="lbAJ" name="lbAJ"/></p>
 <h3>AUTOR</h3>
@@ -133,10 +171,14 @@ Není poskytována ŽÁDNÁ ZÁRUKA, v rozsahu jaký je povolen zákonem.
 <h3>HLÁŠENÍ CHYB</h3>
 Prosím hlašte chyby na &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.
 <p>Před hlášením chyb prosím zapněte logovaní v nastavení SMSD:</p>
-<p><br/>
-[smsd]<br/>
-debuglevel=255<br/>
-logfile=smsd.log</p>
+<dl compact="compact">
+<dd>
+<pre>
+[smsd]
+debuglevel = 255
+logfile = smsd.log
+</pre></dd>
+</dl>
 <p>a přiložte tento log k hlášení chyby.</p>
 <hr/>
 <a class="aname" id="index" name="index"/>
@@ -161,5 +203,5 @@ logfile=smsd.log</p>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 12:46:33 GMT, October 12, 2009
+Time: 13:56:51 GMT, October 14, 2009
 </div>
