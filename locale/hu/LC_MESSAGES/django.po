@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-12 16:51+0200\n"
+"POT-Creation-Date: 2009-10-14 12:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,24 @@ msgstr ""
 #: donate/forms.py:27 donate/forms.py:38 html/base.html:119
 #: html/base.html.py:129
 msgid "Donate"
+msgstr ""
+
+#: downloads/models.py:29
+msgid "Source"
+msgstr ""
+
+#: downloads/models.py:30
+msgid "Windows binary"
+msgstr ""
+
+#: downloads/models.py:159
+#, python-format
+msgid "%(program)s stable release %(version)s"
+msgstr ""
+
+#: downloads/models.py:164
+#, python-format
+msgid "%(program)s testing release %(version)s"
 msgstr ""
 
 #: html/404.html:4 html/404.html.py:8
@@ -2361,7 +2379,7 @@ msgstr ""
 msgid "Gammu Phone Database Feed (Atom)"
 msgstr ""
 
-#: phonedb/views.py:405
+#: phonedb/views.py:426
 msgid "Phone record has been created."
 msgstr ""
 

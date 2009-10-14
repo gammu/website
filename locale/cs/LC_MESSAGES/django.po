@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-12 16:50+0200\n"
-"PO-Revision-Date: 2009-10-12 16:51+0200\n"
+"POT-Creation-Date: 2009-10-14 12:02+0200\n"
+"PO-Revision-Date: 2009-10-14 12:03+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -30,6 +30,24 @@ msgstr "Zpráva pro autory"
 #: html/base.html.py:129
 msgid "Donate"
 msgstr "Přispějte"
+
+#: downloads/models.py:29
+msgid "Source"
+msgstr "Zdrojový kód"
+
+#: downloads/models.py:30
+msgid "Windows binary"
+msgstr "Program pro Windows"
+
+#: downloads/models.py:159
+#, python-format
+msgid "%(program)s stable release %(version)s"
+msgstr "%(program)s, stabilní verze %(version)s"
+
+#: downloads/models.py:164
+#, python-format
+msgid "%(program)s testing release %(version)s"
+msgstr "%(program)s, testovací verze %(version)s"
 
 #: html/404.html:4 html/404.html.py:8
 msgid "Page Not Found"
@@ -2504,7 +2522,7 @@ msgid "Gammu Phone Database Feed (Atom)"
 msgstr "Databáze telefonů Gammu (Atom)"
 
 # type: Plain text
-#: phonedb/views.py:405
+#: phonedb/views.py:426
 msgid "Phone record has been created."
 msgstr "Záznam v databázi byl vytvořen."
 
