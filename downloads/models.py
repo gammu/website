@@ -26,8 +26,8 @@ PROGRAM_URLS = {
 }
 
 PLATFORM_CHOICES = (
-    ('source', 'Source'),
-    ('win32', 'Windows binary'),
+    ('source', ugettext_lazy('Source')),
+    ('win32', ugettext_lazy('Windows binary')),
     )
 
 def get_latest_releases(program):
