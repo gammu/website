@@ -156,9 +156,15 @@ class Release(models.Model):
 
     def get_description(self):
         if self.is_stable():
-            return _('%s stable release %s') % (self.get_program(), self.version)
+            return _('%(program)s stable release %(version)s') % {
+                'program': self.get_program(),
+                'version': self.version,
+            }
         else:
-            return _('%s testing release %s') % (self.get_program(), self.version)
+            return _('%(program)s testing release %(version)s') % {
+                'program': self.get_program(),
+                'version': self.version,
+            }
 
     def get_program(self):
         return get_program(self.program)
