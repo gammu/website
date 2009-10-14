@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-14 12:02+0200\n"
-"PO-Revision-Date: 2009-10-14 12:03+0200\n"
+"PO-Revision-Date: 2009-10-14 13:24+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -98,6 +98,9 @@ msgid ""
 "Lot of people contributed to Gammu, python-gammu and Wammu in the past. You\n"
 "can find the most visible here.\n"
 msgstr ""
+"\n"
+"Mnoho lidí v minulosti přispělo do  Gammu, python-gammu a Wammu. Ty\n"
+"nejdůležitější naleznete na této stránce.\n"
 
 #: html/authors.html:19
 msgid ""
@@ -311,6 +314,11 @@ msgid ""
 "their\n"
 "account or by using any major credit card.\n"
 msgstr ""
+"\n"
+"Příspěvek je posílán přes <a\n"
+"href=\"http://www.paypal.com/\">PayPal</a>, kde můžete zaplatit buďto "
+"jejich\n"
+"účtem nebo platební kartou.\n"
 
 #: html/donate.html:39
 msgid "Other Options"
@@ -324,42 +332,60 @@ msgid ""
 "for\n"
 "Michal Čihař</a>.\n"
 msgstr ""
+"\n"
+"Můžete také věnovat nějaké dárky vývojářům, v současné době můžete vybírat "
+"ze <a\n"
+"href=\"http://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">seznamu přání\n"
+"Michala Čihaře na Amazonu</a>.\n"
 
 #: html/gammu-family.html:4
 msgid ""
 "\n"
 "GUI program to manage contacts, todos, calendar and messages in your phone.\n"
 msgstr ""
+"\n"
+"Grafický program pro správu kontaktů, úkolů, kalendáře a zpráv ve vašem "
+"telefonu.\n"
 
 #: html/gammu-family.html:10
 msgid ""
 "\n"
 "Command line utility which allows to use all libGammu features.\n"
 msgstr ""
+"\n"
+"Utilita pro příkazovou řádku, která umožní použít vše, co libGammu umí.\n"
 
 #: html/gammu-family.html:16
 msgid ""
 "\n"
 "Library exporting C API to talk to cell phones.\n"
 msgstr ""
+"\n"
+"Knihovna zpřístupňující komunikaci s mobilními telefony přes C API.\n"
 
 #: html/gammu-family.html:22
 msgid ""
 "\n"
 "SMS daemon service to receive and send messages automatically.\n"
 msgstr ""
+"\n"
+"Služba SMS démona pro automatické přijímání a odesílání zpráv.\n"
 
 #: html/gammu-family.html:28
 msgid ""
 "\n"
 "Python bindings for libGammu, so that you can use it from Python scripts.\n"
 msgstr ""
+"\n"
+"Rozhraní libGammu pro Python, takže jí můžete použít ze skriptů v Pythonu.\n"
 
 #: html/gammu-features.html:3
 msgid ""
 "\n"
 "Call listing, initiating and handling\n"
 msgstr ""
+"\n"
+"Vypisování hovorů, volání a zpracování\n"
 
 #: html/gammu-features.html:6
 msgid ""
@@ -397,6 +423,8 @@ msgid ""
 "\n"
 "Retrieval of phone and network information\n"
 msgstr ""
+"\n"
+"Získání informací o telefonu a síti\n"
 
 #: html/gammu-features.html:23
 msgid ""
