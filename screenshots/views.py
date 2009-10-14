@@ -19,7 +19,7 @@ def category(request, slug):
     return render_screenshots(request, objects, 'screenshots/%s_index.html' % slug)
 
 def render_screenshots(request, objects, template):
-    paginator = Paginator(objects, settings.SCREENSHOTS_PER_PAGE, orphans = 1)
+    paginator = Paginator(objects, settings.SCREENSHOTS_PER_PAGE, orphans = 2)
     try:
         page = int(request.GET.get('page', '1'))
         if page < 1:
