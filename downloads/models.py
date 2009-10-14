@@ -34,7 +34,7 @@ def get_latest_releases(program):
     '''
     releases = Release.objects.filter(program = program)
     latest_version = releases.order_by('-version_int')[0]
-    if latest_version.version_int % 100 < 10:
+    if latest_version.is_stable():
         latest_stable = latest_version
         latest_testing = None
     else:
