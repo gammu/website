@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-14 12:02+0200\n"
-"PO-Revision-Date: 2009-10-14 13:24+0200\n"
+"PO-Revision-Date: 2009-10-14 13:35+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -409,6 +409,9 @@ msgid ""
 "Phonebook listing, export and import (also from standard formats such as\n"
 "vCard)\n"
 msgstr ""
+"\n"
+"Přístup ke kontaktům, export a import (i ve standardních formátech jako\n"
+"vCard)\n"
 
 #: html/gammu-features.html:16
 msgid ""
@@ -417,6 +420,10 @@ msgid ""
 "such as\n"
 "vCalendar or iCalendar)\n"
 msgstr ""
+"\n"
+"Přístup ke kontaktům a úkolům, export a import (i ve standardních formátech "
+"jako\n"
+"vCalendar nebo iCalendar)\n"
 
 #: html/gammu-features.html:20
 msgid ""
@@ -529,6 +536,15 @@ msgid ""
 "Huawei\n"
 "and others).\n"
 msgstr ""
+"\n"
+"<a href=\"/wammu\">Wammu</a> je program pro spravování údajů ve vašem "
+"mobilním telefonu. Umí spravovat kontakty,\n"
+"kalendář nebo zprávy. Wammu používá <a href=\"/libgammu\">Gammu library</a>, "
+"která\n"
+"poskytuje abstrakci pro práci s různými telefony od mnoha\n"
+"výrobců (například Nokia, Sony-Ericssonn, Motorola, Samsung, Siemens, "
+"Huawei\n"
+"a další).\n"
 
 #: html/index.html:43
 msgid ""
@@ -536,6 +552,9 @@ msgid ""
 "Lot of people contribute to Gammu, you can see the major contributors on <a "
 "href=\"/authors/\">separate page</a>.\n"
 msgstr ""
+"\n"
+"Mnoho lidí přispělo do Gammu, hlavní přispěvatele naleznete na <a href=\"/"
+"authors/\">samostatné stránce</a>.\n"
 
 #: html/index.html:50
 msgid "Gammu family"
@@ -547,6 +566,10 @@ msgid ""
 "Gammu is now not only a single program but there is lot of useful tools\n"
 "sharing same library.\n"
 msgstr ""
+"\n"
+"Gammu už není jen jeden program, ale jedná se sadu užitečných nástrojů, "
+"které\n"
+"sdílejí stejnou knihovnu.\n"
 
 #: html/libgammu.html:4 html/libgammu.html.py:15
 msgid "libGammu"
@@ -1621,7 +1644,7 @@ msgstr ""
 
 #: html/downloads/smalldownloads.html:2
 msgid "Source Downloads"
-msgstr ""
+msgstr "Stáhnout zdrojové kódy"
 
 #: html/downloads/programs/gammu-source.html:3
 msgid ""
@@ -1730,7 +1753,7 @@ msgstr "Kategorie"
 
 #: html/news/index.html:21
 msgid "All news"
-msgstr ""
+msgstr "Všechny novinky"
 
 #: html/news/published.html:4
 #, python-format
@@ -1738,6 +1761,8 @@ msgid ""
 "\n"
 "Published on %(date)s by <a href=\"mailto:%(email)s\">%(author)s</a>\n"
 msgstr ""
+"\n"
+"Vydal <a href=\"mailto:%(email)s\">%(author)s</a> dne %(date)s\n"
 
 #: html/news/wammu_index.html:5 html/news/wammu_index.html.py:8
 msgid "Wammu News"
@@ -2079,6 +2104,9 @@ msgid ""
 "<strong>Phone information</strong> such as manufacturer and model are really "
 "necessary.\n"
 msgstr ""
+"\n"
+"<strong>Informace o telefonu</strong> jako výrobce a model jsou opravdu "
+"nezbytné.\n"
 
 #: html/support/bugs.html:30
 msgid ""
@@ -2087,6 +2115,10 @@ msgid ""
 "do you use Windows, some Linux\n"
 "distribution, Mac OS X, BSD?\n"
 msgstr ""
+"\n"
+"Informace o <strong>operačním systému</strong> a jeho verzi, používáte "
+"Windows, nějakou distribuci Linuxu,\n"
+"Mac OS X, BSD?\n"
 
 #: html/support/bugs.html:36
 msgid ""
@@ -2094,6 +2126,9 @@ msgid ""
 "Configuration you use, you can just include Gammu <strong>configuration\n"
 "file</strong>.\n"
 msgstr ""
+"\n"
+"Jakou konfiguraci používáte, stačí jen připojit <strong>konfigurační\n"
+"soubor</strong> Gammu.\n"
 
 #: html/support/bugs.html:42
 msgid ""
@@ -2101,10 +2136,13 @@ msgid ""
 "<strong>Debugging log</strong> of the communication, please see bellow how "
 "to obtain that.\n"
 msgstr ""
+"\n"
+"<strong>Ladicí záznam</strong> komunikace, níže naleznete více informací, "
+"jak ho získat.\n"
 
 #: html/support/bugs.html:48
 msgid "Obtaining Debugging Log"
-msgstr "Získání ladicího souboru"
+msgstr "Získání ladicího záznamu"
 
 #: html/support/bugs.html:51
 msgid ""
