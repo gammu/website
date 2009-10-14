@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 13:41+0200\n"
+"POT-Creation-Date: 2009-10-14 15:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2058,11 +2058,23 @@ msgid ""
 "just a configuration issue or some well known situation.\n"
 msgstr ""
 
-#: html/support/index.html:25
+#: html/support/index.html:26
+msgid ""
+"\n"
+"If you are looking for list of <strong>supported phones</strong>, you can "
+"look\n"
+"into <a href=\"/phones/\"><strong>Gammu Phone Database</strong></a>. You "
+"can\n"
+"also share your experiences there, but if you had problems, please report "
+"bugs\n"
+"and do not write about problems only in phone database.\n"
+msgstr ""
+
+#: html/support/index.html:34
 msgid "Communication with Community"
 msgstr ""
 
-#: html/support/index.html:28
+#: html/support/index.html:37
 msgid ""
 "\n"
 "If the <a href=\"/docs/\">documentation</a> does not help, you can try to "
@@ -2075,11 +2087,11 @@ msgid ""
 "IRC.\n"
 msgstr ""
 
-#: html/support/index.html:37
+#: html/support/index.html:46
 msgid "Reporting Bugs"
 msgstr ""
 
-#: html/support/index.html:40
+#: html/support/index.html:49
 msgid ""
 "\n"
 "Once you think you have hit a bug or want to file a feature request, please\n"
@@ -2089,11 +2101,11 @@ msgid ""
 "reproduce the bug such as debug logs.\n"
 msgstr ""
 
-#: html/support/index.html:48
+#: html/support/index.html:57
 msgid "Commercial Support"
 msgstr ""
 
-#: html/support/index.html:51
+#: html/support/index.html:60
 msgid ""
 "\n"
 "Running some business application using Gammu, you might be interested in\n"
