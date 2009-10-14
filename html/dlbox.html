@@ -1,5 +1,5 @@
 {% load i18n %}
-<h4><a href="{{ release.get_absolute_url }}">{{release.get_program}} {{release.get_state}}</a></h4>
+<h4><a href="{{ release.get_absolute_url }}">{{release.get_description}}</a></h4>
 <ul>
 {% for item in downloads %}
 <li><a href="{{ mirror.url }}{{ item.location }}#!md5!{{ item.md5 }}">{{ item.get_filename }}</a> ({{ item.get_size }})</li>
