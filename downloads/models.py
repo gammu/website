@@ -10,6 +10,9 @@ import os
 
 from wammu.helpers import process_bug_links
 
+from django.utils.translation import ugettext as _
+from django.utils.translation import ugettext_lazy
+
 PROGRAM_CHOICES = (
     ('gammu', 'Gammu'),
     ('wammu', 'Wammu'),
