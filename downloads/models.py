@@ -148,11 +148,14 @@ class Release(models.Model):
     def __unicode__(self):
         return '%s-%s' % (self.program, self.version)
 
+    def is_stable(self):
+        return (self.version_int % 100 < 90)
+
     def get_state(self):
-        if self.program == 'gammu' and self.version_int % 100 > 90:
-            return 'testing release %s' % self.version
-        else:
+        if self.is_stable():
             return 'stable release %s' % self.version
+        else:
+            return 'testing release %s' % self.version
 
     def get_program(self):
         return get_program(self.program)
