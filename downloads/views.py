@@ -1,6 +1,6 @@
 from django.shortcuts import render_to_response, get_object_or_404
 from wammu.helpers import WammuContext
-from downloads.models import Download, Release, Mirror, get_program, get_latest_releases, get_current_downloads, PLATFORM_CHOICES
+from downloads.models import Download, Release, Mirror, get_program, get_latest_releases, get_current_downloads, PLATFORM_CHOICES, PROGRAM_CHOICES
 from django.http import Http404
 from django.utils.datastructures import MultiValueDictKeyError
 from django.db.models import Q
@@ -86,6 +86,8 @@ def release(request, program,  version):
 
 
 def program(request, program):
+    if not program in [x[0] for x in PROGRAM_CHOICES]:
+        raise Http404('No such program %s.' % program)
 
     stable_release, testing_release = get_latest_releases(program)
 
@@ -131,6 +133,9 @@ def doap(request, program):
     }), mimetype = 'application/xml')
 
 def pad(request, program):
+    if not program in [x[0] for x in PROGRAM_CHOICES]:
+        raise Http404('No such program %s.' % program)
+
     mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
 
     downloads = get_current_downloads(program, 'win32')
