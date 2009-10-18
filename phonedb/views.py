@@ -235,7 +235,7 @@ def vendor(request, vendorname):
 
 def phone_redirect(request):
     try:
-        id = request.GET['id']
+        id = int(request.GET['id'])
     except:
         raise Http404('No such page!')
     phone = get_object_or_404(Phone, id = id)
