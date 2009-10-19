@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-19 10:20+0200\n"
-"PO-Revision-Date: 2009-10-19 10:19+0200\n"
+"PO-Revision-Date: 2009-10-19 10:26+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -999,7 +999,7 @@ msgstr "Programování Wammu a Gammu"
 
 #: html/contribute/code.html:11
 msgid "Factoids"
-msgstr ""
+msgstr "Fakta"
 
 #: html/contribute/code.html:25
 msgid ""
@@ -1032,6 +1032,11 @@ msgid ""
 "system. It allows you create own local branch, develop the code and then\n"
 "submit us patches or merge request for the changes.\n"
 msgstr ""
+"\n"
+"V současné době používáme <a href=\"http://git-scm.com/\">Git</a> pro správu "
+"revizí.\n"
+"Umožní vám vytvořit si vlastní vývojovou větev a pak nám\n"
+"odeslat patche nebo žádost o začlenění s vašimi změnami.\n"
 
 #: html/contribute/code.html:45
 msgid ""
@@ -1104,6 +1109,9 @@ msgid ""
 "The results are automatically uploaded to the dashboard and developers are\n"
 "being notified about every test failure which does happen.\n"
 msgstr ""
+"\n"
+"Výsledky jsou automaticky nahrány na naástěnku a vývojáři jsou informováni\n"
+"o všech případných chybách, které v testech nastanou.\n"
 
 #: html/contribute/index.html:4 html/contribute/index.html.py:12
 msgid "Contribute to Wammu and Gammu"
@@ -1117,6 +1125,11 @@ msgid ""
 "welcome\n"
 "to help us in any way. You really do not need developer skills to help.\n"
 msgstr ""
+"\n"
+"Gammu a Wammu jsou svobodné softwarové projekty, které jsou vyvíjeny "
+"dobrovolníky v jejich\n"
+"volném čase. Dobrovolníků není nikdy dost a proto je vítána jakákoliv\n"
+"pomoc. Opravdu nepotřebujete být vývojářem, abyste mohli pomoci.\n"
 
 #: html/contribute/index.html:22
 msgid "Using"
@@ -1367,7 +1380,6 @@ msgstr ""
 "pravidel můžete zjistit, co jsou nejdůležitější věci:\n"
 
 #: html/contribute/translate.html:107
-#, fuzzy
 msgid ""
 "\n"
 "libGammu messages - there is just few of them and they are used also in "
@@ -1375,7 +1387,7 @@ msgid ""
 "It is just good place to start and get to know some basic terminology.\n"
 msgstr ""
 "\n"
-"zprávy libgammu - je jich jen pár a jsou použity i ve Wammu.\n"
+"zprávy libGammu - je jich jen pár a jsou použity i ve Wammu.\n"
 "Jedná se o dobré místo kde začít a kde si osvojit základní terminologii.\n"
 
 #: html/contribute/translate.html:111
@@ -1389,13 +1401,12 @@ msgstr ""
 "znalostí angličtiny.\n"
 
 #: html/contribute/translate.html:115
-#, fuzzy
 msgid ""
 "\n"
 "Gammu translation - it's nice to have but not really a high priority.\n"
 msgstr ""
 "\n"
-"překlad gammu - bylo by pěkné ho mít, ale nemá vysokou prioritu.\n"
+"překlad Gammu - bylo by pěkné ho mít, ale nemá vysokou prioritu.\n"
 
 #: html/contribute/translate.html:118
 msgid ""
@@ -1404,6 +1415,9 @@ msgid ""
 "website\n"
 "translated for new users.\n"
 msgstr ""
+"\n"
+"stránky Wammu - je zde mnoho textu, ale překlad stránek pomáhá\n"
+"novým uživatelům.\n"
 
 #: html/contribute/translate.html:122
 msgid ""
@@ -1411,6 +1425,9 @@ msgid ""
 "Gammu documentation - it would be great to have this translated to many\n"
 "languages, but it is huge amount of text to translate.\n"
 msgstr ""
+"\n"
+"dokumentace Gammu - bylo by dobré mít dokumentaci přeloženou, \n"
+"ale jedná se o obrovské množství textu.\n"
 
 #: html/docs/devel.html:4 html/docs/devel.html.py:7
 msgid "Wammu and Gammu Developer Documentation"
