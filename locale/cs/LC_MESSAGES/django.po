@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-14 15:20+0200\n"
-"PO-Revision-Date: 2009-10-19 08:58+0200\n"
+"PO-Revision-Date: 2009-10-19 10:19+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1361,6 +1361,10 @@ msgid ""
 "the\n"
 "following rules to find the most important things:\n"
 msgstr ""
+"\n"
+"Pokud začnete pracovat na překladu, který je ve špatném stavu, čeká vás "
+"hodně práce. Podle následujících\n"
+"pravidel můžete zjistit, co jsou nejdůležitější věci:\n"
 
 #: html/contribute/translate.html:107
 msgid ""
@@ -1369,6 +1373,9 @@ msgid ""
 "Wammu.\n"
 "It is just good place to start and get to know some basic terminology.\n"
 msgstr ""
+"\n"
+"zprávy libgammu - je jich jen pár a jsou použity i ve Wammu.\n"
+"Jedná se o dobré místo kde začít a kde si osvojit základní terminologii.\n"
 
 #: html/contribute/translate.html:111
 msgid ""
@@ -1376,12 +1383,17 @@ msgid ""
 "Wammu translation - the is the application which is most frequently used by\n"
 "users with little English knowledge.\n"
 msgstr ""
+"\n"
+"překlad Wammu - aplikace která je nejčastěji používána uživateli s malou "
+"znalostí angličtiny.\n"
 
 #: html/contribute/translate.html:115
 msgid ""
 "\n"
 "gammu translation - it's nice to have but not really a high priority.\n"
 msgstr ""
+"\n"
+"překlad gammu - bylo by pěkné ho mít, ale nemá vysokou prioritu.\n"
 
 #: html/contribute/translate.html:118
 msgid ""
@@ -1592,6 +1604,8 @@ msgid ""
 "\n"
 "Currently downloading from mirror:\n"
 msgstr ""
+"\n"
+"V současné době se bude stahovat ze serveru:\n"
 
 #: html/downloads/mirror.html:15
 msgid "Change"
@@ -1607,7 +1621,7 @@ msgstr "Balíčky pro Ubuntu"
 
 #: html/downloads/platformlinks.html:13
 msgid "Ubuntu packages in PPA (latest stable version)"
-msgstr ""
+msgstr "Balíčky pro Ubuntu v PPA (poslední stabilní verze)"
 
 #: html/downloads/platformlinks.html:17
 msgid "RPM packages (openSUSE, Fedora, Madriva) (latest stable version)"
@@ -1634,6 +1648,9 @@ msgid ""
 "Thank you for interest in downloading <a href=\"/%(program_name)s\">%"
 "(program)s</a>.\n"
 msgstr ""
+"\n"
+"Děkujeme vám za zájem o stažení <a href=\"/%(program_name)s\">%(program)s</"
+"a>.\n"
 
 #: html/downloads/program.html:33
 msgid "Current Releases"
@@ -1662,6 +1679,8 @@ msgid ""
 "\n"
 "Released on %(released)s, see <a href=\"%(url)s\">detailed information</a>.\n"
 msgstr ""
+"\n"
+"Vydáno dne %(released)s, <a href=\"%(url)s\">podrobné informace</a>.\n"
 
 #: html/downloads/smalldownloads.html:2
 msgid "Source Downloads"
@@ -1865,6 +1884,9 @@ msgid ""
 "As this list is updated by users, you are welcome to <strong><a href=\"/"
 "phones/new/\">add new records</a></strong>.\n"
 msgstr ""
+"\n"
+"Protože je tato databáze aktualizována uživateli, budeme rádi, pokud "
+"<strong><a href=\"/phones/new/\">přidáte nové záznamy</a></strong>.\n"
 
 #: html/phonedb/index.html:62
 msgid "Manufacturers"
@@ -1922,6 +1944,11 @@ msgid ""
 "not bug tracking system. Should you have any problems with Gammu, please\n"
 "<a href=\"/support/bugs/\">report them in the bug tracker</a>.\n"
 msgstr ""
+"\n"
+"Děkujeme vám za vylepšování databáze telefonů Gammu. Jedná se o databázi\n"
+"zkušeností a ne o systém sledování chyb. Pokud jste narazili na nějaké "
+"problémy, prosím\n"
+"<a href=\"/support/bugs/\">nahlašte je v systému sledování chyb</a>.\n"
 
 #: html/phonedb/new.html:26
 msgid ""
@@ -1967,6 +1994,9 @@ msgid ""
 "other\n"
 "records for same model (you can see them on right side).\n"
 msgstr ""
+"\n"
+"Tento záznam byl z nějakých důvodů zamítnut. Podívejte se na záznamy\n"
+"podobných telefonů (jsou vypsány na pravé straně).\n"
 
 #: html/phonedb/phone.html:54
 msgid ""
@@ -2478,7 +2508,7 @@ msgstr "Jabber konference"
 
 #: news/feeds.py:11
 msgid "Updates about Wammu and Gammu programs."
-msgstr ""
+msgstr "Novinky o programech Wammu a Gammu."
 
 #: phonedb/feeds.py:9
 msgid "Gammu Phone Database"
