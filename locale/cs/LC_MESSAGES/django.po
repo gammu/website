@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 15:20+0200\n"
+"POT-Creation-Date: 2009-10-19 10:20+0200\n"
 "PO-Revision-Date: 2009-10-19 10:19+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -1367,9 +1367,10 @@ msgstr ""
 "pravidel můžete zjistit, co jsou nejdůležitější věci:\n"
 
 #: html/contribute/translate.html:107
+#, fuzzy
 msgid ""
 "\n"
-"libgammu messages - there is just few of them and they are used also in "
+"libGammu messages - there is just few of them and they are used also in "
 "Wammu.\n"
 "It is just good place to start and get to know some basic terminology.\n"
 msgstr ""
@@ -1388,9 +1389,10 @@ msgstr ""
 "znalostí angličtiny.\n"
 
 #: html/contribute/translate.html:115
+#, fuzzy
 msgid ""
 "\n"
-"gammu translation - it's nice to have but not really a high priority.\n"
+"Gammu translation - it's nice to have but not really a high priority.\n"
 msgstr ""
 "\n"
 "překlad gammu - bylo by pěkné ho mít, ale nemá vysokou prioritu.\n"
