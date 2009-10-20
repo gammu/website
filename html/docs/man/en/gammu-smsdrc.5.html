@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU-SMSDRC</h2>
 Section: Gammu Documentation (5)<br/>
-Updated: January 4, 2009<br/>
+Updated: October 20, 2009<br/>
 <a href="#index">Index</a> 
 <hr/>
 <a class="aname" id="lbAB" name="lbAB"/>
@@ -171,6 +171,20 @@ However to limit breakage from this situation, the waiting time is
 limited to two minutes. After this time SMSD will continue in
 normal operation and might execute your script again.</p>
 </dd>
+<dt><b>IncludeNumbersFile</b></dt>
+<dd>
+<p>File with list of numbers which are accepted by SMSD. The file
+contains one number per line, blank lines are ignored. The file is
+read at startup and is reread only when configuration is being
+reread. See Message filtering for details.</p>
+</dd>
+<dt><b>ExcludeNumbersFile</b></dt>
+<dd>
+<p>File with list of numbers which are not accepted by SMSD. The
+file contains one number per line, blank lines are ignored. The
+file is read at startup and is reread only when configuration is
+being reread. See Message filtering for details.</p>
+</dd>
 </dl>
 <a class="aname" id="lbAF" name="lbAF"/>
 <h4>Database backends options</h4>
@@ -273,10 +287,17 @@ extension .bin.</p>
 <h4>Message filtering</h4>
 <p>SMSD allows to process only limited subset of incoming messages.
 You can define filters in [include_numbers] and [exclude_numbers]
-sections. If [include_numbers] section exists, all values (keys are
+sections or using IncludeNumbersFile and ExcludeNumbersFile
+directives.</p>
+<p>If [include_numbers] section exists, all values (keys are
 ignored) from it are used as allowed phone numbers and no other
 message is processed. On the other side, in [exclude_numbers] you
 can specify numbers which you want to skip.</p>
+<p>Lists from both sources are merged together. If there is any
+number in include list, only include list is used and only messages
+in this list are being accepted. If include list is empty, exclude
+list can be used to ignore messages from some numbers. If both
+lists are empty, all messages are accepted.</p>
 <p><a class="aname" id="lbAI" name="lbAI"/></p>
 <h3>EXAMPLE</h3>
 <p>There is more complete example available in Gammu documentation.
@@ -380,5 +401,5 @@ logfile = smsd.log
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 14:01:04 GMT, October 14, 2009
+Time: 13:38:47 GMT, October 20, 2009
 </div>
