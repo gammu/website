@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-19 10:20+0200\n"
-"PO-Revision-Date: 2009-10-19 10:26+0200\n"
+"POT-Creation-Date: 2009-10-22 17:48+0200\n"
+"PO-Revision-Date: 2009-10-22 17:51+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -222,8 +222,8 @@ msgid "For developers"
 msgstr "Pro vývojáře"
 
 #: html/base.html:111
-msgid "Wiki"
-msgstr "Wiki"
+msgid "Roadmap"
+msgstr "Plán vývoje"
 
 #: html/base.html:115 wammu/helpers.py:20
 msgid "Contribute"
@@ -1010,7 +1010,8 @@ msgid ""
 "these languages to contribute code directly to the project. You will "
 "probably\n"
 "use some parts of <a href=\"/docs/devel/\">developer documentation</a> to\n"
-"understand the code.\n"
+"understand the code. If you want to know what is planned to happen in Gammu\n"
+"and Wammu, please check the <a href=\"/docs/roadmap/\">roadmap</a>.\n"
 msgstr ""
 "\n"
 "Gammu je napsáno v C a Wammu v <a\n"
@@ -1018,13 +1019,14 @@ msgstr ""
 "potřebovat znalost alespoň jednoho\n"
 "z těchto jazyků. Pro porozumění kódu se vám\n"
 "oravděpodobně bude hodit <a href=\"/docs/devel/\">vývojářská dokumentace</"
-"a>.\n"
+"a>. Pokud chcete vědět, co se v budoucnu stane v Gammu a Wammu, \n"
+"podívejte se na <a href=\"/docs/roadmap/\">plán vývoje</a>.\n"
 
-#: html/contribute/code.html:35
+#: html/contribute/code.html:36
 msgid "Version Control System"
 msgstr "Verzovací systém"
 
-#: html/contribute/code.html:37
+#: html/contribute/code.html:38
 msgid ""
 "\n"
 "We currently use <a href=\"http://git-scm.com/\">Git</a> as a version "
@@ -1038,7 +1040,7 @@ msgstr ""
 "Umožní vám vytvořit si vlastní vývojovou větev a pak nám\n"
 "odeslat patche nebo žádost o začlenění s vašimi změnami.\n"
 
-#: html/contribute/code.html:45
+#: html/contribute/code.html:46
 msgid ""
 "\n"
 "The Git repositories are being hosted on <a\n"
@@ -1050,11 +1052,11 @@ msgid ""
 "clone Wammu and Gammu sources, use following commands:\n"
 msgstr ""
 
-#: html/contribute/code.html:66
+#: html/contribute/code.html:67
 msgid "Code Snapshots"
 msgstr "Snapshoty zdrojového kódu"
 
-#: html/contribute/code.html:68
+#: html/contribute/code.html:69
 msgid ""
 "\n"
 "If you for some reason do not want to use version control system, you can\n"
@@ -1068,11 +1070,11 @@ msgid ""
 "of the code.\n"
 msgstr ""
 
-#: html/contribute/code.html:79
+#: html/contribute/code.html:80
 msgid "Patch Submission"
 msgstr "Posílání patchů"
 
-#: html/contribute/code.html:81
+#: html/contribute/code.html:82
 msgid ""
 "\n"
 "We really do not care much about the way you deliver us patches. However "
@@ -1084,11 +1086,11 @@ msgid ""
 "href=\"/support/bugs\">bug tracker</a>.\n"
 msgstr ""
 
-#: html/contribute/code.html:92
+#: html/contribute/code.html:93
 msgid "Testing"
 msgstr "Testování"
 
-#: html/contribute/code.html:94
+#: html/contribute/code.html:95
 msgid ""
 "\n"
 "Gammu comes with quite comprehensive testsuite, which is being run daily on\n"
@@ -1103,7 +1105,7 @@ msgid ""
 "every night:\n"
 msgstr ""
 
-#: html/contribute/code.html:113
+#: html/contribute/code.html:114
 msgid ""
 "\n"
 "The results are automatically uploaded to the dashboard and developers are\n"
@@ -1534,9 +1536,90 @@ msgid ""
 "href=\"/docs/devel/\">separate page</a>.\n"
 msgstr ""
 
+#: html/docs/index.html:40
+msgid ""
+"\n"
+"As a developer, you might be also interested what is planned to happen in "
+"next\n"
+"Gammu and Wammu releases, you can find this information in the \n"
+"<a href=\"/docs/roadmap/\">roadmap</a>.\n"
+msgstr ""
+
 #: html/docs/list_man.html:4 html/docs/list_man.html.py:7
 msgid "Wammu and Gammu Man Pages"
 msgstr "Man stránky Wammu a Gammu"
+
+#: html/docs/roadmap.html:4 html/docs/roadmap.html.py:12
+msgid "Roadmap for Wammu and Gammu"
+msgstr "Plán vývoje Wammu a Gammu"
+
+#: html/docs/roadmap.html:15
+msgid ""
+"\n"
+"Neither Gammu nor Wammu do not have fixed release schedule. They are "
+"released\n"
+"when we feel the time has come. On this page you can find what you can "
+"expect\n"
+"in future.\n"
+msgstr ""
+
+#: html/docs/roadmap.html:22
+msgid "Gammu Roadmap"
+msgstr "Plán vývoje Gammu"
+
+#: html/docs/roadmap.html:26
+msgid ""
+"\n"
+"This release should mostly contain only bugfixes, no major features are\n"
+"planned. It should be released around middle of November.\n"
+msgstr ""
+
+# type: TP
+#: html/docs/roadmap.html:32 html/docs/roadmap.html.py:61
+msgid "Future"
+msgstr "Budoucnost"
+
+#: html/docs/roadmap.html:34
+msgid ""
+"\n"
+"There are some major issues which should be addressed in Gammu soon. One\n"
+"problem is locations handling, because current scheme (using numbers) "
+"really\n"
+"does not match majority of current phones and it should be converted to "
+"using\n"
+"path based locations for messages, phonebook, calendar, etc.\n"
+msgstr ""
+
+#: html/docs/roadmap.html:43
+msgid ""
+"\n"
+"The another major obstacle which is all around Gammu code is own\n"
+"implementation of unicode (UCS-2-BE) strings. This code should be dropped "
+"and\n"
+"wchar_t used instead.\n"
+msgstr ""
+
+#: html/docs/roadmap.html:50
+msgid "Wammu Roadmap"
+msgstr "Plán vývoje Wammu"
+
+#: html/docs/roadmap.html:54
+msgid ""
+"\n"
+"Lot of bug fixes and improvements are already commited for this release. It "
+"is\n"
+"basically just waiting for Gammu 1.27.0 to be released to include it in\n"
+"Windows binary.\n"
+msgstr ""
+
+#: html/docs/roadmap.html:63
+msgid ""
+"\n"
+"Wammu needs major rewrite in several parts, however developers currently "
+"lack\n"
+"time to do this. On the other side lot of nice to have features depend on\n"
+"this rewrite and it needs to happen.\n"
+msgstr ""
 
 #: html/docs/show_man.html:7
 msgid "Other man pages"
@@ -2661,16 +2744,16 @@ msgstr ""
 msgid "Please choose how will be email handled in next field."
 msgstr "Prosím zvolte si v následující položce, jak bude email zobrazen."
 
-#: phonedb/views.py:114
+#: phonedb/views.py:115
 msgid "Gammu Phone Database Feed (RSS)"
 msgstr "Databáze telefonů Gammu (RSS)"
 
-#: phonedb/views.py:115
+#: phonedb/views.py:116
 msgid "Gammu Phone Database Feed (Atom)"
 msgstr "Databáze telefonů Gammu (Atom)"
 
 # type: Plain text
-#: phonedb/views.py:426
+#: phonedb/views.py:427
 msgid "Phone record has been created."
 msgstr "Záznam v databázi byl vytvořen."
 
@@ -2681,6 +2764,9 @@ msgstr "Novinky o Gammu a Wammu (RSS)"
 #: wammu/helpers.py:28
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Novinky o Gammu a Wammu (Atom)"
+
+#~ msgid "Wiki"
+#~ msgstr "Wiki"
 
 #~ msgid "Sitemap"
 #~ msgstr "Mapa stránek"
