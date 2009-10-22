@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Roadmap for Wammu and Gammu" %}{% endblock %}
+
+{% block sidebar_top %}
+{% include "contribute/sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "Roadmap for Wammu and Gammu" %}</h2>
+
+<p>
+{% blocktrans %}
+Neither Gammu nor Wammu do not have fixed release schedule. They are released
+when we feel the time has come. On this page you can find what you can expect
+in future.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "Gammu Roadmap" %}</h3>
+
+<h4>1.27.0</h4>
+<p>
+{% blocktrans %}
+This release should mostly contain only bugfixes, no major features are
+planned. It should be released around middle of November.
+{% endblocktrans %}
+</p>
+
+<h4>{% trans "Future" %}</h4>
+<p>
+{% blocktrans %}
+There are some major issues which should be addressed in Gammu soon. One
+problem is locations handling, because current scheme (using numbers) really
+does not match majority of current phones and it should be converted to using
+path based locations for messages, phonebook, calendar, etc.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+The another major obstacle which is all around Gammu code is own
+implementation of unicode (UCS-2-BE) strings. This code should be dropped and
+wchar_t used instead.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "Wammu Roadmap" %}</h3>
+
+<h4>0.31</h4>
+<p>
+{% blocktrans %}
+Lot of bug fixes and improvements are already commited for this release. It is
+basically just waiting for Gammu 1.27.0 to be released to include it in
+Windows binary.
+{% endblocktrans %}
+</p>
+
+<h4>{% trans "Future" %}</h4>
+<p>
+{% blocktrans %}
+Wammu needs major rewrite in several parts, however developers currently lack
+time to do this. On the other side lot of nice to have features depend on
+this rewrite and it needs to happen.
+{% endblocktrans %}
+</p>
+
+
+{% endblock %}
+
