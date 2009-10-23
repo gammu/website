@@ -188,6 +188,22 @@ ignorovány. Soubor je načten při startu a znovu načten je jen při
 znovunačtení konfigurace. Více podrobností v sekci Filtrování
 zpráv.</p>
 </dd>
+<dt><b>IncludeSMSCFile</b></dt>
+<dd>
+<p>Soubor se seznamem čísel SMSC, která bude SMSD přijímat. Soubor
+obsahuje na každém řádku jedno číslo, prázdné řádky jsou
+ignorovány. Soubor je načten při startu a znovu načten je jen při
+znovunačtení konfigurace. Více podrobností v sekci Filtrování
+zpráv.</p>
+</dd>
+<dt><b>ExcludeSMSCFile</b></dt>
+<dd>
+<p>Soubor se seznamem čísel SMSC, která nebude SMSD přijímat.
+Soubor obsahuje na každém řádku jedno číslo, prázdné řádky jsou
+ignorovány. Soubor je načten při startu a znovu načten je jen při
+znovunačtení konfigurace. Více podrobností v sekci Filtrování
+zpráv.</p>
+</dd>
 </dl>
 <a class="aname" id="lbAF" name="lbAF"/>
 <h4>Parametry pro služby používající databázi</h4>
@@ -287,9 +303,10 @@ které jsou vždy zapsány tak jak přišly s příponou bin.</p>
 </dl>
 <a class="aname" id="lbAH" name="lbAH"/>
 <h4>Filtrování zpráv</h4>
-<p>SMSD umožňuje zpracovat jen část přijatých zpráv. Filtry můžete
-definovat v sekcích [include_numbers] a [exclude_numbers] nebo
-pomocí parametrů IncludeNumbersFile a ExcludeNumbersFile.</p>
+<p>SMSD umožňuje zpracovat jen část přijatých zpráv. Filtry pro
+číslo odesílatele můžete definovat v sekcích [include_numbers] a
+[exclude_numbers] nebo pomocí parametrů IncludeNumbersFile a
+ExcludeNumbersFile.</p>
 <p>Pokud existuje sekce [include_numbers], všechny hodnoty z ní
 (klíče jsou ignorovány) jsou použity jako povolená čísla a jiné
 zprávy nejsou zpracovány. Naopak v [exclude_numbers] můžete zadat
@@ -300,6 +317,10 @@ budou zpracovány jen zprávy od čísel v tomto seznamu. Pokud je
 tento seznam prázný a v seznamu zakázaných čísel je nějaké číslo,
 nebudou zpracovány zprávy z čísel v tomto seznamu. Pokud jsou oba
 seznamy prázdné, jsou zpracovány všechny zprávy.</p>
+<p>Podobná pravidla mohou být použita pro filtrování čísel centra
+zpráv SMSC, jen používají jiné konfigurační parametry -
+[include_smsc] a [exclude_smsc] nebo pomocí parametrů
+IncludeSMSCFile a ExcludeSMSCFile.</p>
 <p><a class="aname" id="lbAI" name="lbAI"/></p>
 <h3>PŘÍKLAD</h3>
 <p>Kompletnější ukázka je dostupná v dokumentaci Gammu. Pro
@@ -405,5 +426,5 @@ soubory</a></dt>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 13:38:47 GMT, October 20, 2009
+Time: 08:23:54 GMT, October 23, 2009
 </div>

@@ -185,6 +185,20 @@ file contains one number per line, blank lines are ignored. The
 file is read at startup and is reread only when configuration is
 being reread. See Message filtering for details.</p>
 </dd>
+<dt><b>IncludeSMSCFile</b></dt>
+<dd>
+<p>File with list of SMSC numbers which are accepted by SMSD. The
+file contains one number per line, blank lines are ignored. The
+file is read at startup and is reread only when configuration is
+being reread. See Message filtering for details.</p>
+</dd>
+<dt><b>ExcludeSMSCFile</b></dt>
+<dd>
+<p>File with list of SMSC numbers which are not accepted by SMSD.
+The file contains one number per line, blank lines are ignored. The
+file is read at startup and is reread only when configuration is
+being reread. See Message filtering for details.</p>
+</dd>
 </dl>
 <a class="aname" id="lbAF" name="lbAF"/>
 <h4>Database backends options</h4>
@@ -286,9 +300,9 @@ extension .bin.</p>
 <a class="aname" id="lbAH" name="lbAH"/>
 <h4>Message filtering</h4>
 <p>SMSD allows to process only limited subset of incoming messages.
-You can define filters in [include_numbers] and [exclude_numbers]
-sections or using IncludeNumbersFile and ExcludeNumbersFile
-directives.</p>
+You can define filters for sender number in [include_numbers] and
+[exclude_numbers] sections or using IncludeNumbersFile and
+ExcludeNumbersFile directives.</p>
 <p>If [include_numbers] section exists, all values (keys are
 ignored) from it are used as allowed phone numbers and no other
 message is processed. On the other side, in [exclude_numbers] you
@@ -298,6 +312,10 @@ number in include list, only include list is used and only messages
 in this list are being accepted. If include list is empty, exclude
 list can be used to ignore messages from some numbers. If both
 lists are empty, all messages are accepted.</p>
+<p>Similar filtering rules can be used for SMSC number filtering,
+they just use different set of configuration options -
+[include_smsc] and [exclude_smsc] sections or IncludeSMSCFile and
+ExcludeSMSCFile directives.</p>
 <p><a class="aname" id="lbAI" name="lbAI"/></p>
 <h3>EXAMPLE</h3>
 <p>There is more complete example available in Gammu documentation.
@@ -401,5 +419,5 @@ logfile = smsd.log
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 13:38:47 GMT, October 20, 2009
+Time: 08:23:53 GMT, October 23, 2009
 </div>
