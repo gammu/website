@@ -35,6 +35,10 @@ def get_mirrors(request):
     return (mirror, mirrors, set_mirror, mirror_id)
 
 def list(request, program, platform):
+    if not program in [x[0] for x in PROGRAM_CHOICES]:
+        raise Http404('No such program %s.' % program)
+    if not platform in [x[0] for x in PLATFORM_CHOICES]:
+        raise Http404('No such platform %s.' % platform)
 
     downloads = get_current_downloads(program, platform)
 
@@ -120,6 +124,9 @@ def download(request):
     }))
 
 def doap(request, program):
+    if not program in [x[0] for x in PROGRAM_CHOICES]:
+        raise Http404('No such program %s.' % program)
+
     mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
 
     downloads = get_current_downloads(program, None)
