@@ -129,14 +129,15 @@ def index(request):
     }))
 
 def search(request, featurename = None):
-    form = SearchForm(request.GET)
+    # We need a copy, because we might want to add a feature from URL
+    rq = request.GET.copy()
+    if featurename is not None:
+        rq.appendlist('feature', featurename)
+    form = SearchForm(rq)
     if not form.is_valid():
         return ''
     query = form.cleaned_data['q']
     features = form.cleaned_data['feature']
-
-    if featurename is not None:
-        features.append(featurename)
 
     phones = Phone.objects.exclude(state = 'deleted')
     urlparams = []
