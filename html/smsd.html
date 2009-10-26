@@ -33,7 +33,8 @@ You can currently store received messages in files or in various databases.
 <a href="http://www.mysql.com/">MySQL</a> and <a
 href="http://www.postgresql.org/">PostgreSQL</a> are supported natively and
 wide range of others (including <a href="http://www.sqlite.org/">SQLite</a>)
-through <a href="http://libdbi.sourceforge.net/">libdbi</a>.
+through <a href="http://libdbi.sourceforge.net/">libdbi</a> (libdbi backend is
+currently not available in Windows builds).
 {% endblocktrans %} 
 </p>
 
@@ -42,6 +43,16 @@ through <a href="http://libdbi.sourceforge.net/">libdbi</a>.
 The package includes also tool <code>gammu-smsd-inject</code> which will help
 you creating long text messages and <code>gammu-smsd-monitor</code> which
 allows you to monitor current status of SMS Daemon or phone.
+{% endblocktrans %} 
+</p>
+
+<p>
+{% blocktrans %}
+For managing messages in the database, you can use <a
+href="http://kalkun.sourceforge.net/">Kalkun</a> frontend, which provides web
+interface to messages and phonebook. It currently works only with MySQL
+database. Check <a href="/screenshots/contrib/">screenshots</a> to see how it
+looks like.
 {% endblocktrans %} 
 </p>
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-22 17:48+0200\n"
+"POT-Creation-Date: 2009-10-26 16:33+0100\n"
 "PO-Revision-Date: 2009-10-22 17:51+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -204,7 +204,7 @@ msgid "News"
 msgstr "Novinky"
 
 #: html/base.html:106 html/gammu.html:69 html/libgammu.html:54
-#: html/python-gammu.html:57 html/smsd.html:60 html/wammu.html:57
+#: html/python-gammu.html:57 html/smsd.html:71 html/wammu.html:57
 #: html/support/sidebar.html:4 wammu/helpers.py:19
 msgid "Documentation"
 msgstr "Dokumentace"
@@ -487,7 +487,7 @@ msgid ""
 "phone.\n"
 msgstr ""
 
-#: html/gammu.html:61 html/libgammu.html:45 html/smsd.html:50
+#: html/gammu.html:61 html/libgammu.html:45 html/smsd.html:61
 #: html/wammu.html:47 html/downloads/list.html:4 html/downloads/program.html:4
 #: html/downloads/release.html:4 wammu/helpers.py:17
 msgid "Download"
@@ -826,10 +826,12 @@ msgid ""
 "and\n"
 "wide range of others (including <a href=\"http://www.sqlite.org/\">SQLite</"
 "a>)\n"
-"through <a href=\"http://libdbi.sourceforge.net/\">libdbi</a>.\n"
+"through <a href=\"http://libdbi.sourceforge.net/\">libdbi</a> (libdbi "
+"backend is\n"
+"currently not available in Windows builds).\n"
 msgstr ""
 
-#: html/smsd.html:41
+#: html/smsd.html:42
 msgid ""
 "\n"
 "The package includes also tool <code>gammu-smsd-inject</code> which will "
@@ -838,7 +840,19 @@ msgid ""
 "allows you to monitor current status of SMS Daemon or phone.\n"
 msgstr ""
 
-#: html/smsd.html:52
+#: html/smsd.html:50
+msgid ""
+"\n"
+"For managing messages in the database, you can use <a\n"
+"href=\"http://kalkun.sourceforge.net/\">Kalkun</a> frontend, which provides "
+"web\n"
+"interface to messages and phonebook. It currently works only with MySQL\n"
+"database. Check <a href=\"/screenshots/contrib/\">screenshots</a> to see how "
+"it\n"
+"looks like.\n"
+msgstr ""
+
+#: html/smsd.html:63
 msgid ""
 "\n"
 "SMS Daemon is distributed as part of <a href=\"/gammu\">Gammu</a> so to "
@@ -849,7 +863,7 @@ msgid ""
 "distribution, try looking for something like <code>gammu-smsd</code>.\n"
 msgstr ""
 
-#: html/smsd.html:62
+#: html/smsd.html:73
 msgid ""
 "\n"
 "The best documentation is available in form of <a href=\"/docs/man\">man\n"
@@ -2753,7 +2767,7 @@ msgid "Gammu Phone Database Feed (Atom)"
 msgstr "Databáze telefonů Gammu (Atom)"
 
 # type: Plain text
-#: phonedb/views.py:427
+#: phonedb/views.py:428
 msgid "Phone record has been created."
 msgstr "Záznam v databázi byl vytvořen."
 
