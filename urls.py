@@ -229,6 +229,7 @@ urlpatterns = patterns('',
     (r'^improve/$', 'django.views.generic.simple.redirect_to', {'url': '/contribute/'}),
     (r'^wammu.xml$', 'django.views.generic.simple.redirect_to', {'url': '/api/pad/wammu.xml'}),
     (r'^wammu.doap$', 'django.views.generic.simple.redirect_to', {'url': '/api/doap/wammu.xml'}),
+    (r'^phones/features/(?P<featurename>[^/]*)/$', 'django.views.generic.simple.redirect_to', {'url': '/phones/search/%(featurename)s/'}),
 
     # Sitemap
     (r'^sitemap.xml$', 'django.contrib.sitemaps.views.index', {'sitemaps': sitemaps}),
