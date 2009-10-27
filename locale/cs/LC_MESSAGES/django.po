@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-26 16:33+0100\n"
+"POT-Creation-Date: 2009-10-27 10:40+0100\n"
 "PO-Revision-Date: 2009-10-22 17:51+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -1066,11 +1066,22 @@ msgid ""
 "clone Wammu and Gammu sources, use following commands:\n"
 msgstr ""
 
-#: html/contribute/code.html:67
+#: html/contribute/code.html:68
+msgid ""
+"\n"
+"Alternatively (if your firewall blocks git protocol), you can access\n"
+"repositories over http, just replace <code>git://gitorious.org/</code> with\n"
+"<code>http://git.gitorious.org/</code>. All repositories are also mirrored "
+"to\n"
+"<a href=\"https://sourceforge.net/scm/?type=git&group_id=78290\">SourceForge."
+"net</a>.\n"
+msgstr ""
+
+#: html/contribute/code.html:76
 msgid "Code Snapshots"
 msgstr "Snapshoty zdrojového kódu"
 
-#: html/contribute/code.html:69
+#: html/contribute/code.html:78
 msgid ""
 "\n"
 "If you for some reason do not want to use version control system, you can\n"
@@ -1084,11 +1095,11 @@ msgid ""
 "of the code.\n"
 msgstr ""
 
-#: html/contribute/code.html:80
+#: html/contribute/code.html:89
 msgid "Patch Submission"
 msgstr "Posílání patchů"
 
-#: html/contribute/code.html:82
+#: html/contribute/code.html:91
 msgid ""
 "\n"
 "We really do not care much about the way you deliver us patches. However "
@@ -1100,11 +1111,11 @@ msgid ""
 "href=\"/support/bugs\">bug tracker</a>.\n"
 msgstr ""
 
-#: html/contribute/code.html:93
+#: html/contribute/code.html:102
 msgid "Testing"
 msgstr "Testování"
 
-#: html/contribute/code.html:95
+#: html/contribute/code.html:104
 msgid ""
 "\n"
 "Gammu comes with quite comprehensive testsuite, which is being run daily on\n"
@@ -1119,7 +1130,7 @@ msgid ""
 "every night:\n"
 msgstr ""
 
-#: html/contribute/code.html:114
+#: html/contribute/code.html:123
 msgid ""
 "\n"
 "The results are automatically uploaded to the dashboard and developers are\n"
