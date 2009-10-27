@@ -2,7 +2,6 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -15,6 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.4.0\n"
 
 #: donate/forms.py:14
 msgid "Amount (EUR)"
@@ -26,8 +26,9 @@ msgstr ""
 
 #: donate/forms.py:27 donate/forms.py:38 html/base.html:119
 #: html/base.html.py:129
+#, fuzzy
 msgid "Donate"
-msgstr ""
+msgstr "Spen&den"
 
 #: downloads/models.py:29
 msgid "Source"
@@ -131,30 +132,33 @@ msgid "Advertisement"
 msgstr ""
 
 #: html/base.html:79 html/index.html:30
+#, fuzzy
 msgid "About"
-msgstr ""
+msgstr "&Über"
 
 #: html/base.html:81 html/gammu.html:4 html/gammu.html.py:19
 #: html/contribute/translate.html:59
 msgid "Gammu"
-msgstr ""
+msgstr "Gammu"
 
 #: html/base.html:82 html/wammu.html:4 html/wammu.html.py:22
 #: html/contribute/translate.html:58
 msgid "Wammu"
-msgstr ""
+msgstr "Wammu"
 
 #: html/base.html:83
 msgid "python-gammu"
 msgstr ""
 
 #: html/base.html:84
+#, fuzzy
 msgid "SMSD"
-msgstr ""
+msgstr "SMS"
 
 #: html/base.html:88 wammu/helpers.py:16
+#, fuzzy
 msgid "Support"
-msgstr ""
+msgstr "&Unterstützung"
 
 #: html/base.html:90
 msgid "Mailing lists"
@@ -239,9 +243,11 @@ msgstr ""
 msgid "Search for Gammu/Wammu related questions"
 msgstr ""
 
+# msgid "Search:"
 #: html/base.html:130 html/phonedb/index.html:7
+#, fuzzy
 msgid "Search"
-msgstr ""
+msgstr "Suchen:"
 
 #: html/base.html:131
 msgid "Gammu and Wammu authors"
@@ -390,8 +396,9 @@ msgstr ""
 
 #: html/gammu.html:11 html/libgammu.html:7 html/python-gammu.html:11
 #: html/smsd.html:11 html/wammu.html:11
+#, fuzzy
 msgid "More information"
-msgstr ""
+msgstr "Telefoninformationen"
 
 #: html/gammu.html:22
 msgid ""
@@ -560,6 +567,7 @@ msgid ""
 msgstr ""
 
 #: html/license.html:18
+#, fuzzy
 msgid ""
 "\n"
 "This program is free software; you can redistribute it and/or\n"
@@ -567,6 +575,11 @@ msgid ""
 "as published by the Free Software Foundation; version 2\n"
 "of the License.\n"
 msgstr ""
+"\n"
+"Dieses Programm ist freie Software. Sie können es unter den Bedingungen der "
+"GNU General Public License, \n"
+"wie von der Free Software Foundation gemäß Version 2 der Lizenz "
+"veröffentlicht, weitergeben und/oder modifizieren.\n"
 
 #: html/license.html:27 html/license.html.py:64
 msgid ""
@@ -576,6 +589,12 @@ msgid ""
 "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 msgstr ""
+"\n"
+"Die Veröffentlichung dieses Programms erfolgt in der Hoffnung, dass es Ihnen "
+"von Nutzen sein wird, \n"
+"aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite Garantie der \n"
+"MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN ZWECK. \n"
+"Details finden Sie in der GNU General Public License.\n"
 
 #: html/license.html:36 html/license.html.py:73
 msgid ""
@@ -833,8 +852,9 @@ msgid ""
 msgstr ""
 
 #: html/wammu_feedback.html:3
+#, fuzzy
 msgid "Thank you for using Wammu"
-msgstr ""
+msgstr "Danke, dass Sie Wammu verwenden"
 
 #: html/wammu_feedback.html:5
 msgid ""
@@ -1598,8 +1618,9 @@ msgid "Changes"
 msgstr ""
 
 #: html/downloads/release.html:21
+#, fuzzy
 msgid "Files"
-msgstr ""
+msgstr "Datei;"
 
 #: html/downloads/relinfo.html:4
 #, python-format
@@ -1666,8 +1687,9 @@ msgid "Third Party Applications using Gammu"
 msgstr ""
 
 #: html/links/index.html:22
+#, fuzzy
 msgid "Website:"
-msgstr ""
+msgstr "&Webseite"
 
 #: html/news/contrib_index.html:4 html/news/contrib_index.html.py:6
 msgid "Third Party News"
@@ -1715,7 +1737,7 @@ msgstr ""
 
 #: html/news/index.html:19 html/screenshots/index.html:7
 msgid "Categories"
-msgstr ""
+msgstr "Kategorien"
 
 #: html/news/index.html:21
 msgid "All news"
@@ -1733,8 +1755,9 @@ msgid "Wammu News"
 msgstr ""
 
 #: html/phonedb/body.html:3
+#, fuzzy
 msgid "Supported Features"
-msgstr ""
+msgstr "Unterstützte Merkmale"
 
 #: html/phonedb/body.html:13
 msgid "No features supported!"
@@ -1755,8 +1778,9 @@ msgstr ""
 #: html/phonedb/index.html:4 html/phonedb/index.html.py:38
 #: html/phonedb/new.html:4 html/phonedb/phone.html:4
 #: html/phonedb/search.html:4 html/phonedb/vendor.html:4
+#, fuzzy
 msgid "Gammu Phone Database "
-msgstr ""
+msgstr "&Gammu Telefondatenbank"
 
 #: html/phonedb/index.html:10 html/phonedb/index.html.py:23
 #: html/phonedb/new.html:48 html/phonedb/search.html:21
@@ -1800,8 +1824,9 @@ msgid ""
 msgstr ""
 
 #: html/phonedb/index.html:62
+#, fuzzy
 msgid "Manufacturers"
-msgstr ""
+msgstr "Hersteller"
 
 #: html/phonedb/index.html:71
 msgid "Recently Added Phones"
@@ -1821,19 +1846,20 @@ msgstr ""
 
 #: html/phonedb/list.html:5
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #: html/phonedb/list.html:5
+#, fuzzy
 msgid "Connection"
-msgstr ""
+msgstr "Stau"
 
 #: html/phonedb/list.html:5
 msgid "Supported features"
-msgstr ""
+msgstr "Unterstützte Merkmale"
 
 #: html/phonedb/list.html:21
 msgid "Not supported"
-msgstr ""
+msgstr "Nicht unterstützt"
 
 #: html/phonedb/new.html:4 html/phonedb/new.html.py:15
 msgid "Create New Record"
@@ -1871,7 +1897,7 @@ msgstr ""
 
 #: html/phonedb/phone.html:13
 msgid "Edit"
-msgstr ""
+msgstr "Bearbeiten"
 
 #: html/phonedb/phone.html:15
 msgid "Delete"
@@ -1960,8 +1986,9 @@ msgid ""
 msgstr ""
 
 #: html/phonedb/vendor.html:19
+#, fuzzy
 msgid "Website"
-msgstr ""
+msgstr "&Webseite"
 
 #: html/phonedb/vendor.html:24
 #, python-format
@@ -2362,8 +2389,9 @@ msgid "Updates about Wammu and Gammu programs."
 msgstr ""
 
 #: phonedb/feeds.py:9
+#, fuzzy
 msgid "Gammu Phone Database"
-msgstr ""
+msgstr "&Gammu Telefondatenbank"
 
 #: phonedb/feeds.py:11
 msgid "Gammu phone database updates."
@@ -2393,19 +2421,19 @@ msgstr ""
 
 #: phonedb/models.py:19
 msgid "Use [at] and [dot]"
-msgstr ""
+msgstr "Verwende [at] und [dot]"
 
 #: phonedb/models.py:20
 msgid "Display it normally"
-msgstr ""
+msgstr "E-Mail-Adresse normal anzeigen"
 
 #: phonedb/models.py:21
 msgid "Don't show email at all"
-msgstr ""
+msgstr "E-Mail-Adresse überhaupt nicht anzeigen"
 
 #: phonedb/models.py:22
 msgid "Insert NOSPAM text at random position"
-msgstr ""
+msgstr "Füge NOSPAM-Text an zufälliger Stelle ein"
 
 #: phonedb/models.py:26
 msgid "Draft"
@@ -2421,15 +2449,15 @@ msgstr ""
 
 #: phonedb/models.py:32
 msgid "Phone information"
-msgstr ""
+msgstr "Telefoninformationen"
 
 #: phonedb/models.py:33
 msgid "Sending and saving SMS"
-msgstr ""
+msgstr "Übertragen und speichern von SMS"
 
 #: phonedb/models.py:34
 msgid "Multimedia messaging"
-msgstr ""
+msgstr "Multimedia-Nachrichten"
 
 #: phonedb/models.py:35
 msgid "Basic phonebook functions (name and phone number)"
@@ -2440,28 +2468,29 @@ msgid "Enhanced phonebook entries (eg. several numbers per entry)"
 msgstr ""
 
 #: phonedb/models.py:37
+#, fuzzy
 msgid "Calendar entries"
-msgstr ""
+msgstr "Kalendernotizen"
 
 #: phonedb/models.py:38
 msgid "Todos"
-msgstr ""
+msgstr "Aufgaben"
 
 #: phonedb/models.py:39
 msgid "Filesystem manipulation"
-msgstr ""
+msgstr "Manipulation des Dateisystems"
 
 #: phonedb/models.py:40
 msgid "Reading and making calls"
-msgstr ""
+msgstr "Anrufe einlesen und führen"
 
 #: phonedb/models.py:41
 msgid "Logos"
-msgstr ""
+msgstr "Logos"
 
 #: phonedb/models.py:42
 msgid "Ringtones"
-msgstr ""
+msgstr "Klingeltöne"
 
 #: phonedb/models.py:79
 msgid "Phone name, please exclude vendor name."
