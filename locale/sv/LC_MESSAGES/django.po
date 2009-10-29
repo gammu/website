@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-29 11:17+0100\n"
+"POT-Creation-Date: 2009-10-29 11:24+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -127,7 +127,7 @@ msgstr ""
 msgid "Downloads"
 msgstr ""
 
-#: html/base.html:62
+#: html/base.html:62 html/donate.html:50
 msgid "Advertisement"
 msgstr ""
 
@@ -320,11 +320,26 @@ msgid ""
 "A.).\n"
 msgstr ""
 
-#: html/donate.html:50
+#: html/donate.html:53
+msgid ""
+"\n"
+"This website currently participates in <a href=\"http://adbart.net\">The Ad "
+"Bard\n"
+"Network</a>, the only advertising network designed specifically for "
+"reaching\n"
+"the developers, architects, users and influencers in the free software\n"
+"community, allowing advertisers to directly communicate with the key "
+"customers\n"
+"in this exciting new area. By buying advertisement in this network, you "
+"will\n"
+"support various free software websites including this one.\n"
+msgstr ""
+
+#: html/donate.html:63
 msgid "Other Options"
 msgstr ""
 
-#: html/donate.html:52
+#: html/donate.html:65
 msgid ""
 "\n"
 "You can also give some presents to developers, currently here is <a\n"
