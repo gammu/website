@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-27 10:40+0100\n"
+"POT-Creation-Date: 2009-10-29 11:17+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -303,14 +303,28 @@ msgid ""
 "The donation itself is being processed by <a\n"
 "href=\"http://www.paypal.com/\">PayPal</a> where you can pay either by "
 "their\n"
-"account or by using any major credit card.\n"
+"account or by using any major credit card. You can also directly send a\n"
+"donation to <code>michal@cihar.com</code>.\n"
 msgstr ""
 
-#: html/donate.html:39
+#: html/donate.html:40
+msgid "Bank Account"
+msgstr ""
+
+#: html/donate.html:43
+msgid ""
+"\n"
+"If you have account with Czech bank or can send money directly to Czech\n"
+"account (no international transactions please due to quite heave fees), you\n"
+"can send money to account  2202591725/6210 (account at mBank, BRE Bank S."
+"A.).\n"
+msgstr ""
+
+#: html/donate.html:50
 msgid "Other Options"
 msgstr ""
 
-#: html/donate.html:41
+#: html/donate.html:52
 msgid ""
 "\n"
 "You can also give some presents to developers, currently here is <a\n"
