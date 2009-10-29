@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-29 11:17+0100\n"
-"PO-Revision-Date: 2009-10-22 17:51+0200\n"
+"PO-Revision-Date: 2009-10-29 11:19+0100\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -307,7 +307,6 @@ msgid ""
 msgstr ""
 
 #: html/donate.html:25
-#, fuzzy
 msgid ""
 "\n"
 "The donation itself is being processed by <a\n"
@@ -320,11 +319,12 @@ msgstr ""
 "Příspěvek je posílán přes <a\n"
 "href=\"http://www.paypal.com/\">PayPal</a>, kde můžete zaplatit buďto "
 "jejich\n"
-"účtem nebo platební kartou.\n"
+"účtem nebo platební kartou. Příspěvek můžete také rovnou\n"
+"poslat na <code>michal@cihar.com</code>.\n"
 
 #: html/donate.html:40
 msgid "Bank Account"
-msgstr ""
+msgstr "Převod peněz / mPeníze"
 
 #: html/donate.html:43
 msgid ""
@@ -334,6 +334,10 @@ msgid ""
 "can send money to account  2202591725/6210 (account at mBank, BRE Bank S."
 "A.).\n"
 msgstr ""
+"\n"
+"Příspěvky také můžete posílat bankovním převodem na účet \n"
+"2202591725/6210 \"\n"
+"\"(vedený u mBank, resp. BRE Bank S.A.).\n"
 
 #: html/donate.html:50
 msgid "Other Options"
