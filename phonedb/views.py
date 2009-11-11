@@ -137,7 +137,7 @@ def search(request, featurename = None):
     if not form.is_valid():
         return ''
     query = form.cleaned_data['q']
-    features = form.cleaned_data['feature']
+    features = list(set(form.cleaned_data['feature']))
 
     phones = Phone.objects.exclude(state = 'deleted')
     urlparams = []
