@@ -23,8 +23,8 @@ def get_mirrors(request):
         country = gi.country_code_by_addr(address)
         if country in ['CZ', 'SK', 'DE', 'PL', 'AT', 'HU', 'RU', 'UA', 'BL']:
             mirror_id = 'cihar-com'
-        elif country in ['GB', 'US', 'FR', 'NL', 'CA', 'DK', 'SE', 'FI']:
-            mirror_id = 'clickcreations-com'
+#        elif country in ['GB', 'US', 'FR', 'NL', 'CA', 'DK', 'SE', 'FI']:
+#            mirror_id = 'clickcreations-com'
         else:
             mirror_id = 'coralcdn'
     try:
