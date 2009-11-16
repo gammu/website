@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-29 11:32+0100\n"
+"POT-Creation-Date: 2009-11-16 11:26+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1969,33 +1969,35 @@ msgid ""
 "href=\"/phones/new?vendor=%(vendor)s&amp;name=%(phone)s\">add new record</"
 "a>\n"
 "with correct information and the record will be replaced after review.\n"
+"All records were filled in by users and there is no guarantee that they are\n"
+"correct.\n"
 msgstr ""
 
-#: html/phonedb/phone.html:71
+#: html/phonedb/phone.html:73
 msgid ""
 "\n"
 "More information about phone might be available on following sites:\n"
 msgstr ""
 
-#: html/phonedb/phone.html:84
+#: html/phonedb/phone.html:86
 msgid "About entry"
 msgstr ""
 
-#: html/phonedb/phone.html:87
+#: html/phonedb/phone.html:89
 #, python-format
 msgid ""
 "\n"
 "Created by %(author)s on %(created)s.\n"
 msgstr ""
 
-#: html/phonedb/phone.html:93
+#: html/phonedb/phone.html:95
 #, python-format
 msgid ""
 "\n"
 "Created on %(created)s.\n"
 msgstr ""
 
-#: html/phonedb/phone.html:100
+#: html/phonedb/phone.html:102
 #, python-format
 msgid ""
 "\n"

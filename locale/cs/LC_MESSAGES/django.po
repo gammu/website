@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-29 11:32+0100\n"
+"POT-Creation-Date: 2009-11-16 11:26+0100\n"
 "PO-Revision-Date: 2009-10-29 11:19+0100\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -583,8 +583,8 @@ msgstr ""
 "\n"
 "<a href=\"/wammu\">Wammu</a> je program pro spravování údajů ve vašem "
 "mobilním telefonu. Umí spravovat kontakty,\n"
-"kalendář nebo zprávy. Wammu používá <a href=\"/libgammu\">knihovnu Gammu</a>, "
-"která\n"
+"kalendář nebo zprávy. Wammu používá <a href=\"/libgammu\">knihovnu Gammu</"
+"a>, která\n"
 "poskytuje abstrakci pro práci s různými telefony od mnoha\n"
 "výrobců (například Nokia, Sony-Ericssonn, Motorola, Samsung, Siemens, "
 "Huawei\n"
@@ -2177,9 +2177,11 @@ msgid ""
 "href=\"/phones/new?vendor=%(vendor)s&amp;name=%(phone)s\">add new record</"
 "a>\n"
 "with correct information and the record will be replaced after review.\n"
+"All records were filled in by users and there is no guarantee that they are\n"
+"correct.\n"
 msgstr ""
 
-#: html/phonedb/phone.html:71
+#: html/phonedb/phone.html:73
 msgid ""
 "\n"
 "More information about phone might be available on following sites:\n"
@@ -2187,11 +2189,11 @@ msgstr ""
 "\n"
 "Více informací o telefonu může být na následujících stránkách:\n"
 
-#: html/phonedb/phone.html:84
+#: html/phonedb/phone.html:86
 msgid "About entry"
 msgstr "O záznamu"
 
-#: html/phonedb/phone.html:87
+#: html/phonedb/phone.html:89
 #, python-format
 msgid ""
 "\n"
@@ -2200,7 +2202,7 @@ msgstr ""
 "\n"
 "Vytvořil %(author)s dne %(created)s.\n"
 
-#: html/phonedb/phone.html:93
+#: html/phonedb/phone.html:95
 #, python-format
 msgid ""
 "\n"
@@ -2209,7 +2211,7 @@ msgstr ""
 "\n"
 "Vytvořeno dne %(created)s.\n"
 
-#: html/phonedb/phone.html:100
+#: html/phonedb/phone.html:102
 #, python-format
 msgid ""
 "\n"
