@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-16 11:26+0100\n"
+"POT-Creation-Date: 2009-11-16 11:32+0100\n"
 "PO-Revision-Date: 2009-10-29 11:19+0100\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -2050,18 +2050,29 @@ msgstr ""
 "<strong><a href=\"/phones/new/\">přidáte nové záznamy</a></strong>.\n"
 
 #: html/phonedb/index.html:62
+msgid ""
+"\n"
+"Generally any phone capable of AT commands or IrMC should be supported. "
+"Also\n"
+"any Nokia phone using Nokia OS should work. Symbian phones are poorly\n"
+"supported, for models with Symbian 9.0 and older you can install gnapplet "
+"to\n"
+"phone to get some functionality, newer ones do not have support so far.\n"
+msgstr ""
+
+#: html/phonedb/index.html:70
 msgid "Manufacturers"
 msgstr "Výrobci"
 
-#: html/phonedb/index.html:71
+#: html/phonedb/index.html:79
 msgid "Recently Added Phones"
 msgstr "Nedávno přidané telefony"
 
-#: html/phonedb/index.html:74
+#: html/phonedb/index.html:82
 msgid "Phone Records Summary"
 msgstr "Souhrn záznamů v databázi"
 
-#: html/phonedb/index.html:78
+#: html/phonedb/index.html:86
 msgid ""
 "\n"
 "On following chart, you can see how number of records in phone database\n"

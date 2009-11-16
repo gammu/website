@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-16 11:27+0100\n"
+"POT-Creation-Date: 2009-11-16 11:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1849,19 +1849,30 @@ msgid ""
 msgstr ""
 
 #: html/phonedb/index.html:62
+msgid ""
+"\n"
+"Generally any phone capable of AT commands or IrMC should be supported. "
+"Also\n"
+"any Nokia phone using Nokia OS should work. Symbian phones are poorly\n"
+"supported, for models with Symbian 9.0 and older you can install gnapplet "
+"to\n"
+"phone to get some functionality, newer ones do not have support so far.\n"
+msgstr ""
+
+#: html/phonedb/index.html:70
 #, fuzzy
 msgid "Manufacturers"
 msgstr "Κατασκευαστής"
 
-#: html/phonedb/index.html:71
+#: html/phonedb/index.html:79
 msgid "Recently Added Phones"
 msgstr ""
 
-#: html/phonedb/index.html:74
+#: html/phonedb/index.html:82
 msgid "Phone Records Summary"
 msgstr ""
 
-#: html/phonedb/index.html:78
+#: html/phonedb/index.html:86
 msgid ""
 "\n"
 "On following chart, you can see how number of records in phone database\n"
