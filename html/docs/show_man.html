@@ -4,6 +4,8 @@
 {% block title %}{{ page }}{% endblock %}
 
 {% block sidebar_top %}
+{% include "docs/sidebar.html" %}
+
 <h3>{% trans "Other man pages" %}</a></h3>
 <ul>
 {% for page in others %}
