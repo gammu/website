@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-19 15:31+0100\n"
+"POT-Creation-Date: 2009-11-26 09:25+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -150,7 +150,7 @@ msgstr "Wammu"
 msgid "python-gammu"
 msgstr ""
 
-#: html/base.html:84
+#: html/base.html:84 html/docs/faq.html:42
 #, fuzzy
 msgid "SMSD"
 msgstr "SMSC"
@@ -199,20 +199,20 @@ msgstr ""
 msgid "Documentation"
 msgstr ""
 
-#: html/base.html:108 html/index.html:18 html/sidebars/common.html:3
+#: html/base.html:108
+msgid "FAQ"
+msgstr ""
+
+#: html/base.html:109 html/index.html:18 html/sidebars/common.html:3
 msgid "Supported phones"
 msgstr ""
 
-#: html/base.html:109
+#: html/base.html:110
 msgid "Man pages"
 msgstr ""
 
-#: html/base.html:110
-msgid "For developers"
-msgstr ""
-
 #: html/base.html:111
-msgid "Roadmap"
+msgid "For developers"
 msgstr ""
 
 #: html/base.html:115 wammu/helpers.py:20
@@ -494,6 +494,12 @@ msgid ""
 "configuration file)</a>.\n"
 msgstr ""
 
+#: html/gammu.html:81
+msgid ""
+"\n"
+"Check also <a href=\"/docs/faq/\">Frequently Asked Questions</a>.\n"
+msgstr ""
+
 #: html/index.html:4
 msgid "Wammu and Gammu"
 msgstr ""
@@ -705,6 +711,12 @@ msgid ""
 "href=\"/docs/devel/\">developer documentation page</a> for more details.\n"
 msgstr ""
 
+#: html/python-gammu.html:68
+msgid ""
+"\n"
+"Check also <a href=\"/docs/faq/#python\">Frequently Asked Questions</a>.\n"
+msgstr ""
+
 #: html/search.html:4 html/search.html.py:7
 msgid "Wammu and Gammu Search"
 msgstr ""
@@ -804,6 +816,12 @@ msgid ""
 "configuration file)</a>.\n"
 msgstr ""
 
+#: html/smsd.html:83
+msgid ""
+"\n"
+"Check also <a href=\"/docs/faq/#smsd\">Frequently Asked Questions</a>.\n"
+msgstr ""
+
 #: html/wammu.html:25
 msgid ""
 "\n"
@@ -876,6 +894,12 @@ msgid ""
 "be\n"
 "intiutive enough. You can check it's command line parameters in <a\n"
 "href=\"/docs/man/en/wammu.1/\">wammu man page</a>.\n"
+msgstr ""
+
+#: html/wammu.html:67
+msgid ""
+"\n"
+"Check also <a href=\"/docs/faq/#wammu\">Frequently Asked Questions</a>.\n"
 msgstr ""
 
 #: html/wammu_feedback.html:3
@@ -1322,11 +1346,20 @@ msgstr ""
 msgid "Wammu and Gammu Developer Documentation"
 msgstr ""
 
-#: html/docs/devel.html:9
+#: html/docs/devel.html:10 html/docs/index.html:48
+msgid ""
+"\n"
+"As a developer, you might be also interested what is planned to happen in "
+"next\n"
+"Gammu and Wammu releases, you can find this information in the \n"
+"<a href=\"/docs/roadmap/\">roadmap</a>.\n"
+msgstr ""
+
+#: html/docs/devel.html:17 html/docs/faq.html:65
 msgid "Python Bindings"
 msgstr ""
 
-#: html/docs/devel.html:11
+#: html/docs/devel.html:19
 msgid ""
 "\n"
 "If you want to start writing something using Gammu, you should consider "
@@ -1339,11 +1372,11 @@ msgid ""
 "<code>python/examples</code> directory in Gammu sources.\n"
 msgstr ""
 
-#: html/docs/devel.html:20
+#: html/docs/devel.html:28
 msgid "libGammu API"
 msgstr ""
 
-#: html/docs/devel.html:22
+#: html/docs/devel.html:30
 msgid ""
 "\n"
 "The <a href=\"/libgammu\">libGammu</a> API is meant for C developers who "
@@ -1358,11 +1391,11 @@ msgid ""
 "<code>docs/develop/examples</code> directory in Gammu sources.\n"
 msgstr ""
 
-#: html/docs/devel.html:32
+#: html/docs/devel.html:40
 msgid "Gammu Internals"
 msgstr ""
 
-#: html/docs/devel.html:34
+#: html/docs/devel.html:42
 msgid ""
 "\n"
 "The <a href=\"/libgammu\">libGammu</a> library internally uses also quite a "
@@ -1373,13 +1406,140 @@ msgid ""
 "using Doxygen).\n"
 msgstr ""
 
-#: html/docs/devel.html:43
+#: html/docs/devel.html:51
 msgid ""
 "\n"
 "Additional hints about protocols can be found in <code>docs/develop</code> "
 "in\n"
 "Gammu sources or you might want to use git repository with <a\n"
 "href=\"http://gitorious.org/gammu/gsm-docs\">various GSM documentation</a>.\n"
+msgstr ""
+
+#: html/docs/faq.html:4
+msgid "FAQ for Wammu and Gammu"
+msgstr ""
+
+#: html/docs/faq.html:12
+msgid "Frequently Asked Questions for Wammu and Gammu"
+msgstr ""
+
+#: html/docs/faq.html:14
+#, fuzzy
+msgid "Phones Support"
+msgstr "&Támogatás"
+
+#: html/docs/faq.html:16
+#, fuzzy
+msgid "Is my phone supported?"
+msgstr "Nem támogatott"
+
+#: html/docs/faq.html:18
+msgid ""
+"\n"
+"Generally any phone capable of AT commands or IrMC should be supported. "
+"Also\n"
+"any Nokia phone using Nokia OS should work. For Symbian please check <a\n"
+"href=\"#symbian\">separate topic</a>. You can check other user experiences "
+"in <a\n"
+"href=\"/phones/\">Gammu Phones Database</a>.\n"
+msgstr ""
+
+#: html/docs/faq.html:26
+msgid "Are Symbian phones supported?"
+msgstr ""
+
+#: html/docs/faq.html:28
+msgid ""
+"\n"
+"Short answer: Not really.\n"
+msgstr ""
+
+#: html/docs/faq.html:33
+msgid ""
+"\n"
+"Long answet: For older phones (Symbian 9.0 and older), you can install\n"
+"gnapplet to phone and access data through it. However gnapplet has not yet\n"
+"been ported to newer versions, so you have no chance with recent phones. "
+"You\n"
+"can try something what supports SyncML to retrieve contacts or calendar "
+"from\n"
+"your phone.\n"
+msgstr ""
+
+#: html/docs/faq.html:44
+msgid "Which databases does SMSD support?"
+msgstr ""
+
+#: html/docs/faq.html:46
+msgid ""
+"\n"
+"SMSD natively supports <a href=\"http://www.mysql.com/\">MySQL</a> and <a\n"
+"href=\"http://www.postgresql.org/\">PostgreSQL</a>. However it has also "
+"support\n"
+"for <a href=\"http://libdbi.sourceforge.net/\">libdbi</a>, which provides "
+"access\n"
+"to wide range of database engines (eg. SQLite, MS SQL Server, Sybase,\n"
+"Firebird,...). Unfortunately libdbi currently does not work natively on\n"
+"Microsoft Windows, so you can use it only on Unix platforms.\n"
+msgstr ""
+
+#: html/docs/faq.html:56
+msgid "Is there some user interface for SMSD?"
+msgstr ""
+
+#: html/docs/faq.html:58
+msgid ""
+"\n"
+"Yes. You can use some of example interfaces distributed with gammu in\n"
+"<code>contrib</code> directory. Or there is full featured separate "
+"interface\n"
+"written in PHP called <a href=\"http://kalkun.sourceforge.net/\">Kalkun</"
+"a>.\n"
+msgstr ""
+
+#: html/docs/faq.html:67
+msgid "Where can I download python-gammu?"
+msgstr ""
+
+#: html/docs/faq.html:69
+msgid ""
+"\n"
+"The python-gammu project has been merged into Gammu recently, so you just "
+"need\n"
+"to grab <a href=\"/download/gammu/\">Gammu</a> and it includes python-"
+"gammu.\n"
+"Binaries for Windows are distributed separately.\n"
+msgstr ""
+
+#: html/docs/faq.html:76
+msgid "How can I use python-gammu?"
+msgstr ""
+
+#: html/docs/faq.html:78
+msgid ""
+"\n"
+"There are lot of examples shipped with Gammu, you can find them in\n"
+"<code>python/examples</code> subdirectory.\n"
+msgstr ""
+
+#: html/docs/faq.html:84
+msgid "General"
+msgstr ""
+
+#: html/docs/faq.html:86
+msgid "Will Gammu work on my system?"
+msgstr ""
+
+#: html/docs/faq.html:88
+msgid ""
+"\n"
+"Gammu is known to run on wide range of systems. It can be compiled natively "
+"on\n"
+"Linux, Mac OS X, FreeBSD, OpenBSD and Microsoft Windows. It can be probably\n"
+"compiled also elsewhere, but nobody has yet tried. On some platforms "
+"however\n"
+"you might lack support for some specific kind of devices (eg. Bluetooth or\n"
+"USB).\n"
 msgstr ""
 
 #: html/docs/index.html:4 html/docs/index.html.py:7
@@ -1411,25 +1571,24 @@ msgid ""
 "Gammu and different phone models.\n"
 msgstr ""
 
-#: html/docs/index.html:29
-msgid "Developer Documentation"
-msgstr ""
-
-#: html/docs/index.html:32
+#: html/docs/index.html:30
 msgid ""
 "\n"
-"The developer documentation is mostly autogenerated or includes in the\n"
-"sources, you can find the basic information and links on <a\n"
-"href=\"/docs/devel/\">separate page</a>.\n"
+"If you still have some questions, please check <a\n"
+"href=\"/docs/faq/\"><strong>Frequently Asked Questions</strong></a> before\n"
+"asking on <a href=\"/support/lists/\">mailing list</a>.\n"
+msgstr ""
+
+#: html/docs/index.html:37
+msgid "Developer Documentation"
 msgstr ""
 
 #: html/docs/index.html:40
 msgid ""
 "\n"
-"As a developer, you might be also interested what is planned to happen in "
-"next\n"
-"Gammu and Wammu releases, you can find this information in the \n"
-"<a href=\"/docs/roadmap/\">roadmap</a>.\n"
+"The developer documentation is mostly autogenerated or includes in the\n"
+"sources, you can find the basic information and links on <a\n"
+"href=\"/docs/devel/\">separate page</a>.\n"
 msgstr ""
 
 #: html/docs/list_man.html:4 html/docs/list_man.html.py:7
