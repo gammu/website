@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-26 09:29+0100\n"
+"POT-Creation-Date: 2009-11-26 09:50+0100\n"
 "PO-Revision-Date: 2009-11-26 09:29+0100\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -27,7 +27,7 @@ msgid "Message from you"
 msgstr "Zpráva pro autory"
 
 #: donate/forms.py:27 donate/forms.py:38 html/base.html:119
-#: html/base.html.py:129
+#: html/base.html.py:129 html/contribute/sidebar.html:4
 msgid "Donate"
 msgstr "Přispějte"
 
@@ -205,23 +205,24 @@ msgstr "Novinky"
 
 #: html/base.html:106 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:57 html/smsd.html:71 html/wammu.html:57
-#: html/support/sidebar.html:4 wammu/helpers.py:19
+#: html/docs/sidebar.html:2 html/support/sidebar.html:4 wammu/helpers.py:19
 msgid "Documentation"
 msgstr "Dokumentace"
 
-#: html/base.html:108
+#: html/base.html:108 html/docs/sidebar.html:5
 msgid "FAQ"
 msgstr "ČKD"
 
-#: html/base.html:109 html/index.html:18 html/sidebars/common.html:3
+#: html/base.html:109 html/index.html:18 html/docs/sidebar.html:7
+#: html/sidebars/common.html:3
 msgid "Supported phones"
 msgstr "Podporované telefony"
 
-#: html/base.html:110
+#: html/base.html:110 html/docs/sidebar.html:4
 msgid "Man pages"
 msgstr "Man stránky"
 
-#: html/base.html:111
+#: html/base.html:111 html/docs/sidebar.html:6
 msgid "For developers"
 msgstr "Pro vývojáře"
 
@@ -229,15 +230,15 @@ msgstr "Pro vývojáře"
 msgid "Contribute"
 msgstr "Přispějte"
 
-#: html/base.html:117
+#: html/base.html:117 html/contribute/sidebar.html:5
 msgid "Translate"
 msgstr "Překlad"
 
-#: html/base.html:118
+#: html/base.html:118 html/contribute/sidebar.html:6
 msgid "Develop"
 msgstr "Vývoj"
 
-#: html/base.html:120
+#: html/base.html:120 html/contribute/sidebar.html:7
 msgid "Publicity"
 msgstr "Publicita"
 
@@ -1523,11 +1524,11 @@ msgstr ""
 "dokumentace Gammu - bylo by dobré mít dokumentaci přeloženou, \n"
 "ale jedná se o obrovské množství textu.\n"
 
-#: html/docs/devel.html:4 html/docs/devel.html.py:7
+#: html/docs/devel.html:4 html/docs/devel.html.py:11
 msgid "Wammu and Gammu Developer Documentation"
 msgstr "Vývojářská dokumentace Gammu a Wammu"
 
-#: html/docs/devel.html:10 html/docs/index.html:48
+#: html/docs/devel.html:14 html/docs/index.html:52
 msgid ""
 "\n"
 "As a developer, you might be also interested what is planned to happen in "
@@ -1536,11 +1537,11 @@ msgid ""
 "<a href=\"/docs/roadmap/\">roadmap</a>.\n"
 msgstr ""
 
-#: html/docs/devel.html:17 html/docs/faq.html:65
+#: html/docs/devel.html:21 html/docs/faq.html:65
 msgid "Python Bindings"
 msgstr "Modul pro Python"
 
-#: html/docs/devel.html:19
+#: html/docs/devel.html:23
 msgid ""
 "\n"
 "If you want to start writing something using Gammu, you should consider "
@@ -1553,11 +1554,11 @@ msgid ""
 "<code>python/examples</code> directory in Gammu sources.\n"
 msgstr ""
 
-#: html/docs/devel.html:28
+#: html/docs/devel.html:32
 msgid "libGammu API"
 msgstr "libGammu API"
 
-#: html/docs/devel.html:30
+#: html/docs/devel.html:34
 msgid ""
 "\n"
 "The <a href=\"/libgammu\">libGammu</a> API is meant for C developers who "
@@ -1572,11 +1573,11 @@ msgid ""
 "<code>docs/develop/examples</code> directory in Gammu sources.\n"
 msgstr ""
 
-#: html/docs/devel.html:40
+#: html/docs/devel.html:44
 msgid "Gammu Internals"
 msgstr "Vnitřnosti Gammu"
 
-#: html/docs/devel.html:42
+#: html/docs/devel.html:46
 msgid ""
 "\n"
 "The <a href=\"/libgammu\">libGammu</a> library internally uses also quite a "
@@ -1587,7 +1588,7 @@ msgid ""
 "using Doxygen).\n"
 msgstr ""
 
-#: html/docs/devel.html:51
+#: html/docs/devel.html:55
 msgid ""
 "\n"
 "Additional hints about protocols can be found in <code>docs/develop</code> "
@@ -1723,15 +1724,15 @@ msgid ""
 "USB).\n"
 msgstr ""
 
-#: html/docs/index.html:4 html/docs/index.html.py:7
+#: html/docs/index.html:4 html/docs/index.html.py:11
 msgid "Wammu and Gammu Documentation"
 msgstr "Dokumentace Wammu a Gammu"
 
-#: html/docs/index.html:9
+#: html/docs/index.html:13
 msgid "End User Documentation"
 msgstr "Dokumentace pro uživatele"
 
-#: html/docs/index.html:11
+#: html/docs/index.html:15
 msgid ""
 "\n"
 "The best user documentation for Gammu comes in form with <a\n"
@@ -1743,7 +1744,7 @@ msgid ""
 "many cases.\n"
 msgstr ""
 
-#: html/docs/index.html:22
+#: html/docs/index.html:26
 msgid ""
 "\n"
 "For checking support of some phone model, the best source is <a\n"
@@ -1752,7 +1753,7 @@ msgid ""
 "Gammu and different phone models.\n"
 msgstr ""
 
-#: html/docs/index.html:30
+#: html/docs/index.html:34
 msgid ""
 "\n"
 "If you still have some questions, please check <a\n"
@@ -1760,11 +1761,11 @@ msgid ""
 "asking on <a href=\"/support/lists/\">mailing list</a>.\n"
 msgstr ""
 
-#: html/docs/index.html:37
+#: html/docs/index.html:41
 msgid "Developer Documentation"
 msgstr "Dokumentace pro vývojáře"
 
-#: html/docs/index.html:40
+#: html/docs/index.html:44
 msgid ""
 "\n"
 "The developer documentation is mostly autogenerated or includes in the\n"
@@ -1772,7 +1773,7 @@ msgid ""
 "href=\"/docs/devel/\">separate page</a>.\n"
 msgstr ""
 
-#: html/docs/list_man.html:4 html/docs/list_man.html.py:7
+#: html/docs/list_man.html:4 html/docs/list_man.html.py:11
 msgid "Wammu and Gammu Man Pages"
 msgstr "Man stránky Wammu a Gammu"
 
@@ -1848,9 +1849,17 @@ msgid ""
 "this rewrite and it needs to happen.\n"
 msgstr ""
 
-#: html/docs/show_man.html:7
+#: html/docs/show_man.html:9
 msgid "Other man pages"
 msgstr "Další man stránky"
+
+#: html/docs/sidebar.html:8
+msgid "Roadmap"
+msgstr "Plán vývoje"
+
+#: html/docs/sidebar.html:9
+msgid "Wiki"
+msgstr "Wiki"
 
 #: html/downloads/index.html:4
 msgid "Download Wammu and Gammu"
@@ -3004,12 +3013,6 @@ msgstr "Novinky o Gammu a Wammu (RSS)"
 #: wammu/helpers.py:28
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Novinky o Gammu a Wammu (Atom)"
-
-#~ msgid "Roadmap"
-#~ msgstr "Plán vývoje"
-
-#~ msgid "Wiki"
-#~ msgstr "Wiki"
 
 #~ msgid "Sitemap"
 #~ msgstr "Mapa stránek"
