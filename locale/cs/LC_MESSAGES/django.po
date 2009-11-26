@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-26 09:25+0100\n"
-"PO-Revision-Date: 2009-10-29 11:19+0100\n"
+"POT-Creation-Date: 2009-11-26 09:29+0100\n"
+"PO-Revision-Date: 2009-11-26 09:29+0100\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -211,7 +211,7 @@ msgstr "Dokumentace"
 
 #: html/base.html:108
 msgid "FAQ"
-msgstr ""
+msgstr "ČKD"
 
 #: html/base.html:109 html/index.html:18 html/sidebars/common.html:3
 msgid "Supported phones"
@@ -560,6 +560,8 @@ msgid ""
 "\n"
 "Check also <a href=\"/docs/faq/\">Frequently Asked Questions</a>.\n"
 msgstr ""
+"\n"
+"Podívejte se také na <a href=\"/docs/faq/\">často kladené dotazy</a>.\n"
 
 #: html/index.html:4
 msgid "Wammu and Gammu"
@@ -819,6 +821,9 @@ msgid ""
 "\n"
 "Check also <a href=\"/docs/faq/#python\">Frequently Asked Questions</a>.\n"
 msgstr ""
+"\n"
+"Podívejte se také na <a href=\"/docs/faq/#python\">často kladené dotazy</"
+"a>.\n"
 
 #: html/search.html:4 html/search.html.py:7
 msgid "Wammu and Gammu Search"
@@ -924,6 +929,8 @@ msgid ""
 "\n"
 "Check also <a href=\"/docs/faq/#smsd\">Frequently Asked Questions</a>.\n"
 msgstr ""
+"\n"
+"Podívejte se také na <a href=\"/docs/faq/#smsd\">často kladené dotazy</a>.\n"
 
 #: html/wammu.html:25
 msgid ""
@@ -1021,6 +1028,8 @@ msgid ""
 "\n"
 "Check also <a href=\"/docs/faq/#wammu\">Frequently Asked Questions</a>.\n"
 msgstr ""
+"\n"
+"Podívejte se také na <a href=\"/docs/faq/#wammu\">často kladené dotazy</a>.\n"
 
 #: html/wammu_feedback.html:3
 msgid "Thank you for using Wammu"
@@ -1588,24 +1597,20 @@ msgid ""
 msgstr ""
 
 #: html/docs/faq.html:4
-#, fuzzy
 msgid "FAQ for Wammu and Gammu"
-msgstr "Programování Wammu a Gammu"
+msgstr "ČKD pro Wammu a Gammu"
 
 #: html/docs/faq.html:12
-#, fuzzy
 msgid "Frequently Asked Questions for Wammu and Gammu"
-msgstr "Online komunikace pro Wammu a Gammu"
+msgstr "Často kladené dotazy pro Wammu a Gammu"
 
 #: html/docs/faq.html:14
-#, fuzzy
 msgid "Phones Support"
-msgstr "Podpora"
+msgstr "Podpora telefonů"
 
 #: html/docs/faq.html:16
-#, fuzzy
 msgid "Is my phone supported?"
-msgstr "Není podporován"
+msgstr "Je můj telefon podporován?"
 
 #: html/docs/faq.html:18
 msgid ""
@@ -1620,13 +1625,15 @@ msgstr ""
 
 #: html/docs/faq.html:26
 msgid "Are Symbian phones supported?"
-msgstr ""
+msgstr "Jsou podporovány telefony se Symbianem?"
 
 #: html/docs/faq.html:28
 msgid ""
 "\n"
 "Short answer: Not really.\n"
 msgstr ""
+"\n"
+"Krátká odpověď: Moc ne.\n"
 
 #: html/docs/faq.html:33
 msgid ""
@@ -1642,7 +1649,7 @@ msgstr ""
 
 #: html/docs/faq.html:44
 msgid "Which databases does SMSD support?"
-msgstr ""
+msgstr "Jaké databáze podporuje SMSD?"
 
 #: html/docs/faq.html:46
 msgid ""
@@ -1659,7 +1666,7 @@ msgstr ""
 
 #: html/docs/faq.html:56
 msgid "Is there some user interface for SMSD?"
-msgstr ""
+msgstr "Existuje uživatelské rozhraní pro SMSD?"
 
 #: html/docs/faq.html:58
 msgid ""
@@ -1673,7 +1680,7 @@ msgstr ""
 
 #: html/docs/faq.html:67
 msgid "Where can I download python-gammu?"
-msgstr ""
+msgstr "Kde si můžu stáhnout python-gammu?"
 
 #: html/docs/faq.html:69
 msgid ""
@@ -1686,9 +1693,8 @@ msgid ""
 msgstr ""
 
 #: html/docs/faq.html:76
-#, fuzzy
 msgid "How can I use python-gammu?"
-msgstr "python-gammu"
+msgstr "Jak se používá python-gammu?"
 
 #: html/docs/faq.html:78
 msgid ""
@@ -1699,11 +1705,11 @@ msgstr ""
 
 #: html/docs/faq.html:84
 msgid "General"
-msgstr ""
+msgstr "Obecné"
 
 #: html/docs/faq.html:86
 msgid "Will Gammu work on my system?"
-msgstr ""
+msgstr "Bude Gammu fungovat na mém systému?"
 
 #: html/docs/faq.html:88
 msgid ""
