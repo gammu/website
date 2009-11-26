@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "FAQ for Wammu and Gammu" %}{% endblock %}
+
+{% block sidebar_top %}
+{% include "contribute/sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "Frequently Asked Questions for Wammu and Gammu" %}</h2>
+
+<h3>{% trans "Phones Support" %}</h3>
+
+<h4>{% trans "Is my phone supported?" %}</h4>
+<p>
+{% blocktrans %}
+Generally any phone capable of AT commands or IrMC should be supported. Also
+any Nokia phone using Nokia OS should work. For Symbian please check <a
+href="#symbian">separate topic</a>. You can check other user experiences in <a
+href="/phones/">Gammu Phones Database</a>.
+{% endblocktrans %}
+</p>
+
+<h4><a name="symbian"></a>{% trans "Are Symbian phones supported?" %}</h4>
+<p>
+{% blocktrans %}
+Short answer: Not really.
+{% endblocktrans %}
+</p>
+<p>
+{% blocktrans %}
+Long answet: For older phones (Symbian 9.0 and older), you can install
+gnapplet to phone and access data through it. However gnapplet has not yet
+been ported to newer versions, so you have no chance with recent phones. You
+can try something what supports SyncML to retrieve contacts or calendar from
+your phone.
+{% endblocktrans %}
+</p>
+
+<h3><a name="smsd"></a>{% trans "SMSD" %}</h3>
+
+<h4>{% trans "Which databases does SMSD support?" %}</h4>
+<p>
+{% blocktrans %}
+SMSD natively supports <a href="http://www.mysql.com/">MySQL</a> and <a
+href="http://www.postgresql.org/">PostgreSQL</a>. However it has also support
+for <a href="http://libdbi.sourceforge.net/">libdbi</a>, which provides access
+to wide range of database engines (eg. SQLite, MS SQL Server, Sybase,
+Firebird,...). Unfortunately libdbi currently does not work natively on
+Microsoft Windows, so you can use it only on Unix platforms.
+{% endblocktrans %}
+</p>
+
+<h4>{% trans "Is there some user interface for SMSD?" %}</h4>
+<p>
+{% blocktrans %}
+Yes. You can use some of example interfaces distributed with gammu in
+<code>contrib</code> directory. Or there is full featured separate interface
+written in PHP called <a href="http://kalkun.sourceforge.net/">Kalkun</a>.
+{% endblocktrans %}
+</p>
+
+<h3><a name="python"></a>{% trans "Python Bindings" %}</h3>
+
+<h4>{% trans "Where can I download python-gammu?" %}</h4>
+<p>
+{% blocktrans %}
+The python-gammu project has been merged into Gammu recently, so you just need
+to grab <a href="/download/gammu/">Gammu</a> and it includes python-gammu.
+Binaries for Windows are distributed separately.
+{% endblocktrans %}
+</p>
+
+<h4>{% trans "How can I use python-gammu?" %}</h4>
+<p>
+{% blocktrans %}
+There are lot of examples shipped with Gammu, you can find them in
+<code>python/examples</code> subdirectory.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "General" %}</h3>
+
+<h4>{% trans "Will Gammu work on my system?" %}</h4>
+<p>
+{% blocktrans %}
+Gammu is known to run on wide range of systems. It can be compiled natively on
+Linux, Mac OS X, FreeBSD, OpenBSD and Microsoft Windows. It can be probably
+compiled also elsewhere, but nobody has yet tried. On some platforms however
+you might lack support for some specific kind of devices (eg. Bluetooth or
+USB).
+{% endblocktrans %}
+</p>
+{% endblock %}
+
+

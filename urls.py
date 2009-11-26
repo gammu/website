@@ -70,6 +70,7 @@ class PagesSitemap(Sitemap):
             ('/docs/man/', None, 0.9),
             ('/docs/devel/', '%s/docs/devel.html' % settings.HTML_ROOT, 0.9),
             ('/docs/roadmap/', '%s/docs/roadmap.html' % settings.HTML_ROOT, 0.9),
+            ('/docs/faq/', '%s/docs/faq.html' % settings.HTML_ROOT, 0.9),
 
             ('/screenshots/', None, 0.8),
             ('/downloads/gammu/', None, 0.7),
@@ -159,6 +160,7 @@ urlpatterns = patterns('',
     (r'^docs/man/(?P<lang>[a-z]*)/(?P<page>[a-z_-]*\.[0-9])/$', 'manpages.views.show_page'),
     (r'^docs/devel/$', 'wammu.views.static', {'page': 'docs/devel.html'}),
     (r'^docs/roadmap/$', 'wammu.views.static', {'page': 'docs/roadmap.html'}),
+    (r'^docs/faq/$', 'wammu.views.static', {'page': 'docs/faq.html'}),
 
     # RSS feeds
     (r'^news/(?P<url>(rss|atom).*)/$', 'django.contrib.syndication.views.feed',
