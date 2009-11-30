@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Wanted Skills for Wammu and Gammu" %}{% endblock %}
+
+{% block sidebar_top %}
+{% include "contribute/sidebar.html" %}
+{% endblock %}
+
+{% block sidebar %}
+<h3>{% trans "Factoids" %}</h3>
+<ul>
+<li><a href="http://cia.vc/stats/project/wammu">Wammu on CIA.vc</a></li>
+<li><a href="http://cia.vc/stats/project/gammu">Gammu on CIA.vc</a></li>
+<li><a href="http://www.ohloh.net/p/wammu">Wammu on Ohloh</a></li>
+<li><a href="http://www.ohloh.net/p/gammu">Gammu on Ohloh</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "Wanted Skills for Wammu and Gammu" %}</h2>
+
+<p>
+{% blocktrans %}
+Gammu and Wammu are free software projects which are done by volunteers in
+their free time. There is never enough of volunteers so you are very welcome
+to help us in any way. You really do not need developer skills to help.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+Bellow is list of currently positions, which would be most helpful. If you
+won't find anything matching your skills, there still might be something where
+you can help, but was not found to be so important to be highlighted here. If
+you feel something could fit your skill, please 
+<a href="/support/lists/"><strong>contact us on mailing list</strong></a>.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "Windows Developer" %}</h3>
+
+<p>
+{% blocktrans %}
+Currently most of developers work on Linux or BSD. This leads to lacking
+support for Windows a bit. You probably need Visual Studio installed and you
+need some experiences with Windows API.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "Translators" %}</h3>
+
+<p>
+{% blocktrans %}
+There are always things to translate to almost any language, just check
+dedicated page <a href="/contribute/translate">about translating</a>.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "Graphics/Designer" %}</h3>
+
+<p>
+{% blocktrans %}
+Graphics and icons used in Wammu are quite poor quality right now. We would
+definitely make use of somebody more skilled in this area.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "Symbian Developer" %}</h3>
+
+<p>
+{% blocktrans %}
+Gammu currently lacks support for Symbian. The only way how this can be
+covered is implementing application for Symbian, which we can use as
+communication end point to which we can talk (gnapplet is currently used for
+this purpose, but it lacks support for recent Symbian versions).
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+The very same probably applies to other modern platforms such as Android,
+Maemo or Windows Mobile.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "Python Developer" %}</h3>
+
+<p>
+{% blocktrans %}
+Wammu could use much more attention from developers than it currently gets.
+You will have quite free hands to move project forward and make it look as you
+wish.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "C Developer" %}</h3>
+
+<p>
+{% blocktrans %}
+There is always lot of bugs and feature requests on Gammu core and more hands
+can manage them faster.
+{% endblocktrans %}
+</p>
+
+{% endblock %}

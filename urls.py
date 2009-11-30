@@ -65,6 +65,7 @@ class PagesSitemap(Sitemap):
             ('/contribute/code/', '%s/contribute/code.html' % settings.HTML_ROOT, 0.9),
             ('/contribute/translate/', '%s/contribute/translate.html' % settings.HTML_ROOT, 0.9),
             ('/contribute/publicity/', '%s/contribute/publicity.html' % settings.HTML_ROOT, 0.9),
+            ('/contribute/wanted/', '%s/contribute/wanted.html' % settings.HTML_ROOT, 0.9),
 
             ('/docs/', '%s/docs/index.html' % settings.HTML_ROOT, 0.9),
             ('/docs/man/', None, 0.9),
@@ -153,6 +154,7 @@ urlpatterns = patterns('',
     (r'^contribute/code/$', 'wammu.views.static', {'page': 'contribute/code.html'}),
     (r'^contribute/translate/$', 'wammu.views.static', {'page': 'contribute/translate.html'}),
     (r'^contribute/publicity/$', 'wammu.views.static', {'page': 'contribute/publicity.html'}),
+    (r'^contribute/wanted/$', 'wammu.views.static', {'page': 'contribute/wanted.html'}),
 
     (r'^docs/$', 'wammu.views.static', {'page': 'docs/index.html'}),
     (r'^docs/man/$', 'manpages.views.show_pages'),
