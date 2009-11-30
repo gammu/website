@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-11-30 15:07+0100\n"
-"PO-Revision-Date: 2009-11-26 09:29+0100\n"
+"PO-Revision-Date: 2009-11-30 15:09+0100\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1358,7 +1358,7 @@ msgstr "Možnosti jak přispět"
 
 #: html/contribute/sidebar.html:7
 msgid "Wanted skills"
-msgstr ""
+msgstr "Hledané schopnosti"
 
 #: html/contribute/translate.html:4 html/contribute/translate.html.py:12
 msgid "Translating Wammu and Gammu"
@@ -1537,9 +1537,8 @@ msgstr ""
 "ale jedná se o obrovské množství textu.\n"
 
 #: html/contribute/wanted.html:4 html/contribute/wanted.html.py:22
-#, fuzzy
 msgid "Wanted Skills for Wammu and Gammu"
-msgstr "Mailing listy pro Wammu a Gammu"
+msgstr "Hledané schopnosti pro Wammu a Gammu"
 
 #: html/contribute/wanted.html:33
 msgid ""
@@ -1555,9 +1554,8 @@ msgid ""
 msgstr ""
 
 #: html/contribute/wanted.html:42
-#, fuzzy
 msgid "Windows Developer"
-msgstr "Pro vývojáře"
+msgstr "Vývojář na Windows"
 
 #: html/contribute/wanted.html:45
 msgid ""
@@ -1569,9 +1567,8 @@ msgid ""
 msgstr ""
 
 #: html/contribute/wanted.html:52
-#, fuzzy
 msgid "Translators"
-msgstr "Překlad"
+msgstr "Překladatelé"
 
 #: html/contribute/wanted.html:55
 msgid ""
@@ -1582,7 +1579,7 @@ msgstr ""
 
 #: html/contribute/wanted.html:61
 msgid "Graphics/Designer"
-msgstr ""
+msgstr "Grafik/designer"
 
 #: html/contribute/wanted.html:64
 msgid ""
@@ -1593,7 +1590,7 @@ msgstr ""
 
 #: html/contribute/wanted.html:70
 msgid "Symbian Developer"
-msgstr ""
+msgstr "Vývojář pro Symbian"
 
 #: html/contribute/wanted.html:73
 msgid ""
@@ -1613,9 +1610,8 @@ msgid ""
 msgstr ""
 
 #: html/contribute/wanted.html:88
-#, fuzzy
 msgid "Python Developer"
-msgstr "Pro vývojáře"
+msgstr "Vývojáře v Pythonu"
 
 #: html/contribute/wanted.html:91
 msgid ""
@@ -1627,9 +1623,8 @@ msgid ""
 msgstr ""
 
 #: html/contribute/wanted.html:98
-#, fuzzy
 msgid "C Developer"
-msgstr "Vývoj"
+msgstr "Vývojář v C"
 
 #: html/contribute/wanted.html:101
 msgid ""
