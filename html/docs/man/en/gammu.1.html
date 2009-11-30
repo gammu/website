@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU</h2>
 Section: Gammu Documentation (1)<br/>
-Updated: Oct 13 2009<br/>
+Updated: Nov 30 2009<br/>
 <a href="#index">Index</a> 
 <hr/>
 <p><a class="aname" id="lbAB" name="lbAB"/></p>
@@ -1896,13 +1896,184 @@ topic.</dd>
 <i>/dev/ttyS?</i><br/>
 <i>/dev/ttyACM?</i></p>
 <p><a class="aname" id="lbBF" name="lbBF"/></p>
-<h3>EXAMPLE</h3>
+<h3>RETURN VALUES</h3>
+<p>gammu returns 0 on success. In case of failure non zero code is
+returned.</p>
 <p><a class="aname" id="lbBG" name="lbBG"/></p>
+<h4>1</h4>
+Out of memory or other critical error.
+<p><a class="aname" id="lbBH" name="lbBH"/></p>
+<h4>2</h4>
+Invalid command line parameters.
+<p><a class="aname" id="lbBI" name="lbBI"/></p>
+<h4>3</h4>
+Failed to open file specified on command line.
+<p><a class="aname" id="lbBJ" name="lbBJ"/></p>
+<h4>4</h4>
+Program was interrupted.
+<p><a class="aname" id="lbBK" name="lbBK"/></p>
+<h4>98</h4>
+Gammu library version mismatch.
+<p><a class="aname" id="lbBL" name="lbBL"/></p>
+<h4>99</h4>
+Functionality has been moved. For example to <a href="../gammu-smsd.1/">gammu-smsd</a>(1).
+<p>Errors codes greater than 100 map to the GSM_Error values
+increased by 100:</p>
+<p><a class="aname" id="lbBM" name="lbBM"/></p>
+<h4>101</h4>
+No error. <a class="aname" id="lbBN" name="lbBN"/>
+<h4>102</h4>
+Error opening device. Unknown, busy or no permissions. <a class="aname" id="lbBO" name="lbBO"/>
+<h4>103</h4>
+Error opening device, it is locked. <a class="aname" id="lbBP" name="lbBP"/>
+<h4>104</h4>
+Error opening device, it doesn't exist. <a class="aname" id="lbBQ" name="lbBQ"/>
+<h4>105</h4>
+Error opening device, it is already opened by other application.
+<a class="aname" id="lbBR" name="lbBR"/>
+<h4>106</h4>
+Error opening device, you don't have permissions. <a class="aname" id="lbBS" name="lbBS"/>
+<h4>107</h4>
+Error opening device. No required driver in operating system.
+<a class="aname" id="lbBT" name="lbBT"/>
+<h4>108</h4>
+Error opening device. Some hardware not connected/wrongly
+configured. <a class="aname" id="lbBU" name="lbBU"/>
+<h4>109</h4>
+Error setting device DTR or RTS. <a class="aname" id="lbBV" name="lbBV"/>
+<h4>110</h4>
+Error setting device speed. Maybe speed not supported. <a class="aname" id="lbBW" name="lbBW"/>
+<h4>111</h4>
+Error writing to the device. <a class="aname" id="lbBX" name="lbBX"/>
+<h4>112</h4>
+Error during reading from the device. <a class="aname" id="lbBY" name="lbBY"/>
+<h4>113</h4>
+Can't set parity on the device. <a class="aname" id="lbBZ" name="lbBZ"/>
+<h4>114</h4>
+No response in specified timeout. Probably phone not connected.
+<a class="aname" id="lbCA" name="lbCA"/>
+<h4>115</h4>
+Frame not requested right now. See &lt;<a href="http://wammu.eu/support/bugs/">http://wammu.eu/support/bugs/</a>&gt;
+for information how to report it. <a class="aname" id="lbCB" name="lbCB"/>
+<h4>116</h4>
+Unknown response from phone. See &lt;<a href="http://wammu.eu/support/bugs/">http://wammu.eu/support/bugs/</a>&gt;
+for information how to report it. <a class="aname" id="lbCC" name="lbCC"/>
+<h4>117</h4>
+Unknown frame. See &lt;<a href="http://wammu.eu/support/bugs/">http://wammu.eu/support/bugs/</a>&gt;
+for information how to report it. <a class="aname" id="lbCD" name="lbCD"/>
+<h4>118</h4>
+Unknown connection type string. Check config file. <a class="aname" id="lbCE" name="lbCE"/>
+<h4>119</h4>
+Unknown model type string. Check config file. <a class="aname" id="lbCF" name="lbCF"/>
+<h4>120</h4>
+Some functions not available for your system (disabled in config or
+not implemented). <a class="aname" id="lbCG" name="lbCG"/>
+<h4>121</h4>
+Function not supported by phone. <a class="aname" id="lbCH" name="lbCH"/>
+<h4>122</h4>
+Entry is empty. <a class="aname" id="lbCI" name="lbCI"/>
+<h4>123</h4>
+Security error. Maybe no PIN? <a class="aname" id="lbCJ" name="lbCJ"/>
+<h4>124</h4>
+Invalid location. Maybe too high? <a class="aname" id="lbCK" name="lbCK"/>
+<h4>125</h4>
+Functionality not implemented. You are welcome to help authors with
+it. <a class="aname" id="lbCL" name="lbCL"/>
+<h4>126</h4>
+Memory full. <a class="aname" id="lbCM" name="lbCM"/>
+<h4>127</h4>
+Unknown error. <a class="aname" id="lbCN" name="lbCN"/>
+<h4>128</h4>
+Can not open specified file. <a class="aname" id="lbCO" name="lbCO"/>
+<h4>129</h4>
+More memory required... <a class="aname" id="lbCP" name="lbCP"/>
+<h4>130</h4>
+Permission to file/device required... <a class="aname" id="lbCQ" name="lbCQ"/>
+<h4>131</h4>
+Empty SMSC number. Set in phone or use -smscnumber. <a class="aname" id="lbCR" name="lbCR"/>
+<h4>132</h4>
+You're inside phone menu (maybe editing?). Leave it and try again.
+<a class="aname" id="lbCS" name="lbCS"/>
+<h4>133</h4>
+Phone is not connected. <a class="aname" id="lbCT" name="lbCT"/>
+<h4>134</h4>
+Function is currently being implemented. If you want to help,
+please contact authors. <a class="aname" id="lbCU" name="lbCU"/>
+<h4>135</h4>
+Phone is disabled and connected to charger. <a class="aname" id="lbCV" name="lbCV"/>
+<h4>136</h4>
+File format not supported by Gammu. <a class="aname" id="lbCW" name="lbCW"/>
+<h4>137</h4>
+Nobody is perfect, some bug appeared in protocol implementation.
+Please contact authors. <a class="aname" id="lbCX" name="lbCX"/>
+<h4>138</h4>
+Transfer was canceled by phone, maybe you pressed cancel on phone.
+<a class="aname" id="lbCY" name="lbCY"/>
+<h4>139</h4>
+Phone module need to send another answer frame. <a class="aname" id="lbCZ" name="lbCZ"/>
+<h4>140</h4>
+Current connection type doesn't support called function. <a class="aname" id="lbDA" name="lbDA"/>
+<h4>141</h4>
+CRC error. <a class="aname" id="lbDB" name="lbDB"/>
+<h4>142</h4>
+Invalid date or time specified. <a class="aname" id="lbDC" name="lbDC"/>
+<h4>143</h4>
+Phone memory error, maybe it is read only. <a class="aname" id="lbDD" name="lbDD"/>
+<h4>144</h4>
+Invalid data given to phone. <a class="aname" id="lbDE" name="lbDE"/>
+<h4>145</h4>
+File with specified name already exists. <a class="aname" id="lbDF" name="lbDF"/>
+<h4>146</h4>
+File with specified name doesn't exist. <a class="aname" id="lbDG" name="lbDG"/>
+<h4>147</h4>
+You have to give folder name and not file name. <a class="aname" id="lbDH" name="lbDH"/>
+<h4>148</h4>
+You have to give file name and not folder name. <a class="aname" id="lbDI" name="lbDI"/>
+<h4>149</h4>
+Can not access SIM card. <a class="aname" id="lbDJ" name="lbDJ"/>
+<h4>150</h4>
+Wrong GNAPPLET version in phone. Use version from currently used
+Gammu. <a class="aname" id="lbDK" name="lbDK"/>
+<h4>151</h4>
+Only part of folder has been listed. <a class="aname" id="lbDL" name="lbDL"/>
+<h4>152</h4>
+Folder must be empty. <a class="aname" id="lbDM" name="lbDM"/>
+<h4>153</h4>
+Data were converted. <a class="aname" id="lbDN" name="lbDN"/>
+<h4>154</h4>
+Gammu is not configured. <a class="aname" id="lbDO" name="lbDO"/>
+<h4>155</h4>
+Wrong folder used. <a class="aname" id="lbDP" name="lbDP"/>
+<h4>156</h4>
+Internal phone error. <a class="aname" id="lbDQ" name="lbDQ"/>
+<h4>157</h4>
+Error writing file to disk. <a class="aname" id="lbDR" name="lbDR"/>
+<h4>158</h4>
+No such section exists. <a class="aname" id="lbDS" name="lbDS"/>
+<h4>159</h4>
+Using default values. <a class="aname" id="lbDT" name="lbDT"/>
+<h4>160</h4>
+Corrupted data returned by phone. <a class="aname" id="lbDU" name="lbDU"/>
+<h4>161</h4>
+Bad feature string in configuration. <a class="aname" id="lbDV" name="lbDV"/>
+<h4>162</h4>
+Desired functionality has been disabled on compile time. <a class="aname" id="lbDW" name="lbDW"/>
+<h4>163</h4>
+Bluetooth configuration requires channel option. <a class="aname" id="lbDX" name="lbDX"/>
+<h4>164</h4>
+Service is not runnig. <a class="aname" id="lbDY" name="lbDY"/>
+<h4>165</h4>
+Service configuration is missing. <a class="aname" id="lbDZ" name="lbDZ"/>
+<h4>166</h4>
+Command rejected because device was busy. Wait and restart.
+<p><a class="aname" id="lbEA" name="lbEA"/></p>
+<h3>EXAMPLE</h3>
+<p><a class="aname" id="lbEB" name="lbEB"/></p>
 <h4>Configuration</h4>
 <p>To check it out, you need to have configuration file for gammu,
 see <a href="../gammurc.5/">gammurc</a>(5) for more details about
 it.</p>
-<p><a class="aname" id="lbBH" name="lbBH"/></p>
+<p><a class="aname" id="lbEC" name="lbEC"/></p>
 <h4>Sending messages</h4>
 <dl compact="compact">
 <dt>Save text message up to standard 160 chars:</dt>
@@ -1972,7 +2143,7 @@ gammu savesms EMS -protected 2 -variablebitmaplong ala.bmp
 </dl>
 </dd>
 </dl>
-<p><a class="aname" id="lbBI" name="lbBI"/></p>
+<p><a class="aname" id="lbED" name="lbED"/></p>
 <h4>Backups</h4>
 <p>If you will backup settings to Gammu text file, it will be
 possible to edit it. It's easy: many things in this file will be
@@ -2010,14 +2181,14 @@ line</dt>
 <p>Replace: Type = NumberMobile\nEntry\1Text = &quot;\+36\2\3&quot;\n</p>
 </dd>
 </dl>
-<a class="aname" id="lbBJ" name="lbBJ"/>
+<a class="aname" id="lbEE" name="lbEE"/>
 <h3>COPYRIGHT</h3>
 <p>Copyright © 2003-2009 Marcin Wiacek, Michal Cihar and other
 authors. License GPLv2: GNU GPL version 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
 
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.</p>
-<p><a class="aname" id="lbBK" name="lbBK"/></p>
+<p><a class="aname" id="lbEF" name="lbEF"/></p>
 <h3>REPORTING BUGS</h3>
 <p>There are definitely many bugs, reporting to author is welcome.
 Please include some useful information when sending bug reports
@@ -2029,8 +2200,7 @@ can do it on command line using -d textall -f /tmp/gammu.log):</p>
 <dd>
 <pre>
 [gammu]
-connection = your connection settings
-port = your port settings
+YOUR CONNECTION SETTINGS
 logfile = /tmp/gammu.log
 logformat = textall
 </pre></dd>
@@ -2042,7 +2212,7 @@ log.</p>
 <p>See &lt;<a href="http://wammu.eu/support/bugs/">http://wammu.eu/support/bugs/</a>&gt;
 for more information on reporting bugs.</p>
 <p>Please report bugs to &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.</p>
-<p><a class="aname" id="lbBL" name="lbBL"/></p>
+<p><a class="aname" id="lbEG" name="lbEG"/></p>
 <h3>AUTHOR</h3>
 <p>You can contact authors on &lt;<a href="mailto:gammu-users@lists.sourceforge.net">gammu-users@lists.sourceforge.net</a>&gt;.</p>
 <p><i>Michal Cihar</i> &lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt; is current
@@ -2055,7 +2225,7 @@ and <i>Manfred Jonsson</i> (see CREDITS from Gnokii for all their
 contributor).</p>
 <p>Many other people have helped with various features, check
 ChangeLog for more details.</p>
-<p><a class="aname" id="lbBM" name="lbBM"/></p>
+<p><a class="aname" id="lbEH" name="lbEH"/></p>
 <h3>SEE ALSO</h3>
 <p><a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu-smsd-inject.1/">gammu-smsd-inject</a>(1), <a href="../gammurc.5/">gammurc</a>(5), <a href="../jadmaker.1/">jadmaker</a>(1)</p>
 <p>Some more hints can be found in README file or on wiki
@@ -2102,21 +2272,98 @@ ChangeLog for more details.</p>
 </dl>
 </dd>
 <dt><a href="#lbBE">FILES</a></dt>
-<dt><a href="#lbBF">EXAMPLE</a></dt>
+<dt><a href="#lbBF">RETURN VALUES</a></dt>
 <dd>
 <dl>
-<dt><a href="#lbBG">Configuration</a></dt>
-<dt><a href="#lbBH">Sending messages</a></dt>
-<dt><a href="#lbBI">Backups</a></dt>
+<dt><a href="#lbBG">1</a></dt>
+<dt><a href="#lbBH">2</a></dt>
+<dt><a href="#lbBI">3</a></dt>
+<dt><a href="#lbBJ">4</a></dt>
+<dt><a href="#lbBK">98</a></dt>
+<dt><a href="#lbBL">99</a></dt>
+<dt><a href="#lbBM">101</a></dt>
+<dt><a href="#lbBN">102</a></dt>
+<dt><a href="#lbBO">103</a></dt>
+<dt><a href="#lbBP">104</a></dt>
+<dt><a href="#lbBQ">105</a></dt>
+<dt><a href="#lbBR">106</a></dt>
+<dt><a href="#lbBS">107</a></dt>
+<dt><a href="#lbBT">108</a></dt>
+<dt><a href="#lbBU">109</a></dt>
+<dt><a href="#lbBV">110</a></dt>
+<dt><a href="#lbBW">111</a></dt>
+<dt><a href="#lbBX">112</a></dt>
+<dt><a href="#lbBY">113</a></dt>
+<dt><a href="#lbBZ">114</a></dt>
+<dt><a href="#lbCA">115</a></dt>
+<dt><a href="#lbCB">116</a></dt>
+<dt><a href="#lbCC">117</a></dt>
+<dt><a href="#lbCD">118</a></dt>
+<dt><a href="#lbCE">119</a></dt>
+<dt><a href="#lbCF">120</a></dt>
+<dt><a href="#lbCG">121</a></dt>
+<dt><a href="#lbCH">122</a></dt>
+<dt><a href="#lbCI">123</a></dt>
+<dt><a href="#lbCJ">124</a></dt>
+<dt><a href="#lbCK">125</a></dt>
+<dt><a href="#lbCL">126</a></dt>
+<dt><a href="#lbCM">127</a></dt>
+<dt><a href="#lbCN">128</a></dt>
+<dt><a href="#lbCO">129</a></dt>
+<dt><a href="#lbCP">130</a></dt>
+<dt><a href="#lbCQ">131</a></dt>
+<dt><a href="#lbCR">132</a></dt>
+<dt><a href="#lbCS">133</a></dt>
+<dt><a href="#lbCT">134</a></dt>
+<dt><a href="#lbCU">135</a></dt>
+<dt><a href="#lbCV">136</a></dt>
+<dt><a href="#lbCW">137</a></dt>
+<dt><a href="#lbCX">138</a></dt>
+<dt><a href="#lbCY">139</a></dt>
+<dt><a href="#lbCZ">140</a></dt>
+<dt><a href="#lbDA">141</a></dt>
+<dt><a href="#lbDB">142</a></dt>
+<dt><a href="#lbDC">143</a></dt>
+<dt><a href="#lbDD">144</a></dt>
+<dt><a href="#lbDE">145</a></dt>
+<dt><a href="#lbDF">146</a></dt>
+<dt><a href="#lbDG">147</a></dt>
+<dt><a href="#lbDH">148</a></dt>
+<dt><a href="#lbDI">149</a></dt>
+<dt><a href="#lbDJ">150</a></dt>
+<dt><a href="#lbDK">151</a></dt>
+<dt><a href="#lbDL">152</a></dt>
+<dt><a href="#lbDM">153</a></dt>
+<dt><a href="#lbDN">154</a></dt>
+<dt><a href="#lbDO">155</a></dt>
+<dt><a href="#lbDP">156</a></dt>
+<dt><a href="#lbDQ">157</a></dt>
+<dt><a href="#lbDR">158</a></dt>
+<dt><a href="#lbDS">159</a></dt>
+<dt><a href="#lbDT">160</a></dt>
+<dt><a href="#lbDU">161</a></dt>
+<dt><a href="#lbDV">162</a></dt>
+<dt><a href="#lbDW">163</a></dt>
+<dt><a href="#lbDX">164</a></dt>
+<dt><a href="#lbDY">165</a></dt>
+<dt><a href="#lbDZ">166</a></dt>
 </dl>
 </dd>
-<dt><a href="#lbBJ">COPYRIGHT</a></dt>
-<dt><a href="#lbBK">REPORTING BUGS</a></dt>
-<dt><a href="#lbBL">AUTHOR</a></dt>
-<dt><a href="#lbBM">SEE ALSO</a></dt>
+<dt><a href="#lbEA">EXAMPLE</a></dt>
+<dd>
+<dl>
+<dt><a href="#lbEB">Configuration</a></dt>
+<dt><a href="#lbEC">Sending messages</a></dt>
+<dt><a href="#lbED">Backups</a></dt>
+</dl>
+</dd>
+<dt><a href="#lbEE">COPYRIGHT</a></dt>
+<dt><a href="#lbEF">REPORTING BUGS</a></dt>
+<dt><a href="#lbEG">AUTHOR</a></dt>
+<dt><a href="#lbEH">SEE ALSO</a></dt>
 </dl>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 09:54:36 GMT, November 30, 2009
+Time: 15:32:43 GMT, November 30, 2009
 </div>

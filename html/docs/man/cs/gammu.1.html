@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU</h2>
 Section: Dokumentace Gammu (1)<br/>
-Updated: Říjen 13, 2009<br/>
+Updated: Listopad 30, 2009<br/>
 <a href="#index">Index</a> 
 <hr/>
 <p><a class="aname" id="lbAB" name="lbAB"/></p>
@@ -1893,12 +1893,189 @@ tématu.</dd>
 <i>/dev/ttyS?</i><br/>
 <i>/dev/ttyACM?</i></p>
 <p><a class="aname" id="lbBF" name="lbBF"/></p>
-<h3>PŘÍKLAD</h3>
+<h3>NÁVRATOVÉ KÓDY</h3>
+<p>gammu při úspěchu vrací 0. V případě chyby je vrácen nenulový
+chybový kód.</p>
 <p><a class="aname" id="lbBG" name="lbBG"/></p>
+<h4>1</h4>
+Nedostatek paměti nebo jiná kritická chyba.
+<p><a class="aname" id="lbBH" name="lbBH"/></p>
+<h4>2</h4>
+Chybné parametry na příkazové řádce.
+<p><a class="aname" id="lbBI" name="lbBI"/></p>
+<h4>3</h4>
+Nepodařilo se otevřít soubor zadaný na příkazové řádce.
+<p><a class="aname" id="lbBJ" name="lbBJ"/></p>
+<h4>4</h4>
+Program byl přerušen.
+<p><a class="aname" id="lbBK" name="lbBK"/></p>
+<h4>98</h4>
+Verze knihovny Gammu neodpovídá programu.
+<p><a class="aname" id="lbBL" name="lbBL"/></p>
+<h4>99</h4>
+Požadovaná funkce byla přesunuta. Například do <a href="../gammu-smsd.1/">gammu-smsd</a>(1).
+<p>Chyby větší než 100 odpovídají hodnotám GSM_Error zvětšeným o
+100:</p>
+<p><a class="aname" id="lbBM" name="lbBM"/></p>
+<h4>101</h4>
+Žadná chyba. <a class="aname" id="lbBN" name="lbBN"/>
+<h4>102</h4>
+Chyba při otevírání zařízení. Přístup odmítnut. <a class="aname" id="lbBO" name="lbBO"/>
+<h4>103</h4>
+Chyba při otevírání zařízení, je zamčené. <a class="aname" id="lbBP" name="lbBP"/>
+<h4>104</h4>
+Chyba při otevírání zařízení, neexistuje. <a class="aname" id="lbBQ" name="lbBQ"/>
+<h4>105</h4>
+Chyba při otevírání zařízení, je již používáno. <a class="aname" id="lbBR" name="lbBR"/>
+<h4>106</h4>
+Chyba při otevírání zařízení, přístup odmítnut. <a class="aname" id="lbBS" name="lbBS"/>
+<h4>107</h4>
+Chyba při otevírání zařízení. Chybí ovladač v operačním systému.
+<a class="aname" id="lbBT" name="lbBT"/>
+<h4>108</h4>
+Chyba při otevírání zařízení. Hardware může být špatně připojen
+nebo nastaven. <a class="aname" id="lbBU" name="lbBU"/>
+<h4>109</h4>
+Chyba při nastavování DTR nebo RTS. <a class="aname" id="lbBV" name="lbBV"/>
+<h4>110</h4>
+Chyba při nastavování rychlosti zařízení. Rychlost pravděpodobně
+není podporována. <a class="aname" id="lbBW" name="lbBW"/>
+<h4>111</h4>
+Chyba při zápisu. <a class="aname" id="lbBX" name="lbBX"/>
+<h4>112</h4>
+Chyba při čtení. <a class="aname" id="lbBY" name="lbBY"/>
+<h4>113</h4>
+Nepodařilo se nastavit paritu na zařízení. <a class="aname" id="lbBZ" name="lbBZ"/>
+<h4>114</h4>
+Žadná odpověď v očekaváné době. Telefon pravděpodobně není
+připojen. <a class="aname" id="lbCA" name="lbCA"/>
+<h4>115</h4>
+Tato odpověď od telefonu nebyla očekávána. Podívejte se na stránku
+&lt;<a href="http://cs.wammu.eu/support/bugs/">http://cs.wammu.eu/support/bugs/</a>&gt;
+pro informace jak tuto událost nahlásit. <a class="aname" id="lbCB" name="lbCB"/>
+<h4>116</h4>
+Neznámá odpověď od telefonu. Podívejte se na stránku &lt;<a href="http://cs.wammu.eu/support/bugs/">http://cs.wammu.eu/support/bugs/</a>&gt;
+pro informace jak tuto událost nahlásit. <a class="aname" id="lbCC" name="lbCC"/>
+<h4>117</h4>
+Neznámý rámec. Podívejte se na stránku &lt;<a href="http://wammu.eu/support/bugs/">http://wammu.eu/support/bugs/</a>&gt;
+pro informace jak tuto událost nahlásit. <a class="aname" id="lbCD" name="lbCD"/>
+<h4>118</h4>
+Zadán neznámý typ připojení. Zkontrolujte konfigurační soubor.
+<a class="aname" id="lbCE" name="lbCE"/>
+<h4>119</h4>
+Zadán neznámý model telefonu. Zkontrolujte konfigurační soubor.
+<a class="aname" id="lbCF" name="lbCF"/>
+<h4>120</h4>
+Některé funkce nejsou dostupné pro váš systém (vypnuté při
+kompilaci nebo nejsou implementovány). <a class="aname" id="lbCG" name="lbCG"/>
+<h4>121</h4>
+Funkce není podporována telefonem. <a class="aname" id="lbCH" name="lbCH"/>
+<h4>122</h4>
+Záznam je prázdný. <a class="aname" id="lbCI" name="lbCI"/>
+<h4>123</h4>
+Bezpečnostní chyba. Možná nebyl zadán PIN? <a class="aname" id="lbCJ" name="lbCJ"/>
+<h4>124</h4>
+Chybná pozice. Možná příliš vysoká? <a class="aname" id="lbCK" name="lbCK"/>
+<h4>125</h4>
+Funkcionalita není implementována. Pokud chcete pomoci, autoři
+pomoc uvítají. <a class="aname" id="lbCL" name="lbCL"/>
+<h4>126</h4>
+Paměť je plná. <a class="aname" id="lbCM" name="lbCM"/>
+<h4>127</h4>
+Neznámá chyba. <a class="aname" id="lbCN" name="lbCN"/>
+<h4>128</h4>
+Zvolený soubor nelze otevřít. <a class="aname" id="lbCO" name="lbCO"/>
+<h4>129</h4>
+Je potřeba více paměti... <a class="aname" id="lbCP" name="lbCP"/>
+<h4>130</h4>
+Přístup k souboru nebo zařízení odmítnut... <a class="aname" id="lbCQ" name="lbCQ"/>
+<h4>131</h4>
+Prázdné číslo SMSC. Nastavte ho v telefonu nebo použijte
+-smscnumber. <a class="aname" id="lbCR" name="lbCR"/>
+<h4>132</h4>
+Jste v menu telefonu (upravujete záznam?). Opusťte ho a zkuste
+znovu. <a class="aname" id="lbCS" name="lbCS"/>
+<h4>133</h4>
+Telefon není připojen. <a class="aname" id="lbCT" name="lbCT"/>
+<h4>134</h4>
+Funkce je rozepsána. Pokud chcete pomoci, kontaktuje prosím autory.
+<a class="aname" id="lbCU" name="lbCU"/>
+<h4>135</h4>
+Telefon je vypnutý a připojený k nabíječce. <a class="aname" id="lbCV" name="lbCV"/>
+<h4>136</h4>
+Gammu tento formát nepodporuje. <a class="aname" id="lbCW" name="lbCW"/>
+<h4>137</h4>
+Nikdo není dokonalý, ani Gammu a nastala chyba v implementaci
+protokolu. Prosím kontaktujte autory. <a class="aname" id="lbCX" name="lbCX"/>
+<h4>138</h4>
+Přenos zrušen telefonem, možná jste zadali zrušení přenosu v
+telefonu. <a class="aname" id="lbCY" name="lbCY"/>
+<h4>139</h4>
+Ovladač telefonu potřebuje odeslat ještě jeden rámec. <a class="aname" id="lbCZ" name="lbCZ"/>
+<h4>140</h4>
+Použité připojení nepodporuje požadovanou funkci. <a class="aname" id="lbDA" name="lbDA"/>
+<h4>141</h4>
+Chyba CRC. <a class="aname" id="lbDB" name="lbDB"/>
+<h4>142</h4>
+Zadáno chybné datum nebo čas. <a class="aname" id="lbDC" name="lbDC"/>
+<h4>143</h4>
+Chyba při přístupu do paměti telefonu, možná je jen pro čtení.
+<a class="aname" id="lbDD" name="lbDD"/>
+<h4>144</h4>
+Zadána chybná data. <a class="aname" id="lbDE" name="lbDE"/>
+<h4>145</h4>
+Soubor se zadaným jménem již existuje. <a class="aname" id="lbDF" name="lbDF"/>
+<h4>146</h4>
+Soubor se zadaným jménem neexistuje. <a class="aname" id="lbDG" name="lbDG"/>
+<h4>147</h4>
+Musíte zadat jméno složky, ne souboru. <a class="aname" id="lbDH" name="lbDH"/>
+<h4>148</h4>
+Musíte zadat jméno souboru, ne složky. <a class="aname" id="lbDI" name="lbDI"/>
+<h4>149</h4>
+Nelze přistoupit na SIM kartu. <a class="aname" id="lbDJ" name="lbDJ"/>
+<h4>150</h4>
+Špatný verze programu GNAPPLET v telefonu. Prosím použijte verzi
+obsaženou v Gammu. <a class="aname" id="lbDK" name="lbDK"/>
+<h4>151</h4>
+Byla vypsána jen část složky. <a class="aname" id="lbDL" name="lbDL"/>
+<h4>152</h4>
+Složka musí být prázdná. <a class="aname" id="lbDM" name="lbDM"/>
+<h4>153</h4>
+Data byla převedena. <a class="aname" id="lbDN" name="lbDN"/>
+<h4>154</h4>
+Gammu není nastaveno. <a class="aname" id="lbDO" name="lbDO"/>
+<h4>155</h4>
+Byla použita chybná složka. <a class="aname" id="lbDP" name="lbDP"/>
+<h4>156</h4>
+Interní chyba telefonu. <a class="aname" id="lbDQ" name="lbDQ"/>
+<h4>157</h4>
+Chyba při zápisu souboru na disk. <a class="aname" id="lbDR" name="lbDR"/>
+<h4>158</h4>
+Požadovaná sekce neexistuje. <a class="aname" id="lbDS" name="lbDS"/>
+<h4>159</h4>
+Používám výchozí hodnoty. <a class="aname" id="lbDT" name="lbDT"/>
+<h4>160</h4>
+Telefon vrátil poškozená data. <a class="aname" id="lbDU" name="lbDU"/>
+<h4>161</h4>
+Chybný název vlastnosti v konfiguraci. <a class="aname" id="lbDV" name="lbDV"/>
+<h4>162</h4>
+Požadovaná funkce byla vypnuta při kompilaci. <a class="aname" id="lbDW" name="lbDW"/>
+<h4>163</h4>
+Nastavení bluetooth potřebuje zadat kanál. <a class="aname" id="lbDX" name="lbDX"/>
+<h4>164</h4>
+Služba není spuštěna. <a class="aname" id="lbDY" name="lbDY"/>
+<h4>165</h4>
+Chybí nastavení služby. <a class="aname" id="lbDZ" name="lbDZ"/>
+<h4>166</h4>
+Příkaz byl odmítnut, protože zařízení je zaneprázdněné. Zkuste to
+po chvíli znovu.
+<p><a class="aname" id="lbEA" name="lbEA"/></p>
+<h3>PŘÍKLAD</h3>
+<p><a class="aname" id="lbEB" name="lbEB"/></p>
 <h4>Nastavení</h4>
 <p>Pro vyzkoušení potřebujete vytvořit konfigurační soubor pro
 gammu, který je podrobně popsán v <a href="../gammurc.5/">gammurc</a>(5).</p>
-<p><a class="aname" id="lbBH" name="lbBH"/></p>
+<p><a class="aname" id="lbEC" name="lbEC"/></p>
 <h4>Posílání zpráv</h4>
 <dl compact="compact">
 <dt>Uložení standardní textové zprávy s maximální délkou 160
@@ -1969,7 +2146,7 @@ gammu savesms EMS -protected 2 -variablebitmaplong ala.bmp
 </dl>
 </dd>
 </dl>
-<p><a class="aname" id="lbBI" name="lbBI"/></p>
+<p><a class="aname" id="lbED" name="lbED"/></p>
 <h4>Zálohy</h4>
 <p>If you will backup settings to Gammu text file, it will be
 possible to edit it. It's easy: many things in this file will be
@@ -2008,7 +2185,7 @@ na +3620</dt>
 &quot;\+36\2\3&quot;\n</p>
 </dd>
 </dl>
-<a class="aname" id="lbBJ" name="lbBJ"/>
+<a class="aname" id="lbEE" name="lbEE"/>
 <h3>COPYRIGHT</h3>
 <p>Copyright © 2003-2009 Marcin Wiacek, Michal Čihař a další
 autoři. Licence GPLv2: GNU GPL verze 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
@@ -2016,7 +2193,7 @@ autoři. Licence GPLv2: GNU GPL verze 2 &lt;<a href="http://www.gnu.org/licenses
 Tento program je svobodný software; můžete jej šířit a modifikovat.
 Není poskytována ŽÁDNÁ ZÁRUKA, v rozsahu jaký je povolen
 zákonem.</p>
-<p><a class="aname" id="lbBK" name="lbBK"/></p>
+<p><a class="aname" id="lbEF" name="lbEF"/></p>
 <h3>HLÁŠENÍ CHYB</h3>
 <p>V programu je určitě mnoho chyb a jejich hlášení autorům je
 vítáno. Prosím nezapomeňte na užitečné informace v hlášení o chybě
@@ -2029,8 +2206,7 @@ ho také zapnout na příkazové řádce pomocí -d textall -f
 <dd>
 <pre>
 [gammu]
-connection = vaše nastavení připojení
-port = vaše nastavení portu
+YOUR CONNECTION SETTINGS
 logfile = /tmp/gammu.log
 logformat = textall
 </pre></dd>
@@ -2042,7 +2218,7 @@ telefon.</p>
 <p>Na stránce &lt;<a href="http://wammu.eu/support/bugs/">http://wammu.eu/support/bugs/</a>&gt;
 naleznete více informací o hlášení chyb.</p>
 <p>Prosím hlašte chyby na &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.</p>
-<p><a class="aname" id="lbBL" name="lbBL"/></p>
+<p><a class="aname" id="lbEG" name="lbEG"/></p>
 <h3>AUTOR</h3>
 <p>Autory můžete kontaktovat na &lt;<a href="mailto:gammu-users@lists.sourceforge.net">gammu-users@lists.sourceforge.net</a>&gt;.</p>
 <p><i>Michal Čihař</i> &lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt; je v současné
@@ -2056,7 +2232,7 @@ Kotovi</i> a <i>Manfredu Jonssonovi</i> (v souboru CREDITS v Gnokii
 najdete kompletní seznam přispěvatelů).</p>
 <p>Mnoho dalších lidí pomohlo s různými funkcemi, podívejte se do
 ChangeLogu pro více podrobností.</p>
-<p><a class="aname" id="lbBM" name="lbBM"/></p>
+<p><a class="aname" id="lbEH" name="lbEH"/></p>
 <h3>DALŠÍ INFORMACE</h3>
 <p><a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu-smsd-inject.1/">gammu-smsd-inject</a>(1), <a href="../gammurc.5/">gammurc</a>(5), <a href="../jadmaker.1/">jadmaker</a>(1)</p>
 <p>Nějaké další triky naleznete v souboru README nebo na wiki
@@ -2103,21 +2279,98 @@ stránce &lt;<a href="http://www.gammu.org/">http://www.gammu.org/</a>&gt;.</p>
 </dl>
 </dd>
 <dt><a href="#lbBE">SOUBORY</a></dt>
-<dt><a href="#lbBF">PŘÍKLAD</a></dt>
+<dt><a href="#lbBF">NÁVRATOVÉ KÓDY</a></dt>
 <dd>
 <dl>
-<dt><a href="#lbBG">Nastavení</a></dt>
-<dt><a href="#lbBH">Posílání zpráv</a></dt>
-<dt><a href="#lbBI">Zálohy</a></dt>
+<dt><a href="#lbBG">1</a></dt>
+<dt><a href="#lbBH">2</a></dt>
+<dt><a href="#lbBI">3</a></dt>
+<dt><a href="#lbBJ">4</a></dt>
+<dt><a href="#lbBK">98</a></dt>
+<dt><a href="#lbBL">99</a></dt>
+<dt><a href="#lbBM">101</a></dt>
+<dt><a href="#lbBN">102</a></dt>
+<dt><a href="#lbBO">103</a></dt>
+<dt><a href="#lbBP">104</a></dt>
+<dt><a href="#lbBQ">105</a></dt>
+<dt><a href="#lbBR">106</a></dt>
+<dt><a href="#lbBS">107</a></dt>
+<dt><a href="#lbBT">108</a></dt>
+<dt><a href="#lbBU">109</a></dt>
+<dt><a href="#lbBV">110</a></dt>
+<dt><a href="#lbBW">111</a></dt>
+<dt><a href="#lbBX">112</a></dt>
+<dt><a href="#lbBY">113</a></dt>
+<dt><a href="#lbBZ">114</a></dt>
+<dt><a href="#lbCA">115</a></dt>
+<dt><a href="#lbCB">116</a></dt>
+<dt><a href="#lbCC">117</a></dt>
+<dt><a href="#lbCD">118</a></dt>
+<dt><a href="#lbCE">119</a></dt>
+<dt><a href="#lbCF">120</a></dt>
+<dt><a href="#lbCG">121</a></dt>
+<dt><a href="#lbCH">122</a></dt>
+<dt><a href="#lbCI">123</a></dt>
+<dt><a href="#lbCJ">124</a></dt>
+<dt><a href="#lbCK">125</a></dt>
+<dt><a href="#lbCL">126</a></dt>
+<dt><a href="#lbCM">127</a></dt>
+<dt><a href="#lbCN">128</a></dt>
+<dt><a href="#lbCO">129</a></dt>
+<dt><a href="#lbCP">130</a></dt>
+<dt><a href="#lbCQ">131</a></dt>
+<dt><a href="#lbCR">132</a></dt>
+<dt><a href="#lbCS">133</a></dt>
+<dt><a href="#lbCT">134</a></dt>
+<dt><a href="#lbCU">135</a></dt>
+<dt><a href="#lbCV">136</a></dt>
+<dt><a href="#lbCW">137</a></dt>
+<dt><a href="#lbCX">138</a></dt>
+<dt><a href="#lbCY">139</a></dt>
+<dt><a href="#lbCZ">140</a></dt>
+<dt><a href="#lbDA">141</a></dt>
+<dt><a href="#lbDB">142</a></dt>
+<dt><a href="#lbDC">143</a></dt>
+<dt><a href="#lbDD">144</a></dt>
+<dt><a href="#lbDE">145</a></dt>
+<dt><a href="#lbDF">146</a></dt>
+<dt><a href="#lbDG">147</a></dt>
+<dt><a href="#lbDH">148</a></dt>
+<dt><a href="#lbDI">149</a></dt>
+<dt><a href="#lbDJ">150</a></dt>
+<dt><a href="#lbDK">151</a></dt>
+<dt><a href="#lbDL">152</a></dt>
+<dt><a href="#lbDM">153</a></dt>
+<dt><a href="#lbDN">154</a></dt>
+<dt><a href="#lbDO">155</a></dt>
+<dt><a href="#lbDP">156</a></dt>
+<dt><a href="#lbDQ">157</a></dt>
+<dt><a href="#lbDR">158</a></dt>
+<dt><a href="#lbDS">159</a></dt>
+<dt><a href="#lbDT">160</a></dt>
+<dt><a href="#lbDU">161</a></dt>
+<dt><a href="#lbDV">162</a></dt>
+<dt><a href="#lbDW">163</a></dt>
+<dt><a href="#lbDX">164</a></dt>
+<dt><a href="#lbDY">165</a></dt>
+<dt><a href="#lbDZ">166</a></dt>
 </dl>
 </dd>
-<dt><a href="#lbBJ">COPYRIGHT</a></dt>
-<dt><a href="#lbBK">HLÁŠENÍ CHYB</a></dt>
-<dt><a href="#lbBL">AUTOR</a></dt>
-<dt><a href="#lbBM">DALŠÍ INFORMACE</a></dt>
+<dt><a href="#lbEA">PŘÍKLAD</a></dt>
+<dd>
+<dl>
+<dt><a href="#lbEB">Nastavení</a></dt>
+<dt><a href="#lbEC">Posílání zpráv</a></dt>
+<dt><a href="#lbED">Zálohy</a></dt>
+</dl>
+</dd>
+<dt><a href="#lbEE">COPYRIGHT</a></dt>
+<dt><a href="#lbEF">HLÁŠENÍ CHYB</a></dt>
+<dt><a href="#lbEG">AUTOR</a></dt>
+<dt><a href="#lbEH">DALŠÍ INFORMACE</a></dt>
 </dl>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 09:54:36 GMT, November 30, 2009
+Time: 15:32:43 GMT, November 30, 2009
 </div>
