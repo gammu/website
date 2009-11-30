@@ -229,12 +229,7 @@ SMS class or -1 (0 is normal SMS, 1 is flash one)</p>
 SMS text in &quot;human readable&quot; form</p>
 <p><b>ID</b> (integer unsigned)<br/>
 SMS ID</p>
-<p><b>SenderID</b> (text)</p>
-</dd>
-</dl>
-<a class="aname" id="lbAG" name="lbAG"/>
-<h4>Injecting a message using SQL</h4>
-<p><br/>
+<p><b>SenderID</b> (text)<br/>
 which SMSD instance sent this one sequence</p>
 <p><b>SequencePosition</b> (integer)<br/>
 SMS number in SMS sequence</p>
@@ -244,7 +239,7 @@ Message Reference like in GSM specs</p>
 SMS relative validity like encoded using GSM specs</p>
 <p><b>CreatorID</b> (text)<br/>
 copied from CreatorID from outbox table, matches PhoneID</p>
-<dl compact="compact">
+</dd>
 <dt><b>pbk</b></dt>
 <dd>
 <p>Not used by SMSD currently, included only for application
@@ -256,7 +251,7 @@ usage.</p>
 usage.</p>
 </dd>
 </dl>
-<a class="aname" id="lbAH" name="lbAH"/>
+<a class="aname" id="lbAG" name="lbAG"/>
 <h3>HISTORY</h3>
 <p>History of schema versions:</p>
 <p>11 - all fields for storing message text are no longer limited
@@ -266,9 +261,9 @@ added several indexes</p>
 <p>9 - added sent/received counters to phones table</p>
 <p>8 - introduced phones table</p>
 <p>7 - added CreatorID to tables (it holds PhoneID if set)</p>
-<p><a class="aname" id="lbAI" name="lbAI"/></p>
+<p><a class="aname" id="lbAH" name="lbAH"/></p>
 <h3>EXAMPLE</h3>
-<p><a class="aname" id="lbAJ" name="lbAJ"/></p>
+<p><a class="aname" id="lbAI" name="lbAI"/></p>
 <h4>Creating tables</h4>
 <p>SQL scripts to create all needed tables for most databases are
 included in Gammu documentation (docs/sql). As well as some PHP
@@ -282,7 +277,7 @@ command:<br/>
 sqlite3 smsd.db &lt; docs/sql/sqlite.sql
 </pre></dd>
 </dl>
-<p><a class="aname" id="lbAK" name="lbAK"/></p>
+<p><a class="aname" id="lbAJ" name="lbAJ"/></p>
 <h4>Injecting a message using SQL</h4>
 <p>To send a message, you can either use <a href="../gammu-smsd-inject.1/">gammu-smsd-inject</a>(1), which does all
 the magic for you, or you can insert the message manually. The
@@ -303,7 +298,7 @@ INSERT INTO outbox (
 );
 </pre></dd>
 </dl>
-<p><a class="aname" id="lbAL" name="lbAL"/></p>
+<p><a class="aname" id="lbAK" name="lbAK"/></p>
 <h4>Injecting long message using SQL</h4>
 <p>Inserting multipart messages is a bit more tricky, you need to
 construct also UDH header and store it hexadecimally written into
@@ -349,20 +344,20 @@ INSERT INTO outbox_multipart (
 )
 </pre></dd>
 </dl>
-<p><a class="aname" id="lbAM" name="lbAM"/></p>
+<p><a class="aname" id="lbAL" name="lbAL"/></p>
 <h3>SEE ALSO</h3>
 Database backends: <a href="../gammu-smsd-mysql.7/">gammu-smsd-mysql</a>(7), <a href="../gammu-smsd-pgsql.7/">gammu-smsd-pgsql</a>(7), <a href="../gammu-smsd-dbi.7/">gammu-smsd-dbi</a>(7)
-<p><a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5), <a href="../gammu.1/">gammu</a>(1), <a href="../gammurc.5/">gammurc</a>(5) <a class="aname" id="lbAN" name="lbAN"/></p>
+<p><a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5), <a href="../gammu.1/">gammu</a>(1), <a href="../gammurc.5/">gammurc</a>(5) <a class="aname" id="lbAM" name="lbAM"/></p>
 <h3>AUTHOR</h3>
 gammu-smsd and this manual page were written by Michal Cihar
 &lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt;.
-<a class="aname" id="lbAO" name="lbAO"/>
+<a class="aname" id="lbAN" name="lbAN"/>
 <h3>COPYRIGHT</h3>
 Copyright © 2009 Michal Cihar and other authors. License GPLv2: GNU
 GPL version 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
 
 This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law. <a class="aname" id="lbAP" name="lbAP"/>
+There is NO WARRANTY, to the extent permitted by law. <a class="aname" id="lbAO" name="lbAO"/>
 <h3>REPORTING BUGS</h3>
 Please report bugs to &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.
 <hr/>
@@ -376,25 +371,24 @@ Please report bugs to &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com<
 <dt><a href="#lbAD">Receiving of messages</a></dt>
 <dt><a href="#lbAE">Transmitting of messages</a></dt>
 <dt><a href="#lbAF">Description of tables</a></dt>
-<dt><a href="#lbAG">Injecting a message using SQL</a></dt>
 </dl>
 </dd>
-<dt><a href="#lbAH">HISTORY</a></dt>
-<dt><a href="#lbAI">EXAMPLE</a></dt>
+<dt><a href="#lbAG">HISTORY</a></dt>
+<dt><a href="#lbAH">EXAMPLE</a></dt>
 <dd>
 <dl>
-<dt><a href="#lbAJ">Creating tables</a></dt>
-<dt><a href="#lbAK">Injecting a message using SQL</a></dt>
-<dt><a href="#lbAL">Injecting long message using SQL</a></dt>
+<dt><a href="#lbAI">Creating tables</a></dt>
+<dt><a href="#lbAJ">Injecting a message using SQL</a></dt>
+<dt><a href="#lbAK">Injecting long message using SQL</a></dt>
 </dl>
 </dd>
-<dt><a href="#lbAM">SEE ALSO</a></dt>
-<dt><a href="#lbAN">AUTHOR</a></dt>
-<dt><a href="#lbAO">COPYRIGHT</a></dt>
-<dt><a href="#lbAP">REPORTING BUGS</a></dt>
+<dt><a href="#lbAL">SEE ALSO</a></dt>
+<dt><a href="#lbAM">AUTHOR</a></dt>
+<dt><a href="#lbAN">COPYRIGHT</a></dt>
+<dt><a href="#lbAO">REPORTING BUGS</a></dt>
 </dl>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 21:03:09 GMT, November 08, 2009
+Time: 09:54:36 GMT, November 30, 2009
 </div>

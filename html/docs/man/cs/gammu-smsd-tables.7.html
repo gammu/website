@@ -233,12 +233,7 @@ displej)</p>
 text zprávy v &quot;člověkem čitelné&quot; podobě</p>
 <p><b>ID</b> (integer unsigned)<br/>
 SMS ID</p>
-<p><b>SenderID</b> (text)</p>
-</dd>
-</dl>
-<a class="aname" id="lbAG" name="lbAG"/>
-<h4>Vkládání zpráv pomocí SQL</h4>
-<p><br/>
+<p><b>SenderID</b> (text)<br/>
 která instance SMSD odeslala tuto sekvenci</p>
 <p><b>SequencePosition</b> (integer)<br/>
 pořadí SMS v SMS sekvenci</p>
@@ -248,7 +243,7 @@ reference zprávy, podle specifikací GSM</p>
 platnost SMS zakódovaná podle GSM specifikací</p>
 <p><b>CreatorID</b> (text)<br/>
 zkopírováno CreatorID z tabulky outbox, odpovídá PhoneID</p>
-<dl compact="compact">
+</dd>
 <dt><b>pbk</b></dt>
 <dd>
 <p>SMSD tuto tabulku v současné době nepoužívá, je zde jen pro
@@ -260,7 +255,7 @@ použití v aplikaci.</p>
 použití v aplikaci.</p>
 </dd>
 </dl>
-<a class="aname" id="lbAH" name="lbAH"/>
+<a class="aname" id="lbAG" name="lbAG"/>
 <h3>HISTORIE</h3>
 <p>Historie verzí schématu:</p>
 <p>11 - položky pro ukládání textu zpráv již nejsou omezeny na 160
@@ -272,9 +267,9 @@ phones</p>
 <p>8 - přidána tabulka phones</p>
 <p>7 - do tabulek přidáno CreatorID (obsahuje PhoneID, pokud je
 nastaveno)</p>
-<p><a class="aname" id="lbAI" name="lbAI"/></p>
+<p><a class="aname" id="lbAH" name="lbAH"/></p>
 <h3>PŘÍKLAD</h3>
-<p><a class="aname" id="lbAJ" name="lbAJ"/></p>
+<p><a class="aname" id="lbAI" name="lbAI"/></p>
 <h4>Vytváření tabulek</h4>
 <p>SQL skripty potřebný pro vytvoření všech tabulek pro většinu
 databází je obsažen v dokumentaci Gammu (docs/sql). Ta také
@@ -287,7 +282,7 @@ obsahuje pár PHP skriptů pro práci s databází.</p>
 sqlite3 smsd.db &lt; docs/sql/sqlite.sql
 </pre></dd>
 </dl>
-<p><a class="aname" id="lbAK" name="lbAK"/></p>
+<p><a class="aname" id="lbAJ" name="lbAJ"/></p>
 <h4>Vkládání zpráv pomocí SQL</h4>
 <p>Pro posílání zpráv buď použijte <a href="../gammu-smsd-inject.1/">gammu-smsd-inject</a>(1), které za vás
 udělá veškerou magii, nebo můžete vložit zprávy ručně.
@@ -308,7 +303,7 @@ INSERT INTO outbox (
 );
 </pre></dd>
 </dl>
-<p><a class="aname" id="lbAL" name="lbAL"/></p>
+<p><a class="aname" id="lbAK" name="lbAK"/></p>
 <h4>Vkládání dlouhých zpráv pomocí SQL</h4>
 <p>Inserting multipart messages is a bit more tricky, you need to
 construct also UDH header and store it hexadecimally written into
@@ -354,21 +349,21 @@ INSERT INTO outbox_multipart (
 )
 </pre></dd>
 </dl>
-<p><a class="aname" id="lbAM" name="lbAM"/></p>
+<p><a class="aname" id="lbAL" name="lbAL"/></p>
 <h3>DALŠÍ INFORMACE</h3>
 Databázové služby: <a href="../gammu-smsd-mysql.7/">gammu-smsd-mysql</a>(7), <a href="../gammu-smsd-pgsql.7/">gammu-smsd-pgsql</a>(7), <a href="../gammu-smsd-dbi.7/">gammu-smsd-dbi</a>(7)
-<p><a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5), <a href="../gammu.1/">gammu</a>(1), <a href="../gammurc.5/">gammurc</a>(5) <a class="aname" id="lbAN" name="lbAN"/></p>
+<p><a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5), <a href="../gammu.1/">gammu</a>(1), <a href="../gammurc.5/">gammurc</a>(5) <a class="aname" id="lbAM" name="lbAM"/></p>
 <h3>AUTOR</h3>
 gammu-smsd a tuto manuálovou stránku napsal Michal Čihař
 &lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt;.
-<a class="aname" id="lbAO" name="lbAO"/>
+<a class="aname" id="lbAN" name="lbAN"/>
 <h3>COPYRIGHT</h3>
 Copyright © 2009 Michal Čihař a další autoři. Licence GPLv2: GNU
 GPL verze 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
 
 Tento program je svobodný software; můžete jej šířit a modifikovat.
 Není poskytována ŽÁDNÁ ZÁRUKA, v rozsahu jaký je povolen zákonem.
-<a class="aname" id="lbAP" name="lbAP"/>
+<a class="aname" id="lbAO" name="lbAO"/>
 <h3>HLÁŠENÍ CHYB</h3>
 Prosím hlašte chyby na &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.
 <hr/>
@@ -382,25 +377,24 @@ Prosím hlašte chyby na &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.c
 <dt><a href="#lbAD">Přijímání zpráv</a></dt>
 <dt><a href="#lbAE">Odesílání zpráv</a></dt>
 <dt><a href="#lbAF">Popis tabulek</a></dt>
-<dt><a href="#lbAG">Vkládání zpráv pomocí SQL</a></dt>
 </dl>
 </dd>
-<dt><a href="#lbAH">HISTORIE</a></dt>
-<dt><a href="#lbAI">PŘÍKLAD</a></dt>
+<dt><a href="#lbAG">HISTORIE</a></dt>
+<dt><a href="#lbAH">PŘÍKLAD</a></dt>
 <dd>
 <dl>
-<dt><a href="#lbAJ">Vytváření tabulek</a></dt>
-<dt><a href="#lbAK">Vkládání zpráv pomocí SQL</a></dt>
-<dt><a href="#lbAL">Vkládání dlouhých zpráv pomocí SQL</a></dt>
+<dt><a href="#lbAI">Vytváření tabulek</a></dt>
+<dt><a href="#lbAJ">Vkládání zpráv pomocí SQL</a></dt>
+<dt><a href="#lbAK">Vkládání dlouhých zpráv pomocí SQL</a></dt>
 </dl>
 </dd>
-<dt><a href="#lbAM">DALŠÍ INFORMACE</a></dt>
-<dt><a href="#lbAN">AUTOR</a></dt>
-<dt><a href="#lbAO">COPYRIGHT</a></dt>
-<dt><a href="#lbAP">HLÁŠENÍ CHYB</a></dt>
+<dt><a href="#lbAL">DALŠÍ INFORMACE</a></dt>
+<dt><a href="#lbAM">AUTOR</a></dt>
+<dt><a href="#lbAN">COPYRIGHT</a></dt>
+<dt><a href="#lbAO">HLÁŠENÍ CHYB</a></dt>
 </dl>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 21:03:09 GMT, November 08, 2009
+Time: 09:54:37 GMT, November 30, 2009
 </div>
