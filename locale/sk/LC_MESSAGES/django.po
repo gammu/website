@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-30 15:07+0100\n"
+"POT-Creation-Date: 2009-12-01 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -189,7 +189,7 @@ msgstr ""
 msgid "Third party"
 msgstr ""
 
-#: html/base.html:102 html/index.html:69
+#: html/base.html:102 html/index.html:65
 msgid "News"
 msgstr ""
 
@@ -536,11 +536,11 @@ msgid ""
 "get an idea who we are currently looking for.\n"
 msgstr ""
 
-#: html/index.html:56
+#: html/index.html:52
 msgid "Gammu family"
 msgstr ""
 
-#: html/index.html:58
+#: html/index.html:54
 msgid ""
 "\n"
 "Gammu is now not only a single program but there is lot of useful tools\n"
@@ -1885,7 +1885,9 @@ msgid "Ubuntu packages in PPA (latest stable version)"
 msgstr ""
 
 #: html/downloads/platformlinks.html:17
-msgid "RPM packages (openSUSE, Fedora, Madriva) (latest stable version)"
+msgid ""
+"RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS) (latest stable "
+"version)"
 msgstr ""
 
 #: html/downloads/platformlinks.html:21
