@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-01 14:35+0100\n"
-"PO-Revision-Date: 2009-11-30 15:09+0100\n"
+"PO-Revision-Date: 2009-12-01 14:37+0100\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -2072,11 +2072,12 @@ msgid "Ubuntu packages in PPA (latest stable version)"
 msgstr "Balíčky pro Ubuntu v PPA (poslední stabilní verze)"
 
 #: html/downloads/platformlinks.html:17
-#, fuzzy
 msgid ""
 "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS) (latest stable "
 "version)"
-msgstr "RPM balíčky (openSUSE, Fedora, Madriva) (poslední stabilní verze)"
+msgstr ""
+"RPM balíčky (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS) (poslední "
+"stabilní verze)"
 
 #: html/downloads/platformlinks.html:21
 msgid "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)"
