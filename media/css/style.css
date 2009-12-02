@@ -111,20 +111,6 @@ ul#footer {
     color: #333;
 }
 
-#left {
-	margin: 2em 1em 1em 1em;
-    float: left;
-	padding: 0 2em 0 2em;
-}
-#left ul {
-    margin: 0;
-    padding: 0;
-}
-#left li {
-    margin: 0;
-    padding: 0;
-}
-
 div.clearer {
     clear: both;
     padding: 0;
