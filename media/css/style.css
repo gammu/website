@@ -170,10 +170,6 @@ div.book img {
     border: 1px solid black;
 }
 
-dl.cvslist dt {
-    font-family: monospace;
-}
-
 div.screenshot {
     float: left;
     margin: 0.7em;
