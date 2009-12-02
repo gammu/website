@@ -123,17 +123,6 @@ ul#footer {
     color: #333;
 }
 
-ul.dllist {
-	padding: 0.5em;
-    margin: 0;
-}
-
-ul.dllist li {
-    margin: 0;
-    list-style: none;
-    display: inline;
-}
-
 #left {
 	margin: 2em 1em 1em 1em;
     float: left;
@@ -351,10 +340,6 @@ ul.select li {
 ul.select li a {
     display: block;
 	padding: 0.2em;
-}
-
-table.dllist td { 
-    padding: 2px;
 }
 
 td.size {
