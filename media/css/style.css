@@ -172,14 +172,6 @@ pre {
     max-width: 70em;
 }
 
-td.size {
-    text-align: right;
-}
-
-td.count {
-    text-align: right;
-}
-
 div.excerpt {
     margin: 0.2em;
     padding: 0.2em;
