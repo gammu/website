@@ -106,32 +106,6 @@ div.sidebar {
 	font-size: smaller;
 }
 
-div.rightbuttons {
-    float: right;
-    clear: both;
-    margin: 0 0 1em 1em;
-}
-
-div.rightbutton {
-    padding: 0.5em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-right: 2em;
-    border: 1px solid #8dea34;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    background-color: #62a324;
-    color: white;
-    font-weight: bolder;
-    width: 12em;
-    text-align: center;
-}
-
-div.rightbutton a {
-    color: white;
-}
-
 div.tip {
     border: 1px solid black;
     border-radius: 5px;
