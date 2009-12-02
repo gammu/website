@@ -172,22 +172,6 @@ pre {
     max-width: 70em;
 }
 
-ul.select {
-    padding: 0;
-    margin: 0;
-}
-
-ul.select li {
-    list-style: none;
-    float: left;
-    margin: 0.2em;
-}
-
-ul.select li a {
-    display: block;
-	padding: 0.2em;
-}
-
 td.size {
     text-align: right;
 }
