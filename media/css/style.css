@@ -185,35 +185,6 @@ div.screenshot img {
     overflow: hidden;
 }
 
-div.award p {
-    /* This has to fit for a.awardlink */
-    margin-left: 310px;
-}
-
-p.award {
-    font-size: large;
-    font-weight: bold;
-}
-
-div.award {
-    margin: 4em 1em 4em 1em;
-}
-
-a.awardlink {
-    float: left;
-    height: 100%;
-    display: block;
-    margin: 5px;
-    width: 300px;
-}
-
-img.head {
-    float: left;
-    border: none;
-    margin: 0.2em;
-    padding: 0.2em;
-}
-
 pre {
     border: 1px solid #7C0000;
     margin: 1em;
