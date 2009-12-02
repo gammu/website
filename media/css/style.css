@@ -118,32 +118,6 @@ div.clearer {
     height: 0;
 }
 
-div.themeimgborder {
-    float: right;
-    border: 1px solid #7584b3;
-    margin: 0.2em;
-    padding: 0.2em;
-}
-
-div.themeimg {
-    overflow: hidden;
-    height: 8em;
-    max-width: 30em;
-}
-
-div.theme {
-    float: left;
-    width: 70em;
-    max-width: none;
-    border: 1px solid #7584b3;
-    margin: 0.2em;
-    padding: 0.2em;
-}
-
-a.themelink {
-    padding-left: 0.5em;
-}
-
 div.filedetails {
     font-size: smaller;
 }
@@ -209,17 +183,6 @@ div.screenshot {
 div.screenshot img {
     max-height: 150px;
     overflow: hidden;
-}
-
-div.themeimgborder {
-    border: 1px solid #7584b3;
-    margin: 0.2em;
-    padding: 0.2em;
-}
-
-div.themeimg {
-    overflow: hidden;
-    height: 8em;
 }
 
 div.award p {
