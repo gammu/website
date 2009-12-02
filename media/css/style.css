@@ -75,20 +75,6 @@ body {
 	color: black;
 }
 
-div.banner {
-    width: 80em;
-    max-width: 100%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div.bannerimg {
-    float: right;
-    clear: both;
-    margin: 0;
-}
-
 /* For planet */
 div.sidebar {
 	position: absolute;
@@ -259,18 +245,6 @@ div.screenshot {
 
 div.screenshot img {
     max-height: 150px;
-    overflow: hidden;
-}
-
-div.bookbanner img {
-    border: 1px solid black;
-}
-
-div.bookbanner {
-    float: left;
-    margin: 1em;
-    width: 110px;
-    height: 133px;
     overflow: hidden;
 }
 
