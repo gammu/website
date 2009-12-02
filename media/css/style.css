@@ -118,14 +118,6 @@ div.clearer {
     height: 0;
 }
 
-div.filedetails {
-    font-size: smaller;
-}
-
-p.date {
-    font-size: smaller;
-}
-
 p {
     max-width: 70em;
     margin: 1em;
