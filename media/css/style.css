@@ -126,10 +126,6 @@ p.date {
     font-size: smaller;
 }
 
-p.comments {
-    font-size: smaller;
-}
-
 p {
     max-width: 70em;
     margin: 1em;
@@ -139,6 +135,7 @@ ul, dl {
     margin: 1em;
     max-width: 70em;
 }
+
 div.sidebar ul {
     margin: 0;
 }
@@ -148,26 +145,11 @@ ul ul {
     margin-bottom: 0;
 }
 
-ul.security li.active a {
-	color: black;
-}
-
-p.signature {
-    text-align: right;
-    font-style: italic;
-}
-
 div.floatbox {
     float: left;
     width: 40em;
     margin: 0.2em;
     padding: 0.2em;
-}
-
-div.book img {
-    margin: 1em;
-    float: left;
-    border: 1px solid black;
 }
 
 div.screenshot {
