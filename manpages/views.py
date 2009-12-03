@@ -27,6 +27,7 @@ def show_page(request, page, lang = 'en'):
         raise Http404('No man page matching %s/%s found.' % (lang, page))
     return render_to_response('docs/show_man.html', WammuContext(request, {
         'manpage': manpage,
+        'lang': lang,
         'page': page,
         'others': list_pages(lang),
     }))
