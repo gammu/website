@@ -53,6 +53,10 @@ def list(request, program, platform):
 
     mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
 
+    for c in PLATFORM_CHOICES:
+        if platform == c[0]:
+            platform_name = c[1]
+
     result = render_to_response('downloads/list.html', WammuContext(request, {
         'stable_release': stable_release,
         'testing_release': testing_release,
@@ -60,6 +64,7 @@ def list(request, program, platform):
         'testing_downloads': testing_downloads,
         'program_include': 'downloads/programs/%s-%s.html' % (program, platform),
         'program': get_program(program),
+        'platform': platform_name,
         'mirrors': mirrors,
         'mirror': mirror,
     }))
