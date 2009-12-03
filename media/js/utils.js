@@ -1,12 +1,12 @@
 /**
  * Initializes mirror selection.
  */
-window.addEvent('domready',function(){  
+$(document).ready(function(){
     /* Mirror selection by js */
-    $$('form#mirrorselect select').addEvent('change', function (e) {
-        e.stop();
-        $('mirrorselect').submit();
+    $('form#mirrorselect select').change(function () {
+        $('form#mirrorselect').submit();
+        return true;
     });
     /* Hide submit button */
-    $$('form#mirrorselect input').setStyle('visibility', 'hidden');
+    $('form#mirrorselect input').addClass('jshidden');
 });  

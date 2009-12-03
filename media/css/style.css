@@ -286,3 +286,6 @@ ul.featuresearch li {
     padding: 0;
     margin: 0;
 }
+.jshidden {
+    display: none;
+}
