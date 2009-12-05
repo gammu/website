@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:49+0100\n"
-"PO-Revision-Date: 2009-12-05 16:03+0200\n"
+"PO-Revision-Date: 2009-12-05 17:49+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -208,7 +208,7 @@ msgstr "Obrázky"
 
 #: html/base.html:105
 msgid "Third party"
-msgstr "Dalších aplikace"
+msgstr "Další aplikace"
 
 #: html/base.html:106 html/index.html:54
 msgid "News"
@@ -365,6 +365,11 @@ msgid ""
 "will\n"
 "support various free software websites including this one.\n"
 msgstr ""
+"\n"
+"Tyto stránky jsou zapojeny do <a href=\"http://adbard.net\">reklamní sítě Ad "
+"Bard</a>, která je jako jediná zaměřená na stránky zabývající se svobodnými "
+"programy.\n"
+"Koupí reklamy v této síti podpoříte různé svobodné programy včetně tohoto.\n"
 
 #: html/donate.html:62
 msgid "Other Options"
@@ -663,6 +668,9 @@ msgid ""
 "others\n"
 "it provides following features:\n"
 msgstr ""
+"\n"
+"API zpřístupňuje všechno co můžete s telefonem dělat, mimo jiné podporuje "
+"následující funkce:\n"
 
 #: html/libgammu.html:37
 msgid ""
@@ -682,6 +690,9 @@ msgid ""
 "so to download\n"
 "it just get <a href=\"/download/gammu\">Gammu</a>.\n"
 msgstr ""
+"\n"
+"Knihovna je šířena jako součást <a href=\"/gammu\">Gammu</a>, takže pro její "
+"získání si stáhněte <a href=\"/download/gammu\">Gammu</a>.\n"
 
 #: html/libgammu.html:56
 msgid ""
@@ -930,6 +941,10 @@ msgid ""
 "you creating long text messages and <code>gammu-smsd-monitor</code> which\n"
 "allows you to monitor current status of SMS Daemon or phone.\n"
 msgstr ""
+"\n"
+"Balíček také obsahuje nástroje <code>gammu-smsd-inject</code>, který vám "
+"pomůže s vytvářením dlouhých textových zpráv, a  <code>gammu-smsd-"
+"monitor</code>, který umožňuje monitorovat stav SMS démona a telefonu.\n"
 
 #: html/smsd.html:50
 msgid ""
