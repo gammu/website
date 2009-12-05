@@ -46,11 +46,12 @@
   {% block content %}{% endblock %}
   </div>
 <div class="sidebar">
-<h3>{% trans "Translations" %}</h3>
+<h3>{% trans "Page translations" %}</h3>
 <ul>
 {% for lang in translations %}
 <li><a href="{{ lang.url }}">{{ lang.name }}</a></li>
 {% endfor %}
+<li><a href="/contribute/translate/">{% trans "Translate!" %}</a></li>
 </ul>
   {% block sidebar_top %}{% endblock %}
 {% if downloads_side %}
