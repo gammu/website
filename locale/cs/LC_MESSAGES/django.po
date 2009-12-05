@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-05 15:16+0100\n"
+"POT-Creation-Date: 2009-12-05 15:49+0100\n"
 "PO-Revision-Date: 2009-12-05 15:48+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
-"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Pootle 1.2.1\n"
 
@@ -147,7 +147,7 @@ msgstr "Přeložte!"
 msgid "Downloads"
 msgstr "Stáhnout"
 
-#: html/base.html:66 html/donate.html:50
+#: html/base.html:66 html/donate.html:49
 msgid "Advertisement"
 msgstr "Reklama"
 
@@ -334,18 +334,18 @@ msgid "Bank Account"
 msgstr "Převod peněz / mPeníze"
 
 #: html/donate.html:43
+#, fuzzy
 msgid ""
 "\n"
 "If you have account with Czech bank or can send money directly to Czech\n"
-"account (no international transactions please due to quite heave fees), you\n"
-"can send money to account  2202591725/6210 (account at mBank, BRE Bank S."
-"A.).\n"
+"account, you can send money to account 2202591725/6210 (account at mBank, "
+"BRE Bank S.A.).\n"
 msgstr ""
 "\n"
 "Příspěvky také můžete posílat bankovním převodem na účet\n"
 " 2202591725/6210 (vedený u mBank, resp. BRE Bank S.A.).\n"
 
-#: html/donate.html:53
+#: html/donate.html:52
 msgid ""
 "\n"
 "This website currently participates in <a href=\"http://adbard.net\">The Ad "
@@ -360,11 +360,11 @@ msgid ""
 "support various free software websites including this one.\n"
 msgstr ""
 
-#: html/donate.html:63
+#: html/donate.html:62
 msgid "Other Options"
 msgstr "Další možnosti"
 
-#: html/donate.html:65
+#: html/donate.html:64
 msgid ""
 "\n"
 "You can also give some presents to developers, currently here is <a\n"
