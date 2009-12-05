@@ -1,14 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) 2009 Michal Čihař <michal@cihar.com>
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # Michal Čihař <michal@cihar.com>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:16+0100\n"
-"PO-Revision-Date: 2009-12-05 15:26+0100\n"
+"PO-Revision-Date: 2009-12-05 15:29+0100\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -616,6 +615,13 @@ msgid ""
 "to\n"
 "get an idea who we are currently looking for.\n"
 msgstr ""
+"\n"
+"Do Gammu přispělo mnoho lidí, nejvýznaměnjší přispěvatele naleznete na <a\n"
+"href=\"/authors/\">samostatné stránce</a>. Pokud se k nám chcete přidat, "
+"prosím podívejte se\n"
+"na seznam <a href=\"/contribute/wanted/\"><strong>hledaných schopností</"
+"strong></a>, abyste\n"
+"měli představu, kdo nám v současné době chybí.\n"
 
 #: html/index.html:41
 msgid "Gammu family"
