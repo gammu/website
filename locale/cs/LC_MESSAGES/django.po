@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:16+0100\n"
-"PO-Revision-Date: 2009-12-05 14:40+0100\n"
+"PO-Revision-Date: 2009-12-05 15:26+0100\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -136,14 +136,12 @@ msgid ""
 msgstr ""
 
 #: html/base.html:49
-#, fuzzy
 msgid "Page translations"
-msgstr "Překladatelé"
+msgstr "Překlad stránky"
 
 #: html/base.html:54
-#, fuzzy
 msgid "Translate!"
-msgstr "Překlad"
+msgstr "Přeložte!"
 
 #: html/base.html:58 html/base.html.py:103 html/downloads/program.html:7
 #: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
@@ -1839,6 +1837,9 @@ msgid ""
 "There are lot of examples shipped with Gammu, you can find them in\n"
 "<code>python/examples</code> subdirectory.\n"
 msgstr ""
+"\n"
+"S Gammu je dodáváno mnoho příkladů, naleznete je v podadresáři\n"
+"<code>python/examples</code>.\n"
 
 #: html/docs/faq.html:84
 msgid "General"
@@ -1859,6 +1860,14 @@ msgid ""
 "you might lack support for some specific kind of devices (eg. Bluetooth or\n"
 "USB).\n"
 msgstr ""
+"\n"
+"O Gammu se ví, že běží na mnoha systémech. Může běžet nativně na\n"
+"Linuxu, Mac OS X, FreeBSD, OpenBSD a Microsoft Windows. Pravděpodobně půjde\n"
+"zkompilovat i jinde, ale nikdo to ještě nezkusil. Na některých platfomách "
+"ale\n"
+"můžete postrádat podporu pro některá specifická zařízení (např. Bluetooth "
+"nebo\n"
+"USB).\n"
 
 #: html/docs/index.html:4 html/docs/index.html.py:11
 msgid "Wammu and Gammu Documentation"
@@ -2656,6 +2665,12 @@ msgid ""
 "for the developer to investigate the problem. The most important things to\n"
 "include are:\n"
 msgstr ""
+"\n"
+"Pro hlášení chyb nebo nápadů navylepšení používejte <a href=\"http://bugs."
+"cihar.com/\">bug tracker</a>.\n"
+"Prosím věnujte pozornost abyste poskytli všechny důležité informace, které\n"
+"vývojáři umožní analyzovat problém. Nejdůležitější věci \n"
+"jsou:\n"
 
 #: html/support/bugs.html:25
 msgid ""
@@ -2723,6 +2738,10 @@ msgid ""
 "either by command line (<code>gammu --debug textalldate --debug-file\n"
 "/tmp/gammu.log identify</code>) or using configuration file:\n"
 msgstr ""
+"\n"
+"Aby Gammu vytvořilo ladicí log, musíte mu to říci. To je možné buď na\n"
+"příkazové řádce (<code>gammu --debug textalldate --debug-file\n"
+"/tmp/gammu.log identify</code>) nebo v konfiguračním souboru:\n"
 
 #: html/support/bugs.html:77
 msgid ""
@@ -2742,6 +2761,10 @@ msgid ""
 "set\n"
 "<code>debuglevel</code> to 255:\n"
 msgstr ""
+"\n"
+"Logování Gammu SMSD se nastavuje ve více úrovních. Pro logování všecho "
+"nastavte\n"
+"<code>debuglevel</code> na 255:\n"
 
 #: html/support/buy.html:4 html/support/buy.html.py:12
 msgid "Commercial Support for Wammu and Gammu"
@@ -2997,6 +3020,9 @@ msgid ""
 "notifications\n"
 "there about every commit made to the Gammu source repository.\n"
 msgstr ""
+"\n"
+"Také tam naleznete robota se jménem jako CIA-42, který posílá upozornění\n"
+"na každou změnu provedenou ve veřejném repozítáři se zdrojovými kódy Gammu.\n"
 
 #: html/support/sidebar.html:2
 msgid "Support links"
