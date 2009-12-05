@@ -695,7 +695,7 @@ msgid ""
 "Public License, version 2</a>.\n"
 msgstr ""
 "\n"
-"Gammu, python-gammu a Wammu jsou vydány pod  <a\n"
+"Gammu, python-gammu a Wammu jsou vydány pod <a\n"
 "href=\"http://creativecommons.org/licenses/GPL/2.0/deed.cs\">GNU General\n"
 "Public License, verze 2</a>.\n"
 
