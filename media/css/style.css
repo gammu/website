@@ -289,3 +289,6 @@ ul.featuresearch li {
 .jshidden {
     display: none;
 }
+span.size {
+    white-space: nowrap;
+}
