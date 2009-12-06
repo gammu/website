@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:48+0100\n"
-"PO-Revision-Date: 2009-12-06 19:51+0200\n"
+"PO-Revision-Date: 2009-12-06 19:56+0200\n"
 "Last-Translator: Miroslav <mirecko999@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -132,7 +132,7 @@ msgstr ""
 
 #: html/base.html:54
 msgid "Translate!"
-msgstr ""
+msgstr "Traducir!"
 
 #: html/base.html:58 html/base.html.py:103 html/downloads/program.html:7
 #: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
