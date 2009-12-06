@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:48+0100\n"
-"PO-Revision-Date: 2009-12-07 00:35+0200\n"
+"PO-Revision-Date: 2009-12-07 00:36+0200\n"
 "Last-Translator: Miroslav <mirecko999@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -2371,7 +2371,7 @@ msgstr ""
 
 #: html/screenshots/index.html:9
 msgid "All screenshots"
-msgstr ""
+msgstr "Todas las capturas de pantalla"
 
 #: html/screenshots/wammu_index.html:4 html/screenshots/wammu_index.html:6
 msgid "Wammu Screenshots"
