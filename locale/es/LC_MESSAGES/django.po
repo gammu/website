@@ -704,7 +704,7 @@ msgstr ""
 
 #: html/python-gammu.html:32
 msgid "Example"
-msgstr ""
+msgstr "Ejemplo"
 
 #: html/python-gammu.html:35
 msgid ""
