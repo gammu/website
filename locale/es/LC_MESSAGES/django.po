@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:48+0100\n"
-"PO-Revision-Date: 2009-12-06 19:48+0200\n"
+"PO-Revision-Date: 2009-12-06 19:49+0200\n"
 "Last-Translator: Miroslav <mirecko999@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -196,7 +196,7 @@ msgstr ""
 #: html/base.html:104 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3 wammu/helpers.py:18
 msgid "Screenshots"
-msgstr ""
+msgstr "Capturas de pantalla"
 
 #: html/base.html:105
 msgid "Third party"
