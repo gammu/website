@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:48+0100\n"
-"PO-Revision-Date: 2009-12-06 19:50+0200\n"
+"PO-Revision-Date: 2009-12-06 19:51+0200\n"
 "Last-Translator: Miroslav <mirecko999@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -68,7 +68,7 @@ msgstr ""
 
 #: html/500.html:4 html/500.html.py:8
 msgid "Server Error"
-msgstr ""
+msgstr "Error Servidor"
 
 #: html/500.html:11
 msgid ""
