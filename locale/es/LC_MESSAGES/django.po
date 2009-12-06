@@ -347,7 +347,7 @@ msgstr ""
 
 #: html/donate.html:62
 msgid "Other Options"
-msgstr ""
+msgstr "Otras Opciones"
 
 #: html/donate.html:64
 msgid ""
