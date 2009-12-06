@@ -200,7 +200,7 @@ msgstr ""
 
 #: html/base.html:105
 msgid "Third party"
-msgstr ""
+msgstr "Terceros"
 
 #: html/base.html:106 html/index.html:54
 msgid "News"
