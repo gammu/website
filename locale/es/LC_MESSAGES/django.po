@@ -209,7 +209,7 @@ msgstr "Noticias"
 #: html/python-gammu.html:57 html/smsd.html:71 html/wammu.html:57
 #: html/docs/sidebar.html:2 html/support/sidebar.html:4 wammu/helpers.py:19
 msgid "Documentation"
-msgstr ""
+msgstr "Documentación"
 
 #: html/base.html:112 html/docs/sidebar.html:5
 msgid "FAQ"
