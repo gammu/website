@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:48+0100\n"
-"PO-Revision-Date: 2009-12-07 00:39+0200\n"
+"PO-Revision-Date: 2009-12-07 00:40+0200\n"
 "Last-Translator: Miroslav <mirecko999@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -46,7 +46,7 @@ msgstr "%(programa)s publicación estable %(versión)es"
 #: downloads/models.py:164
 #, python-format
 msgid "%(program)s testing release %(version)s"
-msgstr "%(programa)s publicación en pruebaVersión %(versión)es"
+msgstr "%(programa)s publicación en prueba %(versión)es"
 
 #: html/404.html:4 html/404.html.py:8
 msgid "Page Not Found"
