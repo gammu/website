@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:48+0100\n"
-"PO-Revision-Date: 2009-12-06 20:00+0200\n"
+"PO-Revision-Date: 2009-12-06 20:01+0200\n"
 "Last-Translator: Miroslav <mirecko999@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -213,7 +213,7 @@ msgstr "Documentación"
 
 #: html/base.html:112 html/docs/sidebar.html:5
 msgid "FAQ"
-msgstr ""
+msgstr "Preguntas frecuentes(FAQ)"
 
 #: html/base.html:113 html/docs/sidebar.html:7 html/sidebars/common.html:3
 msgid "Supported phones"
