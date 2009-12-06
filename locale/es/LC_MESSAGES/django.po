@@ -245,7 +245,7 @@ msgstr "Publicidad"
 
 #: html/base.html:132
 msgid "License"
-msgstr ""
+msgstr "Licencia"
 
 #: html/base.html:133
 msgid "Support Gammu/Wammu by donating money!"
