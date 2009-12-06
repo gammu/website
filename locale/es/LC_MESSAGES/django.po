@@ -145,9 +145,8 @@ msgid "Advertisement"
 msgstr "Publicidad"
 
 #: html/base.html:83 html/index.html:19
-#, fuzzy
 msgid "About"
-msgstr "&Acerca de"
+msgstr "Acerca de"
 
 #: html/base.html:85 html/gammu.html:4 html/gammu.html.py:19
 #: html/contribute/translate.html:59
