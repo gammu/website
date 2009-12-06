@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:48+0100\n"
-"PO-Revision-Date: 2009-12-06 19:57+0200\n"
+"PO-Revision-Date: 2009-12-06 19:58+0200\n"
 "Last-Translator: Miroslav <mirecko999@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -174,7 +174,7 @@ msgstr "Soporte"
 
 #: html/base.html:94
 msgid "Mailing lists"
-msgstr ""
+msgstr "Lista de E-mails"
 
 #: html/base.html:95
 msgid "Online"
