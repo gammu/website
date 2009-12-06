@@ -2367,7 +2367,7 @@ msgstr ""
 
 #: html/screenshots/index.html:4 html/screenshots/index.html.py:19
 msgid "Wammu and Gammu Screenshots"
-msgstr ""
+msgstr "Capturas de pantalla de Wammu y Gammu"
 
 #: html/screenshots/index.html:9
 msgid "All screenshots"
