@@ -19,7 +19,7 @@ msgstr ""
 
 #: donate/forms.py:14
 msgid "Amount (EUR)"
-msgstr "importe"
+msgstr "Importe(EUR)"
 
 #: donate/forms.py:16
 msgid "Message from you"
