@@ -229,7 +229,7 @@ msgstr "Para los desarrolladores"
 
 #: html/base.html:119 wammu/helpers.py:20
 msgid "Contribute"
-msgstr ""
+msgstr "Contribuir"
 
 #: html/base.html:121 html/contribute/sidebar.html:5
 msgid "Translate"
