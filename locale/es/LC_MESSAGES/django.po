@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:48+0100\n"
-"PO-Revision-Date: 2009-12-06 19:46+0200\n"
+"PO-Revision-Date: 2009-12-06 19:47+0200\n"
 "Last-Translator: Miroslav <mirecko999@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -170,9 +170,8 @@ msgid "SMSD"
 msgstr "SMS"
 
 #: html/base.html:92 wammu/helpers.py:16
-#, fuzzy
 msgid "Support"
-msgstr "&Soporte"
+msgstr "Soporte"
 
 #: html/base.html:94
 msgid "Mailing lists"
