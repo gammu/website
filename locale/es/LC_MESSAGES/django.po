@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:48+0100\n"
-"PO-Revision-Date: 2009-12-06 19:27+0200\n"
+"PO-Revision-Date: 2009-12-06 19:32+0200\n"
 "Last-Translator: Miroslav <mirecko999@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -27,9 +27,8 @@ msgstr "Mensaje de ti"
 
 #: donate/forms.py:27 donate/forms.py:38 html/base.html:123
 #: html/base.html.py:133 html/contribute/sidebar.html:4
-#, fuzzy
 msgid "Donate"
-msgstr "&Donar"
+msgstr "Donar"
 
 #: downloads/models.py:29
 msgid "Source"
