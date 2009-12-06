@@ -440,9 +440,8 @@ msgstr ""
 
 #: html/gammu.html:11 html/libgammu.html:7 html/python-gammu.html:11
 #: html/smsd.html:11 html/wammu.html:11
-#, fuzzy
 msgid "More information"
-msgstr "Información del teléfono"
+msgstr "Más información"
 
 #: html/gammu.html:22
 msgid ""
