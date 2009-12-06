@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:48+0100\n"
-"PO-Revision-Date: 2009-12-07 00:26+0200\n"
+"PO-Revision-Date: 2009-12-07 00:27+0200\n"
 "Last-Translator: Miroslav <mirecko999@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -2798,7 +2798,7 @@ msgstr "Mensaje multimedia"
 
 #: phonedb/models.py:35
 msgid "Basic phonebook functions (name and phone number)"
-msgstr "Funcciones baicas de agenda (nombre y número de teléfono)"
+msgstr "Funcciones básicas de agenda (nombre y número de teléfono)"
 
 #: phonedb/models.py:36
 msgid "Enhanced phonebook entries (eg. several numbers per entry)"
