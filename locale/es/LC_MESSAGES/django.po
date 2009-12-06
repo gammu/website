@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:48+0100\n"
-"PO-Revision-Date: 2009-12-07 00:37+0200\n"
+"PO-Revision-Date: 2009-12-07 00:38+0200\n"
 "Last-Translator: Miroslav <mirecko999@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -2359,7 +2359,7 @@ msgstr ""
 
 #: html/screenshots/contrib_index.html:4 html/screenshots/contrib_index.html:6
 msgid "Third Party Screenshots"
-msgstr ""
+msgstr "Capturas de pantalla de terceros"
 
 #: html/screenshots/gammu_index.html:4 html/screenshots/gammu_index.html:6
 msgid "Gammu Screenshots"
