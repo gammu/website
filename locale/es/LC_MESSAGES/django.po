@@ -557,7 +557,7 @@ msgstr ""
 
 #: html/libgammu.html:4 html/libgammu.html.py:15
 msgid "libGammu"
-msgstr ""
+msgstr "libGammu"
 
 #: html/libgammu.html:18
 msgid ""
