@@ -237,7 +237,7 @@ msgstr "Traducir"
 
 #: html/base.html:122 html/contribute/sidebar.html:6
 msgid "Develop"
-msgstr ""
+msgstr "Desarrollar"
 
 #: html/base.html:124 html/contribute/sidebar.html:8
 msgid "Publicity"
