@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:48+0100\n"
-"PO-Revision-Date: 2009-12-06 19:49+0200\n"
+"PO-Revision-Date: 2009-12-06 19:50+0200\n"
 "Last-Translator: Miroslav <mirecko999@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -187,7 +187,7 @@ msgstr ""
 
 #: html/base.html:97
 msgid "Commercial support"
-msgstr ""
+msgstr "Soporte comercial"
 
 #: html/base.html:101
 msgid "Media"
