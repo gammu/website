@@ -211,7 +211,7 @@ msgstr "Dokumentacja"
 
 #: html/base.html:112 html/docs/sidebar.html:5
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: html/base.html:113 html/docs/sidebar.html:7 html/sidebars/common.html:3
 msgid "Supported phones"
