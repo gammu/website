@@ -546,7 +546,7 @@ msgstr ""
 
 #: html/index.html:41
 msgid "Gammu family"
-msgstr ""
+msgstr "Familia Gammu"
 
 #: html/index.html:43
 msgid ""
