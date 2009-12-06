@@ -40,7 +40,6 @@ msgstr ""
 
 #: downloads/models.py:159
 #, python-format
-#, fuzzy
 msgid "%(program)s stable release %(version)s"
 msgstr "%(programa)s publicación estable %(versión)es"
 
