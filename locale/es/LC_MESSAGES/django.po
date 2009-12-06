@@ -161,7 +161,7 @@ msgstr "Wammu"
 
 #: html/base.html:87
 msgid "python-gammu"
-msgstr ""
+msgstr "python-gammu"
 
 #: html/base.html:88 html/docs/faq.html:42
 #, fuzzy
