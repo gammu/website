@@ -517,7 +517,7 @@ msgstr ""
 
 #: html/index.html:4
 msgid "Wammu and Gammu"
-msgstr ""
+msgstr "Wammu y Gammu"
 
 #: html/index.html:22
 msgid ""
