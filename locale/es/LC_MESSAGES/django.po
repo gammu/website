@@ -489,7 +489,7 @@ msgstr ""
 #: html/wammu.html:47 html/downloads/list.html:4 html/downloads/program.html:4
 #: html/downloads/release.html:4 wammu/helpers.py:17
 msgid "Download"
-msgstr ""
+msgstr "Descargar"
 
 #: html/gammu.html:63
 msgid ""
