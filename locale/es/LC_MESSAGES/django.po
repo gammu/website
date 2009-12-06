@@ -217,7 +217,7 @@ msgstr "Preguntas frecuentes(FAQ)"
 
 #: html/base.html:113 html/docs/sidebar.html:7 html/sidebars/common.html:3
 msgid "Supported phones"
-msgstr ""
+msgstr "Teléfonos soportados"
 
 #: html/base.html:114 html/docs/sidebar.html:4
 msgid "Man pages"
