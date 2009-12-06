@@ -293,7 +293,7 @@ msgstr "Donar a Gammu"
 
 #: html/donate.html:13
 msgid "Donate Money"
-msgstr ""
+msgstr "Donar Dinero"
 
 #: html/donate.html:15
 msgid ""
