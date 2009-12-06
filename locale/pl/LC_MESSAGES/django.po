@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:49+0100\n"
-"PO-Revision-Date: 2009-12-06 11:59+0200\n"
+"PO-Revision-Date: 2009-12-06 12:02+0200\n"
 "Last-Translator: John_zuk <john_zuk@wp.pl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pl\n"
@@ -207,7 +207,7 @@ msgstr ""
 #: html/python-gammu.html:57 html/smsd.html:71 html/wammu.html:57
 #: html/docs/sidebar.html:2 html/support/sidebar.html:4 wammu/helpers.py:19
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentacja"
 
 #: html/base.html:112 html/docs/sidebar.html:5
 msgid "FAQ"
