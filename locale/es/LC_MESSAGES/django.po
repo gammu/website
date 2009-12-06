@@ -178,7 +178,7 @@ msgstr "Lista de E-mails"
 
 #: html/base.html:95
 msgid "Online"
-msgstr ""
+msgstr "En línea"
 
 #: html/base.html:96
 msgid "Reporting bugs"
