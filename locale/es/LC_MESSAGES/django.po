@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:48+0100\n"
-"PO-Revision-Date: 2009-12-07 16:55+0200\n"
+"PO-Revision-Date: 2009-12-07 16:57+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -1231,7 +1231,7 @@ msgstr ""
 
 #: html/contribute/translate.html:22
 msgid "Gettext"
-msgstr ""
+msgstr "Gettext"
 
 #: html/contribute/translate.html:24
 msgid ""
