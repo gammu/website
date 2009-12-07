@@ -2,62 +2,68 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:48+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2009-12-07 01:58+0200\n"
+"Last-Translator: Miroslav <mirecko999@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.4.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 1.2.1\n"
 
 #: donate/forms.py:14
 msgid "Amount (EUR)"
-msgstr ""
+msgstr "Importe(EUR)"
 
 #: donate/forms.py:16
 msgid "Message from you"
-msgstr ""
+msgstr "Mensaje de ti"
 
 #: donate/forms.py:27 donate/forms.py:38 html/base.html:123
 #: html/base.html.py:133 html/contribute/sidebar.html:4
-#, fuzzy
 msgid "Donate"
-msgstr "&Donar"
+msgstr "Donar"
 
+# open source - código abierto
 #: downloads/models.py:29
+#, fuzzy
 msgid "Source"
-msgstr ""
+msgstr "Fuente"
 
 #: downloads/models.py:30
 msgid "Windows binary"
-msgstr ""
+msgstr "Windows binario"
 
 #: downloads/models.py:159
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr ""
+msgstr "%(programa)s publicación estable %(versión)es"
 
 #: downloads/models.py:164
 #, python-format
 msgid "%(program)s testing release %(version)s"
-msgstr ""
+msgstr "%(programa)s publicación en prueba %(versión)es"
 
 #: html/404.html:4 html/404.html.py:8
 msgid "Page Not Found"
-msgstr ""
+msgstr "Página no encontrada"
 
 #: html/404.html:11
+#, fuzzy
 msgid ""
 "\n"
 "The page you are looking for was not found. Try choosing something from the\n"
 "navigation bellow or use <a href=\"/search\">search facility</a>.\n"
 msgstr ""
+"\n"
+" La página que estas buscando no ha sido encontrada. Trate de elegir algo de "
+"la navegación abajo o utilize <a href=\"/search\">motor de búsqueda</a>.\n"
 
 #: html/404.html:18
 msgid ""
@@ -65,10 +71,13 @@ msgid ""
 "This site includes information about Gammu and Wammu, you might want to\n"
 "continue to pages of following projects:\n"
 msgstr ""
+"\n"
+"Este sitio incluye información sobre Gammu y Wammu, puede que te gustaría "
+"ver las páginas de siguientes proyectos:\n"
 
 #: html/500.html:4 html/500.html.py:8
 msgid "Server Error"
-msgstr ""
+msgstr "Error Servidor"
 
 #: html/500.html:11
 msgid ""
@@ -80,7 +89,7 @@ msgstr ""
 
 #: html/authors.html:4 html/authors.html.py:7
 msgid "Wammu and Gammu Authors"
-msgstr ""
+msgstr "Autores de Wammu y Gammu"
 
 #: html/authors.html:10
 msgid ""
@@ -88,6 +97,10 @@ msgid ""
 "Lot of people contributed to Gammu, python-gammu and Wammu in the past. You\n"
 "can find the most visible here.\n"
 msgstr ""
+"\n"
+"Mucha gente ha contribuido a Gammu, python-gammu y Wammu en el pasado.Los "
+"que más ha contribuido\n"
+" puedes encontrar aqui.\n"
 
 #: html/authors.html:19
 msgid ""
@@ -128,28 +141,27 @@ msgstr ""
 
 #: html/base.html:54
 msgid "Translate!"
-msgstr ""
+msgstr "Traducir!"
 
 #: html/base.html:58 html/base.html.py:103 html/downloads/program.html:7
 #: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
 msgid "Downloads"
-msgstr ""
+msgstr "Descargas"
 
 #: html/base.html:66 html/donate.html:49
 msgid "Advertisement"
-msgstr ""
+msgstr "Publicidad"
 
 #: html/base.html:83 html/index.html:19
-#, fuzzy
 msgid "About"
-msgstr "&Acerca de"
+msgstr "Acerca de"
 
 #: html/base.html:85 html/gammu.html:4 html/gammu.html.py:19
 #: html/contribute/translate.html:59
 msgid "Gammu"
 msgstr "Gammu"
 
-# msgid "&Wammu"
+# msgid "&amp;Wammu"
 #: html/base.html:86 html/wammu.html:4 html/wammu.html.py:22
 #: html/contribute/translate.html:58
 msgid "Wammu"
@@ -157,33 +169,31 @@ msgstr "Wammu"
 
 #: html/base.html:87
 msgid "python-gammu"
-msgstr ""
+msgstr "python-gammu"
 
 #: html/base.html:88 html/docs/faq.html:42
-#, fuzzy
 msgid "SMSD"
-msgstr "SMS"
+msgstr "SMSD"
 
 #: html/base.html:92 wammu/helpers.py:16
-#, fuzzy
 msgid "Support"
-msgstr "&Soporte"
+msgstr "Soporte"
 
 #: html/base.html:94
 msgid "Mailing lists"
-msgstr ""
+msgstr "Lista de E-mails"
 
 #: html/base.html:95
 msgid "Online"
-msgstr ""
+msgstr "En línea"
 
 #: html/base.html:96
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Informar de fallos(bugs)"
 
 #: html/base.html:97
 msgid "Commercial support"
-msgstr ""
+msgstr "Soporte comercial"
 
 #: html/base.html:101
 msgid "Media"
@@ -192,29 +202,29 @@ msgstr ""
 #: html/base.html:104 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3 wammu/helpers.py:18
 msgid "Screenshots"
-msgstr ""
+msgstr "Capturas de pantalla"
 
 #: html/base.html:105
 msgid "Third party"
-msgstr ""
+msgstr "Terceros"
 
 #: html/base.html:106 html/index.html:54
 msgid "News"
-msgstr ""
+msgstr "Noticias"
 
 #: html/base.html:110 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:57 html/smsd.html:71 html/wammu.html:57
 #: html/docs/sidebar.html:2 html/support/sidebar.html:4 wammu/helpers.py:19
 msgid "Documentation"
-msgstr ""
+msgstr "Documentación"
 
 #: html/base.html:112 html/docs/sidebar.html:5
 msgid "FAQ"
-msgstr ""
+msgstr "Preguntas frecuentes(FAQ)"
 
 #: html/base.html:113 html/docs/sidebar.html:7 html/sidebars/common.html:3
 msgid "Supported phones"
-msgstr ""
+msgstr "Teléfonos soportados"
 
 #: html/base.html:114 html/docs/sidebar.html:4
 msgid "Man pages"
@@ -222,58 +232,59 @@ msgstr ""
 
 #: html/base.html:115 html/docs/sidebar.html:6
 msgid "For developers"
-msgstr ""
+msgstr "Para los desarrolladores"
 
 #: html/base.html:119 wammu/helpers.py:20
 msgid "Contribute"
-msgstr ""
+msgstr "Contribuir"
 
 #: html/base.html:121 html/contribute/sidebar.html:5
 msgid "Translate"
-msgstr ""
+msgstr "Traducir"
 
 #: html/base.html:122 html/contribute/sidebar.html:6
 msgid "Develop"
-msgstr ""
+msgstr "Desarrollar"
 
 #: html/base.html:124 html/contribute/sidebar.html:8
 msgid "Publicity"
-msgstr ""
+msgstr "Publicidad"
 
 #: html/base.html:132
 msgid "License"
-msgstr ""
+msgstr "Licencia"
 
 #: html/base.html:133
 msgid "Support Gammu/Wammu by donating money!"
-msgstr ""
+msgstr "Apoyar Gammu / Wammu donando dinero! "
 
 #: html/base.html:134
 msgid "Search for Gammu/Wammu related questions"
-msgstr ""
+msgstr "Buscar  cuestiones relacionadas con Gammu / Wammu"
 
 #: html/base.html:134 html/phonedb/index.html:7
-#, fuzzy
 msgid "Search"
-msgstr "Buscar: "
+msgstr "Buscar"
 
 #: html/base.html:135
 msgid "Gammu and Wammu authors"
-msgstr ""
+msgstr "Autores de Gammu y Wammu"
 
 #: html/base.html:135
 msgid "Authors"
-msgstr ""
+msgstr "Autores"
 
 #: html/base.html:136
 msgid ""
 "Valid <a href=\"http://validator.w3.org/check/referer\">HTML</a> and <a href="
 "\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
 msgstr ""
+"Válido<a href=\"http://validator.w3.org/check/referer\">HTML</a>y<a "
+"href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
 
 #: html/donate-thanks.html:4 html/donate-thanks.html.py:11
 msgid "Thank you for Donation"
-msgstr ""
+msgstr "Gracias por Donar"
 
 #: html/donate-thanks.html:14
 msgid ""
@@ -285,11 +296,11 @@ msgstr ""
 
 #: html/donate.html:4 html/donate.html.py:11
 msgid "Donate to Gammu"
-msgstr ""
+msgstr "Donar a Gammu"
 
 #: html/donate.html:13
 msgid "Donate Money"
-msgstr ""
+msgstr "Donar Dinero"
 
 #: html/donate.html:15
 msgid ""
@@ -316,7 +327,7 @@ msgstr ""
 
 #: html/donate.html:40
 msgid "Bank Account"
-msgstr ""
+msgstr "Cuenta Bancaria"
 
 #: html/donate.html:43
 msgid ""
@@ -343,7 +354,7 @@ msgstr ""
 
 #: html/donate.html:62
 msgid "Other Options"
-msgstr ""
+msgstr "Otras Opciones"
 
 #: html/donate.html:64
 msgid ""
@@ -377,6 +388,8 @@ msgid ""
 "\n"
 "SMS daemon service to receive and send messages automatically.\n"
 msgstr ""
+"\n"
+"servicio SMS deamon para recibir y mandar mensajes automaticamente.\n"
 
 #: html/gammu-family.html:28
 msgid ""
@@ -400,7 +413,7 @@ msgstr ""
 msgid ""
 "\n"
 "MMS retrieval\n"
-msgstr ""
+msgstr "recuperación MMS"
 
 #: html/gammu-features.html:12
 msgid ""
@@ -422,6 +435,8 @@ msgid ""
 "\n"
 "Retrieval of phone and network information\n"
 msgstr ""
+"\n"
+"Recuperación de teléfono y información de red\n"
 
 #: html/gammu-features.html:23
 msgid ""
@@ -432,9 +447,8 @@ msgstr ""
 
 #: html/gammu.html:11 html/libgammu.html:7 html/python-gammu.html:11
 #: html/smsd.html:11 html/wammu.html:11
-#, fuzzy
 msgid "More information"
-msgstr "Información del teléfono"
+msgstr "Más información"
 
 #: html/gammu.html:22
 msgid ""
@@ -482,7 +496,7 @@ msgstr ""
 #: html/wammu.html:47 html/downloads/list.html:4 html/downloads/program.html:4
 #: html/downloads/release.html:4 wammu/helpers.py:17
 msgid "Download"
-msgstr ""
+msgstr "Descargar"
 
 #: html/gammu.html:63
 msgid ""
@@ -490,7 +504,8 @@ msgid ""
 "Just download <a href=\"/download/gammu\">Gammu</a> for your platform and "
 "use\n"
 "it.\n"
-msgstr ""
+msgstr "Descarga ya <a href=\"/download/gammu\">Gammu</a> para tu plataforma y empieza "
+"a usarlo\n"
 
 #: html/gammu.html:71
 msgid ""
@@ -510,7 +525,7 @@ msgstr ""
 
 #: html/index.html:4
 msgid "Wammu and Gammu"
-msgstr ""
+msgstr "Wammu y Gammu"
 
 #: html/index.html:22
 msgid ""
@@ -539,7 +554,7 @@ msgstr ""
 
 #: html/index.html:41
 msgid "Gammu family"
-msgstr ""
+msgstr "Familia Gammu"
 
 #: html/index.html:43
 msgid ""
@@ -550,7 +565,7 @@ msgstr ""
 
 #: html/libgammu.html:4 html/libgammu.html.py:15
 msgid "libGammu"
-msgstr ""
+msgstr "libGammu"
 
 #: html/libgammu.html:18
 msgid ""
@@ -596,7 +611,7 @@ msgstr ""
 
 #: html/license.html:4 html/license.html.py:7
 msgid "Wammu and Gammu License"
-msgstr ""
+msgstr "Licencias de Wammu y Gammu"
 
 #: html/license.html:10
 msgid ""
@@ -666,7 +681,7 @@ msgstr ""
 
 #: html/license.html:80
 msgid "Website Content"
-msgstr ""
+msgstr "Contenido de la web"
 
 #: html/license.html:83
 msgid ""
@@ -697,7 +712,7 @@ msgstr ""
 
 #: html/python-gammu.html:32
 msgid "Example"
-msgstr ""
+msgstr "Ejemplo"
 
 #: html/python-gammu.html:35
 msgid ""
@@ -2352,27 +2367,27 @@ msgstr ""
 
 #: html/screenshots/contrib_index.html:4 html/screenshots/contrib_index.html:6
 msgid "Third Party Screenshots"
-msgstr ""
+msgstr "Capturas de pantalla de terceros"
 
 #: html/screenshots/gammu_index.html:4 html/screenshots/gammu_index.html:6
 msgid "Gammu Screenshots"
-msgstr ""
+msgstr "Capturas de pantallas de Gammu"
 
 #: html/screenshots/index.html:4 html/screenshots/index.html.py:19
 msgid "Wammu and Gammu Screenshots"
-msgstr ""
+msgstr "Capturas de pantalla de Wammu y Gammu"
 
 #: html/screenshots/index.html:9
 msgid "All screenshots"
-msgstr ""
+msgstr "Todas las capturas de pantalla"
 
 #: html/screenshots/wammu_index.html:4 html/screenshots/wammu_index.html:6
 msgid "Wammu Screenshots"
-msgstr ""
+msgstr "Capturas de pantallas de Wammu"
 
 #: html/sidebars/common.html:4
 msgid "How to contribute"
-msgstr ""
+msgstr "Cómo contribuir"
 
 #: html/support/bugs.html:4 html/support/bugs.html.py:12
 msgid "Reporting Bugs in Wammu and Gammu"
@@ -2507,7 +2522,7 @@ msgstr ""
 
 #: html/support/index.html:4 html/support/index.html.py:14
 msgid "Support for Wammu and Gammu"
-msgstr ""
+msgstr "Soporte para Wammu y Gammu"
 
 #: html/support/index.html:17
 msgid ""
@@ -2566,7 +2581,7 @@ msgstr ""
 
 #: html/support/index.html:57
 msgid "Commercial Support"
-msgstr ""
+msgstr "Soporte comercial"
 
 #: html/support/index.html:60
 msgid ""
@@ -2716,7 +2731,7 @@ msgstr ""
 
 #: news/feeds.py:11
 msgid "Updates about Wammu and Gammu programs."
-msgstr ""
+msgstr "Actualizaciones de programas Wammu y Gammu"
 
 #: phonedb/feeds.py:9
 #, fuzzy
@@ -2747,7 +2762,7 @@ msgstr ""
 #: phonedb/forms.py:30
 #, python-format
 msgid "%(description)s (%(name)s)"
-msgstr ""
+msgstr "%(descripción)es (%(nombre)es)"
 
 #: phonedb/models.py:19
 msgid "Use [at] and [dot]"
@@ -2775,7 +2790,7 @@ msgstr ""
 
 #: phonedb/models.py:28
 msgid "Deleted"
-msgstr ""
+msgstr "Borrado"
 
 #: phonedb/models.py:32
 msgid "Phone information"
@@ -2791,7 +2806,7 @@ msgstr "Mensaje multimedia"
 
 #: phonedb/models.py:35
 msgid "Basic phonebook functions (name and phone number)"
-msgstr ""
+msgstr "Funcciones básicas de agenda (nombre y número de teléfono)"
 
 #: phonedb/models.py:36
 msgid "Enhanced phonebook entries (eg. several numbers per entry)"
@@ -2866,4 +2881,4 @@ msgstr ""
 
 #: wammu/helpers.py:28
 msgid "Gammu and Wammu News Feed (Atom)"
-msgstr ""
+msgstr "Gammu y Wammu Noticias Feed (Atom)"
