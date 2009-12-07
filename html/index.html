@@ -14,17 +14,6 @@
 </a>
 </p>
 {% endblock %}
-{% block sidebar %}
-<h3><a href="/phones/">{% trans "Supported phones" %}</a></h3>
-<p>{% blocktrans %}
-Recently enlisted:
-{% endblocktrans %}</p>
-<ul>
-{% for phone in phones %}
-<li><a href="{{ phone.get_absolute_url }}">{{ phone.vendor.name }} {{ phone.name }}</a></li>
-{% endfor %}
-</ul>
-{% endblock %}
 
 {% block content %}
 <h2>{% trans "About" %}</h2>
@@ -69,5 +58,6 @@ sharing same library.
     {% include "news/published.html" %}
     {% endfor %}
 </div>
+
 <div class="clearer"></div>
 {% endblock %}

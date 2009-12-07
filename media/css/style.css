@@ -255,7 +255,7 @@ a.vendor {
     display: block;
     float: left;
     text-align: center;
-    width: 10em;
+    width: 11em;
     margin: 0.4em;
     padding: 0.4em;
     border: 1px solid #7C0000;
@@ -288,4 +288,7 @@ ul.featuresearch li {
 }
 .jshidden {
     display: none;
+}
+span.size {
+    white-space: nowrap;
 }
