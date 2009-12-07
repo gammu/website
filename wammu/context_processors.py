@@ -13,4 +13,7 @@ def translations(request):
     if settings.LANGUAGE_CODE != 'en-us':
         langs.append({'url': 'http://wammu.eu%s' % path, 'name': u'English'})
 
+    if settings.LANGUAGE_CODE != 'es-es':
+        langs.append({'url': 'http://es.wammu.eu%s' % path, 'name': u'Español'})
+
     return {'translations': langs}
