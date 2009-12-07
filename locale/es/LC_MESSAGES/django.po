@@ -2047,7 +2047,7 @@ msgstr "identi.ca"
 
 #: html/news/index.html:10
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: html/news/index.html:12
 msgid "Feeds"
