@@ -2063,7 +2063,7 @@ msgstr "Atom"
 
 #: html/news/index.html:16
 msgid "identi.ca RSS"
-msgstr ""
+msgstr "identi.ca RSS"
 
 #: html/news/index.html:17
 msgid "Twitter RSS"
