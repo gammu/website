@@ -2055,7 +2055,7 @@ msgstr ""
 
 #: html/news/index.html:14 html/phonedb/index.html:30
 msgid "RSS"
-msgstr ""
+msgstr "RSS"
 
 #: html/news/index.html:15 html/phonedb/index.html:31
 msgid "Atom"
