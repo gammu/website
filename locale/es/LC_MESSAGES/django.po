@@ -2127,7 +2127,7 @@ msgstr ""
 
 #: html/phonedb/index.html:32
 msgid "CSV"
-msgstr ""
+msgstr "CSV"
 
 #: html/phonedb/index.html:41
 msgid ""
