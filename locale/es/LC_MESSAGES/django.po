@@ -43,12 +43,12 @@ msgstr "Windows binario"
 #: downloads/models.py:159
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr "%(programa)s publicación estable %(versión)es"
+msgstr "%(program)s publicación estable %(version)s"
 
 #: downloads/models.py:164
 #, python-format
 msgid "%(program)s testing release %(version)s"
-msgstr "%(programa)s publicación en prueba %(versión)es"
+msgstr "%(program)s publicación en prueba %(version)s"
 
 #: html/404.html:4 html/404.html.py:8
 msgid "Page Not Found"
@@ -413,7 +413,7 @@ msgstr ""
 msgid ""
 "\n"
 "MMS retrieval\n"
-msgstr "recuperación MMS"
+msgstr "\nrecuperación MMS\n"
 
 #: html/gammu-features.html:12
 msgid ""
@@ -504,8 +504,8 @@ msgid ""
 "Just download <a href=\"/download/gammu\">Gammu</a> for your platform and "
 "use\n"
 "it.\n"
-msgstr "Descarga ya <a href=\"/download/gammu\">Gammu</a> para tu plataforma y empieza "
-"a usarlo\n"
+msgstr "\nDescarga ya <a href=\"/download/gammu\">Gammu</a> para tu plataforma y empieza "
+"a usarlo.\n"
 
 #: html/gammu.html:71
 msgid ""
@@ -2762,7 +2762,7 @@ msgstr ""
 #: phonedb/forms.py:30
 #, python-format
 msgid "%(description)s (%(name)s)"
-msgstr "%(descripción)es (%(nombre)es)"
+msgstr "%(description)s (%(name)s)"
 
 #: phonedb/models.py:19
 msgid "Use [at] and [dot]"
