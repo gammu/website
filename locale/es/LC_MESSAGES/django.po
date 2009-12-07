@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-07 16:56+0100\n"
-"PO-Revision-Date: 2009-12-07 16:55+0200\n"
+"PO-Revision-Date: 2009-12-07 16:59+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1235,7 +1235,7 @@ msgstr ""
 
 #: html/contribute/translate.html:22
 msgid "Gettext"
-msgstr ""
+msgstr "Gettext"
 
 #: html/contribute/translate.html:24
 msgid ""
@@ -1948,6 +1948,8 @@ msgid ""
 "\n"
 "%(program)s %(version)s\n"
 msgstr ""
+"\n"
+"%(program)s %(version)s\n"
 
 #: html/downloads/release.html:15
 msgid "Changes"
@@ -2045,11 +2047,11 @@ msgstr ""
 
 #: html/news/index.html:9
 msgid "identi.ca"
-msgstr ""
+msgstr "identi.ca"
 
 #: html/news/index.html:10
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: html/news/index.html:12
 msgid "Feeds"
@@ -2057,19 +2059,19 @@ msgstr ""
 
 #: html/news/index.html:14 html/phonedb/index.html:30
 msgid "RSS"
-msgstr ""
+msgstr "RSS"
 
 #: html/news/index.html:15 html/phonedb/index.html:31
 msgid "Atom"
-msgstr ""
+msgstr "Atom"
 
 #: html/news/index.html:16
 msgid "identi.ca RSS"
-msgstr ""
+msgstr "identi.ca RSS"
 
 #: html/news/index.html:17
 msgid "Twitter RSS"
-msgstr ""
+msgstr "Twitter RSS"
 
 #: html/news/index.html:19 html/screenshots/index.html:7
 msgid "Categories"
@@ -2129,7 +2131,7 @@ msgstr ""
 
 #: html/phonedb/index.html:32
 msgid "CSV"
-msgstr ""
+msgstr "CSV"
 
 #: html/phonedb/index.html:41
 msgid ""
@@ -2881,7 +2883,7 @@ msgstr ""
 
 #: wammu/helpers.py:25
 msgid "Gammu and Wammu News Feed (RSS)"
-msgstr ""
+msgstr "Gammu y Wammu Noticias Feed (RSS)"
 
 #: wammu/helpers.py:28
 msgid "Gammu and Wammu News Feed (Atom)"
