@@ -161,7 +161,7 @@ msgstr "Acerca de"
 msgid "Gammu"
 msgstr "Gammu"
 
-# msgid "&amp;Wammu"
+# msgid "&amp;amp;Wammu"
 #: html/base.html:86 html/wammu.html:4 html/wammu.html.py:22
 #: html/contribute/translate.html:58
 msgid "Wammu"
