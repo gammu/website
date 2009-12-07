@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-05 15:48+0100\n"
-"PO-Revision-Date: 2009-12-07 16:58+0200\n"
+"PO-Revision-Date: 2009-12-07 16:59+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -2879,7 +2879,7 @@ msgstr ""
 
 #: wammu/helpers.py:25
 msgid "Gammu and Wammu News Feed (RSS)"
-msgstr ""
+msgstr "Gammu y Wammu Noticias Feed (RSS)"
 
 #: wammu/helpers.py:28
 msgid "Gammu and Wammu News Feed (Atom)"
