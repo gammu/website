@@ -2059,7 +2059,7 @@ msgstr "RSS"
 
 #: html/news/index.html:15 html/phonedb/index.html:31
 msgid "Atom"
-msgstr ""
+msgstr "Atom"
 
 #: html/news/index.html:16
 msgid "identi.ca RSS"
