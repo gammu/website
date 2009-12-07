@@ -1944,6 +1944,8 @@ msgid ""
 "\n"
 "%(program)s %(version)s\n"
 msgstr ""
+"\n"
+"%(program)s %(version)s\n"
 
 #: html/downloads/release.html:15
 msgid "Changes"
