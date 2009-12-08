@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-07 17:01+0100\n"
+"POT-Creation-Date: 2009-12-08 15:33+0100\n"
 "PO-Revision-Date: 2009-12-05 17:49+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -1985,12 +1985,20 @@ msgid ""
 "planned. It should be released around middle of December.\n"
 msgstr ""
 
+#: html/docs/roadmap.html:34
+msgid ""
+"\n"
+"I will try to work on change with locations handling here, but as it is "
+"quite\n"
+"intrusive, it might not be ready for this release.\n"
+msgstr ""
+
 # type: TP
-#: html/docs/roadmap.html:32 html/docs/roadmap.html.py:61
+#: html/docs/roadmap.html:40 html/docs/roadmap.html.py:68
 msgid "Future"
 msgstr "Budoucnost"
 
-#: html/docs/roadmap.html:34
+#: html/docs/roadmap.html:42
 msgid ""
 "\n"
 "There are some major issues which should be addressed in Gammu soon. One\n"
@@ -2001,7 +2009,7 @@ msgid ""
 "path based locations for messages, phonebook, calendar, etc.\n"
 msgstr ""
 
-#: html/docs/roadmap.html:43
+#: html/docs/roadmap.html:51
 msgid ""
 "\n"
 "The another major obstacle which is all around Gammu code is own\n"
@@ -2010,20 +2018,19 @@ msgid ""
 "wchar_t used instead.\n"
 msgstr ""
 
-#: html/docs/roadmap.html:50
+#: html/docs/roadmap.html:58
 msgid "Wammu Roadmap"
 msgstr "Plán vývoje Wammu"
 
-#: html/docs/roadmap.html:54
+#: html/docs/roadmap.html:62
 msgid ""
 "\n"
-"Lot of bug fixes and improvements are already commited for this release. It "
-"is\n"
-"basically just waiting for Gammu 1.27.0 to be released to include it in\n"
-"Windows binary.\n"
+"No definite plans so far, maybe just bug fixes or attract some new "
+"developer\n"
+"and again make some progress.\n"
 msgstr ""
 
-#: html/docs/roadmap.html:63
+#: html/docs/roadmap.html:70
 msgid ""
 "\n"
 "Wammu needs major rewrite in several parts, however developers currently "
