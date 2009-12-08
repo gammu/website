@@ -1,7 +1,7 @@
 from django.shortcuts import render_to_response, get_object_or_404
 from wammu.helpers import WammuContext
 from downloads.models import Download, Release, Mirror, get_program, get_latest_releases, get_current_downloads, PLATFORM_CHOICES, PROGRAM_CHOICES
-from django.http import Http404
+from django.http import Http404, HttpResponse, HttpResponseRedirect
 from django.utils.datastructures import MultiValueDictKeyError
 from django.db.models import Q
 import GeoIP
@@ -163,3 +163,12 @@ def pad(request, program):
         'release': release,
         'platforms': PLATFORM_CHOICES,
     }), mimetype = 'application/xml')
+
+def padmap(request):
+    '''
+    Public list of PAD files.
+    '''
+    response = HttpResponse(mimetype='text/plain')
+    response.write('http://wammu.eu/api/pad/gammu.txt\n')
+    response.write('http://wammu.eu/api/pad/wammu.txt\n')
+    return response

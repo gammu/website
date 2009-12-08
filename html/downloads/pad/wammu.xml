@@ -134,4 +134,14 @@ this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 </EULA>
     </Permissions>
+<PADmap>
+    <PADmap_FORM>Y</PADmap_FORM>
+    <PADmap_DESCRIPTION>
+        Link to plain text file containing all your PAD URLs from current host
+    </PADmap_DESCRIPTION>
+    <PADmap_VERSION>1.0</PADmap_VERSION>
+    <PADmap_URL>http://www.padmaps.org/padmap.htm</PADmap_URL>
+    <PADmap_SCOPE>Company</PADmap_SCOPE>
+    <PADmap_Location>http://wammu.eu/api/pad/padmap.txt</PADmap_Location>
+</PADmap>
 </XML_DIZ_INFO>

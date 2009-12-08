@@ -204,6 +204,7 @@ urlpatterns = patterns('',
     # DOAP/PAD syndication
     (r'^api/doap/(?P<program>[^/.]*).xml$', 'downloads.views.doap'),
     (r'^api/pad/(?P<program>[^/.]*).xml$', 'downloads.views.pad'),
+    (r'^api/pad/padmap.txt$', 'downloads.views.padmap'),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs'
     # to INSTALLED_APPS to enable admin documentation:
