@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-08 15:33+0100\n"
+"POT-Creation-Date: 2009-12-15 10:06+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,20 +30,20 @@ msgstr ""
 msgid "Donate"
 msgstr "&Donera"
 
-#: downloads/models.py:29
+#: downloads/models.py:31
 msgid "Source"
 msgstr ""
 
-#: downloads/models.py:30
+#: downloads/models.py:32
 msgid "Windows binary"
 msgstr ""
 
-#: downloads/models.py:159
+#: downloads/models.py:165
 #, python-format
 msgid "%(program)s stable release %(version)s"
 msgstr ""
 
-#: downloads/models.py:164
+#: downloads/models.py:170
 #, python-format
 msgid "%(program)s testing release %(version)s"
 msgstr ""

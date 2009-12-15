@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-08 15:33+0100\n"
+"POT-Creation-Date: 2009-12-15 10:06+0100\n"
 "PO-Revision-Date: 2009-12-12 21:30+0200\n"
 "Last-Translator: Miroslav <mirecko999@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 1.2.1\n"
 
@@ -31,21 +31,21 @@ msgid "Donate"
 msgstr "Donar"
 
 # open source - código abierto
-#: downloads/models.py:29
+#: downloads/models.py:31
 #, fuzzy
 msgid "Source"
 msgstr "Fuente"
 
-#: downloads/models.py:30
+#: downloads/models.py:32
 msgid "Windows binary"
 msgstr "Windows binario"
 
-#: downloads/models.py:159
+#: downloads/models.py:165
 #, python-format
 msgid "%(program)s stable release %(version)s"
 msgstr "%(program)s publicación estable %(version)s"
 
-#: downloads/models.py:164
+#: downloads/models.py:170
 #, python-format
 msgid "%(program)s testing release %(version)s"
 msgstr "%(program)s publicación en prueba %(version)s"
