@@ -130,7 +130,7 @@ class Release(models.Model):
                 )
             slug = '%s-%s' % (
                 self.program,
-                self.version,
+                self.version.replace('.','-'),
                 )
             category = Category.objects.get(slug = self.program)
             entry = category.entry_set.create(
