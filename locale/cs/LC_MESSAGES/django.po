@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-15 10:11+0100\n"
-"PO-Revision-Date: 2009-12-15 10:11+0100\n"
+"POT-Creation-Date: 2009-12-16 16:43+0100\n"
+"PO-Revision-Date: 2009-12-16 16:47+0100\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1187,6 +1187,14 @@ msgid ""
 "on their site or just clone the repository and investigate it locally. To\n"
 "clone Wammu and Gammu sources, use following commands:\n"
 msgstr ""
+"\n"
+"Repozitáře Git jsou hostovány na serveru <a\n"
+"href=\"http://gitorious.org/\">Gitorious</a> v projektech <a\n"
+"href=\"http://gitorious.org/wammu\">Wammu</a> a <a\n"
+"href=\"http://gitorious.org/gammu\">Gammu</a>. Na jejich stránkách \n"
+"si můžete prohlížet kód nebo si zklonujte repozitář a můžete s nimi pracovat "
+"na vašem disku. Pro klonování kódu Wammu o Gammu použijte následující "
+"příkazy:\n"
 
 #: html/contribute/code.html:68
 msgid ""
@@ -1199,11 +1207,24 @@ msgid ""
 "net</a>.\n"
 msgstr ""
 
-#: html/contribute/code.html:76
+#: html/contribute/code.html:77
+msgid ""
+"\n"
+"Instructions for building and installing are included in file\n"
+"<code>INSTALL</code> in both Gammu and Wammu. For compiling Gammu you need "
+"to\n"
+"have <a href=\"http://www.cmake.org/\">CMake</a>.\n"
+msgstr ""
+"\n"
+"Návod pro kompilaci a instalaci je obsažen v souboru\n"
+"<code>INSTALL.cs</code> jak v Gammu tak i v Wammu. Pro kompilaci Gammu\n"
+"budete potřebovat <a href=\"http://www.cmake.org/\">CMake</a>.\n"
+
+#: html/contribute/code.html:84
 msgid "Code Snapshots"
 msgstr "Snapshoty zdrojového kódu"
 
-#: html/contribute/code.html:78
+#: html/contribute/code.html:86
 msgid ""
 "\n"
 "If you for some reason do not want to use version control system, you can\n"
@@ -1217,11 +1238,11 @@ msgid ""
 "of the code.\n"
 msgstr ""
 
-#: html/contribute/code.html:89
+#: html/contribute/code.html:97
 msgid "Patch Submission"
 msgstr "Posílání patchů"
 
-#: html/contribute/code.html:91
+#: html/contribute/code.html:99
 msgid ""
 "\n"
 "We really do not care much about the way you deliver us patches. However "
@@ -1233,11 +1254,11 @@ msgid ""
 "href=\"/support/bugs\">bug tracker</a>.\n"
 msgstr ""
 
-#: html/contribute/code.html:102
+#: html/contribute/code.html:110
 msgid "Testing"
 msgstr "Testování"
 
-#: html/contribute/code.html:104
+#: html/contribute/code.html:112
 msgid ""
 "\n"
 "Gammu comes with quite comprehensive testsuite, which is being run daily on\n"
@@ -1252,7 +1273,7 @@ msgid ""
 "every night:\n"
 msgstr ""
 
-#: html/contribute/code.html:123
+#: html/contribute/code.html:131
 msgid ""
 "\n"
 "The results are automatically uploaded to the dashboard and developers are\n"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-15 10:11+0100\n"
+"POT-Creation-Date: 2009-12-16 16:43+0100\n"
 "PO-Revision-Date: 2009-12-12 21:30+0200\n"
 "Last-Translator: Miroslav <mirecko999@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1028,11 +1028,20 @@ msgid ""
 "net</a>.\n"
 msgstr ""
 
-#: html/contribute/code.html:76
+#: html/contribute/code.html:77
+msgid ""
+"\n"
+"Instructions for building and installing are included in file\n"
+"<code>INSTALL</code> in both Gammu and Wammu. For compiling Gammu you need "
+"to\n"
+"have <a href=\"http://www.cmake.org/\">CMake</a>.\n"
+msgstr ""
+
+#: html/contribute/code.html:84
 msgid "Code Snapshots"
 msgstr ""
 
-#: html/contribute/code.html:78
+#: html/contribute/code.html:86
 msgid ""
 "\n"
 "If you for some reason do not want to use version control system, you can\n"
@@ -1046,11 +1055,11 @@ msgid ""
 "of the code.\n"
 msgstr ""
 
-#: html/contribute/code.html:89
+#: html/contribute/code.html:97
 msgid "Patch Submission"
 msgstr ""
 
-#: html/contribute/code.html:91
+#: html/contribute/code.html:99
 msgid ""
 "\n"
 "We really do not care much about the way you deliver us patches. However "
@@ -1062,11 +1071,11 @@ msgid ""
 "href=\"/support/bugs\">bug tracker</a>.\n"
 msgstr ""
 
-#: html/contribute/code.html:102
+#: html/contribute/code.html:110
 msgid "Testing"
 msgstr ""
 
-#: html/contribute/code.html:104
+#: html/contribute/code.html:112
 msgid ""
 "\n"
 "Gammu comes with quite comprehensive testsuite, which is being run daily on\n"
@@ -1081,7 +1090,7 @@ msgid ""
 "every night:\n"
 msgstr ""
 
-#: html/contribute/code.html:123
+#: html/contribute/code.html:131
 msgid ""
 "\n"
 "The results are automatically uploaded to the dashboard and developers are\n"
