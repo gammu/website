@@ -305,15 +305,15 @@ INSERT INTO outbox (
 </dl>
 <p><a class="aname" id="lbAK" name="lbAK"/></p>
 <h4>Vkládání dlouhých zpráv pomocí SQL</h4>
-<p>Inserting multipart messages is a bit more tricky, you need to
-construct also UDH header and store it hexadecimally written into
-UDF field.</p>
-<p>For long text message, the UDH starts with 050003 followed by
-byte as a message reference (you can put anything there, but it
-should be different for each message), byte for number of messages
-and byte for number of current message.</p>
-<p>For example long text message of two parts could look like
-following:</p>
+<p>Vkládání dlouhých zpráv složených z více částí je trochu více
+komplikované. Musíte také vytvořit UDH hlavičku a uložit ji
+šestnáctkově do pole UDH.</p>
+<p>Pro dlouhou textovou zprávu, UDH začíná s 050003 následované
+jedním bajtem s referenčním číslem zprávy (můžete sem uložit
+cokoliv, ale mělo by to být jiné pro každou zprávu), bajtem s
+celkovým počet zpráv a bajtem určujícím pořadí aktuální zprávy.</p>
+<p>Například dlouhá textová zpráva skládající se z dvou částí může
+vypadat následovně:</p>
 <dl compact="compact">
 <dd>
 <pre>
@@ -396,5 +396,5 @@ Prosím hlašte chyby na &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.c
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 15:45:23 GMT, December 07, 2009
+Time: 22:21:05 GMT, December 15, 2009
 </div>
