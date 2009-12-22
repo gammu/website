@@ -17,10 +17,6 @@ služeb. Aktuálně použitá je zvolená v konfiguračním souboru
 adresářích zadaných v konfiguračním souboru (viz <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5) pro popis těchto
 parametrů).</p>
 <p><a class="aname" id="lbAD" name="lbAD"/></p>
-<h4>Omezení</h4>
-<p>Služba FILES nepodporuje program <a href="../gammu-smsd-inject.1/">gammu-smsd-inject</a>(1). Podpora pro
-něj může být případně přidána v dalších verzích.</p>
-<p><a class="aname" id="lbAE" name="lbAE"/></p>
 <h4>Přijímání zpráv</h4>
 <p>Přijaté zprávy jsou uloženy v adresáři zadaném v konfiguraci.
 Jméno souboru bude ve tvaru
@@ -37,7 +33,7 @@ více částí, ve formátu NN<br/>
 uloženy s příponou bin</p>
 <p>Souboru obsahuje připatou zprávu ve formátu definovaném
 nastavením InboxFormat (viz <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5)).</p>
-<p><a class="aname" id="lbAF" name="lbAF"/></p>
+<p><a class="aname" id="lbAE" name="lbAE"/></p>
 <h4>Odesílání zpráv</h4>
 <p>Odesílané zprávy jsou čteny z adresáře zadaného v konfiguraci.
 Jméno by mělo být v jednom z následujících formátů:</p>
@@ -70,7 +66,7 @@ rozdělen na Název,URL, pro textové zprávy je použit celý obsah.</p>
 kódování zjištěno pomocí locales, které nemusí být správně
 nastaveny, pokud SMSD běží z init skriptu. Pokud s tím máte
 problémy, přidejte nastavení locales do init skriptu SMSD.</p>
-<p><a class="aname" id="lbAG" name="lbAG"/></p>
+<p><a class="aname" id="lbAF" name="lbAF"/></p>
 <h3>PŘÍKLAD</h3>
 <p>Ukázka souboru se zprávou při použití formátu 'detail':</p>
 <dl compact="compact">
@@ -98,20 +94,20 @@ ReplaceMessage = 0
 MessageReference = 0
 </pre></dd>
 </dl>
-<p><a class="aname" id="lbAH" name="lbAH"/></p>
+<p><a class="aname" id="lbAG" name="lbAG"/></p>
 <h3>DALŠÍ INFORMACE</h3>
-<a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5), <a href="../gammu.1/">gammu</a>(1), <a href="../gammurc.5/">gammurc</a>(5) <a class="aname" id="lbAI" name="lbAI"/>
+<a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5), <a href="../gammu.1/">gammu</a>(1), <a href="../gammurc.5/">gammurc</a>(5) <a class="aname" id="lbAH" name="lbAH"/>
 <h3>AUTOR</h3>
 gammu-smsd a tuto manuálovou stránku napsal Michal Čihař
 &lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt;.
-<a class="aname" id="lbAJ" name="lbAJ"/>
+<a class="aname" id="lbAI" name="lbAI"/>
 <h3>COPYRIGHT</h3>
 Copyright © 2009 Michal Čihař a další autoři. Licence GPLv2: GNU
 GPL verze 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
 
 Tento program je svobodný software; můžete jej šířit a modifikovat.
 Není poskytována ŽÁDNÁ ZÁRUKA, v rozsahu jaký je povolen zákonem.
-<a class="aname" id="lbAK" name="lbAK"/>
+<a class="aname" id="lbAJ" name="lbAJ"/>
 <h3>HLÁŠENÍ CHYB</h3>
 Prosím hlašte chyby na &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.
 <hr/>
@@ -122,19 +118,18 @@ Prosím hlašte chyby na &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.c
 <dt><a href="#lbAC">POPIS</a></dt>
 <dd>
 <dl>
-<dt><a href="#lbAD">Omezení</a></dt>
-<dt><a href="#lbAE">Přijímání zpráv</a></dt>
-<dt><a href="#lbAF">Odesílání zpráv</a></dt>
+<dt><a href="#lbAD">Přijímání zpráv</a></dt>
+<dt><a href="#lbAE">Odesílání zpráv</a></dt>
 </dl>
 </dd>
-<dt><a href="#lbAG">PŘÍKLAD</a></dt>
-<dt><a href="#lbAH">DALŠÍ INFORMACE</a></dt>
-<dt><a href="#lbAI">AUTOR</a></dt>
-<dt><a href="#lbAJ">COPYRIGHT</a></dt>
-<dt><a href="#lbAK">HLÁŠENÍ CHYB</a></dt>
+<dt><a href="#lbAF">PŘÍKLAD</a></dt>
+<dt><a href="#lbAG">DALŠÍ INFORMACE</a></dt>
+<dt><a href="#lbAH">AUTOR</a></dt>
+<dt><a href="#lbAI">COPYRIGHT</a></dt>
+<dt><a href="#lbAJ">HLÁŠENÍ CHYB</a></dt>
 </dl>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 07:37:27 GMT, December 16, 2009
+Time: 11:00:27 GMT, December 22, 2009
 </div>
