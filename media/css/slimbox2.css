@@ -19,7 +19,7 @@
 }
 
 .lbLoading {
-	background: #fff url(/media/images/slimbox/loading.gif) no-repeat center;
+	background: #fff url(/media/images/slimbox/loading.gif) no-repeat scroll center;
 }
 
 #lbImage {
@@ -67,7 +67,7 @@
 	float: right;
 	width: 66px;
 	height: 22px;
-	background: transparent url(/media/images/slimbox/closelabel.gif) no-repeat center;
+	background: transparent url(/media/images/slimbox/closelabel.gif) no-repeat scroll center;
 	margin: 5px 0;
 	outline: none;
 }
