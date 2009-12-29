@@ -247,4 +247,7 @@ urlpatterns = patterns('',
     (r'^api/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
     (r'^api/doap/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
     (r'^api/pad/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
+
+    # Broken links
+    (r'^(?P<link>.*)/\)\.$', 'django.views.generic.simple.redirect_to', {'url': '/%(link)s'}),
 )
