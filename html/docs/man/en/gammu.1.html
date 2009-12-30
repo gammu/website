@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU</h2>
 Section: Gammu Documentation (1)<br/>
-Updated: Dec 3 2009<br/>
+Updated: Dec 22 2009<br/>
 <a href="#index">Index</a> 
 <hr/>
 <p><a class="aname" id="lbAB" name="lbAB"/></p>
@@ -1734,6 +1734,10 @@ will be downloaded and all phone details will be read from it. No
 private data are sent to server. Internet connection to <a href="http://www.gammu.org">www.gammu.org</a> on port 80 required.</p>
 </dd>
 <dt><b>getdisplaystatus</b></dt>
+<dt><b>getlocation</b></dt>
+<dd>Gets network information from phone (same as networkinfo) and
+prints location (latitude and longitude) based on information from
+OpenCellID &lt;<a href="http://opencellid.org">http://opencellid.org</a>&gt;.</dd>
 <dt><b>getsecuritystatus</b></dt>
 <dd>Show, if phone wait for security code (like PIN, PUK, etc.) or
 not</dd>
@@ -2066,14 +2070,19 @@ Service is not runnig. <a class="aname" id="lbDY" name="lbDY"/>
 Service configuration is missing. <a class="aname" id="lbDZ" name="lbDZ"/>
 <h4>166</h4>
 Command rejected because device was busy. Wait and restart.
-<p><a class="aname" id="lbEA" name="lbEA"/></p>
+<a class="aname" id="lbEA" name="lbEA"/>
+<h4>167</h4>
+Could not connect to the server. <a class="aname" id="lbEB" name="lbEB"/>
+<h4>168</h4>
+Could not resolve the host name.
+<p><a class="aname" id="lbEC" name="lbEC"/></p>
 <h3>EXAMPLE</h3>
-<p><a class="aname" id="lbEB" name="lbEB"/></p>
+<p><a class="aname" id="lbED" name="lbED"/></p>
 <h4>Configuration</h4>
 <p>To check it out, you need to have configuration file for gammu,
 see <a href="../gammurc.5/">gammurc</a>(5) for more details about
 it.</p>
-<p><a class="aname" id="lbEC" name="lbEC"/></p>
+<p><a class="aname" id="lbEE" name="lbEE"/></p>
 <h4>Sending messages</h4>
 <dl compact="compact">
 <dt>Save text message up to standard 160 chars:</dt>
@@ -2143,7 +2152,7 @@ gammu savesms EMS -protected 2 -variablebitmaplong ala.bmp
 </dl>
 </dd>
 </dl>
-<p><a class="aname" id="lbED" name="lbED"/></p>
+<p><a class="aname" id="lbEF" name="lbEF"/></p>
 <h4>Backups</h4>
 <p>If you will backup settings to Gammu text file, it will be
 possible to edit it. It's easy: many things in this file will be
@@ -2181,14 +2190,14 @@ line</dt>
 <p>Replace: Type = NumberMobile\nEntry\1Text = &quot;\+36\2\3&quot;\n</p>
 </dd>
 </dl>
-<a class="aname" id="lbEE" name="lbEE"/>
+<a class="aname" id="lbEG" name="lbEG"/>
 <h3>COPYRIGHT</h3>
 <p>Copyright © 2003-2009 Marcin Wiacek, Michal Cihar and other
 authors. License GPLv2: GNU GPL version 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
 
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.</p>
-<p><a class="aname" id="lbEF" name="lbEF"/></p>
+<p><a class="aname" id="lbEH" name="lbEH"/></p>
 <h3>REPORTING BUGS</h3>
 <p>There are definitely many bugs, reporting to author is welcome.
 Please include some useful information when sending bug reports
@@ -2212,7 +2221,7 @@ log.</p>
 <p>See &lt;<a href="http://wammu.eu/support/bugs/">http://wammu.eu/support/bugs/</a>&gt;
 for more information on reporting bugs.</p>
 <p>Please report bugs to &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.</p>
-<p><a class="aname" id="lbEG" name="lbEG"/></p>
+<p><a class="aname" id="lbEI" name="lbEI"/></p>
 <h3>AUTHOR</h3>
 <p>You can contact authors on &lt;<a href="mailto:gammu-users@lists.sourceforge.net">gammu-users@lists.sourceforge.net</a>&gt;.</p>
 <p><i>Michal Cihar</i> &lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt; is current
@@ -2225,7 +2234,7 @@ and <i>Manfred Jonsson</i> (see CREDITS from Gnokii for all their
 contributor).</p>
 <p>Many other people have helped with various features, check
 ChangeLog for more details.</p>
-<p><a class="aname" id="lbEH" name="lbEH"/></p>
+<p><a class="aname" id="lbEJ" name="lbEJ"/></p>
 <h3>SEE ALSO</h3>
 <p><a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu-smsd-inject.1/">gammu-smsd-inject</a>(1), <a href="../gammurc.5/">gammurc</a>(5), <a href="../jadmaker.1/">jadmaker</a>(1)</p>
 <p>Some more hints can be found in README file or on wiki
@@ -2347,23 +2356,25 @@ ChangeLog for more details.</p>
 <dt><a href="#lbDX">164</a></dt>
 <dt><a href="#lbDY">165</a></dt>
 <dt><a href="#lbDZ">166</a></dt>
+<dt><a href="#lbEA">167</a></dt>
+<dt><a href="#lbEB">168</a></dt>
 </dl>
 </dd>
-<dt><a href="#lbEA">EXAMPLE</a></dt>
+<dt><a href="#lbEC">EXAMPLE</a></dt>
 <dd>
 <dl>
-<dt><a href="#lbEB">Configuration</a></dt>
-<dt><a href="#lbEC">Sending messages</a></dt>
-<dt><a href="#lbED">Backups</a></dt>
+<dt><a href="#lbED">Configuration</a></dt>
+<dt><a href="#lbEE">Sending messages</a></dt>
+<dt><a href="#lbEF">Backups</a></dt>
 </dl>
 </dd>
-<dt><a href="#lbEE">COPYRIGHT</a></dt>
-<dt><a href="#lbEF">REPORTING BUGS</a></dt>
-<dt><a href="#lbEG">AUTHOR</a></dt>
-<dt><a href="#lbEH">SEE ALSO</a></dt>
+<dt><a href="#lbEG">COPYRIGHT</a></dt>
+<dt><a href="#lbEH">REPORTING BUGS</a></dt>
+<dt><a href="#lbEI">AUTHOR</a></dt>
+<dt><a href="#lbEJ">SEE ALSO</a></dt>
 </dl>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 15:45:23 GMT, December 07, 2009
+Time: 11:00:27 GMT, December 22, 2009
 </div>

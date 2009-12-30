@@ -13,6 +13,8 @@ from wammu.helpers import process_bug_links
 from django.utils.translation import ugettext as _
 from django.utils.translation import ugettext_lazy
 
+from django.contrib.sites.models import Site, RequestSite
+
 PROGRAM_CHOICES = (
     ('gammu', 'Gammu'),
     ('wammu', 'Wammu'),
@@ -111,13 +113,17 @@ class Release(models.Model):
             self.version_int = 100 * self.version_int
         if self.post_news:
             author = self.author
-            excerpt = '[%s][1] [%s][2] has been just released. %s\n\n[1]: %s\n[2]:%s' % (
-                get_program(self.program),
-                self.version,
-                self.description,
-                PROGRAM_URLS[self.program],
-                self.get_absolute_url(),
-                )
+            if Site._meta.installed:
+                current_site = Site.objects.get_current()
+            else:
+                current_site = RequestSite(self.request)
+            excerpt = '[%(programname)s](%(programurl)s) [%(version)s](%(versionurl)s) has been just released. %(description)s' % {
+                'programname': get_program(self.program),
+                'version': self.version,
+                'description': self.description,
+                'programurl': 'http://%s%s' % (current_site, PROGRAM_URLS[self.program]),
+                'versionurl': 'http://%s%s' % (current_site, self.get_absolute_url()),
+                }
             body = 'Full list of changes:\n\n%s\n\nYou can download it from <http://wammu.eu/download/>.' % self.changelog
             identica_post = self.post_tweet
             identica_text = '#%s %s has been just released' % (
@@ -130,7 +136,7 @@ class Release(models.Model):
                 )
             slug = '%s-%s' % (
                 self.program,
-                self.version,
+                self.version.replace('.','-'),
                 )
             category = Category.objects.get(slug = self.program)
             entry = category.entry_set.create(

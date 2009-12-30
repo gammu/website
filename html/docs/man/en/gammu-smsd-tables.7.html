@@ -210,7 +210,7 @@ status.<br/>
 bug in SMSD).</p>
 <p><b>StatusError</b> (integer)<br/>
 Status of delivery from delivery report message, codes are defined
-in GSM specification.</p>
+in GSM specification 03.40 section 9.2.3.15 (TP-Status).</p>
 <p><b>Text</b> (text)<br/>
 SMS text encoded using hex values</p>
 <p><b>DestinationNumber</b> (varchar(20))<br/>
@@ -302,7 +302,7 @@ INSERT INTO outbox (
 <h4>Injecting long message using SQL</h4>
 <p>Inserting multipart messages is a bit more tricky, you need to
 construct also UDH header and store it hexadecimally written into
-UDF field.</p>
+UDH field.</p>
 <p>For long text message, the UDH starts with 050003 followed by
 byte as a message reference (you can put anything there, but it
 should be different for each message), byte for number of messages
@@ -390,5 +390,5 @@ Please report bugs to &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com<
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 15:45:23 GMT, December 07, 2009
+Time: 11:00:27 GMT, December 22, 2009
 </div>

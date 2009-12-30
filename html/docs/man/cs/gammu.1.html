@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU</h2>
 Section: Dokumentace Gammu (1)<br/>
-Updated: Prosinec 3, 2009<br/>
+Updated: Prosinec 22, 2009<br/>
 <a href="#index">Index</a> 
 <hr/>
 <p><a class="aname" id="lbAB" name="lbAB"/></p>
@@ -358,9 +358,9 @@ parametry pro sendsms a savesms</b>.</p>
 je použito -text) a uloží ho jako textovou zprávu do telefonu nebo
 na SIM kartu.
 <p><b>-flash</b> - SMS třídy 0 (zobrazení jen na displej)</p>
-<p><b>-len len</b> - specify, how many chars will be read. When use
-this option and text will be longer than 1 SMS, will be splitted
-into more linked SMS</p>
+<p><b>-len len</b> - určí, kolik znaků bude načteno. Pokud bude
+zadaný text delší, než se vejde do jedné zprávy, bude automaticky
+rozdělen do více zpráv.</p>
 <p><b>-autolen len</b> - specify, how many chars will be read. When
 use this option and text will be longer than 1 SMS, will be
 splitted into more linked SMS.Coding type (SMS default
@@ -368,9 +368,9 @@ alphabet/Unicode) is set according to input text</p>
 <p><b>-enablevoice</b> | <b>-disablevoice</b> | <b>-enablefax</b> |
 <b>-disablefax</b> | <b>-enableemail</b> | <b>-disableemail</b> -
 nastaví tyto indikátory. Text bude zkrácen na 1 SMS.</p>
-<p><b>-voidsms</b> - many phones after receiving it won't display
-anything, only beep, vibrate or turn on light. Text will be cut to
-1 sms.</p>
+<p><b>-voidsms</b> - při odeslání této zprávy mnoho telefonů nic
+nezobrazí, jen oznámí přijetí nové zprávy. Text bude zkrácen na 1
+sms.</p>
 <p><b>-unicode</b> - SMS bude uložena v unicode.</p>
 <p><b>-inputunicode</b> - zadaný text je v Unicode.</p>
 <p><b>-text</b> - načte text z příkazové řádky místo standardního
@@ -614,8 +614,8 @@ o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
 <p>Použijte parametr -yes pro odověď ano na všechny dotazy (včetně
 dotazu jestli chcete vymazat všechna svoje data).</p>
-<p>Use -memory parameter to force usage of defined memory type for
-storing entries regardless what backu format says.</p>
+<p>Použijte přepínač -memory pro vynucené použití jiného typu
+paměti než je uložena v souboru se zálohou.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Zazálohuje obsah telefonu do souboru. Je možné zálohovat
@@ -931,8 +931,8 @@ o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
 <p>Použijte parametr -yes pro odověď ano na všechny dotazy (včetně
 dotazu jestli chcete vymazat všechna svoje data).</p>
-<p>Use -memory parameter to force usage of defined memory type for
-storing entries regardless what backu format says.</p>
+<p>Použijte přepínač -memory pro vynucené použití jiného typu
+paměti než je uložena v souboru se zálohou.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Zazálohuje obsah telefonu do souboru. Je možné zálohovat
@@ -1039,8 +1039,8 @@ o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
 <p>Použijte parametr -yes pro odověď ano na všechny dotazy (včetně
 dotazu jestli chcete vymazat všechna svoje data).</p>
-<p>Use -memory parameter to force usage of defined memory type for
-storing entries regardless what backu format says.</p>
+<p>Použijte přepínač -memory pro vynucené použití jiného typu
+paměti než je uložena v souboru se zálohou.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Zazálohuje obsah telefonu do souboru. Je možné zálohovat
@@ -1090,8 +1090,8 @@ telefonu není nastaven čas a datum.</p>
 <dd>Umožní převádět mezi různými formáty pro zálohy, které Gammu
 podporuje pro kalendář. Typ souboru je odhadnut (pro vstupní soubor
 podle přípony a obsahu, pro výstupní jen podle přípony).
-<p>For example if you want to convert single entry from gammu
-native backup to vCalendar, you need following command:</p>
+<p>Například pro převedení zálohy gammu na vCalendar můžete použít
+následující příkaz:</p>
 <p><br/>
 gammusavefileCALENDARoutput.vcsmyCalendar.backup260</p>
 </dd>
@@ -1126,8 +1126,8 @@ o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
 <p>Použijte parametr -yes pro odověď ano na všechny dotazy (včetně
 dotazu jestli chcete vymazat všechna svoje data).</p>
-<p>Use -memory parameter to force usage of defined memory type for
-storing entries regardless what backu format says.</p>
+<p>Použijte přepínač -memory pro vynucené použití jiného typu
+paměti než je uložena v souboru se zálohou.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Zazálohuje obsah telefonu do souboru. Je možné zálohovat
@@ -1177,8 +1177,8 @@ telefonu není nastaven čas a datum.</p>
 <dd>Umožní převádět mezi různými formáty pro zálohy, které Gammu
 podporuje pro úkoly. Typ souboru je odhadnut (pro vstupní soubor
 podle přípony a obsahu, pro výstupní jen podle přípony).
-<p>For example if you want to convert single entry from gammu
-native backup to vCalendar, you need following command:</p>
+<p>Například pro převedení zálohy gammu na vCalendar můžete použít
+následující příkaz:</p>
 <p><br/>
 gammusavefileCALENDARoutput.vcsmyCalendar.backup260</p>
 </dd>
@@ -1236,8 +1236,8 @@ o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
 <p>Použijte parametr -yes pro odověď ano na všechny dotazy (včetně
 dotazu jestli chcete vymazat všechna svoje data).</p>
-<p>Use -memory parameter to force usage of defined memory type for
-storing entries regardless what backu format says.</p>
+<p>Použijte přepínač -memory pro vynucené použití jiného typu
+paměti než je uložena v souboru se zálohou.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Zazálohuje obsah telefonu do souboru. Je možné zálohovat
@@ -1289,8 +1289,8 @@ o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
 <p>Použijte parametr -yes pro odověď ano na všechny dotazy (včetně
 dotazu jestli chcete vymazat všechna svoje data).</p>
-<p>Use -memory parameter to force usage of defined memory type for
-storing entries regardless what backu format says.</p>
+<p>Použijte přepínač -memory pro vynucené použití jiného typu
+paměti než je uložena v souboru se zálohou.</p>
 </dd>
 <dt><b>addsms</b> <i>folder file [-yes]</i></dt>
 <dd>Přidá SMS zprávy ze souboru (formát jako používá backupsms) do
@@ -1343,8 +1343,8 @@ podporuje, budou stávající zprávy ve složce přepsány!</dd>
 <dd>Umožní převádět mezi různými formáty pro zálohy, které Gammu
 podporuje pro kalendář. Typ souboru je odhadnut (pro vstupní soubor
 podle přípony a obsahu, pro výstupní jen podle přípony).
-<p>For example if you want to convert single entry from gammu
-native backup to vCalendar, you need following command:</p>
+<p>Například pro převedení zálohy gammu na vCalendar můžete použít
+následující příkaz:</p>
 <p><br/>
 gammusavefileCALENDARoutput.vcsmyCalendar.backup260</p>
 </dd>
@@ -1352,8 +1352,8 @@ gammusavefileCALENDARoutput.vcsmyCalendar.backup260</p>
 <dd>Umožní převádět mezi různými formáty pro zálohy, které Gammu
 podporuje pro úkoly. Typ souboru je odhadnut (pro vstupní soubor
 podle přípony a obsahu, pro výstupní jen podle přípony).
-<p>For example if you want to convert single entry from gammu
-native backup to vCalendar, you need following command:</p>
+<p>Například pro převedení zálohy gammu na vCalendar můžete použít
+následující příkaz:</p>
 <p><br/>
 gammusavefileCALENDARoutput.vcsmyCalendar.backup260</p>
 </dd>
@@ -1503,8 +1503,8 @@ o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
 <p>Použijte parametr -yes pro odověď ano na všechny dotazy (včetně
 dotazu jestli chcete vymazat všechna svoje data).</p>
-<p>Use -memory parameter to force usage of defined memory type for
-storing entries regardless what backu format says.</p>
+<p>Použijte přepínač -memory pro vynucené použití jiného typu
+paměti než je uložena v souboru se zálohou.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Zazálohuje obsah telefonu do souboru. Je možné zálohovat
@@ -1677,8 +1677,8 @@ o stávající obsah v telefonu (tedy ani nejsou detekovány
 duplicity).</p>
 <p>Použijte parametr -yes pro odověď ano na všechny dotazy (včetně
 dotazu jestli chcete vymazat všechna svoje data).</p>
-<p>Use -memory parameter to force usage of defined memory type for
-storing entries regardless what backu format says.</p>
+<p>Použijte přepínač -memory pro vynucené použití jiného typu
+paměti než je uložena v souboru se zálohou.</p>
 </dd>
 <dt><b>backup</b> <i>file [-yes]</i></dt>
 <dd>Zazálohuje obsah telefonu do souboru. Je možné zálohovat
@@ -1731,6 +1731,10 @@ a načtou se z něj informace o telefonu. Nejsou odesílána žádná
 soukromá data. Musí být povolen přístup na <a href="http://www.gammu.org">www.gammu.org</a> na portu 80.</p>
 </dd>
 <dt><b>getdisplaystatus</b></dt>
+<dt><b>getlocation</b></dt>
+<dd>Načte informace o síti z telefonu (stejné jako networkinfo) a
+zobrazí vaše umístění (zeměpisnou šířku a délku) podle informací z
+OpenCellID &lt;<a href="http://opencellid.org">http://opencellid.org</a>&gt;.</dd>
 <dt><b>getsecuritystatus</b></dt>
 <dd>Zobrazí, jestli telefon čeká na bezpečnostní kód (PIN, PUK a
 podobně).</dd>
@@ -2068,14 +2072,18 @@ Služba není spuštěna. <a class="aname" id="lbDY" name="lbDY"/>
 Chybí nastavení služby. <a class="aname" id="lbDZ" name="lbDZ"/>
 <h4>166</h4>
 Příkaz byl odmítnut, protože zařízení je zaneprázdněné. Zkuste to
-po chvíli znovu.
-<p><a class="aname" id="lbEA" name="lbEA"/></p>
+po chvíli znovu. <a class="aname" id="lbEA" name="lbEA"/>
+<h4>167</h4>
+Nepodařilo se připojit k serveru. <a class="aname" id="lbEB" name="lbEB"/>
+<h4>168</h4>
+Nepodařilo se přeložit jméno počítače.
+<p><a class="aname" id="lbEC" name="lbEC"/></p>
 <h3>PŘÍKLAD</h3>
-<p><a class="aname" id="lbEB" name="lbEB"/></p>
+<p><a class="aname" id="lbED" name="lbED"/></p>
 <h4>Nastavení</h4>
 <p>Pro vyzkoušení potřebujete vytvořit konfigurační soubor pro
 gammu, který je podrobně popsán v <a href="../gammurc.5/">gammurc</a>(5).</p>
-<p><a class="aname" id="lbEC" name="lbEC"/></p>
+<p><a class="aname" id="lbEE" name="lbEE"/></p>
 <h4>Posílání zpráv</h4>
 <dl compact="compact">
 <dt>Uložení standardní textové zprávy s maximální délkou 160
@@ -2146,7 +2154,7 @@ gammu savesms EMS -protected 2 -variablebitmaplong ala.bmp
 </dl>
 </dd>
 </dl>
-<p><a class="aname" id="lbED" name="lbED"/></p>
+<p><a class="aname" id="lbEF" name="lbEF"/></p>
 <h4>Zálohy</h4>
 <p>If you will backup settings to Gammu text file, it will be
 possible to edit it. It's easy: many things in this file will be
@@ -2185,7 +2193,7 @@ na +3620</dt>
 &quot;\+36\2\3&quot;\n</p>
 </dd>
 </dl>
-<a class="aname" id="lbEE" name="lbEE"/>
+<a class="aname" id="lbEG" name="lbEG"/>
 <h3>COPYRIGHT</h3>
 <p>Copyright © 2003-2009 Marcin Wiacek, Michal Čihař a další
 autoři. Licence GPLv2: GNU GPL verze 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
@@ -2193,7 +2201,7 @@ autoři. Licence GPLv2: GNU GPL verze 2 &lt;<a href="http://www.gnu.org/licenses
 Tento program je svobodný software; můžete jej šířit a modifikovat.
 Není poskytována ŽÁDNÁ ZÁRUKA, v rozsahu jaký je povolen
 zákonem.</p>
-<p><a class="aname" id="lbEF" name="lbEF"/></p>
+<p><a class="aname" id="lbEH" name="lbEH"/></p>
 <h3>HLÁŠENÍ CHYB</h3>
 <p>V programu je určitě mnoho chyb a jejich hlášení autorům je
 vítáno. Prosím nezapomeňte na užitečné informace v hlášení o chybě
@@ -2206,7 +2214,7 @@ ho také zapnout na příkazové řádce pomocí -d textall -f
 <dd>
 <pre>
 [gammu]
-YOUR CONNECTION SETTINGS
+VAŠE NASTAVENÍ PŘIPOJENÍ
 logfile = /tmp/gammu.log
 logformat = textall
 </pre></dd>
@@ -2218,7 +2226,7 @@ telefon.</p>
 <p>Na stránce &lt;<a href="http://wammu.eu/support/bugs/">http://wammu.eu/support/bugs/</a>&gt;
 naleznete více informací o hlášení chyb.</p>
 <p>Prosím hlašte chyby na &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.</p>
-<p><a class="aname" id="lbEG" name="lbEG"/></p>
+<p><a class="aname" id="lbEI" name="lbEI"/></p>
 <h3>AUTOR</h3>
 <p>Autory můžete kontaktovat na &lt;<a href="mailto:gammu-users@lists.sourceforge.net">gammu-users@lists.sourceforge.net</a>&gt;.</p>
 <p><i>Michal Čihař</i> &lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt; je v současné
@@ -2232,7 +2240,7 @@ Kotovi</i> a <i>Manfredu Jonssonovi</i> (v souboru CREDITS v Gnokii
 najdete kompletní seznam přispěvatelů).</p>
 <p>Mnoho dalších lidí pomohlo s různými funkcemi, podívejte se do
 ChangeLogu pro více podrobností.</p>
-<p><a class="aname" id="lbEH" name="lbEH"/></p>
+<p><a class="aname" id="lbEJ" name="lbEJ"/></p>
 <h3>DALŠÍ INFORMACE</h3>
 <p><a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu-smsd-inject.1/">gammu-smsd-inject</a>(1), <a href="../gammurc.5/">gammurc</a>(5), <a href="../jadmaker.1/">jadmaker</a>(1)</p>
 <p>Nějaké další triky naleznete v souboru README nebo na wiki
@@ -2354,23 +2362,25 @@ stránce &lt;<a href="http://www.gammu.org/">http://www.gammu.org/</a>&gt;.</p>
 <dt><a href="#lbDX">164</a></dt>
 <dt><a href="#lbDY">165</a></dt>
 <dt><a href="#lbDZ">166</a></dt>
+<dt><a href="#lbEA">167</a></dt>
+<dt><a href="#lbEB">168</a></dt>
 </dl>
 </dd>
-<dt><a href="#lbEA">PŘÍKLAD</a></dt>
+<dt><a href="#lbEC">PŘÍKLAD</a></dt>
 <dd>
 <dl>
-<dt><a href="#lbEB">Nastavení</a></dt>
-<dt><a href="#lbEC">Posílání zpráv</a></dt>
-<dt><a href="#lbED">Zálohy</a></dt>
+<dt><a href="#lbED">Nastavení</a></dt>
+<dt><a href="#lbEE">Posílání zpráv</a></dt>
+<dt><a href="#lbEF">Zálohy</a></dt>
 </dl>
 </dd>
-<dt><a href="#lbEE">COPYRIGHT</a></dt>
-<dt><a href="#lbEF">HLÁŠENÍ CHYB</a></dt>
-<dt><a href="#lbEG">AUTOR</a></dt>
-<dt><a href="#lbEH">DALŠÍ INFORMACE</a></dt>
+<dt><a href="#lbEG">COPYRIGHT</a></dt>
+<dt><a href="#lbEH">HLÁŠENÍ CHYB</a></dt>
+<dt><a href="#lbEI">AUTOR</a></dt>
+<dt><a href="#lbEJ">DALŠÍ INFORMACE</a></dt>
 </dl>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 15:45:23 GMT, December 07, 2009
+Time: 11:00:27 GMT, December 22, 2009
 </div>
