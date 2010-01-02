@@ -250,4 +250,8 @@ urlpatterns = patterns('',
 
     # Broken links
     (r'^(?P<link>.*)/\)\.$', 'django.views.generic.simple.redirect_to', {'url': '/%(link)s'}),
+    (r'^en/$', 'django.views.generic.simple.redirect_to', {'url': 'http://wammu.eu/'}),
+    (r'^cs/$', 'django.views.generic.simple.redirect_to', {'url': 'http://cs.wammu.eu/'}),
+    (r'^cz/$', 'django.views.generic.simple.redirect_to', {'url': 'http://cs.wammu.eu/'}),
+    (r'^es/$', 'django.views.generic.simple.redirect_to', {'url': 'http://es.wammu.eu/'}),
 )
