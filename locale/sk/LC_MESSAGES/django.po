@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-16 16:44+0100\n"
+"POT-Creation-Date: 2010-01-06 10:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -163,7 +163,7 @@ msgstr ""
 msgid "SMSD"
 msgstr "SMSC"
 
-#: html/base.html:92 wammu/helpers.py:16
+#: html/base.html:92 wammu/helpers.py:17
 #, fuzzy
 msgid "Support"
 msgstr "&Podpora"
@@ -189,7 +189,7 @@ msgid "Media"
 msgstr ""
 
 #: html/base.html:104 html/index.html:9 html/index.html.py:11
-#: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3 wammu/helpers.py:18
+#: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3 wammu/helpers.py:19
 msgid "Screenshots"
 msgstr ""
 
@@ -203,7 +203,7 @@ msgstr ""
 
 #: html/base.html:110 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:57 html/smsd.html:71 html/wammu.html:57
-#: html/docs/sidebar.html:2 html/support/sidebar.html:4 wammu/helpers.py:19
+#: html/docs/sidebar.html:2 html/support/sidebar.html:4 wammu/helpers.py:20
 msgid "Documentation"
 msgstr ""
 
@@ -223,7 +223,7 @@ msgstr ""
 msgid "For developers"
 msgstr ""
 
-#: html/base.html:119 wammu/helpers.py:20
+#: html/base.html:119 wammu/helpers.py:21
 msgid "Contribute"
 msgstr ""
 
@@ -479,7 +479,7 @@ msgstr ""
 
 #: html/gammu.html:61 html/libgammu.html:45 html/smsd.html:61
 #: html/wammu.html:47 html/downloads/list.html:4 html/downloads/program.html:4
-#: html/downloads/release.html:4 wammu/helpers.py:17
+#: html/downloads/release.html:4 wammu/helpers.py:18
 msgid "Download"
 msgstr ""
 
@@ -991,10 +991,12 @@ msgid ""
 "<code>http://git.gitorious.org/</code>. All repositories are also mirrored "
 "to\n"
 "<a href=\"https://sourceforge.net/scm/?type=git&group_id=78290\">SourceForge."
-"net</a>.\n"
+"net</a> \n"
+"and repo.or.cz (<a href=\"http://repo.or.cz/w/gammu.git\">Gammu</a> and \n"
+"<a href=\"http://repo.or.cz/w/wammu.git\">Wammu</a>).\n"
 msgstr ""
 
-#: html/contribute/code.html:77
+#: html/contribute/code.html:79
 msgid ""
 "\n"
 "Instructions for building and installing are included in file\n"
@@ -1003,11 +1005,11 @@ msgid ""
 "have <a href=\"http://www.cmake.org/\">CMake</a>.\n"
 msgstr ""
 
-#: html/contribute/code.html:84
+#: html/contribute/code.html:86
 msgid "Code Snapshots"
 msgstr ""
 
-#: html/contribute/code.html:86
+#: html/contribute/code.html:88
 msgid ""
 "\n"
 "If you for some reason do not want to use version control system, you can\n"
@@ -1021,11 +1023,11 @@ msgid ""
 "of the code.\n"
 msgstr ""
 
-#: html/contribute/code.html:97
+#: html/contribute/code.html:99
 msgid "Patch Submission"
 msgstr ""
 
-#: html/contribute/code.html:99
+#: html/contribute/code.html:101
 msgid ""
 "\n"
 "We really do not care much about the way you deliver us patches. However "
@@ -1037,11 +1039,11 @@ msgid ""
 "href=\"/support/bugs\">bug tracker</a>.\n"
 msgstr ""
 
-#: html/contribute/code.html:110
+#: html/contribute/code.html:112
 msgid "Testing"
 msgstr ""
 
-#: html/contribute/code.html:112
+#: html/contribute/code.html:114
 msgid ""
 "\n"
 "Gammu comes with quite comprehensive testsuite, which is being run daily on\n"
@@ -1056,7 +1058,7 @@ msgid ""
 "every night:\n"
 msgstr ""
 
-#: html/contribute/code.html:131
+#: html/contribute/code.html:133
 msgid ""
 "\n"
 "The results are automatically uploaded to the dashboard and developers are\n"
@@ -2027,12 +2029,13 @@ msgstr "&Webová stránka"
 msgid "Third Party News"
 msgstr ""
 
-#: html/news/gammu_index.html:4 html/news/gammu_index.html.py:6
-msgid "Gammu News"
+#: html/news/entry.html:4 html/news/index.html:4 html/news/index.html.py:31
+#: news/feeds.py:9
+msgid "Wammu and Gammu News"
 msgstr ""
 
-#: html/news/index.html:4 html/news/index.html.py:31 news/feeds.py:9
-msgid "Wammu and Gammu News"
+#: html/news/gammu_index.html:4 html/news/gammu_index.html.py:6
+msgid "Gammu News"
 msgstr ""
 
 #: html/news/index.html:7
@@ -2873,10 +2876,10 @@ msgstr ""
 msgid "Phone record has been created."
 msgstr ""
 
-#: wammu/helpers.py:25
+#: wammu/helpers.py:26
 msgid "Gammu and Wammu News Feed (RSS)"
 msgstr ""
 
-#: wammu/helpers.py:28
+#: wammu/helpers.py:29
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr ""
