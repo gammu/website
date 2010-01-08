@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU</h2>
 Section: Gammu Documentation (1)<br/>
-Updated: Dec 22 2009<br/>
+Updated: Jan 8 2010<br/>
 <a href="#index">Index</a> 
 <hr/>
 <p><a class="aname" id="lbAB" name="lbAB"/></p>
@@ -198,7 +198,9 @@ for sendsms and savesms</b>.</p>
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
 num]</i></dt>
 <dd>Read calendar note from file created by <b>backup</b> option
-and saves in VCALENDAR 1.0 format as SMS.
+and saves in VCALENDAR 1.0 format as SMS. The location identifies
+position of calendar item to be read in backup file (usually 1, but
+can be useful in case the backup contains more items).
 <p>For description of shared parameters see <b>Common parameters
 for sendsms and savesms</b>.</p>
 </dd>
@@ -346,12 +348,12 @@ for sendsms and savesms</b>.</p>
 save as text SMS into SIM/phone memory.
 <p><b>-flash</b> - Class 0 SMS</p>
 <p><b>-len len</b> - specify, how many chars will be read. When use
-this option and text will be longer than 1 SMS, will be splitted
-into more linked SMS</p>
+this option and text will be longer than 1 SMS, will be split into
+more linked SMS</p>
 <p><b>-autolen len</b> - specify, how many chars will be read. When
-use this option and text will be longer than 1 SMS, will be
-splitted into more linked SMS.Coding type (SMS default
-alphabet/Unicode) is set according to input text</p>
+use this option and text will be longer than 1 SMS, will be split
+into more linked SMS.Coding type (SMS default alphabet/Unicode) is
+set according to input text</p>
 <p><b>-enablevoice</b> | <b>-disablevoice</b> | <b>-enablefax</b> |
 <b>-disablefax</b> | <b>-enableemail</b> | <b>-disableemail</b> -
 sms will set such indicators. Text will be cut to 1 sms.</p>
@@ -400,7 +402,10 @@ for sendsms and savesms</b>.</p>
 [-maxsms num]</i></dt>
 <dd>Read phonebook entry from file created by <b>backup</b> option
 and saves in VCARD 1.0 (only name and default number) or VCARD 2.1
-(all entry details with all numbers, text and name) format as SMS
+(all entry details with all numbers, text and name) format as SMS.
+The location identifies position of contact item to be read in
+backup file (usually 1, but can be useful in case the backup
+contains more items).
 <p>For description of shared parameters see <b>Common parameters
 for sendsms and savesms</b>.</p>
 </dd>
@@ -687,7 +692,10 @@ gammusavefileCALENDARoutput.vcfmyPhonebook.backupME42</p>
 [-maxsms num]</i></dt>
 <dd>Read phonebook entry from file created by <b>backup</b> option
 and saves in VCARD 1.0 (only name and default number) or VCARD 2.1
-(all entry details with all numbers, text and name) format as SMS
+(all entry details with all numbers, text and name) format as SMS.
+The location identifies position of contact item to be read in
+backup file (usually 1, but can be useful in case the backup
+contains more items).
 <p>For description of shared parameters see <b>Common parameters
 for sendsms and savesms</b>.</p>
 </dd>
@@ -893,7 +901,7 @@ for sendsms and savesms</b>.</p>
 <dd>Set operator logo in phone. When won't give file and netcode,
 operator logo will be removed from phone. When will give only
 filename, operator logo will be displayed for your current GSM
-operator. When give additionaly network code, it will be displayed
+operator. When give additionally network code, it will be displayed
 for this operator: <b>gammu setbitmap OPERATOR file &quot;260
 02&quot;</b></dd>
 <dt><b>setbitmap PICTURE</b> <i>file location [text]</i></dt>
@@ -1090,7 +1098,9 @@ gammusavefileCALENDARoutput.vcsmyCalendar.backup260</p>
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
 num]</i></dt>
 <dd>Read calendar note from file created by <b>backup</b> option
-and saves in VCALENDAR 1.0 format as SMS.
+and saves in VCALENDAR 1.0 format as SMS. The location identifies
+position of calendar item to be read in backup file (usually 1, but
+can be useful in case the backup contains more items).
 <p>For description of shared parameters see <b>Common parameters
 for sendsms and savesms</b>.</p>
 </dd>
@@ -2160,7 +2170,7 @@ written double - once in Unicode, once in ASCII. When you will
 remove Unicode version Gammu will use ASCII on <b>restore</b> (and
 you can easy edit ASCII text) and will convert it according to your
 OS locale. When will be available Unicode version of text, it will
-be used instead of ASCII (usefull with Unicode phones - it isn't
+be used instead of ASCII (useful with Unicode phones - it isn't
 important, what locale is set in computer and no conversion Unicode
 -&gt; ASCII and ASCII -&gt; Unicode is done).</p>
 <p>You can use any editor with regular expressions function to edit
@@ -2192,7 +2202,7 @@ line</dt>
 </dl>
 <a class="aname" id="lbEG" name="lbEG"/>
 <h3>COPYRIGHT</h3>
-<p>Copyright © 2003-2009 Marcin Wiacek, Michal Cihar and other
+<p>Copyright © 2003 - 2010 Marcin Wiacek, Michal Cihar and other
 authors. License GPLv2: GNU GPL version 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
 
 This is free software: you are free to change and redistribute it.
@@ -2376,5 +2386,5 @@ ChangeLog for more details.</p>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 11:00:27 GMT, December 22, 2009
+Time: 16:03:17 GMT, January 08, 2010
 </div>

@@ -48,6 +48,9 @@ on Windows.</dd>
 <dd>Starts SMSD Windows service.</dd>
 <dt><b>-k</b>, <b>--stop-service</b></dt>
 <dd>Stops SMSD Windows service.</dd>
+<dt><b>-f</b>, <b>--max-failures</b>=<i>count</i></dt>
+<dd>Terminate after defined number of failures. Use 0 to not
+terminate (this is default).</dd>
 <dt><b>-X</b>, <b>--suicide</b>=<i>seconds</i></dt>
 <dd>Kills itself after number of seconds.</dd>
 <dt><b>-S</b>, <b>--run-service</b></dt>
@@ -64,7 +67,7 @@ to name each service differently. Default is &quot;GammuSMSD&quot;.</dd>
 <p><a class="aname" id="lbAF" name="lbAF"/></p>
 <h4>Linux/Unix Examples</h4>
 <dl compact="compact">
-<dt>Start SMSD as a deamon on Linux:</dt>
+<dt>Start SMSD as a daemon on Linux:</dt>
 <dd>
 <dl compact="compact">
 <dd>
@@ -75,7 +78,7 @@ gammu-smsd --config /etc/gammu-smsdrc --pid /var/run/gammu-smsd.pid --daemon
 </dd>
 </dl>
 <dl compact="compact">
-<dt>Start SMSD as a deamon on Linux with reduced privileges:</dt>
+<dt>Start SMSD as a daemon on Linux with reduced privileges:</dt>
 <dd>
 <dl compact="compact">
 <dd>
@@ -204,5 +207,5 @@ logfile = smsd.log
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 11:00:27 GMT, December 22, 2009
+Time: 16:03:18 GMT, January 08, 2010
 </div>

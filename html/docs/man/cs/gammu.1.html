@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU</h2>
 Section: Dokumentace Gammu (1)<br/>
-Updated: Prosinec 22, 2009<br/>
+Updated: Leden 8, 2010<br/>
 <a href="#index">Index</a> 
 <hr/>
 <p><a class="aname" id="lbAB" name="lbAB"/></p>
@@ -203,9 +203,11 @@ parametry pro sendsms a savesms</b>.</p>
 [-read] [-unsent] [-sent] [-sender number] [-smsname name]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
 num]</i></dt>
-<dd>Načte kalendář ze zálohy (formáty jaké vytváří funkce
-<b>backup</b>) a uloží ho do telefonu jako SMS ve formátu VCALENDAR
-1.0.
+<dd>Načte poznámku kalendáře ze zálohy vytvořené parametrem
+<b>backup</b> a uloží ho do telefonu ve formátu VCALENDAR 1.0 jako
+SMS. Parametr location určuje pozici, ze které bude načten kalendář
+ze souboru se zálohou (obvykle 1, ale může být užitečné, pokud
+záloha obsahuje více položek).
 <p>Popis společných parametrů naleznete v sekci <b>Společné
 parametry pro sendsms a savesms</b>.</p>
 </dd>
@@ -257,10 +259,10 @@ jedné SMS</p>
 <p><b>-variablebitmaplong</b> - obrázek o maximální velikosti
 96x128 uložený v jedné nebo více zpráv</p>
 <p><b>-fixedbitmap</b> - obrázek o velikosti 16x16 nebo 32x32</p>
-<p><b>-protected</b> - all ringtones and bitmaps after this
-parameter (excluding default ringtones and logos) will be
-&quot;protected&quot; (in phones compatible with ODI like SonyEricsson
-products it won't be possible to forward them from phone menu)</p>
+<p><b>-protected</b> - všechna vyzvánění a obrázky (kromě
+předdefinovaných) uvedená za tímto parametrem budou &quot;chráběna&quot; (v
+telefonech podporující standard ODI jako například SonyEricsson je
+nebude možné přeposlat)</p>
 <p><i>Příklad:</i> gammu savesms EMS -text &quot;Pozdrav&quot; -defsound 1
 -text &quot;od Gammu&quot; -tone10 axelf.txt -animation 2 file1.bmp
 file2.bmp</p>
@@ -330,9 +332,9 @@ je uloženo ve formátu pro Nokii.
 <p><b>-long</b> - vyzvánění je uloženo v podobě profilo. Může být
 delší (a uloženo do 2 SMS), ale umí s ním pracovat jen novější
 telefony (jako 33xx).</p>
-<p><b>-scale</b> - ringtone will have Scale info for each note. It
-will allow to edit it correctly later in phone composer (for
-example, in 33xx)</p>
+<p><b>-scale</b> - vyzvánění bude mít informaci o výšce u každé
+noty. S tímto nastavením je možné vyzvánění později upravovat v
+telefonu (například v Nokii 33xx)</p>
 <p>Popis společných parametrů naleznete v sekci <b>Společné
 parametry pro sendsms a savesms</b>.</p>
 </dd>
@@ -361,10 +363,9 @@ na SIM kartu.
 <p><b>-len len</b> - určí, kolik znaků bude načteno. Pokud bude
 zadaný text delší, než se vejde do jedné zprávy, bude automaticky
 rozdělen do více zpráv.</p>
-<p><b>-autolen len</b> - specify, how many chars will be read. When
-use this option and text will be longer than 1 SMS, will be
-splitted into more linked SMS.Coding type (SMS default
-alphabet/Unicode) is set according to input text</p>
+<p><b>-autolen len</b> - určí, kolik znaků bude načteno. Pokud bude
+zadaný text delší, než se vejde do jedné zprávy, bude automaticky
+rozdělen do více zpráv.</p>
 <p><b>-enablevoice</b> | <b>-disablevoice</b> | <b>-enablefax</b> |
 <b>-disablefax</b> | <b>-enableemail</b> | <b>-disableemail</b> -
 nastaví tyto indikátory. Text bude zkrácen na 1 SMS.</p>
@@ -380,10 +381,9 @@ standardního vstupu.</p>
 <p><i>TIP:</i> Soubor v Unicode můžete na Windows vytvořit
 například pomocí WordPadu (zvolte volbu &quot;Uložit jako unicode
 text&quot;). Na Linuxu můžete použít třeba YUdit nebo Vim.</p>
-<p><b>-replacemessages ID</b> - <b>ID</b> can be 1..7. When you
-will use option and send more single SMS to one recipient with the
-same ID, each another SMS will replace each previous with the same
-ID</p>
+<p><b>-replacemessages ID</b> - <b>ID</b> může být 1..7. Pokud
+použijete tento parametr a pošlete více zpráv se stejným ID jednomu
+příjemci, každá další zpráva se stejným ID přepíše předchozí</p>
 <p><b>-replacefile file</b> - when you want, you can make file in
 such format: <b>src_unicode_char1, dest_unicode_char1,
 src_unicode_char2, dest_unicode_char2</b> (everything in one line).
@@ -414,7 +414,9 @@ parametry pro sendsms a savesms</b>.</p>
 <dd>Načte kontakt ze zálohy (formáty jaké vytváří funkce
 <b>backup</b>) a uloží ho do telefonu jako SMS ve formátu VCARD 1.0
 (jen jméno a výchozí číslo) nebo VCARD 2.1 (všechny informace o
-kontaktu).
+kontaktu). Parametr location určuje pozici, ze které bude načten
+kontakt ze souboru se zálohou (obvykle 1, ale může být užitečné,
+pokud záloha obsahuje více položek).
 <p>Popis společných parametrů naleznete v sekci <b>Společné
 parametry pro sendsms a savesms</b>.</p>
 </dd>
@@ -698,7 +700,9 @@ gammusavefileCALENDARoutput.vcfmyPhonebook.backupME42</p>
 <dd>Načte kontakt ze zálohy (formáty jaké vytváří funkce
 <b>backup</b>) a uloží ho do telefonu jako SMS ve formátu VCARD 1.0
 (jen jméno a výchozí číslo) nebo VCARD 2.1 (všechny informace o
-kontaktu).
+kontaktu). Parametr location určuje pozici, ze které bude načten
+kontakt ze souboru se zálohou (obvykle 1, ale může být užitečné,
+pokud záloha obsahuje více položek).
 <p>Popis společných parametrů naleznete v sekci <b>Společné
 parametry pro sendsms a savesms</b>.</p>
 </dd>
@@ -718,22 +722,23 @@ parametry pro sendsms a savesms</b>.</p>
 </dl>
 <a class="aname" id="lbAJ" name="lbAJ"/>
 <h4>Soubory</h4>
-<p>Gammu allows to access phones using native protocol (Nokias) or
-OBEX. Your phone can also support usb storage, which is handled on
-the operating system level and Gammu does not use that.</p>
+<p>Gammu umí přistupovat k souborům pomocí nativního protokolu
+(Nokie) nebo přes OBEX. Váš telefon také může podporovat stadard
+USB storage, který je podporován operačním systémem a Gammu k němu
+nepřistupuje.</p>
 <dl compact="compact">
 <dt><b>addfile</b> <i>folderID name [-type
 JAR|BMP|PNG|GIF|JPG|MIDI|WBMP|AMR|3GP|NRT] [-readonly] [-protected]
 [-system] [-hidden] [-newtime]</i></dt>
 <dd>Přidá soubor se zadaným jménem do adresáře se zvoleným ID.
-<p><b>-type</b> - file type was required for filesystem 1 in Nokia
-phones (current filesystem 2 doesn't need this)</p>
-<p><b>-readonly, -protected, -system, -hidden</b> - you can set
-readonly, protected (file can't be for example forwarded from phone
-menu), system and hidden (file is hidden from phone menu) file
-attributes</p>
-<p><b>-newtime</b> - after using it date/time of file modification
-will be set to moment of uploading</p>
+<p><b>-type</b> - typ souboru je vyžadován pro některé souborové
+systémy (starší telefony Nokia)</p>
+<p><b>-readonly, -protected, -system, -hidden</b> - můžete nastavit
+atributy souboru jako jen pro čtení, chráněný (nemůže být
+přeposlán), systémový a skrytý (soubor není v telefonu
+zobrazen)</p>
+<p><b>-newtime</b> - čas modifikace souboru bude nastaven na
+aktuální čas</p>
 </dd>
 <dt><b>addfolder</b> <i>parentfolderID name</i></dt>
 <dd>Vytvoří složku v telefonu se zadaným jménem ve složce se
@@ -752,8 +757,8 @@ ID.</dd>
 <dd>Zobrazí informace o všech souborech a složkách v telefonu
 a/nebo na paměťové kartě. Výchozí je stromové zobrazení, ale můžete
 ho změnit:
-<p><b>-flatall</b> there are displayed full file/folder details
-like ID (first parameter in line)</p>
+<p><b>-flatall</b> jsou zobrazeny všechny podrobnosti o souboru
+jako jeho ID (první v řádku)</p>
 <p><b>-flat</b></p>
 <p>Please note, that in some phones (like N6230) content of some
 folders (with more files) can be cut (only part of files will be
@@ -907,7 +912,7 @@ parametry pro sendsms a savesms</b>.</p>
 <dd>Set operator logo in phone. When won't give file and netcode,
 operator logo will be removed from phone. When will give only
 filename, operator logo will be displayed for your current GSM
-operator. When give additionaly network code, it will be displayed
+operator. When give additionally network code, it will be displayed
 for this operator: <b>gammu setbitmap OPERATOR file &quot;260
 02&quot;</b></dd>
 <dt><b>setbitmap PICTURE</b> <i>file location [text]</i></dt>
@@ -1002,9 +1007,9 @@ je uloženo ve formátu pro Nokii.
 <p><b>-long</b> - vyzvánění je uloženo v podobě profilo. Může být
 delší (a uloženo do 2 SMS), ale umí s ním pracovat jen novější
 telefony (jako 33xx).</p>
-<p><b>-scale</b> - ringtone will have Scale info for each note. It
-will allow to edit it correctly later in phone composer (for
-example, in 33xx)</p>
+<p><b>-scale</b> - vyzvánění bude mít informaci o výšce u každé
+noty. S tímto nastavením je možné vyzvánění později upravovat v
+telefonu (například v Nokii 33xx)</p>
 <p>Popis společných parametrů naleznete v sekci <b>Společné
 parametry pro sendsms a savesms</b>.</p>
 </dd>
@@ -1099,9 +1104,11 @@ gammusavefileCALENDARoutput.vcsmyCalendar.backup260</p>
 [-read] [-unsent] [-sent] [-sender number] [-smsname name]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
 num]</i></dt>
-<dd>Načte kalendář ze zálohy (formáty jaké vytváří funkce
-<b>backup</b>) a uloží ho do telefonu jako SMS ve formátu VCALENDAR
-1.0.
+<dd>Načte poznámku kalendáře ze zálohy vytvořené parametrem
+<b>backup</b> a uloží ho do telefonu ve formátu VCALENDAR 1.0 jako
+SMS. Parametr location určuje pozici, ze které bude načten kalendář
+ze souboru se zálohou (obvykle 1, ale může být užitečné, pokud
+záloha obsahuje více položek).
 <p>Popis společných parametrů naleznete v sekci <b>Společné
 parametry pro sendsms a savesms</b>.</p>
 </dd>
@@ -2162,7 +2169,7 @@ written double - once in Unicode, once in ASCII. When you will
 remove Unicode version Gammu will use ASCII on <b>restore</b> (and
 you can easy edit ASCII text) and will convert it according to your
 OS locale. When will be available Unicode version of text, it will
-be used instead of ASCII (usefull with Unicode phones - it isn't
+be used instead of ASCII (useful with Unicode phones - it isn't
 important, what locale is set in computer and no conversion Unicode
 -&gt; ASCII and ASCII -&gt; Unicode is done).</p>
 <p>You can use any editor with regular expressions function to edit
@@ -2195,7 +2202,7 @@ na +3620</dt>
 </dl>
 <a class="aname" id="lbEG" name="lbEG"/>
 <h3>COPYRIGHT</h3>
-<p>Copyright © 2003-2009 Marcin Wiacek, Michal Čihař a další
+<p>Copyright © 2003 - 2010 Marcin Wiacek, Michal Čihař a další
 autoři. Licence GPLv2: GNU GPL verze 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
 
 Tento program je svobodný software; můžete jej šířit a modifikovat.
@@ -2382,5 +2389,5 @@ stránce &lt;<a href="http://www.gammu.org/">http://www.gammu.org/</a>&gt;.</p>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 11:00:27 GMT, December 22, 2009
+Time: 16:03:18 GMT, January 08, 2010
 </div>
