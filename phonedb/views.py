@@ -402,7 +402,7 @@ def create_wammu(request):
         phone.features.add(feature)
 
     if version == 2:
-        response.write(OKAY_V2 % (phone.id, phone.get_absolute_url))
+        response.write(OKAY_V2 % (phone.id, phone.get_absolute_url()))
     else:
         response.write(OKAY % (phone.id, phone.vendor.slug, phone.id))
     return response
