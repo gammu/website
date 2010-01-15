@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-12 17:37+0100\n"
+"POT-Creation-Date: 2010-01-15 14:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -202,7 +202,7 @@ msgid "News"
 msgstr ""
 
 #: html/base.html:110 html/gammu.html:69 html/libgammu.html:54
-#: html/python-gammu.html:57 html/smsd.html:71 html/wammu.html:57
+#: html/python-gammu.html:67 html/smsd.html:71 html/wammu.html:57
 #: html/docs/sidebar.html:2 html/support/sidebar.html:4 wammu/helpers.py:20
 msgid "Documentation"
 msgstr ""
@@ -478,9 +478,10 @@ msgid ""
 "phone.\n"
 msgstr ""
 
-#: html/gammu.html:61 html/libgammu.html:45 html/smsd.html:61
-#: html/wammu.html:47 html/downloads/list.html:4 html/downloads/program.html:4
-#: html/downloads/release.html:4 wammu/helpers.py:18
+#: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:32
+#: html/smsd.html:61 html/wammu.html:47 html/downloads/list.html:4
+#: html/downloads/program.html:4 html/downloads/release.html:4
+#: wammu/helpers.py:18
 msgid "Download"
 msgstr ""
 
@@ -697,11 +698,22 @@ msgid ""
 "href=\"http://python.org\">Python</a> language.\n"
 msgstr ""
 
-#: html/python-gammu.html:32
+#: html/python-gammu.html:34
+msgid ""
+"\n"
+"Python module is distributed as part of <a href=\"/gammu\">Gammu</a> so to "
+"download\n"
+"it just get <a href=\"/download/gammu\">Gammu</a>. If you want to use "
+"binary\n"
+"package, the daemon might be included in separate binary package in your\n"
+"distribution, try looking for something like <code>python-gammu</code>.\n"
+msgstr ""
+
+#: html/python-gammu.html:42
 msgid "Example"
 msgstr ""
 
-#: html/python-gammu.html:35
+#: html/python-gammu.html:45
 msgid ""
 "\n"
 "Using python-gammu is quite simple, for example sending of the text "
@@ -709,7 +721,7 @@ msgid ""
 "can be done by following snippet:\n"
 msgstr ""
 
-#: html/python-gammu.html:59
+#: html/python-gammu.html:69
 msgid ""
 "\n"
 "<a href=\"/docs/devel/python/\">API documentation</a> is available, but you\n"
@@ -718,7 +730,7 @@ msgid ""
 "href=\"/docs/devel/\">developer documentation page</a> for more details.\n"
 msgstr ""
 
-#: html/python-gammu.html:68
+#: html/python-gammu.html:78
 msgid ""
 "\n"
 "Check also <a href=\"/docs/faq/#python\">Frequently Asked Questions</a>.\n"
