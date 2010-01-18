@@ -169,6 +169,6 @@ def padmap(request):
     Public list of PAD files.
     '''
     response = HttpResponse(mimetype='text/plain')
-    response.write('http://wammu.eu/api/pad/gammu.txt\n')
-    response.write('http://wammu.eu/api/pad/wammu.txt\n')
+    response.write('http://wammu.eu/api/pad/gammu.xml\n')
+    response.write('http://wammu.eu/api/pad/wammu.xml\n')
     return response
