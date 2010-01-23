@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-01-15 14:19+0100\n"
-"PO-Revision-Date: 2010-01-23 22:14+0200\n"
+"PO-Revision-Date: 2010-01-23 22:18+0200\n"
 "Last-Translator:  <cartman@cartman34.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -51,7 +51,7 @@ msgstr ""
 
 #: html/404.html:4 html/404.html.py:8
 msgid "Page Not Found"
-msgstr ""
+msgstr "Page non trouvée"
 
 #: html/404.html:11
 msgid ""
