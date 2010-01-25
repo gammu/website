@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-01-15 14:19+0100\n"
-"PO-Revision-Date: 2010-01-25 12:31+0200\n"
+"PO-Revision-Date: 2010-01-25 12:32+0200\n"
 "Last-Translator:  <cartman@cartman34.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -231,9 +231,10 @@ msgstr "Pour les développeurs"
 msgid "Contribute"
 msgstr ""
 
+# Peut etre modifié selon le contexte.
 #: html/base.html:121 html/contribute/sidebar.html:5
 msgid "Translate"
-msgstr ""
+msgstr "Traduire"
 
 #: html/base.html:122 html/contribute/sidebar.html:6
 msgid "Develop"
