@@ -250,7 +250,7 @@ msgstr "Licence"
 
 #: html/base.html:133
 msgid "Support Gammu/Wammu by donating money!"
-msgstr ""
+msgstr "Soutenez Gammu/Wammu par des dons ! "
 
 #: html/base.html:134
 msgid "Search for Gammu/Wammu related questions"
