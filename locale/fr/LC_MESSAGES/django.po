@@ -225,7 +225,7 @@ msgstr ""
 # Selon le contexte.
 #: html/base.html:115 html/docs/sidebar.html:6
 msgid "For developers"
-msgstr "Pour les dévellopeurs"
+msgstr "Pour les développeurs"
 
 #: html/base.html:119 wammu/helpers.py:21
 msgid "Contribute"
