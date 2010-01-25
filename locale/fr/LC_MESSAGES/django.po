@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-01-15 14:19+0100\n"
-"PO-Revision-Date: 2010-01-23 22:25+0200\n"
+"PO-Revision-Date: 2010-01-25 12:27+0200\n"
 "Last-Translator:  <cartman@cartman34.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -160,7 +160,7 @@ msgstr "Wammu"
 
 #: html/base.html:87
 msgid "python-gammu"
-msgstr ""
+msgstr "python-gammu"
 
 #: html/base.html:88 html/docs/faq.html:42
 #, fuzzy
