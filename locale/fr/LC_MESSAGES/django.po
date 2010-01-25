@@ -242,7 +242,7 @@ msgstr ""
 
 #: html/base.html:124 html/contribute/sidebar.html:8
 msgid "Publicity"
-msgstr ""
+msgstr "Publicité"
 
 #: html/base.html:132
 msgid "License"
