@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-01-15 14:19+0100\n"
-"PO-Revision-Date: 2010-01-25 12:30+0200\n"
+"PO-Revision-Date: 2010-01-25 12:31+0200\n"
 "Last-Translator:  <cartman@cartman34.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -222,9 +222,10 @@ msgstr "Téléphones supportés"
 msgid "Man pages"
 msgstr ""
 
+# Selon le contexte.
 #: html/base.html:115 html/docs/sidebar.html:6
 msgid "For developers"
-msgstr ""
+msgstr "Pour les dévellopeurs"
 
 #: html/base.html:119 wammu/helpers.py:21
 msgid "Contribute"
