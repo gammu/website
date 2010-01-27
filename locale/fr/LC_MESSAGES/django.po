@@ -2925,6 +2925,5 @@ msgid "Gammu and Wammu News Feed (RSS)"
 msgstr "Flux vers les nouvelles Gammu et Wammu (RSS)"
 
 #: wammu/helpers.py:29
-#, fuzzy
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Flux vers les nouvelles Gammu et Wammu (Atom)"
