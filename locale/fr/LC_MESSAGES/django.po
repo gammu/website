@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-01-15 14:19+0100\n"
-"PO-Revision-Date: 2010-01-27 11:39+0200\n"
+"PO-Revision-Date: 2010-01-27 11:40+0200\n"
 "Last-Translator:  <cartman@cartman34.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -262,9 +262,10 @@ msgstr "Rechercher les questions relatives à Gammu/Wammu"
 msgid "Search"
 msgstr "Recherche : "
 
+# Déjà traduit.
 #: html/base.html:135
 msgid "Gammu and Wammu authors"
-msgstr ""
+msgstr "Créateurs de Gammu et Wammu"
 
 #: html/base.html:135
 msgid "Authors"
