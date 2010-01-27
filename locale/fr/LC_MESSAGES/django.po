@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-01-15 14:19+0100\n"
-"PO-Revision-Date: 2010-01-27 11:47+0200\n"
+"PO-Revision-Date: 2010-01-27 11:48+0200\n"
 "Last-Translator:  <cartman@cartman34.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -2891,7 +2891,7 @@ msgstr "Modèle utilisé dans la configuration de Gammu, généralement vide."
 
 #: phonedb/models.py:83
 msgid "Gammu version where you tested this phone."
-msgstr ""
+msgstr "Version de Gammu sur laquelle vous avez testé votre téléphone."
 
 #: phonedb/models.py:84
 msgid ""
