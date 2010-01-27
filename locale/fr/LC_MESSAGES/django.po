@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-01-15 14:19+0100\n"
-"PO-Revision-Date: 2010-01-27 11:55+0200\n"
+"PO-Revision-Date: 2010-01-28 00:48+0200\n"
 "Last-Translator:  <cartman@cartman34.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -2845,9 +2845,10 @@ msgstr "Envoyer et sauver SMS"
 msgid "Multimedia messaging"
 msgstr "Messages multimédia"
 
+# Cela m'étonnerait que ce soit le répertoire qui soit basic...
 #: phonedb/models.py:35
 msgid "Basic phonebook functions (name and phone number)"
-msgstr ""
+msgstr "Fonctions basiques du répertoire (nom et numéro de téléphone)"
 
 #: phonedb/models.py:36
 msgid "Enhanced phonebook entries (eg. several numbers per entry)"
