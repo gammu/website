@@ -2914,7 +2914,7 @@ msgstr "Flux vers la base de données Gammu (RSS)"
 
 #: phonedb/views.py:116
 msgid "Gammu Phone Database Feed (Atom)"
-msgstr ""
+msgstr "Flux vers la base de données Gammu (Atom)"
 
 #: phonedb/views.py:428
 msgid "Phone record has been created."
