@@ -2922,7 +2922,7 @@ msgstr "L'enregistrement du téléphone a bien été créé."
 
 #: wammu/helpers.py:26
 msgid "Gammu and Wammu News Feed (RSS)"
-msgstr ""
+msgstr "Flux vers les nouvelles Gammu et Wammu (RSS)"
 
 #: wammu/helpers.py:29
 #, fuzzy
