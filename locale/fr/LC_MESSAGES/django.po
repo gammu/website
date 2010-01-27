@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-01-15 14:19+0100\n"
-"PO-Revision-Date: 2010-01-27 11:41+0200\n"
+"PO-Revision-Date: 2010-01-27 11:43+0200\n"
 "Last-Translator:  <cartman@cartman34.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -284,12 +284,17 @@ msgid "Thank you for Donation"
 msgstr "Merci pour le don"
 
 #: html/donate-thanks.html:14
+#, fuzzy
 msgid ""
 "\n"
 "Thank you for donating to Gammu/Wammu! We will do our best to use the "
 "donated\n"
 "money in useful way.\n"
 msgstr ""
+"\n"
+"Nous vous remercions pour votre don à Gammu/Wammu ! Nous ferons de notre "
+"mieux\n"
+"pour utiliser cet argent de la manière la plus utile.\n"
 
 #: html/donate.html:4 html/donate.html.py:11
 msgid "Donate to Gammu"
