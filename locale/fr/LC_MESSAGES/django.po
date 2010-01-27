@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-01-15 14:19+0100\n"
-"PO-Revision-Date: 2010-01-27 11:48+0200\n"
+"PO-Revision-Date: 2010-01-27 11:52+0200\n"
 "Last-Translator:  <cartman@cartman34.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -2893,11 +2893,16 @@ msgstr "Modèle utilisé dans la configuration de Gammu, généralement vide."
 msgid "Gammu version where you tested this phone."
 msgstr "Version de Gammu sur laquelle vous avez testé votre téléphone."
 
+# balisage, balisage...
 #: phonedb/models.py:84
 msgid ""
 "Any note about this phone and Gammu support for it. You can use <a href="
 "\"http://daringfireball.net/projects/markdown/syntax\">markdown markup</a>."
 msgstr ""
+"Tous les commentaires à propos de ce téléphone seront utiles pour Gammu.\n"
+"Vous pouvez utiliser <a "
+"href=\"http://daringfireball.net/projects/markdown/syntax\">le code "
+"markdown</a>."
 
 #: phonedb/models.py:87
 msgid "Please choose how will be email handled in next field."
