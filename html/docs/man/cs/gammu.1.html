@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU</h2>
 Section: Dokumentace Gammu (1)<br/>
-Updated: Leden 8, 2010<br/>
+Updated: Leden 19, 2010<br/>
 <a href="#index">Index</a> 
 <hr/>
 <p><a class="aname" id="lbAB" name="lbAB"/></p>
@@ -31,13 +31,13 @@ zpráv</p>
 <p><a class="aname" id="lbAG" name="lbAG"/></p>
 <h4>Hovory</h4>
 <dl compact="compact">
-<dt><b>answercall</b> <i>[ID]</i></dt>
+<dt><b>answercall</b> <i>[id]</i></dt>
 <dd>Přijmout příchozí hovor.</dd>
-<dt><b>cancelcall</b> <i>[ID]</i></dt>
+<dt><b>cancelcall</b> <i>[id]</i></dt>
 <dd>Zrušit příchozí hovor.</dd>
 <dt><b>canceldiverts</b></dt>
 <dd>Zruší všechna přesměrování hovorů.</dd>
-<dt><b>conferencecall</b> <i>ID</i></dt>
+<dt><b>conferencecall</b> <i>id</i></dt>
 <dd>Začne konferenční hovor.</dd>
 <dt><b>dialvoice</b> <i>number [show|hide]</i></dt>
 <dd>Začne hlasový hovor prostřednictvím linky nastavené na SIM
@@ -62,7 +62,7 @@ přesměrovat</p>
 <dt><b>getussd</b> <i>code</i></dt>
 <dd>Načte USSD informace - vytvočí servisní číslo a načtě
 odpověď.</dd>
-<dt><b>holdcall</b> <i>ID</i></dt>
+<dt><b>holdcall</b> <i>id</i></dt>
 <dd>Přidrží hovor.</dd>
 <dt><b>maketerminatedcall</b> <i>number length [show|hide]</i></dt>
 <dd>Začne hlasový hovor prostřednictvím linky nastavené na SIM
@@ -73,13 +73,13 @@ přerušíte stisknutím Ctrl+C.</dd>
 <dt><b>senddtmf</b> <i>sequence</i></dt>
 <dd>Přehraje DTMF tóny. V některých telefonech je toto k dispozici
 jen během hovoru.</dd>
-<dt><b>splitcall</b> <i>ID</i></dt>
+<dt><b>splitcall</b> <i>id</i></dt>
 <dd>Rozdělí hovor.</dd>
-<dt><b>switchcall</b> <i>[ID]</i></dt>
+<dt><b>switchcall</b> <i>[id]</i></dt>
 <dd>Přepne hovor.</dd>
-<dt><b>transfercall</b> <i>[ID]</i></dt>
+<dt><b>transfercall</b> <i>[id]</i></dt>
 <dd>Přenese hovor.</dd>
-<dt><b>unholdcall</b> <i>ID</i></dt>
+<dt><b>unholdcall</b> <i>id</i></dt>
 <dd>Zruší přdržení hovoru.</dd>
 </dl>
 <a class="aname" id="lbAH" name="lbAH"/>
@@ -646,14 +646,13 @@ souborem záloh Gammu.</p>
 </dd>
 <dt><b>clearall</b></dt>
 <dd>Odstraní všechna uživatelská data z telefonu.</dd>
-<dt><b>deleteallmemory</b>
-<i>DC|MC|RC|ON|VM|SM|ME|MT|FD|SL</i></dt>
+<dt><b>deleteallmemory DC|MC|RC|ON|VM|SM|ME|MT|FD|SL</b></dt>
 <dd>Odstraní všechny položky ze zadané paměti.</dd>
 <dt><b>deletememory DC|MC|RC|ON|VM|SM|ME|MT|FD|SL</b> <i>start
 [stop]</i></dt>
 <dd>Odstraní položky v zadaném rozsahu ze zadané paměti.</dd>
-<dt><b>getallcategory</b> <i>TODO|PHONEBOOK</i></dt>
-<dt><b>getallmemory</b> <i>DC|MC|RC|ON|VM|SM|ME|MT|FD|SL</i></dt>
+<dt><b>getallcategory TODO|PHONEBOOK</b></dt>
+<dt><b>getallmemory DC|MC|RC|ON|VM|SM|ME|MT|FD|SL</b></dt>
 <dd>Načte všechny položky paměti (kontakt nebo hovor) z telefonu..
 Pro popis typů paměti se podívejte na <b>getmemory</b>.</dd>
 <dt><b>getcategory TODO|PHONEBOOK</b> <i>start [stop]</i></dt>
@@ -747,10 +746,10 @@ zadaným ID.</dd>
 <dd>Vymaže soubory se zadanými ID.</dd>
 <dt><b>deletefolder</b> <i>name</i></dt>
 <dd>Vymaže složku se zadaným ID.</dd>
-<dt><b>getfilefolder</b> <i>ID1, ID2, ...</i></dt>
+<dt><b>getfilefolder</b> <i>fileID, fileID, ...</i></dt>
 <dd>Načte ze souborového systému telefonu soubory nebo všechny
 soubory ze složky se zadaným ID.</dd>
-<dt><b>getfiles</b> <i>ID1, ID2, ...</i></dt>
+<dt><b>getfiles</b> <i>fileID, fileID, ...</i></dt>
 <dd>Načte ze souborového systému telefonu soubory se zadanými
 ID.</dd>
 <dt><b>getfilesystem</b> <i>[-flatall|-flat]</i></dt>
@@ -760,40 +759,35 @@ ho změnit:
 <p><b>-flatall</b> jsou zobrazeny všechny podrobnosti o souboru
 jako jeho ID (první v řádku)</p>
 <p><b>-flat</b></p>
-<p>Please note, that in some phones (like N6230) content of some
-folders (with more files) can be cut (only part of files will be
-displayed) for example on infrared connection. This is not Gammu
-issue, but phone firmware problem.</p>
+<p>Některé telefony (například Nokia 6230) mají chybu ve firmware,
+která znemožní zobrazit všechny soubory, pokud je jich ve složce
+více, Tato chyba nejčastěji nastává s infračerveným připojením.</p>
 </dd>
 <dt><b>getfilesystemstatus</b></dt>
 <dd>Zobrazí informace o stavu systému souborů - volné a obsazené
 místo a místo obsazené různými druhy obsahu.</dd>
 <dt><b>getfolderlisting</b> <i>folderID</i></dt>
 <dd>
-<p>Display files and folders available in folder with given folder
-ID. You can get ID's using getfilesystem -flatall.</p>
-<p>Please note, that in some phones (like N6230) content of some
-folders (with more files) can be cut (only part of files will be
-displayed) for example on infrared connection. This is not Gammu
-issue, but phone firmware problem.</p>
+<p>Zobrazí soubory a složky ve složce se zadaným ID. ID složky
+můžete získat například pomocí getfilesystem -flatall.</p>
+<p>Některé telefony (například Nokia 6230) mají chybu ve firmware,
+která znemožní zobrazit všechny soubory, pokud je jich ve složce
+více, Tato chyba nejčastěji nastává s infračerveným připojením.</p>
 </dd>
 <dt><b>getrootfolders</b></dt>
 <dd>
 <p>Zobrazí informace o kořenových složkách dostupných v
 telefonu.</p>
 </dd>
-<dt><b>nokiaaddfile</b>
-<i>Gallery|Gallery2|Camera|Tones|Tones2|Records|Video|Playlist|MemoryCard
-file [-name name] [-protected] [-readonly] [-system] [-hidden]
-[-newtime]</i></dt>
-<dd>Install the *.jar/*.jad file pair of a midlet in the
-application or game menu of the phone. You have to give the name
-without the jar/jad suffix, otherwise you will get the slightly
-confusing error message Can't open specified file. Read only ?
-<p>The option <i>-overwrite</i> deletes the application's .jad and
-.jar files bevor installing, but doesn't delete the application
-data. Option <i>-overwriteall</i> will also delete all data. Both
-these options work only for Application or Game upload.</p>
+<dt><b>nokiaaddfile APPLICATION|GAME</b> <i>file [-readonly]
+[-overwrite] [-overwriteall]</i></dt>
+<dd>Naistaluje soubory *.jar/*.jad jako midlet do složky aplikací
+nebo her v telefonu. Jméno souboru musíte zadat bez přípony
+.jar/.jad, budou doplěny automaticky.
+<p>Parametr <i>-overwrite</i> způsobí vymazání .jad a .jar souborů
+aplikace před nahráním nové, ale zachová její data. Parametr
+<i>-overwriteall</i> odstraní i její data. Oba tyto parametry
+fungují jen při nahrávání aplikací nebo her.</p>
 <p><i>Example:</i> gammu nokiaaddfile Application Alien načte
 Alien.JAD a Alien.JAR a přidá ho do složky Applications</p>
 <p><i>Příklad:</i> gammu nokiaaddfile Tones file.mid načte soubor
@@ -801,12 +795,16 @@ file.mid a přidá ho do složky Tones</p>
 <p>Pro vygenerování jad souboru z jar souboru můžete použít
 <a href="../jadmaker.1/">jadmaker</a>(1).</p>
 </dd>
+<dt><b>nokiaaddfile
+GALLERY|GALLERY2|CAMERA|TONES|TONES2|RECORDS|VIDEO|PLAYLIST|MEMORYCARD</b>
+<i>file [-name name] [-protected] [-readonly] [-system] [-hidden]
+[-newtime]</i></dt>
 <dt><b>nokiaaddplaylists</b></dt>
 <dt><b>sendfile</b> <i>name</i></dt>
-<dd>Sends file to a phone. It's up to phone to decide where to
-store this file and how to handle it (for example when you send
-vCard or vCalendar, most of phones will offer you to import
-it.</dd>
+<dd>Odešle soubor do telefonu. Je na telefonu, aby se rozhodl, co s
+ním udělá, případně kam ho uloží (například pokud odešlete vCard
+nebo vCalendar, většina telefonů vám nabídne možnost ho
+importovat).</dd>
 <dt><b>setfileattrib</b> <i>folderID [-system] [-readonly]
 [-hidden] [-protected]</i></dt>
 </dl>
@@ -815,16 +813,16 @@ it.</dd>
 <dl compact="compact">
 <dt><b>copybitmap</b> <i>inputfile [outputfile
 [OPERATOR|PICTURE|STARTUP|CALLER]]</i></dt>
-<dd>Allow to convert logos files to another. When give ONLY
-inputfile, output will be written to stdout using ASCII art. When
-give output file and format, in some file formats (like NLM) will
-be set indicator informing about logo type to given.</dd>
-<dt><b>getbitmap</b> <i>DEALER</i></dt>
-<dd>In some models it's possible to save dealer welcome note - text
-displayed during enabling phone, which can't be edited from phone
-menu. Here you can get it.</dd>
+<dd>Převádí loga mezi různými formáty. Pokud neuvedete výstupní
+soubor, logo bude zobrazeno v ASCII artu. V některých výstupních
+formátech (například NLM) může být nastaven i idnikátor typu
+loga.</dd>
 <dt><b>getbitmap CALLER</b> <i>location [file]</i></dt>
 <dd>Načte logo skupiny z telefonu. Umístění 1-5.</dd>
+<dt><b>getbitmap DEALER</b></dt>
+<dd>U některých telefonů je možné nastavit uvítací text, který je
+zobrazen při zapnutí telefonu a nemůže být změněn z menu telefonu.
+Tímto příkazem ho můžete stáhout.</dd>
 <dt><b>getbitmap OPERATOR</b> <i>[file]</i></dt>
 <dd>Načte logo operátora (obrázek zobrazený místo jména operátora)
 z telefonu.</dd>
@@ -833,6 +831,8 @@ z telefonu.</dd>
 <dt><b>getbitmap STARTUP</b> <i>[file]</i></dt>
 <dd>Načte statické startovací logo z telefonu. Umožní jeho uložení
 do souboru.</dd>
+<dt><b>getbitmap TEXT</b></dt>
+<dd>Načte z telefonu uvítací text.</dd>
 <dt><b>savesms ANIMATION</b> <i>frames file1 file2... [-folder id]
 [-unread] [-read] [-unsent] [-sent] [-sender number] [-smsname
 name] [-smscset number] [-smscnumber number] [-reply] [-maxsms
@@ -906,22 +906,28 @@ parametry pro sendsms a savesms</b>.</p>
 <dt><b>setbitmap CALLER</b> <i>location [file]</i></dt>
 <dd>Nastaví logo volajícího.</dd>
 <dt><b>setbitmap COLOUROPERATOR</b> <i>[fileID [netcode]]</i></dt>
+<dd>Nastaví v telefonu logo operátora.</dd>
 <dt><b>setbitmap COLOURSTARTUP</b> <i>[fileID]</i></dt>
 <dt><b>setbitmap DEALER</b> <i>text</i></dt>
+<dd>Nastaví v telefonu uvítací zprávu prodejce, která se obvykle v
+menu telefonu nedá nastavit.</dd>
 <dt><b>setbitmap OPERATOR</b> <i>[file [netcode]]</i></dt>
-<dd>Set operator logo in phone. When won't give file and netcode,
-operator logo will be removed from phone. When will give only
-filename, operator logo will be displayed for your current GSM
-operator. When give additionally network code, it will be displayed
-for this operator: <b>gammu setbitmap OPERATOR file &quot;260
-02&quot;</b></dd>
+<dd>Nastaví logo operátora v telefonu. Pokud nezadáte ani soubor
+ani kód sítě, logo v telefonu bude vymazáno. Při vynechání kódu
+sítě se použije síť, ke které je telefon právě připojený. Zadáním
+kódu určíte pro jakého operátora bude logo zobrazeno: <b>gammu
+setbitmap OPERATOR file &quot;230 03&quot;</b></dd>
 <dt><b>setbitmap PICTURE</b> <i>file location [text]</i></dt>
+<dd>Nastaví obrázek v telefonu.</dd>
 <dt><b>setbitmap STARTUP</b> <i>file|1|2|3</i></dt>
-<dd>Set startup logo in phone. It can be static (then you will have
-to give file name) or one of predefined animated (only some phones
-like Nokia 3310 or 3330 supports it)</dd>
+<dd>Nastaví v telefonu logo při spuštění. Může to být zadaný
+obrázek (pak musíte zadat jeho cestu), nebo jedna z
+předdefinovaných animací (toto podporují jen některé telefony jako
+Nokia 3310 nebo 3330).</dd>
 <dt><b>setbitmap TEXT</b> <i>text</i></dt>
+<dd>Nastaví v telefonu uvítací text.</dd>
 <dt><b>setbitmap WALLPAPER</b> <i>fileID</i></dt>
+<dd>Nastaví v telefonu obrázek pozadí.</dd>
 </dl>
 <a class="aname" id="lbAL" name="lbAL"/>
 <h4>Zvonění</h4>
@@ -1165,7 +1171,7 @@ souborem záloh Gammu.</p>
 <dd>Odstraní všechna uživatelská data z telefonu.</dd>
 <dt><b>deletetodo</b> <i>start [stop]</i></dt>
 <dd>Odstraní vybrané úkoly z telefonu.</dd>
-<dt><b>getallcategory</b> <i>TODO|PHONEBOOK</i></dt>
+<dt><b>getallcategory TODO|PHONEBOOK</b></dt>
 <dt><b>getalltodo</b></dt>
 <dd>Načte všechny úkoly z telefonu.</dd>
 <dt><b>getcategory TODO|PHONEBOOK</b> <i>start [stop]</i></dt>
@@ -1273,7 +1279,7 @@ souborem záloh Gammu.</p>
 </dd>
 <dt><b>clearall</b></dt>
 <dd>Odstraní všechna uživatelská data z telefonu.</dd>
-<dt><b>getallcategory</b> <i>TODO|PHONEBOOK</i></dt>
+<dt><b>getallcategory TODO|PHONEBOOK</b></dt>
 <dt><b>getcategory TODO|PHONEBOOK</b> <i>start [stop]</i></dt>
 <dt><b>listmemorycategory</b> <i>text|number</i></dt>
 <dt><b>listtodocategory</b> <i>text|number</i></dt>
@@ -1346,6 +1352,8 @@ telefonu není nastaven čas a datum.</p>
 backupsms) do zvolené složky v telefonu. Pokud to telefon
 podporuje, budou stávající zprávy ve složce přepsány!</dd>
 <dt><b>savefile BOOKMARK</b> <i>target.url file location</i></dt>
+<dd>Převede formát se zálohou podporovaný Gammu do souboru
+vBookmark.</dd>
 <dt><b>savefile CALENDAR</b> <i>target.vcs file location</i></dt>
 <dd>Umožní převádět mezi různými formáty pro zálohy, které Gammu
 podporuje pro kalendář. Typ souboru je odhadnut (pro vstupní soubor
@@ -1378,18 +1386,15 @@ gammusavefileCALENDARoutput.vcfmyPhonebook.backupME42</p>
 <a class="aname" id="lbAS" name="lbAS"/>
 <h4>Specifické pro Nokii</h4>
 <dl compact="compact">
-<dt><b>nokiaaddfile</b>
-<i>Gallery|Gallery2|Camera|Tones|Tones2|Records|Video|Playlist|MemoryCard
-file [-name name] [-protected] [-readonly] [-system] [-hidden]
-[-newtime]</i></dt>
-<dd>Install the *.jar/*.jad file pair of a midlet in the
-application or game menu of the phone. You have to give the name
-without the jar/jad suffix, otherwise you will get the slightly
-confusing error message Can't open specified file. Read only ?
-<p>The option <i>-overwrite</i> deletes the application's .jad and
-.jar files bevor installing, but doesn't delete the application
-data. Option <i>-overwriteall</i> will also delete all data. Both
-these options work only for Application or Game upload.</p>
+<dt><b>nokiaaddfile APPLICATION|GAME</b> <i>file [-readonly]
+[-overwrite] [-overwriteall]</i></dt>
+<dd>Naistaluje soubory *.jar/*.jad jako midlet do složky aplikací
+nebo her v telefonu. Jméno souboru musíte zadat bez přípony
+.jar/.jad, budou doplěny automaticky.
+<p>Parametr <i>-overwrite</i> způsobí vymazání .jad a .jar souborů
+aplikace před nahráním nové, ale zachová její data. Parametr
+<i>-overwriteall</i> odstraní i její data. Oba tyto parametry
+fungují jen při nahrávání aplikací nebo her.</p>
 <p><i>Example:</i> gammu nokiaaddfile Application Alien načte
 Alien.JAD a Alien.JAR a přidá ho do složky Applications</p>
 <p><i>Příklad:</i> gammu nokiaaddfile Tones file.mid načte soubor
@@ -1397,6 +1402,10 @@ file.mid a přidá ho do složky Tones</p>
 <p>Pro vygenerování jad souboru z jar souboru můžete použít
 <a href="../jadmaker.1/">jadmaker</a>(1).</p>
 </dd>
+<dt><b>nokiaaddfile
+GALLERY|GALLERY2|CAMERA|TONES|TONES2|RECORDS|VIDEO|PLAYLIST|MEMORYCARD</b>
+<i>file [-name name] [-protected] [-readonly] [-system] [-hidden]
+[-newtime]</i></dt>
 <dt><b>nokiaaddplaylists</b></dt>
 <dt><b>nokiacomposer</b> <i>file</i></dt>
 <dd>Zobrazí jak zadat RTTL vyzvánění ve skladateli dostupném v
@@ -1406,17 +1415,16 @@ mnoha telefonech Nokia (a jak by mělo vypadat).</dd>
 <dt><b>nokiadisplaytest</b> <i>number</i></dt>
 <dt><b>nokiagetadc</b></dt>
 <dt><b>nokiagetoperatorname</b></dt>
-<dd>6110.c phones have place for name for one GSM network (of
-course, with flashing it's possible to change all names, but Gammu
-is not flasher ;-)). You can get this name using this option.</dd>
+<dd>Telefonu kompatibilní s 6110 umožňují změnit jméno jednoho
+operátora a tento příkaz vám umožní tuto změnu provést.</dd>
 <dt><b>nokiagetpbkfeatures</b> <i>memorytype</i></dt>
 <dt><b>nokiagetscreendump</b></dt>
 <dt><b>nokiagett9</b></dt>
 <dt><b>nokiagetvoicerecord</b> <i>location</i></dt>
 <dd>
-<p>Get voice record from location and save to WAV file. File is
-coded using GSM 6.10 codec (available for example in win32). Name
-of file is like name of voice record in phone.</p>
+<p>Získá ze zadané pozice v telefonu zvukovou nahrávku a uloží ji
+do souboru WAV. Soubor je komprimován pomocí kodeku GSM 6.10. Jeho
+jméno je stejné jako je v telefonu.</p>
 </dd>
 <dt><b>nokiamakecamerashoot</b></dt>
 <dt><b>nokianetmonitor</b> <i>test</i></dt>
@@ -1425,9 +1433,9 @@ DCT3.
 <p><i>TIP:</i> Pro více informací se podívejte na stránky
 <i><a href="http://www.mwiacek.com">http://www.mwiacek.com</a></i>,
 kde naleznete manuál k netmonitoru.</p>
-<p><i>TIP:</i> test <b>243</b> enables all tests (after using
-command <b>gammu nokianetmonitor 243</b> in some phones like 6210
-or 9210 have to reboot them to see netmonitor menu)</p>
+<p><i>TIP:</i> test <b>243</b> zapne všechny testy (po použití
+příkazu <b>gammu nokianetmonitor 243</b> se musí některé telefony
+restartovat)</p>
 </dd>
 <dt><b>nokianetmonitor36</b></dt>
 <dd>Vynuluje čítače z testu 36 v netmonitoru telefonů Nokia DCT3.
@@ -1480,18 +1488,17 @@ přerušíte stisknutím Ctrl+C.</dd>
 <dd>Zobrazí informace o stavu sítě z telefonu.</dd>
 <dt><b>nokiadebug</b> <i>filename [[v11-22] [,v33-44]...]</i></dt>
 <dt><b>nokiagetoperatorname</b></dt>
-<dd>6110.c phones have place for name for one GSM network (of
-course, with flashing it's possible to change all names, but Gammu
-is not flasher ;-)). You can get this name using this option.</dd>
+<dd>Telefonu kompatibilní s 6110 umožňují změnit jméno jednoho
+operátora a tento příkaz vám umožní tuto změnu provést.</dd>
 <dt><b>nokianetmonitor</b> <i>test</i></dt>
 <dd>Zobrazí výstup nebo nastaví netmonitor na telefonech Nokia
 DCT3.
 <p><i>TIP:</i> Pro více informací se podívejte na stránky
 <i><a href="http://www.mwiacek.com">http://www.mwiacek.com</a></i>,
 kde naleznete manuál k netmonitoru.</p>
-<p><i>TIP:</i> test <b>243</b> enables all tests (after using
-command <b>gammu nokianetmonitor 243</b> in some phones like 6210
-or 9210 have to reboot them to see netmonitor menu)</p>
+<p><i>TIP:</i> test <b>243</b> zapne všechny testy (po použití
+příkazu <b>gammu nokianetmonitor 243</b> se musí některé telefony
+restartovat)</p>
 </dd>
 <dt><b>nokiasetoperatorname</b> <i>[networkcode name]</i></dt>
 <dt><b>setautonetworklogin</b></dt>
@@ -1563,6 +1570,8 @@ použijte addnew.</p>
 telefonu není nastaven čas a datum.</p>
 </dd>
 <dt><b>savefile BOOKMARK</b> <i>target.url file location</i></dt>
+<dd>Převede formát se zálohou podporovaný Gammu do souboru
+vBookmark.</dd>
 <dt><b>savesms BOOKMARK</b> <i>file location [-folder id] [-unread]
 [-read] [-unsent] [-sent] [-sender number] [-smsname name]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
@@ -1760,7 +1769,7 @@ přerušíte stisknutím Ctrl+C.</dd>
 <dd>Zobrazí nastavení kalendáře jako první den v týdnu nebo
 odstraňování starých položek.</dd>
 <dt><b>getprofile</b> <i>start [stop]</i></dt>
-<dt><b>resetphonesettings</b> <i>PHONE|DEV|UIF|ALL|FACTORY</i></dt>
+<dt><b>resetphonesettings PHONE|DEV|UIF|ALL|FACTORY</b></dt>
 <dd>Obnoví výchozí nastavení telefonu. <i>BUĎTE OPATRNÍ !!!!</i>
 <p><b>PHONE:</b><br/></p>
 <p><b>DEV:</b><br/></p>
@@ -1833,9 +1842,9 @@ je načten ze standardního vstupu.</dd>
 <dt><b>nokiagetscreendump</b></dt>
 <dt><b>nokiagetvoicerecord</b> <i>location</i></dt>
 <dd>
-<p>Get voice record from location and save to WAV file. File is
-coded using GSM 6.10 codec (available for example in win32). Name
-of file is like name of voice record in phone.</p>
+<p>Získá ze zadané pozice v telefonu zvukovou nahrávku a uloží ji
+do souboru WAV. Soubor je komprimován pomocí kodeku GSM 6.10. Jeho
+jméno je stejné jako je v telefonu.</p>
 </dd>
 <dt><b>nokiamakecamerashoot</b></dt>
 <dt><b>nokiasetphonemenus</b></dt>
@@ -1867,7 +1876,7 @@ of file is like name of voice record in phone.</p>
 <b>rR</b> - Červené<br/>
 <b>123456789*0#</b> číslicová klávesnice</p>
 </dd>
-<dt><b>reset</b> <i>SOFT|HARD</i></dt>
+<dt><b>reset SOFT|HARD</b></dt>
 <dd>Provede reset telefonu, buď rychlý (SOFT, bez ptaní na PIN)
 nebo trvdý (HARD, s požadavkem na PIN).
 <p><i>Poznámka:</i> některé telefony provedou tvrdý reset i při
@@ -2389,5 +2398,5 @@ stránce &lt;<a href="http://www.gammu.org/">http://www.gammu.org/</a>&gt;.</p>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 16:03:18 GMT, January 08, 2010
+Time: 22:20:52 GMT, February 03, 2010
 </div>

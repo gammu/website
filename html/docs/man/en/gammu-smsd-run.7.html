@@ -1,0 +1,159 @@
+<div class="manpage">
+<h2>GAMMU-SMSD-RUN</h2>
+Section: Gammu Documentation (7)<br/>
+Updated: January 25, 2010<br/>
+<a href="#index">Index</a> 
+<hr/>
+<a class="aname" id="lbAB" name="lbAB"/>
+<h3>NAME</h3>
+<p>gammu-smsd-run - documentation for RunOnReceive directive</p>
+<p><a class="aname" id="lbAC" name="lbAC"/></p>
+<h3>DESCRIPTION</h3>
+<p>Gammu SMSD can be configured by RunOnReceive directive (see
+<a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5) for details) to
+run defined program after receiving message.<br/>
+ This parameter is executed through shell,
+so you might need to escape some special characters and you can
+include any number of parameters. Additionally parameters with
+identifiers of received messages are appended to the command line.
+The identifiers depend on used service backend, typically it is ID
+of inserted row for database backends or file name for file based
+backends.</p>
+<p>Gammu SMSD waits for the script to terminate. If you make some
+time consuming there, it will make SMSD not receive new messages.
+However to limit breakage from this situation, the waiting time is
+limited to two minutes. After this time SMSD will continue in
+normal operation and might execute your script again.</p>
+<p><a class="aname" id="lbAD" name="lbAD"/></p>
+<h3>ENVIRONMENT</h3>
+<p>Program is executed with environment which contains lot of
+information about the message. You can use it together with NULL
+service (see <a href="../gammu-smsd-null.7/">gammu-smsd-null</a>(7)) to implement
+completely own processing of messages.</p>
+<p><a class="aname" id="lbAE" name="lbAE"/></p>
+<h4>Global variables</h4>
+<dl compact="compact">
+<dt><b>SMS_MESSAGES</b></dt>
+<dd>
+<p>Number of physical messages received.</p>
+</dd>
+<dt><b>DECODED_PARTS</b></dt>
+<dd>
+<p>Number of decoded message parts.</p>
+</dd>
+</dl>
+<a class="aname" id="lbAF" name="lbAF"/>
+<h4>Per message variables</h4>
+<p>The variables further described as SMS_1_... are generated for
+each physical message, where 1 is replaced by current number of
+message.</p>
+<dl compact="compact">
+<dt><b>SMS_1_CLASS</b></dt>
+<dd>
+<p>Class of message.</p>
+</dd>
+<dt><b>SMS_1_NUMBER</b></dt>
+<dd>
+<p>Sender number.</p>
+</dd>
+<dt><b>SMS_1_TEXT</b></dt>
+<dd>
+<p>Message text. Text is not available for 8-bit binary
+messages.</p>
+</dd>
+</dl>
+<a class="aname" id="lbAG" name="lbAG"/>
+<h4>Per part variables</h4>
+<p>The variables further described as DECODED_1_... are generated
+for each message part, where 1 is replaced by current number of
+part. Set are only those variables whose content is present in the
+message.</p>
+<dl compact="compact">
+<dt><b>DECODED_1_TEXT</b></dt>
+<dd>
+<p>Decoded long message text.</p>
+</dd>
+<dt><b>DECODED_1_MMS_SENDER</b></dt>
+<dd>
+<p>Sender of MMS indication message.</p>
+</dd>
+<dt><b>DECODED_1_MMS_TITLE</b></dt>
+<dd>
+<p>title of MMS indication message.</p>
+</dd>
+<dt><b>DECODED_1_MMS_ADDRESS</b></dt>
+<dd>
+<p>Address (URL) of MMS from MMS indication message.</p>
+</dd>
+<dt><b>DECODED_1_MMS_SIZE</b></dt>
+<dd>
+<p>Size of MMS as specified in MMS indication message.</p>
+</dd>
+</dl>
+<a class="aname" id="lbAH" name="lbAH"/>
+<h3>EXAMPLE</h3>
+<p><a class="aname" id="lbAI" name="lbAI"/></p>
+<h4>Passing MMS indication parameters to external program</h4>
+<p>Following script (if used as RunOnReceive handler) will write
+information about each received MMS indication to the log file.
+Just replace echo command with your own program to do custom
+processing.</p>
+<dl compact="compact">
+<dd>
+<pre>
+#!/bin/sh
+if [ $DECODED_PARTS -eq 0 ] ; then
+    # No decoded parts, nothing to process
+    exit
+fi
+if [ &quot;$DECODED_1_MMS_ADDRESS&quot; ] ; then
+    echo &quot;$DECODED_1_MMS_ADDRESS&quot; &quot;$DECODED_1_MMS_SENDER&quot; &quot;$DECODED_1_MMS_TITLE&quot; &gt;&gt; /tmp/smsd-mms.log
+fi
+</pre></dd>
+</dl>
+<p><a class="aname" id="lbAJ" name="lbAJ"/></p>
+<h3>SEE ALSO</h3>
+<a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5), <a href="../gammu.1/">gammu</a>(1), <a href="../gammurc.5/">gammurc</a>(5) <a class="aname" id="lbAK" name="lbAK"/>
+<h3>AUTHOR</h3>
+gammu-smsd and this manual page were written by Michal Cihar
+&lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt;.
+<a class="aname" id="lbAL" name="lbAL"/>
+<h3>COPYRIGHT</h3>
+Copyright © 2010 Michal Cihar and other authors. License GPLv2: GNU
+GPL version 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
+
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law. <a class="aname" id="lbAM" name="lbAM"/>
+<h3>REPORTING BUGS</h3>
+Please report bugs to &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.
+<hr/>
+<a class="aname" id="index" name="index"/>
+<h3>Index</h3>
+<dl>
+<dt><a href="#lbAB">NAME</a></dt>
+<dt><a href="#lbAC">DESCRIPTION</a></dt>
+<dt><a href="#lbAD">ENVIRONMENT</a></dt>
+<dd>
+<dl>
+<dt><a href="#lbAE">Global variables</a></dt>
+<dt><a href="#lbAF">Per message variables</a></dt>
+<dt><a href="#lbAG">Per part variables</a></dt>
+</dl>
+</dd>
+<dt><a href="#lbAH">EXAMPLE</a></dt>
+<dd>
+<dl>
+<dt><a href="#lbAI">Passing MMS indication parameters to external
+program</a></dt>
+</dl>
+</dd>
+<dt><a href="#lbAJ">SEE ALSO</a></dt>
+<dt><a href="#lbAK">AUTHOR</a></dt>
+<dt><a href="#lbAL">COPYRIGHT</a></dt>
+<dt><a href="#lbAM">REPORTING BUGS</a></dt>
+</dl>
+<hr/>
+This document was created by man2html, using the manual
+pages.<br/>
+Time: 22:20:52 GMT, February 03, 2010
+</div>

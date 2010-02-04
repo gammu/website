@@ -1,0 +1,156 @@
+<div class="manpage">
+<h2>GAMMU-SMSD-RUN</h2>
+Section: Dokumentace Gammu (7)<br/>
+Updated: Leden 25, 2010<br/>
+<a href="#index">Index</a> 
+<hr/>
+<a class="aname" id="lbAB" name="lbAB"/>
+<h3>JMÉNO</h3>
+<p>gammu-smsd-run - dokumentace pro parametr RunOnReceive</p>
+<p><a class="aname" id="lbAC" name="lbAC"/></p>
+<h3>POPIS</h3>
+<p>Gammu SMSD může být nastaven pomocí direktivy RunOnReceive (viz
+<a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5)) aby spouštěl
+zadaný program při přijetí zprávy.<br/>
+ Tento prarametr je spuštěn přes shell,
+takže možná budete potřebovat escapovat některé znaky a můžete
+použít jakékoliv množství parametrů. SMSD dále přidá parametry s
+identifikátory přijatých zpráv. Typ identifikátorů záleží na
+použité službě, pro databázové služby je to obvykle ID vloženého
+řádku, pro souborové pak jméno souboru.</p>
+<p>Gammu SMSD čeká na ukončení skriptu. Pokud budete provádět
+nějaké časově náročné operace, zastavíte přijímání nových zpráv.
+Aby se zabránilo větším komplikacím, čeká SMSD maximálně dvě
+minuty. Po této době bude pokračovat v normálním běhu a může
+spustit váš skript znovu.</p>
+<p><a class="aname" id="lbAD" name="lbAD"/></p>
+<h3>PROSTŘEDÍ</h3>
+<p>Program je spuštěn s prostředím, které obsahuje mnoho informací
+o zprávě. Toto můžete použít spolu se službou NULL (viz <a href="../gammu-smsd-null.7/">gammu-smsd-null</a>(7)) pro vytvoření
+vlastního zpracování zpráv.</p>
+<p><a class="aname" id="lbAE" name="lbAE"/></p>
+<h4>Globální proměnné</h4>
+<dl compact="compact">
+<dt><b>SMS_MESSAGES</b></dt>
+<dd>
+<p>Počet skutečně přijatých zpráv.</p>
+</dd>
+<dt><b>DECODED_PARTS</b></dt>
+<dd>
+<p>Počet dekódovaných částí zpráv.</p>
+</dd>
+</dl>
+<a class="aname" id="lbAF" name="lbAF"/>
+<h4>Proměnné pro každou zprávu</h4>
+<p>Proměnné dále popsané jako SMS_1_... jsou vytvořeny pro každou
+fyzickou zprávu, kde číslo 1 je nahrazeno číslem zprávy.</p>
+<dl compact="compact">
+<dt><b>SMS_1_CLASS</b></dt>
+<dd>
+<p>Třída zprávy.</p>
+</dd>
+<dt><b>SMS_1_NUMBER</b></dt>
+<dd>
+<p>Číslo odesílatele.</p>
+</dd>
+<dt><b>SMS_1_TEXT</b></dt>
+<dd>
+<p>Text zprávy. Není dostupné pro 8-bitové binární zprávy.</p>
+</dd>
+</dl>
+<a class="aname" id="lbAG" name="lbAG"/>
+<h4>Proměnné pro každou část</h4>
+<p>Proměnné dále popsané jako DECODED_1_... jsou vytvořeny pro
+každou část zprávy, kde číslo 1 je nahrazeno číslem části
+zprávy.</p>
+<dl compact="compact">
+<dt><b>DECODED_1_TEXT</b></dt>
+<dd>
+<p>Dekódovaný dlouhý text zprávy.</p>
+</dd>
+<dt><b>DECODED_1_MMS_SENDER</b></dt>
+<dd>
+<p>Odesílatel zprávy oznamující MMS.</p>
+</dd>
+<dt><b>DECODED_1_MMS_TITLE</b></dt>
+<dd>
+<p>Název zprávy oznamující MMS.</p>
+</dd>
+<dt><b>DECODED_1_MMS_ADDRESS</b></dt>
+<dd>
+<p>Addresa (URL) MMS zpráv z ze zprávy oznamující MMS.</p>
+</dd>
+<dt><b>DECODED_1_MMS_SIZE</b></dt>
+<dd>
+<p>Velikost MMS tak jak je uvedena ve zprávě oznamující MMS.</p>
+</dd>
+</dl>
+<a class="aname" id="lbAH" name="lbAH"/>
+<h3>PŘÍKLAD</h3>
+<p><a class="aname" id="lbAI" name="lbAI"/></p>
+<h4>Předávání parametrů zprávy oznamující MMS externímu
+programu</h4>
+<p>Následující skript (pokud bude použit jako RunOnReceive) zapíše
+informace o každé přijaté zprávě oznamující MMS do textového
+souboru. Nahrazením příkazu echo můžete zařadit vlastní program,
+který tyto parametry zpracuje.</p>
+<dl compact="compact">
+<dd>
+<pre>
+#!/bin/sh
+if [ $DECODED_PARTS -eq 0 ] ; then
+    # Nejsou žádné dekódované části
+    exit
+fi
+if [ &quot;$DECODED_1_MMS_ADDRESS&quot; ] ; then
+    echo &quot;$DECODED_1_MMS_ADDRESS&quot; &quot;$DECODED_1_MMS_SENDER&quot; &quot;$DECODED_1_MMS_TITLE&quot; &gt;&gt; /tmp/smsd-mms.log
+fi
+</pre></dd>
+</dl>
+<p><a class="aname" id="lbAJ" name="lbAJ"/></p>
+<h3>DALŠÍ INFORMACE</h3>
+<a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5), <a href="../gammu.1/">gammu</a>(1), <a href="../gammurc.5/">gammurc</a>(5) <a class="aname" id="lbAK" name="lbAK"/>
+<h3>AUTOR</h3>
+gammu-smsd a tuto manuálovou stránku napsal Michal Čihař
+&lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt;.
+<a class="aname" id="lbAL" name="lbAL"/>
+<h3>COPYRIGHT</h3>
+Copyright © 2010 Michal Čihař a další autoři. Licence GPLv2: GNU
+GPL verze 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
+
+Tento program je svobodný software; můžete jej šířit a modifikovat.
+Není poskytována ŽÁDNÁ ZÁRUKA, v rozsahu jaký je povolen zákonem.
+<a class="aname" id="lbAM" name="lbAM"/>
+<h3>HLÁŠENÍ CHYB</h3>
+Prosím hlašte chyby na &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.
+<hr/>
+<a class="aname" id="index" name="index"/>
+<h3>Index</h3>
+<dl>
+<dt><a href="#lbAB">JMÉNO</a></dt>
+<dt><a href="#lbAC">POPIS</a></dt>
+<dt><a href="#lbAD">PROSTŘEDÍ</a></dt>
+<dd>
+<dl>
+<dt><a href="#lbAE">Globální proměnné</a></dt>
+<dt><a href="#lbAF">Proměnné pro každou zprávu</a></dt>
+<dt><a href="#lbAG">Proměnné pro každou část</a></dt>
+</dl>
+</dd>
+<dt><a href="#lbAH">PŘÍKLAD</a></dt>
+<dd>
+<dl>
+<dt><a href="#lbAI">Předávání parametrů zprávy oznamující MMS
+externímu programu</a></dt>
+</dl>
+</dd>
+<dt><a href="#lbAJ">DALŠÍ INFORMACE</a></dt>
+<dt><a href="#lbAK">AUTOR</a></dt>
+<dt><a href="#lbAL">COPYRIGHT</a></dt>
+<dt><a href="#lbAM">HLÁŠENÍ CHYB</a></dt>
+</dl>
+<hr/>
+This document was created by man2html, using the manual
+pages.<br/>
+Time: 22:20:52 GMT, February 03, 2010
+</div>

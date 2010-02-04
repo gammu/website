@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU-SMSDRC</h2>
 Section: Gammu Documentation (5)<br/>
-Updated: October 20, 2009<br/>
+Updated: January 31, 2010<br/>
 <a href="#index">Index</a> 
 <hr/>
 <a class="aname" id="lbAB" name="lbAB"/>
@@ -37,9 +37,10 @@ bellow).</p>
 <dl compact="compact">
 <dt><b>Service</b></dt>
 <dd>
-<p>SMSD service to use, one of FILES, MYSQL, PGSQL, DBI (depends on
-compiled in support for backends).</p>
+<p>SMSD service to use, one of FILES, NULL, MYSQL, PGSQL, DBI
+(depends on compiled in support for backends).</p>
 <p><b>FILES</b> - stores messages in files, see <a href="../gammu-smsd-files.7/">gammu-smsd-files</a>(7) for details<br/>
+<b>NULL</b> - does not store messages at all, see <a href="../gammu-smsd-null.7/">gammu-smsd-null</a>(7) for details<br/>
 <b>MYSQL</b> - stores messages in MySQL database, see <a href="../gammu-smsd-mysql.7/">gammu-smsd-mysql</a>(7) for details<br/>
 <b>PGSQL</b> - stores messages in PostgreSQL database, see <a href="../gammu-smsd-pgsql.7/">gammu-smsd-pgsql</a>(7) for details<br/>
 <b>DBI</b> - stores messages in any database supported by libdbi,
@@ -107,6 +108,29 @@ the phone is busy sending SMSes. Normally a test for received SMSes
 is done every CommTimeout seconds and after each sent SMS.</p>
 <p>Default is 0 (not used).</p>
 </dd>
+<dt><b>StatusFrequency</b></dt>
+<dd>
+<p>The number of seconds between refreshing phone status (battery,
+signal) stored in shared memory and possibly in service backends.
+Use 0 to disable.</p>
+<p>Default is 15.</p>
+</dd>
+<dt><b>LoopSleep</b></dt>
+<dd>
+<p>The number of seconds how long will SMSD sleep before checking
+for some activity. Please note that setting this to higher value
+than 1 will have effects to other time based configurations,
+because they will be effectively rounded to multiply of this
+value.</p>
+<p>Default is 1.</p>
+</dd>
+<dt><b>MultipartTimeout</b></dt>
+<dd>
+<p>The number of seconds how long will SMSD wait for all parts of
+multipart message. If all parts won't arrive in time, parts will be
+processed as separate messages.</p>
+<p>Default is 600 (10 minutes).</p>
+</dd>
 <dt><b>CheckSecurity</b></dt>
 <dd>
 <p>Whether to check if phone wants to enter PIN.</p>
@@ -158,18 +182,20 @@ backend service.</p>
 </dd>
 <dt><b>RunOnReceive</b></dt>
 <dd>
-<p>Executes a program after receiving message. This parameter is
-executed through shell, so you might need to escape some special
-characters and you can include any number of parameters.
-Additionally parameters with identifiers of received messages are
-appended to the command line. The identifiers depend on used
-service backend, typically it is ID of inserted row for database
-backends or file name for file based backends.</p>
+<p>Executes a program after receiving message.</p>
+<p>This parameter is executed through shell, so you might need to
+escape some special characters and you can include any number of
+parameters. Additionally parameters with identifiers of received
+messages are appended to the command line. The identifiers depend
+on used service backend, typically it is ID of inserted row for
+database backends or file name for file based backends.</p>
 <p>Gammu SMSD waits for the script to terminate. If you make some
 time consuming there, it will make SMSD not receive new messages.
 However to limit breakage from this situation, the waiting time is
 limited to two minutes. After this time SMSD will continue in
 normal operation and might execute your script again.</p>
+<p>The process has available lot of information about received
+message in environment, check <a href="../gammu-smsd-run.7/">gammu-smsd-run</a>(7) for more details.</p>
 </dd>
 <dt><b>IncludeNumbersFile</b></dt>
 <dd>
@@ -378,7 +404,8 @@ number1 = 666
 <h3>SEE ALSO</h3>
 <a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu.1/">gammu</a>(1), <a href="../gammurc.5/">gammurc</a>(5)
 <p><a href="../gammu-smsd-files.7/">gammu-smsd-files</a>(7),
-<a href="../gammu-smsd-mysql.7/">gammu-smsd-mysql</a>(7), <a href="../gammu-smsd-pgsql.7/">gammu-smsd-pgsql</a>(7), <a href="../gammu-smsd-dbi.7/">gammu-smsd-dbi</a>(7), <a href="../gammu-smsd-tables.7/">gammu-smsd-tables</a>(7) <a class="aname" id="lbAK" name="lbAK"/></p>
+<a href="../gammu-smsd-mysql.7/">gammu-smsd-mysql</a>(7), <a href="../gammu-smsd-pgsql.7/">gammu-smsd-pgsql</a>(7), <a href="../gammu-smsd-dbi.7/">gammu-smsd-dbi</a>(7), <a href="../gammu-smsd-tables.7/">gammu-smsd-tables</a>(7), <a href="../gammu-smsd-null.7/">gammu-smsd-null</a>(7), <a href="../gammu-smsd-run.7/">gammu-smsd-run</a>(7)</p>
+<p><a class="aname" id="lbAK" name="lbAK"/></p>
 <h3>AUTHOR</h3>
 gammu-smsd and this manual page were written by Michal Cihar
 &lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt;.
@@ -426,5 +453,5 @@ logfile = smsd.log
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 16:03:18 GMT, January 08, 2010
+Time: 22:20:52 GMT, February 03, 2010
 </div>

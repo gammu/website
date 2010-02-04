@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU-SMSDRC</h2>
 Section: Dokumentace Gammu (5)<br/>
-Updated: Říjen 20, 2009<br/>
+Updated: Leden 31, 2010<br/>
 <a href="#index">Index</a> 
 <hr/>
 <a class="aname" id="lbAB" name="lbAB"/>
@@ -35,10 +35,11 @@ které ovládají filtrování zpráv (viz dále).</p>
 <dl compact="compact">
 <dt><b>Service</b></dt>
 <dd>
-<p>Jakou službu SMSM použít, jedna z FILES, MYSQL, PGSQL, DBI
+<p>Jakou službu SMSM použít, jedna z FILES, NULL, MYSQL, PGSQL, DBI
 (záleží na zakompilovaných knihovnách).</p>
 <p><b>FILES</b> - ukládá zprávy v souborech, pro podrobnosti viz
 <a href="../gammu-smsd-files.7/">gammu-smsd-files</a>(7)<br/>
+<b>NULL</b> - vůbec neukládá zprávy, pro podrobnosti viz <a href="../gammu-smsd-null.7/">gammu-smsd-null</a>(7)<br/>
 <b>MYSQL</b> - ukládá zprávy v MySQL databázi, pro podrobnosti viz
 <a href="../gammu-smsd-mysql.7/">gammu-smsd-mysql</a>(7)<br/>
 <b>PGSQL</b> - ukládá zprávy v databázi PostgreSQL, pro podrobnosti
@@ -108,6 +109,28 @@ nové zprávy hledají každých CommTimeout sekund a po každé odeslané
 SMS.</p>
 <p>Výchozí je 0 (není použito).</p>
 </dd>
+<dt><b>StatusFrequency</b></dt>
+<dd>
+<p>Počet sekund mezi načítáním stavu telefonu (baterie a signál) a
+ukládáním do sdílené paměti a případně to úložiště používané
+služby. Pro nenačítání těchto informací nastavte 0.</p>
+<p>Výchozí je 15.</p>
+</dd>
+<dt><b>LoopSleep</b></dt>
+<dd>
+<p>Počet sekund, kolik bude SMSD spát před zjišťováním nějaké
+aktivity. Hodnota větší než 1 bude mít vliv na ostatní nastavení
+časů, protože ty pak budou efektivně zaokrouhlena nahoru na
+nejbližší násobek tohoto nastavení.</p>
+<p>Výchozí je 1.</p>
+</dd>
+<dt><b>MultipartTimeout</b></dt>
+<dd>
+<p>Počet sekund jak dlouho bude SMSD čekat na doručení všech částí
+zprávy. Pokud všechny části nedorazí včas, budou zpracovány jako
+samostatné zprávy.</p>
+<p>Výchozí je 600 (10 minut).</p>
+</dd>
 <dt><b>CheckSecurity</b></dt>
 <dd>
 <p>Jestli se má kontrolovat, zda telefon vyžaduje PIN.</p>
@@ -161,17 +184,20 @@ umožněno více démonům sdílet jednu databázi. Tento parametr nemá
 </dd>
 <dt><b>RunOnReceive</b></dt>
 <dd>
-<p>Spustí program po přijetí zprávy. Tento prarametr je spuštěn
-přes shell, takže možná budete potřebovat escapovat některé znaky a
-můžete použít jakékoliv množství parametrů. SMSD dále přidá
-parametry s identifikátory přijatých zpráv. Typ identifikátorů
-záleží na použité službě, pro databázové služby je to obvykle ID
-vloženého řádku, pro souborové pak jméno souboru.</p>
+<p>Spustí program po přijetí zprávy.</p>
+<p>Tento prarametr je spuštěn přes shell, takže možná budete
+potřebovat escapovat některé znaky a můžete použít jakékoliv
+množství parametrů. SMSD dále přidá parametry s identifikátory
+přijatých zpráv. Typ identifikátorů záleží na použité službě, pro
+databázové služby je to obvykle ID vloženého řádku, pro souborové
+pak jméno souboru.</p>
 <p>Gammu SMSD čeká na ukončení skriptu. Pokud budete provádět
 nějaké časově náročné operace, zastavíte přijímání nových zpráv.
 Aby se zabránilo větším komplikacím, čeká SMSD maximálně dvě
 minuty. Po této době bude pokračovat v normálním běhu a může
 spustit váš skript znovu.</p>
+<p>Spuštěný proces má v prostředí dostupné množství informací o
+přijaté zprávě, více podrobností naleznete v <a href="../gammu-smsd-run.7/">gammu-smsd-run</a>(7).</p>
 </dd>
 <dt><b>IncludeNumbersFile</b></dt>
 <dd>
@@ -384,7 +410,8 @@ number1 = 666
 <h3>DALŠÍ INFORMACE</h3>
 <a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu.1/">gammu</a>(1), <a href="../gammurc.5/">gammurc</a>(5)
 <p><a href="../gammu-smsd-files.7/">gammu-smsd-files</a>(7),
-<a href="../gammu-smsd-mysql.7/">gammu-smsd-mysql</a>(7), <a href="../gammu-smsd-pgsql.7/">gammu-smsd-pgsql</a>(7), <a href="../gammu-smsd-dbi.7/">gammu-smsd-dbi</a>(7), <a href="../gammu-smsd-tables.7/">gammu-smsd-tables</a>(7) <a class="aname" id="lbAK" name="lbAK"/></p>
+<a href="../gammu-smsd-mysql.7/">gammu-smsd-mysql</a>(7), <a href="../gammu-smsd-pgsql.7/">gammu-smsd-pgsql</a>(7), <a href="../gammu-smsd-dbi.7/">gammu-smsd-dbi</a>(7), <a href="../gammu-smsd-tables.7/">gammu-smsd-tables</a>(7), <a href="../gammu-smsd-null.7/">gammu-smsd-null</a>(7), <a href="../gammu-smsd-run.7/">gammu-smsd-run</a>(7)</p>
+<p><a class="aname" id="lbAK" name="lbAK"/></p>
 <h3>AUTOR</h3>
 gammu-smsd a tuto manuálovou stránku napsal Michal Čihař
 &lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt;.
@@ -434,5 +461,5 @@ soubory</a></dt>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 16:03:18 GMT, January 08, 2010
+Time: 22:20:52 GMT, February 03, 2010
 </div>

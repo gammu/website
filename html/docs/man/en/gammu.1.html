@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU</h2>
 Section: Gammu Documentation (1)<br/>
-Updated: Jan 8 2010<br/>
+Updated: Jan 19 2010<br/>
 <a href="#index">Index</a> 
 <hr/>
 <p><a class="aname" id="lbAB" name="lbAB"/></p>
@@ -31,13 +31,13 @@ messages</p>
 <p><a class="aname" id="lbAG" name="lbAG"/></p>
 <h4>Calls</h4>
 <dl compact="compact">
-<dt><b>answercall</b> <i>[ID]</i></dt>
+<dt><b>answercall</b> <i>[id]</i></dt>
 <dd>Answer incoming call.</dd>
-<dt><b>cancelcall</b> <i>[ID]</i></dt>
+<dt><b>cancelcall</b> <i>[id]</i></dt>
 <dd>Cancel incoming call</dd>
 <dt><b>canceldiverts</b></dt>
 <dd>Cancel all existing call diverts.</dd>
-<dt><b>conferencecall</b> <i>ID</i></dt>
+<dt><b>conferencecall</b> <i>id</i></dt>
 <dd>Initiates a conference call.</dd>
 <dt><b>dialvoice</b> <i>number [show|hide]</i></dt>
 <dd>Make voice call from SIM card line set in phone.
@@ -60,7 +60,7 @@ divert</p>
 <dt><b>getussd</b> <i>code</i></dt>
 <dd>Retrieves USSD information - dials a service number and reads
 response.</dd>
-<dt><b>holdcall</b> <i>ID</i></dt>
+<dt><b>holdcall</b> <i>id</i></dt>
 <dd>Holds call.</dd>
 <dt><b>maketerminatedcall</b> <i>number length [show|hide]</i></dt>
 <dd>Make voice call from SIM card line set in phone which will be
@@ -71,13 +71,13 @@ Press Ctrl+C to break this state.</dd>
 <dt><b>senddtmf</b> <i>sequence</i></dt>
 <dd>Plays DTMF sequence. In some phones available only during
 calls</dd>
-<dt><b>splitcall</b> <i>ID</i></dt>
+<dt><b>splitcall</b> <i>id</i></dt>
 <dd>Splits call.</dd>
-<dt><b>switchcall</b> <i>[ID]</i></dt>
+<dt><b>switchcall</b> <i>[id]</i></dt>
 <dd>Switches call.</dd>
-<dt><b>transfercall</b> <i>[ID]</i></dt>
+<dt><b>transfercall</b> <i>[id]</i></dt>
 <dd>Transfers call.</dd>
-<dt><b>unholdcall</b> <i>ID</i></dt>
+<dt><b>unholdcall</b> <i>id</i></dt>
 <dd>Unholds call.</dd>
 </dl>
 <a class="aname" id="lbAH" name="lbAH"/>
@@ -637,15 +637,14 @@ backup format.</p>
 </dd>
 <dt><b>clearall</b></dt>
 <dd>Deletes all private data from the phone.</dd>
-<dt><b>deleteallmemory</b>
-<i>DC|MC|RC|ON|VM|SM|ME|MT|FD|SL</i></dt>
+<dt><b>deleteallmemory DC|MC|RC|ON|VM|SM|ME|MT|FD|SL</b></dt>
 <dd>Deletes all entries from specified memory type.</dd>
 <dt><b>deletememory DC|MC|RC|ON|VM|SM|ME|MT|FD|SL</b> <i>start
 [stop]</i></dt>
 <dd>Deletes entries in specified range from specified memory
 type.</dd>
-<dt><b>getallcategory</b> <i>TODO|PHONEBOOK</i></dt>
-<dt><b>getallmemory</b> <i>DC|MC|RC|ON|VM|SM|ME|MT|FD|SL</i></dt>
+<dt><b>getallcategory TODO|PHONEBOOK</b></dt>
+<dt><b>getallmemory DC|MC|RC|ON|VM|SM|ME|MT|FD|SL</b></dt>
 <dd>Get all memory locations from phone. For memory types see
 <b>getmemory</b>.</dd>
 <dt><b>getcategory TODO|PHONEBOOK</b> <i>start [stop]</i></dt>
@@ -740,10 +739,10 @@ specified folder ID.</dd>
 <dd>Delete files with given IDs.</dd>
 <dt><b>deletefolder</b> <i>name</i></dt>
 <dd>Delete folder with given ID.</dd>
-<dt><b>getfilefolder</b> <i>ID1, ID2, ...</i></dt>
+<dt><b>getfilefolder</b> <i>fileID, fileID, ...</i></dt>
 <dd>Retrieve files or all files from folder with given IDs from a
 phone filesytem.</dd>
-<dt><b>getfiles</b> <i>ID1, ID2, ...</i></dt>
+<dt><b>getfiles</b> <i>fileID, fileID, ...</i></dt>
 <dd>Retrieve files with given IDs from a phone filesytem.</dd>
 <dt><b>getfilesystem</b> <i>[-flatall|-flat]</i></dt>
 <dd>Display info about all folders and files in phone memory/memory
@@ -772,14 +771,11 @@ issue, but phone firmware problem.</p>
 <dd>
 <p>Display info about drives available in phone/memory card.</p>
 </dd>
-<dt><b>nokiaaddfile</b>
-<i>Gallery|Gallery2|Camera|Tones|Tones2|Records|Video|Playlist|MemoryCard
-file [-name name] [-protected] [-readonly] [-system] [-hidden]
-[-newtime]</i></dt>
+<dt><b>nokiaaddfile APPLICATION|GAME</b> <i>file [-readonly]
+[-overwrite] [-overwriteall]</i></dt>
 <dd>Install the *.jar/*.jad file pair of a midlet in the
-application or game menu of the phone. You have to give the name
-without the jar/jad suffix, otherwise you will get the slightly
-confusing error message Can't open specified file. Read only ?
+application or game menu of the phone. You need to specify filename
+without the jar/jad suffix, both will be added automatically.
 <p>The option <i>-overwrite</i> deletes the application's .jad and
 .jar files bevor installing, but doesn't delete the application
 data. Option <i>-overwriteall</i> will also delete all data. Both
@@ -791,6 +787,10 @@ file.mid and add to Tones folder</p>
 <p>You can use <a href="../jadmaker.1/">jadmaker</a>(1) to
 generate a .jad file from a .jar file.</p>
 </dd>
+<dt><b>nokiaaddfile
+GALLERY|GALLERY2|CAMERA|TONES|TONES2|RECORDS|VIDEO|PLAYLIST|MEMORYCARD</b>
+<i>file [-name name] [-protected] [-readonly] [-system] [-hidden]
+[-newtime]</i></dt>
 <dt><b>nokiaaddplaylists</b></dt>
 <dt><b>sendfile</b> <i>name</i></dt>
 <dd>Sends file to a phone. It's up to phone to decide where to
@@ -809,12 +809,12 @@ it.</dd>
 inputfile, output will be written to stdout using ASCII art. When
 give output file and format, in some file formats (like NLM) will
 be set indicator informing about logo type to given.</dd>
-<dt><b>getbitmap</b> <i>DEALER</i></dt>
+<dt><b>getbitmap CALLER</b> <i>location [file]</i></dt>
+<dd>Get caller group logo from phone. Locations 1-5.</dd>
+<dt><b>getbitmap DEALER</b></dt>
 <dd>In some models it's possible to save dealer welcome note - text
 displayed during enabling phone, which can't be edited from phone
 menu. Here you can get it.</dd>
-<dt><b>getbitmap CALLER</b> <i>location [file]</i></dt>
-<dd>Get caller group logo from phone. Locations 1-5.</dd>
 <dt><b>getbitmap OPERATOR</b> <i>[file]</i></dt>
 <dd>Get operator logo (picture displayed instead of operator name)
 from phone.</dd>
@@ -823,6 +823,8 @@ from phone.</dd>
 <dt><b>getbitmap STARTUP</b> <i>[file]</i></dt>
 <dd>Get static startup logo from phone. Allow to save it in
 file.</dd>
+<dt><b>getbitmap TEXT</b></dt>
+<dd>Get startup text from phone.</dd>
 <dt><b>savesms ANIMATION</b> <i>frames file1 file2... [-folder id]
 [-unread] [-read] [-unsent] [-sent] [-sender number] [-smsname
 name] [-smscset number] [-smscnumber number] [-reply] [-maxsms
@@ -895,8 +897,11 @@ for sendsms and savesms</b>.</p>
 <dt><b>setbitmap CALLER</b> <i>location [file]</i></dt>
 <dd>Set caller logo.</dd>
 <dt><b>setbitmap COLOUROPERATOR</b> <i>[fileID [netcode]]</i></dt>
+<dd>Sets color operator logo in phone.</dd>
 <dt><b>setbitmap COLOURSTARTUP</b> <i>[fileID]</i></dt>
 <dt><b>setbitmap DEALER</b> <i>text</i></dt>
+<dd>Sets welcome message configured by dealer, which usually can
+not be changed in phone menus.</dd>
 <dt><b>setbitmap OPERATOR</b> <i>[file [netcode]]</i></dt>
 <dd>Set operator logo in phone. When won't give file and netcode,
 operator logo will be removed from phone. When will give only
@@ -905,12 +910,15 @@ operator. When give additionally network code, it will be displayed
 for this operator: <b>gammu setbitmap OPERATOR file &quot;260
 02&quot;</b></dd>
 <dt><b>setbitmap PICTURE</b> <i>file location [text]</i></dt>
+<dd>Sets picture image in phone.</dd>
 <dt><b>setbitmap STARTUP</b> <i>file|1|2|3</i></dt>
 <dd>Set startup logo in phone. It can be static (then you will have
 to give file name) or one of predefined animated (only some phones
-like Nokia 3310 or 3330 supports it)</dd>
+like Nokia 3310 or 3330 supports it).</dd>
 <dt><b>setbitmap TEXT</b> <i>text</i></dt>
+<dd>Sets startup text in phone.</dd>
 <dt><b>setbitmap WALLPAPER</b> <i>fileID</i></dt>
+<dd>Sets wallpaper in phone.</dd>
 </dl>
 <a class="aname" id="lbAL" name="lbAL"/>
 <h4>Ringtones</h4>
@@ -1159,7 +1167,7 @@ backup format.</p>
 <dd>Deletes all private data from the phone.</dd>
 <dt><b>deletetodo</b> <i>start [stop]</i></dt>
 <dd>Deletes selected todo entries in phone.</dd>
-<dt><b>getallcategory</b> <i>TODO|PHONEBOOK</i></dt>
+<dt><b>getallcategory TODO|PHONEBOOK</b></dt>
 <dt><b>getalltodo</b></dt>
 <dd>Retrieves all todo entries from phone.</dd>
 <dt><b>getcategory TODO|PHONEBOOK</b> <i>start [stop]</i></dt>
@@ -1271,7 +1279,7 @@ backup format.</p>
 </dd>
 <dt><b>clearall</b></dt>
 <dd>Deletes all private data from the phone.</dd>
-<dt><b>getallcategory</b> <i>TODO|PHONEBOOK</i></dt>
+<dt><b>getallcategory TODO|PHONEBOOK</b></dt>
 <dt><b>getcategory TODO|PHONEBOOK</b> <i>start [stop]</i></dt>
 <dt><b>listmemorycategory</b> <i>text|number</i></dt>
 <dt><b>listtodocategory</b> <i>text|number</i></dt>
@@ -1346,6 +1354,8 @@ won't be done, when phone doesn't have set clock inside.</p>
 selected folder in phone. Please note that this overwrites existing
 messages in phone (if it supports it).</dd>
 <dt><b>savefile BOOKMARK</b> <i>target.url file location</i></dt>
+<dd>Converts backup format supported by Gammu to vBookmark
+file.</dd>
 <dt><b>savefile CALENDAR</b> <i>target.vcs file location</i></dt>
 <dd>Allows to convert between various backup formats which gammu
 supports for calendar events. The file type is guessed (for input
@@ -1381,14 +1391,11 @@ gammusavefileCALENDARoutput.vcfmyPhonebook.backupME42</p>
 <a class="aname" id="lbAS" name="lbAS"/>
 <h4>Nokia specific</h4>
 <dl compact="compact">
-<dt><b>nokiaaddfile</b>
-<i>Gallery|Gallery2|Camera|Tones|Tones2|Records|Video|Playlist|MemoryCard
-file [-name name] [-protected] [-readonly] [-system] [-hidden]
-[-newtime]</i></dt>
+<dt><b>nokiaaddfile APPLICATION|GAME</b> <i>file [-readonly]
+[-overwrite] [-overwriteall]</i></dt>
 <dd>Install the *.jar/*.jad file pair of a midlet in the
-application or game menu of the phone. You have to give the name
-without the jar/jad suffix, otherwise you will get the slightly
-confusing error message Can't open specified file. Read only ?
+application or game menu of the phone. You need to specify filename
+without the jar/jad suffix, both will be added automatically.
 <p>The option <i>-overwrite</i> deletes the application's .jad and
 .jar files bevor installing, but doesn't delete the application
 data. Option <i>-overwriteall</i> will also delete all data. Both
@@ -1400,6 +1407,10 @@ file.mid and add to Tones folder</p>
 <p>You can use <a href="../jadmaker.1/">jadmaker</a>(1) to
 generate a .jad file from a .jar file.</p>
 </dd>
+<dt><b>nokiaaddfile
+GALLERY|GALLERY2|CAMERA|TONES|TONES2|RECORDS|VIDEO|PLAYLIST|MEMORYCARD</b>
+<i>file [-name name] [-protected] [-readonly] [-system] [-hidden]
+[-newtime]</i></dt>
 <dt><b>nokiaaddplaylists</b></dt>
 <dt><b>nokiacomposer</b> <i>file</i></dt>
 <dd>Show, how to enter RTTL ringtone in composer existing in many
@@ -1568,6 +1579,8 @@ If you want only to add entries to phone, use addnew.</p>
 won't be done, when phone doesn't have set clock inside.</p>
 </dd>
 <dt><b>savefile BOOKMARK</b> <i>target.url file location</i></dt>
+<dd>Converts backup format supported by Gammu to vBookmark
+file.</dd>
 <dt><b>savesms BOOKMARK</b> <i>file location [-folder id] [-unread]
 [-read] [-unsent] [-sent] [-sender number] [-smsname name]
 [-smscset number] [-smscnumber number] [-reply] [-maxsms
@@ -1766,7 +1779,7 @@ Press Ctrl+C to break this state.</dd>
 <dd>Displays calendar settings like first day of week or automatic
 deleting of old entries.</dd>
 <dt><b>getprofile</b> <i>start [stop]</i></dt>
-<dt><b>resetphonesettings</b> <i>PHONE|DEV|UIF|ALL|FACTORY</i></dt>
+<dt><b>resetphonesettings PHONE|DEV|UIF|ALL|FACTORY</b></dt>
 <dd>Reset phone settings. <i>BE CAREFULL !!!!</i>
 <p><b>PHONE:</b><br/></p>
 <p><b>DEV:</b><br/></p>
@@ -1874,7 +1887,7 @@ higher<br/>
 <b>rR</b> - Red<br/>
 <b>123456789*0#</b> is numeric keyboard</p>
 </dd>
-<dt><b>reset</b> <i>SOFT|HARD</i></dt>
+<dt><b>reset SOFT|HARD</b></dt>
 <dd>Make phone reset: soft (without asking for PIN) or hard (with
 PIN).
 <p><i>Note:</i> some phones will make hard reset even with
@@ -2386,5 +2399,5 @@ ChangeLog for more details.</p>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 16:03:17 GMT, January 08, 2010
+Time: 22:20:51 GMT, February 03, 2010
 </div>
