@@ -1,5 +1,6 @@
 from django.shortcuts import render_to_response, get_object_or_404
 from wammu.helpers import WammuContext
+from django.utils.translation import ugettext_lazy
 
 from django.conf import settings
 
@@ -8,8 +9,8 @@ from django.http import Http404
 import os
 
 langnames = {
-    'cs': 'Czech',
-    'en': 'English',
+    'cs': ugettext_lazy('Czech'),
+    'en': ugettext_lazy('English'),
 }
 
 def langcmp(a, b):

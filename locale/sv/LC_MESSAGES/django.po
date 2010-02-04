@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-15 14:19+0100\n"
+"POT-Creation-Date: 2010-02-04 19:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,7 +164,7 @@ msgstr ""
 msgid "SMSD"
 msgstr "SMS"
 
-#: html/base.html:92 wammu/helpers.py:17
+#: html/base.html:92 wammu/helpers.py:18
 #, fuzzy
 msgid "Support"
 msgstr "&Support"
@@ -190,7 +190,7 @@ msgid "Media"
 msgstr ""
 
 #: html/base.html:104 html/index.html:9 html/index.html.py:11
-#: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3 wammu/helpers.py:19
+#: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3 wammu/helpers.py:20
 msgid "Screenshots"
 msgstr ""
 
@@ -204,7 +204,7 @@ msgstr ""
 
 #: html/base.html:110 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:67 html/smsd.html:71 html/wammu.html:57
-#: html/docs/sidebar.html:2 html/support/sidebar.html:4 wammu/helpers.py:20
+#: html/docs/sidebar.html:2 html/support/sidebar.html:4 wammu/helpers.py:21
 msgid "Documentation"
 msgstr ""
 
@@ -224,7 +224,7 @@ msgstr ""
 msgid "For developers"
 msgstr ""
 
-#: html/base.html:119 wammu/helpers.py:21
+#: html/base.html:119 wammu/helpers.py:22
 msgid "Contribute"
 msgstr ""
 
@@ -482,7 +482,7 @@ msgstr ""
 #: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:32
 #: html/smsd.html:61 html/wammu.html:47 html/downloads/list.html:4
 #: html/downloads/program.html:4 html/downloads/release.html:4
-#: wammu/helpers.py:18
+#: wammu/helpers.py:19
 msgid "Download"
 msgstr ""
 
@@ -2747,6 +2747,14 @@ msgstr ""
 msgid "Jabber chat room"
 msgstr ""
 
+#: manpages/views.py:12
+msgid "Czech"
+msgstr ""
+
+#: manpages/views.py:13
+msgid "English"
+msgstr ""
+
 #: news/feeds.py:11
 msgid "Updates about Wammu and Gammu programs."
 msgstr ""
@@ -2892,10 +2900,10 @@ msgstr ""
 msgid "Phone record has been created."
 msgstr ""
 
-#: wammu/helpers.py:26
+#: wammu/helpers.py:27
 msgid "Gammu and Wammu News Feed (RSS)"
 msgstr ""
 
-#: wammu/helpers.py:29
+#: wammu/helpers.py:30
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr ""

@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-15 14:19+0100\n"
+"POT-Creation-Date: 2010-02-04 19:49+0100\n"
 "PO-Revision-Date: 2010-01-28 00:48+0200\n"
 "Last-Translator:  <cartman@cartman34.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.0.1\n"
 
@@ -167,7 +167,7 @@ msgstr "python-gammu"
 msgid "SMSD"
 msgstr "SMSC"
 
-#: html/base.html:92 wammu/helpers.py:17
+#: html/base.html:92 wammu/helpers.py:18
 msgid "Support"
 msgstr "Support"
 
@@ -192,7 +192,7 @@ msgid "Media"
 msgstr ""
 
 #: html/base.html:104 html/index.html:9 html/index.html.py:11
-#: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3 wammu/helpers.py:19
+#: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3 wammu/helpers.py:20
 msgid "Screenshots"
 msgstr ""
 
@@ -206,7 +206,7 @@ msgstr ""
 
 #: html/base.html:110 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:67 html/smsd.html:71 html/wammu.html:57
-#: html/docs/sidebar.html:2 html/support/sidebar.html:4 wammu/helpers.py:20
+#: html/docs/sidebar.html:2 html/support/sidebar.html:4 wammu/helpers.py:21
 msgid "Documentation"
 msgstr "Documentation"
 
@@ -227,7 +227,7 @@ msgstr ""
 msgid "For developers"
 msgstr "Pour les développeurs"
 
-#: html/base.html:119 wammu/helpers.py:21
+#: html/base.html:119 wammu/helpers.py:22
 msgid "Contribute"
 msgstr ""
 
@@ -361,7 +361,8 @@ msgstr ""
 " développeurs, architectes, utilisateurs et les influenceurs du communauté\n"
 "du logiciel libre, autorisant à communiquer directement avec les clients "
 "clés\n"
-"dans ce nouveau domaine passionnant. Par l'achat de publicités sur ce réseau\n"
+"dans ce nouveau domaine passionnant. Par l'achat de publicités sur ce "
+"réseau\n"
 ", vous soutiendrez les différents sites web du logiciel libre, dont celui-"
 "ci.\n"
 
@@ -505,7 +506,7 @@ msgstr ""
 #: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:32
 #: html/smsd.html:61 html/wammu.html:47 html/downloads/list.html:4
 #: html/downloads/program.html:4 html/downloads/release.html:4
-#: wammu/helpers.py:18
+#: wammu/helpers.py:19
 msgid "Download"
 msgstr ""
 
@@ -2770,6 +2771,14 @@ msgstr ""
 msgid "Jabber chat room"
 msgstr ""
 
+#: manpages/views.py:12
+msgid "Czech"
+msgstr ""
+
+#: manpages/views.py:13
+msgid "English"
+msgstr ""
+
 #: news/feeds.py:11
 msgid "Updates about Wammu and Gammu programs."
 msgstr ""
@@ -2901,9 +2910,8 @@ msgid ""
 "\"http://daringfireball.net/projects/markdown/syntax\">markdown markup</a>."
 msgstr ""
 "Tous les commentaires à propos de ce téléphone seront utiles pour Gammu.\n"
-"Vous pouvez utiliser <a "
-"href=\"http://daringfireball.net/projects/markdown/syntax\">le code "
-"markdown</a>."
+"Vous pouvez utiliser <a href=\"http://daringfireball.net/projects/markdown/"
+"syntax\">le code markdown</a>."
 
 #: phonedb/models.py:87
 msgid "Please choose how will be email handled in next field."
@@ -2921,10 +2929,10 @@ msgstr "Flux vers la base de données Gammu (Atom)"
 msgid "Phone record has been created."
 msgstr "L'enregistrement du téléphone a bien été créé."
 
-#: wammu/helpers.py:26
+#: wammu/helpers.py:27
 msgid "Gammu and Wammu News Feed (RSS)"
 msgstr "Flux vers les nouvelles Gammu et Wammu (RSS)"
 
-#: wammu/helpers.py:29
+#: wammu/helpers.py:30
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Flux vers les nouvelles Gammu et Wammu (Atom)"
