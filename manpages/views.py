@@ -54,6 +54,8 @@ def show_pages(request):
 
 
 def show_lang_pages(request, lang):
+    if not langnames.has_key(lang):
+        raise Http404('Language not found!')
     return render_to_response('docs/list_man.html', WammuContext(request, {
         'manpages': [('.', langnames[lang], list_pages(lang))],
     }))
