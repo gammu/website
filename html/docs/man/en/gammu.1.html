@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU</h2>
 Section: Gammu Documentation (1)<br/>
-Updated: Jan 19 2010<br/>
+Updated: Feb 17 2010<br/>
 <a href="#index">Index</a> 
 <hr/>
 <p><a class="aname" id="lbAB" name="lbAB"/></p>
@@ -120,6 +120,55 @@ will be the message valid (SMSC will the discard the message after
 this time if it could not deliver it).</p>
 <p><b>-save</b> - will also save message which is being sent</p>
 </dd>
+<dt><b>Introduction to SMS formats</b></dt>
+<dd>
+<p>Gammu has support for many SMS formats like:</p>
+<p><br/>
+*NokiaSmartMessaging(usedformonochromaticpictureimages,downloadableprofiles,monochromaticoperatorlogos,monochromaticcallerlogosandmonophonicringtones)<br/>
+
+*LinkedSMS(bothwith8and16-bitidentificationnumbersinheaders)<br/>
+
+*EMS(thisisSMSformatusedforsavingmonochromaticimages,monophonicringtones,animations,textformattingandothers)<br/>
+
+*MMSnotifications<br/>
+*Alcatellogomessages</p>
+<p>You need to ensure that the target phone supports message type
+you want to send. Otherwise the phone will not be able to display
+it or will even crash, because firmware of phone did not expect
+this possibility.</p>
+</dd>
+<dt><b>Encoding chars in SMS text</b></dt>
+<dd>
+<p>Text in SMS can be coded using two ways:</p>
+<p>* with GSM Default Alphabet - in single SMS you can have
+maximally 160 chars (Gammu doesn't support compressing such texts
+according to GSM standards, but it isn't big limit, because there
+are no phones supporting them), but they're from limited set:<br/>
+*allLatinsmallandlarge<br/>
+
+*alldigits<br/>
+*someGreek<br/>
+*someothernational<br/>
+*somesymbolslike@!&quot;#&amp;/()%*+=-,.:;&lt;&gt;?<br/>
+
+*fewothers</p>
+<p>* with Unicode - in single SMS you can save at most 70 chars,
+but these can be any chars including all national and special ones.
+Please note, that some older phones might have problems displaying
+such message.</p>
+<p>Gammu tries to do the best to handle non ASCII characters in
+your message. Everything is internally handled in Unicode (the
+input is converted depending on your locales configuration) and in
+case message uses Unicode the text will be given as such to the
+message.</p>
+<p>Should the message be sent in GSM Default Alphabet, Gammu will
+try to convert all characters to keep message readable. Gammu does
+support multi byte encoding for some characters in GSM Default
+Alphabet (it is needed for ^ { } \ [ ] ~ |). The characters which
+are not present in GSM Default Alphabet are transliterated to
+closest ASCII equivalent (accents are removed). Remaining not known
+characters are replaced by question mark.</p>
+</dd>
 <dt><b>addsms</b> <i>folder file [-yes]</i></dt>
 <dd>Adds SMSes from file (format like backupsms uses) to selected
 folder in phone.</dd>
@@ -149,7 +198,7 @@ With each sms you will see location. If you want to get such sms
 from phone alone, use <b>gammu getsms 0 location</b></dd>
 <dt><b>geteachsms</b> <i>-pbk</i></dt>
 <dd>Similiary to <b>getallsms</b>. Difference is, that links all
-contacenated sms</dd>
+concatenated sms</dd>
 <dt><b>getsms</b> <i>folder start [stop]</i></dt>
 <dd>Get SMS.
 <p>Locations are numerated from 1.</p>
@@ -170,6 +219,8 @@ your phone, use <b>getsmsfolders</b> to get folders list.</p>
 <dt><b>getsmsfolders</b></dt>
 <dd>Get names for SMS folders in phone</dd>
 <dt><b>nokiagett9</b></dt>
+<dd>This option should display T9 dictionary content from DCT4
+phones.</dd>
 <dt><b>restoresms</b> <i>file [-yes]</i></dt>
 <dd>Restores SMSes from file (format like backupsms uses) to
 selected folder in phone. Please note that this overwrites existing
@@ -207,7 +258,11 @@ for sendsms and savesms</b>.</p>
 <dt><b>savesms CALLER</b> <i>file [-folder id] [-unread] [-read]
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num]</i></dt>
-<dd>Save caller logo as sms (Nokia format - size 72x14).
+<dd>Save caller logo as sms in Nokia (Smart Messaging) format -
+size 72x14, two colors.
+<p>Please note, that it isn't designed for colour logos available
+for example in DCT4/TIKU - you need to put bitmap file there inside
+phone using filesystem commands.</p>
 <p>For description of shared parameters see <b>Common parameters
 for sendsms and savesms</b>.</p>
 </dd>
@@ -242,6 +297,8 @@ with UPI. Phones compatible with UPI (like SonyEricsson phones)
 will read such ringtone as one</p>
 <p><b>-toneSE</b> - adds IMelody in &quot;short&quot; form supported by
 SonyEricsson phones</p>
+<p><b>-toneSElong</b> - add SonyEricsson IMelody saved in one or
+few SMS with UPI</p>
 <p><b>-variablebitmap</b> - bitmap in any size saved in one SMS</p>
 <p><b>-variablebitmaplong</b> - bitmap with maximal size 96x128
 saved in one or few sms</p>
@@ -250,6 +307,20 @@ saved in one or few sms</p>
 parameter (excluding default ringtones and logos) will be
 &quot;protected&quot; (in phones compatible with ODI like SonyEricsson
 products it won't be possible to forward them from phone menu)</p>
+<p><b>-16bit</b> - Gammu uses SMS headers with 16-bit numbers for
+saving linking info in SMS (it means less chars available for user
+in each SMS)</p>
+<p><b>-format</b> lcrasbiut - last text will be formatted. You can
+use combinations of chars:<br/>
+l-leftaligned<br/>
+c-centered<br/>
+r-rightaligned<br/>
+a-largefont<br/>
+s-smallfont<br/>
+b-boldfont<br/>
+i-italicfont<br/>
+u-underlinedfont<br/>
+t-strikethroughfont</p>
 <p><i>Example:</i> gammu savesms EMS -text &quot;Greetings&quot; -defsound 1
 -text &quot;from Gammu&quot; -tone10 axelf.txt -animation 2 file1.bmp
 file2.bmp</p>
@@ -289,8 +360,11 @@ for sendsms and savesms</b>.</p>
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-netcode
 netcode] [-biglogo]</i></dt>
-<dd>Save operator logo as sms (Nokia format - size 72x14 or 78x21
-after using <b>-biglogo</b>).
+<dd>Save operator logo as sms in Nokia (Smart Messaging) format -
+size 72x14 or 78x21 after using <b>-biglogo</b>, all in two colors.
+<p>Please note, that it isn't designed for colour logos available
+for example in DCT4/TIKU - you need to put bitmap file there inside
+phone using filesystem commands.</p>
 <p>For description of shared parameters see <b>Common parameters
 for sendsms and savesms</b>.</p>
 </dd>
@@ -298,7 +372,11 @@ for sendsms and savesms</b>.</p>
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-text text]
 [-unicode] [-alcatelbmmi]</i></dt>
-<dd>Save Picture Image as sms (Nokia format - size 72x28).
+<dd>
+<p>Read bitmap from 2 colors file (bmp, nlm, nsl, ngg, nol, wbmp,
+etc.), format into bitmap in Smart Messaging (72x28, 2 colors,
+called often Picture Image and saved with text) or Alcatel format
+and send/save over SMS.</p>
 <p>For description of shared parameters see <b>Common parameters
 for sendsms and savesms</b>.</p>
 </dd>
@@ -306,8 +384,11 @@ for sendsms and savesms</b>.</p>
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-name name]
 [-bitmap bitmap] [-ringtone ringtone]</i></dt>
-<dd>Read ringtone (RTTL) format and bitmap (Picture Image size) and
-name and save as Nokia profile.
+<dd>
+<p>Read ringtone (RTTL) format, bitmap (Picture Image size) and
+name, format into Smart Messaging profile and send/save as SMS.
+Please note, that this format is abandomed by Nokia and supported
+by some (older) devices only like Nokia 3310.</p>
 <p>For description of shared parameters see <b>Common parameters
 for sendsms and savesms</b>.</p>
 </dd>
@@ -316,7 +397,7 @@ for sendsms and savesms</b>.</p>
 number] [-smscnumber number] [-reply] [-maxsms num] [-long]
 [-scale]</i></dt>
 <dd>Read RTTL ringtone from file and save as SMS into SIM/phone
-memory. Ringtone is saved in Nokia format.
+memory. Ringtone is saved in Nokia (Smart Messaging) format.
 <p><b>-long</b> - ringtone is saved using Profile style. It can be
 longer (and saved in 2 SMS), but decoded only by newer phones (like
 33xx)</p>
@@ -346,7 +427,9 @@ for sendsms and savesms</b>.</p>
 [-replacefile file] [-text msgtext] [-textutf8 msgtext]</i></dt>
 <dd>Take text from stdin (or commandline if -text specified) and
 save as text SMS into SIM/phone memory.
-<p><b>-flash</b> - Class 0 SMS</p>
+<p><b>-flash</b> - Class 0 SMS (should be displayed after receiving
+on recipients' phone display after receiving without entering
+Inbox)</p>
 <p><b>-len len</b> - specify, how many chars will be read. When use
 this option and text will be longer than 1 SMS, will be split into
 more linked SMS</p>
@@ -365,6 +448,9 @@ anything, only beep, vibrate or turn on light. Text will be cut to
 <p><b>-text</b> - get text from command line instead of stdin.</p>
 <p><b>-textutf8</b> - get text in UTF-8 from command line instead
 of stdin.</p>
+<p><b>-16bit</b> - Gammu uses SMS headers with 16-bit numbers for
+saving linking info in SMS (it means less chars available for user
+in each SMS)</p>
 <p><i>TIP:</i> You can create Unicode file using WordPad in Windows
 (during saving select &quot;Unicode Text Document&quot; format). In Unix can
 use for example YUdit.</p>
@@ -792,6 +878,26 @@ GALLERY|GALLERY2|CAMERA|TONES|TONES2|RECORDS|VIDEO|PLAYLIST|MEMORYCARD</b>
 <i>file [-name name] [-protected] [-readonly] [-system] [-hidden]
 [-newtime]</i></dt>
 <dt><b>nokiaaddplaylists</b></dt>
+<dd>
+<p>Goes through phone memory and generated playlist for all music
+files found.</p>
+<p>To manually manage playlists:</p>
+<p><br/>
+gammuaddfilea:\predefplaylistfilename.m3u</p>
+<p>Will add playlist filename.m3u</p>
+<p><br/>
+gammugetfilesystem</p>
+<p>Will get list of all files (including names of files with
+playlists)</p>
+<p><br/>
+gammudeletefilesa:\predefplaylist\filename.m3u</p>
+<p>Will delete playlist filename.m3u</p>
+<p>Format of m3u playlist is easy (standard mp3 playlist):</p>
+<p>First line is #EXTM3U, next lines contain names of files
+(b:\file1.mp3, b:\folder1\file2.mp3, etc.). File needs t have
+'\r\n' terminated lines. So just run unix2dos on the resulting file
+before uploading it your your phone.</p>
+</dd>
 <dt><b>sendfile</b> <i>name</i></dt>
 <dd>Sends file to a phone. It's up to phone to decide where to
 store this file and how to handle it (for example when you send
@@ -802,6 +908,12 @@ it.</dd>
 </dl>
 <a class="aname" id="lbAK" name="lbAK"/>
 <h4>Logo and pictures</h4>
+<p>These options are mainly (there are few expections) for
+monochromatic logos and images available in older phones.
+Recognized file formats: xpm (only saving), 2-colors bmp, nlm, nsl,
+ngg, nol, wbmp, gif (for Samsung).</p>
+<p>In new models all bitmaps are saved in filesystem and should go
+into filesystem section</p>
 <dl compact="compact">
 <dt><b>copybitmap</b> <i>inputfile [outputfile
 [OPERATOR|PICTURE|STARTUP|CALLER]]</i></dt>
@@ -838,7 +950,11 @@ for sendsms and savesms</b>.</p>
 <dt><b>savesms CALLER</b> <i>file [-folder id] [-unread] [-read]
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num]</i></dt>
-<dd>Save caller logo as sms (Nokia format - size 72x14).
+<dd>Save caller logo as sms in Nokia (Smart Messaging) format -
+size 72x14, two colors.
+<p>Please note, that it isn't designed for colour logos available
+for example in DCT4/TIKU - you need to put bitmap file there inside
+phone using filesystem commands.</p>
 <p>For description of shared parameters see <b>Common parameters
 for sendsms and savesms</b>.</p>
 </dd>
@@ -846,8 +962,11 @@ for sendsms and savesms</b>.</p>
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-netcode
 netcode] [-biglogo]</i></dt>
-<dd>Save operator logo as sms (Nokia format - size 72x14 or 78x21
-after using <b>-biglogo</b>).
+<dd>Save operator logo as sms in Nokia (Smart Messaging) format -
+size 72x14 or 78x21 after using <b>-biglogo</b>, all in two colors.
+<p>Please note, that it isn't designed for colour logos available
+for example in DCT4/TIKU - you need to put bitmap file there inside
+phone using filesystem commands.</p>
 <p>For description of shared parameters see <b>Common parameters
 for sendsms and savesms</b>.</p>
 </dd>
@@ -855,7 +974,11 @@ for sendsms and savesms</b>.</p>
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-text text]
 [-unicode] [-alcatelbmmi]</i></dt>
-<dd>Save Picture Image as sms (Nokia format - size 72x28).
+<dd>
+<p>Read bitmap from 2 colors file (bmp, nlm, nsl, ngg, nol, wbmp,
+etc.), format into bitmap in Smart Messaging (72x28, 2 colors,
+called often Picture Image and saved with text) or Alcatel format
+and send/save over SMS.</p>
 <p>For description of shared parameters see <b>Common parameters
 for sendsms and savesms</b>.</p>
 </dd>
@@ -914,7 +1037,8 @@ for this operator: <b>gammu setbitmap OPERATOR file &quot;260
 <dt><b>setbitmap STARTUP</b> <i>file|1|2|3</i></dt>
 <dd>Set startup logo in phone. It can be static (then you will have
 to give file name) or one of predefined animated (only some phones
-like Nokia 3310 or 3330 supports it).</dd>
+like Nokia 3310 or 3330 supports it, use location 1, 2 or 3 for
+these).</dd>
 <dt><b>setbitmap TEXT</b> <i>text</i></dt>
 <dd>Sets startup text in phone.</dd>
 <dt><b>setbitmap WALLPAPER</b> <i>fileID</i></dt>
@@ -925,6 +1049,10 @@ like Nokia 3310 or 3330 supports it).</dd>
 <p>Ringtones are mostly supported only for older phones. For recent
 phones you usually just upload them to some folder in phone
 filesystem.</p>
+<p>There are recognized various file formats by options described
+below: rttl, binary format created for Gammu, mid (saving), re
+(reading), ott, communicator, ringtones format found in fkn.pl, wav
+(saving), ime/imy (saving), rng, mmf (for Samsung).</p>
 <dl compact="compact">
 <dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Adds data written in file created using <b>backup option</b>.
@@ -1001,7 +1129,7 @@ won't be done, when phone doesn't have set clock inside.</p>
 number] [-smscnumber number] [-reply] [-maxsms num] [-long]
 [-scale]</i></dt>
 <dd>Read RTTL ringtone from file and save as SMS into SIM/phone
-memory. Ringtone is saved in Nokia format.
+memory. Ringtone is saved in Nokia (Smart Messaging) format.
 <p><b>-long</b> - ringtone is saved using Profile style. It can be
 longer (and saved in 2 SMS), but decoded only by newer phones (like
 33xx)</p>
@@ -1034,6 +1162,8 @@ composer from phone menu (for example, in N33xx).
 </dl>
 <a class="aname" id="lbAM" name="lbAM"/>
 <h4>Calendar notes</h4>
+<p>In Nokia 3310, 3315 and 3330 these are named &quot;Reminders&quot; and
+have some limitations (depending on phone firmware version).</p>
 <dl compact="compact">
 <dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Adds data written in file created using <b>backup option</b>.
@@ -1216,7 +1346,10 @@ for sendsms and savesms</b>.</p>
 <h4>Notes</h4>
 <dl compact="compact">
 <dt><b>getallnotes</b></dt>
-<dd>Reads all notes from the phone.</dd>
+<dd>Reads all notes from the phone.
+<p>Note: Not all phones supports this function, especially most
+Sony Ericsson phones even if they have notes inside phone.</p>
+</dd>
 </dl>
 <a class="aname" id="lbAP" name="lbAP"/>
 <h4>Date, time and alarms</h4>
@@ -1412,6 +1545,26 @@ GALLERY|GALLERY2|CAMERA|TONES|TONES2|RECORDS|VIDEO|PLAYLIST|MEMORYCARD</b>
 <i>file [-name name] [-protected] [-readonly] [-system] [-hidden]
 [-newtime]</i></dt>
 <dt><b>nokiaaddplaylists</b></dt>
+<dd>
+<p>Goes through phone memory and generated playlist for all music
+files found.</p>
+<p>To manually manage playlists:</p>
+<p><br/>
+gammuaddfilea:\predefplaylistfilename.m3u</p>
+<p>Will add playlist filename.m3u</p>
+<p><br/>
+gammugetfilesystem</p>
+<p>Will get list of all files (including names of files with
+playlists)</p>
+<p><br/>
+gammudeletefilesa:\predefplaylist\filename.m3u</p>
+<p>Will delete playlist filename.m3u</p>
+<p>Format of m3u playlist is easy (standard mp3 playlist):</p>
+<p>First line is #EXTM3U, next lines contain names of files
+(b:\file1.mp3, b:\folder1\file2.mp3, etc.). File needs t have
+'\r\n' terminated lines. So just run unix2dos on the resulting file
+before uploading it your your phone.</p>
+</dd>
 <dt><b>nokiacomposer</b> <i>file</i></dt>
 <dd>Show, how to enter RTTL ringtone in composer existing in many
 Nokia phones (and how should it look like).</dd>
@@ -1426,11 +1579,32 @@ is not flasher ;-)). You can get this name using this option.</dd>
 <dt><b>nokiagetpbkfeatures</b> <i>memorytype</i></dt>
 <dt><b>nokiagetscreendump</b></dt>
 <dt><b>nokiagett9</b></dt>
+<dd>This option should display T9 dictionary content from DCT4
+phones.</dd>
 <dt><b>nokiagetvoicerecord</b> <i>location</i></dt>
 <dd>
 <p>Get voice record from location and save to WAV file. File is
 coded using GSM 6.10 codec (available for example in win32). Name
 of file is like name of voice record in phone.</p>
+<p>Created WAV files require GSM 6.10 codec to be played. In Win XP
+it's included by Microsoft. If you deleted it by accident in this
+operating system, make such steps:</p>
+<p>1. Control Panel<br/>
+2. Add hardware<br/>
+3. click Next<br/>
+4. select &quot;Yes. I have already connected the hardware&quot;<br/>
+5. select &quot;Add a new hardware device&quot;<br/>
+6. select &quot;Install the hardware that I manually select from a
+list&quot;<br/>
+7. select &quot;Sound, video and game controllers&quot;<br/>
+8. select &quot;Audio codecs&quot;<br/>
+9. select &quot;windows\system32&quot; directory and file
+&quot;mmdriver.inf&quot;<br/>
+10. if You will be asked for file msgsm32.acm, it should unpacked
+from Windows CD<br/>
+11. now You can be asked if want to install unsigned driver (YES),
+about select codec configuration (select what you want) and
+rebotting PC (make it)</p>
 </dd>
 <dt><b>nokiamakecamerashoot</b></dt>
 <dt><b>nokianetmonitor</b> <i>test</i></dt>
@@ -1451,6 +1625,13 @@ and read netmonitor manual.</p>
 <dt><b>nokiasecuritycode</b></dt>
 <dd>Get/reset to &quot;12345&quot; security code</dd>
 <dt><b>nokiaselftests</b></dt>
+<dd>
+<p>Perform tests for Nokia DCT3 phones.</p>
+<p>Note: EEPROM test can show an error when your phone has an
+EEPROM in flash (like 82xx/7110/62xx/33xx). The clock test will
+show an error when the phone doesn?t have an internal battery for
+the clock (like 3xxx).</p>
+</dd>
 <dt><b>nokiasetlights</b> <i>keypad|display|torch on|off</i></dt>
 <dt><b>nokiasetoperatorname</b> <i>[networkcode name]</i></dt>
 <dt><b>nokiasetphonemenus</b></dt>
@@ -1477,8 +1658,11 @@ higher<br/>
 <a class="aname" id="lbAT" name="lbAT"/>
 <h4>Siemens specific</h4>
 <dl compact="compact">
-<dt><b>siemensnetmonact</b> <i>netmon_type (1-full,
-2-simple)</i></dt>
+<dt><b>siemensnetmonact</b> <i>netmon_type</i></dt>
+<dd>
+<p>Enables network monitor in Siemens phone. Currently known values
+for type are 1 for full and 2 for simple mode.</p>
+</dd>
 <dt><b>siemensnetmonitor</b> <i>test</i></dt>
 <dt><b>siemenssatnetmon</b></dt>
 </dl>
@@ -1509,8 +1693,11 @@ or 9210 have to reboot them to see netmonitor menu)</p>
 </dd>
 <dt><b>nokiasetoperatorname</b> <i>[networkcode name]</i></dt>
 <dt><b>setautonetworklogin</b></dt>
-<dt><b>siemensnetmonact</b> <i>netmon_type (1-full,
-2-simple)</i></dt>
+<dt><b>siemensnetmonact</b> <i>netmon_type</i></dt>
+<dd>
+<p>Enables network monitor in Siemens phone. Currently known values
+for type are 1 for full and 2 for simple mode.</p>
+</dd>
 <dt><b>siemensnetmonitor</b> <i>test</i></dt>
 <dt><b>siemenssatnetmon</b></dt>
 </dl>
@@ -1689,6 +1876,13 @@ for sendsms and savesms</b>.</p>
 <dt><b>nokiadisplaytest</b> <i>number</i></dt>
 <dt><b>nokiagetadc</b></dt>
 <dt><b>nokiaselftests</b></dt>
+<dd>
+<p>Perform tests for Nokia DCT3 phones.</p>
+<p>Note: EEPROM test can show an error when your phone has an
+EEPROM in flash (like 82xx/7110/62xx/33xx). The clock test will
+show an error when the phone doesn?t have an internal battery for
+the clock (like 3xxx).</p>
+</dd>
 <dt><b>nokiasetlights</b> <i>keypad|display|torch on|off</i></dt>
 <dt><b>nokiavibratest</b></dt>
 </dl>
@@ -1802,8 +1996,11 @@ deleting of old entries.</dd>
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-name name]
 [-bitmap bitmap] [-ringtone ringtone]</i></dt>
-<dd>Read ringtone (RTTL) format and bitmap (Picture Image size) and
-name and save as Nokia profile.
+<dd>
+<p>Read ringtone (RTTL) format, bitmap (Picture Image size) and
+name, format into Smart Messaging profile and send/save as SMS.
+Please note, that this format is abandomed by Nokia and supported
+by some (older) devices only like Nokia 3310.</p>
 <p>For description of shared parameters see <b>Common parameters
 for sendsms and savesms</b>.</p>
 </dd>
@@ -1854,6 +2051,25 @@ read from stdin.</dd>
 <p>Get voice record from location and save to WAV file. File is
 coded using GSM 6.10 codec (available for example in win32). Name
 of file is like name of voice record in phone.</p>
+<p>Created WAV files require GSM 6.10 codec to be played. In Win XP
+it's included by Microsoft. If you deleted it by accident in this
+operating system, make such steps:</p>
+<p>1. Control Panel<br/>
+2. Add hardware<br/>
+3. click Next<br/>
+4. select &quot;Yes. I have already connected the hardware&quot;<br/>
+5. select &quot;Add a new hardware device&quot;<br/>
+6. select &quot;Install the hardware that I manually select from a
+list&quot;<br/>
+7. select &quot;Sound, video and game controllers&quot;<br/>
+8. select &quot;Audio codecs&quot;<br/>
+9. select &quot;windows\system32&quot; directory and file
+&quot;mmdriver.inf&quot;<br/>
+10. if You will be asked for file msgsm32.acm, it should unpacked
+from Windows CD<br/>
+11. now You can be asked if want to install unsigned driver (YES),
+about select codec configuration (select what you want) and
+rebotting PC (make it)</p>
 </dd>
 <dt><b>nokiamakecamerashoot</b></dt>
 <dt><b>nokiasetphonemenus</b></dt>
@@ -2015,7 +2231,7 @@ Can not open specified file. <a class="aname" id="lbCO" name="lbCO"/>
 <h4>129</h4>
 More memory required... <a class="aname" id="lbCP" name="lbCP"/>
 <h4>130</h4>
-Permission to file/device required... <a class="aname" id="lbCQ" name="lbCQ"/>
+Operation not allowed by phone. <a class="aname" id="lbCQ" name="lbCQ"/>
 <h4>131</h4>
 Empty SMSC number. Set in phone or use -smscnumber. <a class="aname" id="lbCR" name="lbCR"/>
 <h4>132</h4>
@@ -2399,5 +2615,5 @@ ChangeLog for more details.</p>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 22:20:51 GMT, February 03, 2010
+Time: 22:21:28 GMT, February 25, 2010
 </div>

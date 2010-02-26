@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU-SMSD</h2>
 Section: Dokumentace Gammu (1)<br/>
-Updated: Leden 15, 2009<br/>
+Updated: 8. únor 2010<br/>
 <a href="#index">Index</a> 
 <hr/>
 <a class="aname" id="lbAB" name="lbAB"/>
@@ -158,22 +158,36 @@ gammu-smsd.exe -c smsdrc
 <p>Nyní by mělo být možné dostat popis chyb i když SMSD nejde
 spustit jako služba.</p>
 <p><a class="aname" id="lbAI" name="lbAI"/></p>
+<h3>ZNÁMÁ OMEZENÍ</h3>
+<p>You can not use same phone by more programs in same time.
+However in case you did not enable locking in [gammu] section, it
+might be able to start the communication with phone from more
+programs. In this case neither of the programs will probably
+work.</p>
+<p>There is no way to detect that SMS message is reply to another
+by looking at message headers. The only way to achieve this is to
+add some token to the message and let the user include it in the
+message on reply.</p>
+<p><a class="aname" id="lbAJ" name="lbAJ"/></p>
 <h3>DALŠÍ INFORMACE</h3>
 <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5), <a href="../gammu.1/">gammu</a>(1), <a href="../gammu-smsd-inject.1/">gammu-smsd-inject</a>(1), <a href="../gammu-smsd-monitor.1/">gammu-smsd-monitor</a>(1)
 <p>Dokumentace pro různé služby:</p>
 <p><a href="../gammu-smsd-files.7/">gammu-smsd-files</a>(7),
-<a href="../gammu-smsd-mysql.7/">gammu-smsd-mysql</a>(7), <a href="../gammu-smsd-pgsql.7/">gammu-smsd-pgsql</a>(7), <a href="../gammu-smsd-dbi.7/">gammu-smsd-dbi</a>(7), <a href="../gammu-smsd-tables.7/">gammu-smsd-tables</a>(7), <a href="../gammu-smsd-null.7/">gammu-smsd-null</a>(7), <a href="../gammu-smsd-run.7/">gammu-smsd-run</a>(7) <a class="aname" id="lbAJ" name="lbAJ"/></p>
+<a href="../gammu-smsd-mysql.7/">gammu-smsd-mysql</a>(7), <a href="../gammu-smsd-pgsql.7/">gammu-smsd-pgsql</a>(7), <a href="../gammu-smsd-dbi.7/">gammu-smsd-dbi</a>(7), <a href="../gammu-smsd-tables.7/">gammu-smsd-tables</a>(7), <a href="../gammu-smsd-null.7/">gammu-smsd-null</a>(7), <a href="../gammu-smsd-run.7/">gammu-smsd-run</a>(7)</p>
+<p>For web based frontend to SMSD database (currently only MySQL is
+being supported), please check Kalkun - &lt;<a href="http://kalkun.sourceforge.net/">http://kalkun.sourceforge.net/</a>&gt;.
+<a class="aname" id="lbAK" name="lbAK"/></p>
 <h3>AUTOR</h3>
 gammu-smsd a tuto manuálovou stránku napsal Michal Čihař
 &lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt;.
-<a class="aname" id="lbAK" name="lbAK"/>
+<a class="aname" id="lbAL" name="lbAL"/>
 <h3>COPYRIGHT</h3>
 Copyright © 2009 Michal Čihař a další autoři. Licence GPLv2: GNU
 GPL verze 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
 
 Tento program je svobodný software; můžete jej šířit a modifikovat.
 Není poskytována ŽÁDNÁ ZÁRUKA, v rozsahu jaký je povolen zákonem.
-<a class="aname" id="lbAL" name="lbAL"/>
+<a class="aname" id="lbAM" name="lbAM"/>
 <h3>HLÁŠENÍ CHYB</h3>
 Prosím hlašte chyby na &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.
 <p>Před hlášením chyb prosím zapněte logovaní v nastavení SMSD:</p>
@@ -201,13 +215,14 @@ logfile = smsd.log
 <dt><a href="#lbAH">Problémy se službou ve Windows</a></dt>
 </dl>
 </dd>
-<dt><a href="#lbAI">DALŠÍ INFORMACE</a></dt>
-<dt><a href="#lbAJ">AUTOR</a></dt>
-<dt><a href="#lbAK">COPYRIGHT</a></dt>
-<dt><a href="#lbAL">HLÁŠENÍ CHYB</a></dt>
+<dt><a href="#lbAI">ZNÁMÁ OMEZENÍ</a></dt>
+<dt><a href="#lbAJ">DALŠÍ INFORMACE</a></dt>
+<dt><a href="#lbAK">AUTOR</a></dt>
+<dt><a href="#lbAL">COPYRIGHT</a></dt>
+<dt><a href="#lbAM">HLÁŠENÍ CHYB</a></dt>
 </dl>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 22:20:52 GMT, February 03, 2010
+Time: 22:21:28 GMT, February 25, 2010
 </div>

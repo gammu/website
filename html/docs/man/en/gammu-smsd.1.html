@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU-SMSD</h2>
 Section: Gammu Documentation (1)<br/>
-Updated: January 15, 2009<br/>
+Updated: February 8, 2010<br/>
 <a href="#index">Index</a> 
 <hr/>
 <a class="aname" id="lbAB" name="lbAB"/>
@@ -158,21 +158,35 @@ gammu-smsd.exe -c smsdrc
 <p>You now should be able to get errors from SMSD even if it fails
 to start as a service.</p>
 <p><a class="aname" id="lbAI" name="lbAI"/></p>
+<h3>KNOWN LIMITATIONS</h3>
+<p>You can not use same phone by more programs in same time.
+However in case you did not enable locking in [gammu] section, it
+might be able to start the communication with phone from more
+programs. In this case neither of the programs will probably
+work.</p>
+<p>There is no way to detect that SMS message is reply to another
+by looking at message headers. The only way to achieve this is to
+add some token to the message and let the user include it in the
+message on reply.</p>
+<p><a class="aname" id="lbAJ" name="lbAJ"/></p>
 <h3>SEE ALSO</h3>
 <a href="../gammu-smsdrc.5/">gammu-smsdrc</a>(5), <a href="../gammu.1/">gammu</a>(1), <a href="../gammu-smsd-inject.1/">gammu-smsd-inject</a>(1), <a href="../gammu-smsd-monitor.1/">gammu-smsd-monitor</a>(1)
 <p>Documentation for different backends:</p>
 <p><a href="../gammu-smsd-files.7/">gammu-smsd-files</a>(7),
-<a href="../gammu-smsd-mysql.7/">gammu-smsd-mysql</a>(7), <a href="../gammu-smsd-pgsql.7/">gammu-smsd-pgsql</a>(7), <a href="../gammu-smsd-dbi.7/">gammu-smsd-dbi</a>(7), <a href="../gammu-smsd-tables.7/">gammu-smsd-tables</a>(7), <a href="../gammu-smsd-null.7/">gammu-smsd-null</a>(7), <a href="../gammu-smsd-run.7/">gammu-smsd-run</a>(7) <a class="aname" id="lbAJ" name="lbAJ"/></p>
+<a href="../gammu-smsd-mysql.7/">gammu-smsd-mysql</a>(7), <a href="../gammu-smsd-pgsql.7/">gammu-smsd-pgsql</a>(7), <a href="../gammu-smsd-dbi.7/">gammu-smsd-dbi</a>(7), <a href="../gammu-smsd-tables.7/">gammu-smsd-tables</a>(7), <a href="../gammu-smsd-null.7/">gammu-smsd-null</a>(7), <a href="../gammu-smsd-run.7/">gammu-smsd-run</a>(7)</p>
+<p>For web based frontend to SMSD database (currently only MySQL is
+being supported), please check Kalkun - &lt;<a href="http://kalkun.sourceforge.net/">http://kalkun.sourceforge.net/</a>&gt;.
+<a class="aname" id="lbAK" name="lbAK"/></p>
 <h3>AUTHOR</h3>
 gammu-smsd and this manual page were written by Michal Cihar
 &lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt;.
-<a class="aname" id="lbAK" name="lbAK"/>
+<a class="aname" id="lbAL" name="lbAL"/>
 <h3>COPYRIGHT</h3>
 Copyright © 2009 Michal Cihar and other authors. License GPLv2: GNU
 GPL version 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
 
 This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law. <a class="aname" id="lbAL" name="lbAL"/>
+There is NO WARRANTY, to the extent permitted by law. <a class="aname" id="lbAM" name="lbAM"/>
 <h3>REPORTING BUGS</h3>
 Please report bugs to &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.
 <p>Before reporting a bug, please enable verbose logging in SMSD
@@ -201,13 +215,14 @@ logfile = smsd.log
 <dt><a href="#lbAH">Troubleshooting Windows Service</a></dt>
 </dl>
 </dd>
-<dt><a href="#lbAI">SEE ALSO</a></dt>
-<dt><a href="#lbAJ">AUTHOR</a></dt>
-<dt><a href="#lbAK">COPYRIGHT</a></dt>
-<dt><a href="#lbAL">REPORTING BUGS</a></dt>
+<dt><a href="#lbAI">KNOWN LIMITATIONS</a></dt>
+<dt><a href="#lbAJ">SEE ALSO</a></dt>
+<dt><a href="#lbAK">AUTHOR</a></dt>
+<dt><a href="#lbAL">COPYRIGHT</a></dt>
+<dt><a href="#lbAM">REPORTING BUGS</a></dt>
 </dl>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 22:20:52 GMT, February 03, 2010
+Time: 22:21:28 GMT, February 25, 2010
 </div>

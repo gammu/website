@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU</h2>
 Section: Dokumentace Gammu (1)<br/>
-Updated: Leden 19, 2010<br/>
+Updated: Feb 17 2010<br/>
 <a href="#index">Index</a> 
 <hr/>
 <p><a class="aname" id="lbAB" name="lbAB"/></p>
@@ -124,6 +124,55 @@ jí nepodařilo doručit).</p>
 <p><b>-save</b> - zpráva bude před odesláním uložena do
 telefonu</p>
 </dd>
+<dt><b>Úvod do formátů SMS</b></dt>
+<dd>
+<p>Gammu podporuje mnoho formátů SMS včetně:</p>
+<p><br/>
+*NokiaSmartMessaging(usedformonochromaticpictureimages,downloadableprofiles,monochromaticoperatorlogos,monochromaticcallerlogosandmonophonicringtones)<br/>
+
+*LinkedSMS(bothwith8and16-bitidentificationnumbersinheaders)<br/>
+
+*EMS(thisisSMSformatusedforsavingmonochromaticimages,monophonicringtones,animations,textformattingandothers)<br/>
+
+*MMSnotifications<br/>
+*Alcatellogomessages</p>
+<p>You need to ensure that the target phone supports message type
+you want to send. Otherwise the phone will not be able to display
+it or will even crash, because firmware of phone did not expect
+this possibility.</p>
+</dd>
+<dt><b>Encoding chars in SMS text</b></dt>
+<dd>
+<p>Text in SMS can be coded using two ways:</p>
+<p>* with GSM Default Alphabet - in single SMS you can have
+maximally 160 chars (Gammu doesn't support compressing such texts
+according to GSM standards, but it isn't big limit, because there
+are no phones supporting them), but they're from limited set:<br/>
+*allLatinsmallandlarge<br/>
+
+*alldigits<br/>
+*someGreek<br/>
+*someothernational<br/>
+*somesymbolslike@Â!&quot;#&amp;/()Â%*+=-,.Â:Â;&lt;&gt;Â?<br/>
+
+*fewothers</p>
+<p>* with Unicode - in single SMS you can save at most 70 chars,
+but these can be any chars including all national and special ones.
+Please note, that some older phones might have problems displaying
+such message.</p>
+<p>Gammu tries to do the best to handle non ASCII characters in
+your message. Everything is internally handled in Unicode (the
+input is converted depending on your locales configuration) and in
+case message uses Unicode the text will be given as such to the
+message.</p>
+<p>Should the message be sent in GSM Default Alphabet, Gammu will
+try to convert all characters to keep message readable. Gammu does
+support multi byte encoding for some characters in GSM Default
+Alphabet (it is needed for ^ { } \ [ ] ~ |). The characters which
+are not present in GSM Default Alphabet are transliterated to
+closest ASCII equivalent (accents are removed). Remaining not known
+characters are replaced by question mark.</p>
+</dd>
 <dt><b>addsms</b> <i>folder file [-yes]</i></dt>
 <dd>Přidá SMS zprávy ze souboru (formát jako používá backupsms) do
 zvolené složky v telefonu.</dd>
@@ -176,6 +225,8 @@ příkazem <b>getsmsfolders</b>.</p>
 <dt><b>getsmsfolders</b></dt>
 <dd>Načte s telefonu názvy složek se zprávami.</dd>
 <dt><b>nokiagett9</b></dt>
+<dd>This option should display T9 dictionary content from DCT4
+phones.</dd>
 <dt><b>restoresms</b> <i>file [-yes]</i></dt>
 <dd>Obnoví SMS zprávy ze souboru (z formátu který používá příkaz
 backupsms) do zvolené složky v telefonu. Pokud to telefon
@@ -214,8 +265,11 @@ parametry pro sendsms a savesms</b>.</p>
 <dt><b>savesms CALLER</b> <i>file [-folder id] [-unread] [-read]
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num]</i></dt>
-<dd>Uloží logo volajícího jako SMS (formát pro Nokia - velikost
-72x14).
+<dd>Uloží logo volajícího jako SMS (formát pro Nokia Smart
+Messaging - velikost 72x14).
+<p>Please note, that it isn't designed for colour logos available
+for example in DCT4/TIKU - you need to put bitmap file there inside
+phone using filesystem commands.</p>
 <p>Popis společných parametrů naleznete v sekci <b>Společné
 parametry pro sendsms a savesms</b>.</p>
 </dd>
@@ -254,6 +308,8 @@ UPI (například Sony-Ericsson) načtou takové vyzvánění jako
 jedno.</p>
 <p><b>-toneSE</b> - přidá vyzvánění ve formátu iMelody v &quot;krátké&quot;
 formě jak je podporováno telefony Sony-Ericssonn.</p>
+<p><b>-toneSElong</b> - add SonyEricsson IMelody saved in one or
+few SMS with UPI</p>
 <p><b>-variablebitmap</b> - obrázek libovolné velikosti uložený v
 jedné SMS</p>
 <p><b>-variablebitmaplong</b> - obrázek o maximální velikosti
@@ -263,6 +319,20 @@ jedné SMS</p>
 předdefinovaných) uvedená za tímto parametrem budou &quot;chráběna&quot; (v
 telefonech podporující standard ODI jako například SonyEricsson je
 nebude možné přeposlat)</p>
+<p><b>-16bit</b> - Gammu uses SMS headers with 16-bit numbers for
+saving linking info in SMS (it means less chars available for user
+in each SMS)</p>
+<p><b>-format</b> lcrasbiut - last text will be formatted. You can
+use combinations of chars:<br/>
+l-leftaligned<br/>
+c-centered<br/>
+r-rightaligned<br/>
+a-largefont<br/>
+s-smallfont<br/>
+b-boldfont<br/>
+i-italicfont<br/>
+u-underlinedfont<br/>
+t-strikethroughfont</p>
 <p><i>Příklad:</i> gammu savesms EMS -text &quot;Pozdrav&quot; -defsound 1
 -text &quot;od Gammu&quot; -tone10 axelf.txt -animation 2 file1.bmp
 file2.bmp</p>
@@ -301,8 +371,12 @@ parametry pro sendsms a savesms</b>.</p>
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-netcode
 netcode] [-biglogo]</i></dt>
-<dd>Uloži logo operátora jako SMS (formát pro Nokie - velikost
-72x14 nebo 78x21 po použití <b>-biglogo</b>).
+<dd>Uloží logo operátora jako SMS (formát Nokia Smart Messaging -
+velikost 72x14 nebo 78x21 po použití <b>-biglogo</b>, jen ve dvou
+barvách).
+<p>Please note, that it isn't designed for colour logos available
+for example in DCT4/TIKU - you need to put bitmap file there inside
+phone using filesystem commands.</p>
 <p>Popis společných parametrů naleznete v sekci <b>Společné
 parametry pro sendsms a savesms</b>.</p>
 </dd>
@@ -310,7 +384,11 @@ parametry pro sendsms a savesms</b>.</p>
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-text text]
 [-unicode] [-alcatelbmmi]</i></dt>
-<dd>Uloží obrázek jako SMS (formát Nokie - velikost 72x28).
+<dd>
+<p>Read bitmap from 2 colors file (bmp, nlm, nsl, ngg, nol, wbmp,
+etc.), format into bitmap in Smart Messaging (72x28, 2 colors,
+called often Picture Image and saved with text) or Alcatel format
+and send/save over SMS.</p>
 <p>Popis společných parametrů naleznete v sekci <b>Společné
 parametry pro sendsms a savesms</b>.</p>
 </dd>
@@ -318,8 +396,11 @@ parametry pro sendsms a savesms</b>.</p>
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-name name]
 [-bitmap bitmap] [-ringtone ringtone]</i></dt>
-<dd>Načte vyzvánění (RTTL), obrázek a jméno a uloží je jako profil
-pro Nokii.
+<dd>
+<p>Read ringtone (RTTL) format, bitmap (Picture Image size) and
+name, format into Smart Messaging profile and send/save as SMS.
+Please note, that this format is abandomed by Nokia and supported
+by some (older) devices only like Nokia 3310.</p>
 <p>Popis společných parametrů naleznete v sekci <b>Společné
 parametry pro sendsms a savesms</b>.</p>
 </dd>
@@ -328,7 +409,7 @@ parametry pro sendsms a savesms</b>.</p>
 number] [-smscnumber number] [-reply] [-maxsms num] [-long]
 [-scale]</i></dt>
 <dd>Našte RTTL vyzvánění ze souboru a uloží ho jako SMS. Vyzvánění
-je uloženo ve formátu pro Nokii.
+je uloženo ve formátu Nokia Smart Messaging..
 <p><b>-long</b> - vyzvánění je uloženo v podobě profilo. Může být
 delší (a uloženo do 2 SMS), ale umí s ním pracovat jen novější
 telefony (jako 33xx).</p>
@@ -359,7 +440,9 @@ parametry pro sendsms a savesms</b>.</p>
 <dd>Načte text ze standardního vstupu (nebo příkazové řádky, pokud
 je použito -text) a uloží ho jako textovou zprávu do telefonu nebo
 na SIM kartu.
-<p><b>-flash</b> - SMS třídy 0 (zobrazení jen na displej)</p>
+<p><b>-flash</b> - Class 0 SMS (should be displayed after receiving
+on recipients' phone display after receiving without entering
+Inbox)</p>
 <p><b>-len len</b> - určí, kolik znaků bude načteno. Pokud bude
 zadaný text delší, než se vejde do jedné zprávy, bude automaticky
 rozdělen do více zpráv.</p>
@@ -378,6 +461,9 @@ sms.</p>
 vstupu.</p>
 <p><b>-textutf8</b> - načte text v UTF-8 z příkazové řádky místo
 standardního vstupu.</p>
+<p><b>-16bit</b> - Gammu uses SMS headers with 16-bit numbers for
+saving linking info in SMS (it means less chars available for user
+in each SMS)</p>
 <p><i>TIP:</i> Soubor v Unicode můžete na Windows vytvořit
 například pomocí WordPadu (zvolte volbu &quot;Uložit jako unicode
 text&quot;). Na Linuxu můžete použít třeba YUdit nebo Vim.</p>
@@ -800,6 +886,26 @@ GALLERY|GALLERY2|CAMERA|TONES|TONES2|RECORDS|VIDEO|PLAYLIST|MEMORYCARD</b>
 <i>file [-name name] [-protected] [-readonly] [-system] [-hidden]
 [-newtime]</i></dt>
 <dt><b>nokiaaddplaylists</b></dt>
+<dd>
+<p>Goes through phone memory and generated playlist for all music
+files found.</p>
+<p>To manually manage playlists:</p>
+<p><br/>
+gammuaddfilea:\predefplaylistfilename.m3u</p>
+<p>Will add playlist filename.m3u</p>
+<p><br/>
+gammugetfilesystem</p>
+<p>Will get list of all files (including names of files with
+playlists)</p>
+<p><br/>
+gammudeletefilesa:\predefplaylist\filename.m3u</p>
+<p>Will delete playlist filename.m3u</p>
+<p>Format of m3u playlist is easy (standard mp3 playlist):</p>
+<p>First line is #EXTM3U, next lines contain names of files
+(b:\file1.mp3, b:\folder1\file2.mp3, etc.). File needs t have
+'\r\n' terminated lines. So just run unix2dos on the resulting file
+before uploading it your your phone.</p>
+</dd>
 <dt><b>sendfile</b> <i>name</i></dt>
 <dd>Odešle soubor do telefonu. Je na telefonu, aby se rozhodl, co s
 ním udělá, případně kam ho uloží (například pokud odešlete vCard
@@ -810,6 +916,12 @@ importovat).</dd>
 </dl>
 <a class="aname" id="lbAK" name="lbAK"/>
 <h4>Loga a obrázky</h4>
+<p>These options are mainly (there are few expections) for
+monochromatic logos and images available in older phones.
+Recognized file formats: xpm (only saving), 2-colors bmp, nlm, nsl,
+ngg, nol, wbmp, gif (for Samsung).</p>
+<p>In new models all bitmaps are saved in filesystem and should go
+into filesystem section</p>
 <dl compact="compact">
 <dt><b>copybitmap</b> <i>inputfile [outputfile
 [OPERATOR|PICTURE|STARTUP|CALLER]]</i></dt>
@@ -846,8 +958,11 @@ parametry pro sendsms a savesms</b>.</p>
 <dt><b>savesms CALLER</b> <i>file [-folder id] [-unread] [-read]
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num]</i></dt>
-<dd>Uloží logo volajícího jako SMS (formát pro Nokia - velikost
-72x14).
+<dd>Uloží logo volajícího jako SMS (formát pro Nokia Smart
+Messaging - velikost 72x14).
+<p>Please note, that it isn't designed for colour logos available
+for example in DCT4/TIKU - you need to put bitmap file there inside
+phone using filesystem commands.</p>
 <p>Popis společných parametrů naleznete v sekci <b>Společné
 parametry pro sendsms a savesms</b>.</p>
 </dd>
@@ -855,8 +970,12 @@ parametry pro sendsms a savesms</b>.</p>
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-netcode
 netcode] [-biglogo]</i></dt>
-<dd>Uloži logo operátora jako SMS (formát pro Nokie - velikost
-72x14 nebo 78x21 po použití <b>-biglogo</b>).
+<dd>Uloží logo operátora jako SMS (formát Nokia Smart Messaging -
+velikost 72x14 nebo 78x21 po použití <b>-biglogo</b>, jen ve dvou
+barvách).
+<p>Please note, that it isn't designed for colour logos available
+for example in DCT4/TIKU - you need to put bitmap file there inside
+phone using filesystem commands.</p>
 <p>Popis společných parametrů naleznete v sekci <b>Společné
 parametry pro sendsms a savesms</b>.</p>
 </dd>
@@ -864,7 +983,11 @@ parametry pro sendsms a savesms</b>.</p>
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-text text]
 [-unicode] [-alcatelbmmi]</i></dt>
-<dd>Uloží obrázek jako SMS (formát Nokie - velikost 72x28).
+<dd>
+<p>Read bitmap from 2 colors file (bmp, nlm, nsl, ngg, nol, wbmp,
+etc.), format into bitmap in Smart Messaging (72x28, 2 colors,
+called often Picture Image and saved with text) or Alcatel format
+and send/save over SMS.</p>
 <p>Popis společných parametrů naleznete v sekci <b>Společné
 parametry pro sendsms a savesms</b>.</p>
 </dd>
@@ -923,7 +1046,7 @@ setbitmap OPERATOR file &quot;230 03&quot;</b></dd>
 <dd>Nastaví v telefonu logo při spuštění. Může to být zadaný
 obrázek (pak musíte zadat jeho cestu), nebo jedna z
 předdefinovaných animací (toto podporují jen některé telefony jako
-Nokia 3310 nebo 3330).</dd>
+Nokia 3310 nebo 3330, použijte umístění 1, 2 nebo 3).</dd>
 <dt><b>setbitmap TEXT</b> <i>text</i></dt>
 <dd>Nastaví v telefonu uvítací text.</dd>
 <dt><b>setbitmap WALLPAPER</b> <i>fileID</i></dt>
@@ -934,6 +1057,10 @@ Nokia 3310 nebo 3330).</dd>
 <p>Vyzvánění jsou většinou podporována jen pro starší telefony. Pro
 novější je obvykle jen musíte nahrát do správné složky v
 telefonu.</p>
+<p>There are recognized various file formats by options described
+below: rttl, binary format created for Gammu, mid (saving), re
+(reading), ott, communicator, ringtones format found in fkn.pl, wav
+(saving), ime/imy (saving), rng, mmf (for Samsung).</p>
 <dl compact="compact">
 <dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Přidá data ze souboru vytvořeného pomocí fuknce <b>backup</b>.
@@ -1009,7 +1136,7 @@ telefonu není nastaven čas a datum.</p>
 number] [-smscnumber number] [-reply] [-maxsms num] [-long]
 [-scale]</i></dt>
 <dd>Našte RTTL vyzvánění ze souboru a uloží ho jako SMS. Vyzvánění
-je uloženo ve formátu pro Nokii.
+je uloženo ve formátu Nokia Smart Messaging..
 <p><b>-long</b> - vyzvánění je uloženo v podobě profilo. Může být
 delší (a uloženo do 2 SMS), ale umí s ním pracovat jen novější
 telefony (jako 33xx).</p>
@@ -1042,6 +1169,8 @@ tento název v menu některých telefonů blikat (například 33xx)</p>
 </dl>
 <a class="aname" id="lbAM" name="lbAM"/>
 <h4>Kalendář</h4>
+<p>In Nokia 3310, 3315 and 3330 these are named &quot;Reminders&quot; and
+have some limitations (depending on phone firmware version).</p>
 <dl compact="compact">
 <dt><b>addnew</b> <i>file [-yes] [-memory ME|SM|..]</i></dt>
 <dd>Přidá data ze souboru vytvořeného pomocí fuknce <b>backup</b>.
@@ -1218,7 +1347,10 @@ parametry pro sendsms a savesms</b>.</p>
 <h4>Poznámky</h4>
 <dl compact="compact">
 <dt><b>getallnotes</b></dt>
-<dd>Zobrazí všechny poznámky z telefonu.</dd>
+<dd>Zobrazí všechny poznámky z telefonu.
+<p>Note: Not all phones supports this function, especially most
+Sony Ericsson phones even if they have notes inside phone.</p>
+</dd>
 </dl>
 <a class="aname" id="lbAP" name="lbAP"/>
 <h4>Čas, datum a budíky</h4>
@@ -1407,6 +1539,26 @@ GALLERY|GALLERY2|CAMERA|TONES|TONES2|RECORDS|VIDEO|PLAYLIST|MEMORYCARD</b>
 <i>file [-name name] [-protected] [-readonly] [-system] [-hidden]
 [-newtime]</i></dt>
 <dt><b>nokiaaddplaylists</b></dt>
+<dd>
+<p>Goes through phone memory and generated playlist for all music
+files found.</p>
+<p>To manually manage playlists:</p>
+<p><br/>
+gammuaddfilea:\predefplaylistfilename.m3u</p>
+<p>Will add playlist filename.m3u</p>
+<p><br/>
+gammugetfilesystem</p>
+<p>Will get list of all files (including names of files with
+playlists)</p>
+<p><br/>
+gammudeletefilesa:\predefplaylist\filename.m3u</p>
+<p>Will delete playlist filename.m3u</p>
+<p>Format of m3u playlist is easy (standard mp3 playlist):</p>
+<p>First line is #EXTM3U, next lines contain names of files
+(b:\file1.mp3, b:\folder1\file2.mp3, etc.). File needs t have
+'\r\n' terminated lines. So just run unix2dos on the resulting file
+before uploading it your your phone.</p>
+</dd>
 <dt><b>nokiacomposer</b> <i>file</i></dt>
 <dd>Zobrazí jak zadat RTTL vyzvánění ve skladateli dostupném v
 mnoha telefonech Nokia (a jak by mělo vypadat).</dd>
@@ -1420,11 +1572,32 @@ operátora a tento příkaz vám umožní tuto změnu provést.</dd>
 <dt><b>nokiagetpbkfeatures</b> <i>memorytype</i></dt>
 <dt><b>nokiagetscreendump</b></dt>
 <dt><b>nokiagett9</b></dt>
+<dd>This option should display T9 dictionary content from DCT4
+phones.</dd>
 <dt><b>nokiagetvoicerecord</b> <i>location</i></dt>
 <dd>
 <p>Získá ze zadané pozice v telefonu zvukovou nahrávku a uloží ji
 do souboru WAV. Soubor je komprimován pomocí kodeku GSM 6.10. Jeho
 jméno je stejné jako je v telefonu.</p>
+<p>Created WAV files require GSM 6.10 codec to be played. In Win XP
+it's included by Microsoft. If you deleted it by accident in this
+operating system, make such steps:</p>
+<p>1. Control Panel<br/>
+2. Add hardware<br/>
+3. click Next<br/>
+4. select &quot;Yes. I have already connected the hardware&quot;<br/>
+5. select &quot;Add a new hardware device&quot;<br/>
+6. select &quot;Install the hardware that I manually select from a
+list&quot;<br/>
+7. select &quot;Sound, video and game controllers&quot;<br/>
+8. select &quot;Audio codecs&quot;<br/>
+9. select &quot;windows\system32&quot; directory and file
+&quot;mmdriver.inf&quot;<br/>
+10. if You will be asked for file msgsm32.acm, it should unpacked
+from Windows CD<br/>
+11. now You can be asked if want to install unsigned driver (YES),
+about select codec configuration (select what you want) and
+rebotting PC (make it)</p>
 </dd>
 <dt><b>nokiamakecamerashoot</b></dt>
 <dt><b>nokianetmonitor</b> <i>test</i></dt>
@@ -1446,6 +1619,13 @@ kde naleznete manuál k netmonitoru.</p>
 <dt><b>nokiasecuritycode</b></dt>
 <dd>Přečte bezpečnostní kód nebo ho nastaví na &quot;12345&quot;.</dd>
 <dt><b>nokiaselftests</b></dt>
+<dd>
+<p>Spustí testy na telefonech Nokia DCT3.</p>
+<p>Note: EEPROM test can show an error when your phone has an
+EEPROM in flash (like 82xx/7110/62xx/33xx). The clock test will
+show an error when the phone doesn?t have an internal battery for
+the clock (like 3xxx).</p>
+</dd>
 <dt><b>nokiasetlights</b> <i>keypad|display|torch on|off</i></dt>
 <dt><b>nokiasetoperatorname</b> <i>[networkcode name]</i></dt>
 <dt><b>nokiasetphonemenus</b></dt>
@@ -1470,8 +1650,11 @@ kde naleznete manuál k netmonitoru.</p>
 <a class="aname" id="lbAT" name="lbAT"/>
 <h4>Specifické pro Siemens</h4>
 <dl compact="compact">
-<dt><b>siemensnetmonact</b> <i>netmon_type (1-full,
-2-simple)</i></dt>
+<dt><b>siemensnetmonact</b> <i>netmon_type</i></dt>
+<dd>
+<p>Enables network monitor in Siemens phone. Currently known values
+for type are 1 for full and 2 for simple mode.</p>
+</dd>
 <dt><b>siemensnetmonitor</b> <i>test</i></dt>
 <dt><b>siemenssatnetmon</b></dt>
 </dl>
@@ -1502,8 +1685,11 @@ restartovat)</p>
 </dd>
 <dt><b>nokiasetoperatorname</b> <i>[networkcode name]</i></dt>
 <dt><b>setautonetworklogin</b></dt>
-<dt><b>siemensnetmonact</b> <i>netmon_type (1-full,
-2-simple)</i></dt>
+<dt><b>siemensnetmonact</b> <i>netmon_type</i></dt>
+<dd>
+<p>Enables network monitor in Siemens phone. Currently known values
+for type are 1 for full and 2 for simple mode.</p>
+</dd>
 <dt><b>siemensnetmonitor</b> <i>test</i></dt>
 <dt><b>siemenssatnetmon</b></dt>
 </dl>
@@ -1680,6 +1866,13 @@ parametry pro sendsms a savesms</b>.</p>
 <dt><b>nokiadisplaytest</b> <i>number</i></dt>
 <dt><b>nokiagetadc</b></dt>
 <dt><b>nokiaselftests</b></dt>
+<dd>
+<p>Spustí testy na telefonech Nokia DCT3.</p>
+<p>Note: EEPROM test can show an error when your phone has an
+EEPROM in flash (like 82xx/7110/62xx/33xx). The clock test will
+show an error when the phone doesn?t have an internal battery for
+the clock (like 3xxx).</p>
+</dd>
 <dt><b>nokiasetlights</b> <i>keypad|display|torch on|off</i></dt>
 <dt><b>nokiavibratest</b></dt>
 </dl>
@@ -1792,8 +1985,11 @@ odstraňování starých položek.</dd>
 [-unsent] [-sent] [-sender number] [-smsname name] [-smscset
 number] [-smscnumber number] [-reply] [-maxsms num] [-name name]
 [-bitmap bitmap] [-ringtone ringtone]</i></dt>
-<dd>Načte vyzvánění (RTTL), obrázek a jméno a uloží je jako profil
-pro Nokii.
+<dd>
+<p>Read ringtone (RTTL) format, bitmap (Picture Image size) and
+name, format into Smart Messaging profile and send/save as SMS.
+Please note, that this format is abandomed by Nokia and supported
+by some (older) devices only like Nokia 3310.</p>
 <p>Popis společných parametrů naleznete v sekci <b>Společné
 parametry pro sendsms a savesms</b>.</p>
 </dd>
@@ -1845,6 +2041,25 @@ je načten ze standardního vstupu.</dd>
 <p>Získá ze zadané pozice v telefonu zvukovou nahrávku a uloží ji
 do souboru WAV. Soubor je komprimován pomocí kodeku GSM 6.10. Jeho
 jméno je stejné jako je v telefonu.</p>
+<p>Created WAV files require GSM 6.10 codec to be played. In Win XP
+it's included by Microsoft. If you deleted it by accident in this
+operating system, make such steps:</p>
+<p>1. Control Panel<br/>
+2. Add hardware<br/>
+3. click Next<br/>
+4. select &quot;Yes. I have already connected the hardware&quot;<br/>
+5. select &quot;Add a new hardware device&quot;<br/>
+6. select &quot;Install the hardware that I manually select from a
+list&quot;<br/>
+7. select &quot;Sound, video and game controllers&quot;<br/>
+8. select &quot;Audio codecs&quot;<br/>
+9. select &quot;windows\system32&quot; directory and file
+&quot;mmdriver.inf&quot;<br/>
+10. if You will be asked for file msgsm32.acm, it should unpacked
+from Windows CD<br/>
+11. now You can be asked if want to install unsigned driver (YES),
+about select codec configuration (select what you want) and
+rebotting PC (make it)</p>
 </dd>
 <dt><b>nokiamakecamerashoot</b></dt>
 <dt><b>nokiasetphonemenus</b></dt>
@@ -2008,7 +2223,7 @@ Zvolený soubor nelze otevřít. <a class="aname" id="lbCO" name="lbCO"/>
 <h4>129</h4>
 Je potřeba více paměti... <a class="aname" id="lbCP" name="lbCP"/>
 <h4>130</h4>
-Přístup k souboru nebo zařízení odmítnut... <a class="aname" id="lbCQ" name="lbCQ"/>
+Operace nebyla povolena telefonem. <a class="aname" id="lbCQ" name="lbCQ"/>
 <h4>131</h4>
 Prázdné číslo SMSC. Nastavte ho v telefonu nebo použijte
 -smscnumber. <a class="aname" id="lbCR" name="lbCR"/>
@@ -2398,5 +2613,5 @@ stránce &lt;<a href="http://www.gammu.org/">http://www.gammu.org/</a>&gt;.</p>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 22:20:52 GMT, February 03, 2010
+Time: 22:21:28 GMT, February 25, 2010
 </div>
