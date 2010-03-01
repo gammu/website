@@ -134,29 +134,30 @@ def search(request, featurename = None):
     if featurename is not None:
         rq.appendlist('feature', featurename)
     form = SearchForm(rq)
-    if not form.is_valid():
-        return ''
-    query = form.cleaned_data['q']
-    features = list(set(form.cleaned_data['feature']))
+    if form.is_valid():
+        query = form.cleaned_data['q']
+        features = list(set(form.cleaned_data['feature']))
 
-    phones = Phone.objects.exclude(state = 'deleted')
-    urlparams = []
+        phones = Phone.objects.exclude(state = 'deleted')
+        urlparams = []
 
-    # Filter for features
-    if len(features) > 0:
-        phones = phones.filter(connection__isnull = False)
-        for feature in features:
-            urlparams.append('feature=%s' % feature)
-            phones = phones.filter(features__name = feature)
+        # Filter for features
+        if len(features) > 0:
+            phones = phones.filter(connection__isnull = False)
+            for feature in features:
+                urlparams.append('feature=%s' % feature)
+                phones = phones.filter(features__name = feature)
 
-    # Filter for query string
-    if query is not None:
-        urlparams.append('q=%s' % query)
-        query = query.strip()
-        for part in query.split():
-            phones = phones.filter(
-                Q(vendor__name__icontains = part) |
-                Q(name__icontains = part))
+        # Filter for query string
+        if query is not None:
+            urlparams.append('q=%s' % query)
+            query = query.strip()
+            for part in query.split():
+                phones = phones.filter(
+                    Q(vendor__name__icontains = part) |
+                    Q(name__icontains = part))
+    else:
+        phones = Phone.objects.all()
 
     # Sort results
     phones = phones.order_by('vendor__name', 'name')
