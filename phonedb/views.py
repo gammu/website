@@ -158,6 +158,7 @@ def search(request, featurename = None):
                     Q(name__icontains = part))
     else:
         phones = Phone.objects.all()
+        urlparams = []
 
     # Sort results
     phones = phones.order_by('vendor__name', 'name')
