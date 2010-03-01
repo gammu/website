@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-04 19:48+0100\n"
+"POT-Creation-Date: 2010-03-01 09:33+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1492,11 +1492,31 @@ msgid ""
 "<a href=\"/docs/roadmap/\">roadmap</a>.\n"
 msgstr ""
 
-#: html/docs/devel.html:21 html/docs/faq.html:65
-msgid "Python Bindings"
+#: html/docs/devel.html:21
+msgid "Unified Developer Documentation"
 msgstr ""
 
 #: html/docs/devel.html:23
+msgid ""
+"\n"
+"Quite recently we started to merge all documentation sources listed bellow\n"
+"(and other documents about internals and protocols) into single "
+"comprehensive\n"
+"documentation. This is still not completely finished, however it already "
+"does\n"
+"cover more topics than the old documentation bellow, though some are not\n"
+"described that deeply. You can generate it using <code>make devdoc-html</"
+"code>\n"
+"in build directory or <a href=\"http://wammu.eu/docs/devel/docs/\">browse "
+"it\n"
+"online</a>.\n"
+msgstr ""
+
+#: html/docs/devel.html:35 html/docs/faq.html:65
+msgid "Python Bindings"
+msgstr ""
+
+#: html/docs/devel.html:37
 msgid ""
 "\n"
 "If you want to start writing something using Gammu, you should consider "
@@ -1509,11 +1529,11 @@ msgid ""
 "<code>python/examples</code> directory in Gammu sources.\n"
 msgstr ""
 
-#: html/docs/devel.html:32
+#: html/docs/devel.html:46
 msgid "libGammu API"
 msgstr ""
 
-#: html/docs/devel.html:34
+#: html/docs/devel.html:48
 msgid ""
 "\n"
 "The <a href=\"/libgammu\">libGammu</a> API is meant for C developers who "
@@ -1528,11 +1548,11 @@ msgid ""
 "<code>docs/develop/examples</code> directory in Gammu sources.\n"
 msgstr ""
 
-#: html/docs/devel.html:44
+#: html/docs/devel.html:58
 msgid "Gammu Internals"
 msgstr ""
 
-#: html/docs/devel.html:46
+#: html/docs/devel.html:60
 msgid ""
 "\n"
 "The <a href=\"/libgammu\">libGammu</a> library internally uses also quite a "
@@ -1543,7 +1563,7 @@ msgid ""
 "using Doxygen).\n"
 msgstr ""
 
-#: html/docs/devel.html:55
+#: html/docs/devel.html:69
 msgid ""
 "\n"
 "Additional hints about protocols can be found in <code>docs/develop</code> "
