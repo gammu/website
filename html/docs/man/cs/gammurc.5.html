@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMURC</h2>
 Section: Dokumentace Gammu (5)<br/>
-Updated: Leden 4, 2009<br/>
+Updated: March 16, 2010<br/>
 <a href="#index">Index</a> 
 <hr/>
 <a class="aname" id="lbAB" name="lbAB"/>
@@ -9,7 +9,12 @@ Updated: Leden 4, 2009<br/>
 <p>gammurc - konfigurační soubor <a href="../gammu.1/">gammu</a>(1)</p>
 <p><a class="aname" id="lbAC" name="lbAC"/></p>
 <h3>SYNTAXE</h3>
-<i>/etc/gammurc</i> nebo <i>~/.gammurc</i> <a class="aname" id="lbAD" name="lbAD"/>
+Na Linuxu, MacOS X, BSD a dalších systéme Unixového typu:
+<p><i>~/.gammurc</i> nebo <i>/etc/gammurc</i></p>
+<p>Na Microsoft Windows:</p>
+<p><i>C:\Documents and Settings\username\Application
+Data\gammurc</i> nebo <i>.\gammurc</i></p>
+<p><a class="aname" id="lbAD" name="lbAD"/></p>
 <h3>POPIS</h3>
 <a href="../gammu.1/">gammu</a>(1) načítá konfiguraci z
 konfiguračního souboru. Jeho umístění je zjištěno přispuštění. Na
@@ -215,19 +220,41 @@ connection = blueat
 </pre></dd>
 </dl>
 <p><a class="aname" id="lbAF" name="lbAF"/></p>
+<h4>Práce s více telefony</h4>
+<p>Gammu can be configured for multiple phones (however only one
+connection is used at one time, you can choose which one to use
+with --section parameter). Configuration for phones on three serial
+ports would look like following:</p>
+<dl compact="compact">
+<dd>
+<pre>
+[gammu]
+port = /dev/ttyS0
+connection = at
+
+[gammmu1]
+port = /dev/ttyS1
+connection = at
+
+[gammmu2]
+port = /dev/ttyS2
+connection = at
+</pre></dd>
+</dl>
+<p><a class="aname" id="lbAG" name="lbAG"/></p>
 <h3>DALŠÍ INFORMACE</h3>
-<a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu.1/">gammu</a>(1), <a href="../gammurc.5/">gammurc</a>(5) <a class="aname" id="lbAG" name="lbAG"/>
+<a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu.1/">gammu</a>(1), <a href="../gammurc.5/">gammurc</a>(5) <a class="aname" id="lbAH" name="lbAH"/>
 <h3>AUTOR</h3>
 gammu-smsd a tuto manuálovou stránku napsal Michal Čihař
 &lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt;.
-<a class="aname" id="lbAH" name="lbAH"/>
+<a class="aname" id="lbAI" name="lbAI"/>
 <h3>COPYRIGHT</h3>
 Copyright © 2009 Michal Čihař a další autoři. Licence GPLv2: GNU
 GPL verze 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
 
 Tento program je svobodný software; můžete jej šířit a modifikovat.
 Není poskytována ŽÁDNÁ ZÁRUKA, v rozsahu jaký je povolen zákonem.
-<a class="aname" id="lbAI" name="lbAI"/>
+<a class="aname" id="lbAJ" name="lbAJ"/>
 <h3>HLÁŠENÍ CHYB</h3>
 Prosím hlašte chyby na &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.
 <hr/>
@@ -238,13 +265,18 @@ Prosím hlašte chyby na &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.c
 <dt><a href="#lbAC">SYNTAXE</a></dt>
 <dt><a href="#lbAD">POPIS</a></dt>
 <dt><a href="#lbAE">PŘÍKLAD</a></dt>
-<dt><a href="#lbAF">DALŠÍ INFORMACE</a></dt>
-<dt><a href="#lbAG">AUTOR</a></dt>
-<dt><a href="#lbAH">COPYRIGHT</a></dt>
-<dt><a href="#lbAI">HLÁŠENÍ CHYB</a></dt>
+<dd>
+<dl>
+<dt><a href="#lbAF">Práce s více telefony</a></dt>
+</dl>
+</dd>
+<dt><a href="#lbAG">DALŠÍ INFORMACE</a></dt>
+<dt><a href="#lbAH">AUTOR</a></dt>
+<dt><a href="#lbAI">COPYRIGHT</a></dt>
+<dt><a href="#lbAJ">HLÁŠENÍ CHYB</a></dt>
 </dl>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 22:21:28 GMT, February 25, 2010
+Time: 14:57:11 GMT, March 16, 2010
 </div>

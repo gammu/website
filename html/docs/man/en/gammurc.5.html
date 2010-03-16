@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMURC</h2>
 Section: Gammu Documentation (5)<br/>
-Updated: January 4, 2009<br/>
+Updated: March 16, 2010<br/>
 <a href="#index">Index</a> 
 <hr/>
 <a class="aname" id="lbAB" name="lbAB"/>
@@ -10,7 +10,12 @@ Updated: January 4, 2009<br/>
 file</p>
 <p><a class="aname" id="lbAC" name="lbAC"/></p>
 <h3>SYNOPSIS</h3>
-<i>/etc/gammurc</i> or <i>~/.gammurc</i> <a class="aname" id="lbAD" name="lbAD"/>
+On Linux, MacOS X, BSD and other Unix-like systems:
+<p><i>~/.gammurc</i> or <i>/etc/gammurc</i></p>
+<p>On Microsoft Windows:</p>
+<p><i>C:\\Documents and Settings\\username\\Application
+Data\\gammurc</i> or <i>.\\gammurc</i></p>
+<p><a class="aname" id="lbAD" name="lbAD"/></p>
 <h3>DESCRIPTION</h3>
 <a href="../gammu.1/">gammu</a>(1) reads configuration from a
 config file. It's location is determined on runtime. On Unix
@@ -212,18 +217,40 @@ connection = blueat
 </pre></dd>
 </dl>
 <p><a class="aname" id="lbAF" name="lbAF"/></p>
+<h4>Working with multiple phones</h4>
+<p>Gammu can be configured for multiple phones (however only one
+connection is used at one time, you can choose which one to use
+with --section parameter). Configuration for phones on three serial
+ports would look like following:</p>
+<dl compact="compact">
+<dd>
+<pre>
+[gammu]
+port = /dev/ttyS0
+connection = at
+
+[gammmu1]
+port = /dev/ttyS1
+connection = at
+
+[gammmu2]
+port = /dev/ttyS2
+connection = at
+</pre></dd>
+</dl>
+<p><a class="aname" id="lbAG" name="lbAG"/></p>
 <h3>SEE ALSO</h3>
-<a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu.1/">gammu</a>(1), <a href="../gammurc.5/">gammurc</a>(5) <a class="aname" id="lbAG" name="lbAG"/>
+<a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu.1/">gammu</a>(1), <a href="../gammurc.5/">gammurc</a>(5) <a class="aname" id="lbAH" name="lbAH"/>
 <h3>AUTHOR</h3>
 gammu-smsd and this manual page were written by Michal Cihar
 &lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt;.
-<a class="aname" id="lbAH" name="lbAH"/>
+<a class="aname" id="lbAI" name="lbAI"/>
 <h3>COPYRIGHT</h3>
 Copyright © 2009 Michal Cihar and other authors. License GPLv2: GNU
 GPL version 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
 
 This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law. <a class="aname" id="lbAI" name="lbAI"/>
+There is NO WARRANTY, to the extent permitted by law. <a class="aname" id="lbAJ" name="lbAJ"/>
 <h3>REPORTING BUGS</h3>
 Please report bugs to &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.
 <hr/>
@@ -234,13 +261,18 @@ Please report bugs to &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com<
 <dt><a href="#lbAC">SYNOPSIS</a></dt>
 <dt><a href="#lbAD">DESCRIPTION</a></dt>
 <dt><a href="#lbAE">EXAMPLE</a></dt>
-<dt><a href="#lbAF">SEE ALSO</a></dt>
-<dt><a href="#lbAG">AUTHOR</a></dt>
-<dt><a href="#lbAH">COPYRIGHT</a></dt>
-<dt><a href="#lbAI">REPORTING BUGS</a></dt>
+<dd>
+<dl>
+<dt><a href="#lbAF">Working with multiple phones</a></dt>
+</dl>
+</dd>
+<dt><a href="#lbAG">SEE ALSO</a></dt>
+<dt><a href="#lbAH">AUTHOR</a></dt>
+<dt><a href="#lbAI">COPYRIGHT</a></dt>
+<dt><a href="#lbAJ">REPORTING BUGS</a></dt>
 </dl>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 22:21:28 GMT, February 25, 2010
+Time: 14:57:10 GMT, March 16, 2010
 </div>
