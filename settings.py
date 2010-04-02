@@ -148,4 +148,5 @@ IGNORABLE_404_STARTS = ('/js/','/common/')
 CACHE_BACKEND = 'db://cache'
 
 DEFAULT_CONTENT_TYPE = 'application/xhtml+xml'
+DEFAULT_CONTENT_TYPE = 'text/html'
 DEFAULT_CHARSET = 'utf-8'
