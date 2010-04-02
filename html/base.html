@@ -139,14 +139,18 @@
   </ul>
 <!-- Piwik -->
 <script type="text/javascript">
+//<![CDATA[
 var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.cihar.com/" : "http://stats.cihar.com/");
 document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+//]]>
 </script><script type="text/javascript">
+//<![CDATA[
 try {
     var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 5);
     piwikTracker.trackPageView();
     piwikTracker.enableLinkTracking();
 } catch( err ) {}
+//]]>
 </script>
 <!-- End Piwik Tag -->
  </body>
