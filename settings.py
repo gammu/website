@@ -122,11 +122,10 @@ import gobject
 import gnomekeyring
 gobject.set_application_name('Wammu-web')
 IDENTICA_USER = 'gammu'
-IDENTICA_PASSWORD = ''
-#gnomekeyring.find_network_password_sync(
-#        user = IDENTICA_USER,
-#        domain = 'identi.ca',
-#        protocol = 'https')[0]['password']
+IDENTICA_PASSWORD = gnomekeyring.find_network_password_sync(
+        user = IDENTICA_USER,
+        domain = 'identi.ca',
+        protocol = 'https')[0]['password']
 
 NEWS_PER_PAGE = 5
 NEWS_ON_MAIN_PAGE = 5
