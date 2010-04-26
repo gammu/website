@@ -26,7 +26,7 @@ def get_mirrors(request):
 #        elif country in ['GB', 'US', 'FR', 'NL', 'CA', 'DK', 'SE', 'FI']:
 #            mirror_id = 'clickcreations-com'
         else:
-            mirror_id = 'coralcdn'
+            mirror_id = 'sf-net'
     try:
         mirror = Mirror.objects.get(slug = mirror_id)
     except Mirror.DoesNotExist:
