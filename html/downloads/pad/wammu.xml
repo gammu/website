@@ -103,7 +103,7 @@
         </Application_URLs>
         <Download_URLs>
 {% for mirror in mirrors %}
-            <{% cycle 'Primary_Download_URL' 'Secondary_Download_URL' 'Additional_Download_URL_1' 'Additional_Download_URL_2' 'Additional_Download_URL_3' 'Additional_Download_URL_4' 'Additional_Download_URL_5' %}>{% getlink item %}</{% cycle 'Primary_Download_URL' 'Secondary_Download_URL' 'Additional_Download_URL_1' 'Additional_Download_URL_2' 'Additional_Download_URL_3' 'Additional_Download_URL_4' 'Additional_Download_URL_5' %}>
+            <{% cycle 'Primary_Download_URL' 'Secondary_Download_URL' 'Additional_Download_URL_1' 'Additional_Download_URL_2' 'Additional_Download_URL_3' 'Additional_Download_URL_4' 'Additional_Download_URL_5' %}>{% getlink download %}</{% cycle 'Primary_Download_URL' 'Secondary_Download_URL' 'Additional_Download_URL_1' 'Additional_Download_URL_2' 'Additional_Download_URL_3' 'Additional_Download_URL_4' 'Additional_Download_URL_5' %}>
 {% endfor %}
         </Download_URLs>
     </Web_Info>
