@@ -1,7 +1,8 @@
 {% load i18n %}
+{% load getlink %}
 <h4><a href="{{ release.get_absolute_url }}">{{release.get_description}}</a></h4>
 <ul>
 {% for item in downloads %}
-<li><a href="{{ mirror.url }}{{ item.location }}#!md5!{{ item.md5 }}">{{ item.get_filename }}</a> <span class="size">({{ item.get_size }})</span></li>
+<li><a href="{% getlink item %}">{{ item.get_filename }}</a> <span class="size">({{ item.get_size }})</span></li>
 {% endfor %}
 </ul>

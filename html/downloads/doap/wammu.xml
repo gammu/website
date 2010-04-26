@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+{% load getlink %}
 <Project rdf:about="#Project" xmlns="http://usefulinc.com/ns/doap#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <name>Wammu</name>
   <shortdesc xml:lang="en">A mobile phone manager.</shortdesc>
@@ -36,7 +37,7 @@
       <name>{{ item.platform }}</name>
       <created>{{ item.release.date }}</created>
       <revision>{{ item.release.version }}</revision>
-      <file-release rdf:resource="{{ mirror.url }}{{ item.location }}" />
+      <file-release rdf:resource="{% getlink item %}" />
     </Version>
   </release>
 {% endfor %}

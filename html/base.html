@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 {% load i18n %}
+{% load getlink %}
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
       xmlns:py="http://genshi.edgewall.org/"
       xmlns:xi="http://www.w3.org/2001/XInclude">
@@ -58,7 +59,7 @@
 <h3>{% trans "Downloads" %}</h3>
 <ul>
 {% for item in downloads_side %}
-<li><a href="{{ mirror.url }}{{ item.location }}">{{ item.location }}</a></li>
+<li><a href="{% getlink item %}">{{ item.location }}</a></li>
 {% endfor %}
 </ul>
 {% endif %}
