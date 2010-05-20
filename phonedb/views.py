@@ -95,7 +95,10 @@ def get_chart_url():
 # Set the horizontal dotted lines
     chart.set_grid(0, 10, 5, 5)
 
-    chart.set_legend([_('Supported phones'), _('Valid records'), _('Total records')])
+    chart.set_legend([
+        _('Supported phones').encode('utf-8'),
+        _('Valid records').encode('utf-8'),
+        _('Total records').encode('utf-8')])
 
     left_axis = map(lambda x: '%d' % x, xrange(0, max_y + 1, max_y / 10))
     left_axis[0] = ''
