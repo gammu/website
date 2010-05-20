@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2009 Michal Čihař <michal@cihar.com>
 # This file is distributed under the same license as the PACKAGE package.
-# Michal Čihař <michal@cihar.com>, 2009.
-# Michal Čihař <michal@cihar.com>, 2010.
+# Michal Čihař <michal@cihar.com>, 2009, 2010.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-02-08 16:02+0100\n"
+"PO-Revision-Date: 2010-05-20 15:17+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -51,7 +51,7 @@ msgstr "%(program)s, testovací verze %(version)s"
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
-msgstr ""
+msgstr "Přístup odmítnut"
 
 #: html/403.html:11 html/404.html:11
 msgid ""
@@ -909,8 +909,8 @@ msgstr ""
 "\n"
 "Tato stránka obsahuje Vlastní vyhledávač Google nastavený na vyhledávání "
 "informací o Gammu.Ten samý vyhledávač můžete použít i přímo na\n"
-"<a href=\"http://www.google.com/coop/cse?cx=008688692096734274889%"
-"3Axuvlsu_agkm\">stránkách Google</a>.\n"
+"<a href=\"http://www.google.com/coop/cse?"
+"cx=008688692096734274889%3Axuvlsu_agkm\">stránkách Google</a>.\n"
 
 #: html/search.html:39
 msgid ""
@@ -1150,8 +1150,8 @@ msgstr ""
 msgid ""
 "\n"
 "You are using older version, please upgrade to get most stable version with\n"
-"latest features. The latest stable version is <a href=\"%(url)s\">%(version)"
-"s</a>.\n"
+"latest features. The latest stable version is <a href=\"%(url)s\">"
+"%(version)s</a>.\n"
 msgstr ""
 "\n"
 "Používáte starší verzi, prosím aktualizujte ji a získáte tím nejstabilnější "
@@ -1232,8 +1232,8 @@ msgid ""
 "repositories over http, just replace <code>git://gitorious.org/</code> with\n"
 "<code>http://git.gitorious.org/</code>. All repositories are also mirrored "
 "to\n"
-"<a href=\"https://sourceforge.net/scm/?type=git&amp;group_id=78290"
-"\">SourceForge.net</a> \n"
+"<a href=\"https://sourceforge.net/scm/?type=git&amp;"
+"group_id=78290\">SourceForge.net</a> \n"
 "and repo.or.cz (<a href=\"http://repo.or.cz/w/gammu.git\">Gammu</a> and \n"
 "<a href=\"http://repo.or.cz/w/wammu.git\">Wammu</a>).\n"
 msgstr ""
@@ -1762,9 +1762,8 @@ msgid ""
 msgstr ""
 
 #: html/docs/devel.html:21
-#, fuzzy
 msgid "Unified Developer Documentation"
-msgstr "Dokumentace pro vývojáře"
+msgstr "Sjednocená dokumentace pro vývojáře"
 
 #: html/docs/devel.html:23
 msgid ""
@@ -2281,8 +2280,8 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"Thank you for interest in downloading <a href=\"/%(program_name)s\">%"
-"(program)s</a>.\n"
+"Thank you for interest in downloading <a href=\"/%(program_name)s\">"
+"%(program)s</a>.\n"
 msgstr ""
 "\n"
 "Děkujeme vám za zájem o stažení <a href=\"/%(program_name)s\">%(program)s</"
@@ -3340,11 +3339,11 @@ msgstr "Prosím zvolte si v následující položce, jak bude email zobrazen."
 
 #: phonedb/views.py:98
 msgid "Valid records"
-msgstr ""
+msgstr "Platných záznamů"
 
 #: phonedb/views.py:98
 msgid "Total records"
-msgstr ""
+msgstr "Celkem záznamů"
 
 #: phonedb/views.py:116
 msgid "Gammu Phone Database Feed (RSS)"
