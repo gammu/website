@@ -24,7 +24,8 @@ from phonedb.forms import SearchForm, NewForm
 # Create your views here.
 
 def get_chart_url():
-    url = cache.get('phonedb-chart-url')
+    cache_key = 'phonedb-chart-url-%s' % settings.LANGUAGE_CODE
+    url = cache.get(cache_key)
     if url is not None:
         return url
     enddate = datetime.datetime.now()
@@ -103,7 +104,7 @@ def get_chart_url():
     chart.set_axis_labels(Axis.BOTTOM, years)
 
     url = chart.get_url()
-    cache.set('phonedb-chart-url', url, 3600)
+    cache.set(cache_key, url, 3600)
     return url
 
 
