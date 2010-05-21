@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-21 13:34+0200\n"
+"PO-Revision-Date: 2010-05-21 13:35+0200\n"
 "Last-Translator:  <torsten.funck@googlemail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -25,6 +25,7 @@ msgstr "Betrag (€)"
 msgid "Message from you"
 msgstr ""
 
+# Was sollen die Zeichen mitten im Wort???
 #: donate/forms.py:27 donate/forms.py:38 html/base.html:126
 #: html/base.html.py:136 html/contribute/sidebar.html:4
 #, fuzzy
