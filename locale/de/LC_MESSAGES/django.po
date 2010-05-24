@@ -2952,7 +2952,7 @@ msgstr "Grundlegende Telefonbuchfunktionen (Name und Telefonnummer)"
 
 #: phonedb/models.py:36
 msgid "Enhanced phonebook entries (eg. several numbers per entry)"
-msgstr ""
+msgstr "Fortgeschrittene Telefonbucheinträge (zB mehre Rufnummern pro Eintrag)"
 
 #: phonedb/models.py:37
 #, fuzzy
