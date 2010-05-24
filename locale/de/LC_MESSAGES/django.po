@@ -257,7 +257,7 @@ msgstr "Übersetze"
 
 #: html/base.html:125 html/contribute/sidebar.html:6
 msgid "Develop"
-msgstr ""
+msgstr "Entwickle"
 
 #: html/base.html:127 html/contribute/sidebar.html:8
 msgid "Publicity"
