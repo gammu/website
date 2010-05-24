@@ -222,7 +222,7 @@ msgstr "Andere Projekte"
 
 #: html/base.html:109 html/index.html:54
 msgid "News"
-msgstr ""
+msgstr "Neuigkeiten"
 
 #: html/base.html:113 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:67 html/smsd.html:71 html/wammu.html:57
