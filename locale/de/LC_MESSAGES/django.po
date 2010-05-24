@@ -209,7 +209,7 @@ msgstr "Kommerzielle Unterstützung"
 
 #: html/base.html:104
 msgid "Media"
-msgstr ""
+msgstr "Medien"
 
 #: html/base.html:107 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3 wammu/helpers.py:20
