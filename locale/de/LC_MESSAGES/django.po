@@ -261,7 +261,7 @@ msgstr "Entwickle"
 
 #: html/base.html:127 html/contribute/sidebar.html:8
 msgid "Publicity"
-msgstr ""
+msgstr "Werbung"
 
 #: html/base.html:135
 msgid "License"
