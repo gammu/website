@@ -1675,9 +1675,8 @@ msgid "Phones Support"
 msgstr "Unterstützung"
 
 #: html/docs/faq.html:16
-#, fuzzy
 msgid "Is my phone supported?"
-msgstr "Nicht unterstützt"
+msgstr "Wird mein Telefon unterstützt?"
 
 #: html/docs/faq.html:18
 msgid ""
