@@ -37,7 +37,7 @@ msgstr "Quelltext"
 
 #: downloads/models.py:33
 msgid "Windows binary"
-msgstr "Ausführbares Windows Programm"
+msgstr "Ausführbares Windows-Programm"
 
 #: downloads/models.py:174
 #, python-format
