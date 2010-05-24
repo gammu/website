@@ -467,6 +467,8 @@ msgid ""
 "Access to phone file system (note that some phones work also as USB storage\n"
 "devices and those are not accessible through Gammu)\n"
 msgstr ""
+"Zugang zum Telefondateisystem (Bitte beachten Sie, dass manche Telefone auch "
+"als USB-Speicher fungieren. Diese sind nicht über Gammu aufrufbar)"
 
 #: html/gammu.html:11 html/libgammu.html:7 html/python-gammu.html:11
 #: html/smsd.html:11 html/wammu.html:11
