@@ -1315,7 +1315,7 @@ msgstr "Benötigte Fähigkeiten"
 
 #: html/contribute/translate.html:4 html/contribute/translate.html.py:12
 msgid "Translating Wammu and Gammu"
-msgstr ""
+msgstr "Wammu und Gammu übersetzen"
 
 #: html/contribute/translate.html:15
 msgid ""
