@@ -205,7 +205,7 @@ msgstr "Fehler melden"
 
 #: html/base.html:100
 msgid "Commercial support"
-msgstr ""
+msgstr "Kommerzielle Unterstützung"
 
 #: html/base.html:104
 msgid "Media"
