@@ -750,6 +750,9 @@ msgid ""
 "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons\n"
 "Attribution-Share Alike 3.0 Unported</a>.\n"
 msgstr ""
+"Die Inhalte der Website wurden unter der <a "
+"href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons "
+"Attribution-Share Alike 3.0 Unported</a> veröffentlicht."
 
 #: html/license.html:91
 msgid ""
