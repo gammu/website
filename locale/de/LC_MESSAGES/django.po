@@ -313,7 +313,7 @@ msgstr ""
 
 #: html/donate.html:4 html/donate.html.py:11
 msgid "Donate to Gammu"
-msgstr ""
+msgstr "Spende an Gammu"
 
 #: html/donate.html:13
 msgid "Donate Money"
