@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-24 18:06+0200\n"
+"PO-Revision-Date: 2010-05-24 18:07+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -232,7 +232,7 @@ msgstr "Dokumentation"
 
 #: html/base.html:115 html/docs/sidebar.html:5
 msgid "FAQ"
-msgstr "Häufig gestellte Fragen"
+msgstr "Häufig gestellte Fragen (FAQ)"
 
 #: html/base.html:116 html/docs/sidebar.html:7 html/sidebars/common.html:3
 #: phonedb/views.py:98
