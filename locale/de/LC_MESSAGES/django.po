@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-24 15:54+0200\n"
+"PO-Revision-Date: 2010-05-24 15:55+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -77,7 +77,7 @@ msgstr "Seite nicht gefunden"
 
 #: html/500.html:4 html/500.html.py:8
 msgid "Server Error"
-msgstr ""
+msgstr "Serverfehler"
 
 #: html/500.html:11
 msgid ""
