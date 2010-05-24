@@ -2886,7 +2886,7 @@ msgstr "Gammu Telefondatenbank Neuigkeiten."
 
 #: phonedb/forms.py:13
 msgid "Search text"
-msgstr ""
+msgstr "Suchtext"
 
 #: phonedb/forms.py:15 phonedb/forms.py:26
 msgid "Features"
