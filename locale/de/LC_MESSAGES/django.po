@@ -1503,7 +1503,7 @@ msgstr ""
 
 #: html/contribute/wanted.html:52
 msgid "Translators"
-msgstr ""
+msgstr "Übersetzer"
 
 #: html/contribute/wanted.html:55
 msgid ""
