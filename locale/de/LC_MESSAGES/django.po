@@ -483,6 +483,9 @@ msgid ""
 "top\n"
 "of <a href=\"/libgammu\">libGammu</a>.\n"
 msgstr ""
+"Gammu ist der Name des Projektes und gleichzeitig der Name des Eingabezeile-"
+"Programms, mit dem man ein Telefon kontrollieren kann. Es ist in C "
+"programmiert und basiert auf <a href=\"/libgammu\">libGammu</a>."
 
 #: html/gammu.html:30
 msgid ""
