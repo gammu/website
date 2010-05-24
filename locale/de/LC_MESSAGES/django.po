@@ -1311,7 +1311,7 @@ msgstr "Möglichkeiten beizutragen"
 
 #: html/contribute/sidebar.html:7
 msgid "Wanted skills"
-msgstr ""
+msgstr "Benötigte Fähigkeiten"
 
 #: html/contribute/translate.html:4 html/contribute/translate.html.py:12
 msgid "Translating Wammu and Gammu"
