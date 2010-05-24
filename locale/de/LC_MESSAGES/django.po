@@ -193,7 +193,7 @@ msgstr "Unterstützung"
 
 #: html/base.html:97
 msgid "Mailing lists"
-msgstr ""
+msgstr "Mailing Listen"
 
 #: html/base.html:98
 msgid "Online"
