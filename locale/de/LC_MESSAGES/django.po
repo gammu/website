@@ -442,6 +442,8 @@ msgid ""
 "Phonebook listing, export and import (also from standard formats such as\n"
 "vCard)\n"
 msgstr ""
+"Telefonbücher anzeigen, exportieren und importieren (auch von "
+"Standardformaten, zB vCard)"
 
 #: html/gammu-features.html:16
 msgid ""
