@@ -567,7 +567,7 @@ msgstr "Lesen Sie auch die <a href=\"/docs/faq/\">häufig gestellten Fragen</a>.
 
 #: html/index.html:4
 msgid "Wammu and Gammu"
-msgstr ""
+msgstr "Wammu und Gammu"
 
 #: html/index.html:22
 msgid ""
