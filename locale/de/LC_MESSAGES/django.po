@@ -201,7 +201,7 @@ msgstr "Online"
 
 #: html/base.html:99
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Fehler melden"
 
 #: html/base.html:100
 msgid "Commercial support"
