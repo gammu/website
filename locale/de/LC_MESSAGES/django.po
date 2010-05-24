@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-24 16:56+0200\n"
+"PO-Revision-Date: 2010-05-24 17:02+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: donate/forms.py:14
 msgid "Amount (EUR)"
-msgstr "Betrag (€)"
+msgstr "Betrag (EUR)"
 
 #: donate/forms.py:16
 msgid "Message from you"
