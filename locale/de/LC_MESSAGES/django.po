@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-24 16:29+0200\n"
+"PO-Revision-Date: 2010-05-24 16:30+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -945,7 +945,7 @@ msgstr ""
 
 #: html/wammu.html:37
 msgid "display message including pictures and ringtones playback"
-msgstr ""
+msgstr "anzeigen von Nachrichten mit Bildern und abspielen von Klingeltönen"
 
 #: html/wammu.html:38
 msgid ""
