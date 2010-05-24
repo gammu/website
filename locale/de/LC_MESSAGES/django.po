@@ -241,7 +241,7 @@ msgstr "Unterstützte Telefonapparate"
 
 #: html/base.html:117 html/docs/sidebar.html:4
 msgid "Man pages"
-msgstr ""
+msgstr "Hilfedateien (Manpages)"
 
 #: html/base.html:118 html/docs/sidebar.html:6
 msgid "For developers"
