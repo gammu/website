@@ -33,7 +33,7 @@ msgstr "Spenden"
 
 #: downloads/models.py:32
 msgid "Source"
-msgstr ""
+msgstr "Quelltext"
 
 #: downloads/models.py:33
 msgid "Windows binary"
