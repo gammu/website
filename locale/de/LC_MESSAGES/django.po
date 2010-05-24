@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-24 16:52+0200\n"
+"PO-Revision-Date: 2010-05-24 16:53+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2980,7 +2980,7 @@ msgstr "Klingeltöne"
 
 #: phonedb/models.py:79
 msgid "Phone name, please exclude vendor name."
-msgstr ""
+msgstr "Modell des Telefons, bitte ohne Herstellername."
 
 #: phonedb/models.py:80
 msgid "Connection used in Gammu configuration."
