@@ -277,7 +277,6 @@ msgstr "Suche nach Fragen betreffend Gammu/Wammu"
 
 # msgid "Search:"
 #: html/base.html:137 html/phonedb/index.html:7
-#, fuzzy
 msgid "Search"
 msgstr "Suchen:"
 
