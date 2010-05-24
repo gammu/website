@@ -2984,7 +2984,7 @@ msgstr "Modell des Telefons, bitte ohne Herstellername."
 
 #: phonedb/models.py:80
 msgid "Connection used in Gammu configuration."
-msgstr ""
+msgstr "Verbindungsart, die Gammu benützt."
 
 #: phonedb/models.py:82
 msgid "Model used in Gammu configuration, usually empty."
