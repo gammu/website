@@ -42,12 +42,12 @@ msgstr "Ausführbares Windows Programm"
 #: downloads/models.py:174
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr "%(program)s stabile Version %(version)"
+msgstr "%(program)s stabile Version %(version)s"
 
 #: downloads/models.py:179
 #, python-format
 msgid "%(program)s testing release %(version)s"
-msgstr "%(program)s Testversion %(version)"
+msgstr "%(program)s Testversion %(version)s"
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
@@ -59,8 +59,8 @@ msgid ""
 "The page you are looking for was not found. Try choosing something from the\n"
 "navigation bellow or use <a href=\"/search\">search facility</a>.\n"
 msgstr ""
-"Die angeforderte Seite wurde nicht gefunden. Sie können die "
-"Navigationsleiste unten verwenden, oder die <a href=\"/search\">Suche</a>."
+"Die angeforderte Seite wurde nicht gefunden. Sie können die\n"
+"Navigationsleiste unten verwenden, oder die <a href=\"/search\">Suche</a>.\n"
 
 #: html/403.html:18 html/404.html:18
 msgid ""
@@ -68,8 +68,8 @@ msgid ""
 "This site includes information about Gammu and Wammu, you might want to\n"
 "continue to pages of following projects:\n"
 msgstr ""
-"Diese Seite bietet Infformationen über Gammu und Wammu, vielleicht möchten "
-"Sie auf den Seiten folgender Projekte fortfahren:"
+"Diese Seite bietet Infformationen über Gammu und Wammu, vielleicht möchten\n"
+"Sie auf den Seiten folgender Projekte fortfahren:\n"
 
 #: html/404.html:4 html/404.html.py:8
 msgid "Page Not Found"
@@ -86,9 +86,9 @@ msgid ""
 "our\n"
 "trained monkeys to fix the issue.\n"
 msgstr ""
-"Der Server hatte ernsthafte Probleme, Ihre Anweisung durchzuführen. Wir "
-"werden unverzüglich unsere trainierten Affen losschicken, um dieses Problem "
-"zu beheben."
+"Der Server hatte ernsthafte Probleme, Ihre Anweisung durchzuführen. Wir\n"
+"werden unverzüglich unsere trainierten Affen losschicken, um dieses Problem\n"
+"zu beheben.\n"
 
 #: html/authors.html:4 html/authors.html.py:7
 msgid "Wammu and Gammu Authors"
@@ -100,8 +100,8 @@ msgid ""
 "Lot of people contributed to Gammu, python-gammu and Wammu in the past. You\n"
 "can find the most visible here.\n"
 msgstr ""
-"Sehr viele haben in der Vergangenheit zu Gammu, python-gammu und Wammu "
-"beigetragen. Die Aktivsten sind hier zu finden."
+"Sehr viele haben in der Vergangenheit zu Gammu, python-gammu und Wammu\n"
+"beigetragen. Die Aktivsten sind hier zu finden.\n"
 
 #: html/authors.html:19
 msgid ""
@@ -117,7 +117,7 @@ msgstr ""
 "AT- und entwickelte das Alcatel-Telefon-Modul.Später fügte er <a href"
 "=\"/python-gammu/\">die Python Einbindung für Gammu</a> und eine <a "
 "hrf=\"/wammu/\">grafische Benutzeroberfläche</a> hinzu. 2007 bis heute "
-"übernahm er die Pflege und Aufrechterhaltung des Projekts Gammu."
+"übernahm er die Pflege und Aufrechterhaltung des Projekts Gammu.\n"
 
 #: html/authors.html:31
 msgid ""
