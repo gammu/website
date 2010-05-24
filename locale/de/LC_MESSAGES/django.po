@@ -150,7 +150,7 @@ msgstr ""
 
 #: html/base.html:50
 msgid "Page translations"
-msgstr ""
+msgstr "Seitenübersetzung"
 
 #: html/base.html:55
 msgid "Translate!"
