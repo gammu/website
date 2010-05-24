@@ -86,6 +86,9 @@ msgid ""
 "our\n"
 "trained monkeys to fix the issue.\n"
 msgstr ""
+"Der Server hatte ernsthafte Probleme, Ihre Anweisung durchzuführen. Wir "
+"werden unverzüglich unsere trainierten Affen losschicken, um dieses Problem "
+"zu beheben."
 
 #: html/authors.html:4 html/authors.html.py:7
 msgid "Wammu and Gammu Authors"
