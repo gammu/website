@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-24 16:49+0200\n"
+"PO-Revision-Date: 2010-05-24 16:50+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2899,7 +2899,7 @@ msgstr ""
 
 #: phonedb/forms.py:28 phonedb/models.py:81
 msgid "Features which are working in Gammu."
-msgstr ""
+msgstr "Funktionen, die durch Gammu unterstützt werden."
 
 #: phonedb/forms.py:30
 #, python-format
