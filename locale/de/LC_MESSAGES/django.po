@@ -434,7 +434,7 @@ msgstr "Sms erhalten, speichern und senden"
 msgid ""
 "\n"
 "MMS retrieval\n"
-msgstr ""
+msgstr "MMS erhalten"
 
 #: html/gammu-features.html:12
 msgid ""
