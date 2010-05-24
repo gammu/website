@@ -2890,7 +2890,7 @@ msgstr "Suchtext"
 
 #: phonedb/forms.py:15 phonedb/forms.py:26
 msgid "Features"
-msgstr ""
+msgstr "Funktionen"
 
 #: phonedb/forms.py:18
 #, python-format
