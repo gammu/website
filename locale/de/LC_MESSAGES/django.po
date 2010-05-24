@@ -422,7 +422,7 @@ msgstr ""
 msgid ""
 "\n"
 "Call listing, initiating and handling\n"
-msgstr ""
+msgstr "Anrufe anzeigen, beginnen und ausführen"
 
 #: html/gammu-features.html:6
 msgid ""
