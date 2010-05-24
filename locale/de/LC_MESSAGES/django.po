@@ -42,7 +42,7 @@ msgstr "Ausführbares Windows Programm"
 #: downloads/models.py:174
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr ""
+msgstr "%(program)s stabile Version %(version)"
 
 #: downloads/models.py:179
 #, python-format
