@@ -840,7 +840,7 @@ msgstr "Letzte Neuigkeiten"
 
 #: html/smsd.html:4 html/smsd.html.py:19
 msgid "Gammu SMSD"
-msgstr ""
+msgstr "Gammu SMSD"
 
 #: html/smsd.html:22
 msgid ""
