@@ -2992,7 +2992,7 @@ msgstr "Modell, das in Gammu verwendet wird - bleibt für gewöhnlich leer."
 
 #: phonedb/models.py:83
 msgid "Gammu version where you tested this phone."
-msgstr ""
+msgstr "Gammu Version, mit der das Telefon getestet wurde."
 
 #: phonedb/models.py:84
 msgid ""
