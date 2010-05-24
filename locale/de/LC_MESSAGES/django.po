@@ -59,6 +59,8 @@ msgid ""
 "The page you are looking for was not found. Try choosing something from the\n"
 "navigation bellow or use <a href=\"/search\">search facility</a>.\n"
 msgstr ""
+"Die angeforderte Seite wurde nicht gefunden. Sie können die "
+"Navigationsleiste unten verwenden, oder die <a href=\"/search\">Suche</a>."
 
 #: html/403.html:18 html/404.html:18
 msgid ""
