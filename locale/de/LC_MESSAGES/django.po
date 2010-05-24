@@ -1697,7 +1697,7 @@ msgstr "Werden Symbian-basierende Telefone unterstützt?"
 msgid ""
 "\n"
 "Short answer: Not really.\n"
-msgstr ""
+msgstr "Schnelle Antwort: nicht wirklich."
 
 #: html/docs/faq.html:33
 msgid ""
