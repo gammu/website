@@ -1277,7 +1277,7 @@ msgstr ""
 
 #: html/contribute/publicity.html:30
 msgid "Third Party Applications"
-msgstr ""
+msgstr "Anwendungen anderer Projekte"
 
 #: html/contribute/publicity.html:33
 msgid ""
