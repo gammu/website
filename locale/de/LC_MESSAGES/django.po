@@ -964,7 +964,7 @@ msgstr "Suche des Telefons"
 
 #: html/wammu.html:41
 msgid "translated into several languages"
-msgstr ""
+msgstr "Übersetzt in mehrere Sprachen"
 
 #: html/wammu.html:42
 msgid "rated as best on many software servers"
