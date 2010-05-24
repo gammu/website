@@ -416,6 +416,7 @@ msgid ""
 "\n"
 "Python bindings for libGammu, so that you can use it from Python scripts.\n"
 msgstr ""
+"Python Anbindung für libGammu, ermöglicht den Einsatz von Python Skripten."
 
 #: html/gammu-features.html:3
 msgid ""
