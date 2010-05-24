@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-24 16:14+0200\n"
+"PO-Revision-Date: 2010-05-24 16:15+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -472,9 +472,8 @@ msgstr ""
 
 #: html/gammu.html:11 html/libgammu.html:7 html/python-gammu.html:11
 #: html/smsd.html:11 html/wammu.html:11
-#, fuzzy
 msgid "More information"
-msgstr "Telefoninformationen"
+msgstr "Zusätzliche Informationen"
 
 #: html/gammu.html:22
 msgid ""
