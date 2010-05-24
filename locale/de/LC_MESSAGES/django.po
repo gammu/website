@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-24 16:28+0200\n"
+"PO-Revision-Date: 2010-05-24 16:29+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -836,7 +836,7 @@ msgstr ""
 
 #: html/shortnews.html:2
 msgid "Latest News"
-msgstr ""
+msgstr "Letzte Neuigkeiten"
 
 #: html/smsd.html:4 html/smsd.html.py:19
 msgid "Gammu SMSD"
