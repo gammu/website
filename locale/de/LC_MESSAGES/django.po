@@ -615,6 +615,8 @@ msgid ""
 "Gammu is now not only a single program but there is lot of useful tools\n"
 "sharing same library.\n"
 msgstr ""
+"Gammu ist kein einzelnes Programm mehr, aber eine Sammlung nützlicher "
+"Hilfsmittel, die alle dieselben Bibliotheken nutzen."
 
 #: html/libgammu.html:4 html/libgammu.html.py:15
 msgid "libGammu"
