@@ -188,9 +188,8 @@ msgid "SMSD"
 msgstr "SMSD"
 
 #: html/base.html:95 wammu/helpers.py:18
-#, fuzzy
 msgid "Support"
-msgstr "&Unterstützung"
+msgstr "Unterstützung"
 
 #: html/base.html:97
 msgid "Mailing lists"
