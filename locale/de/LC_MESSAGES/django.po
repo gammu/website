@@ -144,6 +144,9 @@ msgid ""
 "Manfred\n"
 "Jonsson.\n"
 msgstr ""
+"Weil dieses Projekt als Abspaltung von Gnokil startete, möchten wir allen "
+"dort Entwickelnden und Beitragenden danken, besonders: Pavel Janik, Pawel "
+"Kot und Manfred Jonsson."
 
 #: html/base.html:50
 msgid "Page translations"
