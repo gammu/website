@@ -2924,7 +2924,7 @@ msgstr "Füge NOSPAM-Text an zufälliger Stelle ein"
 
 #: phonedb/models.py:26
 msgid "Draft"
-msgstr ""
+msgstr "Entwurf"
 
 #: phonedb/models.py:27
 msgid "Approved"
