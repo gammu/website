@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-24 16:07+0200\n"
+"PO-Revision-Date: 2010-05-24 16:08+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -273,7 +273,7 @@ msgstr "Unterstüze Wammu und Gammu durch Spenden!"
 
 #: html/base.html:137
 msgid "Search for Gammu/Wammu related questions"
-msgstr ""
+msgstr "Suche nach Fragen betreffend Gammu/Wammu"
 
 # msgid "Search:"
 #: html/base.html:137 html/phonedb/index.html:7
