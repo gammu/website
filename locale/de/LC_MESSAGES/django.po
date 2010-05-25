@@ -1946,7 +1946,7 @@ msgstr ""
 
 #: html/docs/index.html:4 html/docs/index.html.py:11
 msgid "Wammu and Gammu Documentation"
-msgstr ""
+msgstr "Wammu und Gammu Dokumentation"
 
 #: html/docs/index.html:13
 msgid "End User Documentation"
