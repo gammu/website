@@ -2547,7 +2547,7 @@ msgstr "Löschen"
 
 #: html/phonedb/phone.html:18
 msgid "Approve"
-msgstr ""
+msgstr "Bestätigen"
 
 #: html/phonedb/phone.html:22
 msgid "Similar Phones"
