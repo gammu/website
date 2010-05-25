@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-25 21:25+0200\n"
+"PO-Revision-Date: 2010-05-25 21:26+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2482,9 +2482,8 @@ msgid "Name"
 msgstr "Name"
 
 #: html/phonedb/list.html:5
-#, fuzzy
 msgid "Connection"
-msgstr "Stau"
+msgstr "Verbindung"
 
 #: html/phonedb/list.html:5
 msgid "Supported features"
