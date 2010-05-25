@@ -2623,7 +2623,7 @@ msgstr "Erstellt am %(created)s."
 msgid ""
 "\n"
 "Tested with Gammu %(version)s.\n"
-msgstr ""
+msgstr "Wurde mit Gammu %(version)s gestestet."
 
 #: html/phonedb/search.html:4 html/phonedb/search.html.py:15
 msgid "Search Results"
