@@ -2163,7 +2163,7 @@ msgstr ""
 msgid ""
 "\n"
 "Currently downloading from mirror:\n"
-msgstr ""
+msgstr "Derzeit wird heruntergeladen von:"
 
 #: html/downloads/mirror.html:15
 msgid "Change"
