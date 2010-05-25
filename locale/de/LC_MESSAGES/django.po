@@ -2627,7 +2627,7 @@ msgstr "Wurde mit Gammu %(version)s gestestet."
 
 #: html/phonedb/search.html:4 html/phonedb/search.html.py:15
 msgid "Search Results"
-msgstr ""
+msgstr "Suchergebnisse"
 
 #: html/phonedb/search.html:25
 #, python-format
