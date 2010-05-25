@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-25 21:45+0200\n"
+"PO-Revision-Date: 2010-05-25 21:46+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2787,7 +2787,7 @@ msgstr ""
 
 #: html/support/buy.html:4 html/support/buy.html.py:12
 msgid "Commercial Support for Wammu and Gammu"
-msgstr ""
+msgstr "Kommerzielle Unterstützung für Wammu und Gammu"
 
 #: html/support/buy.html:15
 msgid ""
