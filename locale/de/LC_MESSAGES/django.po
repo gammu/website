@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-25 21:15+0200\n"
+"PO-Revision-Date: 2010-05-25 21:16+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2254,7 +2254,7 @@ msgstr ""
 
 #: html/downloads/smalldownloads.html:2
 msgid "Source Downloads"
-msgstr ""
+msgstr "Quelltexte herunterladen"
 
 #: html/downloads/programs/gammu-source.html:3
 msgid ""
