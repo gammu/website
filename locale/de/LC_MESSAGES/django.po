@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-25 21:21+0200\n"
+"PO-Revision-Date: 2010-05-25 21:22+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2380,9 +2380,8 @@ msgid "Wammu News"
 msgstr "Wammu Neuigkeiten"
 
 #: html/phonedb/body.html:3
-#, fuzzy
 msgid "Supported Features"
-msgstr "Unterstützte Merkmale"
+msgstr "Unterstützte Funktionen"
 
 #: html/phonedb/body.html:13
 msgid "No features supported!"
