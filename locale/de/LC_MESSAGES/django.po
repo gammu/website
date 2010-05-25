@@ -2332,7 +2332,7 @@ msgstr "Folgen Sie uns auf"
 
 #: html/news/index.html:9
 msgid "identi.ca"
-msgstr ""
+msgstr "identi.ca"
 
 #: html/news/index.html:10
 msgid "Twitter"
