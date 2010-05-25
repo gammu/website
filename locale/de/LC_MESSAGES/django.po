@@ -2564,6 +2564,8 @@ msgid ""
 "other\n"
 "records for same model (you can see them on right side).\n"
 msgstr ""
+"Dieser Bericht wurde zurückgewiesen.Vielleicht möchten Sie andere Berichte "
+"zu diesem Modell anschauen (Sie finden diese auf der rechten Seite)."
 
 #: html/phonedb/phone.html:54
 msgid ""
