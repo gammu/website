@@ -2543,7 +2543,7 @@ msgstr "Bearbeiten"
 
 #: html/phonedb/phone.html:15
 msgid "Delete"
-msgstr ""
+msgstr "Löschen"
 
 #: html/phonedb/phone.html:18
 msgid "Approve"
