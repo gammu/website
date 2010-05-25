@@ -2239,7 +2239,7 @@ msgstr ""
 
 #: html/downloads/release.html:15
 msgid "Changes"
-msgstr ""
+msgstr "Änderungen"
 
 #: html/downloads/release.html:21
 #, fuzzy
