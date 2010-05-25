@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-25 21:33+0200\n"
+"PO-Revision-Date: 2010-05-25 21:34+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2551,7 +2551,7 @@ msgstr "Bestätigen"
 
 #: html/phonedb/phone.html:22
 msgid "Similar Phones"
-msgstr ""
+msgstr "Ähnliche Telefone"
 
 #: html/phonedb/phone.html:33
 msgid "None found."
