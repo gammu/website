@@ -2389,7 +2389,7 @@ msgstr "Keine Funktion wird unterstützt!"
 
 #: html/phonedb/body.html:16
 msgid "Configuration"
-msgstr ""
+msgstr "Konfiguration"
 
 #: html/phonedb/body.html:27
 msgid "Phone is reported not to be supported!"
