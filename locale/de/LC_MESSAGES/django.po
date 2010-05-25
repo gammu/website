@@ -2397,7 +2397,7 @@ msgstr "Dieses Telefon wurde als \"nicht unterstützt\" gemeldet."
 
 #: html/phonedb/body.html:34
 msgid "Reporter Note"
-msgstr ""
+msgstr "Anmerkung des Meldenden"
 
 #: html/phonedb/index.html:4 html/phonedb/index.html.py:38
 #: html/phonedb/new.html:4 html/phonedb/phone.html:4
