@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-25 20:00+0200\n"
+"PO-Revision-Date: 2010-05-25 20:02+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -1043,7 +1043,7 @@ msgstr ""
 
 #: html/wammu.html:34
 msgid "can read/create/save/send/backup smses"
-msgstr ""
+msgstr "lesen, ändern, speichern, senden, sichern von SMS"
 
 #: html/wammu.html:35
 msgid "sending files to phone (OBEX and Sony Ericsson phones only)"
