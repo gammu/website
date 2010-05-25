@@ -3044,7 +3044,7 @@ msgstr "Jabber chat room"
 
 #: manpages/views.py:12
 msgid "Czech"
-msgstr ""
+msgstr "Czech"
 
 #: manpages/views.py:13
 msgid "English"
