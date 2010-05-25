@@ -2531,7 +2531,7 @@ msgstr ""
 
 #: html/phonedb/new.html:38
 msgid "Please enter text 'nospam':"
-msgstr ""
+msgstr "Bitte den Teext \"nospam\" einfügen:"
 
 #: html/phonedb/phone.html:11 html/phonedb/vendor.html:10
 msgid "Add new record"
