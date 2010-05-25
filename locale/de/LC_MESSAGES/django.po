@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-25 21:04+0200\n"
+"PO-Revision-Date: 2010-05-25 21:05+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2179,7 +2179,7 @@ msgstr "Ubuntu Pakete"
 
 #: html/downloads/platformlinks.html:13
 msgid "Ubuntu packages in PPA (latest stable version)"
-msgstr ""
+msgstr "Ubuntu Pakete im PPA (aktuellste stabile Version)"
 
 #: html/downloads/platformlinks.html:17
 msgid ""
