@@ -2463,7 +2463,7 @@ msgstr "Hersteller"
 
 #: html/phonedb/index.html:79
 msgid "Recently Added Phones"
-msgstr ""
+msgstr "Zuletzt hinzugefügte Telefone"
 
 #: html/phonedb/index.html:82
 msgid "Phone Records Summary"
