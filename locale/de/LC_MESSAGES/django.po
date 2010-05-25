@@ -2340,7 +2340,7 @@ msgstr "Twitter"
 
 #: html/news/index.html:12
 msgid "Feeds"
-msgstr ""
+msgstr "Feeds"
 
 #: html/news/index.html:14 html/phonedb/index.html:30
 msgid "RSS"
