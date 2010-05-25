@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-25 21:37+0200\n"
+"PO-Revision-Date: 2010-05-25 21:38+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2616,7 +2616,7 @@ msgstr "Erstellt von %(author)s am %(created)s."
 msgid ""
 "\n"
 "Created on %(created)s.\n"
-msgstr ""
+msgstr "Erstellt am %(created)s."
 
 #: html/phonedb/phone.html:102
 #, python-format
