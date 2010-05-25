@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-25 21:38+0200\n"
+"PO-Revision-Date: 2010-05-25 21:39+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2637,9 +2637,8 @@ msgid ""
 msgstr "%(count)s zu Ihrer Suche passenden Ergebnisse gefunden."
 
 #: html/phonedb/vendor.html:19
-#, fuzzy
 msgid "Website"
-msgstr "&Webseite"
+msgstr "Webseite"
 
 #: html/phonedb/vendor.html:24
 #, python-format
