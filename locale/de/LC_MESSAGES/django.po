@@ -2555,7 +2555,7 @@ msgstr "Ähnliche Telefone"
 
 #: html/phonedb/phone.html:33
 msgid "None found."
-msgstr ""
+msgstr "Es wurde nichts gefunden."
 
 #: html/phonedb/phone.html:46
 msgid ""
