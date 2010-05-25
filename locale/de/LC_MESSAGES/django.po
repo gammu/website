@@ -2692,7 +2692,7 @@ msgstr "Alle Bilder"
 
 #: html/screenshots/wammu_index.html:4 html/screenshots/wammu_index.html:6
 msgid "Wammu Screenshots"
-msgstr ""
+msgstr "Bilder von Wammu"
 
 #: html/sidebars/common.html:4
 msgid "How to contribute"
