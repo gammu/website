@@ -2412,7 +2412,7 @@ msgstr "Start"
 
 #: html/phonedb/index.html:12
 msgid "Feature Search"
-msgstr ""
+msgstr "Funktionensuche"
 
 #: html/phonedb/index.html:32
 msgid "CSV"
