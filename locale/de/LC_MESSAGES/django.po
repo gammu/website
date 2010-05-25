@@ -2171,7 +2171,7 @@ msgstr "Änderungen"
 
 #: html/downloads/platformlinks.html:7
 msgid "Debian packages"
-msgstr ""
+msgstr "Debian Pakete"
 
 #: html/downloads/platformlinks.html:10
 msgid "Ubuntu packages"
