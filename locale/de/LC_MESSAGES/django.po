@@ -2634,7 +2634,7 @@ msgstr "Suchergebnisse"
 msgid ""
 "\n"
 "Found %(count)s results matching your query.\n"
-msgstr ""
+msgstr "%(count)s zu Ihrer Suche passenden Ergebnisse gefunden."
 
 #: html/phonedb/vendor.html:19
 #, fuzzy
