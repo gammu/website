@@ -2175,7 +2175,7 @@ msgstr "Debian Pakete"
 
 #: html/downloads/platformlinks.html:10
 msgid "Ubuntu packages"
-msgstr ""
+msgstr "Ubuntu Pakete"
 
 #: html/downloads/platformlinks.html:13
 msgid "Ubuntu packages in PPA (latest stable version)"
