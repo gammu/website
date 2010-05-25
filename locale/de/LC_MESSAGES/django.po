@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-24 18:57+0200\n"
+"PO-Revision-Date: 2010-05-25 17:03+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -356,7 +356,6 @@ msgid "Bank Account"
 msgstr "Bank Konto"
 
 #: html/donate.html:43
-#, fuzzy
 msgid ""
 "\n"
 "If you have account with Czech bank or can send money directly to Czech\n"
@@ -364,8 +363,8 @@ msgid ""
 "BRE Bank S.A.).\n"
 msgstr ""
 "Wenn Sie ein Konto bei einer tschechischen Bank haben, oder eine direkte "
-"Überweisung an ein tschechisches Konto für Sie möglich ist, bitte an "
-"Kontonummer/Bankleitzahl 2202591725/6210 (Konto bei mBank, BRE Bank S.A.)."
+"Überweisung an ein tschechisches Konto für Sie möglich ist, bitte an Konto "
+"2202591725/6210 (Konto bei mBank, BRE Bank S.A.)."
 
 #: html/donate.html:52
 msgid ""
