@@ -1473,7 +1473,7 @@ msgstr ""
 
 #: html/contribute/translate.html:22
 msgid "Gettext"
-msgstr ""
+msgstr "Gettext"
 
 #: html/contribute/translate.html:24
 msgid ""
