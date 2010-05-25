@@ -2385,7 +2385,7 @@ msgstr "Unterstützte Funktionen"
 
 #: html/phonedb/body.html:13
 msgid "No features supported!"
-msgstr ""
+msgstr "Keine Funktion wird unterstützt!"
 
 #: html/phonedb/body.html:16
 msgid "Configuration"
