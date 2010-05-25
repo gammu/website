@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-25 18:09+0200\n"
+"PO-Revision-Date: 2010-05-25 18:11+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -818,7 +818,7 @@ msgstr ""
 
 #: html/python-gammu.html:4 html/python-gammu.html.py:20
 msgid "Python bindings for Gammu"
-msgstr ""
+msgstr "Python Anbindung für Gammu"
 
 #: html/python-gammu.html:23
 msgid ""
