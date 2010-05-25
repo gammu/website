@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-25 20:11+0200\n"
+"PO-Revision-Date: 2010-05-25 20:14+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -1086,7 +1086,7 @@ msgstr "Übersetzt in mehrere Sprachen"
 
 #: html/wammu.html:42
 msgid "rated as best on many software servers"
-msgstr ""
+msgstr "Bestbewertungen durch viele Software-Server"
 
 #: html/wammu.html:49
 msgid ""
