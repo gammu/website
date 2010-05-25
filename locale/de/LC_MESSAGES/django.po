@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-25 21:16+0200\n"
+"PO-Revision-Date: 2010-05-25 21:18+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2307,7 +2307,7 @@ msgstr ""
 
 #: html/links/index.html:4 html/links/index.html.py:7
 msgid "Third Party Applications using Gammu"
-msgstr ""
+msgstr "Programme Anderer, die Gammu verwenden"
 
 #: html/links/index.html:22
 #, fuzzy
