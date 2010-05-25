@@ -2597,6 +2597,8 @@ msgid ""
 "\n"
 "More information about phone might be available on following sites:\n"
 msgstr ""
+"Zusätzliche Informationen bezüglich Telefonen können Sie auf folgenden "
+"Seiten finden:"
 
 #: html/phonedb/phone.html:86
 msgid "About entry"
