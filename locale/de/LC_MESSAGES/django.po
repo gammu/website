@@ -2500,7 +2500,7 @@ msgstr "Neue Meldung erzeugen"
 #: html/phonedb/new.html:7 html/phonedb/phone.html:7
 #: html/phonedb/search.html:7 html/phonedb/vendor.html:7
 msgid "Navigation"
-msgstr ""
+msgstr "Navigation"
 
 #: html/phonedb/new.html:18
 msgid ""
