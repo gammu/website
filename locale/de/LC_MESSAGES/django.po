@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-25 21:20+0200\n"
+"PO-Revision-Date: 2010-05-25 21:21+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2356,7 +2356,7 @@ msgstr "identi.ca RSS"
 
 #: html/news/index.html:17
 msgid "Twitter RSS"
-msgstr ""
+msgstr "Twitter RSS"
 
 #: html/news/index.html:19 html/screenshots/index.html:7
 msgid "Categories"
