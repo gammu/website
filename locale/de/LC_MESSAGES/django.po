@@ -1924,7 +1924,7 @@ msgstr "Allgemein"
 
 #: html/docs/faq.html:86
 msgid "Will Gammu work on my system?"
-msgstr ""
+msgstr "Wird Gammu auf meinem System funktionieren?"
 
 #: html/docs/faq.html:88
 msgid ""
