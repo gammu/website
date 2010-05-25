@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-25 21:46+0200\n"
+"PO-Revision-Date: 2010-05-25 21:47+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -3040,7 +3040,7 @@ msgstr ""
 
 #: html/support/sidebar.html:7
 msgid "Jabber chat room"
-msgstr ""
+msgstr "Jabber chat room"
 
 #: manpages/views.py:12
 msgid "Czech"
