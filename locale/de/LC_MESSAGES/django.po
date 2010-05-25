@@ -2364,7 +2364,7 @@ msgstr "Kategorien"
 
 #: html/news/index.html:21
 msgid "All news"
-msgstr ""
+msgstr "Alle Neuigkeiten"
 
 #: html/news/published.html:4
 #, python-format
