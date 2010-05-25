@@ -2602,7 +2602,7 @@ msgstr ""
 
 #: html/phonedb/phone.html:86
 msgid "About entry"
-msgstr ""
+msgstr "Über diesen Eintrag"
 
 #: html/phonedb/phone.html:89
 #, python-format
