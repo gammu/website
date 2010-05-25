@@ -2680,7 +2680,7 @@ msgstr "Bilder anderer Programme"
 
 #: html/screenshots/gammu_index.html:4 html/screenshots/gammu_index.html:6
 msgid "Gammu Screenshots"
-msgstr ""
+msgstr "Bilder von Gammu"
 
 #: html/screenshots/index.html:4 html/screenshots/index.html.py:19
 msgid "Wammu and Gammu Screenshots"
