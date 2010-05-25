@@ -3073,7 +3073,7 @@ msgstr "Funktionen"
 #: phonedb/forms.py:18
 #, python-format
 msgid "%(description)s [<a href=\"%(url)s\">Link</a>]"
-msgstr ""
+msgstr "%(description)s [<a href=\"%(url)s\">Link</a>]"
 
 #: phonedb/forms.py:28 phonedb/models.py:81
 msgid "Features which are working in Gammu."
