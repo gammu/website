@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-25 17:48+0200\n"
+"PO-Revision-Date: 2010-05-25 18:01+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -725,6 +725,9 @@ msgid ""
 "href=\"http://creativecommons.org/licenses/GPL/2.0/\">GNU General\n"
 "Public License, version 2</a>.\n"
 msgstr ""
+"Gammu, python-gammu und Wammu sind unter der <a "
+"href=\"http://creativecommons.org/licenses/GPL/2.0/\">\"GNU General Public "
+"License, version 2\"</a> veröffentlicht."
 
 #: html/license.html:18
 #, fuzzy
