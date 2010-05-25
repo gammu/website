@@ -2408,7 +2408,7 @@ msgstr "Gammu Telefondatenbank"
 #: html/phonedb/index.html:10 html/phonedb/index.html.py:23
 #: html/phonedb/new.html:48 html/phonedb/search.html:21
 msgid "Go"
-msgstr ""
+msgstr "Start"
 
 #: html/phonedb/index.html:12
 msgid "Feature Search"
