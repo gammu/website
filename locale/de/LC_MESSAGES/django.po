@@ -2495,7 +2495,7 @@ msgstr "Nicht unterstützt"
 
 #: html/phonedb/new.html:4 html/phonedb/new.html.py:15
 msgid "Create New Record"
-msgstr ""
+msgstr "Neuen Eintrag erzeugen"
 
 #: html/phonedb/new.html:7 html/phonedb/phone.html:7
 #: html/phonedb/search.html:7 html/phonedb/vendor.html:7
