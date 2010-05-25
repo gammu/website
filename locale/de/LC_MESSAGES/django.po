@@ -2696,7 +2696,7 @@ msgstr "Bilder von Wammu"
 
 #: html/sidebars/common.html:4
 msgid "How to contribute"
-msgstr ""
+msgstr "Wie man beitragen kann"
 
 #: html/support/bugs.html:4 html/support/bugs.html.py:12
 msgid "Reporting Bugs in Wammu and Gammu"
