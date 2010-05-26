@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-26 12:56+0200\n"
+"PO-Revision-Date: 2010-05-26 13:37+0200\n"
 "Last-Translator: Michal <michal@cihar.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -82,7 +82,6 @@ msgid "Server Error"
 msgstr "Serverfehler"
 
 #: html/500.html:11
-#, fuzzy
 msgid ""
 "\n"
 "The server had serious problems while serving your request. We've just sent "
