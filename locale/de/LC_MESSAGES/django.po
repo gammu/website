@@ -2215,7 +2215,7 @@ msgstr ""
 "<code>contrib</code> Ordner mitgeliefert werden.\n"
 "Oder Sie können eine vollständige, eigenständige Oberfläche verwenden, die "
 "in PHP geschrieben wurde: <a "
-"href=\"http://kalkun.sourceforge.net/\">Kalkun</a>."
+"href=\"http://kalkun.sourceforge.net/\">Kalkun</a>.\n"
 
 #: html/docs/faq.html:67
 msgid "Where can I download python-gammu?"
