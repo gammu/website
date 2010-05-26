@@ -120,10 +120,10 @@ msgid ""
 msgstr ""
 "\n"
 "Michal begann ca. 2002 an der Entwicklung teilzunehmen,\n"
-" er verbesserte das AT- und entwickelte das Alcatel-Telefon-Modul.\n"
+"er verbesserte das AT- und entwickelte das Alcatel-Telefon-Modul.\n"
 "Später fügte er <a href=\"/python-gammu/\">die Python Einbindung für Gammu</a> "
 "und eine <a hrf=\"/wammu/\">grafische Benutzeroberfläche</a> hinzu.\n"
-" 2007 bis heute übernahm er die Pflege und Aufrechterhaltung des Projekts "
+"2007 bis heute übernahm er die Pflege und Aufrechterhaltung des Projekts "
 "Gammu.\n"
 
 #: html/authors.html:31
