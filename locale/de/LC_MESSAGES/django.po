@@ -1417,7 +1417,7 @@ msgstr ""
 
 #: html/contribute/index.html:48
 msgid "Improving"
-msgstr ""
+msgstr "Verbesserungen"
 
 #: html/contribute/index.html:51
 msgid ""
