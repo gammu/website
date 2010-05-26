@@ -2084,7 +2084,7 @@ msgstr ""
 
 #: html/docs/roadmap.html:22
 msgid "Gammu Roadmap"
-msgstr ""
+msgstr "Gammu Roadmap"
 
 #: html/docs/roadmap.html:26
 msgid ""
