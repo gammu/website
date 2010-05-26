@@ -902,10 +902,11 @@ msgid ""
 "href=\"/docs/devel/api/\">libGammu documentation</a>. Please check <a\n"
 "href=\"/docs/devel/\">developer documentation page</a> for more details.\n"
 msgstr ""
+"\n"
 "<a href=\"/docs/devel/python/\">Die API Dokumentation</a> ist einsehbar, "
 "eventuell hilfreich ist auch die <a href=\"/docs/devel/api/\">libGammu "
 "Dokumentation</a>. Für weitere Details empfehlen wir die <a "
-"href=\"/docs/devel/\">Entwickler Dokumentation</a>."
+"href=\"/docs/devel/\">Entwickler Dokumentation</a>.\n"
 
 #: html/python-gammu.html:78
 msgid ""
