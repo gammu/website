@@ -439,7 +439,8 @@ msgid ""
 "\n"
 "SMS daemon service to receive and send messages automatically.\n"
 msgstr ""
-"SMS Daemon Service um Nachrichten automatisch zu erhalten oder zu senden."
+"\n"
+"SMS Daemon Service um Nachrichten automatisch zu erhalten oder zu senden.\n"
 
 #: html/gammu-family.html:28
 msgid ""
