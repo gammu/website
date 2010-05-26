@@ -691,8 +691,9 @@ msgid ""
 "others\n"
 "it provides following features:\n"
 msgstr ""
+"\n"
 "Die API ermöglicht den Zugang zu allen Funktionen eines Telefons, unter "
-"anderem bietet sie folgendes:"
+"anderem bietet sie folgendes:\n"
 
 #: html/libgammu.html:37
 msgid ""
