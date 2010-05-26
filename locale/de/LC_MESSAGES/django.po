@@ -803,9 +803,9 @@ msgid ""
 msgstr ""
 "\n"
 "Die Veröffentlichung dieses Programms erfolgt in der Hoffnung, dass es Ihnen "
-"von Nutzen sein wird, \n"
-"aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite Garantie der \n"
-"MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN ZWECK. \n"
+"von Nutzen sein wird,\n"
+"aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite Garantie der\n"
+"MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN ZWECK.\n"
 "Details finden Sie in der GNU General Public License.\n"
 
 #: html/license.html:36 html/license.html.py:73
