@@ -1097,7 +1097,7 @@ msgstr "lesen, ändern, speichern, senden, sichern von SMS"
 
 #: html/wammu.html:35
 msgid "sending files to phone (OBEX and Sony Ericsson phones only)"
-msgstr "Übertragung von Dateien (ausschließlich OBEX und Sony Ericsson Handys) "
+msgstr "Übertragung von Dateien (ausschließlich OBEX und Sony Ericsson Handys)"
 
 #: html/wammu.html:36
 msgid ""
