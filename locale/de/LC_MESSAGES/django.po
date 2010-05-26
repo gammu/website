@@ -2024,7 +2024,7 @@ msgid ""
 "<a href=\"/docs/roadmap/\">roadmap</a>.\n"
 msgstr ""
 "Als Entwickler dürften Sie Interesse an unseren Plänen für die nächsten "
-"Gammu und Wammu Versionen habn,\n"
+"Gammu und Wammu Versionen haben,\n"
 " Sie finden diese Informationen in unserer <a "
 "href=\"/docs/roadmap/\">roadmap</a>."
 
