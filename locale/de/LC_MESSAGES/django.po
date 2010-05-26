@@ -1749,7 +1749,7 @@ msgstr ""
 "Testen Sie die Übersetzungen im Programm.Laden Sie die .mo Datei aus dem "
 "Übersetzungssystem herunter und platzieren Sie es als  "
 "<code>/usr/share/locale/aa/LC_MESSAGES/wammu.mo</code>, wobei "
-"<code>aa</code> durch den -zutreffenden- zwei Buchstaben Ländercode zu "
+"<code>aa</code> durch den -zutreffenden- \"Zwei Buchstaben Ländercode\" zu "
 "ersetzen ist.\n"
 
 #: html/contribute/translate.html:91
