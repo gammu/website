@@ -1205,7 +1205,7 @@ msgstr ""
 
 #: html/contribute/code.html:36
 msgid "Version Control System"
-msgstr ""
+msgstr "Versionskontrollsystem"
 
 #: html/contribute/code.html:38
 msgid ""
