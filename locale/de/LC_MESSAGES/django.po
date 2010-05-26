@@ -2828,7 +2828,9 @@ msgstr "Über diesen Eintrag"
 msgid ""
 "\n"
 "Created by %(author)s on %(created)s.\n"
-msgstr "Erstellt von %(author)s am %(created)s."
+msgstr ""
+"\n"
+"Erstellt von %(author)s am %(created)s.\n"
 
 #: html/phonedb/phone.html:95
 #, python-format
