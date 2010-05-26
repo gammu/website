@@ -1999,7 +1999,7 @@ msgstr ""
 "Wammu könnte mehr Aufmerksamkeit durch Entwickler gebrauchen, als es derzeit "
 "bekommt.\n"
 "Sie werden relativ freie Hand haben, um das das Projekt weiter zu bringen "
-"und so zu gestalten, wie Sie es wünschen.\n"
+"und es so zu gestalten, wie Sie es wünschen.\n"
 
 #: html/contribute/wanted.html:98
 msgid "C Developer"
