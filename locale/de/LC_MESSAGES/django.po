@@ -1783,7 +1783,7 @@ msgstr ""
 
 #: html/docs/devel.html:4 html/docs/devel.html.py:11
 msgid "Wammu and Gammu Developer Documentation"
-msgstr ""
+msgstr "Wammu und Gammu Entwickler Dokumentation"
 
 #: html/docs/devel.html:14 html/docs/index.html:52
 msgid ""
