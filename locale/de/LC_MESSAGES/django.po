@@ -2025,7 +2025,7 @@ msgid ""
 msgstr ""
 "Als Entwickler dürften Sie Interesse an unseren Plänen für die nächsten "
 "Gammu und Wammu Versionen haben,\n"
-" Sie finden diese Informationen in unserer <a "
+"Sie finden diese Informationen in unserer <a "
 "href=\"/docs/roadmap/\">roadmap</a>."
 
 #: html/docs/devel.html:21
