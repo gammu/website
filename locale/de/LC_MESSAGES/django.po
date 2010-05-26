@@ -1067,8 +1067,9 @@ msgid ""
 "\n"
 "Check also <a href=\"/docs/faq/#smsd\">Frequently Asked Questions</a>.\n"
 msgstr ""
+"\n"
 "Bitte lesen Sie auch in unseren <a href=\"/docs/faq/#smsd\">Häufig gestellten "
-"Fragen (FAQ)</a>."
+"Fragen (FAQ)</a>.\n"
 
 #: html/wammu.html:25
 msgid ""
