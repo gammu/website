@@ -1004,10 +1004,11 @@ msgid ""
 "you creating long text messages and <code>gammu-smsd-monitor</code> which\n"
 "allows you to monitor current status of SMS Daemon or phone.\n"
 msgstr ""
+"\n"
 "Das Paket beinhält Werkzeuge wie <code>gammu-smsd-inject</code>, welches "
 "hilft, lange Textnachrichten zu erzeugen und <code>gammu-smsd-"
 "monitor</code>, welcher die Anzeige des aktuellen Status des SMS-Daemons "
-"oder Telefons erlaubt. "
+"oder Telefons erlaubt. \n"
 
 #: html/smsd.html:50
 msgid ""
