@@ -3286,7 +3286,7 @@ msgstr ""
 
 #: html/support/index.html:57
 msgid "Commercial Support"
-msgstr ""
+msgstr "Kommerzielle Unterstützung"
 
 #: html/support/index.html:60
 msgid ""
