@@ -3135,7 +3135,7 @@ msgstr ""
 "markieren Sie diese Fehlermeldung als \"Privat\".\n"
 "Dadurch können ausschließlich Entwickler Ihre Daten einsehen, dieser "
 "Fehlerbericht wird im Gegensatz zu anderen Fehlermeldungen nicht öffentlich "
-"zugänglich gemacht."
+"zugänglich gemacht.\n"
 
 #: html/support/bugs.html:61
 msgid ""
