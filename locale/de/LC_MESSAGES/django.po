@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-26 03:51+0200\n"
+"PO-Revision-Date: 2010-05-26 03:52+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2063,7 +2063,7 @@ msgstr ""
 
 #: html/docs/list_man.html:4 html/docs/list_man.html.py:11
 msgid "Wammu and Gammu Man Pages"
-msgstr ""
+msgstr "Wammu und Gammu Hilfeseiten (manpages)"
 
 #: html/docs/roadmap.html:4 html/docs/roadmap.html.py:12
 msgid "Roadmap for Wammu and Gammu"
