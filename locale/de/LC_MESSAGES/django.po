@@ -3129,7 +3129,9 @@ msgid ""
 "\n"
 "<strong>Debugging log</strong> of the communication, please see bellow how "
 "to obtain that.\n"
-msgstr "<strong>Debugging log</strong> Ihres Kommunikationsversuches, bitte lesen "
+msgstr ""
+"\n"
+"<strong>Debugging log</strong> Ihres Kommunikationsversuches, bitte lesen "
 "Sie weiter unten, wie man dies erhält.\n"
 
 #: html/support/bugs.html:48
