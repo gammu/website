@@ -1768,7 +1768,9 @@ msgstr ""
 msgid ""
 "\n"
 "Gammu translation - it's nice to have but not really a high priority.\n"
-msgstr "Gammu - eine Übersetzung ist kein Muss, aber angenehm, wenn existent."
+msgstr ""
+"\n"
+"Gammu - eine Übersetzung ist kein Muss, aber angenehm, wenn existent.\n"
 
 #: html/contribute/translate.html:118
 msgid ""
