@@ -1697,9 +1697,10 @@ msgid ""
 "In menu items, there is often used ampresand (&amp;), it means keybord\n"
 "shortcut for menu item. Please make those shortcuts unique in each menu. \n"
 msgstr ""
+"\n"
 "In Programm-menues  wird ein ampresand (&amp;) verwendet, um Keyboard "
 "Shortcuts zu kennzeichnen. Bitte kennzeichnen Sie diese und machen Sie keine "
-"doppelten Einträge. "
+"doppelten Einträge. \n"
 
 #: html/contribute/translate.html:82
 msgid ""
