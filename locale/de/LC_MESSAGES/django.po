@@ -1937,7 +1937,7 @@ msgstr ""
 "Es liegen immer Dinge zur Übersetzung vor, in fast allen erdenklichen "
 "Sprachen.\n"
 "Bitte lesen Sie die eigens erstellte Seite <a "
-"href=\"/contribute/translate\">über das Übersetzen</a>."
+"href=\"/contribute/translate\">über das Übersetzen</a>.\n"
 
 #: html/contribute/wanted.html:61
 msgid "Graphics/Designer"
