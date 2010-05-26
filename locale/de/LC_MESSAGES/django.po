@@ -931,10 +931,11 @@ msgid ""
 "\">Google\n"
 "pages</a>.\n"
 msgstr ""
+"\n"
 "Diese Seite verwendet eine angepasste Google Suche, optimiert für die "
 "Thematik Gammu.Sie können diese Suchmaschine direkt verwenden auf <a "
 "href=\"http://www.google.com/coop/cse?cx=008688692096734274889%"
-"3Axuvlsu_agkm\">Googlepages</a>."
+"3Axuvlsu_agkm\">Googlepages</a>.\n"
 
 #: html/search.html:39
 msgid ""
