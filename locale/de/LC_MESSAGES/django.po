@@ -1163,9 +1163,10 @@ msgid ""
 "intiutive enough. You can check it's command line parameters in <a\n"
 "href=\"/docs/man/en/wammu.1/\">wammu man page</a>.\n"
 msgstr ""
+"\n"
 "Sehr viel Dokumentation über Wammu existiert nicht, es sollte intuitiv "
 "handhabbar sein. Sie können die Eingabezeile-Optionen in den <a "
-"href=\"/docs/man/en/wammu.1/\">Wammu Hilfe Seiten</a> nachlesen."
+"href=\"/docs/man/en/wammu.1/\">Wammu Hilfe Seiten</a> nachlesen.\n"
 
 #: html/wammu.html:67
 msgid ""
