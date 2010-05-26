@@ -3272,7 +3272,7 @@ msgstr ""
 
 #: html/support/index.html:46
 msgid "Reporting Bugs"
-msgstr ""
+msgstr "Fehler melden"
 
 #: html/support/index.html:49
 msgid ""
