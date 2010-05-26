@@ -1779,8 +1779,9 @@ msgid ""
 "website\n"
 "translated for new users.\n"
 msgstr ""
+"\n"
 "Wammu Webseite - hier gibt es viele Texte; und es ist großartig, wenn "
-"Übersetzungen für neue Benutzer vorliegen!"
+"Übersetzungen für neue Benutzer vorliegen!\n"
 
 #: html/contribute/translate.html:122
 msgid ""
