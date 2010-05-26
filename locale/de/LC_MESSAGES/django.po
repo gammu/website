@@ -1201,9 +1201,10 @@ msgid ""
 "You are also welcome to share experiences with your phone in <a\n"
 "href=\"/phones/\">Gammu phone database</a> if you already haven't done so.\n"
 msgstr ""
+"\n"
 "Gerne können Sie auch Ihre Erfahrungen erzählen, in unserer <a "
 "href=\"/phones/\">Gammu Telefondatenbank</a>, so Sie das noch nicht getan "
-"haben."
+"haben.\n"
 
 #: html/wammu_feedback.html:21
 #, python-format
