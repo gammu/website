@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-26 20:59+0200\n"
+"PO-Revision-Date: 2010-05-26 21:01+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2195,7 +2195,7 @@ msgstr ""
 
 #: html/docs/faq.html:56
 msgid "Is there some user interface for SMSD?"
-msgstr ""
+msgstr "Gibt es eine Benutzeroberfläche für SMSD?"
 
 #: html/docs/faq.html:58
 msgid ""
