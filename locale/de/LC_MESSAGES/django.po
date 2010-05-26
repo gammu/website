@@ -2424,8 +2424,9 @@ msgid ""
 "Thank you for interest in downloading <a href=\"/%(program_name)s\">%"
 "(program)s</a>.\n"
 msgstr ""
-"Wir danken für Ihr Interesse, <a href=\"/%(program_name)s\">%(program)</a> "
-"herunterzuladen."
+"\n"
+"Wir danken für Ihr Interesse, <a href=\"/%(program_name)s\">%(program)s</a> "
+"herunterzuladen.\n"
 
 #: html/downloads/program.html:33
 msgid "Current Releases"
