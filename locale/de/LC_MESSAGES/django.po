@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-26 02:54+0200\n"
+"PO-Revision-Date: 2010-05-26 02:56+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -1181,7 +1181,7 @@ msgstr "Programmieren für Wammu und Gammu"
 
 #: html/contribute/code.html:11 html/contribute/wanted.html:11
 msgid "Factoids"
-msgstr ""
+msgstr "Fakten"
 
 #: html/contribute/code.html:25
 msgid ""
