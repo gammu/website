@@ -2888,7 +2888,9 @@ msgstr ""
 msgid ""
 "\n"
 "There is currently none phone record from this vendor!\n"
-msgstr "Derzeit liegt kein Bericht über diesen Hersteller vor!"
+msgstr ""
+"\n"
+"Derzeit liegt kein Bericht über diesen Hersteller vor!\n"
 
 #: html/phonedb/vendor.html:42
 #, python-format
