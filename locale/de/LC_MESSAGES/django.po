@@ -2837,7 +2837,9 @@ msgstr ""
 msgid ""
 "\n"
 "Created on %(created)s.\n"
-msgstr "Erstellt am %(created)s."
+msgstr ""
+"\n"
+"Erstellt am %(created)s.\n"
 
 #: html/phonedb/phone.html:102
 #, python-format
