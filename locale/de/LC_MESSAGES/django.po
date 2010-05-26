@@ -2020,6 +2020,7 @@ msgid ""
 "hands\n"
 "can manage them faster.\n"
 msgstr ""
+"\n"
 "Fehler und Funktionswünsche bezüglich des Gammu Kerns sind immer vorhanden,\n"
 "mehrere Hände können das schneller lösen als eine.\n"
 
