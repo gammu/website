@@ -1977,7 +1977,7 @@ msgid ""
 "Maemo or Windows Mobile.\n"
 msgstr ""
 "Dasselbe gilt für andere moderne Plattformen wie Android,\n"
-" Maemo oder Windows Mobile."
+"Maemo oder Windows Mobile."
 
 #: html/contribute/wanted.html:88
 msgid "Python Developer"
