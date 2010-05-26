@@ -944,8 +944,9 @@ msgid ""
 "we\n"
 "have no control over the content there.\n"
 msgstr ""
+"\n"
 "Bitte beachte Sie, dass die Suchergebnisse auch andere Domänen beinhält, und "
-"wir über keinerlei Kontrolle bezüglich deren Inhalten verfügen."
+"wir über keinerlei Kontrolle bezüglich deren Inhalten verfügen.\n"
 
 #: html/shortnews.html:2
 msgid "Latest News"
