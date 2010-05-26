@@ -1789,8 +1789,9 @@ msgid ""
 "Gammu documentation - it would be great to have this translated to many\n"
 "languages, but it is huge amount of text to translate.\n"
 msgstr ""
+"\n"
 "Gammu Dokumentation - wäre großartig, wenn es viele Übersetzungen in viele "
-"Sprachen gäbe, allerdings sind riesige Mengen an Text zu übersetzen."
+"Sprachen gäbe, allerdings sind riesige Mengen an Text zu übersetzen.\n"
 
 #: html/contribute/wanted.html:4 html/contribute/wanted.html.py:22
 msgid "Wanted Skills for Wammu and Gammu"
