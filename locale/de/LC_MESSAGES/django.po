@@ -2223,7 +2223,7 @@ msgid ""
 msgstr ""
 "\n"
 "Einige Verbesserungen und Fehlerbereinigungen in SMSD, weiters Pflege des "
-"Codes\n"
+"Codes.\n"
 
 #: html/docs/roadmap.html:34
 msgid ""
