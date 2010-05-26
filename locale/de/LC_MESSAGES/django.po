@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-26 10:05+0200\n"
+"PO-Revision-Date: 2010-05-26 10:06+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -1380,7 +1380,7 @@ msgstr ""
 
 #: html/contribute/index.html:29
 msgid "Using"
-msgstr ""
+msgstr "Benutzung"
 
 #: html/contribute/index.html:31
 msgid ""
