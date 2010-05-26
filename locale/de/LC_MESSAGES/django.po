@@ -363,9 +363,10 @@ msgid ""
 "account, you can send money to account 2202591725/6210 (account at mBank, "
 "BRE Bank S.A.).\n"
 msgstr ""
+"\n"
 "Wenn Sie ein Konto bei einer tschechischen Bank haben, oder eine direkte "
 "Überweisung an ein tschechisches Konto für Sie möglich ist, bitte an Konto "
-"2202591725/6210 (Konto bei mBank, BRE Bank S.A.)."
+"2202591725/6210 (Konto bei mBank, BRE Bank S.A.).\n"
 
 #: html/donate.html:52
 msgid ""
