@@ -3076,8 +3076,8 @@ msgstr ""
 "Verwenden Sie unseren <a href=\"http://bugs.cihar.com/\">bug tracker</a>, um "
 "Fehler zu melden oder sich neue Funktionen zu wünschen.\n"
 "Bitte achten Sie darauf, uns alle Informationen zu geben, die unsere "
-"Entwickler benötigen, um Ihr Anliegen zu lösen.\\Auf jeden Fall anführen "
-"sollten Sie folgende wichtige Aspekte:"
+"Entwickler benötigen, um Ihr Anliegen zu lösen.\n"
+"Auf jeden Fall anführen sollten Sie folgende wichtige Aspekte:"
 
 #: html/support/bugs.html:25
 msgid ""
