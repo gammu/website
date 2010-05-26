@@ -3589,7 +3589,7 @@ msgstr "Gültige Berichte"
 
 #: phonedb/views.py:101
 msgid "Total records"
-msgstr ""
+msgstr "Berichte insgesamt"
 
 #: phonedb/views.py:119
 msgid "Gammu Phone Database Feed (RSS)"
