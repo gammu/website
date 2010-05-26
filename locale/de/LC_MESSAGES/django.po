@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-26 22:16+0200\n"
+"PO-Revision-Date: 2010-05-26 22:17+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -3585,7 +3585,7 @@ msgstr "Bitte wählen Sie im nächsten Feld, wie Email unterstützt wird."
 
 #: phonedb/views.py:100
 msgid "Valid records"
-msgstr ""
+msgstr "Gültige Berichte"
 
 #: phonedb/views.py:101
 msgid "Total records"
