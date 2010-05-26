@@ -890,8 +890,9 @@ msgid ""
 "message \n"
 "can be done by following snippet:\n"
 msgstr ""
+"\n"
 "python-gammu ist sehr einfach anzuwenden, zB können Sie Textnachrichten mit "
-"folgendem Befehl versenden:"
+"folgendem Befehl versenden:\n"
 
 #: html/python-gammu.html:69
 msgid ""
