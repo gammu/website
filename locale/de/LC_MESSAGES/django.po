@@ -3102,9 +3102,8 @@ msgid ""
 "\n"
 "Configuration you use, you can just include Gammu <strong>configuration\n"
 "file</strong>.\n"
-msgstr ""
-"Konfiguration, die sie benützen. Sie können auch einfach Ihre Gammu "
-"<strong>Konfigurationsdatei</strong> mitsenden."
+msgstr "Konfiguration, die sie benützen. Sie können auch einfach Ihre Gammu "
+"<strong>Konfigurationsdatei</strong> mitsenden.\n"
 
 #: html/support/bugs.html:42
 msgid ""
