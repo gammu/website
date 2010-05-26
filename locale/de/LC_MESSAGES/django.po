@@ -2343,7 +2343,9 @@ msgstr ""
 msgid ""
 "\n"
 "Other platforms\n"
-msgstr "Andere Plattformen"
+msgstr ""
+"\n"
+"Andere Plattformen\n"
 
 #: html/downloads/list.html:38
 msgid ""
