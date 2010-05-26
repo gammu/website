@@ -2610,7 +2610,7 @@ msgstr "Konfiguration"
 
 #: html/phonedb/body.html:27
 msgid "Phone is reported not to be supported!"
-msgstr "Dieses Telefon wurde als \"nicht unterstützt\" gemeldet."
+msgstr "Dieses Telefon wurde als \"nicht unterstützt\" gemeldet!"
 
 #: html/phonedb/body.html:34
 msgid "Reporter Note"
