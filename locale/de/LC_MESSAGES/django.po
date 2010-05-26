@@ -814,10 +814,11 @@ msgid ""
 "as published by the Free Software Foundation; either version 2\n"
 "of the License, or (at your option) any later version.\n"
 msgstr ""
+"\n"
 "Dieses Programm ist freie Software; Sie können es weitergeben und/oder "
 "verändern unter den Bedingungen der GNU General Public License, "
 "veröffentlicht von der Free Software Foundation; entweder Version 2 der "
-"Lizenz, oder (Sie haben die Wahl) jeder späteren Version."
+"Lizenz, oder (Sie haben die Wahl) jeder späteren Version.\n"
 
 #: html/license.html:80
 msgid "Website Content"
