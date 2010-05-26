@@ -3609,4 +3609,4 @@ msgstr "Gammu and Wammu News Feed (RSS)"
 
 #: wammu/helpers.py:30
 msgid "Gammu and Wammu News Feed (Atom)"
-msgstr ""
+msgstr "Gammu and Wammu News Feed (Atom)"
