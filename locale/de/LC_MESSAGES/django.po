@@ -2881,7 +2881,8 @@ msgid ""
 "\n"
 "There is currently %(count)s approved phone records from this vendor.\n"
 msgstr ""
-"Derzeit liegen %(count)s bestätigte Berichte über diesen Hersteller vor."
+"\n"
+"Derzeit liegen %(count)s bestätigte Berichte über diesen Hersteller vor.\n"
 
 #: html/phonedb/vendor.html:37
 msgid ""
