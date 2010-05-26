@@ -2335,7 +2335,9 @@ msgstr "PAD for Gammu"
 msgid ""
 "\n"
 "Download %(program)s (%(platform)s)\n"
-msgstr "Lade %(program)s (%(platform)s) herunter"
+msgstr ""
+"\n"
+"Lade %(program)s (%(platform)s) herunter\n"
 
 #: html/downloads/list.html:32
 msgid ""
