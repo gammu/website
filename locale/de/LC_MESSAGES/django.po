@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-20 15:16+0200\n"
-"PO-Revision-Date: 2010-05-26 03:18+0200\n"
+"PO-Revision-Date: 2010-05-26 03:19+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -1561,7 +1561,7 @@ msgstr ""
 
 #: html/contribute/translate.html:60
 msgid "This website"
-msgstr ""
+msgstr "Diese Webseite"
 
 #: html/contribute/translate.html:64
 msgid ""
