@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-26 21:47+0200\n"
+"PO-Revision-Date: 2010-05-26 21:48+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -3118,7 +3118,7 @@ msgstr ""
 
 #: html/support/bugs.html:48
 msgid "Obtaining Debugging Log"
-msgstr ""
+msgstr "Erhalten des debugging log"
 
 #: html/support/bugs.html:51
 msgid ""
