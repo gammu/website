@@ -1008,7 +1008,7 @@ msgstr ""
 "Das Paket beinhält Werkzeuge wie <code>gammu-smsd-inject</code>, welches "
 "hilft, lange Textnachrichten zu erzeugen und <code>gammu-smsd-"
 "monitor</code>, welcher die Anzeige des aktuellen Status des SMS-Daemons "
-"oder Telefons erlaubt. \n"
+"oder Telefons erlaubt.\n"
 
 #: html/smsd.html:50
 msgid ""
