@@ -967,11 +967,12 @@ msgid ""
 "sent\n"
 "messages and automatically process them.\n"
 msgstr ""
+"\n"
 "Gammu SMS Daemon ist ein Programm, das regelmäßig GSM-Modems auf empfangene "
 "Nachrichten überprüft, diese im definierten Ablageplatz speichert und ebenso "
 "Nachrichten sendet, die hinten angereiht wurden. Es ist das perfekte "
 "Werkzeug, um große Mengen an erhaltenen oder zu sendenden Nachrichten zu "
-"verwalten, und diese Vorgänge automatisch abzuwickeln."
+"verwalten, und diese Vorgänge automatisch abzuwickeln.\n"
 
 #: html/smsd.html:31
 msgid ""
