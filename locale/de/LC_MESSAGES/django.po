@@ -2900,9 +2900,10 @@ msgid ""
 "\">add new one</a>, they will be reviewed and the\n"
 "old ones will get deleted eventually.\n"
 msgstr ""
+"\n"
 "Wenn Sie einen Eintrag ändern möchten, <a href=\"/phones/new?vendor=%"
 "(slug)s\">erstellen Sie einfach einen neuen</a>, dieser wird überprüft und "
-"ersetzt in Folge die älteren."
+"ersetzt in Folge die älteren.\n"
 
 #: html/screenshots/contrib_index.html:4 html/screenshots/contrib_index.html:6
 msgid "Third Party Screenshots"
