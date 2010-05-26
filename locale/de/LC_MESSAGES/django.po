@@ -1761,10 +1761,11 @@ msgid ""
 "a>.\n"
 "If it is not defined, you can help creating one!\n"
 msgstr ""
+"\n"
 "Wir bitten Sie, die Regelwerke bezüglich "
 "<ahref=\"https://l10n.cihar.com/projects/terminology/\">Terminologie</a> zu "
 "beachten.\n"
-"Wenn keine Regeln vorhanden sind, helfen Sie, diese zu erstellen!"
+"Wenn keine Regeln vorhanden sind, helfen Sie, diese zu erstellen!\n"
 
 #: html/contribute/translate.html:98
 msgid "What is Important?"
