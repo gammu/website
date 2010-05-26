@@ -1663,8 +1663,9 @@ msgstr ""
 "\n"
 "Der herkömmliche Weg ist die .po datei herunterzuladen, mit Hilfe eines "
 "Editors (zB <a href=\"http://www.poedit.net/\">Poedit</a>) zu übersetzen und "
-"die bearbeitete Datei an den Autor zu senden. Sie können somit auch offline "
-"arbeiten, allerdings findet hier kaum Zusammenarbeit statt.\n"
+"die bearbeitete Datei an den Autor zu senden.\n"
+"Sie können somit auch offline arbeiten, allerdings findet hier kaum "
+"Zusammenarbeit statt.\n"
 
 #: html/contribute/translate.html:44
 msgid "Pootle"
