@@ -2209,8 +2209,9 @@ msgid ""
 "Introduce some improvements and bugfixes in SMSD, other code should only\n"
 "receive maintenance.\n"
 msgstr ""
+"\n"
 "Einige Verbesserungen und Fehlerbereinigungen in SMSD, weiters Pflege des "
-"Codes"
+"Codes\n"
 
 #: html/docs/roadmap.html:34
 msgid ""
