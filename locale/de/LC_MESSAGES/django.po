@@ -785,10 +785,11 @@ msgid ""
 "Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, "
 "USA.\n"
 msgstr ""
+"\n"
 "Sie sollten eine Kopie der GNU General Public License mit diesem Programm "
 "erhalten haben.Falls nicht, wenden Sie sich bitte schriftlich an: Free "
 "Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA "
-"02110-1301, USA."
+"02110-1301, USA.\n"
 
 #: html/license.html:44
 msgid "Website License"
