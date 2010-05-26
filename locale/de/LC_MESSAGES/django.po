@@ -1148,11 +1148,12 @@ msgid ""
 "can also <a href=\"/download/wammu\">dowload sources or binaries for\n"
 "Windows</a>.\n"
 msgstr ""
+"\n"
 "Wammu wird von vielen Distributionen angeboten, wir empfehlen bei "
 "Verfügbarkeit die Verwendung der vor-kompilierten Pakete, da somit mögliche "
 "Fehler bei der Installation vermieden werden. Sie können ebenso die <a "
 "href=\"/download/wammu\">Quelltexte oder binären Windows Dateien</a> "
-"herunterladen."
+"herunterladen.\n"
 
 #: html/wammu.html:59
 msgid ""
