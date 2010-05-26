@@ -1987,6 +1987,7 @@ msgid ""
 "The very same probably applies to other modern platforms such as Android,\n"
 "Maemo or Windows Mobile.\n"
 msgstr ""
+"\n"
 "Dasselbe gilt für andere moderne Plattformen wie Android,\n"
 "Maemo oder Windows Mobile.\n"
 
