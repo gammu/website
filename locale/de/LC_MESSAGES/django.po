@@ -891,8 +891,8 @@ msgid ""
 msgstr ""
 "\n"
 "Gammu bietet Ihnen Python Anbindungen, wodurch Sie (fast) alle Funktionen "
-"von  <a href=\"/libgammu\">Gammu</a> per <a href=\"http://python.org"
-"\">Python</a> nutzen können.\n"
+"von <a href=\"/libgammu\">Gammu</a> per <a href=\"http://python.org\">Python</a> "
+"nutzen können.\n"
 
 #: html/python-gammu.html:34
 msgid ""
