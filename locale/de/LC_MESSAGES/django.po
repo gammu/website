@@ -1446,7 +1446,7 @@ msgstr ""
 "<strong>Rückmeldungen</strong></a> geben. Erzählen Sie uns, was Sie ändern "
 "oder verbessern würden!Vielleicht benützen Sie die Programme auf Ihre eigene "
 "Art und Weise und können nicht jegliche Anwendungsmöglichkeit ohne Hilfe "
-"finden.\n"
+"finden!\n"
 
 #: html/contribute/index.html:40
 msgid ""
