@@ -2013,7 +2013,7 @@ msgid ""
 "can manage them faster.\n"
 msgstr ""
 "Fehler und Funktionswünsche bezüglich des Gammu Kerns sind immer vorhanden,\n"
-"mehrere Hände können das schneller lösen als eine."
+"mehrere Hände können das schneller lösen als eine.\n"
 
 #: html/docs/devel.html:4 html/docs/devel.html.py:11
 msgid "Wammu and Gammu Developer Documentation"
