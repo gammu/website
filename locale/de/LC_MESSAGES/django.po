@@ -1973,7 +1973,7 @@ msgstr ""
 "Die einzige Möglichkeit zur Herangehensweise ist die Implementierung einer "
 "Applikation für Symbian, welche als Kommunikationsschnittstelle angesprochen "
 "werden kann (Derzeit benutzen wir gnapplet für diesen Zweck, allerdings "
-"fehlt somit die Unterstützung für aktuelle Symbian Versionen)."
+"fehlt somit die Unterstützung für aktuelle Symbian Versionen).\n"
 
 #: html/contribute/wanted.html:82
 msgid ""
