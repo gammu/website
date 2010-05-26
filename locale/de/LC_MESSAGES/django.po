@@ -1695,7 +1695,7 @@ msgstr ""
 "übersetzen.\n"
 "Es existiert eine breite Palette an Programmen, die gettext Übersetzungen "
 "ermöglichen.\n"
-"Sie können also einfach das Ihnen am besten Passende auswählen."
+"Sie können also einfach das Ihnen am besten Passende auswählen.\n"
 
 #: html/contribute/translate.html:34
 msgid "Translating po Files"
