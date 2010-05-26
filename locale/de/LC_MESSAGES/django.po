@@ -3085,9 +3085,8 @@ msgid ""
 "\n"
 "<strong>Phone information</strong> such as manufacturer and model are really "
 "necessary.\n"
-msgstr ""
-"<strong>Telefoninformationen</strong>, wie zB Hersteller und Modell sind "
-"unumgänglich."
+msgstr "<strong>Telefoninformationen</strong>, wie zB Hersteller und Modell sind "
+"unumgänglich.\n"
 
 #: html/support/bugs.html:30
 msgid ""
