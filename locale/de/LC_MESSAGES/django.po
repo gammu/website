@@ -757,9 +757,10 @@ msgid ""
 "as published by the Free Software Foundation; version 2\n"
 "of the License.\n"
 msgstr ""
+"\n"
 "Dieses Programm ist freie Software. Sie können es unter den Bedingungen der "
 "GNU General Public License, wie von der Free Software Foundation gemäß "
-"Version 2 der Lizenz veröffentlicht, weitergeben und/oder modifizieren."
+"Version 2 der Lizenz veröffentlicht, weitergeben und/oder modifizieren.\n"
 
 #: html/license.html:27 html/license.html.py:64
 msgid ""
