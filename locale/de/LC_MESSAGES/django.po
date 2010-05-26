@@ -1419,9 +1419,10 @@ msgid ""
 "Please check our list of <a href=\"/contribute/wanted/\"><strong>wanted\n"
 "skills</strong></a>, to get an idea who we are currently looking for.\n"
 msgstr ""
+"\n"
 "Bitte sehen Sie gleich in den Listen <a "
 "href=\"/contribute/wanted/\"><strong>\"benötigte Fähigkeiten\"</strong></a> "
-"nach, um einen Überblick zu erhalten, was derzeit gesucht wird."
+"nach, um einen Überblick zu erhalten, was derzeit gesucht wird.\n"
 
 #: html/contribute/index.html:29
 msgid "Using"
