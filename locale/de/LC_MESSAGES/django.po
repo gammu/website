@@ -563,11 +563,12 @@ msgid ""
 "bindings</a> which you can use to develop own application accessing mobile\n"
 "phone.\n"
 msgstr ""
+"\n"
 "Das Paket  Gammu beinhält nicht nur dieses Binary, sondern auch <a "
 "href=\"/smsd\">Gammu SMS Daemon</a>, <a href=\"/libgammu\">Gammu "
 "Bibliotheken</a> und <a href=\"/python-gammu\">die Pythonanbindung</a>, welche "
 "Sie zur Entwicklung eigener Anwendungen, mit Zugang zum Telefon, nutzen "
-"können."
+"können.\n"
 
 #: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:32
 #: html/smsd.html:61 html/wammu.html:47 html/downloads/list.html:4
