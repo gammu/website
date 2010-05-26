@@ -1791,8 +1791,9 @@ msgid ""
 "It is just good place to start and get to know some basic terminology.\n"
 msgstr ""
 "\n"
-"libGammu - Wenige Einträge, die ebenso in Wammu verwendet werden.Ein guter "
-"Anhaltspunkt für den Start, erleichtert das Erlernen der Basisterminologie.\n"
+"libGammu - Wenige Einträge, die ebenso in Wammu verwendet werden.\n"
+"Ein guter Anhaltspunkt für den Start, erleichtert das Erlernen der "
+"Basisterminologie.\n"
 
 #: html/contribute/translate.html:111
 msgid ""
