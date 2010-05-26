@@ -1436,7 +1436,7 @@ msgid ""
 msgstr ""
 "Die Ergebnisse werden automatisch hoch geladen und den Entwicklern "
 "übermittelt.\n"
-"Jeder Fehler im Test wird somit mitgeteilt und beachtet. "
+"Jeder Fehler im Test wird somit mitgeteilt und beachtet.\n"
 
 #: html/contribute/index.html:4 html/contribute/index.html.py:12
 msgid "Contribute to Wammu and Gammu"
