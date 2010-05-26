@@ -726,10 +726,11 @@ msgid ""
 "href=\"/docs/devel/internals/\">internal documentation</a>. Please check <a\n"
 "href=\"/docs/devel/\">developer documentation page</a> for more details.\n"
 msgstr ""
+"\n"
 "<a href=\"/docs/devel/api/\">Die API Dokumentation</a> ist ebenso erhältlich, "
 "wie die <a href=\"/docs/devel/internals/\">interne Dokumentation</a>. Bitte "
 "überprüfen Sie auch die <a href=\"/docs/devel/\">Entwickler Dokumentation</a>, "
-"um weiterführende Detailinformationen zu erhalten."
+"um weiterführende Detailinformationen zu erhalten.\n"
 
 #: html/license.html:4 html/license.html.py:7
 msgid "Wammu and Gammu License"
