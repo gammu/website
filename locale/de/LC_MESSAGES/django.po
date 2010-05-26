@@ -1082,7 +1082,7 @@ msgstr ""
 "Wammu ist ein Handy-Verwaltungstool für Linux, Windows und eventuell weitere "
 "Plattformen, auf denen <a href=\"/libgammu\">libGammu</a> und wxPython "
 "funktionieren. Die Kommunikation wird über die Gammu Bibliotheken gemacht. "
-"Derzeit werden folgende Funktionen unterstützt:\n"
+"Derzeit werden folgende Funktionen unterstützt: \n"
 
 #: html/wammu.html:33
 msgid ""
