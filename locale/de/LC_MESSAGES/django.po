@@ -106,7 +106,8 @@ msgid ""
 msgstr ""
 "\n"
 "Sehr viele haben in der Vergangenheit zu Gammu, python-gammu und Wammu "
-"beigetragen. Die Aktivsten sind hier zu finden.\n"
+"beigetragen.\n"
+" Die Aktivsten sind hier zu finden.\n"
 
 #: html/authors.html:19
 msgid ""
