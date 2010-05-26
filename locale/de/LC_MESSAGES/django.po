@@ -3078,7 +3078,7 @@ msgstr ""
 "Fehler zu melden oder sich neue Funktionen zu wünschen.\n"
 "Bitte achten Sie darauf, uns alle Informationen zu geben, die unsere "
 "Entwickler benötigen, um Ihr Anliegen zu lösen.\n"
-"Auf jeden Fall anführen sollten Sie folgende wichtige Aspekte:"
+"Auf jeden Fall anführen sollten Sie folgende wichtige Aspekte:\n"
 
 #: html/support/bugs.html:25
 msgid ""
