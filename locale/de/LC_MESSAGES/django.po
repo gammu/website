@@ -3382,7 +3382,7 @@ msgstr ""
 
 #: html/support/online.html:24
 msgid "Jabber conference room"
-msgstr ""
+msgstr "Jabber conference room"
 
 #: html/support/online.html:27
 msgid ""
