@@ -3433,7 +3433,7 @@ msgstr "Mailing Listen"
 
 #: html/support/sidebar.html:6
 msgid "Bug tracker"
-msgstr ""
+msgstr "Fehlerdatenbank"
 
 #: html/support/sidebar.html:7
 msgid "Jabber chat room"
