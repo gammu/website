@@ -2188,7 +2188,7 @@ msgstr "Gammu herunterladen"
 
 #: html/downloads/index.html:36
 msgid "Download Wammu"
-msgstr ""
+msgstr "Wammu herunterladen"
 
 #: html/downloads/index.html:43 html/phonedb/index.html:28
 msgid "Syndication"
