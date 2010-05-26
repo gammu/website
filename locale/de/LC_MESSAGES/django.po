@@ -1783,7 +1783,7 @@ msgstr ""
 "\n"
 "In Programm-Menues  wird ein ampresand (&amp;) verwendet, um Keyboard "
 "Shortcuts zu kennzeichnen. Bitte kennzeichnen Sie diese und machen Sie keine "
-"doppelten Einträge. \n"
+"doppelten Einträge.\n"
 
 #: html/contribute/translate.html:82
 msgid ""
