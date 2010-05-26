@@ -1279,7 +1279,7 @@ msgstr ""
 
 #: html/contribute/code.html:86
 msgid "Code Snapshots"
-msgstr ""
+msgstr "Code Snapshots"
 
 #: html/contribute/code.html:88
 msgid ""
