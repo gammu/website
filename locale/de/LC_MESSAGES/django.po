@@ -1760,8 +1760,9 @@ msgid ""
 "Wammu translation - the is the application which is most frequently used by\n"
 "users with little English knowledge.\n"
 msgstr ""
+"\n"
 "Wammu - dieses Programm wird am häufigsten von Nicht-Englisch-Sprechenden "
-"benutzt."
+"benutzt.\n"
 
 #: html/contribute/translate.html:115
 msgid ""
