@@ -2749,7 +2749,7 @@ msgstr "Anmerkung des Meldenden"
 #: html/phonedb/new.html:4 html/phonedb/phone.html:4
 #: html/phonedb/search.html:4 html/phonedb/vendor.html:4
 msgid "Gammu Phone Database "
-msgstr "Gammu Telefondatenbank"
+msgstr "Gammu Telefondatenbank\n"
 
 #: html/phonedb/index.html:10 html/phonedb/index.html.py:23
 #: html/phonedb/new.html:48 html/phonedb/search.html:21
