@@ -1189,10 +1189,11 @@ msgid ""
 "some improvements. If you have any ideas, please report them in <a\n"
 "href=\"http://bugs.cihar.com/\">bug tracker</a>.\n"
 msgstr ""
+"\n"
 "Ich hoffe, dass Sie Gefallen an Wammu finden, aber vielleicht vermissen Sie "
 "die eine oder andere Funktion oder möchten eine Verbesserung "
 "vorschlagen.Bitte teilen Sie uns Ihre Ideen mit, in unserer <a "
-"href=\"http://bugs.cihar.com/\">Fehlerdatenbank</a>!"
+"href=\"http://bugs.cihar.com/\">Fehlerdatenbank</a>!\n"
 
 #: html/wammu_feedback.html:13
 msgid ""
