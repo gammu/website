@@ -2129,7 +2129,7 @@ msgstr ""
 
 #: html/docs/roadmap.html:58
 msgid "Wammu Roadmap"
-msgstr ""
+msgstr "Wammu Roadmap"
 
 #: html/docs/roadmap.html:62
 msgid ""
