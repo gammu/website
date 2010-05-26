@@ -2158,7 +2158,7 @@ msgstr "Roadmap"
 
 #: html/docs/sidebar.html:9
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 #: html/downloads/index.html:4
 msgid "Download Wammu and Gammu"
