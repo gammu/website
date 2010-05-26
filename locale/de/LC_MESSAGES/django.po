@@ -1078,10 +1078,11 @@ msgid ""
 "platforms, where <a href=\"/libgammu\">libGammu</a> and wxPython works. The\n"
 "communication is made by Gammu library. Currently supported features: \n"
 msgstr ""
+"\n"
 "Wammu ist ein Handy-Verwaltungstool für Linux, Windows und eventuell weitere "
 "Plattformen, auf denen <a href=\"/libgammu\">libGammu</a> und wxPython "
 "funktionieren. Die Kommunikation wird über die Gammu Bibliotheken gemacht. "
-"Derzeit werden folgende Funktionen unterstützt:"
+"Derzeit werden folgende Funktionen unterstützt:\n"
 
 #: html/wammu.html:33
 msgid ""
