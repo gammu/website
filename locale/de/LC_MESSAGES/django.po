@@ -2168,7 +2168,7 @@ msgstr "Wammu und Gammu herunterladen"
 msgid ""
 "\n"
 "Download\n"
-msgstr ""
+msgstr "Herunterladen"
 
 #: html/downloads/index.html:18
 msgid ""
