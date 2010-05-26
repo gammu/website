@@ -298,7 +298,7 @@ msgstr ""
 
 #: html/donate-thanks.html:4 html/donate-thanks.html.py:11
 msgid "Thank you for Donation"
-msgstr "Vielen Dank für Ihre Spende!"
+msgstr "Vielen Dank für Ihre Spende"
 
 #: html/donate-thanks.html:14
 msgid ""
