@@ -1039,11 +1039,12 @@ msgid ""
 "package, the daemon might be included in separate binary package in your\n"
 "distribution, try looking for something like <code>gammu-smsd</code>.\n"
 msgstr ""
+"\n"
 "SMS Daemon ist Teil des <a href=\"/gammu\">Gammu</a>pakets, Sie können also "
 "einfach <a href=\"/download/gammu\">Gammu</a> herunterladen, um SMS Daemon zu "
 "erhalten. Wenn Sie das binäre Paket verwenden möchten (je nach Distribution "
 "evenuell in einem separaten binären Paket geliefert), versuchen Sie (in "
-"etwa) <code>gammu-smsd</code> zu finden."
+"etwa) <code>gammu-smsd</code> zu finden.\n"
 
 #: html/smsd.html:73
 msgid ""
