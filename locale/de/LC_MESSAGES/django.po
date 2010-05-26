@@ -913,8 +913,9 @@ msgid ""
 "\n"
 "Check also <a href=\"/docs/faq/#python\">Frequently Asked Questions</a>.\n"
 msgstr ""
+"\n"
 "Bitte lesen Sie auch in unseren <a href=\"/docs/faq/#python\">Häufig gestellen "
-"Fragen (FAQ)</a>."
+"Fragen (FAQ)</a>.\n"
 
 #: html/search.html:4 html/search.html.py:7
 msgid "Wammu and Gammu Search"
