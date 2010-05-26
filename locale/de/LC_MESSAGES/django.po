@@ -3149,7 +3149,7 @@ msgstr ""
 "Möglich ist eine Aufforderung über die Eingabezeile\n"
 "(<code>gammu --debug textalldate --debug-file/tmp/gammu.log "
 "identify</code>),\n"
-"oder die Verwendung der Konfigurationsdatei:"
+"oder die Verwendung der Konfigurationsdatei:\n"
 
 #: html/support/bugs.html:77
 msgid ""
