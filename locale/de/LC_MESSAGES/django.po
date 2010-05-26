@@ -2162,7 +2162,7 @@ msgstr "Wiki"
 
 #: html/downloads/index.html:4
 msgid "Download Wammu and Gammu"
-msgstr ""
+msgstr "Wammu und Gammu herunterladen"
 
 #: html/downloads/index.html:12
 msgid ""
