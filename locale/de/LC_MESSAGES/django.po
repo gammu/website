@@ -3095,7 +3095,7 @@ msgid ""
 "do you use Windows, some Linux\n"
 "distribution, Mac OS X, BSD?\n"
 msgstr ""
-"Informationen zu Ihrem <strong>Betriebssystem<strong> und dessen Version, "
+"Informationen zu Ihrem <strong>Betriebssystem</strong> und dessen Version, "
 "nutzen Sie Windows, eine bestimmte Linux Distribution, Mac OS X, BSD?"
 
 #: html/support/bugs.html:36
