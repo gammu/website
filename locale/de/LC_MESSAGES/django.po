@@ -2353,8 +2353,9 @@ msgid ""
 "You can not find your platform here? Choose the correct one <a href=\"../"
 "\">on complete listing</a>.\n"
 msgstr ""
+"\n"
 "Sie können Ihre Plattform hier nicht finden? Wähl Sie die richtige aus der "
-"<a href=\"../\">vollständigen Liste</a>."
+"<a href=\"../\">vollständigen Liste</a>.\n"
 
 #: html/downloads/mirror.html:5
 msgid ""
