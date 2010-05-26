@@ -743,9 +743,10 @@ msgid ""
 "href=\"http://creativecommons.org/licenses/GPL/2.0/\">GNU General\n"
 "Public License, version 2</a>.\n"
 msgstr ""
+"\n"
 "Gammu, python-gammu und Wammu sind unter der <a "
 "href=\"http://creativecommons.org/licenses/GPL/2.0/\">\"GNU General Public "
-"License, version 2\"</a> veröffentlicht."
+"License, version 2\"</a> veröffentlicht.\n"
 
 # its legal texts which arent really translated in german, but this is a somewhat well known translation-version. our justicial system bases verdicts onto english GNU texts.  its ok because there are links and hints above and below
 #: html/license.html:18
