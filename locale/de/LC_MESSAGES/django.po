@@ -1180,7 +1180,7 @@ msgstr ""
 
 #: html/wammu_feedback.html:3
 msgid "Thank you for using Wammu"
-msgstr "Danke, dass Sie Wammu verwenden!"
+msgstr "Danke, dass Sie Wammu verwenden"
 
 #: html/wammu_feedback.html:5
 msgid ""
