@@ -2059,7 +2059,7 @@ msgstr ""
 
 #: html/docs/devel.html:35 html/docs/faq.html:65
 msgid "Python Bindings"
-msgstr ""
+msgstr "Python Anbindung"
 
 #: html/docs/devel.html:37
 msgid ""
