@@ -2714,10 +2714,11 @@ msgid ""
 "not bug tracking system. Should you have any problems with Gammu, please\n"
 "<a href=\"/support/bugs/\">report them in the bug tracker</a>.\n"
 msgstr ""
+"\n"
 "Vielen Dank, dass Sie die Gammu Telefondatenbank ergänzt haben.Bitte "
 "beachten Sie, dass hier gemeldete Fehler nicht überprüft werden. Bei "
 "Problemen mit Gammu melden Sie diese bitte <a href=\"/support/bugs/\">in der "
-"Fehlerdatenbank</a>."
+"Fehlerdatenbank</a>.\n"
 
 #: html/phonedb/new.html:26
 msgid ""
