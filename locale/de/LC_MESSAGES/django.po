@@ -1564,11 +1564,12 @@ msgid ""
 "logos are available in various resolutions as well as in scalable format in\n"
 "<a href=\"/contribute/code/#vcs\">wammu source repository</a>.\n"
 msgstr ""
+"\n"
 "Sie können sämtliche Bilder auf dieser Webseite für Ihre Veröffentlichungen "
 "verwenden, solange Sie sich an die <a "
 "href=\"/license\">Lizenzierungsbedingungen</a> halten. Gammu und Wammu Logos "
 "erhalten Sie in unterschiedlichen Grössen und skalierbar in der <a "
-"href=\"/contribute/code/#vcs\">Wammu Quelltext Fundgrube</a>."
+"href=\"/contribute/code/#vcs\">Wammu Quelltext Fundgrube</a>.\n"
 
 #: html/contribute/sidebar.html:2
 msgid "Ways to contribute"
