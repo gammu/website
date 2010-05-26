@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-20 15:16+0200\n"
+"POT-Creation-Date: 2010-05-26 11:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgstr ""
 #: html/500.html:11
 msgid ""
 "\n"
-"The server had serious problems while serving your request. We just send "
+"The server had serious problems while serving your request. We've just sent "
 "our\n"
 "trained monkeys to fix the issue.\n"
 msgstr ""
@@ -216,7 +216,7 @@ msgid "FAQ"
 msgstr ""
 
 #: html/base.html:116 html/docs/sidebar.html:7 html/sidebars/common.html:3
-#: phonedb/views.py:98
+#: phonedb/views.py:99
 msgid "Supported phones"
 msgstr ""
 
@@ -2909,23 +2909,23 @@ msgstr ""
 msgid "Please choose how will be email handled in next field."
 msgstr ""
 
-#: phonedb/views.py:98
+#: phonedb/views.py:100
 msgid "Valid records"
 msgstr ""
 
-#: phonedb/views.py:98
+#: phonedb/views.py:101
 msgid "Total records"
 msgstr ""
 
-#: phonedb/views.py:116
+#: phonedb/views.py:119
 msgid "Gammu Phone Database Feed (RSS)"
 msgstr ""
 
-#: phonedb/views.py:117
+#: phonedb/views.py:120
 msgid "Gammu Phone Database Feed (Atom)"
 msgstr ""
 
-#: phonedb/views.py:431
+#: phonedb/views.py:434
 msgid "Phone record has been created."
 msgstr ""
 

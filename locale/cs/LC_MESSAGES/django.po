@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-20 15:16+0200\n"
+"POT-Creation-Date: 2010-05-26 11:40+0200\n"
 "PO-Revision-Date: 2010-05-20 15:17+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -82,9 +82,10 @@ msgid "Server Error"
 msgstr "Chyba serveru"
 
 #: html/500.html:11
+#, fuzzy
 msgid ""
 "\n"
-"The server had serious problems while serving your request. We just send "
+"The server had serious problems while serving your request. We've just sent "
 "our\n"
 "trained monkeys to fix the issue.\n"
 msgstr ""
@@ -230,7 +231,7 @@ msgid "FAQ"
 msgstr "ČKD"
 
 #: html/base.html:116 html/docs/sidebar.html:7 html/sidebars/common.html:3
-#: phonedb/views.py:98
+#: phonedb/views.py:99
 msgid "Supported phones"
 msgstr "Podporované telefony"
 
@@ -909,8 +910,8 @@ msgstr ""
 "\n"
 "Tato stránka obsahuje Vlastní vyhledávač Google nastavený na vyhledávání "
 "informací o Gammu.Ten samý vyhledávač můžete použít i přímo na\n"
-"<a href=\"http://www.google.com/coop/cse?"
-"cx=008688692096734274889%3Axuvlsu_agkm\">stránkách Google</a>.\n"
+"<a href=\"http://www.google.com/coop/cse?cx=008688692096734274889%"
+"3Axuvlsu_agkm\">stránkách Google</a>.\n"
 
 #: html/search.html:39
 msgid ""
@@ -1150,8 +1151,8 @@ msgstr ""
 msgid ""
 "\n"
 "You are using older version, please upgrade to get most stable version with\n"
-"latest features. The latest stable version is <a href=\"%(url)s\">"
-"%(version)s</a>.\n"
+"latest features. The latest stable version is <a href=\"%(url)s\">%(version)"
+"s</a>.\n"
 msgstr ""
 "\n"
 "Používáte starší verzi, prosím aktualizujte ji a získáte tím nejstabilnější "
@@ -1232,8 +1233,8 @@ msgid ""
 "repositories over http, just replace <code>git://gitorious.org/</code> with\n"
 "<code>http://git.gitorious.org/</code>. All repositories are also mirrored "
 "to\n"
-"<a href=\"https://sourceforge.net/scm/?type=git&amp;"
-"group_id=78290\">SourceForge.net</a> \n"
+"<a href=\"https://sourceforge.net/scm/?type=git&amp;group_id=78290"
+"\">SourceForge.net</a> \n"
 "and repo.or.cz (<a href=\"http://repo.or.cz/w/gammu.git\">Gammu</a> and \n"
 "<a href=\"http://repo.or.cz/w/wammu.git\">Wammu</a>).\n"
 msgstr ""
@@ -2280,8 +2281,8 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"Thank you for interest in downloading <a href=\"/%(program_name)s\">"
-"%(program)s</a>.\n"
+"Thank you for interest in downloading <a href=\"/%(program_name)s\">%"
+"(program)s</a>.\n"
 msgstr ""
 "\n"
 "Děkujeme vám za zájem o stažení <a href=\"/%(program_name)s\">%(program)s</"
@@ -3337,24 +3338,24 @@ msgstr ""
 msgid "Please choose how will be email handled in next field."
 msgstr "Prosím zvolte si v následující položce, jak bude email zobrazen."
 
-#: phonedb/views.py:98
+#: phonedb/views.py:100
 msgid "Valid records"
 msgstr "Platných záznamů"
 
-#: phonedb/views.py:98
+#: phonedb/views.py:101
 msgid "Total records"
 msgstr "Celkem záznamů"
 
-#: phonedb/views.py:116
+#: phonedb/views.py:119
 msgid "Gammu Phone Database Feed (RSS)"
 msgstr "Databáze telefonů Gammu (RSS)"
 
-#: phonedb/views.py:117
+#: phonedb/views.py:120
 msgid "Gammu Phone Database Feed (Atom)"
 msgstr "Databáze telefonů Gammu (Atom)"
 
 # type: Plain text
-#: phonedb/views.py:431
+#: phonedb/views.py:434
 msgid "Phone record has been created."
 msgstr "Záznam v databázi byl vytvořen."
 
