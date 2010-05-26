@@ -1922,7 +1922,7 @@ msgstr ""
 "Derzeit arbeiten die meisten Entwickler für Linux oder BSD.\n"
 "Ein bisschen hinkt die Entwicklung für Windows also hinterher. Vermutlich "
 "sollten Sie Visual Studio installiert haben, und benötigen Erfahrungen mit "
-"der Windows API."
+"der Windows API.\n"
 
 #: html/contribute/wanted.html:52
 msgid "Translators"
