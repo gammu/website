@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-27 12:45+0200\n"
+"PO-Revision-Date: 2010-05-27 12:46+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2299,7 +2299,7 @@ msgstr ""
 
 #: html/docs/faq.html:76
 msgid "How can I use python-gammu?"
-msgstr ""
+msgstr "Wie verwendet man python-gammu?"
 
 #: html/docs/faq.html:78
 msgid ""
