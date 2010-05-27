@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-27 20:21+0200\n"
+"PO-Revision-Date: 2010-05-27 20:22+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -3787,7 +3787,7 @@ msgstr "English"
 
 #: news/feeds.py:11
 msgid "Updates about Wammu and Gammu programs."
-msgstr ""
+msgstr "Aktualisierungen der Programme Wammu und Gammu"
 
 #: phonedb/feeds.py:9
 msgid "Gammu Phone Database"
