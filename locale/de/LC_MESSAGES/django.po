@@ -2525,7 +2525,7 @@ msgstr ""
 
 #: html/docs/show_man.html:9
 msgid "Other man pages"
-msgstr ""
+msgstr "Andere Hilfeseiten"
 
 #: html/docs/sidebar.html:8
 msgid "Roadmap"
