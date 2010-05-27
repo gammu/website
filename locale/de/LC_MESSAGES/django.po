@@ -2166,7 +2166,7 @@ msgstr ""
 
 #: html/docs/faq.html:4
 msgid "FAQ for Wammu and Gammu"
-msgstr "Über Wammu und Gammu häufig gestellte Fragen"
+msgstr "Über Wammu und Gammu häufig gestellte Fragen (FAQ)"
 
 #: html/docs/faq.html:12
 msgid "Frequently Asked Questions for Wammu and Gammu"
