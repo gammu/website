@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-27 07:25+0200\n"
+"PO-Revision-Date: 2010-05-27 07:27+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2130,7 +2130,7 @@ msgstr ""
 
 #: html/docs/devel.html:58
 msgid "Gammu Internals"
-msgstr ""
+msgstr "Interner Aufbau von Gammu"
 
 #: html/docs/devel.html:60
 msgid ""
