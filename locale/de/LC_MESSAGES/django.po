@@ -2099,7 +2099,7 @@ msgstr ""
 
 #: html/docs/devel.html:46
 msgid "libGammu API"
-msgstr ""
+msgstr "libGammu API"
 
 #: html/docs/devel.html:48
 msgid ""
