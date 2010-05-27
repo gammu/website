@@ -2174,7 +2174,7 @@ msgstr "Häufig gestellte Fragen über Wammu und Gammu"
 
 #: html/docs/faq.html:14
 msgid "Phones Support"
-msgstr "Unterstützung"
+msgstr "Telefonunterstützung"
 
 #: html/docs/faq.html:16
 msgid "Is my phone supported?"
