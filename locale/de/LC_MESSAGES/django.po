@@ -2405,9 +2405,9 @@ msgid ""
 "in future.\n"
 msgstr ""
 "\n"
-"Weder Gammu noch Wammu habe fixe Veröffentlichungsmodi.Es gibt neue "
-"Versionen, wenn es Zeit dafür ist.Auf dieser Seite finden Sie, was die "
-"Zukunft bringen wird.\n"
+"Weder Gammu noch Wammu habe fixe Veröffentlichungsmodi.\n"
+"Es gibt neue Versionen, wenn es Zeit dafür ist.\n"
+"Auf dieser Seite finden Sie, was die Zukunft bringen wird.\n"
 
 #: html/docs/roadmap.html:22
 msgid "Gammu Roadmap"
