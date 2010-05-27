@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-27 20:20+0200\n"
+"PO-Revision-Date: 2010-05-27 20:21+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -3763,7 +3763,7 @@ msgstr ""
 
 #: html/support/sidebar.html:2
 msgid "Support links"
-msgstr ""
+msgstr "Links zu den Unterstützungsmöglichkeiten"
 
 #: html/support/sidebar.html:5
 msgid "Mailing list"
