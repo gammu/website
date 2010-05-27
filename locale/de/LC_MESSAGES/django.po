@@ -3474,7 +3474,7 @@ msgid ""
 msgstr ""
 "\n"
 "Wenn Sie uns danken möchten für unsere Unterstützung, können Sie gerne\n"
-"dem Projekt <a href=\"/donate\">Geld zukommen lassen</a>.\n"
+"<a href=\"/donate\">dem Projekt Geld zukommen lassen</a>.\n"
 
 #: html/support/index.html:4 html/support/index.html.py:14
 msgid "Support for Wammu and Gammu"
