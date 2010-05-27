@@ -2281,7 +2281,7 @@ msgstr ""
 
 #: html/docs/faq.html:67
 msgid "Where can I download python-gammu?"
-msgstr ""
+msgstr "Wo kann man python-gammu herunterladen?"
 
 #: html/docs/faq.html:69
 msgid ""
