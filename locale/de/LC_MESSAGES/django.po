@@ -3462,7 +3462,7 @@ msgstr ""
 "Wir bieten für Unterstützungsleistungen keine Pakete mit vor-fixierten "
 "Preisen an.\n"
 "Schlicht, weil jedes Projekt große Unterschiede zu anderen darstellt; und "
-"den  Ansprüchen aller am ehesten Genüge getan wird, wenn die Konditionen "
+"den Ansprüchen aller am ehesten Genüge getan wird, wenn die Konditionen "
 "separat ausgemacht werden.\n"
 
 #: html/support/buy.html:43
