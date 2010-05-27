@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-27 07:46+0200\n"
+"PO-Revision-Date: 2010-05-27 07:52+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -3059,6 +3059,9 @@ msgid ""
 "Information about phones from this manufacturer is also available on <a\n"
 "href=\"http://tuxmobil.org/phones_survey_%(tuxurl)s.html\">TuxMobil</a>.\n"
 msgstr ""
+"\n"
+"Informationen zu den Telefonen dieses Herstellers finden Sie auch auf <a\n"
+"href=\"http://tuxmobil.org/phones_survey_%(tuxurl)s.html\">TuxMobil</a>.\n"
 
 #: html/phonedb/vendor.html:33
 #, python-format
