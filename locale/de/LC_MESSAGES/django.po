@@ -3952,7 +3952,7 @@ msgstr "Die Eintragung bezüglich diesem Telefon wurde erstellt."
 
 #: wammu/helpers.py:27
 msgid "Gammu and Wammu News Feed (RSS)"
-msgstr "Gammu and Wammu News Feed (RSS)"
+msgstr "Gammu und Wammu News Feed (RSS)"
 
 #: wammu/helpers.py:30
 msgid "Gammu and Wammu News Feed (Atom)"
