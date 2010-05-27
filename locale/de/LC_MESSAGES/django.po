@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-27 22:25+0200\n"
+"PO-Revision-Date: 2010-05-27 22:29+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -3864,7 +3864,7 @@ msgstr "Telefoninformationen"
 
 #: phonedb/models.py:33
 msgid "Sending and saving SMS"
-msgstr "Übertragen und speichern von SMS"
+msgstr "Übertragen und Speichern von SMS"
 
 #: phonedb/models.py:34
 msgid "Multimedia messaging"
