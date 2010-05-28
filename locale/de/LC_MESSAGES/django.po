@@ -1334,9 +1334,10 @@ msgid ""
 msgstr ""
 "\n"
 "Derzeit verwenden wir <a href=\"http://git-scm.com/\">Git</a> als "
-"Versionensystem. Es erlaubt Ihnen eigene Entwicklungszweige zu erschaffen, "
-"den Code zu entwickeln und dann Patches oder Aufforderungen zur Aufnahme des "
-"Codes zu übermitteln.\n"
+"Versionensystem.\n"
+"Es erlaubt Ihnen eigene Entwicklungszweige zu erschaffen, den Code zu "
+"entwickeln und dann Patches oder Aufforderungen zur Aufnahme des Codes zu "
+"übermitteln.\n"
 
 #: html/contribute/code.html:46
 msgid ""
