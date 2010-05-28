@@ -1247,8 +1247,8 @@ msgid ""
 "Check also <a href=\"/docs/faq/#wammu\">Frequently Asked Questions</a>.\n"
 msgstr ""
 "\n"
-"Bitte lesen Sie auch in unseren <a href=\"/docs/faq/#wammu\">Häufig "
-"gestellten Fragen (FAQ)</a>.\n"
+"Bitte lesen Sie auch in unseren <a href=\"/docs/faq/#wammu\">häufig gestellten "
+"Fragen (FAQ)</a>.\n"
 
 #: html/wammu_feedback.html:3
 msgid "Thank you for using Wammu"
