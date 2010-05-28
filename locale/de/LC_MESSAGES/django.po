@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-28 10:51+0200\n"
+"PO-Revision-Date: 2010-05-28 10:52+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -881,6 +881,7 @@ msgstr ""
 msgid "Website Content"
 msgstr "Website Inhalt"
 
+# die übersetzung der gnu und anderer lizensen ist lt web-recherche im status "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung auf die englischen originaltexte. verbesserungen in diesem kapitel werden durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher rückversicherung.
 #: html/license.html:83
 msgid ""
 "\n"
@@ -889,9 +890,9 @@ msgid ""
 "Attribution-Share Alike 3.0 Unported</a>.\n"
 msgstr ""
 "\n"
-"Die Inhalte der Website wurden unter der <a href=\"http://creativecommons."
-"org/licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 "
-"Unported</a> veröffentlicht.\n"
+"Die Inhalte der Website wurden unter der <a "
+"href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons "
+"Attribution-Share Alike 3.0 Unported</a> veröffentlicht.\n"
 
 # die übersetzung der gnu ud anderr lizensen ist lt web-recherche im status "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung auf die englischen originaltexte. verbesserungen in diesem kapitel werden durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher rückversicherung.
 #: html/license.html:91
