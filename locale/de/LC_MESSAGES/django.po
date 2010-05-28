@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-28 13:43+0200\n"
+"PO-Revision-Date: 2010-05-28 13:53+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -1996,7 +1996,7 @@ msgstr ""
 msgid "Graphics/Designer"
 msgstr "Grafiker/Designer"
 
-# find ich gar nich
+# angelehnt an text auf der beitragen- seite zum gleichen thema, da auf deutsch übersetzt "nicht sehr gut" klingend. zumindest gefühlt ist diese übersetzung frei aber passend.
 #: html/contribute/wanted.html:64
 msgid ""
 "\n"
@@ -2004,10 +2004,10 @@ msgid ""
 "definitely make use of somebody more skilled in this area.\n"
 msgstr ""
 "\n"
-"Die Grafiken und Icons, die in Wammu verwendet werden, sind von relativ "
-"schlechter Qualität.\n"
-"Wir würden definitiv die Leistungen nutzen, die Begabte, mit Fähigkeiten in "
-"diesen Gebieten, erbringen.\n"
+"Die Grafiken und Icons, die in Wammu verwendet werden, genügen nicht den "
+"höchsten Ansprüchen.\n"
+"Wenn Sie Fähigkeiten in diesem Bereich haben, werden wir Ihre Hilfe gerne "
+"annehmen!\n"
 
 #: html/contribute/wanted.html:70
 msgid "Symbian Developer"
