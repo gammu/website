@@ -318,8 +318,8 @@ msgid ""
 "money in useful way.\n"
 msgstr ""
 "\n"
-"Wir bedanken uns für Ihre Spende! Wir werden das gespendete Geld möglichst "
-"sinnvoll einsetzen.\n"
+"Wir bedanken uns für Ihre Spende!\n"
+"Wir werden das gespendete Geld möglichst sinnvoll einsetzen.\n"
 
 #: html/donate.html:4 html/donate.html.py:11
 msgid "Donate to Gammu"
