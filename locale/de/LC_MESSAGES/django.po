@@ -808,7 +808,6 @@ msgstr ""
 
 # die übersetzung der gnu ud anderr lizensen ist lt web-recherche im status "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung auf die englischen originaltexte. verbesserungen in diesem kapitel werden durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher rückversicherung.
 #: html/license.html:27 html/license.html.py:64
-#, fuzzy
 msgid ""
 "\n"
 "This program is distributed in the hope that it will be useful,\n"
