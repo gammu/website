@@ -3379,7 +3379,7 @@ msgid ""
 msgstr ""
 "\n"
 "<strong>Debugging log</strong> Ihres Kommunikationsversuches.\n"
-" Bitte lesen Sie weiter unten, wie man diesen erhält.\n"
+"Bitte lesen Sie weiter unten, wie man diesen erhält.\n"
 
 #: html/support/bugs.html:48
 msgid "Obtaining Debugging Log"
