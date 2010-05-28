@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-28 10:27+0200\n"
-"Last-Translator: Michal <michal@cihar.com>\n"
+"PO-Revision-Date: 2010-05-28 10:29+0200\n"
+"Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -603,10 +603,12 @@ msgstr ""
 "welche Sie zur Entwicklung eigener Anwendungen, mit Zugang zum Telefon, "
 "nutzen können.\n"
 
+# Auch das wort download wurde von mir an zahlreichen stellen übersetzt - zur erhöhung der usability. nachdem manche einträge der erst seiten allerdings verknüpft sind, und somit auch im-text veränderunge möglich sinnd oder dinge wie "laden sie herunter" "wie lade ich herunter" "herunter laden" etc im deutschen schwere grammatikalische missverstädnnisse auslöse können, das wort download auch bei uns verwendet wird... beliess ich es dabei.
 #: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:32
 #: html/smsd.html:61 html/wammu.html:47 html/downloads/list.html:4
 #: html/downloads/program.html:4 html/downloads/release.html:4
 #: wammu/helpers.py:19
+#, fuzzy
 msgid "Download"
 msgstr "Download"
 
