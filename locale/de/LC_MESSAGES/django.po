@@ -780,7 +780,9 @@ msgstr ""
 msgid "Wammu and Gammu License"
 msgstr "Lizenzierung von Gammu und Wammu"
 
+# die übersetzung der gnu ud anderr lizensen ist lt web-recherche im status "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung auf die englischen originaltexte. verbesserungen in diesem kapitel werden durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher rückversicherung.
 #: html/license.html:10
+#, fuzzy
 msgid ""
 "\n"
 "Gammu, python-gammu and Wammu are released under <a\n"
@@ -788,9 +790,9 @@ msgid ""
 "Public License, version 2</a>.\n"
 msgstr ""
 "\n"
-"Gammu, python-gammu und Wammu sind unter der <a href=\"http://"
-"creativecommons.org/licenses/GPL/2.0/\">\"GNU General Public License, "
-"version 2\"</a> veröffentlicht.\n"
+"Gammu, python-gammu und Wammu sind unter der <a "
+"href=\"http://creativecommons.org/licenses/GPL/2.0/\">\"GNU General Public "
+"License, version 2\"</a> veröffentlicht.\n"
 
 # its legal texts which arent really translated in german, but this is a somewhat well known translation-version. our justicial system bases verdicts onto english GNU texts.  its ok because there are links and hints above and below
 #: html/license.html:18
