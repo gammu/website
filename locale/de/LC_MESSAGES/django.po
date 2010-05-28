@@ -154,7 +154,7 @@ msgid ""
 "Jonsson.\n"
 msgstr ""
 "\n"
-"Weil dieses Projekt als Abspaltung von Gnokil startete, möchten wir allen "
+"Weil dieses Projekt als Abspaltung von Gnokii startete, möchten wir allen "
 "dort Entwickelnden und Beitragenden danken, besonders: Pavel Janik, Pawel "
 "Kot und Manfred Jonsson.\n"
 
