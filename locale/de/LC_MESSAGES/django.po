@@ -1283,9 +1283,9 @@ msgid ""
 "s</a>.\n"
 msgstr ""
 "\n"
-"Sie verwenden eine veraltete Version, bitte holen Sie sich die aktuelle "
-"stabile Version (<a href=\"%(url)s\">%(version)s</a>) mit Unterstützung der "
-"meisten Funktionen.\n"
+"Sie verwenden eine veraltete Version.\n"
+"Bitte holen Sie sich die aktuelle stabile Version (<a href=\"%(url)s\">%"
+"(version)s</a>) mit Unterstützung der meisten Funktionen.\n"
 
 #: html/contribute/code.html:4 html/contribute/code.html.py:22
 msgid "Coding for Wammu and Gammu"
