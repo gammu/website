@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-28 11:04+0200\n"
+"PO-Revision-Date: 2010-05-28 11:15+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -1001,7 +1001,9 @@ msgstr ""
 "href=\"http://www.google.com/coop/cse?cx=008688692096734274889%"
 "3Axuvlsu_agkm\">Google pages</a>.\n"
 
+# anmerkung: rechtsklausel, formulierungen bitte verbessern, aber besser zweimal absichern zuvor!
 #: html/search.html:39
+#, fuzzy
 msgid ""
 "\n"
 "Please note that the search results are also from third party domains and "
@@ -1009,8 +1011,9 @@ msgid ""
 "have no control over the content there.\n"
 msgstr ""
 "\n"
-"Bitte beachte Sie, dass die Suchergebnisse auch andere Domänen beinhält, und "
-"wir über keinerlei Kontrolle bezüglich deren Inhalten verfügen.\n"
+"Bitte beachten Sie, dass die Suchergebnisse auch andere/fremde Domänen "
+"Dritter und Links zu diesen beinhalten, und wir über keinerlei Kontrolle und "
+"Verantwortung bezüglich diesen Inhalten verfügen.\n"
 
 #: html/shortnews.html:2
 msgid "Latest News"
