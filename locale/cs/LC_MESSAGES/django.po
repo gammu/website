@@ -42,7 +42,7 @@ msgstr "Program pre Windows"
 #: downloads/models.py:174
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr "%(program)s, stabilní verze %(version)s"
+msgstr "%(program)s, stabilná verzia %(version)s"
 
 #: downloads/models.py:179
 #, python-format
