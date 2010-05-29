@@ -256,7 +256,7 @@ msgstr "Pre vývojárov"
 
 #: html/base.html:122 wammu/helpers.py:22
 msgid "Contribute"
-msgstr "Přispějte"
+msgstr "Prispejte"
 
 #: html/base.html:124 html/contribute/sidebar.html:5
 msgid "Translate"
