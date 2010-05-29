@@ -225,7 +225,7 @@ msgstr "Screenshoty"
 
 #: html/base.html:108
 msgid "Third party"
-msgstr "Další aplikace"
+msgstr "Ďalšie aplikácie"
 
 #: html/base.html:109 html/index.html:54
 msgid "News"
