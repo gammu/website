@@ -166,7 +166,7 @@ msgstr "Preložte!"
 #: html/base.html:59 html/base.html.py:106 html/downloads/program.html:7
 #: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
 msgid "Downloads"
-msgstr "Stáhnout"
+msgstr "Stiahnuť"
 
 #: html/base.html:67 html/donate.html:49
 msgid "Advertisement"
