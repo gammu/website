@@ -260,7 +260,7 @@ msgstr "Prispejte"
 
 #: html/base.html:124 html/contribute/sidebar.html:5
 msgid "Translate"
-msgstr "Překlad"
+msgstr "Preklad"
 
 #: html/base.html:125 html/contribute/sidebar.html:6
 msgid "Develop"
