@@ -252,7 +252,7 @@ msgstr "Manuálové stránky"
 
 #: html/base.html:118 html/docs/sidebar.html:6
 msgid "For developers"
-msgstr "Pro vývojáře"
+msgstr "Pre vývojárov"
 
 #: html/base.html:122 wammu/helpers.py:22
 msgid "Contribute"
