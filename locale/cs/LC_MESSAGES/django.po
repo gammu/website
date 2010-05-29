@@ -323,7 +323,7 @@ msgstr "Prispejte na Gammu"
 
 #: html/donate.html:13
 msgid "Donate Money"
-msgstr "Přispějte peníze"
+msgstr "Prispejte peniazmi"
 
 #: html/donate.html:15
 msgid ""
