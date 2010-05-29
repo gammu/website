@@ -595,7 +595,7 @@ msgstr ""
 #: html/downloads/program.html:4 html/downloads/release.html:4
 #: wammu/helpers.py:19
 msgid "Download"
-msgstr "Stáhnout"
+msgstr "Stiahnuť"
 
 #: html/gammu.html:63
 msgid ""
