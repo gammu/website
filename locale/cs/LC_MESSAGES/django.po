@@ -438,7 +438,7 @@ msgid ""
 "Library exporting C API to talk to cell phones.\n"
 msgstr ""
 "\n"
-"Knihovna zpřístupňující komunikaci s mobilními telefony přes C API.\n"
+"Knižnica sprístupňujúca komunikáciu s mobilnými telefónmi cez C API.\n"
 
 #: html/gammu-family.html:22
 msgid ""
