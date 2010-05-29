@@ -478,7 +478,7 @@ msgid ""
 "MMS retrieval\n"
 msgstr ""
 "\n"
-"Stahování MMS\n"
+"Načítanie MMS\n"
 
 #: html/gammu-features.html:12
 msgid ""
