@@ -304,7 +304,7 @@ msgstr ""
 
 #: html/donate-thanks.html:4 html/donate-thanks.html.py:11
 msgid "Thank you for Donation"
-msgstr "Děkujeme Vám za váš příspěvek"
+msgstr "Ďakujeme Vám za váš príspevok"
 
 #: html/donate-thanks.html:14
 msgid ""
