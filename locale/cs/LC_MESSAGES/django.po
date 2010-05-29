@@ -212,7 +212,7 @@ msgstr "Hlásenie chýb"
 
 #: html/base.html:100
 msgid "Commercial support"
-msgstr "Komerční podpora"
+msgstr "Komerčná podpora"
 
 #: html/base.html:104
 msgid "Media"
