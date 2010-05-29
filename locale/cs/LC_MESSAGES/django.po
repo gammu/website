@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-29 15:27+0200\n"
+"PO-Revision-Date: 2010-05-29 15:28+0200\n"
 "Last-Translator: Pavol <scroolik@gmail.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -244,7 +244,7 @@ msgstr "FAQ"
 #: html/base.html:116 html/docs/sidebar.html:7 html/sidebars/common.html:3
 #: phonedb/views.py:99
 msgid "Supported phones"
-msgstr "Podporované telefony"
+msgstr "Podporované telefóny"
 
 #: html/base.html:117 html/docs/sidebar.html:4
 msgid "Man pages"
