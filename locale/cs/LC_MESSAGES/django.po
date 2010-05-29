@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-29 16:07+0200\n"
+"PO-Revision-Date: 2010-05-29 16:08+0200\n"
 "Last-Translator: Pavol <scroolik@gmail.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -761,7 +761,7 @@ msgstr ""
 
 #: html/license.html:4 html/license.html.py:7
 msgid "Wammu and Gammu License"
-msgstr "Licence Gammu a Wammu"
+msgstr "Licencia Gammu a Wammu"
 
 #: html/license.html:10
 msgid ""
