@@ -785,7 +785,7 @@ msgid ""
 msgstr ""
 "\n"
 "Tento program je slobodný software; môžete ho šíriť a upravovať\n"
-"podľa ustanovenia GPL GNU verzie 2, vydanej\n"
+"podľa ustanovenia GNU GPL verzie 2, vydanej\n"
 "Free Software\n"
 "Foundation.\n"
 
