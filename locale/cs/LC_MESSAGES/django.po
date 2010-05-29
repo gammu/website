@@ -280,7 +280,7 @@ msgstr "Podporte Gammu/Wammu prispením peňazí!"
 
 #: html/base.html:137
 msgid "Search for Gammu/Wammu related questions"
-msgstr "Vyhledávání dotazů souvisejících s Gammu a Wammu"
+msgstr "Vyhľadávanie otázok súvisiacich s Gammu/Wammu"
 
 #: html/base.html:137 html/phonedb/index.html:7
 msgid "Search"
