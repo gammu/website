@@ -284,7 +284,7 @@ msgstr "Vyhľadávanie otázok súvisiacich s Gammu/Wammu"
 
 #: html/base.html:137 html/phonedb/index.html:7
 msgid "Search"
-msgstr "Hledej"
+msgstr "Hľadaj"
 
 #: html/base.html:138
 msgid "Gammu and Wammu authors"
