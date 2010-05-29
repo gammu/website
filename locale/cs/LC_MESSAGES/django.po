@@ -29,7 +29,7 @@ msgstr "Správa pre autorov"
 #: donate/forms.py:27 donate/forms.py:38 html/base.html:126
 #: html/base.html.py:136 html/contribute/sidebar.html:4
 msgid "Donate"
-msgstr "Přispějte"
+msgstr "Prispejte"
 
 #: downloads/models.py:32
 msgid "Source"
