@@ -174,7 +174,7 @@ msgstr "Reklama"
 
 #: html/base.html:86 html/index.html:19
 msgid "About"
-msgstr "Informace"
+msgstr "Informácie"
 
 #: html/base.html:88 html/gammu.html:4 html/gammu.html.py:19
 #: html/contribute/translate.html:59
