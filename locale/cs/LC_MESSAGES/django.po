@@ -235,7 +235,7 @@ msgstr "Novinky"
 #: html/python-gammu.html:67 html/smsd.html:71 html/wammu.html:57
 #: html/docs/sidebar.html:2 html/support/sidebar.html:4 wammu/helpers.py:21
 msgid "Documentation"
-msgstr "Dokumentace"
+msgstr "Dokumentácia"
 
 #: html/base.html:115 html/docs/sidebar.html:5
 msgid "FAQ"
