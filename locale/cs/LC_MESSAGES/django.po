@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-29 15:15+0200\n"
+"PO-Revision-Date: 2010-05-29 15:16+0200\n"
 "Last-Translator: Pavol <scroolik@gmail.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -47,7 +47,7 @@ msgstr "%(program)s, stabilná verzia %(version)s"
 #: downloads/models.py:179
 #, python-format
 msgid "%(program)s testing release %(version)s"
-msgstr "%(program)s, testovací verze %(version)s"
+msgstr "%(program)s, testovacia verzia %(version)s"
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
