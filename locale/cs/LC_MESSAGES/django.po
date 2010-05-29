@@ -507,7 +507,7 @@ msgid ""
 "Retrieval of phone and network information\n"
 msgstr ""
 "\n"
-"Získání informací o telefonu a síti\n"
+"Získanie informácií o telefóne a sieti\n"
 
 #: html/gammu-features.html:23
 msgid ""
