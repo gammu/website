@@ -37,7 +37,7 @@ msgstr "Zdrojový kód"
 
 #: downloads/models.py:33
 msgid "Windows binary"
-msgstr "Program pro Windows"
+msgstr "Program pre Windows"
 
 #: downloads/models.py:174
 #, python-format
