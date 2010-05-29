@@ -470,7 +470,7 @@ msgid ""
 "SMS retrieval, backup and sending\n"
 msgstr ""
 "\n"
-"Stahování, záloha a posílání SMS\n"
+"Načítanie, záloha a a posielanie SMS\n"
 
 #: html/gammu-features.html:9
 msgid ""
