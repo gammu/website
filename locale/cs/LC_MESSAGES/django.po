@@ -446,7 +446,7 @@ msgid ""
 "SMS daemon service to receive and send messages automatically.\n"
 msgstr ""
 "\n"
-"Služba SMS démona pro automatické přijímání a odesílání zpráv.\n"
+"Služba SMS démona pre automatické prijímanie a odosielanie správ.\n"
 
 #: html/gammu-family.html:28
 msgid ""
