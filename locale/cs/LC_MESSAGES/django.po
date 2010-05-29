@@ -94,7 +94,7 @@ msgstr ""
 
 #: html/authors.html:4 html/authors.html.py:7
 msgid "Wammu and Gammu Authors"
-msgstr "Autoři Gammu a Wammu"
+msgstr "Autori Gammu a Wammu"
 
 #: html/authors.html:10
 msgid ""
