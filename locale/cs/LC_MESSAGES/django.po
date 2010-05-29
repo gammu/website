@@ -208,7 +208,7 @@ msgstr "Online"
 
 #: html/base.html:99
 msgid "Reporting bugs"
-msgstr "Hlášení chyb"
+msgstr "Hlásenie chýb"
 
 #: html/base.html:100
 msgid "Commercial support"
