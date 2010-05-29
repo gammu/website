@@ -288,7 +288,7 @@ msgstr "Hľadaj"
 
 #: html/base.html:138
 msgid "Gammu and Wammu authors"
-msgstr "Autoři Gammu a Wammu"
+msgstr "Autori Gammu a Wammu"
 
 #: html/base.html:138
 msgid "Authors"
