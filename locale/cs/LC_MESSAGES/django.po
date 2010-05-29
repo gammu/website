@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-29 15:25+0200\n"
+"PO-Revision-Date: 2010-05-29 15:26+0200\n"
 "Last-Translator: Pavol <scroolik@gmail.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -157,7 +157,7 @@ msgstr ""
 
 #: html/base.html:50
 msgid "Page translations"
-msgstr "Překlad stránky"
+msgstr "Preklad stránky"
 
 #: html/base.html:55
 msgid "Translate!"
