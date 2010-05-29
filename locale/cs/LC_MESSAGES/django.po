@@ -79,7 +79,7 @@ msgstr "Stránka nebola nájdená"
 
 #: html/500.html:4 html/500.html.py:8
 msgid "Server Error"
-msgstr "Chyba serveru"
+msgstr "Chyba servera"
 
 #: html/500.html:11
 msgid ""
