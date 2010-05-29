@@ -239,7 +239,7 @@ msgstr "Dokumentácia"
 
 #: html/base.html:115 html/docs/sidebar.html:5
 msgid "FAQ"
-msgstr "ČKD"
+msgstr "FAQ"
 
 #: html/base.html:116 html/docs/sidebar.html:7 html/sidebars/common.html:3
 #: phonedb/views.py:99
