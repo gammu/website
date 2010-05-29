@@ -522,7 +522,7 @@ msgstr ""
 #: html/gammu.html:11 html/libgammu.html:7 html/python-gammu.html:11
 #: html/smsd.html:11 html/wammu.html:11
 msgid "More information"
-msgstr "Více informací"
+msgstr "Viac informácií"
 
 #: html/gammu.html:22
 msgid ""
