@@ -462,7 +462,7 @@ msgid ""
 "Call listing, initiating and handling\n"
 msgstr ""
 "\n"
-"Vypisování hovorů, volání a zpracování\n"
+"Výpis hovorov, volanie a spracovanie\n"
 
 #: html/gammu-features.html:6
 msgid ""
