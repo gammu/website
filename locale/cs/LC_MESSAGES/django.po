@@ -161,7 +161,7 @@ msgstr "Preklad stránky"
 
 #: html/base.html:55
 msgid "Translate!"
-msgstr "Přeložte!"
+msgstr "Preložte!"
 
 #: html/base.html:59 html/base.html.py:106 html/downloads/program.html:7
 #: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
