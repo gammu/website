@@ -248,7 +248,7 @@ msgstr "Podporované telefóny"
 
 #: html/base.html:117 html/docs/sidebar.html:4
 msgid "Man pages"
-msgstr "Man stránky"
+msgstr "Manuálové stránky"
 
 #: html/base.html:118 html/docs/sidebar.html:6
 msgid "For developers"
