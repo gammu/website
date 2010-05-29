@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-29 16:14+0200\n"
+"PO-Revision-Date: 2010-05-29 16:15+0200\n"
 "Last-Translator: Pavol <scroolik@gmail.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -974,7 +974,7 @@ msgstr ""
 
 #: html/shortnews.html:2
 msgid "Latest News"
-msgstr "Poslední novinky"
+msgstr "Najnovšie novinky"
 
 #: html/smsd.html:4 html/smsd.html.py:19
 msgid "Gammu SMSD"
