@@ -5,12 +5,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2010-05-29 16:15+0200\n"
+"Last-Translator: Pavol <scroolik@gmail.com>\n"
+"Language-Team: Slovak <sk@li.org>\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,39 +19,38 @@ msgstr ""
 
 #: donate/forms.py:14
 msgid "Amount (EUR)"
-msgstr ""
+msgstr "Čiastka (EUR)"
 
 #: donate/forms.py:16
 msgid "Message from you"
-msgstr ""
+msgstr "Správa pre autorov"
 
 #: donate/forms.py:27 donate/forms.py:38 html/base.html:126
 #: html/base.html.py:136 html/contribute/sidebar.html:4
-#, fuzzy
 msgid "Donate"
-msgstr "&Podporte nás"
+msgstr "Prispejte"
 
 #: downloads/models.py:32
 msgid "Source"
-msgstr ""
+msgstr "Zdrojový kód"
 
 #: downloads/models.py:33
 msgid "Windows binary"
-msgstr ""
+msgstr "Program pre Windows"
 
 #: downloads/models.py:174
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr ""
+msgstr "%(program)s, stabilná verzia %(version)s"
 
 #: downloads/models.py:179
 #, python-format
 msgid "%(program)s testing release %(version)s"
-msgstr ""
+msgstr "%(program)s, testovacia verzia %(version)s"
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
-msgstr ""
+msgstr "Prístup odmietnutý"
 
 #: html/403.html:11 html/404.html:11
 msgid ""
@@ -58,6 +58,9 @@ msgid ""
 "The page you are looking for was not found. Try choosing something from the\n"
 "navigation bellow or use <a href=\"/search\">search facility</a>.\n"
 msgstr ""
+"\n"
+"Požadovaná stránka nebola nájdená. Zvoľte inú stránku z navigácie nižšie\n"
+"alebo použite <a href=\"/search\">vyhľadávanie</a>.\n"
 
 #: html/403.html:18 html/404.html:18
 msgid ""
@@ -65,14 +68,17 @@ msgid ""
 "This site includes information about Gammu and Wammu, you might want to\n"
 "continue to pages of following projects:\n"
 msgstr ""
+"\n"
+"Tieto stránky obsahujú informácie o Gammu a Wammu, môžete chcieť pokračovať\n"
+"na stránky nasledujúcich projektov:\n"
 
 #: html/404.html:4 html/404.html.py:8
 msgid "Page Not Found"
-msgstr ""
+msgstr "Stránka nebola nájdená"
 
 #: html/500.html:4 html/500.html.py:8
 msgid "Server Error"
-msgstr ""
+msgstr "Chyba servera"
 
 #: html/500.html:11
 msgid ""
@@ -81,10 +87,13 @@ msgid ""
 "our\n"
 "trained monkeys to fix the issue.\n"
 msgstr ""
+"\n"
+"Server mal vážne problémy zo spracovanie vášho požiadavku. Práve\n"
+"sme vyslali vycvičené opice, aby tento problém opravili.\n"
 
 #: html/authors.html:4 html/authors.html.py:7
 msgid "Wammu and Gammu Authors"
-msgstr ""
+msgstr "Autori Gammu a Wammu"
 
 #: html/authors.html:10
 msgid ""
@@ -92,6 +101,9 @@ msgid ""
 "Lot of people contributed to Gammu, python-gammu and Wammu in the past. You\n"
 "can find the most visible here.\n"
 msgstr ""
+"\n"
+"Mnoho ľudí v minulosti prispelo do Gammu, python-gammu a Wammu. Ty\n"
+"najdôležitejších nájdete na tejto stránke.\n"
 
 #: html/authors.html:19
 msgid ""
@@ -103,6 +115,12 @@ msgid ""
 "application on top of it</a>. In 2007 he has become maintainer of the Gammu\n"
 "project and he is still in the charge here.\n"
 msgstr ""
+"\n"
+"Michal začal prispievať v roku 2002 zlepšovaním AT\n"
+"modulu a neskôr prispieval v module pre telefóny Alcatel. Neskôr napísal <a\n"
+"href=\"/python-gammu/\">Python bindings for Gammu</a> a <a href=\"/wammu/\">GUI\n"
+"aplikáciu na nich založenú</a>. V roku 2007 sa stal správcom projektu Gammu\n"
+"and kde pôsobí doteraz.\n"
 
 #: html/authors.html:31
 msgid ""
@@ -115,6 +133,12 @@ msgid ""
 "resigned\n"
 "because lack of time. He is not active in the project anymore.\n"
 msgstr ""
+"\n"
+"Marcin pôvodne začal projekt ako fork Gnokii pretože nebol spokojný\n"
+"s niektorými časťami existujúceho kódu. prispieval väčšinou do hlavného kódu "
+"a\n"
+"Nokia modulu a viedol projekt do januára 2007, keď rezignoval\n"
+"pre nedostatok času. Už nieje aktívny na projekte.\n"
 
 #: html/authors.html:42
 msgid ""
@@ -125,28 +149,31 @@ msgid ""
 "Manfred\n"
 "Jonsson.\n"
 msgstr ""
+"\n"
+"Pretože kód pôvodne začal ako fork projektu Gnokii, chceli by sme poďakovať "
+"všetkým prispievateľom, hlavne menovite Pavlovi Janíkovi, Pawelu Kotovi a \n"
+"ManfreduJonssonovi.\n"
 
 #: html/base.html:50
 msgid "Page translations"
-msgstr ""
+msgstr "Preklad stránky"
 
 #: html/base.html:55
 msgid "Translate!"
-msgstr ""
+msgstr "Preložte!"
 
 #: html/base.html:59 html/base.html.py:106 html/downloads/program.html:7
 #: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
 msgid "Downloads"
-msgstr ""
+msgstr "Stiahnuť"
 
 #: html/base.html:67 html/donate.html:49
 msgid "Advertisement"
-msgstr ""
+msgstr "Reklama"
 
 #: html/base.html:86 html/index.html:19
-#, fuzzy
 msgid "About"
-msgstr "&O programe"
+msgstr "Informácie"
 
 #: html/base.html:88 html/gammu.html:4 html/gammu.html.py:19
 #: html/contribute/translate.html:59
@@ -160,124 +187,123 @@ msgstr "Wammu"
 
 #: html/base.html:90
 msgid "python-gammu"
-msgstr ""
+msgstr "python-gammu"
 
 #: html/base.html:91 html/docs/faq.html:42
-#, fuzzy
 msgid "SMSD"
-msgstr "SMSC"
+msgstr "SMSD"
 
 #: html/base.html:95 wammu/helpers.py:18
-#, fuzzy
 msgid "Support"
-msgstr "&Podpora"
+msgstr "Podpora"
 
 #: html/base.html:97
 msgid "Mailing lists"
-msgstr ""
+msgstr "Mailing listy"
 
 #: html/base.html:98
 msgid "Online"
-msgstr ""
+msgstr "Online"
 
 #: html/base.html:99
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Hlásenie chýb"
 
 #: html/base.html:100
 msgid "Commercial support"
-msgstr ""
+msgstr "Komerčná podpora"
 
 #: html/base.html:104
 msgid "Media"
-msgstr ""
+msgstr "Médiá"
 
 #: html/base.html:107 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3 wammu/helpers.py:20
 msgid "Screenshots"
-msgstr ""
+msgstr "Screenshoty"
 
 #: html/base.html:108
 msgid "Third party"
-msgstr ""
+msgstr "Ďalšie aplikácie"
 
 #: html/base.html:109 html/index.html:54
 msgid "News"
-msgstr ""
+msgstr "Novinky"
 
 #: html/base.html:113 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:67 html/smsd.html:71 html/wammu.html:57
 #: html/docs/sidebar.html:2 html/support/sidebar.html:4 wammu/helpers.py:21
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentácia"
 
 #: html/base.html:115 html/docs/sidebar.html:5
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: html/base.html:116 html/docs/sidebar.html:7 html/sidebars/common.html:3
 #: phonedb/views.py:99
 msgid "Supported phones"
-msgstr ""
+msgstr "Podporované telefóny"
 
 #: html/base.html:117 html/docs/sidebar.html:4
 msgid "Man pages"
-msgstr ""
+msgstr "Manuálové stránky"
 
 #: html/base.html:118 html/docs/sidebar.html:6
 msgid "For developers"
-msgstr ""
+msgstr "Pre vývojárov"
 
 #: html/base.html:122 wammu/helpers.py:22
 msgid "Contribute"
-msgstr ""
+msgstr "Prispejte"
 
 #: html/base.html:124 html/contribute/sidebar.html:5
 msgid "Translate"
-msgstr ""
+msgstr "Preklad"
 
 #: html/base.html:125 html/contribute/sidebar.html:6
 msgid "Develop"
-msgstr ""
+msgstr "Vývoj"
 
 #: html/base.html:127 html/contribute/sidebar.html:8
 msgid "Publicity"
-msgstr ""
+msgstr "Publicita"
 
 #: html/base.html:135
 msgid "License"
-msgstr ""
+msgstr "Licencia"
 
 #: html/base.html:136
 msgid "Support Gammu/Wammu by donating money!"
-msgstr ""
+msgstr "Podporte Gammu/Wammu prispením peňazí!"
 
 #: html/base.html:137
 msgid "Search for Gammu/Wammu related questions"
-msgstr ""
+msgstr "Vyhľadávanie otázok súvisiacich s Gammu/Wammu"
 
 #: html/base.html:137 html/phonedb/index.html:7
-#, fuzzy
 msgid "Search"
-msgstr "Hľadaj:"
+msgstr "Hľadaj"
 
 #: html/base.html:138
 msgid "Gammu and Wammu authors"
-msgstr ""
+msgstr "Autori Gammu a Wammu"
 
 #: html/base.html:138
 msgid "Authors"
-msgstr ""
+msgstr "Autori"
 
 #: html/base.html:139
 msgid ""
 "Valid <a href=\"http://validator.w3.org/check/referer\">HTML</a> and <a href="
 "\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
 msgstr ""
+"Validné <a href=\"http://validator.w3.org/check/referer\">HTML</a> and <a "
+"href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
 
 #: html/donate-thanks.html:4 html/donate-thanks.html.py:11
 msgid "Thank you for Donation"
-msgstr ""
+msgstr "Ďakujeme Vám za váš príspevok"
 
 #: html/donate-thanks.html:14
 msgid ""
@@ -286,14 +312,17 @@ msgid ""
 "donated\n"
 "money in useful way.\n"
 msgstr ""
+"\n"
+"Ďakujeme za príspevok na Gammu/Wammu! Urobíme, čo sa bude dať, aby sme "
+"peniaze použili na niečo užitočné.\n"
 
 #: html/donate.html:4 html/donate.html.py:11
 msgid "Donate to Gammu"
-msgstr ""
+msgstr "Prispejte na Gammu"
 
 #: html/donate.html:13
 msgid "Donate Money"
-msgstr ""
+msgstr "Prispejte peniazmi"
 
 #: html/donate.html:15
 msgid ""
@@ -307,6 +336,13 @@ msgid ""
 "there is simply lot of them and having more available allows us to create\n"
 "better software.\n"
 msgstr ""
+"\n"
+"Ďakujeme za Váš záujem o peňažný príspevok na projekty Gammu and Wammu. "
+"Tieto\n"
+"peniaze budú slúžiť ako motivácia pre vývojárov a pre nákup niektorého\n"
+"hardvéru vyžadovaného pre testovanie. Už teraz máme niektoré telefóny, ale\n"
+"existuje ich jednoducho príliš veľa a čím viac ich budeme mať dostupných, "
+"tým lepší softvér môžeme vytvoriť.\n"
 
 #: html/donate.html:25
 msgid ""
@@ -317,10 +353,15 @@ msgid ""
 "account or by using any major credit card. You can also directly send a\n"
 "donation to <code>michal@cihar.com</code>.\n"
 msgstr ""
+"\n"
+"Príspevok bude zaslaný pomocou <a\n"
+"href=\"http://www.paypal.com/\">PayPal</a>, kde môžete zaplatiť buď ich\n"
+"účtom, alebo platobnou kartou. Príspevok môžete\n"
+"poslať tiež rovno na <code>michal@cihar.com</code>.\n"
 
 #: html/donate.html:40
 msgid "Bank Account"
-msgstr ""
+msgstr "Bankový účet"
 
 #: html/donate.html:43
 msgid ""
@@ -329,6 +370,10 @@ msgid ""
 "account, you can send money to account 2202591725/6210 (account at mBank, "
 "BRE Bank S.A.).\n"
 msgstr ""
+"\n"
+"Ak máte účet v českej banke, alebo môžete posielať peniaze na Český\n"
+"účet, môžete spraviť bankový prevod na účet 2202591725/6210 (vedený v mBank, "
+"resp. BRE Bank S.A.).\n"
 
 #: html/donate.html:52
 msgid ""
@@ -344,10 +389,15 @@ msgid ""
 "will\n"
 "support various free software websites including this one.\n"
 msgstr ""
+"\n"
+"Tieto stránky sú momentálne zapojené do <a "
+"href=\"http://adbard.net\">reklamnej siete Ad Bard</a>, ktorá je ako jediná "
+"zameraná na stránky zaoberajúce sa slobodnými programami.\n"
+"Kúpou reklamy v tejto sieti podporíte rôzne slobodné programy vrátane tohto.\n"
 
 #: html/donate.html:62
 msgid "Other Options"
-msgstr ""
+msgstr "Ďalšie možnosti"
 
 #: html/donate.html:64
 msgid ""
@@ -357,54 +407,77 @@ msgid ""
 "for\n"
 "Michal Čihař</a>.\n"
 msgstr ""
+"\n"
+"Môžete tiež venovať nejaké dary vývojárom, v súčastnosti môžete vyberať zo "
+"<a\n"
+"href=\"http://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">zoznamu prianí\n"
+"Michala Čihaře na Amazone</a>.\n"
 
 #: html/gammu-family.html:4
 msgid ""
 "\n"
 "GUI program to manage contacts, todos, calendar and messages in your phone.\n"
 msgstr ""
+"\n"
+"Grafický program pre správu kontaktov, úloh, kalendára a správ vo vašom "
+"telefóne.\n"
 
 #: html/gammu-family.html:10
 msgid ""
 "\n"
 "Command line utility which allows to use all libGammu features.\n"
 msgstr ""
+"\n"
+"Utilita pre príkazový riadok, ktorá umožní použiť všetko, čo libGammu "
+"dokáže.\n"
 
 #: html/gammu-family.html:16
 msgid ""
 "\n"
 "Library exporting C API to talk to cell phones.\n"
 msgstr ""
+"\n"
+"Knižnica sprístupňujúca komunikáciu s mobilnými telefónmi cez C API.\n"
 
 #: html/gammu-family.html:22
 msgid ""
 "\n"
 "SMS daemon service to receive and send messages automatically.\n"
 msgstr ""
+"\n"
+"Služba SMS démona pre automatické prijímanie a odosielanie správ.\n"
 
 #: html/gammu-family.html:28
 msgid ""
 "\n"
 "Python bindings for libGammu, so that you can use it from Python scripts.\n"
 msgstr ""
+"\n"
+"Rozhranie libGammu pre Python, takže ju môžete použiť zo skriptov v Pythone.\n"
 
 #: html/gammu-features.html:3
 msgid ""
 "\n"
 "Call listing, initiating and handling\n"
 msgstr ""
+"\n"
+"Výpis hovorov, volanie a spracovanie\n"
 
 #: html/gammu-features.html:6
 msgid ""
 "\n"
 "SMS retrieval, backup and sending\n"
 msgstr ""
+"\n"
+"Načítanie, záloha a a posielanie SMS\n"
 
 #: html/gammu-features.html:9
 msgid ""
 "\n"
 "MMS retrieval\n"
 msgstr ""
+"\n"
+"Načítanie MMS\n"
 
 #: html/gammu-features.html:12
 msgid ""
@@ -412,6 +485,9 @@ msgid ""
 "Phonebook listing, export and import (also from standard formats such as\n"
 "vCard)\n"
 msgstr ""
+"\n"
+"Prístup ku kontaktom, export a import (i v štandardných formátoch ako\n"
+"vCard)\n"
 
 #: html/gammu-features.html:16
 msgid ""
@@ -420,12 +496,17 @@ msgid ""
 "such as\n"
 "vCalendar or iCalendar)\n"
 msgstr ""
+"\n"
+"Prístup k výpisu úloh, ich export a import (i v štandardných formátoch ako\n"
+"vCalendar alebo iCalendar)\n"
 
 #: html/gammu-features.html:20
 msgid ""
 "\n"
 "Retrieval of phone and network information\n"
 msgstr ""
+"\n"
+"Získanie informácií o telefóne a sieti\n"
 
 #: html/gammu-features.html:23
 msgid ""
@@ -433,12 +514,14 @@ msgid ""
 "Access to phone file system (note that some phones work also as USB storage\n"
 "devices and those are not accessible through Gammu)\n"
 msgstr ""
+"\n"
+"Prístup k súborom v telefóne (niektoré telefóny fungujú tiež ako USB storage\n"
+"zariadenie a k takým nieje možné pristupovať prostredníctvom Gammu)\n"
 
 #: html/gammu.html:11 html/libgammu.html:7 html/python-gammu.html:11
 #: html/smsd.html:11 html/wammu.html:11
-#, fuzzy
 msgid "More information"
-msgstr "Informácie o telefóne"
+msgstr "Viac informácií"
 
 #: html/gammu.html:22
 msgid ""
@@ -448,6 +531,10 @@ msgid ""
 "top\n"
 "of <a href=\"/libgammu\">libGammu</a>.\n"
 msgstr ""
+"\n"
+"Gammu je názov projektu a tiež utilita pre príkazový riadok,\n"
+"ktorou môžete ovládať váš telefón. Je napísaná v C a používa knižnicu\n"
+"<a href=\"/libgammu\">libGammu</a>.\n"
 
 #: html/gammu.html:30
 msgid ""
@@ -459,6 +546,13 @@ msgid ""
 "various\n"
 "phones. Generally following features are supported:\n"
 msgstr ""
+"\n"
+"Gammu - utilita pre príkazový riadok poskytuje prístup k širokej škále "
+"vlastností telefónov\n"
+"i keď úroveň sa líši zo zariadenia k zariadeniu a môžete si skontrolovať\n"
+"<a href=\"/phones/\">Databázu telefónov Gammu</a> zo skúsenosťami používateľov "
+"s rôznymi\n"
+"telefónmi. Všeobecne sú podporované nasledovné vlastnosti:\n"
 
 #: html/gammu.html:41
 msgid ""
@@ -471,6 +565,12 @@ msgid ""
 "Gammu\n"
 "from the \"Heretics of Dune\" book written by Frank Herbert exists.\n"
 msgstr ""
+"\n"
+"Tento projekt bol originálne fork z Gnokii a do verzie 0.58 sa\n"
+"volal MyGnokii2. Potom bolo treba lepšie meno a Gammu bolo vybrané ako\n"
+"skratka z Gammu All Mobile Management Utilities, bez akejkoľvek znalosti "
+"Gammu z knihy\n"
+"\"Heretics of Dune\" napísanej Frankom Herbertom.\n"
 
 #: html/gammu.html:50
 msgid ""
@@ -481,13 +581,20 @@ msgid ""
 "bindings</a> which you can use to develop own application accessing mobile\n"
 "phone.\n"
 msgstr ""
+"\n"
+"Balík Gammu neobsahuje iba spustiteľnú binárku, ale aj <a\n"
+"href=\"/smsd\">Gammu SMS démona</a>, <a\n"
+"href=\"/libgammu\">Gammu knižnicu</a> a <a href=\"/python-gammu\">Python\n"
+"bindings</a> ktoré môžete použiť pre vývoj vlastnej aplikácie pre prístup k "
+"mobilnému\n"
+"telefónu.\n"
 
 #: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:32
 #: html/smsd.html:61 html/wammu.html:47 html/downloads/list.html:4
 #: html/downloads/program.html:4 html/downloads/release.html:4
 #: wammu/helpers.py:19
 msgid "Download"
-msgstr ""
+msgstr "Stiahnuť"
 
 #: html/gammu.html:63
 msgid ""
@@ -496,6 +603,9 @@ msgid ""
 "use\n"
 "it.\n"
 msgstr ""
+"\n"
+"Stačí stiahnuť <a href=\"/download/gammu\">Gammu</a> pre vašu platformu\n"
+"a použiť ho.\n"
 
 #: html/gammu.html:71
 msgid ""
@@ -506,16 +616,25 @@ msgid ""
 "main program)</a> or <a href=\"/docs/man/en/gammurc.5/\">gammu-rc (the\n"
 "configuration file)</a>.\n"
 msgstr ""
+"\n"
+"Najlepšia dokumentácia je dostupné vo forme <a href=\"/docs/man\">manuálových\n"
+"stránok</a>, ktoré sú distribuované s programom. Môžete si ich tiež\n"
+"prezrieť online &endash; dokumentácia pre <a "
+"href=\"/docs/man/sk/gammu.1/\">gammu\n"
+"(hlavný program)</a> alebo pre <a href=\"/docs/man/sk/gammurc.5/\">gammu-rc\n"
+"(konfiguračný súbor)</a>.\n"
 
 #: html/gammu.html:81
 msgid ""
 "\n"
 "Check also <a href=\"/docs/faq/\">Frequently Asked Questions</a>.\n"
 msgstr ""
+"\n"
+"Pozrite sa tiež na <a href=\"/docs/faq/\">často kladené otázky</a>.\n"
 
 #: html/index.html:4
 msgid "Wammu and Gammu"
-msgstr ""
+msgstr "Wammu a Gammu"
 
 #: html/index.html:22
 msgid ""
@@ -530,6 +649,14 @@ msgid ""
 "Huawei\n"
 "and others).\n"
 msgstr ""
+"\n"
+"<a href=\"/wammu\">Wammu</a> je program pre správu údajov vo vačom mobilnom "
+"telefóne ako sú kontakty,\n"
+"kalendár či správy. Wammu používa <a href=\"/libgammu\">knižnicu Gammu</a>, "
+"ktorá\n"
+"poskytuje abstrakciu pre prácu s rôznymi telefónmi od mnohých\n"
+"výrobcov (napríklad Nokia, Sony-Ericsson, Motorola, Samsung, Siemens, Huawei\n"
+"a ďalšie).\n"
 
 #: html/index.html:32
 msgid ""
@@ -598,10 +725,16 @@ msgid ""
 "href=\"/docs/devel/internals/\">internal documentation</a>. Please check <a\n"
 "href=\"/docs/devel/\">developer documentation page</a> for more details.\n"
 msgstr ""
+"\n"
+"<a href=\"/docs/devel/api/\">dokumentácia API</a> je dostupná, rovnako ako <a\n"
+"href=\"/docs/devel/internals/\">vnútorná dokumentácia</a>. Pozrite si <a\n"
+"href=\"/docs/devel/\">stránky vývojárskej dokumentácie</a> pre viac "
+"informácií.\n"
+"liž"
 
 #: html/license.html:4 html/license.html.py:7
 msgid "Wammu and Gammu License"
-msgstr ""
+msgstr "Licencia Gammu a Wammu"
 
 #: html/license.html:10
 msgid ""
@@ -610,9 +743,12 @@ msgid ""
 "href=\"http://creativecommons.org/licenses/GPL/2.0/\">GNU General\n"
 "Public License, version 2</a>.\n"
 msgstr ""
+"\n"
+"Gammu, python-gammu a Wammu sú vydávané pod <a\n"
+"href=\"http://creativecommons.org/licenses/GPL/2.0/\">GNU General\n"
+"Public License, verzie 2</a>.\n"
 
 #: html/license.html:18
-#, fuzzy
 msgid ""
 "\n"
 "This program is free software; you can redistribute it and/or\n"
@@ -621,8 +757,9 @@ msgid ""
 "of the License.\n"
 msgstr ""
 "\n"
-"Tento program je voľný software, môžete ho šíriť a modifikovať podľa\n"
-"ustanovení Všeobecnej verejnej licencie GNU verzie 2, vydanej Free Software\n"
+"Tento program je slobodný software; môžete ho šíriť a upravovať\n"
+"podľa ustanovenia GNU GPL verzie 2, vydanej\n"
+"Free Software\n"
 "Foundation.\n"
 
 #: html/license.html:27 html/license.html.py:64
@@ -634,11 +771,9 @@ msgid ""
 "GNU General Public License for more details.\n"
 msgstr ""
 "\n"
-"Tento program je rozširovaný v nádeji, že bude užitočný, avšak BEZ\n"
-"AKEJKOĽVEK ZÁRUKY, neposkytujú sa ani odvodené záruky PREDAJNOSTI alebo\n"
-"VHODNOSTI PRE URČITÝ ÚČEL. Ďalšie podrobnosti hľadajte vo všeobecnej "
-"verejnej\n"
-"licencii GNU.\n"
+"Tento program je šírený v nádeji, že bude užitočný, avšak BEZ\n"
+"AKEJKOĽVEK ZÁRUKY; neposkytuje sa ani predpokladaná záruka PREDAJNOSTI alebo\n"
+"VHODNOSTI PRE URČITÝ ÚČEL.  Ďalšie podrobnosti hľadajte v GNU GPL\n"
 
 #: html/license.html:36 html/license.html.py:73
 msgid ""
@@ -648,10 +783,15 @@ msgid ""
 "Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, "
 "USA.\n"
 msgstr ""
+"\n"
+"Kopii GNU General Public License jste měl obdržet spolu s tímto\n"
+"programem; pokud se tak nestalo, napište o ni Free Software\n"
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, "
+"USA.\n"
 
 #: html/license.html:44
 msgid "Website License"
-msgstr ""
+msgstr "Licence těchto stránek"
 
 #: html/license.html:47
 msgid ""
@@ -660,6 +800,10 @@ msgid ""
 "href=\"http://creativecommons.org/licenses/GPL/2.0/\">GNU General\n"
 "Public License, version 2 or later</a>.\n"
 msgstr ""
+"\n"
+"Kód těchto stránek je licencován pod <a\n"
+"href=\"http://creativecommons.org/licenses/GPL/2.0/\">GNU General\n"
+"Public License, verze 2 nebo novější</a>.\n"
 
 #: html/license.html:55
 msgid ""
@@ -711,6 +855,13 @@ msgid ""
 "package, the daemon might be included in separate binary package in your\n"
 "distribution, try looking for something like <code>python-gammu</code>.\n"
 msgstr ""
+"\n"
+"Python modul je distribuovaný ako súčasť <a href=\"/gammu\">Gammu</a> preto "
+"pre jeho získanie\n"
+"jednoducho stiahnite <a href=\"/download/gammu\">Gammu</a>. Keď chcete použiť "
+"binárny\n"
+"balík, modul môže byť súčasťou samostatného balíku vo vašej\n"
+"distribúcii, skúste hľadať niečo ako <code>python-gammu</code>.\n"
 
 #: html/python-gammu.html:42
 msgid "Example"
@@ -764,7 +915,7 @@ msgstr ""
 
 #: html/shortnews.html:2
 msgid "Latest News"
-msgstr ""
+msgstr "Najnovšie novinky"
 
 #: html/smsd.html:4 html/smsd.html.py:19
 msgid "Gammu SMSD"
