@@ -730,7 +730,6 @@ msgstr ""
 "href=\"/docs/devel/internals/\">vnútorná dokumentácia</a>. Pozrite si <a\n"
 "href=\"/docs/devel/\">stránky vývojárskej dokumentácie</a> pre viac "
 "informácií.\n"
-"liž"
 
 #: html/license.html:4 html/license.html.py:7
 msgid "Wammu and Gammu License"
