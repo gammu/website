@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU</h2>
 Section: Gammu Documentation (1)<br/>
-Updated: Feb 17 2010<br/>
+Updated: May 12 2010<br/>
 <a href="#index">Index</a> 
 <hr/>
 <p><a class="aname" id="lbAB" name="lbAB"/></p>
@@ -123,15 +123,16 @@ this time if it could not deliver it).</p>
 <dt><b>Introduction to SMS formats</b></dt>
 <dd>
 <p>Gammu has support for many SMS formats like:</p>
-<p><br/>
-*NokiaSmartMessaging(usedformonochromaticpictureimages,downloadableprofiles,monochromaticoperatorlogos,monochromaticcallerlogosandmonophonicringtones)<br/>
-
-*LinkedSMS(bothwith8and16-bitidentificationnumbersinheaders)<br/>
-
-*EMS(thisisSMSformatusedforsavingmonochromaticimages,monophonicringtones,animations,textformattingandothers)<br/>
-
-*MMSnotifications<br/>
-*Alcatellogomessages</p>
+<p><b>Nokia Smart Messaging</b> (used for monochromatic picture
+images, downloadable profiles, monochromatic operator logos,
+monochromatic caller logos and monophonic ringtones)</p>
+<p><b>Linked SMS</b> (both with 8 and 16-bit identification numbers
+in headers)</p>
+<p><b>EMS</b> (this is SMS format used for saving monochromatic
+images, monophonic ringtones, animations, text formatting and
+others)</p>
+<p><b>MMS notifications</b></p>
+<p><b>Alcatel logo messages</b></p>
 <p>You need to ensure that the target phone supports message type
 you want to send. Otherwise the phone will not be able to display
 it or will even crash, because firmware of phone did not expect
@@ -140,22 +141,26 @@ this possibility.</p>
 <dt><b>Encoding chars in SMS text</b></dt>
 <dd>
 <p>Text in SMS can be coded using two ways:</p>
-<p>* with GSM Default Alphabet - in single SMS you can have
+<p>with <b>GSM Default Alphabet</b> - in single SMS you can have
 maximally 160 chars (Gammu doesn't support compressing such texts
 according to GSM standards, but it isn't big limit, because there
-are no phones supporting them), but they're from limited set:<br/>
-*allLatinsmallandlarge<br/>
-
-*alldigits<br/>
-*someGreek<br/>
-*someothernational<br/>
-*somesymbolslike@!&quot;#&amp;/()%*+=-,.:;&lt;&gt;?<br/>
-
+are no phones supporting them), but they're from limited set:</p>
+<p><br/>
+*allLatinsmallandlarge</p>
+<p><br/>
+*alldigits</p>
+<p><br/>
+*someGreek</p>
+<p><br/>
+*someothernational</p>
+<p><br/>
+*somesymbolslike@!&quot;#&amp;/()%*+=-,.:;&lt;&gt;?</p>
+<p><br/>
 *fewothers</p>
-<p>* with Unicode - in single SMS you can save at most 70 chars,
-but these can be any chars including all national and special ones.
-Please note, that some older phones might have problems displaying
-such message.</p>
+<p>with <b>Unicode</b> - in single SMS you can save at most 70
+chars, but these can be any chars including all national and
+special ones. Please note, that some older phones might have
+problems displaying such message.</p>
 <p>Gammu tries to do the best to handle non ASCII characters in
 your message. Everything is internally handled in Unicode (the
 input is converted depending on your locales configuration) and in
@@ -2233,7 +2238,8 @@ More memory required... <a class="aname" id="lbCP" name="lbCP"/>
 <h4>130</h4>
 Operation not allowed by phone. <a class="aname" id="lbCQ" name="lbCQ"/>
 <h4>131</h4>
-Empty SMSC number. Set in phone or use -smscnumber. <a class="aname" id="lbCR" name="lbCR"/>
+No SMSC number given. Provide it manually or use the one configured
+in phone. <a class="aname" id="lbCR" name="lbCR"/>
 <h4>132</h4>
 You're inside phone menu (maybe editing?). Leave it and try again.
 <a class="aname" id="lbCS" name="lbCS"/>
@@ -2313,15 +2319,17 @@ Command rejected because device was busy. Wait and restart.
 <h4>167</h4>
 Could not connect to the server. <a class="aname" id="lbEB" name="lbEB"/>
 <h4>168</h4>
-Could not resolve the host name.
-<p><a class="aname" id="lbEC" name="lbEC"/></p>
-<h3>EXAMPLE</h3>
+Could not resolve the host name. <a class="aname" id="lbEC" name="lbEC"/>
+<h4>169</h4>
+Failed to get SMSC number from phone.
 <p><a class="aname" id="lbED" name="lbED"/></p>
+<h3>EXAMPLE</h3>
+<p><a class="aname" id="lbEE" name="lbEE"/></p>
 <h4>Configuration</h4>
 <p>To check it out, you need to have configuration file for gammu,
 see <a href="../gammurc.5/">gammurc</a>(5) for more details about
 it.</p>
-<p><a class="aname" id="lbEE" name="lbEE"/></p>
+<p><a class="aname" id="lbEF" name="lbEF"/></p>
 <h4>Sending messages</h4>
 <dl compact="compact">
 <dt>Save text message up to standard 160 chars:</dt>
@@ -2391,7 +2399,7 @@ gammu savesms EMS -protected 2 -variablebitmaplong ala.bmp
 </dl>
 </dd>
 </dl>
-<p><a class="aname" id="lbEF" name="lbEF"/></p>
+<p><a class="aname" id="lbEG" name="lbEG"/></p>
 <h4>Backups</h4>
 <p>If you will backup settings to Gammu text file, it will be
 possible to edit it. It's easy: many things in this file will be
@@ -2429,14 +2437,14 @@ line</dt>
 <p>Replace: Type = NumberMobile\nEntry\1Text = &quot;\+36\2\3&quot;\n</p>
 </dd>
 </dl>
-<a class="aname" id="lbEG" name="lbEG"/>
+<a class="aname" id="lbEH" name="lbEH"/>
 <h3>COPYRIGHT</h3>
 <p>Copyright © 2003 - 2010 Marcin Wiacek, Michal Cihar and other
 authors. License GPLv2: GNU GPL version 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
 
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.</p>
-<p><a class="aname" id="lbEH" name="lbEH"/></p>
+<p><a class="aname" id="lbEI" name="lbEI"/></p>
 <h3>REPORTING BUGS</h3>
 <p>There are definitely many bugs, reporting to author is welcome.
 Please include some useful information when sending bug reports
@@ -2460,7 +2468,7 @@ log.</p>
 <p>See &lt;<a href="http://wammu.eu/support/bugs/">http://wammu.eu/support/bugs/</a>&gt;
 for more information on reporting bugs.</p>
 <p>Please report bugs to &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.</p>
-<p><a class="aname" id="lbEI" name="lbEI"/></p>
+<p><a class="aname" id="lbEJ" name="lbEJ"/></p>
 <h3>AUTHOR</h3>
 <p>You can contact authors on &lt;<a href="mailto:gammu-users@lists.sourceforge.net">gammu-users@lists.sourceforge.net</a>&gt;.</p>
 <p><i>Michal Cihar</i> &lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt; is current
@@ -2473,7 +2481,7 @@ and <i>Manfred Jonsson</i> (see CREDITS from Gnokii for all their
 contributor).</p>
 <p>Many other people have helped with various features, check
 ChangeLog for more details.</p>
-<p><a class="aname" id="lbEJ" name="lbEJ"/></p>
+<p><a class="aname" id="lbEK" name="lbEK"/></p>
 <h3>SEE ALSO</h3>
 <p><a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu-smsd-inject.1/">gammu-smsd-inject</a>(1), <a href="../gammurc.5/">gammurc</a>(5), <a href="../jadmaker.1/">jadmaker</a>(1)</p>
 <p>Some more hints can be found in README file or on wiki
@@ -2597,23 +2605,24 @@ ChangeLog for more details.</p>
 <dt><a href="#lbDZ">166</a></dt>
 <dt><a href="#lbEA">167</a></dt>
 <dt><a href="#lbEB">168</a></dt>
+<dt><a href="#lbEC">169</a></dt>
 </dl>
 </dd>
-<dt><a href="#lbEC">EXAMPLE</a></dt>
+<dt><a href="#lbED">EXAMPLE</a></dt>
 <dd>
 <dl>
-<dt><a href="#lbED">Configuration</a></dt>
-<dt><a href="#lbEE">Sending messages</a></dt>
-<dt><a href="#lbEF">Backups</a></dt>
+<dt><a href="#lbEE">Configuration</a></dt>
+<dt><a href="#lbEF">Sending messages</a></dt>
+<dt><a href="#lbEG">Backups</a></dt>
 </dl>
 </dd>
-<dt><a href="#lbEG">COPYRIGHT</a></dt>
-<dt><a href="#lbEH">REPORTING BUGS</a></dt>
-<dt><a href="#lbEI">AUTHOR</a></dt>
-<dt><a href="#lbEJ">SEE ALSO</a></dt>
+<dt><a href="#lbEH">COPYRIGHT</a></dt>
+<dt><a href="#lbEI">REPORTING BUGS</a></dt>
+<dt><a href="#lbEJ">AUTHOR</a></dt>
+<dt><a href="#lbEK">SEE ALSO</a></dt>
 </dl>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 14:57:10 GMT, March 16, 2010
+Time: 11:45:27 GMT, June 01, 2010
 </div>

@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU</h2>
 Section: Dokumentace Gammu (1)<br/>
-Updated: 17. únor 2010<br/>
+Updated: 12. Květen 2010<br/>
 <a href="#index">Index</a> 
 <hr/>
 <p><a class="aname" id="lbAB" name="lbAB"/></p>
@@ -127,39 +127,43 @@ telefonu</p>
 <dt><b>Úvod do formátů SMS</b></dt>
 <dd>
 <p>Gammu podporuje mnoho formátů SMS včetně:</p>
-<p><br/>
-*NokiaSmartMessaging(usedformonochromaticpictureimages,downloadableprofiles,monochromaticoperatorlogos,monochromaticcallerlogosandmonophonicringtones)<br/>
-
-*LinkedSMS(bothwith8and16-bitidentificationnumbersinheaders)<br/>
-
-*EMS(thisisSMSformatusedforsavingmonochromaticimages,monophonicringtones,animations,textformattingandothers)<br/>
-
-*MMSnotifications<br/>
-*Alcatellogomessages</p>
+<p><b>Nokia Smart Messaging</b> (lze použít pro černobílé obrázky,
+profily, loga operátora, černobílá loga volajících a monofonní
+vyzvánění)</p>
+<p><b>Spojené SMS</b> (s 8 a 16 bitovými identifikátory v
+hlavičce)</p>
+<p><b>EMS</b> (formát SMS pro černobílé obrázky, monofonní
+vyzvánění, animace, formátování textu a další)</p>
+<p><b>MMS notifikace</b></p>
+<p><b>Zprávy s logem pro Alcatel</b></p>
 <p>You need to ensure that the target phone supports message type
 you want to send. Otherwise the phone will not be able to display
 it or will even crash, because firmware of phone did not expect
 this possibility.</p>
 </dd>
-<dt><b>Encoding chars in SMS text</b></dt>
+<dt><b>Kódování znaků v textu SMS</b></dt>
 <dd>
-<p>Text in SMS can be coded using two ways:</p>
-<p>* with GSM Default Alphabet - in single SMS you can have
+<p>Text v SMS zprávě může být zakódován dvěmi způsoby:</p>
+<p>with <b>GSM Default Alphabet</b> - in single SMS you can have
 maximally 160 chars (Gammu doesn't support compressing such texts
 according to GSM standards, but it isn't big limit, because there
-are no phones supporting them), but they're from limited set:<br/>
-*allLatinsmallandlarge<br/>
-
-*alldigits<br/>
-*someGreek<br/>
-*someothernational<br/>
-*somesymbolslike@Â!&quot;#&amp;/()Â%*+=-,.Â:Â;&lt;&gt;Â?<br/>
-
-*fewothers</p>
-<p>* with Unicode - in single SMS you can save at most 70 chars,
-but these can be any chars including all national and special ones.
-Please note, that some older phones might have problems displaying
-such message.</p>
+are no phones supporting them), but they're from limited set:</p>
+<p><br/>
+*všechnypísmenalatinky,maláivelká</p>
+<p><br/>
+*všechnačísla</p>
+<p><br/>
+*některářeckápísmena</p>
+<p><br/>
+*některédalšínárodníznaky</p>
+<p><br/>
+*somesymbolslike@Â!&quot;#&amp;/()Â%*+=-,.Â:Â;&lt;&gt;Â?</p>
+<p><br/>
+*párdalších</p>
+<p>with <b>Unicode</b> - in single SMS you can save at most 70
+chars, but these can be any chars including all national and
+special ones. Please note, that some older phones might have
+problems displaying such message.</p>
 <p>Gammu tries to do the best to handle non ASCII characters in
 your message. Everything is internally handled in Unicode (the
 input is converted depending on your locales configuration) and in
@@ -225,8 +229,7 @@ příkazem <b>getsmsfolders</b>.</p>
 <dt><b>getsmsfolders</b></dt>
 <dd>Načte s telefonu názvy složek se zprávami.</dd>
 <dt><b>nokiagett9</b></dt>
-<dd>This option should display T9 dictionary content from DCT4
-phones.</dd>
+<dd>Tato volba zobrazí T9 slovík z telefonů DCT4.</dd>
 <dt><b>restoresms</b> <i>file [-yes]</i></dt>
 <dd>Obnoví SMS zprávy ze souboru (z formátu který používá příkaz
 backupsms) do zvolené složky v telefonu. Pokud to telefon
@@ -308,8 +311,8 @@ UPI (například Sony-Ericsson) načtou takové vyzvánění jako
 jedno.</p>
 <p><b>-toneSE</b> - přidá vyzvánění ve formátu iMelody v &quot;krátké&quot;
 formě jak je podporováno telefony Sony-Ericssonn.</p>
-<p><b>-toneSElong</b> - add SonyEricsson IMelody saved in one or
-few SMS with UPI</p>
+<p><b>-toneSElong</b> - přidá melodii SonyEricsson IMelody uloženou
+v jedné nebo více SMS s UPI</p>
 <p><b>-variablebitmap</b> - obrázek libovolné velikosti uložený v
 jedné SMS</p>
 <p><b>-variablebitmaplong</b> - obrázek o maximální velikosti
@@ -322,17 +325,18 @@ nebude možné přeposlat)</p>
 <p><b>-16bit</b> - Gammu uses SMS headers with 16-bit numbers for
 saving linking info in SMS (it means less chars available for user
 in each SMS)</p>
-<p><b>-format</b> lcrasbiut - last text will be formatted. You can
-use combinations of chars:<br/>
-l-leftaligned<br/>
-c-centered<br/>
-r-rightaligned<br/>
-a-largefont<br/>
-s-smallfont<br/>
-b-boldfont<br/>
-i-italicfont<br/>
-u-underlinedfont<br/>
-t-strikethroughfont</p>
+<p><b>-format</b> lcrasbiut - poslední část textu bude
+naformátována. Můžete použít následující znaky:<br/>
+l-zarovnanévlevo<br/>
+c-zarovnanénastřed<br/>
+
+r-zarovnanévpravo<br/>
+a-velképísmo<br/>
+s-malépísmo<br/>
+b-tučné<br/>
+i-kurzíva<br/>
+u-podtržení<br/>
+t-přeškrtnutí</p>
 <p><i>Příklad:</i> gammu savesms EMS -text &quot;Pozdrav&quot; -defsound 1
 -text &quot;od Gammu&quot; -tone10 axelf.txt -animation 2 file1.bmp
 file2.bmp</p>
@@ -887,20 +891,21 @@ GALLERY|GALLERY2|CAMERA|TONES|TONES2|RECORDS|VIDEO|PLAYLIST|MEMORYCARD</b>
 [-newtime]</i></dt>
 <dt><b>nokiaaddplaylists</b></dt>
 <dd>
-<p>Goes through phone memory and generated playlist for all music
-files found.</p>
-<p>To manually manage playlists:</p>
+<p>Projde paměť telefonu a vytvoří seznam skladeb se všemi
+nalezenými hudebními soubory.</p>
+<p>Pro ruční zprávu seznamů skladeb:</p>
 <p><br/>
-gammuaddfilea:\predefplaylistfilename.m3u</p>
-<p>Will add playlist filename.m3u</p>
+gammuaddfilea:\predefplaylistjméno.m3u</p>
+<p>Přidá seznam skladeb jméno.m3u</p>
 <p><br/>
 gammugetfilesystem</p>
-<p>Will get list of all files (including names of files with
-playlists)</p>
+<p>Získá seznam všech souborů (včetně souborů se seznamy
+skladeb)</p>
 <p><br/>
-gammudeletefilesa:\predefplaylist\filename.m3u</p>
-<p>Will delete playlist filename.m3u</p>
-<p>Format of m3u playlist is easy (standard mp3 playlist):</p>
+gammudeletefilesa:\predefplaylist\jméno.m3u</p>
+<p>Odstraní seznam skladeb jméno.m3u</p>
+<p>Fomát seznamů skladeb m3u je jednoduchý (standardní seznam
+skladeb pro mp3):</p>
 <p>First line is #EXTM3U, next lines contain names of files
 (b:\file1.mp3, b:\folder1\file2.mp3, etc.). File needs t have
 '\r\n' terminated lines. So just run unix2dos on the resulting file
@@ -1540,20 +1545,21 @@ GALLERY|GALLERY2|CAMERA|TONES|TONES2|RECORDS|VIDEO|PLAYLIST|MEMORYCARD</b>
 [-newtime]</i></dt>
 <dt><b>nokiaaddplaylists</b></dt>
 <dd>
-<p>Goes through phone memory and generated playlist for all music
-files found.</p>
-<p>To manually manage playlists:</p>
+<p>Projde paměť telefonu a vytvoří seznam skladeb se všemi
+nalezenými hudebními soubory.</p>
+<p>Pro ruční zprávu seznamů skladeb:</p>
 <p><br/>
-gammuaddfilea:\predefplaylistfilename.m3u</p>
-<p>Will add playlist filename.m3u</p>
+gammuaddfilea:\predefplaylistjméno.m3u</p>
+<p>Přidá seznam skladeb jméno.m3u</p>
 <p><br/>
 gammugetfilesystem</p>
-<p>Will get list of all files (including names of files with
-playlists)</p>
+<p>Získá seznam všech souborů (včetně souborů se seznamy
+skladeb)</p>
 <p><br/>
-gammudeletefilesa:\predefplaylist\filename.m3u</p>
-<p>Will delete playlist filename.m3u</p>
-<p>Format of m3u playlist is easy (standard mp3 playlist):</p>
+gammudeletefilesa:\predefplaylist\jméno.m3u</p>
+<p>Odstraní seznam skladeb jméno.m3u</p>
+<p>Fomát seznamů skladeb m3u je jednoduchý (standardní seznam
+skladeb pro mp3):</p>
 <p>First line is #EXTM3U, next lines contain names of files
 (b:\file1.mp3, b:\folder1\file2.mp3, etc.). File needs t have
 '\r\n' terminated lines. So just run unix2dos on the resulting file
@@ -1572,8 +1578,7 @@ operátora a tento příkaz vám umožní tuto změnu provést.</dd>
 <dt><b>nokiagetpbkfeatures</b> <i>memorytype</i></dt>
 <dt><b>nokiagetscreendump</b></dt>
 <dt><b>nokiagett9</b></dt>
-<dd>This option should display T9 dictionary content from DCT4
-phones.</dd>
+<dd>Tato volba zobrazí T9 slovík z telefonů DCT4.</dd>
 <dt><b>nokiagetvoicerecord</b> <i>location</i></dt>
 <dd>
 <p>Získá ze zadané pozice v telefonu zvukovou nahrávku a uloží ji
@@ -2225,8 +2230,8 @@ Je potřeba více paměti... <a class="aname" id="lbCP" name="lbCP"/>
 <h4>130</h4>
 Operace nebyla povolena telefonem. <a class="aname" id="lbCQ" name="lbCQ"/>
 <h4>131</h4>
-Prázdné číslo SMSC. Nastavte ho v telefonu nebo použijte
--smscnumber. <a class="aname" id="lbCR" name="lbCR"/>
+Nebylo zadáno číslo SMSC. Prosím zadejte ho ručně nebo použijte
+číslo zadané v telefonu. <a class="aname" id="lbCR" name="lbCR"/>
 <h4>132</h4>
 Jste v menu telefonu (upravujete záznam?). Opusťte ho a zkuste
 znovu. <a class="aname" id="lbCS" name="lbCS"/>
@@ -2307,14 +2312,16 @@ po chvíli znovu. <a class="aname" id="lbEA" name="lbEA"/>
 <h4>167</h4>
 Nepodařilo se připojit k serveru. <a class="aname" id="lbEB" name="lbEB"/>
 <h4>168</h4>
-Nepodařilo se přeložit jméno počítače.
-<p><a class="aname" id="lbEC" name="lbEC"/></p>
-<h3>PŘÍKLAD</h3>
+Nepodařilo se přeložit jméno počítače. <a class="aname" id="lbEC" name="lbEC"/>
+<h4>169</h4>
+Nepodařilo se z telefonu načíst číslo SMS centra.
 <p><a class="aname" id="lbED" name="lbED"/></p>
+<h3>PŘÍKLAD</h3>
+<p><a class="aname" id="lbEE" name="lbEE"/></p>
 <h4>Nastavení</h4>
 <p>Pro vyzkoušení potřebujete vytvořit konfigurační soubor pro
 gammu, který je podrobně popsán v <a href="../gammurc.5/">gammurc</a>(5).</p>
-<p><a class="aname" id="lbEE" name="lbEE"/></p>
+<p><a class="aname" id="lbEF" name="lbEF"/></p>
 <h4>Posílání zpráv</h4>
 <dl compact="compact">
 <dt>Uložení standardní textové zprávy s maximální délkou 160
@@ -2385,7 +2392,7 @@ gammu savesms EMS -protected 2 -variablebitmaplong ala.bmp
 </dl>
 </dd>
 </dl>
-<p><a class="aname" id="lbEF" name="lbEF"/></p>
+<p><a class="aname" id="lbEG" name="lbEG"/></p>
 <h4>Zálohy</h4>
 <p>If you will backup settings to Gammu text file, it will be
 possible to edit it. It's easy: many things in this file will be
@@ -2424,7 +2431,7 @@ na +3620</dt>
 &quot;\+36\2\3&quot;\n</p>
 </dd>
 </dl>
-<a class="aname" id="lbEG" name="lbEG"/>
+<a class="aname" id="lbEH" name="lbEH"/>
 <h3>COPYRIGHT</h3>
 <p>Copyright © 2003 - 2010 Marcin Wiacek, Michal Čihař a další
 autoři. Licence GPLv2: GNU GPL verze 2 &lt;<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</a>&gt;<br/>
@@ -2432,7 +2439,7 @@ autoři. Licence GPLv2: GNU GPL verze 2 &lt;<a href="http://www.gnu.org/licenses
 Tento program je svobodný software; můžete jej šířit a modifikovat.
 Není poskytována ŽÁDNÁ ZÁRUKA, v rozsahu jaký je povolen
 zákonem.</p>
-<p><a class="aname" id="lbEH" name="lbEH"/></p>
+<p><a class="aname" id="lbEI" name="lbEI"/></p>
 <h3>HLÁŠENÍ CHYB</h3>
 <p>V programu je určitě mnoho chyb a jejich hlášení autorům je
 vítáno. Prosím nezapomeňte na užitečné informace v hlášení o chybě
@@ -2457,7 +2464,7 @@ telefon.</p>
 <p>Na stránce &lt;<a href="http://wammu.eu/support/bugs/">http://wammu.eu/support/bugs/</a>&gt;
 naleznete více informací o hlášení chyb.</p>
 <p>Prosím hlašte chyby na &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com</a>&gt;.</p>
-<p><a class="aname" id="lbEI" name="lbEI"/></p>
+<p><a class="aname" id="lbEJ" name="lbEJ"/></p>
 <h3>AUTOR</h3>
 <p>Autory můžete kontaktovat na &lt;<a href="mailto:gammu-users@lists.sourceforge.net">gammu-users@lists.sourceforge.net</a>&gt;.</p>
 <p><i>Michal Čihař</i> &lt;<a href="mailto:michal@cihar.com">michal@cihar.com</a>&gt; je v současné
@@ -2471,7 +2478,7 @@ Kotovi</i> a <i>Manfredu Jonssonovi</i> (v souboru CREDITS v Gnokii
 najdete kompletní seznam přispěvatelů).</p>
 <p>Mnoho dalších lidí pomohlo s různými funkcemi, podívejte se do
 ChangeLogu pro více podrobností.</p>
-<p><a class="aname" id="lbEJ" name="lbEJ"/></p>
+<p><a class="aname" id="lbEK" name="lbEK"/></p>
 <h3>DALŠÍ INFORMACE</h3>
 <p><a href="../gammu-smsd.1/">gammu-smsd</a>(1), <a href="../gammu-smsd-inject.1/">gammu-smsd-inject</a>(1), <a href="../gammurc.5/">gammurc</a>(5), <a href="../jadmaker.1/">jadmaker</a>(1)</p>
 <p>Nějaké další triky naleznete v souboru README nebo na wiki
@@ -2595,23 +2602,24 @@ stránce &lt;<a href="http://www.gammu.org/">http://www.gammu.org/</a>&gt;.</p>
 <dt><a href="#lbDZ">166</a></dt>
 <dt><a href="#lbEA">167</a></dt>
 <dt><a href="#lbEB">168</a></dt>
+<dt><a href="#lbEC">169</a></dt>
 </dl>
 </dd>
-<dt><a href="#lbEC">PŘÍKLAD</a></dt>
+<dt><a href="#lbED">PŘÍKLAD</a></dt>
 <dd>
 <dl>
-<dt><a href="#lbED">Nastavení</a></dt>
-<dt><a href="#lbEE">Posílání zpráv</a></dt>
-<dt><a href="#lbEF">Zálohy</a></dt>
+<dt><a href="#lbEE">Nastavení</a></dt>
+<dt><a href="#lbEF">Posílání zpráv</a></dt>
+<dt><a href="#lbEG">Zálohy</a></dt>
 </dl>
 </dd>
-<dt><a href="#lbEG">COPYRIGHT</a></dt>
-<dt><a href="#lbEH">HLÁŠENÍ CHYB</a></dt>
-<dt><a href="#lbEI">AUTOR</a></dt>
-<dt><a href="#lbEJ">DALŠÍ INFORMACE</a></dt>
+<dt><a href="#lbEH">COPYRIGHT</a></dt>
+<dt><a href="#lbEI">HLÁŠENÍ CHYB</a></dt>
+<dt><a href="#lbEJ">AUTOR</a></dt>
+<dt><a href="#lbEK">DALŠÍ INFORMACE</a></dt>
 </dl>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 14:57:11 GMT, March 16, 2010
+Time: 11:45:26 GMT, June 01, 2010
 </div>
