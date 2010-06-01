@@ -11,6 +11,9 @@ import os
 langnames = {
     'cs': ugettext_lazy('Czech'),
     'en': ugettext_lazy('English'),
+    'de': ugettext_lazy('German'),
+    'it': ugettext_lazy('Italian'),
+    'nl': ugettext_lazy('Dutch'),
 }
 
 def langcmp(a, b):
