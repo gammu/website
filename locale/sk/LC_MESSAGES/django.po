@@ -2,20 +2,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-26 11:40+0200\n"
-"PO-Revision-Date: 2010-05-29 16:15+0200\n"
+"PO-Revision-Date: 2010-06-02 13:09+0200\n"
 "Last-Translator: Pavol <scroolik@gmail.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.4.0\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Pootle 2.0.1\n"
 
 #: donate/forms.py:14
 msgid "Amount (EUR)"
@@ -668,6 +668,14 @@ msgid ""
 "to\n"
 "get an idea who we are currently looking for.\n"
 msgstr ""
+"\n"
+"Mnoho ľudí prispieva do Gammu, najdôležitejších prispievateľov si môžete "
+"pozrieť na <a\n"
+"href=\"/authors/\">samostatnej stránke</a>. Keď sa chcete pridať k nám, "
+"pozrite si náš\n"
+"zoznam <a href=\"/contribute/wanted/\"><strong>hľadaných "
+"schopností</strong></a>, aby\n"
+"ste mali predstav, kto nám v súčastnosti chýba.\n"
 
 #: html/index.html:41
 msgid "Gammu family"
