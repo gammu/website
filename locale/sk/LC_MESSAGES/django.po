@@ -869,7 +869,7 @@ msgid ""
 "owners, where appropriate.\n"
 msgstr ""
 "\n"
-"Všetky produkty uvedené na týchto stránkach sú o ochrannými známkami ich "
+"Všetky produkty uvedené na týchto stránkach sú ochrannými známkami ich "
 "vlastníkov.\n"
 
 #: html/python-gammu.html:4 html/python-gammu.html.py:20
