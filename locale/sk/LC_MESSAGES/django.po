@@ -909,7 +909,7 @@ msgstr ""
 
 #: html/python-gammu.html:42
 msgid "Example"
-msgstr ""
+msgstr "Príklad"
 
 #: html/python-gammu.html:45
 msgid ""
