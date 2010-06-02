@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-02 15:52+0200\n"
+"POT-Creation-Date: 2010-06-02 15:57+0200\n"
 "PO-Revision-Date: 2010-05-31 14:14+0200\n"
 "Last-Translator:  <torsten.funck@googlemail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3847,6 +3847,10 @@ msgstr ""
 
 #: manpages/views.py:16
 msgid "Dutch"
+msgstr ""
+
+#: manpages/views.py:17
+msgid "Slovak"
 msgstr ""
 
 #: news/feeds.py:11

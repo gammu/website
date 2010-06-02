@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-02 15:52+0200\n"
+"POT-Creation-Date: 2010-06-02 15:57+0200\n"
 "PO-Revision-Date: 2010-06-02 13:22+0200\n"
 "Last-Translator: Pavol <scroolik@gmail.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
@@ -2989,6 +2989,10 @@ msgstr ""
 
 #: manpages/views.py:16
 msgid "Dutch"
+msgstr ""
+
+#: manpages/views.py:17
+msgid "Slovak"
 msgstr ""
 
 #: news/feeds.py:11
