@@ -14,6 +14,7 @@ langnames = {
     'de': ugettext_lazy('German'),
     'it': ugettext_lazy('Italian'),
     'nl': ugettext_lazy('Dutch'),
+    'sk': ugettext_lazy('Slovak'),
 }
 
 def langcmp(a, b):
