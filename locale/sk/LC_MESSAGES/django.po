@@ -874,7 +874,7 @@ msgstr ""
 
 #: html/python-gammu.html:4 html/python-gammu.html.py:20
 msgid "Python bindings for Gammu"
-msgstr ""
+msgstr "Python rozhranie ku Gammu"
 
 #: html/python-gammu.html:23
 msgid ""
