@@ -848,7 +848,7 @@ msgstr ""
 
 #: html/license.html:80
 msgid "Website Content"
-msgstr ""
+msgstr "Obsah stránok"
 
 #: html/license.html:83
 msgid ""
