@@ -3851,7 +3851,7 @@ msgstr "Holländisch"
 
 #: manpages/views.py:17
 msgid "Slovak"
-msgstr ""
+msgstr "Slowakisch"
 
 #: news/feeds.py:11
 msgid "Updates about Wammu and Gammu programs."
