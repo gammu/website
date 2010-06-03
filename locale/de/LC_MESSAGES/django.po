@@ -3843,7 +3843,7 @@ msgstr "Deutsch"
 
 #: manpages/views.py:15
 msgid "Italian"
-msgstr ""
+msgstr "Italienisch"
 
 #: manpages/views.py:16
 msgid "Dutch"
