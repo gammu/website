@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-06-02 15:57+0200\n"
-"PO-Revision-Date: 2010-06-03 20:41+0200\n"
+"PO-Revision-Date: 2010-06-03 20:43+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2958,7 +2958,7 @@ msgstr "Anmerkung des Meldenden"
 #: html/phonedb/new.html:4 html/phonedb/phone.html:4
 #: html/phonedb/search.html:4 html/phonedb/vendor.html:4
 msgid "Gammu Phone Database "
-msgstr "Gammu Telefondatenbank "
+msgstr "Gammu Telefondatenbank"
 
 #: html/phonedb/index.html:10 html/phonedb/index.html.py:23
 #: html/phonedb/new.html:48 html/phonedb/search.html:21
