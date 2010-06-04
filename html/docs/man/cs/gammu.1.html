@@ -136,18 +136,17 @@ hlavičce)</p>
 vyzvánění, animace, formátování textu a další)</p>
 <p><b>MMS notifikace</b></p>
 <p><b>Zprávy s logem pro Alcatel</b></p>
-<p>You need to ensure that the target phone supports message type
-you want to send. Otherwise the phone will not be able to display
-it or will even crash, because firmware of phone did not expect
-this possibility.</p>
+<p>Je potřeba si předem zjistit, jestli telefon, kam zprávu
+posíláme, je schopen ji zobrazit. Některé telefony obsahují chyby,
+že při přijetí takovéto zprávy můžou havarovat.</p>
 </dd>
 <dt><b>Kódování znaků v textu SMS</b></dt>
 <dd>
 <p>Text v SMS zprávě může být zakódován dvěmi způsoby:</p>
-<p>with <b>GSM Default Alphabet</b> - in single SMS you can have
-maximally 160 chars (Gammu doesn't support compressing such texts
-according to GSM standards, but it isn't big limit, because there
-are no phones supporting them), but they're from limited set:</p>
+<p>při použití <b>GSM Default Alphabet</b> - v jedné zprávě může
+být až 160 znaků (Gammu nepodporuje kompresi podle GSM standardů,
+protože ji nepodporuje ani většina telefonů), ale znaky jsou
+omezeny na:</p>
 <p><br/>
 *všechnypísmenalatinky,maláivelká</p>
 <p><br/>
@@ -160,10 +159,9 @@ are no phones supporting them), but they're from limited set:</p>
 *somesymbolslike@Â!&quot;#&amp;/()Â%*+=-,.Â:Â;&lt;&gt;Â?</p>
 <p><br/>
 *párdalších</p>
-<p>with <b>Unicode</b> - in single SMS you can save at most 70
-chars, but these can be any chars including all national and
-special ones. Please note, that some older phones might have
-problems displaying such message.</p>
+<p>při použití <b>Unicode</b> - v jedné zprávě může být nejvýše 70
+znaků, ale může se jednat o libovolné Unicode znaky. Některé starší
+telefony můžou mít problém se zobraznením takovéto zprávy.</p>
 <p>Gammu tries to do the best to handle non ASCII characters in
 your message. Everything is internally handled in Unicode (the
 input is converted depending on your locales configuration) and in
@@ -925,8 +923,8 @@ importovat).</dd>
 monochromatic logos and images available in older phones.
 Recognized file formats: xpm (only saving), 2-colors bmp, nlm, nsl,
 ngg, nol, wbmp, gif (for Samsung).</p>
-<p>In new models all bitmaps are saved in filesystem and should go
-into filesystem section</p>
+<p>V současných telefonech jsou obrázky ukládány jakou soubory a je
+potřeba k nim i tak přistupovat.</p>
 <dl compact="compact">
 <dt><b>copybitmap</b> <i>inputfile [outputfile
 [OPERATOR|PICTURE|STARTUP|CALLER]]</i></dt>
@@ -1353,8 +1351,8 @@ parametry pro sendsms a savesms</b>.</p>
 <dl compact="compact">
 <dt><b>getallnotes</b></dt>
 <dd>Zobrazí všechny poznámky z telefonu.
-<p>Note: Not all phones supports this function, especially most
-Sony Ericsson phones even if they have notes inside phone.</p>
+<p>Poznámka: Ne všechny telefony toto podporují, i když funkci
+poznámek obsahují (například Sony-Ericsson).</p>
 </dd>
 </dl>
 <a class="aname" id="lbAP" name="lbAP"/>
@@ -1587,15 +1585,14 @@ jméno je stejné jako je v telefonu.</p>
 <p>Created WAV files require GSM 6.10 codec to be played. In Win XP
 it's included by Microsoft. If you deleted it by accident in this
 operating system, make such steps:</p>
-<p>1. Control Panel<br/>
-2. Add hardware<br/>
-3. click Next<br/>
-4. select &quot;Yes. I have already connected the hardware&quot;<br/>
-5. select &quot;Add a new hardware device&quot;<br/>
-6. select &quot;Install the hardware that I manually select from a
-list&quot;<br/>
-7. select &quot;Sound, video and game controllers&quot;<br/>
-8. select &quot;Audio codecs&quot;<br/>
+<p>1. Ovládací panel<br/>
+2. Přidat hardware<br/>
+3. klikněte na Další<br/>
+4. zvolte &quot;Ano, hardware už je připojený&quot;<br/>
+5. zvolte &quot;Přidat nové zařízení&quot;<br/>
+6. zvolte &quot;Instalovat ovladač který zvolím ze seznamu&quot;<br/>
+7. zvolte &quot;Ovladače zvuku, videa a her&quot;<br/>
+8. zvolte &quot;Kodeky zvuku&quot;<br/>
 9. select &quot;windows\system32&quot; directory and file
 &quot;mmdriver.inf&quot;<br/>
 10. if You will be asked for file msgsm32.acm, it should unpacked
@@ -2049,15 +2046,14 @@ jméno je stejné jako je v telefonu.</p>
 <p>Created WAV files require GSM 6.10 codec to be played. In Win XP
 it's included by Microsoft. If you deleted it by accident in this
 operating system, make such steps:</p>
-<p>1. Control Panel<br/>
-2. Add hardware<br/>
-3. click Next<br/>
-4. select &quot;Yes. I have already connected the hardware&quot;<br/>
-5. select &quot;Add a new hardware device&quot;<br/>
-6. select &quot;Install the hardware that I manually select from a
-list&quot;<br/>
-7. select &quot;Sound, video and game controllers&quot;<br/>
-8. select &quot;Audio codecs&quot;<br/>
+<p>1. Ovládací panel<br/>
+2. Přidat hardware<br/>
+3. klikněte na Další<br/>
+4. zvolte &quot;Ano, hardware už je připojený&quot;<br/>
+5. zvolte &quot;Přidat nové zařízení&quot;<br/>
+6. zvolte &quot;Instalovat ovladač který zvolím ze seznamu&quot;<br/>
+7. zvolte &quot;Ovladače zvuku, videa a her&quot;<br/>
+8. zvolte &quot;Kodeky zvuku&quot;<br/>
 9. select &quot;windows\system32&quot; directory and file
 &quot;mmdriver.inf&quot;<br/>
 10. if You will be asked for file msgsm32.acm, it should unpacked
@@ -2621,5 +2617,5 @@ stránce &lt;<a href="http://www.gammu.org/">http://www.gammu.org/</a>&gt;.</p>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 10:04:33 GMT, June 03, 2010
+Time: 13:48:49 GMT, June 04, 2010
 </div>
