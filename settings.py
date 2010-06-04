@@ -118,9 +118,9 @@ INSTALLED_APPS = (
     'phonedb',
 )
 
-import gobject
-import gnomekeyring
-gobject.set_application_name('Wammu-web')
+#import gobject
+#import gnomekeyring
+#gobject.set_application_name('Wammu-web')
 IDENTICA_USER = 'gammu'
 IDENTICA_PASSWORD = ''
 #IDENTICA_PASSWORD = gnomekeyring.find_network_password_sync(
