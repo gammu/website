@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-02 15:57+0200\n"
+"POT-Creation-Date: 2010-06-22 13:58+0200\n"
 "PO-Revision-Date: 2010-06-04 20:40+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,20 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.1\n"
-
-#: donate/forms.py:14
-msgid "Amount (EUR)"
-msgstr "Betrag (EUR)"
-
-#: donate/forms.py:16
-msgid "Message from you"
-msgstr "Ihre Nachricht"
-
-# Was sollen die Zeichen mitten im Wort??? anmerkung: vermutlich konvertierungsfehler 
-#: donate/forms.py:27 donate/forms.py:38 html/base.html:126
-#: html/base.html.py:136 html/contribute/sidebar.html:4
-msgid "Donate"
-msgstr "Spende"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -158,147 +144,154 @@ msgstr ""
 "dort Entwickelnden und Beitragenden danken, besonders: Pavel Janik, Pawel "
 "Kot und Manfred Jonsson.\n"
 
-#: html/base.html:50
+#: html/base.html:53
 msgid "Page translations"
 msgstr "Seitenübersetzung"
 
-#: html/base.html:55
+#: html/base.html:58
 msgid "Translate!"
 msgstr "Übersetze!"
 
-#: html/base.html:59 html/base.html.py:106 html/downloads/program.html:7
+#: html/base.html:62 html/base.html.py:109 html/downloads/program.html:7
 #: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
 msgid "Downloads"
 msgstr "Herunterladen"
 
-#: html/base.html:67 html/donate.html:49
+#: html/base.html:70 html/donate.html:49
 msgid "Advertisement"
 msgstr "Werbung"
 
-#: html/base.html:86 html/index.html:19
+#: html/base.html:89 html/index.html:19
 msgid "About"
 msgstr "Über"
 
-#: html/base.html:88 html/gammu.html:4 html/gammu.html.py:19
+#: html/base.html:91 html/gammu.html:4 html/gammu.html.py:19
 #: html/contribute/translate.html:59
 msgid "Gammu"
 msgstr "Gammu"
 
-#: html/base.html:89 html/wammu.html:4 html/wammu.html.py:22
+#: html/base.html:92 html/wammu.html:4 html/wammu.html.py:22
 #: html/contribute/translate.html:58
 msgid "Wammu"
 msgstr "Wammu"
 
-#: html/base.html:90
+#: html/base.html:93
 msgid "python-gammu"
 msgstr "python-gammu"
 
-#: html/base.html:91 html/docs/faq.html:42
+#: html/base.html:94 html/docs/faq.html:42
 msgid "SMSD"
 msgstr "SMSD"
 
-#: html/base.html:95 wammu/helpers.py:18
+#: html/base.html:98 wammu/context_processors.py:31
 msgid "Support"
 msgstr "Unterstützung"
 
-#: html/base.html:97
+#: html/base.html:100
 msgid "Mailing lists"
 msgstr "Mailing Listen"
 
-#: html/base.html:98
+#: html/base.html:101
 msgid "Online"
 msgstr "Online"
 
-#: html/base.html:99
+#: html/base.html:102
 msgid "Reporting bugs"
 msgstr "Fehler melden"
 
-#: html/base.html:100
+#: html/base.html:103
 msgid "Commercial support"
 msgstr "Kommerzielle Unterstützung"
 
-#: html/base.html:104
+#: html/base.html:107
 msgid "Media"
 msgstr "Medien"
 
-#: html/base.html:107 html/index.html:9 html/index.html.py:11
-#: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3 wammu/helpers.py:20
+#: html/base.html:110 html/index.html:9 html/index.html.py:11
+#: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
+#: wammu/context_processors.py:33
 msgid "Screenshots"
 msgstr "Bilder"
 
-#: html/base.html:108
+#: html/base.html:111
 msgid "Third party"
 msgstr "Andere Projekte"
 
-#: html/base.html:109 html/index.html:54
+#: html/base.html:112 html/index.html:54
 msgid "News"
 msgstr "Neuigkeiten"
 
-#: html/base.html:113 html/gammu.html:69 html/libgammu.html:54
+#: html/base.html:116 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:67 html/smsd.html:71 html/wammu.html:57
-#: html/docs/sidebar.html:2 html/support/sidebar.html:4 wammu/helpers.py:21
+#: html/docs/sidebar.html:2 html/support/sidebar.html:4
+#: wammu/context_processors.py:34
 msgid "Documentation"
 msgstr "Dokumentation"
 
-#: html/base.html:115 html/docs/sidebar.html:5
+#: html/base.html:118 html/docs/sidebar.html:5
 msgid "FAQ"
 msgstr "Häufig gestellte Fragen (FAQ)"
 
-#: html/base.html:116 html/docs/sidebar.html:7 html/sidebars/common.html:3
-#: phonedb/views.py:99
+#: html/base.html:119 html/docs/sidebar.html:7 html/sidebars/common.html:3
+#: phonedb/views.py:100
 msgid "Supported phones"
 msgstr "Unterstützte Telefonapparate"
 
-#: html/base.html:117 html/docs/sidebar.html:4
+#: html/base.html:120 html/docs/sidebar.html:4
 msgid "Man pages"
 msgstr "Hilfedateien (Manpages)"
 
-#: html/base.html:118 html/docs/sidebar.html:6
+#: html/base.html:121 html/docs/sidebar.html:6
 msgid "For developers"
 msgstr "Für Entwickler"
 
-#: html/base.html:122 wammu/helpers.py:22
+#: html/base.html:125 wammu/context_processors.py:35
 msgid "Contribute"
 msgstr "Beitragen"
 
-#: html/base.html:124 html/contribute/sidebar.html:5
+#: html/base.html:127 html/contribute/sidebar.html:5
 msgid "Translate"
 msgstr "Übersetze"
 
-#: html/base.html:125 html/contribute/sidebar.html:6
+#: html/base.html:128 html/contribute/sidebar.html:6
 msgid "Develop"
 msgstr "Entwickle"
 
-#: html/base.html:127 html/contribute/sidebar.html:8
+# Was sollen die Zeichen mitten im Wort??? anmerkung: vermutlich konvertierungsfehler 
+#: html/base.html:129 html/base.html.py:139 html/contribute/sidebar.html:4
+msgid "Donate"
+msgstr "Spende"
+
+#: html/base.html:130 html/contribute/sidebar.html:8
 msgid "Publicity"
 msgstr "Öffentlichkeitsarbeit"
 
-#: html/base.html:135
+#: html/base.html:138
 msgid "License"
 msgstr "Lizenz"
 
-#: html/base.html:136
+#: html/base.html:139
 msgid "Support Gammu/Wammu by donating money!"
 msgstr "Unterstüze Wammu und Gammu durch Spenden!"
 
-#: html/base.html:137
+#: html/base.html:140
 msgid "Search for Gammu/Wammu related questions"
 msgstr "Suche nach Fragen betreffend Gammu/Wammu"
 
 # msgid "Search:"
-#: html/base.html:137 html/phonedb/index.html:7
+#: html/base.html:140 html/phonedb/index.html:7
 msgid "Search"
 msgstr "Suche"
 
-#: html/base.html:138
+#: html/base.html:141
 msgid "Gammu and Wammu authors"
 msgstr "Gammu und Wammu Entwickler"
 
-#: html/base.html:138
+#: html/base.html:141
 msgid "Authors"
 msgstr "Entwickler"
 
-#: html/base.html:139
+#: html/base.html:142
 msgid ""
 "Valid <a href=\"http://validator.w3.org/check/referer\">HTML</a> and <a href="
 "\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
@@ -610,7 +603,7 @@ msgstr ""
 #: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:32
 #: html/smsd.html:61 html/wammu.html:47 html/downloads/list.html:4
 #: html/downloads/program.html:4 html/downloads/release.html:4
-#: wammu/helpers.py:19
+#: wammu/context_processors.py:32
 msgid "Download"
 msgstr "Download"
 
@@ -685,11 +678,11 @@ msgid ""
 "get an idea who we are currently looking for.\n"
 msgstr ""
 "\n"
-"Viele tragen zu Gammu bei, Hauptentwickler sehen Sie unter: <a "
-"href=\"/authors/\">\"Entwickler\"</a>.\n"
-"Wenn Sie uns unterstützen möchten, schauen Sie gleich auf der Seite <a "
-"href=\"/contribute/wanted/\"><strong>benötigte Fähigeiten</strong></a> nach, "
-"um einen Eindruck zu erhalten, wie Sie uns am besten helfen können.\n"
+"Viele tragen zu Gammu bei, Hauptentwickler sehen Sie unter: <a href=\"/"
+"authors/\">\"Entwickler\"</a>.\n"
+"Wenn Sie uns unterstützen möchten, schauen Sie gleich auf der Seite <a href="
+"\"/contribute/wanted/\"><strong>benötigte Fähigeiten</strong></a> nach, um "
+"einen Eindruck zu erhalten, wie Sie uns am besten helfen können.\n"
 
 #: html/index.html:41
 msgid "Gammu family"
@@ -2239,8 +2232,8 @@ msgstr ""
 "OS basieren.\n"
 "Bezüglich Symbian lesen Sie bitte unter <a href=\"#symbian\">anderes "
 "Kapitel</a> weiter.\n"
-"Erfahrungsberichte anderer Nutzer sehen Sie in der <a href=\"/phones/\">Gammu "
-"Telefondatenbank</a>.\n"
+"Erfahrungsberichte anderer Nutzer sehen Sie in der <a href=\"/phones/"
+"\">Gammu Telefondatenbank</a>.\n"
 
 #: html/docs/faq.html:26
 msgid "Are Symbian phones supported?"
@@ -2961,7 +2954,7 @@ msgid "Gammu Phone Database "
 msgstr "Gammu Telefondatenbank"
 
 #: html/phonedb/index.html:10 html/phonedb/index.html.py:23
-#: html/phonedb/new.html:48 html/phonedb/search.html:21
+#: html/phonedb/new.html:49 html/phonedb/search.html:21
 msgid "Go"
 msgstr "Start"
 
@@ -3119,7 +3112,7 @@ msgstr ""
 "Dies kann notwendig sein, wenn man etwas mit diesem Gerät überprüfen muss, "
 "oder um aufkommende Fragen über Ihre Angaben/Meldung zu klären.\n"
 
-#: html/phonedb/new.html:38
+#: html/phonedb/new.html:39
 msgid "Please enter text 'nospam':"
 msgstr "Bitte den Text \"nospam\" einfügen:"
 
@@ -3864,24 +3857,24 @@ msgstr "Gammu Telefondatenbank"
 msgid "Gammu phone database updates."
 msgstr "Gammu Telefondatenbank Neuigkeiten."
 
-#: phonedb/forms.py:13
+#: phonedb/forms.py:12
 msgid "Search text"
 msgstr "Suchtext"
 
-#: phonedb/forms.py:15 phonedb/forms.py:26
+#: phonedb/forms.py:14 phonedb/forms.py:25
 msgid "Features"
 msgstr "Funktionen"
 
-#: phonedb/forms.py:18
+#: phonedb/forms.py:17
 #, python-format
 msgid "%(description)s [<a href=\"%(url)s\">Link</a>]"
 msgstr "%(description)s [<a href=\"%(url)s\">Link</a>]"
 
-#: phonedb/forms.py:28 phonedb/models.py:81
+#: phonedb/forms.py:27 phonedb/models.py:81
 msgid "Features which are working in Gammu."
 msgstr "Funktionen, die durch Gammu unterstützt werden."
 
-#: phonedb/forms.py:30
+#: phonedb/forms.py:29
 #, python-format
 msgid "%(description)s (%(name)s)"
 msgstr "%(description)s (%(name)s)"
@@ -3988,30 +3981,36 @@ msgstr ""
 msgid "Please choose how will be email handled in next field."
 msgstr "Bitte wählen Sie im nächsten Feld, wie Email unterstützt wird."
 
-#: phonedb/views.py:100
+#: phonedb/views.py:101
 msgid "Valid records"
 msgstr "Gültige Berichte"
 
-#: phonedb/views.py:101
+#: phonedb/views.py:102
 msgid "Total records"
 msgstr "Berichte insgesamt"
 
-#: phonedb/views.py:119
+#: phonedb/views.py:120
 msgid "Gammu Phone Database Feed (RSS)"
 msgstr "Gammu Telefon Datenbank Feed (RSS)"
 
-#: phonedb/views.py:120
+#: phonedb/views.py:121
 msgid "Gammu Phone Database Feed (Atom)"
 msgstr "Gammu Telefon Datenbank Feed (Atom)"
 
-#: phonedb/views.py:434
+#: phonedb/views.py:436
 msgid "Phone record has been created."
 msgstr "Die Eintragung bezüglich diesem Telefon wurde erstellt."
 
-#: wammu/helpers.py:27
+#: wammu/context_processors.py:53
 msgid "Gammu and Wammu News Feed (RSS)"
 msgstr "Gammu und Wammu News Feed (RSS)"
 
-#: wammu/helpers.py:30
+#: wammu/context_processors.py:54
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu und Wammu News Feed (Atom)"
+
+#~ msgid "Amount (EUR)"
+#~ msgstr "Betrag (EUR)"
+
+#~ msgid "Message from you"
+#~ msgstr "Ihre Nachricht"
