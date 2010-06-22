@@ -3,7 +3,7 @@ from django.template import RequestContext
 from news.models import Entry, Category
 from screenshots.models import Screenshot
 from phonedb.models import Phone
-from downloads.models import Download, Release, Mirror, get_current_downloads, get_latest_releases
+from downloads.models import get_current_downloads, get_latest_releases
 from downloads.views import get_mirrors
 
 from django.conf import settings
@@ -94,7 +94,7 @@ def robots(request):
     if Site._meta.installed:
         current_site = Site.objects.get_current()
     else:
-        current_site = RequestSite(self.request)
+        current_site = RequestSite(request)
     return render_to_response('robots.txt', RequestContext(request, {
         'current_site': current_site,
     }), mimetype = 'text/plain')
