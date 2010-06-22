@@ -1,4 +1,5 @@
 from django.shortcuts import render_to_response, get_object_or_404
+from django.views.decorators.csrf import csrf_exempt
 from django.http import Http404
 from django.db.models import Q
 from wammu.helpers import WammuContext
@@ -322,6 +323,7 @@ def phones_csv(request):
 
     return response
 
+@csrf_exempt
 def create_wammu(request):
     '''
     Compatibility interface for Wammu.
