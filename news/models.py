@@ -53,7 +53,7 @@ class Entry(models.Model):
     author = models.ForeignKey(User)
     pub_date = models.DateTimeField(
         u'Date posted',
-        auto_now_add = True
+        default=datetime.datetime.today,
         )
     slug = models.SlugField(
         unique_for_date = 'pub_date',
