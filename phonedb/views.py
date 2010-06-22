@@ -300,7 +300,7 @@ def phones_csv(request):
     if Site._meta.installed:
         current_site = Site.objects.get_current()
     else:
-        current_site = RequestSite(self.request)
+        current_site = RequestSite(request)
     for phone in phones:
         if phone.connection is None:
             conn = ''

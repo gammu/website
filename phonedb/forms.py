@@ -1,5 +1,4 @@
 from django.forms import ModelForm, Form
-from django.db import models
 from django import forms
 
 from phonedb.models import Feature, Phone

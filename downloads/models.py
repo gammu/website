@@ -1,6 +1,6 @@
 from django.db import models
 
-from news.models import Entry, Category
+from news.models import Category
 
 from django.contrib.auth.models import User
 
@@ -148,7 +148,7 @@ class Release(models.Model):
                 self.version.replace('.','-'),
                 )
             category = Category.objects.get(slug = self.program)
-            entry = category.entry_set.create(
+            category.entry_set.create(
                 author = author,
                 excerpt = excerpt,
                 body = process_bug_links(body),

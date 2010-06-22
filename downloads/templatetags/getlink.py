@@ -1,8 +1,5 @@
 from django import template
 
-import datetime
-import sys
-
 register = template.Library()
 
 class GetLink(template.Node):
