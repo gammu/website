@@ -14,7 +14,6 @@ import sys
 sys.path = ['../'] + sys.path
 
 from phonedb.models import Feature
-import csv
 
 if len(sys.argv) < 2:
     print 'Usage: import_phonedb_features.py feature,feature,...'
