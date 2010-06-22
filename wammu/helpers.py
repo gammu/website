@@ -1,7 +1,3 @@
-from django.template import RequestContext
-
-from datetime import datetime, timedelta
-
 from django.utils.translation import ugettext as _
 
 import re
@@ -9,10 +5,6 @@ import re
 BUG_RE = re.compile('(bug ?#([0-9]*))')
 LP_RE = re.compile('(LP ?#([0-9]*))')
 BDO_RE = re.compile('(bdo ?#([0-9]*))')
-
-class RequestContext(RequestContext):
-    def __init__(self, request, context):
-        RequestContext.__init__(self, request, context)
 
 def process_bug_links(text):
     '''
