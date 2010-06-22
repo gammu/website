@@ -2,7 +2,6 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 from news.models import Entry, Category
 from screenshots.models import Screenshot
-from downloads.models import Release
 from phonedb.models import Phone
 from downloads.models import Download, Release, Mirror, get_current_downloads, get_latest_releases
 from downloads.views import get_mirrors
