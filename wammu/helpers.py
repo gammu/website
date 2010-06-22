@@ -1,5 +1,3 @@
-from django.utils.translation import ugettext as _
-
 import re
 
 BUG_RE = re.compile('(bug ?#([0-9]*))')
