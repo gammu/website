@@ -1,5 +1,5 @@
 from django.shortcuts import render_to_response, get_object_or_404
-from wammu.helpers import WammuContext
+from django.template import RequestContext
 from django.utils.translation import ugettext_lazy
 
 from django.conf import settings
@@ -30,7 +30,7 @@ def show_page(request, page, lang = 'en'):
     manpage = 'docs/man/%s/%s.html' % (lang, page)
     if not os.path.exists('%s/%s' % (settings.HTML_ROOT, manpage)):
         raise Http404('No man page matching %s/%s found.' % (lang, page))
-    return render_to_response('docs/show_man.html', WammuContext(request, {
+    return render_to_response('docs/show_man.html', RequestContext(request, {
         'manpage': manpage,
         'lang': lang,
         'page': page,
@@ -52,7 +52,7 @@ def list_lang_mans():
     return [(lang, langnames[lang], list_pages(lang)) for lang in langs]
 
 def show_pages(request):
-    return render_to_response('docs/list_man.html', WammuContext(request, {
+    return render_to_response('docs/list_man.html', RequestContext(request, {
         'manpages': list_lang_mans(),
     }))
 
@@ -60,7 +60,7 @@ def show_pages(request):
 def show_lang_pages(request, lang):
     if not langnames.has_key(lang):
         raise Http404('Language not found!')
-    return render_to_response('docs/list_man.html', WammuContext(request, {
+    return render_to_response('docs/list_man.html', RequestContext(request, {
         'manpages': [('.', langnames[lang], list_pages(lang))],
     }))
 

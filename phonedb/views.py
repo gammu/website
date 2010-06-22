@@ -2,7 +2,7 @@ from django.shortcuts import render_to_response, get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
 from django.http import Http404
 from django.db.models import Q
-from wammu.helpers import WammuContext
+from django.template import RequestContext
 from phonedb.models import Vendor, Phone, Feature, Connection, GARBLE_CHOICES
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from django.core.cache import cache
@@ -125,7 +125,7 @@ def get_feeds():
 def index(request):
     vendors = Vendor.objects.all().order_by('name')
     phones = Phone.objects.filter(state__in = ['approved', 'draft']).order_by('-created')[:settings.PHONES_ON_INDEX]
-    return render_to_response('phonedb/index.html', WammuContext(request, {
+    return render_to_response('phonedb/index.html', RequestContext(request, {
         'vendors': vendors,
         'phones': phones,
         'features': Feature.objects.all().order_by('name'),
@@ -183,7 +183,7 @@ def search(request, featurename = None):
     except (EmptyPage, InvalidPage):
         phones = paginator.page(1)
 
-    return render_to_response('phonedb/search.html', WammuContext(request, {
+    return render_to_response('phonedb/search.html', RequestContext(request, {
         'phones': phones,
         'urlparams': '&'.join(urlparams),
         'feeds': get_feeds(),
@@ -212,7 +212,7 @@ def review(request):
     except (EmptyPage, InvalidPage):
         phones = paginator.page(1)
 
-    return render_to_response('phonedb/search.html', WammuContext(request, {
+    return render_to_response('phonedb/search.html', RequestContext(request, {
         'phones': phones,
         'feeds': get_feeds(),
     }))
@@ -236,7 +236,7 @@ def vendor(request, vendorname):
     except (EmptyPage, InvalidPage):
         phones = paginator.page(1)
 
-    return render_to_response('phonedb/vendor.html', WammuContext(request, {
+    return render_to_response('phonedb/vendor.html', RequestContext(request, {
         'vendor': vendor,
         'phones': phones,
         'feeds': get_feeds(),
@@ -255,7 +255,7 @@ def phone(request, vendorname, id):
     vendor = get_object_or_404(Vendor, slug = vendorname)
     phone = get_object_or_404(Phone, id = id, vendor = vendor)
     related = Phone.objects.filter(vendor = vendor, name__icontains = phone.name).exclude(id = id).exclude(state = 'deleted')
-    return render_to_response('phonedb/phone.html', WammuContext(request, {
+    return render_to_response('phonedb/phone.html', RequestContext(request, {
         'vendor': vendor,
         'phone': phone,
         'related': related,
@@ -467,7 +467,7 @@ def create(request, vendorname = None):
 
         form = NewForm(initial = initial)
 
-    return render_to_response('phonedb/new.html', WammuContext(request, {
+    return render_to_response('phonedb/new.html', RequestContext(request, {
         'form': form,
         'feeds': get_feeds(),
     }))

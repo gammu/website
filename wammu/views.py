@@ -1,5 +1,5 @@
 from django.shortcuts import render_to_response
-from wammu.helpers import WammuContext
+from django.template import RequestContext
 from news.models import Entry, Category
 from screenshots.models import Screenshot
 from downloads.models import Release
@@ -35,7 +35,7 @@ def index(request):
     news = Entry.objects.order_by('-pub_date')[:settings.NEWS_ON_MAIN_PAGE]
     screenshot = Screenshot.objects.filter(featured = True).order_by('?')[0]
     phones = Phone.objects.filter(state__in = ['approved', 'draft']).order_by('-created')[:settings.PHONES_ON_MAIN_PAGE]
-    return render_to_response('index.html', WammuContext(request, {
+    return render_to_response('index.html', RequestContext(request, {
         'news': news,
         'screenshot': screenshot,
         'downloads': downloads,
@@ -45,7 +45,7 @@ def index(request):
 
 def support(request):
     context  = process_version_feedback(request)
-    return render_to_response('support/index.html', WammuContext(request, context))
+    return render_to_response('support/index.html', RequestContext(request, context))
 
 def wammu(request):
     category = Category.objects.get(slug = 'wammu')
@@ -53,12 +53,12 @@ def wammu(request):
     context  = process_version_feedback(request)
     context['news'] = news
     context['news_category'] = category
-    return render_to_response('wammu.html', WammuContext(request, context))
+    return render_to_response('wammu.html', RequestContext(request, context))
 
 def smsd(request):
     category = Category.objects.get(slug = 'gammu')
     news = Entry.objects.filter(categories = category).order_by('-pub_date')[:settings.NEWS_ON_PRODUCT_PAGE]
-    return render_to_response('smsd.html', WammuContext(request, {
+    return render_to_response('smsd.html', RequestContext(request, {
         'news': news,
         'news_category': category,
     }))
@@ -66,7 +66,7 @@ def smsd(request):
 def gammu(request):
     category = Category.objects.get(slug = 'gammu')
     news = Entry.objects.filter(categories = category).order_by('-pub_date')[:settings.NEWS_ON_PRODUCT_PAGE]
-    return render_to_response('gammu.html', WammuContext(request, {
+    return render_to_response('gammu.html', RequestContext(request, {
         'news': news,
         'news_category': category,
     }))
@@ -74,7 +74,7 @@ def gammu(request):
 def pygammu(request):
     category = Category.objects.get(slug = 'gammu')
     news = Entry.objects.filter(categories = category).order_by('-pub_date')[:settings.NEWS_ON_PRODUCT_PAGE]
-    return render_to_response('python-gammu.html', WammuContext(request, {
+    return render_to_response('python-gammu.html', RequestContext(request, {
         'news': news,
         'news_category': category,
     }))
@@ -82,13 +82,13 @@ def pygammu(request):
 def libgammu(request):
     category = Category.objects.get(slug = 'gammu')
     news = Entry.objects.filter(categories = category).order_by('-pub_date')[:settings.NEWS_ON_PRODUCT_PAGE]
-    return render_to_response('libgammu.html', WammuContext(request, {
+    return render_to_response('libgammu.html', RequestContext(request, {
         'news': news,
         'news_category': category,
     }))
 
 def static(request, page):
-    return render_to_response(page, WammuContext(request, {
+    return render_to_response(page, RequestContext(request, {
     }))
 
 def robots(request):
@@ -96,6 +96,6 @@ def robots(request):
         current_site = Site.objects.get_current()
     else:
         current_site = RequestSite(self.request)
-    return render_to_response('robots.txt', WammuContext(request, {
+    return render_to_response('robots.txt', RequestContext(request, {
         'current_site': current_site,
     }), mimetype = 'text/plain')

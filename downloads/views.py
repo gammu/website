@@ -1,5 +1,5 @@
 from django.shortcuts import render_to_response, get_object_or_404
-from wammu.helpers import WammuContext
+from django.template import RequestContext
 from downloads.models import Download, Release, Mirror, get_program, get_latest_releases, get_current_downloads, PLATFORM_CHOICES, PROGRAM_CHOICES
 from django.http import Http404, HttpResponse, HttpResponseRedirect
 from django.utils.datastructures import MultiValueDictKeyError
@@ -57,7 +57,7 @@ def list(request, program, platform):
         if platform == c[0]:
             platform_name = c[1]
 
-    result = render_to_response('downloads/list.html', WammuContext(request, {
+    result = render_to_response('downloads/list.html', RequestContext(request, {
         'stable_release': stable_release,
         'testing_release': testing_release,
         'stable_downloads': stable_downloads,
@@ -82,7 +82,7 @@ def release(request, program,  version):
 
     mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
 
-    result = render_to_response('downloads/release.html', WammuContext(request, {
+    result = render_to_response('downloads/release.html', RequestContext(request, {
         'release': release,
         'downloads': downloads,
         'program': get_program(program),
@@ -104,7 +104,7 @@ def program(request, program):
 
     downloads = get_current_downloads(program, 'source')
 
-    return render_to_response('downloads/program.html', WammuContext(request, {
+    return render_to_response('downloads/program.html', RequestContext(request, {
         'stable_release': stable_release,
         'testing_release': testing_release,
         'platforms': PLATFORM_CHOICES,
@@ -121,7 +121,7 @@ def download(request):
     downloads = get_current_downloads('gammu', 'source')
     downloads += get_current_downloads('wammu', 'source')
 
-    return render_to_response('downloads/index.html', WammuContext(request, {
+    return render_to_response('downloads/index.html', RequestContext(request, {
         'mirrors': mirrors,
         'mirror': mirror,
         'downloads': downloads,
@@ -136,7 +136,7 @@ def doap(request, program):
 
     downloads = get_current_downloads(program, None)
 
-    return render_to_response('downloads/doap/%s.xml' % program, WammuContext(request, {
+    return render_to_response('downloads/doap/%s.xml' % program, RequestContext(request, {
         'mirrors': mirrors,
         'mirror': mirror,
         'downloads': downloads[0][1],
@@ -156,7 +156,7 @@ def pad(request, program):
     download = downloads[0][1].filter(Q(location__icontains = 'setup.exe') | Q(location__icontains = 'windows.exe'))[0]
     print downloads
 
-    return render_to_response('downloads/pad/%s.xml' % program, WammuContext(request, {
+    return render_to_response('downloads/pad/%s.xml' % program, RequestContext(request, {
         'mirrors': mirrors,
         'mirror': mirror,
         'download': download,

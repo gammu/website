@@ -1,11 +1,11 @@
 from django.shortcuts import render_to_response
-from wammu.helpers import WammuContext
+from django.template import RequestContext
 
 def donate(request):
-    return render_to_response('donate.html', WammuContext(request, {
+    return render_to_response('donate.html', RequestContext(request, {
     }))
 
 def thanks(request):
-    return render_to_response('donate-thanks.html', WammuContext(request, {
+    return render_to_response('donate-thanks.html', RequestContext(request, {
     }))
 

@@ -10,7 +10,7 @@ BUG_RE = re.compile('(bug ?#([0-9]*))')
 LP_RE = re.compile('(LP ?#([0-9]*))')
 BDO_RE = re.compile('(bdo ?#([0-9]*))')
 
-class WammuContext(RequestContext):
+class RequestContext(RequestContext):
     def __init__(self, request, context):
         RequestContext.__init__(self, request, context)
 
