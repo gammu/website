@@ -93,7 +93,7 @@ class Entry(models.Model):
         if self.identica_post:
             api = twitter.Api(username = settings.IDENTICA_USER,
                 password = settings.IDENTICA_PASSWORD,
-                twitterserver='identi.ca/api')
+                base_url='https://identi.ca/api')
             api.SetSource('Wammu website')
             if Site._meta.installed:
                 current_site = Site.objects.get_current()
