@@ -1,7 +1,7 @@
 <div class="manpage">
 <h2>GAMMU</h2>
 Section: Dokumentace Gammu (1)<br/>
-Updated: 12. Květen 2010<br/>
+Updated: Jul 1 2010<br/>
 <a href="#index">Index</a> 
 <hr/>
 <p><a class="aname" id="lbAB" name="lbAB"/></p>
@@ -320,9 +320,8 @@ jedné SMS</p>
 předdefinovaných) uvedená za tímto parametrem budou &quot;chráběna&quot; (v
 telefonech podporující standard ODI jako například SonyEricsson je
 nebude možné přeposlat)</p>
-<p><b>-16bit</b> - Gammu uses SMS headers with 16-bit numbers for
-saving linking info in SMS (it means less chars available for user
-in each SMS)</p>
+<p><b>-16bit</b> - Gammu použije 16-bitová čísla pro identifikaci
+zpráv, což znamená méně místa pro vlastní text ve zprávě</p>
 <p><b>-format</b> lcrasbiut - poslední část textu bude
 naformátována. Můžete použít následující znaky:<br/>
 l-zarovnanévlevo<br/>
@@ -463,9 +462,8 @@ sms.</p>
 vstupu.</p>
 <p><b>-textutf8</b> - načte text v UTF-8 z příkazové řádky místo
 standardního vstupu.</p>
-<p><b>-16bit</b> - Gammu uses SMS headers with 16-bit numbers for
-saving linking info in SMS (it means less chars available for user
-in each SMS)</p>
+<p><b>-16bit</b> - Gammu použije 16-bitová čísla pro identifikaci
+zpráv, což znamená méně místa pro vlastní text ve zprávě</p>
 <p><i>TIP:</i> Soubor v Unicode můžete na Windows vytvořit
 například pomocí WordPadu (zvolte volbu &quot;Uložit jako unicode
 text&quot;). Na Linuxu můžete použít třeba YUdit nebo Vim.</p>
@@ -1582,9 +1580,9 @@ operátora a tento příkaz vám umožní tuto změnu provést.</dd>
 <p>Získá ze zadané pozice v telefonu zvukovou nahrávku a uloží ji
 do souboru WAV. Soubor je komprimován pomocí kodeku GSM 6.10. Jeho
 jméno je stejné jako je v telefonu.</p>
-<p>Created WAV files require GSM 6.10 codec to be played. In Win XP
-it's included by Microsoft. If you deleted it by accident in this
-operating system, make such steps:</p>
+<p>Pro přehrání vytvořeného souboru WAV potřebujete kodek GSM 6.10.
+Ve Windows XP je již obsažen, pokud jste ho omylem odstranili,
+použijte následující postup::</p>
 <p>1. Ovládací panel<br/>
 2. Přidat hardware<br/>
 3. klikněte na Další<br/>
@@ -1933,14 +1931,6 @@ telefonu není nastaven čas a datum.</p>
 <a class="aname" id="lbAZ" name="lbAZ"/>
 <h4>Informace o telefonu</h4>
 <dl compact="compact">
-<dt><b>checkfirmware</b></dt>
-<dd>
-<p>Gammu se připojí na <a href="http://www.gammu.org">www.gammu.org</a> a zkontroluje poslední
-dostupnou verzi firmware pro váš telefon. Stáhne se soubor
-&lt;<a href="http://www.gammu.org/support/phones/phonedbxml.php?model=x">http://www.gammu.org/support/phones/phonedbxml.php?model=x</a>&gt;
-a načtou se z něj informace o telefonu. Nejsou odesílána žádná
-soukromá data. Musí být povolen přístup na <a href="http://www.gammu.org">www.gammu.org</a> na portu 80.</p>
-</dd>
 <dt><b>getdisplaystatus</b></dt>
 <dt><b>getlocation</b></dt>
 <dd>Načte informace o síti z telefonu (stejné jako networkinfo) a
@@ -2020,7 +2010,6 @@ ladicími volbami.</p>
 ladicím kódem a umožní dekódovat odposlechy komunikace s některými
 telefony. Více detailů naleznete v
 <i>docs/develop/develop.txt</i>.</dd>
-<dt><b>makeconverttable</b> <i>file</i></dt>
 </dl>
 <a class="aname" id="lbBC" name="lbBC"/>
 <h4>Fuknce, které se nevešly jinam</h4>
@@ -2043,9 +2032,9 @@ je načten ze standardního vstupu.</dd>
 <p>Získá ze zadané pozice v telefonu zvukovou nahrávku a uloží ji
 do souboru WAV. Soubor je komprimován pomocí kodeku GSM 6.10. Jeho
 jméno je stejné jako je v telefonu.</p>
-<p>Created WAV files require GSM 6.10 codec to be played. In Win XP
-it's included by Microsoft. If you deleted it by accident in this
-operating system, make such steps:</p>
+<p>Pro přehrání vytvořeného souboru WAV potřebujete kodek GSM 6.10.
+Ve Windows XP je již obsažen, pokud jste ho omylem odstranili,
+použijte následující postup::</p>
 <p>1. Ovládací panel<br/>
 2. Přidat hardware<br/>
 3. klikněte na Další<br/>
@@ -2617,5 +2606,5 @@ stránce &lt;<a href="http://www.gammu.org/">http://www.gammu.org/</a>&gt;.</p>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 13:48:49 GMT, June 04, 2010
+Time: 08:45:35 GMT, July 01, 2010
 </div>

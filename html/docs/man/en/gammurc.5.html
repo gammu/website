@@ -70,7 +70,7 @@ of phones.<br/>
 <b>bluerfgnapbus</b> - GNapplet based connection for Symbian
 phones</p>
 </dd>
-<dt><b>Port</b></dt>
+<dt><b>Device</b></dt>
 <dd>
 <p>Device node or address of phone. It depends on used
 connection.</p>
@@ -94,6 +94,10 @@ root):</p>
 iplsdevirda0up<br/>
 
 sysctlnet.irda.discovery=1</p>
+</dd>
+<dt><b>Port</b></dt>
+<dd>
+<p>Alias for Device, kept for backward compatibility.</p>
 </dd>
 <dt><b>Model</b></dt>
 <dd>
@@ -182,7 +186,7 @@ documentation.</p>
 <dd>
 <pre>
 [gammu]
-port = /dev/ttyACM0
+device = /dev/ttyACM0
 connection = dlr3
 </pre></dd>
 </dl>
@@ -192,7 +196,7 @@ compatible phone) connected using USB cable:</p>
 <dd>
 <pre>
 [gammu]
-port = /dev/ttyACM0
+device = /dev/ttyACM0
 connection = at
 </pre></dd>
 </dl>
@@ -202,7 +206,7 @@ compatible phone) connected using bluetooth:</p>
 <dd>
 <pre>
 [gammu]
-port = B0:0B:00:00:FA:CE
+device = B0:0B:00:00:FA:CE
 connection = blueat
 </pre></dd>
 </dl>
@@ -212,7 +216,7 @@ Bluetooth channel to use channel 42:</p>
 <dd>
 <pre>
 [gammu]
-port = B0:0B:00:00:FA:CE/42
+device = B0:0B:00:00:FA:CE/42
 connection = blueat
 </pre></dd>
 </dl>
@@ -226,15 +230,15 @@ ports would look like following:</p>
 <dd>
 <pre>
 [gammu]
-port = /dev/ttyS0
+device = /dev/ttyS0
 connection = at
 
 [gammmu1]
-port = /dev/ttyS1
+device = /dev/ttyS1
 connection = at
 
 [gammmu2]
-port = /dev/ttyS2
+device = /dev/ttyS2
 connection = at
 </pre></dd>
 </dl>
@@ -274,5 +278,5 @@ Please report bugs to &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com<
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 13:48:49 GMT, June 04, 2010
+Time: 08:45:36 GMT, July 01, 2010
 </div>

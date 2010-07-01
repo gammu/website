@@ -228,6 +228,14 @@ The file contains one number per line, blank lines are ignored. The
 file is read at startup and is reread only when configuration is
 being reread. See Message filtering for details.</p>
 </dd>
+<dt><b>BackendRetries</b></dt>
+<dd>
+<p>How many times will SMSD backend retry operation.</p>
+<p>The implementation on different backends is different, for
+database backends it generally means how many times it will try to
+reconnect to the server.</p>
+<p>Default is 10.</p>
+</dd>
 </dl>
 <a class="aname" id="lbAF" name="lbAF"/>
 <h4>Database backends options</h4>
@@ -456,5 +464,5 @@ logfile = smsd.log
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 13:48:50 GMT, June 04, 2010
+Time: 08:45:36 GMT, July 01, 2010
 </div>

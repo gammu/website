@@ -74,7 +74,7 @@ souborů), použitelné pro většinu telefonů.<br/>
 <b>bluerfgnapbus</b> - připojení k GNappletu běžícím na telefonech
 se Symbianem.</p>
 </dd>
-<dt><b>Port</b></dt>
+<dt><b>Device</b></dt>
 <dd>
 <p>Zařízení kde je přístupný telefon nebo adresa telefonu, záleží
 na typu připojení.</p>
@@ -98,6 +98,10 @@ spouštět jako root):</p>
 iplsdevirda0up<br/>
 
 sysctlnet.irda.discovery=1</p>
+</dd>
+<dt><b>Port</b></dt>
+<dd>
+<p>Stejné jako Device, zachováno kvůli zpětné kompatibilitě.</p>
 </dd>
 <dt><b>Model</b></dt>
 <dd>
@@ -185,7 +189,7 @@ oprávnění (například být členem skupiny uucp).</p>
 <dd>
 <pre>
 [gammu]
-port = /dev/ttyACM0
+device = /dev/ttyACM0
 connection = dlr3
 </pre></dd>
 </dl>
@@ -195,7 +199,7 @@ používající AT příkazy) připojený pomocí USB kabelu:</p>
 <dd>
 <pre>
 [gammu]
-port = /dev/ttyACM0
+device = /dev/ttyACM0
 connection = at
 </pre></dd>
 </dl>
@@ -205,7 +209,7 @@ používající AT příkazy) připojený pomocí Bluetooth:</p>
 <dd>
 <pre>
 [gammu]
-port = B0:0B:00:00:FA:CE
+device = B0:0B:00:00:FA:CE
 connection = blueat
 </pre></dd>
 </dl>
@@ -215,29 +219,29 @@ Bluetooth kanálu 42:</p>
 <dd>
 <pre>
 [gammu]
-port = B0:0B:00:00:FA:CE/42
+device = B0:0B:00:00:FA:CE/42
 connection = blueat
 </pre></dd>
 </dl>
 <p><a class="aname" id="lbAF" name="lbAF"/></p>
 <h4>Práce s více telefony</h4>
-<p>Gammu can be configured for multiple phones (however only one
-connection is used at one time, you can choose which one to use
-with --section parameter). Configuration for phones on three serial
-ports would look like following:</p>
+<p>Gammu může být nastaveno pro práci s více telefony najedou (ale
+jen jedno připojení v jeden okamžik, to zvolíte parametrem
+--section). Nastavení telefonů na třech sériových portech by
+vypadalo následovně:</p>
 <dl compact="compact">
 <dd>
 <pre>
 [gammu]
-port = /dev/ttyS0
+device = /dev/ttyS0
 connection = at
 
 [gammmu1]
-port = /dev/ttyS1
+device = /dev/ttyS1
 connection = at
 
 [gammmu2]
-port = /dev/ttyS2
+device = /dev/ttyS2
 connection = at
 </pre></dd>
 </dl>
@@ -278,5 +282,5 @@ Prosím hlašte chyby na &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.c
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 13:48:48 GMT, June 04, 2010
+Time: 08:45:34 GMT, July 01, 2010
 </div>
