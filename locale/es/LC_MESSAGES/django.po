@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-06-22 13:58+0200\n"
-"PO-Revision-Date: 2010-07-08 01:30+0200\n"
+"PO-Revision-Date: 2010-07-08 01:46+0200\n"
 "Last-Translator:  <jgibarrez@yahoo.es>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -128,7 +128,7 @@ msgstr ""
 
 #: html/base.html:53
 msgid "Page translations"
-msgstr ""
+msgstr "Traducciones de las páginas Web"
 
 #: html/base.html:58
 msgid "Translate!"
