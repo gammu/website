@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-06-22 13:58+0200\n"
-"PO-Revision-Date: 2009-12-12 21:30+0200\n"
-"Last-Translator: Miroslav <mirecko999@gmail.com>\n"
+"PO-Revision-Date: 2010-07-08 02:17+0200\n"
+"Last-Translator:  <jgibarrez@yahoo.es>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.2.1\n"
+"X-Generator: Pootle 2.0.1\n"
 
 # open source - código abierto
 #: downloads/models.py:32
@@ -39,7 +39,7 @@ msgstr "%(program)s publicación en prueba %(version)s"
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
-msgstr ""
+msgstr "Acceso denegado"
 
 #: html/403.html:11 html/404.html:11
 #, fuzzy
@@ -128,7 +128,7 @@ msgstr ""
 
 #: html/base.html:53
 msgid "Page translations"
-msgstr ""
+msgstr "Traducciones de las páginas Web"
 
 #: html/base.html:58
 msgid "Translate!"
@@ -222,7 +222,7 @@ msgstr "Teléfonos soportados"
 
 #: html/base.html:120 html/docs/sidebar.html:4
 msgid "Man pages"
-msgstr ""
+msgstr "Páginas del manual"
 
 #: html/base.html:121 html/docs/sidebar.html:6
 msgid "For developers"
@@ -389,6 +389,9 @@ msgid ""
 "\n"
 "Command line utility which allows to use all libGammu features.\n"
 msgstr ""
+"\n"
+"Utilidad de línea de comandos que permite usar todas las funciones de "
+"libGammu.\n"
 
 #: html/gammu-family.html:16
 msgid ""
