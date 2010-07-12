@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-22 13:58+0200\n"
+"POT-Creation-Date: 2010-07-12 10:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1694,6 +1694,23 @@ msgid ""
 "however\n"
 "you might lack support for some specific kind of devices (eg. Bluetooth or\n"
 "USB).\n"
+msgstr ""
+
+#: html/docs/faq.html:97
+msgid "How to set sender number in message?"
+msgstr ""
+
+#: html/docs/faq.html:99
+msgid ""
+"\n"
+"You can quite often see messages sent from textual address or with some "
+"other\n"
+"nice looking sender number. However this needs to be done in the GSM "
+"network\n"
+"and it is not possible to influence this from the terminal device (phone).\n"
+"Usually it is set by SMSC and some network providers allow you to set this\n"
+"based on some contract. Alternatively you can use their SMS gateways, which\n"
+"also allow this functionality.\n"
 msgstr ""
 
 #: html/docs/index.html:4 html/docs/index.html.py:11
