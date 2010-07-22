@@ -33,6 +33,7 @@ def menu(request):
             {'title': _('Screenshots'), 'link': '/screenshots/'},
             {'title': _('Documentation'), 'link': '/docs/'},
             {'title': _('Contribute'), 'link': '/contribute/'},
+            {'title': _('Tools'), 'link': '/tools/'},
             ]}
 
 def message(request):

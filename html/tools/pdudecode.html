@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "PDU decoder using Gammu" %}{% endblock %}
+
+{% block sidebar_top %}
+{% include "tools/sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "PDU decoder using Gammu" %}</h2>
+<form action="/tools/pdu-decode/" method="POST">
+{% csrf_token %}
+<table>
+{{ form.as_table }}
+<tr><td></td>
+<td>
+<input type="submit" value="{% trans "Go" %}" />
+</td>
+</tr>
+</table>
+</form>
+
+{% if error or decoded%}
+<h3>Decoding result</h3>
+{% if error %}
+<p>{% trans "Decoding failed with error:" %} {{ error.Text }} ({{ error.Code }})</p>
+{% endif %}
+{% if decoded %}
+<table>
+<tr><th>Number</th><td>{{ decoded.Number }}</td></tr>
+{% ifequal decoded.UDH.Type "NoUDH" %}
+<tr><th>Text</th><td>{{ decoded.Text }}</td></tr>
+{% endifequal %}
+<tr><th>SMSC</th><td>{{ decoded.SMSC.Number }}</td></tr>
+<tr><th>Validity</th><td>{{ decoded.SMSC.Validity }}</td></tr>
+<tr><th>Type</th><td>{{ decoded.Type }}</td></tr>
+<tr><th><abbr title="Message Reference">MR</abbr></th><td>{{ decoded.MessageReference }}</td></tr>
+<tr><th></th><td>{{ decoded. }}</td></tr>
+<tr><th></th><td>{{ decoded. }}</td></tr>
+<tr><th></th><td>{{ decoded. }}</td></tr>
+</table>
+{{ decoded2 }}
+{% endif %}
+{% endif %}
+
+
+{% endblock %}
+
+

@@ -164,6 +164,10 @@ urlpatterns = patterns('',
     (r'^docs/roadmap/$', 'wammu.views.static', {'page': 'docs/roadmap.html'}),
     (r'^docs/faq/$', 'wammu.views.static', {'page': 'docs/faq.html'}),
 
+    (r'^tools/$', 'wammu.views.static', {'page': 'tools/index.html'}),
+    (r'^tools/pdu-encode/$', 'tools.views.pduencode'),
+    (r'^tools/pdu-decode/$', 'tools.views.pdudecode'),
+
     # RSS feeds
     (r'^news/(?P<url>(rss|atom).*)/$', 'django.contrib.syndication.views.feed',
         {'feed_dict': newsfeeds}),

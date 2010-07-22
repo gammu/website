@@ -121,6 +121,7 @@ INSTALLED_APPS = (
     'links',
     'manpages',
     'phonedb',
+    'tools',
 )
 
 #import gobject
