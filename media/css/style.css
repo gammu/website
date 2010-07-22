@@ -293,3 +293,6 @@ ul.featuresearch li {
 span.size {
     white-space: nowrap;
 }
+td.hex {
+    font-family: monospace;
+}

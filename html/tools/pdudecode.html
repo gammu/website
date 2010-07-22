@@ -31,16 +31,16 @@
 <p>{% trans "Decoding failed with error:" %} {{ part.Error.Text }} ({{ part.Error.Code }})</p>
 {% else %}
 <table>
-<tr><th>PDU</th><td>{{ part.PDU }}</td></tr>
+<tr><th>PDU</th><td class="hex">{{ part.PDU|wrap|linebreaksbr }}</td></tr>
 <tr><th>Number</th><td>{{ part.Number }}</td></tr>
 {% ifequal part.Coding "8bit" %}
-<tr><th>Text</th><td>{{ part.TextHex|wrap|linebreaksbr }}</td></tr>
+<tr><th>Text</th><td class="hex">{{ part.TextHex|wrap|linebreaksbr }}</td></tr>
 {% else %}
 <tr><th>Text</th><td>{{ part.Text }}</td></tr>
 {% endifequal %}
 {% ifnotequal part.UDH.Type "NoUDH" %}
 <tr><th>UDH type</th><td>{{ part.UDH.Type }}</td></tr>
-<tr><th>UDH header</th><td>{{ part.UDH.TextHex }}</td></tr>
+<tr><th>UDH header</th><td class="hex">{{ part.UDH.TextHex }}</td></tr>
 {% endifnotequal %}
 <tr><th>SMSC</th><td>{{ part.SMSC.Number }}</td></tr>
 <tr><th>Validity</th><td>{{ part.SMSC.Validity }}</td></tr>
