@@ -31,10 +31,12 @@ def pdudecode(request):
             linked = gammu.LinkSMS(parts)
             # Decode multipart messages
             smsinfo = []
-            for i, x in enumerate(linked):
+            part = 1
+            for x in linked:
                 d = gammu.DecodeSMS(x)
                 if d is not None:
-                    d['Id'] = i + 1
+                    d['Id'] = part
+                    part = part + 1
                     smsinfo.append(d)
 
     else:
