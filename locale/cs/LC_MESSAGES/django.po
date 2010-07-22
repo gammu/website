@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2009 Michal Čihař <michal@cihar.com>
 # This file is distributed under the same license as the PACKAGE package.
-# Michal Čihař <michal@cihar.com>, 2009, 2010.
+# Michal <michal@cihar.com>, 2009, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-22 11:22+0200\n"
-"PO-Revision-Date: 2010-05-26 11:43+0200\n"
+"PO-Revision-Date: 2010-07-22 11:27+0200\n"
 "Last-Translator: Michal <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -132,7 +132,7 @@ msgstr ""
 
 #: html/base.html:13
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
-msgstr ""
+msgstr "Stránky Gammu a Wammu, programů pro práci s GSM mobilními telefony."
 
 #: html/base.html:55
 msgid "Page translations"
@@ -827,11 +827,9 @@ msgstr ""
 "známky jejich vlastníků.\n"
 
 #: html/python-gammu.html:4
-#, fuzzy
 msgid "Python bindings form Gammu, the software for managing GSM cell phones."
 msgstr ""
-"\n"
-"Rozhraní libGammu pro Python, takže jí můžete použít ze skriptů v Pythonu.\n"
+"Rozhraní libGammu pro Python, knihovna pro práci s GSM mobilními telefony."
 
 #: html/python-gammu.html:6 html/python-gammu.html.py:22
 msgid "Python bindings for Gammu"
@@ -931,7 +929,7 @@ msgstr "Poslední novinky"
 
 #: html/smsd.html:4
 msgid "Gammu SMS Daemon, the software for mass processing SMS messages."
-msgstr ""
+msgstr "Gammu SMS démon, program pro hromadné zpracování SMS zpráv."
 
 #: html/smsd.html:6 html/smsd.html.py:21
 msgid "Gammu SMSD"
@@ -1344,6 +1342,11 @@ msgid ""
 "Please check our list of <a href=\"/contribute/wanted/\"><strong>wanted\n"
 "skills</strong></a>, to get an idea who we are currently looking for.\n"
 msgstr ""
+"\n"
+"Prosím podívejte se na náš seznam <a href=\"/contribute/wanted/"
+"\"><strong>hledaných\n"
+"schopností</strong></a> abyste měli představu jací lidé nám v současné době "
+"chybí.\n"
 
 #: html/contribute/index.html:29
 msgid "Using"
@@ -1987,7 +1990,7 @@ msgstr ""
 
 #: html/docs/faq.html:97
 msgid "How to set sender number in message?"
-msgstr ""
+msgstr "Jak nastavit číslo odesílatele ve zprávě?"
 
 #: html/docs/faq.html:99
 msgid ""
@@ -2501,6 +2504,8 @@ msgid ""
 "Database of supported phones in Gammu and Wammu, the software for managing "
 "GSM cell phones."
 msgstr ""
+"Databáze telefonů podporovaných Gammu a Wammu, programy pro práci s GSM "
+"mobilními telefony."
 
 #: html/phonedb/index.html:5 html/phonedb/index.html.py:39
 #: html/phonedb/new.html:5 html/phonedb/phone.html:6
@@ -2768,6 +2773,8 @@ msgid ""
 "Database of supported phones from %(vendor_name)s in Gammu and Wammu, the "
 "software for managing GSM cell phones."
 msgstr ""
+"Databáze telefonů od %(vendor_name)s podporovaných Gammu a Wammu, programy "
+"pro práci s GSM mobilními telefony."
 
 #: html/phonedb/vendor.html:21
 msgid "Website"
@@ -3240,19 +3247,19 @@ msgstr "Anglicky"
 
 #: manpages/views.py:14
 msgid "German"
-msgstr ""
+msgstr "Německy"
 
 #: manpages/views.py:15
 msgid "Italian"
-msgstr ""
+msgstr "Italsky"
 
 #: manpages/views.py:16
 msgid "Dutch"
-msgstr ""
+msgstr "Holandsky"
 
 #: manpages/views.py:17
 msgid "Slovak"
-msgstr ""
+msgstr "Slovensky"
 
 #: news/feeds.py:11
 msgid "Updates about Wammu and Gammu programs."
