@@ -68,6 +68,10 @@
 <tr><th>{% trans "Address" %}</th><td>{{ entry.MMSIndicator.Address }}</td></tr>
 <tr><th>{% trans "Class" %}</th><td>{{ entry.MMSIndicator.Class }}</td></tr>
 {% endif %}
+{%if entry.Bitmap %}
+<tr><th colspan="2">{% trans "Bitmap" %}</th></tr>
+<tr><th>{% trans "Bitmaps" %}</th><td>{% for bitmap in entry.Bitmap %}<img src="data:image/png;base64,{{ bitmap.XPM|xpm2png }}" />{% endfor %}</td></tr>
+{% endif %}
 </table>
 {% endfor %}
 {% endfor %}

@@ -33,8 +33,9 @@ def pdudecode(request):
             smsinfo = []
             for i, x in enumerate(linked):
                 d = gammu.DecodeSMS(x)
-                d['Id'] = i + 1
-                smsinfo.append(d)
+                if d is not None:
+                    d['Id'] = i + 1
+                    smsinfo.append(d)
 
     else:
         form = PDUDecodeForm()
