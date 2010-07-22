@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-22 11:22+0200\n"
+"POT-Creation-Date: 2010-07-22 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2184,6 +2184,7 @@ msgstr "&Βάση δεδομένων τηλεφώνου του Gammu"
 
 #: html/phonedb/index.html:11 html/phonedb/index.html.py:24
 #: html/phonedb/new.html:50 html/phonedb/search.html:22
+#: html/tools/pdudecode.html:20
 msgid "Go"
 msgstr ""
 
@@ -2803,6 +2804,99 @@ msgstr ""
 msgid "Jabber chat room"
 msgstr ""
 
+#: html/tools/index.html:4 html/tools/index.html.py:12
+msgid "Tools for Wammu and Gammu"
+msgstr ""
+
+#: html/tools/pdudecode.html:5 html/tools/pdudecode.html.py:13
+msgid "PDU decoder using Gammu"
+msgstr ""
+
+#: html/tools/pdudecode.html:27
+msgid "PDU Decoding Result"
+msgstr ""
+
+#: html/tools/pdudecode.html:29 html/tools/pdudecode.html.py:58
+#, python-format
+msgid "Message number %(id)s"
+msgstr ""
+
+#: html/tools/pdudecode.html:31
+msgid "Decoding failed with error:"
+msgstr ""
+
+#: html/tools/pdudecode.html:37 html/tools/pdudecode.html.py:39
+msgid "Text"
+msgstr ""
+
+#: html/tools/pdudecode.html:42
+msgid "UDH type"
+msgstr ""
+
+#: html/tools/pdudecode.html:43
+msgid "UDH header"
+msgstr ""
+
+#: html/tools/pdudecode.html:45
+msgid "SMSC"
+msgstr ""
+
+#: html/tools/pdudecode.html:46
+msgid "Validity"
+msgstr ""
+
+#: html/tools/pdudecode.html:47
+msgid "Type"
+msgstr ""
+
+#: html/tools/pdudecode.html:48
+msgid "Message Reference"
+msgstr ""
+
+#: html/tools/pdudecode.html:56
+msgid "SMS Data Decoding Result"
+msgstr ""
+
+#: html/tools/pdudecode.html:65
+msgid "MMS indicator"
+msgstr ""
+
+#: html/tools/pdudecode.html:66
+msgid "Title"
+msgstr ""
+
+#: html/tools/pdudecode.html:67
+msgid "Sender"
+msgstr ""
+
+#: html/tools/pdudecode.html:68
+msgid "Address"
+msgstr ""
+
+#: html/tools/pdudecode.html:69
+msgid "Class"
+msgstr ""
+
+#: html/tools/pdudecode.html:72
+msgid "Bitmap"
+msgstr ""
+
+#: html/tools/pdudecode.html:73
+msgid "Bitmaps"
+msgstr ""
+
+#: html/tools/sidebar.html:2 wammu/context_processors.py:36
+msgid "Tools"
+msgstr ""
+
+#: html/tools/sidebar.html:4
+msgid "PDU encoder"
+msgstr ""
+
+#: html/tools/sidebar.html:5
+msgid "PDU decoder"
+msgstr ""
+
 #: manpages/views.py:12
 msgid "Czech"
 msgstr ""
@@ -2980,10 +3074,18 @@ msgstr ""
 msgid "Phone record has been created."
 msgstr ""
 
-#: wammu/context_processors.py:53
-msgid "Gammu and Wammu News Feed (RSS)"
+#: tools/forms.py:7
+msgid "PDU text"
+msgstr ""
+
+#: tools/forms.py:10
+msgid "You can provide more messages, each on seaprate line."
 msgstr ""
 
 #: wammu/context_processors.py:54
+msgid "Gammu and Wammu News Feed (RSS)"
+msgstr ""
+
+#: wammu/context_processors.py:55
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr ""
