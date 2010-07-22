@@ -13,16 +13,20 @@ def pdudecode(request):
     if request.method == 'POST':
         form = PDUDecodeForm(request.POST)
         if form.is_valid():
-            try:
-                decoded = gammu.DecodePDU(form.cleaned_data['text'].decode('hex'))
-                decoded['TextHex'] = decoded['Text'].encode('hex')
-                decoded['UDH']['TextHex'] = decoded['UDH']['Text'].encode('hex')
-            except gammu.GSMError, e:
-                error = e[0]
+            decoded = []
+            for i, part in enumerate(form.cleaned_data['text'].split()):
+                try:
+                    d = gammu.DecodePDU(part.decode('hex'))
+                    d['TextHex'] = d['Text'].encode('hex')
+                    d['UDH']['TextHex'] = d['UDH']['Text'].encode('hex')
+                    decoded.append(d)
+                except gammu.GSMError, e:
+                    decoded.append({'Error': e[0]})
+                d['Id'] = i + 1
+                d['PDU'] = part
     else:
         form = PDUDecodeForm()
     return render_to_response('tools/pdudecode.html', RequestContext(request, {
         'form': form,
         'decoded': decoded,
-        'error': error,
     }))

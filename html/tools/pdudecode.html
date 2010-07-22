@@ -23,29 +23,32 @@
 </table>
 </form>
 
-{% if error or decoded%}
-<h3>Decoding result</h3>
-{% if error %}
-<p>{% trans "Decoding failed with error:" %} {{ error.Text }} ({{ error.Code }})</p>
-{% endif %}
 {% if decoded %}
-<table>
-<tr><th>Number</th><td>{{ decoded.Number }}</td></tr>
-{% ifequal decoded.Coding "8bit" %}
-<tr><th>Text</th><td>{{ decoded.TextHex|wrap|linebreaksbr }}</td></tr>
+<h3>Decoding result</h3>
+{% for part in decoded %}
+<h4>{% blocktrans with part.Id as id %}Message number {{ id }}{% endblocktrans %}</h4>
+{% if part.Error %}
+<p>{% trans "Decoding failed with error:" %} {{ part.Error.Text }} ({{ part.Error.Code }})</p>
 {% else %}
-<tr><th>Text</th><td>{{ decoded.Text }}</td></tr>
+<table>
+<tr><th>PDU</th><td>{{ part.PDU }}</td></tr>
+<tr><th>Number</th><td>{{ part.Number }}</td></tr>
+{% ifequal part.Coding "8bit" %}
+<tr><th>Text</th><td>{{ part.TextHex|wrap|linebreaksbr }}</td></tr>
+{% else %}
+<tr><th>Text</th><td>{{ part.Text }}</td></tr>
 {% endifequal %}
-{% ifnotequal decoded.UDH.Type "NoUDH" %}
-<tr><th>UDH type</th><td>{{ decoded.UDH.Type }}</td></tr>
-<tr><th>UDH header</th><td>{{ decoded.UDH.TextHex }}</td></tr>
+{% ifnotequal part.UDH.Type "NoUDH" %}
+<tr><th>UDH type</th><td>{{ part.UDH.Type }}</td></tr>
+<tr><th>UDH header</th><td>{{ part.UDH.TextHex }}</td></tr>
 {% endifnotequal %}
-<tr><th>SMSC</th><td>{{ decoded.SMSC.Number }}</td></tr>
-<tr><th>Validity</th><td>{{ decoded.SMSC.Validity }}</td></tr>
-<tr><th>Type</th><td>{{ decoded.Type }}</td></tr>
-<tr><th><abbr title="Message Reference">MR</abbr></th><td>{{ decoded.MessageReference }}</td></tr>
+<tr><th>SMSC</th><td>{{ part.SMSC.Number }}</td></tr>
+<tr><th>Validity</th><td>{{ part.SMSC.Validity }}</td></tr>
+<tr><th>Type</th><td>{{ part.Type }}</td></tr>
+<tr><th><abbr title="Message Reference">MR</abbr></th><td>{{ part.MessageReference }}</td></tr>
 </table>
 {% endif %}
+{% endfor %}
 {% endif %}
 
 
