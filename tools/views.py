@@ -23,5 +23,4 @@ def pdudecode(request):
         'form': form,
         'decoded': decoded,
         'error': error,
-        'decoded2': repr(decoded),
     }))

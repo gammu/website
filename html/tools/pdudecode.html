@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% load encoding %}
 
 {% block title %}{% trans "PDU decoder using Gammu" %}{% endblock %}
 
@@ -30,18 +31,20 @@
 {% if decoded %}
 <table>
 <tr><th>Number</th><td>{{ decoded.Number }}</td></tr>
-{% ifequal decoded.UDH.Type "NoUDH" %}
+{% ifequal decoded.Coding "8bit" %}
+<tr><th>Text</th><td>{{ decoded.Text|hex }}</td></tr>
+{% else %}
 <tr><th>Text</th><td>{{ decoded.Text }}</td></tr>
 {% endifequal %}
+{% ifnotequal decoded.UDH.Type "NoUDH" %}
+<tr><th>UDH type</th><td>{{ decoded.UDH.Type }}</td></tr>
+<tr><th>UDH header</th><td>{{ decoded.UDH.Text|hex }}</td></tr>
+{% endifnotequal %}
 <tr><th>SMSC</th><td>{{ decoded.SMSC.Number }}</td></tr>
 <tr><th>Validity</th><td>{{ decoded.SMSC.Validity }}</td></tr>
 <tr><th>Type</th><td>{{ decoded.Type }}</td></tr>
 <tr><th><abbr title="Message Reference">MR</abbr></th><td>{{ decoded.MessageReference }}</td></tr>
-<tr><th></th><td>{{ decoded. }}</td></tr>
-<tr><th></th><td>{{ decoded. }}</td></tr>
-<tr><th></th><td>{{ decoded. }}</td></tr>
 </table>
-{{ decoded2 }}
 {% endif %}
 {% endif %}
 
