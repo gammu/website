@@ -15,6 +15,8 @@ def pdudecode(request):
         if form.is_valid():
             try:
                 decoded = gammu.DecodePDU(form.cleaned_data['text'].decode('hex'))
+                decoded['TextHex'] = decoded['Text'].encode('hex')
+                decoded['UDH']['TextHex'] = decoded['UDH']['Text'].encode('hex')
             except gammu.GSMError, e:
                 error = e[0]
     else:
