@@ -80,6 +80,17 @@ Linux, /dev/cuad0 on FreeBSD or COM1: on Windows). The special
 exception are DKU-2 and DKU-5 cables on Windows, where the device
 is automatically detected from driver information and this
 parameters is ignored.</p>
+<p>For USB connections (currently only fbususb and dku2 on Linux),
+you can specify to which USB device Gammu should connect. You can
+either provide vendor/product IDs or device address on USB:</p>
+<p><br/>
+Device=0x1234:0x5678#Matchdevicebyvendorandproductid<br/>
+
+Device=0x1234:-1#Matchdevicebyvendorid<br/>
+
+Device=1.10#Matchdevicebyusbbusanddeviceaddress<br/>
+
+Device=10#Matchdevicebyusbdeviceaddress</p>
 <p>For Bluetooth connection you have to enter Bluetooth address of
 your phone (you can list Bluetooth devices in range on Linux using
 &quot;hcitool scan&quot; command). Optionally you can also force Gammu to use
@@ -278,5 +289,5 @@ Please report bugs to &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.com<
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 08:45:36 GMT, July 01, 2010
+Time: 09:34:11 GMT, July 22, 2010
 </div>

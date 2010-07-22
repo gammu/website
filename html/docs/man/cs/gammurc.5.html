@@ -84,6 +84,17 @@ Linuxu, /dev/cuad0 na FreeBSD nebo COM1: na Windows). Speciální
 výjjímkou jsou DKU-2 a DKU-5 kabely na Windows, kde je zařízení
 automaticky zjištěno z informací ovladače a tento parametr je
 ignorován.</p>
+<p>For USB connections (currently only fbususb and dku2 on Linux),
+you can specify to which USB device Gammu should connect. You can
+either provide vendor/product IDs or device address on USB:</p>
+<p><br/>
+Device=0x1234:0x5678#Matchdevicebyvendorandproductid<br/>
+
+Device=0x1234:-1#Matchdevicebyvendorid<br/>
+
+Device=1.10#Matchdevicebyusbbusanddeviceaddress<br/>
+
+Device=10#Matchdevicebyusbdeviceaddress</p>
 <p>Při připojení přes Bluetooth musíte zadat Bluetooth adresu
 vašeho telefonu (na Linuxu můžete zjistit seznam zařízení v dosahu
 pomocí příkazu &quot;hcitool scan&quot;). Volitelně můžete Gammu přinutit
@@ -282,5 +293,5 @@ Prosím hlašte chyby na &lt;<a href="http://bugs.cihar.com">http://bugs.cihar.c
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 08:45:34 GMT, July 01, 2010
+Time: 09:34:09 GMT, July 22, 2010
 </div>
