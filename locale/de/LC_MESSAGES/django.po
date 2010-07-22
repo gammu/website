@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-12 10:16+0200\n"
+"POT-Creation-Date: 2010-07-22 11:22+0200\n"
 "PO-Revision-Date: 2010-06-04 20:40+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -144,154 +144,158 @@ msgstr ""
 "dort Entwickelnden und Beitragenden danken, besonders: Pavel Janik, Pawel "
 "Kot und Manfred Jonsson.\n"
 
-#: html/base.html:53
+#: html/base.html:13
+msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
+msgstr ""
+
+#: html/base.html:55
 msgid "Page translations"
 msgstr "Seitenübersetzung"
 
-#: html/base.html:58
+#: html/base.html:60
 msgid "Translate!"
 msgstr "Übersetze!"
 
-#: html/base.html:62 html/base.html.py:109 html/downloads/program.html:7
+#: html/base.html:64 html/base.html.py:111 html/downloads/program.html:7
 #: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
 msgid "Downloads"
 msgstr "Herunterladen"
 
-#: html/base.html:70 html/donate.html:49
+#: html/base.html:72 html/donate.html:49
 msgid "Advertisement"
 msgstr "Werbung"
 
-#: html/base.html:89 html/index.html:19
+#: html/base.html:91 html/index.html:19
 msgid "About"
 msgstr "Über"
 
-#: html/base.html:91 html/gammu.html:4 html/gammu.html.py:19
+#: html/base.html:93 html/gammu.html:4 html/gammu.html.py:19
 #: html/contribute/translate.html:59
 msgid "Gammu"
 msgstr "Gammu"
 
-#: html/base.html:92 html/wammu.html:4 html/wammu.html.py:22
+#: html/base.html:94 html/wammu.html:4 html/wammu.html.py:22
 #: html/contribute/translate.html:58
 msgid "Wammu"
 msgstr "Wammu"
 
-#: html/base.html:93
+#: html/base.html:95
 msgid "python-gammu"
 msgstr "python-gammu"
 
-#: html/base.html:94 html/docs/faq.html:42
+#: html/base.html:96 html/docs/faq.html:42
 msgid "SMSD"
 msgstr "SMSD"
 
-#: html/base.html:98 wammu/context_processors.py:31
+#: html/base.html:100 wammu/context_processors.py:31
 msgid "Support"
 msgstr "Unterstützung"
 
-#: html/base.html:100
+#: html/base.html:102
 msgid "Mailing lists"
 msgstr "Mailing Listen"
 
-#: html/base.html:101
+#: html/base.html:103
 msgid "Online"
 msgstr "Online"
 
-#: html/base.html:102
+#: html/base.html:104
 msgid "Reporting bugs"
 msgstr "Fehler melden"
 
-#: html/base.html:103
+#: html/base.html:105
 msgid "Commercial support"
 msgstr "Kommerzielle Unterstützung"
 
-#: html/base.html:107
+#: html/base.html:109
 msgid "Media"
 msgstr "Medien"
 
-#: html/base.html:110 html/index.html:9 html/index.html.py:11
+#: html/base.html:112 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
 #: wammu/context_processors.py:33
 msgid "Screenshots"
 msgstr "Bilder"
 
-#: html/base.html:111
+#: html/base.html:113
 msgid "Third party"
 msgstr "Andere Projekte"
 
-#: html/base.html:112 html/index.html:54
+#: html/base.html:114 html/index.html:54
 msgid "News"
 msgstr "Neuigkeiten"
 
-#: html/base.html:116 html/gammu.html:69 html/libgammu.html:54
-#: html/python-gammu.html:67 html/smsd.html:71 html/wammu.html:57
+#: html/base.html:118 html/gammu.html:69 html/libgammu.html:54
+#: html/python-gammu.html:69 html/smsd.html:73 html/wammu.html:57
 #: html/docs/sidebar.html:2 html/support/sidebar.html:4
 #: wammu/context_processors.py:34
 msgid "Documentation"
 msgstr "Dokumentation"
 
-#: html/base.html:118 html/docs/sidebar.html:5
+#: html/base.html:120 html/docs/sidebar.html:5
 msgid "FAQ"
 msgstr "Häufig gestellte Fragen (FAQ)"
 
-#: html/base.html:119 html/docs/sidebar.html:7 html/sidebars/common.html:3
+#: html/base.html:121 html/docs/sidebar.html:7 html/sidebars/common.html:3
 #: phonedb/views.py:100
 msgid "Supported phones"
 msgstr "Unterstützte Telefonapparate"
 
-#: html/base.html:120 html/docs/sidebar.html:4
+#: html/base.html:122 html/docs/sidebar.html:4
 msgid "Man pages"
 msgstr "Hilfedateien (Manpages)"
 
-#: html/base.html:121 html/docs/sidebar.html:6
+#: html/base.html:123 html/docs/sidebar.html:6
 msgid "For developers"
 msgstr "Für Entwickler"
 
-#: html/base.html:125 wammu/context_processors.py:35
+#: html/base.html:127 wammu/context_processors.py:35
 msgid "Contribute"
 msgstr "Beitragen"
 
-#: html/base.html:127 html/contribute/sidebar.html:5
+#: html/base.html:129 html/contribute/sidebar.html:5
 msgid "Translate"
 msgstr "Übersetze"
 
-#: html/base.html:128 html/contribute/sidebar.html:6
+#: html/base.html:130 html/contribute/sidebar.html:6
 msgid "Develop"
 msgstr "Entwickle"
 
 # Was sollen die Zeichen mitten im Wort??? anmerkung: vermutlich konvertierungsfehler 
-#: html/base.html:129 html/base.html.py:139 html/contribute/sidebar.html:4
+#: html/base.html:131 html/base.html.py:141 html/contribute/sidebar.html:4
 msgid "Donate"
 msgstr "Spende"
 
-#: html/base.html:130 html/contribute/sidebar.html:8
+#: html/base.html:132 html/contribute/sidebar.html:8
 msgid "Publicity"
 msgstr "Öffentlichkeitsarbeit"
 
-#: html/base.html:138
+#: html/base.html:140
 msgid "License"
 msgstr "Lizenz"
 
-#: html/base.html:139
+#: html/base.html:141
 msgid "Support Gammu/Wammu by donating money!"
 msgstr "Unterstüze Wammu und Gammu durch Spenden!"
 
-#: html/base.html:140
+#: html/base.html:142
 msgid "Search for Gammu/Wammu related questions"
 msgstr "Suche nach Fragen betreffend Gammu/Wammu"
 
 # msgid "Search:"
-#: html/base.html:140 html/phonedb/index.html:7
+#: html/base.html:142 html/phonedb/index.html:8
 msgid "Search"
 msgstr "Suche"
 
-#: html/base.html:141
+#: html/base.html:143
 msgid "Gammu and Wammu authors"
 msgstr "Gammu und Wammu Entwickler"
 
-#: html/base.html:141
+#: html/base.html:143
 msgid "Authors"
 msgstr "Entwickler"
 
-#: html/base.html:142
+#: html/base.html:144
 msgid ""
 "Valid <a href=\"http://validator.w3.org/check/referer\">HTML</a> and <a href="
 "\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
@@ -525,8 +529,8 @@ msgstr ""
 "als USB-Speicher fungieren. Diese Speicher sind nicht über Gammu "
 "aufrufbar!)\n"
 
-#: html/gammu.html:11 html/libgammu.html:7 html/python-gammu.html:11
-#: html/smsd.html:11 html/wammu.html:11
+#: html/gammu.html:11 html/libgammu.html:7 html/python-gammu.html:13
+#: html/smsd.html:13 html/wammu.html:11
 msgid "More information"
 msgstr "Zusätzliche Informationen"
 
@@ -600,8 +604,8 @@ msgstr ""
 "nutzen können.\n"
 
 # Auch das wort download wurde von mir an zahlreichen stellen übersetzt - zur erhöhung der usability. nachdem manche einträge der erst seiten allerdings verknüpft sind, und somit auch im-text veränderunge möglich sinnd oder dinge wie "laden sie herunter" "wie lade ich herunter" "herunter laden" etc im deutschen schwere grammatikalische missverstädnnisse auslöse können, das wort download auch bei uns verwendet wird... beliess ich es dabei.
-#: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:32
-#: html/smsd.html:61 html/wammu.html:47 html/downloads/list.html:4
+#: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:34
+#: html/smsd.html:63 html/wammu.html:47 html/downloads/list.html:4
 #: html/downloads/program.html:4 html/downloads/release.html:4
 #: wammu/context_processors.py:32
 msgid "Download"
@@ -895,11 +899,18 @@ msgstr ""
 "Alle auf dieser Webseite erwähnten Produkte sind Warenzeichen und Marken "
 "Ihrer jeweiligen Eigentümer/Inhaber, so zutreffend.\n"
 
-#: html/python-gammu.html:4 html/python-gammu.html.py:20
+#: html/python-gammu.html:4
+#, fuzzy
+msgid "Python bindings form Gammu, the software for managing GSM cell phones."
+msgstr ""
+"\n"
+"Python Anbindung für libGammu, ermöglicht den Einsatz von Python Skripten.\n"
+
+#: html/python-gammu.html:6 html/python-gammu.html.py:22
 msgid "Python bindings for Gammu"
 msgstr "Python Anbindung für Gammu"
 
-#: html/python-gammu.html:23
+#: html/python-gammu.html:25
 msgid ""
 "\n"
 "Gammu also includes Python bindings which allow you to use (most) of <a\n"
@@ -911,7 +922,7 @@ msgstr ""
 "von <a href=\"/libgammu\">Gammu</a> per <a href=\"http://python.org"
 "\">Python</a> nutzen können.\n"
 
-#: html/python-gammu.html:34
+#: html/python-gammu.html:36
 msgid ""
 "\n"
 "Python module is distributed as part of <a href=\"/gammu\">Gammu</a> so to "
@@ -930,11 +941,11 @@ msgstr ""
 "versuchen Sie ein Paket namens (in etwa) <code>python-gammu</code> ausfindig "
 "zu machen.\n"
 
-#: html/python-gammu.html:42
+#: html/python-gammu.html:44
 msgid "Example"
 msgstr "Beispiel"
 
-#: html/python-gammu.html:45
+#: html/python-gammu.html:47
 msgid ""
 "\n"
 "Using python-gammu is quite simple, for example sending of the text "
@@ -945,7 +956,7 @@ msgstr ""
 "python-gammu ist sehr einfach anzuwenden, zB können Sie Textnachrichten mit "
 "folgendem Befehl versenden:\n"
 
-#: html/python-gammu.html:69
+#: html/python-gammu.html:71
 msgid ""
 "\n"
 "<a href=\"/docs/devel/python/\">API documentation</a> is available, but you\n"
@@ -960,7 +971,7 @@ msgstr ""
 "Für weitere Details empfehlen wir die <a href=\"/docs/devel/\">Entwickler "
 "Dokumentation</a>.\n"
 
-#: html/python-gammu.html:78
+#: html/python-gammu.html:80
 msgid ""
 "\n"
 "Check also <a href=\"/docs/faq/#python\">Frequently Asked Questions</a>.\n"
@@ -1007,11 +1018,15 @@ msgstr ""
 msgid "Latest News"
 msgstr "Letzte Neuigkeiten"
 
-#: html/smsd.html:4 html/smsd.html.py:19
+#: html/smsd.html:4
+msgid "Gammu SMS Daemon, the software for mass processing SMS messages."
+msgstr ""
+
+#: html/smsd.html:6 html/smsd.html.py:21
 msgid "Gammu SMSD"
 msgstr "Gammu SMSD"
 
-#: html/smsd.html:22
+#: html/smsd.html:24
 msgid ""
 "\n"
 "Gammu SMS Daemon is a program that periodically scans GSM modem for "
@@ -1030,7 +1045,7 @@ msgstr ""
 "sendenden Nachrichten zu verwalten und diese Vorgänge automatisch "
 "abzuwickeln.\n"
 
-#: html/smsd.html:31
+#: html/smsd.html:33
 msgid ""
 "\n"
 "You can currently store received messages in files or in various databases.\n"
@@ -1052,7 +1067,7 @@ msgstr ""
 "a> durch <a href=\"http://libdbi.sourceforge.net/\">libdbi</a> (Die libdi-"
 "Erweiterung ist derzeit nicht für Windowsversionen erhältlich.).\n"
 
-#: html/smsd.html:42
+#: html/smsd.html:44
 msgid ""
 "\n"
 "The package includes also tool <code>gammu-smsd-inject</code> which will "
@@ -1066,7 +1081,7 @@ msgstr ""
 "code>, welcher die Anzeige des aktuellen Status des SMS-Daemons oder "
 "Telefons erlaubt.\n"
 
-#: html/smsd.html:50
+#: html/smsd.html:52
 msgid ""
 "\n"
 "For managing messages in the database, you can use <a\n"
@@ -1085,7 +1100,7 @@ msgstr ""
 "Um einen Eindruck zu erhalten, wie es aussieht, schauen sie sich <a href=\"/"
 "screenshots/contrib/\">Bilder</a> davon an.\n"
 
-#: html/smsd.html:63
+#: html/smsd.html:65
 msgid ""
 "\n"
 "SMS Daemon is distributed as part of <a href=\"/gammu\">Gammu</a> so to "
@@ -1103,7 +1118,7 @@ msgstr ""
 "in einem separaten binären Paket geliefert), versuchen Sie (in etwa) "
 "<code>gammu-smsd</code> zu finden.\n"
 
-#: html/smsd.html:73
+#: html/smsd.html:75
 msgid ""
 "\n"
 "The best documentation is available in form of <a href=\"/docs/man\">man\n"
@@ -1120,7 +1135,7 @@ msgstr ""
 "smsd Dokumentation</a> ansehen, oder die <a href=\"/docs/man/en/gammu-"
 "smsdrc.5/\">gammu-smsdrc Konfigurationsdateien</a>.\n"
 
-#: html/smsd.html:83
+#: html/smsd.html:85
 msgid ""
 "\n"
 "Check also <a href=\"/docs/faq/#smsd\">Frequently Asked Questions</a>.\n"
@@ -2627,7 +2642,7 @@ msgstr "Gammu herunterladen"
 msgid "Download Wammu"
 msgstr "Wammu herunterladen"
 
-#: html/downloads/index.html:43 html/phonedb/index.html:28
+#: html/downloads/index.html:43 html/phonedb/index.html:29
 msgid "Syndication"
 msgstr "Syndikation"
 
@@ -2906,11 +2921,11 @@ msgstr "Twitter"
 msgid "Feeds"
 msgstr "Feeds"
 
-#: html/news/index.html:14 html/phonedb/index.html:30
+#: html/news/index.html:14 html/phonedb/index.html:31
 msgid "RSS"
 msgstr "RSS"
 
-#: html/news/index.html:15 html/phonedb/index.html:31
+#: html/news/index.html:15 html/phonedb/index.html:32
 msgid "Atom"
 msgstr "Atom"
 
@@ -2964,26 +2979,33 @@ msgstr "Dieses Telefon wurde als \"nicht unterstützt\" gemeldet!"
 msgid "Reporter Note"
 msgstr "Anmerkung des Meldenden"
 
-#: html/phonedb/index.html:4 html/phonedb/index.html.py:38
-#: html/phonedb/new.html:4 html/phonedb/phone.html:4
-#: html/phonedb/search.html:4 html/phonedb/vendor.html:4
+#: html/phonedb/index.html:4 html/phonedb/new.html:4 html/phonedb/phone.html:4
+#: html/phonedb/search.html:4
+msgid ""
+"Database of supported phones in Gammu and Wammu, the software for managing "
+"GSM cell phones."
+msgstr ""
+
+#: html/phonedb/index.html:5 html/phonedb/index.html.py:39
+#: html/phonedb/new.html:5 html/phonedb/phone.html:6
+#: html/phonedb/search.html:5 html/phonedb/vendor.html:6
 msgid "Gammu Phone Database "
 msgstr "Gammu Telefondatenbank"
 
-#: html/phonedb/index.html:10 html/phonedb/index.html.py:23
-#: html/phonedb/new.html:49 html/phonedb/search.html:21
+#: html/phonedb/index.html:11 html/phonedb/index.html.py:24
+#: html/phonedb/new.html:50 html/phonedb/search.html:22
 msgid "Go"
 msgstr "Start"
 
-#: html/phonedb/index.html:12
+#: html/phonedb/index.html:13
 msgid "Feature Search"
 msgstr "Funktionensuche"
 
-#: html/phonedb/index.html:32
+#: html/phonedb/index.html:33
 msgid "CSV"
 msgstr "CSV"
 
-#: html/phonedb/index.html:41
+#: html/phonedb/index.html:42
 msgid ""
 "\n"
 "This page tries to collect list of phones supported by <a href=\"/libgammu"
@@ -3001,7 +3023,7 @@ msgstr ""
 "Sie können weitere Informationen über Mobiltelefone auf <a href=\"http://"
 "tuxmobil.org/phones_linux.html\">TuxMobil</a> finden.\n"
 
-#: html/phonedb/index.html:48
+#: html/phonedb/index.html:49
 msgid ""
 "\n"
 "This list is filled in by users and thus there can be no warranty\n"
@@ -3020,7 +3042,7 @@ msgstr ""
 "users\">Gammu-Benutzer Mailing Liste</a> offen für Fragen über unterstützte "
 "Telefone.\n"
 
-#: html/phonedb/index.html:57
+#: html/phonedb/index.html:58
 msgid ""
 "\n"
 "As this list is updated by users, you are welcome to <strong><a href=\"/"
@@ -3031,7 +3053,7 @@ msgstr ""
 "dazu eingeladen, <strong><a href=\"/phones/new/\">einen neuen Eintrag zu "
 "gestalten</a></strong>.\n"
 
-#: html/phonedb/index.html:62
+#: html/phonedb/index.html:63
 msgid ""
 "\n"
 "Generally any phone capable of AT commands or IrMC should be supported. "
@@ -3050,19 +3072,19 @@ msgstr ""
 "einige Funktionen zu erhalten - für neuere Versionen gibt es derzeit "
 "keinerlei Unterstützung.\n"
 
-#: html/phonedb/index.html:70
+#: html/phonedb/index.html:71
 msgid "Manufacturers"
 msgstr "Hersteller"
 
-#: html/phonedb/index.html:79
+#: html/phonedb/index.html:80
 msgid "Recently Added Phones"
 msgstr "Zuletzt hinzugefügte Telefone"
 
-#: html/phonedb/index.html:82
+#: html/phonedb/index.html:83
 msgid "Phone Records Summary"
 msgstr "Zusammenfassung der Meldungen bzgl. Telefonen"
 
-#: html/phonedb/index.html:86
+#: html/phonedb/index.html:87
 msgid ""
 "\n"
 "On following chart, you can see how number of records in phone database\n"
@@ -3091,16 +3113,16 @@ msgstr "Unterstützte Merkmale"
 msgid "Not supported"
 msgstr "Nicht unterstützt"
 
-#: html/phonedb/new.html:4 html/phonedb/new.html.py:15
+#: html/phonedb/new.html:5 html/phonedb/new.html.py:16
 msgid "Create New Record"
 msgstr "Neue Meldung erzeugen"
 
-#: html/phonedb/new.html:7 html/phonedb/phone.html:7
-#: html/phonedb/search.html:7 html/phonedb/vendor.html:7
+#: html/phonedb/new.html:8 html/phonedb/phone.html:9
+#: html/phonedb/search.html:8 html/phonedb/vendor.html:9
 msgid "Navigation"
 msgstr "Navigation"
 
-#: html/phonedb/new.html:18
+#: html/phonedb/new.html:19
 msgid ""
 "\n"
 "Thank you for improving Gammu phones database, but please note that this is\n"
@@ -3113,7 +3135,7 @@ msgstr ""
 "Bei Problemen mit Gammu melden Sie diese bitte <a href=\"/support/bugs/\">in "
 "der Fehlerdatenbank</a>.\n"
 
-#: html/phonedb/new.html:26
+#: html/phonedb/new.html:27
 msgid ""
 "\n"
 "Email and name fields are voluntary, you can choose how (and whether) the\n"
@@ -3129,35 +3151,35 @@ msgstr ""
 "Dies kann notwendig sein, wenn man etwas mit diesem Gerät überprüfen muss, "
 "oder um aufkommende Fragen über Ihre Angaben/Meldung zu klären.\n"
 
-#: html/phonedb/new.html:39
+#: html/phonedb/new.html:40
 msgid "Please enter text 'nospam':"
 msgstr "Bitte den Text \"nospam\" einfügen:"
 
-#: html/phonedb/phone.html:11 html/phonedb/vendor.html:10
+#: html/phonedb/phone.html:13 html/phonedb/vendor.html:12
 msgid "Add new record"
 msgstr "Neuen Eintrag/Meldung hinzufügen"
 
-#: html/phonedb/phone.html:13
+#: html/phonedb/phone.html:15
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#: html/phonedb/phone.html:15
+#: html/phonedb/phone.html:17
 msgid "Delete"
 msgstr "Löschen"
 
-#: html/phonedb/phone.html:18
+#: html/phonedb/phone.html:20
 msgid "Approve"
 msgstr "Bestätigen"
 
-#: html/phonedb/phone.html:22
+#: html/phonedb/phone.html:24
 msgid "Similar Phones"
 msgstr "Ähnliche Telefone"
 
-#: html/phonedb/phone.html:33
+#: html/phonedb/phone.html:35
 msgid "None found."
 msgstr "Es wurde nichts gefunden."
 
-#: html/phonedb/phone.html:46
+#: html/phonedb/phone.html:48
 msgid ""
 "\n"
 "This record has been rejected for some reasons, you might want to check "
@@ -3169,7 +3191,7 @@ msgstr ""
 "Vielleicht möchten Sie andere Berichte zu diesem Modell anschauen (Sie "
 "finden diese auf der rechten Seite).\n"
 
-#: html/phonedb/phone.html:54
+#: html/phonedb/phone.html:56
 msgid ""
 "\n"
 "This record has not been approved yet. This means that it might contain "
@@ -3183,7 +3205,7 @@ msgstr ""
 "falsche Informationen oder bessere Berichte zum selben Modell vorliegen (Sie "
 "finden diese auf der rechten Seite).\n"
 
-#: html/phonedb/phone.html:63
+#: html/phonedb/phone.html:65
 #, python-format
 msgid ""
 "\n"
@@ -3203,7 +3225,7 @@ msgstr ""
 "Sämtliche vorliegenden Berichte wurden durch Benutzer erstellt, somit gibt "
 "es keinerlei Garantie, dass korrekte Informationen gemeldet wurden.\n"
 
-#: html/phonedb/phone.html:73
+#: html/phonedb/phone.html:75
 msgid ""
 "\n"
 "More information about phone might be available on following sites:\n"
@@ -3212,11 +3234,11 @@ msgstr ""
 "Zusätzliche Informationen bezüglich diesem Telefonmodell können Sie auf "
 "folgenden Seiten finden:\n"
 
-#: html/phonedb/phone.html:86
+#: html/phonedb/phone.html:88
 msgid "About entry"
 msgstr "Über diesen Eintrag"
 
-#: html/phonedb/phone.html:89
+#: html/phonedb/phone.html:91
 #, python-format
 msgid ""
 "\n"
@@ -3225,7 +3247,7 @@ msgstr ""
 "\n"
 "Erstellt von %(author)s am %(created)s.\n"
 
-#: html/phonedb/phone.html:95
+#: html/phonedb/phone.html:97
 #, python-format
 msgid ""
 "\n"
@@ -3234,7 +3256,7 @@ msgstr ""
 "\n"
 "Erstellt am %(created)s.\n"
 
-#: html/phonedb/phone.html:102
+#: html/phonedb/phone.html:104
 #, python-format
 msgid ""
 "\n"
@@ -3243,11 +3265,11 @@ msgstr ""
 "\n"
 "Wurde mit Gammu %(version)s getestet.\n"
 
-#: html/phonedb/search.html:4 html/phonedb/search.html.py:15
+#: html/phonedb/search.html:5 html/phonedb/search.html.py:16
 msgid "Search Results"
 msgstr "Suchergebnisse"
 
-#: html/phonedb/search.html:25
+#: html/phonedb/search.html:26
 #, python-format
 msgid ""
 "\n"
@@ -3256,11 +3278,18 @@ msgstr ""
 "\n"
 "%(count)s zu Ihrer Suche passenden Ergebnisse gefunden.\n"
 
-#: html/phonedb/vendor.html:19
+#: html/phonedb/vendor.html:4
+#, python-format
+msgid ""
+"Database of supported phones from %(vendor_name)s in Gammu and Wammu, the "
+"software for managing GSM cell phones."
+msgstr ""
+
+#: html/phonedb/vendor.html:21
 msgid "Website"
 msgstr "Webseite"
 
-#: html/phonedb/vendor.html:24
+#: html/phonedb/vendor.html:26
 #, python-format
 msgid ""
 "\n"
@@ -3271,7 +3300,7 @@ msgstr ""
 "Informationen zu den Telefonen dieses Herstellers finden Sie auch auf <a\n"
 "href=\"http://tuxmobil.org/phones_survey_%(tuxurl)s.html\">TuxMobil</a>.\n"
 
-#: html/phonedb/vendor.html:33
+#: html/phonedb/vendor.html:35
 #, python-format
 msgid ""
 "\n"
@@ -3280,7 +3309,7 @@ msgstr ""
 "\n"
 "Derzeit liegen %(count)s bestätigte Berichte über diesen Hersteller vor.\n"
 
-#: html/phonedb/vendor.html:37
+#: html/phonedb/vendor.html:39
 msgid ""
 "\n"
 "There is currently none phone record from this vendor!\n"
@@ -3288,7 +3317,7 @@ msgstr ""
 "\n"
 "Derzeit liegt kein Bericht über diesen Hersteller vor!\n"
 
-#: html/phonedb/vendor.html:42
+#: html/phonedb/vendor.html:44
 #, python-format
 msgid ""
 "\n"
