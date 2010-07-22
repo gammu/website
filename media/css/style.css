@@ -177,11 +177,12 @@ div.col {
     padding: 0.2em;
 }
 
-div.footnavi h6 {
+div.footnavi span.foottitle {
     font-size: 100%;
     font-weight: normal;
     margin: 0px 0px 0.5em 1em;
 	color: #7C0000;
+    display: block;
 }
 div.footnavi ul {
     margin-top: 0px;
