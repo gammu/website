@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load i18n %}
 
-{% block description %}Database of supported phones in Gammu and Wammu, the software for managing GSM cell phones.{% endblock %}
+{% block description %}{% trans "Database of supported phones in Gammu and Wammu, the software for managing GSM cell phones." %}{% endblock %}
 {% block extrakeywords %},{{ vendor.name }},{{ phone.name }}{% endblock %}
 {% block title %}{{ vendor.name }} {{ phone.name }} - {% trans "Gammu Phone Database " %}{% endblock %}
 
