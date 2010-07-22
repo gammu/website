@@ -52,6 +52,28 @@
 {% endif %}
 
 
+{% if smsinfo %}
+<h3>{% trans "SMS Data Decoding Result" %}</h3>
+{% for part in smsinfo %}
+<h4>{% blocktrans with part.Id as id %}Message number {{ id }}{% endblocktrans %}</h4>
+{% if part.Unknown %}
+<p>Some parts of this message can not be properly decoded by Gammu!</p>
+{% endif %}
+{% for entry in part.Entries %}
+<table>
+{%if entry.MMSIndicator %}
+<tr><th colspan="2">{% trans "MMS indicator" %}</th></tr>
+<tr><th>{% trans "Title" %}</th><td>{{ entry.MMSIndicator.Title }}</td></tr>
+<tr><th>{% trans "Sender" %}</th><td>{{ entry.MMSIndicator.Sender }}</td></tr>
+<tr><th>{% trans "Address" %}</th><td>{{ entry.MMSIndicator.Address }}</td></tr>
+<tr><th>{% trans "Class" %}</th><td>{{ entry.MMSIndicator.Class }}</td></tr>
+{% endif %}
+</table>
+{% endfor %}
+{% endfor %}
+{% endif %}
+
+
 {% endblock %}
 
 
