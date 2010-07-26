@@ -3909,7 +3909,7 @@ msgstr "Address"
 
 #: html/tools/pdudecode.html:69
 msgid "Class"
-msgstr ""
+msgstr "Class"
 
 #: html/tools/pdudecode.html:72
 msgid "Bitmap"
