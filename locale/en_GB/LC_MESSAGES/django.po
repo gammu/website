@@ -3853,7 +3853,7 @@ msgstr "PDU Decoding Result"
 #: html/tools/pdudecode.html:29 html/tools/pdudecode.html.py:58
 #, python-format
 msgid "Message number %(id)s"
-msgstr ""
+msgstr "Message number %(id)s"
 
 #: html/tools/pdudecode.html:31
 msgid "Decoding failed with error:"
