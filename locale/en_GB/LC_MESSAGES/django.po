@@ -3921,7 +3921,7 @@ msgstr "Bitmaps"
 
 #: html/tools/sidebar.html:2 wammu/context_processors.py:36
 msgid "Tools"
-msgstr ""
+msgstr "Tools"
 
 #: html/tools/sidebar.html:4
 msgid "PDU encoder"
