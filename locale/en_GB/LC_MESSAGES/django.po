@@ -4115,7 +4115,7 @@ msgstr "PDU text"
 
 #: tools/forms.py:10
 msgid "You can provide more messages, each on seaprate line."
-msgstr ""
+msgstr "You can provide more messages, each on separate line."
 
 #: wammu/context_processors.py:54
 msgid "Gammu and Wammu News Feed (RSS)"
