@@ -3885,7 +3885,7 @@ msgstr "Type"
 
 #: html/tools/pdudecode.html:48
 msgid "Message Reference"
-msgstr ""
+msgstr "Message Reference"
 
 #: html/tools/pdudecode.html:56
 msgid "SMS Data Decoding Result"
