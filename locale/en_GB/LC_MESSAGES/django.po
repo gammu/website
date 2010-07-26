@@ -3929,7 +3929,7 @@ msgstr "PDU encoder"
 
 #: html/tools/sidebar.html:5
 msgid "PDU decoder"
-msgstr ""
+msgstr "PDU decoder"
 
 #: manpages/views.py:12
 msgid "Czech"
