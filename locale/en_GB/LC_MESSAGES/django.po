@@ -1003,7 +1003,7 @@ msgstr "Latest News"
 
 #: html/smsd.html:4
 msgid "Gammu SMS Daemon, the software for mass processing SMS messages."
-msgstr ""
+msgstr "Gammu SMS Daemon, the software for mass processing SMS messages."
 
 #: html/smsd.html:6 html/smsd.html.py:21
 msgid "Gammu SMSD"
