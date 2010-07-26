@@ -3905,7 +3905,7 @@ msgstr "Sender"
 
 #: html/tools/pdudecode.html:68
 msgid "Address"
-msgstr ""
+msgstr "Address"
 
 #: html/tools/pdudecode.html:69
 msgid "Class"
