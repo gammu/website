@@ -888,11 +888,8 @@ msgstr ""
 "owners, where appropriate.\n"
 
 #: html/python-gammu.html:4
-#, fuzzy
 msgid "Python bindings form Gammu, the software for managing GSM cell phones."
-msgstr ""
-"\n"
-"Python bindings for libGammu, so that you can use it from Python scripts.\n"
+msgstr "Python bindings form Gammu, the software for managing GSM cell phones."
 
 #: html/python-gammu.html:6 html/python-gammu.html.py:22
 msgid "Python bindings for Gammu"
