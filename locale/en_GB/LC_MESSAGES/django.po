@@ -3881,7 +3881,7 @@ msgstr "Validity"
 
 #: html/tools/pdudecode.html:47
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #: html/tools/pdudecode.html:48
 msgid "Message Reference"
