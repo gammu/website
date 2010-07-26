@@ -3861,7 +3861,7 @@ msgstr "Decoding failed with error:"
 
 #: html/tools/pdudecode.html:37 html/tools/pdudecode.html.py:39
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 #: html/tools/pdudecode.html:42
 msgid "UDH type"
