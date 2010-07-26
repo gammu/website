@@ -2965,6 +2965,8 @@ msgid ""
 "Database of supported phones in Gammu and Wammu, the software for managing "
 "GSM cell phones."
 msgstr ""
+"Database of supported phones in Gammu and Wammu, the software for managing "
+"GSM cell phones."
 
 #: html/phonedb/index.html:5 html/phonedb/index.html.py:39
 #: html/phonedb/new.html:5 html/phonedb/phone.html:6
