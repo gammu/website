@@ -3897,7 +3897,7 @@ msgstr "MMS indicator"
 
 #: html/tools/pdudecode.html:66
 msgid "Title"
-msgstr ""
+msgstr "Title"
 
 #: html/tools/pdudecode.html:67
 msgid "Sender"
