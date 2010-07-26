@@ -3839,9 +3839,8 @@ msgid "Jabber chat room"
 msgstr "Jabber chat room"
 
 #: html/tools/index.html:4 html/tools/index.html.py:12
-#, fuzzy
 msgid "Tools for Wammu and Gammu"
-msgstr "FAQ for Wammu and Gammu"
+msgstr "Tools for Wammu and Gammu"
 
 #: html/tools/pdudecode.html:5 html/tools/pdudecode.html.py:13
 #, fuzzy
