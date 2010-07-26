@@ -3892,9 +3892,8 @@ msgid "SMS Data Decoding Result"
 msgstr "SMS Data Decoding Result"
 
 #: html/tools/pdudecode.html:65
-#, fuzzy
 msgid "MMS indicator"
-msgstr "Syndication"
+msgstr "MMS indicator"
 
 #: html/tools/pdudecode.html:66
 msgid "Title"
