@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-22 18:31+0200\n"
-"PO-Revision-Date: 2010-07-26 17:06+0200\n"
+"PO-Revision-Date: 2010-07-26 17:07+0200\n"
 "Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: en_GB\n"
@@ -4111,7 +4111,7 @@ msgstr "Phone record has been created."
 
 #: tools/forms.py:7
 msgid "PDU text"
-msgstr ""
+msgstr "PDU text"
 
 #: tools/forms.py:10
 msgid "You can provide more messages, each on seaprate line."
