@@ -3848,7 +3848,7 @@ msgstr "PDU decoder using Gammu"
 
 #: html/tools/pdudecode.html:27
 msgid "PDU Decoding Result"
-msgstr ""
+msgstr "PDU Decoding Result"
 
 #: html/tools/pdudecode.html:29 html/tools/pdudecode.html.py:58
 #, python-format
