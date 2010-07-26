@@ -3857,7 +3857,7 @@ msgstr "Message number %(id)s"
 
 #: html/tools/pdudecode.html:31
 msgid "Decoding failed with error:"
-msgstr ""
+msgstr "Decoding failed with error:"
 
 #: html/tools/pdudecode.html:37 html/tools/pdudecode.html.py:39
 msgid "Text"
