@@ -3913,7 +3913,7 @@ msgstr "Class"
 
 #: html/tools/pdudecode.html:72
 msgid "Bitmap"
-msgstr ""
+msgstr "Bitmap"
 
 #: html/tools/pdudecode.html:73
 msgid "Bitmaps"
