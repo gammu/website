@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-22 18:31+0200\n"
-"PO-Revision-Date: 2010-07-26 17:05+0200\n"
+"PO-Revision-Date: 2010-07-26 17:06+0200\n"
 "Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: en_GB\n"
@@ -3843,9 +3843,8 @@ msgid "Tools for Wammu and Gammu"
 msgstr "Tools for Wammu and Gammu"
 
 #: html/tools/pdudecode.html:5 html/tools/pdudecode.html.py:13
-#, fuzzy
 msgid "PDU decoder using Gammu"
-msgstr "PAD for Gammu"
+msgstr "PDU decoder using Gammu"
 
 #: html/tools/pdudecode.html:27
 msgid "PDU Decoding Result"
