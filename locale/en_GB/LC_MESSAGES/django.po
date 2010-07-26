@@ -3917,7 +3917,7 @@ msgstr "Bitmap"
 
 #: html/tools/pdudecode.html:73
 msgid "Bitmaps"
-msgstr ""
+msgstr "Bitmaps"
 
 #: html/tools/sidebar.html:2 wammu/context_processors.py:36
 msgid "Tools"
