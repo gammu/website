@@ -3889,7 +3889,7 @@ msgstr "Message Reference"
 
 #: html/tools/pdudecode.html:56
 msgid "SMS Data Decoding Result"
-msgstr ""
+msgstr "SMS Data Decoding Result"
 
 #: html/tools/pdudecode.html:65
 #, fuzzy
