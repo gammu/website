@@ -3865,7 +3865,7 @@ msgstr "Text"
 
 #: html/tools/pdudecode.html:42
 msgid "UDH type"
-msgstr ""
+msgstr "UDH type"
 
 #: html/tools/pdudecode.html:43
 msgid "UDH header"
