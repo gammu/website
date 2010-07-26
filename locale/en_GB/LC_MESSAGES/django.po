@@ -3869,7 +3869,7 @@ msgstr "UDH type"
 
 #: html/tools/pdudecode.html:43
 msgid "UDH header"
-msgstr ""
+msgstr "UDH header"
 
 #: html/tools/pdudecode.html:45
 msgid "SMSC"
