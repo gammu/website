@@ -3877,7 +3877,7 @@ msgstr "SMSC"
 
 #: html/tools/pdudecode.html:46
 msgid "Validity"
-msgstr ""
+msgstr "Validity"
 
 #: html/tools/pdudecode.html:47
 msgid "Type"
