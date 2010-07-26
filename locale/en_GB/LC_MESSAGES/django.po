@@ -3873,7 +3873,7 @@ msgstr "UDH header"
 
 #: html/tools/pdudecode.html:45
 msgid "SMSC"
-msgstr ""
+msgstr "SMSC"
 
 #: html/tools/pdudecode.html:46
 msgid "Validity"
