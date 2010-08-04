@@ -263,7 +263,7 @@ msgstr "Autorzy Gammu i Wammu"
 
 #: html/base.html:143
 msgid "Authors"
-msgstr ""
+msgstr "Autorzy"
 
 #: html/base.html:144
 msgid ""
