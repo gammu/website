@@ -259,7 +259,7 @@ msgstr "Szukaj"
 
 #: html/base.html:143
 msgid "Gammu and Wammu authors"
-msgstr ""
+msgstr "Autorzy Gammu i Wammu"
 
 #: html/base.html:143
 msgid "Authors"
