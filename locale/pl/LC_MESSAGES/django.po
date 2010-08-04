@@ -210,7 +210,7 @@ msgstr "FAQ"
 #: html/base.html:121 html/docs/sidebar.html:7 html/sidebars/common.html:3
 #: phonedb/views.py:100
 msgid "Supported phones"
-msgstr ""
+msgstr "Wspierane telefony"
 
 #: html/base.html:122 html/docs/sidebar.html:4
 msgid "Man pages"
