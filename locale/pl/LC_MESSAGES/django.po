@@ -155,9 +155,8 @@ msgid "python-gammu"
 msgstr "python-gammu"
 
 #: html/base.html:96 html/docs/faq.html:42
-#, fuzzy
 msgid "SMSD"
-msgstr "SMSC"
+msgstr "SMSD"
 
 #: html/base.html:100 wammu/context_processors.py:31
 #, fuzzy
