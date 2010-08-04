@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-22 18:31+0200\n"
-"PO-Revision-Date: 2010-08-04 02:42+0200\n"
+"PO-Revision-Date: 2010-08-04 02:57+0200\n"
 "Last-Translator:  <saulgajda@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pl\n"
@@ -316,7 +316,7 @@ msgstr ""
 
 #: html/donate.html:40
 msgid "Bank Account"
-msgstr ""
+msgstr "Konto Bankowe"
 
 #: html/donate.html:43
 msgid ""
