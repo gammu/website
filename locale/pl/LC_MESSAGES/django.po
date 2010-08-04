@@ -172,7 +172,7 @@ msgstr ""
 
 #: html/base.html:104
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Zgłaszanie błędów"
 
 #: html/base.html:105
 msgid "Commercial support"
