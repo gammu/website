@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-22 18:31+0200\n"
-"PO-Revision-Date: 2010-08-04 02:28+0200\n"
+"PO-Revision-Date: 2010-08-04 02:30+0200\n"
 "Last-Translator:  <saulgajda@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pl\n"
@@ -218,7 +218,7 @@ msgstr ""
 
 #: html/base.html:123 html/docs/sidebar.html:6
 msgid "For developers"
-msgstr ""
+msgstr "Dla deweloperów"
 
 #: html/base.html:127 wammu/context_processors.py:35
 msgid "Contribute"
