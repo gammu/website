@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-22 18:31+0200\n"
-"PO-Revision-Date: 2010-08-04 02:33+0200\n"
+"PO-Revision-Date: 2010-08-04 02:42+0200\n"
 "Last-Translator:  <saulgajda@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pl\n"
@@ -254,9 +254,8 @@ msgid "Search for Gammu/Wammu related questions"
 msgstr ""
 
 #: html/base.html:142 html/phonedb/index.html:8
-#, fuzzy
 msgid "Search"
-msgstr "Szukaj: "
+msgstr "Szukaj"
 
 #: html/base.html:143
 msgid "Gammu and Wammu authors"
