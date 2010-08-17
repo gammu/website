@@ -243,7 +243,7 @@ msgstr "Rozwijaj"
 #: html/base.html:131 html/base.html.py:141 html/contribute/sidebar.html:4
 #, fuzzy
 msgid "Donate"
-msgstr "&Dotacja"
+msgstr "Dotacja"
 
 #: html/base.html:132 html/contribute/sidebar.html:8
 msgid "Publicity"
