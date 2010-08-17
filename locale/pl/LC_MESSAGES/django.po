@@ -255,8 +255,9 @@ msgid "License"
 msgstr "Licencja"
 
 #: html/base.html:141
+#, fuzzy
 msgid "Support Gammu/Wammu by donating money!"
-msgstr ""
+msgstr "Wesprzyj Gammu/Wammu przez dotację!"
 
 #: html/base.html:142
 msgid "Search for Gammu/Wammu related questions"
