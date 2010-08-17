@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-22 18:31+0200\n"
-"PO-Revision-Date: 2010-08-17 14:18+0200\n"
+"PO-Revision-Date: 2010-08-17 14:19+0200\n"
 "Last-Translator: Maciej Szeptuch <matthiaspriv@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pl\n"
@@ -330,6 +330,7 @@ msgstr ""
 "programu.\n"
 
 #: html/donate.html:25
+#, fuzzy
 msgid ""
 "\n"
 "The donation itself is being processed by <a\n"
@@ -338,6 +339,11 @@ msgid ""
 "account or by using any major credit card. You can also directly send a\n"
 "donation to <code>michal@cihar.com</code>.\n"
 msgstr ""
+"\n"
+"Dotacja przebiega za pośrednictwem <a "
+"href=\"http://www.paypal.com/\">PayPal</a> gdzie możesz płacić zarówno przez "
+"konto PayPal jak również kartą kredytową. Możesz także wysłać bezpośrednią "
+"dotację na <code>michal@cihar.com</code>."
 
 #: html/donate.html:40
 msgid "Bank Account"
