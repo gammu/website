@@ -231,8 +231,9 @@ msgid "Contribute"
 msgstr "Współpraca"
 
 #: html/base.html:129 html/contribute/sidebar.html:5
+#, fuzzy
 msgid "Translate"
-msgstr ""
+msgstr "Tlumacz"
 
 #: html/base.html:130 html/contribute/sidebar.html:6
 msgid "Develop"
