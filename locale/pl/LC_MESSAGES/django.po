@@ -176,8 +176,9 @@ msgid "Reporting bugs"
 msgstr "Zgłaszanie błędów"
 
 #: html/base.html:105
+#, fuzzy
 msgid "Commercial support"
-msgstr ""
+msgstr "Wsparcie komercyjne"
 
 #: html/base.html:109
 msgid "Media"
