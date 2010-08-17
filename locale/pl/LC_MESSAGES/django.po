@@ -289,12 +289,16 @@ msgid "Thank you for Donation"
 msgstr "Dziękuję za dotację"
 
 #: html/donate-thanks.html:14
+#, fuzzy
 msgid ""
 "\n"
 "Thank you for donating to Gammu/Wammu! We will do our best to use the "
 "donated\n"
 "money in useful way.\n"
 msgstr ""
+"\n"
+"Dziękujemy za wsparcie finansowe projektu Gammu/Wammu! Zrobimy wszystko co w "
+"naszej mocy aby wykorzystać przekazane środki we właściwy sposób.\n"
 
 #: html/donate.html:4 html/donate.html.py:11
 msgid "Donate to Gammu"
