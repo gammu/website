@@ -236,8 +236,9 @@ msgid "Translate"
 msgstr "Tlumacz"
 
 #: html/base.html:130 html/contribute/sidebar.html:6
+#, fuzzy
 msgid "Develop"
-msgstr ""
+msgstr "Rozwijaj"
 
 #: html/base.html:131 html/base.html.py:141 html/contribute/sidebar.html:4
 #, fuzzy
