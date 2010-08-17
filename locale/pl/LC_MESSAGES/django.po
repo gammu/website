@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-22 18:31+0200\n"
-"PO-Revision-Date: 2010-08-17 14:15+0200\n"
+"PO-Revision-Date: 2010-08-17 14:16+0200\n"
 "Last-Translator: Maciej Szeptuch <matthiaspriv@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pl\n"
@@ -246,8 +246,9 @@ msgid "Donate"
 msgstr "Dotacja"
 
 #: html/base.html:132 html/contribute/sidebar.html:8
+#, fuzzy
 msgid "Publicity"
-msgstr ""
+msgstr "Reklamuj"
 
 #: html/base.html:140
 msgid "License"
