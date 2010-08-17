@@ -139,7 +139,7 @@ msgstr "Reklama"
 #: html/base.html:91 html/index.html:19
 #, fuzzy
 msgid "About"
-msgstr "&O programie"
+msgstr "O programie"
 
 #: html/base.html:93 html/gammu.html:4 html/gammu.html.py:19
 #: html/contribute/translate.html:59
