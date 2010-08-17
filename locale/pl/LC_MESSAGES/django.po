@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-22 18:31+0200\n"
-"PO-Revision-Date: 2010-08-17 14:11+0200\n"
+"PO-Revision-Date: 2010-08-17 14:12+0200\n"
 "Last-Translator: Maciej Szeptuch <matthiaspriv@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pl\n"
@@ -165,7 +165,7 @@ msgstr "Wsparcie techniczne"
 
 #: html/base.html:102
 msgid "Mailing lists"
-msgstr ""
+msgstr "Lista dyskusyjna"
 
 #: html/base.html:103
 msgid "Online"
