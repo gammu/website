@@ -33,9 +33,9 @@ msgid "%(program)s stable release %(version)s"
 msgstr "Wersja stabilna %(program) %(version)"
 
 #: downloads/models.py:179
-#, python-format
+#, python-format, fuzzy
 msgid "%(program)s testing release %(version)s"
-msgstr ""
+msgstr "Wersja testowa %(program) %(version)"
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
