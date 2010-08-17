@@ -28,9 +28,9 @@ msgid "Windows binary"
 msgstr "Instalator dla Windows"
 
 #: downloads/models.py:174
-#, python-format
+#, python-format, fuzzy
 msgid "%(program)s stable release %(version)s"
-msgstr ""
+msgstr "Wersja stabilna %(program) %(version)"
 
 #: downloads/models.py:179
 #, python-format
