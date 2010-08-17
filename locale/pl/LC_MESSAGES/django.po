@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-22 18:31+0200\n"
-"PO-Revision-Date: 2010-08-17 14:13+0200\n"
+"PO-Revision-Date: 2010-08-17 14:14+0200\n"
 "Last-Translator: Maciej Szeptuch <matthiaspriv@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pl\n"
@@ -217,8 +217,9 @@ msgid "Supported phones"
 msgstr "Wspierane telefony"
 
 #: html/base.html:122 html/docs/sidebar.html:4
+#, fuzzy
 msgid "Man pages"
-msgstr ""
+msgstr "Strony man"
 
 #: html/base.html:123 html/docs/sidebar.html:6
 msgid "For developers"
