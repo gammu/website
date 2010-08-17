@@ -182,7 +182,7 @@ msgstr "Wsparcie komercyjne"
 
 #: html/base.html:109
 msgid "Media"
-msgstr ""
+msgstr "Media"
 
 #: html/base.html:112 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
