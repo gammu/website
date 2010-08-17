@@ -187,8 +187,9 @@ msgstr "Media"
 #: html/base.html:112 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
 #: wammu/context_processors.py:33
+#, fuzzy
 msgid "Screenshots"
-msgstr ""
+msgstr "Zrzuty ekranu"
 
 #: html/base.html:113
 msgid "Third party"
