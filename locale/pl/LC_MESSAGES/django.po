@@ -310,6 +310,7 @@ msgid "Donate Money"
 msgstr ""
 
 #: html/donate.html:15
+#, fuzzy
 msgid ""
 "\n"
 "Thank you for interesting in donating money to Gammu and Wammu projects. "
@@ -321,6 +322,12 @@ msgid ""
 "there is simply lot of them and having more available allows us to create\n"
 "better software.\n"
 msgstr ""
+"\n"
+"Dziękujemy za zainteresowanie wsparciem finansowym projektów Gammu i Wammu. "
+"Te pieniądze posłużą jako motywacja dla twórców oraz do zakupu sprzętu "
+"niezbędnego do testów. Mamy aktualnie trochę telefonów, ale jest ich po "
+"prostu dużo, a dostęp do większej ich ilości pozwali nam na udoskonalanie "
+"programu.\n"
 
 #: html/donate.html:25
 msgid ""
