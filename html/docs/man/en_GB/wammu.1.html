@@ -1,20 +1,19 @@
 <div class="manpage">
-<h2>wammu-configure</h2>
+<h2>wammu</h2>
 Section: User Commands (1)<br/>
 Updated: 2005-01-24<br/>
 <a href="#index">Index</a> 
 <hr/>
 <p><a class="aname" id="lbAB" name="lbAB"/></p>
 <h3>NAME</h3>
-wammu-configurator - program to configure Gammu engine (used by
-Wammu)
+wammu - program for managing entries in your mobile phone
 <p><a class="aname" id="lbAC" name="lbAC"/></p>
 <h3>SYNOPSIS</h3>
-<b>wammu-configure</b> [<i>options</i>]<br/>
+<b>wammu</b> [<i>options</i>]<br/>
 <p><a class="aname" id="lbAD" name="lbAD"/></p>
 <h3>DESCRIPTION</h3>
-This manual page explains the <b>wammu-configure</b> program. This
-program is graphical configuration manager for gammu.
+This manual page explains the <b>wammu</b> program. This program is
+graphical interface for gammu.
 <p><a class="aname" id="lbAE" name="lbAE"/></p>
 <h3>OPTIONS</h3>
 These programs follow the usual GNU command line syntax, with long
@@ -29,6 +28,13 @@ included below.
 <dd>Use locales from current directory rather than system ones.
 This is mostly useful for development or when running from unpacked
 tarball without installation.</dd>
+<dt><b>-i, --info</b></dt>
+<dd>Prints connection settings and tries to connect the phone and
+display some basic information about it. This does not use
+GUI.</dd>
+<dt><b>-d, --debug</b></dt>
+<dd>Enables printing of debug information to stderr. Work for both
+GUI and --info.</dd>
 </dl>
 <a class="aname" id="lbAF" name="lbAF"/>
 <h3>LICENSE</h3>
@@ -43,7 +49,7 @@ reports to &lt;<a href="http://bugs.wammu.eu/">http://bugs.wammu.eu/</a>&gt;.
 <h3>SEE ALSO</h3>
 More information is available on program website: &lt;<i><a href="http://wammu.eu/">http://wammu.eu/</a></i>&gt;.
 <p><a href="../gammu.1/">gammu</a>(1)</p>
-<p><a href="../wammu.1/">wammu</a>(1)</p>
+<p><a href="../wammu-configure.1/">wammu-configure</a>(1)</p>
 <p><a class="aname" id="lbAI" name="lbAI"/></p>
 <h3>AUTHOR</h3>
 Michal Cihar &lt;<i><a href="mailto:michal@cihar.com">michal@cihar.com</a></i>&gt; <a class="aname" id="lbAJ" name="lbAJ"/>
@@ -66,5 +72,5 @@ Copyright © 2003 - 2008 Michal Cihar &lt;<i><a href="mailto:michal@cihar.com">m
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 15:20:33 GMT, August 19, 2010
+Time: 15:20:32 GMT, August 19, 2010
 </div>

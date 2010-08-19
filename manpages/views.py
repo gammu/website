@@ -11,7 +11,9 @@ import os
 langnames = {
     'cs': ugettext_lazy('Czech'),
     'en': ugettext_lazy('English'),
+    'en_GB': ugettext_lazy('English (Great Britain)'),
     'de': ugettext_lazy('German'),
+    'fr': ugettext_lazy('French'),
     'it': ugettext_lazy('Italian'),
     'nl': ugettext_lazy('Dutch'),
     'sk': ugettext_lazy('Slovak'),

@@ -35,7 +35,7 @@ které ovládají filtrování zpráv (viz dále).</p>
 <dl compact="compact">
 <dt><b>Service</b></dt>
 <dd>
-<p>Jakou službu SMSM použít, jedna z FILES, NULL, MYSQL, PGSQL, DBI
+<p>Jakou službu SMSD použít, jedna z FILES, NULL, MYSQL, PGSQL, DBI
 (záleží na zakompilovaných knihovnách).</p>
 <p><b>FILES</b> - ukládá zprávy v souborech, pro podrobnosti viz
 <a href="../gammu-smsd-files.7/">gammu-smsd-files</a>(7)<br/>
@@ -236,10 +236,11 @@ zpráv.</p>
 </dd>
 <dt><b>BackendRetries</b></dt>
 <dd>
-<p>How many times will SMSD backend retry operation.</p>
-<p>The implementation on different backends is different, for
-database backends it generally means how many times it will try to
-reconnect to the server.</p>
+<p>Kolikrát se bude SMSD služba pokoušet znovu připojit k
+úložišti.</p>
+<p>Implementace je pro každou službu jiná, například pro databáze
+toto obvykle znamená kolikrát se pokusí připojit k serveru po
+ztrátě spojení.</p>
 <p>Výchozí je 10.</p>
 </dd>
 </dl>
@@ -472,5 +473,5 @@ soubory</a></dt>
 <hr/>
 This document was created by man2html, using the manual
 pages.<br/>
-Time: 09:34:10 GMT, July 22, 2010
+Time: 15:20:28 GMT, August 19, 2010
 </div>
