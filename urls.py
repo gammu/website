@@ -167,6 +167,8 @@ urlpatterns = patterns('',
     (r'^tools/$', 'wammu.views.static', {'page': 'tools/index.html'}),
     (r'^tools/pdu-encode/$', 'tools.views.pduencode'),
     (r'^tools/pdu-decode/$', 'tools.views.pdudecode'),
+    (r'^tools/countries/$', 'tools.views.countries'),
+    (r'^tools/networks/$', 'tools.views.networks'),
 
     # RSS feeds
     (r'^news/(?P<url>(rss|atom).*)/$', 'django.contrib.syndication.views.feed',

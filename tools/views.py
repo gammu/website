@@ -85,3 +85,24 @@ def pdudecode(request):
         'decoded': decoded,
         'smsinfo': smsinfo,
     }))
+
+def countries(request):
+    import gammu
+    countries = gammu.GSMCountries.items()
+    countries.sort()
+    return render_to_response('tools/countries.html', RequestContext(request, {
+        'countries': countries,
+    }))
+
+def networks(request):
+    import gammu
+    if request.GET.has_key('country'):
+        country = request.GET['country']
+        l = len(country)
+        networks = [x for x in gammu.GSMNetworks.items() if x[0][:l] == country]
+    else:
+        networks = gammu.GSMNetworks.items()
+    networks.sort()
+    return render_to_response('tools/networks.html', RequestContext(request, {
+        'networks': networks,
+    }))
