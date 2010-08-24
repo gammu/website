@@ -21,7 +21,10 @@ def pdudecode(request):
                 try:
                     d = gammu.DecodePDU(part.decode('hex'))
                     parts.append([d])
-                    d['TextHex'] = d['Text'].encode('hex')
+                    if type(d['Text']) == unicode:
+                        d['TextHex'] = None
+                    else:
+                        d['TextHex'] = d['Text'].encode('hex')
                     d['UDH']['TextHex'] = d['UDH']['Text'].encode('hex')
                     d['Id'] = i + 1
                     d['PDU'] = part
