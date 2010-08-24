@@ -15,6 +15,9 @@
 {% endblock %}
 
 {% block content %}
+{% if message %}
+<p class="notice">{{ message }}</p>
+{% endif %}
 {% include manpage %}
 {% endblock %}
 
