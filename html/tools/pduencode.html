@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load encoding %}
+
+{% block title %}{% trans "PDU encoder using Gammu" %}{% endblock %}
+
+{% block sidebar_top %}
+{% include "tools/sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "PDU encoder using Gammu" %}</h2>
+<form action="/tools/pdu-encode/" method="POST">
+{% csrf_token %}
+<table>
+{{ form.as_table }}
+<tr><td></td>
+<td>
+<input type="submit" value="{% trans "Go" %}" />
+</td>
+</tr>
+</table>
+</form>
+
+{% if pdu %}
+<h3>{% trans "PDU data" %}</h3>
+{% for part in pdu %}
+<h4>{% blocktrans with part.0 as id %}Message number {{ id }}{% endblocktrans %}</h4>
+<pre>
+{{ part.1 }}
+</pre>
+{% endfor %}
+{% endif %}
+
+
+{% endblock %}

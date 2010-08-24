@@ -1,11 +1,42 @@
 # Create your views here.
-from forms import PDUDecodeForm
+from forms import PDUDecodeForm, PDUEncodeForm
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 import gammu
 
 def pduencode(request):
-    return None
+    pdu = None
+    if request.method == 'POST':
+        form = PDUEncodeForm(request.POST)
+        if form.is_valid():
+            # Prepare message data
+            smsinfo = {
+                'Class': form.cleaned_data['cls'],
+                'Unicode': form.cleaned_data['unicode'],
+                'Entries':  [
+                    {
+                        'ID': 'ConcatenatedTextLong',
+                        'Buffer': form.cleaned_data['text'],
+                    }
+                ]}
+            # Encode PDU
+            encoded = gammu.EncodeSMS(smsinfo)
+            for msg in encoded:
+                msg['SMSC'] = {
+                        'Location': 0,
+                        'Number': form.cleaned_data['smsc'],
+                        'Validity': 'Max',
+                        }
+                msg['Number'] = form.cleaned_data['number']
+                msg['Class'] = form.cleaned_data['cls']
+            pdu = enumerate([gammu.EncodePDU(e, 'Submit').encode('hex') for e in encoded])
+
+    else:
+        form = PDUEncodeForm()
+    return render_to_response('tools/pduencode.html', RequestContext(request, {
+        'form': form,
+        'pdu': pdu,
+    }))
 
 def pdudecode(request):
     decoded = None
