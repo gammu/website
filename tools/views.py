@@ -19,8 +19,9 @@ def pduencode(request):
                         'Buffer': form.cleaned_data['text'],
                     }
                 ]}
-            # Encode PDU
+            # Encode SMS
             encoded = gammu.EncodeSMS(smsinfo)
+            # Fill in remaining data
             for msg in encoded:
                 msg['SMSC'] = {
                         'Location': 0,
@@ -29,6 +30,7 @@ def pduencode(request):
                         }
                 msg['Number'] = form.cleaned_data['number']
                 msg['Class'] = form.cleaned_data['cls']
+            # Encode PDU
             pdu = enumerate([gammu.EncodePDU(e, 'Submit').encode('hex') for e in encoded])
 
     else:
