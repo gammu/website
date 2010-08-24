@@ -29,6 +29,8 @@ def langcmp(a, b):
 # Create your views here.
 
 def show_page(request, page, lang = 'en'):
+    if not langnames.has_key(lang):
+        raise Http404('Language not found!')
     manpage = 'docs/man/%s/%s.html' % (lang, page)
     if not os.path.exists('%s/%s' % (settings.HTML_ROOT, manpage)):
         raise Http404('No man page matching %s/%s found.' % (lang, page))
