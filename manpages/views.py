@@ -4,7 +4,7 @@ from django.utils.translation import ugettext_lazy
 
 from django.conf import settings
 
-from django.http import Http404
+from django.http import Http404, HttpResponseRedirect
 
 import os
 
@@ -44,7 +44,7 @@ def show_page(request, page, lang = 'en'):
         raise Http404('Language not found!')
     manpage = 'docs/man/%s/%s.html' % (lang, page)
     if not os.path.exists('%s/%s' % (settings.HTML_ROOT, manpage)):
-        raise Http404('No man page matching %s/%s found.' % (lang, page))
+        return HttpResponseRedirect('/docs/man/en/%s/' % page)
     return render_to_response('docs/show_man.html', RequestContext(request, {
         'manpage': manpage,
         'lang': lang,
