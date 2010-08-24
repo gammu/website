@@ -19,10 +19,21 @@ langnames = {
     'sk': ugettext_lazy('Slovak'),
 }
 
+langparts = settings.LANGUAGE_CODE.split('-')
+if len(langparts) == 1:
+    globallang = langparts[0]
+else:
+    globallang = '%s_%s' % (langparts[0], langparts[1].upper)
+    if not langnames.has_key(globallang):
+        globallang = langparts[0]
+del langparts
+if not langnames.has_key(globallang):
+    raise Exception('Bad language: %s' % globallang)
+
 def langcmp(a, b):
-    if a == 'en':
+    if a == globallang:
         return -1
-    if b == 'en':
+    if b == globallang:
         return 1
     return cmp(a, b)
 
