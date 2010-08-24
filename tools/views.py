@@ -10,6 +10,7 @@ def pduencode(request):
 def pdudecode(request):
     decoded = None
     error = None
+    smsinfo = None
     if request.method == 'POST':
         form = PDUDecodeForm(request.POST)
         if form.is_valid():
