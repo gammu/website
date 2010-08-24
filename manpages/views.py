@@ -1,10 +1,10 @@
 from django.shortcuts import render_to_response
 from django.template import RequestContext
-from django.utils.translation import ugettext_lazy
+from django.utils.translation import ugettext_lazy, ugettext as _
 
 from django.conf import settings
 
-from django.http import Http404, HttpResponseRedirect
+from django.http import Http404
 
 import os
 
@@ -43,10 +43,14 @@ def show_page(request, page, lang = 'en'):
     if not langnames.has_key(lang):
         raise Http404('Language not found!')
     manpage = 'docs/man/%s/%s.html' % (lang, page)
+    message = None
     if not os.path.exists('%s/%s' % (settings.HTML_ROOT, manpage)):
-        return HttpResponseRedirect('/docs/man/en/%s/' % page)
+        lang = 'en'
+        message = _('This man page is not translated to selected language, displaying English version instead.')
+        manpage = 'docs/man/%s/%s.html' % (lang, page)
     return render_to_response('docs/show_man.html', RequestContext(request, {
         'manpage': manpage,
+        'message': message,
         'lang': lang,
         'page': page,
         'others': list_pages(lang),
