@@ -11,6 +11,31 @@
 
 <h2>{% trans "Tools for Wammu and Gammu" %}</h2>
 
+<p>
+{% blocktrans %}
+You can find here various tools which you might find useful when working with
+GSM phones in general, not only when using Gammu/Wammu.
+{% endblocktrans %}
+</p>
+
+<h3>{% trans "PDU decoding/encoding" %}</h3>
+
+<p>
+{% blocktrans %}
+The SMS messages are transfered in the network encoded in PDU encoding.
+Following tools allow you to decode or encode PDU into human readable form.
+{% endblocktrans %}
+</p>
+
+<dl>
+
+<dt><a href="/tools/pdu-encode/">PDU encoder</a><dt>
+<dd>{% trans "Useful for creating PDU data, which you can then submit to the phone." %}</dd>
+
+<dt><a href="/tools/pdu-decode/">PDU decoder</a><dt>
+<dd>{% trans "Useful for decoding PDU data, which you might get from your phone." %}</dd>
+
+</dl>
 
 {% endblock %}
 
