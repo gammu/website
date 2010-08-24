@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-22 18:31+0200\n"
+"POT-Creation-Date: 2010-08-24 14:48+0200\n"
 "PO-Revision-Date: 2010-06-02 13:22+0200\n"
 "Last-Translator: Pavol <scroolik@gmail.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
@@ -2392,7 +2392,7 @@ msgstr "Databáza telefónov &Gammu"
 
 #: html/phonedb/index.html:11 html/phonedb/index.html.py:24
 #: html/phonedb/new.html:50 html/phonedb/search.html:22
-#: html/tools/pdudecode.html:20
+#: html/tools/pdudecode.html:20 html/tools/pduencode.html:20
 msgid "Go"
 msgstr ""
 
@@ -3017,6 +3017,45 @@ msgstr ""
 msgid "Tools for Wammu and Gammu"
 msgstr "Wammu a Gammu"
 
+#: html/tools/index.html:15
+msgid ""
+"\n"
+"You can find here various tools which you might find useful when working "
+"with\n"
+"GSM phones in general, not only when using Gammu/Wammu.\n"
+msgstr ""
+
+#: html/tools/index.html:21
+msgid "PDU decoding/encoding"
+msgstr ""
+
+#: html/tools/index.html:24
+msgid ""
+"\n"
+"The SMS messages are transfered in the network encoded in PDU encoding.\n"
+"Following tools allow you to decode or encode PDU into human readable form.\n"
+msgstr ""
+
+#: html/tools/index.html:33
+msgid "Useful for creating PDU data, which you can then submit to the phone."
+msgstr ""
+
+#: html/tools/index.html:36
+msgid "Useful for decoding PDU data, which you might get from your phone."
+msgstr ""
+
+#: html/tools/index.html:40
+#, fuzzy
+msgid "Other tools"
+msgstr "Ďalšie možnosti"
+
+#: html/tools/index.html:43
+msgid ""
+"\n"
+"Do you miss some functionality here? Don't hesitate and contact us on \n"
+"<a href=\"/support/lists/\">mailing lists</a> with your idea.\n"
+msgstr ""
+
 #: html/tools/pdudecode.html:5 html/tools/pdudecode.html.py:13
 msgid "PDU decoder using Gammu"
 msgstr ""
@@ -3025,7 +3064,8 @@ msgstr ""
 msgid "PDU Decoding Result"
 msgstr ""
 
-#: html/tools/pdudecode.html:29 html/tools/pdudecode.html.py:58
+#: html/tools/pdudecode.html:29 html/tools/pdudecode.html.py:59
+#: html/tools/pduencode.html:29
 #, python-format
 msgid "Message number %(id)s"
 msgstr ""
@@ -3035,6 +3075,7 @@ msgid "Decoding failed with error:"
 msgstr ""
 
 #: html/tools/pdudecode.html:37 html/tools/pdudecode.html.py:39
+#: tools/forms.py:13
 msgid "Text"
 msgstr ""
 
@@ -3046,53 +3087,66 @@ msgstr ""
 msgid "UDH header"
 msgstr ""
 
-#: html/tools/pdudecode.html:45
+#: html/tools/pdudecode.html:44
+#, fuzzy
+msgid "Message part"
+msgstr "Správa pre autorov"
+
+#: html/tools/pdudecode.html:46
 msgid "SMSC"
 msgstr ""
 
-#: html/tools/pdudecode.html:46
+#: html/tools/pdudecode.html:47
 msgid "Validity"
 msgstr ""
 
-#: html/tools/pdudecode.html:47
+#: html/tools/pdudecode.html:48
 msgid "Type"
 msgstr ""
 
-#: html/tools/pdudecode.html:48
+#: html/tools/pdudecode.html:49
 #, fuzzy
 msgid "Message Reference"
 msgstr "Správa pre autorov"
 
-#: html/tools/pdudecode.html:56
+#: html/tools/pdudecode.html:57
 msgid "SMS Data Decoding Result"
 msgstr ""
 
-#: html/tools/pdudecode.html:65
+#: html/tools/pdudecode.html:66
 msgid "MMS indicator"
 msgstr ""
 
-#: html/tools/pdudecode.html:66
+#: html/tools/pdudecode.html:67
 msgid "Title"
 msgstr ""
 
-#: html/tools/pdudecode.html:67
+#: html/tools/pdudecode.html:68
 msgid "Sender"
 msgstr ""
 
-#: html/tools/pdudecode.html:68
+#: html/tools/pdudecode.html:69
 msgid "Address"
 msgstr ""
 
-#: html/tools/pdudecode.html:69
+#: html/tools/pdudecode.html:70 tools/forms.py:14
 msgid "Class"
 msgstr ""
 
-#: html/tools/pdudecode.html:72
+#: html/tools/pdudecode.html:73
 msgid "Bitmap"
 msgstr ""
 
-#: html/tools/pdudecode.html:73
+#: html/tools/pdudecode.html:74
 msgid "Bitmaps"
+msgstr ""
+
+#: html/tools/pduencode.html:5 html/tools/pduencode.html.py:13
+msgid "PDU encoder using Gammu"
+msgstr ""
+
+#: html/tools/pduencode.html:27
+msgid "PDU data"
 msgstr ""
 
 #: html/tools/sidebar.html:2 wammu/context_processors.py:36
@@ -3116,19 +3170,33 @@ msgid "English"
 msgstr ""
 
 #: manpages/views.py:14
-msgid "German"
+msgid "English (Great Britain)"
 msgstr ""
 
 #: manpages/views.py:15
-msgid "Italian"
+msgid "German"
 msgstr ""
 
 #: manpages/views.py:16
-msgid "Dutch"
+msgid "French"
 msgstr ""
 
 #: manpages/views.py:17
+msgid "Italian"
+msgstr ""
+
+#: manpages/views.py:18
+msgid "Dutch"
+msgstr ""
+
+#: manpages/views.py:19
 msgid "Slovak"
+msgstr ""
+
+#: manpages/views.py:49
+msgid ""
+"This man page is not translated to selected language, displaying English "
+"version instead."
 msgstr ""
 
 #: news/feeds.py:11
@@ -3290,6 +3358,18 @@ msgstr ""
 
 #: tools/forms.py:10
 msgid "You can provide more messages, each on seaprate line."
+msgstr ""
+
+#: tools/forms.py:15
+msgid "Unicode"
+msgstr ""
+
+#: tools/forms.py:16
+msgid "Recipient"
+msgstr ""
+
+#: tools/forms.py:17
+msgid "SMSC number"
 msgstr ""
 
 #: wammu/context_processors.py:54
