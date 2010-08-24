@@ -28,6 +28,8 @@ def pdudecode(request):
                     decoded.append(d)
                 except gammu.GSMError, e:
                     decoded.append({'Error': e[0]})
+                except Exception, e:
+                    decoded.append({'Error': {'Text': str(e)}})
             # Link multipart messages
             linked = gammu.LinkSMS(parts)
             # Decode multipart messages
