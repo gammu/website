@@ -118,7 +118,9 @@ class Phone(models.Model):
             'name': 'Mobilemedia',
         })
         if self.vendor.slug == 'nokia':
-            name = self.name.replace(' ', '_').replace('-', '_').replace('c', '_classic')
+            name = self.name.replace(' ', '_').replace('-', '_')
+            if name[:-1] == 'c':
+                name = name[:-1] + '_classic'
             result.append({
                 'url': 'http://www.forum.nokia.com/Devices/Device_specifications/%s' % name,
                 'name': 'Nokia Forum',
