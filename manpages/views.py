@@ -17,6 +17,7 @@ langnames = {
     'it': ugettext_lazy('Italian'),
     'nl': ugettext_lazy('Dutch'),
     'sk': ugettext_lazy('Slovak'),
+    'ru': ugettext_lazy('Russian'),
 }
 
 langparts = settings.LANGUAGE_CODE.split('-')

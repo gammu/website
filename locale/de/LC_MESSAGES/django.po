@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-24 16:18+0200\n"
+"POT-Creation-Date: 2010-08-25 15:36+0200\n"
 "PO-Revision-Date: 2010-06-04 20:40+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4093,7 +4093,11 @@ msgstr "Holländisch"
 msgid "Slovak"
 msgstr "Slowakisch"
 
-#: manpages/views.py:49
+#: manpages/views.py:20
+msgid "Russian"
+msgstr ""
+
+#: manpages/views.py:50
 msgid ""
 "This man page is not translated to selected language, displaying English "
 "version instead."
