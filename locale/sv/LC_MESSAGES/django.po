@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-24 14:48+0200\n"
+"POT-Creation-Date: 2010-08-24 16:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2809,6 +2809,18 @@ msgstr ""
 msgid "Jabber chat room"
 msgstr ""
 
+#: html/tools/countries.html:4 html/tools/countries.html.py:12
+msgid "GSM countries list from Gammu"
+msgstr ""
+
+#: html/tools/countries.html:15
+msgid ""
+"\n"
+"This list contains GSM countries as are currently defined in Gammu. If you "
+"can \n"
+"see some bug here, please <a href=\"/support/bugs/\">report it</a>.\n"
+msgstr ""
+
 #: html/tools/index.html:4 html/tools/index.html.py:12
 msgid "Tools for Wammu and Gammu"
 msgstr ""
@@ -2845,10 +2857,30 @@ msgid "Other tools"
 msgstr ""
 
 #: html/tools/index.html:43
+msgid "List of GSM codes for countries"
+msgstr ""
+
+#: html/tools/index.html:44
+msgid "List of GSM codes for networks"
+msgstr ""
+
+#: html/tools/index.html:48
 msgid ""
 "\n"
 "Do you miss some functionality here? Don't hesitate and contact us on \n"
 "<a href=\"/support/lists/\">mailing lists</a> with your idea.\n"
+msgstr ""
+
+#: html/tools/networks.html:4 html/tools/networks.html.py:12
+msgid "GSM networks list from Gammu"
+msgstr ""
+
+#: html/tools/networks.html:15
+msgid ""
+"\n"
+"This list contains GSM networks as are currently defined in Gammu. If you "
+"can \n"
+"see some bug here, please <a href=\"/support/bugs/\">report it</a>.\n"
 msgstr ""
 
 #: html/tools/pdudecode.html:5 html/tools/pdudecode.html.py:13
@@ -2952,6 +2984,15 @@ msgstr ""
 
 #: html/tools/sidebar.html:5
 msgid "PDU decoder"
+msgstr ""
+
+#: html/tools/sidebar.html:6
+#, fuzzy
+msgid "Countries"
+msgstr "Kategorier"
+
+#: html/tools/sidebar.html:7
+msgid "Networks"
 msgstr ""
 
 #: manpages/views.py:12
