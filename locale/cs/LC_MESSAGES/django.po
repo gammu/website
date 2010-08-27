@@ -3296,9 +3296,8 @@ msgid "Useful for decoding PDU data, which you might get from your phone."
 msgstr ""
 
 #: html/tools/index.html:40
-#, fuzzy
 msgid "Other tools"
-msgstr "Další možnosti"
+msgstr "Další nástroje"
 
 #: html/tools/index.html:43
 msgid "List of GSM codes for countries"
