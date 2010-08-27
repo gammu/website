@@ -543,6 +543,13 @@ msgid ""
 "Gammu\n"
 "from the \"Heretics of Dune\" book written by Frank Herbert exists.\n"
 msgstr ""
+"\n"
+"Tento projekt se původně oddělil od projektu Gnokii, a až do verze 0.58 byl\n"
+"pojmenován MyGnokii2. Poté, co se ukázala potřeba najít vhodnější název, "
+"bylo zvoleno slovo Gammu,\n"
+"jako zkratka ze slov Gammu All Mobile Management Utilities, aniž bychom "
+"tušili, že \"Gammu\" již existuje\n"
+"v knize Franka Herberta \"Heretics of Dune\".\n"
 
 #: html/gammu.html:50
 msgid ""
