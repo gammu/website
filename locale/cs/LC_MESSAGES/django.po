@@ -558,6 +558,13 @@ msgid ""
 "bindings</a> which you can use to develop own application accessing mobile\n"
 "phone.\n"
 msgstr ""
+"\n"
+"Baliček Gammu neobsahuje pouze samotný program, ale také\n"
+"<a href=\"/smsd\">Gammu SMS Démona</a>,\n"
+"<a href=\"/libgammu\">Gammu knihovnu</a> a <a href=\"/python-gammu\">Python "
+"bindings</a>\n"
+"které můžete využít při vývoji vlastních aplikací komunikujících s mobilním "
+"telefonem."
 
 #: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:34
 #: html/smsd.html:63 html/wammu.html:47 html/downloads/list.html:4
