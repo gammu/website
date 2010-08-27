@@ -530,7 +530,7 @@ msgstr ""
 "telefonu,i když rozsah funkcí, které jsou podporovány se u různých telefonů "
 "liší...Zkušenosti ostatních uživatelů s konkrétními telefony najdete v <a "
 "href=\"/phones/\">Gammu Databázi Telefonů</a>.Obvykle jsou podporovány tyto "
-"funkce:"
+"funkce:\n"
 
 #: html/gammu.html:41
 msgid ""
@@ -547,7 +547,7 @@ msgstr ""
 "bylpojmenován MyGnokii2. Poté, co se ukázala potřeba najít vhodnější název, "
 "bylo zvoleno slovo Gammu,jako zkratka ze slov Gammu All Mobile Management "
 "Utilities, aniž bychom tušili, že \"Gammu\" již existujev knize Franka "
-"Herberta \"Heretics of Dune\"."
+"Herberta \"Heretics of Dune\".\n"
 
 #: html/gammu.html:50
 msgid ""
@@ -561,7 +561,7 @@ msgstr ""
 "Baliček Gammu neobsahuje pouze samotný program, ale také<a "
 "href=\"/smsd\">Gammu SMS Démona</a>,<a href=\"/libgammu\">Gammu knihovnu</a> a "
 "<a href=\"/python-gammu\">Python bindings</a>které můžete využít při vývoji "
-"vlastních aplikací komunikujících s mobilním telefonem."
+"vlastních aplikací komunikujících s mobilním telefonem.\n"
 
 #: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:34
 #: html/smsd.html:63 html/wammu.html:47 html/downloads/list.html:4
