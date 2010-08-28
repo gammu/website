@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-25 15:36+0200\n"
+"POT-Creation-Date: 2010-08-28 11:57+0200\n"
 "PO-Revision-Date: 2010-06-04 20:40+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3207,12 +3207,12 @@ msgstr ""
 "finden diese auf der rechten Seite).\n"
 
 #: html/phonedb/phone.html:65
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "If this record contains wrong information, please <a\n"
-"href=\"/phones/new?vendor=%(vendor)s&amp;name=%(phone)s\">add new record</"
-"a>\n"
+"href=\"/phones/new?vendor=%(vendor)s&amp;name=%(phone|urlencode)s\">add new "
+"record</a>\n"
 "with correct information and the record will be replaced after review.\n"
 "All records were filled in by users and there is no guarantee that they are\n"
 "correct.\n"
@@ -4097,7 +4097,11 @@ msgstr "Slowakisch"
 msgid "Russian"
 msgstr ""
 
-#: manpages/views.py:50
+#: manpages/views.py:21
+msgid "Spanish"
+msgstr ""
+
+#: manpages/views.py:51
 msgid ""
 "This man page is not translated to selected language, displaying English "
 "version instead."
