@@ -10,7 +10,7 @@
 <ul>
 <li><a href="/phones">Phones Database</a></li>
 <li><a href="{{ vendor.get_absolute_url }}">{{ vendor.name }}</a></li>
-<li><a href="/phones/new?vendor={{ vendor.slug }}&amp;name={{ phone.name }}">{% trans "Add new record" %}</a></li>
+<li><a href="/phones/new?vendor={{ vendor.slug }}&amp;name={{ phone.name|urlencode }}">{% trans "Add new record" %}</a></li>
 {% if user.is_superuser %}
 <li><a href="/admin/phonedb/phone/{{ phone.id }}/">{% trans "Edit" %}</a></li>
 {% ifnotequal phone.state "deleted" %}
@@ -64,7 +64,7 @@ on right side).
 <p>
 {% blocktrans with vendor.slug as vendor and phone.name as phone %}
 If this record contains wrong information, please <a
-href="/phones/new?vendor={{ vendor }}&amp;name={{ phone }}">add new record</a>
+href="/phones/new?vendor={{ vendor }}&amp;name={{ phone|urlencode }}">add new record</a>
 with correct information and the record will be replaced after review.
 All records were filled in by users and there is no guarantee that they are
 correct.
