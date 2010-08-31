@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-28 12:06+0200\n"
+"POT-Creation-Date: 2010-08-31 11:42+0200\n"
 "PO-Revision-Date: 2010-01-28 00:48+0200\n"
 "Last-Translator:  <cartman@cartman34.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -212,7 +212,7 @@ msgid "FAQ"
 msgstr "FAQ"
 
 #: html/base.html:121 html/docs/sidebar.html:7 html/sidebars/common.html:3
-#: phonedb/views.py:100
+#: phonedb/views.py:101
 msgid "Supported phones"
 msgstr "Téléphones supportés"
 
@@ -3091,7 +3091,7 @@ msgstr ""
 msgid "%(description)s [<a href=\"%(url)s\">Link</a>]"
 msgstr ""
 
-#: phonedb/forms.py:27 phonedb/models.py:81
+#: phonedb/forms.py:27 phonedb/models.py:91
 msgid "Features which are working in Gammu."
 msgstr ""
 
@@ -3100,97 +3100,102 @@ msgstr ""
 msgid "%(description)s (%(name)s)"
 msgstr ""
 
-#: phonedb/models.py:19
+#: phonedb/models.py:20
 msgid "Use [at] and [dot]"
 msgstr "Utilisez [at] et [dot]"
 
-#: phonedb/models.py:20
+#: phonedb/models.py:21
 msgid "Display it normally"
 msgstr "Affichage normal"
 
-#: phonedb/models.py:21
+#: phonedb/models.py:22
 msgid "Don't show email at all"
 msgstr "Ne pas afficher de mail"
 
-#: phonedb/models.py:22
+#: phonedb/models.py:23
 msgid "Insert NOSPAM text at random position"
 msgstr "Insérez le texte NOSPAM aléatoirement"
 
-#: phonedb/models.py:26
+#: phonedb/models.py:27
 msgid "Draft"
 msgstr ""
 
-#: phonedb/models.py:27
+#: phonedb/models.py:28
 msgid "Approved"
 msgstr ""
 
-#: phonedb/models.py:28
+#: phonedb/models.py:29
 msgid "Deleted"
 msgstr ""
 
-#: phonedb/models.py:32
+#: phonedb/models.py:33
 msgid "Phone information"
 msgstr "Information sur le téléphone"
 
-#: phonedb/models.py:33
+#: phonedb/models.py:34
 msgid "Sending and saving SMS"
 msgstr "Envoyer et sauver SMS"
 
-#: phonedb/models.py:34
+#: phonedb/models.py:35
 msgid "Multimedia messaging"
 msgstr "Messages multimédia"
 
 # Cela m'étonnerait que ce soit le répertoire qui soit basic...
-#: phonedb/models.py:35
+#: phonedb/models.py:36
 msgid "Basic phonebook functions (name and phone number)"
 msgstr "Fonctions basiques du répertoire (nom et numéro de téléphone)"
 
-#: phonedb/models.py:36
+#: phonedb/models.py:37
 msgid "Enhanced phonebook entries (eg. several numbers per entry)"
 msgstr ""
 
-#: phonedb/models.py:37
+#: phonedb/models.py:38
 msgid "Calendar entries"
 msgstr "Entrées du calendrier"
 
-#: phonedb/models.py:38
+#: phonedb/models.py:39
 msgid "Todos"
 msgstr "Tâches à faire"
 
-#: phonedb/models.py:39
+#: phonedb/models.py:40
 msgid "Filesystem manipulation"
 msgstr "Manipulation de fichiers"
 
-#: phonedb/models.py:40
+#: phonedb/models.py:41
 msgid "Reading and making calls"
 msgstr "Recevoir et appeler"
 
-#: phonedb/models.py:41
+#: phonedb/models.py:42
 msgid "Logos"
 msgstr "Logos"
 
-#: phonedb/models.py:42
+#: phonedb/models.py:43
 msgid "Ringtones"
 msgstr "Sonneries"
 
-#: phonedb/models.py:79
+#: phonedb/models.py:84
+#, python-format
+msgid "Phone name should not include vendor name: %s"
+msgstr ""
+
+#: phonedb/models.py:89
 msgid "Phone name, please exclude vendor name."
 msgstr ""
 
-#: phonedb/models.py:80
+#: phonedb/models.py:90
 msgid "Connection used in Gammu configuration."
 msgstr "Connexion utilisée dans la configuration de Gammu."
 
-#: phonedb/models.py:82
+#: phonedb/models.py:92
 msgid "Model used in Gammu configuration, usually empty."
 msgstr "Modèle utilisé dans la configuration de Gammu, généralement vide."
 
-#: phonedb/models.py:83
+#: phonedb/models.py:93
 msgid "Gammu version where you tested this phone."
 msgstr "Version de Gammu sur laquelle vous avez testé votre téléphone."
 
 # balisage, balisage...
-#: phonedb/models.py:84
+#: phonedb/models.py:94
 msgid ""
 "Any note about this phone and Gammu support for it. You can use <a href="
 "\"http://daringfireball.net/projects/markdown/syntax\">markdown markup</a>."
@@ -3199,27 +3204,27 @@ msgstr ""
 "Vous pouvez utiliser <a href=\"http://daringfireball.net/projects/markdown/"
 "syntax\">le code markdown</a>."
 
-#: phonedb/models.py:87
+#: phonedb/models.py:97
 msgid "Please choose how will be email handled in next field."
 msgstr ""
 
-#: phonedb/views.py:101
-msgid "Valid records"
+#: phonedb/views.py:102
+msgid "Approved records"
 msgstr ""
 
-#: phonedb/views.py:102
+#: phonedb/views.py:103
 msgid "Total records"
 msgstr ""
 
-#: phonedb/views.py:120
+#: phonedb/views.py:121
 msgid "Gammu Phone Database Feed (RSS)"
 msgstr "Flux vers la base de données Gammu (RSS)"
 
-#: phonedb/views.py:121
+#: phonedb/views.py:122
 msgid "Gammu Phone Database Feed (Atom)"
 msgstr "Flux vers la base de données Gammu (Atom)"
 
-#: phonedb/views.py:436
+#: phonedb/views.py:443
 msgid "Phone record has been created."
 msgstr "L'enregistrement du téléphone a bien été créé."
 

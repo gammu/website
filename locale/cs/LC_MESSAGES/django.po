@@ -2,13 +2,14 @@
 # Copyright (C) 2009 Michal Čihař <michal@cihar.com>
 # This file is distributed under the same license as the PACKAGE package.
 # Michal <michal@cihar.com>, 2009, 2010.
+# Michal Čihař <michal@cihar.com>, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-28 12:05+0200\n"
-"PO-Revision-Date: 2010-08-27 10:37+0200\n"
+"POT-Creation-Date: 2010-08-31 11:41+0200\n"
+"PO-Revision-Date: 2010-08-31 11:47+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -223,7 +224,7 @@ msgid "FAQ"
 msgstr "ČKD"
 
 #: html/base.html:121 html/docs/sidebar.html:7 html/sidebars/common.html:3
-#: phonedb/views.py:100
+#: phonedb/views.py:101
 msgid "Supported phones"
 msgstr "Podporované telefony"
 
@@ -3358,62 +3359,59 @@ msgstr ""
 
 #: html/tools/pdudecode.html:43
 msgid "UDH header"
-msgstr ""
+msgstr "UDH hlavička"
 
 #: html/tools/pdudecode.html:44
-#, fuzzy
 msgid "Message part"
-msgstr "Zpráva pro autory"
+msgstr "Část zprávy"
 
 #: html/tools/pdudecode.html:46
 msgid "SMSC"
-msgstr ""
+msgstr "SMSC"
 
 #: html/tools/pdudecode.html:47
 msgid "Validity"
-msgstr ""
+msgstr "Platnost"
 
 #: html/tools/pdudecode.html:48
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 #: html/tools/pdudecode.html:49
-#, fuzzy
 msgid "Message Reference"
-msgstr "Zpráva pro autory"
+msgstr "Reference zprávy"
 
 #: html/tools/pdudecode.html:57
 msgid "SMS Data Decoding Result"
 msgstr ""
 
 #: html/tools/pdudecode.html:66
-#, fuzzy
 msgid "MMS indicator"
-msgstr "Sdílení"
+msgstr "Indikace MMS"
 
 #: html/tools/pdudecode.html:67
 msgid "Title"
-msgstr ""
+msgstr "Předmět"
 
 #: html/tools/pdudecode.html:68
 msgid "Sender"
-msgstr ""
+msgstr "Odesílatel"
 
 #: html/tools/pdudecode.html:69
 msgid "Address"
-msgstr ""
+msgstr "Adresa"
 
 #: html/tools/pdudecode.html:70 tools/forms.py:14
 msgid "Class"
-msgstr ""
+msgstr "Třída"
 
 #: html/tools/pdudecode.html:73
 msgid "Bitmap"
-msgstr ""
+msgstr "Obrázek"
 
 #: html/tools/pdudecode.html:74
 msgid "Bitmaps"
-msgstr ""
+msgstr "Obrázky"
 
 #: html/tools/pduencode.html:5 html/tools/pduencode.html.py:13
 #, fuzzy
@@ -3422,7 +3420,7 @@ msgstr "PAD pro Gammu"
 
 #: html/tools/pduencode.html:27
 msgid "PDU data"
-msgstr ""
+msgstr "PDU data"
 
 #: html/tools/sidebar.html:2 wammu/context_processors.py:36
 msgid "Tools"
@@ -3437,13 +3435,12 @@ msgid "PDU decoder"
 msgstr ""
 
 #: html/tools/sidebar.html:6
-#, fuzzy
 msgid "Countries"
-msgstr "Přispějte"
+msgstr "Země"
 
 #: html/tools/sidebar.html:7
 msgid "Networks"
-msgstr ""
+msgstr "Sítě"
 
 #: manpages/views.py:12
 msgid "Czech"
@@ -3455,7 +3452,7 @@ msgstr "Anglicky"
 
 #: manpages/views.py:14
 msgid "English (Great Britain)"
-msgstr ""
+msgstr "Anglicky (Velká británie)"
 
 #: manpages/views.py:15
 msgid "German"
@@ -3463,7 +3460,7 @@ msgstr "Německy"
 
 #: manpages/views.py:16
 msgid "French"
-msgstr ""
+msgstr "Francouzsky"
 
 #: manpages/views.py:17
 msgid "Italian"
@@ -3479,17 +3476,19 @@ msgstr "Slovensky"
 
 #: manpages/views.py:20
 msgid "Russian"
-msgstr ""
+msgstr "Rusky"
 
 #: manpages/views.py:21
 msgid "Spanish"
-msgstr ""
+msgstr "Španělsky"
 
 #: manpages/views.py:51
 msgid ""
 "This man page is not translated to selected language, displaying English "
 "version instead."
 msgstr ""
+"Zvolená man stránka není přeložena do tohoto jazyka, zobrazuji místo něj "
+"anglickou verzi."
 
 #: news/feeds.py:11
 msgid "Updates about Wammu and Gammu programs."
@@ -3517,7 +3516,7 @@ msgstr "Vlastnosti"
 msgid "%(description)s [<a href=\"%(url)s\">Link</a>]"
 msgstr "%(description)s [<a href=\"%(url)s\">Odkaz</a>]"
 
-#: phonedb/forms.py:27 phonedb/models.py:81
+#: phonedb/forms.py:27 phonedb/models.py:91
 msgid "Features which are working in Gammu."
 msgstr "Funkcionalita, která je podporována Gammu."
 
@@ -3526,95 +3525,100 @@ msgstr "Funkcionalita, která je podporována Gammu."
 msgid "%(description)s (%(name)s)"
 msgstr "%(description)s (%(name)s)"
 
-#: phonedb/models.py:19
+#: phonedb/models.py:20
 msgid "Use [at] and [dot]"
 msgstr "Použít [at] a [dot]"
 
-#: phonedb/models.py:20
+#: phonedb/models.py:21
 msgid "Display it normally"
 msgstr "Zobrazit normálně"
 
-#: phonedb/models.py:21
+#: phonedb/models.py:22
 msgid "Don't show email at all"
 msgstr "Vůbec email nezobrazovat"
 
-#: phonedb/models.py:22
+#: phonedb/models.py:23
 msgid "Insert NOSPAM text at random position"
 msgstr "Vložit text NOSPAM na náhodnou pozici"
 
-#: phonedb/models.py:26
+#: phonedb/models.py:27
 msgid "Draft"
 msgstr "Návrh"
 
-#: phonedb/models.py:27
+#: phonedb/models.py:28
 msgid "Approved"
 msgstr "Schváleno"
 
-#: phonedb/models.py:28
+#: phonedb/models.py:29
 msgid "Deleted"
 msgstr "Smazané"
 
-#: phonedb/models.py:32
+#: phonedb/models.py:33
 msgid "Phone information"
 msgstr "Informace o telefonu"
 
-#: phonedb/models.py:33
+#: phonedb/models.py:34
 msgid "Sending and saving SMS"
 msgstr "Posílání a ukládání SMS"
 
-#: phonedb/models.py:34
+#: phonedb/models.py:35
 msgid "Multimedia messaging"
 msgstr "Multimediální zprávy"
 
-#: phonedb/models.py:35
+#: phonedb/models.py:36
 msgid "Basic phonebook functions (name and phone number)"
 msgstr "Základní funkce seznamu (jméno a telefonní číslo)"
 
-#: phonedb/models.py:36
+#: phonedb/models.py:37
 msgid "Enhanced phonebook entries (eg. several numbers per entry)"
 msgstr "Rozšířené záznamy v seznamu (např. více čísel na záznam)"
 
-#: phonedb/models.py:37
+#: phonedb/models.py:38
 msgid "Calendar entries"
 msgstr "Kalendář"
 
-#: phonedb/models.py:38
+#: phonedb/models.py:39
 msgid "Todos"
 msgstr "Úkoly"
 
-#: phonedb/models.py:39
+#: phonedb/models.py:40
 msgid "Filesystem manipulation"
 msgstr "Práce se soubory"
 
-#: phonedb/models.py:40
+#: phonedb/models.py:41
 msgid "Reading and making calls"
 msgstr "Čtení a provádění hovorů"
 
-#: phonedb/models.py:41
+#: phonedb/models.py:42
 msgid "Logos"
 msgstr "Loga"
 
-#: phonedb/models.py:42
+#: phonedb/models.py:43
 msgid "Ringtones"
 msgstr "Melodie"
 
-#: phonedb/models.py:79
+#: phonedb/models.py:84
+#, python-format
+msgid "Phone name should not include vendor name: %s"
+msgstr "Jméno telefonu, by nemělo obsahovat jméno výrobce: %s"
+
+#: phonedb/models.py:89
 msgid "Phone name, please exclude vendor name."
 msgstr "Jméno telefonu, bez jména výrobce."
 
-#: phonedb/models.py:80
+#: phonedb/models.py:90
 msgid "Connection used in Gammu configuration."
 msgstr "Připojení použité v nastaveních Gammu."
 
-#: phonedb/models.py:82
+#: phonedb/models.py:92
 msgid "Model used in Gammu configuration, usually empty."
 msgstr "Model použitý v nastaveních Gammu, obvykle prázdné."
 
-#: phonedb/models.py:83
+#: phonedb/models.py:93
 msgid "Gammu version where you tested this phone."
 msgstr "Verze Gammu se kterou byl telefon testován."
 
-#: phonedb/models.py:84
+#: phonedb/models.py:94
 msgid ""
 "Any note about this phone and Gammu support for it. You can use <a href="
 "\"http://daringfireball.net/projects/markdown/syntax\">markdown markup</a>."
@@ -3623,34 +3627,34 @@ msgstr ""
 "<a href=\"http://daringfireball.net/projects/markdown/syntax\">značky "
 "markdown</a>."
 
-#: phonedb/models.py:87
+#: phonedb/models.py:97
 msgid "Please choose how will be email handled in next field."
 msgstr "Prosím zvolte si v následující položce, jak bude email zobrazen."
 
-#: phonedb/views.py:101
-msgid "Valid records"
-msgstr "Platných záznamů"
-
 #: phonedb/views.py:102
+msgid "Approved records"
+msgstr "Schválených záznamů"
+
+#: phonedb/views.py:103
 msgid "Total records"
 msgstr "Celkem záznamů"
 
-#: phonedb/views.py:120
+#: phonedb/views.py:121
 msgid "Gammu Phone Database Feed (RSS)"
 msgstr "Databáze telefonů Gammu (RSS)"
 
-#: phonedb/views.py:121
+#: phonedb/views.py:122
 msgid "Gammu Phone Database Feed (Atom)"
 msgstr "Databáze telefonů Gammu (Atom)"
 
 # type: Plain text
-#: phonedb/views.py:436
+#: phonedb/views.py:443
 msgid "Phone record has been created."
 msgstr "Záznam v databázi byl vytvořen."
 
 #: tools/forms.py:7
 msgid "PDU text"
-msgstr ""
+msgstr "PDU text"
 
 #: tools/forms.py:10
 msgid "You can provide more messages, each on seaprate line."
@@ -3658,15 +3662,15 @@ msgstr ""
 
 #: tools/forms.py:15
 msgid "Unicode"
-msgstr ""
+msgstr "Unicode"
 
 #: tools/forms.py:16
 msgid "Recipient"
-msgstr ""
+msgstr "Příjemce"
 
 #: tools/forms.py:17
 msgid "SMSC number"
-msgstr ""
+msgstr "Číslo SMSC"
 
 #: wammu/context_processors.py:54
 msgid "Gammu and Wammu News Feed (RSS)"
@@ -3675,6 +3679,9 @@ msgstr "Novinky o Gammu a Wammu (RSS)"
 #: wammu/context_processors.py:55
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Novinky o Gammu a Wammu (Atom)"
+
+#~ msgid "Valid records"
+#~ msgstr "Platných záznamů"
 
 #~ msgid "Amount (EUR)"
 #~ msgstr "Částka (EUR)"
