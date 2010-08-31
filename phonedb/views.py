@@ -5,6 +5,7 @@ from django.db.models import Q
 from django.template import RequestContext
 from phonedb.models import Vendor, Phone, Feature, Connection, GARBLE_CHOICES
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
+from django.core.exceptions import ValidationError
 from django.core.cache import cache
 from django.utils.translation import ugettext as _
 import csv
@@ -393,6 +394,12 @@ def create_wammu(request):
         phone.gammu_version = request.POST['gammu_version']
     except:
         invalid.append('gammu_version')
+
+    try:
+        phone.full_clean()
+    except ValidationError, e:
+        invalid.extend(e.message_dict.keys())
+        invalid = list(set(invalid))
 
     if len(invalid) > 0:
         response.write(INVALID % ','.join(invalid))
