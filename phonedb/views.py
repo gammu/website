@@ -417,7 +417,7 @@ def create_wammu(request):
 
 def create(request, vendorname = None):
     # Check if we did not receive legacy request
-    if request.POST.has_key('irobot') and request.POST['irobot'] == 'wammu':
+    if request.method == 'POST' and request.POST.has_key('irobot') and request.POST['irobot'] == 'wammu':
         return create_wammu(request)
 
     if request.method == 'POST' and request.POST.has_key('irobot') and request.POST['irobot'] == 'nospam':
