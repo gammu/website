@@ -98,7 +98,7 @@ def get_chart_url():
 
     chart.set_legend([
         _('Supported phones').encode('utf-8'),
-        _('Valid records').encode('utf-8'),
+        _('Approved records').encode('utf-8'),
         _('Total records').encode('utf-8')])
 
     left_axis = map(lambda x: '%d' % x, xrange(0, max_y + 1, max_y / 10))
