@@ -1,6 +1,7 @@
 from django.db import models
 
-from django.utils.translation import ugettext_lazy
+from django.utils.translation import ugettext_lazy, ugettext as _
+from django.core.exceptions import ValidationError
 
 import markdown
 import random
@@ -74,9 +75,18 @@ class Connection(models.Model):
     def __unicode__(self):
         return '%s (%s)' % (self.name, self.medium)
 
+def phone_name_validator(value):
+    parts = value.split()
+    vendor_names = Vendor.objects.all().values_list('name', flat = True)
+    vendor_names = [v.lower() for v in vendor_names]
+    for part in parts:
+        if part.lower() in vendor_names:
+            raise ValidationError(_('Phone name should not include vendor name: %s') % part)
+    return value
+
 class Phone(models.Model):
     vendor = models.ForeignKey(Vendor)
-    name = models.CharField(max_length = 250, help_text = ugettext_lazy('Phone name, please exclude vendor name.'))
+    name = models.CharField(max_length = 250, help_text = ugettext_lazy('Phone name, please exclude vendor name.'), validators = [phone_name_validator])
     connection = models.ForeignKey(Connection, null = True, blank = True, help_text = ugettext_lazy('Connection used in Gammu configuration.'))
     features = models.ManyToManyField(Feature, help_text = ugettext_lazy('Features which are working in Gammu.'), blank = True)
     model = models.CharField(max_length = 100, blank = True, help_text = ugettext_lazy('Model used in Gammu configuration, usually empty.'))
