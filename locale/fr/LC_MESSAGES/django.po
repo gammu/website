@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-31 11:42+0200\n"
+"POT-Creation-Date: 2010-09-01 15:21+0200\n"
 "PO-Revision-Date: 2010-01-28 00:48+0200\n"
 "Last-Translator:  <cartman@cartman34.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -157,7 +157,7 @@ msgstr "Wammu"
 msgid "python-gammu"
 msgstr "python-gammu"
 
-#: html/base.html:96 html/docs/faq.html:42
+#: html/base.html:96 html/docs/faq.html:60
 #, fuzzy
 msgid "SMSD"
 msgstr "SMSC"
@@ -1550,7 +1550,7 @@ msgid ""
 "online</a>.\n"
 msgstr ""
 
-#: html/docs/devel.html:35 html/docs/faq.html:65
+#: html/docs/devel.html:35 html/docs/faq.html:83
 msgid "Python Bindings"
 msgstr ""
 
@@ -1634,38 +1634,61 @@ msgid ""
 "Generally any phone capable of AT commands or IrMC should be supported. "
 "Also\n"
 "any Nokia phone using Nokia OS should work. For Symbian please check <a\n"
-"href=\"#symbian\">separate topic</a>. You can check other user experiences "
-"in <a\n"
-"href=\"/phones/\">Gammu Phones Database</a>.\n"
+"href=\"#symbian\">separate topic</a>.\n"
 msgstr ""
 
-#: html/docs/faq.html:26
-msgid "Are Symbian phones supported?"
+#: html/docs/faq.html:23 html/docs/faq.html.py:36
+msgid ""
+"\n"
+"You can check other user experiences in <a href=\"/phones/\">Gammu Phones "
+"Database</a>.\n"
 msgstr ""
 
 #: html/docs/faq.html:28
+msgid "Which phone is best for SMS gateway?"
+msgstr ""
+
+#: html/docs/faq.html:30
+msgid ""
+"\n"
+"Forget about using standard phones, they tend not to be reliable for long "
+"time\n"
+"connection to PC. Best option are GSM (GPRS, UMTS) terminals/modems. The "
+"best\n"
+"option seem to be Siemens modems (eg. ES75/MC35i/MC55i). Slightly cheaper,\n"
+"while still good are modems made by Huawer (eg. E160/E220/E1750/...).\n"
+msgstr ""
+
+#: html/docs/faq.html:41
+msgid "Are Symbian phones supported?"
+msgstr ""
+
+#: html/docs/faq.html:43
 msgid ""
 "\n"
 "Short answer: Not really.\n"
 msgstr ""
 
-#: html/docs/faq.html:33
+#: html/docs/faq.html:48
 msgid ""
 "\n"
-"Long answet: For older phones (Symbian 9.0 and older), you can install\n"
+"Long answer: For older phones (Symbian 9.0 and older), you can install\n"
 "gnapplet to phone and access data through it. However gnapplet has not yet\n"
 "been ported to newer versions, so you have no chance with recent phones. "
 "You\n"
-"can try something what supports SyncML to retrieve contacts or calendar "
-"from\n"
+"can try using <a\n"
+"href=\"http://series60-remote.sourceforge.net/\">Series60-Remote</a>, which\n"
+"works pretty well with S60 phones.\n"
+"Another option is using something what supports SyncML to retrieve contacts "
+"or calendar from\n"
 "your phone, for example <a href=\"http://www.opensync.org/\">OpenSync</a>.\n"
 msgstr ""
 
-#: html/docs/faq.html:44
+#: html/docs/faq.html:62
 msgid "Which databases does SMSD support?"
 msgstr ""
 
-#: html/docs/faq.html:46
+#: html/docs/faq.html:64
 msgid ""
 "\n"
 "SMSD natively supports <a href=\"http://www.mysql.com/\">MySQL</a> and <a\n"
@@ -1678,11 +1701,11 @@ msgid ""
 "Microsoft Windows, so you can use it only on Unix platforms.\n"
 msgstr ""
 
-#: html/docs/faq.html:56
+#: html/docs/faq.html:74
 msgid "Is there some user interface for SMSD?"
 msgstr ""
 
-#: html/docs/faq.html:58
+#: html/docs/faq.html:76
 msgid ""
 "\n"
 "Yes. You can use some of example interfaces distributed with gammu in\n"
@@ -1692,11 +1715,11 @@ msgid ""
 "a>.\n"
 msgstr ""
 
-#: html/docs/faq.html:67
+#: html/docs/faq.html:85
 msgid "Where can I download python-gammu?"
 msgstr ""
 
-#: html/docs/faq.html:69
+#: html/docs/faq.html:87
 msgid ""
 "\n"
 "The python-gammu project has been merged into Gammu recently, so you just "
@@ -1706,26 +1729,26 @@ msgid ""
 "Binaries for Windows are distributed separately.\n"
 msgstr ""
 
-#: html/docs/faq.html:76
+#: html/docs/faq.html:94
 msgid "How can I use python-gammu?"
 msgstr ""
 
-#: html/docs/faq.html:78
+#: html/docs/faq.html:96
 msgid ""
 "\n"
 "There are lot of examples shipped with Gammu, you can find them in\n"
 "<code>python/examples</code> subdirectory.\n"
 msgstr ""
 
-#: html/docs/faq.html:84
+#: html/docs/faq.html:102
 msgid "General"
 msgstr ""
 
-#: html/docs/faq.html:86
+#: html/docs/faq.html:104
 msgid "Will Gammu work on my system?"
 msgstr ""
 
-#: html/docs/faq.html:88
+#: html/docs/faq.html:106
 msgid ""
 "\n"
 "Gammu is known to run on wide range of systems. It can be compiled natively "
@@ -1737,11 +1760,11 @@ msgid ""
 "USB).\n"
 msgstr ""
 
-#: html/docs/faq.html:97
+#: html/docs/faq.html:115
 msgid "How to set sender number in message?"
 msgstr ""
 
-#: html/docs/faq.html:99
+#: html/docs/faq.html:117
 msgid ""
 "\n"
 "You can quite often see messages sent from textual address or with some "
