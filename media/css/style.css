@@ -296,3 +296,6 @@ span.size {
 td.hex {
     font-family: monospace;
 }
+div.donate {
+    text-align: center;
+}
