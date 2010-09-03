@@ -42,7 +42,7 @@
 }
 
 #body {
-	margin: 2em 20em 1em 1em;
+	margin: 2em 1em 1em 1em;
 	padding: 0px;
 }
 
@@ -76,17 +76,11 @@ body {
 }
 
 div.sidebar {
-	position: absolute;
-	top: 4em;
-	right: 0px;
 	width: 20em;
+    float: right;
 
-	margin-left: 0px;
-	margin-right: 0px;
-	padding-right: 0px;
-
-	padding-top: 20px;
-	padding-left: 0px;
+	margin: 0px;
+    padding: 0px;
 
 	font-size: smaller;
 }
