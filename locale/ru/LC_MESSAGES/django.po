@@ -138,7 +138,6 @@ msgid "Advertisement"
 msgstr "Реклама"
 
 #: html/base.html:91 html/index.html:19
-#, fuzzy
 msgid "About"
 msgstr "О программе"
 
