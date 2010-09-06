@@ -3930,7 +3930,7 @@ msgstr "Other tools"
 
 #: html/tools/index.html:43
 msgid "List of GSM codes for countries"
-msgstr ""
+msgstr "List of GSM codes for countries"
 
 #: html/tools/index.html:44
 msgid "List of GSM codes for networks"
