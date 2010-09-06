@@ -2266,7 +2266,6 @@ msgstr ""
 "Short answer: Not really.\n"
 
 #: html/docs/faq.html:48
-#, fuzzy
 msgid ""
 "\n"
 "Long answer: For older phones (Symbian 9.0 and older), you can install\n"
@@ -2281,12 +2280,14 @@ msgid ""
 "your phone, for example <a href=\"http://www.opensync.org/\">OpenSync</a>.\n"
 msgstr ""
 "\n"
-"Long answet: For older phones (Symbian 9.0 and older), you can install\n"
+"Long answer: For older phones (Symbian 9.0 and older), you can install\n"
 "gnapplet to phone and access data through it. However gnapplet has not yet\n"
-"been ported to newer versions, so you have no chance with recent phones. "
-"You\n"
-"can try something what supports SyncML to retrieve contacts or calendar "
-"from\n"
+"been ported to newer versions, so you have no chance with recent phones. You\n"
+"can try using <a\n"
+"href=\"http://series60-remote.sourceforge.net/\">Series60-Remote</a>, which\n"
+"works pretty well with S60 phones.\n"
+"Another option is using something what supports SyncML to retrieve contacts "
+"or calendar from\n"
 "your phone, for example <a href=\"http://www.opensync.org/\">OpenSync</a>.\n"
 
 #: html/docs/faq.html:62
