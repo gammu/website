@@ -4083,7 +4083,7 @@ msgstr "English"
 
 #: manpages/views.py:14
 msgid "English (Great Britain)"
-msgstr ""
+msgstr "English (Great Britain)"
 
 #: manpages/views.py:15
 msgid "German"
