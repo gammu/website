@@ -4261,9 +4261,8 @@ msgid "Please choose how will be email handled in next field."
 msgstr "Please choose how will be e-mail handled in next field."
 
 #: phonedb/views.py:102
-#, fuzzy
 msgid "Approved records"
-msgstr "Approved"
+msgstr "Approved records"
 
 #: phonedb/views.py:103
 msgid "Total records"
