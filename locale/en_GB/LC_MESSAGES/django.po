@@ -3903,9 +3903,8 @@ msgstr ""
 "GSM phones in general, not only when using Gammu/Wammu.\n"
 
 #: html/tools/index.html:21
-#, fuzzy
 msgid "PDU decoding/encoding"
-msgstr "PDU decoder"
+msgstr "PDU decoding/encoding"
 
 #: html/tools/index.html:24
 msgid ""
