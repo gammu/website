@@ -4050,9 +4050,8 @@ msgid "PDU encoder using Gammu"
 msgstr "PDU encoder using Gammu"
 
 #: html/tools/pduencode.html:27
-#, fuzzy
 msgid "PDU data"
-msgstr "PDU text"
+msgstr "PDU data"
 
 #: html/tools/sidebar.html:2 wammu/context_processors.py:36
 msgid "Tools"
