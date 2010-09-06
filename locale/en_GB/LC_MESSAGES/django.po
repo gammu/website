@@ -4294,7 +4294,7 @@ msgstr "Unicode"
 
 #: tools/forms.py:16
 msgid "Recipient"
-msgstr ""
+msgstr "Recipient"
 
 #: tools/forms.py:17
 msgid "SMSC number"
