@@ -3957,6 +3957,10 @@ msgid ""
 "can \n"
 "see some bug here, please <a href=\"/support/bugs/\">report it</a>.\n"
 msgstr ""
+"\n"
+"This list contains GSM networks as are currently defined in Gammu. If you "
+"can \n"
+"see some bug here, please <a href=\"/support/bugs/\">report it</a>.\n"
 
 #: html/tools/pdudecode.html:5 html/tools/pdudecode.html.py:13
 msgid "PDU decoder using Gammu"
