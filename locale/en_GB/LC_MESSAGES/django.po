@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-07-26 17:07+0200\n"
+"PO-Revision-Date: 2010-09-06 21:00+0200\n"
 "Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: en_GB\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -2209,7 +2209,6 @@ msgid "Is my phone supported?"
 msgstr "Is my phone supported?"
 
 #: html/docs/faq.html:18
-#, fuzzy
 msgid ""
 "\n"
 "Generally any phone capable of AT commands or IrMC should be supported. "
@@ -2218,12 +2217,9 @@ msgid ""
 "href=\"#symbian\">separate topic</a>.\n"
 msgstr ""
 "\n"
-"Generally any phone capable of AT commands or IrMC should be supported. "
-"Also\n"
-"any Nokia phone using Nokia OS should work. For Symbian please check <a\n"
-"href=\"#symbian\">separate topic</a>. You can check other user experiences "
-"in <a\n"
-"href=\"/phones/\">Gammu Phones Database</a>.\n"
+"Generally any phone capable of AT commands or IrMC should be supported. Also "
+"any Nokia phone using Nokia OS should work. For Symbian please check <a "
+"href=\"#symbian\" title=\"symbain\">separate topic</a>.\n"
 
 #: html/docs/faq.html:23 html/docs/faq.html.py:36
 #, fuzzy
