@@ -3912,6 +3912,9 @@ msgid ""
 "The SMS messages are transfered in the network encoded in PDU encoding.\n"
 "Following tools allow you to decode or encode PDU into human readable form.\n"
 msgstr ""
+"\n"
+"The SMS messages are transferred in the network encoded in PDU encoding.\n"
+"Following tools allow you to decode or encode PDU into human readable form.\n"
 
 #: html/tools/index.html:33
 msgid "Useful for creating PDU data, which you can then submit to the phone."
