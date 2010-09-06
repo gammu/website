@@ -4289,9 +4289,8 @@ msgid "You can provide more messages, each on seaprate line."
 msgstr "You can provide more messages, each on separate line."
 
 #: tools/forms.py:15
-#, fuzzy
 msgid "Unicode"
-msgstr "PDU encoder"
+msgstr "Unicode"
 
 #: tools/forms.py:16
 msgid "Recipient"
