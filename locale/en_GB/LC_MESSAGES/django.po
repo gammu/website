@@ -2233,7 +2233,7 @@ msgstr ""
 
 #: html/docs/faq.html:28
 msgid "Which phone is best for SMS gateway?"
-msgstr ""
+msgstr "Which phone is best for SMS gateway?"
 
 #: html/docs/faq.html:30
 msgid ""
