@@ -4298,7 +4298,7 @@ msgstr "Recipient"
 
 #: tools/forms.py:17
 msgid "SMSC number"
-msgstr ""
+msgstr "SMSC number"
 
 #: wammu/context_processors.py:54
 msgid "Gammu and Wammu News Feed (RSS)"
