@@ -2245,6 +2245,13 @@ msgid ""
 "option seem to be Siemens modems (eg. ES75/MC35i/MC55i). Slightly cheaper,\n"
 "while still good are modems made by Huawer (eg. E160/E220/E1750/...).\n"
 msgstr ""
+"\n"
+"Forget about using standard phones, they tend not to be reliable for long "
+"time\n"
+"connection to PC. Best option are GSM (GPRS, UMTS) terminals/modems. The "
+"best\n"
+"option seem to be Siemens modems (eg. ES75/MC35i/MC55i). Slightly cheaper,\n"
+"while still good are modems made by Huawer (eg. E160/E220/E1750/...).\n"
 
 #: html/docs/faq.html:41
 msgid "Are Symbian phones supported?"
