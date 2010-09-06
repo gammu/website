@@ -4228,9 +4228,9 @@ msgid "Ringtones"
 msgstr "Ringtones"
 
 #: phonedb/models.py:84
-#, fuzzy, python-format
+#, python-format
 msgid "Phone name should not include vendor name: %s"
-msgstr "Phone name, please exclude vendor name."
+msgstr "Phone name should not include vendor name: %s"
 
 #: phonedb/models.py:89
 msgid "Phone name, please exclude vendor name."
