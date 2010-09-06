@@ -3925,9 +3925,8 @@ msgid "Useful for decoding PDU data, which you might get from your phone."
 msgstr "Useful for decoding PDU data, which you might get from your phone."
 
 #: html/tools/index.html:40
-#, fuzzy
 msgid "Other tools"
-msgstr "Other Options"
+msgstr "Other tools"
 
 #: html/tools/index.html:43
 msgid "List of GSM codes for countries"
