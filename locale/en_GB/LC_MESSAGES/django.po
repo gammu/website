@@ -3918,7 +3918,7 @@ msgstr ""
 
 #: html/tools/index.html:33
 msgid "Useful for creating PDU data, which you can then submit to the phone."
-msgstr ""
+msgstr "Useful for creating PDU data, which you can then submit to the phone."
 
 #: html/tools/index.html:36
 msgid "Useful for decoding PDU data, which you might get from your phone."
