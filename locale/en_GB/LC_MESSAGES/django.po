@@ -3881,6 +3881,10 @@ msgid ""
 "can \n"
 "see some bug here, please <a href=\"/support/bugs/\">report it</a>.\n"
 msgstr ""
+"\n"
+"This list contains GSM countries as are currently defined in Gammu. If you "
+"can \n"
+"see some bug here, please <a href=\"/support/bugs/\">report it</a>.\n"
 
 #: html/tools/index.html:4 html/tools/index.html.py:12
 msgid "Tools for Wammu and Gammu"
