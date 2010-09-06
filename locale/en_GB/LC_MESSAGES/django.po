@@ -3994,9 +3994,8 @@ msgid "UDH header"
 msgstr "UDH header"
 
 #: html/tools/pdudecode.html:44
-#, fuzzy
 msgid "Message part"
-msgstr "Message Reference"
+msgstr "Message part"
 
 #: html/tools/pdudecode.html:46
 msgid "SMSC"
