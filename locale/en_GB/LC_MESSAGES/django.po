@@ -3934,7 +3934,7 @@ msgstr "List of GSM codes for countries"
 
 #: html/tools/index.html:44
 msgid "List of GSM codes for networks"
-msgstr ""
+msgstr "List of GSM codes for networks"
 
 #: html/tools/index.html:48
 msgid ""
