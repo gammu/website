@@ -4118,6 +4118,8 @@ msgid ""
 "This man page is not translated to selected language, displaying English "
 "version instead."
 msgstr ""
+"This man page is not translated to selected language, displaying English "
+"version instead."
 
 #: news/feeds.py:11
 msgid "Updates about Wammu and Gammu programs."
