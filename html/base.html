@@ -43,6 +43,18 @@
    <div class="clearer"></div>
   </div>
 
+
+  <div id="bodybox">
+  <div id="body">
+  {% if message %}
+  <p class="message">
+  {{ message }}
+  </p>
+  {% endif %}
+  {% block content %}{% endblock %}
+  </div>
+  </div>
+
 <div class="sidebar">
 <h3>{% trans "Page translations" %}</h3>
 <ul>
@@ -94,16 +106,6 @@ href="http://wammu.eu/"></a>
 </p>
   {% block sidebar %}{% endblock %}
 </div>
-
-
-  <div id="body">
-  {% if message %}
-  <p class="message">
-  {{ message }}
-  </p>
-  {% endif %}
-  {% block content %}{% endblock %}
-  </div>
 
 
 <div class="wide">

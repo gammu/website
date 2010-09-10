@@ -41,8 +41,12 @@
     font-size: larger;
 }
 
+div#bodybox {
+    float: left;
+    width: 100%;
+}
 #body {
-	margin: 2em 1em 1em 1em;
+	margin: 2em 21em 1em 1em;
 	padding: 0px;
 }
 
@@ -77,9 +81,10 @@ body {
 
 div.sidebar {
 	width: 20em;
-    float: right;
-
 	margin: 0px;
+	margin-left: -20em;
+    float: left;
+
     padding: 0px;
 
 	font-size: smaller;
