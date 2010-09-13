@@ -15,7 +15,7 @@ class RssPhonesFeed(Feed):
     description_template = 'feeds/phones_description.html'
 
     def categories(self):
-        print [x.name for x in Vendor.objects.all()]
+        return [x.name for x in Vendor.objects.all()]
 
     def items(self):
         return Phone.objects.filter(state__in = ['approved', 'draft']).order_by('-created')[:settings.PHONES_IN_RSS]
