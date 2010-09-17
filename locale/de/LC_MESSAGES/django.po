@@ -2427,7 +2427,7 @@ msgstr ""
 
 #: html/docs/faq.html:115
 msgid "How to set sender number in message?"
-msgstr "Wie kann ich die Absendenummer in einer Nachricht einstellen?"
+msgstr "Wie kann ich die Absendenummer einer Nachricht einstellen?"
 
 #: html/docs/faq.html:117
 msgid ""
