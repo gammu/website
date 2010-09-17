@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-17 23:16+0200\n"
+"PO-Revision-Date: 2010-09-17 23:21+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -3929,6 +3929,9 @@ msgid ""
 "can \n"
 "see some bug here, please <a href=\"/support/bugs/\">report it</a>.\n"
 msgstr ""
+"Diese Liste zeigt GSM Länder, wie sie derzeit in Gammu definiert sind.\n"
+"Wenn Sie hier einen entdecken: <a href=\"/support/bugs/\">Bitte melden Sie uns "
+"den Fehler</a>.\n"
 
 #: html/tools/index.html:4 html/tools/index.html.py:12
 #, fuzzy
