@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-17 22:59+0200\n"
+"PO-Revision-Date: 2010-09-17 23:03+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -3256,7 +3256,7 @@ msgstr ""
 "finden diese auf der rechten Seite).\n"
 
 #: html/phonedb/phone.html:65
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "\n"
 "If this record contains wrong information, please <a\n"
@@ -3268,11 +3268,10 @@ msgid ""
 msgstr ""
 "\n"
 "Sollte dieser Bericht Fehlinformationen enthalten, so bitten wir Sie,\n"
-"<a href=\"/phones/new?vendor=%(vendor)s&amp;name=%(phone)s\">eine neue "
-"Meldung zu erstellen</a>\n"
-"die die korrekten Informationen darstellt. Dieser Bericht  wird in Folge den "
-"vorliegenden ersetzen.\n"
-"Sämtliche vorliegenden Berichte wurden durch Benutzer erstellt, somit gibt "
+"<a href=\"/phones/new?vendor=%(vendor)s&amp;name=%(phone)s\">eine neue Meldung "
+"mit korrekten Informationen zu erstellen.</a>\n"
+"Dieser Bericht  wird in Folge den bereits Vorliegenden ersetzen.\n"
+"Sämtliche vorhandenen Berichte wurden durch Benutzer erstellt - somit gibt "
 "es keinerlei Garantie, dass korrekte Informationen gemeldet wurden.\n"
 
 #: html/phonedb/phone.html:75
