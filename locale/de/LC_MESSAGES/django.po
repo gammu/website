@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-17 22:12+0200\n"
+"PO-Revision-Date: 2010-09-17 22:25+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2261,6 +2261,8 @@ msgstr ""
 #: html/docs/faq.html:28
 msgid "Which phone is best for SMS gateway?"
 msgstr ""
+"Welches Telefongerät eignet sich am besten als SMS Gateway "
+"(Schnittstelle/SMS Server)?"
 
 #: html/docs/faq.html:30
 msgid ""
