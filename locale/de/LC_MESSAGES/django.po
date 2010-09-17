@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-17 22:35+0200\n"
+"PO-Revision-Date: 2010-09-17 22:36+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2427,7 +2427,7 @@ msgstr ""
 
 #: html/docs/faq.html:115
 msgid "How to set sender number in message?"
-msgstr ""
+msgstr "Wie kann ich die Absendenummer in einer Nachricht einstellen?"
 
 #: html/docs/faq.html:117
 msgid ""
