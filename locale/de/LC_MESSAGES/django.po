@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-17 23:21+0200\n"
+"PO-Revision-Date: 2010-09-17 23:23+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -3935,7 +3935,7 @@ msgstr ""
 
 #: html/tools/index.html:4 html/tools/index.html.py:12
 msgid "Tools for Wammu and Gammu"
-msgstr "Wammu und Gammu Werkzeuge"
+msgstr "Wammu und Gammu - Werkzeuge und Gimmicks"
 
 #: html/tools/index.html:15
 msgid ""
