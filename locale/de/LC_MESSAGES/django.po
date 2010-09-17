@@ -2733,7 +2733,7 @@ msgid ""
 "\">on complete listing</a>.\n"
 msgstr ""
 "\n"
-"Sie können Ihre Plattform hier nicht finden? Wählen Sie die richtige aus der "
+"Sie können Ihre Plattform hier nicht finden? Wählen Sie die Richtige aus der "
 "<a href=\"../\">vollständigen Liste</a>.\n"
 
 #: html/downloads/mirror.html:5
