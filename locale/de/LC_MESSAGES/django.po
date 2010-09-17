@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-17 22:55+0200\n"
+"PO-Revision-Date: 2010-09-17 22:59+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -3032,6 +3032,8 @@ msgid ""
 "Database of supported phones in Gammu and Wammu, the software for managing "
 "GSM cell phones."
 msgstr ""
+"Datenbank der durch Wammu und Gammu unterstützten Telefonmodelle, der "
+"Software zur Nutzung und Verwaltung von GSM Handys."
 
 #: html/phonedb/index.html:5 html/phonedb/index.html.py:39
 #: html/phonedb/new.html:5 html/phonedb/phone.html:6
