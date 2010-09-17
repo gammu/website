@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-17 21:57+0200\n"
+"PO-Revision-Date: 2010-09-17 22:03+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -902,11 +902,11 @@ msgstr ""
 "Ihrer jeweiligen Eigentümer/Inhaber, so zutreffend.\n"
 
 #: html/python-gammu.html:4
-#, fuzzy
 msgid "Python bindings form Gammu, the software for managing GSM cell phones."
 msgstr ""
 "\n"
-"Python Anbindung für libGammu, ermöglicht den Einsatz von Python Skripten.\n"
+"Python Anbindungen formen Gammu - die Software, die eine Nutzung von GSM "
+"Handys ermöglicht."
 
 #: html/python-gammu.html:6 html/python-gammu.html.py:22
 msgid "Python bindings for Gammu"
