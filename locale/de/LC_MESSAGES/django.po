@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-17 22:07+0200\n"
+"PO-Revision-Date: 2010-09-17 22:10+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2233,7 +2233,6 @@ msgid "Is my phone supported?"
 msgstr "Wird mein Telefon unterstützt?"
 
 #: html/docs/faq.html:18
-#, fuzzy
 msgid ""
 "\n"
 "Generally any phone capable of AT commands or IrMC should be supported. "
@@ -2248,8 +2247,6 @@ msgstr ""
 "OS basieren.\n"
 "Bezüglich Symbian lesen Sie bitte unter <a href=\"#symbian\">anderes "
 "Kapitel</a> weiter.\n"
-"Erfahrungsberichte anderer Nutzer sehen Sie in der <a href=\"/phones/"
-"\">Gammu Telefondatenbank</a>.\n"
 
 #: html/docs/faq.html:23 html/docs/faq.html.py:36
 #, fuzzy
