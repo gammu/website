@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-17 22:10+0200\n"
+"PO-Revision-Date: 2010-09-17 22:12+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2249,15 +2249,14 @@ msgstr ""
 "Kapitel</a> weiter.\n"
 
 #: html/docs/faq.html:23 html/docs/faq.html.py:36
-#, fuzzy
 msgid ""
 "\n"
 "You can check other user experiences in <a href=\"/phones/\">Gammu Phones "
 "Database</a>.\n"
 msgstr ""
 "\n"
-"Gerne können Sie auch Ihre Erfahrungen erzählen, in unserer <a href=\"/"
-"phones/\">Gammu Telefondatenbank</a> - so Sie das noch nicht getan haben.\n"
+"Schauen Sie sich die Erfahrungsberichte anderer an, in der <a "
+"href=\"/phones/\">Gammu Telefondatenbank</a>."
 
 #: html/docs/faq.html:28
 msgid "Which phone is best for SMS gateway?"
