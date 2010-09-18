@@ -4093,7 +4093,7 @@ msgstr "Bitmap"
 
 #: html/tools/pdudecode.html:74
 msgid "Bitmaps"
-msgstr ""
+msgstr "Bitmaps"
 
 #: html/tools/pduencode.html:5 html/tools/pduencode.html.py:13
 #, fuzzy
