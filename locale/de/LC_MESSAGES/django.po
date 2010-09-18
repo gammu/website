@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-18 08:45+0200\n"
+"PO-Revision-Date: 2010-09-18 08:46+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -4024,7 +4024,7 @@ msgstr "PDU Entcodierungsergebnisse"
 #: html/tools/pduencode.html:29
 #, python-format
 msgid "Message number %(id)s"
-msgstr ""
+msgstr "Nachricht Nummer %(id)s"
 
 #: html/tools/pdudecode.html:31
 msgid "Decoding failed with error:"
