@@ -4101,7 +4101,7 @@ msgstr "PDU Verschlüsselung mit Gammu"
 
 #: html/tools/pduencode.html:27
 msgid "PDU data"
-msgstr ""
+msgstr "PDU Daten"
 
 #: html/tools/sidebar.html:2 wammu/context_processors.py:36
 msgid "Tools"
