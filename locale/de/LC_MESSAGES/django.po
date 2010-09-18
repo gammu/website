@@ -4113,7 +4113,7 @@ msgstr "PDU Codierer"
 
 #: html/tools/sidebar.html:5
 msgid "PDU decoder"
-msgstr ""
+msgstr "PDU Entcodierer"
 
 #: html/tools/sidebar.html:6
 #, fuzzy
