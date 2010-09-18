@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-18 09:01+0200\n"
+"PO-Revision-Date: 2010-09-18 09:02+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -4109,7 +4109,7 @@ msgstr "Werkzeuge"
 
 #: html/tools/sidebar.html:4
 msgid "PDU encoder"
-msgstr ""
+msgstr "PDU Codierer"
 
 #: html/tools/sidebar.html:5
 msgid "PDU decoder"
