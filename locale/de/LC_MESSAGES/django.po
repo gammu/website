@@ -4018,7 +4018,7 @@ msgstr "PDU Entcodierung mit Gammu"
 
 #: html/tools/pdudecode.html:27
 msgid "PDU Decoding Result"
-msgstr ""
+msgstr "PDU Entcodierungsergebnisse"
 
 #: html/tools/pdudecode.html:29 html/tools/pdudecode.html.py:59
 #: html/tools/pduencode.html:29
