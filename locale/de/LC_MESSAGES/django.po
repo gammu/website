@@ -4105,7 +4105,7 @@ msgstr "PDU Daten"
 
 #: html/tools/sidebar.html:2 wammu/context_processors.py:36
 msgid "Tools"
-msgstr ""
+msgstr "Werkzeuge"
 
 #: html/tools/sidebar.html:4
 msgid "PDU encoder"
