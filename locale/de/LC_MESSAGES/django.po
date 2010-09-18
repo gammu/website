@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-18 09:13+0200\n"
+"PO-Revision-Date: 2010-09-18 09:15+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -4279,9 +4279,9 @@ msgid "Ringtones"
 msgstr "Klingeltöne"
 
 #: phonedb/models.py:84
-#, fuzzy, python-format
+#, python-format
 msgid "Phone name should not include vendor name: %s"
-msgstr "Modell des Telefons, bitte ohne Herstellername."
+msgstr "Modell des Telefons, bitte ohne Herstellername: %s"
 
 #: phonedb/models.py:89
 msgid "Phone name, please exclude vendor name."
