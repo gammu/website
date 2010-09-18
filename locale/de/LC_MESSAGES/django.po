@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-18 08:29+0200\n"
+"PO-Revision-Date: 2010-09-18 08:32+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -3971,6 +3971,7 @@ msgstr ""
 #: html/tools/index.html:36
 msgid "Useful for decoding PDU data, which you might get from your phone."
 msgstr ""
+"Nützlich, um PDU Daten umzuwandeln, welche man von einem Telefon erhält."
 
 #: html/tools/index.html:40
 #, fuzzy
