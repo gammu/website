@@ -482,7 +482,7 @@ msgid ""
 "SMS retrieval, backup and sending\n"
 msgstr ""
 "\n"
-"Sms erhalten, speichern und senden\n"
+"SMS erhalten, speichern und senden\n"
 
 #: html/gammu-features.html:9
 msgid ""
