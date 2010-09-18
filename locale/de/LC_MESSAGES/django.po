@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-18 10:11+0200\n"
+"PO-Revision-Date: 2010-09-18 10:14+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -824,7 +824,7 @@ msgstr ""
 "MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN ZWECK.\n"
 "Details finden Sie in der GNU General Public License.\n"
 
-# die übersetzung der gnu ud anderr lizensen ist lt web-recherche im status "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung auf die englischen originaltexte. verbesserungen in diesem kapitel werden durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher rückversicherung.
+# die übersetzung der gnu und anderer lizensen ist lt web-recherche im status "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung auf die englischen originaltexte. verbesserungen in diesem kapitel werden durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher rückversicherung.
 #: html/license.html:36 html/license.html.py:73
 msgid ""
 "\n"
