@@ -4049,7 +4049,7 @@ msgstr "Nachricht Teil"
 
 #: html/tools/pdudecode.html:46
 msgid "SMSC"
-msgstr ""
+msgstr "SMSC"
 
 #: html/tools/pdudecode.html:47
 msgid "Validity"
