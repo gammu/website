@@ -4313,9 +4313,8 @@ msgid "Please choose how will be email handled in next field."
 msgstr "Bitte wählen Sie im nächsten Feld, wie Email unterstützt wird."
 
 #: phonedb/views.py:102
-#, fuzzy
 msgid "Approved records"
-msgstr "Bestätigt"
+msgstr "Bestätigte Berichte"
 
 #: phonedb/views.py:103
 msgid "Total records"
