@@ -3983,7 +3983,7 @@ msgstr "Liste der GSM Ländercodes"
 
 #: html/tools/index.html:44
 msgid "List of GSM codes for networks"
-msgstr ""
+msgstr "Liste der GSM Netzwerkcodes"
 
 #: html/tools/index.html:48
 msgid ""
