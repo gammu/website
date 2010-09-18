@@ -4044,9 +4044,8 @@ msgid "UDH header"
 msgstr "UDH Titel"
 
 #: html/tools/pdudecode.html:44
-#, fuzzy
 msgid "Message part"
-msgstr "Ihre Nachricht"
+msgstr "Nachricht Teil"
 
 #: html/tools/pdudecode.html:46
 msgid "SMSC"
