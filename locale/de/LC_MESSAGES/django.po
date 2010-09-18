@@ -4334,7 +4334,7 @@ msgstr "Die Eintragung bezüglich diesem Telefon wurde erstellt."
 
 #: tools/forms.py:7
 msgid "PDU text"
-msgstr ""
+msgstr "PDU Text"
 
 #: tools/forms.py:10
 msgid "You can provide more messages, each on seaprate line."
