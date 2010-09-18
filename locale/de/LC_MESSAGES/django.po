@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-18 08:38+0200\n"
+"PO-Revision-Date: 2010-09-18 08:39+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -3998,7 +3998,7 @@ msgstr ""
 
 #: html/tools/networks.html:4 html/tools/networks.html.py:12
 msgid "GSM networks list from Gammu"
-msgstr ""
+msgstr "Gammu GSM Netzwerkliste"
 
 #: html/tools/networks.html:15
 msgid ""
