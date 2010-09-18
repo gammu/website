@@ -4081,7 +4081,7 @@ msgstr "Absender"
 
 #: html/tools/pdudecode.html:69
 msgid "Address"
-msgstr ""
+msgstr "Adresse"
 
 #: html/tools/pdudecode.html:70 tools/forms.py:14
 msgid "Class"
