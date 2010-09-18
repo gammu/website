@@ -4161,7 +4161,7 @@ msgstr "Russisch"
 
 #: manpages/views.py:21
 msgid "Spanish"
-msgstr ""
+msgstr "Spanisch"
 
 #: manpages/views.py:51
 msgid ""
