@@ -4121,7 +4121,7 @@ msgstr "Länder"
 
 #: html/tools/sidebar.html:7
 msgid "Networks"
-msgstr ""
+msgstr "Netzwerke"
 
 #: manpages/views.py:12
 msgid "Czech"
