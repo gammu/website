@@ -3974,9 +3974,8 @@ msgstr ""
 "Nützlich, um PDU Daten umzuwandeln, welche man von einem Telefon erhält."
 
 #: html/tools/index.html:40
-#, fuzzy
 msgid "Other tools"
-msgstr "Andere Optionen"
+msgstr "Andere Werkzeuge"
 
 #: html/tools/index.html:43
 msgid "List of GSM codes for countries"
