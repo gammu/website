@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-18 09:00+0200\n"
+"PO-Revision-Date: 2010-09-18 09:01+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -4097,7 +4097,7 @@ msgstr "Bitmaps"
 
 #: html/tools/pduencode.html:5 html/tools/pduencode.html.py:13
 msgid "PDU encoder using Gammu"
-msgstr "Codierung in PDU mit Gammu"
+msgstr "PDU Verschlüsselung mit Gammu"
 
 #: html/tools/pduencode.html:27
 msgid "PDU data"
