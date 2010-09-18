@@ -4342,7 +4342,7 @@ msgstr "Sie können mehrere Nachrichten eingeben, jede auf einer eigenen Zeile."
 
 #: tools/forms.py:15
 msgid "Unicode"
-msgstr ""
+msgstr "Unicode"
 
 #: tools/forms.py:16
 msgid "Recipient"
