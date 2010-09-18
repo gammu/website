@@ -4057,7 +4057,7 @@ msgstr "Gültigkeit"
 
 #: html/tools/pdudecode.html:48
 msgid "Type"
-msgstr ""
+msgstr "Typus"
 
 #: html/tools/pdudecode.html:49
 #, fuzzy
