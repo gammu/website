@@ -4181,7 +4181,7 @@ msgstr "Gammu Telefondatenbank"
 
 #: phonedb/feeds.py:11
 msgid "Gammu phone database updates."
-msgstr "Gammu Telefondatenbank Neuigkeiten."
+msgstr "Gammu Telefondatenbank - Neuigkeiten."
 
 #: phonedb/forms.py:12
 msgid "Search text"
