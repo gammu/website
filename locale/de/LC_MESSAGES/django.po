@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-18 09:03+0200\n"
+"PO-Revision-Date: 2010-09-18 09:04+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -4129,7 +4129,7 @@ msgstr "Tschechisch"
 
 #: manpages/views.py:13
 msgid "English"
-msgstr "English"
+msgstr "Englisch"
 
 #: manpages/views.py:14
 msgid "English (Great Britain)"
