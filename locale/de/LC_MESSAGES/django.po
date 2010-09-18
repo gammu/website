@@ -4089,7 +4089,7 @@ msgstr "Klassifizierung"
 
 #: html/tools/pdudecode.html:73
 msgid "Bitmap"
-msgstr ""
+msgstr "Bitmap"
 
 #: html/tools/pdudecode.html:74
 msgid "Bitmaps"
