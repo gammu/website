@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-18 09:18+0200\n"
+"PO-Revision-Date: 2010-09-18 09:19+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -4350,7 +4350,7 @@ msgstr "Empfänger"
 
 #: tools/forms.py:17
 msgid "SMSC number"
-msgstr ""
+msgstr "SMSC Nummer"
 
 #: wammu/context_processors.py:54
 msgid "Gammu and Wammu News Feed (RSS)"
