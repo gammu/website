@@ -4077,7 +4077,7 @@ msgstr "Titel"
 
 #: html/tools/pdudecode.html:68
 msgid "Sender"
-msgstr ""
+msgstr "Absender"
 
 #: html/tools/pdudecode.html:69
 msgid "Address"
