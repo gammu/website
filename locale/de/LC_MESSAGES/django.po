@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-01 15:21+0200\n"
-"PO-Revision-Date: 2010-09-18 08:56+0200\n"
+"PO-Revision-Date: 2010-09-18 08:57+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -4068,9 +4068,8 @@ msgid "SMS Data Decoding Result"
 msgstr "SMS Datencodierung Ergebnis"
 
 #: html/tools/pdudecode.html:66
-#, fuzzy
 msgid "MMS indicator"
-msgstr "Syndikation"
+msgstr "MMS Indikator"
 
 #: html/tools/pdudecode.html:67
 msgid "Title"
