@@ -4211,7 +4211,7 @@ msgstr "Verwende [at] und [dot]"
 
 #: phonedb/models.py:21
 msgid "Display it normally"
-msgstr "E-Mail-Adresse normal anzeigen"
+msgstr "Normal anzeigen"
 
 #: phonedb/models.py:22
 msgid "Don't show email at all"
