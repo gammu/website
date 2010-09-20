@@ -158,3 +158,6 @@ CACHE_BACKEND = 'db://cache'
 DEFAULT_CONTENT_TYPE = 'application/xhtml+xml'
 DEFAULT_CONTENT_TYPE = 'text/html'
 DEFAULT_CHARSET = 'utf-8'
+
+IGNORABLE_404_ENDS = ['logo.png', 'logo_001.png', 'piwik.js', 'piwik.js/']
+IGNORABLE_404_STARTS = ['/plugins/editors/tinymce']
