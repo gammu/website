@@ -156,9 +156,9 @@ class Phone(models.Model):
             return self.author_email[:pos] + 'NOSPAM' + self.author_email[pos:]
 
     def get_author_name(self):
-        if self.email_garble == 'hide':
-            return None
         if self.author_name == '':
+            if self.email_garble == 'hide':
+                return None
             return self.get_author_email()
         return self.author_name
 
