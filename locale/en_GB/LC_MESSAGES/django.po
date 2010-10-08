@@ -2444,7 +2444,6 @@ msgid "End User Documentation"
 msgstr "End User Documentation"
 
 #: html/docs/index.html:15
-#, fuzzy
 msgid ""
 "\n"
 "The best user documentation for Gammu comes in form with <a\n"
@@ -2460,10 +2459,11 @@ msgstr ""
 "\n"
 "The best user documentation for Gammu comes in form with <a\n"
 "href=\"/docs/man/\"><strong>man pages</strong></a> within the\n"
-"program. You can also view them <a href=\"/docs/man/\">on this site</a>.\n"
+"program and in <strong><a href=\"/docs/manual/\">The Gammu "
+"Manual</a></strong>. \n"
+"You can also view man pages <a href=\"/docs/man/\">on this site</a>.\n"
 "Alternatively some information is available on the <a\n"
-"href=\"http://www.gammu.org/\">wiki</a>, but it contains outdated content "
-"in\n"
+"href=\"http://www.gammu.org/\">wiki</a>, but it contains outdated content in\n"
 "many cases.\n"
 
 #: html/docs/index.html:27
