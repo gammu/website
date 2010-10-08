@@ -3510,7 +3510,7 @@ msgstr ""
 
 #: html/support/bugs.html:99
 msgid "Troubleshooting Windows Service"
-msgstr ""
+msgstr "Troubleshooting Windows Service"
 
 #: html/support/bugs.html:102
 msgid ""
