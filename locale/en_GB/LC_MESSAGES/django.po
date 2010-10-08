@@ -2102,6 +2102,13 @@ msgid ""
 "cover most of developer topics, so you might prefer to use it instead of \n"
 "separate resources listed bellow.\n"
 msgstr ""
+"\n"
+"Currently there is ongoing effor to create single comprehensive "
+"documentation\n"
+"source for Gammu - <strong><a href=\"/docs/manual/\">The Gammu "
+"Manual</a></strong>. It already \n"
+"cover most of developer topics, so you might prefer to use it instead of \n"
+"separate resources listed bellow.\n"
 
 #: html/docs/devel.html:32 html/docs/faq.html:83
 msgid "Python Bindings"
