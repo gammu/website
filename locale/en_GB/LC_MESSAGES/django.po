@@ -171,7 +171,7 @@ msgstr "Appreciate"
 
 #: html/base.html:85
 msgid "Share"
-msgstr ""
+msgstr "Share"
 
 #: html/base.html:95 html/donate.html:66
 msgid "Advertisement"
