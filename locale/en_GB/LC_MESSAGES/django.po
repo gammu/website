@@ -3542,6 +3542,8 @@ msgid ""
 "\n"
 "For example the command line can look like:\n"
 msgstr ""
+"\n"
+"For example the command line can look like:\n"
 
 #: html/support/bugs.html:123
 msgid ""
