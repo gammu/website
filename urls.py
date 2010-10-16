@@ -257,6 +257,8 @@ urlpatterns = patterns('',
     # Broken links
     (r'^(?P<link>.*)/\)\.$', 'django.views.generic.simple.redirect_to', {'url': '/%(link)s'}),
     (r'^snapshot/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
+    (r'^index.php$', 'django.views.generic.simple.redirect_to', {'url': '/'}),
+    (r'^wiki/index.php$', 'django.views.generic.simple.redirect_to', {'url': '/'}),
     (r'^en/$', 'django.views.generic.simple.redirect_to', {'url': 'http://wammu.eu/'}),
     (r'^cs/$', 'django.views.generic.simple.redirect_to', {'url': 'http://cs.wammu.eu/'}),
     (r'^cz/$', 'django.views.generic.simple.redirect_to', {'url': 'http://cs.wammu.eu/'}),
