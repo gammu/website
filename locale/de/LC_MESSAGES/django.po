@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-10-20 22:58+0200\n"
-"PO-Revision-Date: 2010-09-18 11:54+0200\n"
+"PO-Revision-Date: 2010-10-22 20:16+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -163,9 +163,10 @@ msgstr "Übersetze!"
 msgid "Downloads"
 msgstr "Herunterladen"
 
+# wertschaetzung zustimmung - facebook und flatr link... anerkennung wuerdigen goutieren - ermunterung? danke sagen?
 #: html/base.html:76
 msgid "Appreciate"
-msgstr ""
+msgstr "Anerkennung"
 
 #: html/base.html:85
 msgid "Share"
