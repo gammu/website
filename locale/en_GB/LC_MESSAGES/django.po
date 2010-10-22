@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-10-20 22:58+0200\n"
-"PO-Revision-Date: 2010-10-08 08:28+0200\n"
+"PO-Revision-Date: 2010-10-22 10:23+0200\n"
 "Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: en_GB\n"
@@ -2247,7 +2247,6 @@ msgid "Which phone is best for SMS gateway?"
 msgstr "Which phone is best for SMS gateway?"
 
 #: html/docs/faq.html:30
-#, fuzzy
 msgid ""
 "\n"
 "Forget about using standard phones, they tend not to be reliable for long "
@@ -2263,7 +2262,7 @@ msgstr ""
 "connection to PC. Best option are GSM (GPRS, UMTS) terminals/modems. The "
 "best\n"
 "option seem to be Siemens modems (eg. ES75/MC35i/MC55i). Slightly cheaper,\n"
-"while still good are modems made by Huawer (eg. E160/E220/E1750/...).\n"
+"while still good are modems made by Huawei (eg. E160/E220/E1750/...).\n"
 
 #: html/docs/faq.html:41
 msgid "Are Symbian phones supported?"
