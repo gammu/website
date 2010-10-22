@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-10-20 22:58+0200\n"
-"PO-Revision-Date: 2010-10-22 21:15+0200\n"
+"PO-Revision-Date: 2010-10-22 21:16+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -3565,7 +3565,7 @@ msgstr ""
 
 #: html/support/bugs.html:99
 msgid "Troubleshooting Windows Service"
-msgstr ""
+msgstr "Erste Hilfe bei Windows-Problemen"
 
 #: html/support/bugs.html:102
 msgid ""
