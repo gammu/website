@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-20 22:58+0200\n"
+"POT-Creation-Date: 2010-10-24 13:25+0200\n"
 "PO-Revision-Date: 2010-08-31 11:47+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -156,7 +156,7 @@ msgstr ""
 msgid "Share"
 msgstr ""
 
-#: html/base.html:95 html/donate.html:66
+#: html/base.html:95 html/donate.html:74
 msgid "Advertisement"
 msgstr "Reklama"
 
@@ -362,21 +362,26 @@ msgstr ""
 "poslat na <code>michal@cihar.com</code>.\n"
 
 #: html/donate.html:57
-msgid "Bank Account"
-msgstr "Převod peněz / mPeníze"
+msgid "Wire Transfer"
+msgstr ""
 
 #: html/donate.html:60
 msgid ""
 "\n"
-"If you have account with Czech bank or can send money directly to Czech\n"
-"account, you can send money to account 2202591725/6210 (account at mBank, "
-"BRE Bank S.A.).\n"
+"If you want, you can use wire transfer as well to send me money. Use "
+"following\n"
+"information to make the payment:\n"
 msgstr ""
-"\n"
-"Příspěvky také můžete posílat bankovním převodem na účet\n"
-" 2202591725/6210 (vedený u mBank, resp. BRE Bank S.A.).\n"
 
-#: html/donate.html:69
+#: html/donate.html:68
+msgid ""
+"\n"
+"If you have an account in Czech Republic, you can use local (and cheaper) "
+"wire\n"
+"transfer to account 2300081892 / 2010.\n"
+msgstr ""
+
+#: html/donate.html:77
 msgid ""
 "\n"
 "This website currently participates in <a href=\"http://adbard.net\">The Ad "
@@ -396,11 +401,11 @@ msgstr ""
 "programy.\n"
 "Koupí reklamy v této síti podpoříte různé svobodné programy včetně tohoto.\n"
 
-#: html/donate.html:79
+#: html/donate.html:87
 msgid "Other Options"
 msgstr "Další možnosti"
 
-#: html/donate.html:81
+#: html/donate.html:89
 msgid ""
 "\n"
 "You can also give some presents to developers, currently here is <a\n"
@@ -3760,6 +3765,19 @@ msgstr "Novinky o Gammu a Wammu (RSS)"
 #: wammu/context_processors.py:55
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Novinky o Gammu a Wammu (Atom)"
+
+#~ msgid "Bank Account"
+#~ msgstr "Převod peněz / mPeníze"
+
+#~ msgid ""
+#~ "\n"
+#~ "If you have account with Czech bank or can send money directly to Czech\n"
+#~ "account, you can send money to account 2202591725/6210 (account at mBank, "
+#~ "BRE Bank S.A.).\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Příspěvky také můžete posílat bankovním převodem na účet\n"
+#~ " 2202591725/6210 (vedený u mBank, resp. BRE Bank S.A.).\n"
 
 #~ msgid "Valid records"
 #~ msgstr "Platných záznamů"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-20 22:58+0200\n"
+"POT-Creation-Date: 2010-10-24 13:25+0200\n"
 "PO-Revision-Date: 2010-01-28 00:48+0200\n"
 "Last-Translator:  <cartman@cartman34.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,7 +142,7 @@ msgstr ""
 msgid "Share"
 msgstr ""
 
-#: html/base.html:95 html/donate.html:66
+#: html/base.html:95 html/donate.html:74
 msgid "Advertisement"
 msgstr ""
 
@@ -352,19 +352,27 @@ msgid ""
 msgstr ""
 
 #: html/donate.html:57
-msgid "Bank Account"
+msgid "Wire Transfer"
 msgstr ""
 
 #: html/donate.html:60
 msgid ""
 "\n"
-"If you have account with Czech bank or can send money directly to Czech\n"
-"account, you can send money to account 2202591725/6210 (account at mBank, "
-"BRE Bank S.A.).\n"
+"If you want, you can use wire transfer as well to send me money. Use "
+"following\n"
+"information to make the payment:\n"
+msgstr ""
+
+#: html/donate.html:68
+msgid ""
+"\n"
+"If you have an account in Czech Republic, you can use local (and cheaper) "
+"wire\n"
+"transfer to account 2300081892 / 2010.\n"
 msgstr ""
 
 # Peut etre modifié selon le contexte.
-#: html/donate.html:69
+#: html/donate.html:77
 msgid ""
 "\n"
 "This website currently participates in <a href=\"http://adbard.net\">The Ad "
@@ -390,11 +398,11 @@ msgstr ""
 ", vous soutiendrez les différents sites web du logiciel libre, dont celui-"
 "ci.\n"
 
-#: html/donate.html:79
+#: html/donate.html:87
 msgid "Other Options"
 msgstr "Autres options"
 
-#: html/donate.html:81
+#: html/donate.html:89
 msgid ""
 "\n"
 "You can also give some presents to developers, currently here is <a\n"

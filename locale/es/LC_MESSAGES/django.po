@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-20 22:59+0200\n"
+"POT-Creation-Date: 2010-10-24 13:25+0200\n"
 "PO-Revision-Date: 2010-07-08 02:17+0200\n"
 "Last-Translator:  <jgibarrez@yahoo.es>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -151,7 +151,7 @@ msgstr ""
 msgid "Share"
 msgstr ""
 
-#: html/base.html:95 html/donate.html:66
+#: html/base.html:95 html/donate.html:74
 msgid "Advertisement"
 msgstr "Publicidad"
 
@@ -357,22 +357,26 @@ msgid ""
 msgstr ""
 
 #: html/donate.html:57
-msgid "Bank Account"
-msgstr "Cuenta Bancaria"
+msgid "Wire Transfer"
+msgstr ""
 
 #: html/donate.html:60
 msgid ""
 "\n"
-"If you have account with Czech bank or can send money directly to Czech\n"
-"account, you can send money to account 2202591725/6210 (account at mBank, "
-"BRE Bank S.A.).\n"
+"If you want, you can use wire transfer as well to send me money. Use "
+"following\n"
+"information to make the payment:\n"
 msgstr ""
-"\n"
-"Si tiene cuenta en Banco Checo o puede enviar dinero directamente a una "
-"cuenta Checa, puede utilizar esta cuenta2202591725/6210 (cuenta en mBank, "
-"BRE Bank S.A.).\n"
 
-#: html/donate.html:69
+#: html/donate.html:68
+msgid ""
+"\n"
+"If you have an account in Czech Republic, you can use local (and cheaper) "
+"wire\n"
+"transfer to account 2300081892 / 2010.\n"
+msgstr ""
+
+#: html/donate.html:77
 msgid ""
 "\n"
 "This website currently participates in <a href=\"http://adbard.net\">The Ad "
@@ -387,11 +391,11 @@ msgid ""
 "support various free software websites including this one.\n"
 msgstr ""
 
-#: html/donate.html:79
+#: html/donate.html:87
 msgid "Other Options"
 msgstr "Otras Opciones"
 
-#: html/donate.html:81
+#: html/donate.html:89
 msgid ""
 "\n"
 "You can also give some presents to developers, currently here is <a\n"
@@ -3342,6 +3346,20 @@ msgstr "Gammu y Wammu Noticias Feed (RSS)"
 #: wammu/context_processors.py:55
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu y Wammu Noticias Feed (Atom)"
+
+#~ msgid "Bank Account"
+#~ msgstr "Cuenta Bancaria"
+
+#~ msgid ""
+#~ "\n"
+#~ "If you have account with Czech bank or can send money directly to Czech\n"
+#~ "account, you can send money to account 2202591725/6210 (account at mBank, "
+#~ "BRE Bank S.A.).\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Si tiene cuenta en Banco Checo o puede enviar dinero directamente a una "
+#~ "cuenta Checa, puede utilizar esta cuenta2202591725/6210 (cuenta en mBank, "
+#~ "BRE Bank S.A.).\n"
 
 #~ msgid "Amount (EUR)"
 #~ msgstr "Importe(EUR)"

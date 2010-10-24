@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-20 22:58+0200\n"
+"POT-Creation-Date: 2010-10-24 13:25+0200\n"
 "PO-Revision-Date: 2010-10-22 20:05+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -173,7 +173,7 @@ msgstr "Appreciate"
 msgid "Share"
 msgstr "Share"
 
-#: html/base.html:95 html/donate.html:66
+#: html/base.html:95 html/donate.html:74
 msgid "Advertisement"
 msgstr "Advertisement"
 
@@ -346,10 +346,9 @@ msgid ""
 "a>.\n"
 msgstr ""
 "\n"
-"The easiest way to appreciate work on Gammu and Wammu is to use "
-"<ahref=\"https://flattr.com/\">Flattr</a> (a social micropayment system) "
-"andflattr some of <a href=\"https://flattr.com/profile/nijel\">my "
-"projects</a>.\n"
+"The easiest way to appreciate work on Gammu and Wammu is to use <ahref="
+"\"https://flattr.com/\">Flattr</a> (a social micropayment system) andflattr "
+"some of <a href=\"https://flattr.com/profile/nijel\">my projects</a>.\n"
 
 #: html/donate.html:28
 msgid "Donate Money"
@@ -394,23 +393,26 @@ msgstr ""
 "You can also directly send adonation to <code>michal@cihar.com</code>.\n"
 
 #: html/donate.html:57
-msgid "Bank Account"
-msgstr "Bank Account"
+msgid "Wire Transfer"
+msgstr ""
 
 #: html/donate.html:60
 msgid ""
 "\n"
-"If you have account with Czech bank or can send money directly to Czech\n"
-"account, you can send money to account 2202591725/6210 (account at mBank, "
-"BRE Bank S.A.).\n"
+"If you want, you can use wire transfer as well to send me money. Use "
+"following\n"
+"information to make the payment:\n"
 msgstr ""
-"\n"
-"If you have an account with a Czech bank, or are able to send money directly "
-"to a Czech\n"
-"account, simply send money to account 2202591725/6210 (account at mBank, BRE "
-"Bank S.A.).\n"
 
-#: html/donate.html:69
+#: html/donate.html:68
+msgid ""
+"\n"
+"If you have an account in Czech Republic, you can use local (and cheaper) "
+"wire\n"
+"transfer to account 2300081892 / 2010.\n"
+msgstr ""
+
+#: html/donate.html:77
 msgid ""
 "\n"
 "This website currently participates in <a href=\"http://adbard.net\">The Ad "
@@ -436,11 +438,11 @@ msgstr ""
 "will\n"
 "support various free software websites including this one.\n"
 
-#: html/donate.html:79
+#: html/donate.html:87
 msgid "Other Options"
 msgstr "Other Options"
 
-#: html/donate.html:81
+#: html/donate.html:89
 msgid ""
 "\n"
 "You can also give some presents to developers, currently here is <a\n"
@@ -4381,6 +4383,21 @@ msgstr "Gammu and Wammu News Feed (RSS)"
 #: wammu/context_processors.py:55
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu and Wammu News Feed (Atom)"
+
+#~ msgid "Bank Account"
+#~ msgstr "Bank Account"
+
+#~ msgid ""
+#~ "\n"
+#~ "If you have account with Czech bank or can send money directly to Czech\n"
+#~ "account, you can send money to account 2202591725/6210 (account at mBank, "
+#~ "BRE Bank S.A.).\n"
+#~ msgstr ""
+#~ "\n"
+#~ "If you have an account with a Czech bank, or are able to send money "
+#~ "directly to a Czech\n"
+#~ "account, simply send money to account 2202591725/6210 (account at mBank, "
+#~ "BRE Bank S.A.).\n"
 
 #~ msgid ""
 #~ "\n"
