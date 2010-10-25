@@ -415,6 +415,10 @@ msgid ""
 "wire\n"
 "transfer to account 2300081892 / 2010.\n"
 msgstr ""
+"\n"
+"If you have an account in Czech Republic, you can use local (and cheaper) "
+"wire\n"
+"transfer to account 2300081892 / 2010.\n"
 
 #: html/donate.html:77
 msgid ""
