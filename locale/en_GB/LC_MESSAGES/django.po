@@ -403,6 +403,10 @@ msgid ""
 "following\n"
 "information to make the payment:\n"
 msgstr ""
+"\n"
+"If you want, you can use wire transfer as well to send me money. Use "
+"following\n"
+"information to make the payment:\n"
 
 #: html/donate.html:68
 msgid ""
