@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-10-24 13:25+0200\n"
-"PO-Revision-Date: 2010-10-29 19:31+0200\n"
+"PO-Revision-Date: 2010-10-29 19:33+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -271,7 +271,7 @@ msgstr "Übersetze"
 
 #: html/base.html:153 html/contribute/sidebar.html:6
 msgid "Develop"
-msgstr "Entwickle"
+msgstr "Entwickeln"
 
 # Was sollen die Zeichen mitten im Wort??? anmerkung: vermutlich konvertierungsfehler 
 #: html/base.html:154 html/base.html.py:164 html/contribute/sidebar.html:4
