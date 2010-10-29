@@ -276,7 +276,7 @@ msgstr "Entwickeln"
 # Was sollen die Zeichen mitten im Wort??? anmerkung: vermutlich konvertierungsfehler 
 #: html/base.html:154 html/base.html.py:164 html/contribute/sidebar.html:4
 msgid "Donate"
-msgstr "Spende"
+msgstr "Spenden"
 
 #: html/base.html:155 html/contribute/sidebar.html:8
 msgid "Publicity"
