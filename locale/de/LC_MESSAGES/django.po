@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-10-24 13:25+0200\n"
-"PO-Revision-Date: 2010-10-22 22:20+0200\n"
+"PO-Revision-Date: 2010-10-29 19:31+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -171,7 +171,7 @@ msgstr "Anerkennung"
 # (stumbleupon > bookmarks und twitter)
 #: html/base.html:85
 msgid "Share"
-msgstr "Share "
+msgstr "Teilen"
 
 #: html/base.html:95 html/donate.html:74
 msgid "Advertisement"
