@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-10-24 13:25+0200\n"
-"PO-Revision-Date: 2010-10-29 19:55+0200\n"
+"PO-Revision-Date: 2010-10-29 20:00+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -396,7 +396,7 @@ msgstr ""
 
 #: html/donate.html:57
 msgid "Wire Transfer"
-msgstr ""
+msgstr "Telegrafische Überweisung"
 
 #: html/donate.html:60
 msgid ""
