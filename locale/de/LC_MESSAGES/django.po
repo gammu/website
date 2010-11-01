@@ -419,7 +419,7 @@ msgstr ""
 "\n"
 "Wenn Sie über ein Konto bei einer tschechischen Bank verfügen, können Sie "
 "eine lokale (und günstige) Überweisung tätigen: an das Konto 2300081892 / "
-"2010."
+"2010.\n"
 
 #: html/donate.html:77
 msgid ""
