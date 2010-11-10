@@ -123,6 +123,11 @@ based on some contract. Alternatively you can use their SMS gateways, which
 also allow this functionality.
 {% endblocktrans %}
 </p>
+
+<h4 id="mms">{% trans "Can I use Gammu to send MMS?" %}</h4>
+<p>
+{% blocktrans %}MMS contains of two parts - the actual MMS data in SMIL format and the SMS containing notification about the data. Gammu can create the notification SMS, where you just need to put URL of the data (use <a href="/docs/manual/gammu/index.html#cmdoption-gammuMMSINDICATOR">gammu sendsms  MMSINDICATOR</a> for that). However you need to encode MMS data yourself or use other program to do that.{% endblocktrans %}
+</p>
 {% endblock %}
 
 
