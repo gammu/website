@@ -159,5 +159,5 @@ DEFAULT_CONTENT_TYPE = 'application/xhtml+xml'
 DEFAULT_CONTENT_TYPE = 'text/html'
 DEFAULT_CHARSET = 'utf-8'
 
-IGNORABLE_404_ENDS = ['logo.png', 'logo_001.png', 'piwik.js', 'piwik.js/', 'piwik.php']
-IGNORABLE_404_STARTS = ['/plugins/editors/tinymce']
+IGNORABLE_404_ENDS = ['logo.png', 'logo_001.png', 'piwik.js', 'piwik.js/', 'piwik.php', 'michal@cihar.com', 'piwik.php/']
+IGNORABLE_404_STARTS = ['/plugins/editors/tinymce', '/cgi-bin/']
