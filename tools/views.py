@@ -50,6 +50,8 @@ def pdudecode(request):
             # Decode PDU
             decoded = []
             parts = []
+            from django.core.mail import mail_admins
+            mail_admins('PDU decode request', form.cleaned_data['text'], fail_silently = True)
             for i, part in enumerate(form.cleaned_data['text'].split()):
                 try:
                     d = gammu.DecodePDU(part.decode('hex'))
