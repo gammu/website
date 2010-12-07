@@ -45,7 +45,7 @@
         <Program_Type>Freeware</Program_Type>
         <Program_Release_Status>Major Update</Program_Release_Status>
         <Program_Install_Support>Install and Uninstall</Program_Install_Support>
-        <Program_OS_Support>Win95,Win98,WinME,WinNT 3.x,WinNT 4.x,Windows2000,WinXP,Windows2003,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,Linux,Linux Gnome,Linux GPL,Linux Open Source,Mac OS X,Mac OS X 10.1,Mac OS X 10.2,Mac OS X 10.3,Mac OS X 10.4,Mac OS X 10.5</Program_OS_Support>
+        <Program_OS_Support>Linux,Linux Console,Linux GPL,Linux Open Source, Mac OS X, Mac Other,Unix,Win2000,Win7x32,Win7 x64,Win98,WinServer,WinVista,WinVista x86,WinXP,Other</Program_OS_Support>
         <Program_Language>English,Afrikaans,Bulgarian,Catalan,ChineseSimplified,ChineseTraditional,Czech,Dutch,Estonian,Finnish,French,Galician,German,Greek,Hebrew,Hungarian,Indonesian,Italian,Korean,Polish,Portuguese,Russian,Slovak,Spanish,Swedish</Program_Language>
         <Program_Change_Info />
         <Program_Specific_Category>Business</Program_Specific_Category>
