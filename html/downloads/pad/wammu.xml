@@ -36,9 +36,9 @@
     <Program_Info>
         <Program_Name>Wammu</Program_Name>
         <Program_Version>{{ release.version }}</Program_Version>
-        <Program_Release_Month>{{ release.date.month }}</Program_Release_Month>
-        <Program_Release_Day>{{ release.date.day }}</Program_Release_Day>
-        <Program_Release_Year>{{ release.date.year }}</Program_Release_Year>
+        <Program_Release_Month>{{ release.date|date:"m" }}</Program_Release_Month>
+        <Program_Release_Day>{{ release.date|date:"d" }}</Program_Release_Day>
+        <Program_Release_Year>{{ release.date|date:"Y" }}</Program_Release_Year>
         <Program_Cost_Dollars />
         <Program_Cost_Other_Code />
         <Program_Cost_Other />
