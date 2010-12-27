@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-12-15 09:02+0100\n"
-"PO-Revision-Date: 2010-12-27 16:12+0200\n"
+"PO-Revision-Date: 2010-12-27 16:13+0200\n"
 "Last-Translator: gilberto dos santos alves <gsavix@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -154,7 +154,6 @@ msgstr "Gammu"
 
 #: html/base.html:117 html/wammu.html:4 html/wammu.html.py:22
 #: html/contribute/translate.html:58
-#, fuzzy
 msgid "Wammu"
 msgstr "Wammu"
 
