@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-12-15 09:02+0100\n"
-"PO-Revision-Date: 2010-12-21 18:43+0200\n"
+"PO-Revision-Date: 2010-12-27 16:08+0200\n"
 "Last-Translator: gilberto dos santos alves <gsavix@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -3200,9 +3200,8 @@ msgid "Enhanced phonebook entries (eg. several numbers per entry)"
 msgstr ""
 
 #: phonedb/models.py:38
-#, fuzzy
 msgid "Calendar entries"
-msgstr "%d entradas de Calendário"
+msgstr "Entradas de Calendário"
 
 #: phonedb/models.py:39
 msgid "Todos"
