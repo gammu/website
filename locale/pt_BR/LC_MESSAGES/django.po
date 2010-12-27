@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-12-15 09:02+0100\n"
-"PO-Revision-Date: 2010-12-27 16:10+0200\n"
+"PO-Revision-Date: 2010-12-27 16:11+0200\n"
 "Last-Translator: gilberto dos santos alves <gsavix@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -29,7 +29,7 @@ msgstr "Binário Windows"
 #: downloads/models.py:174
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr ""
+msgstr "%(programa)s estável release %(versão)ões"
 
 #: downloads/models.py:179
 #, python-format
