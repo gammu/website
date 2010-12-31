@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-11-10 16:14+0100\n"
-"PO-Revision-Date: 2010-11-06 12:27+0200\n"
+"PO-Revision-Date: 2011-01-01 00:03+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2485,7 +2485,7 @@ msgstr ""
 
 #: html/docs/faq.html:127
 msgid "Can I use Gammu to send MMS?"
-msgstr ""
+msgstr "Kann man mit Gammu MMS versenden?"
 
 #: html/docs/faq.html:129
 msgid ""
