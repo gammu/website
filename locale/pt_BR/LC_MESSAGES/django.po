@@ -29,7 +29,7 @@ msgstr "Binário Windows"
 #: downloads/models.py:174
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr "%(programa)s estável release %(versão)ões"
+msgstr "%(program)s estável release %(version)s"
 
 #: downloads/models.py:179
 #, python-format
