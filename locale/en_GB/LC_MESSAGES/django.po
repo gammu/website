@@ -2465,6 +2465,12 @@ msgid ""
 "a> for that). However you need to encode MMS data yourself or use other "
 "program to do that."
 msgstr ""
+"MMS contains of two parts - the actual MMS data in SMIL format and the SMS "
+"containing notification about the data. Gammu can create the notification "
+"SMS, where you just need to put URL of the data (use <a "
+"href=\"/docs/manual/gammu/index.html#cmdoption-gammuMMSINDICATOR\">gammu "
+"sendsms  MMSINDICATOR</a> for that). However you need to encode MMS data "
+"yourself or use other program to do that."
 
 #: html/docs/index.html:4 html/docs/index.html.py:11
 msgid "Wammu and Gammu Documentation"
