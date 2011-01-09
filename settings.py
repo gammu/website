@@ -151,13 +151,15 @@ THUMBNAIL_SIZE = (180, 180)
 
 SEND_BROKEN_LINK_EMAILS = True
 SERVER_EMAIL = 'django@wammu.eu'
-IGNORABLE_404_STARTS = ('/js/','/common/')
 
 CACHE_BACKEND = 'db://cache'
 
 DEFAULT_CONTENT_TYPE = 'application/xhtml+xml'
 DEFAULT_CONTENT_TYPE = 'text/html'
 DEFAULT_CHARSET = 'utf-8'
+
+# Use etags based caching
+USE_ETAGS = True
 
 IGNORABLE_404_ENDS = ['logo.png', 'logo_001.png', 'piwik.js', 'piwik.js/', 'piwik.php', 'michal@cihar.com', 'piwik.php/']
 IGNORABLE_404_STARTS = ['/plugins/editors/tinymce', '/cgi-bin/']
