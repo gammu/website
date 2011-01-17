@@ -89,30 +89,6 @@ class PagesSitemap(Sitemap):
     def priority(self, item):
         return item[2]
 
-class ManSitemap(Sitemap):
-    changefreq = 'monthly'
-
-    def items(self):
-        result = []
-        for lang in list_langs():
-            if lang == 'en':
-                priority = 1
-            else:
-                priority = 0.8
-            result += [('%s/%s' % (lang, page), priority) for page in list_pages(lang)]
-        return result
-
-    def location(self, item):
-        return '/docs/man/%s/' % item[0]
-
-    def lastmod(self, item):
-        (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat('%s/docs/man/%s.html' % (settings.HTML_ROOT, item[0]))
-        return datetime.datetime.fromtimestamp(mtime)
-
-    def priority(self, item):
-        return item[1]
-
-
 sitemaps = {
     'news': GenericSitemap(news_dict, priority=0.8, changefreq='monthly'),
     'phones': GenericSitemap(phones_dict, priority=0.8, changefreq='monthly'),
