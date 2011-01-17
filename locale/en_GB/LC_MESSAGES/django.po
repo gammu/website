@@ -2117,7 +2117,6 @@ msgstr ""
 "Gammu and different phone models.\n"
 
 #: html/docs/index.html:31
-#, fuzzy
 msgid ""
 "\n"
 "If you still have some questions, please check <a\n"
@@ -2127,7 +2126,8 @@ msgid ""
 msgstr ""
 "\n"
 "If you still have some questions, please check <a\n"
-"href=\"/docs/faq/\"><strong>Frequently Asked Questions</strong></a> before\n"
+"href=\"/docs/manual/faq/\"><strong>Frequently Asked Questions</strong></a> "
+"before\n"
 "asking on <a href=\"/support/lists/\">mailing list</a>.\n"
 
 #: html/docs/index.html:38
