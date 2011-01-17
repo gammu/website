@@ -993,14 +993,14 @@ msgstr ""
 "href=\"/docs/devel/\">developer documentation page</a> for more details.\n"
 
 #: html/python-gammu.html:80
-#, fuzzy
 msgid ""
 "\n"
 "Check also <a href=\"/docs/manual/faq/python.html\">Frequently Asked "
 "Questions</a>.\n"
 msgstr ""
 "\n"
-"Check also <a href=\"/docs/faq/#python\">Frequently Asked Questions</a>.\n"
+"Check also <a href=\"/docs/manual/faq/python.html\">Frequently Asked "
+"Questions</a>.\n"
 
 #: html/search.html:4 html/search.html.py:7
 msgid "Wammu and Gammu Search"
