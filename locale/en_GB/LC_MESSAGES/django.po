@@ -2144,6 +2144,13 @@ msgid ""
 "API</a></strong> or <strong><a href=\"/docs/manual/internal/\">internal API\n"
 "</a></strong>.\n"
 msgstr ""
+"\n"
+"The developer documentation is included in <strong><a\n"
+"href=\"/docs/manual/\">The Gammu Manual</a></strong>. You can find there\n"
+"documentation for <strong><a href=\"/docs/manual/python/\">Python\n"
+"API</a></strong>, <strong><a href=\"/docs/manual/c/\">libGammu C\n"
+"API</a></strong> or <strong><a href=\"/docs/manual/internal/\">internal API\n"
+"</a></strong>.\n"
 
 #: html/docs/index.html:52
 #, fuzzy
