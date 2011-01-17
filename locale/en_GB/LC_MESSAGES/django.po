@@ -1252,7 +1252,6 @@ msgstr ""
 "Windows</a>.\n"
 
 #: html/wammu.html:59
-#, fuzzy
 msgid ""
 "\n"
 "Wammu does not come with much documentation and there is hope that it will "
@@ -1263,8 +1262,8 @@ msgstr ""
 "\n"
 "Wammu does not come with much documentation and there is hope that it will "
 "be\n"
-"intiutive enough. You can check it's command line parameters in <a\n"
-"href=\"/docs/man/en/wammu.1/\">wammu man page</a>.\n"
+"intuitive enough. You can check it's command line parameters in wammu man "
+"page.\n"
 
 #: html/wammu_feedback.html:3
 msgid "Thank you for using Wammu"
