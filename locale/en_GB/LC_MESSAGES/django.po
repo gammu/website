@@ -1145,7 +1145,6 @@ msgstr ""
 "distribution, try looking for something like <code>gammu-smsd</code>.\n"
 
 #: html/smsd.html:75
-#, fuzzy
 msgid ""
 "\n"
 "There is <a href=\"/docs/manual/smsd/\">SMS Daemon section in Gammu Manual</"
@@ -1155,11 +1154,10 @@ msgid ""
 "the program.\n"
 msgstr ""
 "\n"
-"There is <a href=\"/docs/manual/smsd/\">SMS Daemon section in Gammu Manual</"
-"a>\n"
+"There is <a href=\"/docs/manual/smsd/\">SMS Daemon section in Gammu Manual</a>\n"
 "which covers all aspects of using SMSD, similar documentation is available\n"
-"in form of <a href=\"/docs/man/\">man\n"
-"pages</a> which are distributed with the program.\n"
+"in <a href=\"/docs/manual/\">The Gammu Manual</a> which is distributed with "
+"the program.\n"
 
 #: html/smsd.html:83
 #, fuzzy
