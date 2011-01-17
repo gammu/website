@@ -677,13 +677,12 @@ msgstr ""
 "configuration file)</a>.\n"
 
 #: html/gammu.html:80 html/wammu.html:66
-#, fuzzy
 msgid ""
 "\n"
 "Check also <a href=\"/docs/manual/faq/\">Frequently Asked Questions</a>.\n"
 msgstr ""
 "\n"
-"Check also <a href=\"/docs/faq/\">Frequently Asked Questions</a>.\n"
+"Check also <a href=\"/docs/manual/faq/\">Frequently Asked Questions</a>.\n"
 
 #: html/index.html:4
 msgid "Wammu and Gammu"
