@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-17 14:20+0100\n"
+"POT-Creation-Date: 2011-01-17 14:37+0100\n"
 "PO-Revision-Date: 2011-01-01 10:43+0200\n"
 "Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -661,12 +661,13 @@ msgstr ""
 "it.\n"
 
 #: html/gammu.html:71
+#, fuzzy
 msgid ""
 "\n"
-"The best documentation is available in form of <a href=\"/docs/man\">man\n"
-"pages</a> which are distributed with the program. You can also view online\n"
-"documentation for <a href=\"/docs/man/en/gammu.1/\">gammu (the\n"
-"main program)</a> or <a href=\"/docs/man/en/gammurc.5/\">gammu-rc (the\n"
+"The best documentation is available in <a href=\"/docs/manual/\">The Gammu "
+"Manual</a> which is distributed with the program. You can also view online\n"
+"documentation for <a href=\"/docs/manual/gammu/\">gammu (the\n"
+"main program)</a> or <a href=\"/docs/manual/config/\">gammu-rc (the\n"
 "configuration file)</a>.\n"
 msgstr ""
 "\n"
@@ -676,10 +677,11 @@ msgstr ""
 "main program)</a> or <a href=\"/docs/man/en/gammurc.5/\">gammu-rc (the\n"
 "configuration file)</a>.\n"
 
-#: html/gammu.html:81
+#: html/gammu.html:80 html/wammu.html:66
+#, fuzzy
 msgid ""
 "\n"
-"Check also <a href=\"/docs/faq/\">Frequently Asked Questions</a>.\n"
+"Check also <a href=\"/docs/manual/faq/\">Frequently Asked Questions</a>.\n"
 msgstr ""
 "\n"
 "Check also <a href=\"/docs/faq/\">Frequently Asked Questions</a>.\n"
@@ -993,9 +995,11 @@ msgstr ""
 "href=\"/docs/devel/\">developer documentation page</a> for more details.\n"
 
 #: html/python-gammu.html:80
+#, fuzzy
 msgid ""
 "\n"
-"Check also <a href=\"/docs/faq/#python\">Frequently Asked Questions</a>.\n"
+"Check also <a href=\"/docs/manual/faq/python.html\">Frequently Asked "
+"Questions</a>.\n"
 msgstr ""
 "\n"
 "Check also <a href=\"/docs/faq/#python\">Frequently Asked Questions</a>.\n"
@@ -1144,13 +1148,14 @@ msgstr ""
 "distribution, try looking for something like <code>gammu-smsd</code>.\n"
 
 #: html/smsd.html:75
+#, fuzzy
 msgid ""
 "\n"
 "There is <a href=\"/docs/manual/smsd/\">SMS Daemon section in Gammu Manual</"
 "a>\n"
 "which covers all aspects of using SMSD, similar documentation is available\n"
-"in form of <a href=\"/docs/man/\">man\n"
-"pages</a> which are distributed with the program.\n"
+"in <a href=\"/docs/manual/\">The Gammu Manual</a> which is distributed with "
+"the program.\n"
 msgstr ""
 "\n"
 "There is <a href=\"/docs/manual/smsd/\">SMS Daemon section in Gammu Manual</"
@@ -1159,10 +1164,12 @@ msgstr ""
 "in form of <a href=\"/docs/man/\">man\n"
 "pages</a> which are distributed with the program.\n"
 
-#: html/smsd.html:84
+#: html/smsd.html:83
+#, fuzzy
 msgid ""
 "\n"
-"Check also <a href=\"/docs/faq/#smsd\">Frequently Asked Questions</a>.\n"
+"Check also <a href=\"/docs/manual/faq/smsd.html\">Frequently Asked "
+"Questions</a>.\n"
 msgstr ""
 "\n"
 "Check also <a href=\"/docs/faq/#smsd\">Frequently Asked Questions</a>.\n"
@@ -1250,26 +1257,19 @@ msgstr ""
 "Windows</a>.\n"
 
 #: html/wammu.html:59
+#, fuzzy
 msgid ""
 "\n"
 "Wammu does not come with much documentation and there is hope that it will "
 "be\n"
-"intiutive enough. You can check it's command line parameters in <a\n"
-"href=\"/docs/man/en/wammu.1/\">wammu man page</a>.\n"
+"intiutive enough. You can check it's command line parameters in wammu man "
+"page.\n"
 msgstr ""
 "\n"
 "Wammu does not come with much documentation and there is hope that it will "
 "be\n"
 "intiutive enough. You can check it's command line parameters in <a\n"
 "href=\"/docs/man/en/wammu.1/\">wammu man page</a>.\n"
-
-#: html/wammu.html:67
-msgid ""
-"\n"
-"Check also <a href=\"/docs/faq/#wammu\">Frequently Asked Questions</a>.\n"
-msgstr ""
-"\n"
-"Check also <a href=\"/docs/faq/#wammu\">Frequently Asked Questions</a>.\n"
 
 #: html/wammu_feedback.html:3
 msgid "Thank you for using Wammu"
@@ -3870,6 +3870,13 @@ msgstr "Gammu and Wammu News Feed (RSS)"
 #: wammu/context_processors.py:55
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu and Wammu News Feed (Atom)"
+
+#~ msgid ""
+#~ "\n"
+#~ "Check also <a href=\"/docs/faq/#wammu\">Frequently Asked Questions</a>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Check also <a href=\"/docs/faq/#wammu\">Frequently Asked Questions</a>.\n"
 
 #~ msgid "Man pages"
 #~ msgstr "Man pages"
