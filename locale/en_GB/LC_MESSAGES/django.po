@@ -1007,7 +1007,7 @@ msgid "Wammu and Gammu Search"
 msgstr "Wammu and Gammu Search"
 
 #: html/search.html:10
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "\n"
 "This page provides Google Custom Search optimized for searching about "
@@ -1018,11 +1018,10 @@ msgid ""
 "pages</a>.\n"
 msgstr ""
 "\n"
-"This page provides Google Custom Search optimised for searching about "
-"Gammu.\n"
+"This page provides Google Custom Search optimized for searching about Gammu.\n"
 "You can also use same search engine directly on <a\n"
-"href=\"http://www.google.com/coop/cse?cx=008688692096734274889%3Axuvlsu_agkm"
-"\">Google\n"
+"href=\"http://www.google.com/coop/cse?cx=008688692096734274889%%"
+"3Axuvlsu_agkm\">Google\n"
 "pages</a>.\n"
 
 #: html/search.html:39
