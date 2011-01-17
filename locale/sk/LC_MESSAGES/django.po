@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-10 16:14+0100\n"
+"POT-Creation-Date: 2011-01-17 14:20+0100\n"
 "PO-Revision-Date: 2010-06-02 13:22+0200\n"
 "Last-Translator: Pavol <scroolik@gmail.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
@@ -189,7 +189,7 @@ msgstr "Wammu"
 msgid "python-gammu"
 msgstr "python-gammu"
 
-#: html/base.html:119 html/docs/faq.html:60
+#: html/base.html:119
 msgid "SMSD"
 msgstr "SMSD"
 
@@ -248,12 +248,12 @@ msgid "Supported phones"
 msgstr "Podporované telefóny"
 
 #: html/base.html:145 html/docs/sidebar.html:4
-msgid "Man pages"
-msgstr "Manuálové stránky"
+msgid "Manual"
+msgstr ""
 
-#: html/base.html:146 html/docs/sidebar.html:6
-msgid "For developers"
-msgstr "Pre vývojárov"
+#: html/base.html:146 html/phonedb/body.html:16
+msgid "Configuration"
+msgstr ""
 
 #: html/base.html:150 wammu/context_processors.py:35
 msgid "Contribute"
@@ -977,12 +977,13 @@ msgid "Wammu and Gammu Search"
 msgstr ""
 
 #: html/search.html:10
+#, python-format
 msgid ""
 "\n"
 "This page provides Google Custom Search optimized for searching about "
 "Gammu.\n"
 "You can also use same search engine directly on <a\n"
-"href=\"http://www.google.com/coop/cse?cx=008688692096734274889%3Axuvlsu_agkm"
+"href=\"http://www.google.com/coop/cse?cx=008688692096734274889%%3Axuvlsu_agkm"
 "\">Google\n"
 "pages</a>.\n"
 msgstr ""
@@ -1721,298 +1722,21 @@ msgid ""
 "can manage them faster.\n"
 msgstr ""
 
-#: html/docs/devel.html:4 html/docs/devel.html.py:11
-msgid "Wammu and Gammu Developer Documentation"
-msgstr ""
-
-#: html/docs/devel.html:14 html/docs/index.html:54
-msgid ""
-"\n"
-"As a developer, you might be also interested what is planned to happen in "
-"next\n"
-"Gammu and Wammu releases, you can find this information in the \n"
-"<a href=\"/docs/roadmap/\">roadmap</a>.\n"
-msgstr ""
-
-#: html/docs/devel.html:21
-msgid "Unified Developer Documentation"
-msgstr ""
-
-#: html/docs/devel.html:23
-msgid ""
-"\n"
-"Currently there is ongoing effor to create single comprehensive "
-"documentation\n"
-"source for Gammu - <strong><a href=\"/docs/manual/\">The Gammu Manual</a></"
-"strong>. It already \n"
-"cover most of developer topics, so you might prefer to use it instead of \n"
-"separate resources listed bellow.\n"
-msgstr ""
-
-#: html/docs/devel.html:32 html/docs/faq.html:83
-msgid "Python Bindings"
-msgstr ""
-
-#: html/docs/devel.html:34
-msgid ""
-"\n"
-"If you want to start writing something using Gammu, you should consider "
-"using\n"
-"<a href=\"/python-gammu\">Python bindings</a>. It provides easy to use "
-"bindings\n"
-"in easy to use language. You can check <a href=\"/docs/devel/python/"
-"\">module\n"
-"documentation</a> or some examples which are shipped in\n"
-"<code>python/examples</code> directory in Gammu sources.\n"
-msgstr ""
-
-#: html/docs/devel.html:43
-msgid "libGammu API"
-msgstr ""
-
-#: html/docs/devel.html:45
-msgid ""
-"\n"
-"The <a href=\"/libgammu\">libGammu</a> API is meant for C developers who "
-"want to\n"
-"use Gammu functionality, but also <a href=\"/gammu\">Gammu program</a> or "
-"<a\n"
-"href=\"/smsd\">Gammu SMS Daemon</a> are using this API. The API is "
-"documented in\n"
-"<a href=\"/docs/devel/api/\">Gammu API Documentation</a>, which is "
-"automatically\n"
-"generated using Doxygen. There are also some examples for using the API in\n"
-"<code>docs/develop/examples</code> directory in Gammu sources.\n"
-msgstr ""
-
-#: html/docs/devel.html:55
-msgid "Gammu Internals"
-msgstr ""
-
-#: html/docs/devel.html:57
-msgid ""
-"\n"
-"The <a href=\"/libgammu\">libGammu</a> library internally uses also quite a "
-"lot\n"
-"of shared code and the are documented in <a\n"
-"href=\"/docs/devel/internals/\">Gammu internals documentation</a> "
-"(generated\n"
-"using Doxygen).\n"
-msgstr ""
-
-#: html/docs/devel.html:66
-msgid ""
-"\n"
-"Additional hints about protocols can be found in <code>docs/develop</code> "
-"in\n"
-"Gammu sources or you might want to use git repository with <a\n"
-"href=\"http://gitorious.org/gammu/gsm-docs\">various GSM documentation</a>.\n"
-msgstr ""
-
-#: html/docs/faq.html:4
-msgid "FAQ for Wammu and Gammu"
-msgstr ""
-
-#: html/docs/faq.html:12
-msgid "Frequently Asked Questions for Wammu and Gammu"
-msgstr ""
-
-#: html/docs/faq.html:14
-#, fuzzy
-msgid "Phones Support"
-msgstr "&Podpora"
-
-#: html/docs/faq.html:16
-#, fuzzy
-msgid "Is my phone supported?"
-msgstr "Nepodporované"
-
-#: html/docs/faq.html:18
-msgid ""
-"\n"
-"Generally any phone capable of AT commands or IrMC should be supported. "
-"Also\n"
-"any Nokia phone using Nokia OS should work. For Symbian please check <a\n"
-"href=\"#symbian\">separate topic</a>.\n"
-msgstr ""
-
-#: html/docs/faq.html:23 html/docs/faq.html.py:36
-msgid ""
-"\n"
-"You can check other user experiences in <a href=\"/phones/\">Gammu Phones "
-"Database</a>.\n"
-msgstr ""
-
-#: html/docs/faq.html:28
-msgid "Which phone is best for SMS gateway?"
-msgstr ""
-
-#: html/docs/faq.html:30
-msgid ""
-"\n"
-"Forget about using standard phones, they tend not to be reliable for long "
-"time\n"
-"connection to PC. Best option are GSM (GPRS, UMTS) terminals/modems. The "
-"best\n"
-"option seem to be Siemens modems (eg. ES75/MC35i/MC55i). Slightly cheaper,\n"
-"while still good are modems made by Huawei (eg. E160/E220/E1750/...).\n"
-msgstr ""
-
-#: html/docs/faq.html:41
-msgid "Are Symbian phones supported?"
-msgstr ""
-
-#: html/docs/faq.html:43
-msgid ""
-"\n"
-"Short answer: Not really.\n"
-msgstr ""
-
-#: html/docs/faq.html:48
-msgid ""
-"\n"
-"Long answer: For older phones (Symbian 9.0 and older), you can install\n"
-"gnapplet to phone and access data through it. However gnapplet has not yet\n"
-"been ported to newer versions, so you have no chance with recent phones. "
-"You\n"
-"can try using <a\n"
-"href=\"http://series60-remote.sourceforge.net/\">Series60-Remote</a>, which\n"
-"works pretty well with S60 phones.\n"
-"Another option is using something what supports SyncML to retrieve contacts "
-"or calendar from\n"
-"your phone, for example <a href=\"http://www.opensync.org/\">OpenSync</a>.\n"
-msgstr ""
-
-#: html/docs/faq.html:62
-msgid "Which databases does SMSD support?"
-msgstr ""
-
-#: html/docs/faq.html:64
-msgid ""
-"\n"
-"SMSD natively supports <a href=\"http://www.mysql.com/\">MySQL</a> and <a\n"
-"href=\"http://www.postgresql.org/\">PostgreSQL</a>. However it has also "
-"support\n"
-"for <a href=\"http://libdbi.sourceforge.net/\">libdbi</a>, which provides "
-"access\n"
-"to wide range of database engines (eg. SQLite, MS SQL Server, Sybase,\n"
-"Firebird,...). Unfortunately libdbi currently does not work natively on\n"
-"Microsoft Windows, so you can use it only on Unix platforms.\n"
-msgstr ""
-
-#: html/docs/faq.html:74
-msgid "Is there some user interface for SMSD?"
-msgstr ""
-
-#: html/docs/faq.html:76
-msgid ""
-"\n"
-"Yes. You can use some of example interfaces distributed with gammu in\n"
-"<code>contrib</code> directory. Or there is full featured separate "
-"interface\n"
-"written in PHP called <a href=\"http://kalkun.sourceforge.net/\">Kalkun</"
-"a>.\n"
-msgstr ""
-
-#: html/docs/faq.html:85
-msgid "Where can I download python-gammu?"
-msgstr ""
-
-#: html/docs/faq.html:87
-msgid ""
-"\n"
-"The python-gammu project has been merged into Gammu recently, so you just "
-"need\n"
-"to grab <a href=\"/download/gammu/\">Gammu</a> and it includes python-"
-"gammu.\n"
-"Binaries for Windows are distributed separately.\n"
-msgstr ""
-
-#: html/docs/faq.html:94
-msgid "How can I use python-gammu?"
-msgstr ""
-
-#: html/docs/faq.html:96
-msgid ""
-"\n"
-"There are lot of examples shipped with Gammu, you can find them in\n"
-"<code>python/examples</code> subdirectory.\n"
-msgstr ""
-
-#: html/docs/faq.html:102
-msgid "General"
-msgstr ""
-
-#: html/docs/faq.html:104
-msgid "Will Gammu work on my system?"
-msgstr ""
-
-#: html/docs/faq.html:106
-msgid ""
-"\n"
-"Gammu is known to run on wide range of systems. It can be compiled natively "
-"on\n"
-"Linux, Mac OS X, FreeBSD, OpenBSD and Microsoft Windows. It can be probably\n"
-"compiled also elsewhere, but nobody has yet tried. On some platforms "
-"however\n"
-"you might lack support for some specific kind of devices (eg. Bluetooth or\n"
-"USB).\n"
-msgstr ""
-
-#: html/docs/faq.html:115
-msgid "How to set sender number in message?"
-msgstr ""
-
-#: html/docs/faq.html:117
-msgid ""
-"\n"
-"You can quite often see messages sent from textual address or with some "
-"other\n"
-"nice looking sender number. However this needs to be done in the GSM "
-"network\n"
-"and it is not possible to influence this from the terminal device (phone).\n"
-"Usually it is set by SMSC and some network providers allow you to set this\n"
-"based on some contract. Alternatively you can use their SMS gateways, which\n"
-"also allow this functionality.\n"
-msgstr ""
-
-#: html/docs/faq.html:127
-msgid "Can I use Gammu to send MMS?"
-msgstr ""
-
-#: html/docs/faq.html:129
-msgid ""
-"MMS contains of two parts - the actual MMS data in SMIL format and the SMS "
-"containing notification about the data. Gammu can create the notification "
-"SMS, where you just need to put URL of the data (use <a href=\"/docs/manual/"
-"gammu/index.html#cmdoption-gammuMMSINDICATOR\">gammu sendsms  MMSINDICATOR</"
-"a> for that). However you need to encode MMS data yourself or use other "
-"program to do that."
-msgstr ""
-
 #: html/docs/index.html:4 html/docs/index.html.py:11
 msgid "Wammu and Gammu Documentation"
 msgstr ""
 
-#: html/docs/index.html:13
-msgid "End User Documentation"
-msgstr ""
-
-#: html/docs/index.html:15
+#: html/docs/index.html:14
 msgid ""
 "\n"
-"The best user documentation for Gammu comes in form with <a\n"
-"href=\"/docs/man/\"><strong>man pages</strong></a> within the\n"
-"program and in <strong><a href=\"/docs/manual/\">The Gammu Manual</a></"
-"strong>. \n"
-"You can also view man pages <a href=\"/docs/man/\">on this site</a>.\n"
-"Alternatively some information is available on the <a\n"
-"href=\"http://www.gammu.org/\">wiki</a>, but it contains outdated content "
-"in\n"
-"many cases.\n"
+"The best user documentation for Gammu comes in <strong><a\n"
+"href=\"/docs/manual/\">The Gammu Manual</a></strong>. It covers all aspects "
+"from\n"
+"installing Gammu, configuring it, running the programs up to SMSD\n"
+"documentation and C or Python API.\n"
 msgstr ""
 
-#: html/docs/index.html:27
+#: html/docs/index.html:23
 msgid ""
 "\n"
 "For checking support of some phone model, the best source is <a\n"
@@ -2021,119 +1745,54 @@ msgid ""
 "Gammu and different phone models.\n"
 msgstr ""
 
-#: html/docs/index.html:35
+#: html/docs/index.html:31
 msgid ""
 "\n"
 "If you still have some questions, please check <a\n"
-"href=\"/docs/faq/\"><strong>Frequently Asked Questions</strong></a> before\n"
+"href=\"/docs/manual/faq/\"><strong>Frequently Asked Questions</strong></a> "
+"before\n"
 "asking on <a href=\"/support/lists/\">mailing list</a>.\n"
 msgstr ""
 
-#: html/docs/index.html:42
+#: html/docs/index.html:38
 msgid "Developer Documentation"
 msgstr ""
 
-#: html/docs/index.html:45
+#: html/docs/index.html:41
 msgid ""
 "\n"
-"The developer documentation is mostly autogenerated or included in the\n"
-"sources, you can find the basic information and links on <a\n"
-"href=\"/docs/devel/\">separate page</a>. Most of it is now also included\n"
-"in <a href=\"/docs/manual/\">The Gammu Manual</a>.\n"
+"The developer documentation is included in <strong><a\n"
+"href=\"/docs/manual/\">The Gammu Manual</a></strong>. You can find there\n"
+"documentation for <strong><a href=\"/docs/manual/python/\">Python\n"
+"API</a></strong>, <strong><a href=\"/docs/manual/c/\">libGammu C\n"
+"API</a></strong> or <strong><a href=\"/docs/manual/internal/\">internal API\n"
+"</a></strong>.\n"
 msgstr ""
 
-#: html/docs/list_man.html:4 html/docs/list_man.html.py:11
-msgid "Wammu and Gammu Man Pages"
-msgstr ""
-
-#: html/docs/roadmap.html:4 html/docs/roadmap.html.py:12
-msgid "Roadmap for Wammu and Gammu"
-msgstr ""
-
-#: html/docs/roadmap.html:15
+#: html/docs/index.html:52
 msgid ""
 "\n"
-"Neither Gammu nor Wammu do not have fixed release schedule. They are "
-"released\n"
-"when we feel the time has come. On this page you can find what you can "
-"expect\n"
-"in future.\n"
+"As a developer, you might be also interested what is planned to happen in "
+"next\n"
+"Gammu and Wammu releases, you can find this information in the \n"
+"<a href=\"/docs/manual/project/roadmap.html\">roadmap</a>.\n"
 msgstr ""
 
-#: html/docs/roadmap.html:22
-msgid "Gammu Roadmap"
-msgstr ""
-
-#: html/docs/roadmap.html:26
+#: html/docs/index.html:60
 msgid ""
 "\n"
-"Introduce some improvements and bugfixes in SMSD, other code should only\n"
-"receive maintenance.\n"
+"Additional hints about protocols can be found in <code>docs/develop</code> "
+"in\n"
+"Gammu sources or you might want to use git repository with <a\n"
+"href=\"http://gitorious.org/gammu/gsm-docs\">various GSM documentation</a>.\n"
 msgstr ""
 
-#: html/docs/roadmap.html:34
-msgid ""
-"\n"
-"I will try to work on change with locations handling here, but as it is "
-"quite\n"
-"intrusive, it might not be ready for this release.\n"
-msgstr ""
-
-#: html/docs/roadmap.html:40 html/docs/roadmap.html.py:68
-msgid "Future"
-msgstr ""
-
-#: html/docs/roadmap.html:42
-msgid ""
-"\n"
-"There are some major issues which should be addressed in Gammu soon. One\n"
-"problem is locations handling, because current scheme (using numbers) "
-"really\n"
-"does not match majority of current phones and it should be converted to "
-"using\n"
-"path based locations for messages, phonebook, calendar, etc.\n"
-msgstr ""
-
-#: html/docs/roadmap.html:51
-msgid ""
-"\n"
-"The another major obstacle which is all around Gammu code is own\n"
-"implementation of unicode (UCS-2-BE) strings. This code should be dropped "
-"and\n"
-"wchar_t used instead.\n"
-msgstr ""
-
-#: html/docs/roadmap.html:58
-msgid "Wammu Roadmap"
-msgstr ""
-
-#: html/docs/roadmap.html:62
-msgid ""
-"\n"
-"No definite plans so far, maybe just bug fixes or attract some new "
-"developer\n"
-"and again make some progress.\n"
-msgstr ""
-
-#: html/docs/roadmap.html:70
-msgid ""
-"\n"
-"Wammu needs major rewrite in several parts, however developers currently "
-"lack\n"
-"time to do this. On the other side lot of nice to have features depend on\n"
-"this rewrite and it needs to happen.\n"
-msgstr ""
-
-#: html/docs/show_man.html:9
-msgid "Other man pages"
-msgstr ""
+#: html/docs/sidebar.html:6
+msgid "For developers"
+msgstr "Pre vývojárov"
 
 #: html/docs/sidebar.html:8
 msgid "Roadmap"
-msgstr ""
-
-#: html/docs/sidebar.html:9
-msgid "Wiki"
 msgstr ""
 
 #: html/downloads/index.html:4
@@ -2228,13 +1887,17 @@ msgstr ""
 msgid "Ubuntu packages in PPA (latest stable version)"
 msgstr ""
 
-#: html/downloads/platformlinks.html:17
+#: html/downloads/platformlinks.html:16
+msgid "Ubuntu packages in PPA (latest testing version)"
+msgstr ""
+
+#: html/downloads/platformlinks.html:20
 msgid ""
 "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS) (latest stable "
 "version)"
 msgstr ""
 
-#: html/downloads/platformlinks.html:21
+#: html/downloads/platformlinks.html:24
 msgid "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)"
 msgstr ""
 
@@ -2422,10 +2085,6 @@ msgstr "Podporované funkcie"
 
 #: html/phonedb/body.html:13
 msgid "No features supported!"
-msgstr ""
-
-#: html/phonedb/body.html:16
-msgid "Configuration"
 msgstr ""
 
 #: html/phonedb/body.html:27
@@ -3295,52 +2954,6 @@ msgstr "Prispejte"
 msgid "Networks"
 msgstr ""
 
-#: manpages/views.py:12
-msgid "Czech"
-msgstr ""
-
-#: manpages/views.py:13
-msgid "English"
-msgstr ""
-
-#: manpages/views.py:14
-msgid "English (Great Britain)"
-msgstr ""
-
-#: manpages/views.py:15
-msgid "German"
-msgstr ""
-
-#: manpages/views.py:16
-msgid "French"
-msgstr ""
-
-#: manpages/views.py:17
-msgid "Italian"
-msgstr ""
-
-#: manpages/views.py:18
-msgid "Dutch"
-msgstr ""
-
-#: manpages/views.py:19
-msgid "Slovak"
-msgstr ""
-
-#: manpages/views.py:20
-msgid "Russian"
-msgstr ""
-
-#: manpages/views.py:21
-msgid "Spanish"
-msgstr ""
-
-#: manpages/views.py:51
-msgid ""
-"This man page is not translated to selected language, displaying English "
-"version instead."
-msgstr ""
-
 #: news/feeds.py:11
 msgid "Updates about Wammu and Gammu programs."
 msgstr ""
@@ -3526,6 +3139,17 @@ msgstr ""
 #: wammu/context_processors.py:55
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr ""
+
+#~ msgid "Man pages"
+#~ msgstr "Manuálové stránky"
+
+#, fuzzy
+#~ msgid "Phones Support"
+#~ msgstr "&Podpora"
+
+#, fuzzy
+#~ msgid "Is my phone supported?"
+#~ msgstr "Nepodporované"
 
 #~ msgid "Bank Account"
 #~ msgstr "Bankový účet"
