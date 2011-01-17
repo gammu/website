@@ -5,7 +5,6 @@ from news.models import Entry
 from phonedb.feeds import RssPhonesFeed, AtomPhonesFeed
 from phonedb.models import Phone, Vendor
 from django.contrib.sitemaps import GenericSitemap, Sitemap
-from manpages.views import list_langs, list_pages
 from downloads.models import Release
 import os
 import datetime
@@ -68,10 +67,6 @@ class PagesSitemap(Sitemap):
             ('/contribute/wanted/', '%s/contribute/wanted.html' % settings.HTML_ROOT, 0.9),
 
             ('/docs/', '%s/docs/index.html' % settings.HTML_ROOT, 0.9),
-            ('/docs/man/', None, 0.9),
-            ('/docs/devel/', '%s/docs/devel.html' % settings.HTML_ROOT, 0.9),
-            ('/docs/roadmap/', '%s/docs/roadmap.html' % settings.HTML_ROOT, 0.9),
-            ('/docs/faq/', '%s/docs/faq.html' % settings.HTML_ROOT, 0.9),
 
             ('/screenshots/', None, 0.8),
             ('/downloads/gammu/', None, 0.7),
@@ -124,7 +119,6 @@ sitemaps = {
     'releases': GenericSitemap(releases_dict, priority=0.9, changefreq='monthly'),
     'vendors': GenericSitemap(vendors_dict, priority=0.2, changefreq='monthly'),
     'pages': PagesSitemap(),
-    'manpages': ManSitemap(),
 }
 
 from django.contrib import admin
@@ -157,12 +151,6 @@ urlpatterns = patterns('',
     (r'^contribute/wanted/$', 'wammu.views.static', {'page': 'contribute/wanted.html'}),
 
     (r'^docs/$', 'wammu.views.static', {'page': 'docs/index.html'}),
-    (r'^docs/man/$', 'manpages.views.show_pages'),
-    (r'^docs/man/(?P<lang>[a-zA-Z_]*)/$', 'manpages.views.show_lang_pages'),
-    (r'^docs/man/(?P<lang>[a-zA-Z_]*)/(?P<page>[a-z_-]*\.[0-9])/$', 'manpages.views.show_page'),
-    (r'^docs/devel/$', 'wammu.views.static', {'page': 'docs/devel.html'}),
-    (r'^docs/roadmap/$', 'wammu.views.static', {'page': 'docs/roadmap.html'}),
-    (r'^docs/faq/$', 'wammu.views.static', {'page': 'docs/faq.html'}),
 
     (r'^tools/$', 'wammu.views.static', {'page': 'tools/index.html'}),
     (r'^tools/pdu-encode/$', 'tools.views.pduencode'),

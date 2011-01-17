@@ -120,7 +120,6 @@ INSTALLED_APPS = (
     'downloads',
     'screenshots',
     'links',
-    'manpages',
     'phonedb',
     'tools',
 )
