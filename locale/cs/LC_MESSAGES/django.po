@@ -2,14 +2,14 @@
 # Copyright (C) 2009 Michal Čihař <michal@cihar.com>
 # This file is distributed under the same license as the PACKAGE package.
 # Michal <michal@cihar.com>, 2009, 2010.
-# Michal Čihař <michal@cihar.com>, 2010.
+# Michal Čihař <michal@cihar.com>, 2010, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-17 14:20+0100\n"
-"PO-Revision-Date: 2010-10-24 14:36+0200\n"
+"PO-Revision-Date: 2011-01-17 14:24+0100\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -238,7 +238,7 @@ msgstr "Podporované telefony"
 
 #: html/base.html:145 html/docs/sidebar.html:4
 msgid "Manual"
-msgstr ""
+msgstr "Manuál"
 
 #: html/base.html:146 html/phonedb/body.html:16
 msgid "Configuration"
@@ -951,7 +951,7 @@ msgid "Wammu and Gammu Search"
 msgstr "Vyhledávání pro Gammu a Wammu"
 
 #: html/search.html:10
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "\n"
 "This page provides Google Custom Search optimized for searching about "
@@ -963,9 +963,9 @@ msgid ""
 msgstr ""
 "\n"
 "Tato stránka obsahuje Vlastní vyhledávač Google nastavený na vyhledávání "
-"informací o Gammu.Ten samý vyhledávač můžete použít i přímo na\n"
+"informací o Gammu. Ten samý vyhledávač můžete použít i přímo na\n"
 "<a href=\"http://www.google.com/coop/cse?"
-"cx=008688692096734274889%3Axuvlsu_agkm\">stránkách Google</a>.\n"
+"cx=008688692096734274889%%3Axuvlsu_agkm\">stránkách Google</a>.\n"
 
 #: html/search.html:39
 msgid ""
@@ -1841,7 +1841,6 @@ msgstr ""
 "s Gammu a různými typy telefonů.\n"
 
 #: html/docs/index.html:31
-#, fuzzy
 msgid ""
 "\n"
 "If you still have some questions, please check <a\n"
@@ -1851,8 +1850,8 @@ msgid ""
 msgstr ""
 "\n"
 "Pokud ještě máte nějaké dotazy, zkuste se podívat do <a\n"
-"href=\"/docs/faq/\"><strong>Často Kladených Dotazů</strong></a> ještě před "
-"tím,\n"
+"href=\"/docs/manual/faq/\"><strong>Často Kladených Dotazů</strong></a> ještě "
+"před tím,\n"
 "než se zeptáte na <a href=\"/support/lists/\">mailing listu</a>.\n"
 
 #: html/docs/index.html:38
@@ -2000,9 +1999,8 @@ msgid "Ubuntu packages in PPA (latest stable version)"
 msgstr "Balíčky pro Ubuntu v PPA (poslední stabilní verze)"
 
 #: html/downloads/platformlinks.html:16
-#, fuzzy
 msgid "Ubuntu packages in PPA (latest testing version)"
-msgstr "Balíčky pro Ubuntu v PPA (poslední stabilní verze)"
+msgstr "Balíčky pro Ubuntu v PPA (poslední testovací verze)"
 
 #: html/downloads/platformlinks.html:20
 msgid ""
@@ -3075,9 +3073,8 @@ msgid ""
 msgstr ""
 
 #: html/tools/pdudecode.html:5 html/tools/pdudecode.html.py:13
-#, fuzzy
 msgid "PDU decoder using Gammu"
-msgstr "PAD pro Gammu"
+msgstr "Zakódování PDU pomocí Gammu"
 
 #: html/tools/pdudecode.html:27
 msgid "PDU Decoding Result"
@@ -3159,9 +3156,8 @@ msgid "Bitmaps"
 msgstr "Obrázky"
 
 #: html/tools/pduencode.html:5 html/tools/pduencode.html.py:13
-#, fuzzy
 msgid "PDU encoder using Gammu"
-msgstr "PAD pro Gammu"
+msgstr "Dekódování PDU pomocí Gammu"
 
 #: html/tools/pduencode.html:27
 msgid "PDU data"
@@ -3173,11 +3169,11 @@ msgstr "Nástroje"
 
 #: html/tools/sidebar.html:4
 msgid "PDU encoder"
-msgstr ""
+msgstr "Zakódování PDU"
 
 #: html/tools/sidebar.html:5
 msgid "PDU decoder"
-msgstr ""
+msgstr "Dekódování PDU"
 
 #: html/tools/sidebar.html:6
 msgid "Countries"
