@@ -661,7 +661,6 @@ msgstr ""
 "it.\n"
 
 #: html/gammu.html:71
-#, fuzzy
 msgid ""
 "\n"
 "The best documentation is available in <a href=\"/docs/manual/\">The Gammu "
@@ -671,10 +670,10 @@ msgid ""
 "configuration file)</a>.\n"
 msgstr ""
 "\n"
-"The best documentation is available in form of <a href=\"/docs/man\">man\n"
-"pages</a> which are distributed with the program. You can also view online\n"
-"documentation for <a href=\"/docs/man/en/gammu.1/\">gammu (the\n"
-"main program)</a> or <a href=\"/docs/man/en/gammurc.5/\">gammu-rc (the\n"
+"The best documentation is available in <a href=\"/docs/manual/\">The Gammu "
+"Manual</a> which is distributed with the program. You can also view online\n"
+"documentation for <a href=\"/docs/manual/gammu/\">gammu (the\n"
+"main program)</a> or <a href=\"/docs/manual/config/\">gammu-rc (the\n"
 "configuration file)</a>.\n"
 
 #: html/gammu.html:80 html/wammu.html:66
