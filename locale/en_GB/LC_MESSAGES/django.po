@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-17 14:37+0100\n"
-"PO-Revision-Date: 2011-01-01 10:43+0200\n"
+"PO-Revision-Date: 2011-01-18 00:01+0200\n"
 "Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: en_GB\n"
@@ -255,7 +255,7 @@ msgstr "Supported phones"
 
 #: html/base.html:145 html/docs/sidebar.html:4
 msgid "Manual"
-msgstr ""
+msgstr "Manual"
 
 #: html/base.html:146 html/phonedb/body.html:16
 msgid "Configuration"
@@ -661,7 +661,6 @@ msgstr ""
 "it.\n"
 
 #: html/gammu.html:71
-#, fuzzy
 msgid ""
 "\n"
 "The best documentation is available in <a href=\"/docs/manual/\">The Gammu "
@@ -671,20 +670,19 @@ msgid ""
 "configuration file)</a>.\n"
 msgstr ""
 "\n"
-"The best documentation is available in form of <a href=\"/docs/man\">man\n"
-"pages</a> which are distributed with the program. You can also view online\n"
-"documentation for <a href=\"/docs/man/en/gammu.1/\">gammu (the\n"
-"main program)</a> or <a href=\"/docs/man/en/gammurc.5/\">gammu-rc (the\n"
+"The best documentation is available in <a href=\"/docs/manual/\">The Gammu "
+"Manual</a> which is distributed with the program. You can also view online\n"
+"documentation for <a href=\"/docs/manual/gammu/\">gammu (the\n"
+"main program)</a> or <a href=\"/docs/manual/config/\">gammu-rc (the\n"
 "configuration file)</a>.\n"
 
 #: html/gammu.html:80 html/wammu.html:66
-#, fuzzy
 msgid ""
 "\n"
 "Check also <a href=\"/docs/manual/faq/\">Frequently Asked Questions</a>.\n"
 msgstr ""
 "\n"
-"Check also <a href=\"/docs/faq/\">Frequently Asked Questions</a>.\n"
+"Check also <a href=\"/docs/manual/faq/\">Frequently Asked Questions</a>.\n"
 
 #: html/index.html:4
 msgid "Wammu and Gammu"
@@ -995,21 +993,21 @@ msgstr ""
 "href=\"/docs/devel/\">developer documentation page</a> for more details.\n"
 
 #: html/python-gammu.html:80
-#, fuzzy
 msgid ""
 "\n"
 "Check also <a href=\"/docs/manual/faq/python.html\">Frequently Asked "
 "Questions</a>.\n"
 msgstr ""
 "\n"
-"Check also <a href=\"/docs/faq/#python\">Frequently Asked Questions</a>.\n"
+"Check also <a href=\"/docs/manual/faq/python.html\">Frequently Asked "
+"Questions</a>.\n"
 
 #: html/search.html:4 html/search.html.py:7
 msgid "Wammu and Gammu Search"
 msgstr "Wammu and Gammu Search"
 
 #: html/search.html:10
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "\n"
 "This page provides Google Custom Search optimized for searching about "
@@ -1020,11 +1018,10 @@ msgid ""
 "pages</a>.\n"
 msgstr ""
 "\n"
-"This page provides Google Custom Search optimised for searching about "
-"Gammu.\n"
+"This page provides Google Custom Search optimized for searching about Gammu.\n"
 "You can also use same search engine directly on <a\n"
-"href=\"http://www.google.com/coop/cse?cx=008688692096734274889%3Axuvlsu_agkm"
-"\">Google\n"
+"href=\"http://www.google.com/coop/cse?cx=008688692096734274889%%"
+"3Axuvlsu_agkm\">Google\n"
 "pages</a>.\n"
 
 #: html/search.html:39
@@ -1148,7 +1145,6 @@ msgstr ""
 "distribution, try looking for something like <code>gammu-smsd</code>.\n"
 
 #: html/smsd.html:75
-#, fuzzy
 msgid ""
 "\n"
 "There is <a href=\"/docs/manual/smsd/\">SMS Daemon section in Gammu Manual</"
@@ -1158,21 +1154,20 @@ msgid ""
 "the program.\n"
 msgstr ""
 "\n"
-"There is <a href=\"/docs/manual/smsd/\">SMS Daemon section in Gammu Manual</"
-"a>\n"
+"There is <a href=\"/docs/manual/smsd/\">SMS Daemon section in Gammu Manual</a>\n"
 "which covers all aspects of using SMSD, similar documentation is available\n"
-"in form of <a href=\"/docs/man/\">man\n"
-"pages</a> which are distributed with the program.\n"
+"in <a href=\"/docs/manual/\">The Gammu Manual</a> which is distributed with "
+"the program.\n"
 
 #: html/smsd.html:83
-#, fuzzy
 msgid ""
 "\n"
 "Check also <a href=\"/docs/manual/faq/smsd.html\">Frequently Asked "
 "Questions</a>.\n"
 msgstr ""
 "\n"
-"Check also <a href=\"/docs/faq/#smsd\">Frequently Asked Questions</a>.\n"
+"Check also <a href=\"/docs/manual/faq/smsd.html\">Frequently Asked "
+"Questions</a>.\n"
 
 #: html/wammu.html:25
 msgid ""
@@ -1257,7 +1252,6 @@ msgstr ""
 "Windows</a>.\n"
 
 #: html/wammu.html:59
-#, fuzzy
 msgid ""
 "\n"
 "Wammu does not come with much documentation and there is hope that it will "
@@ -1268,8 +1262,8 @@ msgstr ""
 "\n"
 "Wammu does not come with much documentation and there is hope that it will "
 "be\n"
-"intiutive enough. You can check it's command line parameters in <a\n"
-"href=\"/docs/man/en/wammu.1/\">wammu man page</a>.\n"
+"intuitive enough. You can check it's command line parameters in wammu man "
+"page.\n"
 
 #: html/wammu_feedback.html:3
 msgid "Thank you for using Wammu"
@@ -2101,6 +2095,12 @@ msgid ""
 "installing Gammu, configuring it, running the programs up to SMSD\n"
 "documentation and C or Python API.\n"
 msgstr ""
+"\n"
+"The best user documentation for Gammu comes in <strong><a\n"
+"href=\"/docs/manual/\">The Gammu Manual</a></strong>. It covers all aspects "
+"from\n"
+"installing Gammu, configuring it, running the programs up to SMSD\n"
+"documentation and C or Python API.\n"
 
 #: html/docs/index.html:23
 msgid ""
@@ -2117,7 +2117,6 @@ msgstr ""
 "Gammu and different phone models.\n"
 
 #: html/docs/index.html:31
-#, fuzzy
 msgid ""
 "\n"
 "If you still have some questions, please check <a\n"
@@ -2127,7 +2126,8 @@ msgid ""
 msgstr ""
 "\n"
 "If you still have some questions, please check <a\n"
-"href=\"/docs/faq/\"><strong>Frequently Asked Questions</strong></a> before\n"
+"href=\"/docs/manual/faq/\"><strong>Frequently Asked Questions</strong></a> "
+"before\n"
 "asking on <a href=\"/support/lists/\">mailing list</a>.\n"
 
 #: html/docs/index.html:38
@@ -2144,9 +2144,15 @@ msgid ""
 "API</a></strong> or <strong><a href=\"/docs/manual/internal/\">internal API\n"
 "</a></strong>.\n"
 msgstr ""
+"\n"
+"The developer documentation is included in <strong><a\n"
+"href=\"/docs/manual/\">The Gammu Manual</a></strong>. You can find there\n"
+"documentation for <strong><a href=\"/docs/manual/python/\">Python\n"
+"API</a></strong>, <strong><a href=\"/docs/manual/c/\">libGammu C\n"
+"API</a></strong> or <strong><a href=\"/docs/manual/internal/\">internal API\n"
+"</a></strong>.\n"
 
 #: html/docs/index.html:52
-#, fuzzy
 msgid ""
 "\n"
 "As a developer, you might be also interested what is planned to happen in "
@@ -2158,7 +2164,7 @@ msgstr ""
 "As a developer, you might be also interested what is planned to happen in "
 "next\n"
 "Gammu and Wammu releases, you can find this information in the \n"
-"<a href=\"/docs/roadmap/\">roadmap</a>.\n"
+"<a href=\"/docs/manual/project/roadmap.html\">roadmap</a>.\n"
 
 #: html/docs/index.html:60
 msgid ""
@@ -2294,9 +2300,8 @@ msgid "Ubuntu packages in PPA (latest stable version)"
 msgstr "Ubuntu packages in PPA (latest stable version)"
 
 #: html/downloads/platformlinks.html:16
-#, fuzzy
 msgid "Ubuntu packages in PPA (latest testing version)"
-msgstr "Ubuntu packages in PPA (latest stable version)"
+msgstr "Ubuntu packages in PPA (latest testing version)"
 
 #: html/downloads/platformlinks.html:20
 msgid ""
