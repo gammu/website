@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Series60 remote applet installation" %}{% endblock %}
+
+{% block sidebar_top %}
+{% include "contribute/sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+<h2>{% trans "Series60 remote applet installation" %}</h2>
+
+<p>{% blocktrans %}To install the applet to your phone, download following files:{% endblocktrans %}</p>
+
+<ul>
+<li><a href="http://dl.cihar.com/gammu/s60/Python_2.0.0.sis">Python_2.0.0.sis</a></li>
+<li><a href="http://dl.cihar.com/gammu/s60/series60-remote.sis">series60-remote.sis</a></li>
+</ul>
+
+{% endblock %}
+
+

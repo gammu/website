@@ -54,6 +54,8 @@ class PagesSitemap(Sitemap):
             ('/search/', '%s/search.html' % settings.HTML_ROOT, 0.3),
             ('/donate/', '%s/donate.html' % settings.HTML_ROOT, 0.3),
 
+            ('/s60/', '%s/s60.html' % settings.HTML_ROOT, 0.3),
+
             ('/support/', '%s/support/index.html' % settings.HTML_ROOT, 0.9),
             ('/support/bugs/', '%s/support/bugs.html' % settings.HTML_ROOT, 0.9),
             ('/support/lists/', '%s/support/lists.html' % settings.HTML_ROOT, 0.9),
@@ -127,6 +129,8 @@ urlpatterns = patterns('',
     (r'^contribute/wanted/$', 'wammu.views.static', {'page': 'contribute/wanted.html'}),
 
     (r'^docs/$', 'wammu.views.static', {'page': 'docs/index.html'}),
+
+    (r'^s60/$', 'wammu.views.static', {'page': 's60.html'}),
 
     (r'^tools/$', 'wammu.views.static', {'page': 'tools/index.html'}),
     (r'^tools/pdu-encode/$', 'tools.views.pduencode'),

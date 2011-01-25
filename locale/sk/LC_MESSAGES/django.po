@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-17 14:37+0100\n"
+"POT-Creation-Date: 2011-01-25 11:17+0100\n"
 "PO-Revision-Date: 2010-06-02 13:22+0200\n"
 "Last-Translator: Pavol <scroolik@gmail.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
-"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sk\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Pootle 2.0.1\n"
 
@@ -978,6 +978,14 @@ msgstr ""
 "\n"
 "Pozrite sa tiež na <a href=\"/docs/faq/\">často kladené otázky</a>.\n"
 
+#: html/s60.html:4 html/s60.html.py:11
+msgid "Series60 remote applet installation"
+msgstr ""
+
+#: html/s60.html:13
+msgid "To install the applet to your phone, download following files:"
+msgstr ""
+
 #: html/search.html:4 html/search.html.py:7
 msgid "Wammu and Gammu Search"
 msgstr ""
@@ -1192,8 +1200,8 @@ msgstr ""
 msgid ""
 "\n"
 "You are using older version, please upgrade to get most stable version with\n"
-"latest features. The latest stable version is <a href=\"%(url)s\">"
-"%(version)s</a>.\n"
+"latest features. The latest stable version is <a href=\"%(url)s\">%(version)"
+"s</a>.\n"
 msgstr ""
 
 #: html/contribute/code.html:4 html/contribute/code.html.py:22
@@ -1249,8 +1257,8 @@ msgid ""
 "repositories over http, just replace <code>git://gitorious.org/</code> with\n"
 "<code>http://git.gitorious.org/</code>. All repositories are also mirrored "
 "to\n"
-"<a href=\"https://sourceforge.net/scm/?type=git&amp;"
-"group_id=78290\">SourceForge.net</a> \n"
+"<a href=\"https://sourceforge.net/scm/?type=git&amp;group_id=78290"
+"\">SourceForge.net</a> \n"
 "and repo.or.cz (<a href=\"http://repo.or.cz/w/gammu.git\">Gammu</a> and \n"
 "<a href=\"http://repo.or.cz/w/wammu.git\">Wammu</a>).\n"
 msgstr ""
@@ -1740,7 +1748,20 @@ msgid ""
 "documentation and C or Python API.\n"
 msgstr ""
 
-#: html/docs/index.html:23
+#: html/docs/index.html:22
+msgid "You can also download documentation in PDF:"
+msgstr ""
+
+#: html/docs/index.html:25
+#, fuzzy
+msgid "Gammu Manual"
+msgstr "Rodina Gammu"
+
+#: html/docs/index.html:26
+msgid "Gammu SMSD Daemon Manual"
+msgstr ""
+
+#: html/docs/index.html:30
 msgid ""
 "\n"
 "For checking support of some phone model, the best source is <a\n"
@@ -1749,7 +1770,7 @@ msgid ""
 "Gammu and different phone models.\n"
 msgstr ""
 
-#: html/docs/index.html:31
+#: html/docs/index.html:38
 msgid ""
 "\n"
 "If you still have some questions, please check <a\n"
@@ -1758,11 +1779,11 @@ msgid ""
 "asking on <a href=\"/support/lists/\">mailing list</a>.\n"
 msgstr ""
 
-#: html/docs/index.html:38
+#: html/docs/index.html:45
 msgid "Developer Documentation"
 msgstr ""
 
-#: html/docs/index.html:41
+#: html/docs/index.html:48
 msgid ""
 "\n"
 "The developer documentation is included in <strong><a\n"
@@ -1773,7 +1794,7 @@ msgid ""
 "</a></strong>.\n"
 msgstr ""
 
-#: html/docs/index.html:52
+#: html/docs/index.html:59
 msgid ""
 "\n"
 "As a developer, you might be also interested what is planned to happen in "
@@ -1782,7 +1803,7 @@ msgid ""
 "<a href=\"/docs/manual/project/roadmap.html\">roadmap</a>.\n"
 msgstr ""
 
-#: html/docs/index.html:60
+#: html/docs/index.html:67
 msgid ""
 "\n"
 "Additional hints about protocols can be found in <code>docs/develop</code> "
@@ -1926,8 +1947,8 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"Thank you for interest in downloading <a href=\"/%(program_name)s\">"
-"%(program)s</a>.\n"
+"Thank you for interest in downloading <a href=\"/%(program_name)s\">%"
+"(program)s</a>.\n"
 msgstr ""
 
 #: html/downloads/program.html:33
