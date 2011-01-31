@@ -24,6 +24,9 @@ def translations(request):
     if settings.LANGUAGE_CODE != 'sk-sk':
         langs.append({'url': 'http://sk.wammu.eu%s' % path, 'name': u'Slovenčina'})
 
+    if settings.LANGUAGE_CODE != 'fr-fr':
+        langs.append({'url': 'http://fr.wammu.eu%s' % path, 'name': u'Français'})
+
     return {'translations': langs}
 
 def menu(request):
