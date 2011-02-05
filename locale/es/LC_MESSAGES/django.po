@@ -136,6 +136,8 @@ msgstr ""
 #: html/base.html:13
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
 msgstr ""
+"Sitio web de Gammu y Wammu, el software para gestionar teléfonos celulares "
+"GSM."
 
 #: html/base.html:59
 msgid "Page translations"
