@@ -322,7 +322,7 @@ msgstr "Donar a Gammu"
 
 #: html/donate.html:13
 msgid "Micropayments"
-msgstr ""
+msgstr "Micropagos"
 
 #: html/donate.html:16
 msgid ""
