@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-27 11:01+0100\n"
-"PO-Revision-Date: 2011-02-05 17:46+0200\n"
+"PO-Revision-Date: 2011-02-05 18:16+0200\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitoschido@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -41,15 +41,15 @@ msgid "Permission Denied"
 msgstr "Acceso denegado"
 
 #: html/403.html:11 html/404.html:11
-#, fuzzy
 msgid ""
 "\n"
 "The page you are looking for was not found. Try choosing something from the\n"
 "navigation bellow or use <a href=\"/search\">search facility</a>.\n"
 msgstr ""
 "\n"
-" La página que estas buscando no ha sido encontrada. Trate de elegir algo de "
-"la navegación abajo o utilize <a href=\"/search\">motor de búsqueda</a>.\n"
+" La página que está buscando no se ha encontrado. Seleccione un elemento del "
+"menú de navegación de abajo o utilize <a href=\"/search\">el cuadro de "
+"búsqueda</a>.\n"
 
 #: html/403.html:18 html/404.html:18
 msgid ""
