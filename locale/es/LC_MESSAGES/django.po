@@ -349,11 +349,9 @@ msgid ""
 "there is simply lot of them and having more available allows us to create\n"
 "better software.\n"
 msgstr ""
-"\n"
 "Gracias por su interes en realizar una donación para el proyecto Gammu y "
-"Wammu. Las donaciones \n"
-"sirven para motivar a los desarolladores y para adquirir hardware con el que "
-"probar el código."
+"Wammu. Las donaciones sirven para motivar a los desarrolladores y para "
+"adquirir hardware con el que probar el código."
 
 #: html/donate.html:40
 msgid ""
