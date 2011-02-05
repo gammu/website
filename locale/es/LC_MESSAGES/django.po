@@ -247,7 +247,7 @@ msgstr "Manual"
 
 #: html/base.html:146 html/phonedb/body.html:16
 msgid "Configuration"
-msgstr ""
+msgstr "Configuración"
 
 #: html/base.html:150 wammu/context_processors.py:35
 msgid "Contribute"
