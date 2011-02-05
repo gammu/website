@@ -74,6 +74,10 @@ msgid ""
 "our\n"
 "trained monkeys to fix the issue.\n"
 msgstr ""
+"\n"
+"El servidor ha tenido problemas para servir su solicitud. Acabamos de enviar "
+"a nuestros\n"
+"monos adiestrados para resolver esta situación.\n"
 
 #: html/authors.html:4 html/authors.html.py:7
 msgid "Wammu and Gammu Authors"
