@@ -154,7 +154,7 @@ msgstr "Descargas"
 
 #: html/base.html:76
 msgid "Appreciate"
-msgstr ""
+msgstr "Apreciar"
 
 #: html/base.html:85
 msgid "Share"
