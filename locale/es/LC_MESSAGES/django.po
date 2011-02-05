@@ -243,7 +243,7 @@ msgstr "Teléfonos soportados"
 
 #: html/base.html:145 html/docs/sidebar.html:4
 msgid "Manual"
-msgstr ""
+msgstr "Manual"
 
 #: html/base.html:146 html/phonedb/body.html:16
 msgid "Configuration"
