@@ -129,11 +129,9 @@ msgid ""
 "Manfred\n"
 "Jonsson.\n"
 msgstr ""
-"\n"
 "Dado que el código fuente se empezó a programar como parte del proyecto "
-"Gnokii, queremos dar las gracias a todos los colaboradores\n"
-"de dicho proyecto, en especial a Pavel Janík, Pawel Kot y Manfred\n"
-"Jonsson.\n"
+"Gnokii, queremos dar las gracias a todos los colaboradoresde dicho proyecto, "
+"en especial a Pavel Janík, Pawel Kot y ManfredJonsson."
 
 #: html/base.html:13
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
