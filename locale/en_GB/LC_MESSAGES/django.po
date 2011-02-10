@@ -1008,7 +1008,7 @@ msgstr "Series60 remote applet installation"
 
 #: html/s60.html:13
 msgid "To install the applet to your phone, download following files:"
-msgstr ""
+msgstr "To install the applet to your phone, download following files:"
 
 #: html/s60.html:20
 msgid "Support libraries required to be installed on older phones:"
