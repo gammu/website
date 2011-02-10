@@ -2135,7 +2135,7 @@ msgstr "Gammu Manual"
 
 #: html/docs/index.html:26
 msgid "Gammu SMSD Daemon Manual"
-msgstr ""
+msgstr "Gammu SMSD Daemon Manual"
 
 #: html/docs/index.html:30
 msgid ""
