@@ -1019,6 +1019,9 @@ msgid ""
 "See <a href=\"http://wammu.eu/docs/manual/protocol/s60.html\">documentation</"
 "a> for more information."
 msgstr ""
+"See <a "
+"href=\"http://wammu.eu/docs/manual/protocol/s60.html\">documentation</a> for "
+"more information."
 
 #: html/search.html:4 html/search.html.py:7
 msgid "Wammu and Gammu Search"
