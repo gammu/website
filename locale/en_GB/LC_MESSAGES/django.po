@@ -2130,9 +2130,8 @@ msgid "You can also download documentation in PDF:"
 msgstr "You can also download documentation in PDF:"
 
 #: html/docs/index.html:25
-#, fuzzy
 msgid "Gammu Manual"
-msgstr "Manual"
+msgstr "Gammu Manual"
 
 #: html/docs/index.html:26
 msgid "Gammu SMSD Daemon Manual"
