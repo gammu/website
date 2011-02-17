@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-27 11:01+0100\n"
-"PO-Revision-Date: 2011-02-17 22:05+0200\n"
+"PO-Revision-Date: 2011-02-17 22:07+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -1189,7 +1189,6 @@ msgstr ""
 "<code>gammu-smsd</code> zu finden.\n"
 
 #: html/smsd.html:75
-#, fuzzy
 msgid ""
 "\n"
 "There is <a href=\"/docs/manual/smsd/\">SMS Daemon section in Gammu Manual</"
