@@ -2378,7 +2378,7 @@ msgid ""
 "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS) (latest stable "
 "version)"
 msgstr ""
-"RPM Pakete, aktuellste stabile Version (openSUSE, Fedora, Mandriva, SLES, "
+"RPM Pakete, aktuelle stabile Version (openSUSE, Fedora, Mandriva, SLES, "
 "RHEL, CentOS)"
 
 #: html/downloads/platformlinks.html:24
