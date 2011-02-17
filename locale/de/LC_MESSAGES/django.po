@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-27 11:01+0100\n"
-"PO-Revision-Date: 2011-02-17 21:00+0200\n"
+"PO-Revision-Date: 2011-02-17 21:01+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2563,7 +2563,7 @@ msgstr "Neuigkeiten über Gammu und Wammu"
 
 #: html/news/gammu_index.html:4 html/news/gammu_index.html.py:6
 msgid "Gammu News"
-msgstr "Neuigkeiten von Gammu"
+msgstr "Neuigkeiten über Gammu"
 
 #: html/news/index.html:7
 msgid "Follow us on"
