@@ -2370,9 +2370,8 @@ msgid "Ubuntu packages in PPA (latest stable version)"
 msgstr "Ubuntu Pakete im PPA (aktuelle stabile Version)"
 
 #: html/downloads/platformlinks.html:16
-#, fuzzy
 msgid "Ubuntu packages in PPA (latest testing version)"
-msgstr "Ubuntu Pakete im PPA (aktuellste stabile Version)"
+msgstr "Ubuntu Pakete im PPA (aktuelle stabile Version)"
 
 #: html/downloads/platformlinks.html:20
 msgid ""
