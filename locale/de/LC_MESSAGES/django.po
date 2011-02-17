@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-27 11:01+0100\n"
-"PO-Revision-Date: 2011-01-01 00:12+0200\n"
+"PO-Revision-Date: 2011-02-17 19:11+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -255,7 +255,7 @@ msgstr "Unterstützte Telefonapparate"
 
 #: html/base.html:145 html/docs/sidebar.html:4
 msgid "Manual"
-msgstr ""
+msgstr "Handbuch"
 
 #: html/base.html:146 html/phonedb/body.html:16
 msgid "Configuration"
