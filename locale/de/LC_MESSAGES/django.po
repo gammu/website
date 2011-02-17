@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-27 11:01+0100\n"
-"PO-Revision-Date: 2011-02-17 21:54+0200\n"
+"PO-Revision-Date: 2011-02-17 22:05+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -1053,7 +1053,7 @@ msgid "Wammu and Gammu Search"
 msgstr "Wammu und Gammu Suche"
 
 #: html/search.html:10
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "\n"
 "This page provides Google Custom Search optimized for searching about "
@@ -1064,11 +1064,12 @@ msgid ""
 "pages</a>.\n"
 msgstr ""
 "\n"
-"Diese Seite verwendet eine angepasste Google Suche, optimiert für die "
-"Thematik Gammu.\n"
-"Sie können diese Suche direkt verwenden auf <a "
-"href=\"http://www.google.com/coop/cse?cx=008688692096734274889%%"
-"3Axuvlsu_agkm\">Google pages</a>.\n"
+"Diese Seite verwendet eine angepasste Google Suche, optimiert für Ergebnisse "
+"bezüglich Gammu.\n"
+"Sie können diese Suche direkt verwenden auf <a\n"
+"href=\"http://www.google.com/coop/cse?cx=008688692096734274889%"
+"3Axuvlsu_agkm\">Google custom search</a>.\n"
+"                       "
 
 # anmerkung: rechtsklausel, formulierungen bitte verbessern, aber besser zweimal absichern zuvor!
 #: html/search.html:39
