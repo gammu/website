@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-27 11:01+0100\n"
-"PO-Revision-Date: 2011-02-17 19:32+0200\n"
+"PO-Revision-Date: 2011-02-17 19:33+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -1205,14 +1205,13 @@ msgstr ""
 "beinhalten.\n"
 
 #: html/smsd.html:83
-#, fuzzy
 msgid ""
 "\n"
 "Check also <a href=\"/docs/manual/faq/smsd.html\">Frequently Asked "
 "Questions</a>.\n"
 msgstr ""
 "\n"
-"Bitte lesen Sie auch in unseren <a href=\"/docs/faq/#smsd\">häufig "
+"Bitte lesen Sie auch in unseren <a href=\"/docs/manual/faq/smsd.html\">häufig "
 "gestellten Fragen (FAQ)</a>.\n"
 
 #: html/wammu.html:25
