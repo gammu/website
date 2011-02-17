@@ -2559,7 +2559,7 @@ msgstr "Nachrichten über die Programme Anderer"
 #: html/news/entry.html:4 html/news/index.html:4 html/news/index.html.py:31
 #: news/feeds.py:9
 msgid "Wammu and Gammu News"
-msgstr "Neuigkeiten über Gammu und Wammu"
+msgstr "Nachrichten über Gammu und Wammu"
 
 #: html/news/gammu_index.html:4 html/news/gammu_index.html.py:6
 msgid "Gammu News"
