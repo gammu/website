@@ -2603,7 +2603,7 @@ msgstr "Kategorien"
 
 #: html/news/index.html:21
 msgid "All news"
-msgstr "Alle Neuigkeiten"
+msgstr "Alle Nachrichten"
 
 #: html/news/published.html:4
 #, python-format
