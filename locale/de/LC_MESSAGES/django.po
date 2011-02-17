@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-27 11:01+0100\n"
-"PO-Revision-Date: 2011-02-17 20:21+0200\n"
+"PO-Revision-Date: 2011-02-17 20:22+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2383,7 +2383,7 @@ msgstr ""
 
 #: html/downloads/platformlinks.html:24
 msgid "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)"
-msgstr "RPM Pakete, aktuellste Testversion (openSUSE, Fedora, Mandriva)"
+msgstr "RPM Pakete, aktuelle Testversion (openSUSE, Fedora, Mandriva)"
 
 #: html/downloads/platformmessage.html:3
 msgid ""
