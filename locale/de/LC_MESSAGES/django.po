@@ -2612,7 +2612,7 @@ msgid ""
 "Published on %(date)s by <a href=\"mailto:%(email)s\">%(author)s</a>\n"
 msgstr ""
 "\n"
-"Veröfffentlicht von <a href=\"mailto:%(email)s\">%(author)s</a>, am %(date)s"
+"Veröfffentlicht von <a href=\"mailto:%(email)s\">%(author)s</a>, am %(date)s\n"
 
 #: html/news/wammu_index.html:4 html/news/wammu_index.html.py:6
 msgid "Wammu News"
