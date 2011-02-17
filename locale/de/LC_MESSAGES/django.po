@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-27 11:01+0100\n"
-"PO-Revision-Date: 2011-02-17 22:07+0200\n"
+"PO-Revision-Date: 2011-02-17 22:10+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -1025,9 +1025,8 @@ msgstr ""
 
 # dzt noch nicht ersichtlich, somit fragich obs eine ferninst. ist oder eine fernsteuerung app oder..
 #: html/s60.html:4 html/s60.html.py:11
-#, fuzzy
 msgid "Series60 remote applet installation"
-msgstr "Series60 remote applet Installation"
+msgstr "Series60 remote applet, Installation"
 
 #: html/s60.html:13
 msgid "To install the applet to your phone, download following files:"
