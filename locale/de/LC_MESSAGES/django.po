@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-27 11:01+0100\n"
-"PO-Revision-Date: 2011-02-17 21:01+0200\n"
+"PO-Revision-Date: 2011-02-17 21:02+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2554,7 +2554,7 @@ msgstr "Internetseite:"
 
 #: html/news/contrib_index.html:4 html/news/contrib_index.html.py:6
 msgid "Third Party News"
-msgstr "Neuigkeiten über die Programme Anderer"
+msgstr "Nachrichten über die Programme Anderer"
 
 #: html/news/entry.html:4 html/news/index.html:4 html/news/index.html.py:31
 #: news/feeds.py:9
