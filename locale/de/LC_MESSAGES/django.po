@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-27 11:01+0100\n"
-"PO-Revision-Date: 2011-02-17 19:25+0200\n"
+"PO-Revision-Date: 2011-02-17 19:27+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -1037,6 +1037,8 @@ msgstr ""
 #: html/s60.html:20
 msgid "Support libraries required to be installed on older phones:"
 msgstr ""
+"Unterstützende Bibliotheken, die man zur Installation auf älteren Geräten "
+"benötigt:"
 
 #: html/s60.html:28
 msgid ""
