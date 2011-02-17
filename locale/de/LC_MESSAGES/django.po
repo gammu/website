@@ -2567,7 +2567,7 @@ msgstr "Nachrichten über Gammu"
 
 #: html/news/index.html:7
 msgid "Follow us on"
-msgstr "Folgen Sie uns auf"
+msgstr "Folgen Sie uns per"
 
 #: html/news/index.html:9
 msgid "identi.ca"
