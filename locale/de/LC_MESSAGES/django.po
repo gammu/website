@@ -2616,7 +2616,7 @@ msgstr ""
 
 #: html/news/wammu_index.html:4 html/news/wammu_index.html.py:6
 msgid "Wammu News"
-msgstr "Wammu Neuigkeiten"
+msgstr "Wammu Nachrichten"
 
 #: html/phonedb/body.html:3
 msgid "Supported Features"
