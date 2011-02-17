@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-27 11:01+0100\n"
-"PO-Revision-Date: 2011-02-17 19:48+0200\n"
+"PO-Revision-Date: 2011-02-17 19:49+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2162,9 +2162,8 @@ msgid "You can also download documentation in PDF:"
 msgstr "Hier können Sie die Handbücher als PDF herunterladen:"
 
 #: html/docs/index.html:25
-#, fuzzy
 msgid "Gammu Manual"
-msgstr "Gammu Familie"
+msgstr "Gammu Handbuch"
 
 #: html/docs/index.html:26
 msgid "Gammu SMSD Daemon Manual"
