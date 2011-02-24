@@ -1,0 +1,6 @@
+#!/bin/sh
+for x in locale/*/LC_MESSAGES/django.po  ; do 
+    lang=`echo $x | sed 's@locale/\(.*\)/LC_MESSAGES/django.po@\1@'`
+    echo -n "$lang: "
+    msgfmt --statistics --check -o - $x > /dev/null
+done
