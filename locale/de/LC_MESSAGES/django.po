@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-27 11:01+0100\n"
+"POT-Creation-Date: 2011-02-24 16:46+0100\n"
 "PO-Revision-Date: 2011-02-17 22:10+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -199,7 +199,7 @@ msgstr "python-gammu"
 msgid "SMSD"
 msgstr "SMSD"
 
-#: html/base.html:123 wammu/context_processors.py:31
+#: html/base.html:123 wammu/context_processors.py:34
 msgid "Support"
 msgstr "Unterstützung"
 
@@ -225,7 +225,7 @@ msgstr "Medien"
 
 #: html/base.html:135 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
-#: wammu/context_processors.py:33
+#: wammu/context_processors.py:36
 msgid "Screenshots"
 msgstr "Bilder"
 
@@ -240,7 +240,7 @@ msgstr "Neuigkeiten"
 #: html/base.html:141 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:69 html/smsd.html:73 html/wammu.html:57
 #: html/docs/sidebar.html:2 html/support/sidebar.html:4
-#: wammu/context_processors.py:34
+#: wammu/context_processors.py:37
 msgid "Documentation"
 msgstr "Dokumentation"
 
@@ -261,7 +261,7 @@ msgstr "Handbuch"
 msgid "Configuration"
 msgstr "Konfiguration"
 
-#: html/base.html:150 wammu/context_processors.py:35
+#: html/base.html:150 wammu/context_processors.py:38
 msgid "Contribute"
 msgstr "Beitragen"
 
@@ -649,7 +649,7 @@ msgstr ""
 #: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:34
 #: html/smsd.html:63 html/wammu.html:47 html/downloads/list.html:4
 #: html/downloads/program.html:4 html/downloads/release.html:4
-#: wammu/context_processors.py:32
+#: wammu/context_processors.py:35
 msgid "Download"
 msgstr "Download"
 
@@ -674,13 +674,11 @@ msgid ""
 "configuration file)</a>.\n"
 msgstr ""
 "\n"
-"Die beste Dokumentation ist zugänglich durch das <a "
-"href=\"/docs/manual/\">Handbuch</a>, welches mit dem Programm ausgeliefert "
-"wird.\n"
-"Sie können außerdem die online Dokumentationen für <a "
-"href=\"/docs/man/en/gammu.1/\">Gammu (das Hauptprogramm)</a> nutzen, oder <a "
-"href=\"/docs/man/en/gammurc.5/\">gammu-rc (die online "
-"Konfigurationsdateien)</a>.\n"
+"Die beste Dokumentation ist zugänglich durch das <a href=\"/docs/manual/"
+"\">Handbuch</a>, welches mit dem Programm ausgeliefert wird.\n"
+"Sie können außerdem die online Dokumentationen für <a href=\"/docs/man/en/"
+"gammu.1/\">Gammu (das Hauptprogramm)</a> nutzen, oder <a href=\"/docs/man/en/"
+"gammurc.5/\">gammu-rc (die online Konfigurationsdateien)</a>.\n"
 
 #: html/gammu.html:80 html/wammu.html:66
 msgid ""
@@ -688,7 +686,8 @@ msgid ""
 "Check also <a href=\"/docs/manual/faq/\">Frequently Asked Questions</a>.\n"
 msgstr ""
 "\n"
-"Lesen Sie auch die <a href=\"/docs/manual/faq/\">häufig gestellten Fragen</a>.\n"
+"Lesen Sie auch die <a href=\"/docs/manual/faq/\">häufig gestellten Fragen</"
+"a>.\n"
 
 #: html/index.html:4
 msgid "Wammu and Gammu"
@@ -1066,8 +1065,8 @@ msgstr ""
 "Diese Seite verwendet eine angepasste Google Suche, optimiert für Ergebnisse "
 "bezüglich Gammu.\n"
 "Sie können diese Suche direkt verwenden auf <a\n"
-"href=\"http://www.google.com/coop/cse?cx=008688692096734274889%"
-"3Axuvlsu_agkm\">Google custom search</a>.\n"
+"href=\"http://www.google.com/coop/cse?cx=008688692096734274889%3Axuvlsu_agkm"
+"\">Google custom search</a>.\n"
 "                       "
 
 # anmerkung: rechtsklausel, formulierungen bitte verbessern, aber besser zweimal absichern zuvor!
@@ -1199,9 +1198,8 @@ msgstr ""
 "\n"
 "Es gibt ein <a href=\"/docs/manual/smsd/\">SMS Daemon Kapitel im Gammu "
 "Handbuch</a>, welches alle Anwendungsmöglichkeiten des SMSD beschreibt.\n"
-"Mit dem Programm mitgeliefert werden die <a "
-"href=\"/docs/manual/\">Hilfeseiten</a>, die eine ähnliche Dokumentation "
-"beinhalten.\n"
+"Mit dem Programm mitgeliefert werden die <a href=\"/docs/manual/"
+"\">Hilfeseiten</a>, die eine ähnliche Dokumentation beinhalten.\n"
 
 #: html/smsd.html:83
 msgid ""
@@ -1210,8 +1208,8 @@ msgid ""
 "Questions</a>.\n"
 msgstr ""
 "\n"
-"Bitte lesen Sie auch in unseren <a href=\"/docs/manual/faq/smsd.html\">häufig "
-"gestellten Fragen (FAQ)</a>.\n"
+"Bitte lesen Sie auch in unseren <a href=\"/docs/manual/faq/smsd.html"
+"\">häufig gestellten Fragen (FAQ)</a>.\n"
 
 #: html/wammu.html:25
 msgid ""
@@ -2193,8 +2191,8 @@ msgstr ""
 "\n"
 "Bei allfällig aufgetretenen weiteren Unklarheiten und Problemstellungen, "
 "sehen Sie bitte in unseren\n"
-"<a href=\"/docs/manual/faq\"><strong>häufig gestellten Fragen "
-"(FAQ)</strong></a>\n"
+"<a href=\"/docs/manual/faq\"><strong>häufig gestellten Fragen (FAQ)</"
+"strong></a>\n"
 "nach, bevor Sie Ihre Anfrage <a href=\"/support/lists/\">an unsere Mailing "
 "Liste richten</a>.\n"
 
@@ -2213,12 +2211,12 @@ msgid ""
 "</a></strong>.\n"
 msgstr ""
 "\n"
-"Die Dokumentation für Entwickler ist im <strong><ahref=\"/docs/manual/\">Gammu "
-"Handbuch</a></strong> inkludiert.\n"
-"Sie finden dort die Handbücher für <strong><a "
-"href=\"/docs/manual/python/\">die Python API</a></strong>, <strong><a "
-"href=\"/docs/manual/c/\">die libGammu C API</a></strong> oder <strong><a "
-"href=\"/docs/manual/internal/\">die interne API</a></strong>.\n"
+"Die Dokumentation für Entwickler ist im <strong><ahref=\"/docs/manual/"
+"\">Gammu Handbuch</a></strong> inkludiert.\n"
+"Sie finden dort die Handbücher für <strong><a href=\"/docs/manual/python/"
+"\">die Python API</a></strong>, <strong><a href=\"/docs/manual/c/\">die "
+"libGammu C API</a></strong> oder <strong><a href=\"/docs/manual/internal/"
+"\">die interne API</a></strong>.\n"
 
 #: html/docs/index.html:59
 msgid ""
@@ -2231,8 +2229,8 @@ msgstr ""
 "\n"
 "Als Entwickler haben Sie vielleicht Interesse an unseren Plänen für die "
 "nächsten Gammu und Wammu Versionen:\n"
-"Sie finden diese Informationen in unserer <a "
-"href=\"/docs/manual/project/roadmap.html/\">Roadmap</a>.\n"
+"Sie finden diese Informationen in unserer <a href=\"/docs/manual/project/"
+"roadmap.html/\">Roadmap</a>.\n"
 
 #: html/docs/index.html:67
 msgid ""
@@ -2245,9 +2243,8 @@ msgstr ""
 "\n"
 "Zusätzliche Hinweise über die verwendeten Protokolle finden Sie im Quelltext "
 "unter<code>docs/develop</code>,\n"
-"oder Sie versuchen die git Speicher, in denen Sie <a "
-"href=\"http://gitorious.org/gammu/gsm-doc\">unterschiedliche GSM "
-"Dokumentationen</a> finden werden.\n"
+"oder Sie versuchen die git Speicher, in denen Sie <a href=\"http://gitorious."
+"org/gammu/gsm-doc\">unterschiedliche GSM Dokumentationen</a> finden werden.\n"
 
 #: html/docs/sidebar.html:6
 msgid "For developers"
@@ -2417,8 +2414,8 @@ msgid ""
 "%(program)s</a>.\n"
 msgstr ""
 "\n"
-"Wir danken für Ihr Interesse und das Herunterladen von <a href=\"/%"
-"(program_name)s\">%(program)s</a>.\n"
+"Wir danken für Ihr Interesse und das Herunterladen von <a href=\"/"
+"%(program_name)s\">%(program)s</a>.\n"
 
 #: html/downloads/program.html:33
 msgid "Current Releases"
@@ -2448,8 +2445,8 @@ msgid ""
 "Released on %(released)s, see <a href=\"%(url)s\">detailed information</a>.\n"
 msgstr ""
 "\n"
-"Veröffentlicht am %(released)s, siehe <a href=\"%"
-"(url)s\">Detailinformationen</a>.\n"
+"Veröffentlicht am %(released)s, siehe <a href=\"%(url)s"
+"\">Detailinformationen</a>.\n"
 
 #: html/downloads/smalldownloads.html:2
 msgid "Source Downloads"
@@ -2536,8 +2533,8 @@ msgstr ""
 "\n"
 "Sie laden gerade die ausführbaren, binären Wammu-Dateien für Windows "
 "herunter.\n"
-"Diese Dateien sind als <strong>Datei zur vollständigen-Installierung "
-"(-setup.exe)</strong> erhältlich, was vermutlich Ihren Wünschen entspricht.\n"
+"Diese Dateien sind als <strong>Datei zur vollständigen-Installierung (-setup."
+"exe)</strong> erhältlich, was vermutlich Ihren Wünschen entspricht.\n"
 "Wenn Sie sämtliche Abhängigkeiten manuell verwalten und Ihre installierte "
 "Pythonversion verwenden möchten,\n"
 "können Sie auch nur das <strong>Python Modul (.win32.exe)</strong> "
@@ -2611,7 +2608,8 @@ msgid ""
 "Published on %(date)s by <a href=\"mailto:%(email)s\">%(author)s</a>\n"
 msgstr ""
 "\n"
-"Veröfffentlicht von <a href=\"mailto:%(email)s\">%(author)s</a>, am %(date)s\n"
+"Veröfffentlicht von <a href=\"mailto:%(email)s\">%(author)s</a>, am "
+"%(date)s\n"
 
 #: html/news/wammu_index.html:4 html/news/wammu_index.html.py:6
 msgid "Wammu News"
@@ -3762,7 +3760,7 @@ msgstr "PDU Verschlüsselung mit Gammu"
 msgid "PDU data"
 msgstr "PDU Daten"
 
-#: html/tools/sidebar.html:2 wammu/context_processors.py:36
+#: html/tools/sidebar.html:2 wammu/context_processors.py:39
 msgid "Tools"
 msgstr "Werkzeuge"
 
@@ -3963,11 +3961,11 @@ msgstr "Empfänger"
 msgid "SMSC number"
 msgstr "SMSC Nummer"
 
-#: wammu/context_processors.py:54
+#: wammu/context_processors.py:57
 msgid "Gammu and Wammu News Feed (RSS)"
 msgstr "Gammu und Wammu News Feed (RSS)"
 
-#: wammu/context_processors.py:55
+#: wammu/context_processors.py:58
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu und Wammu News Feed (Atom)"
 

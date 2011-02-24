@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-27 11:01+0100\n"
+"POT-Creation-Date: 2011-02-24 16:46+0100\n"
 "PO-Revision-Date: 2011-02-05 18:21+0200\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitoschido@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,9 @@ msgid ""
 "\n"
 "The page you are looking for was not found. Try choosing something from the\n"
 "navigation bellow or use <a href=\"/search\">search facility</a>.\n"
-msgstr "\nLa página que está buscando no se ha encontrado. Seleccione un elemento del "
+msgstr ""
+"\n"
+"La página que está buscando no se ha encontrado. Seleccione un elemento del "
 "menú de navegación de abajo o utilice <a href=\"/search\">el cuadro de "
 "búsqueda</a>.\n"
 
@@ -73,7 +75,8 @@ msgid ""
 "The server had serious problems while serving your request. We've just sent "
 "our\n"
 "trained monkeys to fix the issue.\n"
-msgstr "\n"
+msgstr ""
+"\n"
 "El servidor ha tenido problemas para servir su solicitud. Acabamos de enviar "
 "a nuestrosmonos adiestrados para resolver esta situación.\n"
 
@@ -101,10 +104,11 @@ msgid ""
 "\">GUI\n"
 "application on top of it</a>. In 2007 he has become maintainer of the Gammu\n"
 "project and he is still in the charge here.\n"
-msgstr "\n"
+msgstr ""
+"\n"
 "Michal empezó a participar en 2002 mejorando primero el módulo ATy luego el "
-"módulo para Alcatel. Posteriormente programó las <ahref=\"/python-"
-"gammu/\">vinculaciones Python para Gammu</a> y la <a href=\"/wammu/\">GUIde la "
+"módulo para Alcatel. Posteriormente programó las <ahref=\"/python-gammu/"
+"\">vinculaciones Python para Gammu</a> y la <a href=\"/wammu/\">GUIde la "
 "aplicación</a>. En 2007 se convirtió en el encargado del proyecto Gammu. y "
 "todavía lo sigue siendo.\n"
 
@@ -128,7 +132,8 @@ msgid ""
 "to thank all contributors there, especially Pavel Janík, Pawel Kot and "
 "Manfred\n"
 "Jonsson.\n"
-msgstr "\n"
+msgstr ""
+"\n"
 "Dado que el código fuente se empezó a programar como parte del proyecto "
 "Gnokii, queremos dar las gracias a todos los colaboradoresde dicho proyecto, "
 "en especial a Pavel Janík, Pawel Kot y ManfredJonsson.\n"
@@ -187,7 +192,7 @@ msgstr "python-gammu"
 msgid "SMSD"
 msgstr "SMSD"
 
-#: html/base.html:123 wammu/context_processors.py:31
+#: html/base.html:123 wammu/context_processors.py:34
 msgid "Support"
 msgstr "Soporte"
 
@@ -213,7 +218,7 @@ msgstr "Medios"
 
 #: html/base.html:135 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
-#: wammu/context_processors.py:33
+#: wammu/context_processors.py:36
 msgid "Screenshots"
 msgstr "Capturas de pantalla"
 
@@ -228,7 +233,7 @@ msgstr "Noticias"
 #: html/base.html:141 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:69 html/smsd.html:73 html/wammu.html:57
 #: html/docs/sidebar.html:2 html/support/sidebar.html:4
-#: wammu/context_processors.py:34
+#: wammu/context_processors.py:37
 msgid "Documentation"
 msgstr "Documentación"
 
@@ -249,7 +254,7 @@ msgstr "Manual"
 msgid "Configuration"
 msgstr "Configuración"
 
-#: html/base.html:150 wammu/context_processors.py:35
+#: html/base.html:150 wammu/context_processors.py:38
 msgid "Contribute"
 msgstr "Contribuir"
 
@@ -348,7 +353,8 @@ msgid ""
 "but\n"
 "there is simply lot of them and having more available allows us to create\n"
 "better software.\n"
-msgstr "\n"
+msgstr ""
+"\n"
 "Gracias por su interes en realizar una donación para el proyecto Gammu y "
 "Wammu. Las donaciones sirven para motivar a los desarrolladores y para "
 "adquirir hardware con el que probar el código.\n"
@@ -549,7 +555,7 @@ msgstr ""
 #: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:34
 #: html/smsd.html:63 html/wammu.html:47 html/downloads/list.html:4
 #: html/downloads/program.html:4 html/downloads/release.html:4
-#: wammu/context_processors.py:32
+#: wammu/context_processors.py:35
 msgid "Download"
 msgstr "Descargar"
 
@@ -2800,7 +2806,7 @@ msgstr ""
 msgid "PDU data"
 msgstr ""
 
-#: html/tools/sidebar.html:2 wammu/context_processors.py:36
+#: html/tools/sidebar.html:2 wammu/context_processors.py:39
 msgid "Tools"
 msgstr ""
 
@@ -3000,11 +3006,11 @@ msgstr ""
 msgid "SMSC number"
 msgstr ""
 
-#: wammu/context_processors.py:54
+#: wammu/context_processors.py:57
 msgid "Gammu and Wammu News Feed (RSS)"
 msgstr "Gammu y Wammu Noticias Feed (RSS)"
 
-#: wammu/context_processors.py:55
+#: wammu/context_processors.py:58
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu y Wammu Noticias Feed (Atom)"
 

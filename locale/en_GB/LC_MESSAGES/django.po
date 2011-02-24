@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-27 11:01+0100\n"
+"POT-Creation-Date: 2011-02-24 16:46+0100\n"
 "PO-Revision-Date: 2011-02-10 13:01+0200\n"
 "Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -199,7 +199,7 @@ msgstr "python-gammu"
 msgid "SMSD"
 msgstr "SMSD"
 
-#: html/base.html:123 wammu/context_processors.py:31
+#: html/base.html:123 wammu/context_processors.py:34
 msgid "Support"
 msgstr "Support"
 
@@ -225,7 +225,7 @@ msgstr "Media"
 
 #: html/base.html:135 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
-#: wammu/context_processors.py:33
+#: wammu/context_processors.py:36
 msgid "Screenshots"
 msgstr "Screenshots"
 
@@ -240,7 +240,7 @@ msgstr "News"
 #: html/base.html:141 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:69 html/smsd.html:73 html/wammu.html:57
 #: html/docs/sidebar.html:2 html/support/sidebar.html:4
-#: wammu/context_processors.py:34
+#: wammu/context_processors.py:37
 msgid "Documentation"
 msgstr "Documentation"
 
@@ -261,7 +261,7 @@ msgstr "Manual"
 msgid "Configuration"
 msgstr "Configuration"
 
-#: html/base.html:150 wammu/context_processors.py:35
+#: html/base.html:150 wammu/context_processors.py:38
 msgid "Contribute"
 msgstr "Contribute"
 
@@ -644,7 +644,7 @@ msgstr ""
 #: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:34
 #: html/smsd.html:63 html/wammu.html:47 html/downloads/list.html:4
 #: html/downloads/program.html:4 html/downloads/release.html:4
-#: wammu/context_processors.py:32
+#: wammu/context_processors.py:35
 msgid "Download"
 msgstr "Download"
 
@@ -1019,9 +1019,8 @@ msgid ""
 "See <a href=\"http://wammu.eu/docs/manual/protocol/s60.html\">documentation</"
 "a> for more information."
 msgstr ""
-"See <a "
-"href=\"http://wammu.eu/docs/manual/protocol/s60.html\">documentation</a> for "
-"more information."
+"See <a href=\"http://wammu.eu/docs/manual/protocol/s60.html\">documentation</"
+"a> for more information."
 
 #: html/search.html:4 html/search.html.py:7
 msgid "Wammu and Gammu Search"
@@ -3704,7 +3703,7 @@ msgstr "PDU encoder using Gammu"
 msgid "PDU data"
 msgstr "PDU data"
 
-#: html/tools/sidebar.html:2 wammu/context_processors.py:36
+#: html/tools/sidebar.html:2 wammu/context_processors.py:39
 msgid "Tools"
 msgstr "Tools"
 
@@ -3903,11 +3902,11 @@ msgstr "Recipient"
 msgid "SMSC number"
 msgstr "SMSC number"
 
-#: wammu/context_processors.py:54
+#: wammu/context_processors.py:57
 msgid "Gammu and Wammu News Feed (RSS)"
 msgstr "Gammu and Wammu News Feed (RSS)"
 
-#: wammu/context_processors.py:55
+#: wammu/context_processors.py:58
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu and Wammu News Feed (Atom)"
 
