@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-24 16:46+0100\n"
+"POT-Creation-Date: 2011-02-24 16:48+0100\n"
 "PO-Revision-Date: 2011-02-05 18:21+0200\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitoschido@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3017,11 +3017,9 @@ msgstr "Gammu y Wammu Noticias Feed (Atom)"
 #~ msgid "Man pages"
 #~ msgstr "Páginas del manual"
 
-#, fuzzy
 #~ msgid "Phones Support"
 #~ msgstr "&Soporte"
 
-#, fuzzy
 #~ msgid "Is my phone supported?"
 #~ msgstr "No soportado"
 

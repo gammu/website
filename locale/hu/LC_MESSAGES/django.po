@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-24 16:46+0100\n"
+"POT-Creation-Date: 2011-02-24 16:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2958,10 +2958,8 @@ msgstr ""
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr ""
 
-#, fuzzy
 #~ msgid "Phones Support"
 #~ msgstr "&Támogatás"
 
-#, fuzzy
 #~ msgid "Is my phone supported?"
 #~ msgstr "Nem támogatott"

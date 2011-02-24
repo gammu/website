@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-24 16:46+0100\n"
+"POT-Creation-Date: 2011-02-24 16:48+0100\n"
 "PO-Revision-Date: 2010-08-17 14:22+0200\n"
 "Last-Translator: Maciej Szeptuch <matthiaspriv@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,23 +23,22 @@ msgid "Source"
 msgstr "Źródło"
 
 #: downloads/models.py:33
-#, fuzzy
 msgid "Windows binary"
-msgstr "Instalator dla Windows"
+msgstr "Program pod Windows"
 
 #: downloads/models.py:174
-#, fuzzy, python-format
+#, python-format
 msgid "%(program)s stable release %(version)s"
 msgstr "Wersja stabilna %(program) %(version)"
 
 #: downloads/models.py:179
-#, fuzzy, python-format
+#, python-format
 msgid "%(program)s testing release %(version)s"
 msgstr "Wersja testowa %(program) %(version)"
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
-msgstr ""
+msgstr "Brak uprawnień"
 
 #: html/403.html:11 html/404.html:11
 msgid ""
@@ -47,6 +46,9 @@ msgid ""
 "The page you are looking for was not found. Try choosing something from the\n"
 "navigation bellow or use <a href=\"/search\">search facility</a>.\n"
 msgstr ""
+"\n"
+"Strona której szukasz nie została odnaleziona. Spróbuj wybrać pozycję\n"
+"z paska nawigacji, lub skorzystaj z <a href=\"/search\">wyszukiwarki</a>.\n"
 
 #: html/403.html:18 html/404.html:18
 msgid ""
@@ -54,6 +56,9 @@ msgid ""
 "This site includes information about Gammu and Wammu, you might want to\n"
 "continue to pages of following projects:\n"
 msgstr ""
+"\n"
+"Ta strona zawiera informacje o Gammu i Wammu, może chcesz również\n"
+"odwiedzić strony następujących projektów:\n"
 
 #: html/404.html:4 html/404.html.py:8
 msgid "Page Not Found"
@@ -70,10 +75,14 @@ msgid ""
 "our\n"
 "trained monkeys to fix the issue.\n"
 msgstr ""
+"\n"
+"Serwer napotkał poważny problem w trakcie obsługi Twojego żądania. Właśnie "
+"wysłaliśmy\n"
+"nasze tresowane małpy aby to naprawić.\n"
 
 #: html/authors.html:4 html/authors.html.py:7
 msgid "Wammu and Gammu Authors"
-msgstr ""
+msgstr "Autorzy Wammu i Gammu"
 
 #: html/authors.html:10
 msgid ""
@@ -81,6 +90,9 @@ msgid ""
 "Lot of people contributed to Gammu, python-gammu and Wammu in the past. You\n"
 "can find the most visible here.\n"
 msgstr ""
+"\n"
+"Do tej pory wiele osób dało swój wkład w Gammu, python-gammu oraz Wammu.\n"
+"Możesz tu odnaleźć najbardziej odznaczających się.\n"
 
 #: html/authors.html:19
 msgid ""
@@ -92,6 +104,11 @@ msgid ""
 "application on top of it</a>. In 2007 he has become maintainer of the Gammu\n"
 "project and he is still in the charge here.\n"
 msgstr ""
+"Michal zaczął tworzyć około roku 2002 od poprawek do modułu AT, a później "
+"dodał moduł dla telefonów Alcatel. Następnie napisał <a href=\"/python-gammu/"
+"\">Python bindings for Gammu</a> i <a href=\"/wammu/\">Aplikację okienkową "
+"na ich bazie</a>. W 2007 roku stał się maintainerem projektu Gammu i zajmuje "
+"to stanowisko do dziś."
 
 #: html/authors.html:31
 msgid ""
@@ -104,6 +121,10 @@ msgid ""
 "resigned\n"
 "because lack of time. He is not active in the project anymore.\n"
 msgstr ""
+"Marcin rozpoczął projekt jako odgałęzienie Gnokii ponieważ nie był "
+"zadowolony z niektórych części istniejącego kodu. Jego dziełem jest "
+"większość rdzenia i modułów Nokii. Prowadził ten projekt do 2007 roku, kiedy "
+"to zrezygnował z braku czasu. Nie jest już aktywnym w projekcie."
 
 #: html/authors.html:42
 msgid ""
@@ -114,14 +135,17 @@ msgid ""
 "Manfred\n"
 "Jonsson.\n"
 msgstr ""
+"Jako że kod powstał jako odgałęzienie projektu Gnokii, chcielibyśmy "
+"podziękować wszystkim jego kontrybutorom, a w szczególności Pavel Janík, "
+"Pawel Kot i ManfredJonsson."
 
 #: html/base.html:13
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
-msgstr ""
+msgstr "Strona Wammu i Gammu, programom do zarządzania telefonami GSM."
 
 #: html/base.html:59
 msgid "Page translations"
-msgstr ""
+msgstr "Tłumaczenia strony"
 
 #: html/base.html:64
 msgid "Translate!"
@@ -145,9 +169,8 @@ msgid "Advertisement"
 msgstr "Reklama"
 
 #: html/base.html:114 html/index.html:19
-#, fuzzy
 msgid "About"
-msgstr "O programie"
+msgstr "O projekcie"
 
 #: html/base.html:116 html/gammu.html:4 html/gammu.html.py:19
 #: html/contribute/translate.html:59
@@ -184,9 +207,8 @@ msgid "Reporting bugs"
 msgstr "Zgłaszanie błędów"
 
 #: html/base.html:128
-#, fuzzy
 msgid "Commercial support"
-msgstr "Wsparcie komercyjne"
+msgstr "Wsparcie płatne"
 
 #: html/base.html:132
 msgid "Media"
@@ -195,9 +217,8 @@ msgstr "Media"
 #: html/base.html:135 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
 #: wammu/context_processors.py:36
-#, fuzzy
 msgid "Screenshots"
-msgstr "Zrzuty ekranu"
+msgstr "Screenshoty"
 
 #: html/base.html:136
 #, fuzzy
@@ -238,14 +259,12 @@ msgid "Contribute"
 msgstr "Współpraca"
 
 #: html/base.html:152 html/contribute/sidebar.html:5
-#, fuzzy
 msgid "Translate"
-msgstr "Tlumacz"
+msgstr "Tłumacz"
 
 #: html/base.html:153 html/contribute/sidebar.html:6
-#, fuzzy
 msgid "Develop"
-msgstr "Rozwijaj"
+msgstr "Programuj"
 
 #: html/base.html:154 html/base.html.py:164 html/contribute/sidebar.html:4
 #, fuzzy
@@ -253,16 +272,14 @@ msgid "Donate"
 msgstr "Dotacja"
 
 #: html/base.html:155 html/contribute/sidebar.html:8
-#, fuzzy
 msgid "Publicity"
-msgstr "Reklamuj"
+msgstr "Propaguj"
 
 #: html/base.html:163
 msgid "License"
 msgstr "Licencja"
 
 #: html/base.html:164
-#, fuzzy
 msgid "Support Gammu/Wammu by donating money!"
 msgstr "Wesprzyj Gammu/Wammu przez dotację!"
 
@@ -291,24 +308,20 @@ msgstr ""
 "href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
 
 #: html/donate-thanks.html:4 html/donate-thanks.html.py:11
-#, fuzzy
 msgid "Thank you for Donation"
 msgstr "Dziękuję za dotację"
 
 #: html/donate-thanks.html:14
-#, fuzzy
 msgid ""
 "\n"
 "Thank you for donating to Gammu/Wammu! We will do our best to use the "
 "donated\n"
 "money in useful way.\n"
 msgstr ""
-"\n"
 "Dziękujemy za wsparcie finansowe projektu Gammu/Wammu! Zrobimy wszystko co w "
-"naszej mocy aby wykorzystać przekazane środki we właściwy sposób.\n"
+"naszej mocy aby wykorzystać przekazane środki we właściwy sposób."
 
 #: html/donate.html:4 html/donate.html.py:11
-#, fuzzy
 msgid "Donate to Gammu"
 msgstr "Dotacja na Gammu"
 
@@ -330,7 +343,6 @@ msgid "Donate Money"
 msgstr ""
 
 #: html/donate.html:30
-#, fuzzy
 msgid ""
 "\n"
 "Thank you for interesting in donating money to Gammu and Wammu projects. "
@@ -342,15 +354,13 @@ msgid ""
 "there is simply lot of them and having more available allows us to create\n"
 "better software.\n"
 msgstr ""
-"\n"
 "Dziękujemy za zainteresowanie wsparciem finansowym projektów Gammu i Wammu. "
 "Te pieniądze posłużą jako motywacja dla twórców oraz do zakupu sprzętu "
 "niezbędnego do testów. Mamy aktualnie trochę telefonów, ale jest ich po "
 "prostu dużo, a dostęp do większej ich ilości pozwali nam na udoskonalanie "
-"programu.\n"
+"programu."
 
 #: html/donate.html:40
-#, fuzzy
 msgid ""
 "\n"
 "The donation itself is being processed by <a\n"
@@ -359,11 +369,9 @@ msgid ""
 "account or by using any major credit card. You can also directly send a\n"
 "donation to <code>michal@cihar.com</code>.\n"
 msgstr ""
-"\n"
-"Dotacja przebiega za pośrednictwem <a href=\"http://www.paypal.com/"
-"\">PayPal</a> gdzie możesz płacić zarówno przez konto PayPal jak również "
-"kartą kredytową. Możesz także wysłać bezpośrednią dotację na "
-"<code>michal@cihar.com</code>."
+"Dotacja za pośrednictwem <a href=\"http://www.paypal.com/\">PayPal</a> gdzie "
+"możesz płacić zarówno przez konto PayPal jak również kartą kredytową. Możesz "
+"również wysłać bezpośrednią dotację na <code>michal@cihar.com</code>."
 
 #: html/donate.html:57
 msgid "Wire Transfer"
@@ -399,6 +407,13 @@ msgid ""
 "will\n"
 "support various free software websites including this one.\n"
 msgstr ""
+"Ta strona bierze udział w <a href=\"http://adbard.net\">The Ad Bard Network</"
+"a>, jedynej sieci reklamowej stworzonej specjalnie by trafiać do "
+"deweloperów, architektów, użytkowników i osób wpływowych w społeczności "
+"wolnego oprogramowania, pozwalającej reklamodawcom na bezpośrednią "
+"komunikację z kluczowymi konsumentami na tym nowym polu. Poprzez kupowanie "
+"reklamy w tej sieci wspierasz wiele stron wolnego oprogramowania włączając "
+"tą."
 
 #: html/donate.html:87
 msgid "Other Options"
@@ -412,24 +427,31 @@ msgid ""
 "for\n"
 "Michal Čihař</a>.\n"
 msgstr ""
+"Możesz również dać prezent deweloperom, aktualnie tutaj <a href=\"http://www."
+"amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">lista życzeń Michal Čihař na "
+"Amazon<a>."
 
 #: html/gammu-family.html:4
 msgid ""
 "\n"
 "GUI program to manage contacts, todos, calendar and messages in your phone.\n"
 msgstr ""
+"Aplikacja okienkowa do zarządzania kontaktami, kalendarzami, listami TODO i "
+"wiadomościami na twoim telefonie."
 
 #: html/gammu-family.html:10
 msgid ""
 "\n"
 "Command line utility which allows to use all libGammu features.\n"
 msgstr ""
+"Narzędzie wiersza poleceń umożliwiające korzystanie z wszystkich funkcji "
+"libGammu."
 
 #: html/gammu-family.html:16
 msgid ""
 "\n"
 "Library exporting C API to talk to cell phones.\n"
-msgstr ""
+msgstr "Biblioteka eksportująca API C do komunikacji z telefonem."
 
 #: html/gammu-family.html:22
 msgid ""
@@ -2995,15 +3017,12 @@ msgstr ""
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr ""
 
-#, fuzzy
 #~ msgid "Man pages"
 #~ msgstr "Strony man"
 
-#, fuzzy
 #~ msgid "Phones Support"
 #~ msgstr "&Wsparcie techniczne"
 
-#, fuzzy
 #~ msgid "Is my phone supported?"
 #~ msgstr "Nie obsługiwane"
 

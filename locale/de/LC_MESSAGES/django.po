@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-24 16:46+0100\n"
+"POT-Creation-Date: 2011-02-24 16:48+0100\n"
 "PO-Revision-Date: 2011-02-17 22:10+0200\n"
-"Last-Translator:  <canin@in.com>\n"
+"Last-Translator: <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -163,7 +163,8 @@ msgstr "Übersetze!"
 msgid "Downloads"
 msgstr "Herunterladen"
 
-# wertschaetzung zustimmung - facebook und flatr link... anerkennung wuerdigen goutieren - ermunterung? danke sagen?
+# wertschaetzung zustimmung - facebook und flatr link... anerkennung wuerdigen
+# goutieren - ermunterung? danke sagen?
 #: html/base.html:76
 msgid "Appreciate"
 msgstr "Anerkennung"
@@ -273,7 +274,8 @@ msgstr "Übersetzen"
 msgid "Develop"
 msgstr "Entwickeln"
 
-# Was sollen die Zeichen mitten im Wort??? anmerkung: vermutlich konvertierungsfehler 
+# Was sollen die Zeichen mitten im Wort??? anmerkung: vermutlich
+# konvertierungsfehler
 #: html/base.html:154 html/base.html.py:164 html/contribute/sidebar.html:4
 msgid "Donate"
 msgstr "Spenden"
@@ -645,7 +647,12 @@ msgstr ""
 "welche Sie zur Entwicklung eigener Anwendungen, mit Zugang zum Telefon, "
 "nutzen können.\n"
 
-# Auch das wort download wurde von mir an zahlreichen stellen übersetzt - zur erhöhung der usability. nachdem manche einträge der erst seiten allerdings verknüpft sind, und somit auch im-text veränderunge möglich sinnd oder dinge wie "laden sie herunter" "wie lade ich herunter" "herunter laden" etc im deutschen schwere grammatikalische missverstädnnisse auslöse können, das wort download auch bei uns verwendet wird... beliess ich es dabei.
+# Auch das wort download wurde von mir an zahlreichen stellen übersetzt - zur
+# erhöhung der usability. nachdem manche einträge der erst seiten allerdings
+# verknüpft sind, und somit auch im-text veränderunge möglich sinnd oder dinge
+# wie "laden sie herunter" "wie lade ich herunter" "herunter laden" etc im
+# deutschen schwere grammatikalische missverstädnnisse auslöse können, das
+# wort download auch bei uns verwendet wird... beliess ich es dabei.
 #: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:34
 #: html/smsd.html:63 html/wammu.html:47 html/downloads/list.html:4
 #: html/downloads/program.html:4 html/downloads/release.html:4
@@ -814,12 +821,20 @@ msgstr ""
 "Bitte überprüfen Sie auch die <a href=\"/docs/devel/\">Entwickler "
 "Dokumentation</a>, um weiterführende Detailinformationen zu erhalten.\n"
 
-# die übersetzung der gnu ud anderr lizensen ist lt web-recherche im status "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung auf die englischen originaltexte. verbesserungen in diesem kapitel werden durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher rückversicherung.
+# die übersetzung der gnu ud anderr lizensen ist lt web-recherche im status
+# "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung
+# auf die englischen originaltexte. verbesserungen in diesem kapitel werden
+# durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher
+# rückversicherung.
 #: html/license.html:4 html/license.html.py:7
 msgid "Wammu and Gammu License"
 msgstr "Lizenzierung von Gammu und Wammu"
 
-# die übersetzung der gnu und anderer lizensen ist lt web-recherche im status "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung auf die englischen originaltexte. verbesserungen in diesem kapitel werden durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher rückversicherung.
+# die übersetzung der gnu und anderer lizensen ist lt web-recherche im status
+# "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung
+# auf die englischen originaltexte. verbesserungen in diesem kapitel werden
+# durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher
+# rückversicherung.
 #: html/license.html:10
 msgid ""
 "\n"
@@ -832,7 +847,14 @@ msgstr ""
 "creativecommons.org/licenses/GPL/2.0/\">\"GNU General Public License, "
 "version 2\"</a> veröffentlicht.\n"
 
-# its legal texts which arent really translated in german, but this is a somewhat well known translation-version. our justicial system bases verdicts onto english GNU texts.  its ok because there are links and hints above and below. die übersetzung der gnu ud anderr lizensen ist lt web-recherche im status "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung auf die englischen originaltexte. verbesserungen in diesem kapitel werden durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher rückversicherung.
+# its legal texts which arent really translated in german, but this is a
+# somewhat well known translation-version. our justicial system bases verdicts
+# onto english GNU texts.  its ok because there are links and hints above and
+# below. die übersetzung der gnu ud anderr lizensen ist lt web-recherche im
+# status "unüberprüft durch anwälte". sie gilt vor gerichten durch eine
+# verlinkung auf die englischen originaltexte. verbesserungen in diesem
+# kapitel werden durchaus angebracht sein, ich rate aber zu vorsicht und
+# mehrfacher rückversicherung.
 #: html/license.html:18
 msgid ""
 "\n"
@@ -847,7 +869,11 @@ msgstr ""
 "der Free Software Foundation gemäß Version 2 der Lizenz veröffentlicht, "
 "weitergeben und/oder modifizieren.\n"
 
-# die übersetzung der gnu ud anderr lizensen ist lt web-recherche im status "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung auf die englischen originaltexte. verbesserungen in diesem kapitel werden durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher rückversicherung.
+# die übersetzung der gnu ud anderr lizensen ist lt web-recherche im status
+# "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung
+# auf die englischen originaltexte. verbesserungen in diesem kapitel werden
+# durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher
+# rückversicherung.
 #: html/license.html:27 html/license.html.py:64
 msgid ""
 "\n"
@@ -863,7 +889,11 @@ msgstr ""
 "MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN ZWECK.\n"
 "Details finden Sie in der GNU General Public License.\n"
 
-# die übersetzung der gnu und anderer lizensen ist lt web-recherche im status "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung auf die englischen originaltexte. verbesserungen in diesem kapitel werden durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher rückversicherung.
+# die übersetzung der gnu und anderer lizensen ist lt web-recherche im status
+# "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung
+# auf die englischen originaltexte. verbesserungen in diesem kapitel werden
+# durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher
+# rückversicherung.
 #: html/license.html:36 html/license.html.py:73
 msgid ""
 "\n"
@@ -879,12 +909,20 @@ msgstr ""
 "Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA "
 "02110-1301, USA.\n"
 
-# die übersetzung der gnu ud anderr lizensen ist lt web-recherche im status "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung auf die englischen originaltexte. verbesserungen in diesem kapitel werden durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher rückversicherung.
+# die übersetzung der gnu ud anderr lizensen ist lt web-recherche im status
+# "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung
+# auf die englischen originaltexte. verbesserungen in diesem kapitel werden
+# durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher
+# rückversicherung.
 #: html/license.html:44
 msgid "Website License"
 msgstr "Webseite Lizenz"
 
-# die übersetzung der gnu ud anderr lizensen ist lt web-recherche im status "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung auf die englischen originaltexte. verbesserungen in diesem kapitel werden durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher rückversicherung.
+# die übersetzung der gnu ud anderr lizensen ist lt web-recherche im status
+# "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung
+# auf die englischen originaltexte. verbesserungen in diesem kapitel werden
+# durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher
+# rückversicherung.
 #: html/license.html:47
 msgid ""
 "\n"
@@ -897,7 +935,11 @@ msgstr ""
 "href=\"http://creativecommons.org/licenses/GPL/2.0/\">\"GNU General\n"
 "Public License, Version 2 oder später\"</a> veröffentlicht.\n"
 
-# die übersetzung der gnu ud anderr lizensen ist lt web-recherche im status "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung auf die englischen originaltexte. verbesserungen in diesem kapitel werden durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher rückversicherung.
+# die übersetzung der gnu ud anderr lizensen ist lt web-recherche im status
+# "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung
+# auf die englischen originaltexte. verbesserungen in diesem kapitel werden
+# durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher
+# rückversicherung.
 #: html/license.html:55
 msgid ""
 "\n"
@@ -912,12 +954,20 @@ msgstr ""
 "veröffentlicht von der Free Software Foundation; entweder Version 2 der "
 "Lizenz, oder (Sie haben die Wahl) jeder späteren Version.\n"
 
-# die übersetzung der gnu und anderer lizensen ist lt web-recherche im status "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung auf die englischen originaltexte. verbesserungen in diesem kapitel werden durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher rückversicherung.
+# die übersetzung der gnu und anderer lizensen ist lt web-recherche im status
+# "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung
+# auf die englischen originaltexte. verbesserungen in diesem kapitel werden
+# durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher
+# rückversicherung.
 #: html/license.html:80
 msgid "Website Content"
 msgstr "Website Inhalt"
 
-# die übersetzung der gnu und anderer lizensen ist lt web-recherche im status "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung auf die englischen originaltexte. verbesserungen in diesem kapitel werden durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher rückversicherung.
+# die übersetzung der gnu und anderer lizensen ist lt web-recherche im status
+# "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung
+# auf die englischen originaltexte. verbesserungen in diesem kapitel werden
+# durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher
+# rückversicherung.
 #: html/license.html:83
 msgid ""
 "\n"
@@ -930,7 +980,11 @@ msgstr ""
 "org/licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 "
 "Unported</a> veröffentlicht.\n"
 
-# die übersetzung der gnu und anderer lizensen ist lt web-recherche im status "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung auf die englischen originaltexte. verbesserungen in diesem kapitel werden durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher rückversicherung.
+# die übersetzung der gnu und anderer lizensen ist lt web-recherche im status
+# "unüberprüft durch anwälte". sie gilt vor gerichten durch eine verlinkung
+# auf die englischen originaltexte. verbesserungen in diesem kapitel werden
+# durchaus angebracht sein, ich rate aber zu vorsicht und mehrfacher
+# rückversicherung.
 #: html/license.html:91
 msgid ""
 "\n"
@@ -1022,7 +1076,8 @@ msgstr ""
 "Bitte lesen Sie auch unsere <a href=\"/docs/manual/faq/python.html\">häufig "
 "gestellten Fragen (FAQ)</a>.\n"
 
-# dzt noch nicht ersichtlich, somit fragich obs eine ferninst. ist oder eine fernsteuerung app oder..
+# dzt noch nicht ersichtlich, somit fragich obs eine ferninst. ist oder eine
+# fernsteuerung app oder..
 #: html/s60.html:4 html/s60.html.py:11
 msgid "Series60 remote applet installation"
 msgstr "Series60 remote applet, Installation"
@@ -1069,7 +1124,8 @@ msgstr ""
 "\">Google custom search</a>.\n"
 "                       "
 
-# anmerkung: rechtsklausel, formulierungen bitte verbessern, aber besser zweimal absichern zuvor!
+# anmerkung: rechtsklausel, formulierungen bitte verbessern, aber besser
+# zweimal absichern zuvor!
 #: html/search.html:39
 msgid ""
 "\n"
@@ -2057,7 +2113,9 @@ msgstr ""
 msgid "Graphics/Designer"
 msgstr "Grafiker/Designer"
 
-# angelehnt an text auf der beitragen- seite zum gleichen thema, da auf deutsch übersetzt "nicht sehr gut" klingend. zumindest gefühlt ist diese übersetzung frei aber passend.
+# angelehnt an text auf der beitragen- seite zum gleichen thema, da auf
+# deutsch übersetzt "nicht sehr gut" klingend. zumindest gefühlt ist diese
+# übersetzung frei aber passend.
 #: html/contribute/wanted.html:64
 msgid ""
 "\n"
@@ -2104,7 +2162,11 @@ msgstr ""
 msgid "Python Developer"
 msgstr "Entwickler für Python"
 
-# komme aus der dialektfalle/mundart dzt nicht raus: benötigt mehr als dzt gegeben, braucht mehr als dzt gegeben (klingt für mich sehr schön), könnte mehr aufmerksamkeit erhalten als derzeit gegeben wird (vermutlich richtig), könnte mehr gebrauchen als dzt gegeben (nix/ist/wird/...), erreichbar?, bekommt?. nein zu erhaltbar, aber ansonsten klingt alles nicht sehr korrekt.
+# komme aus der dialektfalle/mundart dzt nicht raus: benötigt mehr als dzt
+# gegeben, braucht mehr als dzt gegeben (klingt für mich sehr schön), könnte
+# mehr aufmerksamkeit erhalten als derzeit gegeben wird (vermutlich richtig),
+# könnte mehr gebrauchen als dzt gegeben (nix/ist/wird/...), erreichbar?,
+# bekommt?. nein zu erhaltbar, aber ansonsten klingt alles nicht sehr korrekt.
 #: html/contribute/wanted.html:91
 msgid ""
 "\n"

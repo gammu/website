@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-24 16:46+0100\n"
+"POT-Creation-Date: 2011-02-24 16:48+0100\n"
 "PO-Revision-Date: 2010-01-28 00:48+0200\n"
-"Last-Translator:  <cartman@cartman34.fr>\n"
+"Last-Translator: <cartman@cartman34.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -23,21 +23,21 @@ msgstr "Source"
 
 #: downloads/models.py:33
 msgid "Windows binary"
-msgstr ""
+msgstr "Exécutable Windows"
 
 #: downloads/models.py:174
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr ""
+msgstr "Release %(program) stable %(version)s"
 
 #: downloads/models.py:179
 #, python-format
 msgid "%(program)s testing release %(version)s"
-msgstr ""
+msgstr "Release %(program) de test %(version)s"
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
-msgstr ""
+msgstr "Permission refusée"
 
 #: html/403.html:11 html/404.html:11
 msgid ""
@@ -45,6 +45,10 @@ msgid ""
 "The page you are looking for was not found. Try choosing something from the\n"
 "navigation bellow or use <a href=\"/search\">search facility</a>.\n"
 msgstr ""
+"\n"
+"La page que vous demandez n'a pas été trouvée. Essayer de choisir dans la\n"
+"navigation ci-dessous ou utilisez <a href=\"/search\">le moteur de "
+"recherche</a>.\n"
 
 #: html/403.html:18 html/404.html:18
 msgid ""
@@ -52,6 +56,10 @@ msgid ""
 "This site includes information about Gammu and Wammu, you might want to\n"
 "continue to pages of following projects:\n"
 msgstr ""
+"\n"
+"Ce site comprend des informations sur Gammu et Wammu, vous voudrez peut-"
+"être\n"
+"aller vers les pages des projets suivants:\n"
 
 #: html/404.html:4 html/404.html.py:8
 msgid "Page Not Found"
@@ -62,7 +70,6 @@ msgid "Server Error"
 msgstr "Erreur du serveur"
 
 #: html/500.html:11
-#, fuzzy
 msgid ""
 "\n"
 "The server had serious problems while serving your request. We've just sent "
@@ -71,11 +78,11 @@ msgid ""
 msgstr ""
 "\n"
 "Le serveur a de sérieux problèmes pour répondre à votre requête. Nous\n"
-"envoyons développeur acharnés résoudre cela.\n"
+"envoyons l'information aux développeurs acharnés pour résoudre cela.\n"
 
 #: html/authors.html:4 html/authors.html.py:7
 msgid "Wammu and Gammu Authors"
-msgstr ""
+msgstr "Créateurs de Wammu et Gammu"
 
 #: html/authors.html:10
 msgid ""
@@ -83,6 +90,9 @@ msgid ""
 "Lot of people contributed to Gammu, python-gammu and Wammu in the past. You\n"
 "can find the most visible here.\n"
 msgstr ""
+"\n"
+"Beaucoup de personne ont contribué à Gammu, python-gammu et Wammu par\n"
+"le passé. Vous pourrez trouver les plus actifs ici.\n"
 
 #: html/authors.html:19
 msgid ""
@@ -94,6 +104,15 @@ msgid ""
 "application on top of it</a>. In 2007 he has become maintainer of the Gammu\n"
 "project and he is still in the charge here.\n"
 msgstr ""
+"\n"
+"Michal a débuté le développement en 2002 en améliorant le module AT\n"
+"et plus tard a contribué au module pour les téléphones Alcatel. Ensuite, il "
+"a écrit \n"
+"<a href=\"/python-gammu/\">le module Python pour Gammu </a> et \n"
+"<a href=\"/wammu/\"> son application graphique</a>. En 2007, il a continué "
+"à \n"
+"maintenir le projet et le poursuit toujours actuellement.\n"
+" "
 
 #: html/authors.html:31
 msgid ""
@@ -106,6 +125,16 @@ msgid ""
 "resigned\n"
 "because lack of time. He is not active in the project anymore.\n"
 msgstr ""
+"\n"
+"Marcin est à l'origine de la dissociation de Gnokki car il n'était pas "
+"content avec\n"
+" certaines partie du code existant. Il a beaucoup contribué au développement "
+"du \n"
+"programme et du module Nokia pour être à la tête du projet jusqu'en janvier "
+"2007\n"
+",moment à partir du quel il a du abandonné pour manque de temps. Il n'est "
+"plus du\n"
+"tout actif dans le projet."
 
 #: html/authors.html:42
 msgid ""
@@ -116,6 +145,10 @@ msgid ""
 "Manfred\n"
 "Jonsson.\n"
 msgstr ""
+"\n"
+"Comme le code original provient du projet Gnokki, nous désirons\n"
+"remercier tous les contributeurs ici, spécialement Pavel Janík, Pawel Kot\n"
+"et Manfred Jonsson.\n"
 
 #: html/base.html:13
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
@@ -123,16 +156,16 @@ msgstr ""
 
 #: html/base.html:59
 msgid "Page translations"
-msgstr ""
+msgstr "Page de traduction"
 
 #: html/base.html:64
 msgid "Translate!"
-msgstr ""
+msgstr "Traduit!"
 
 #: html/base.html:68 html/base.html.py:134 html/downloads/program.html:7
 #: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
 msgid "Downloads"
-msgstr ""
+msgstr "Téléchargement"
 
 #: html/base.html:76
 msgid "Appreciate"
@@ -144,12 +177,11 @@ msgstr ""
 
 #: html/base.html:95 html/donate.html:74
 msgid "Advertisement"
-msgstr ""
+msgstr "Publicité"
 
 #: html/base.html:114 html/index.html:19
-#, fuzzy
 msgid "About"
-msgstr "&À propos"
+msgstr "À propos"
 
 #: html/base.html:116 html/gammu.html:4 html/gammu.html.py:19
 #: html/contribute/translate.html:59
@@ -176,37 +208,37 @@ msgstr "Support"
 
 #: html/base.html:125
 msgid "Mailing lists"
-msgstr ""
+msgstr "Liste de diffusion"
 
 #: html/base.html:126
 msgid "Online"
-msgstr ""
+msgstr "En ligne"
 
 #: html/base.html:127
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Rapport de problème"
 
 #: html/base.html:128
 msgid "Commercial support"
-msgstr ""
+msgstr "Support commercial"
 
 #: html/base.html:132
 msgid "Media"
-msgstr ""
+msgstr "Média"
 
 #: html/base.html:135 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
 #: wammu/context_processors.py:36
 msgid "Screenshots"
-msgstr ""
+msgstr "Impressions écran"
 
 #: html/base.html:136
 msgid "Third party"
-msgstr ""
+msgstr "Troisième partie"
 
 #: html/base.html:137 html/index.html:54
 msgid "News"
-msgstr ""
+msgstr "Nouveautés"
 
 #: html/base.html:141 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:69 html/smsd.html:73 html/wammu.html:57
@@ -234,7 +266,7 @@ msgstr ""
 
 #: html/base.html:150 wammu/context_processors.py:38
 msgid "Contribute"
-msgstr ""
+msgstr "Contribuer"
 
 # Peut etre modifié selon le contexte.
 #: html/base.html:152 html/contribute/sidebar.html:5
@@ -243,12 +275,11 @@ msgstr "Traduire"
 
 #: html/base.html:153 html/contribute/sidebar.html:6
 msgid "Develop"
-msgstr ""
+msgstr "Développer"
 
 #: html/base.html:154 html/base.html.py:164 html/contribute/sidebar.html:4
-#, fuzzy
 msgid "Donate"
-msgstr "&Dons"
+msgstr "Faire un don"
 
 #: html/base.html:155 html/contribute/sidebar.html:8
 msgid "Publicity"
@@ -268,9 +299,8 @@ msgid "Search for Gammu/Wammu related questions"
 msgstr "Rechercher les questions relatives à Gammu/Wammu"
 
 #: html/base.html:165 html/phonedb/index.html:8
-#, fuzzy
 msgid "Search"
-msgstr "Recherche : "
+msgstr "Rechercher"
 
 # Déjà traduit.
 #: html/base.html:166
@@ -325,7 +355,7 @@ msgstr ""
 
 #: html/donate.html:28
 msgid "Donate Money"
-msgstr ""
+msgstr "Faites un don"
 
 #: html/donate.html:30
 msgid ""
@@ -339,6 +369,11 @@ msgid ""
 "there is simply lot of them and having more available allows us to create\n"
 "better software.\n"
 msgstr ""
+"Merci de l'intérêt porté au don pour les projets Gammu et Wammu. \n"
+"L'argent peut servir tant à la motivation des développeurs qu'à l'achat\n"
+"de nouveau matériel pour tester. Nous avons déjà certains téléphone,\n"
+"mais il y en a beaucoup. Plus nous en avons, plus il nous est possible\n"
+"de développer un meilleur logiciel.\n"
 
 #: html/donate.html:40
 msgid ""
@@ -349,6 +384,13 @@ msgid ""
 "account or by using any major credit card. You can also directly send a\n"
 "donation to <code>michal@cihar.com</code>.\n"
 msgstr ""
+"\n"
+"Le don est géré par <a href=\"http://paypal.com/\">Paypal</a> à partir du "
+"quel\n"
+"vous pouvez payer par votre compte ou utiliser la majorité des cartes de "
+"crédits.\n"
+"Vous pouvez aussi envoyer directement vos dons à <code>michal@cihar.com</"
+"code>.\n"
 
 #: html/donate.html:57
 msgid "Wire Transfer"
@@ -409,18 +451,27 @@ msgid ""
 "for\n"
 "Michal Čihař</a>.\n"
 msgstr ""
+"\n"
+"Vous pouvez aussi offrir certains cadeau aux developpeurs. Actuellement il "
+"existe une <a\n"
+"href=\"http://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">liste Amazon "
+"pour\n"
+"Michal Čihař</a>.\n"
 
 #: html/gammu-family.html:4
 msgid ""
 "\n"
 "GUI program to manage contacts, todos, calendar and messages in your phone.\n"
 msgstr ""
+"Application graphique pour gérer vos contacts, tâches, calendrier et message "
+"de votre téléphone. "
 
 #: html/gammu-family.html:10
 msgid ""
 "\n"
 "Command line utility which allows to use all libGammu features.\n"
 msgstr ""
+"Toutes les commandes de libGammu peuvent être utilisées en ligne de commande"
 
 #: html/gammu-family.html:16
 msgid ""
@@ -433,6 +484,9 @@ msgid ""
 "\n"
 "SMS daemon service to receive and send messages automatically.\n"
 msgstr ""
+"\n"
+"Le Service SMS peut recevoir et envoyer des messages automatiquement.\n"
+"  "
 
 #: html/gammu-family.html:28
 msgid ""
@@ -1790,11 +1844,11 @@ msgstr ""
 
 #: html/downloads/release.html:15
 msgid "Changes"
-msgstr ""
+msgstr "Changements"
 
 #: html/downloads/release.html:21
 msgid "Files"
-msgstr ""
+msgstr "Fichiers"
 
 #: html/downloads/relinfo.html:4
 #, python-format
@@ -1861,9 +1915,8 @@ msgid "Third Party Applications using Gammu"
 msgstr ""
 
 #: html/links/index.html:22
-#, fuzzy
 msgid "Website:"
-msgstr "Site &Web"
+msgstr "Site Web"
 
 #: html/news/contrib_index.html:4 html/news/contrib_index.html.py:6
 msgid "Third Party News"
@@ -1872,15 +1925,15 @@ msgstr ""
 #: html/news/entry.html:4 html/news/index.html:4 html/news/index.html.py:31
 #: news/feeds.py:9
 msgid "Wammu and Gammu News"
-msgstr ""
+msgstr "Informations sur Wammu et Gammu "
 
 #: html/news/gammu_index.html:4 html/news/gammu_index.html.py:6
 msgid "Gammu News"
-msgstr ""
+msgstr "Informations sur Gammu"
 
 #: html/news/index.html:7
 msgid "Follow us on"
-msgstr ""
+msgstr "Suivez nous sur"
 
 #: html/news/index.html:9
 msgid "identi.ca"
@@ -1912,11 +1965,11 @@ msgstr ""
 
 #: html/news/index.html:19 html/screenshots/index.html:7
 msgid "Categories"
-msgstr ""
+msgstr "Catégories"
 
 #: html/news/index.html:21
 msgid "All news"
-msgstr ""
+msgstr "Toutes les nouvelles"
 
 #: html/news/published.html:4
 #, python-format
@@ -1924,6 +1977,8 @@ msgid ""
 "\n"
 "Published on %(date)s by <a href=\"mailto:%(email)s\">%(author)s</a>\n"
 msgstr ""
+"\n"
+"Publié le %(date)s par <a href=\"mailto:%(email)s\">%(author)s</a>\n"
 
 #: html/news/wammu_index.html:4 html/news/wammu_index.html.py:6
 msgid "Wammu News"
@@ -2605,15 +2660,15 @@ msgstr ""
 
 #: html/support/sidebar.html:5
 msgid "Mailing list"
-msgstr ""
+msgstr "Liste de discussion par mail"
 
 #: html/support/sidebar.html:6
 msgid "Bug tracker"
-msgstr ""
+msgstr "Système de suivi d'anomalies"
 
 #: html/support/sidebar.html:7
 msgid "Jabber chat room"
-msgstr ""
+msgstr "Salle de discussion Jabber"
 
 #: html/tools/countries.html:4 html/tools/countries.html.py:12
 msgid "GSM countries list from Gammu"
@@ -2803,7 +2858,7 @@ msgstr ""
 
 #: news/feeds.py:11
 msgid "Updates about Wammu and Gammu programs."
-msgstr ""
+msgstr "Mise à jour des programmes Wammu et Gammu"
 
 #: phonedb/feeds.py:9
 #, fuzzy
@@ -2812,29 +2867,29 @@ msgstr "Base de connaissances &Gammu"
 
 #: phonedb/feeds.py:11
 msgid "Gammu phone database updates."
-msgstr ""
+msgstr "Base de donnée des téléphones Gammu mise à jour."
 
 #: phonedb/forms.py:12
 msgid "Search text"
-msgstr ""
+msgstr "Recherche"
 
 #: phonedb/forms.py:14 phonedb/forms.py:25
 msgid "Features"
-msgstr ""
+msgstr "Fonctions"
 
 #: phonedb/forms.py:17
 #, python-format
 msgid "%(description)s [<a href=\"%(url)s\">Link</a>]"
-msgstr ""
+msgstr "%(description)s [<a href=\"%(url)s\">Lien</a>]"
 
 #: phonedb/forms.py:27 phonedb/models.py:91
 msgid "Features which are working in Gammu."
-msgstr ""
+msgstr "Fonctions utilisables dans Gammu"
 
 #: phonedb/forms.py:29
 #, python-format
 msgid "%(description)s (%(name)s)"
-msgstr ""
+msgstr "%(description)s (%(nom)s)"
 
 #: phonedb/models.py:20
 msgid "Use [at] and [dot]"
@@ -2854,15 +2909,15 @@ msgstr "Insérez le texte NOSPAM aléatoirement"
 
 #: phonedb/models.py:27
 msgid "Draft"
-msgstr ""
+msgstr "Brouillon"
 
 #: phonedb/models.py:28
 msgid "Approved"
-msgstr ""
+msgstr "Approuvé"
 
 #: phonedb/models.py:29
 msgid "Deleted"
-msgstr ""
+msgstr "Supprimé"
 
 #: phonedb/models.py:33
 msgid "Phone information"
@@ -2943,6 +2998,8 @@ msgstr ""
 #: phonedb/models.py:97
 msgid "Please choose how will be email handled in next field."
 msgstr ""
+"Choisissez s'il vous plaît comment manipuler votre email dans le prochain "
+"champs."
 
 #: phonedb/views.py:102
 msgid "Approved records"
@@ -2950,7 +3007,7 @@ msgstr ""
 
 #: phonedb/views.py:103
 msgid "Total records"
-msgstr ""
+msgstr "Enregistrements total"
 
 #: phonedb/views.py:121
 msgid "Gammu Phone Database Feed (RSS)"
@@ -2992,11 +3049,9 @@ msgstr "Flux vers les nouvelles Gammu et Wammu (RSS)"
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Flux vers les nouvelles Gammu et Wammu (Atom)"
 
-#, fuzzy
 #~ msgid "Phones Support"
 #~ msgstr "&Assistance"
 
-#, fuzzy
 #~ msgid "Is my phone supported?"
 #~ msgstr "Non supporté"
 
