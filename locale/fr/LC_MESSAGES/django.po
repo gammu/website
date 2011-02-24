@@ -33,7 +33,7 @@ msgstr "Release %(program) stable %(version)s"
 #: downloads/models.py:179
 #, python-format
 msgid "%(program)s testing release %(version)s"
-msgstr "Release %(program) de test %(version)s"
+msgstr "Release %(program)s de test %(version)s"
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
@@ -112,7 +112,6 @@ msgstr ""
 "<a href=\"/wammu/\"> son application graphique</a>. En 2007, il a continué "
 "à \n"
 "maintenir le projet et le poursuit toujours actuellement.\n"
-" "
 
 #: html/authors.html:31
 msgid ""
@@ -134,7 +133,7 @@ msgstr ""
 "2007\n"
 ",moment à partir du quel il a du abandonné pour manque de temps. Il n'est "
 "plus du\n"
-"tout actif dans le projet."
+"tout actif dans le projet.\n"
 
 #: html/authors.html:42
 msgid ""
@@ -368,7 +367,7 @@ msgid ""
 "but\n"
 "there is simply lot of them and having more available allows us to create\n"
 "better software.\n"
-msgstr ""
+msgstr "\n"
 "Merci de l'intérêt porté au don pour les projets Gammu et Wammu. \n"
 "L'argent peut servir tant à la motivation des développeurs qu'à l'achat\n"
 "de nouveau matériel pour tester. Nous avons déjà certains téléphone,\n"
@@ -462,16 +461,16 @@ msgstr ""
 msgid ""
 "\n"
 "GUI program to manage contacts, todos, calendar and messages in your phone.\n"
-msgstr ""
+msgstr "\n"
 "Application graphique pour gérer vos contacts, tâches, calendrier et message "
-"de votre téléphone. "
+"de votre téléphone.\n"
 
 #: html/gammu-family.html:10
 msgid ""
 "\n"
 "Command line utility which allows to use all libGammu features.\n"
-msgstr ""
-"Toutes les commandes de libGammu peuvent être utilisées en ligne de commande"
+msgstr "\n"
+"Toutes les commandes de libGammu peuvent être utilisées en ligne de commande\n"
 
 #: html/gammu-family.html:16
 msgid ""
@@ -486,7 +485,6 @@ msgid ""
 msgstr ""
 "\n"
 "Le Service SMS peut recevoir et envoyer des messages automatiquement.\n"
-"  "
 
 #: html/gammu-family.html:28
 msgid ""
@@ -2889,7 +2887,7 @@ msgstr "Fonctions utilisables dans Gammu"
 #: phonedb/forms.py:29
 #, python-format
 msgid "%(description)s (%(name)s)"
-msgstr "%(description)s (%(nom)s)"
+msgstr "%(description)s (%(name)s)"
 
 #: phonedb/models.py:20
 msgid "Use [at] and [dot]"

@@ -68,7 +68,7 @@ msgid ""
 "The server had serious problems while serving your request. We've just sent "
 "our\n"
 "trained monkeys to fix the issue.\n"
-msgstr "Сервер не может обработать ваш запрос"
+msgstr "\nСервер не может обработать ваш запрос\n"
 
 #: html/authors.html:4 html/authors.html.py:7
 msgid "Wammu and Gammu Authors"
@@ -411,7 +411,7 @@ msgstr ""
 msgid ""
 "\n"
 "SMS daemon service to receive and send messages automatically.\n"
-msgstr "SMS daemon - Служба дя автоматического приема и отправки сообщений"
+msgstr "\nSMS daemon - Служба дя автоматического приема и отправки сообщений\n"
 
 #: html/gammu-family.html:28
 msgid ""

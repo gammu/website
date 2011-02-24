@@ -28,12 +28,12 @@ msgstr ""
 #: downloads/models.py:174
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr "Stabil release"
+msgstr "%(program)s stabil release %(version)s"
 
 #: downloads/models.py:179
 #, python-format
 msgid "%(program)s testing release %(version)s"
-msgstr "Test release"
+msgstr "%(program)s test release %(version)s"
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
