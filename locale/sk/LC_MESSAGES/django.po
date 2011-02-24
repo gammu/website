@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-24 16:48+0100\n"
+"POT-Creation-Date: 2011-02-24 17:06+0100\n"
 "PO-Revision-Date: 2010-06-02 13:22+0200\n"
 "Last-Translator: Pavol <scroolik@gmail.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
@@ -249,7 +249,7 @@ msgstr "Podporované telefóny"
 
 #: html/base.html:145 html/docs/sidebar.html:4
 msgid "Manual"
-msgstr ""
+msgstr "Manuálne"
 
 #: html/base.html:146 html/phonedb/body.html:16
 msgid "Configuration"
@@ -2096,7 +2096,7 @@ msgstr ""
 
 #: html/news/index.html:19 html/screenshots/index.html:7
 msgid "Categories"
-msgstr ""
+msgstr "Kategórie"
 
 #: html/news/index.html:21
 msgid "All news"
@@ -2896,7 +2896,7 @@ msgstr ""
 #: html/tools/pdudecode.html:37 html/tools/pdudecode.html.py:39
 #: tools/forms.py:13
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 #: html/tools/pdudecode.html:42
 msgid "UDH type"
@@ -2913,15 +2913,15 @@ msgstr "Správa pre autorov"
 
 #: html/tools/pdudecode.html:46
 msgid "SMSC"
-msgstr ""
+msgstr "SMSC"
 
 #: html/tools/pdudecode.html:47
 msgid "Validity"
-msgstr ""
+msgstr "Platnosť"
 
 #: html/tools/pdudecode.html:48
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 #: html/tools/pdudecode.html:49
 #, fuzzy
@@ -2934,7 +2934,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:66
 msgid "MMS indicator"
-msgstr ""
+msgstr "MMS indikátor"
 
 #: html/tools/pdudecode.html:67
 msgid "Title"
@@ -2942,19 +2942,19 @@ msgstr ""
 
 #: html/tools/pdudecode.html:68
 msgid "Sender"
-msgstr ""
+msgstr "Odosielateľ"
 
 #: html/tools/pdudecode.html:69
 msgid "Address"
-msgstr ""
+msgstr "Adresa"
 
 #: html/tools/pdudecode.html:70 tools/forms.py:14
 msgid "Class"
-msgstr ""
+msgstr "Trieda"
 
 #: html/tools/pdudecode.html:73
 msgid "Bitmap"
-msgstr ""
+msgstr "Bitmapa"
 
 #: html/tools/pdudecode.html:74
 msgid "Bitmaps"
@@ -3157,15 +3157,15 @@ msgstr ""
 
 #: tools/forms.py:15
 msgid "Unicode"
-msgstr ""
+msgstr "Unikód"
 
 #: tools/forms.py:16
 msgid "Recipient"
-msgstr ""
+msgstr "Príjemca"
 
 #: tools/forms.py:17
 msgid "SMSC number"
-msgstr ""
+msgstr "SMSC číslo"
 
 #: wammu/context_processors.py:57
 msgid "Gammu and Wammu News Feed (RSS)"
@@ -3178,11 +3178,9 @@ msgstr ""
 #~ msgid "Man pages"
 #~ msgstr "Manuálové stránky"
 
-#, fuzzy
 #~ msgid "Phones Support"
 #~ msgstr "&Podpora"
 
-#, fuzzy
 #~ msgid "Is my phone supported?"
 #~ msgstr "Nepodporované"
 

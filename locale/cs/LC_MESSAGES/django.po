@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-24 16:48+0100\n"
+"POT-Creation-Date: 2011-02-24 17:05+0100\n"
 "PO-Revision-Date: 2011-01-17 14:39+0100\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -3120,7 +3120,7 @@ msgstr ""
 #: html/tools/pdudecode.html:37 html/tools/pdudecode.html.py:39
 #: tools/forms.py:13
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 #: html/tools/pdudecode.html:42
 msgid "UDH type"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-24 16:48+0100\n"
+"POT-Creation-Date: 2011-02-24 17:06+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2680,7 +2680,7 @@ msgstr ""
 #: html/tools/pdudecode.html:37 html/tools/pdudecode.html.py:39
 #: tools/forms.py:13
 msgid "Text"
-msgstr ""
+msgstr "Κείμενο"
 
 #: html/tools/pdudecode.html:42
 msgid "UDH type"
@@ -2696,7 +2696,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:46
 msgid "SMSC"
-msgstr ""
+msgstr "SMSC"
 
 #: html/tools/pdudecode.html:47
 msgid "Validity"
@@ -2704,7 +2704,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:48
 msgid "Type"
-msgstr ""
+msgstr "Είδος"
 
 #: html/tools/pdudecode.html:49
 msgid "Message Reference"
@@ -2938,7 +2938,7 @@ msgstr ""
 
 #: tools/forms.py:15
 msgid "Unicode"
-msgstr ""
+msgstr "Unicode"
 
 #: tools/forms.py:16
 msgid "Recipient"
@@ -2956,10 +2956,8 @@ msgstr ""
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr ""
 
-#, fuzzy
 #~ msgid "Phones Support"
 #~ msgstr "&Υποστήριξη"
 
-#, fuzzy
 #~ msgid "Is my phone supported?"
 #~ msgstr "Μη υποστηριζόμενο"

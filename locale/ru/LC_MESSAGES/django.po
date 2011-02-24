@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-24 16:48+0100\n"
+"POT-Creation-Date: 2011-02-24 17:06+0100\n"
 "PO-Revision-Date: 2010-09-05 10:40+0200\n"
 "Last-Translator: Дмитрий В. <d.yuyukin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,9 @@ msgid ""
 "The server had serious problems while serving your request. We've just sent "
 "our\n"
 "trained monkeys to fix the issue.\n"
-msgstr "\nСервер не может обработать ваш запрос\n"
+msgstr ""
+"\n"
+"Сервер не может обработать ваш запрос\n"
 
 #: html/authors.html:4 html/authors.html.py:7
 msgid "Wammu and Gammu Authors"
@@ -411,7 +413,9 @@ msgstr ""
 msgid ""
 "\n"
 "SMS daemon service to receive and send messages automatically.\n"
-msgstr "\nSMS daemon - Служба дя автоматического приема и отправки сообщений\n"
+msgstr ""
+"\n"
+"SMS daemon - Служба дя автоматического приема и отправки сообщений\n"
 
 #: html/gammu-family.html:28
 msgid ""
@@ -2014,9 +2018,8 @@ msgid "Name"
 msgstr "Имя"
 
 #: html/phonedb/list.html:5
-#, fuzzy
 msgid "Connection"
-msgstr "Нет места"
+msgstr "Подключение"
 
 #: html/phonedb/list.html:5
 msgid "Supported features"
@@ -2686,7 +2689,7 @@ msgstr ""
 #: html/tools/pdudecode.html:37 html/tools/pdudecode.html.py:39
 #: tools/forms.py:13
 msgid "Text"
-msgstr ""
+msgstr "Текст"
 
 #: html/tools/pdudecode.html:42
 msgid "UDH type"
@@ -2702,7 +2705,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:46
 msgid "SMSC"
-msgstr ""
+msgstr "SMS-центр"
 
 #: html/tools/pdudecode.html:47
 msgid "Validity"
@@ -2710,7 +2713,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:48
 msgid "Type"
-msgstr ""
+msgstr "Тип"
 
 #: html/tools/pdudecode.html:49
 msgid "Message Reference"
@@ -2722,7 +2725,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:66
 msgid "MMS indicator"
-msgstr ""
+msgstr "Индикатор MMS"
 
 #: html/tools/pdudecode.html:67
 msgid "Title"
@@ -2865,7 +2868,7 @@ msgstr "Записи в календаре"
 
 #: phonedb/models.py:39
 msgid "Todos"
-msgstr ""
+msgstr "Список дел"
 
 #: phonedb/models.py:40
 msgid "Filesystem manipulation"
@@ -2944,7 +2947,7 @@ msgstr ""
 
 #: tools/forms.py:15
 msgid "Unicode"
-msgstr ""
+msgstr "Юникод"
 
 #: tools/forms.py:16
 msgid "Recipient"

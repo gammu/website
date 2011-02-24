@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-24 16:48+0100\n"
+"POT-Creation-Date: 2011-02-24 17:06+0100\n"
 "PO-Revision-Date: 2011-02-05 18:21+0200\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitoschido@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2060,9 +2060,8 @@ msgid "Name"
 msgstr "Nombre"
 
 #: html/phonedb/list.html:5
-#, fuzzy
 msgid "Connection"
-msgstr "Congestión"
+msgstr "Conexión"
 
 #: html/phonedb/list.html:5
 msgid "Supported features"
@@ -2206,9 +2205,8 @@ msgid ""
 msgstr ""
 
 #: html/phonedb/vendor.html:21
-#, fuzzy
 msgid "Website"
-msgstr "Página &web"
+msgstr "Página web"
 
 #: html/phonedb/vendor.html:26
 #, python-format
@@ -2734,7 +2732,7 @@ msgstr ""
 #: html/tools/pdudecode.html:37 html/tools/pdudecode.html.py:39
 #: tools/forms.py:13
 msgid "Text"
-msgstr ""
+msgstr "Texto"
 
 #: html/tools/pdudecode.html:42
 msgid "UDH type"
@@ -2751,15 +2749,15 @@ msgstr "Mensaje de ti"
 
 #: html/tools/pdudecode.html:46
 msgid "SMSC"
-msgstr ""
+msgstr "SMSC"
 
 #: html/tools/pdudecode.html:47
 msgid "Validity"
-msgstr ""
+msgstr "Validez"
 
 #: html/tools/pdudecode.html:48
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: html/tools/pdudecode.html:49
 #, fuzzy
@@ -2772,7 +2770,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:66
 msgid "MMS indicator"
-msgstr ""
+msgstr "Indicador MMS"
 
 #: html/tools/pdudecode.html:67
 msgid "Title"
@@ -2780,19 +2778,19 @@ msgstr ""
 
 #: html/tools/pdudecode.html:68
 msgid "Sender"
-msgstr ""
+msgstr "Enviado por"
 
 #: html/tools/pdudecode.html:69
 msgid "Address"
-msgstr ""
+msgstr "Dirección"
 
 #: html/tools/pdudecode.html:70 tools/forms.py:14
 msgid "Class"
-msgstr ""
+msgstr "Clase"
 
 #: html/tools/pdudecode.html:73
 msgid "Bitmap"
-msgstr ""
+msgstr "Bitmap"
 
 #: html/tools/pdudecode.html:74
 msgid "Bitmaps"
@@ -2911,9 +2909,8 @@ msgid "Enhanced phonebook entries (eg. several numbers per entry)"
 msgstr ""
 
 #: phonedb/models.py:38
-#, fuzzy
 msgid "Calendar entries"
-msgstr "Notas de calendario"
+msgstr "Entradas del calendario"
 
 #: phonedb/models.py:39
 msgid "Todos"
@@ -2996,15 +2993,15 @@ msgstr ""
 
 #: tools/forms.py:15
 msgid "Unicode"
-msgstr ""
+msgstr "Unicode"
 
 #: tools/forms.py:16
 msgid "Recipient"
-msgstr ""
+msgstr "Destino"
 
 #: tools/forms.py:17
 msgid "SMSC number"
-msgstr ""
+msgstr "Número SMSC"
 
 #: wammu/context_processors.py:57
 msgid "Gammu and Wammu News Feed (RSS)"

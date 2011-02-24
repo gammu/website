@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-24 16:48+0100\n"
+"POT-Creation-Date: 2011-02-24 17:06+0100\n"
 "PO-Revision-Date: 2010-12-27 16:13+0200\n"
 "Last-Translator: gilberto dos santos alves <gsavix@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -221,11 +221,11 @@ msgstr ""
 
 #: html/base.html:145 html/docs/sidebar.html:4
 msgid "Manual"
-msgstr ""
+msgstr "Manual"
 
 #: html/base.html:146 html/phonedb/body.html:16
 msgid "Configuration"
-msgstr ""
+msgstr "Configuração"
 
 #: html/base.html:150 wammu/context_processors.py:38
 msgid "Contribute"
@@ -249,7 +249,7 @@ msgstr ""
 
 #: html/base.html:163
 msgid "License"
-msgstr ""
+msgstr "Licença"
 
 #: html/base.html:164
 msgid "Support Gammu/Wammu by donating money!"
@@ -460,7 +460,7 @@ msgstr ""
 #: html/gammu.html:11 html/libgammu.html:7 html/python-gammu.html:13
 #: html/smsd.html:13 html/wammu.html:11
 msgid "More information"
-msgstr ""
+msgstr "Mais informação"
 
 #: html/gammu.html:22
 msgid ""
@@ -2142,7 +2142,7 @@ msgstr ""
 
 #: html/phonedb/vendor.html:21
 msgid "Website"
-msgstr ""
+msgstr "WebSite"
 
 #: html/phonedb/vendor.html:26
 #, python-format
@@ -2851,14 +2851,12 @@ msgid "Filesystem manipulation"
 msgstr "Manipulação de Arquivos no telefone"
 
 #: phonedb/models.py:41
-#, fuzzy
 msgid "Reading and making calls"
-msgstr "Lendo calendário"
+msgstr "Lendo e fazendo chamadas"
 
 #: phonedb/models.py:42
-#, fuzzy
 msgid "Logos"
-msgstr "Autenticação"
+msgstr "Logotipos"
 
 #: phonedb/models.py:43
 msgid "Ringtones"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-24 16:48+0100\n"
+"POT-Creation-Date: 2011-02-24 17:06+0100\n"
 "PO-Revision-Date: 2010-01-28 00:48+0200\n"
 "Last-Translator: <cartman@cartman34.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -367,7 +367,8 @@ msgid ""
 "but\n"
 "there is simply lot of them and having more available allows us to create\n"
 "better software.\n"
-msgstr "\n"
+msgstr ""
+"\n"
 "Merci de l'intérêt porté au don pour les projets Gammu et Wammu. \n"
 "L'argent peut servir tant à la motivation des développeurs qu'à l'achat\n"
 "de nouveau matériel pour tester. Nous avons déjà certains téléphone,\n"
@@ -461,7 +462,8 @@ msgstr ""
 msgid ""
 "\n"
 "GUI program to manage contacts, todos, calendar and messages in your phone.\n"
-msgstr "\n"
+msgstr ""
+"\n"
 "Application graphique pour gérer vos contacts, tâches, calendrier et message "
 "de votre téléphone.\n"
 
@@ -469,8 +471,10 @@ msgstr "\n"
 msgid ""
 "\n"
 "Command line utility which allows to use all libGammu features.\n"
-msgstr "\n"
-"Toutes les commandes de libGammu peuvent être utilisées en ligne de commande\n"
+msgstr ""
+"\n"
+"Toutes les commandes de libGammu peuvent être utilisées en ligne de "
+"commande\n"
 
 #: html/gammu-family.html:16
 msgid ""
@@ -2764,7 +2768,7 @@ msgstr ""
 #: html/tools/pdudecode.html:37 html/tools/pdudecode.html.py:39
 #: tools/forms.py:13
 msgid "Text"
-msgstr ""
+msgstr "Texte"
 
 #: html/tools/pdudecode.html:42
 msgid "UDH type"
@@ -2780,7 +2784,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:46
 msgid "SMSC"
-msgstr ""
+msgstr "SMSC"
 
 #: html/tools/pdudecode.html:47
 msgid "Validity"
@@ -2788,7 +2792,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:48
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #: html/tools/pdudecode.html:49
 msgid "Message Reference"
@@ -3029,7 +3033,7 @@ msgstr ""
 
 #: tools/forms.py:15
 msgid "Unicode"
-msgstr ""
+msgstr "Unicode"
 
 #: tools/forms.py:16
 msgid "Recipient"
