@@ -97,6 +97,8 @@ def release(request, program,  version):
 def program(request, program):
     if not program in [x[0] for x in PROGRAM_CHOICES]:
         raise Http404('No such program %s.' % program)
+    if program in ['python-gammu']:
+        raise Http404('No such program %s.' % program)
 
     stable_release, testing_release = get_latest_releases(program)
 
