@@ -39,6 +39,8 @@ def get_latest_releases(program):
     First is stable, second is testing, which can be None.
     '''
     releases = Release.objects.filter(program = program)
+    if releases.count() == 0:
+        return (None, None)
     latest_version = releases.order_by('-version_int')[0]
     if latest_version.is_stable():
         latest_stable = latest_version
