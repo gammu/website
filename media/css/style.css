@@ -298,3 +298,6 @@ td.hex {
 div.donate {
     text-align: center;
 }
+ul.sponsors {
+    font-size: smaller;
+}
