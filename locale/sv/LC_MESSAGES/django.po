@@ -2,12 +2,11 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-27 11:00+0100\n"
+"POT-Creation-Date: 2011-02-24 17:06+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +18,7 @@ msgstr ""
 
 #: downloads/models.py:32
 msgid "Source"
-msgstr ""
+msgstr "Källa"
 
 #: downloads/models.py:33
 msgid "Windows binary"
@@ -28,12 +27,12 @@ msgstr ""
 #: downloads/models.py:174
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr ""
+msgstr "%(program)s stabil release %(version)s"
 
 #: downloads/models.py:179
 #, python-format
 msgid "%(program)s testing release %(version)s"
-msgstr ""
+msgstr "%(program)s test release %(version)s"
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
@@ -167,7 +166,7 @@ msgstr ""
 msgid "SMSD"
 msgstr "SMS"
 
-#: html/base.html:123 wammu/context_processors.py:31
+#: html/base.html:123 wammu/context_processors.py:34
 #, fuzzy
 msgid "Support"
 msgstr "&Support"
@@ -194,7 +193,7 @@ msgstr ""
 
 #: html/base.html:135 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
-#: wammu/context_processors.py:33
+#: wammu/context_processors.py:36
 msgid "Screenshots"
 msgstr ""
 
@@ -209,7 +208,7 @@ msgstr ""
 #: html/base.html:141 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:69 html/smsd.html:73 html/wammu.html:57
 #: html/docs/sidebar.html:2 html/support/sidebar.html:4
-#: wammu/context_processors.py:34
+#: wammu/context_processors.py:37
 msgid "Documentation"
 msgstr ""
 
@@ -224,13 +223,13 @@ msgstr ""
 
 #: html/base.html:145 html/docs/sidebar.html:4
 msgid "Manual"
-msgstr ""
+msgstr "Manuell"
 
 #: html/base.html:146 html/phonedb/body.html:16
 msgid "Configuration"
 msgstr ""
 
-#: html/base.html:150 wammu/context_processors.py:35
+#: html/base.html:150 wammu/context_processors.py:38
 msgid "Contribute"
 msgstr ""
 
@@ -514,7 +513,7 @@ msgstr ""
 #: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:34
 #: html/smsd.html:63 html/wammu.html:47 html/downloads/list.html:4
 #: html/downloads/program.html:4 html/downloads/release.html:4
-#: wammu/context_processors.py:32
+#: wammu/context_processors.py:35
 msgid "Download"
 msgstr ""
 
@@ -2685,7 +2684,7 @@ msgstr ""
 #: html/tools/pdudecode.html:37 html/tools/pdudecode.html.py:39
 #: tools/forms.py:13
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 #: html/tools/pdudecode.html:42
 msgid "UDH type"
@@ -2701,7 +2700,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:46
 msgid "SMSC"
-msgstr ""
+msgstr "SMSC"
 
 #: html/tools/pdudecode.html:47
 msgid "Validity"
@@ -2709,7 +2708,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:48
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 #: html/tools/pdudecode.html:49
 msgid "Message Reference"
@@ -2729,7 +2728,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:68
 msgid "Sender"
-msgstr ""
+msgstr "Avsändare"
 
 #: html/tools/pdudecode.html:69
 msgid "Address"
@@ -2755,7 +2754,7 @@ msgstr ""
 msgid "PDU data"
 msgstr ""
 
-#: html/tools/sidebar.html:2 wammu/context_processors.py:36
+#: html/tools/sidebar.html:2 wammu/context_processors.py:39
 msgid "Tools"
 msgstr ""
 
@@ -2944,7 +2943,7 @@ msgstr ""
 
 #: tools/forms.py:15
 msgid "Unicode"
-msgstr ""
+msgstr "Unicode"
 
 #: tools/forms.py:16
 msgid "Recipient"
@@ -2952,21 +2951,18 @@ msgstr ""
 
 #: tools/forms.py:17
 msgid "SMSC number"
-msgstr ""
+msgstr "SMSC-nummer"
 
-#: wammu/context_processors.py:54
+#: wammu/context_processors.py:57
 msgid "Gammu and Wammu News Feed (RSS)"
 msgstr ""
 
-#: wammu/context_processors.py:55
+#: wammu/context_processors.py:58
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr ""
 
-#, fuzzy
 #~ msgid "Phones Support"
 #~ msgstr "&Support"
 
-# msgid "Not supported id: %s"
-#, fuzzy
 #~ msgid "Is my phone supported?"
 #~ msgstr "Stöds inte"

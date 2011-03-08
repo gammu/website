@@ -4,9 +4,9 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-27 11:01+0100\n"
+"POT-Creation-Date: 2011-02-24 17:06+0100\n"
 "PO-Revision-Date: 2010-09-05 10:40+0200\n"
 "Last-Translator: Дмитрий В. <d.yuyukin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,12 @@ msgstr ""
 "X-Generator: Pootle 2.0.5\n"
 
 #: downloads/models.py:32
-#, fuzzy
 msgid "Source"
 msgstr "Исходный код"
 
 #: downloads/models.py:33
 msgid "Windows binary"
-msgstr ""
+msgstr "Исполняемый файл Windows"
 
 #: downloads/models.py:174
 #, python-format
@@ -39,7 +38,7 @@ msgstr ""
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
-msgstr ""
+msgstr "Доступ запрещен"
 
 #: html/403.html:11 html/404.html:11
 msgid ""
@@ -57,11 +56,11 @@ msgstr ""
 
 #: html/404.html:4 html/404.html.py:8
 msgid "Page Not Found"
-msgstr ""
+msgstr "Страница не найдена"
 
 #: html/500.html:4 html/500.html.py:8
 msgid "Server Error"
-msgstr ""
+msgstr "Ошибка сервреа"
 
 #: html/500.html:11
 msgid ""
@@ -70,10 +69,12 @@ msgid ""
 "our\n"
 "trained monkeys to fix the issue.\n"
 msgstr ""
+"\n"
+"Сервер не может обработать ваш запрос\n"
 
 #: html/authors.html:4 html/authors.html.py:7
 msgid "Wammu and Gammu Authors"
-msgstr ""
+msgstr "Авторы Wammu и Gammu"
 
 #: html/authors.html:10
 msgid ""
@@ -117,21 +118,20 @@ msgstr ""
 
 #: html/base.html:13
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
-msgstr ""
+msgstr "Страничка Gammu и Wammu. ПО для управления GSM сотовыми телефонами. "
 
 #: html/base.html:59
 msgid "Page translations"
-msgstr ""
+msgstr "Страница перевода"
 
 #: html/base.html:64
 msgid "Translate!"
-msgstr ""
+msgstr "Перевести!"
 
 #: html/base.html:68 html/base.html.py:134 html/downloads/program.html:7
 #: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
-#, fuzzy
 msgid "Downloads"
-msgstr "Загрузить"
+msgstr "Cкачать"
 
 #: html/base.html:76
 msgid "Appreciate"
@@ -169,14 +169,14 @@ msgstr ""
 msgid "SMSD"
 msgstr "SMS-центр"
 
-#: html/base.html:123 wammu/context_processors.py:31
+#: html/base.html:123 wammu/context_processors.py:34
 #, fuzzy
 msgid "Support"
 msgstr "Поддержка"
 
 #: html/base.html:125
 msgid "Mailing lists"
-msgstr ""
+msgstr "Списки рассылки"
 
 #: html/base.html:126
 msgid "Online"
@@ -188,7 +188,7 @@ msgstr ""
 
 #: html/base.html:128
 msgid "Commercial support"
-msgstr ""
+msgstr "Коммерческая поддержка"
 
 #: html/base.html:132
 msgid "Media"
@@ -196,33 +196,33 @@ msgstr ""
 
 #: html/base.html:135 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
-#: wammu/context_processors.py:33
+#: wammu/context_processors.py:36
 msgid "Screenshots"
-msgstr ""
+msgstr "Скриншоты"
 
 #: html/base.html:136
 msgid "Third party"
-msgstr ""
+msgstr "Сотороний"
 
 #: html/base.html:137 html/index.html:54
 msgid "News"
-msgstr ""
+msgstr "Новости"
 
 #: html/base.html:141 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:69 html/smsd.html:73 html/wammu.html:57
 #: html/docs/sidebar.html:2 html/support/sidebar.html:4
-#: wammu/context_processors.py:34
+#: wammu/context_processors.py:37
 msgid "Documentation"
-msgstr ""
+msgstr "Документация"
 
 #: html/base.html:143 html/docs/sidebar.html:5
 msgid "FAQ"
-msgstr ""
+msgstr "Ч.А.В.О."
 
 #: html/base.html:144 html/docs/sidebar.html:7 html/sidebars/common.html:3
 #: phonedb/views.py:101
 msgid "Supported phones"
-msgstr ""
+msgstr "Поддерживаемые телефоны"
 
 #: html/base.html:145 html/docs/sidebar.html:4
 msgid "Manual"
@@ -232,13 +232,13 @@ msgstr ""
 msgid "Configuration"
 msgstr ""
 
-#: html/base.html:150 wammu/context_processors.py:35
+#: html/base.html:150 wammu/context_processors.py:38
 msgid "Contribute"
 msgstr ""
 
 #: html/base.html:152 html/contribute/sidebar.html:5
 msgid "Translate"
-msgstr ""
+msgstr "Перевести"
 
 #: html/base.html:153 html/contribute/sidebar.html:6
 msgid "Develop"
@@ -255,11 +255,11 @@ msgstr ""
 
 #: html/base.html:163
 msgid "License"
-msgstr ""
+msgstr "Лицензия"
 
 #: html/base.html:164
 msgid "Support Gammu/Wammu by donating money!"
-msgstr ""
+msgstr "Поддержите проекты Gammu/Wammu материально!"
 
 #: html/base.html:165
 msgid "Search for Gammu/Wammu related questions"
@@ -272,11 +272,11 @@ msgstr "Поиск:"
 
 #: html/base.html:166
 msgid "Gammu and Wammu authors"
-msgstr ""
+msgstr "Авторы Gammu и Wammu"
 
 #: html/base.html:166
 msgid "Authors"
-msgstr ""
+msgstr "Авторы"
 
 #: html/base.html:167
 msgid ""
@@ -286,7 +286,7 @@ msgstr ""
 
 #: html/donate-thanks.html:4 html/donate-thanks.html.py:11
 msgid "Thank you for Donation"
-msgstr ""
+msgstr "Спасибо за вашу помощь"
 
 #: html/donate-thanks.html:14
 msgid ""
@@ -295,6 +295,9 @@ msgid ""
 "donated\n"
 "money in useful way.\n"
 msgstr ""
+"\n"
+"Спасибо за помощь проекту Gammu/Wammu! Мы постараемся использовать\n"
+"эти деньги как можно эффективней.\n"
 
 #: html/donate.html:4 html/donate.html.py:11
 msgid "Donate to Gammu"
@@ -411,6 +414,8 @@ msgid ""
 "\n"
 "SMS daemon service to receive and send messages automatically.\n"
 msgstr ""
+"\n"
+"SMS daemon - Служба дя автоматического приема и отправки сообщений\n"
 
 #: html/gammu-family.html:28
 msgid ""
@@ -515,7 +520,7 @@ msgstr ""
 #: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:34
 #: html/smsd.html:63 html/wammu.html:47 html/downloads/list.html:4
 #: html/downloads/program.html:4 html/downloads/release.html:4
-#: wammu/context_processors.py:32
+#: wammu/context_processors.py:35
 msgid "Download"
 msgstr ""
 
@@ -1614,7 +1619,7 @@ msgstr ""
 
 #: html/docs/sidebar.html:6
 msgid "For developers"
-msgstr ""
+msgstr "Для разработчиков"
 
 #: html/docs/sidebar.html:8
 msgid "Roadmap"
@@ -2013,9 +2018,8 @@ msgid "Name"
 msgstr "Имя"
 
 #: html/phonedb/list.html:5
-#, fuzzy
 msgid "Connection"
-msgstr "Нет места"
+msgstr "Подключение"
 
 #: html/phonedb/list.html:5
 msgid "Supported features"
@@ -2685,7 +2689,7 @@ msgstr ""
 #: html/tools/pdudecode.html:37 html/tools/pdudecode.html.py:39
 #: tools/forms.py:13
 msgid "Text"
-msgstr ""
+msgstr "Текст"
 
 #: html/tools/pdudecode.html:42
 msgid "UDH type"
@@ -2701,7 +2705,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:46
 msgid "SMSC"
-msgstr ""
+msgstr "SMS-центр"
 
 #: html/tools/pdudecode.html:47
 msgid "Validity"
@@ -2709,7 +2713,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:48
 msgid "Type"
-msgstr ""
+msgstr "Тип"
 
 #: html/tools/pdudecode.html:49
 msgid "Message Reference"
@@ -2721,7 +2725,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:66
 msgid "MMS indicator"
-msgstr ""
+msgstr "Индикатор MMS"
 
 #: html/tools/pdudecode.html:67
 msgid "Title"
@@ -2755,7 +2759,7 @@ msgstr ""
 msgid "PDU data"
 msgstr ""
 
-#: html/tools/sidebar.html:2 wammu/context_processors.py:36
+#: html/tools/sidebar.html:2 wammu/context_processors.py:39
 msgid "Tools"
 msgstr ""
 
@@ -2864,7 +2868,7 @@ msgstr "Записи в календаре"
 
 #: phonedb/models.py:39
 msgid "Todos"
-msgstr ""
+msgstr "Список дел"
 
 #: phonedb/models.py:40
 msgid "Filesystem manipulation"
@@ -2943,7 +2947,7 @@ msgstr ""
 
 #: tools/forms.py:15
 msgid "Unicode"
-msgstr ""
+msgstr "Юникод"
 
 #: tools/forms.py:16
 msgid "Recipient"
@@ -2953,18 +2957,16 @@ msgstr ""
 msgid "SMSC number"
 msgstr ""
 
-#: wammu/context_processors.py:54
+#: wammu/context_processors.py:57
 msgid "Gammu and Wammu News Feed (RSS)"
 msgstr ""
 
-#: wammu/context_processors.py:55
+#: wammu/context_processors.py:58
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr ""
 
-#, fuzzy
 #~ msgid "Phones Support"
 #~ msgstr "Поддержка"
 
-#, fuzzy
 #~ msgid "Is my phone supported?"
 #~ msgstr "Не поддерживается"
