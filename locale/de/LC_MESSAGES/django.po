@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-02-24 17:06+0100\n"
-"PO-Revision-Date: 2011-02-17 22:10+0200\n"
-"Last-Translator: <canin@in.com>\n"
+"PO-Revision-Date: 2011-03-08 11:22+0200\n"
+"Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -172,7 +172,7 @@ msgstr "Anerkennung"
 # (stumbleupon > bookmarks und twitter)
 #: html/base.html:85
 msgid "Share"
-msgstr "weiterempfehlen"
+msgstr "weiter empfehlen"
 
 #: html/base.html:95 html/donate.html:74
 msgid "Advertisement"
