@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-24 17:06+0100\n"
+"POT-Creation-Date: 2011-03-08 22:12+0100\n"
 "PO-Revision-Date: 2011-03-08 11:24+0200\n"
 "Last-Translator:  <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,12 +25,12 @@ msgstr "Quelltext"
 msgid "Windows binary"
 msgstr "Ausführbares Windows-Programm"
 
-#: downloads/models.py:174
+#: downloads/models.py:176
 #, python-format
 msgid "%(program)s stable release %(version)s"
 msgstr "%(program)s stabile Version %(version)s"
 
-#: downloads/models.py:179
+#: downloads/models.py:181
 #, python-format
 msgid "%(program)s testing release %(version)s"
 msgstr "%(program)s Testversion %(version)s"
@@ -750,6 +750,10 @@ msgstr ""
 "\n"
 "Gammu ist kein einzelnes Programm (mehr), aber eine Sammlung nützlicher "
 "Hilfsmittel, die alle dieselben Bibliotheken nutzen.\n"
+
+#: html/index.html:66
+msgid "Sponsors"
+msgstr ""
 
 #: html/libgammu.html:4 html/libgammu.html.py:15
 msgid "libGammu"

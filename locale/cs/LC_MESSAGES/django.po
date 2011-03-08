@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-24 17:05+0100\n"
+"POT-Creation-Date: 2011-03-08 22:12+0100\n"
 "PO-Revision-Date: 2011-01-17 14:39+0100\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -27,12 +27,12 @@ msgstr "Zdrojový kód"
 msgid "Windows binary"
 msgstr "Program pro Windows"
 
-#: downloads/models.py:174
+#: downloads/models.py:176
 #, python-format
 msgid "%(program)s stable release %(version)s"
 msgstr "%(program)s, stabilní verze %(version)s"
 
-#: downloads/models.py:179
+#: downloads/models.py:181
 #, python-format
 msgid "%(program)s testing release %(version)s"
 msgstr "%(program)s, testovací verze %(version)s"
@@ -704,6 +704,10 @@ msgstr ""
 "Gammu už není jen jeden program, ale jedná se sadu užitečných nástrojů, "
 "které\n"
 "sdílejí stejnou knihovnu.\n"
+
+#: html/index.html:66
+msgid "Sponsors"
+msgstr ""
 
 #: html/libgammu.html:4 html/libgammu.html.py:15
 msgid "libGammu"
