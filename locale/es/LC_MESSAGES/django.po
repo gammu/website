@@ -745,6 +745,10 @@ msgid ""
 "so to download\n"
 "it just get <a href=\"/download/gammu\">Gammu</a>.\n"
 msgstr ""
+"\n"
+"La biblioteca es, por supuesto, distribuida como parte de <a "
+"href=\"/gammu\">Gammu</a>, así que para descargarla\n"
+"solo obtenga <a href=\"/download/gammu\">Gammu</a>.\n"
 
 #: html/libgammu.html:56
 msgid ""
