@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-08 22:12+0100\n"
-"PO-Revision-Date: 2011-03-28 00:44+0200\n"
+"PO-Revision-Date: 2011-03-28 00:45+0200\n"
 "Last-Translator:  <ystrappa@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -779,7 +779,6 @@ msgid ""
 msgstr ""
 
 #: html/license.html:18
-#, fuzzy
 msgid ""
 "\n"
 "This program is free software; you can redistribute it and/or\n"
@@ -790,7 +789,7 @@ msgstr ""
 "\n"
 "Este programa es software libre; usted puede redistribuirlo y/o cambiarlo\n"
 "bajo los términos de la licencia GNU General Pública versión 2 como\n"
-"publicada de Free Software Foundation.\n"
+"publicada por la Free Software Foundation.\n"
 
 #: html/license.html:27 html/license.html.py:64
 msgid ""
