@@ -208,7 +208,7 @@ msgstr "En línea"
 
 #: html/base.html:127
 msgid "Reporting bugs"
-msgstr "Informar de fallos(bugs)"
+msgstr "Informar de fallos (bugs)"
 
 #: html/base.html:128
 msgid "Commercial support"
