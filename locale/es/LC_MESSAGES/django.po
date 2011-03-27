@@ -508,6 +508,9 @@ msgid ""
 "such as\n"
 "vCalendar or iCalendar)\n"
 msgstr ""
+"\n"
+"Listado, importación y exportación de calendario y tareas (también de "
+"formatos estándares tales como vCalendar o iCalendar)\n"
 
 #: html/gammu-features.html:20
 msgid ""
