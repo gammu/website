@@ -95,7 +95,7 @@ msgstr ""
 "Muchos son los colaboradores de Gammu, python-gammu y Wammu a lo largo del "
 "tiempo. \n"
 "Aquí\n"
-" encontrarás una lista de los más activos."
+" encontrarás una lista de los más activos.\n"
 
 #: html/authors.html:19
 msgid ""
@@ -363,7 +363,7 @@ msgstr ""
 "hardware\n"
 "con el que probar el código. Ya tenemos algunos teléfonos móviles, pero "
 "existen demasiados\n"
-"y tener más equipos disponibles nos permite crear mejor software."
+"y tener más equipos disponibles nos permite crear mejor software.\n"
 
 #: html/donate.html:40
 msgid ""
@@ -473,7 +473,7 @@ msgid ""
 "Call listing, initiating and handling\n"
 msgstr ""
 "\n"
-"Listado, inicio y manejo de llamadas"
+"Listado, inicio y manejo de llamadas\n"
 
 #: html/gammu-features.html:6
 msgid ""
@@ -590,7 +590,7 @@ msgstr ""
 "Gammu\n"
 "All Mobile Managemente Utilities, sin conocimiento de Gammu del libro "
 "\"Herejes de Dune\",\n"
-"escrito por Frank Herbert."
+"escrito por Frank Herbert.\n"
 
 #: html/gammu.html:50
 msgid ""
@@ -712,7 +712,7 @@ msgstr ""
 "abstracción\n"
 "para trabajar con diferentes teléfonos de distintas compañías (incluyendo a \n"
 "Nokia, Sony-Ericsson, Motorola, Samsung, Siemens, Huawei y otras). Usando\n"
-"esta biblioteca puede hablar a cualquier teléfono usando una API estándar."
+"esta biblioteca puede hablar a cualquier teléfono usando una API estándar.\n"
 
 #: html/libgammu.html:28
 msgid ""
