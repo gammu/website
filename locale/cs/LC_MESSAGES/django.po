@@ -3105,7 +3105,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:5 html/tools/pdudecode.html.py:13
 msgid "PDU decoder using Gammu"
-msgstr "Zakódování PDU pomocí Gammu"
+msgstr "Dekódování PDU pomocí Gammu"
 
 #: html/tools/pdudecode.html:27
 msgid "PDU Decoding Result"
@@ -3188,7 +3188,7 @@ msgstr "Obrázky"
 
 #: html/tools/pduencode.html:5 html/tools/pduencode.html.py:13
 msgid "PDU encoder using Gammu"
-msgstr "Dekódování PDU pomocí Gammu"
+msgstr "Zakódování PDU pomocí Gammu"
 
 #: html/tools/pduencode.html:27
 msgid "PDU data"
