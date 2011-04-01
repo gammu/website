@@ -8,7 +8,6 @@ from django.contrib.sitemaps import GenericSitemap, Sitemap
 from downloads.models import Release
 import os
 import datetime
-import django.views.generic
 
 newsfeeds = {
     'rss': RssNewsFeed,
@@ -205,11 +204,11 @@ urlpatterns = patterns('',
     (r'^links/$', 'links.views.index'),
 
     # Compatibility
-    (r'^install/$', django.views.generic.base.RedirectView.as_view(url = '/download/')),
-    (r'^improve/$', django.views.generic.base.RedirectView.as_view(url = '/contribute/')),
-    (r'^wammu.xml$', django.views.generic.base.RedirectView.as_view(url = '/api/pad/wammu.xml')),
-    (r'^wammu.doap$', django.views.generic.base.RedirectView.as_view(url = '/api/doap/wammu.xml')),
-    (r'^phones/features/(?P<featurename>[^/]*)/$', django.views.generic.base.RedirectView.as_view(url = '/phones/search/%(featurename)s/')),
+    (r'^install/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
+    (r'^improve/$', 'django.views.generic.simple.redirect_to', {'url': '/contribute/'}),
+    (r'^wammu.xml$', 'django.views.generic.simple.redirect_to', {'url': '/api/pad/wammu.xml'}),
+    (r'^wammu.doap$', 'django.views.generic.simple.redirect_to', {'url': '/api/doap/wammu.xml'}),
+    (r'^phones/features/(?P<featurename>[^/]*)/$', 'django.views.generic.simple.redirect_to', {'url': '/phones/search/%(featurename)s/'}),
 
     # Sitemap
     (r'^sitemap.xml$', 'django.contrib.sitemaps.views.index', {'sitemaps': sitemaps}),
@@ -219,21 +218,21 @@ urlpatterns = patterns('',
     (r'^robots.txt$', 'wammu.views.robots'),
 
     # Redirects for crazy bots who investiage full urls
-    (r'^api/$', django.views.generic.base.RedirectView.as_view(url = '/download/')),
-    (r'^api/doap/$', django.views.generic.base.RedirectView.as_view(url = '/download/')),
-    (r'^api/pad/$', django.views.generic.base.RedirectView.as_view(url = '/download/')),
+    (r'^api/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
+    (r'^api/doap/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
+    (r'^api/pad/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
 
     # Broken links
-    (r'^(?P<link>.*)/\)\.$', django.views.generic.base.RedirectView.as_view(url = '/%(link)s')),
-    (r'^snapshot/$', django.views.generic.base.RedirectView.as_view(url = '/download/')),
-    (r'^docs/faq/$', django.views.generic.base.RedirectView.as_view(url = '/docs/manual/faq/')),
-    (r'^docs/roadmap/$', django.views.generic.base.RedirectView.as_view(url = '/docs/manual/project/roadmap.html')),
-    (r'^docs/devel/$', django.views.generic.base.RedirectView.as_view(url = '/docs/')),
-    (r'^docs/man/.*$', django.views.generic.base.RedirectView.as_view(url = '/docs/')),
-    (r'^index.php$', django.views.generic.base.RedirectView.as_view(url = '/')),
-    (r'^wiki/index.php$', django.views.generic.base.RedirectView.as_view(url = '/')),
-    (r'^en/$', django.views.generic.base.RedirectView.as_view(url = 'http://wammu.eu/')),
-    (r'^cs/$', django.views.generic.base.RedirectView.as_view(url = 'http://cs.wammu.eu/')),
-    (r'^cz/$', django.views.generic.base.RedirectView.as_view(url = 'http://cs.wammu.eu/')),
-    (r'^es/$', django.views.generic.base.RedirectView.as_view(url = 'http://es.wammu.eu/')),
+    (r'^(?P<link>.*)/\)\.$', 'django.views.generic.simple.redirect_to', {'url': '/%(link)s'}),
+    (r'^snapshot/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
+    (r'^docs/faq/$', 'django.views.generic.simple.redirect_to', {'url': '/docs/manual/faq/'}),
+    (r'^docs/roadmap/$', 'django.views.generic.simple.redirect_to', {'url': '/docs/manual/project/roadmap.html'}),
+    (r'^docs/devel/$', 'django.views.generic.simple.redirect_to', {'url': '/docs/'}),
+    (r'^docs/man/.*$', 'django.views.generic.simple.redirect_to', {'url': '/docs/'}),
+    (r'^index.php$', 'django.views.generic.simple.redirect_to', {'url': '/'}),
+    (r'^wiki/index.php$', 'django.views.generic.simple.redirect_to', {'url': '/'}),
+    (r'^en/$', 'django.views.generic.simple.redirect_to', {'url': 'http://wammu.eu/'}),
+    (r'^cs/$', 'django.views.generic.simple.redirect_to', {'url': 'http://cs.wammu.eu/'}),
+    (r'^cz/$', 'django.views.generic.simple.redirect_to', {'url': 'http://cs.wammu.eu/'}),
+    (r'^es/$', 'django.views.generic.simple.redirect_to', {'url': 'http://es.wammu.eu/'}),
 )
