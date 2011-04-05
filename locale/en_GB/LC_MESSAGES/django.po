@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-08 22:12+0100\n"
-"PO-Revision-Date: 2011-02-10 13:01+0200\n"
+"PO-Revision-Date: 2011-04-05 16:13+0200\n"
 "Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: en_GB\n"
@@ -744,7 +744,7 @@ msgstr ""
 
 #: html/index.html:66
 msgid "Sponsors"
-msgstr ""
+msgstr "Sponsors"
 
 #: html/libgammu.html:4 html/libgammu.html.py:15
 msgid "libGammu"
