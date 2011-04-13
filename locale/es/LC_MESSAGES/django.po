@@ -392,7 +392,7 @@ msgstr ""
 
 #: html/donate.html:57
 msgid "Wire Transfer"
-msgstr ""
+msgstr "Transferencia bancaria"
 
 #: html/donate.html:60
 msgid ""
