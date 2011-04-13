@@ -291,7 +291,7 @@ msgstr "¡Apoyar Gammu/Wammu donando dinero! "
 
 #: html/base.html:165
 msgid "Search for Gammu/Wammu related questions"
-msgstr "Buscar  cuestiones relacionadas con Gammu / Wammu"
+msgstr "Buscar preguntas relacionadas con Gammu/Wammu"
 
 #: html/base.html:165 html/phonedb/index.html:8
 msgid "Search"
