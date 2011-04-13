@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-08 22:12+0100\n"
-"PO-Revision-Date: 2011-04-13 17:56+0200\n"
+"PO-Revision-Date: 2011-04-13 17:57+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -287,7 +287,7 @@ msgstr "Licencia"
 
 #: html/base.html:164
 msgid "Support Gammu/Wammu by donating money!"
-msgstr "Apoyar Gammu / Wammu donando dinero! "
+msgstr "¡Apoyar Gammu/Wammu donando dinero! "
 
 #: html/base.html:165
 msgid "Search for Gammu/Wammu related questions"
