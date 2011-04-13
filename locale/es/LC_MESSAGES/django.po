@@ -29,12 +29,12 @@ msgstr "Binario de Windows"
 #: downloads/models.py:176
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr "Versión estable %(version)s de %(program)"
+msgstr "Versión estable %(version)s de %(program)s"
 
 #: downloads/models.py:181
 #, python-format
 msgid "%(program)s testing release %(version)s"
-msgstr "Versión de prueba %(version)s de %(program)"
+msgstr "Versión de prueba %(version)s de %(program)s"
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
@@ -124,12 +124,12 @@ msgid ""
 "Nokia modules and he did lead the project till January 2007, when he "
 "resigned\n"
 "because lack of time. He is not active in the project anymore.\n"
-msgstr ""
+msgstr "\n"
 "Marcin comenzó el proyecto originalmente como una bifurcación de Gnokii "
 "porque no estaba satisfecho con algunas partes del código existente. "
 "Contribuyó gran parte del núcleo y los módulos Nokia y dirigió el proyecto "
 "hasta Enero de 2007, momento en el que renunció por falta de tiempo. Ya no "
-"es activo en el proyecto."
+"es activo en el proyecto.\n"
 
 #: html/authors.html:42
 msgid ""
