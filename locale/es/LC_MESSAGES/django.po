@@ -488,7 +488,7 @@ msgid ""
 "SMS daemon service to receive and send messages automatically.\n"
 msgstr ""
 "\n"
-"servicio SMS deamon para recibir y mandar mensajes automaticamente.\n"
+"Servicio de demonio SMS para recibir y mandar mensajes automaticamente.\n"
 
 #: html/gammu-family.html:28
 msgid ""
