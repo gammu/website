@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-08 22:12+0100\n"
-"PO-Revision-Date: 2011-04-14 19:13+0200\n"
+"PO-Revision-Date: 2011-04-14 19:15+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -729,7 +729,7 @@ msgstr ""
 
 #: html/index.html:66
 msgid "Sponsors"
-msgstr ""
+msgstr "Patrocinadores"
 
 #: html/libgammu.html:4 html/libgammu.html.py:15
 msgid "libGammu"
