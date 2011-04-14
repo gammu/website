@@ -871,6 +871,7 @@ msgstr ""
 "href=\"http://creativecommons.org/licenses/GPL/2.0/\">GNU General Public "
 "License, versión 2 o posterior</a>.\n"
 
+# Translated according to http://www.gnu.org/licenses/translations.html (in particular http://www.spanish-translator-services.com/espanol/t/gnu/gpl-ar.html)
 #: html/license.html:55
 msgid ""
 "\n"
