@@ -857,7 +857,7 @@ msgstr ""
 
 #: html/license.html:44
 msgid "Website License"
-msgstr ""
+msgstr "Licencia del sitio web"
 
 #: html/license.html:47
 msgid ""
