@@ -578,10 +578,8 @@ msgid ""
 msgstr ""
 "\n"
 "Gammu es el nombre del proyecto, como así también el de la utilidad de línea "
-"de órdenes,\n"
-"que puede usar para controlar su teléfono. Está escrito en C y construido "
-"sobre\n"
-"<a href=\"/libgammu\">libGammu</a>.\n"
+"de órdenes que puede usar para controlar el teléfono. Está escrito en C y "
+"construido sobre <a href=\"/libgammu\">libGammu</a>.\n"
 
 #: html/gammu.html:30
 msgid ""
