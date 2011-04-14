@@ -645,8 +645,8 @@ msgid ""
 "it.\n"
 msgstr ""
 "\n"
-"Descarga ya <a href=\"/download/gammu\">Gammu</a> para tu plataforma y "
-"empieza a usarlo.\n"
+"Descarga ya <a href=\"/download/gammu\">Gammu</a> para tu plataforma y empieza "
+"a usarlo.\n"
 
 #: html/gammu.html:71
 msgid ""
