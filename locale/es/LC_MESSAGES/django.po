@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-08 22:12+0100\n"
-"PO-Revision-Date: 2011-04-14 19:36+0200\n"
+"PO-Revision-Date: 2011-04-14 19:37+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -2358,7 +2358,7 @@ msgstr ""
 
 #: html/phonedb/vendor.html:21
 msgid "Website"
-msgstr "Página web"
+msgstr "Sitio web"
 
 #: html/phonedb/vendor.html:26
 #, python-format
