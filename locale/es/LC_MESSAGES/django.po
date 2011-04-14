@@ -888,7 +888,7 @@ msgstr ""
 
 #: html/license.html:80
 msgid "Website Content"
-msgstr "Contenido de la web"
+msgstr "Contenido del sitio web"
 
 #: html/license.html:83
 msgid ""
