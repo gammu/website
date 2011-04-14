@@ -550,7 +550,7 @@ msgid ""
 "Retrieval of phone and network information\n"
 msgstr ""
 "\n"
-"Recuperación de teléfono y información de red\n"
+"Recuperación de teléfono e información de red\n"
 
 #: html/gammu-features.html:23
 msgid ""
