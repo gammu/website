@@ -1065,7 +1065,7 @@ msgstr ""
 
 #: html/smsd.html:6 html/smsd.html.py:21
 msgid "Gammu SMSD"
-msgstr ""
+msgstr "Gammu SMSD"
 
 #: html/smsd.html:24
 msgid ""
