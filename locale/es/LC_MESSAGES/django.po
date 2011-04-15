@@ -1024,7 +1024,7 @@ msgstr ""
 
 #: html/search.html:4 html/search.html.py:7
 msgid "Wammu and Gammu Search"
-msgstr "Búsqueda Wamm y Gammu"
+msgstr "Búsqueda Wammu y Gammu"
 
 #: html/search.html:10
 #, python-format
