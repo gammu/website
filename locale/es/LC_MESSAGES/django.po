@@ -999,7 +999,7 @@ msgstr ""
 
 #: html/s60.html:4 html/s60.html.py:11
 msgid "Series60 remote applet installation"
-msgstr ""
+msgstr "Instalación remota de miniaplicaciones Series60"
 
 #: html/s60.html:13
 msgid "To install the applet to your phone, download following files:"
