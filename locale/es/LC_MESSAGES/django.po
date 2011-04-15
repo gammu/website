@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-15 08:47+0200\n"
-"PO-Revision-Date: 2011-04-15 22:35+0200\n"
+"PO-Revision-Date: 2011-04-15 22:36+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -1004,6 +1004,8 @@ msgstr "Instalación remota de miniaplicaciones Series60"
 #: html/s60.html:13
 msgid "To install the applet to your phone, download following files:"
 msgstr ""
+"Para instalar la miniaplicación en el teléfono, descarga los siguientes "
+"archivos:"
 
 #: html/s60.html:20
 msgid "Support libraries required to be installed on older phones:"
