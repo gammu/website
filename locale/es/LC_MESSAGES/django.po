@@ -813,7 +813,7 @@ msgstr ""
 "\n"
 "Gammu, python-gammmu y Wammu están distribuídos bajo la <a "
 "href=\"http://creativecommons.org/licenses/GPL/2.0/\">GNU General Public "
-"License, versión 2</a>."
+"License, versión 2</a>.\n"
 
 # Translated according to http://www.gnu.org/licenses/translations.html (in particular http://www.spanish-translator-services.com/espanol/t/gnu/gpl-ar.html)
 #: html/license.html:18
@@ -827,7 +827,7 @@ msgstr ""
 "\n"
 "Este programa es software libre: usted puede redistribuirlo y/o modificarlo "
 "conforme a los términos de la Licencia Pública General de GNU versión 2 "
-"publicada por la Fundación para el Software Libre."
+"publicada por la Fundación para el Software Libre.\n"
 
 # Translated according to http://www.gnu.org/licenses/translations.html (in particular http://www.spanish-translator-services.com/espanol/t/gnu/gpl-ar.html)
 #: html/license.html:27 html/license.html.py:64
@@ -837,11 +837,11 @@ msgid ""
 "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
 "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
-msgstr ""
+msgstr "\n"
 "Este programa se distribuye con el deseo de que le resulte útil, pero SIN "
 "GARANTÍAS DE NINGÚN TIPO; ni siquiera con las garantías implícitas de "
 "COMERCIABILIDAD o APTITUD PARA UN PROPÓSITO DETERMINADO. Para más "
-"información, consulte la Licencia Pública General de GNU."
+"información, consulte la Licencia Pública General de GNU.\n"
 
 # Translated according to http://www.gnu.org/licenses/translations.html (in particular http://www.spanish-translator-services.com/espanol/t/gnu/gpl-ar.html)
 #: html/license.html:36 html/license.html.py:73
@@ -851,9 +851,9 @@ msgid ""
 "along with this program; if not, write to the Free Software\n"
 "Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, "
 "USA.\n"
-msgstr ""
+msgstr "\n"
 "Junto con este programa, se debería incluir una copia de la Licencia Pública "
-"General de GNU. De no ser así, ingrese en <http://www.gnu.org/licenses/>."
+"General de GNU. De no ser así, ingrese en <http://www.gnu.org/licenses/>.\n"
 
 #: html/license.html:44
 msgid "Website License"
@@ -1958,7 +1958,7 @@ msgid ""
 "%(program)s %(version)s\n"
 msgstr ""
 "\n"
-"%(version)s de %(program)\n"
+"%(version)s de %(program)s\n"
 
 #: html/downloads/release.html:15
 msgid "Changes"
