@@ -1233,6 +1233,8 @@ msgstr ""
 msgid ""
 "export messages to mail (IMAP4, maildir and mailbox storages are supported)"
 msgstr ""
+"exportar mensajes a e-mail (los almacenamientos IMAP4, maildir y mailbox son "
+"soportados)"
 
 #: html/wammu.html:40
 msgid "searching for phone"
