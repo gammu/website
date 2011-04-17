@@ -1242,7 +1242,7 @@ msgstr "buscar en el teléfono"
 
 #: html/wammu.html:41
 msgid "translated into several languages"
-msgstr ""
+msgstr "traducido a varios idiomas"
 
 #: html/wammu.html:42
 msgid "rated as best on many software servers"
