@@ -1203,7 +1203,7 @@ msgstr ""
 
 #: html/wammu.html:34
 msgid "can read/create/save/send/backup smses"
-msgstr ""
+msgstr "puede leer/crear/guardar/enviar/respaldar SMSes"
 
 #: html/wammu.html:35
 msgid "sending files to phone (OBEX and Sony Ericsson phones only)"
