@@ -1246,7 +1246,7 @@ msgstr "traducido a varios idiomas"
 
 #: html/wammu.html:42
 msgid "rated as best on many software servers"
-msgstr ""
+msgstr "evaluado como el mejor en varios servidores de programas"
 
 #: html/wammu.html:49
 msgid ""
