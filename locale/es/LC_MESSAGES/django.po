@@ -1278,7 +1278,6 @@ msgstr ""
 "en la página de manual de wammu.\n"
 
 #: html/wammu_feedback.html:3
-#, fuzzy
 msgid "Thank you for using Wammu"
 msgstr "Gracias por usar Wammu"
 
