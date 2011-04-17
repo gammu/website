@@ -1219,7 +1219,7 @@ msgstr ""
 
 #: html/wammu.html:37
 msgid "display message including pictures and ringtones playback"
-msgstr ""
+msgstr "mostrar mensajes, incluyendo imágenes y reproducción de tonos"
 
 #: html/wammu.html:38
 msgid ""
