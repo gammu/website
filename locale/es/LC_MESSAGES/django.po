@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-15 08:47+0200\n"
-"PO-Revision-Date: 2011-04-20 23:11+0200\n"
+"PO-Revision-Date: 2011-04-20 23:27+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -1320,7 +1320,7 @@ msgstr ""
 
 #: html/contribute/code.html:4 html/contribute/code.html.py:22
 msgid "Coding for Wammu and Gammu"
-msgstr ""
+msgstr "Programación de Wammu y Gammu"
 
 #: html/contribute/code.html:11 html/contribute/wanted.html:11
 msgid "Factoids"
