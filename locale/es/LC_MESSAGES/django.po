@@ -1313,6 +1313,10 @@ msgid ""
 "latest features. The latest stable version is <a href=\"%(url)s\">"
 "%(version)s</a>.\n"
 msgstr ""
+"\n"
+"Si estás utilizando una versión antigua, porfavor actualiza a la última "
+"versión estable con las últimas funcionalidades. La última versión estable "
+"es <a href=\"%(url)s\">%(version)s</a>.\n"
 
 #: html/contribute/code.html:4 html/contribute/code.html.py:22
 msgid "Coding for Wammu and Gammu"
