@@ -1324,7 +1324,7 @@ msgstr "Programación de Wammu y Gammu"
 
 #: html/contribute/code.html:11 html/contribute/wanted.html:11
 msgid "Factoids"
-msgstr ""
+msgstr "Factoides"
 
 #: html/contribute/code.html:25
 msgid ""
