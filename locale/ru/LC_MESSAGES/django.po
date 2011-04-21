@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-21 14:40+0200\n"
+"POT-Creation-Date: 2011-04-21 14:41+0200\n"
 "PO-Revision-Date: 2010-09-05 10:40+0200\n"
 "Last-Translator: Дмитрий В. <d.yuyukin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,12 +29,12 @@ msgstr "Исполняемый файл Windows"
 #: downloads/models.py:176
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr ""
+msgstr "%(program) стабильный релиз %(version)"
 
 #: downloads/models.py:181
 #, python-format
 msgid "%(program)s testing release %(version)s"
-msgstr ""
+msgstr "%(program) тестовый релиз %(version)"
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
@@ -46,6 +46,9 @@ msgid ""
 "The page you are looking for was not found. Try choosing something from the\n"
 "navigation bellow or use <a href=\"/search\">search facility</a>.\n"
 msgstr ""
+"\n"
+"Запрашиваемая Вами страница не найдена. Попробуйте что-нибудьиз "
+"предложенного или используйте <a href=\"/search\">Поиск</a>."
 
 #: html/403.html:18 html/404.html:18
 msgid ""
@@ -53,6 +56,9 @@ msgid ""
 "This site includes information about Gammu and Wammu, you might want to\n"
 "continue to pages of following projects:\n"
 msgstr ""
+"\n"
+"Этот сайт содержит информацию о Gammu и Wammu, вы можетеперейти к страницам "
+"следующих проектов:"
 
 #: html/404.html:4 html/404.html.py:8
 msgid "Page Not Found"
@@ -82,6 +88,9 @@ msgid ""
 "Lot of people contributed to Gammu, python-gammu and Wammu in the past. You\n"
 "can find the most visible here.\n"
 msgstr ""
+"\n"
+"Много людей помогали  Gammu, python-gammu и Wammu.Вы можете заметить это "
+"сдесь."
 
 #: html/authors.html:19
 msgid ""
