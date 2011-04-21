@@ -1418,6 +1418,10 @@ msgid ""
 "to\n"
 "have <a href=\"http://www.cmake.org/\">CMake</a>.\n"
 msgstr ""
+"\n"
+"Las intrucciones para compilar e instalar están incluídas en el archivo "
+"<code>INSTALL</code> tanto en Gammu como en Wammu. Para compilar Gammu "
+"necesitarás <a href=\"http://www.cmake.org/\">CMake</a>.\n"
 
 #: html/contribute/code.html:86
 msgid "Code Snapshots"
