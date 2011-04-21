@@ -29,12 +29,12 @@ msgstr "Исполняемый файл Windows"
 #: downloads/models.py:176
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr "%(program) стабильный релиз %(version)"
+msgstr "%(program)s стабильный релиз %(version)s"
 
 #: downloads/models.py:181
 #, python-format
 msgid "%(program)s testing release %(version)s"
-msgstr "%(program) тестовый релиз %(version)"
+msgstr "%(program)s тестовый релиз %(version)s"
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
@@ -48,7 +48,7 @@ msgid ""
 msgstr ""
 "\n"
 "Запрашиваемая Вами страница не найдена. Попробуйте что-нибудьиз "
-"предложенного или используйте <a href=\"/search\">Поиск</a>."
+"предложенного или используйте <a href=\"/search\">Поиск</a>.\n"
 
 #: html/403.html:18 html/404.html:18
 msgid ""
@@ -58,7 +58,7 @@ msgid ""
 msgstr ""
 "\n"
 "Этот сайт содержит информацию о Gammu и Wammu, вы можетеперейти к страницам "
-"следующих проектов:"
+"следующих проектов:\n"
 
 #: html/404.html:4 html/404.html.py:8
 msgid "Page Not Found"
@@ -90,7 +90,7 @@ msgid ""
 msgstr ""
 "\n"
 "Много людей помогали  Gammu, python-gammu и Wammu.Вы можете заметить это "
-"сдесь."
+"сдесь.\n"
 
 #: html/authors.html:19
 msgid ""
