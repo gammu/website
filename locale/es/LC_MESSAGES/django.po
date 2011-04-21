@@ -1386,7 +1386,7 @@ msgstr ""
 "href=\"http://gitorious.org/wammu\">Wammu</a> y <a "
 "href=\"http://gitorious.org/gammu\">Gammu</a>. Puedes explorar el código en su "
 "sitio o simplemente clonar el repositorio e investigarlo localmente. Para "
-"clonar el código fuente de Wammu y Gammu utiliza las órdenes siguientes:"
+"clonar el código fuente de Wammu y Gammu utiliza las órdenes siguientes:\n"
 
 #: html/contribute/code.html:68
 msgid ""
