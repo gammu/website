@@ -1451,7 +1451,7 @@ msgstr ""
 
 #: html/contribute/code.html:99
 msgid "Patch Submission"
-msgstr ""
+msgstr "Envío de parches"
 
 #: html/contribute/code.html:101
 msgid ""
