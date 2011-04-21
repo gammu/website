@@ -1474,7 +1474,7 @@ msgstr ""
 
 #: html/contribute/code.html:112
 msgid "Testing"
-msgstr ""
+msgstr "Testeo"
 
 #: html/contribute/code.html:114
 msgid ""
