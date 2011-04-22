@@ -1618,7 +1618,7 @@ msgstr ""
 
 #: html/contribute/index.html:71
 msgid "Donating"
-msgstr ""
+msgstr "Donaciones"
 
 #: html/contribute/index.html:74
 msgid ""
