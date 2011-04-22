@@ -1634,7 +1634,7 @@ msgstr ""
 
 #: html/contribute/publicity.html:4 html/contribute/publicity.html.py:12
 msgid "Publicity for Wammu and Gammu"
-msgstr ""
+msgstr "Publicidad para Wammu y Gammu"
 
 #: html/contribute/publicity.html:15
 msgid ""
