@@ -1540,7 +1540,7 @@ msgstr ""
 
 #: html/contribute/index.html:29
 msgid "Using"
-msgstr ""
+msgstr "Utilización"
 
 #: html/contribute/index.html:31
 msgid ""
