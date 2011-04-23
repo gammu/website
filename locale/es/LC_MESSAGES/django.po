@@ -1716,7 +1716,7 @@ msgstr "Habilidades deseadas"
 
 #: html/contribute/translate.html:4 html/contribute/translate.html.py:12
 msgid "Translating Wammu and Gammu"
-msgstr ""
+msgstr "Traducir Wammu y Gammu"
 
 #: html/contribute/translate.html:15
 msgid ""
