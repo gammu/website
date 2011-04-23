@@ -1686,7 +1686,7 @@ msgstr ""
 
 #: html/contribute/publicity.html:41
 msgid "Logos or Screenshots"
-msgstr ""
+msgstr "Logos y capturas de pantalla"
 
 #: html/contribute/publicity.html:43
 msgid ""
