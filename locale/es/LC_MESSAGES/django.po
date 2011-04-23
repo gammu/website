@@ -1759,7 +1759,7 @@ msgstr ""
 
 #: html/contribute/translate.html:34
 msgid "Translating po Files"
-msgstr ""
+msgstr "Traducir archivos po"
 
 #: html/contribute/translate.html:36
 msgid ""
