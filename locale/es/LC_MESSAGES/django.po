@@ -1774,8 +1774,8 @@ msgstr ""
 "La forma tradicional de realizar traducciones es descargar un archivo po, "
 "traducirlo utilizando un editor (por ejemplo <a "
 "href=\"http://www.poedit.net/\">Poedit</a>) y luego enviar el archivo po "
-"actualizado al autor. Puedes hacer esto cuando estás inactivo, pero por el "
-"otro lado, no permite la colaboración.\n"
+"actualizado al autor. Puedes hacer esto cuando no tienes acceso a internet, "
+"pero por el otro lado, no permite la colaboración.\n"
 
 #: html/contribute/translate.html:44
 msgid "Pootle"
