@@ -1708,7 +1708,7 @@ msgstr ""
 
 #: html/contribute/sidebar.html:2
 msgid "Ways to contribute"
-msgstr ""
+msgstr "Formas de contribuir"
 
 #: html/contribute/sidebar.html:7
 msgid "Wanted skills"
