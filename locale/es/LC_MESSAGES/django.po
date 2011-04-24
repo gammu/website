@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-21 14:41+0200\n"
-"PO-Revision-Date: 2011-04-23 16:23+0200\n"
+"PO-Revision-Date: 2011-04-24 23:09+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -1807,7 +1807,7 @@ msgstr ""
 
 #: html/contribute/translate.html:60
 msgid "This website"
-msgstr ""
+msgstr "Este sitio web"
 
 #: html/contribute/translate.html:64
 msgid ""
