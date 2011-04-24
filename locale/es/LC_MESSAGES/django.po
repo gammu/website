@@ -1924,6 +1924,9 @@ msgid ""
 "website\n"
 "translated for new users.\n"
 msgstr ""
+"\n"
+"Sitio web de Wammu - hay mucho texto aquí y sería fantástico tener el sitio "
+"web traducido para nuevos usuarios.\n"
 
 #: html/contribute/translate.html:122
 msgid ""
