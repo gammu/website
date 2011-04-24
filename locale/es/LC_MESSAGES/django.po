@@ -1830,7 +1830,7 @@ msgstr ""
 
 #: html/contribute/translate.html:73
 msgid "Hints for Translators"
-msgstr ""
+msgstr "Ayudas para traductores"
 
 #: html/contribute/translate.html:75
 msgid ""
