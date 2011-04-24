@@ -1893,6 +1893,10 @@ msgid ""
 "Wammu.\n"
 "It is just good place to start and get to know some basic terminology.\n"
 msgstr ""
+"\n"
+"mensajes de libGammu - hay pocos de ellos y son también utilizados en Wammu.\n"
+"Es simplemente un buen lugar para comenzar y familiarizarte con la "
+"terminología básica.\n"
 
 #: html/contribute/translate.html:111
 msgid ""
