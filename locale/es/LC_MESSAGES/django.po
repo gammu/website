@@ -1873,7 +1873,7 @@ msgstr ""
 
 #: html/contribute/translate.html:98
 msgid "What is Important?"
-msgstr ""
+msgstr "¿Qué es importante?"
 
 #: html/contribute/translate.html:100
 msgid ""
