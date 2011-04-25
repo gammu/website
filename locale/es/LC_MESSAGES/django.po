@@ -1964,7 +1964,7 @@ msgstr ""
 
 #: html/contribute/wanted.html:42
 msgid "Windows Developer"
-msgstr ""
+msgstr "Desarrollador Windows"
 
 #: html/contribute/wanted.html:45
 msgid ""
