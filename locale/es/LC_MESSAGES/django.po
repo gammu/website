@@ -2003,6 +2003,10 @@ msgid ""
 "Graphics and icons used in Wammu are quite poor quality right now. We would\n"
 "definitely make use of somebody more skilled in this area.\n"
 msgstr ""
+"\n"
+"Los gráficos e iconos utilizados en Wammy son de una calidad algo baja "
+"ahora. Definitivamente nos haríafalta de alguien con más habilidad en esa "
+"área.\n"
 
 #: html/contribute/wanted.html:70
 msgid "Symbian Developer"
