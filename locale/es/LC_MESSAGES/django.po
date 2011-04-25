@@ -2039,7 +2039,7 @@ msgstr ""
 
 #: html/contribute/wanted.html:88
 msgid "Python Developer"
-msgstr ""
+msgstr "Desarrollador Python"
 
 #: html/contribute/wanted.html:91
 msgid ""
