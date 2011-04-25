@@ -2010,7 +2010,7 @@ msgstr ""
 
 #: html/contribute/wanted.html:70
 msgid "Symbian Developer"
-msgstr ""
+msgstr "Desarrollador Symbian"
 
 #: html/contribute/wanted.html:73
 msgid ""
