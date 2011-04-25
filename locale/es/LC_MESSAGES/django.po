@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-21 14:41+0200\n"
-"PO-Revision-Date: 2011-04-25 12:02+0200\n"
+"PO-Revision-Date: 2011-04-25 12:03+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -2099,7 +2099,7 @@ msgstr "Manual de Gammu"
 
 #: html/docs/index.html:26
 msgid "Gammu SMSD Daemon Manual"
-msgstr ""
+msgstr "Manual del Demonio SMSD Gammu"
 
 #: html/docs/index.html:30
 msgid ""
