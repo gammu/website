@@ -1989,6 +1989,9 @@ msgid ""
 "There are always things to translate to almost any language, just check\n"
 "dedicated page <a href=\"/contribute/translate\">about translating</a>.\n"
 msgstr ""
+"\n"
+"Siempre hay algo que traducir a prácticamente cualquier idioma, sólo revisa "
+"la página <a href=\"/contribute/translate\">dedicada a las traducciones</a>.\n"
 
 #: html/contribute/wanted.html:61
 msgid "Graphics/Designer"
