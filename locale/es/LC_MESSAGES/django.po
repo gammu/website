@@ -2122,6 +2122,10 @@ msgid ""
 "before\n"
 "asking on <a href=\"/support/lists/\">mailing list</a>.\n"
 msgstr ""
+"\n"
+"Si aún tienes preguntas, porfavor revisa las <a "
+"href=\"/docs/manual/faq/\"><strong>Preguntas Frecuentes (FAQ)</strong></a> "
+"antes de preguntar en la <a href=\"/support/lists/\">lista de correos</a>.\n"
 
 #: html/docs/index.html:45
 msgid "Developer Documentation"
