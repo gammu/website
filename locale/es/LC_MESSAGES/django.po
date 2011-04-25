@@ -2057,7 +2057,7 @@ msgstr ""
 
 #: html/contribute/wanted.html:98
 msgid "C Developer"
-msgstr ""
+msgstr "Desarrollador C"
 
 #: html/contribute/wanted.html:101
 msgid ""
