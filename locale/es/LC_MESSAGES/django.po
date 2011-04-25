@@ -2068,7 +2068,7 @@ msgid ""
 msgstr ""
 "\n"
 "Siempre hay muchos errores y pedidos de funcionalidad para el núcleo de "
-"Gammu y más gente pueden manejarlas más rápidamente.\n"
+"Gammu y más gente puede manejarlas más rápidamente.\n"
 
 #: html/docs/index.html:4 html/docs/index.html.py:11
 msgid "Wammu and Gammu Documentation"
