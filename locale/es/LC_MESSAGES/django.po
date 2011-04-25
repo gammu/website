@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-21 14:41+0200\n"
-"PO-Revision-Date: 2011-04-24 23:19+0200\n"
+"PO-Revision-Date: 2011-04-25 11:52+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -1940,7 +1940,7 @@ msgstr ""
 
 #: html/contribute/wanted.html:4 html/contribute/wanted.html.py:22
 msgid "Wanted Skills for Wammu and Gammu"
-msgstr ""
+msgstr "Habilidades deseadas para Wammu y Gammu"
 
 #: html/contribute/wanted.html:33
 msgid ""
