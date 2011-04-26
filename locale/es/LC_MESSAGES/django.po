@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-21 14:41+0200\n"
-"PO-Revision-Date: 2011-04-26 21:55+0200\n"
+"PO-Revision-Date: 2011-04-26 21:56+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -2233,7 +2233,7 @@ msgstr "DOAP para Wammu"
 
 #: html/downloads/index.html:46
 msgid "DOAP for Gammu"
-msgstr ""
+msgstr "DOAP para Gammu"
 
 #: html/downloads/index.html:47
 msgid "PAD for Wammu"
