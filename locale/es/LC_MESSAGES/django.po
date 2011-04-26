@@ -2194,6 +2194,8 @@ msgid ""
 "\n"
 "Download\n"
 msgstr ""
+"\n"
+"Descarga\n"
 
 #: html/downloads/index.html:18
 msgid ""
