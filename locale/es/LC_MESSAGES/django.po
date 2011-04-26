@@ -2382,7 +2382,7 @@ msgstr ""
 
 #: html/downloads/smalldownloads.html:2
 msgid "Source Downloads"
-msgstr ""
+msgstr "Descarga de código fuente"
 
 #: html/downloads/programs/gammu-source.html:3
 msgid ""
