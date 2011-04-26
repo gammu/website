@@ -2229,7 +2229,7 @@ msgstr "Sindicación"
 
 #: html/downloads/index.html:45
 msgid "DOAP for Wammu"
-msgstr ""
+msgstr "DOAP para Wammu"
 
 #: html/downloads/index.html:46
 msgid "DOAP for Gammu"
