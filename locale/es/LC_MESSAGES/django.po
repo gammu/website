@@ -2250,7 +2250,7 @@ msgid ""
 "Download %(program)s (%(platform)s)\n"
 msgstr ""
 "\n"
-"Descarga  %(program)s (%(platform)s)\n"
+"Descarga %(program)s (%(platform)s)\n"
 
 #: html/downloads/list.html:32
 msgid ""
