@@ -2225,7 +2225,7 @@ msgstr "Descarga Wammu"
 
 #: html/downloads/index.html:43 html/phonedb/index.html:29
 msgid "Syndication"
-msgstr ""
+msgstr "Sindicación"
 
 #: html/downloads/index.html:45
 msgid "DOAP for Wammu"
