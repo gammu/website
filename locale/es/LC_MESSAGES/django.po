@@ -2284,7 +2284,7 @@ msgstr "Cambiar"
 
 #: html/downloads/platformlinks.html:7
 msgid "Debian packages"
-msgstr ""
+msgstr "Paquetes para Debian"
 
 #: html/downloads/platformlinks.html:10
 msgid "Ubuntu packages"
