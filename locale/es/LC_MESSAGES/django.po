@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-21 14:41+0200\n"
-"PO-Revision-Date: 2011-04-26 22:02+0200\n"
+"PO-Revision-Date: 2011-04-26 22:03+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -2293,8 +2293,7 @@ msgstr "Paquetes para Ubuntu"
 #: html/downloads/platformlinks.html:13
 msgid "Ubuntu packages in PPA (latest stable version)"
 msgstr ""
-"Paquetes para Ubuntu en repositorio personal (PPA, última versión de "
-"pruebas) "
+"Paquetes para Ubuntu en repositorio personal (PPA, última versión estable)"
 
 #: html/downloads/platformlinks.html:16
 msgid "Ubuntu packages in PPA (latest testing version)"
