@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-21 14:41+0200\n"
-"PO-Revision-Date: 2011-04-26 22:03+0200\n"
+"PO-Revision-Date: 2011-04-26 22:04+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -2312,6 +2312,7 @@ msgstr ""
 #: html/downloads/platformlinks.html:24
 msgid "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)"
 msgstr ""
+"Paquetes RPM para openSUSE, Fedora, Mandriva (última versión de pruebas)"
 
 #: html/downloads/platformmessage.html:3
 msgid ""
