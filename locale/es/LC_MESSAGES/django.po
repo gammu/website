@@ -2360,7 +2360,7 @@ msgid ""
 "%(program)s %(version)s\n"
 msgstr ""
 "\n"
-"%(version)s de %(program)s\n"
+"%(program)s %(version)s\n"
 
 #: html/downloads/release.html:15
 msgid "Changes"
