@@ -2335,6 +2335,8 @@ msgid ""
 "\n"
 "Download %(program)s\n"
 msgstr ""
+"\n"
+"Descargar %(program)s\n"
 
 #: html/downloads/program.html:25
 #, python-format
