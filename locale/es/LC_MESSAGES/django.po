@@ -2217,7 +2217,7 @@ msgstr ""
 
 #: html/downloads/index.html:29
 msgid "Download Gammu"
-msgstr ""
+msgstr "Descarga Gammu"
 
 #: html/downloads/index.html:36
 msgid "Download Wammu"
