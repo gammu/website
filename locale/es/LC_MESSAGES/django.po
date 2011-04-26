@@ -2367,9 +2367,8 @@ msgid "Changes"
 msgstr "Cambios"
 
 #: html/downloads/release.html:21
-#, fuzzy
 msgid "Files"
-msgstr "Archivo;"
+msgstr "Archivos"
 
 #: html/downloads/relinfo.html:4
 #, python-format
