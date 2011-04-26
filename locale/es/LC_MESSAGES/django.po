@@ -2299,6 +2299,8 @@ msgstr ""
 #: html/downloads/platformlinks.html:16
 msgid "Ubuntu packages in PPA (latest testing version)"
 msgstr ""
+"Paquetes para Ubuntu en repositorio personal (PPA, última versión de "
+"pruebas)"
 
 #: html/downloads/platformlinks.html:20
 msgid ""
