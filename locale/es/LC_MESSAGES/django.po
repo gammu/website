@@ -2183,7 +2183,7 @@ msgstr "Para los desarrolladores"
 
 #: html/docs/sidebar.html:8
 msgid "Roadmap"
-msgstr ""
+msgstr "Hoja de ruta"
 
 #: html/downloads/index.html:4
 msgid "Download Wammu and Gammu"
