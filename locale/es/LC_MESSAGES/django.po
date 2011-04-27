@@ -2537,9 +2537,8 @@ msgid "Wammu News"
 msgstr "Noticias de Wammu"
 
 #: html/phonedb/body.html:3
-#, fuzzy
 msgid "Supported Features"
-msgstr "Funciones soportadas"
+msgstr "Funcionalidades soportadas"
 
 #: html/phonedb/body.html:13
 msgid "No features supported!"
