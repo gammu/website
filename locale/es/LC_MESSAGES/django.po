@@ -2467,9 +2467,8 @@ msgid "Third Party Applications using Gammu"
 msgstr "Aplicaciones de terceros utilizando Gammu"
 
 #: html/links/index.html:22
-#, fuzzy
 msgid "Website:"
-msgstr "Página &web"
+msgstr "Sitio web:"
 
 #: html/news/contrib_index.html:4 html/news/contrib_index.html.py:6
 msgid "Third Party News"
