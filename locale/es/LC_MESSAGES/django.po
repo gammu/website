@@ -2575,7 +2575,7 @@ msgstr "Ir"
 
 #: html/phonedb/index.html:13
 msgid "Feature Search"
-msgstr ""
+msgstr "Búsqueda de funcionalidad"
 
 #: html/phonedb/index.html:33
 msgid "CSV"
