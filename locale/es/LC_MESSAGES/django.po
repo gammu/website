@@ -2472,7 +2472,7 @@ msgstr "Sitio web:"
 
 #: html/news/contrib_index.html:4 html/news/contrib_index.html.py:6
 msgid "Third Party News"
-msgstr ""
+msgstr "Noticias de terceros"
 
 #: html/news/entry.html:4 html/news/index.html:4 html/news/index.html.py:31
 #: news/feeds.py:9
