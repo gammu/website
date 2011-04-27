@@ -2550,7 +2550,7 @@ msgstr "¡Se reporta que el teléfono no está soportado!"
 
 #: html/phonedb/body.html:34
 msgid "Reporter Note"
-msgstr ""
+msgstr "Nota de quien lo reportó"
 
 #: html/phonedb/index.html:4 html/phonedb/new.html:4 html/phonedb/phone.html:4
 #: html/phonedb/search.html:4
