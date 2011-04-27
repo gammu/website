@@ -2542,7 +2542,7 @@ msgstr "Funcionalidades soportadas"
 
 #: html/phonedb/body.html:13
 msgid "No features supported!"
-msgstr ""
+msgstr "¡No hay funcionalidades soportadas!"
 
 #: html/phonedb/body.html:27
 msgid "Phone is reported not to be supported!"
