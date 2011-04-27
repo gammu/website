@@ -2481,7 +2481,7 @@ msgstr "Noticias de Wammu y Gammu"
 
 #: html/news/gammu_index.html:4 html/news/gammu_index.html.py:6
 msgid "Gammu News"
-msgstr ""
+msgstr "Noticias de Gammu"
 
 #: html/news/index.html:7
 msgid "Follow us on"
