@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-27 00:41+0200\n"
-"PO-Revision-Date: 2011-04-27 22:16+0200\n"
+"PO-Revision-Date: 2011-04-27 22:17+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -2546,7 +2546,7 @@ msgstr "¡No hay funcionalidades soportadas!"
 
 #: html/phonedb/body.html:27
 msgid "Phone is reported not to be supported!"
-msgstr ""
+msgstr "¡Se reporta que el teléfono no está soportado!"
 
 #: html/phonedb/body.html:34
 msgid "Reporter Note"
