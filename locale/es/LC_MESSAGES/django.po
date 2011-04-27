@@ -2497,7 +2497,7 @@ msgstr "Twitter"
 
 #: html/news/index.html:12
 msgid "Feeds"
-msgstr ""
+msgstr "Sindicación"
 
 #: html/news/index.html:14 html/phonedb/index.html:31
 msgid "RSS"
