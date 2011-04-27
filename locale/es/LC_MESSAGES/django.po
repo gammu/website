@@ -2464,7 +2464,7 @@ msgstr ""
 
 #: html/links/index.html:4 html/links/index.html.py:7
 msgid "Third Party Applications using Gammu"
-msgstr ""
+msgstr "Aplicaciones de terceros utilizando Gammu"
 
 #: html/links/index.html:22
 #, fuzzy
