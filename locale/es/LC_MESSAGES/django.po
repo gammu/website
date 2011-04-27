@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-27 00:41+0200\n"
-"PO-Revision-Date: 2011-04-27 22:14+0200\n"
+"PO-Revision-Date: 2011-04-27 22:15+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -2477,7 +2477,7 @@ msgstr "Noticias de terceros"
 #: html/news/entry.html:4 html/news/index.html:4 html/news/index.html.py:31
 #: news/feeds.py:9
 msgid "Wammu and Gammu News"
-msgstr ""
+msgstr "Noticias de Wammu y Gammu"
 
 #: html/news/gammu_index.html:4 html/news/gammu_index.html.py:6
 msgid "Gammu News"
