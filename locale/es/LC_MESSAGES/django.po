@@ -2571,7 +2571,7 @@ msgstr "Base de datos de teléfonos Gammu"
 #: html/phonedb/new.html:50 html/phonedb/search.html:22
 #: html/tools/pdudecode.html:20 html/tools/pduencode.html:20
 msgid "Go"
-msgstr ""
+msgstr "Ir"
 
 #: html/phonedb/index.html:13
 msgid "Feature Search"
