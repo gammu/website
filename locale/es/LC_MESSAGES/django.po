@@ -2738,7 +2738,7 @@ msgstr "Borrar"
 
 #: html/phonedb/phone.html:20
 msgid "Approve"
-msgstr ""
+msgstr "Aprobar"
 
 #: html/phonedb/phone.html:24
 msgid "Similar Phones"
