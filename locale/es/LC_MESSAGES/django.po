@@ -2811,6 +2811,8 @@ msgid ""
 "\n"
 "Created by %(author)s on %(created)s.\n"
 msgstr ""
+"\n"
+"Creado por %(author)s el %(created)s.\n"
 
 #: html/phonedb/phone.html:97
 #, python-format
