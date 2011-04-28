@@ -2678,7 +2678,7 @@ msgstr "Conexión"
 
 #: html/phonedb/list.html:5
 msgid "Supported features"
-msgstr "Funciones soportadas"
+msgstr "Funcionalidades soportadas"
 
 #: html/phonedb/list.html:22
 msgid "Not supported"
