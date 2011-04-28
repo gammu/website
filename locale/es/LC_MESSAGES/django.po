@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-27 00:41+0200\n"
-"PO-Revision-Date: 2011-04-28 17:54+0200\n"
+"PO-Revision-Date: 2011-04-28 17:57+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -2654,7 +2654,7 @@ msgstr "Teléfonos agregados recientemente"
 
 #: html/phonedb/index.html:83
 msgid "Phone Records Summary"
-msgstr ""
+msgstr "Resumen de registros de teléfonos"
 
 #: html/phonedb/index.html:87
 msgid ""
