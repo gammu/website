@@ -2746,7 +2746,7 @@ msgstr "Teléfonos similares"
 
 #: html/phonedb/phone.html:35
 msgid "None found."
-msgstr ""
+msgstr "Ninguno encontrado"
 
 #: html/phonedb/phone.html:48
 msgid ""
