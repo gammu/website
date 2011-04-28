@@ -2820,6 +2820,8 @@ msgid ""
 "\n"
 "Created on %(created)s.\n"
 msgstr ""
+"\n"
+"Creado el %(created)s.\n"
 
 #: html/phonedb/phone.html:104
 #, python-format
