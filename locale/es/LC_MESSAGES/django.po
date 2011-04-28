@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-27 00:41+0200\n"
-"PO-Revision-Date: 2011-04-28 18:31+0200\n"
+"PO-Revision-Date: 2011-04-28 18:32+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -2842,6 +2842,8 @@ msgid ""
 "\n"
 "Found %(count)s results matching your query.\n"
 msgstr ""
+"\n"
+"Se encontraron %(count)s resultados que coinciden con tu consulta.\n"
 
 #: html/phonedb/vendor.html:4
 #, python-format
