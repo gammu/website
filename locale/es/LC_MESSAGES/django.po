@@ -2797,6 +2797,9 @@ msgid ""
 "\n"
 "More information about phone might be available on following sites:\n"
 msgstr ""
+"\n"
+"Más información sobre el teléfono puede estar disponible en los siguientes "
+"sitios:\n"
 
 #: html/phonedb/phone.html:88
 msgid "About entry"
