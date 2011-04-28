@@ -2834,7 +2834,7 @@ msgstr ""
 
 #: html/phonedb/search.html:5 html/phonedb/search.html.py:16
 msgid "Search Results"
-msgstr ""
+msgstr "Resultados de búsqueda"
 
 #: html/phonedb/search.html:26
 #, python-format
