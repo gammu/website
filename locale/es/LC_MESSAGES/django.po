@@ -2829,6 +2829,8 @@ msgid ""
 "\n"
 "Tested with Gammu %(version)s.\n"
 msgstr ""
+"\n"
+"Probado con Gammu %(version)s.\n"
 
 #: html/phonedb/search.html:5 html/phonedb/search.html.py:16
 msgid "Search Results"
