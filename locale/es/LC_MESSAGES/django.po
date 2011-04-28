@@ -2645,9 +2645,8 @@ msgstr ""
 "aún.\n"
 
 #: html/phonedb/index.html:71
-#, fuzzy
 msgid "Manufacturers"
-msgstr "Fabricante"
+msgstr "Fabricantes"
 
 #: html/phonedb/index.html:80
 msgid "Recently Added Phones"
