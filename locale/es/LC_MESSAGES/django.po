@@ -2722,7 +2722,7 @@ msgstr ""
 
 #: html/phonedb/new.html:40
 msgid "Please enter text 'nospam':"
-msgstr ""
+msgstr "Porfavor ingresa el texto 'nospam':"
 
 #: html/phonedb/phone.html:13 html/phonedb/vendor.html:12
 msgid "Add new record"
