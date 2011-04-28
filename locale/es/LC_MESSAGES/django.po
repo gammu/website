@@ -2691,7 +2691,7 @@ msgstr "Crear un nuevo registro"
 #: html/phonedb/new.html:8 html/phonedb/phone.html:9
 #: html/phonedb/search.html:8 html/phonedb/vendor.html:9
 msgid "Navigation"
-msgstr ""
+msgstr "NAvegación"
 
 #: html/phonedb/new.html:19
 msgid ""
