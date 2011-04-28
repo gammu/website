@@ -2742,7 +2742,7 @@ msgstr "Aprobar"
 
 #: html/phonedb/phone.html:24
 msgid "Similar Phones"
-msgstr ""
+msgstr "Teléfonos similares"
 
 #: html/phonedb/phone.html:35
 msgid "None found."
