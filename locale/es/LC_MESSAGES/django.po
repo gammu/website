@@ -3094,6 +3094,9 @@ msgid ""
 "a\n"
 "service.\n"
 msgstr ""
+"\n"
+"Ahora deberías de poder ver los errores de SMSD aún si no inicia como "
+"servicio.\n"
 
 #: html/support/buy.html:4 html/support/buy.html.py:12
 msgid "Commercial Support for Wammu and Gammu"
