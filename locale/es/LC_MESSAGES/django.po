@@ -2926,7 +2926,7 @@ msgstr "Cómo contribuir"
 
 #: html/support/bugs.html:4 html/support/bugs.html.py:12
 msgid "Reporting Bugs in Wammu and Gammu"
-msgstr ""
+msgstr "Reportar errores en Wammu y Gammu"
 
 #: html/support/bugs.html:15
 msgid ""
