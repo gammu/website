@@ -3046,6 +3046,9 @@ msgid ""
 "set\n"
 "<code>debuglevel</code> to 255:\n"
 msgstr ""
+"\n"
+"Los registros de Gammu SMSD son configurados en varios niveles, para incluir "
+"todos los mensajes, configura <code>debuglevel</code> a 255:\n"
 
 #: html/support/bugs.html:99
 msgid "Troubleshooting Windows Service"
