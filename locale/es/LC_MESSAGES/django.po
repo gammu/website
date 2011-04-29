@@ -2987,7 +2987,7 @@ msgstr ""
 
 #: html/support/bugs.html:48
 msgid "Obtaining Debugging Log"
-msgstr ""
+msgstr "Obteniendo el registro de depuración"
 
 #: html/support/bugs.html:51
 msgid ""
