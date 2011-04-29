@@ -2950,6 +2950,9 @@ msgid ""
 "<strong>Phone information</strong> such as manufacturer and model are really "
 "necessary.\n"
 msgstr ""
+"\n"
+"<strong>Información del teléfono</strong> como el fabricante y modelo son "
+"realmente necesarias.\n"
 
 #: html/support/bugs.html:30
 msgid ""
