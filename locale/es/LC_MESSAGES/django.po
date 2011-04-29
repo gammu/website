@@ -2875,6 +2875,9 @@ msgid ""
 "\n"
 "There is currently %(count)s approved phone records from this vendor.\n"
 msgstr ""
+"\n"
+"Actualmente hay %(count)s registros de teléfonos aprobados para este "
+"fabricante.\n"
 
 #: html/phonedb/vendor.html:39
 msgid ""
