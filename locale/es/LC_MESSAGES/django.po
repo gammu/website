@@ -3052,7 +3052,7 @@ msgstr ""
 
 #: html/support/bugs.html:99
 msgid "Troubleshooting Windows Service"
-msgstr ""
+msgstr "Depurando el servicio de Windows"
 
 #: html/support/bugs.html:102
 msgid ""
