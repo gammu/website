@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-29 09:14+0200\n"
-"PO-Revision-Date: 2011-04-30 01:09+0200\n"
+"PO-Revision-Date: 2011-04-30 01:10+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -2884,6 +2884,8 @@ msgid ""
 "\n"
 "There is currently none phone record from this vendor!\n"
 msgstr ""
+"\n"
+"¡Actualmente no hay registros de teléfonos de este proveedor!\n"
 
 #: html/phonedb/vendor.html:44
 #, python-format
