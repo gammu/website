@@ -3251,7 +3251,6 @@ msgid "Commercial Support"
 msgstr "Soporte comercial"
 
 #: html/support/index.html:60
-#, fuzzy
 msgid ""
 "\n"
 "Running some business application using Gammu, you might be interested in\n"
