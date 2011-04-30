@@ -3265,7 +3265,7 @@ msgstr ""
 
 #: html/support/lists.html:4 html/support/lists.html.py:12
 msgid "Mailing Lists for Wammu and Gammu"
-msgstr ""
+msgstr "Listas de correo para Wammu y Gammu"
 
 #: html/support/lists.html:16
 msgid ""
