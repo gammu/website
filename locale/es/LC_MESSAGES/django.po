@@ -3205,7 +3205,7 @@ msgstr ""
 
 #: html/support/index.html:34
 msgid "Communication with Community"
-msgstr ""
+msgstr "Comunicación y comunidad"
 
 #: html/support/index.html:37
 msgid ""
