@@ -3563,7 +3563,7 @@ msgstr "Resultado de decodificación PDU"
 #: html/tools/pduencode.html:29
 #, python-format
 msgid "Message number %(id)s"
-msgstr ""
+msgstr "Mensaje número %(id)s"
 
 #: html/tools/pdudecode.html:31
 msgid "Decoding failed with error:"
