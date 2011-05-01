@@ -3718,7 +3718,7 @@ msgstr "Borrador"
 
 #: phonedb/models.py:28
 msgid "Approved"
-msgstr ""
+msgstr "Aprobado"
 
 #: phonedb/models.py:29
 msgid "Deleted"
