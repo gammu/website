@@ -3514,9 +3514,8 @@ msgid "Useful for decoding PDU data, which you might get from your phone."
 msgstr "Útil para decodificar datos PDU, que puedes obtener de tu teléfono."
 
 #: html/tools/index.html:40
-#, fuzzy
 msgid "Other tools"
-msgstr "Otras Opciones"
+msgstr "Otras herramientas"
 
 #: html/tools/index.html:43
 msgid "List of GSM codes for countries"
