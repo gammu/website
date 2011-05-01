@@ -3805,7 +3805,7 @@ msgstr "Porfavor elige cómo se manejará el email en el próximo campo."
 
 #: phonedb/views.py:102
 msgid "Approved records"
-msgstr ""
+msgstr "Registros aprobados"
 
 #: phonedb/views.py:103
 msgid "Total records"
