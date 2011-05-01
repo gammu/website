@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-29 09:14+0200\n"
-"PO-Revision-Date: 2011-05-01 23:53+0200\n"
+"PO-Revision-Date: 2011-05-01 23:54+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -3523,7 +3523,7 @@ msgstr "Lista de códigos GSM para países"
 
 #: html/tools/index.html:44
 msgid "List of GSM codes for networks"
-msgstr ""
+msgstr "Lista de códigos GSM para redes"
 
 #: html/tools/index.html:48
 msgid ""
