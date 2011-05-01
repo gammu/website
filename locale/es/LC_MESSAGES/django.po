@@ -3580,7 +3580,7 @@ msgstr "Tipo UDH"
 
 #: html/tools/pdudecode.html:43
 msgid "UDH header"
-msgstr ""
+msgstr "Cabecera UDH"
 
 #: html/tools/pdudecode.html:44
 #, fuzzy
