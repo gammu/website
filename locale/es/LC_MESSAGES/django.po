@@ -3685,7 +3685,7 @@ msgstr "Funcionalidades"
 #: phonedb/forms.py:17
 #, python-format
 msgid "%(description)s [<a href=\"%(url)s\">Link</a>]"
-msgstr ""
+msgstr "%(description)s [<a href=\"%(url)s\">Enlace</a>]"
 
 #: phonedb/forms.py:27 phonedb/models.py:91
 msgid "Features which are working in Gammu."
