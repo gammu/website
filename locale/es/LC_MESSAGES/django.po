@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-29 09:14+0200\n"
-"PO-Revision-Date: 2011-05-02 00:00+0200\n"
+"PO-Revision-Date: 2011-05-02 00:01+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -3742,7 +3742,7 @@ msgstr "Funciones básicas de agenda (nombre y número de teléfono)"
 
 #: phonedb/models.py:37
 msgid "Enhanced phonebook entries (eg. several numbers per entry)"
-msgstr ""
+msgstr "Entradas de agenda avanzadas (por ejemplo, varios números por entrada)"
 
 #: phonedb/models.py:38
 msgid "Calendar entries"
