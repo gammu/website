@@ -3664,7 +3664,7 @@ msgstr "Redes"
 
 #: news/feeds.py:11
 msgid "Updates about Wammu and Gammu programs."
-msgstr "Actualizaciones de programas Wammu y Gammu"
+msgstr "Actualizaciones sobre Wammu y Gammu"
 
 #: phonedb/feeds.py:9
 #, fuzzy
