@@ -3655,9 +3655,8 @@ msgid "PDU decoder"
 msgstr "Decodificador PDU"
 
 #: html/tools/sidebar.html:6
-#, fuzzy
 msgid "Countries"
-msgstr "Contribuir"
+msgstr "Países"
 
 #: html/tools/sidebar.html:7
 msgid "Networks"
