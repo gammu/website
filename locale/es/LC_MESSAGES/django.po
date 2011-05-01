@@ -3444,7 +3444,7 @@ msgstr ""
 
 #: html/support/sidebar.html:2
 msgid "Support links"
-msgstr ""
+msgstr "Enlaces de soporte"
 
 #: html/support/sidebar.html:5
 msgid "Mailing list"
