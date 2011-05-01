@@ -3366,7 +3366,7 @@ msgstr ""
 
 #: html/support/online.html:4 html/support/online.html.py:12
 msgid "Online Communication for Wammu and Gammu"
-msgstr ""
+msgstr "Comunicaciones en línea para Wammu y Gammu"
 
 #: html/support/online.html:15
 msgid ""
