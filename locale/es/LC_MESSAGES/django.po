@@ -3787,7 +3787,7 @@ msgstr "Modelo utilizado en la configuración de Gammu, normalmente vacío."
 
 #: phonedb/models.py:93
 msgid "Gammu version where you tested this phone."
-msgstr ""
+msgstr "Versión de Gammu en la que se probó el teléfono."
 
 #: phonedb/models.py:94
 msgid ""
