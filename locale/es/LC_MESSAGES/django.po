@@ -3531,6 +3531,9 @@ msgid ""
 "Do you miss some functionality here? Don't hesitate and contact us on \n"
 "<a href=\"/support/lists/\">mailing lists</a> with your idea.\n"
 msgstr ""
+"\n"
+"¿Falta alguna funcionalidad aquí? No dudes en contactarnos en las <a "
+"href=\"/support/lists/\">listas de correo</a> con tu idea.\n"
 
 #: html/tools/networks.html:4 html/tools/networks.html.py:12
 msgid "GSM networks list from Gammu"
