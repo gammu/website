@@ -3583,9 +3583,8 @@ msgid "UDH header"
 msgstr "Cabecera UDH"
 
 #: html/tools/pdudecode.html:44
-#, fuzzy
 msgid "Message part"
-msgstr "Mensaje de ti"
+msgstr "Parte de mensaje"
 
 #: html/tools/pdudecode.html:46
 msgid "SMSC"
