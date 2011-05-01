@@ -3667,9 +3667,8 @@ msgid "Updates about Wammu and Gammu programs."
 msgstr "Actualizaciones sobre Wammu y Gammu"
 
 #: phonedb/feeds.py:9
-#, fuzzy
 msgid "Gammu Phone Database"
-msgstr "Base de datos de teléfonos &Gammu"
+msgstr "Base de datos de teléfonos Gammu"
 
 #: phonedb/feeds.py:11
 msgid "Gammu phone database updates."
