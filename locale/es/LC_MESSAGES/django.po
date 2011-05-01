@@ -3640,7 +3640,7 @@ msgstr "Codificador PDU utilizando Gammu"
 
 #: html/tools/pduencode.html:27
 msgid "PDU data"
-msgstr ""
+msgstr "Datos PDU"
 
 #: html/tools/sidebar.html:2 wammu/context_processors.py:39
 msgid "Tools"
