@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-29 09:14+0200\n"
-"PO-Revision-Date: 2011-04-30 17:46+0200\n"
+"PO-Revision-Date: 2011-05-01 23:41+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -3326,7 +3326,7 @@ msgstr ""
 
 #: html/support/lists.html:46
 msgid "Other Mailing Lists"
-msgstr ""
+msgstr "Otras listas de correo"
 
 #: html/support/lists.html:49
 msgid ""
