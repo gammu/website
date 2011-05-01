@@ -3491,7 +3491,7 @@ msgstr ""
 
 #: html/tools/index.html:21
 msgid "PDU decoding/encoding"
-msgstr ""
+msgstr "Codificación/decodificación PDU"
 
 #: html/tools/index.html:24
 msgid ""
