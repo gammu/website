@@ -3628,7 +3628,7 @@ msgstr "Clase"
 
 #: html/tools/pdudecode.html:73
 msgid "Bitmap"
-msgstr "Bitmap"
+msgstr "Mapa de bits"
 
 #: html/tools/pdudecode.html:74
 msgid "Bitmaps"
