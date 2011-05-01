@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-29 09:14+0200\n"
-"PO-Revision-Date: 2011-05-02 00:03+0200\n"
+"PO-Revision-Date: 2011-05-02 00:04+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -3801,7 +3801,7 @@ msgstr ""
 
 #: phonedb/models.py:97
 msgid "Please choose how will be email handled in next field."
-msgstr ""
+msgstr "Porfavor elige cómo se manejará el email en el próximo campo."
 
 #: phonedb/views.py:102
 msgid "Approved records"
