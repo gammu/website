@@ -3389,7 +3389,7 @@ msgstr ""
 
 #: html/support/online.html:24
 msgid "Jabber conference room"
-msgstr ""
+msgstr "Sala de conferencias Jabber"
 
 #: html/support/online.html:27
 msgid ""
