@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-29 09:14+0200\n"
-"PO-Revision-Date: 2011-05-01 23:56+0200\n"
+"PO-Revision-Date: 2011-05-01 23:57+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -3599,9 +3599,8 @@ msgid "Type"
 msgstr "Tipo"
 
 #: html/tools/pdudecode.html:49
-#, fuzzy
 msgid "Message Reference"
-msgstr "Mensaje de ti"
+msgstr "Referencia de mensaje"
 
 #: html/tools/pdudecode.html:57
 msgid "SMS Data Decoding Result"
