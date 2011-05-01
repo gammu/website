@@ -3813,7 +3813,7 @@ msgstr "Registros totales"
 
 #: phonedb/views.py:121
 msgid "Gammu Phone Database Feed (RSS)"
-msgstr ""
+msgstr "Sindicación de la base de datos de teléfonos Gammu (RSS)"
 
 #: phonedb/views.py:122
 msgid "Gammu Phone Database Feed (Atom)"
