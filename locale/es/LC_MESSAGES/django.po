@@ -3537,7 +3537,7 @@ msgstr ""
 
 #: html/tools/networks.html:4 html/tools/networks.html.py:12
 msgid "GSM networks list from Gammu"
-msgstr ""
+msgstr "Lista de redes GSM de Gammu"
 
 #: html/tools/networks.html:15
 msgid ""
