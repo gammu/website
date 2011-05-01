@@ -3775,7 +3775,7 @@ msgstr "El nombre del teléfono no debe incluir el nombre del fabricante: %s"
 
 #: phonedb/models.py:89
 msgid "Phone name, please exclude vendor name."
-msgstr ""
+msgstr "Nombre del teléfono, porfavor excluye el nombre del fabricante."
 
 #: phonedb/models.py:90
 msgid "Connection used in Gammu configuration."
