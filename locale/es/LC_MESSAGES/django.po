@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-29 09:14+0200\n"
-"PO-Revision-Date: 2011-05-02 00:08+0200\n"
+"PO-Revision-Date: 2011-05-02 00:10+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.5\n"
 
-# open source - código abierto
+# source is a short form of "source code" that doesn't translate too well to Spanish.
 #: downloads/models.py:32
 msgid "Source"
 msgstr "Código fuente"
