@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-29 09:14+0200\n"
-"PO-Revision-Date: 2011-05-02 00:01+0200\n"
+"PO-Revision-Date: 2011-05-02 00:02+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -3771,7 +3771,7 @@ msgstr "Tonos de llamada"
 #: phonedb/models.py:84
 #, python-format
 msgid "Phone name should not include vendor name: %s"
-msgstr ""
+msgstr "El nombre del teléfono no debe incluir el nombre del fabricante: %s"
 
 #: phonedb/models.py:89
 msgid "Phone name, please exclude vendor name."
