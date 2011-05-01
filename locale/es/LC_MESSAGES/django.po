@@ -3660,7 +3660,7 @@ msgstr "Países"
 
 #: html/tools/sidebar.html:7
 msgid "Networks"
-msgstr ""
+msgstr "Redes"
 
 #: news/feeds.py:11
 msgid "Updates about Wammu and Gammu programs."
