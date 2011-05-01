@@ -3414,7 +3414,7 @@ msgstr ""
 
 #: html/support/online.html:37
 msgid "IRC"
-msgstr ""
+msgstr "IRC"
 
 #: html/support/online.html:40
 msgid ""
