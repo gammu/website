@@ -3821,7 +3821,7 @@ msgstr "Sindicación de la base de datos de teléfonos Gammu (Atom)"
 
 #: phonedb/views.py:443
 msgid "Phone record has been created."
-msgstr "Se creó el registro del teléfono"
+msgstr "Se creó el registro del teléfono."
 
 #: tools/forms.py:7
 msgid "PDU text"
