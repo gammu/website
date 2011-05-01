@@ -3652,7 +3652,7 @@ msgstr "Codificador PDU"
 
 #: html/tools/sidebar.html:5
 msgid "PDU decoder"
-msgstr ""
+msgstr "Decodificador PDU"
 
 #: html/tools/sidebar.html:6
 #, fuzzy
