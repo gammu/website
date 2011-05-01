@@ -3680,7 +3680,7 @@ msgstr "Buscar texto"
 
 #: phonedb/forms.py:14 phonedb/forms.py:25
 msgid "Features"
-msgstr ""
+msgstr "Funcionalidades"
 
 #: phonedb/forms.py:17
 #, python-format
