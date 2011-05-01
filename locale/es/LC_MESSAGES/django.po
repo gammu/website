@@ -3648,7 +3648,7 @@ msgstr "Herramientas"
 
 #: html/tools/sidebar.html:4
 msgid "PDU encoder"
-msgstr ""
+msgstr "Codificador PDU"
 
 #: html/tools/sidebar.html:5
 msgid "PDU decoder"
