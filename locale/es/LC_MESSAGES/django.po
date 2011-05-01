@@ -3794,6 +3794,10 @@ msgid ""
 "Any note about this phone and Gammu support for it. You can use <a href="
 "\"http://daringfireball.net/projects/markdown/syntax\">markdown markup</a>."
 msgstr ""
+"Cualquier nota sobre este teléfono y el soporte de Gammu para el mismo. "
+"Puedes utilizar <a "
+"href=\"http://daringfireball.net/projects/markdown/syntax\">markdown "
+"markup</a>."
 
 #: phonedb/models.py:97
 msgid "Please choose how will be email handled in next field."
