@@ -3511,7 +3511,7 @@ msgstr "Útil para crear datos PDU, los que puedes enviar al teléfono luego."
 
 #: html/tools/index.html:36
 msgid "Useful for decoding PDU data, which you might get from your phone."
-msgstr ""
+msgstr "Útil para decodificar datos PDU, que puedes obtener de tu teléfono."
 
 #: html/tools/index.html:40
 #, fuzzy
