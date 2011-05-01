@@ -3636,7 +3636,7 @@ msgstr "Mapas de bits"
 
 #: html/tools/pduencode.html:5 html/tools/pduencode.html.py:13
 msgid "PDU encoder using Gammu"
-msgstr ""
+msgstr "Codificador PDU utilizando Gammu"
 
 #: html/tools/pduencode.html:27
 msgid "PDU data"
