@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-29 09:14+0200\n"
-"PO-Revision-Date: 2011-05-01 23:58+0200\n"
+"PO-Revision-Date: 2011-05-01 23:59+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -3672,7 +3672,7 @@ msgstr "Base de datos de teléfonos Gammu"
 
 #: phonedb/feeds.py:11
 msgid "Gammu phone database updates."
-msgstr ""
+msgstr "Actualizaciones de la base de datos de teléfonos Gammu"
 
 #: phonedb/forms.py:12
 msgid "Search text"
