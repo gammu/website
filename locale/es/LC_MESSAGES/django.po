@@ -3825,7 +3825,7 @@ msgstr "Se creó el registro del teléfono."
 
 #: tools/forms.py:7
 msgid "PDU text"
-msgstr ""
+msgstr "Texto PDU"
 
 #: tools/forms.py:10
 msgid "You can provide more messages, each on seaprate line."
