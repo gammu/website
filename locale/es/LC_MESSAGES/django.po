@@ -3817,7 +3817,7 @@ msgstr "Sindicación de la base de datos de teléfonos Gammu (RSS)"
 
 #: phonedb/views.py:122
 msgid "Gammu Phone Database Feed (Atom)"
-msgstr ""
+msgstr "Sindicación de la base de datos de teléfonos Gammu (Atom)"
 
 #: phonedb/views.py:443
 msgid "Phone record has been created."
