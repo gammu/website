@@ -3437,6 +3437,10 @@ msgid ""
 "notifications\n"
 "there about every commit made to the Gammu source repository.\n"
 msgstr ""
+"\n"
+"También encontrarás un robot llamado algo similar a CIA-42 que sólo envía "
+"notificaciones sobre cada commit realizado al repositorio de código de "
+"Gammu.\n"
 
 #: html/support/sidebar.html:2
 msgid "Support links"
