@@ -3612,7 +3612,7 @@ msgstr "Indicador MMS"
 
 #: html/tools/pdudecode.html:67
 msgid "Title"
-msgstr ""
+msgstr "Título"
 
 #: html/tools/pdudecode.html:68
 msgid "Sender"
