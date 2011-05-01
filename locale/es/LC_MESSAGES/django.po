@@ -3604,7 +3604,7 @@ msgstr "Referencia de mensaje"
 
 #: html/tools/pdudecode.html:57
 msgid "SMS Data Decoding Result"
-msgstr ""
+msgstr "Resultado de decodificación de datos SMS"
 
 #: html/tools/pdudecode.html:66
 msgid "MMS indicator"
