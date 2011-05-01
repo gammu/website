@@ -3460,7 +3460,7 @@ msgstr "Sala de conferencias Jabber"
 
 #: html/tools/countries.html:4 html/tools/countries.html.py:12
 msgid "GSM countries list from Gammu"
-msgstr ""
+msgstr "Lista de países GSM de Gammu"
 
 #: html/tools/countries.html:15
 msgid ""
