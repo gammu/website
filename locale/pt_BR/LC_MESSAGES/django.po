@@ -2838,7 +2838,7 @@ msgstr "Mensagem Multimedia"
 
 #: phonedb/models.py:36
 msgid "Basic phonebook functions (name and phone number)"
-msgstr ""
+msgstr "Funções básicas da agenda (nome e número de telefone)"
 
 #: phonedb/models.py:37
 msgid "Enhanced phonebook entries (eg. several numbers per entry)"
