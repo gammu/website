@@ -167,7 +167,7 @@ msgstr "SMSD"
 
 #: html/base.html:123 wammu/context_processors.py:34
 msgid "Support"
-msgstr ""
+msgstr "Suporte"
 
 #: html/base.html:125
 msgid "Mailing lists"
