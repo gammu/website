@@ -2630,7 +2630,7 @@ msgstr "Lista de códigos GSM por países"
 
 #: html/tools/index.html:44
 msgid "List of GSM codes for networks"
-msgstr ""
+msgstr "Lista de códigos GSM por redes"
 
 #: html/tools/index.html:48
 msgid ""
