@@ -1651,7 +1651,7 @@ msgstr "DOAP para Wammu"
 
 #: html/downloads/index.html:46
 msgid "DOAP for Gammu"
-msgstr ""
+msgstr "DOAP para Gammu"
 
 #: html/downloads/index.html:47
 msgid "PAD for Wammu"
