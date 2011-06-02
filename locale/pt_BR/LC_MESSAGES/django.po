@@ -208,7 +208,7 @@ msgstr ""
 #: html/docs/sidebar.html:2 html/support/sidebar.html:4
 #: wammu/context_processors.py:37
 msgid "Documentation"
-msgstr ""
+msgstr "Documentação"
 
 #: html/base.html:143 html/docs/sidebar.html:5
 msgid "FAQ"
