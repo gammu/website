@@ -2789,7 +2789,7 @@ msgstr "%(description)s [<a href=\"%(url)s\">Link</a>]"
 
 #: phonedb/forms.py:27 phonedb/models.py:91
 msgid "Features which are working in Gammu."
-msgstr "Características que  estão trabalhando em Gammu."
+msgstr "Características que estão trabalhando em Gammu."
 
 #: phonedb/forms.py:29
 #, python-format
