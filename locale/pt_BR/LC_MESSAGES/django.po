@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-29 09:14+0200\n"
-"PO-Revision-Date: 2011-06-02 22:56+0200\n"
+"PO-Revision-Date: 2011-06-02 23:07+0200\n"
 "Last-Translator: Andrei Falbot <falbot@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -2933,7 +2933,7 @@ msgstr "Unicode"
 
 #: tools/forms.py:16
 msgid "Recipient"
-msgstr "recipiente"
+msgstr "Recipiente"
 
 #: tools/forms.py:17
 msgid "SMSC number"
