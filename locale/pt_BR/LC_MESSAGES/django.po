@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-29 09:14+0200\n"
-"PO-Revision-Date: 2011-06-02 23:22+0200\n"
+"PO-Revision-Date: 2011-06-02 23:23+0200\n"
 "Last-Translator: Andrei Falbot <falbot@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -2370,7 +2370,7 @@ msgstr ""
 
 #: html/support/index.html:4 html/support/index.html.py:14
 msgid "Support for Wammu and Gammu"
-msgstr ""
+msgstr "Suporte para Wammu e Gammu"
 
 #: html/support/index.html:17
 msgid ""
