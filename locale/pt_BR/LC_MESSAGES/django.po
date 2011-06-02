@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-29 09:14+0200\n"
-"PO-Revision-Date: 2011-06-02 23:15+0200\n"
+"PO-Revision-Date: 2011-06-02 23:16+0200\n"
 "Last-Translator: Andrei Falbot <falbot@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -2744,7 +2744,7 @@ msgstr ""
 
 #: html/tools/sidebar.html:2 wammu/context_processors.py:39
 msgid "Tools"
-msgstr ""
+msgstr "Ferramentas"
 
 #: html/tools/sidebar.html:4
 msgid "PDU encoder"
