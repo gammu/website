@@ -2326,7 +2326,7 @@ msgstr ""
 
 #: html/support/buy.html:4 html/support/buy.html.py:12
 msgid "Commercial Support for Wammu and Gammu"
-msgstr ""
+msgstr "Suporte Comercial para Wammu e Gammu"
 
 #: html/support/buy.html:15
 msgid ""
