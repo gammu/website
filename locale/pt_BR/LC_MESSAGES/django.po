@@ -2822,7 +2822,7 @@ msgstr ""
 
 #: phonedb/models.py:29
 msgid "Deleted"
-msgstr "Excluídos"
+msgstr "Excluído"
 
 #: phonedb/models.py:33
 msgid "Phone information"
