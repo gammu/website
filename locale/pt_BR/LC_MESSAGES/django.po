@@ -145,7 +145,7 @@ msgstr ""
 
 #: html/base.html:114 html/index.html:19
 msgid "About"
-msgstr ""
+msgstr "Sobre"
 
 #: html/base.html:116 html/gammu.html:4 html/gammu.html.py:19
 #: html/contribute/translate.html:59
