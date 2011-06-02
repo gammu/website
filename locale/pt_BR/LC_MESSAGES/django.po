@@ -163,7 +163,7 @@ msgstr ""
 
 #: html/base.html:119
 msgid "SMSD"
-msgstr ""
+msgstr "SMSD"
 
 #: html/base.html:123 wammu/context_processors.py:34
 msgid "Support"
