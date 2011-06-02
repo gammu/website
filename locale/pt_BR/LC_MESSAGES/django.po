@@ -1659,7 +1659,7 @@ msgstr "PAD para Wammu"
 
 #: html/downloads/index.html:48
 msgid "PAD for Gammu"
-msgstr ""
+msgstr "PAD para Gammu"
 
 #: html/downloads/list.html:8
 #, python-format
