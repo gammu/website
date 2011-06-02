@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-29 09:14+0200\n"
-"PO-Revision-Date: 2011-06-02 23:08+0200\n"
+"PO-Revision-Date: 2011-06-02 23:09+0200\n"
 "Last-Translator: Andrei Falbot <falbot@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -2810,7 +2810,7 @@ msgstr "Não exiba o email inteiro"
 
 #: phonedb/models.py:23
 msgid "Insert NOSPAM text at random position"
-msgstr "Insira NOSPAM texto em posição aleatória"
+msgstr "Insira o texto NOSPAM em posição aleatória"
 
 #: phonedb/models.py:27
 msgid "Draft"
