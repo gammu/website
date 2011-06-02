@@ -212,7 +212,7 @@ msgstr "Documentação"
 
 #: html/base.html:143 html/docs/sidebar.html:5
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: html/base.html:144 html/docs/sidebar.html:7 html/sidebars/common.html:3
 #: phonedb/views.py:101
