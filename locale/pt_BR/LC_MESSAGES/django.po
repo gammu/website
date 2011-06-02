@@ -2626,7 +2626,7 @@ msgstr "Outras ferramentas"
 
 #: html/tools/index.html:43
 msgid "List of GSM codes for countries"
-msgstr ""
+msgstr "Lista de códigos GSM por países"
 
 #: html/tools/index.html:44
 msgid "List of GSM codes for networks"
