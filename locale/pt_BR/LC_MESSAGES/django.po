@@ -2756,7 +2756,7 @@ msgstr ""
 
 #: html/tools/sidebar.html:6
 msgid "Countries"
-msgstr ""
+msgstr "Países"
 
 #: html/tools/sidebar.html:7
 msgid "Networks"
