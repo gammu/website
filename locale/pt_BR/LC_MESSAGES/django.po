@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-29 09:14+0200\n"
-"PO-Revision-Date: 2011-06-02 22:48+0200\n"
+"PO-Revision-Date: 2011-06-02 22:49+0200\n"
 "Last-Translator: Andrei Falbot <falbot@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -308,7 +308,7 @@ msgstr ""
 
 #: html/donate.html:28
 msgid "Donate Money"
-msgstr ""
+msgstr "Doar Dinheiro"
 
 #: html/donate.html:30
 msgid ""
