@@ -2794,7 +2794,7 @@ msgstr "Características que estão trabalhando em Gammu."
 #: phonedb/forms.py:29
 #, python-format
 msgid "%(description)s (%(name)s)"
-msgstr ""
+msgstr "%(description)s (%(name)s)"
 
 #: phonedb/models.py:20
 msgid "Use [at] and [dot]"
