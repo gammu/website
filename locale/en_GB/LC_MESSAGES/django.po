@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-29 09:14+0200\n"
+"POT-Creation-Date: 2011-06-15 09:07+0200\n"
 "PO-Revision-Date: 2011-04-05 16:13+0200\n"
 "Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -504,6 +504,13 @@ msgstr ""
 "\n"
 "Python bindings for libGammu, so that you can use it from Python scripts.\n"
 
+#: html/gammu-family.html:35
+msgid ""
+"\n"
+"Third party open source web-based SMS (Short Message Service) management "
+"which uses <a href=\"/smsd\">Gammu SMSD</a>.\n"
+msgstr ""
+
 #: html/gammu-features.html:3
 msgid ""
 "\n"
@@ -742,7 +749,7 @@ msgstr ""
 "Gammu is now not only a single program but there is lot of useful tools\n"
 "sharing same library.\n"
 
-#: html/index.html:66
+#: html/index.html:66 html/phonedb/index.html:36
 msgid "Sponsors"
 msgstr "Sponsors"
 
@@ -2604,7 +2611,7 @@ msgstr ""
 "Database of supported phones in Gammu and Wammu, the software for managing "
 "GSM cell phones."
 
-#: html/phonedb/index.html:5 html/phonedb/index.html.py:39
+#: html/phonedb/index.html:5 html/phonedb/index.html.py:47
 #: html/phonedb/new.html:5 html/phonedb/phone.html:6
 #: html/phonedb/search.html:5 html/phonedb/vendor.html:6
 msgid "Gammu Phone Database "
@@ -2624,7 +2631,7 @@ msgstr "Feature Search"
 msgid "CSV"
 msgstr "CSV"
 
-#: html/phonedb/index.html:42
+#: html/phonedb/index.html:50
 msgid ""
 "\n"
 "This page tries to collect list of phones supported by <a href=\"/libgammu"
@@ -2640,7 +2647,7 @@ msgstr ""
 "You can find more information about mobile phones on <a\n"
 "href=\"http://tuxmobil.org/phones_linux.html\">TuxMobil</a>.\n"
 
-#: html/phonedb/index.html:49
+#: html/phonedb/index.html:57
 msgid ""
 "\n"
 "This list is filled in by users and thus there can be no warranty\n"
@@ -2658,7 +2665,7 @@ msgstr ""
 "users\n"
 "mailing list</a> is open to questions about supported phones.\n"
 
-#: html/phonedb/index.html:58
+#: html/phonedb/index.html:66
 msgid ""
 "\n"
 "As this list is updated by users, you are welcome to <strong><a href=\"/"
@@ -2667,38 +2674,38 @@ msgstr ""
 "\n"
 "As this list is updated by users, you are welcome to <strong><a href=\"/"
 "phones/new/\">add new records</a></strong>.\n"
-
-#: html/phonedb/index.html:63
-msgid ""
-"\n"
-"Generally any phone capable of AT commands or IrMC should be supported. "
-"Also\n"
-"any Nokia phone using Nokia OS should work. Symbian phones are poorly\n"
-"supported, for models with Symbian 9.0 and older you can install gnapplet "
-"to\n"
-"phone to get some functionality, newer ones do not have support so far.\n"
-msgstr ""
-"\n"
-"Generally any phone capable of AT commands or IrMC should be supported. "
-"Also\n"
-"any Nokia phone using Nokia OS should work. Symbian phones are poorly\n"
-"supported, for models with Symbian 9.0 and older you can install gnapplet "
-"to\n"
-"phone to get some functionality, newer ones do not have support so far.\n"
 
 #: html/phonedb/index.html:71
+msgid ""
+"\n"
+"Generally any phone capable of AT commands or IrMC should be supported. "
+"Also\n"
+"any Nokia phone using Nokia OS should work. Symbian phones are poorly\n"
+"supported, for models with Symbian 9.0 and older you can install gnapplet "
+"to\n"
+"phone to get some functionality, newer ones do not have support so far.\n"
+msgstr ""
+"\n"
+"Generally any phone capable of AT commands or IrMC should be supported. "
+"Also\n"
+"any Nokia phone using Nokia OS should work. Symbian phones are poorly\n"
+"supported, for models with Symbian 9.0 and older you can install gnapplet "
+"to\n"
+"phone to get some functionality, newer ones do not have support so far.\n"
+
+#: html/phonedb/index.html:79
 msgid "Manufacturers"
 msgstr "Manufacturers"
 
-#: html/phonedb/index.html:80
+#: html/phonedb/index.html:88
 msgid "Recently Added Phones"
 msgstr "Recently Added Phones"
 
-#: html/phonedb/index.html:83
+#: html/phonedb/index.html:91
 msgid "Phone Records Summary"
 msgstr "Phone Records Summary"
 
-#: html/phonedb/index.html:87
+#: html/phonedb/index.html:95
 msgid ""
 "\n"
 "On following chart, you can see how number of records in phone database\n"

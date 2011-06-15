@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-29 09:14+0200\n"
+"POT-Creation-Date: 2011-06-15 09:07+0200\n"
 "PO-Revision-Date: 2011-05-24 20:10+0200\n"
-"Last-Translator:  <canin@in.com>\n"
+"Last-Translator: <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -510,6 +510,13 @@ msgstr ""
 "\n"
 "Python Anbindung für libGammu, ermöglicht den Einsatz von Python Skripten.\n"
 
+#: html/gammu-family.html:35
+msgid ""
+"\n"
+"Third party open source web-based SMS (Short Message Service) management "
+"which uses <a href=\"/smsd\">Gammu SMSD</a>.\n"
+msgstr ""
+
 #: html/gammu-features.html:3
 msgid ""
 "\n"
@@ -752,7 +759,7 @@ msgstr ""
 "Gammu ist kein einzelnes Programm (mehr), aber eine Sammlung nützlicher "
 "Hilfsmittel, die alle dieselben Bibliotheken nutzen.\n"
 
-#: html/index.html:66
+#: html/index.html:66 html/phonedb/index.html:36
 msgid "Sponsors"
 msgstr "Sponsoren"
 
@@ -2706,7 +2713,7 @@ msgstr ""
 "Unterstützte Telefonmodelle - Datenbank von Gammu und Wammu, der Software "
 "zur Nutzung und Verwaltung von GSM Handys."
 
-#: html/phonedb/index.html:5 html/phonedb/index.html.py:39
+#: html/phonedb/index.html:5 html/phonedb/index.html.py:47
 #: html/phonedb/new.html:5 html/phonedb/phone.html:6
 #: html/phonedb/search.html:5 html/phonedb/vendor.html:6
 msgid "Gammu Phone Database "
@@ -2726,7 +2733,7 @@ msgstr "Funktionensuche"
 msgid "CSV"
 msgstr "CSV"
 
-#: html/phonedb/index.html:42
+#: html/phonedb/index.html:50
 msgid ""
 "\n"
 "This page tries to collect list of phones supported by <a href=\"/libgammu"
@@ -2744,7 +2751,7 @@ msgstr ""
 "Sie können weitere Informationen über Mobiltelefone auf <a href=\"http://"
 "tuxmobil.org/phones_linux.html\">TuxMobil</a> finden.\n"
 
-#: html/phonedb/index.html:49
+#: html/phonedb/index.html:57
 msgid ""
 "\n"
 "This list is filled in by users and thus there can be no warranty\n"
@@ -2763,7 +2770,7 @@ msgstr ""
 "users\">Gammu-Benutzer Mailing Liste</a> offen für Fragen über unterstützte "
 "Telefone.\n"
 
-#: html/phonedb/index.html:58
+#: html/phonedb/index.html:66
 msgid ""
 "\n"
 "As this list is updated by users, you are welcome to <strong><a href=\"/"
@@ -2774,7 +2781,7 @@ msgstr ""
 "dazu eingeladen, <strong><a href=\"/phones/new/\">einen neuen Eintrag zu "
 "gestalten</a></strong>.\n"
 
-#: html/phonedb/index.html:63
+#: html/phonedb/index.html:71
 msgid ""
 "\n"
 "Generally any phone capable of AT commands or IrMC should be supported. "
@@ -2793,19 +2800,19 @@ msgstr ""
 "einige Funktionen zu erhalten - für neuere Versionen gibt es derzeit "
 "keinerlei Unterstützung.\n"
 
-#: html/phonedb/index.html:71
+#: html/phonedb/index.html:79
 msgid "Manufacturers"
 msgstr "Hersteller"
 
-#: html/phonedb/index.html:80
+#: html/phonedb/index.html:88
 msgid "Recently Added Phones"
 msgstr "Zuletzt hinzugefügte Telefone"
 
-#: html/phonedb/index.html:83
+#: html/phonedb/index.html:91
 msgid "Phone Records Summary"
 msgstr "Zusammenfassung der Meldungen bzgl. Telefonen"
 
-#: html/phonedb/index.html:87
+#: html/phonedb/index.html:95
 msgid ""
 "\n"
 "On following chart, you can see how number of records in phone database\n"

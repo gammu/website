@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-29 09:14+0200\n"
+"POT-Creation-Date: 2011-06-15 09:07+0200\n"
 "PO-Revision-Date: 2010-08-17 14:22+0200\n"
 "Last-Translator: Maciej Szeptuch <matthiaspriv@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -477,6 +477,13 @@ msgid ""
 "Python bindings for libGammu, so that you can use it from Python scripts.\n"
 msgstr ""
 
+#: html/gammu-family.html:35
+msgid ""
+"\n"
+"Third party open source web-based SMS (Short Message Service) management "
+"which uses <a href=\"/smsd\">Gammu SMSD</a>.\n"
+msgstr ""
+
 #: html/gammu-features.html:3
 msgid ""
 "\n"
@@ -641,7 +648,7 @@ msgid ""
 "sharing same library.\n"
 msgstr ""
 
-#: html/index.html:66
+#: html/index.html:66 html/phonedb/index.html:36
 msgid "Sponsors"
 msgstr ""
 
@@ -1998,7 +2005,7 @@ msgid ""
 "GSM cell phones."
 msgstr ""
 
-#: html/phonedb/index.html:5 html/phonedb/index.html.py:39
+#: html/phonedb/index.html:5 html/phonedb/index.html.py:47
 #: html/phonedb/new.html:5 html/phonedb/phone.html:6
 #: html/phonedb/search.html:5 html/phonedb/vendor.html:6
 #, fuzzy
@@ -2019,7 +2026,7 @@ msgstr ""
 msgid "CSV"
 msgstr ""
 
-#: html/phonedb/index.html:42
+#: html/phonedb/index.html:50
 msgid ""
 "\n"
 "This page tries to collect list of phones supported by <a href=\"/libgammu"
@@ -2029,7 +2036,7 @@ msgid ""
 "href=\"http://tuxmobil.org/phones_linux.html\">TuxMobil</a>.\n"
 msgstr ""
 
-#: html/phonedb/index.html:49
+#: html/phonedb/index.html:57
 msgid ""
 "\n"
 "This list is filled in by users and thus there can be no warranty\n"
@@ -2040,14 +2047,14 @@ msgid ""
 "mailing list</a> is open to questions about supported phones.\n"
 msgstr ""
 
-#: html/phonedb/index.html:58
+#: html/phonedb/index.html:66
 msgid ""
 "\n"
 "As this list is updated by users, you are welcome to <strong><a href=\"/"
 "phones/new/\">add new records</a></strong>.\n"
 msgstr ""
 
-#: html/phonedb/index.html:63
+#: html/phonedb/index.html:71
 msgid ""
 "\n"
 "Generally any phone capable of AT commands or IrMC should be supported. "
@@ -2058,20 +2065,20 @@ msgid ""
 "phone to get some functionality, newer ones do not have support so far.\n"
 msgstr ""
 
-#: html/phonedb/index.html:71
+#: html/phonedb/index.html:79
 #, fuzzy
 msgid "Manufacturers"
 msgstr "Producent"
 
-#: html/phonedb/index.html:80
+#: html/phonedb/index.html:88
 msgid "Recently Added Phones"
 msgstr ""
 
-#: html/phonedb/index.html:83
+#: html/phonedb/index.html:91
 msgid "Phone Records Summary"
 msgstr ""
 
-#: html/phonedb/index.html:87
+#: html/phonedb/index.html:95
 msgid ""
 "\n"
 "On following chart, you can see how number of records in phone database\n"
