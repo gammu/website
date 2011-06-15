@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-06-15 09:07+0200\n"
-"PO-Revision-Date: 2011-01-17 14:39+0100\n"
+"PO-Revision-Date: 2011-06-15 09:08+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -714,7 +714,7 @@ msgstr ""
 
 #: html/index.html:66 html/phonedb/index.html:36
 msgid "Sponsors"
-msgstr ""
+msgstr "Podporují"
 
 #: html/libgammu.html:4 html/libgammu.html.py:15
 msgid "libGammu"
@@ -3038,7 +3038,7 @@ msgstr "Jabber konference"
 
 #: html/tools/countries.html:4 html/tools/countries.html.py:12
 msgid "GSM countries list from Gammu"
-msgstr ""
+msgstr "Seznam zemí GSM sítí v Gammu"
 
 #: html/tools/countries.html:15
 msgid ""
@@ -3135,7 +3135,7 @@ msgstr "Text"
 
 #: html/tools/pdudecode.html:42
 msgid "UDH type"
-msgstr ""
+msgstr "Typ UDH"
 
 #: html/tools/pdudecode.html:43
 msgid "UDH header"
