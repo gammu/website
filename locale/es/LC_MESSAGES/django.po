@@ -508,9 +508,9 @@ msgid ""
 "\n"
 "Third party open source web-based SMS (Short Message Service) management "
 "which uses <a href=\"/smsd\">Gammu SMSD</a>.\n"
-msgstr ""
+msgstr "\n"
 "Manejador web de SMS («Short Message Service») de código abierto de terceras "
-"partes que utiliza <a href=\"/smsd\">Gammu SMSD</a>."
+"partes que utiliza <a href=\"/smsd\">Gammu SMSD</a>.\n"
 
 #: html/gammu-features.html:3
 msgid ""
