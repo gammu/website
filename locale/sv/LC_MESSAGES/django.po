@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-06-15 09:07+0200\n"
-"PO-Revision-Date: 2011-06-24 17:23+0200\n"
+"PO-Revision-Date: 2011-06-24 17:24+0200\n"
 "Last-Translator:  <ololizoz@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sv\n"
@@ -37,7 +37,7 @@ msgstr "%(program)s test release %(version)s"
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
-msgstr ""
+msgstr "Åtkomst nekad"
 
 #: html/403.html:11 html/404.html:11
 msgid ""
