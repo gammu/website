@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-06-15 09:07+0200\n"
-"PO-Revision-Date: 2011-06-24 15:21+0200\n"
+"PO-Revision-Date: 2011-06-24 17:23+0200\n"
 "Last-Translator:  <ololizoz@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sv\n"
@@ -28,7 +28,7 @@ msgstr ""
 #: downloads/models.py:176
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr "%(program)s stabil release %(version)s"
+msgstr "%(program)s stabil utgåva %(version)s"
 
 #: downloads/models.py:181
 #, python-format
