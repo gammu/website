@@ -1478,7 +1478,7 @@ msgstr ""
 "Sin embargo, la forma más sencilla es utilizar <code>git format-patch</code> "
 "que nos permite incorporar los cambios fácilmente. Si no utilizas git, "
 "cualquier diff unificado servirá también. Puedes enviar parches a la <a href="
-"\"/support/lists\">listas de correo</a> o al <a href=/support/bugs\">sistema "
+"\"/support/lists\">listas de correo</a> o al <a href=\"/support/bugs\">sistema "
 "de seguimiento de errores</a>.\n"
 
 #: html/contribute/code.html:112
