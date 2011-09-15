@@ -1,7 +1,7 @@
 {% load i18n %}
 <ul>
 {% for platform in platforms %}
-{% if platform != 'win32' or program_name != 'wammu' %}
+{% if platform.0 != 'win32' or program_name != 'wammu' %}
 <li><a href="/download/{{ program_name }}/{{ platform.0 }}">{{ platform.1}}</a></li>
 {% endif %}
 {% endfor %}
