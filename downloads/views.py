@@ -155,7 +155,10 @@ def pad(request, program):
     downloads = get_current_downloads(program, 'win32')
 
     release = downloads[0][0]
-    download = downloads[0][1].filter(Q(location__icontains = 'setup.exe') | Q(location__icontains = 'windows.exe'))[0]
+    if program == 'wammu':
+        download = downloads[0][1].filter(Q(location__icontains = '.zip'))[0]
+    else:
+        download = downloads[0][1].filter(Q(location__icontains = 'setup.exe') | Q(location__icontains = 'windows.exe'))[0]
 
     return render_to_response('downloads/pad/%s.xml' % program, RequestContext(request, {
         'mirrors': mirrors,
