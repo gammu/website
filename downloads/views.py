@@ -156,7 +156,7 @@ def pad(request, program):
 
     release = downloads[0][0]
     if program == 'wammu':
-        download = downloads[0][1].filter(Q(location__icontains = '.zip'))[0]
+        download = downloads[0][1].filter(location__icontains = '.zip')[0]
     else:
         download = downloads[0][1].filter(Q(location__icontains = 'setup.exe') | Q(location__icontains = 'windows.exe'))[0]
 
