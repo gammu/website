@@ -70,9 +70,9 @@
         <English>
             <Keywords>mobile,phone,handy,cell,nokia,ericssonn,sony-ericssonn,alcatel,siemens,manager,calendar,contacts,sms,message</Keywords>
             <Char_Desc_45>A mobile phone manager.</Char_Desc_45>
-            <Char_Desc_450>Wammu is a mobile phone manager that uses Gammu as its backend. It works with any phone that Gammu supports, including many models from Nokia, Siemens, and Alcatel. It has complete support (read, edit, delete, copy) for contacts, todo, and calendar. It can read, save, and send SMS. It includes an SMS composer for multi-part SMS messages, and it can display SMS messages that include pictures.</Char_Desc_450>
             <Char_Desc_80>Wammu is a mobile phone manager that uses Gammu as its backend.</Char_Desc_80>
             <Char_Desc_250>Wammu is a mobile phone manager that uses Gammu as its backend. It works with any phone that Gammu supports, including many models from Nokia, Siemens, Sony-Ericsson and Alcatel. It supports contacts, todo, messages and calendar.</Char_Desc_250>
+            <Char_Desc_450>Wammu is a mobile phone manager that uses Gammu as its backend. It works with any phone that Gammu supports, including many models from Nokia, Siemens, and Alcatel. It has complete support (read, edit, delete, copy) for contacts, todo, and calendar. It can read, save, and send SMS. It includes an SMS composer for multi-part SMS messages, and it can display SMS messages that include pictures.</Char_Desc_450>
             <Char_Desc_2000>Wammu is a mobile phone manager that uses Gammu as its backend. It works with any phone that Gammu supports, including many models from Nokia, Siemens, and Alcatel. It has complete support (read, edit, delete, copy) for contacts, todo, and calendar. It can read, save, and send SMS. It includes an SMS composer for multi-part SMS messages, and it can display SMS messages that include pictures. Currently, only text and predefined bitmaps or sounds can be edited in the SMS composer. It can export messages to an IMAP4 server (or other email storage).</Char_Desc_2000>
         </English>
         <German>
@@ -87,7 +87,6 @@
             <Keywords>mobil,telefon,nokia,ericssonn,sony-ericssonn,alcatel,siemens,manažer,kalendář,kontakty,sms,zpráva</Keywords>
             <Char_Desc_45>Program pro práci s mobilními telefony.</Char_Desc_45>
             <Char_Desc_80>Program pro práci s mnoha mobilními telefony všech značek.</Char_Desc_80>
-
             <Char_Desc_250>Program pro práci s mnoha mobilními telefony všech značek. Mezi podporované patří Nokia, Alcatel, Siemens, Sagem, Samsung, Sony Ericson a další.</Char_Desc_250>
             <Char_Desc_450>Program pro práci s mnoha mobilními telefony všech značek. Mezi podporované patří Nokia, Alcatel, Siemens, Sagem, Samsung, Sony Ericson a další. Snadná práce s s telefonním seznamem, zprávami, kalendářem a úkoly je samozřejmostí, veškerá data je možné exportovat do mnoha formátů (například SMS zprávy je možné exportovat i jako maily na IMAP server).</Char_Desc_450>
             <Char_Desc_2000>Program pro práci s mnoha mobilními telefony všech značek. Mezi podporované patří Nokia, Alcatel, Siemens, Sagem, Samsung, Sony Ericson a další. Snadná práce s s telefonním seznamem, zprávami, kalendářem a úkoly je samozřejmostí, veškerá data je možné exportovat do mnoha formátů (například SMS zprávy je možné exportovat i jako maily na IMAP server).</Char_Desc_2000>
