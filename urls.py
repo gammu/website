@@ -76,7 +76,6 @@ class PagesSitemap(Sitemap):
             ('/downloads/gammu/win32/', None, 0.7),
             ('/downloads/wammu/', None, 0.7),
             ('/downloads/wammu/source/', None, 0.7),
-            ('/downloads/wammu/win32/', None, 0.7),
             ('/links/', None, 0.4),
             ]
     def location(self, item):
