@@ -8,8 +8,8 @@
 {% block sidebar_top %}
 <h3>{% trans "Navigation" %}</h3>
 <ul>
-<li><a href="/phones">Phones Database</a></li>
-<li><a href="/phones/new?vendor={{ vendor.slug }}">{% trans "Add new record" %}</a></li>
+<li><a href="/phones/">Phones Database</a></li>
+<li><a href="/phones/new/?vendor={{ vendor.slug }}">{% trans "Add new record" %}</a></li>
 </ul>
 {% endblock %}
 
@@ -42,7 +42,7 @@ There is currently none phone record from this vendor!
 {% endif %}
 
 {% blocktrans with vendor.slug as slug %}
-To change existing entries, simply <a href="/phones/new?vendor={{ slug }}">add new one</a>, they will be reviewed and the
+To change existing entries, simply <a href="/phones/new/?vendor={{ slug }}">add new one</a>, they will be reviewed and the
 old ones will get deleted eventually.
 {% endblocktrans %}
 </p>
