@@ -223,6 +223,7 @@ urlpatterns = patterns('',
 
     # Broken links
     (r'^(?P<link>.*)/\)\.$', 'django.views.generic.simple.redirect_to', {'url': '/%(link)s'}),
+    (r'^(?P<link>.*)/\)index\.php$', 'django.views.generic.simple.redirect_to', {'url': '/%(link)s'}),
     (r'^(?P<link>phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/),.*', 'django.views.generic.simple.redirect_to', {'url': '/%(link)s'}),
     (r'^snapshot/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
     (r'^docs/faq/$', 'django.views.generic.simple.redirect_to', {'url': '/docs/manual/faq/'}),
