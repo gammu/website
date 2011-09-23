@@ -2628,7 +2628,6 @@ msgid "CSV"
 msgstr "CSV"
 
 #: html/phonedb/index.html:50
-#, fuzzy
 msgid ""
 "\n"
 "This page tries to collect list of phones supported by <a href=\"/libgammu/"
@@ -2638,9 +2637,9 @@ msgid ""
 "href=\"http://tuxmobil.org/phones_linux.html\">TuxMobil</a>.\n"
 msgstr ""
 "\n"
-"This page tries to collect list of phones supported by <a href=\"/libgammu"
-"\">Gammu library</a>. To add model browse to manufacturer page, look whether "
-"model hasn't been entered yet and enter new model.\n"
+"This page tries to collect list of phones supported by <a "
+"href=\"/libgammu/\">Gammu library</a>. To add model browse to manufacturer "
+"page, look whether model hasn't been entered yet and enter new model.\n"
 "You can find more information about mobile phones on <a\n"
 "href=\"http://tuxmobil.org/phones_linux.html\">TuxMobil</a>.\n"
 
