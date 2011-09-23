@@ -2932,7 +2932,7 @@ msgstr ""
 "There is currently none phone record from this vendor!\n"
 
 #: html/phonedb/vendor.html:44
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "\n"
 "To change existing entries, simply <a href=\"/phones/new/?vendor=%(slug)s"
@@ -2940,8 +2940,8 @@ msgid ""
 "old ones will get deleted eventually.\n"
 msgstr ""
 "\n"
-"To change existing entries, simply <a href=\"/phones/new?vendor=%(slug)s"
-"\">add new one</a>, they will be reviewed and the\n"
+"To change existing entries, simply <a href=\"/phones/new/?vendor=%"
+"(slug)s\">add new one</a>, they will be reviewed and the\n"
 "old ones will get deleted eventually.\n"
 
 #: html/screenshots/contrib_index.html:4 html/screenshots/contrib_index.html:6
