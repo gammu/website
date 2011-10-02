@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-09-27 09:14+0200\n"
-"PO-Revision-Date: 2011-10-02 20:36+0200\n"
+"PO-Revision-Date: 2011-10-02 20:37+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -2890,7 +2890,7 @@ msgstr ""
 "¡Actualmente no hay registros de teléfonos de este proveedor!\n"
 
 #: html/phonedb/vendor.html:44
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "\n"
 "To change existing entries, simply <a href=\"/phones/new/?vendor=%(slug)s"
@@ -2898,9 +2898,9 @@ msgid ""
 "old ones will get deleted eventually.\n"
 msgstr ""
 "\n"
-"Para cambiar registros existentes, simplemente <a href=\"/phones/new?vendor="
-"%(slug)s\">agrega uno nuevo</a>, será revisado y los registros antiguos "
-"serán eliminados eventualmente.\n"
+"Para cambiar registros existentes, simplemente <a href=\"/phones/new?vendor=%"
+"(slug)s\">agrega uno nuevo</a>, será revisado y los registros antiguos serán "
+"eliminados eventualmente.\n"
 
 #: html/screenshots/contrib_index.html:4 html/screenshots/contrib_index.html:6
 msgid "Third Party Screenshots"
