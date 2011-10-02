@@ -2776,7 +2776,7 @@ msgstr ""
 "verlos a la derecha).\n"
 
 #: html/phonedb/phone.html:65
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "\n"
 "If this record contains wrong information, please <a\n"
@@ -2787,10 +2787,10 @@ msgid ""
 "correct.\n"
 msgstr ""
 "\n"
-"Si este registro contiene información incorrecta, porfavor <a href=\"/phones/"
-"new?vendor=%(vendor)s&amp;name=%(phone)s\">agrega un nuevo registro</a> con "
-"la información correcta y el registro será reemplazado después de su "
-"revisión.\n"
+"Si este registro contiene información incorrecta, porfavor <a "
+"href=\"/phones/new?vendor=%(vendor)s&amp;name=%(phone)s\">agrega un nuevo "
+"registro</a> con la información correcta y el registro será reemplazado "
+"después de su revisión.\n"
 "Todos los registros fueron completados por usuarios y no hay garantías que "
 "sean correctos.\n"
 
