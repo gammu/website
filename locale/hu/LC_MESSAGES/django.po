@@ -37,7 +37,7 @@ msgstr "%(program)s teszt kiadás %(version)s"
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
-msgstr ""
+msgstr "Engedély megtagadva"
 
 #: html/403.html:11 html/404.html:11
 msgid ""
