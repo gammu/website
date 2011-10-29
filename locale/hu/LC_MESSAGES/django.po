@@ -23,7 +23,7 @@ msgstr "Forrás"
 
 #: downloads/models.py:33
 msgid "Windows binary"
-msgstr ""
+msgstr "Windows bináris"
 
 #: downloads/models.py:176
 #, python-format
