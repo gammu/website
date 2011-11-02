@@ -515,9 +515,9 @@ msgid ""
 "\n"
 "Third party open source web-based SMS (Short Message Service) management "
 "which uses <a href=\"/smsd/\">Gammu SMSD</a>.\n"
-msgstr ""
+msgstr "\n"
 "Web-basierendes, unabhängiges Projekt zur Verwaltung von SMS, das <a "
-"href=\"/smsd/\">Gammu SMSD</a> verwendet."
+"href=\"/smsd/\">Gammu SMSD</a> verwendet.\n"
 
 #: html/gammu-features.html:3
 msgid ""
@@ -1135,7 +1135,7 @@ msgstr ""
 "bezüglich Gammu.\n"
 "Sie können diese <a\n"
 "href=\"http://www.google.com/coop/cse?cx=008688692096734274889%%"
-"3Axuvlsu_agkm\">angepasste Suche direkt verwenden</a>."
+"3Axuvlsu_agkm\">angepasste Suche direkt verwenden</a>.\n"
 
 # anmerkung: rechtsklausel, formulierungen bitte verbessern, aber besser
 # zweimal absichern zuvor!
