@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-09-27 09:14+0200\n"
-"PO-Revision-Date: 2011-11-02 17:14+0200\n"
+"PO-Revision-Date: 2011-11-02 17:21+0200\n"
 "Last-Translator: canin <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -1157,7 +1157,9 @@ msgstr "Letzte Neuigkeiten"
 
 #: html/smsd.html:4
 msgid "Gammu SMS Daemon, the software for mass processing SMS messages."
-msgstr "Gammu SMS Daemon, die Software zur Massenverarbeitung von SMS."
+msgstr ""
+"Gammu SMS Daemon, Hintergrund-Dienst zur Massenverarbeitung von SMS "
+"Nachrichten."
 
 #: html/smsd.html:6 html/smsd.html.py:21
 msgid "Gammu SMSD"
