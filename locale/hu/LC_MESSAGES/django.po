@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-09-27 09:14+0200\n"
-"PO-Revision-Date: 2011-11-01 12:14+0200\n"
-"Last-Translator: Anonymous Pootle User\n"
+"PO-Revision-Date: 2011-11-15 23:43+0200\n"
+"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -59,7 +59,7 @@ msgstr "Az oldal nem található"
 
 #: html/500.html:4 html/500.html.py:8
 msgid "Server Error"
-msgstr ""
+msgstr "Kiszolgáló hiba"
 
 #: html/500.html:11
 msgid ""
