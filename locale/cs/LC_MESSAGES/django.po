@@ -1864,7 +1864,7 @@ msgstr "Manuál Gammu"
 
 #: html/docs/index.html:26
 msgid "Gammu SMSD Daemon Manual"
-msgstr ""
+msgstr "Manuál Gammu SMSD démona"
 
 #: html/docs/index.html:30
 msgid ""
