@@ -1856,7 +1856,7 @@ msgstr ""
 
 #: html/docs/index.html:22
 msgid "You can also download documentation in PDF:"
-msgstr ""
+msgstr "Dokumentaci si také můžete stáhnout jako PDF."
 
 #: html/docs/index.html:25
 #, fuzzy
