@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-11-24 11:40+0100\n"
-"PO-Revision-Date: 2011-11-24 16:08+0200\n"
+"PO-Revision-Date: 2011-11-24 16:09+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -2329,7 +2329,7 @@ msgstr ""
 
 #: html/downloads/platformlinks.html:22
 msgid "Development git snaphots and git access"
-msgstr ""
+msgstr "Acceso o copias del repositorio git"
 
 #: html/downloads/platformmessage.html:3
 msgid ""
