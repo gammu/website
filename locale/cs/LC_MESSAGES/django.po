@@ -969,7 +969,7 @@ msgstr "Pro instalaci apletu do vašeho telefonu stáhněte následující soubo
 
 #: html/s60.html:20
 msgid "Support libraries required to be installed on older phones:"
-msgstr ""
+msgstr "Dodatečné knihovny, které mohou být potřeba pro starší telefony:"
 
 #: html/s60.html:28
 msgid ""
