@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-11-24 11:40+0100\n"
-"PO-Revision-Date: 2011-11-24 18:53+0200\n"
+"PO-Revision-Date: 2011-11-24 18:54+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -2060,7 +2060,7 @@ msgstr "RPM balíčky (openSUSE, Fedora, Madriva) (poslední testovací verze)"
 
 #: html/downloads/platformlinks.html:22
 msgid "Development git snaphots and git access"
-msgstr ""
+msgstr "Vývojové snapshoty z gitu a přístup do gitu"
 
 #: html/downloads/platformmessage.html:3
 msgid ""
