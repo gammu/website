@@ -2015,9 +2015,8 @@ msgstr ""
 "seznam</a>.\n"
 
 #: html/downloads/list.html:43
-#, fuzzy
 msgid "Development version"
-msgstr "Dokumentace pro vývojáře"
+msgstr "Vývojové verze"
 
 #: html/downloads/list.html:46
 msgid ""
