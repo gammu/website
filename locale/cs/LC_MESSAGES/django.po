@@ -2023,6 +2023,8 @@ msgid ""
 "Should you be interested in git access or git snapshots, you can find them "
 "on <a href=\"/contribute/code/\">development page</a>."
 msgstr ""
+"Pokud se zajímáte o přístup ke gitu nebo snapshoty z něj, naleznete je na <a "
+"href=\"/contribute/code/\">stránce věnované vývoji</a>."
 
 #: html/downloads/mirror.html:5
 msgid ""
