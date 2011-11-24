@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-11-24 11:40+0100\n"
-"PO-Revision-Date: 2011-06-15 09:08+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
+"PO-Revision-Date: 2011-11-24 13:43+0200\n"
+"Last-Translator: Anonymous Pootle User\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.1.6\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -961,7 +961,7 @@ msgstr ""
 
 #: html/s60.html:4 html/s60.html.py:11
 msgid "Series60 remote applet installation"
-msgstr ""
+msgstr "Instalace apletu Series60 remote"
 
 #: html/s60.html:13
 msgid "To install the applet to your phone, download following files:"
