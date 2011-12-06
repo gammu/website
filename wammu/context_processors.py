@@ -10,22 +10,22 @@ def translations(request):
     langs = []
 
     if settings.LANGUAGE_CODE != 'cs-cz':
-        langs.append({'url': 'http://cs.wammu.eu%s' % path, 'name': u'Česky'})
+        langs.append({'url': 'http://cs.wammu.eu%s' % path, 'name': u'Česky', 'code': 'cs-CZ'})
 
     if settings.LANGUAGE_CODE != 'en-us':
-        langs.append({'url': 'http://wammu.eu%s' % path, 'name': u'English'})
+        langs.append({'url': 'http://wammu.eu%s' % path, 'name': u'English', 'code': 'en-US'})
 
     if settings.LANGUAGE_CODE != 'es-es':
-        langs.append({'url': 'http://es.wammu.eu%s' % path, 'name': u'Español'})
+        langs.append({'url': 'http://es.wammu.eu%s' % path, 'name': u'Español', 'code': 'es-ES'})
 
     if settings.LANGUAGE_CODE != 'de-de':
-        langs.append({'url': 'http://de.wammu.eu%s' % path, 'name': u'Deutsch'})
+        langs.append({'url': 'http://de.wammu.eu%s' % path, 'name': u'Deutsch', 'code': 'de-DE'})
 
     if settings.LANGUAGE_CODE != 'sk-sk':
-        langs.append({'url': 'http://sk.wammu.eu%s' % path, 'name': u'Slovenčina'})
+        langs.append({'url': 'http://sk.wammu.eu%s' % path, 'name': u'Slovenčina', 'code': 'sk-SK'})
 
     if settings.LANGUAGE_CODE != 'fr-fr':
-        langs.append({'url': 'http://fr.wammu.eu%s' % path, 'name': u'Français'})
+        langs.append({'url': 'http://fr.wammu.eu%s' % path, 'name': u'Français', 'code': 'fr-FR'})
 
     return {'translations': langs}
 
