@@ -131,9 +131,11 @@ class Phone(models.Model):
             name = self.name.replace(' ', '_').replace('-', '_')
             if name[:-1] == 'c':
                 name = name[:-1] + '_classic'
+            elif name[:-1] == 's':
+                name = name[:-1] + '_slide'
             result.append({
-                'url': 'http://www.forum.nokia.com/Devices/Device_specifications/%s' % name,
-                'name': 'Nokia Forum',
+                'url': 'http://www.developer.nokia.com/Devices/Device_specifications/%s' % name,
+                'name': 'Nokia Developer',
             })
 
         return result
