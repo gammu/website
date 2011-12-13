@@ -134,7 +134,7 @@ class Phone(models.Model):
             elif name[:-1] == 's':
                 name = name[:-1] + '_slide'
             result.append({
-                'url': 'http://www.developer.nokia.com/Devices/Device_specifications/%s' % name,
+                'url': 'http://www.developer.nokia.com/Devices/Device_specifications/%s/' % name,
                 'name': 'Nokia Developer',
             })
 
