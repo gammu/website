@@ -110,7 +110,7 @@ class Phone(models.Model):
 
     def get_related_sites(self):
         result = []
-        name = self.__unicode__().replace(' ', '_').replace('-', '_')
+        name = self.__unicode__().replace(' ', '_')
         result.append({
             'url': 'http://wikipedia.org/wiki/%s' % name,
             'name': 'Wikipedia',
