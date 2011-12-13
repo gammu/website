@@ -3,7 +3,7 @@
 <h3>{% trans "Supported Features" %}</h3>
 
 {% if phone.connection %}
-{% if phone.features %}
+{% if phone.features.all %}
 <ul>
 {% for feature in phone.features.all %}
 <li>{{ feature.get_description }}</li>
