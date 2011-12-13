@@ -110,7 +110,7 @@ class Phone(models.Model):
 
     def get_related_sites(self):
         result = []
-        name = self.__unicode__().replace(' ', '_')
+        name = self.__unicode__().replace(' ', '_').replace('-', '_')
         result.append({
             'url': 'http://wikipedia.org/wiki/%s' % name,
             'name': 'Wikipedia',
@@ -128,7 +128,7 @@ class Phone(models.Model):
             'name': 'Mobilemedia',
         })
         if self.vendor.slug == 'nokia':
-            name = self.name.replace(' ', '_').replace('-', '_')
+            name = self.name.replace(' ', '_')
             if name[-1:] == 'c' and name[-2:-1] in '0123456789':
                 name = name[:-1] + '_classic'
             elif name[-1:] == 's' and name[-2:-1] in '0123456789':
