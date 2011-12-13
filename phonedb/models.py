@@ -129,9 +129,9 @@ class Phone(models.Model):
         })
         if self.vendor.slug == 'nokia':
             name = self.name.replace(' ', '_').replace('-', '_')
-            if name[-1:] == 'c':
+            if name[-1:] == 'c' and name[-2:-1] in '0123456789':
                 name = name[:-1] + '_classic'
-            elif name[-1:] == 's':
+            elif name[-1:] == 's' and name[-2:-1] in '0123456789':
                 name = name[:-1] + '_slide'
             result.append({
                 'url': 'http://www.developer.nokia.com/Devices/Device_specifications/%s/' % name,
