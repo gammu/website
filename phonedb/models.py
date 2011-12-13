@@ -133,6 +133,8 @@ class Phone(models.Model):
                 name = name[:-1] + '_classic'
             elif name[-1:] == 's' and name[-2:-1] in '0123456789':
                 name = name[:-1] + '_slide'
+            elif name[-1:] == 'f' and name[-2:-1] in '0123456789':
+                name = name[:-1] + '_fold'
             result.append({
                 'url': 'http://www.developer.nokia.com/Devices/Device_specifications/%s/' % name,
                 'name': 'Nokia Developer',
