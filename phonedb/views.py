@@ -74,7 +74,7 @@ def get_chart_url():
 
     max_y = ((max(alls) / 100) + 1) * 100
 
-    chart = SimpleLineChart(600, 300, y_range=[0, max_y])
+    chart = SimpleLineChart(800, 300, y_range=[0, max_y])
 
 
     chart.fill_solid(chart.BACKGROUND, 'ffd480')
