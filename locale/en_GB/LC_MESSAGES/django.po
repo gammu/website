@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-17 10:58+0100\n"
-"PO-Revision-Date: 2011-09-23 23:14+0200\n"
+"PO-Revision-Date: 2012-01-17 12:57+0200\n"
 "Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: en_GB\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.1.6\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -2326,15 +2326,16 @@ msgstr ""
 "\">on complete listing</a>.\n"
 
 #: html/downloads/list.html:43
-#, fuzzy
 msgid "Development version"
-msgstr "Developer Documentation"
+msgstr "Development version"
 
 #: html/downloads/list.html:46
 msgid ""
 "Should you be interested in git access or git snapshots, you can find them "
 "on <a href=\"/contribute/code/\">development page</a>."
 msgstr ""
+"Should you be interested in git access or git snapshots, you can find them "
+"on <a href=\"/contribute/code/\">development page</a>."
 
 #: html/downloads/mirror.html:5
 msgid ""
@@ -2370,7 +2371,7 @@ msgstr "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)"
 
 #: html/downloads/platformlinks.html:22
 msgid "Development git snaphots and git access"
-msgstr ""
+msgstr "Development git snaphots and git access"
 
 #: html/downloads/platformmessage.html:3
 msgid ""
@@ -2603,9 +2604,8 @@ msgid "Supported Features"
 msgstr "Supported Features"
 
 #: html/phonedb/body.html:13
-#, fuzzy
 msgid "No features reported as working!"
-msgstr "No features supported!"
+msgstr "No features reported as working!"
 
 #: html/phonedb/body.html:27
 msgid "Phone is reported not to be supported!"
