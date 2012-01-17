@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-12-13 13:15+0100\n"
+"POT-Creation-Date: 2012-01-17 10:58+0100\n"
 "PO-Revision-Date: 2010-06-02 13:22+0200\n"
 "Last-Translator: Pavol <scroolik@gmail.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
@@ -2199,12 +2199,18 @@ msgstr ""
 
 #: html/phonedb/index.html:58
 msgid ""
+"You can find general information about <a href=\"/docs/manual/faq/config.html"
+"\">configuring Gammu in FAQ</a>."
+msgstr ""
+
+#: html/phonedb/index.html:61
+msgid ""
 "\n"
 "As this list is updated by users, you are welcome to <strong><a href=\"/"
 "phones/new/\">add new records</a></strong>.\n"
 msgstr ""
 
-#: html/phonedb/index.html:63
+#: html/phonedb/index.html:66
 msgid ""
 "\n"
 "Generally any phone capable of AT commands or IrMC should be supported. "
@@ -2215,20 +2221,20 @@ msgid ""
 "phone to get some functionality, newer ones do not have support so far.\n"
 msgstr ""
 
-#: html/phonedb/index.html:71
+#: html/phonedb/index.html:74
 #, fuzzy
 msgid "Manufacturers"
 msgstr "Výrobca"
 
-#: html/phonedb/index.html:80
+#: html/phonedb/index.html:83
 msgid "Recently Added Phones"
 msgstr ""
 
-#: html/phonedb/index.html:83
+#: html/phonedb/index.html:86
 msgid "Phone Records Summary"
 msgstr ""
 
-#: html/phonedb/index.html:87
+#: html/phonedb/index.html:90
 msgid ""
 "\n"
 "On following chart, you can see how number of records in phone database\n"
