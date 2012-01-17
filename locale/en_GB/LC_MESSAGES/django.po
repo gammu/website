@@ -2604,9 +2604,8 @@ msgid "Supported Features"
 msgstr "Supported Features"
 
 #: html/phonedb/body.html:13
-#, fuzzy
 msgid "No features reported as working!"
-msgstr "No features supported!"
+msgstr "No features reported as working!"
 
 #: html/phonedb/body.html:27
 msgid "Phone is reported not to be supported!"
