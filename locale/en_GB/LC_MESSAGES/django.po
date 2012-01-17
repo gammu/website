@@ -2371,7 +2371,7 @@ msgstr "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)"
 
 #: html/downloads/platformlinks.html:22
 msgid "Development git snaphots and git access"
-msgstr ""
+msgstr "Development git snaphots and git access"
 
 #: html/downloads/platformmessage.html:3
 msgid ""
