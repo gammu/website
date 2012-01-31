@@ -2,14 +2,14 @@
 # Copyright (C) 2009 Michal Čihař <michal@cihar.com>
 # This file is distributed under the same license as the PACKAGE package.
 # Michal <michal@cihar.com>, 2009, 2010.
-# Michal Čihař <michal@cihar.com>, 2010, 2011.
+# Michal Čihař <michal@cihar.com>, 2010, 2011, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-31 21:57+0100\n"
-"PO-Revision-Date: 2011-11-24 18:55+0200\n"
+"PO-Revision-Date: 2012-01-31 21:58+0100\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -154,9 +154,8 @@ msgid "Donate"
 msgstr "Přispějte"
 
 #: html/base.html:92
-#, fuzzy
 msgid "...other options"
-msgstr "Další možnosti"
+msgstr "...další možnosti"
 
 #: html/base.html:94 html/base.html.py:102
 msgid "Share"
@@ -3147,7 +3146,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:31
 msgid "Decoding failed with error:"
-msgstr ""
+msgstr "Dekódování selhalo s chybou:"
 
 #: html/tools/pdudecode.html:37 html/tools/pdudecode.html.py:39
 #: tools/forms.py:13
@@ -3410,7 +3409,7 @@ msgstr "PDU text"
 
 #: tools/forms.py:10
 msgid "You can provide more messages, each on seaprate line."
-msgstr ""
+msgstr "Můžete zadat více zpráv, každou na samostatné řádce."
 
 #: tools/forms.py:15
 msgid "Unicode"
