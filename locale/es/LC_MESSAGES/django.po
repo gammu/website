@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-17 10:58+0100\n"
+"POT-Creation-Date: 2012-01-31 21:57+0100\n"
 "PO-Revision-Date: 2011-12-13 16:29+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,149 +161,151 @@ msgstr "Traducciones de las páginas Web"
 msgid "Translate!"
 msgstr "¡Traducir!"
 
-#: html/base.html:72 html/base.html.py:128 html/downloads/program.html:7
+#: html/base.html:72 html/base.html.py:139 html/downloads/program.html:7
 #: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
 msgid "Downloads"
 msgstr "Descargas"
 
-#: html/base.html:80
-msgid "Appreciate"
-msgstr "Apreciar"
+#: html/base.html:80 html/base.html.py:159 html/base.html.py:169
+#: html/contribute/sidebar.html:4
+msgid "Donate"
+msgstr "Donar"
 
-#: html/base.html:91
+#: html/base.html:92
+#, fuzzy
+msgid "...other options"
+msgstr "Otras Opciones"
+
+#: html/base.html:94 html/base.html.py:102
 msgid "Share"
 msgstr "Compartir"
 
-#: html/base.html:108 html/index.html:19
+#: html/base.html:119 html/index.html:19
 msgid "About"
 msgstr "Acerca de"
 
-#: html/base.html:110 html/gammu.html:4 html/gammu.html.py:19
+#: html/base.html:121 html/gammu.html:4 html/gammu.html.py:19
 #: html/contribute/translate.html:59
 msgid "Gammu"
 msgstr "Gammu"
 
 # msgid "&amp;amp;Wammu"
-#: html/base.html:111 html/wammu.html:4 html/wammu.html.py:22
+#: html/base.html:122 html/wammu.html:4 html/wammu.html.py:22
 #: html/contribute/translate.html:58
 msgid "Wammu"
 msgstr "Wammu"
 
-#: html/base.html:112
+#: html/base.html:123
 msgid "python-gammu"
 msgstr "python-gammu"
 
-#: html/base.html:113
+#: html/base.html:124
 msgid "SMSD"
 msgstr "SMSD"
 
-#: html/base.html:117 wammu/context_processors.py:34
+#: html/base.html:128 wammu/context_processors.py:34
 msgid "Support"
 msgstr "Soporte"
 
-#: html/base.html:119
+#: html/base.html:130
 msgid "Mailing lists"
 msgstr "Lista de E-mails"
 
-#: html/base.html:120
+#: html/base.html:131
 msgid "Online"
 msgstr "En línea"
 
-#: html/base.html:121
+#: html/base.html:132
 msgid "Reporting bugs"
 msgstr "Informar de fallos (bugs)"
 
-#: html/base.html:122
+#: html/base.html:133
 msgid "Commercial support"
 msgstr "Soporte comercial"
 
-#: html/base.html:126
+#: html/base.html:137
 msgid "Media"
 msgstr "Medios"
 
-#: html/base.html:129 html/index.html:9 html/index.html.py:11
+#: html/base.html:140 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
 #: wammu/context_processors.py:36
 msgid "Screenshots"
 msgstr "Capturas de pantalla"
 
-#: html/base.html:130
+#: html/base.html:141
 msgid "Third party"
 msgstr "Terceros"
 
-#: html/base.html:131 html/index.html:54
+#: html/base.html:142 html/index.html:54
 msgid "News"
 msgstr "Noticias"
 
-#: html/base.html:135 html/gammu.html:69 html/libgammu.html:54
+#: html/base.html:146 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:69 html/smsd.html:73 html/wammu.html:57
 #: html/docs/sidebar.html:2 html/support/sidebar.html:4
 #: wammu/context_processors.py:37
 msgid "Documentation"
 msgstr "Documentación"
 
-#: html/base.html:137 html/docs/sidebar.html:5
+#: html/base.html:148 html/docs/sidebar.html:5
 msgid "FAQ"
 msgstr "Preguntas frecuentes (FAQ)"
 
-#: html/base.html:138 html/docs/sidebar.html:7 html/sidebars/common.html:3
+#: html/base.html:149 html/docs/sidebar.html:7 html/sidebars/common.html:3
 #: phonedb/views.py:101
 msgid "Supported phones"
 msgstr "Teléfonos soportados"
 
-#: html/base.html:139 html/docs/sidebar.html:4
+#: html/base.html:150 html/docs/sidebar.html:4
 msgid "Manual"
 msgstr "Manual"
 
-#: html/base.html:140 html/phonedb/body.html:16
+#: html/base.html:151 html/phonedb/body.html:16
 msgid "Configuration"
 msgstr "Configuración"
 
-#: html/base.html:144 wammu/context_processors.py:38
+#: html/base.html:155 wammu/context_processors.py:38
 msgid "Contribute"
 msgstr "Contribuir"
 
-#: html/base.html:146 html/contribute/sidebar.html:5
+#: html/base.html:157 html/contribute/sidebar.html:5
 msgid "Translate"
 msgstr "Traducir"
 
-#: html/base.html:147 html/contribute/sidebar.html:6
+#: html/base.html:158 html/contribute/sidebar.html:6
 msgid "Develop"
 msgstr "Desarrollar"
 
-#: html/base.html:148 html/base.html.py:158 html/contribute/sidebar.html:4
-msgid "Donate"
-msgstr "Donar"
-
-#: html/base.html:149 html/contribute/sidebar.html:8
+#: html/base.html:160 html/contribute/sidebar.html:8
 msgid "Publicity"
 msgstr "Publicidad"
 
-#: html/base.html:157
+#: html/base.html:168
 msgid "License"
 msgstr "Licencia"
 
-#: html/base.html:158
+#: html/base.html:169
 msgid "Support Gammu/Wammu by donating money!"
 msgstr "¡Apoyar Gammu/Wammu donando dinero! "
 
-#: html/base.html:159
+#: html/base.html:170
 msgid "Search for Gammu/Wammu related questions"
 msgstr "Buscar preguntas relacionadas con Gammu/Wammu"
 
-#: html/base.html:159 html/phonedb/index.html:8
+#: html/base.html:170 html/phonedb/index.html:8
 msgid "Search"
 msgstr "Buscar"
 
-#: html/base.html:160
+#: html/base.html:171
 msgid "Gammu and Wammu authors"
 msgstr "Autores de Gammu y Wammu"
 
-#: html/base.html:160
+#: html/base.html:171
 msgid "Authors"
 msgstr "Autores"
 
-#: html/base.html:161
+#: html/base.html:172
 msgid ""
 "Valid <a href=\"http://validator.w3.org/check/referer\">HTML</a> and <a href="
 "\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
@@ -3875,6 +3877,9 @@ msgstr "Gammu y Wammu Noticias Feed (RSS)"
 #: wammu/context_processors.py:58
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu y Wammu Noticias Feed (Atom)"
+
+#~ msgid "Appreciate"
+#~ msgstr "Apreciar"
 
 #~ msgid "Ubuntu packages in PPA (latest stable version)"
 #~ msgstr ""
