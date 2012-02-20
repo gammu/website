@@ -93,21 +93,14 @@ href="http://wammu.eu/"></a>
 
 <h3>{% trans "Share" %}</h3>
 
-<p><a href="https://plus.google.com/104858815416760393584/?prsrc=3" style="text-decoration: none;"><img src="https://ssl.gstatic.com/images/icons/gplus-16.png" width="16" height="16" style="border: 0;"/></a></p>
+<p>{% trans "You like Gammu? Share this with the world!" %}</p>
 
-<iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FGammu%2F152572854761121&amp;width=292&amp;colorscheme=light&amp;show_faces=false&amp;stream=false&amp;header=false&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:62px;" allowTransparency="true"></iframe>
-
-<!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_default_style ">
-<a href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4eb7adf9044efe65" class="addthis_button_compact">{% trans "Share" %}</a>
-<span class="addthis_separator">|</span>
-<a class="addthis_button_preferred_1"></a>
-<a class="addthis_button_preferred_2"></a>
-<a class="addthis_button_preferred_3"></a>
-<a class="addthis_button_preferred_4"></a>
-</div>
-<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4eb7adf9044efe65"></script>
-<!-- AddThis Button END -->
+<ul class="share">
+<li><a href="https://plus.google.com/104858815416760393584/?prsrc=3"><img src="/media/share/gplus.png" width="16" height="16" /> {% trans "Gammu on Google+" %}</a></li>
+<li><a href="https://www.facebook.com/wammu"><img src="/media/share/fb.png" width="16" height="16" /> {% trans "Gammu on Facebook" %}</a></li>
+<li><a href="http://twitter.com/wammu"><img src="/media/share/twitter.png" width="16" height="16" /> {% trans "Follow us on Twitter" %}</a></li>
+<li><a href="http://identi.ca/gammu"><img src="/media/share/ic.png" width="16" height="16" /> {% trans "Follow us on Identi.ca" %}</a></li>
+</ul>
 
   {% block sidebar %}{% endblock %}
 </div>

@@ -129,6 +129,7 @@ ul, dl {
 
 div.sidebar ul {
     margin: 0;
+    padding:  0 1em 0 2em;
 }
 
 ul ul {
@@ -298,6 +299,7 @@ td.hex {
 div.donate {
     text-align: center;
 }
-ul.sponsors {
-    font-size: smaller;
+ul.share {
+    list-style: none;
+    padding:  0 1em 0 1em;
 }
