@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-21 09:29+0100\n"
+"POT-Creation-Date: 2012-02-21 09:34+0100\n"
 "PO-Revision-Date: 2011-11-02 17:21+0200\n"
 "Last-Translator: canin <canin@in.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2645,7 +2645,7 @@ msgstr "Internetseite:"
 msgid "Third Party News"
 msgstr "Nachrichten über die Programme Anderer"
 
-#: html/news/entry.html:4 html/news/index.html:4 html/news/index.html.py:31
+#: html/news/entry.html:4 html/news/index.html:4 html/news/index.html.py:26
 #: news/feeds.py:9
 msgid "Wammu and Gammu News"
 msgstr "Nachrichten über Gammu und Wammu"
@@ -2655,42 +2655,30 @@ msgid "Gammu News"
 msgstr "Nachrichten über Gammu"
 
 #: html/news/index.html:7
-msgid "Follow us on"
-msgstr "Folgen Sie uns per"
-
-#: html/news/index.html:9
-msgid "identi.ca"
-msgstr "identi.ca"
-
-#: html/news/index.html:10
-msgid "Twitter"
-msgstr "Twitter"
-
-#: html/news/index.html:12
 msgid "Feeds"
 msgstr "Feeds"
 
-#: html/news/index.html:14 html/phonedb/index.html:31
+#: html/news/index.html:9 html/phonedb/index.html:31
 msgid "RSS"
 msgstr "RSS"
 
-#: html/news/index.html:15 html/phonedb/index.html:32
+#: html/news/index.html:10 html/phonedb/index.html:32
 msgid "Atom"
 msgstr "Atom"
 
-#: html/news/index.html:16
+#: html/news/index.html:11
 msgid "identi.ca RSS"
 msgstr "identi.ca RSS"
 
-#: html/news/index.html:17
+#: html/news/index.html:12
 msgid "Twitter RSS"
 msgstr "Twitter RSS"
 
-#: html/news/index.html:19 html/screenshots/index.html:7
+#: html/news/index.html:14 html/screenshots/index.html:7
 msgid "Categories"
 msgstr "Kategorien"
 
-#: html/news/index.html:21
+#: html/news/index.html:16
 msgid "All news"
 msgstr "Alle Nachrichten"
 
@@ -4069,7 +4057,15 @@ msgstr "Gammu und Wammu News Feed (RSS)"
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu und Wammu News Feed (Atom)"
 
-#, fuzzy
+#~ msgid "Follow us on"
+#~ msgstr "Folgen Sie uns per"
+
+#~ msgid "identi.ca"
+#~ msgstr "identi.ca"
+
+#~ msgid "Twitter"
+#~ msgstr "Twitter"
+
 #~ msgid "...other options"
 #~ msgstr "Andere Optionen"
 
