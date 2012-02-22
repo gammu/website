@@ -1,0 +1,3 @@
+#!/bin/sh
+cd media/css
+yui-compressor -o style-compressed.css style.css
