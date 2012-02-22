@@ -303,3 +303,28 @@ ul.share {
     list-style: none;
     padding:  0 1em 0 1em;
 }
+.sprite-logo {
+    background: url('/media/sprites.png') 0px 0px; 
+    width: 32px; 
+    height: 32px;
+}
+.share-fb {
+    background: url('/media/sprites.png') 0px -32px;
+    width: 16px; 
+    height: 16px;
+}
+.share-ic {
+    background: url('/media/sprites.png') -16px -32px;
+    width: 16px; 
+    height: 16px;
+}
+.share-gplus {
+    background: url('/media/sprites.png') 0px -48px;
+    width: 16px; 
+    height: 16px;
+}
+.share-twitter {
+    background: url('/media/sprites.png') -16px -48px;
+    width: 16px; 
+    height: 16px;
+}
