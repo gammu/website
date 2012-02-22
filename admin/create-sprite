@@ -1,0 +1,12 @@
+#!/bin/sh
+
+cd media
+convert -size 32x64 xc:none sprites.png
+convert sprites.png images/wammu-32x32.png -geometry +0+0 -composite sprites.png
+convert sprites.png share/fb.png -geometry +0+32 -composite sprites.png
+convert sprites.png share/gplus.png -geometry +0+48 -composite sprites.png
+convert sprites.png share/ic.png -geometry +16+32 -composite sprites.png
+convert sprites.png share/twitter.png -geometry +16+48 -composite sprites.png
+optipng sprites.png
+
+
