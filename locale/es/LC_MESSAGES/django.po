@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-21 09:34+0100\n"
+"POT-Creation-Date: 2012-02-23 11:31+0100\n"
 "PO-Revision-Date: 2012-01-18 16:46+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1027,13 +1027,13 @@ msgstr ""
 "Para instalar la miniaplicación en el teléfono, descarga los siguientes "
 "archivos:"
 
-#: html/s60.html:20
+#: html/s60.html:21
 msgid "Support libraries required to be installed on older phones:"
 msgstr ""
 "Las bibliotecas de soporte necesarias para instalar en teléfonos más "
 "antiguos:"
 
-#: html/s60.html:28
+#: html/s60.html:29
 msgid ""
 "See <a href=\"http://wammu.eu/docs/manual/protocol/s60.html\">documentation</"
 "a> for more information."
@@ -1976,10 +1976,42 @@ msgstr ""
 "\"><strong>contáctanos en las listas de correo</strong></a>.\n"
 
 #: html/contribute/wanted.html:42
+#, fuzzy
+msgid "Documentation writer"
+msgstr "Documentación"
+
+#: html/contribute/wanted.html:45
+msgid ""
+"\n"
+"We have quite comprehensive <a href=\"/docs/manual/\">documentation</a>, "
+"though\n"
+"there are still lot of places where it could be extended. You don't need "
+"any \n"
+"special skill for this, writing plain text is enough.\n"
+msgstr ""
+
+#: html/contribute/wanted.html:52
+#, fuzzy
+msgid "Community supporter"
+msgstr "Soporte comercial"
+
+#: html/contribute/wanted.html:55
+msgid ""
+"\n"
+"You have basic knowledge about Gammu and want to help others? Answering "
+"users\n"
+"questions or mailing list or IRC is the best you can do for them. Usually "
+"you \n"
+"don't need deep technical knowledge, most questions can be answered by "
+"looking \n"
+"at documentation.\n"
+msgstr ""
+
+#: html/contribute/wanted.html:63
 msgid "Windows Developer"
 msgstr "Desarrollador Windows"
 
-#: html/contribute/wanted.html:45
+#: html/contribute/wanted.html:66
 msgid ""
 "\n"
 "Currently most of developers work on Linux or BSD. This leads to lacking\n"
@@ -1992,11 +2024,11 @@ msgstr ""
 "lleva a un poco de falta de soporte para Windows. Probablemente necesites "
 "Visual Studio instalado y experiencia con las API de Windows.\n"
 
-#: html/contribute/wanted.html:52
+#: html/contribute/wanted.html:73
 msgid "Translators"
 msgstr "Traductores"
 
-#: html/contribute/wanted.html:55
+#: html/contribute/wanted.html:76
 msgid ""
 "\n"
 "There are always things to translate to almost any language, just check\n"
@@ -2007,11 +2039,11 @@ msgstr ""
 "la página <a href=\"/contribute/translate/\">dedicada a las traducciones</"
 "a>.\n"
 
-#: html/contribute/wanted.html:61
+#: html/contribute/wanted.html:82
 msgid "Graphics/Designer"
 msgstr "Gráficos/Diseño"
 
-#: html/contribute/wanted.html:64
+#: html/contribute/wanted.html:85
 msgid ""
 "\n"
 "Graphics and icons used in Wammu are quite poor quality right now. We would\n"
@@ -2022,11 +2054,11 @@ msgstr ""
 "ahora. Definitivamente nos haríafalta de alguien con más habilidad en esa "
 "área.\n"
 
-#: html/contribute/wanted.html:70
+#: html/contribute/wanted.html:91
 msgid "Symbian Developer"
 msgstr "Desarrollador Symbian"
 
-#: html/contribute/wanted.html:73
+#: html/contribute/wanted.html:94
 msgid ""
 "\n"
 "Gammu currently lacks support for Symbian. The only way how this can be\n"
@@ -2041,7 +2073,7 @@ msgstr ""
 "punto de comunicación con el que hablar (gnapplet es utilizado con este "
 "propósito actualmente pero no soporta versiones recientes de Symbian).\n"
 
-#: html/contribute/wanted.html:82
+#: html/contribute/wanted.html:103
 msgid ""
 "\n"
 "The very same probably applies to other modern platforms such as Android,\n"
@@ -2051,11 +2083,11 @@ msgstr ""
 "Lo mismo probablemente aplica a otras plataformas modernas como Android, "
 "Maemo o Windows Mobile.\n"
 
-#: html/contribute/wanted.html:88
+#: html/contribute/wanted.html:109
 msgid "Python Developer"
 msgstr "Desarrollador Python"
 
-#: html/contribute/wanted.html:91
+#: html/contribute/wanted.html:112
 msgid ""
 "\n"
 "Wammu could use much more attention from developers than it currently gets.\n"
@@ -2069,11 +2101,11 @@ msgstr ""
 "Tendrás gran libertad para llevar adelante el proyecto y hacerlo ver como "
 "desees.\n"
 
-#: html/contribute/wanted.html:98
+#: html/contribute/wanted.html:119
 msgid "C Developer"
 msgstr "Desarrollador C"
 
-#: html/contribute/wanted.html:101
+#: html/contribute/wanted.html:122
 msgid ""
 "\n"
 "There is always lot of bugs and feature requests on Gammu core and more "

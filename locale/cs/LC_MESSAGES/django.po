@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-21 09:34+0100\n"
+"POT-Creation-Date: 2012-02-23 11:31+0100\n"
 "PO-Revision-Date: 2012-01-31 21:58+0100\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -972,11 +972,11 @@ msgstr "Instalace apletu Series60 remote"
 msgid "To install the applet to your phone, download following files:"
 msgstr "Pro instalaci apletu do vašeho telefonu stáhněte následující soubory:"
 
-#: html/s60.html:20
+#: html/s60.html:21
 msgid "Support libraries required to be installed on older phones:"
 msgstr "Dodatečné knihovny, které mohou být potřeba pro starší telefony:"
 
-#: html/s60.html:28
+#: html/s60.html:29
 msgid ""
 "See <a href=\"http://wammu.eu/docs/manual/protocol/s60.html\">documentation</"
 "a> for more information."
@@ -1759,10 +1759,42 @@ msgid ""
 msgstr ""
 
 #: html/contribute/wanted.html:42
+#, fuzzy
+msgid "Documentation writer"
+msgstr "Dokumentace"
+
+#: html/contribute/wanted.html:45
+msgid ""
+"\n"
+"We have quite comprehensive <a href=\"/docs/manual/\">documentation</a>, "
+"though\n"
+"there are still lot of places where it could be extended. You don't need "
+"any \n"
+"special skill for this, writing plain text is enough.\n"
+msgstr ""
+
+#: html/contribute/wanted.html:52
+#, fuzzy
+msgid "Community supporter"
+msgstr "Komerční podpora"
+
+#: html/contribute/wanted.html:55
+msgid ""
+"\n"
+"You have basic knowledge about Gammu and want to help others? Answering "
+"users\n"
+"questions or mailing list or IRC is the best you can do for them. Usually "
+"you \n"
+"don't need deep technical knowledge, most questions can be answered by "
+"looking \n"
+"at documentation.\n"
+msgstr ""
+
+#: html/contribute/wanted.html:63
 msgid "Windows Developer"
 msgstr "Vývojář na Windows"
 
-#: html/contribute/wanted.html:45
+#: html/contribute/wanted.html:66
 msgid ""
 "\n"
 "Currently most of developers work on Linux or BSD. This leads to lacking\n"
@@ -1771,33 +1803,33 @@ msgid ""
 "need some experiences with Windows API.\n"
 msgstr ""
 
-#: html/contribute/wanted.html:52
+#: html/contribute/wanted.html:73
 msgid "Translators"
 msgstr "Překladatelé"
 
-#: html/contribute/wanted.html:55
+#: html/contribute/wanted.html:76
 msgid ""
 "\n"
 "There are always things to translate to almost any language, just check\n"
 "dedicated page <a href=\"/contribute/translate/\">about translating</a>.\n"
 msgstr ""
 
-#: html/contribute/wanted.html:61
+#: html/contribute/wanted.html:82
 msgid "Graphics/Designer"
 msgstr "Grafik/designer"
 
-#: html/contribute/wanted.html:64
+#: html/contribute/wanted.html:85
 msgid ""
 "\n"
 "Graphics and icons used in Wammu are quite poor quality right now. We would\n"
 "definitely make use of somebody more skilled in this area.\n"
 msgstr ""
 
-#: html/contribute/wanted.html:70
+#: html/contribute/wanted.html:91
 msgid "Symbian Developer"
 msgstr "Vývojář pro Symbian"
 
-#: html/contribute/wanted.html:73
+#: html/contribute/wanted.html:94
 msgid ""
 "\n"
 "Gammu currently lacks support for Symbian. The only way how this can be\n"
@@ -1807,7 +1839,7 @@ msgid ""
 "this purpose, but it lacks support for recent Symbian versions).\n"
 msgstr ""
 
-#: html/contribute/wanted.html:82
+#: html/contribute/wanted.html:103
 msgid ""
 "\n"
 "The very same probably applies to other modern platforms such as Android,\n"
@@ -1817,11 +1849,11 @@ msgstr ""
 "To samé pravděpodobně platí i pro další moderní platformy jako Android,\n"
 "Maemo nebo Windows Mobile.\n"
 
-#: html/contribute/wanted.html:88
+#: html/contribute/wanted.html:109
 msgid "Python Developer"
 msgstr "Vývojáře v Pythonu"
 
-#: html/contribute/wanted.html:91
+#: html/contribute/wanted.html:112
 msgid ""
 "\n"
 "Wammu could use much more attention from developers than it currently gets.\n"
@@ -1830,11 +1862,11 @@ msgid ""
 "wish.\n"
 msgstr ""
 
-#: html/contribute/wanted.html:98
+#: html/contribute/wanted.html:119
 msgid "C Developer"
 msgstr "Vývojář v C"
 
-#: html/contribute/wanted.html:101
+#: html/contribute/wanted.html:122
 msgid ""
 "\n"
 "There is always lot of bugs and feature requests on Gammu core and more "
