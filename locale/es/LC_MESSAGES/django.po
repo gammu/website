@@ -2009,6 +2009,12 @@ msgid ""
 "looking \n"
 "at documentation.\n"
 msgstr ""
+"\n"
+"¿Tienes conocimientos básicos sobre Gammu y quieres ayudar a otros? "
+"Respondiendo las preguntas de los usuarios en listas de corre o IRC es lo "
+"mejor que puedes hacer por ellos. Generalmente no necesitarás de "
+"conocimientos técnicos específicos, la mayoría de las preguntas se pueden "
+"responder leyendo la documentación.\n"
 
 #: html/contribute/wanted.html:63
 msgid "Windows Developer"
