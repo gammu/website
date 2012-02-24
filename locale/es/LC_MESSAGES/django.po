@@ -1989,6 +1989,10 @@ msgid ""
 "any \n"
 "special skill for this, writing plain text is enough.\n"
 msgstr ""
+"\n"
+"Tenemos una extensa <a href=\"/docs/manual/\">documentación</a>, sin embargo "
+"aún puede ser mejorada en muchos lugares. No necesitas habilidades "
+"especiales para esto, escribir texto plano es suficiente.\n"
 
 #: html/contribute/wanted.html:52
 #, fuzzy
