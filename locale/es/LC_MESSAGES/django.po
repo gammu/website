@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:31+0100\n"
-"PO-Revision-Date: 2012-02-24 15:48+0200\n"
+"PO-Revision-Date: 2012-02-24 15:49+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -191,9 +191,8 @@ msgid "Gammu on Facebook"
 msgstr "Gammu en Facebook"
 
 #: html/base.html:103
-#, fuzzy
 msgid "Follow us on Twitter"
-msgstr "Seguinos en"
+msgstr "Seguinos en Twitter"
 
 #: html/base.html:104
 #, fuzzy
