@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:31+0100\n"
-"PO-Revision-Date: 2012-02-24 15:51+0200\n"
+"PO-Revision-Date: 2012-02-24 15:52+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -1995,9 +1995,8 @@ msgstr ""
 "especiales para esto, escribir texto plano es suficiente.\n"
 
 #: html/contribute/wanted.html:52
-#, fuzzy
 msgid "Community supporter"
-msgstr "Soporte comercial"
+msgstr "Soporte a la comunidad"
 
 #: html/contribute/wanted.html:55
 msgid ""
