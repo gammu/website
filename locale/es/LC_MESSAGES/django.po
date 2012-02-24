@@ -195,9 +195,8 @@ msgid "Follow us on Twitter"
 msgstr "Seguinos en Twitter"
 
 #: html/base.html:104
-#, fuzzy
 msgid "Follow us on Identi.ca"
-msgstr "Seguinos en"
+msgstr "Seguinos en Identi.ca"
 
 #: html/base.html:114 html/index.html:19
 msgid "About"
