@@ -356,6 +356,9 @@ msgid ""
 "Gammu as a free software is project run by volunteers in their free time. To "
 "appreciate their work you can donate them in one of ways mentioned below."
 msgstr ""
+"Gammu, como aplicación libre, es un proyecto llevado a cabo por voluntarios "
+"en sus tiempos libres. Para apreciar su trabajo puedes realizar donaciones "
+"de alguna de las formas mencionadas más abajo."
 
 #: html/donate.html:17
 msgid "Micropayments"
