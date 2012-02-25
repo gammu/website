@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:31+0100\n"
-"PO-Revision-Date: 2012-02-24 15:52+0200\n"
+"PO-Revision-Date: 2012-02-24 15:54+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -365,7 +365,6 @@ msgid "Micropayments"
 msgstr "Micropagos"
 
 #: html/donate.html:20
-#, fuzzy
 msgid ""
 "\n"
 "The easiest way to appreciate work on Gammu and Wammu is to use <a\n"
@@ -375,9 +374,8 @@ msgid ""
 msgstr ""
 "\n"
 "La manera más sencilla de apreciar el trabajo en Gammu y Wammu es utilizar "
-"<a href=\"https://flattr.com/\">Flattr</a> (un sistema social de micropagos) "
-"en algunos de <a href=\"https://flattr.com/profile/nijel\">mis proyectos</"
-"a>.\n"
+"<a href=\"https://flattr.com/\">Flattr</a> (un sistema social de micro-pagos) "
+"en algunos de <a href=\"https://flattr.com/profile/nijel\">mis proyectos</a>.\n"
 
 #: html/donate.html:32
 msgid "Donate Money"
