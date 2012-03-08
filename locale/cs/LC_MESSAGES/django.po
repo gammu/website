@@ -342,7 +342,6 @@ msgid "Micropayments"
 msgstr "Mikroplatby"
 
 #: html/donate.html:20
-#, fuzzy
 msgid ""
 "\n"
 "The easiest way to appreciate work on Gammu and Wammu is to use <a\n"
@@ -350,10 +349,9 @@ msgid ""
 "flattr some of <a href=\"https://flattr.com/profile/nijel\">related "
 "projects</a>.\n"
 msgstr ""
-"\n"
 "Nejjednodušší způsob jak ocenit práci na Gammu a Wammu je použít <a\n"
 "href=\"https://flattr.com/\">Flattr</a> (sociální mikroplatební system) a\n"
-"odměnit některé <a href=\"https://flattr.com/profile/nijel\">z mých "
+"odměnit některé <a href=\"https://flattr.com/profile/nijel\">ze souvicejících "
 "projektů</a>.\n"
 
 #: html/donate.html:32
