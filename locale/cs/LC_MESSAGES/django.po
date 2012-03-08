@@ -1755,9 +1755,8 @@ msgid ""
 msgstr ""
 
 #: html/contribute/wanted.html:42
-#, fuzzy
 msgid "Documentation writer"
-msgstr "Dokumentace"
+msgstr "Dokumentarista"
 
 #: html/contribute/wanted.html:45
 msgid ""
