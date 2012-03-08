@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:31+0100\n"
-"PO-Revision-Date: 2012-03-08 13:18+0200\n"
+"PO-Revision-Date: 2012-03-08 13:20+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -2289,9 +2289,8 @@ msgid "Supported Features"
 msgstr "Podporované funkce"
 
 #: html/phonedb/body.html:13
-#, fuzzy
 msgid "No features reported as working!"
-msgstr "Nebyly zadány žádné funkce!"
+msgstr "Nebyly nahlášeny žádné podporované funkce!"
 
 #: html/phonedb/body.html:27
 msgid "Phone is reported not to be supported!"
