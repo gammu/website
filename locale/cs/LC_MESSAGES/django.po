@@ -1769,9 +1769,8 @@ msgid ""
 msgstr ""
 
 #: html/contribute/wanted.html:52
-#, fuzzy
 msgid "Community supporter"
-msgstr "Komerční podpora"
+msgstr "Podpora komunity"
 
 #: html/contribute/wanted.html:55
 msgid ""
