@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:31+0100\n"
-"PO-Revision-Date: 2012-01-31 21:58+0100\n"
+"PO-Revision-Date: 2012-03-08 13:17+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Pootle 2.1.6\n"
+"X-Generator: Weblate 0.3\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -173,9 +173,8 @@ msgid "Gammu on Facebook"
 msgstr ""
 
 #: html/base.html:103
-#, fuzzy
 msgid "Follow us on Twitter"
-msgstr "Sledujte nás na"
+msgstr "Sledujte nás na Twitteru"
 
 #: html/base.html:104
 #, fuzzy
