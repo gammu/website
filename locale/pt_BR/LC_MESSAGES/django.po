@@ -2838,9 +2838,9 @@ msgid "Features"
 msgstr "Características"
 
 #: phonedb/forms.py:17
-#, python-format
+#, fuzzy, python-format
 msgid "%(description)s [<a href=\"%(url)s\">Link</a>]"
-msgstr "%(descrição)ões [<a href=\"%(url)s\">Link</a>]"
+msgstr "%(description)s [<a href=\"%(url)s\">Link</a>]"
 
 #: phonedb/forms.py:27 phonedb/models.py:91
 msgid "Features which are working in Gammu."
