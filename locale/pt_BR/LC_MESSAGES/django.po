@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:32+0100\n"
-"PO-Revision-Date: 2012-03-15 14:55+0200\n"
+"PO-Revision-Date: 2012-03-15 14:56+0200\n"
 "Last-Translator: Roberto Mathias <betorsm@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -2849,7 +2849,7 @@ msgstr "Características que estão trabalhando em Gammu."
 #: phonedb/forms.py:29
 #, python-format
 msgid "%(description)s (%(name)s)"
-msgstr "%(descrição)ões (%(nome)s)"
+msgstr "%(description)s (%(name)s)"
 
 #: phonedb/models.py:20
 msgid "Use [at] and [dot]"
