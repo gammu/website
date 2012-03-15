@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:32+0100\n"
-"PO-Revision-Date: 2011-06-02 23:26+0200\n"
-"Last-Translator: Andrei Falbot <falbot@gmail.com>\n"
+"PO-Revision-Date: 2012-03-15 14:51+0200\n"
+"Last-Translator: Roberto Mathias <betorsm@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Weblate 0.6\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -1461,9 +1461,8 @@ msgid ""
 msgstr ""
 
 #: html/contribute/wanted.html:42
-#, fuzzy
 msgid "Documentation writer"
-msgstr "Documentação"
+msgstr "Editor da documentação"
 
 #: html/contribute/wanted.html:45
 msgid ""
