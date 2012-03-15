@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:32+0100\n"
-"PO-Revision-Date: 2012-03-15 14:51+0200\n"
+"PO-Revision-Date: 2012-03-15 14:52+0200\n"
 "Last-Translator: Roberto Mathias <betorsm@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -1475,9 +1475,8 @@ msgid ""
 msgstr ""
 
 #: html/contribute/wanted.html:52
-#, fuzzy
 msgid "Community supporter"
-msgstr "Identificação[id] não suportada."
+msgstr "Suporte da comunidade"
 
 #: html/contribute/wanted.html:55
 msgid ""
