@@ -2838,7 +2838,7 @@ msgid "Features"
 msgstr "Características"
 
 #: phonedb/forms.py:17
-#, fuzzy, python-format
+#, python-format
 msgid "%(description)s [<a href=\"%(url)s\">Link</a>]"
 msgstr "%(description)s [<a href=\"%(url)s\">Link</a>]"
 
