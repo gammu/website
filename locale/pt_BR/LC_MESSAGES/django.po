@@ -309,7 +309,7 @@ msgstr "Ajude Gammu/Wammu fazendo sua doação!"
 
 #: html/base.html:165
 msgid "Search for Gammu/Wammu related questions"
-msgstr ""
+msgstr "Procure por questões relacionadas a Gammu/Wammu"
 
 #: html/base.html:165 html/phonedb/index.html:8
 msgid "Search"
