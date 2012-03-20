@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:32+0100\n"
-"PO-Revision-Date: 2012-03-20 21:37+0200\n"
+"PO-Revision-Date: 2012-03-20 21:38+0200\n"
 "Last-Translator: Guilherme Moresco <gui.resco@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -177,7 +177,7 @@ msgstr "Compartilhar"
 
 #: html/base.html:98
 msgid "Share Gammu with the world!"
-msgstr ""
+msgstr "Compartilhe Gammu com o mundo todo!"
 
 #: html/base.html:101
 msgid "Gammu on Google+"
