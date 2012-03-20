@@ -239,7 +239,7 @@ msgstr "Ajuda comercial"
 
 #: html/base.html:132
 msgid "Media"
-msgstr ""
+msgstr "Mídia"
 
 #: html/base.html:135 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
