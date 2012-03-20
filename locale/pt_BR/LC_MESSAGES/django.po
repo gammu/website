@@ -321,7 +321,7 @@ msgstr "Autores de Gammu e Wammu"
 
 #: html/base.html:166
 msgid "Authors"
-msgstr ""
+msgstr "Autores"
 
 #: html/base.html:167
 msgid ""
