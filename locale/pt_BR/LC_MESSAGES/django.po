@@ -285,7 +285,7 @@ msgstr "Configuração"
 
 #: html/base.html:150 wammu/context_processors.py:38
 msgid "Contribute"
-msgstr ""
+msgstr "Contribua"
 
 #: html/base.html:152 html/contribute/sidebar.html:4
 msgid "Translate"
