@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:32+0100\n"
-"PO-Revision-Date: 2011-11-02 17:21+0200\n"
-"Last-Translator: canin <canin@in.com>\n"
+"PO-Revision-Date: 2012-03-20 12:35+0200\n"
+"Last-Translator: Philip Blatter <cihar@jamit.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.1.6\n"
+"X-Generator: Weblate 0.7\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -171,7 +171,7 @@ msgstr "Spenden"
 
 #: html/base.html:82
 msgid "Support Gammu by <a href=\"/donate/\">donating</a>!"
-msgstr ""
+msgstr "Unterstützen Sie Gammu durch <a href=\"/donate/\">Spenden</a>"
 
 # (stumbleupon, bookmarks dienste und twitter) in der linklliste  rechts ganz
 # unten. mitteilen  teilen weiterempfehlen > weiter empfehlen
