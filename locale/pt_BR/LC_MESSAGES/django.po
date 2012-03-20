@@ -297,7 +297,7 @@ msgstr "Desenvolva"
 
 #: html/base.html:155 html/contribute/sidebar.html:7
 msgid "Publicity"
-msgstr ""
+msgstr "Publique, divulgue"
 
 #: html/base.html:163
 msgid "License"
