@@ -189,7 +189,7 @@ msgstr "Gammu auf Google+"
 
 #: html/base.html:102
 msgid "Gammu on Facebook"
-msgstr ""
+msgstr "Gammu auf Facebook"
 
 #: html/base.html:103
 #, fuzzy
