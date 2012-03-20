@@ -192,9 +192,8 @@ msgid "Gammu on Facebook"
 msgstr "Gammu auf Facebook"
 
 #: html/base.html:103
-#, fuzzy
 msgid "Follow us on Twitter"
-msgstr "Folgen Sie uns per"
+msgstr "Folgen Sie uns auf Twitter"
 
 #: html/base.html:104
 #, fuzzy
