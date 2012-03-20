@@ -257,7 +257,7 @@ msgstr ""
 
 #: html/base.html:137 html/index.html:54
 msgid "News"
-msgstr ""
+msgstr "Notícias"
 
 #: html/base.html:141 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:69 html/smsd.html:73 html/wammu.html:57
