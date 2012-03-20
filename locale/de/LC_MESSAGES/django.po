@@ -171,7 +171,7 @@ msgstr "Spenden"
 
 #: html/base.html:82
 msgid "Support Gammu by <a href=\"/donate/\">donating</a>!"
-msgstr "Unterstützen Sie Gammu durch <a href=\"/donate/\">Spenden</a>"
+msgstr "Unterstützen Sie Gammu durch <a href=\"/donate/\">Spenden</a>!"
 
 # (stumbleupon, bookmarks dienste und twitter) in der linklliste  rechts ganz
 # unten. mitteilen  teilen weiterempfehlen > weiter empfehlen
