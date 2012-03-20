@@ -185,7 +185,7 @@ msgstr "Gammu no Google+"
 
 #: html/base.html:102
 msgid "Gammu on Facebook"
-msgstr ""
+msgstr "Gammu no Facebook"
 
 #: html/base.html:103
 msgid "Follow us on Twitter"
