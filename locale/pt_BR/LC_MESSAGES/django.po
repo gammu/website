@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:32+0100\n"
-"PO-Revision-Date: 2012-03-20 21:39+0200\n"
+"PO-Revision-Date: 2012-03-20 21:41+0200\n"
 "Last-Translator: Guilherme Moresco <gui.resco@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -219,7 +219,7 @@ msgstr "SMSD"
 
 #: html/base.html:123 wammu/context_processors.py:34
 msgid "Support"
-msgstr "Suporte"
+msgstr "Ajuda e Suporte"
 
 #: html/base.html:125
 msgid "Mailing lists"
