@@ -122,11 +122,12 @@ msgid ""
 "resigned\n"
 "because lack of time. He is not active in the project anymore.\n"
 msgstr ""
+"\n"
 "Marcin começou o projeto como (can't translate: Fork of Gnokii) porque ele "
 "não\n"
 "gostava de algumas partes do código existente. Ele contribuiu com a maior\n"
 "parte do núcleo/parte central, com módulos da Nokia. (The rest was not "
-"translated)"
+"translated)\n"
 
 #: html/authors.html:42
 msgid ""
