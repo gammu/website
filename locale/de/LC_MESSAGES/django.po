@@ -2093,9 +2093,8 @@ msgstr ""
 "Mailing Listen</strong></a>.\n"
 
 #: html/contribute/wanted.html:42
-#, fuzzy
 msgid "Documentation writer"
-msgstr "Dokumentation"
+msgstr "Dokumentations-Author"
 
 #: html/contribute/wanted.html:45
 msgid ""
