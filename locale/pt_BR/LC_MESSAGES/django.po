@@ -289,7 +289,7 @@ msgstr "Contribua"
 
 #: html/base.html:152 html/contribute/sidebar.html:4
 msgid "Translate"
-msgstr ""
+msgstr "Traduza"
 
 #: html/base.html:153 html/contribute/sidebar.html:5
 msgid "Develop"
