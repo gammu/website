@@ -161,7 +161,7 @@ msgstr "Traduza!"
 #: html/base.html:72 html/base.html.py:134 html/downloads/program.html:7
 #: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
 msgid "Downloads"
-msgstr ""
+msgstr "Downloads"
 
 #: html/base.html:80 html/base.html.py:154 html/base.html.py:164
 msgid "Donate"
