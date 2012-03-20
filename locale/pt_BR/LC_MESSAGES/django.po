@@ -231,7 +231,7 @@ msgstr "Disponível"
 
 #: html/base.html:127
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Reportando erros"
 
 #: html/base.html:128
 msgid "Commercial support"
