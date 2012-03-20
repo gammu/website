@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:32+0100\n"
-"PO-Revision-Date: 2012-03-20 12:39+0200\n"
+"PO-Revision-Date: 2012-03-20 12:40+0200\n"
 "Last-Translator: Philip Blatter <cihar@jamit.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2505,7 +2505,7 @@ msgstr "RPM Pakete, aktuelle Testversion (openSUSE, Fedora, Mandriva)"
 
 #: html/downloads/platformlinks.html:28
 msgid "Development git snaphots and git access"
-msgstr ""
+msgstr "Entwicklungs-Git-Snapshots und -Git-Zugang"
 
 #: html/downloads/platformmessage.html:3
 msgid ""
