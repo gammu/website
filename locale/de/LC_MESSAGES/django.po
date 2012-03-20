@@ -181,7 +181,7 @@ msgstr "weiter empfehlen"
 
 #: html/base.html:98
 msgid "Share Gammu with the world!"
-msgstr ""
+msgstr "Teile Gammu mit der Welt!"
 
 #: html/base.html:101
 msgid "Gammu on Google+"
