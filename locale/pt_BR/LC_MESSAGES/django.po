@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:32+0100\n"
-"PO-Revision-Date: 2012-03-20 21:38+0200\n"
+"PO-Revision-Date: 2012-03-20 21:39+0200\n"
 "Last-Translator: Guilherme Moresco <gui.resco@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -189,7 +189,7 @@ msgstr "Gammu no Facebook"
 
 #: html/base.html:103
 msgid "Follow us on Twitter"
-msgstr ""
+msgstr "Siga a gente no Twitter"
 
 #: html/base.html:104
 msgid "Follow us on Identi.ca"
