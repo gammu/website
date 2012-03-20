@@ -181,7 +181,7 @@ msgstr "Compartilhe Gammu com o mundo todo!"
 
 #: html/base.html:101
 msgid "Gammu on Google+"
-msgstr ""
+msgstr "Gammu no Google+"
 
 #: html/base.html:102
 msgid "Gammu on Facebook"
