@@ -223,7 +223,7 @@ msgstr "Ajuda e Suporte"
 
 #: html/base.html:125
 msgid "Mailing lists"
-msgstr ""
+msgstr "Listas de mensagens"
 
 #: html/base.html:126
 msgid "Online"
