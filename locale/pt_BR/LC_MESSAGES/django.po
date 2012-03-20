@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:32+0100\n"
-"PO-Revision-Date: 2012-03-20 21:24+0200\n"
+"PO-Revision-Date: 2012-03-20 21:25+0200\n"
 "Last-Translator: Guilherme Moresco <gui.resco@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -82,7 +82,7 @@ msgstr ""
 
 #: html/authors.html:4 html/authors.html.py:7
 msgid "Wammu and Gammu Authors"
-msgstr ""
+msgstr "Autores de Gammu e Wammu"
 
 #: html/authors.html:10
 msgid ""
