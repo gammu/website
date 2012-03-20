@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:32+0100\n"
-"PO-Revision-Date: 2012-03-20 21:44+0200\n"
+"PO-Revision-Date: 2012-03-20 21:45+0200\n"
 "Last-Translator: Guilherme Moresco <gui.resco@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -273,7 +273,7 @@ msgstr "Perguntas frequentes"
 #: html/base.html:144 html/docs/sidebar.html:7 html/sidebars/common.html:3
 #: phonedb/views.py:101
 msgid "Supported phones"
-msgstr ""
+msgstr "Telefones suportados"
 
 #: html/base.html:145 html/docs/sidebar.html:4
 msgid "Manual"
