@@ -173,7 +173,7 @@ msgstr "Ajude Gammu <a href=\"/donate/\">doando</a>!"
 
 #: html/base.html:96
 msgid "Share"
-msgstr ""
+msgstr "Compartilhar"
 
 #: html/base.html:98
 msgid "Share Gammu with the world!"
