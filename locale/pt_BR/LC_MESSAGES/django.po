@@ -56,8 +56,9 @@ msgid ""
 "This site includes information about Gammu and Wammu, you might want to\n"
 "continue to pages of following projects:\n"
 msgstr ""
+"\n"
 "Este site incluí informação sobre Gammu e Wammu, talvez você queira "
-"continuar para as páginas dos seguintes projetos:"
+"continuar para as páginas dos seguintes projetos:\n"
 
 #: html/404.html:4 html/404.html.py:8
 msgid "Page Not Found"
