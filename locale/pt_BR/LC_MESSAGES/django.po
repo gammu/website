@@ -193,7 +193,7 @@ msgstr "Siga a gente no Twitter"
 
 #: html/base.html:104
 msgid "Follow us on Identi.ca"
-msgstr ""
+msgstr "Siga a gente em Identi.ca"
 
 #: html/base.html:114 html/index.html:19
 msgid "About"
