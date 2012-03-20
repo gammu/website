@@ -62,7 +62,7 @@ msgstr ""
 
 #: html/404.html:4 html/404.html.py:8
 msgid "Page Not Found"
-msgstr "Desculpe, a página não foi encontrada."
+msgstr "Desculpe, a página não foi encontrada"
 
 #: html/500.html:4 html/500.html.py:8
 msgid "Server Error"
