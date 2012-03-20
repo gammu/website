@@ -235,7 +235,7 @@ msgstr "Reportando erros"
 
 #: html/base.html:128
 msgid "Commercial support"
-msgstr ""
+msgstr "Ajuda comercial"
 
 #: html/base.html:132
 msgid "Media"
