@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:32+0100\n"
-"PO-Revision-Date: 2012-03-20 12:37+0200\n"
+"PO-Revision-Date: 2012-03-20 12:38+0200\n"
 "Last-Translator: Philip Blatter <cihar@jamit.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -2107,9 +2107,8 @@ msgid ""
 msgstr ""
 
 #: html/contribute/wanted.html:52
-#, fuzzy
 msgid "Community supporter"
-msgstr "Kommerzielle Unterstützung"
+msgstr "Community-Supporter"
 
 #: html/contribute/wanted.html:55
 msgid ""
