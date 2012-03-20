@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:32+0100\n"
-"PO-Revision-Date: 2012-03-20 21:34+0200\n"
+"PO-Revision-Date: 2012-03-20 21:35+0200\n"
 "Last-Translator: Guilherme Moresco <gui.resco@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -147,6 +147,8 @@ msgstr ""
 #: html/base.html:13
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
 msgstr ""
+"Gammu and Wammu, o software para gerenciamento de celulares com a tecnologia "
+"GSM."
 
 #: html/base.html:63
 msgid "Page translations"
