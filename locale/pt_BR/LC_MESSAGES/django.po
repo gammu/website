@@ -45,10 +45,10 @@ msgid ""
 "\n"
 "The page you are looking for was not found. Try choosing something from the\n"
 "navigation bellow or use <a href=\"/search/\">search facility</a>.\n"
-msgstr ""
+msgstr "\n"
 "A página que você estava procurando não foi encontrada. Tente escolher "
 "alguma opção do navegador a seguir ou use (não consegui traduzir isso): <a "
-"href=\"/search/\">search facility</a>.\\n"
+"href=\"/search/\">search facility</a>.\n"
 
 #: html/403.html:18 html/404.html:18
 msgid ""
