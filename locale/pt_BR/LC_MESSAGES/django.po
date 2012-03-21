@@ -29,7 +29,7 @@ msgstr "Binário do Windows"
 #: downloads/models.py:176
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr "There isn't portuguese translation for codes."
+msgstr ""
 
 #: downloads/models.py:181
 #, python-format
