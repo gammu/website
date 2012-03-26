@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:31+0100\n"
-"PO-Revision-Date: 2012-03-23 10:28+0200\n"
+"PO-Revision-Date: 2012-03-26 14:38+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -212,7 +212,7 @@ msgstr "Mailing listy"
 
 #: html/base.html:126
 msgid "Online"
-msgstr "Online"
+msgstr "Živá"
 
 #: html/base.html:127
 msgid "Reporting bugs"
