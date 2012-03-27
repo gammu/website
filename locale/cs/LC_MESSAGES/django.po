@@ -3212,7 +3212,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:66
 msgid "MMS indicator"
-msgstr "Indikace MMS"
+msgstr "Indikátor MMS"
 
 #: html/tools/pdudecode.html:67
 msgid "Title"
