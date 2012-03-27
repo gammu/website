@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-23 11:32+0100\n"
+"POT-Creation-Date: 2012-03-27 10:25+0200\n"
 "PO-Revision-Date: 2012-03-20 21:52+0200\n"
 "Last-Translator: Guilherme Moresco <gui.resco@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,8 @@ msgid ""
 "\n"
 "The page you are looking for was not found. Try choosing something from the\n"
 "navigation bellow or use <a href=\"/search/\">search facility</a>.\n"
-msgstr "\n"
+msgstr ""
+"\n"
 "A página que você estava procurando não foi encontrada. Tente escolher "
 "alguma opção do navegador a seguir ou use (não consegui traduzir isso): <a "
 "href=\"/search/\">search facility</a>.\n"
@@ -275,9 +276,9 @@ msgstr "Perguntas frequentes"
 msgid "Supported phones"
 msgstr "Telefones suportados"
 
-#: html/base.html:145 html/docs/sidebar.html:4
-msgid "Manual"
-msgstr "Manual"
+#: html/base.html:145 html/docs/index.html:25 html/docs/sidebar.html:4
+msgid "Gammu Manual"
+msgstr "Manual Gammu"
 
 #: html/base.html:146 html/phonedb/body.html:16
 msgid "Configuration"
@@ -1624,10 +1625,6 @@ msgstr ""
 #: html/docs/index.html:22
 msgid "You can also download documentation in PDF:"
 msgstr "Você também pode baixar a documentação em PDF:"
-
-#: html/docs/index.html:25
-msgid "Gammu Manual"
-msgstr "Manual Gammu"
 
 #: html/docs/index.html:26
 msgid "Gammu SMSD Daemon Manual"
@@ -3037,6 +3034,9 @@ msgstr ""
 #: wammu/context_processors.py:58
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr ""
+
+#~ msgid "Manual"
+#~ msgstr "Manual"
 
 #~ msgid "General"
 #~ msgstr "Geral"

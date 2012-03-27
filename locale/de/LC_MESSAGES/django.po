@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-23 11:32+0100\n"
+"POT-Creation-Date: 2012-03-27 10:25+0200\n"
 "PO-Revision-Date: 2012-03-20 12:40+0200\n"
 "Last-Translator: Philip Blatter <cihar@jamit.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -275,9 +275,9 @@ msgstr "Häufig gestellte Fragen (FAQ)"
 msgid "Supported phones"
 msgstr "Unterstützte Telefonapparate"
 
-#: html/base.html:145 html/docs/sidebar.html:4
-msgid "Manual"
-msgstr "Handbuch"
+#: html/base.html:145 html/docs/index.html:25 html/docs/sidebar.html:4
+msgid "Gammu Manual"
+msgstr "Gammu Handbuch"
 
 #: html/base.html:146 html/phonedb/body.html:16
 msgid "Configuration"
@@ -2267,10 +2267,6 @@ msgstr ""
 msgid "You can also download documentation in PDF:"
 msgstr "Hier können Sie die Handbücher als PDF herunterladen:"
 
-#: html/docs/index.html:25
-msgid "Gammu Manual"
-msgstr "Gammu Handbuch"
-
 #: html/docs/index.html:26
 msgid "Gammu SMSD Daemon Manual"
 msgstr "Gammu SMSD Daemon Handbuch"
@@ -4089,6 +4085,9 @@ msgstr "Gammu und Wammu News Feed (RSS)"
 #: wammu/context_processors.py:58
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu und Wammu News Feed (Atom)"
+
+#~ msgid "Manual"
+#~ msgstr "Handbuch"
 
 #~ msgid "Follow us on"
 #~ msgstr "Folgen Sie uns per"
