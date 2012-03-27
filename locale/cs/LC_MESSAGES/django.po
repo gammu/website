@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-23 11:31+0100\n"
-"PO-Revision-Date: 2012-03-27 10:25+0200\n"
+"PO-Revision-Date: 2012-03-27 10:39+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -3446,7 +3446,7 @@ msgstr "Příjemce"
 
 #: tools/forms.py:17
 msgid "SMSC number"
-msgstr "Číslo SMSC"
+msgstr "Středisko zpráv"
 
 #: wammu/context_processors.py:57
 msgid "Gammu and Wammu News Feed (RSS)"
