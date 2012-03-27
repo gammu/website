@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-23 11:31+0100\n"
+"POT-Creation-Date: 2012-03-27 10:25+0200\n"
 "PO-Revision-Date: 2011-06-24 17:24+0200\n"
 "Last-Translator: <ololizoz@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -243,9 +243,9 @@ msgstr ""
 msgid "Supported phones"
 msgstr ""
 
-#: html/base.html:145 html/docs/sidebar.html:4
-msgid "Manual"
-msgstr "Manuell"
+#: html/base.html:145 html/docs/index.html:25 html/docs/sidebar.html:4
+msgid "Gammu Manual"
+msgstr ""
 
 #: html/base.html:146 html/phonedb/body.html:16
 msgid "Configuration"
@@ -1343,7 +1343,7 @@ msgid ""
 msgstr ""
 
 #: html/contribute/translate.html:44
-msgid "Pootle"
+msgid "Weblate"
 msgstr ""
 
 #: html/contribute/translate.html:46
@@ -1353,7 +1353,7 @@ msgid ""
 "of\n"
 "people can work on single translation as they just translate one text at "
 "once.\n"
-"We currently use <a href=\"https://l10n.cihar.com/\">Pootle</a> to\n"
+"We currently use <a href=\"https://l10n.cihar.com/\">Weblate</a> to\n"
 "manage translations. To start translating just create an account there and\n"
 "start translating. You can already see dozens of languages there, but if "
 "your\n"
@@ -1602,10 +1602,6 @@ msgstr ""
 
 #: html/docs/index.html:22
 msgid "You can also download documentation in PDF:"
-msgstr ""
-
-#: html/docs/index.html:25
-msgid "Gammu Manual"
 msgstr ""
 
 #: html/docs/index.html:26
@@ -3020,6 +3016,9 @@ msgstr ""
 #: wammu/context_processors.py:58
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr ""
+
+#~ msgid "Manual"
+#~ msgstr "Manuell"
 
 #~ msgid "Phones Support"
 #~ msgstr "&Support"

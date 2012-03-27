@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-23 11:32+0100\n"
+"POT-Creation-Date: 2012-03-27 10:25+0200\n"
 "PO-Revision-Date: 2012-01-17 12:57+0200\n"
 "Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -275,9 +275,9 @@ msgstr "FAQ"
 msgid "Supported phones"
 msgstr "Supported phones"
 
-#: html/base.html:145 html/docs/sidebar.html:4
-msgid "Manual"
-msgstr "Manual"
+#: html/base.html:145 html/docs/index.html:25 html/docs/sidebar.html:4
+msgid "Gammu Manual"
+msgstr "Gammu Manual"
 
 #: html/base.html:146 html/phonedb/body.html:16
 msgid "Configuration"
@@ -1816,8 +1816,8 @@ msgstr ""
 "offline, but on the other side, it somehow prevents collaboration.\n"
 
 #: html/contribute/translate.html:44
-msgid "Pootle"
-msgstr "Pootle"
+msgid "Weblate"
+msgstr "Weblate"
 
 #: html/contribute/translate.html:46
 msgid ""
@@ -1826,7 +1826,7 @@ msgid ""
 "of\n"
 "people can work on single translation as they just translate one text at "
 "once.\n"
-"We currently use <a href=\"https://l10n.cihar.com/\">Pootle</a> to\n"
+"We currently use <a href=\"https://l10n.cihar.com/\">Weblate</a> to\n"
 "manage translations. To start translating just create an account there and\n"
 "start translating. You can already see dozens of languages there, but if "
 "your\n"
@@ -1839,7 +1839,7 @@ msgstr ""
 "of\n"
 "people can work on single translation as they just translate one text at "
 "once.\n"
-"We currently use <a href=\"https://l10n.cihar.com/\">Pootle</a> to\n"
+"We currently use <a href=\"https://l10n.cihar.com/\">Weblate</a> to\n"
 "manage translations. To start translating just create an account there and\n"
 "start translating. You can already see dozens of languages there, but if "
 "your\n"
@@ -2174,10 +2174,6 @@ msgstr ""
 #: html/docs/index.html:22
 msgid "You can also download documentation in PDF:"
 msgstr "You can also download documentation in PDF:"
-
-#: html/docs/index.html:25
-msgid "Gammu Manual"
-msgstr "Gammu Manual"
 
 #: html/docs/index.html:26
 msgid "Gammu SMSD Daemon Manual"
@@ -3966,6 +3962,9 @@ msgstr "Gammu and Wammu News Feed (RSS)"
 #: wammu/context_processors.py:58
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu and Wammu News Feed (Atom)"
+
+#~ msgid "Manual"
+#~ msgstr "Manual"
 
 #~ msgid "Follow us on"
 #~ msgstr "Follow us on"
