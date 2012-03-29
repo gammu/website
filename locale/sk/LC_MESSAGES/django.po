@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-27 10:25+0200\n"
-"PO-Revision-Date: 2010-06-02 13:22+0200\n"
-"Last-Translator: Pavol <scroolik@gmail.com>\n"
+"PO-Revision-Date: 2012-03-29 17:07+0200\n"
+"Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Weblate 0.8\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -2269,7 +2269,7 @@ msgstr ""
 
 #: html/phonedb/list.html:5
 msgid "Name"
-msgstr "Položka"
+msgstr "Meno"
 
 #: html/phonedb/list.html:5
 msgid "Connection"
