@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-27 10:25+0200\n"
-"PO-Revision-Date: 2012-02-24 15:54+0200\n"
+"PO-Revision-Date: 2012-03-28 21:01+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.1.6\n"
+"X-Generator: Weblate 0.8\n"
 
 # source is a short form of "source code" that doesn't translate too well to
 # Spanish.
@@ -860,10 +860,10 @@ msgid ""
 "GNU General Public License for more details.\n"
 msgstr ""
 "\n"
-"Este programa se distribuye con el deseo de que le resulte útil, pero SIN "
-"GARANTÍAS DE NINGÚN TIPO; ni siquiera con las garantías implícitas de "
-"COMERCIABILIDAD o APTITUD PARA UN PROPÓSITO DETERMINADO. Para más "
-"información, consulte la Licencia Pública General de GNU.\n"
+"Este programa se distribuye con el deseo de que le resulte útil,\n"
+"pero SIN GARANTÍAS DE NINGÚN TIPO; ni siquiera con las garantías\n"
+"implícitas de COMERCIABILIDAD o APTITUD PARA UN PROPÓSITO DETERMINADO.\n"
+"Para más información, consulte la Licencia Pública General de GNU.\n"
 
 # Translated according to http://www.gnu.org/licenses/translations.html (in
 # particular http://www.spanish-translator-services.com/espanol/t/gnu/gpl-
@@ -3774,7 +3774,7 @@ msgstr "No mostrar nunca el email"
 
 #: phonedb/models.py:23
 msgid "Insert NOSPAM text at random position"
-msgstr "Insertar texto NOSPAM en una posición aleatoria"
+msgstr "Insertar texto «NOSPAM» en una posición aleatoria"
 
 #: phonedb/models.py:27
 msgid "Draft"
@@ -3814,7 +3814,7 @@ msgstr "Entradas del calendario"
 
 #: phonedb/models.py:39
 msgid "Todos"
-msgstr "Notas"
+msgstr "Tareas"
 
 #: phonedb/models.py:40
 msgid "Filesystem manipulation"
