@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-27 10:25+0200\n"
-"PO-Revision-Date: 2012-03-28 21:01+0200\n"
+"PO-Revision-Date: 2012-03-29 16:19+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -305,7 +305,7 @@ msgstr "Licencia"
 
 #: html/base.html:164
 msgid "Support Gammu/Wammu by donating money!"
-msgstr "¡Apoyar Gammu/Wammu donando dinero! "
+msgstr "¡Apoya Gammu/Wammu donando dinero!"
 
 #: html/base.html:165
 msgid "Search for Gammu/Wammu related questions"
@@ -1217,7 +1217,7 @@ msgid ""
 "complete support (can read/edit/delete/copy) for contacts, todo, calendar"
 msgstr ""
 "soporte completo (lectura/edición/borrado/copiado) de contactos, tareas y "
-"calendario "
+"calendario"
 
 #: html/wammu.html:34
 msgid "can read/create/save/send/backup smses"
@@ -2619,7 +2619,7 @@ msgstr ""
 #: html/phonedb/new.html:5 html/phonedb/phone.html:6
 #: html/phonedb/search.html:5 html/phonedb/vendor.html:6
 msgid "Gammu Phone Database "
-msgstr "Base de datos de teléfonos Gammu"
+msgstr "Base de datos de teléfonos Gammu "
 
 #: html/phonedb/index.html:11 html/phonedb/index.html.py:24
 #: html/phonedb/new.html:50 html/phonedb/search.html:22
@@ -2808,7 +2808,7 @@ msgstr "Teléfonos similares"
 
 #: html/phonedb/phone.html:35
 msgid "None found."
-msgstr "Ninguno encontrado"
+msgstr "Ninguno encontrado."
 
 #: html/phonedb/phone.html:48
 msgid ""
@@ -3728,7 +3728,7 @@ msgstr "Redes"
 
 #: news/feeds.py:11
 msgid "Updates about Wammu and Gammu programs."
-msgstr "Actualizaciones sobre Wammu y Gammu"
+msgstr "Actualizaciones sobre Wammu y Gammu."
 
 #: phonedb/feeds.py:9
 msgid "Gammu Phone Database"
@@ -3753,7 +3753,7 @@ msgstr "%(description)s [<a href=\"%(url)s\">Enlace</a>]"
 
 #: phonedb/forms.py:27 phonedb/models.py:91
 msgid "Features which are working in Gammu."
-msgstr "Funcionalidades que funcionan en Gammu"
+msgstr "Funcionalidades completas en Gammu."
 
 #: phonedb/forms.py:29
 #, python-format
