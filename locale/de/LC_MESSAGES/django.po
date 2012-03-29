@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-27 10:25+0200\n"
-"PO-Revision-Date: 2012-03-20 12:40+0200\n"
-"Last-Translator: Philip Blatter <cihar@jamit.de>\n"
+"PO-Revision-Date: 2012-03-29 17:05+0200\n"
+"Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 0.7\n"
+"X-Generator: Weblate 0.8\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -3831,7 +3831,7 @@ msgstr "Gültigkeit"
 
 #: html/tools/pdudecode.html:48
 msgid "Type"
-msgstr "Typus"
+msgstr "Typ"
 
 #: html/tools/pdudecode.html:49
 msgid "Message Reference"
@@ -3859,7 +3859,7 @@ msgstr "Adresse"
 
 #: html/tools/pdudecode.html:70 tools/forms.py:14
 msgid "Class"
-msgstr "Klassifizierung"
+msgstr "Klasse"
 
 #: html/tools/pdudecode.html:73
 msgid "Bitmap"
@@ -4076,7 +4076,7 @@ msgstr "Empfänger"
 
 #: tools/forms.py:17
 msgid "SMSC number"
-msgstr "SMSC Nummer"
+msgstr "SMSC-Nummer"
 
 #: wammu/context_processors.py:57
 msgid "Gammu and Wammu News Feed (RSS)"
