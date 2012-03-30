@@ -1,16 +1,4 @@
 #!/bin/sh
 # vim: expandtab sw=4 ts=4 sts=4:
-LOCS=`ls locale/*/LC_MESSAGES/django.po | sed 's@.*/\(.*\)/LC_MESSAGES/[^/]*@\1@'`
-
-for loc in $LOCS ; do
-    echo merging language $loc
-    ./admin/mergepo.py locale/$loc/LC_MESSAGES/django.po ../gammu/locale/$loc/manual.po
-    ./admin/mergepo.py locale/$loc/LC_MESSAGES/django.po ../gammu/locale/$loc/docs.po
-    ./admin/mergepo.py locale/$loc/LC_MESSAGES/django.po ../gammu/locale/$loc/gammu.po
-    ./admin/mergepo.py locale/$loc/LC_MESSAGES/django.po ../gammu/locale/$loc/libgammu.po
-    ./admin/mergepo.py locale/$loc/LC_MESSAGES/django.po ../wammu/locale/$loc/wammu.po
-    ./admin/mergepo.py locale/$loc/LC_MESSAGES/django.po ../wammu/locale/$loc/docs.po
-done
-
 ./manage.py makemessages -a
 
