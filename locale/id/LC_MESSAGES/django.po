@@ -3,20 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-30 11:20+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2012-03-30 11:23+0200\n"
+"Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 0.8\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -170,12 +170,12 @@ msgstr ""
 #: html/base.html:116 html/gammu.html:4 html/gammu.html.py:19
 #: html/contribute/translate.html:59
 msgid "Gammu"
-msgstr ""
+msgstr "Gammu"
 
 #: html/base.html:117 html/wammu.html:4 html/wammu.html.py:22
 #: html/contribute/translate.html:58
 msgid "Wammu"
-msgstr ""
+msgstr "Wammu"
 
 #: html/base.html:118
 msgid "python-gammu"
@@ -265,7 +265,7 @@ msgstr ""
 
 #: html/base.html:163
 msgid "License"
-msgstr ""
+msgstr "Lisensi"
 
 #: html/base.html:164
 msgid "Support Gammu/Wammu by donating money!"
@@ -667,6 +667,12 @@ msgid ""
 "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 msgstr ""
+"\n"
+"Program ini didistribusikan dengan harapan dapat memberikan manfaat,\n"
+"tetapi TANPA DISERTAI JAMINAN APAPUN; bahkan tanpa jaminan yang tersirat "
+"atas\n"
+"NILAI JUALNYA atau PROPORSIONALNYA UNTUK TUJUAN TERTENTU.  Lihat\n"
+"rincian selengkapnya pada GNU General Public License.\n"
 
 #: html/license.html:36 html/license.html.py:73
 msgid ""
@@ -1913,7 +1919,7 @@ msgstr ""
 
 #: html/news/index.html:14 html/screenshots/index.html:7
 msgid "Categories"
-msgstr ""
+msgstr "Kategori"
 
 #: html/news/index.html:16
 msgid "All news"
@@ -2040,19 +2046,19 @@ msgstr ""
 
 #: html/phonedb/list.html:5
 msgid "Name"
-msgstr ""
+msgstr "Nama"
 
 #: html/phonedb/list.html:5
 msgid "Connection"
-msgstr ""
+msgstr "Koneksi"
 
 #: html/phonedb/list.html:5
 msgid "Supported features"
-msgstr ""
+msgstr "Fitur yang didukung"
 
 #: html/phonedb/list.html:22
 msgid "Not supported"
-msgstr ""
+msgstr "Tidak didukung"
 
 #: html/phonedb/new.html:5 html/phonedb/new.html.py:16
 msgid "Create New Record"
@@ -2090,7 +2096,7 @@ msgstr ""
 
 #: html/phonedb/phone.html:15
 msgid "Edit"
-msgstr ""
+msgstr "Sunting"
 
 #: html/phonedb/phone.html:17
 msgid "Delete"
@@ -2189,7 +2195,7 @@ msgstr ""
 
 #: html/phonedb/vendor.html:21
 msgid "Website"
-msgstr ""
+msgstr "Situs"
 
 #: html/phonedb/vendor.html:26
 #, python-format
@@ -2713,7 +2719,7 @@ msgstr ""
 #: html/tools/pdudecode.html:37 html/tools/pdudecode.html.py:39
 #: tools/forms.py:13
 msgid "Text"
-msgstr ""
+msgstr "Teks"
 
 #: html/tools/pdudecode.html:42
 msgid "UDH type"
@@ -2729,15 +2735,15 @@ msgstr ""
 
 #: html/tools/pdudecode.html:46
 msgid "SMSC"
-msgstr ""
+msgstr "SMSC"
 
 #: html/tools/pdudecode.html:47
 msgid "Validity"
-msgstr ""
+msgstr "Keabsahan"
 
 #: html/tools/pdudecode.html:48
 msgid "Type"
-msgstr ""
+msgstr "Tipe"
 
 #: html/tools/pdudecode.html:49
 msgid "Message Reference"
@@ -2749,7 +2755,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:66
 msgid "MMS indicator"
-msgstr ""
+msgstr "Indikator MMS"
 
 #: html/tools/pdudecode.html:67
 msgid "Title"
@@ -2757,19 +2763,19 @@ msgstr ""
 
 #: html/tools/pdudecode.html:68
 msgid "Sender"
-msgstr ""
+msgstr "Pengirim"
 
 #: html/tools/pdudecode.html:69
 msgid "Address"
-msgstr ""
+msgstr "Alamat"
 
 #: html/tools/pdudecode.html:70 tools/forms.py:14
 msgid "Class"
-msgstr ""
+msgstr "Class"
 
 #: html/tools/pdudecode.html:73
 msgid "Bitmap"
-msgstr ""
+msgstr "Bitmap"
 
 #: html/tools/pdudecode.html:74
 msgid "Bitmaps"
@@ -2839,19 +2845,19 @@ msgstr ""
 
 #: phonedb/models.py:20
 msgid "Use [at] and [dot]"
-msgstr ""
+msgstr "Gunakan [at] dan [dot]"
 
 #: phonedb/models.py:21
 msgid "Display it normally"
-msgstr ""
+msgstr "Menampilkannya dengan normal"
 
 #: phonedb/models.py:22
 msgid "Don't show email at all"
-msgstr ""
+msgstr "Jangan tampilkan email sama sekali"
 
 #: phonedb/models.py:23
 msgid "Insert NOSPAM text at random position"
-msgstr ""
+msgstr "Sisipkan teks NOSPAM pada posisi acak"
 
 #: phonedb/models.py:27
 msgid "Draft"
@@ -2867,15 +2873,15 @@ msgstr ""
 
 #: phonedb/models.py:33
 msgid "Phone information"
-msgstr ""
+msgstr "Informasi telepon"
 
 #: phonedb/models.py:34
 msgid "Sending and saving SMS"
-msgstr ""
+msgstr "Mengirim dan menyimpan SMS"
 
 #: phonedb/models.py:35
 msgid "Multimedia messaging"
-msgstr ""
+msgstr "Pesan multimedia"
 
 #: phonedb/models.py:36
 msgid "Basic phonebook functions (name and phone number)"
@@ -2887,27 +2893,27 @@ msgstr ""
 
 #: phonedb/models.py:38
 msgid "Calendar entries"
-msgstr ""
+msgstr "Entri kalender"
 
 #: phonedb/models.py:39
 msgid "Todos"
-msgstr ""
+msgstr "Todos"
 
 #: phonedb/models.py:40
 msgid "Filesystem manipulation"
-msgstr ""
+msgstr "Manipulasi file sistem"
 
 #: phonedb/models.py:41
 msgid "Reading and making calls"
-msgstr ""
+msgstr "Membaca dan melakukan panggilan"
 
 #: phonedb/models.py:42
 msgid "Logos"
-msgstr ""
+msgstr "Logo"
 
 #: phonedb/models.py:43
 msgid "Ringtones"
-msgstr ""
+msgstr "Nada dering"
 
 #: phonedb/models.py:84
 #, python-format
@@ -2970,15 +2976,15 @@ msgstr ""
 
 #: tools/forms.py:15
 msgid "Unicode"
-msgstr ""
+msgstr "Unicode"
 
 #: tools/forms.py:16
 msgid "Recipient"
-msgstr ""
+msgstr "Penerima"
 
 #: tools/forms.py:17
 msgid "SMSC number"
-msgstr ""
+msgstr "Nomor SMSC"
 
 #: wammu/context_processors.py:57
 msgid "Gammu and Wammu News Feed (RSS)"
