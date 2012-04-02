@@ -9,7 +9,7 @@ class RssNewsFeed(Feed):
     title = _('Wammu and Gammu News')
     link = '/news/'
     description = _('Updates about Wammu and Gammu programs.')
-    copyright = 'Copyright © 2003 - 2009 Michal Čihař'
+    copyright = 'Copyright © 2003 - 2012 Michal Čihař'
     item_copyright = copyright
     title_template ='feeds/news_title.html'
     description_template = 'feeds/news_description.html'
