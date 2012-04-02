@@ -128,8 +128,8 @@ urlpatterns = patterns('',
     (r'^tools/networks/$', 'tools.views.networks'),
 
     # RSS feeds
-    (r'^news/rss/$', RssNewsFeed),
-    (r'^news/atom/$', AtomNewsFeed),
+    (r'^news/rss/$', RssNewsFeed()),
+    (r'^news/atom/$', AtomNewsFeed()),
 
     # News
     (r'^news/$', 'news.views.index'),
@@ -143,8 +143,8 @@ urlpatterns = patterns('',
     (r'^download/(?P<program>[^/]*)/(?P<platform>[^/]*)/$', 'downloads.views.list'),
 
     # RSS feeds
-    (r'^phones/rss/$', RssPhonesFeed),
-    (r'^phones/atom/$', AtomPhonesFeed),
+    (r'^phones/rss/$', RssPhonesFeed()),
+    (r'^phones/atom/$', AtomPhonesFeed()),
 
 
     (r'^phones/csv/$', 'phonedb.views.phones_csv'),
