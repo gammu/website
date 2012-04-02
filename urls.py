@@ -129,7 +129,7 @@ urlpatterns = patterns('',
 
     # RSS feeds
     (r'^news/rss/$', RssNewsFeed),
-    (r'^news/atom': AtomNewsFeed),
+    (r'^news/atom/$', AtomNewsFeed),
 }
 
     # News
