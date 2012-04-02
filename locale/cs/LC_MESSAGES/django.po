@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-02 10:57+0200\n"
+"POT-Creation-Date: 2012-04-02 11:00+0200\n"
 "PO-Revision-Date: 2012-03-27 10:39+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -1665,19 +1665,18 @@ msgid ""
 msgstr ""
 
 #: html/contribute/translate.html:92
+#, python-format
 msgid ""
-"\n"
-"You should follow terminology as defined for your language in <a\n"
-"href=\"https://l10n.cihar.com/dictionary/gammu/\">dictionary for the "
-"project</a>.\n"
-"If it is not defined, you can help creating one!\n"
+"You should follow terminology as defined for your language in <a href="
+"\"%(url)s\">dictionary for the project</a>. If it is not defined, you can "
+"help creating one!"
 msgstr ""
 
-#: html/contribute/translate.html:99
+#: html/contribute/translate.html:95
 msgid "What is Important?"
 msgstr "Co je důležité?"
 
-#: html/contribute/translate.html:101
+#: html/contribute/translate.html:97
 msgid ""
 "\n"
 "If you will get to translation in bad shape, there is too much work. Use "
@@ -1689,7 +1688,7 @@ msgstr ""
 "hodně práce. Podle následujících\n"
 "pravidel můžete zjistit, co jsou nejdůležitější věci:\n"
 
-#: html/contribute/translate.html:108
+#: html/contribute/translate.html:104
 msgid ""
 "\n"
 "libGammu messages - there is just few of them and they are used also in "
@@ -1700,7 +1699,7 @@ msgstr ""
 "zprávy libGammu - je jich jen pár a jsou použity i ve Wammu.\n"
 "Jedná se o dobré místo kde začít a kde si osvojit základní terminologii.\n"
 
-#: html/contribute/translate.html:112
+#: html/contribute/translate.html:108
 msgid ""
 "\n"
 "Wammu translation - the is the application which is most frequently used by\n"
@@ -1710,7 +1709,7 @@ msgstr ""
 "překlad Wammu - aplikace která je nejčastěji používána uživateli s malou "
 "znalostí angličtiny.\n"
 
-#: html/contribute/translate.html:116
+#: html/contribute/translate.html:112
 msgid ""
 "\n"
 "Gammu translation - it's nice to have but not really a high priority.\n"
@@ -1718,7 +1717,7 @@ msgstr ""
 "\n"
 "překlad Gammu - bylo by pěkné ho mít, ale nemá vysokou prioritu.\n"
 
-#: html/contribute/translate.html:119
+#: html/contribute/translate.html:115
 msgid ""
 "\n"
 "Wammu website - there is lot of texts here and it's great to have the "
@@ -1729,7 +1728,7 @@ msgstr ""
 "stránky Wammu - je zde mnoho textu, ale překlad stránek pomáhá\n"
 "novým uživatelům.\n"
 
-#: html/contribute/translate.html:123
+#: html/contribute/translate.html:119
 msgid ""
 "\n"
 "Gammu documentation - it would be great to have this translated to many\n"
