@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-from django.contrib.syndication.feeds import Feed
+from django.contrib.syndication.views import Feed
 from news.models import Entry, Category
 from django.utils.feedgenerator import Atom1Feed
 from django.utils.translation import ugettext as _
