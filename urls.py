@@ -9,16 +9,6 @@ from downloads.models import Release
 import os
 import datetime
 
-newsfeeds = {
-    'rss': RssNewsFeed,
-    'atom': AtomNewsFeed,
-}
-
-phonesfeeds = {
-    'rss': RssPhonesFeed,
-    'atom': AtomPhonesFeed,
-}
-
 news_dict = {
     'queryset': Entry.objects.all(),
     'date_field': 'pub_date',
@@ -138,8 +128,8 @@ urlpatterns = patterns('',
     (r'^tools/networks/$', 'tools.views.networks'),
 
     # RSS feeds
-    (r'^news/(?P<url>(rss|atom).*)/$', 'django.contrib.syndication.views.feed',
-        {'feed_dict': newsfeeds}),
+    (r'^news/rss/$', RssNewsFeed()),
+    (r'^news/atom/$', AtomNewsFeed()),
 
     # News
     (r'^news/$', 'news.views.index'),
@@ -153,8 +143,10 @@ urlpatterns = patterns('',
     (r'^download/(?P<program>[^/]*)/(?P<platform>[^/]*)/$', 'downloads.views.list'),
 
     # RSS feeds
-    (r'^phones/(?P<url>(rss|atom).*)/$', 'django.contrib.syndication.views.feed',
-        {'feed_dict': phonesfeeds}),
+    (r'^phones/rss/$', RssPhonesFeed()),
+    (r'^phones/atom/$', AtomPhonesFeed()),
+
+
     (r'^phones/csv/$', 'phonedb.views.phones_csv'),
 
     # Phone database

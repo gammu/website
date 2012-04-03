@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-from django.contrib.syndication.feeds import Feed
+from django.contrib.syndication.views import Feed
 from phonedb.models import Vendor, Phone
 from django.utils.feedgenerator import Atom1Feed
 from django.utils.translation import ugettext as _
@@ -9,7 +9,7 @@ class RssPhonesFeed(Feed):
     title = _('Gammu Phone Database')
     link = '/phones/'
     description = _('Gammu phone database updates.')
-    copyright = 'Copyright © 2003 - 2009 Michal Čihař'
+    copyright = 'Copyright © 2003 - 2012 Michal Čihař'
     item_copyright = copyright
     title_template ='feeds/phones_title.html'
     description_template = 'feeds/phones_description.html'

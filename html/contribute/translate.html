@@ -55,9 +55,10 @@ are separate translations projects:
 </p>
 
 <ul>
-<li><a href="https://l10n.cihar.com/projects/wammu">{% trans "Wammu" %}</a></li>
-<li><a href="https://l10n.cihar.com/projects/gammu">{% trans "Gammu" %}</a></li>
-<li><a href="https://l10n.cihar.com/projects/wammu_web">{% trans "This website" %}</a></li>
+<li><a href="https://l10n.cihar.com/projects/gammu/wammu">{% trans "Wammu" %}</a></li>
+<li><a href="https://l10n.cihar.com/projects/gammu/libgammu">{% trans "libGammu" %}</a></li>
+<li><a href="https://l10n.cihar.com/projects/gammu/gammu">{% trans "Gammu" %}</a></li>
+<li><a href="https://l10n.cihar.com/projects/gammu/website">{% trans "This website" %}</a></li>
 </ul>
 
 <p>
@@ -88,11 +89,7 @@ is two letter code of your translation.
 </p>
 
 <p>
-{% blocktrans %}
-You should follow terminology as defined for your language in <a
-href="https://l10n.cihar.com/projects/terminology/">Terminology project</a>.
-If it is not defined, you can help creating one!
-{% endblocktrans %}
+{% blocktrans with "https://l10n.cihar.com/dictionaries/gammu/" as url %}You should follow terminology as defined for your language in <a href="{{ url }}">dictionary for the project</a>. If it is not defined, you can help creating one!{% endblocktrans %}
 </p>
 
 <h3>{% trans "What is Important?" %}</h3>

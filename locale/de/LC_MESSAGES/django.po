@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-27 10:25+0200\n"
+"POT-Creation-Date: 2012-04-02 11:00+0200\n"
 "PO-Revision-Date: 2012-03-29 17:05+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,7 +204,7 @@ msgid "About"
 msgstr "Über [GW]ammu"
 
 #: html/base.html:116 html/gammu.html:4 html/gammu.html.py:19
-#: html/contribute/translate.html:59
+#: html/contribute/translate.html:60
 msgid "Gammu"
 msgstr "Gammu"
 
@@ -766,6 +766,7 @@ msgid "Sponsors"
 msgstr "Sponsoren"
 
 #: html/libgammu.html:4 html/libgammu.html.py:15
+#: html/contribute/translate.html:59
 msgid "libGammu"
 msgstr "libGammu"
 
@@ -1929,11 +1930,11 @@ msgstr ""
 "hinzufügen.\n"
 "Es gibt unterschiedliche Übersetzungsprojekte:\n"
 
-#: html/contribute/translate.html:60
+#: html/contribute/translate.html:61
 msgid "This website"
 msgstr "Diese Webseite"
 
-#: html/contribute/translate.html:64
+#: html/contribute/translate.html:65
 #, fuzzy
 msgid ""
 "\n"
@@ -1954,11 +1955,11 @@ msgstr ""
 "Übersetzungen ergeben, allerdings auch langsameren Fortschritt mit sich "
 "bringen - es liegt an jedem einzelnen Übersetzer, die Regeln zu definieren.\n"
 
-#: html/contribute/translate.html:73
+#: html/contribute/translate.html:74
 msgid "Hints for Translators"
 msgstr "Hinweise für Übersetzer"
 
-#: html/contribute/translate.html:75
+#: html/contribute/translate.html:76
 msgid ""
 "\n"
 "In menu items, there is often used ampresand (&amp;), it means keybord\n"
@@ -1970,7 +1971,7 @@ msgstr ""
 "Bitte kennzeichnen Sie diese und vermeiden Sie eine Doppelbelegung der "
 "Shortcuts.\n"
 
-#: html/contribute/translate.html:82
+#: html/contribute/translate.html:83
 msgid ""
 "\n"
 "Please test the translations in the program. Just download mo file from\n"
@@ -1987,24 +1988,23 @@ msgstr ""
 "wobei <code>aa</code> durch den -zutreffenden- \"Zwei-Buchstaben-Ländercode"
 "\" zu ersetzen ist.\n"
 
-#: html/contribute/translate.html:91
+#: html/contribute/translate.html:92
+#, fuzzy, python-format
 msgid ""
-"\n"
-"You should follow terminology as defined for your language in <a\n"
-"href=\"https://l10n.cihar.com/projects/terminology/\">Terminology project</"
-"a>.\n"
-"If it is not defined, you can help creating one!\n"
+"You should follow terminology as defined for your language in <a href="
+"\"%(url)s\">dictionary for the project</a>. If it is not defined, you can "
+"help creating one!"
 msgstr ""
 "\n"
 "Wir bitten Sie, die Regelwerke bezüglich <a href=\"https://l10n.cihar.com/"
 "projects/terminology/\">Terminologie</a> zu beachten.\n"
 "Wenn keine Regeln vorhanden sind, helfen Sie, diese zu erstellen!\n"
 
-#: html/contribute/translate.html:98
+#: html/contribute/translate.html:95
 msgid "What is Important?"
 msgstr "Was ist wichtig?"
 
-#: html/contribute/translate.html:100
+#: html/contribute/translate.html:97
 msgid ""
 "\n"
 "If you will get to translation in bad shape, there is too much work. Use "
@@ -2016,7 +2016,7 @@ msgstr ""
 "treffen, so wartet viel Arbeit auf Sie.\n"
 "Folgende Einteilungen können Ihnen helfen, die wichtigsten Dinge zu finden:\n"
 
-#: html/contribute/translate.html:107
+#: html/contribute/translate.html:104
 msgid ""
 "\n"
 "libGammu messages - there is just few of them and they are used also in "
@@ -2028,7 +2028,7 @@ msgstr ""
 "Ein guter Anhaltspunkt für den Start, erleichtert das Erlernen der "
 "Basisterminologie.\n"
 
-#: html/contribute/translate.html:111
+#: html/contribute/translate.html:108
 msgid ""
 "\n"
 "Wammu translation - the is the application which is most frequently used by\n"
@@ -2038,7 +2038,7 @@ msgstr ""
 "Wammu - dieses Programm wird am häufigsten von Nicht-Englisch-Sprechenden "
 "benutzt.\n"
 
-#: html/contribute/translate.html:115
+#: html/contribute/translate.html:112
 msgid ""
 "\n"
 "Gammu translation - it's nice to have but not really a high priority.\n"
@@ -2046,7 +2046,7 @@ msgstr ""
 "\n"
 "Gammu - eine Übersetzung ist kein Muss, aber vorteilhaft, wenn existent.\n"
 
-#: html/contribute/translate.html:118
+#: html/contribute/translate.html:115
 msgid ""
 "\n"
 "Wammu website - there is lot of texts here and it's great to have the "
@@ -2057,7 +2057,7 @@ msgstr ""
 "Wammu Webseite - hier gibt es viele Texte; und es ist großartig, wenn "
 "Übersetzungen für neue Benutzer vorliegen.\n"
 
-#: html/contribute/translate.html:122
+#: html/contribute/translate.html:119
 msgid ""
 "\n"
 "Gammu documentation - it would be great to have this translated to many\n"
