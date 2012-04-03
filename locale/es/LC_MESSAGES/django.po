@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-02 11:00+0200\n"
-"PO-Revision-Date: 2012-03-29 16:19+0200\n"
+"PO-Revision-Date: 2012-04-03 17:07+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -1872,16 +1872,15 @@ msgstr ""
 "letras de tu traducción.\n"
 
 #: html/contribute/translate.html:92
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "You should follow terminology as defined for your language in <a href="
 "\"%(url)s\">dictionary for the project</a>. If it is not defined, you can "
 "help creating one!"
 msgstr ""
-"\n"
 "Deberías de seguir la terminología según esté definida para tu idioma en el "
-"<a href=\"https://l10n.cihar.com/projects/terminology/\">proyecto de "
-"Terminología</a>. Si no está definido, puedes ayudar creando uno.\n"
+"<a href=\"%(url)s\">diccionario del proyecto</a>. Si no está definido ¡puedes "
+"ayudar creando uno!"
 
 #: html/contribute/translate.html:95
 msgid "What is Important?"
