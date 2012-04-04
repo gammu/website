@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-02 11:00+0200\n"
+"POT-Creation-Date: 2012-04-04 10:29+0200\n"
 "PO-Revision-Date: 2012-04-03 17:07+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1386,12 +1386,12 @@ msgstr ""
 "cambios.\n"
 
 #: html/contribute/code.html:46
+#, fuzzy
 msgid ""
 "\n"
 "The Git repositories are being hosted on <a\n"
-"href=\"http://gitorious.org/\">Gitorious</a> service, having there <a\n"
-"href=\"http://gitorious.org/wammu\">Wammu</a> and <a\n"
-"href=\"http://gitorious.org/gammu\">Gammu</a> projects. You can browse the "
+"href=\"http://github.com/\">Github</a> service, in the\n"
+"<a href=\"http://github.com/gammu/\">Gammu</a> project. You can browse the "
 "code\n"
 "on their site or just clone the repository and investigate it locally. To\n"
 "clone Wammu and Gammu sources, use following commands:\n"
@@ -1404,28 +1404,15 @@ msgstr ""
 "investigarlo localmente. Para clonar el código fuente de Wammu y Gammu "
 "utiliza las órdenes siguientes:\n"
 
-#: html/contribute/code.html:68
+#: html/contribute/code.html:67
 msgid ""
 "\n"
 "Alternatively (if your firewall blocks git protocol), you can access\n"
-"repositories over http, just replace <code>git://gitorious.org/</code> with\n"
-"<code>http://git.gitorious.org/</code>. All repositories are also mirrored "
-"to\n"
-"<a href=\"https://sourceforge.net/scm/?type=git&amp;"
-"group_id=78290\">SourceForge.net</a> \n"
-"and repo.or.cz (<a href=\"http://repo.or.cz/w/gammu.git\">Gammu</a> and \n"
-"<a href=\"http://repo.or.cz/w/wammu.git\">Wammu</a>).\n"
+"repositories over https, just replace <code>git://github.com/</code> with\n"
+"<code>https://github.com/</code>.\n"
 msgstr ""
-"\n"
-"Alternativamente (si el cortafuegos bloquea el protocolo git) puedes acceder "
-"a los repositorios mediante HTTP, simplemente reemplaza <code>git://"
-"gitorious.org/</code> con <code>http://git.gitorious.org/</code>. Todos los "
-"repositorios son replicados a <a href=\"https://sourceforge.net/scm/?"
-"type=git&amp;group_id=78290\">SourceForge.net</a> y repo.or.cz (<a href="
-"\"http://repo.or.cz/w/gammu.git\">Gammu</a> y <a href=\"http://repo.or.cz/w/"
-"wammu.git\">Wammu</a>).\n"
 
-#: html/contribute/code.html:79
+#: html/contribute/code.html:75
 msgid ""
 "\n"
 "Instructions for building and installing are included in file\n"
@@ -1438,11 +1425,11 @@ msgstr ""
 "<code>INSTALL</code> tanto en Gammu como en Wammu. Para compilar Gammu "
 "necesitarás <a href=\"http://www.cmake.org/\">CMake</a>.\n"
 
-#: html/contribute/code.html:86
+#: html/contribute/code.html:82
 msgid "Code Snapshots"
 msgstr "Instantáneas de código"
 
-#: html/contribute/code.html:88
+#: html/contribute/code.html:84
 msgid ""
 "\n"
 "If you for some reason do not want to use version control system, you can\n"
@@ -1463,11 +1450,11 @@ msgstr ""
 "snapshot/\">Wammu</a>. Estas instantáneas son actualizadas varias veces al "
 "día por lo que deberían de contener siempre copias actualizadas del código.\n"
 
-#: html/contribute/code.html:99
+#: html/contribute/code.html:95
 msgid "Patch Submission"
 msgstr "Envío de parches"
 
-#: html/contribute/code.html:101
+#: html/contribute/code.html:97
 msgid ""
 "\n"
 "We really do not care much about the way you deliver us patches. However "
@@ -1486,11 +1473,11 @@ msgstr ""
 "\"/support/lists\">listas de correo</a> o al <a href=\"/support/bugs/"
 "\">sistema de seguimiento de errores</a>.\n"
 
-#: html/contribute/code.html:112
+#: html/contribute/code.html:108
 msgid "Testing"
 msgstr "Testeo"
 
-#: html/contribute/code.html:114
+#: html/contribute/code.html:110
 msgid ""
 "\n"
 "Gammu comes with quite comprehensive testsuite, which is being run daily on\n"
@@ -1513,7 +1500,7 @@ msgstr ""
 "conjunto de pruebas, básicamente sólo necesitas una <a href=\"#vcs\">copia "
 "local del código</a> y ejecutar las órdenes siguientes todas las noches:\n"
 
-#: html/contribute/code.html:133
+#: html/contribute/code.html:129
 msgid ""
 "\n"
 "The results are automatically uploaded to the dashboard and developers are\n"
@@ -1879,8 +1866,8 @@ msgid ""
 "help creating one!"
 msgstr ""
 "Deberías de seguir la terminología según esté definida para tu idioma en el "
-"<a href=\"%(url)s\">diccionario del proyecto</a>. Si no está definido ¡puedes "
-"ayudar creando uno!"
+"<a href=\"%(url)s\">diccionario del proyecto</a>. Si no está definido "
+"¡puedes ayudar creando uno!"
 
 #: html/contribute/translate.html:95
 msgid "What is Important?"
@@ -3912,6 +3899,27 @@ msgstr "Gammu y Wammu Noticias Feed (RSS)"
 #: wammu/context_processors.py:58
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu y Wammu Noticias Feed (Atom)"
+
+#~ msgid ""
+#~ "\n"
+#~ "Alternatively (if your firewall blocks git protocol), you can access\n"
+#~ "repositories over http, just replace <code>git://gitorious.org/</code> "
+#~ "with\n"
+#~ "<code>http://git.gitorious.org/</code>. All repositories are also "
+#~ "mirrored to\n"
+#~ "<a href=\"https://sourceforge.net/scm/?type=git&amp;"
+#~ "group_id=78290\">SourceForge.net</a> \n"
+#~ "and repo.or.cz (<a href=\"http://repo.or.cz/w/gammu.git\">Gammu</a> and \n"
+#~ "<a href=\"http://repo.or.cz/w/wammu.git\">Wammu</a>).\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Alternativamente (si el cortafuegos bloquea el protocolo git) puedes "
+#~ "acceder a los repositorios mediante HTTP, simplemente reemplaza "
+#~ "<code>git://gitorious.org/</code> con <code>http://git.gitorious.org/</"
+#~ "code>. Todos los repositorios son replicados a <a href=\"https://"
+#~ "sourceforge.net/scm/?type=git&amp;group_id=78290\">SourceForge.net</a> y "
+#~ "repo.or.cz (<a href=\"http://repo.or.cz/w/gammu.git\">Gammu</a> y <a href="
+#~ "\"http://repo.or.cz/w/wammu.git\">Wammu</a>).\n"
 
 #~ msgid "Manual"
 #~ msgstr "Manual"

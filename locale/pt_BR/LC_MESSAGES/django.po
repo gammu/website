@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-02 11:00+0200\n"
+"POT-Creation-Date: 2012-04-04 10:29+0200\n"
 "PO-Revision-Date: 2012-03-29 17:06+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1087,28 +1087,22 @@ msgstr ""
 msgid ""
 "\n"
 "The Git repositories are being hosted on <a\n"
-"href=\"http://gitorious.org/\">Gitorious</a> service, having there <a\n"
-"href=\"http://gitorious.org/wammu\">Wammu</a> and <a\n"
-"href=\"http://gitorious.org/gammu\">Gammu</a> projects. You can browse the "
+"href=\"http://github.com/\">Github</a> service, in the\n"
+"<a href=\"http://github.com/gammu/\">Gammu</a> project. You can browse the "
 "code\n"
 "on their site or just clone the repository and investigate it locally. To\n"
 "clone Wammu and Gammu sources, use following commands:\n"
 msgstr ""
 
-#: html/contribute/code.html:68
+#: html/contribute/code.html:67
 msgid ""
 "\n"
 "Alternatively (if your firewall blocks git protocol), you can access\n"
-"repositories over http, just replace <code>git://gitorious.org/</code> with\n"
-"<code>http://git.gitorious.org/</code>. All repositories are also mirrored "
-"to\n"
-"<a href=\"https://sourceforge.net/scm/?type=git&amp;"
-"group_id=78290\">SourceForge.net</a> \n"
-"and repo.or.cz (<a href=\"http://repo.or.cz/w/gammu.git\">Gammu</a> and \n"
-"<a href=\"http://repo.or.cz/w/wammu.git\">Wammu</a>).\n"
+"repositories over https, just replace <code>git://github.com/</code> with\n"
+"<code>https://github.com/</code>.\n"
 msgstr ""
 
-#: html/contribute/code.html:79
+#: html/contribute/code.html:75
 msgid ""
 "\n"
 "Instructions for building and installing are included in file\n"
@@ -1117,11 +1111,11 @@ msgid ""
 "have <a href=\"http://www.cmake.org/\">CMake</a>.\n"
 msgstr ""
 
-#: html/contribute/code.html:86
+#: html/contribute/code.html:82
 msgid "Code Snapshots"
 msgstr ""
 
-#: html/contribute/code.html:88
+#: html/contribute/code.html:84
 msgid ""
 "\n"
 "If you for some reason do not want to use version control system, you can\n"
@@ -1135,11 +1129,11 @@ msgid ""
 "of the code.\n"
 msgstr ""
 
-#: html/contribute/code.html:99
+#: html/contribute/code.html:95
 msgid "Patch Submission"
 msgstr ""
 
-#: html/contribute/code.html:101
+#: html/contribute/code.html:97
 msgid ""
 "\n"
 "We really do not care much about the way you deliver us patches. However "
@@ -1151,11 +1145,11 @@ msgid ""
 "href=\"/support/bugs/\">bug tracker</a>.\n"
 msgstr ""
 
-#: html/contribute/code.html:112
+#: html/contribute/code.html:108
 msgid "Testing"
 msgstr ""
 
-#: html/contribute/code.html:114
+#: html/contribute/code.html:110
 msgid ""
 "\n"
 "Gammu comes with quite comprehensive testsuite, which is being run daily on\n"
@@ -1170,7 +1164,7 @@ msgid ""
 "every night:\n"
 msgstr ""
 
-#: html/contribute/code.html:133
+#: html/contribute/code.html:129
 msgid ""
 "\n"
 "The results are automatically uploaded to the dashboard and developers are\n"
