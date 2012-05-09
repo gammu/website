@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-09 10:07+0200\n"
-"PO-Revision-Date: 2012-04-04 10:56+0200\n"
+"PO-Revision-Date: 2012-05-09 10:10+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 0.8\n"
+"X-Generator: Weblate 0.10\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -112,7 +112,7 @@ msgstr "Webové stránky"
 
 #: html/authors.html:34
 msgid "E-mail"
-msgstr ""
+msgstr "E-mail"
 
 #: html/authors.html:41
 msgid ""
@@ -345,6 +345,9 @@ msgid ""
 "Gammu as a free software is project run by volunteers in their free time. To "
 "appreciate their work you can donate them in one of ways mentioned below."
 msgstr ""
+"Gammu je svobodný software podporovaný skupinou dobrovolníků v jejich volném "
+"čase. Jejich práci můžete ocenit obdarováním jedním z níže uvedených "
+"způsobů."
 
 #: html/donate.html:17
 msgid "Micropayments"
