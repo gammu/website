@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-09 10:05+0200\n"
+"POT-Creation-Date: 2012-05-09 10:07+0200\n"
 "PO-Revision-Date: 2012-03-29 17:07+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
@@ -110,7 +110,8 @@ msgstr ""
 "aplikáciu na nich založenú</a>. V roku 2007 sa stal správcom projektu Gammu\n"
 "and kde pôsobí doteraz.\n"
 
-#: html/authors.html:29 html/phonedb/vendor.html:21
+#: html/authors.html:29 html/authors.html.py:50 html/authors.html.py:66
+#: html/phonedb/vendor.html:21
 #, fuzzy
 msgid "Website"
 msgstr "&Webová stránka"
@@ -137,7 +138,7 @@ msgstr ""
 "Nokia modulu a viedol projekt do januára 2007, keď rezignoval\n"
 "pre nedostatok času. Už nieje aktívny na projekte.\n"
 
-#: html/authors.html:52
+#: html/authors.html:58
 msgid ""
 "\n"
 "As the code orignally started as the fork of the Gnokii project, we would "

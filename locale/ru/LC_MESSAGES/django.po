@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-09 10:05+0200\n"
+"POT-Creation-Date: 2012-05-09 10:07+0200\n"
 "PO-Revision-Date: 2010-09-05 10:40+0200\n"
 "Last-Translator: Дмитрий В. <d.yuyukin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,7 +103,8 @@ msgid ""
 "project and he is still in the charge here.\n"
 msgstr ""
 
-#: html/authors.html:29 html/phonedb/vendor.html:21
+#: html/authors.html:29 html/authors.html.py:50 html/authors.html.py:66
+#: html/phonedb/vendor.html:21
 #, fuzzy
 msgid "Website"
 msgstr "Веб-сайт"
@@ -124,7 +125,7 @@ msgid ""
 "because lack of time. He is not active in the project anymore.\n"
 msgstr ""
 
-#: html/authors.html:52
+#: html/authors.html:58
 msgid ""
 "\n"
 "As the code orignally started as the fork of the Gnokii project, we would "

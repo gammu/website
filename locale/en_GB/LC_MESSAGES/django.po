@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-09 10:05+0200\n"
+"POT-Creation-Date: 2012-05-09 10:07+0200\n"
 "PO-Revision-Date: 2012-04-12 15:34+0200\n"
 "Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,7 +112,8 @@ msgstr ""
 "application on top of it</a>. In 2007 he has become maintainer of the Gammu\n"
 "project and he is still in the charge here.\n"
 
-#: html/authors.html:29 html/phonedb/vendor.html:21
+#: html/authors.html:29 html/authors.html.py:50 html/authors.html.py:66
+#: html/phonedb/vendor.html:21
 msgid "Website"
 msgstr "Website"
 
@@ -140,7 +141,7 @@ msgstr ""
 "resigned\n"
 "because lack of time. He is not active in the project anymore.\n"
 
-#: html/authors.html:52
+#: html/authors.html:58
 msgid ""
 "\n"
 "As the code orignally started as the fork of the Gnokii project, we would "

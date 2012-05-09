@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-09 10:05+0200\n"
+"POT-Creation-Date: 2012-05-09 10:07+0200\n"
 "PO-Revision-Date: 2012-04-04 16:35+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -115,7 +115,8 @@ msgstr ""
 "\">interfaz gráfica de la aplicación</a>. En 2007 se convirtió en el "
 "encargado del proyecto Gammu y todavía lo sigue siendo.\n"
 
-#: html/authors.html:29 html/phonedb/vendor.html:21
+#: html/authors.html:29 html/authors.html.py:50 html/authors.html.py:66
+#: html/phonedb/vendor.html:21
 msgid "Website"
 msgstr "Sitio web"
 
@@ -141,7 +142,7 @@ msgstr ""
 "hasta Enero de 2007, momento en el que renunció por falta de tiempo. Ya no "
 "es activo en el proyecto.\n"
 
-#: html/authors.html:52
+#: html/authors.html:58
 msgid ""
 "\n"
 "As the code orignally started as the fork of the Gnokii project, we would "
