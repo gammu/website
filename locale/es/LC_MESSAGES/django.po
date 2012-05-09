@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-09 10:07+0200\n"
-"PO-Revision-Date: 2012-04-04 16:35+0200\n"
+"PO-Revision-Date: 2012-05-09 17:55+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 0.8\n"
+"X-Generator: Weblate 0.10\n"
 
 # source is a short form of "source code" that doesn't translate too well to
 # Spanish.
@@ -122,7 +122,7 @@ msgstr "Sitio web"
 
 #: html/authors.html:34
 msgid "E-mail"
-msgstr ""
+msgstr "Correo electrónico"
 
 #: html/authors.html:41
 msgid ""
