@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-04 10:29+0200\n"
-"PO-Revision-Date: 2012-03-29 17:06+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
+"PO-Revision-Date: 2012-04-12 15:34+0200\n"
+"Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 0.8\n"
+"X-Generator: Weblate 0.9\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -171,7 +171,7 @@ msgstr "Donate"
 
 #: html/base.html:82
 msgid "Support Gammu by <a href=\"/donate/\">donating</a>!"
-msgstr ""
+msgstr "Support Gammu by <a href=\"/donate/\">donating</a>!"
 
 #: html/base.html:96
 msgid "Share"
@@ -179,25 +179,23 @@ msgstr "Share"
 
 #: html/base.html:98
 msgid "Share Gammu with the world!"
-msgstr ""
+msgstr "Share Gammu with the world!"
 
 #: html/base.html:101
 msgid "Gammu on Google+"
-msgstr ""
+msgstr "Gammu on Google+"
 
 #: html/base.html:102
 msgid "Gammu on Facebook"
-msgstr ""
+msgstr "Gammu on Facebook"
 
 #: html/base.html:103
-#, fuzzy
 msgid "Follow us on Twitter"
-msgstr "Follow us on"
+msgstr "Follow us on Twitter"
 
 #: html/base.html:104
-#, fuzzy
 msgid "Follow us on Identi.ca"
-msgstr "Follow us on"
+msgstr "Follow us on Identi.ca"
 
 #: html/base.html:114 html/index.html:19
 msgid "About"
@@ -356,13 +354,14 @@ msgid ""
 "Gammu as a free software is project run by volunteers in their free time. To "
 "appreciate their work you can donate them in one of ways mentioned below."
 msgstr ""
+"Gammu as a free software is project run by volunteers in their free time. To "
+"appreciate their work you can donate them in one of ways mentioned below."
 
 #: html/donate.html:17
 msgid "Micropayments"
 msgstr "Micropayments"
 
 #: html/donate.html:20
-#, fuzzy
 msgid ""
 "\n"
 "The easiest way to appreciate work on Gammu and Wammu is to use <a\n"
@@ -371,9 +370,10 @@ msgid ""
 "projects</a>.\n"
 msgstr ""
 "\n"
-"The easiest way to appreciate work on Gammu and Wammu is to use <ahref="
-"\"https://flattr.com/\">Flattr</a> (a social micropayment system) andflattr "
-"some of <a href=\"https://flattr.com/profile/nijel\">my projects</a>.\n"
+"The easiest way to appreciate work on Gammu and Wammu is to use <a\n"
+"href=\"https://flattr.com/\">Flattr</a> (a social micropayment system) and\n"
+"flattr some of <a href=\"https://flattr.com/profile/nijel\">related "
+"projects</a>.\n"
 
 #: html/donate.html:32
 msgid "Donate Money"
@@ -1393,7 +1393,6 @@ msgstr ""
 "submit us patches or merge request for the changes.\n"
 
 #: html/contribute/code.html:46
-#, fuzzy
 msgid ""
 "\n"
 "The Git repositories are being hosted on <a\n"
@@ -1405,9 +1404,8 @@ msgid ""
 msgstr ""
 "\n"
 "The Git repositories are being hosted on <a\n"
-"href=\"http://gitorious.org/\">Gitorious</a> service, having there <a\n"
-"href=\"http://gitorious.org/wammu\">Wammu</a> and <a\n"
-"href=\"http://gitorious.org/gammu\">Gammu</a> projects. You can browse the "
+"href=\"http://github.com/\">Github</a> service, in the\n"
+"<a href=\"http://github.com/gammu/\">Gammu</a> project. You can browse the "
 "code\n"
 "on their site or just clone the repository and investigate it locally. To\n"
 "clone Wammu and Gammu sources, use following commands:\n"
@@ -1419,6 +1417,10 @@ msgid ""
 "repositories over https, just replace <code>git://github.com/</code> with\n"
 "<code>https://github.com/</code>.\n"
 msgstr ""
+"\n"
+"Alternatively (if your firewall blocks git protocol), you can access\n"
+"repositories over https, just replace <code>git://github.com/</code> with\n"
+"<code>https://github.com/</code>.\n"
 
 #: html/contribute/code.html:75
 msgid ""
@@ -1889,17 +1891,15 @@ msgstr ""
 "is two letter code of your translation.\n"
 
 #: html/contribute/translate.html:92
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "You should follow terminology as defined for your language in <a href="
 "\"%(url)s\">dictionary for the project</a>. If it is not defined, you can "
 "help creating one!"
 msgstr ""
-"\n"
-"You should follow terminology as defined for your language in <a\n"
-"href=\"https://l10n.cihar.com/projects/terminology/\">Terminology project</"
-"a>.\n"
-"If it is not defined, you can help creating one!\n"
+"You should follow terminology as defined for your language in <a href=\"%"
+"(url)s\">dictionary for the project</a>. If it is not defined, you can help "
+"creating one!"
 
 #: html/contribute/translate.html:95
 msgid "What is Important?"
@@ -1996,9 +1996,8 @@ msgstr ""
 "a>.\n"
 
 #: html/contribute/wanted.html:42
-#, fuzzy
 msgid "Documentation writer"
-msgstr "Documentation"
+msgstr "Documentation writer"
 
 #: html/contribute/wanted.html:45
 msgid ""
@@ -2009,11 +2008,15 @@ msgid ""
 "any \n"
 "special skill for this, writing plain text is enough.\n"
 msgstr ""
+"\n"
+"We have quite comprehensive <a href=\"/docs/manual/\">documentation</a>, "
+"though\n"
+"there are still lot of places where it could be extended. You don't need any "
+"special skill for this, writing plain text is enough.\n"
 
 #: html/contribute/wanted.html:52
-#, fuzzy
 msgid "Community supporter"
-msgstr "Commercial support"
+msgstr "Community supporter"
 
 #: html/contribute/wanted.html:55
 msgid ""
@@ -2026,6 +2029,14 @@ msgid ""
 "looking \n"
 "at documentation.\n"
 msgstr ""
+"\n"
+"You have basic knowledge about Gammu and want to help others? Answering "
+"users\n"
+"questions or mailing list or IRC is the best you can do for them. Usually "
+"you \n"
+"don't need deep technical knowledge, most questions can be answered by "
+"looking \n"
+"at documentation.\n"
 
 #: html/contribute/wanted.html:63
 msgid "Windows Developer"
@@ -2692,6 +2703,8 @@ msgid ""
 "You can find general information about <a href=\"/docs/manual/faq/config.html"
 "\">configuring Gammu in FAQ</a>."
 msgstr ""
+"You can find general information about <a "
+"href=\"/docs/manual/faq/config.html\">configuring Gammu in FAQ</a>."
 
 #: html/phonedb/index.html:61
 msgid ""

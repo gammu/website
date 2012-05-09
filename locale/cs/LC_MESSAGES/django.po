@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-04 10:29+0200\n"
-"PO-Revision-Date: 2012-03-27 10:39+0200\n"
+"PO-Revision-Date: 2012-04-04 10:56+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -154,7 +154,7 @@ msgstr "Přispějte"
 
 #: html/base.html:82
 msgid "Support Gammu by <a href=\"/donate/\">donating</a>!"
-msgstr ""
+msgstr "Podpořte Gammu <a href=\"/donate/\">příspěvkem</a>!"
 
 #: html/base.html:96
 msgid "Share"
@@ -162,15 +162,15 @@ msgstr "Sdílejte"
 
 #: html/base.html:98
 msgid "Share Gammu with the world!"
-msgstr ""
+msgstr "Sdílejte Gammu se světem!"
 
 #: html/base.html:101
 msgid "Gammu on Google+"
-msgstr ""
+msgstr "Gammu na Google+"
 
 #: html/base.html:102
 msgid "Gammu on Facebook"
-msgstr ""
+msgstr "Gammu na Facebooku"
 
 #: html/base.html:103
 msgid "Follow us on Twitter"
@@ -1296,7 +1296,6 @@ msgstr ""
 "odeslat patche nebo žádost o začlenění s vašimi změnami.\n"
 
 #: html/contribute/code.html:46
-#, fuzzy
 msgid ""
 "\n"
 "The Git repositories are being hosted on <a\n"
@@ -1308,10 +1307,10 @@ msgid ""
 msgstr ""
 "\n"
 "Repozitáře Git jsou hostovány na serveru <a\n"
-"href=\"http://gitorious.org/\">Gitorious</a> v projektech <a\n"
-"href=\"http://gitorious.org/wammu\">Wammu</a> a <a\n"
-"href=\"http://gitorious.org/gammu\">Gammu</a>. Na jejich stránkách \n"
-"si můžete prohlížet kód nebo si zklonujte repozitář a můžete s nimi pracovat "
+"href=\"http://github.com/\">Github</a> v projektu <a "
+"href=\"http://github.com/gammu/\">Gammu</a>.\n"
+"Na jejich stránkách si můžete prohlížet kód nebo si zklonujte repozitář a "
+"můžete s nimi pracovat \n"
 "na vašem disku. Pro klonování kódu Wammu o Gammu použijte následující "
 "příkazy:\n"
 
