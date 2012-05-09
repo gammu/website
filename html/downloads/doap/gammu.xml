@@ -26,8 +26,8 @@
   </maintainer>
 <repository>
     <GitRepository>
-      <location rdf:resource="git://gitorious.org/gammu/mainline.git" />
-      <browse rdf:resource="http://gitorious.org/gammu/mainline/trees/master" />
+      <location rdf:resource="git://github.com/gammu/gammu.git" />
+      <browse rdf:resource="https://github.com/gammu/gammu" />
     </GitRepository>
   </repository>
 {% for item in downloads %}

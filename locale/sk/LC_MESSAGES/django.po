@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-02 11:00+0200\n"
+"POT-Creation-Date: 2012-05-09 10:07+0200\n"
 "PO-Revision-Date: 2012-03-29 17:07+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
@@ -110,7 +110,17 @@ msgstr ""
 "aplikáciu na nich založenú</a>. V roku 2007 sa stal správcom projektu Gammu\n"
 "and kde pôsobí doteraz.\n"
 
-#: html/authors.html:31
+#: html/authors.html:29 html/authors.html.py:50 html/authors.html.py:66
+#: html/phonedb/vendor.html:21
+#, fuzzy
+msgid "Website"
+msgstr "&Webová stránka"
+
+#: html/authors.html:34
+msgid "E-mail"
+msgstr ""
+
+#: html/authors.html:41
 msgid ""
 "\n"
 "Marcin has originally started the project as fork of Gnokii because he was "
@@ -128,7 +138,7 @@ msgstr ""
 "Nokia modulu a viedol projekt do januára 2007, keď rezignoval\n"
 "pre nedostatok času. Už nieje aktívny na projekte.\n"
 
-#: html/authors.html:42
+#: html/authors.html:58
 msgid ""
 "\n"
 "As the code orignally started as the fork of the Gnokii project, we would "
@@ -142,181 +152,181 @@ msgstr ""
 "všetkým prispievateľom, hlavne menovite Pavlovi Janíkovi, Pawelu Kotovi a \n"
 "ManfreduJonssonovi.\n"
 
-#: html/base.html:13
+#: html/base.html:12
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
 msgstr ""
 
-#: html/base.html:63
+#: html/base.html:62
 msgid "Page translations"
 msgstr "Preklad stránky"
 
-#: html/base.html:68
+#: html/base.html:67
 msgid "Translate!"
 msgstr "Preložte!"
 
-#: html/base.html:72 html/base.html.py:134 html/downloads/program.html:7
+#: html/base.html:71 html/base.html.py:133 html/downloads/program.html:7
 #: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
 msgid "Downloads"
 msgstr "Stiahnuť"
 
-#: html/base.html:80 html/base.html.py:154 html/base.html.py:164
+#: html/base.html:79 html/base.html.py:153 html/base.html.py:163
 msgid "Donate"
 msgstr "Prispejte"
 
-#: html/base.html:82
+#: html/base.html:81
 msgid "Support Gammu by <a href=\"/donate/\">donating</a>!"
 msgstr ""
 
-#: html/base.html:96
+#: html/base.html:95
 msgid "Share"
 msgstr ""
 
-#: html/base.html:98
+#: html/base.html:97
 msgid "Share Gammu with the world!"
 msgstr ""
 
-#: html/base.html:101
+#: html/base.html:100
 msgid "Gammu on Google+"
 msgstr ""
 
-#: html/base.html:102
+#: html/base.html:101
 msgid "Gammu on Facebook"
 msgstr ""
 
-#: html/base.html:103
+#: html/base.html:102
 msgid "Follow us on Twitter"
 msgstr ""
 
-#: html/base.html:104
+#: html/base.html:103
 msgid "Follow us on Identi.ca"
 msgstr ""
 
-#: html/base.html:114 html/index.html:19
+#: html/base.html:113 html/index.html:19
 msgid "About"
 msgstr "Informácie"
 
-#: html/base.html:116 html/gammu.html:4 html/gammu.html.py:19
+#: html/base.html:115 html/gammu.html:4 html/gammu.html.py:19
 #: html/contribute/translate.html:60
 msgid "Gammu"
 msgstr "Gammu"
 
-#: html/base.html:117 html/wammu.html:4 html/wammu.html.py:22
+#: html/base.html:116 html/wammu.html:4 html/wammu.html.py:22
 #: html/contribute/translate.html:58
 msgid "Wammu"
 msgstr "Wammu"
 
-#: html/base.html:118
+#: html/base.html:117
 msgid "python-gammu"
 msgstr "python-gammu"
 
-#: html/base.html:119
+#: html/base.html:118
 msgid "SMSD"
 msgstr "SMSD"
 
-#: html/base.html:123 wammu/context_processors.py:34
+#: html/base.html:122 wammu/context_processors.py:34
 msgid "Support"
 msgstr "Podpora"
 
-#: html/base.html:125
+#: html/base.html:124
 msgid "Mailing lists"
 msgstr "Mailing listy"
 
-#: html/base.html:126
+#: html/base.html:125
 msgid "Online"
 msgstr "Online"
 
-#: html/base.html:127
+#: html/base.html:126
 msgid "Reporting bugs"
 msgstr "Hlásenie chýb"
 
-#: html/base.html:128
+#: html/base.html:127
 msgid "Commercial support"
 msgstr "Komerčná podpora"
 
-#: html/base.html:132
+#: html/base.html:131
 msgid "Media"
 msgstr "Médiá"
 
-#: html/base.html:135 html/index.html:9 html/index.html.py:11
+#: html/base.html:134 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
 #: wammu/context_processors.py:36
 msgid "Screenshots"
 msgstr "Screenshoty"
 
-#: html/base.html:136
+#: html/base.html:135
 msgid "Third party"
 msgstr "Ďalšie aplikácie"
 
-#: html/base.html:137 html/index.html:54
+#: html/base.html:136 html/index.html:54
 msgid "News"
 msgstr "Novinky"
 
-#: html/base.html:141 html/gammu.html:69 html/libgammu.html:54
+#: html/base.html:140 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:69 html/smsd.html:73 html/wammu.html:57
 #: html/docs/sidebar.html:2 html/support/sidebar.html:4
 #: wammu/context_processors.py:37
 msgid "Documentation"
 msgstr "Dokumentácia"
 
-#: html/base.html:143 html/docs/sidebar.html:5
+#: html/base.html:142 html/docs/sidebar.html:5
 msgid "FAQ"
 msgstr "FAQ"
 
-#: html/base.html:144 html/docs/sidebar.html:7 html/sidebars/common.html:3
+#: html/base.html:143 html/docs/sidebar.html:7 html/sidebars/common.html:3
 #: phonedb/views.py:101
 msgid "Supported phones"
 msgstr "Podporované telefóny"
 
-#: html/base.html:145 html/docs/index.html:25 html/docs/sidebar.html:4
+#: html/base.html:144 html/docs/index.html:25 html/docs/sidebar.html:4
 #, fuzzy
 msgid "Gammu Manual"
 msgstr "Rodina Gammu"
 
-#: html/base.html:146 html/phonedb/body.html:16
+#: html/base.html:145 html/phonedb/body.html:16
 msgid "Configuration"
 msgstr ""
 
-#: html/base.html:150 wammu/context_processors.py:38
+#: html/base.html:149 wammu/context_processors.py:38
 msgid "Contribute"
 msgstr "Prispejte"
 
-#: html/base.html:152 html/contribute/sidebar.html:4
+#: html/base.html:151 html/contribute/sidebar.html:4
 msgid "Translate"
 msgstr "Preklad"
 
-#: html/base.html:153 html/contribute/sidebar.html:5
+#: html/base.html:152 html/contribute/sidebar.html:5
 msgid "Develop"
 msgstr "Vývoj"
 
-#: html/base.html:155 html/contribute/sidebar.html:7
+#: html/base.html:154 html/contribute/sidebar.html:7
 msgid "Publicity"
 msgstr "Publicita"
 
-#: html/base.html:163
+#: html/base.html:162
 msgid "License"
 msgstr "Licencia"
 
-#: html/base.html:164
+#: html/base.html:163
 msgid "Support Gammu/Wammu by donating money!"
 msgstr "Podporte Gammu/Wammu prispením peňazí!"
 
-#: html/base.html:165
+#: html/base.html:164
 msgid "Search for Gammu/Wammu related questions"
 msgstr "Vyhľadávanie otázok súvisiacich s Gammu/Wammu"
 
-#: html/base.html:165 html/phonedb/index.html:8
+#: html/base.html:164 html/phonedb/index.html:8
 msgid "Search"
 msgstr "Hľadaj"
 
-#: html/base.html:166
+#: html/base.html:165
 msgid "Gammu and Wammu authors"
 msgstr "Autori Gammu a Wammu"
 
-#: html/base.html:166
+#: html/base.html:165
 msgid "Authors"
 msgstr "Autori"
 
-#: html/base.html:167
+#: html/base.html:166
 msgid ""
 "Valid <a href=\"http://validator.w3.org/check/referer\">HTML</a> and <a href="
 "\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
@@ -1267,28 +1277,22 @@ msgstr ""
 msgid ""
 "\n"
 "The Git repositories are being hosted on <a\n"
-"href=\"http://gitorious.org/\">Gitorious</a> service, having there <a\n"
-"href=\"http://gitorious.org/wammu\">Wammu</a> and <a\n"
-"href=\"http://gitorious.org/gammu\">Gammu</a> projects. You can browse the "
+"href=\"http://github.com/\">Github</a> service, in the\n"
+"<a href=\"http://github.com/gammu/\">Gammu</a> project. You can browse the "
 "code\n"
 "on their site or just clone the repository and investigate it locally. To\n"
 "clone Wammu and Gammu sources, use following commands:\n"
 msgstr ""
 
-#: html/contribute/code.html:68
+#: html/contribute/code.html:67
 msgid ""
 "\n"
 "Alternatively (if your firewall blocks git protocol), you can access\n"
-"repositories over http, just replace <code>git://gitorious.org/</code> with\n"
-"<code>http://git.gitorious.org/</code>. All repositories are also mirrored "
-"to\n"
-"<a href=\"https://sourceforge.net/scm/?type=git&amp;"
-"group_id=78290\">SourceForge.net</a> \n"
-"and repo.or.cz (<a href=\"http://repo.or.cz/w/gammu.git\">Gammu</a> and \n"
-"<a href=\"http://repo.or.cz/w/wammu.git\">Wammu</a>).\n"
+"repositories over https, just replace <code>git://github.com/</code> with\n"
+"<code>https://github.com/</code>.\n"
 msgstr ""
 
-#: html/contribute/code.html:79
+#: html/contribute/code.html:75
 msgid ""
 "\n"
 "Instructions for building and installing are included in file\n"
@@ -1297,11 +1301,11 @@ msgid ""
 "have <a href=\"http://www.cmake.org/\">CMake</a>.\n"
 msgstr ""
 
-#: html/contribute/code.html:86
+#: html/contribute/code.html:82
 msgid "Code Snapshots"
 msgstr ""
 
-#: html/contribute/code.html:88
+#: html/contribute/code.html:84
 msgid ""
 "\n"
 "If you for some reason do not want to use version control system, you can\n"
@@ -1315,11 +1319,11 @@ msgid ""
 "of the code.\n"
 msgstr ""
 
-#: html/contribute/code.html:99
+#: html/contribute/code.html:95
 msgid "Patch Submission"
 msgstr ""
 
-#: html/contribute/code.html:101
+#: html/contribute/code.html:97
 msgid ""
 "\n"
 "We really do not care much about the way you deliver us patches. However "
@@ -1331,11 +1335,11 @@ msgid ""
 "href=\"/support/bugs/\">bug tracker</a>.\n"
 msgstr ""
 
-#: html/contribute/code.html:112
+#: html/contribute/code.html:108
 msgid "Testing"
 msgstr ""
 
-#: html/contribute/code.html:114
+#: html/contribute/code.html:110
 msgid ""
 "\n"
 "Gammu comes with quite comprehensive testsuite, which is being run daily on\n"
@@ -1350,7 +1354,7 @@ msgid ""
 "every night:\n"
 msgstr ""
 
-#: html/contribute/code.html:133
+#: html/contribute/code.html:129
 msgid ""
 "\n"
 "The results are automatically uploaded to the dashboard and developers are\n"
@@ -1860,7 +1864,7 @@ msgid ""
 "Additional hints about protocols can be found in <code>docs/develop</code> "
 "in\n"
 "Gammu sources or you might want to use git repository with <a\n"
-"href=\"http://gitorious.org/gammu/gsm-docs\">various GSM documentation</a>.\n"
+"href=\"http://github.com/gammu/gsm-docs/\">various GSM documentation</a>.\n"
 msgstr ""
 
 #: html/docs/sidebar.html:6
@@ -2415,11 +2419,6 @@ msgid ""
 "Database of supported phones from %(vendor_name)s in Gammu and Wammu, the "
 "software for managing GSM cell phones."
 msgstr ""
-
-#: html/phonedb/vendor.html:21
-#, fuzzy
-msgid "Website"
-msgstr "&Webová stránka"
 
 #: html/phonedb/vendor.html:26
 #, python-format
