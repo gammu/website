@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-09 10:07+0200\n"
+"POT-Creation-Date: 2012-05-10 09:14+0200\n"
 "PO-Revision-Date: 2012-04-09 11:07+0200\n"
 "Last-Translator: Bartosz Feński <fenio@debian.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -447,6 +447,17 @@ msgstr ""
 "Możesz również dać prezent deweloperom, aktualnie tutaj <a href=\"http://www."
 "amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">lista życzeń Michal Čihař na "
 "Amazon<a>.\n"
+
+#: html/donate.html:87
+#, fuzzy
+msgid "Supporters"
+msgstr "Wsparcie techniczne"
+
+#: html/donate.html:89
+msgid ""
+"List of companies or individuals who regularly support this website or Gammu "
+"development financially."
+msgstr ""
 
 #: html/gammu-family.html:4
 msgid ""

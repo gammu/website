@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-09 10:07+0200\n"
+"POT-Creation-Date: 2012-05-10 09:14+0200\n"
 "PO-Revision-Date: 2012-03-29 17:05+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -474,6 +474,17 @@ msgstr ""
 "<a href=\"http://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">Amazon "
 "Wunschliste von Michal Čihař</a>\n"
 "ein kleines Geschenk zu senden.\n"
+
+#: html/donate.html:87
+#, fuzzy
+msgid "Supporters"
+msgstr "Unterstützung"
+
+#: html/donate.html:89
+msgid ""
+"List of companies or individuals who regularly support this website or Gammu "
+"development financially."
+msgstr ""
 
 #: html/gammu-family.html:4
 msgid ""

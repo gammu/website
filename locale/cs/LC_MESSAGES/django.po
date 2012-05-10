@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-09 10:07+0200\n"
+"POT-Creation-Date: 2012-05-10 09:14+0200\n"
 "PO-Revision-Date: 2012-05-09 10:10+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -346,8 +346,7 @@ msgid ""
 "appreciate their work you can donate them in one of ways mentioned below."
 msgstr ""
 "Gammu je svobodný software podporovaný skupinou dobrovolníků v jejich volném "
-"čase. Jejich práci můžete ocenit obdarováním jedním z níže uvedených "
-"způsobů."
+"čase. Jejich práci můžete ocenit obdarováním jedním z níže uvedených způsobů."
 
 #: html/donate.html:17
 msgid "Micropayments"
@@ -443,6 +442,17 @@ msgstr ""
 "ze <a\n"
 "href=\"http://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">seznamu přání\n"
 "Michala Čihaře na Amazonu</a>.\n"
+
+#: html/donate.html:87
+#, fuzzy
+msgid "Supporters"
+msgstr "Podpora"
+
+#: html/donate.html:89
+msgid ""
+"List of companies or individuals who regularly support this website or Gammu "
+"development financially."
+msgstr ""
 
 #: html/gammu-family.html:4
 msgid ""
