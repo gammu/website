@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-10 09:14+0200\n"
-"PO-Revision-Date: 2012-05-09 17:55+0200\n"
+"PO-Revision-Date: 2012-05-10 16:17+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 0.10\n"
+"X-Generator: Weblate 1.0\n"
 
 # source is a short form of "source code" that doesn't translate too well to
 # Spanish.
@@ -472,15 +472,16 @@ msgstr ""
 "productos deseados de Amazon de Michal Čihař</a>.\n"
 
 #: html/donate.html:87
-#, fuzzy
 msgid "Supporters"
-msgstr "Soporte"
+msgstr "Contribuyentes"
 
 #: html/donate.html:89
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
 msgstr ""
+"Lista de compañías o individuos que ayudan regularmente a mantener "
+"económicamente el desarrollo de este sitio o Gammu."
 
 #: html/gammu-family.html:4
 msgid ""
