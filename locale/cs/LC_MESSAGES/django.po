@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-10 09:14+0200\n"
-"PO-Revision-Date: 2012-05-09 10:10+0200\n"
+"PO-Revision-Date: 2012-05-10 16:39+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 0.10\n"
+"X-Generator: Weblate 1.0\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -444,15 +444,16 @@ msgstr ""
 "Michala Čihaře na Amazonu</a>.\n"
 
 #: html/donate.html:87
-#, fuzzy
 msgid "Supporters"
-msgstr "Podpora"
+msgstr "Podporovatelé"
 
 #: html/donate.html:89
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
 msgstr ""
+"Seznam společností nebo jednotlivců, kteří pravidelně přispívají na provoz "
+"těchto stránek a vývoj Gammu."
 
 #: html/gammu-family.html:4
 msgid ""
