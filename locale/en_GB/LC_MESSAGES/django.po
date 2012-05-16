@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-10 09:14+0200\n"
-"PO-Revision-Date: 2012-04-12 15:34+0200\n"
+"PO-Revision-Date: 2012-05-16 15:26+0200\n"
 "Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: en_GB\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 0.9\n"
+"X-Generator: Weblate 1.0\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -119,7 +119,7 @@ msgstr "Website"
 
 #: html/authors.html:34
 msgid "E-mail"
-msgstr ""
+msgstr "E-mail"
 
 #: html/authors.html:41
 msgid ""
@@ -473,15 +473,16 @@ msgstr ""
 "Michal Čihař</a>.\n"
 
 #: html/donate.html:87
-#, fuzzy
 msgid "Supporters"
-msgstr "Support"
+msgstr "Supporters"
 
 #: html/donate.html:89
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
 msgstr ""
+"List of companies or individuals who regularly support this website or Gammu "
+"development financially."
 
 #: html/gammu-family.html:4
 msgid ""
