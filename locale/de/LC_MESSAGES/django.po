@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-10 09:14+0200\n"
-"PO-Revision-Date: 2012-03-29 17:05+0200\n"
+"PO-Revision-Date: 2012-07-03 16:25+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 0.8\n"
+"X-Generator: Weblate 1.1\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -2760,7 +2760,7 @@ msgstr ""
 #: html/phonedb/new.html:5 html/phonedb/phone.html:6
 #: html/phonedb/search.html:5 html/phonedb/vendor.html:6
 msgid "Gammu Phone Database "
-msgstr "Gammu Telefondatenbank"
+msgstr "Gammu Telefondatenbank "
 
 #: html/phonedb/index.html:11 html/phonedb/index.html.py:24
 #: html/phonedb/new.html:50 html/phonedb/search.html:22
