@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-10 09:14+0200\n"
-"PO-Revision-Date: 2012-03-27 16:17+0200\n"
+"PO-Revision-Date: 2012-07-03 16:31+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 0.8\n"
+"X-Generator: Weblate 1.1\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -169,7 +169,7 @@ msgstr "Page de traduction"
 
 #: html/base.html:67
 msgid "Translate!"
-msgstr "Traduit!"
+msgstr "Traduit !"
 
 #: html/base.html:71 html/base.html.py:133 html/downloads/program.html:7
 #: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
@@ -1984,7 +1984,7 @@ msgstr ""
 
 #: html/links/index.html:22
 msgid "Website:"
-msgstr "Site Web"
+msgstr "Site Web :"
 
 #: html/news/contrib_index.html:4 html/news/contrib_index.html.py:6
 msgid "Third Party News"
@@ -1993,7 +1993,7 @@ msgstr ""
 #: html/news/entry.html:4 html/news/index.html:4 html/news/index.html.py:26
 #: news/feeds.py:9
 msgid "Wammu and Gammu News"
-msgstr "Informations sur Wammu et Gammu "
+msgstr "Informations sur Wammu et Gammu"
 
 #: html/news/gammu_index.html:4 html/news/gammu_index.html.py:6
 msgid "Gammu News"
@@ -2915,7 +2915,7 @@ msgstr ""
 
 #: news/feeds.py:11
 msgid "Updates about Wammu and Gammu programs."
-msgstr "Mise à jour des programmes Wammu et Gammu"
+msgstr "Mise à jour des programmes Wammu et Gammu."
 
 #: phonedb/feeds.py:9
 #, fuzzy
@@ -2941,7 +2941,7 @@ msgstr "%(description)s [<a href=\"%(url)s\">Lien</a>]"
 
 #: phonedb/forms.py:27 phonedb/models.py:91
 msgid "Features which are working in Gammu."
-msgstr "Fonctions utilisables dans Gammu"
+msgstr "Fonctions utilisables dans Gammu."
 
 #: phonedb/forms.py:29
 #, python-format
