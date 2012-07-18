@@ -125,7 +125,7 @@ class Phone(models.Model):
         vendor = self.vendor.slug.replace('-', '_').replace(' ', '_')
         result.append({
             'url': 'http://www.mobiledia.com/phones/%s/%s.html' % (vendor, name),
-            'name': 'Mobilemedia',
+            'name': 'Mobiledia',
         })
         if self.vendor.slug == 'nokia':
             name = self.name.replace(' ', '_')
