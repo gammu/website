@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-10 09:14+0200\n"
-"PO-Revision-Date: 2012-07-03 16:25+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2012-08-11 16:06+0200\n"
+"Last-Translator: Nikita Putko <ktototam98@inbox.ru>\n"
+"Language-Team: Russian <http://l10n.cihar.com/projects/gammu/website/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 1.1\n"
+"X-Generator: Weblate 1.2\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -38,7 +38,7 @@ msgstr "%(program)s тестовый релиз %(version)s"
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
-msgstr "Доступ запрещен"
+msgstr "Доступ запрещён"
 
 #: html/403.html:11 html/404.html:11
 msgid ""
@@ -47,8 +47,8 @@ msgid ""
 "navigation bellow or use <a href=\"/search/\">search facility</a>.\n"
 msgstr ""
 "\n"
-"Запрашиваемая Вами страница не найдена. Попробуйте что-нибудьиз "
-"предложенного или используйте <a href=\"/search/\">Поиск</a>.\n"
+"Запрашиваемая страница не найдена. Попробуйте что-нибудь из предложенного "
+"или используйте <a href=\"/search/\">Поиск</a>.\n"
 
 #: html/403.html:18 html/404.html:18
 msgid ""
@@ -57,7 +57,7 @@ msgid ""
 "continue to pages of following projects:\n"
 msgstr ""
 "\n"
-"Этот сайт содержит информацию о Gammu и Wammu, вы можетеперейти к страницам "
+"Этот сайт содержит информацию о Gammu и Wammu, вы можете перейти к страницам "
 "следующих проектов:\n"
 
 #: html/404.html:4 html/404.html.py:8
@@ -66,7 +66,7 @@ msgstr "Страница не найдена"
 
 #: html/500.html:4 html/500.html.py:8
 msgid "Server Error"
-msgstr "Ошибка сервреа"
+msgstr "Ошибка сервера"
 
 #: html/500.html:11
 msgid ""
@@ -76,7 +76,8 @@ msgid ""
 "trained monkeys to fix the issue.\n"
 msgstr ""
 "\n"
-"Сервер не может обработать ваш запрос\n"
+"У сервера возникли серьёзные проблемы при обработке вашего запроса. Сервер "
+"уже чинят наши специально обученные обезьяны.\n"
 
 #: html/authors.html:4 html/authors.html.py:7
 msgid "Wammu and Gammu Authors"
@@ -89,8 +90,8 @@ msgid ""
 "can find the most visible here.\n"
 msgstr ""
 "\n"
-"Много людей помогали  Gammu, python-gammu и Wammu.Вы можете заметить это "
-"сдесь.\n"
+"Много людей участвовали в разработке Gammu, python-gammu и Wammu. Вы можете "
+"прочитать здесь большинство их имён здесь.\n"
 
 #: html/authors.html:19
 msgid ""
@@ -102,16 +103,23 @@ msgid ""
 "application on top of it</a>. In 2007 he has become maintainer of the Gammu\n"
 "project and he is still in the charge here.\n"
 msgstr ""
+"\n"
+"Michal начал участвовать в разработке в 2002 году, улучшив модуль AT\n"
+"и написав модуль для поддержки телефонов Alcatel. Впоследствии он написал "
+"<a↵\n"
+"href=\"/python-gammu/\">программу для связи Gammu и Python</a> и <a "
+"href=\"/wammu/\">графический\n"
+"интерфейс к ней</a>. В 2007 году стал сопровождающим проекта Gammu\n"
+"и всё ещё участвует в его развитии."
 
 #: html/authors.html:29 html/authors.html.py:50 html/authors.html.py:66
 #: html/phonedb/vendor.html:21
-#, fuzzy
 msgid "Website"
 msgstr "Веб-сайт"
 
 #: html/authors.html:34
 msgid "E-mail"
-msgstr ""
+msgstr "Эл. почта"
 
 #: html/authors.html:41
 msgid ""
