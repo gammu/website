@@ -110,7 +110,7 @@ msgstr ""
 "href=\"/python-gammu/\">программу для связи Gammu и Python</a> и <a "
 "href=\"/wammu/\">графический\n"
 "интерфейс к ней</a>. В 2007 году стал сопровождающим проекта Gammu\n"
-"и всё ещё участвует в его развитии."
+"и всё ещё участвует в его развитии.\n"
 
 #: html/authors.html:29 html/authors.html.py:50 html/authors.html.py:66
 #: html/phonedb/vendor.html:21
