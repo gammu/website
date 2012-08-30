@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-10 09:14+0200\n"
-"PO-Revision-Date: 2012-07-03 16:31+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2012-08-30 20:07+0200\n"
+"Last-Translator: مترجم حرّ <metehyi@gmail.com>\n"
+"Language-Team: French <http://l10n.cihar.com/projects/gammu/website/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 1.1\n"
+"X-Generator: Weblate 1.2\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -115,13 +115,12 @@ msgstr ""
 
 #: html/authors.html:29 html/authors.html.py:50 html/authors.html.py:66
 #: html/phonedb/vendor.html:21
-#, fuzzy
 msgid "Website"
-msgstr "Site &Web"
+msgstr "Site Internet"
 
 #: html/authors.html:34
 msgid "E-mail"
-msgstr ""
+msgstr "Courriel"
 
 #: html/authors.html:41
 msgid ""
@@ -182,33 +181,31 @@ msgstr "Faire un don"
 
 #: html/base.html:81
 msgid "Support Gammu by <a href=\"/donate/\">donating</a>!"
-msgstr ""
+msgstr "Soutenez Gammu en <a href=\"/donate/\">donnant</a>!"
 
 #: html/base.html:95
 msgid "Share"
-msgstr ""
+msgstr "Partage"
 
 #: html/base.html:97
 msgid "Share Gammu with the world!"
-msgstr ""
+msgstr "Partagez Gammu avec le Monde entier!"
 
 #: html/base.html:100
 msgid "Gammu on Google+"
-msgstr ""
+msgstr "Gammu sur Google+"
 
 #: html/base.html:101
 msgid "Gammu on Facebook"
-msgstr ""
+msgstr "Gammu sur Facebook"
 
 #: html/base.html:102
-#, fuzzy
 msgid "Follow us on Twitter"
-msgstr "Suivez nous sur"
+msgstr "Suivez nous sur Twitter"
 
 #: html/base.html:103
-#, fuzzy
 msgid "Follow us on Identi.ca"
-msgstr "Suivez nous sur"
+msgstr "Suivez nous sur Identi.ca"
 
 #: html/base.html:113 html/index.html:19
 msgid "About"
@@ -229,9 +226,8 @@ msgid "python-gammu"
 msgstr "python-gammu"
 
 #: html/base.html:118
-#, fuzzy
 msgid "SMSD"
-msgstr "SMSC"
+msgstr "SMSD"
 
 #: html/base.html:122 wammu/context_processors.py:34
 msgid "Support"
@@ -289,11 +285,11 @@ msgstr "Téléphones supportés"
 
 #: html/base.html:144 html/docs/index.html:25 html/docs/sidebar.html:4
 msgid "Gammu Manual"
-msgstr ""
+msgstr "Manuel d'utilisation de Gammu"
 
 #: html/base.html:145 html/phonedb/body.html:16
 msgid "Configuration"
-msgstr ""
+msgstr "Configuration"
 
 #: html/base.html:149 wammu/context_processors.py:38
 msgid "Contribute"
@@ -375,7 +371,7 @@ msgstr ""
 
 #: html/donate.html:17
 msgid "Micropayments"
-msgstr ""
+msgstr "Micropaiement"
 
 #: html/donate.html:20
 msgid ""
@@ -428,7 +424,7 @@ msgstr ""
 
 #: html/donate.html:61
 msgid "Wire Transfer"
-msgstr ""
+msgstr "Virement"
 
 #: html/donate.html:64
 msgid ""
