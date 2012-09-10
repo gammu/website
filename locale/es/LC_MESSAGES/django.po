@@ -3456,7 +3456,7 @@ msgstr ""
 "zona horaria distinta a la gente con la que se desea chater o simplemente "
 "esta gente está ocupada durante ese tiempo. Puedes intentar preguntar aquí, "
 "pero si no obtienes reacción deberías de probar nuevamente más tarde o "
-"intentar utilizar las <a href=\"/suppor/lists/\">listas de correo</a>.\n"
+"intentar utilizar las <a href=\"/support/lists/\">listas de correo</a>.\n"
 
 #: html/support/online.html:24
 msgid "Jabber conference room"
