@@ -121,12 +121,6 @@ class Phone(models.Model):
             'url': 'http://www.mobile-phone-directory.org/Phones/%s/%s_%s.html' % (vendor, vendor, name),
             'name': 'The Mobile Phone Directory',
         })
-        name = self.name.replace(' ', '').replace('-', '').lower()
-        vendor = self.vendor.slug.replace('-', '_').replace(' ', '_')
-        result.append({
-            'url': 'http://www.mobiledia.com/phones/%s/%s.html' % (vendor, name),
-            'name': 'Mobiledia',
-        })
         if self.vendor.slug == 'nokia':
             name = self.name.replace(' ', '_')
             if name[-1:] == 'c' and name[-2:-1] in '0123456789':
