@@ -8,23 +8,23 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-10 09:14+0200\n"
-"PO-Revision-Date: 2012-03-30 11:23+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2012-09-19 05:10+0200\n"
+"Last-Translator: Roma Dhani <xtalplanet@yahoo.com>\n"
+"Language-Team: Indonesian <http://l10n.cihar.com/projects/gammu/website/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 0.8\n"
+"X-Generator: Weblate 1.2\n"
 
 #: downloads/models.py:32
 msgid "Source"
-msgstr ""
+msgstr "Sumber"
 
 #: downloads/models.py:33
 msgid "Windows binary"
-msgstr ""
+msgstr "Jendela biner"
 
 #: downloads/models.py:176
 #, python-format
@@ -38,7 +38,7 @@ msgstr ""
 
 #: html/403.html:4 html/403.html.py:8
 msgid "Permission Denied"
-msgstr ""
+msgstr "Izin Ditolak"
 
 #: html/403.html:11 html/404.html:11
 msgid ""
@@ -46,6 +46,9 @@ msgid ""
 "The page you are looking for was not found. Try choosing something from the\n"
 "navigation bellow or use <a href=\"/search/\">search facility</a>.\n"
 msgstr ""
+"\n"
+"Halaman yang Anda cari tidak ditemukan. Coba pilih yang lain dari\n"
+"navigasi di bawah atau gunakan <a href=\"/search/\">fasilitas pencarian</a>.\n"
 
 #: html/403.html:18 html/404.html:18
 msgid ""
@@ -53,14 +56,17 @@ msgid ""
 "This site includes information about Gammu and Wammu, you might want to\n"
 "continue to pages of following projects:\n"
 msgstr ""
+"\n"
+"Situs ini mengandung informasi tentang Gammu dan Wammu, Anda mungkin ingin\n"
+"melanjutkan ke halaman proyek berikut:\n"
 
 #: html/404.html:4 html/404.html.py:8
 msgid "Page Not Found"
-msgstr ""
+msgstr "Halaman Tidak Ditemukan"
 
 #: html/500.html:4 html/500.html.py:8
 msgid "Server Error"
-msgstr ""
+msgstr "Server Gagal"
 
 #: html/500.html:11
 msgid ""
@@ -69,10 +75,14 @@ msgid ""
 "our\n"
 "trained monkeys to fix the issue.\n"
 msgstr ""
+"\n"
+"Server mengalami masalah serius saat melayani permintaan Anda. Kami sedang "
+"mengirim\n"
+"kera-kera terlatih untuk mengatasi masalah ini.\n"
 
 #: html/authors.html:4 html/authors.html.py:7
 msgid "Wammu and Gammu Authors"
-msgstr ""
+msgstr "Penulis Wammu dan Gammu"
 
 #: html/authors.html:10
 msgid ""
@@ -80,6 +90,10 @@ msgid ""
 "Lot of people contributed to Gammu, python-gammu and Wammu in the past. You\n"
 "can find the most visible here.\n"
 msgstr ""
+"\n"
+"Banyak yang ikut berkontribusi untuk Gammu, python-gammu dan Wammu "
+"sebelumnya. Anda\n"
+"bisa melihat yang tercantum di sini.\n"
 
 #: html/authors.html:19
 msgid ""
@@ -99,7 +113,7 @@ msgstr "Situs"
 
 #: html/authors.html:34
 msgid "E-mail"
-msgstr ""
+msgstr "E-mail"
 
 #: html/authors.html:41
 msgid ""
@@ -125,24 +139,24 @@ msgstr ""
 
 #: html/base.html:12
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
-msgstr ""
+msgstr "Situs Gammu dan Wammu, perangkat lunak antar muka telepon selular GSM."
 
 #: html/base.html:62
 msgid "Page translations"
-msgstr ""
+msgstr "Halaman terjemahan"
 
 #: html/base.html:67
 msgid "Translate!"
-msgstr ""
+msgstr "Terjemahkan!"
 
 #: html/base.html:71 html/base.html.py:133 html/downloads/program.html:7
 #: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
 msgid "Downloads"
-msgstr ""
+msgstr "Unduh"
 
 #: html/base.html:79 html/base.html.py:153 html/base.html.py:163
 msgid "Donate"
-msgstr ""
+msgstr "Sumbang"
 
 #: html/base.html:81
 msgid "Support Gammu by <a href=\"/donate/\">donating</a>!"
@@ -150,31 +164,31 @@ msgstr ""
 
 #: html/base.html:95
 msgid "Share"
-msgstr ""
+msgstr "Bagi"
 
 #: html/base.html:97
 msgid "Share Gammu with the world!"
-msgstr ""
+msgstr "Bagikan Gammu pada dunia!"
 
 #: html/base.html:100
 msgid "Gammu on Google+"
-msgstr ""
+msgstr "Gammu pada Google+"
 
 #: html/base.html:101
 msgid "Gammu on Facebook"
-msgstr ""
+msgstr "Gammu pada Facebook"
 
 #: html/base.html:102
 msgid "Follow us on Twitter"
-msgstr ""
+msgstr "Pantau kami di Twitter"
 
 #: html/base.html:103
 msgid "Follow us on Identi.ca"
-msgstr ""
+msgstr "Pantau kami di Identi.ca"
 
 #: html/base.html:113 html/index.html:19
 msgid "About"
-msgstr ""
+msgstr "Tentang"
 
 #: html/base.html:115 html/gammu.html:4 html/gammu.html.py:19
 #: html/contribute/translate.html:60
@@ -188,35 +202,35 @@ msgstr "Wammu"
 
 #: html/base.html:117
 msgid "python-gammu"
-msgstr ""
+msgstr "python-gammu"
 
 #: html/base.html:118
 msgid "SMSD"
-msgstr ""
+msgstr "SMSD"
 
 #: html/base.html:122 wammu/context_processors.py:34
 msgid "Support"
-msgstr ""
+msgstr "Dukungan"
 
 #: html/base.html:124
 msgid "Mailing lists"
-msgstr ""
+msgstr "Mailing list"
 
 #: html/base.html:125
 msgid "Online"
-msgstr ""
+msgstr "Terhubung"
 
 #: html/base.html:126
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Laporkan bug"
 
 #: html/base.html:127
 msgid "Commercial support"
-msgstr ""
+msgstr "Dukungan komersial"
 
 #: html/base.html:131
 msgid "Media"
-msgstr ""
+msgstr "Media"
 
 #: html/base.html:134 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
@@ -226,51 +240,51 @@ msgstr ""
 
 #: html/base.html:135
 msgid "Third party"
-msgstr ""
+msgstr "Pihak ketiga"
 
 #: html/base.html:136 html/index.html:54
 msgid "News"
-msgstr ""
+msgstr "Berita"
 
 #: html/base.html:140 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:69 html/smsd.html:73 html/wammu.html:57
 #: html/docs/sidebar.html:2 html/support/sidebar.html:4
 #: wammu/context_processors.py:37
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentasi"
 
 #: html/base.html:142 html/docs/sidebar.html:5
 msgid "FAQ"
-msgstr ""
+msgstr "Pertanyaan Paling Sering"
 
 #: html/base.html:143 html/docs/sidebar.html:7 html/sidebars/common.html:3
 #: phonedb/views.py:101
 msgid "Supported phones"
-msgstr ""
+msgstr "Telepon yang didukung"
 
 #: html/base.html:144 html/docs/index.html:25 html/docs/sidebar.html:4
 msgid "Gammu Manual"
-msgstr ""
+msgstr "Petunjuk Gammu"
 
 #: html/base.html:145 html/phonedb/body.html:16
 msgid "Configuration"
-msgstr ""
+msgstr "Konfigurasi"
 
 #: html/base.html:149 wammu/context_processors.py:38
 msgid "Contribute"
-msgstr ""
+msgstr "Kontribusi"
 
 #: html/base.html:151 html/contribute/sidebar.html:4
 msgid "Translate"
-msgstr ""
+msgstr "Terjemahkan"
 
 #: html/base.html:152 html/contribute/sidebar.html:5
 msgid "Develop"
-msgstr ""
+msgstr "Pengembangan"
 
 #: html/base.html:154 html/contribute/sidebar.html:7
 msgid "Publicity"
-msgstr ""
+msgstr "Publisitas"
 
 #: html/base.html:162
 msgid "License"
@@ -278,23 +292,23 @@ msgstr "Lisensi"
 
 #: html/base.html:163
 msgid "Support Gammu/Wammu by donating money!"
-msgstr ""
+msgstr "Dukung Gammu/Wammu dengan menyumbangkan uang!"
 
 #: html/base.html:164
 msgid "Search for Gammu/Wammu related questions"
-msgstr ""
+msgstr "Cari pertanyaan terkait Gammu/Wammu"
 
 #: html/base.html:164 html/phonedb/index.html:8
 msgid "Search"
-msgstr ""
+msgstr "Cari"
 
 #: html/base.html:165
 msgid "Gammu and Wammu authors"
-msgstr ""
+msgstr "Penulis Gammu dan Wammu"
 
 #: html/base.html:165
 msgid "Authors"
-msgstr ""
+msgstr "Penulis"
 
 #: html/base.html:166
 msgid ""
@@ -304,7 +318,7 @@ msgstr ""
 
 #: html/donate-thanks.html:4 html/donate-thanks.html.py:11
 msgid "Thank you for Donation"
-msgstr ""
+msgstr "Terimakasih atas sumbangan Anda"
 
 #: html/donate-thanks.html:14
 msgid ""
@@ -313,16 +327,22 @@ msgid ""
 "donated\n"
 "money in useful way.\n"
 msgstr ""
+"\n"
+"Terimakasih atas sumbangan Anda untuk Gammu/Wammu! Kami akan berusaha\n"
+"menggunakannya sebaik mungkin.\n"
 
 #: html/donate.html:4 html/donate.html.py:11
 msgid "Donate to Gammu"
-msgstr ""
+msgstr "Sumbang untuk Gammu"
 
 #: html/donate.html:14
 msgid ""
 "Gammu as a free software is project run by volunteers in their free time. To "
 "appreciate their work you can donate them in one of ways mentioned below."
 msgstr ""
+"Gammu adalah perangkat lunak gratis yang dibuat oleh relawan di sela waktu "
+"mereka. Untuk menghargai karya mereka, Anda bisa turut\n"
+"menyumbangkan dengan cara-cara di bawah ini."
 
 #: html/donate.html:17
 msgid "Micropayments"
@@ -339,7 +359,7 @@ msgstr ""
 
 #: html/donate.html:32
 msgid "Donate Money"
-msgstr ""
+msgstr "Menyumbangkan Uang"
 
 #: html/donate.html:34
 msgid ""
@@ -353,6 +373,12 @@ msgid ""
 "there is simply lot of them and having more available allows us to create\n"
 "better software.\n"
 msgstr ""
+"\n"
+"Terimakasih telah turut menyumbang untuk proyek Gammu dan Wammu. Uang ini\n"
+"bisa memotivasi pengembang dan turut membantu menyediakan perangkat keras\n"
+"sebagai media ujicoba. Kami memang sudah mempunyai beberapa ponsel, namun\n"
+"masih banyak ponsel di luar sana yang ingin kami sediakan\n"
+"perangkat lunaknya.\n"
 
 #: html/donate.html:44
 msgid ""
@@ -366,7 +392,7 @@ msgstr ""
 
 #: html/donate.html:61
 msgid "Wire Transfer"
-msgstr ""
+msgstr "Transfer Kabel"
 
 #: html/donate.html:64
 msgid ""
@@ -375,6 +401,10 @@ msgid ""
 "following\n"
 "information to make the payment:\n"
 msgstr ""
+"\n"
+"Jika ingin, Anda bisa gunakan transfer kabel untuk mengirimkan uang pada "
+"saya. Gunakan\n"
+"informasi berikut mengenai cara pembayarannya:\n"
 
 #: html/donate.html:72
 msgid ""
@@ -383,10 +413,14 @@ msgid ""
 "wire\n"
 "transfer to account 2300081892 / 2010.\n"
 msgstr ""
+"\n"
+"Jika Anda mempunyai akun di Republik Cheznia, Anda bisa gunakan kabel lokal "
+"(lebih murah)\n"
+"untuk transfer ke akun 2300081892 / 2010.\n"
 
 #: html/donate.html:78
 msgid "Other Options"
-msgstr ""
+msgstr "Pilihan Lain"
 
 #: html/donate.html:80
 msgid ""
@@ -407,30 +441,41 @@ msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
 msgstr ""
+"Daftar perusahaan atau pribadi yang secara rutin mendukung keuangan situs "
+"ini atau pengembangan Gammu."
 
 #: html/gammu-family.html:4
 msgid ""
 "\n"
 "GUI program to manage contacts, todos, calendar and messages in your phone.\n"
 msgstr ""
+"\n"
+"Program antar muka grafis untuk mengatur kontak, jadwal, kalender dan pesan "
+"pada telepon Anda.\n"
 
 #: html/gammu-family.html:10
 msgid ""
 "\n"
 "Command line utility which allows to use all libGammu features.\n"
 msgstr ""
+"\n"
+"Utilitas command line yang mengizinkan penggunaan seluruh fitur libGammu.\n"
 
 #: html/gammu-family.html:16
 msgid ""
 "\n"
 "Library exporting C API to talk to cell phones.\n"
 msgstr ""
+"\n"
+"Pustaka pengekspor C API untuk berhubungan dengan telepon selular.\n"
 
 #: html/gammu-family.html:22
 msgid ""
 "\n"
 "SMS daemon service to receive and send messages automatically.\n"
 msgstr ""
+"\n"
+"Layanan SMS untuk menerima dan mengirim pesan secara otomatis.\n"
 
 #: html/gammu-family.html:28
 msgid ""
@@ -456,12 +501,16 @@ msgid ""
 "\n"
 "SMS retrieval, backup and sending\n"
 msgstr ""
+"\n"
+"Menyimpan SMS, backup dan pengiriman\n"
 
 #: html/gammu-features.html:9
 msgid ""
 "\n"
 "MMS retrieval\n"
 msgstr ""
+"\n"
+"Penyimpanan MMS\n"
 
 #: html/gammu-features.html:12
 msgid ""
@@ -469,6 +518,9 @@ msgid ""
 "Phonebook listing, export and import (also from standard formats such as\n"
 "vCard)\n"
 msgstr ""
+"\n"
+"Daftar buku telepon, ekspor dan impor (juga dari format standar seperti\n"
+"vCard)\n"
 
 #: html/gammu-features.html:16
 msgid ""
@@ -477,12 +529,18 @@ msgid ""
 "such as\n"
 "vCalendar or iCalendar)\n"
 msgstr ""
+"\n"
+"Kalender dan daftar jadwal, ekspor dan impor (termasuk format standar "
+"seperti\n"
+"vCalendar atau iCalendar)\n"
 
 #: html/gammu-features.html:20
 msgid ""
 "\n"
 "Retrieval of phone and network information\n"
 msgstr ""
+"\n"
+"Mendapatkan informasi telepon dan jaringan\n"
 
 #: html/gammu-features.html:23
 msgid ""
@@ -2974,11 +3032,11 @@ msgstr ""
 
 #: phonedb/views.py:443
 msgid "Phone record has been created."
-msgstr ""
+msgstr "Catatan telepon telah tercipta."
 
 #: tools/forms.py:7
 msgid "PDU text"
-msgstr ""
+msgstr "teks PDU"
 
 #: tools/forms.py:10
 msgid "You can provide more messages, each on seaprate line."
