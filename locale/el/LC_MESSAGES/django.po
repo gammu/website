@@ -7,18 +7,19 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-10 09:14+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-09-27 11:36+0200\n"
+"Last-Translator: Panagiotis Papazoglou <papaz_p@yahoo.com>\n"
+"Language-Team: Greek <http://l10n.cihar.com/projects/gammu/website/el/>\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.4.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 1.2\n"
 
 #: downloads/models.py:32
 msgid "Source"
-msgstr ""
+msgstr "Προέλευση"
 
 #: downloads/models.py:33
 msgid "Windows binary"
@@ -92,9 +93,8 @@ msgstr ""
 
 #: html/authors.html:29 html/authors.html.py:50 html/authors.html.py:66
 #: html/phonedb/vendor.html:21
-#, fuzzy
 msgid "Website"
-msgstr "&Ιστοσελίδα"
+msgstr "Ιστοσελίδα"
 
 #: html/authors.html:34
 msgid "E-mail"
@@ -140,9 +140,8 @@ msgid "Downloads"
 msgstr ""
 
 #: html/base.html:79 html/base.html.py:153 html/base.html.py:163
-#, fuzzy
 msgid "Donate"
-msgstr "&Δωρεά"
+msgstr "Δωρεά"
 
 #: html/base.html:81
 msgid "Support Gammu by <a href=\"/donate/\">donating</a>!"
@@ -173,9 +172,8 @@ msgid "Follow us on Identi.ca"
 msgstr ""
 
 #: html/base.html:113 html/index.html:19
-#, fuzzy
 msgid "About"
-msgstr "&Σχετικά"
+msgstr "Σχετικά"
 
 #: html/base.html:115 html/gammu.html:4 html/gammu.html.py:19
 #: html/contribute/translate.html:60
@@ -192,14 +190,12 @@ msgid "python-gammu"
 msgstr ""
 
 #: html/base.html:118
-#, fuzzy
 msgid "SMSD"
-msgstr "SMSC"
+msgstr "SMSD"
 
 #: html/base.html:122 wammu/context_processors.py:34
-#, fuzzy
 msgid "Support"
-msgstr "&Υποστήριξη"
+msgstr "Υποστήριξη"
 
 #: html/base.html:124
 msgid "Mailing lists"
@@ -288,9 +284,8 @@ msgid "Search for Gammu/Wammu related questions"
 msgstr ""
 
 #: html/base.html:164 html/phonedb/index.html:8
-#, fuzzy
 msgid "Search"
-msgstr "Αναζήτηση: "
+msgstr "Αναζήτηση"
 
 #: html/base.html:165
 msgid "Gammu and Wammu authors"
@@ -402,9 +397,8 @@ msgid ""
 msgstr ""
 
 #: html/donate.html:87
-#, fuzzy
 msgid "Supporters"
-msgstr "&Υποστήριξη"
+msgstr "Υποστηρικτές"
 
 #: html/donate.html:89
 msgid ""
@@ -497,9 +491,8 @@ msgstr ""
 
 #: html/gammu.html:11 html/libgammu.html:7 html/python-gammu.html:13
 #: html/smsd.html:13 html/wammu.html:11
-#, fuzzy
 msgid "More information"
-msgstr "Πληροφορίες τηλεφώνου"
+msgstr "Περισσότερες πληροφορίες"
 
 #: html/gammu.html:22
 msgid ""
@@ -677,7 +670,6 @@ msgid ""
 msgstr ""
 
 #: html/license.html:18
-#, fuzzy
 msgid ""
 "\n"
 "This program is free software; you can redistribute it and/or\n"
@@ -686,9 +678,10 @@ msgid ""
 "of the License.\n"
 msgstr ""
 "\n"
-"Αυτό είναι ένα πρόγραμμα δωρεάν λογισμικού. Μπορείτε να το διανείμετε ή και "
-"να το τροποποιήσετε υπό τους όρους του GNU GPL 2 όπως αυτοί έχουν εκδοθεί "
-"από το ίδρυμα δωρεάν λογισμικού.\n"
+"Αυτό είναι ένα πρόγραμμα δωρεάν λογισμικού. Μπορείτε να το διανείμετε ή/και\n"
+"να το τροποποιήσετε υπό τους όρους του GNU General Public License\n"
+"όπως αυτοί έχουν εκδοθεί από το ίδρυμα δωρεάν λογισμικού, έκδοση 2\n"
+"της άδειας.\n"
 
 #: html/license.html:27 html/license.html.py:64
 msgid ""
@@ -1013,7 +1006,6 @@ msgid ""
 msgstr ""
 
 #: html/wammu_feedback.html:3
-#, fuzzy
 msgid "Thank you for using Wammu"
 msgstr "Ευχαριστούμε που χρησιμοποιείτε το Wammu"
 
@@ -1499,9 +1491,8 @@ msgid ""
 msgstr ""
 
 #: html/contribute/wanted.html:52
-#, fuzzy
 msgid "Community supporter"
-msgstr "Μη υποστηριζόμενο"
+msgstr "Υποστηρικτής κοινότητας"
 
 #: html/contribute/wanted.html:55
 msgid ""
@@ -1906,9 +1897,8 @@ msgid "Third Party Applications using Gammu"
 msgstr ""
 
 #: html/links/index.html:22
-#, fuzzy
 msgid "Website:"
-msgstr "&Ιστοσελίδα"
+msgstr "Ιστοσελίδα:"
 
 #: html/news/contrib_index.html:4 html/news/contrib_index.html.py:6
 msgid "Third Party News"
@@ -1963,9 +1953,8 @@ msgid "Wammu News"
 msgstr ""
 
 #: html/phonedb/body.html:3
-#, fuzzy
 msgid "Supported Features"
-msgstr "Υποστηριζόμενα χαρακτηριστικά"
+msgstr "Υποστηριζόμενα Χαρακτηριστικά"
 
 #: html/phonedb/body.html:13
 msgid "No features reported as working!"
@@ -1989,9 +1978,8 @@ msgstr ""
 #: html/phonedb/index.html:5 html/phonedb/index.html.py:39
 #: html/phonedb/new.html:5 html/phonedb/phone.html:6
 #: html/phonedb/search.html:5 html/phonedb/vendor.html:6
-#, fuzzy
 msgid "Gammu Phone Database "
-msgstr "&Βάση δεδομένων τηλεφώνου του Gammu"
+msgstr "Βάση δεδομένων Τηλεφώνου του Gammu "
 
 #: html/phonedb/index.html:11 html/phonedb/index.html.py:24
 #: html/phonedb/new.html:50 html/phonedb/search.html:22
@@ -2053,9 +2041,8 @@ msgid ""
 msgstr ""
 
 #: html/phonedb/index.html:74
-#, fuzzy
 msgid "Manufacturers"
-msgstr "Κατασκευαστής"
+msgstr "Κατασκευαστές"
 
 #: html/phonedb/index.html:83
 msgid "Recently Added Phones"
@@ -2839,9 +2826,8 @@ msgid "Updates about Wammu and Gammu programs."
 msgstr ""
 
 #: phonedb/feeds.py:9
-#, fuzzy
 msgid "Gammu Phone Database"
-msgstr "&Βάση δεδομένων τηλεφώνου του Gammu"
+msgstr "Βάση δεδομένων τηλεφώνου του Gammu"
 
 #: phonedb/feeds.py:11
 msgid "Gammu phone database updates."
