@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-10 09:14+0200\n"
-"PO-Revision-Date: 2011-11-15 23:43+0200\n"
+"PO-Revision-Date: 2012-10-19 22:11+0200\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: Hungarian <http://l10n.cihar.com/projects/gammu/website/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.1.6\n"
+"X-Generator: Weblate 1.2\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -93,9 +93,8 @@ msgstr ""
 
 #: html/authors.html:29 html/authors.html.py:50 html/authors.html.py:66
 #: html/phonedb/vendor.html:21
-#, fuzzy
 msgid "Website"
-msgstr "&Weboldal"
+msgstr "Weboldal"
 
 #: html/authors.html:34
 msgid "E-mail"
@@ -141,9 +140,8 @@ msgid "Downloads"
 msgstr ""
 
 #: html/base.html:79 html/base.html.py:153 html/base.html.py:163
-#, fuzzy
 msgid "Donate"
-msgstr "&Támogatás"
+msgstr "Támogatás"
 
 #: html/base.html:81
 msgid "Support Gammu by <a href=\"/donate/\">donating</a>!"
@@ -174,9 +172,8 @@ msgid "Follow us on Identi.ca"
 msgstr ""
 
 #: html/base.html:113 html/index.html:19
-#, fuzzy
 msgid "About"
-msgstr "&Névjegy"
+msgstr "Névjegy"
 
 #: html/base.html:115 html/gammu.html:4 html/gammu.html.py:19
 #: html/contribute/translate.html:60
@@ -193,14 +190,12 @@ msgid "python-gammu"
 msgstr ""
 
 #: html/base.html:118
-#, fuzzy
 msgid "SMSD"
-msgstr "SMSC"
+msgstr "SMSD"
 
 #: html/base.html:122 wammu/context_processors.py:34
-#, fuzzy
 msgid "Support"
-msgstr "&Támogatás"
+msgstr "Támogatás"
 
 #: html/base.html:124
 msgid "Mailing lists"
@@ -289,9 +284,8 @@ msgid "Search for Gammu/Wammu related questions"
 msgstr ""
 
 #: html/base.html:164 html/phonedb/index.html:8
-#, fuzzy
 msgid "Search"
-msgstr "Keresés:"
+msgstr "Keresés"
 
 #: html/base.html:165
 msgid "Gammu and Wammu authors"
@@ -403,9 +397,8 @@ msgid ""
 msgstr ""
 
 #: html/donate.html:87
-#, fuzzy
 msgid "Supporters"
-msgstr "&Támogatás"
+msgstr "Támogatók"
 
 #: html/donate.html:89
 msgid ""
@@ -498,9 +491,8 @@ msgstr ""
 
 #: html/gammu.html:11 html/libgammu.html:7 html/python-gammu.html:13
 #: html/smsd.html:13 html/wammu.html:11
-#, fuzzy
 msgid "More information"
-msgstr "Telefoninformáció"
+msgstr "További információ"
 
 #: html/gammu.html:22
 msgid ""
@@ -687,7 +679,7 @@ msgid ""
 "of the License.\n"
 msgstr ""
 "\n"
-"Ez a szoftver szabad szoftver; szabadon terjeszthető és/vagy módosítható\n"
+"Ez a program szabad szoftver; szabadon terjeszthető és/vagy módosítható\n"
 "a Free Software Foundation által közzétett GNU Általános Nyilvános\n"
 "engedély feltételei szerint; az Engedély 2. vagy (az Ön döntése alapján)\n"
 "bármelyik későbbi verziója szerint.\n"
@@ -1015,9 +1007,8 @@ msgid ""
 msgstr ""
 
 #: html/wammu_feedback.html:3
-#, fuzzy
 msgid "Thank you for using Wammu"
-msgstr "Köszönjük, hogy a Wammu programot használja."
+msgstr "Köszönjük, hogy a Wammu programot használja"
 
 #: html/wammu_feedback.html:5
 msgid ""
@@ -1501,9 +1492,8 @@ msgid ""
 msgstr ""
 
 #: html/contribute/wanted.html:52
-#, fuzzy
 msgid "Community supporter"
-msgstr "Nem támogatott"
+msgstr "Közösségi támogató"
 
 #: html/contribute/wanted.html:55
 msgid ""
@@ -1908,9 +1898,8 @@ msgid "Third Party Applications using Gammu"
 msgstr ""
 
 #: html/links/index.html:22
-#, fuzzy
 msgid "Website:"
-msgstr "&Weboldal"
+msgstr "Weboldal:"
 
 #: html/news/contrib_index.html:4 html/news/contrib_index.html.py:6
 msgid "Third Party News"
@@ -1965,7 +1954,6 @@ msgid "Wammu News"
 msgstr ""
 
 #: html/phonedb/body.html:3
-#, fuzzy
 msgid "Supported Features"
 msgstr "Támogatott funkciók"
 
@@ -1991,9 +1979,8 @@ msgstr ""
 #: html/phonedb/index.html:5 html/phonedb/index.html.py:39
 #: html/phonedb/new.html:5 html/phonedb/phone.html:6
 #: html/phonedb/search.html:5 html/phonedb/vendor.html:6
-#, fuzzy
 msgid "Gammu Phone Database "
-msgstr "@Gammu Telefon-adatbázis"
+msgstr "Gammu telefon-adatbázis "
 
 #: html/phonedb/index.html:11 html/phonedb/index.html.py:24
 #: html/phonedb/new.html:50 html/phonedb/search.html:22
@@ -2055,9 +2042,8 @@ msgid ""
 msgstr ""
 
 #: html/phonedb/index.html:74
-#, fuzzy
 msgid "Manufacturers"
-msgstr "Gyártó"
+msgstr "Gyártók"
 
 #: html/phonedb/index.html:83
 msgid "Recently Added Phones"
@@ -2841,9 +2827,8 @@ msgid "Updates about Wammu and Gammu programs."
 msgstr ""
 
 #: phonedb/feeds.py:9
-#, fuzzy
 msgid "Gammu Phone Database"
-msgstr "@Gammu Telefon-adatbázis"
+msgstr "Gammu telefon-adatbázis"
 
 #: phonedb/feeds.py:11
 msgid "Gammu phone database updates."
