@@ -107,29 +107,7 @@ href="/support/bugs/">bug tracker</a>.
 <a name="testing"></a>
 <h3>{% trans "Testing" %}</h3>
 <p>
-{% blocktrans %}
-Gammu comes with quite comprehensive testsuite, which is being run daily on
-some platforms. You can find results on <a
-href="https://cdash.cihar.com/index.php?project=Gammu">CDash</a>. If you have
-computer that runs all the time, you are very welcome to run the testsuite and
-contribute to the quality of the code. To run the testsuite, you basically
-just need checked out <a href="#vcs">sources</a> and run following commands
-every night:
-{% endblocktrans %}
-</p>
-
-<pre>
-cd /path/to/gammu
-git pull
-cd build-dir # eg. build-configure
-make NightlyMemCheck # or just Nightly if memory checking tool is not available on your platform
-</pre>
-
-<p>
-{% blocktrans %}
-The results are automatically uploaded to the dashboard and developers are
-being notified about every test failure which does happen.
-{% endblocktrans %}
+{% blocktrans %}Gammu comes with quite comprehensive testsuite, which is being run continuosly using <a href="https://travis-ci.org/gammu/gammu">Travis</a>.{% endblocktrans %}
 </p>
 
 {% endblock %}
