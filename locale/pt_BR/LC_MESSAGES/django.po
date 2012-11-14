@@ -6,12 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2012-11-12 13:06+0100\n"
-"PO-Revision-Date: 2012-11-08 03:24+0200\n"
+"PO-Revision-Date: 2012-11-14 23:04+0200\n"
 "Last-Translator: gilberto dos santos alves <gsavix@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <http://l10n.cihar.com/projects/gammu/"
-"website/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) "
+"<http://l10n.cihar.com/projects/gammu/website/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -405,6 +405,14 @@ msgid ""
 "there is simply lot of them and having more available allows us to create\n"
 "better software.\n"
 msgstr ""
+"\n"
+"Obrigado pelo seu interesse em fazer doações em dinheiro para projeto Gammu "
+"e Wammu. Este\n"
+"dinheiro serve como motivação para os desenvolvedores bem como custear "
+"hardware\n"
+"necessário para executar testes. Nós temos alguns aparelhos celulares\n"
+"mas precisamos de mais para maior disponibilidade para criarmos software de "
+"melhor qualidade."
 
 #: html/donate.html:44
 msgid ""
@@ -418,7 +426,7 @@ msgstr ""
 
 #: html/donate.html:61
 msgid "Wire Transfer"
-msgstr ""
+msgstr "Transferência Online"
 
 #: html/donate.html:64
 msgid ""
@@ -427,6 +435,10 @@ msgid ""
 "following\n"
 "information to make the payment:\n"
 msgstr ""
+"\n"
+"Se preferir pode usar transferência on-line bem como enviar dinheiro "
+"diretamente.\n"
+"Use a seguinte informação para fazer doação:\n"
 
 #: html/donate.html:72
 msgid ""
@@ -435,10 +447,14 @@ msgid ""
 "wire\n"
 "transfer to account 2300081892 / 2010.\n"
 msgstr ""
+"\n"
+"Se você possui conta bancária na República Checa, pode usar uma "
+"transferência local\n"
+"para a conta 2300081892 / 2010.\n"
 
 #: html/donate.html:78
 msgid "Other Options"
-msgstr ""
+msgstr "Outras Opções"
 
 #: html/donate.html:80
 msgid ""
@@ -448,6 +464,11 @@ msgid ""
 "for\n"
 "Michal Čihař</a>.\n"
 msgstr ""
+"\n"
+"Também pode presentear os desenvolvedores, atualmente na amazom <a\n"
+"href=\"http://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">Lista Presentes "
+"para\n"
+"Michal Čihař</a>.\n"
 
 #: html/donate.html:87
 msgid "Supporters"
@@ -458,12 +479,18 @@ msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
 msgstr ""
+"Lista de empresas ou indivíduos que regularmente suportam este website ou o "
+"desenvolvimento do gammu através\n"
+"de suporte financeiro."
 
 #: html/gammu-family.html:4
 msgid ""
 "\n"
 "GUI program to manage contacts, todos, calendar and messages in your phone.\n"
 msgstr ""
+"\n"
+"Programa Interface Gráfico para gerenciar contatos, tarefas, calendário e "
+"mensagens no celular.\n"
 
 #: html/gammu-family.html:10
 msgid ""
@@ -2922,7 +2949,7 @@ msgstr "Excluído"
 
 #: phonedb/models.py:33
 msgid "Phone information"
-msgstr "Informação do telefone"
+msgstr "Informações do Celular"
 
 #: phonedb/models.py:34
 msgid "Sending and saving SMS"
