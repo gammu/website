@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-12 13:06+0100\n"
+"POT-Creation-Date: 2012-11-20 10:26+0100\n"
 "PO-Revision-Date: 2012-08-11 16:06+0200\n"
 "Last-Translator: Nikita Putko <ktototam98@inbox.ru>\n"
 "Language-Team: Russian <http://l10n.cihar.com/projects/gammu/website/ru/>\n"
@@ -198,13 +198,13 @@ msgid "About"
 msgstr "О программе"
 
 #: html/base.html:115 html/gammu.html:4 html/gammu.html.py:19
-#: html/contribute/translate.html:60
+#: html/contribute/translate.html:61
 msgid "Gammu"
 msgstr "Gammu"
 
 # msgid "Gammu"
 #: html/base.html:116 html/wammu.html:4 html/wammu.html.py:22
-#: html/contribute/translate.html:58
+#: html/contribute/translate.html:59
 msgid "Wammu"
 msgstr "Wammu"
 
@@ -644,7 +644,7 @@ msgid "Sponsors"
 msgstr ""
 
 #: html/libgammu.html:4 html/libgammu.html.py:15
-#: html/contribute/translate.html:59
+#: html/contribute/translate.html:60
 msgid "libGammu"
 msgstr ""
 
@@ -1375,7 +1375,7 @@ msgid ""
 "of\n"
 "people can work on single translation as they just translate one text at "
 "once.\n"
-"We currently use <a href=\"https://l10n.cihar.com/\">Weblate</a> to\n"
+"We currently use <a href=\"https://weblate.org/\">Weblate</a> to\n"
 "manage translations. To start translating just create an account there and\n"
 "start translating. You can already see dozens of languages there, but if "
 "your\n"
@@ -1384,11 +1384,15 @@ msgid ""
 "are separate translations projects:\n"
 msgstr ""
 
-#: html/contribute/translate.html:61
+#: html/contribute/translate.html:58
+msgid "Introduction page"
+msgstr ""
+
+#: html/contribute/translate.html:62
 msgid "This website"
 msgstr ""
 
-#: html/contribute/translate.html:65
+#: html/contribute/translate.html:66
 msgid ""
 "\n"
 "All languages are open to translated for anybody logged in by default. "
@@ -1400,18 +1404,18 @@ msgid ""
 "translator to define policy.\n"
 msgstr ""
 
-#: html/contribute/translate.html:74
+#: html/contribute/translate.html:75
 msgid "Hints for Translators"
 msgstr ""
 
-#: html/contribute/translate.html:76
+#: html/contribute/translate.html:77
 msgid ""
 "\n"
 "In menu items, there is often used ampresand (&amp;), it means keybord\n"
 "shortcut for menu item. Please make those shortcuts unique in each menu. \n"
 msgstr ""
 
-#: html/contribute/translate.html:83
+#: html/contribute/translate.html:84
 msgid ""
 "\n"
 "Please test the translations in the program. Just download mo file from\n"
@@ -1421,7 +1425,7 @@ msgid ""
 "is two letter code of your translation.\n"
 msgstr ""
 
-#: html/contribute/translate.html:92
+#: html/contribute/translate.html:93
 #, python-format
 msgid ""
 "You should follow terminology as defined for your language in <a href="
@@ -1429,11 +1433,11 @@ msgid ""
 "help creating one!"
 msgstr ""
 
-#: html/contribute/translate.html:95
+#: html/contribute/translate.html:96
 msgid "What is Important?"
 msgstr ""
 
-#: html/contribute/translate.html:97
+#: html/contribute/translate.html:98
 msgid ""
 "\n"
 "If you will get to translation in bad shape, there is too much work. Use "
@@ -1441,7 +1445,7 @@ msgid ""
 "following rules to find the most important things:\n"
 msgstr ""
 
-#: html/contribute/translate.html:104
+#: html/contribute/translate.html:105
 msgid ""
 "\n"
 "libGammu messages - there is just few of them and they are used also in "
@@ -1449,20 +1453,20 @@ msgid ""
 "It is just good place to start and get to know some basic terminology.\n"
 msgstr ""
 
-#: html/contribute/translate.html:108
+#: html/contribute/translate.html:109
 msgid ""
 "\n"
 "Wammu translation - the is the application which is most frequently used by\n"
 "users with little English knowledge.\n"
 msgstr ""
 
-#: html/contribute/translate.html:112
+#: html/contribute/translate.html:113
 msgid ""
 "\n"
 "Gammu translation - it's nice to have but not really a high priority.\n"
 msgstr ""
 
-#: html/contribute/translate.html:115
+#: html/contribute/translate.html:116
 msgid ""
 "\n"
 "Wammu website - there is lot of texts here and it's great to have the "
@@ -1470,7 +1474,7 @@ msgid ""
 "translated for new users.\n"
 msgstr ""
 
-#: html/contribute/translate.html:119
+#: html/contribute/translate.html:120
 msgid ""
 "\n"
 "Gammu documentation - it would be great to have this translated to many\n"
