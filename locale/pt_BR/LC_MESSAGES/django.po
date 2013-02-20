@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2012-11-20 10:26+0100\n"
-"PO-Revision-Date: 2012-11-21 15:30+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
+"PO-Revision-Date: 2013-02-20 22:05+0200\n"
+"Last-Translator: Helder Santana <helder.bs.santana@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://l10n.cihar.com/projects/gammu/website/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 1.4-dev\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 1.5-dev\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -425,6 +425,11 @@ msgid ""
 "account or by using any major credit card. You can also directly send a\n"
 "donation to <code>michal@cihar.com</code>.\n"
 msgstr ""
+"\n"
+"A doação é processada por <a \n"
+"href=\"http://www.paypal.com/\">PayPal</a> onde você pode pagar\n"
+"usando sua conta ou qualquer cartão de crédito. Você também pode enviar\n"
+"a doação diretamente a <code>michal@cihar.com</code>.\n"
 
 #: html/donate.html:61
 msgid "Wire Transfer"
@@ -499,24 +504,33 @@ msgid ""
 "\n"
 "Command line utility which allows to use all libGammu features.\n"
 msgstr ""
+"\n"
+"Utilitário de linha de comando que permite usar todos os recursos da "
+"libGammu.\n"
 
 #: html/gammu-family.html:16
 msgid ""
 "\n"
 "Library exporting C API to talk to cell phones.\n"
 msgstr ""
+"\n"
+"API em C para comunicação com telefones celulares.\n"
 
 #: html/gammu-family.html:22
 msgid ""
 "\n"
 "SMS daemon service to receive and send messages automatically.\n"
 msgstr ""
+"\n"
+"Daemon de SMS para enviar e receber mensagens automaticamente.\n"
 
 #: html/gammu-family.html:28
 msgid ""
 "\n"
 "Python bindings for libGammu, so that you can use it from Python scripts.\n"
 msgstr ""
+"\n"
+"Ligações Python para libGammu, para utilização com scripts Python.\n"
 
 #: html/gammu-family.html:35
 msgid ""
@@ -530,18 +544,24 @@ msgid ""
 "\n"
 "Call listing, initiating and handling\n"
 msgstr ""
+"\n"
+"Listar, iniciar e manipular chamadas.\n"
 
 #: html/gammu-features.html:6
 msgid ""
 "\n"
 "SMS retrieval, backup and sending\n"
 msgstr ""
+"\n"
+"Download, backup e envio de SMS.\n"
 
 #: html/gammu-features.html:9
 msgid ""
 "\n"
 "MMS retrieval\n"
 msgstr ""
+"\n"
+"Download de MMS.\n"
 
 #: html/gammu-features.html:12
 msgid ""
@@ -549,6 +569,10 @@ msgid ""
 "Phonebook listing, export and import (also from standard formats such as\n"
 "vCard)\n"
 msgstr ""
+"\n"
+"Listagem, exportação e importação de Lista Telefônica (inclusive formatos "
+"como\n"
+"vCard).\n"
 
 #: html/gammu-features.html:16
 msgid ""
@@ -557,12 +581,18 @@ msgid ""
 "such as\n"
 "vCalendar or iCalendar)\n"
 msgstr ""
+"\n"
+"Listagem, exportação e importação de tarefas e calendário (inclusive "
+"formatos como\n"
+"vCalendar ou iCalendar)\n"
 
 #: html/gammu-features.html:20
 msgid ""
 "\n"
 "Retrieval of phone and network information\n"
 msgstr ""
+"\n"
+"Obtenção de informações do telefone e rede.\n"
 
 #: html/gammu-features.html:23
 msgid ""
@@ -570,6 +600,10 @@ msgid ""
 "Access to phone file system (note that some phones work also as USB storage\n"
 "devices and those are not accessible through Gammu)\n"
 msgstr ""
+"\n"
+"Acesso ao sistema de arquivos do telefone (note que alguns aparelhos também "
+"funcionam como \n"
+"dispositivos de armazenamento USB e não são acessíveis através do Gammu)\n"
 
 #: html/gammu.html:11 html/libgammu.html:7 html/python-gammu.html:13
 #: html/smsd.html:13 html/wammu.html:11
@@ -584,6 +618,11 @@ msgid ""
 "top\n"
 "of <a href=\"/libgammu/\">libGammu</a>.\n"
 msgstr ""
+"\n"
+"Gammu é o nome do projeto que tem o mesmo nome do utilitário de linha de "
+"comando,\n"
+"que você pode utilizar para controlar seu telefone. É escrito em C e baseado\n"
+"na <a href=\"/libgammu/\">libGammu</a>.\n"
 
 #: html/gammu.html:30
 msgid ""
@@ -595,6 +634,14 @@ msgid ""
 "various\n"
 "phones. Generally following features are supported:\n"
 msgstr ""
+"\n"
+"O utilitário de linha de comando permite o acesso a uma ampla gama de "
+"características dos telefones,\n"
+"entretanto este suporte difere de telefone para telefone, você pode conferir "
+"na\n"
+"<a href=\"/phones/\">Base de Telefones Gammu</a> a experiência dos usuários "
+"com \n"
+"diversos aparelhos. Geralmente as seguintes funções são suportadas:\n"
 
 #: html/gammu.html:41
 msgid ""
@@ -607,6 +654,14 @@ msgid ""
 "Gammu\n"
 "from the \"Heretics of Dune\" book written by Frank Herbert exists.\n"
 msgstr ""
+"\n"
+"Este projeto foi originalmente derivado do Gnokii e até a versão 0.58 foi "
+"chamado\n"
+"de MyGnokii2. Então precisamos de um nome melhor e Gammu foi escolhido como "
+"um \n"
+"acrônimo para \"Gammu All Mobile Management Utilities\", sem saber da "
+"existência \n"
+"do planeta Gammu no livro \"Heretics of Dune\" escrito por Frank Herbert.\n"
 
 #: html/gammu.html:50
 msgid ""
@@ -623,7 +678,7 @@ msgstr ""
 #: html/downloads/program.html:4 html/downloads/release.html:4
 #: wammu/context_processors.py:35
 msgid "Download"
-msgstr ""
+msgstr "Baixar"
 
 #: html/gammu.html:63
 msgid ""
@@ -632,6 +687,9 @@ msgid ""
 "use\n"
 "it.\n"
 msgstr ""
+"\n"
+"Apenas baixe <a href=\"/download/gammu/\">Gammu</a> para sua plataforma e "
+"use-o.\n"
 
 #: html/gammu.html:71
 msgid ""
@@ -642,12 +700,21 @@ msgid ""
 "main program)</a> or <a href=\"/docs/manual/config/\">gammu-rc (the\n"
 "configuration file)</a>.\n"
 msgstr ""
+"\n"
+"A melhor documentação está disponível no <a href=\"/docs/manual/\">Manual "
+"Gammu</a> que é distribuida com o programa. Você também pode acessar a "
+"documentação online\n"
+"do <a href=\"/docs/manual/gammu/\">gammu (aplicação \n"
+"principal)</a> ou <a href=\"/docs/manual/config/\">gammu-rc (o\n"
+"arquivo de configuração)</a>.\n"
 
 #: html/gammu.html:80 html/wammu.html:66
 msgid ""
 "\n"
 "Check also <a href=\"/docs/manual/faq/\">Frequently Asked Questions</a>.\n"
 msgstr ""
+"\n"
+"Veja também as <a href=\"/docs/manual/faq/\">Frequently Asked Questions</a>.\n"
 
 #: html/index.html:4
 msgid "Wammu and Gammu"
@@ -665,6 +732,15 @@ msgid ""
 "vendors (including Nokia, Sony-Ericsson, Motorola, Samsung, Siemens, Huawei\n"
 "and others).\n"
 msgstr ""
+"\n"
+"<a href=\"/wammu/\">Wammu</a> é um programa para gerenciar os dados no seu "
+"telefone celular tais como contatos,\n"
+"calendário ou mensagens. É baseado na <a href=\"/libgammu/\">biblioteca "
+"Gammu</a>, que\n"
+"provê uma camada de abstração para trabalhar com diversos telefones de "
+"diversos fabricantes (incluindo Nokia, Sony-Ericsson, Motorola, Samsung, "
+"Siemens, Huawei\n"
+"e outros).\n"
 
 #: html/index.html:32
 msgid ""
@@ -679,7 +755,7 @@ msgstr ""
 
 #: html/index.html:41
 msgid "Gammu family"
-msgstr ""
+msgstr "Família Gammu"
 
 #: html/index.html:43
 msgid ""
@@ -687,15 +763,20 @@ msgid ""
 "Gammu is now not only a single program but there is lot of useful tools\n"
 "sharing same library.\n"
 msgstr ""
+"\n"
+"Atualmente o Gammu não é apenas um programa isolado, mas uma série de "
+"ferramentas úteis \n"
+"que compartilham a mesma biblioteca.\n"
 
 #: html/index.html:66
 msgid "Sponsors"
-msgstr ""
+msgstr "Patrocinadores"
 
 #: html/libgammu.html:4 html/libgammu.html.py:15
 #: html/contribute/translate.html:60
+#, fuzzy
 msgid "libGammu"
-msgstr ""
+msgstr "libGammu"
 
 #: html/libgammu.html:18
 msgid ""
@@ -2860,12 +2941,13 @@ msgid "Bitmap"
 msgstr "Bitmap"
 
 #: html/tools/pdudecode.html:74
+#, fuzzy
 msgid "Bitmaps"
-msgstr ""
+msgstr "Bitmaps"
 
 #: html/tools/pduencode.html:5 html/tools/pduencode.html.py:13
 msgid "PDU encoder using Gammu"
-msgstr ""
+msgstr "Codificar PDU usando Gammu"
 
 #: html/tools/pduencode.html:27
 msgid "PDU data"
@@ -2889,11 +2971,11 @@ msgstr "Países"
 
 #: html/tools/sidebar.html:7
 msgid "Networks"
-msgstr ""
+msgstr "Redes"
 
 #: news/feeds.py:11
 msgid "Updates about Wammu and Gammu programs."
-msgstr ""
+msgstr "Atualizações sobre os programas Wammu e Gammu."
 
 #: phonedb/feeds.py:9
 msgid "Gammu Phone Database"
@@ -3000,11 +3082,11 @@ msgstr "Toques"
 #: phonedb/models.py:84
 #, python-format
 msgid "Phone name should not include vendor name: %s"
-msgstr ""
+msgstr "Nome do aparelho não deve incluir nome do fabricante: %s"
 
 #: phonedb/models.py:89
 msgid "Phone name, please exclude vendor name."
-msgstr ""
+msgstr "Nome do telefone, favor excluir nome do fornecedor."
 
 #: phonedb/models.py:90
 msgid "Connection used in Gammu configuration."
@@ -3012,7 +3094,7 @@ msgstr ""
 
 #: phonedb/models.py:92
 msgid "Model used in Gammu configuration, usually empty."
-msgstr ""
+msgstr "Modelo usado na configuração do Gammu, geralmente vazio."
 
 #: phonedb/models.py:93
 msgid "Gammu version where you tested this phone."
@@ -3030,7 +3112,7 @@ msgstr ""
 
 #: phonedb/views.py:102
 msgid "Approved records"
-msgstr ""
+msgstr "Registros aprovados"
 
 #: phonedb/views.py:103
 msgid "Total records"
@@ -3054,7 +3136,7 @@ msgstr ""
 
 #: tools/forms.py:10
 msgid "You can provide more messages, each on seaprate line."
-msgstr ""
+msgstr "Você pode digitar mais mensagens, cada uma numa linha separada."
 
 #: tools/forms.py:15
 msgid "Unicode"
@@ -3070,11 +3152,11 @@ msgstr "Número SMSC"
 
 #: wammu/context_processors.py:57
 msgid "Gammu and Wammu News Feed (RSS)"
-msgstr ""
+msgstr "Feed de notícias do Gammu e Wammu (RSS)"
 
 #: wammu/context_processors.py:58
 msgid "Gammu and Wammu News Feed (Atom)"
-msgstr ""
+msgstr "Feed de notícias do Gammu e Wammu (Atom)"
 
 #~ msgid "Manual"
 #~ msgstr "Manual"
