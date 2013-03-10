@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2012-11-20 10:26+0100\n"
-"PO-Revision-Date: 2012-12-02 20:58+0200\n"
+"PO-Revision-Date: 2013-03-10 16:34+0200\n"
 "Last-Translator: Anders Jonsson <jonars03@student.umu.se>\n"
 "Language-Team: Swedish <http://l10n.cihar.com/projects/gammu/website/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 1.4-dev\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 1.5-dev\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -93,9 +93,8 @@ msgstr ""
 
 #: html/authors.html:29 html/authors.html.py:50 html/authors.html.py:66
 #: html/phonedb/vendor.html:21
-#, fuzzy
 msgid "Website"
-msgstr "&Webbplats"
+msgstr "Webbplats"
 
 #: html/authors.html:34
 msgid "E-mail"
@@ -141,9 +140,8 @@ msgid "Downloads"
 msgstr ""
 
 #: html/base.html:79 html/base.html.py:153 html/base.html.py:163
-#, fuzzy
 msgid "Donate"
-msgstr "&Donera"
+msgstr "Donera"
 
 #: html/base.html:81
 msgid "Support Gammu by <a href=\"/donate/\">donating</a>!"
@@ -174,9 +172,8 @@ msgid "Follow us on Identi.ca"
 msgstr ""
 
 #: html/base.html:113 html/index.html:19
-#, fuzzy
 msgid "About"
-msgstr "&Om"
+msgstr "Om"
 
 #: html/base.html:115 html/gammu.html:4 html/gammu.html.py:19
 #: html/contribute/translate.html:61
@@ -199,9 +196,8 @@ msgid "SMSD"
 msgstr "SMS"
 
 #: html/base.html:122 wammu/context_processors.py:34
-#, fuzzy
 msgid "Support"
-msgstr "&Support"
+msgstr "Support"
 
 #: html/base.html:124
 msgid "Mailing lists"
@@ -1016,7 +1012,6 @@ msgid ""
 msgstr ""
 
 #: html/wammu_feedback.html:3
-#, fuzzy
 msgid "Thank you for using Wammu"
 msgstr "Tack för att du använder Wammu"
 
@@ -1898,9 +1893,8 @@ msgid "Third Party Applications using Gammu"
 msgstr ""
 
 #: html/links/index.html:22
-#, fuzzy
 msgid "Website:"
-msgstr "&Webbplats"
+msgstr "Webbplats:"
 
 #: html/news/contrib_index.html:4 html/news/contrib_index.html.py:6
 msgid "Third Party News"
@@ -1955,7 +1949,6 @@ msgid "Wammu News"
 msgstr ""
 
 #: html/phonedb/body.html:3
-#, fuzzy
 msgid "Supported Features"
 msgstr "Funktioner som stöds"
 
