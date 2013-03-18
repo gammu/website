@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2012-11-20 10:26+0100\n"
-"PO-Revision-Date: 2013-03-10 16:34+0200\n"
+"PO-Revision-Date: 2013-03-18 22:09+0200\n"
 "Last-Translator: Anders Jonsson <jonars03@student.umu.se>\n"
 "Language-Team: Swedish <http://l10n.cihar.com/projects/gammu/website/sv/>\n"
 "Language: sv\n"
@@ -191,9 +191,8 @@ msgid "python-gammu"
 msgstr ""
 
 #: html/base.html:118
-#, fuzzy
 msgid "SMSD"
-msgstr "SMS"
+msgstr "SMSD"
 
 #: html/base.html:122 wammu/context_processors.py:34
 msgid "Support"
@@ -287,9 +286,8 @@ msgstr ""
 
 # msgid "Search:"
 #: html/base.html:164 html/phonedb/index.html:8
-#, fuzzy
 msgid "Search"
-msgstr "Sök: "
+msgstr "Sök"
 
 #: html/base.html:165
 msgid "Gammu and Wammu authors"
@@ -675,7 +673,6 @@ msgid ""
 msgstr ""
 
 #: html/license.html:18
-#, fuzzy
 msgid ""
 "\n"
 "This program is free software; you can redistribute it and/or\n"
@@ -684,10 +681,10 @@ msgid ""
 "of the License.\n"
 msgstr ""
 "\n"
-"Det här programmet är fri programvara; du kan distribuera det och/eller "
-"ändra\n"
-"det under villkoren för GNU General Public License version 2 som\n"
-"publicerats av Free Software Foundation.\n"
+"Det här programmet är fri programvara; du kan distribuera det och/eller\n"
+"ändra det under villkoren för GNU General Public License som\n"
+"publicerats av Free Software Foundation; version 2\n"
+"av licensen.\n"
 
 #: html/license.html:27 html/license.html.py:64
 msgid ""
@@ -2038,7 +2035,6 @@ msgid ""
 msgstr ""
 
 #: html/phonedb/index.html:74
-#, fuzzy
 msgid "Manufacturers"
 msgstr "Tillverkare"
 
@@ -2813,9 +2809,8 @@ msgid "PDU decoder"
 msgstr ""
 
 #: html/tools/sidebar.html:6
-#, fuzzy
 msgid "Countries"
-msgstr "Kategorier"
+msgstr "Länder"
 
 #: html/tools/sidebar.html:7
 msgid "Networks"
