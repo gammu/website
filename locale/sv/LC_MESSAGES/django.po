@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2012-11-20 10:26+0100\n"
-"PO-Revision-Date: 2013-03-18 22:09+0200\n"
+"PO-Revision-Date: 2013-03-20 19:20+0200\n"
 "Last-Translator: Anders Jonsson <jonars03@student.umu.se>\n"
 "Language-Team: Swedish <http://l10n.cihar.com/projects/gammu/website/sv/>\n"
 "Language: sv\n"
@@ -1971,9 +1971,8 @@ msgstr ""
 #: html/phonedb/index.html:5 html/phonedb/index.html.py:39
 #: html/phonedb/new.html:5 html/phonedb/phone.html:6
 #: html/phonedb/search.html:5 html/phonedb/vendor.html:6
-#, fuzzy
 msgid "Gammu Phone Database "
-msgstr "&Gammus telefondatabas"
+msgstr "Gammus telefondatabas "
 
 #: html/phonedb/index.html:11 html/phonedb/index.html.py:24
 #: html/phonedb/new.html:50 html/phonedb/search.html:22
@@ -2821,9 +2820,8 @@ msgid "Updates about Wammu and Gammu programs."
 msgstr ""
 
 #: phonedb/feeds.py:9
-#, fuzzy
 msgid "Gammu Phone Database"
-msgstr "&Gammus telefondatabas"
+msgstr "Gammus telefondatabas"
 
 #: phonedb/feeds.py:11
 msgid "Gammu phone database updates."
