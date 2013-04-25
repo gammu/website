@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2012-11-20 10:26+0100\n"
-"PO-Revision-Date: 2013-03-14 02:18+0200\n"
-"Last-Translator: gilberto dos santos alves <gsavix@gmail.com>\n"
+"PO-Revision-Date: 2013-04-25 20:07+0200\n"
+"Last-Translator: Rodrigo Souza <rodrigo.chrome@live.com>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://l10n.cihar.com/projects/gammu/website/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 1.5-dev\n"
+"X-Generator: Weblate 1.6-dev\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -675,6 +675,12 @@ msgid ""
 "bindings</a> which you can use to develop own application accessing mobile\n"
 "phone.\n"
 msgstr ""
+"\n"
+"O pacote Gammu não inclui apenas este binário, mas o  <a\n"
+"href=\"/smsd/\">Gammu SMS Daemon</a>, a <a\n"
+"href=\"/libgammu/\">biblioteca Gammu</a> e os <a href=\"/python-gammu/\">Python\n"
+"bindings</a> também que você pode usar para desenvolver sua própria\n"
+"aplicação de acesso a telefone móveis.\n"
 
 #: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:34
 #: html/smsd.html:63 html/wammu.html:47 html/downloads/list.html:4
@@ -755,6 +761,12 @@ msgid ""
 "to\n"
 "get an idea who we are currently looking for.\n"
 msgstr ""
+"\n"
+"Muitas pessoas contribuem com o Gammu, e você pode ver os maiores \n"
+"contribuidores em uma <a href=\"/authors/\">página separada</a>. \n"
+"Se você quiser se unir a nós, favor veja nossa lista de <a \n"
+"href=\"/contribute/wanted/\"><strong>habilidades desejadas</strong></a>, \n"
+"para ter uma ideia de quem nós estamos procurando atualmente.\n"
 
 #: html/index.html:41
 msgid "Gammu family"
@@ -777,7 +789,6 @@ msgstr "Patrocinadores"
 
 #: html/libgammu.html:4 html/libgammu.html.py:15
 #: html/contribute/translate.html:60
-#, fuzzy
 msgid "libGammu"
 msgstr "libGammu"
 
@@ -789,6 +800,12 @@ msgid ""
 "Sony-Ericsson, Motorola, Samsung, Siemens, Huawei and others). Using this\n"
 "library you can talk to any phone using standard API.\n"
 msgstr ""
+"\n"
+"libGammu é a biblioteca central do projeto Gammu. Ela fornece uma\n"
+"camada de abstração para trabalhar com celulares diferentes de\n"
+"fabricantes diferentes (incluindo Nokia, Sony-Ericsson, Motorola,\n"
+"Samsung, Siemens, Huawei entre outros). Usando esta biblioteca,\n"
+"você pode conversar com qualquer telefone usando a API padrão.\n"
 
 #: html/libgammu.html:28
 msgid ""
@@ -797,6 +814,9 @@ msgid ""
 "others\n"
 "it provides following features:\n"
 msgstr ""
+"\n"
+"A API expõe todas a funcionalidade que você pode fazer com \n"
+"o telefone e ela fornece, entre outras, as seguintes funções:"
 
 #: html/libgammu.html:37
 msgid ""
@@ -805,6 +825,10 @@ msgid ""
 "or <a\n"
 "href=\"/smsd/\">Gammu SMS Daemon</a>.\n"
 msgstr ""
+"\n"
+"Essa biblioteca é usada em todas as outras ferramentas\n"
+"como o <a href=\"/gammu/\">Gammu</a> ou o <a href=\"/smsd/\">Gammu SMS "
+"Daemon</a>.\n"
 
 #: html/libgammu.html:47
 msgid ""
@@ -813,6 +837,10 @@ msgid ""
 "a> so to download\n"
 "it just get <a href=\"/download/gammu/\">Gammu</a>.\n"
 msgstr ""
+"\n"
+"A biblioteca é obviamente distribuída como parte do <a "
+"href=\"/gammu/\">Gammu</a> então para\n"
+"baixá-la apenas baixe o <a href=\"/download/gammu/\">Gammu</a>.\n"
 
 #: html/libgammu.html:56
 msgid ""
@@ -822,10 +850,16 @@ msgid ""
 "href=\"/docs/devel/internals/\">internal documentation</a>. Please check <a\n"
 "href=\"/docs/devel/\">developer documentation page</a> for more details.\n"
 msgstr ""
+"\n"
+"A <a href=\"/docs/devel/api/\">documentação da API</a> também está disponível "
+"como <a\n"
+"href=\"/docs/devel/internals/\">documentação interna</a>. Favor olhe a <a\n"
+"href=\"/docs/devel/\">página da documentação do desenvolvedor</a> para mais "
+"detalhes.\n"
 
 #: html/license.html:4 html/license.html.py:7
 msgid "Wammu and Gammu License"
-msgstr ""
+msgstr "Licença Wammu e Gammu"
 
 #: html/license.html:10
 msgid ""
