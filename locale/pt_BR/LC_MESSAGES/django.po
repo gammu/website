@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2012-11-20 10:26+0100\n"
-"PO-Revision-Date: 2013-04-27 22:52+0200\n"
-"Last-Translator: Rodrigo Souza <rodrigo.chrome@live.com>\n"
+"PO-Revision-Date: 2013-05-03 17:09+0200\n"
+"Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://l10n.cihar.com/projects/gammu/website/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -2680,7 +2680,7 @@ msgstr ""
 #: html/phonedb/new.html:5 html/phonedb/phone.html:6
 #: html/phonedb/search.html:5 html/phonedb/vendor.html:6
 msgid "Gammu Phone Database "
-msgstr "Banco de dados de Telefones do Gammu"
+msgstr "Banco de dados de Telefones do Gammu "
 
 #: html/phonedb/index.html:11 html/phonedb/index.html.py:24
 #: html/phonedb/new.html:50 html/phonedb/search.html:22
