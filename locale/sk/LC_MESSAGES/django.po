@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-20 10:26+0100\n"
+"POT-Creation-Date: 2013-05-16 09:16+0200\n"
 "PO-Revision-Date: 2012-03-29 17:07+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
@@ -412,10 +412,21 @@ msgstr ""
 "poslať tiež rovno na <code>michal@cihar.com</code>.\n"
 
 #: html/donate.html:61
-msgid "Wire Transfer"
+msgid "Bitcoin"
 msgstr ""
 
 #: html/donate.html:64
+msgid ""
+"You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
+"peer network</a> and send me Bitcoins to "
+"<code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>."
+msgstr ""
+
+#: html/donate.html:67
+msgid "Wire Transfer"
+msgstr ""
+
+#: html/donate.html:70
 msgid ""
 "\n"
 "If you want, you can use wire transfer as well to send me money. Use "
@@ -423,7 +434,7 @@ msgid ""
 "information to make the payment:\n"
 msgstr ""
 
-#: html/donate.html:72
+#: html/donate.html:78
 msgid ""
 "\n"
 "If you have an account in Czech Republic, you can use local (and cheaper) "
@@ -431,11 +442,11 @@ msgid ""
 "transfer to account 2300081892 / 2010.\n"
 msgstr ""
 
-#: html/donate.html:78
+#: html/donate.html:84
 msgid "Other Options"
 msgstr "Ďalšie možnosti"
 
-#: html/donate.html:80
+#: html/donate.html:86
 msgid ""
 "\n"
 "You can also give some presents to developers, currently here is <a\n"
@@ -449,12 +460,12 @@ msgstr ""
 "href=\"http://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">zoznamu prianí\n"
 "Michala Čihaře na Amazone</a>.\n"
 
-#: html/donate.html:87
+#: html/donate.html:93
 #, fuzzy
 msgid "Supporters"
 msgstr "Podpora"
 
-#: html/donate.html:89
+#: html/donate.html:95
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
@@ -751,7 +762,7 @@ msgstr ""
 "Gamu už nieje jediný nástroj, ale jedná sa o sadu užitočných nástrojov,\n"
 "ktoré používajú rovnakú knižnicu.\n"
 
-#: html/index.html:66
+#: html/index.html:67 html/phonedb/index.html:36
 msgid "Sponsors"
 msgstr ""
 
@@ -2183,7 +2194,7 @@ msgid ""
 "GSM cell phones."
 msgstr ""
 
-#: html/phonedb/index.html:5 html/phonedb/index.html.py:39
+#: html/phonedb/index.html:5 html/phonedb/index.html.py:47
 #: html/phonedb/new.html:5 html/phonedb/phone.html:6
 #: html/phonedb/search.html:5 html/phonedb/vendor.html:6
 #, fuzzy
@@ -2204,7 +2215,7 @@ msgstr ""
 msgid "CSV"
 msgstr ""
 
-#: html/phonedb/index.html:42
+#: html/phonedb/index.html:50
 msgid ""
 "\n"
 "This page tries to collect list of phones supported by <a href=\"/libgammu/"
@@ -2214,7 +2225,7 @@ msgid ""
 "href=\"http://tuxmobil.org/phones_linux.html\">TuxMobil</a>.\n"
 msgstr ""
 
-#: html/phonedb/index.html:49
+#: html/phonedb/index.html:57
 msgid ""
 "\n"
 "This list is filled in by users and thus there can be no warranty\n"
@@ -2225,20 +2236,20 @@ msgid ""
 "mailing list</a> is open to questions about supported phones.\n"
 msgstr ""
 
-#: html/phonedb/index.html:58
+#: html/phonedb/index.html:66
 msgid ""
 "You can find general information about <a href=\"/docs/manual/faq/config.html"
 "\">configuring Gammu in FAQ</a>."
 msgstr ""
 
-#: html/phonedb/index.html:61
+#: html/phonedb/index.html:69
 msgid ""
 "\n"
 "As this list is updated by users, you are welcome to <strong><a href=\"/"
 "phones/new/\">add new records</a></strong>.\n"
 msgstr ""
 
-#: html/phonedb/index.html:66
+#: html/phonedb/index.html:74
 msgid ""
 "\n"
 "Generally any phone capable of AT commands or IrMC should be supported. "
@@ -2249,20 +2260,20 @@ msgid ""
 "phone to get some functionality, newer ones do not have support so far.\n"
 msgstr ""
 
-#: html/phonedb/index.html:74
+#: html/phonedb/index.html:82
 #, fuzzy
 msgid "Manufacturers"
 msgstr "Výrobca"
 
-#: html/phonedb/index.html:83
+#: html/phonedb/index.html:91
 msgid "Recently Added Phones"
 msgstr ""
 
-#: html/phonedb/index.html:86
+#: html/phonedb/index.html:94
 msgid "Phone Records Summary"
 msgstr ""
 
-#: html/phonedb/index.html:90
+#: html/phonedb/index.html:98
 msgid ""
 "\n"
 "On following chart, you can see how number of records in phone database\n"
