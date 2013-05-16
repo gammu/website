@@ -6,12 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2013-05-16 09:16+0200\n"
-"PO-Revision-Date: 2013-05-03 17:09+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Portuguese (Brazil) <http://l10n.cihar.com/projects/gammu/"
-"website/pt_BR/>\n"
+"PO-Revision-Date: 2013-05-16 13:51+0200\n"
+"Last-Translator: Helder Santana <helder.bs.santana@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) "
+"<http://l10n.cihar.com/projects/gammu/website/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -432,7 +432,7 @@ msgstr ""
 
 #: html/donate.html:61
 msgid "Bitcoin"
-msgstr ""
+msgstr "Bitcoin"
 
 #: html/donate.html:64
 msgid ""
