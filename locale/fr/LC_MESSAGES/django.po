@@ -5,10 +5,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2013-05-16 09:16+0200\n"
-"PO-Revision-Date: 2013-04-25 15:50+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
+"PO-Revision-Date: 2013-05-17 23:04+0200\n"
+"Last-Translator: Jean-Noël AVILA <jn.avila@free.fr>\n"
 "Language-Team: French <http://l10n.cihar.com/projects/gammu/website/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -161,6 +161,7 @@ msgstr ""
 #: html/base.html:12
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
 msgstr ""
+"Site Web de Gammu et Wammu, le logiciel de gestion des téléphones portables."
 
 #: html/base.html:62
 msgid "Page translations"
@@ -347,7 +348,6 @@ msgid "Thank you for Donation"
 msgstr "Merci pour le don"
 
 #: html/donate-thanks.html:14
-#, fuzzy
 msgid ""
 "\n"
 "Thank you for donating to Gammu/Wammu! We will do our best to use the "
@@ -368,6 +368,9 @@ msgid ""
 "Gammu as a free software is project run by volunteers in their free time. To "
 "appreciate their work you can donate them in one of ways mentioned below."
 msgstr ""
+"Gammu est un projet de logiciel libre mené par des bénévoles pendant leur "
+"temps libre. Pour améliorer leur travail, vous pouvez donner différentes "
+"aides mentionnées ci-dessous."
 
 #: html/donate.html:17
 msgid "Micropayments"
@@ -381,6 +384,12 @@ msgid ""
 "flattr some of <a href=\"https://flattr.com/profile/nijel\">related "
 "projects</a>.\n"
 msgstr ""
+"\n"
+"La meilleure façon d'améliorer le travail sur Gammu ou Wammu consiste à "
+"utiliser <a href=\"https://flattr.com/\"> flutter</a> (un système de "
+"micropaiement social et à\n"
+"flattr quelques-uns des <a href=\"https://flattr.com/profile/nijel\">projets "
+"connexes</a>.\n"
 
 #: html/donate.html:32
 msgid "Donate Money"
@@ -424,7 +433,7 @@ msgstr ""
 
 #: html/donate.html:61
 msgid "Bitcoin"
-msgstr ""
+msgstr "Bitcoin"
 
 #: html/donate.html:64
 msgid ""
@@ -432,6 +441,9 @@ msgid ""
 "peer network</a> and send me Bitcoins to "
 "<code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>."
 msgstr ""
+"Vous pouvez également utiliser <a href=\"http://www.bitcoin.org/\"> "
+"Bitcoin</a> (un réseau peer-to-peer) et m'envoyer des Bitcoins à "
+"<code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>."
 
 #: html/donate.html:67
 msgid "Wire Transfer"
@@ -444,6 +456,10 @@ msgid ""
 "following\n"
 "information to make the payment:\n"
 msgstr ""
+"\n"
+"Si vous le souhaitez, vous pouvez aussi utiliser un virement bancaire pour "
+"m'envoyer de l'argent. Veuillez utiliser l'information\n"
+"suivante pour effectuer un paiement :\n"
 
 #: html/donate.html:78
 msgid ""
@@ -452,6 +468,9 @@ msgid ""
 "wire\n"
 "transfer to account 2300081892 / 2010.\n"
 msgstr ""
+"\n"
+"Si vous avez un compte en République Tchèque, vous pouvez utiliser un "
+"virement local (et moins cher) sur le compte 2300081892 / 2010.\n"
 
 #: html/donate.html:84
 msgid "Other Options"
@@ -473,15 +492,16 @@ msgstr ""
 "Michal Čihař</a>.\n"
 
 #: html/donate.html:93
-#, fuzzy
 msgid "Supporters"
-msgstr "Support"
+msgstr "Sponsors"
 
 #: html/donate.html:95
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
 msgstr ""
+"Liste des entreprises et des particuliers qui soutiennent financièrement "
+"régulièrement ce site Web ou le développement de Gammu."
 
 #: html/gammu-family.html:4
 msgid ""
@@ -506,6 +526,9 @@ msgid ""
 "\n"
 "Library exporting C API to talk to cell phones.\n"
 msgstr ""
+"\n"
+"Bibliothèque exportant une API C pour dialoguer avec des télephones "
+"portables.\n"
 
 #: html/gammu-family.html:22
 msgid ""
@@ -520,6 +543,9 @@ msgid ""
 "\n"
 "Python bindings for libGammu, so that you can use it from Python scripts.\n"
 msgstr ""
+"\n"
+"Liaisons Python pour libGammu, afin que vous puissiez utiliser des scripts "
+"Python.\n"
 
 #: html/gammu-family.html:35
 msgid ""
@@ -527,24 +553,33 @@ msgid ""
 "Third party open source web-based SMS (Short Message Service) management "
 "which uses <a href=\"/smsd/\">Gammu SMSD</a>.\n"
 msgstr ""
+"\n"
+"Gestion tiers open source de SMS (Short Message Service) sur le Web "
+"utilisant <a href=\"/smsd/\">Gammu SMSD</a>.\n"
 
 #: html/gammu-features.html:3
 msgid ""
 "\n"
 "Call listing, initiating and handling\n"
 msgstr ""
+"\n"
+"Journal d'appels, lancement et gestion d'appels\n"
 
 #: html/gammu-features.html:6
 msgid ""
 "\n"
 "SMS retrieval, backup and sending\n"
 msgstr ""
+"\n"
+"Récupération, sauvegarde et envoi de SMS\n"
 
 #: html/gammu-features.html:9
 msgid ""
 "\n"
 "MMS retrieval\n"
 msgstr ""
+"\n"
+"Récupération de MMS\n"
 
 #: html/gammu-features.html:12
 msgid ""
@@ -552,6 +587,10 @@ msgid ""
 "Phonebook listing, export and import (also from standard formats such as\n"
 "vCard)\n"
 msgstr ""
+"\n"
+"Visualisation, export et import des contacts (depuis des formats standards "
+"tels que\n"
+"vCard)\n"
 
 #: html/gammu-features.html:16
 msgid ""
@@ -560,12 +599,18 @@ msgid ""
 "such as\n"
 "vCalendar or iCalendar)\n"
 msgstr ""
+"\n"
+"Visualisation, export et import de calendrier et de tâches (aussi depuis des "
+"formats standards tels que\n"
+"vCalendar et iCalendar)\n"
 
 #: html/gammu-features.html:20
 msgid ""
 "\n"
 "Retrieval of phone and network information\n"
 msgstr ""
+"\n"
+"Récupération d'information du réseau et du téléphone\n"
 
 #: html/gammu-features.html:23
 msgid ""
@@ -573,12 +618,15 @@ msgid ""
 "Access to phone file system (note that some phones work also as USB storage\n"
 "devices and those are not accessible through Gammu)\n"
 msgstr ""
+"\n"
+"Accès au système de fichier du téléphone (à noter que certains téléphones se "
+"comportent comme un disque USB\n"
+"et ne sont pas accessibles à traver Gammu)\n"
 
 #: html/gammu.html:11 html/libgammu.html:7 html/python-gammu.html:13
 #: html/smsd.html:13 html/wammu.html:11
-#, fuzzy
 msgid "More information"
-msgstr "Information sur le téléphone"
+msgstr "Plus d'informations"
 
 #: html/gammu.html:22
 msgid ""
@@ -588,6 +636,10 @@ msgid ""
 "top\n"
 "of <a href=\"/libgammu/\">libGammu</a>.\n"
 msgstr ""
+"\n"
+"Gammu est le nom du projet et celui de l'utilitaire en ligne de commande\n"
+"qui vous permet de de contrôler votre téléphone. Il est écrit en C et\n"
+"s'appuie sur <a href=\"/libgammu/\">libGammu</a>.\n"
 
 #: html/gammu.html:30
 msgid ""
@@ -599,6 +651,14 @@ msgid ""
 "various\n"
 "phones. Generally following features are supported:\n"
 msgstr ""
+"\n"
+"L'utilitaire en ligne de commande Gammu fournit l'accès à une large gamme de "
+"fonctionnalités des téléphones.\n"
+"Cependant le niveau d'intégration diffère d'un téléphone à l'autre et vous "
+"voudrez vérifier\n"
+"dans la <a href=\"/phones/\">base de compatibilité Gammu des téléphones</a> "
+"les résultats avec différents téléphones. Généralement, les fonctionnalités "
+"suivantes ne sont pas supportées :\n"
 
 #: html/gammu.html:41
 msgid ""
@@ -611,6 +671,14 @@ msgid ""
 "Gammu\n"
 "from the \"Heretics of Dune\" book written by Frank Herbert exists.\n"
 msgstr ""
+"\n"
+"Ce projet est dérivé de Gnokii et a été nommé MyGnokii2 jusqu'à la version "
+"0.58. Alors, le besoin d'un meilleur nom s'est fait sentir et Gammu a été "
+"choisi comme acronyme autorécursif \"Gammu All Mobile Management Utilities\" "
+"(utilitaires Gammu de gestion de tous les téléphones mobiles), sans "
+"préscience du Gammu du livre \"Les Hérétiques de Dune\" écrit par Frank "
+"Herbert.\n"
+" \n"
 
 #: html/gammu.html:50
 msgid ""
@@ -621,13 +689,21 @@ msgid ""
 "bindings</a> which you can use to develop own application accessing mobile\n"
 "phone.\n"
 msgstr ""
+"\n"
+"Le paquet Gammu n'inclut pas seulement ce binaire, mais aussi <a\n"
+"href=\"/smsd/\">Gammu SMS Daemon</a>, <a\n"
+"href=\"/libgammu/\">Gammu library</a> et <a href=\"/python-gammu/\">les liaisons "
+"Python</a>\n"
+"que vous pouvez utiliser pour développer vos propres applications d'accès à "
+"des téléphones\n"
+"portables.\n"
 
 #: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:34
 #: html/smsd.html:63 html/wammu.html:47 html/downloads/list.html:4
 #: html/downloads/program.html:4 html/downloads/release.html:4
 #: wammu/context_processors.py:35
 msgid "Download"
-msgstr ""
+msgstr "Téléchargement"
 
 #: html/gammu.html:63
 msgid ""
@@ -636,6 +712,9 @@ msgid ""
 "use\n"
 "it.\n"
 msgstr ""
+"\n"
+"Il suffit de télécharger <a href=\"/download/gammu/\"> Gammu</a> pour votre "
+"plate-forme et de l'utiliser.\n"
 
 #: html/gammu.html:71
 msgid ""
@@ -646,16 +725,24 @@ msgid ""
 "main program)</a> or <a href=\"/docs/manual/config/\">gammu-rc (the\n"
 "configuration file)</a>.\n"
 msgstr ""
+"\n"
+"La meilleure documentation est disponible dans <a href=\"/docs/manual/\"> le "
+"manuel de Gammu</a> qui est distribué avec le programme. Vous pouvez "
+"également consulter la documentation en ligne pour <a "
+"href=\"/docs/manual/gammu/\"> gammu (le programme principal)</a> ou <a "
+"href=\"/docs/manual/config/\"> gammu-rc (le fichier de configuration)</a>.\n"
 
 #: html/gammu.html:80 html/wammu.html:66
 msgid ""
 "\n"
 "Check also <a href=\"/docs/manual/faq/\">Frequently Asked Questions</a>.\n"
 msgstr ""
+"\n"
+"Vérifiez aussi la <a href=\"/docs/manual/faq/\"> Foire aux Questions</a>.\n"
 
 #: html/index.html:4
 msgid "Wammu and Gammu"
-msgstr ""
+msgstr "Wammu et Gammu"
 
 #: html/index.html:22
 msgid ""
@@ -669,6 +756,13 @@ msgid ""
 "vendors (including Nokia, Sony-Ericsson, Motorola, Samsung, Siemens, Huawei\n"
 "and others).\n"
 msgstr ""
+"\n"
+"<a href=\"/wammu/\"> wammu</a> est un programme pour gérer des données dans "
+"votre téléphone portable, tels que calendrier, contacts et messages. Il est "
+"construit sur <a href=\"/libgammu/\">la bibliothèque Gammu</a> qui fournit la "
+"couche d'abstraction pour travailler avec les différents téléphones "
+"cellulaires provenant de différents fournisseurs (y compris Nokia, Sony-"
+"Ericsson, Motorola, Samsung, Siemens, Huawei et autres).\n"
 
 #: html/index.html:32
 msgid ""
@@ -680,10 +774,16 @@ msgid ""
 "to\n"
 "get an idea who we are currently looking for.\n"
 msgstr ""
+"\n"
+"Beaucoup de gens contribuent à Gammu, vous pouvez voir les principaux "
+"contributeurs sur <a href=\"/authors/\"> une page séparée</a>. Si vous "
+"souhaitez nous rejoindre, veuillez consulter notre liste de <a "
+"href=\"/contribute/wanted/\"> <strong>compétences recherchées</strong></a>, "
+"pour avoir une idée de nos besoins actuels.\n"
 
 #: html/index.html:41
 msgid "Gammu family"
-msgstr ""
+msgstr "La famille Gammu"
 
 #: html/index.html:43
 msgid ""
@@ -691,15 +791,18 @@ msgid ""
 "Gammu is now not only a single program but there is lot of useful tools\n"
 "sharing same library.\n"
 msgstr ""
+"\n"
+"Gammu n'est désormais plus un seul programme mais de nombreux outils utiles "
+"partageant la même bibliothèque.\n"
 
 #: html/index.html:67 html/phonedb/index.html:36
 msgid "Sponsors"
-msgstr ""
+msgstr "Sponsors"
 
 #: html/libgammu.html:4 html/libgammu.html.py:15
 #: html/contribute/translate.html:60
 msgid "libGammu"
-msgstr ""
+msgstr "libGammu"
 
 #: html/libgammu.html:18
 msgid ""
@@ -709,6 +812,13 @@ msgid ""
 "Sony-Ericsson, Motorola, Samsung, Siemens, Huawei and others). Using this\n"
 "library you can talk to any phone using standard API.\n"
 msgstr ""
+"\n"
+"libGammu est la bibliothèque principale du projet Gammu. Elle fournit la "
+"couche d'abstraction pour travailler avec les différents téléphones "
+"cellulaires provenant de différents fournisseurs (y compris Nokia, Sony-"
+"Ericsson, Motorola, Samsung, Siemens, Huawei et autres). À l'aide de cette "
+"bibliothèque, vous pouvez parler à n'importe quel téléphone en utilisant les "
+"API standards.\n"
 
 #: html/libgammu.html:28
 msgid ""
@@ -717,6 +827,9 @@ msgid ""
 "others\n"
 "it provides following features:\n"
 msgstr ""
+"\n"
+"L'API expose toutes les fonctionnalités que vous pouvez utiliser avec le "
+"téléphone, entre autres :\n"
 
 #: html/libgammu.html:37
 msgid ""
@@ -725,6 +838,9 @@ msgid ""
 "or <a\n"
 "href=\"/smsd/\">Gammu SMS Daemon</a>.\n"
 msgstr ""
+"\n"
+"Cette bibliothèque est utilisée dans tous les autres outils comme <a "
+"href=\"/gammu/\"> Gammu</a> ou <a href=\"/smsd/\"> Gammu SMS Daemon</a>.\n"
 
 #: html/libgammu.html:47
 msgid ""
@@ -757,7 +873,6 @@ msgstr ""
 
 # free != gratuit ds ce contexte
 #: html/license.html:18
-#, fuzzy
 msgid ""
 "\n"
 "This program is free software; you can redistribute it and/or\n"
@@ -1095,7 +1210,6 @@ msgid ""
 msgstr ""
 
 #: html/wammu_feedback.html:3
-#, fuzzy
 msgid "Thank you for using Wammu"
 msgstr "Merci d'utiliser Wammu"
 
@@ -1555,9 +1669,8 @@ msgid ""
 msgstr ""
 
 #: html/contribute/wanted.html:42
-#, fuzzy
 msgid "Documentation writer"
-msgstr "Documentation"
+msgstr "Rédacteur technique"
 
 #: html/contribute/wanted.html:45
 msgid ""
@@ -1570,9 +1683,8 @@ msgid ""
 msgstr ""
 
 #: html/contribute/wanted.html:52
-#, fuzzy
 msgid "Community supporter"
-msgstr "Support commercial"
+msgstr "Animateur de communauté"
 
 #: html/contribute/wanted.html:55
 msgid ""
@@ -2036,7 +2148,6 @@ msgid "Wammu News"
 msgstr ""
 
 #: html/phonedb/body.html:3
-#, fuzzy
 msgid "Supported Features"
 msgstr "Fonctionnalités supportées"
 
@@ -2062,9 +2173,8 @@ msgstr ""
 #: html/phonedb/index.html:5 html/phonedb/index.html.py:47
 #: html/phonedb/new.html:5 html/phonedb/phone.html:6
 #: html/phonedb/search.html:5 html/phonedb/vendor.html:6
-#, fuzzy
 msgid "Gammu Phone Database "
-msgstr "Base de connaissances &Gammu"
+msgstr "Base de connaissances Gammu "
 
 #: html/phonedb/index.html:11 html/phonedb/index.html.py:24
 #: html/phonedb/new.html:50 html/phonedb/search.html:22
@@ -2126,9 +2236,8 @@ msgid ""
 msgstr ""
 
 #: html/phonedb/index.html:82
-#, fuzzy
 msgid "Manufacturers"
-msgstr "Fabricant"
+msgstr "Fabricants"
 
 #: html/phonedb/index.html:91
 msgid "Recently Added Phones"
@@ -2766,9 +2875,8 @@ msgid "Useful for decoding PDU data, which you might get from your phone."
 msgstr ""
 
 #: html/tools/index.html:40
-#, fuzzy
 msgid "Other tools"
-msgstr "Autres options"
+msgstr "Autres outils"
 
 #: html/tools/index.html:43
 msgid "List of GSM codes for countries"
@@ -2913,9 +3021,8 @@ msgid "Updates about Wammu and Gammu programs."
 msgstr "Mise à jour des programmes Wammu et Gammu."
 
 #: phonedb/feeds.py:9
-#, fuzzy
 msgid "Gammu Phone Database"
-msgstr "Base de connaissances &Gammu"
+msgstr "Base de connaissances Gammu"
 
 #: phonedb/feeds.py:11
 msgid "Gammu phone database updates."
