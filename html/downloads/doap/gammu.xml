@@ -4,7 +4,7 @@
   <name>Wammu</name>
   <shortdesc xml:lang="en">A mobile phone management utility.</shortdesc>
   <description xml:lang="en">Gammu is command line utility and library to work with mobile phones from many vendors. Support for different models differs, but basic functions should work with majority of them. Program can work with contacts, messages (SMS, EMS and MMS), calendar, todos, filesystem, integrated radio, camera, etc. It also supports daemon mode to send and receive SMSes.</description>
-  <bug-database rdf:resource="http://bugs.cihar.com/" />
+  <bug-database rdf:resource="https://github.com/gammu/gammu/issues" />
   <programming-language>C</programming-language>
   <download-page rdf:resource="http://wammu.eu/download/gammu/" />
   <homepage rdf:resource="http://wammu.eu/gammu/" />

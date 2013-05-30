@@ -1060,7 +1060,7 @@ msgid ""
 "I hope you like Wammu, but maybe you miss some features or would like to "
 "see\n"
 "some improvements. If you have any ideas, please report them in <a\n"
-"href=\"http://bugs.cihar.com/\">bug tracker</a>.\n"
+"href=\"https://github.com/gammu/gammu/issues\">bug tracker</a>.\n"
 msgstr ""
 
 #: html/wammu_feedback.html:13
@@ -2309,7 +2309,7 @@ msgstr ""
 #: html/support/bugs.html:15
 msgid ""
 "\n"
-"Use <a href=\"http://bugs.cihar.com/\">bug tracker</a> to report a bug or a\n"
+"Use <a href=\"https://github.com/gammu/gammu/issues\">bug tracker</a> to report a bug or a\n"
 "feature requests. Please take care that you include all information "
 "necessary\n"
 "for the developer to investigate the problem. The most important things to\n"

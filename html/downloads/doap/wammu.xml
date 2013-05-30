@@ -4,7 +4,7 @@
   <name>Wammu</name>
   <shortdesc xml:lang="en">A mobile phone manager.</shortdesc>
   <description xml:lang="en">Wammu is a mobile phone manager that uses Gammu as its backend. It works with any phone that Gammu supports, including many models from Nokia, Siemens, and Alcatel. It has complete support (read, edit, delete, copy) for contacts, todo, and calendar. It can read, save, and send SMS. It includes an SMS composer for multi-part SMS messages, and it can display SMS messages that include pictures. Currently, only text and predefined bitmaps or sounds can be edited in the SMS composer. It can export messages to an IMAP4 server (or other email storage).</description>
-  <bug-database rdf:resource="http://bugs.cihar.com/" />
+  <bug-database rdf:resource="https://github.com/gammu/gammu/issues" />
   <programming-language>Python</programming-language>
   <download-page rdf:resource="http://wammu.eu/download/wammu/" />
   <homepage rdf:resource="http://wammu.eu/" />
