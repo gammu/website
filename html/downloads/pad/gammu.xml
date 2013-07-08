@@ -168,10 +168,10 @@ this program; if not, write to the Free Software Foundation, Inc.,
     <NewsFeed_Site_Name>Wammu and Gammu website</NewsFeed_Site_Name>
   </NewsFeed>
   <Press_Release>
-    <Press_Release></Press_Release>
-    <Headline></Headline>
-    <Summary></Summary>
-    <Press_Release_Plain></Press_Release_Plain>
+    <Press_Release>{{ release.changelog_html }}</Press_Release>
+    <Headline>{{ release.get_description }}</Headline>
+    <Summary>{{ release.description }}</Summary>
+    <Press_Release_Plain>{{ release.changelog }}</Press_Release_Plain>
   </Press_Release>
   <Site>
     <Site_FORM></Site_FORM>
