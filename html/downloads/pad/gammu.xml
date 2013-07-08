@@ -173,7 +173,7 @@ this program; if not, write to the Free Software Foundation, Inc.,
     <Headline>{{ release.get_description }}</Headline>
     <Summary>{{ release.description }}</Summary>
     <Press_Release_Plain>{{ release.changelog }}</Press_Release_Plain>
-    <Related_URL>{{ release.get_absolute_url }}</Related_URL>
+    <Related_URL>http://wammu.eu{{ release.get_absolute_url }}</Related_URL>
   </Press_Release>
   <Site>
     <Site_FORM></Site_FORM>
