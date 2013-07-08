@@ -169,9 +169,11 @@ this program; if not, write to the Free Software Foundation, Inc.,
   </NewsFeed>
   <Press_Release>
     <Press_Release>{{ release.changelog_html }}</Press_Release>
+    <Keywords>mobile,phone,handy,cell,nokia,ericssonn,sony-ericssonn,alcatel,siemens,manager,calendar,contacts,sms,message</Keywords>
     <Headline>{{ release.get_description }}</Headline>
     <Summary>{{ release.description }}</Summary>
     <Press_Release_Plain>{{ release.changelog }}</Press_Release_Plain>
+    <Related_URL>{{ release.get_absolute_url }}</Related_URL>
   </Press_Release>
   <Site>
     <Site_FORM></Site_FORM>
