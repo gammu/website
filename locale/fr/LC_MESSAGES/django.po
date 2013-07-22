@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
-"POT-Creation-Date: 2013-05-16 09:16+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-22 10:46+0200\n"
 "PO-Revision-Date: 2013-07-02 10:29+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: French <http://l10n.cihar.com/projects/gammu/website/fr/>\n"
@@ -441,8 +441,8 @@ msgid ""
 "peer network</a> and send me Bitcoins to "
 "<code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>."
 msgstr ""
-"Vous pouvez également utiliser <a href=\"http://www.bitcoin.org/\"> "
-"Bitcoin</a> (un réseau peer-to-peer) et m'envoyer des Bitcoins à "
+"Vous pouvez également utiliser <a href=\"http://www.bitcoin.org/\"> Bitcoin</"
+"a> (un réseau peer-to-peer) et m'envoyer des Bitcoins à "
 "<code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>."
 
 #: html/donate.html:67
@@ -674,8 +674,8 @@ msgstr ""
 "\n"
 "Ce projet est dérivé de Gnokii et a été nommé MyGnokii2 jusqu'à la version "
 "0.58. Alors, le besoin d'un meilleur nom s'est fait sentir et Gammu a été "
-"choisi comme acronyme autorécursif \"Gammu All Mobile Management Utilities\" "
-"(utilitaires Gammu de gestion de tous les téléphones mobiles), sans "
+"choisi comme acronyme autorécursif \"Gammu All Mobile Management Utilities"
+"\" (utilitaires Gammu de gestion de tous les téléphones mobiles), sans "
 "préscience du Gammu du livre \"Les Hérétiques de Dune\" écrit par Frank "
 "Herbert.\n"
 " \n"
@@ -692,8 +692,8 @@ msgstr ""
 "\n"
 "Le paquet Gammu n'inclut pas seulement ce binaire, mais aussi <a\n"
 "href=\"/smsd/\">Gammu SMS Daemon</a>, <a\n"
-"href=\"/libgammu/\">Gammu library</a> et <a href=\"/python-gammu/\">les liaisons "
-"Python</a>\n"
+"href=\"/libgammu/\">Gammu library</a> et <a href=\"/python-gammu/\">les "
+"liaisons Python</a>\n"
 "que vous pouvez utiliser pour développer vos propres applications d'accès à "
 "des téléphones\n"
 "portables.\n"
@@ -728,9 +728,9 @@ msgstr ""
 "\n"
 "La meilleure documentation est disponible dans <a href=\"/docs/manual/\"> le "
 "manuel de Gammu</a> qui est distribué avec le programme. Vous pouvez "
-"également consulter la documentation en ligne pour <a "
-"href=\"/docs/manual/gammu/\"> gammu (le programme principal)</a> ou <a "
-"href=\"/docs/manual/config/\"> gammu-rc (le fichier de configuration)</a>.\n"
+"également consulter la documentation en ligne pour <a href=\"/docs/manual/"
+"gammu/\"> gammu (le programme principal)</a> ou <a href=\"/docs/manual/"
+"config/\"> gammu-rc (le fichier de configuration)</a>.\n"
 
 #: html/gammu.html:80 html/wammu.html:66
 msgid ""
@@ -759,8 +759,8 @@ msgstr ""
 "\n"
 "<a href=\"/wammu/\"> wammu</a> est un programme pour gérer des données dans "
 "votre téléphone portable, tels que calendrier, contacts et messages. Il est "
-"construit sur <a href=\"/libgammu/\">la bibliothèque Gammu</a> qui fournit la "
-"couche d'abstraction pour travailler avec les différents téléphones "
+"construit sur <a href=\"/libgammu/\">la bibliothèque Gammu</a> qui fournit "
+"la couche d'abstraction pour travailler avec les différents téléphones "
 "cellulaires provenant de différents fournisseurs (y compris Nokia, Sony-"
 "Ericsson, Motorola, Samsung, Siemens, Huawei et autres).\n"
 
@@ -777,9 +777,9 @@ msgstr ""
 "\n"
 "Beaucoup de gens contribuent à Gammu, vous pouvez voir les principaux "
 "contributeurs sur <a href=\"/authors/\"> une page séparée</a>. Si vous "
-"souhaitez nous rejoindre, veuillez consulter notre liste de <a "
-"href=\"/contribute/wanted/\"> <strong>compétences recherchées</strong></a>, "
-"pour avoir une idée de nos besoins actuels.\n"
+"souhaitez nous rejoindre, veuillez consulter notre liste de <a href=\"/"
+"contribute/wanted/\"> <strong>compétences recherchées</strong></a>, pour "
+"avoir une idée de nos besoins actuels.\n"
 
 #: html/index.html:41
 msgid "Gammu family"
@@ -795,7 +795,7 @@ msgstr ""
 "Gammu n'est désormais plus un seul programme mais de nombreux outils utiles "
 "partageant la même bibliothèque.\n"
 
-#: html/index.html:67 html/phonedb/index.html:36
+#: html/index.html:66 html/phonedb/index.html:36
 msgid "Sponsors"
 msgstr "Sponsors"
 
@@ -839,8 +839,8 @@ msgid ""
 "href=\"/smsd/\">Gammu SMS Daemon</a>.\n"
 msgstr ""
 "\n"
-"Cette bibliothèque est utilisée dans tous les autres outils comme <a "
-"href=\"/gammu/\"> Gammu</a> ou <a href=\"/smsd/\"> Gammu SMS Daemon</a>.\n"
+"Cette bibliothèque est utilisée dans tous les autres outils comme <a href=\"/"
+"gammu/\"> Gammu</a> ou <a href=\"/smsd/\"> Gammu SMS Daemon</a>.\n"
 
 #: html/libgammu.html:47
 msgid ""
@@ -1964,24 +1964,20 @@ msgid "Ubuntu packages"
 msgstr ""
 
 #: html/downloads/platformlinks.html:15
-msgid "Ubuntu packages in PPA (latest stable version)"
+msgid "Ubuntu packages in PPA"
 msgstr ""
 
-#: html/downloads/platformlinks.html:18
-msgid "Ubuntu packages in PPA (latest testing version)"
-msgstr ""
-
-#: html/downloads/platformlinks.html:22
+#: html/downloads/platformlinks.html:19
 msgid ""
 "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS) (latest stable "
 "version)"
 msgstr ""
 
-#: html/downloads/platformlinks.html:26
+#: html/downloads/platformlinks.html:23
 msgid "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)"
 msgstr ""
 
-#: html/downloads/platformlinks.html:28
+#: html/downloads/platformlinks.html:25
 msgid "Development git snaphots and git access"
 msgstr ""
 
@@ -2469,7 +2465,8 @@ msgstr ""
 #: html/support/bugs.html:15
 msgid ""
 "\n"
-"Use <a href=\"https://github.com/gammu/gammu/issues\">bug tracker</a> to report a bug or a\n"
+"Use <a href=\"https://github.com/gammu/gammu/issues\">bug tracker</a> to "
+"report a bug or a\n"
 "feature requests. Please take care that you include all information "
 "necessary\n"
 "for the developer to investigate the problem. The most important things to\n"

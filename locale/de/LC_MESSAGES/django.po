@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-16 09:16+0200\n"
+"POT-Creation-Date: 2013-07-22 10:46+0200\n"
 "PO-Revision-Date: 2012-11-21 15:51+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: German <http://l10n.cihar.com/projects/gammu/website/de/>\n"
@@ -792,7 +792,7 @@ msgstr ""
 "Gammu ist kein einzelnes Programm (mehr), aber eine Sammlung nützlicher "
 "Hilfsmittel, die alle dieselben Bibliotheken nutzen.\n"
 
-#: html/index.html:67 html/phonedb/index.html:36
+#: html/index.html:66 html/phonedb/index.html:36
 msgid "Sponsors"
 msgstr "Sponsoren"
 
@@ -2470,14 +2470,12 @@ msgid "Ubuntu packages"
 msgstr "Ubuntu Pakete"
 
 #: html/downloads/platformlinks.html:15
-msgid "Ubuntu packages in PPA (latest stable version)"
-msgstr "Ubuntu Pakete im PPA (aktuelle stabile Version)"
+#, fuzzy
+#| msgid "Ubuntu packages"
+msgid "Ubuntu packages in PPA"
+msgstr "Ubuntu Pakete"
 
-#: html/downloads/platformlinks.html:18
-msgid "Ubuntu packages in PPA (latest testing version)"
-msgstr "Ubuntu Pakete im PPA (aktuelle test Version)"
-
-#: html/downloads/platformlinks.html:22
+#: html/downloads/platformlinks.html:19
 msgid ""
 "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS) (latest stable "
 "version)"
@@ -2485,11 +2483,11 @@ msgstr ""
 "RPM Pakete, aktuelle stabile Version (openSUSE, Fedora, Mandriva, SLES, "
 "RHEL, CentOS)"
 
-#: html/downloads/platformlinks.html:26
+#: html/downloads/platformlinks.html:23
 msgid "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)"
 msgstr "RPM Pakete, aktuelle Testversion (openSUSE, Fedora, Mandriva)"
 
-#: html/downloads/platformlinks.html:28
+#: html/downloads/platformlinks.html:25
 msgid "Development git snaphots and git access"
 msgstr "Entwicklungs-Git-Snapshots und -Git-Zugang"
 
@@ -3120,15 +3118,16 @@ msgstr "Fehler in Wammu und Gammu melden"
 #: html/support/bugs.html:15
 msgid ""
 "\n"
-"Use <a href=\"https://github.com/gammu/gammu/issues\">bug tracker</a> to report a bug or a\n"
+"Use <a href=\"https://github.com/gammu/gammu/issues\">bug tracker</a> to "
+"report a bug or a\n"
 "feature requests. Please take care that you include all information "
 "necessary\n"
 "for the developer to investigate the problem. The most important things to\n"
 "include are:\n"
 msgstr ""
 "\n"
-"Verwenden Sie unseren <a href=\"https://github.com/gammu/gammu/issues\">bug tracker</a>, um "
-"Fehler zu melden oder sich neue Funktionen zu wünschen.\n"
+"Verwenden Sie unseren <a href=\"https://github.com/gammu/gammu/issues\">bug "
+"tracker</a>, um Fehler zu melden oder sich neue Funktionen zu wünschen.\n"
 "Bitte achten Sie darauf, uns alle Informationen zu geben, die unsere "
 "Entwickler benötigen, um Ihr Anliegen zu lösen.\n"
 "Auf jeden Fall anführen sollten Sie folgende wichtige Aspekte:\n"
@@ -4071,6 +4070,12 @@ msgstr "Gammu und Wammu News Feed (RSS)"
 #: wammu/context_processors.py:58
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu und Wammu News Feed (Atom)"
+
+#~ msgid "Ubuntu packages in PPA (latest stable version)"
+#~ msgstr "Ubuntu Pakete im PPA (aktuelle stabile Version)"
+
+#~ msgid "Ubuntu packages in PPA (latest testing version)"
+#~ msgstr "Ubuntu Pakete im PPA (aktuelle test Version)"
 
 #~ msgid ""
 #~ "\n"

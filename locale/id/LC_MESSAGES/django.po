@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-16 09:16+0200\n"
+"POT-Creation-Date: 2013-07-22 10:46+0200\n"
 "PO-Revision-Date: 2012-09-19 05:10+0200\n"
 "Last-Translator: Roma Dhani <xtalplanet@yahoo.com>\n"
 "Language-Team: Indonesian <http://l10n.cihar.com/projects/gammu/website/id/"
@@ -679,7 +679,7 @@ msgid ""
 "sharing same library.\n"
 msgstr ""
 
-#: html/index.html:67 html/phonedb/index.html:36
+#: html/index.html:66 html/phonedb/index.html:36
 msgid "Sponsors"
 msgstr ""
 
@@ -1824,24 +1824,20 @@ msgid "Ubuntu packages"
 msgstr ""
 
 #: html/downloads/platformlinks.html:15
-msgid "Ubuntu packages in PPA (latest stable version)"
+msgid "Ubuntu packages in PPA"
 msgstr ""
 
-#: html/downloads/platformlinks.html:18
-msgid "Ubuntu packages in PPA (latest testing version)"
-msgstr ""
-
-#: html/downloads/platformlinks.html:22
+#: html/downloads/platformlinks.html:19
 msgid ""
 "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS) (latest stable "
 "version)"
 msgstr ""
 
-#: html/downloads/platformlinks.html:26
+#: html/downloads/platformlinks.html:23
 msgid "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)"
 msgstr ""
 
-#: html/downloads/platformlinks.html:28
+#: html/downloads/platformlinks.html:25
 msgid "Development git snaphots and git access"
 msgstr ""
 
@@ -2327,7 +2323,8 @@ msgstr ""
 #: html/support/bugs.html:15
 msgid ""
 "\n"
-"Use <a href=\"https://github.com/gammu/gammu/issues\">bug tracker</a> to report a bug or a\n"
+"Use <a href=\"https://github.com/gammu/gammu/issues\">bug tracker</a> to "
+"report a bug or a\n"
 "feature requests. Please take care that you include all information "
 "necessary\n"
 "for the developer to investigate the problem. The most important things to\n"
