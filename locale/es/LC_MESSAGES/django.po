@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2013-07-22 10:46+0200\n"
-"PO-Revision-Date: 2013-05-16 13:40+0200\n"
+"PO-Revision-Date: 2013-07-22 16:22+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone+weblate@gmail.com>\n"
 "Language-Team: Spanish <http://l10n.cihar.com/projects/gammu/website/es/>\n"
 "Language: es\n"
@@ -2363,10 +2363,9 @@ msgid "Ubuntu packages"
 msgstr "Paquetes para Ubuntu"
 
 #: html/downloads/platformlinks.html:15
-#, fuzzy
 #| msgid "Ubuntu packages"
 msgid "Ubuntu packages in PPA"
-msgstr "Paquetes para Ubuntu"
+msgstr "Paquetes para Ubuntu en un PPA"
 
 #: html/downloads/platformlinks.html:19
 msgid ""
