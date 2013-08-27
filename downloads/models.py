@@ -14,7 +14,7 @@ from wammu.helpers import process_bug_links
 from django.utils.translation import ugettext as _
 from django.utils.translation import ugettext_lazy
 
-from django.contrib.sites.models import Site, RequestSite
+from django.contrib.sites.models import get_current_site
 
 PROGRAM_CHOICES = (
     ('gammu', 'Gammu'),
@@ -124,10 +124,7 @@ class Release(models.Model):
             self.version_int = 100 * self.version_int
         if self.post_news:
             author = self.author
-            if Site._meta.installed:
-                current_site = Site.objects.get_current()
-            else:
-                current_site = RequestSite(self.request)
+            current_site = get_current_site()
             excerpt = '[%(programname)s](%(programurl)s) [%(version)s](%(versionurl)s) has been just released. %(description)s' % {
                 'programname': get_program(self.program),
                 'version': self.version,

@@ -8,7 +8,7 @@ from downloads.views import get_mirrors
 
 from django.conf import settings
 
-from django.contrib.sites.models import Site, RequestSite
+from django.contrib.sites.models import get_current_site
 # Create your views here.
 
 def process_version_feedback(request):
@@ -91,10 +91,7 @@ def static(request, page):
     }))
 
 def robots(request):
-    if Site._meta.installed:
-        current_site = Site.objects.get_current()
-    else:
-        current_site = RequestSite(request)
+    current_site = get_current_site()
     return render_to_response('robots.txt', RequestContext(request, {
         'current_site': current_site,
     }), mimetype = 'text/plain')
