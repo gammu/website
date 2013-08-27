@@ -41,8 +41,6 @@ LANGUAGE_CODE = 'en-us'
 
 LOCALE_PATHS = ('%s/locale' % WEB_ROOT, )
 
-SITE_ID = 1
-
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
 USE_I18N = True
@@ -110,6 +108,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'wammu.middleware.SiteLocaleMiddleware',
 )
 
 ROOT_URLCONF = 'urls'
