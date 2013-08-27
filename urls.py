@@ -5,6 +5,7 @@ from news.models import Entry
 from phonedb.feeds import RssPhonesFeed, AtomPhonesFeed
 from phonedb.models import Phone, Vendor
 from django.contrib.sitemaps import GenericSitemap, Sitemap
+from django.views.generic import RedirectView
 from downloads.models import Release
 import os
 import datetime
@@ -195,11 +196,11 @@ urlpatterns = patterns('',
     (r'^links/$', 'links.views.index'),
 
     # Compatibility
-    (r'^install/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
-    (r'^improve/$', 'django.views.generic.simple.redirect_to', {'url': '/contribute/'}),
-    (r'^wammu.xml$', 'django.views.generic.simple.redirect_to', {'url': '/api/pad/wammu.xml'}),
-    (r'^wammu.doap$', 'django.views.generic.simple.redirect_to', {'url': '/api/doap/wammu.xml'}),
-    (r'^phones/features/(?P<featurename>[^/]*)/$', 'django.views.generic.simple.redirect_to', {'url': '/phones/search/%(featurename)s/'}),
+    (r'^install/$', RedirectView.as_view(url='/download/')),
+    (r'^improve/$', RedirectView.as_view(url='/contribute/')),
+    (r'^wammu.xml$', RedirectView.as_view(url='/api/pad/wammu.xml')),
+    (r'^wammu.doap$', RedirectView.as_view(url='/api/doap/wammu.xml')),
+    (r'^phones/features/(?P<featurename>[^/]*)/$', RedirectView.as_view(url='/phones/search/%(featurename)s/')),
 
     # Sitemap
     (r'^sitemap.xml$', 'django.contrib.sitemaps.views.index', {'sitemaps': sitemaps}),
@@ -209,24 +210,24 @@ urlpatterns = patterns('',
     (r'^robots.txt$', 'wammu.views.robots'),
 
     # Redirects for crazy bots who investiage full urls
-    (r'^api/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
-    (r'^api/doap/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
-    (r'^api/pad/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
+    (r'^api/$', RedirectView.as_view(url='/download/')),
+    (r'^api/doap/$', RedirectView.as_view(url='/download/')),
+    (r'^api/pad/$', RedirectView.as_view(url='/download/')),
 
     # Broken links
-    (r'^(?P<link>.*)/\)\.$', 'django.views.generic.simple.redirect_to', {'url': '/%(link)s'}),
-    (r'^(?P<link>.*)/\)$', 'django.views.generic.simple.redirect_to', {'url': '/%(link)s'}),
-    (r'^(?P<link>.*)/index\.php$', 'django.views.generic.simple.redirect_to', {'url': '/%(link)s'}),
-    (r'^(?P<link>phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/),.*', 'django.views.generic.simple.redirect_to', {'url': '/%(link)s'}),
-    (r'^snapshot/$', 'django.views.generic.simple.redirect_to', {'url': '/download/'}),
-    (r'^manual/$', 'django.views.generic.simple.redirect_to', {'url': '/docs/manual/'}),
-    (r'^docs/faq/$', 'django.views.generic.simple.redirect_to', {'url': '/docs/manual/faq/'}),
-    (r'^docs/roadmap/$', 'django.views.generic.simple.redirect_to', {'url': '/docs/manual/project/roadmap.html'}),
-    (r'^docs/devel/$', 'django.views.generic.simple.redirect_to', {'url': '/docs/'}),
-    (r'^docs/man/.*$', 'django.views.generic.simple.redirect_to', {'url': '/docs/'}),
-    (r'^wiki/$', 'django.views.generic.simple.redirect_to', {'url': '/'}),
-    (r'^en/$', 'django.views.generic.simple.redirect_to', {'url': 'http://wammu.eu/'}),
-    (r'^cs/$', 'django.views.generic.simple.redirect_to', {'url': 'http://cs.wammu.eu/'}),
-    (r'^cz/$', 'django.views.generic.simple.redirect_to', {'url': 'http://cs.wammu.eu/'}),
-    (r'^es/$', 'django.views.generic.simple.redirect_to', {'url': 'http://es.wammu.eu/'}),
+    (r'^(?P<link>.*)/\)\.$', RedirectView.as_view(url='/%(link)s')),
+    (r'^(?P<link>.*)/\)$', RedirectView.as_view(url='/%(link)s')),
+    (r'^(?P<link>.*)/index\.php$', RedirectView.as_view(url='/%(link)s')),
+    (r'^(?P<link>phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/),.*', RedirectView.as_view(url='/%(link)s')),
+    (r'^snapshot/$', RedirectView.as_view(url='/download/')),
+    (r'^manual/$', RedirectView.as_view(url='/docs/manual/')),
+    (r'^docs/faq/$', RedirectView.as_view(url='/docs/manual/faq/')),
+    (r'^docs/roadmap/$', RedirectView.as_view(url='/docs/manual/project/roadmap.html')),
+    (r'^docs/devel/$', RedirectView.as_view(url='/docs/')),
+    (r'^docs/man/.*$', RedirectView.as_view(url='/docs/')),
+    (r'^wiki/$', RedirectView.as_view(url='/')),
+    (r'^en/$', RedirectView.as_view(url='http://wammu.eu/')),
+    (r'^cs/$', RedirectView.as_view(url='http://cs.wammu.eu/')),
+    (r'^cz/$', RedirectView.as_view(url='http://cs.wammu.eu/')),
+    (r'^es/$', RedirectView.as_view(url='http://es.wammu.eu/')),
 )
