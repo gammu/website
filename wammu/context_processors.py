@@ -3,28 +3,30 @@
 
 from django.conf import settings
 from datetime import datetime
-from django.utils.translation import ugettext as _
+from django.utils.translation import ugettext as _, get_language
 
 def translations(request):
     path = request.get_full_path()
     langs = []
 
-    if settings.LANGUAGE_CODE != 'cs-cz':
+    lang = get_language()
+
+    if lang != 'cs':
         langs.append({'url': 'http://cs.wammu.eu%s' % path, 'name': u'Česky', 'code': 'cs-CZ'})
 
-    if settings.LANGUAGE_CODE != 'en-us':
+    if lang != 'en':
         langs.append({'url': 'http://wammu.eu%s' % path, 'name': u'English', 'code': 'en-US'})
 
-    if settings.LANGUAGE_CODE != 'es-es':
+    if lang != 'es':
         langs.append({'url': 'http://es.wammu.eu%s' % path, 'name': u'Español', 'code': 'es-ES'})
 
-    if settings.LANGUAGE_CODE != 'de-de':
+    if lang != 'de':
         langs.append({'url': 'http://de.wammu.eu%s' % path, 'name': u'Deutsch', 'code': 'de-DE'})
 
-    if settings.LANGUAGE_CODE != 'sk-sk':
+    if lang != 'sk':
         langs.append({'url': 'http://sk.wammu.eu%s' % path, 'name': u'Slovenčina', 'code': 'sk-SK'})
 
-    if settings.LANGUAGE_CODE != 'fr-fr':
+    if lang != 'fr':
         langs.append({'url': 'http://fr.wammu.eu%s' % path, 'name': u'Français', 'code': 'fr-FR'})
 
     return {'translations': langs}
