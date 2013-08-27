@@ -91,7 +91,7 @@ def static(request, page):
     }))
 
 def robots(request):
-    current_site = get_current_site()
+    current_site = get_current_site(request)
     return render_to_response('robots.txt', RequestContext(request, {
         'current_site': current_site,
     }), mimetype = 'text/plain')

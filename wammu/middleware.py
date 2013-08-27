@@ -4,7 +4,7 @@ from django.utils import translation
 
 class SiteLocaleMiddleware(object):
     def process_request(self, request):
-        current_site = get_current_site()
+        current_site = get_current_site(request)
 
         lang = current_site.domain.split('.')[0]
         if len(lang) == 2:
