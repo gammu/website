@@ -10,3 +10,5 @@ class SiteLocaleMiddleware(object):
         if len(lang) == 2:
             translation.activate(lang)
             request.LANGUAGE_CODE = translation.get_language()
+        else:
+            translation.activate('en')
