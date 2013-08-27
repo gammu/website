@@ -189,4 +189,6 @@ USE_ETAGS = True
 IGNORABLE_404_ENDS = ['logo.png', 'logo_001.png', 'piwik.js', 'piwik.js/', 'piwik.php', 'michal@cihar.com', 'piwik.php/']
 IGNORABLE_404_STARTS = ['/plugins/editors/tinymce', '/cgi-bin/']
 
+EMAIL_SUBJECT_PREFIX = '[wammu.eu]'
+
 ALLOWED_HOSTS = ['wammu.eu', 'cs.wammu.eu', 'de.wammu.eu', 'es.wammu.eu', 'fr.wammu.eu', 'sk.wammu.eu']
