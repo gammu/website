@@ -1,8 +1,0 @@
-- donations
-    - listing on /donate/list
-    - allow user to hide details
-    - remeber settings (through session)
-- send email on new release to mailing list
-- installation
-    - automatically update man pages
-    - investigate caching
