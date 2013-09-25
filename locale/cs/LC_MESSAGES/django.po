@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2013-07-22 10:46+0200\n"
-"PO-Revision-Date: 2013-05-16 09:19+0200\n"
+"PO-Revision-Date: 2013-09-25 15:38+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <http://l10n.cihar.com/projects/gammu/website/cs/>\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 1.6-dev\n"
+"X-Generator: Weblate 1.7-dev\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -2106,10 +2106,9 @@ msgid "Ubuntu packages"
 msgstr "Balíčky pro Ubuntu"
 
 #: html/downloads/platformlinks.html:15
-#, fuzzy
 #| msgid "Ubuntu packages"
 msgid "Ubuntu packages in PPA"
-msgstr "Balíčky pro Ubuntu"
+msgstr "Balíčky pro Ubuntu v PPA"
 
 #: html/downloads/platformlinks.html:19
 msgid ""
