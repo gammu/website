@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2013-07-22 10:46+0200\n"
-"PO-Revision-Date: 2013-07-26 08:00+0200\n"
-"Last-Translator: Julio Cesar Zuppa <juliozuppa@gmail.com>\n"
+"PO-Revision-Date: 2013-10-01 22:25+0200\n"
+"Last-Translator: Rodrigo Souza <rodrigo.chrome@outlook.com>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://l10n.cihar.com/projects/gammu/website/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 1.6\n"
+"X-Generator: Weblate 1.7-dev\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -2457,7 +2457,7 @@ msgstr "Pacotes RPM (openSUSE, Fedora, Mandriva) (última versão de testes)"
 
 #: html/downloads/platformlinks.html:25
 msgid "Development git snaphots and git access"
-msgstr "Snapshots git e acesso git ao desenvolvimento"
+msgstr "Snapshots de desenvolvimento git e acesso ao git"
 
 #: html/downloads/platformmessage.html:3
 msgid ""
