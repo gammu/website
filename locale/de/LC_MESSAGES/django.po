@@ -1359,7 +1359,7 @@ msgstr "anzeigen von Nachrichten mit Bildern und abspielen von Klingeltönen"
 #: html/wammu.html:38
 msgid ""
 "support for backup and import in various formats (vCard, vCalendar, vTodo, "
-"iCalendar, gammu own backup,...)"
+"iCalendar, gammu own backup,…)"
 msgstr ""
 "unterstützt die Sicherung und den Import in verschiedenen Dateiformaten "
 "(vCard, vCalendar, vTodo, iCalendar, Gammu-eigenes Format,...)"

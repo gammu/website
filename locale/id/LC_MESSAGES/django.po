@@ -1033,7 +1033,7 @@ msgstr ""
 #: html/wammu.html:38
 msgid ""
 "support for backup and import in various formats (vCard, vCalendar, vTodo, "
-"iCalendar, gammu own backup,...)"
+"iCalendar, gammu own backup,…)"
 msgstr ""
 
 #: html/wammu.html:39
