@@ -5,17 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2013-07-22 10:46+0200\n"
-"PO-Revision-Date: 2012-11-21 15:51+0200\n"
+"PO-Revision-Date: 2013-11-25 13:19+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: German <http://l10n.cihar.com/projects/gammu/website/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 1.4-dev\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 1.9-dev\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -343,7 +343,7 @@ msgstr ""
 
 #: html/donate-thanks.html:4 html/donate-thanks.html.py:11
 msgid "Thank you for Donation!"
-msgstr "Vielen Dank für Ihre Spende"
+msgstr "Vielen Dank für Ihre Spende!"
 
 #: html/donate-thanks.html:14
 msgid ""
@@ -3605,7 +3605,7 @@ msgstr ""
 
 #: html/support/online.html:24
 msgid "Jabber conference room"
-msgstr "Jabber conference room"
+msgstr "Jabber Konferenz-Raum"
 
 #: html/support/online.html:27
 msgid ""
@@ -3672,7 +3672,7 @@ msgstr "Fehlerdatenbank"
 
 #: html/support/sidebar.html:7
 msgid "Jabber chat room"
-msgstr "Jabber chat room"
+msgstr "Jabber Konferenz-Raum"
 
 #: html/tools/countries.html:4 html/tools/countries.html.py:12
 msgid "GSM countries list from Gammu"
