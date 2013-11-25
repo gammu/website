@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2013-07-22 10:46+0200\n"
-"PO-Revision-Date: 2013-11-25 12:55+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
+"PO-Revision-Date: 2013-11-25 15:09+0200\n"
+"Last-Translator: Matías Bellone <matiasbellone+weblate@gmail.com>\n"
 "Language-Team: Spanish <http://l10n.cihar.com/projects/gammu/website/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -342,7 +342,7 @@ msgstr ""
 
 #: html/donate-thanks.html:4 html/donate-thanks.html.py:11
 msgid "Thank you for Donation!"
-msgstr "Gracias por Donar!"
+msgstr "¡Gracias por donar!"
 
 #: html/donate-thanks.html:14
 msgid ""
