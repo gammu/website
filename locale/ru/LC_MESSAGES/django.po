@@ -328,7 +328,7 @@ msgid ""
 msgstr ""
 
 #: html/donate-thanks.html:4 html/donate-thanks.html.py:11
-msgid "Thank you for Donation"
+msgid "Thank you for Donation!"
 msgstr "Спасибо за вашу помощь"
 
 #: html/donate-thanks.html:14

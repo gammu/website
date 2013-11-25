@@ -302,7 +302,7 @@ msgid ""
 msgstr ""
 
 #: html/donate-thanks.html:4 html/donate-thanks.html.py:11
-msgid "Thank you for Donation"
+msgid "Thank you for Donation!"
 msgstr ""
 
 #: html/donate-thanks.html:14

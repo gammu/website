@@ -344,7 +344,7 @@ msgstr ""
 "href=\"http://jigsaw.w3.org/css-validator/check/referer\">le CSS</a>"
 
 #: html/donate-thanks.html:4 html/donate-thanks.html.py:11
-msgid "Thank you for Donation"
+msgid "Thank you for Donation!"
 msgstr "Merci pour le don"
 
 #: html/donate-thanks.html:14
