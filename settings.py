@@ -150,16 +150,6 @@ INSTALLED_APPS = (
     'tools',
 )
 
-#import gobject
-#import gnomekeyring
-#gobject.set_application_name('Wammu-web')
-IDENTICA_USER = 'gammu'
-IDENTICA_PASSWORD = ''
-#IDENTICA_PASSWORD = gnomekeyring.find_network_password_sync(
-#        user = IDENTICA_USER,
-#        domain = 'identi.ca',
-#        protocol = 'https')[0]['password']
-
 NEWS_PER_PAGE = 5
 NEWS_ON_MAIN_PAGE = 5
 NEWS_ON_PRODUCT_PAGE = 2

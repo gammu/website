@@ -7,8 +7,6 @@ from django.conf import settings
 
 import markdown
 
-import twitter
-
 import datetime
 
 # Create your models here.
@@ -90,17 +88,6 @@ class Entry(models.Model):
             self.pub_date = datetime.datetime.now()
         if self.excerpt:
             self.excerpt_html = markdown.markdown(self.excerpt)
-        if self.identica_post:
-            api = twitter.Api(username = settings.IDENTICA_USER,
-                password = settings.IDENTICA_PASSWORD,
-                base_url='https://identi.ca/api')
-            api.SetSource('Wammu website')
-            if Site._meta.installed:
-                current_site = Site.objects.get_current()
-            else:
-                current_site = RequestSite(self.request)
-            api.PostUpdate('%s - http://%s%s' % (self.identica_text, current_site.domain, self.get_absolute_url()))
-            self.identica_post = False
         self.body_html = markdown.markdown(self.body, safe_mode = True)
         super(Entry, self).save(*args, **kwargs)
 
