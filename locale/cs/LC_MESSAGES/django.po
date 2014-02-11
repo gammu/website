@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2013-07-22 10:46+0200\n"
-"PO-Revision-Date: 2013-11-25 12:55+0200\n"
+"PO-Revision-Date: 2014-02-11 12:47+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <http://l10n.cihar.com/projects/gammu/website/cs/>\n"
 "Language: cs\n"
@@ -3230,7 +3230,7 @@ msgstr "Reference zprávy"
 
 #: html/tools/pdudecode.html:57
 msgid "SMS Data Decoding Result"
-msgstr ""
+msgstr "Výsledek dekódování dat SMS"
 
 #: html/tools/pdudecode.html:66
 msgid "MMS indicator"
