@@ -7,11 +7,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2014-02-16 12:43+0100\n"
-"PO-Revision-Date: 2014-02-11 12:47+0200\n"
+"PO-Revision-Date: 2014-02-16 13:05+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Czech <http://l10n.cihar.com/projects/gammu/website/cs/>\n"
+"Language-Team: Czech <https://l10n.cihar.com/projects/gammu/website/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3159,7 +3159,7 @@ msgstr ""
 
 #: html/tools/networks.html:4 html/tools/networks.html.py:12
 msgid "GSM networks list from Gammu"
-msgstr ""
+msgstr "Seznam GSM sítí v Gammu"
 
 #: html/tools/networks.html:15
 msgid ""
@@ -3175,13 +3175,13 @@ msgstr "Dekódování PDU pomocí Gammu"
 
 #: html/tools/pdudecode.html:27
 msgid "PDU Decoding Result"
-msgstr ""
+msgstr "Výsledek dekódování PDU"
 
 #: html/tools/pdudecode.html:29 html/tools/pdudecode.html.py:59
 #: html/tools/pduencode.html:29
 #, python-format
 msgid "Message number %(id)s"
-msgstr ""
+msgstr "Zpráva číslo %(id)s"
 
 #: html/tools/pdudecode.html:31
 msgid "Decoding failed with error:"
