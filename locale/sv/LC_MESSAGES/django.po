@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-22 10:46+0200\n"
+"POT-Creation-Date: 2014-02-16 12:43+0100\n"
 "PO-Revision-Date: 2013-03-20 19:20+0200\n"
 "Last-Translator: Anders Jonsson <jonars03@student.umu.se>\n"
 "Language-Team: Swedish <http://l10n.cihar.com/projects/gammu/website/sv/>\n"
@@ -25,12 +25,12 @@ msgstr "Källa"
 msgid "Windows binary"
 msgstr ""
 
-#: downloads/models.py:176
+#: downloads/models.py:173
 #, python-format
 msgid "%(program)s stable release %(version)s"
 msgstr "%(program)s stabil utgåva %(version)s"
 
-#: downloads/models.py:181
+#: downloads/models.py:178
 #, python-format
 msgid "%(program)s testing release %(version)s"
 msgstr "%(program)s test release %(version)s"
@@ -194,7 +194,7 @@ msgstr ""
 msgid "SMSD"
 msgstr "SMSD"
 
-#: html/base.html:122 wammu/context_processors.py:34
+#: html/base.html:122 wammu/context_processors.py:36
 msgid "Support"
 msgstr "Support"
 
@@ -220,7 +220,7 @@ msgstr ""
 
 #: html/base.html:134 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
-#: wammu/context_processors.py:36
+#: wammu/context_processors.py:38
 msgid "Screenshots"
 msgstr ""
 
@@ -235,7 +235,7 @@ msgstr ""
 #: html/base.html:140 html/gammu.html:69 html/libgammu.html:54
 #: html/python-gammu.html:69 html/smsd.html:73 html/wammu.html:57
 #: html/docs/sidebar.html:2 html/support/sidebar.html:4
-#: wammu/context_processors.py:37
+#: wammu/context_processors.py:39
 msgid "Documentation"
 msgstr ""
 
@@ -256,7 +256,7 @@ msgstr ""
 msgid "Configuration"
 msgstr ""
 
-#: html/base.html:149 wammu/context_processors.py:38
+#: html/base.html:149 wammu/context_processors.py:40
 msgid "Contribute"
 msgstr ""
 
@@ -553,7 +553,7 @@ msgstr ""
 #: html/gammu.html:61 html/libgammu.html:45 html/python-gammu.html:34
 #: html/smsd.html:63 html/wammu.html:47 html/downloads/list.html:4
 #: html/downloads/program.html:4 html/downloads/release.html:4
-#: wammu/context_processors.py:35
+#: wammu/context_processors.py:37
 msgid "Download"
 msgstr ""
 
@@ -1118,21 +1118,14 @@ msgstr ""
 msgid ""
 "\n"
 "If you for some reason do not want to use version control system, you can\n"
-"always download fresh snapshots of current code. They are available on our\n"
-"download server - for <a href=\"http://dl.cihar.com/gammu/snapshot/\">Gammu</"
-"a>\n"
-"and <a href=\"http://dl.cihar.com/wammu/snapshot/\">Wammu</a>. These "
-"snapshots\n"
-"are update several times a day, so they should always contain up to date "
-"copy\n"
-"of the code.\n"
+"always download fresh snapshots of current code from GitHub.\n"
 msgstr ""
 
-#: html/contribute/code.html:95
+#: html/contribute/code.html:91
 msgid "Patch Submission"
 msgstr ""
 
-#: html/contribute/code.html:97
+#: html/contribute/code.html:93
 msgid ""
 "\n"
 "We really do not care much about the way you deliver us patches. However "
@@ -1144,11 +1137,11 @@ msgid ""
 "href=\"/support/bugs/\">bug tracker</a>.\n"
 msgstr ""
 
-#: html/contribute/code.html:108
+#: html/contribute/code.html:104
 msgid "Testing"
 msgstr ""
 
-#: html/contribute/code.html:110
+#: html/contribute/code.html:106
 msgid ""
 "Gammu comes with quite comprehensive testsuite, which is being run "
 "continuosly using <a href=\"https://travis-ci.org/gammu/gammu\">Travis</a>."
@@ -1975,7 +1968,7 @@ msgid ""
 "GSM cell phones."
 msgstr ""
 
-#: html/phonedb/index.html:5 html/phonedb/index.html.py:47
+#: html/phonedb/index.html:5 html/phonedb/index.html.py:48
 #: html/phonedb/new.html:5 html/phonedb/phone.html:6
 #: html/phonedb/search.html:5 html/phonedb/vendor.html:6
 msgid "Gammu Phone Database "
@@ -1995,7 +1988,7 @@ msgstr ""
 msgid "CSV"
 msgstr ""
 
-#: html/phonedb/index.html:50
+#: html/phonedb/index.html:51
 msgid ""
 "\n"
 "This page tries to collect list of phones supported by <a href=\"/libgammu/"
@@ -2005,7 +1998,7 @@ msgid ""
 "href=\"http://tuxmobil.org/phones_linux.html\">TuxMobil</a>.\n"
 msgstr ""
 
-#: html/phonedb/index.html:57
+#: html/phonedb/index.html:58
 msgid ""
 "\n"
 "This list is filled in by users and thus there can be no warranty\n"
@@ -2016,20 +2009,20 @@ msgid ""
 "mailing list</a> is open to questions about supported phones.\n"
 msgstr ""
 
-#: html/phonedb/index.html:66
+#: html/phonedb/index.html:67
 msgid ""
 "You can find general information about <a href=\"/docs/manual/faq/config.html"
 "\">configuring Gammu in FAQ</a>."
 msgstr ""
 
-#: html/phonedb/index.html:69
+#: html/phonedb/index.html:70
 msgid ""
 "\n"
 "As this list is updated by users, you are welcome to <strong><a href=\"/"
 "phones/new/\">add new records</a></strong>.\n"
 msgstr ""
 
-#: html/phonedb/index.html:74
+#: html/phonedb/index.html:75
 msgid ""
 "\n"
 "Generally any phone capable of AT commands or IrMC should be supported. "
@@ -2040,19 +2033,19 @@ msgid ""
 "phone to get some functionality, newer ones do not have support so far.\n"
 msgstr ""
 
-#: html/phonedb/index.html:82
+#: html/phonedb/index.html:83
 msgid "Manufacturers"
 msgstr "Tillverkare"
 
-#: html/phonedb/index.html:91
+#: html/phonedb/index.html:92
 msgid "Recently Added Phones"
 msgstr ""
 
-#: html/phonedb/index.html:94
+#: html/phonedb/index.html:95
 msgid "Phone Records Summary"
 msgstr ""
 
-#: html/phonedb/index.html:98
+#: html/phonedb/index.html:99
 msgid ""
 "\n"
 "On following chart, you can see how number of records in phone database\n"
@@ -2803,7 +2796,7 @@ msgstr ""
 msgid "PDU data"
 msgstr ""
 
-#: html/tools/sidebar.html:2 wammu/context_processors.py:39
+#: html/tools/sidebar.html:2 wammu/context_processors.py:41
 msgid "Tools"
 msgstr ""
 
@@ -3000,11 +2993,11 @@ msgstr ""
 msgid "SMSC number"
 msgstr "SMSC-nummer"
 
-#: wammu/context_processors.py:57
+#: wammu/context_processors.py:59
 msgid "Gammu and Wammu News Feed (RSS)"
 msgstr ""
 
-#: wammu/context_processors.py:58
+#: wammu/context_processors.py:60
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr ""
 
