@@ -5,17 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2014-02-16 12:43+0100\n"
-"PO-Revision-Date: 2013-03-20 19:20+0200\n"
-"Last-Translator: Anders Jonsson <jonars03@student.umu.se>\n"
-"Language-Team: Swedish <http://l10n.cihar.com/projects/gammu/website/sv/>\n"
+"PO-Revision-Date: 2014-02-17 20:21+0200\n"
+"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
+"Language-Team: Swedish <https://l10n.cihar.com/projects/gammu/website/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 1.5-dev\n"
+"X-Generator: Weblate 1.9-dev\n"
 
 #: downloads/models.py:32
 msgid "Source"
@@ -157,19 +157,19 @@ msgstr ""
 
 #: html/base.html:100
 msgid "Gammu on Google+"
-msgstr ""
+msgstr "Gammu på Google+"
 
 #: html/base.html:101
 msgid "Gammu on Facebook"
-msgstr ""
+msgstr "Gammu på Facebook"
 
 #: html/base.html:102
 msgid "Follow us on Twitter"
-msgstr ""
+msgstr "Följ oss på Twitter"
 
 #: html/base.html:103
 msgid "Follow us on Identi.ca"
-msgstr ""
+msgstr "Följ oss på Identi.ca"
 
 #: html/base.html:113 html/index.html:19
 msgid "About"
@@ -274,7 +274,7 @@ msgstr ""
 
 #: html/base.html:162
 msgid "License"
-msgstr ""
+msgstr "Licens"
 
 #: html/base.html:163
 msgid "Support Gammu/Wammu by donating money!"
@@ -327,7 +327,7 @@ msgstr ""
 
 #: html/donate.html:17
 msgid "Micropayments"
-msgstr ""
+msgstr "Mikrobetalningar"
 
 #: html/donate.html:20
 msgid ""
@@ -622,7 +622,7 @@ msgstr ""
 
 #: html/index.html:66 html/phonedb/index.html:36
 msgid "Sponsors"
-msgstr ""
+msgstr "Sponsorer"
 
 #: html/libgammu.html:4 html/libgammu.html.py:15
 #: html/contribute/translate.html:60
@@ -1071,7 +1071,7 @@ msgstr ""
 
 #: html/contribute/code.html:36
 msgid "Version Control System"
-msgstr ""
+msgstr "Versionshanteringssystem"
 
 #: html/contribute/code.html:38
 msgid ""
@@ -1518,7 +1518,7 @@ msgstr ""
 
 #: html/contribute/wanted.html:73
 msgid "Translators"
-msgstr ""
+msgstr "Översättare"
 
 #: html/contribute/wanted.html:76
 msgid ""
@@ -1757,11 +1757,11 @@ msgstr ""
 
 #: html/downloads/platformlinks.html:9
 msgid "Debian packages"
-msgstr ""
+msgstr "Debian-paket"
 
 #: html/downloads/platformlinks.html:12
 msgid "Ubuntu packages"
-msgstr ""
+msgstr "Ubuntu-paket"
 
 #: html/downloads/platformlinks.html:15
 msgid "Ubuntu packages in PPA"
@@ -1819,11 +1819,11 @@ msgstr ""
 
 #: html/downloads/release.html:15
 msgid "Changes"
-msgstr ""
+msgstr "Ändringar"
 
 #: html/downloads/release.html:21
 msgid "Files"
-msgstr ""
+msgstr "Filer"
 
 #: html/downloads/relinfo.html:4
 #, python-format
@@ -1932,7 +1932,7 @@ msgstr "Kategorier"
 
 #: html/news/index.html:16
 msgid "All news"
-msgstr ""
+msgstr "Alla nyheter"
 
 #: html/news/published.html:4
 #, python-format
@@ -2110,7 +2110,7 @@ msgstr "Redigera"
 
 #: html/phonedb/phone.html:17
 msgid "Delete"
-msgstr ""
+msgstr "Ta bort"
 
 #: html/phonedb/phone.html:20
 msgid "Approve"
@@ -2187,7 +2187,7 @@ msgstr ""
 
 #: html/phonedb/search.html:5 html/phonedb/search.html.py:16
 msgid "Search Results"
-msgstr ""
+msgstr "Sökresultat"
 
 #: html/phonedb/search.html:26
 #, python-format
@@ -2766,7 +2766,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:67
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: html/tools/pdudecode.html:68
 msgid "Sender"
@@ -2774,7 +2774,7 @@ msgstr "Avsändare"
 
 #: html/tools/pdudecode.html:69
 msgid "Address"
-msgstr ""
+msgstr "Adress"
 
 #: html/tools/pdudecode.html:70 tools/forms.py:14
 msgid "Class"
