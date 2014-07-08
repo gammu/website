@@ -1,3 +1,7 @@
+if (top != self) {
+    top.location.replace(location);
+}
+
 /**
  * Initializes mirror selection.
  */

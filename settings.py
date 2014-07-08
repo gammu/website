@@ -109,6 +109,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'wammu.middleware.SiteLocaleMiddleware',
+    'wammu.middleware.HTTPHeadersMiddleware',
 )
 
 ROOT_URLCONF = 'urls'
