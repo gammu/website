@@ -14,7 +14,7 @@ from wammu.helpers import process_bug_links
 from django.utils.translation import ugettext as _
 from django.utils.translation import ugettext_lazy
 
-from django.contrib.sites.shortcuts import get_current_site
+from django.contrib.sites.models import get_current_site
 
 PROGRAM_CHOICES = (
     ('gammu', 'Gammu'),
