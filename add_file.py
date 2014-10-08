@@ -11,7 +11,7 @@ import os
 os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
 
 import sys
-sys.path = ['../'] + sys.path
+sys.path = ['./'] + sys.path
 
 import hashlib
 
