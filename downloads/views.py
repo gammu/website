@@ -144,7 +144,7 @@ def doap(request, program):
         'downloads': downloads[0][1],
         'release': downloads[0][0],
         'platforms': PLATFORM_CHOICES,
-    }), mimetype = 'application/xml')
+    }), content_type = 'application/xml')
 
 def pad(request, program):
     if not program in [x[0] for x in PROGRAM_CHOICES]:
@@ -169,13 +169,13 @@ def pad(request, program):
         'download': download,
         'release': release,
         'platforms': PLATFORM_CHOICES,
-    }), mimetype = 'application/xml')
+    }), content_type = 'application/xml')
 
 def padmap(request):
     '''
     Public list of PAD files.
     '''
-    response = HttpResponse(mimetype='text/plain')
+    response = HttpResponse(content_type='text/plain')
     response.write('http://wammu.eu/api/pad/gammu.xml\n')
     response.write('http://wammu.eu/api/pad/wammu.xml\n')
     return response

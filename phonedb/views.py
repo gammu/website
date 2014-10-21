@@ -292,7 +292,7 @@ def delete(request, vendorname, id):
 
 def phones_csv(request):
     # Create the HttpResponse object with the appropriate CSV header.
-    response = HttpResponse(mimetype='text/csv')
+    response = HttpResponse(content_type='text/csv')
     response['Content-Disposition'] = 'attachment; filename=gammu-phones.csv'
 
     writer = csv.writer(response)
@@ -334,7 +334,7 @@ def create_wammu(request):
     OKAY_V2 = 'Entry created, id=%d, url=%s'
     invalid = []
     version = 1
-    response = HttpResponse(mimetype='text/plain')
+    response = HttpResponse(content_type='text/plain')
 
     if not request.POST.has_key('irobot') or request.POST['irobot'] != 'wammu':
         invalid.append('irobot')
