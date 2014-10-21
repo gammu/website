@@ -48,7 +48,7 @@ class Screenshot(models.Model):
         blank = True
         )
     image = ImageWithThumbsField(upload_to='screenshots', sizes=((180,120),))
-    featured = models.BooleanField()
+    featured = models.BooleanField(default=False)
 
     # Categorization.
     categories = models.ManyToManyField(
