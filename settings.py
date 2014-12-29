@@ -181,3 +181,6 @@ IGNORABLE_404_STARTS = ['/plugins/editors/tinymce', '/cgi-bin/']
 EMAIL_SUBJECT_PREFIX = '[wammu.eu] '
 
 ALLOWED_HOSTS = ['wammu.eu', 'cs.wammu.eu', 'de.wammu.eu', 'es.wammu.eu', 'fr.wammu.eu', 'sk.wammu.eu']
+
+# Force sane test runner
+TEST_RUNNER = 'django.test.runner.DiscoverRunner'
