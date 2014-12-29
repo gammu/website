@@ -7,17 +7,17 @@ class Command(BaseCommand):
     help = 'adds file to the release'
 
     def handle(self, *args, **options):
-        if len(args) < 6:
+        if len(args) < 5:
             raise CommandError('Usage: add_file /base/path program version type file...')
 
-        release = Release.objects.get(program = args[2], version = args[3])
+        release = Release.objects.get(program = args[1], version = args[2])
 
-        dlpath = args[1]
+        dlpath = args[0]
 
         while dlpath[-1] == '/':
             dlpath = dlpath[:-1]
 
-        for f in args[5:]:
+        for f in args[4:]:
             print "Adding %s..." % f
             path, filename = os.path.split(f)
 
@@ -36,7 +36,7 @@ class Command(BaseCommand):
 
             dl.size = len(data)
 
-            dl.platform = args[4]
+            dl.platform = args[3]
 
             dl.location = '%s/%s' % (dlpath, filename)
 
