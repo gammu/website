@@ -1,4 +1,4 @@
-from django.core.management.base import BaseCommand
+from django.core.management.base import BaseCommand, CommandError
 import hashlib
 from downloads.models import Release, Download
 
@@ -8,8 +8,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         if len(args) < 6:
-            print 'Usage: add_file /base/path program version type file...'
-            sys.exit(1)
+            raise CommandError('Usage: add_file /base/path program version type file...')
 
         release = Release.objects.get(program = args[2], version = args[3])
 
