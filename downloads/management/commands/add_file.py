@@ -1,5 +1,6 @@
 from django.core.management.base import BaseCommand, CommandError
 import hashlib
+import os
 from downloads.models import Release, Download
 
 
