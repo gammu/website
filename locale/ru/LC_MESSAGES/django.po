@@ -5,19 +5,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2014-12-29 15:20+0100\n"
-"PO-Revision-Date: 2013-11-25 12:55+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Russian <http://hosted.weblate.org/projects/gammu/website/ru/"
-">\n"
+"PO-Revision-Date: 2015-01-26 13:01+0200\n"
+"Last-Translator: Ivan Vantu5z <vantu5z@mail.ru>\n"
+"Language-Team: Russian "
+"<https://hosted.weblate.org/projects/gammu/website/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: downloads/models.py:30
 msgid "Source"
@@ -1672,7 +1672,7 @@ msgstr ""
 
 #: html/news/index.html:14 html/screenshots/index.html:7
 msgid "Categories"
-msgstr ""
+msgstr "Категории"
 
 #: html/news/index.html:16
 msgid "All news"
@@ -2676,7 +2676,7 @@ msgstr "SMS-центр"
 
 #: html/tools/pdudecode.html:47
 msgid "Validity"
-msgstr ""
+msgstr "Достоверность"
 
 #: html/tools/pdudecode.html:48
 msgid "Type"
@@ -2700,11 +2700,11 @@ msgstr ""
 
 #: html/tools/pdudecode.html:68
 msgid "Sender"
-msgstr ""
+msgstr "Отправитель"
 
 #: html/tools/pdudecode.html:69
 msgid "Address"
-msgstr ""
+msgstr "Адрес"
 
 #: html/tools/pdudecode.html:70 tools/forms.py:14
 msgid "Class"
