@@ -109,7 +109,7 @@ def program(request, program):
     return render_to_response('downloads/program.html', RequestContext(request, {
         'stable_release': stable_release,
         'testing_release': testing_release,
-        'platforms': PLATFORM_CHOICES,
+        'platforms': PLATFORM_CHOICES[:1],
         'downloads': downloads,
         'program': get_program(program),
         'program_name': program,
@@ -127,7 +127,7 @@ def download(request):
         'mirrors': mirrors,
         'mirror': mirror,
         'downloads': downloads,
-        'platforms': PLATFORM_CHOICES,
+        'platforms': PLATFORM_CHOICES[:1],
     }))
 
 def doap(request, program):
