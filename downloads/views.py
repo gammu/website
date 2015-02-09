@@ -143,7 +143,6 @@ def doap(request, program):
         'mirror': mirror,
         'downloads': downloads[0][1],
         'release': downloads[0][0],
-        'platforms': PLATFORM_CHOICES,
     }), content_type = 'application/xml')
 
 def pad(request, program):
@@ -162,7 +161,6 @@ def pad(request, program):
         'mirror': mirror,
         'download': download,
         'release': release,
-        'platforms': PLATFORM_CHOICES,
     }), content_type = 'application/xml')
 
 def padmap(request):
