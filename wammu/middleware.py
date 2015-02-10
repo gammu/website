@@ -7,7 +7,7 @@ class SiteLocaleMiddleware(object):
         current_site = get_current_site(request)
 
         lang = current_site.domain.split('.')[0]
-        if len(lang) == 2:
+        if len(lang) == 2 or len(lang) == 5:
             translation.activate(lang)
             request.LANGUAGE_CODE = translation.get_language()
         else:
