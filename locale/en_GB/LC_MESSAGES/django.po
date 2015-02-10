@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-29 15:20+0100\n"
+"POT-Creation-Date: 2015-02-10 15:36+0100\n"
 "PO-Revision-Date: 2014-04-24 00:40+0200\n"
 "Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
@@ -1502,19 +1502,19 @@ msgstr ""
 msgid "Change"
 msgstr "Change"
 
-#: html/downloads/platformlinks.html:9
+#: html/downloads/platformlinks.html:7
 msgid "Debian packages"
 msgstr "Debian packages"
 
-#: html/downloads/platformlinks.html:12
+#: html/downloads/platformlinks.html:10
 msgid "Ubuntu packages"
 msgstr "Ubuntu packages"
 
-#: html/downloads/platformlinks.html:15
+#: html/downloads/platformlinks.html:13
 msgid "Ubuntu packages in PPA"
 msgstr "Ubuntu packages in PPA"
 
-#: html/downloads/platformlinks.html:19
+#: html/downloads/platformlinks.html:17
 msgid ""
 "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS) (latest stable "
 "version)"
@@ -1522,11 +1522,11 @@ msgstr ""
 "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS) (latest stable "
 "version)"
 
-#: html/downloads/platformlinks.html:23
+#: html/downloads/platformlinks.html:21
 msgid "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)"
 msgstr "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)"
 
-#: html/downloads/platformlinks.html:25
+#: html/downloads/platformlinks.html:23
 msgid "Development git snaphots and git access"
 msgstr "Development git snaphots and git access"
 
@@ -1727,6 +1727,19 @@ msgid ""
 "\n"
 "Third party open source web-based SMS (Short Message Service) management "
 "which uses <a href=\"/smsd/\">Gammu SMSD</a>.\n"
+msgstr ""
+"\n"
+"Third party open source web-based SMS (Short Message Service) management "
+"which uses <a href=\"/smsd/\">Gammu SMSD</a>.\n"
+
+#: html/gammu-family.html:44
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "Third party open source web-based SMS (Short Message Service) management "
+#| "which uses <a href=\"/smsd/\">Gammu SMSD</a>.\n"
+msgid ""
+"Third party open source Node.JS client for <a href=\"/smsd/\">Gammu SMSD</a>."
 msgstr ""
 "\n"
 "Third party open source web-based SMS (Short Message Service) management "

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-29 15:20+0100\n"
+"POT-Creation-Date: 2015-02-10 15:36+0100\n"
 "PO-Revision-Date: 2012-09-27 11:36+0200\n"
 "Last-Translator: Panagiotis Papazoglou <papaz_p@yahoo.com>\n"
 "Language-Team: Greek <http://hosted.weblate.org/projects/gammu/website/el/>\n"
@@ -1134,29 +1134,29 @@ msgstr ""
 msgid "Change"
 msgstr ""
 
-#: html/downloads/platformlinks.html:9
+#: html/downloads/platformlinks.html:7
 msgid "Debian packages"
 msgstr ""
 
-#: html/downloads/platformlinks.html:12
+#: html/downloads/platformlinks.html:10
 msgid "Ubuntu packages"
 msgstr ""
 
-#: html/downloads/platformlinks.html:15
+#: html/downloads/platformlinks.html:13
 msgid "Ubuntu packages in PPA"
 msgstr ""
 
-#: html/downloads/platformlinks.html:19
+#: html/downloads/platformlinks.html:17
 msgid ""
 "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS) (latest stable "
 "version)"
 msgstr ""
 
-#: html/downloads/platformlinks.html:23
+#: html/downloads/platformlinks.html:21
 msgid "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)"
 msgstr ""
 
-#: html/downloads/platformlinks.html:25
+#: html/downloads/platformlinks.html:23
 msgid "Development git snaphots and git access"
 msgstr ""
 
@@ -1299,6 +1299,11 @@ msgid ""
 "\n"
 "Third party open source web-based SMS (Short Message Service) management "
 "which uses <a href=\"/smsd/\">Gammu SMSD</a>.\n"
+msgstr ""
+
+#: html/gammu-family.html:44
+msgid ""
+"Third party open source Node.JS client for <a href=\"/smsd/\">Gammu SMSD</a>."
 msgstr ""
 
 #: html/gammu-features.html:3

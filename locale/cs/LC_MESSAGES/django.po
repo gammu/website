@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-29 15:20+0100\n"
+"POT-Creation-Date: 2015-02-10 15:36+0100\n"
 "PO-Revision-Date: 2014-02-16 13:05+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/"
@@ -1282,19 +1282,19 @@ msgstr ""
 msgid "Change"
 msgstr "Změnit"
 
-#: html/downloads/platformlinks.html:9
+#: html/downloads/platformlinks.html:7
 msgid "Debian packages"
 msgstr "Balíčky pro Debian"
 
-#: html/downloads/platformlinks.html:12
+#: html/downloads/platformlinks.html:10
 msgid "Ubuntu packages"
 msgstr "Balíčky pro Ubuntu"
 
-#: html/downloads/platformlinks.html:15
+#: html/downloads/platformlinks.html:13
 msgid "Ubuntu packages in PPA"
 msgstr "Balíčky pro Ubuntu v PPA"
 
-#: html/downloads/platformlinks.html:19
+#: html/downloads/platformlinks.html:17
 msgid ""
 "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS) (latest stable "
 "version)"
@@ -1302,11 +1302,11 @@ msgstr ""
 "RPM balíčky (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS) (poslední "
 "stabilní verze)"
 
-#: html/downloads/platformlinks.html:23
+#: html/downloads/platformlinks.html:21
 msgid "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)"
 msgstr "RPM balíčky (openSUSE, Fedora, Madriva) (poslední testovací verze)"
 
-#: html/downloads/platformlinks.html:25
+#: html/downloads/platformlinks.html:23
 msgid "Development git snaphots and git access"
 msgstr "Vývojové snapshoty z gitu a přístup do gitu"
 
@@ -1477,6 +1477,11 @@ msgid ""
 "\n"
 "Third party open source web-based SMS (Short Message Service) management "
 "which uses <a href=\"/smsd/\">Gammu SMSD</a>.\n"
+msgstr ""
+
+#: html/gammu-family.html:44
+msgid ""
+"Third party open source Node.JS client for <a href=\"/smsd/\">Gammu SMSD</a>."
 msgstr ""
 
 #: html/gammu-features.html:3
