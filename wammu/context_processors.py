@@ -29,6 +29,9 @@ def translations(request):
     if lang != 'fr':
         langs.append({'url': 'http://fr.wammu.eu%s' % path, 'name': u'Français', 'code': 'fr-FR'})
 
+    if lang != 'pt-br':
+        langs.append({'url': 'http://pt-br.wammu.eu%s' % path, 'name': u'Português brasileiro', 'code': 'pt-BR'})
+
     return {'translations': langs}
 
 def menu(request):
