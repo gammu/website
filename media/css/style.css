@@ -80,9 +80,9 @@ body {
 }
 
 div.sidebar {
-	width: 20em;
+	width: 300px;
 	margin: 0px;
-	margin-left: -20em;
+	margin-left: -300px;
     float: left;
 
     padding: 0px;
