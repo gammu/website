@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-10 15:36+0100\n"
+"POT-Creation-Date: 2015-02-11 09:15+0100\n"
 "PO-Revision-Date: 2014-04-24 00:40+0200\n"
 "Last-Translator: Robert Readman <robert_readman@hotmail.com>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
@@ -229,7 +229,7 @@ msgstr "python-gammu"
 msgid "SMSD"
 msgstr "SMSD"
 
-#: html/base.html:122 wammu/context_processors.py:36
+#: html/base.html:122 wammu/context_processors.py:39
 msgid "Support"
 msgstr "Support"
 
@@ -255,7 +255,7 @@ msgstr "Media"
 
 #: html/base.html:134 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
-#: wammu/context_processors.py:38
+#: wammu/context_processors.py:41
 msgid "Screenshots"
 msgstr "Screenshots"
 
@@ -270,7 +270,7 @@ msgstr "News"
 #: html/base.html:140 html/docs/sidebar.html:2 html/gammu.html:69
 #: html/libgammu.html:54 html/python-gammu.html:69 html/smsd.html:73
 #: html/support/sidebar.html:4 html/wammu.html:57
-#: wammu/context_processors.py:39
+#: wammu/context_processors.py:42
 msgid "Documentation"
 msgstr "Documentation"
 
@@ -291,7 +291,7 @@ msgstr "Gammu Manual"
 msgid "Configuration"
 msgstr "Configuration"
 
-#: html/base.html:149 wammu/context_processors.py:40
+#: html/base.html:149 wammu/context_processors.py:43
 msgid "Contribute"
 msgstr "Contribute"
 
@@ -1317,10 +1317,14 @@ msgid "Bitcoin"
 msgstr "Bitcoin"
 
 #: html/donate.html:64
+#, fuzzy, python-format
+#| msgid ""
+#| "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
+#| "peer network</a> and send me Bitcoins to "
+#| "<code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>."
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
-"peer network</a> and send me Bitcoins to "
-"<code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>."
+"peer network</a> and send me Bitcoins to <code>%(address)s</code>."
 msgstr ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to "
@@ -1447,7 +1451,7 @@ msgstr "PAD for Gammu"
 #: html/downloads/list.html:4 html/downloads/program.html:4
 #: html/downloads/release.html:4 html/gammu.html:61 html/libgammu.html:45
 #: html/python-gammu.html:34 html/smsd.html:63 html/wammu.html:47
-#: wammu/context_processors.py:37
+#: wammu/context_processors.py:40
 msgid "Download"
 msgstr "Download"
 
@@ -3621,7 +3625,7 @@ msgstr "PDU encoder using Gammu"
 msgid "PDU data"
 msgstr "PDU data"
 
-#: html/tools/sidebar.html:2 wammu/context_processors.py:41
+#: html/tools/sidebar.html:2 wammu/context_processors.py:44
 msgid "Tools"
 msgstr "Tools"
 
@@ -3959,11 +3963,11 @@ msgstr "Recipient"
 msgid "SMSC number"
 msgstr "SMSC number"
 
-#: wammu/context_processors.py:59
+#: wammu/context_processors.py:62
 msgid "Gammu and Wammu News Feed (RSS)"
 msgstr "Gammu and Wammu News Feed (RSS)"
 
-#: wammu/context_processors.py:60
+#: wammu/context_processors.py:63
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu and Wammu News Feed (Atom)"
 

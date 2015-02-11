@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-10 15:36+0100\n"
+"POT-Creation-Date: 2015-02-11 09:15+0100\n"
 "PO-Revision-Date: 2014-02-16 17:02+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone+weblate@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gammu/website/es/"
@@ -231,7 +231,7 @@ msgstr "python-gammu"
 msgid "SMSD"
 msgstr "SMSD"
 
-#: html/base.html:122 wammu/context_processors.py:36
+#: html/base.html:122 wammu/context_processors.py:39
 msgid "Support"
 msgstr "Soporte"
 
@@ -257,7 +257,7 @@ msgstr "Medios"
 
 #: html/base.html:134 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
-#: wammu/context_processors.py:38
+#: wammu/context_processors.py:41
 msgid "Screenshots"
 msgstr "Capturas de pantalla"
 
@@ -272,7 +272,7 @@ msgstr "Noticias"
 #: html/base.html:140 html/docs/sidebar.html:2 html/gammu.html:69
 #: html/libgammu.html:54 html/python-gammu.html:69 html/smsd.html:73
 #: html/support/sidebar.html:4 html/wammu.html:57
-#: wammu/context_processors.py:39
+#: wammu/context_processors.py:42
 msgid "Documentation"
 msgstr "Documentación"
 
@@ -293,7 +293,7 @@ msgstr "Manual de Gammu"
 msgid "Configuration"
 msgstr "Configuración"
 
-#: html/base.html:149 wammu/context_processors.py:40
+#: html/base.html:149 wammu/context_processors.py:43
 msgid "Contribute"
 msgstr "Contribuir"
 
@@ -1300,13 +1300,13 @@ msgid "Bitcoin"
 msgstr "Bitcoin"
 
 #: html/donate.html:64
+#, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
-"peer network</a> and send me Bitcoins to "
-"<code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>."
+"peer network</a> and send me Bitcoins to <code>%(address)s</code>."
 msgstr ""
 "También puede usar <a href=\"http://www.bitcoin.org/\">lad red entre pares "
-"Bitcoin</a> y enviarme Bitcoins a <code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</"
+"Bitcoin</a> y enviarme Bitcoins a <code>%(address)s</"
 "code>."
 
 #: html/donate.html:67
@@ -1425,7 +1425,7 @@ msgstr "PAD para Gammu"
 #: html/downloads/list.html:4 html/downloads/program.html:4
 #: html/downloads/release.html:4 html/gammu.html:61 html/libgammu.html:45
 #: html/python-gammu.html:34 html/smsd.html:63 html/wammu.html:47
-#: wammu/context_processors.py:37
+#: wammu/context_processors.py:40
 msgid "Download"
 msgstr "Descargar"
 
@@ -3572,7 +3572,7 @@ msgstr "Codificador PDU utilizando Gammu"
 msgid "PDU data"
 msgstr "Datos PDU"
 
-#: html/tools/sidebar.html:2 wammu/context_processors.py:41
+#: html/tools/sidebar.html:2 wammu/context_processors.py:44
 msgid "Tools"
 msgstr "Herramientas"
 
@@ -3912,11 +3912,11 @@ msgstr "Destino"
 msgid "SMSC number"
 msgstr "Número SMSC"
 
-#: wammu/context_processors.py:59
+#: wammu/context_processors.py:62
 msgid "Gammu and Wammu News Feed (RSS)"
 msgstr "Gammu y Wammu Noticias Feed (RSS)"
 
-#: wammu/context_processors.py:60
+#: wammu/context_processors.py:63
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu y Wammu Noticias Feed (Atom)"
 
