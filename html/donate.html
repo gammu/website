@@ -61,7 +61,7 @@ donation to <code>michal@cihar.com</code>.
 <h3>{% trans "Bitcoin" %}</h3>
 
 <p>
-{% blocktrans %}You can also use <a href="http://www.bitcoin.org/">Bitcoin is a peer-to-peer network</a> and send me Bitcoins to <code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>.{% endblocktrans %}
+{% blocktrans with "152Xjvwe8peNMjR4zaEJJgc8CpLK7XecMq" as address %}You can also use <a href="http://www.bitcoin.org/">Bitcoin is a peer-to-peer network</a> and send me Bitcoins to <code>{{ address }}</code>.{% endblocktrans %}
 </p>
 
 <h3>{% trans "Wire Transfer" %}</h3>
