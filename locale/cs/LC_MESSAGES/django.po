@@ -7,18 +7,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2015-03-02 15:57+0100\n"
-"PO-Revision-Date: 2014-02-16 13:05+0200\n"
+"PO-Revision-Date: 2015-03-02 16:04+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/"
-">\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/>"
+"\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9-dev\n"
+"X-Generator: Weblate 2.3-dev\n"
 
 #: downloads/models.py:30
 msgid "Source"
@@ -685,7 +685,7 @@ msgstr ""
 
 #: html/contribute/translate.html:58
 msgid "Introduction page"
-msgstr ""
+msgstr "Úvodní stránka"
 
 #: html/contribute/translate.html:60 html/libgammu.html:4
 #: html/libgammu.html.py:15
@@ -1298,14 +1298,11 @@ msgid "Ubuntu packages in PPA"
 msgstr "Balíčky pro Ubuntu v PPA"
 
 #: html/downloads/platformlinks.html:17
-#, fuzzy
 #| msgid ""
 #| "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS) (latest "
 #| "stable version)"
 msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
-msgstr ""
-"RPM balíčky (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS) (poslední "
-"stabilní verze)"
+msgstr "RPM balíčky (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
 
 #: html/downloads/platformlinks.html:19
 msgid "Development git snaphots and git access"
@@ -3016,11 +3013,11 @@ msgstr "Další nástroje"
 
 #: html/tools/index.html:43
 msgid "List of GSM codes for countries"
-msgstr ""
+msgstr "Seznam GSM kódů pro země"
 
 #: html/tools/index.html:44
 msgid "List of GSM codes for networks"
-msgstr ""
+msgstr "Seznam GSM kódů pro sítě"
 
 #: html/tools/index.html:48
 msgid ""
