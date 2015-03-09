@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-02 15:57+0100\n"
+"POT-Creation-Date: 2015-03-09 17:34+0100\n"
 "PO-Revision-Date: 2014-02-17 20:21+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/gammu/website/sv/"
@@ -127,182 +127,178 @@ msgstr ""
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
 msgstr ""
 
-#: html/base.html:62
+#: html/base.html:73
 msgid "Page translations"
 msgstr ""
 
-#: html/base.html:67
+#: html/base.html:78
 msgid "Translate!"
 msgstr ""
 
-#: html/base.html:70
+#: html/base.html:81
 msgid "Advertisement"
 msgstr ""
 
-#: html/base.html:83 html/base.html.py:145 html/downloads/program.html:7
+#: html/base.html:94 html/base.html.py:155 html/downloads/program.html:7
 #: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
 msgid "Downloads"
 msgstr ""
 
-#: html/base.html:91 html/base.html.py:165 html/base.html.py:175
+#: html/base.html:102 html/base.html.py:175 html/base.html.py:185
 msgid "Donate"
 msgstr "Donera"
 
-#: html/base.html:93
+#: html/base.html:104
 msgid "Support Gammu by <a href=\"/donate/\">donating</a>!"
 msgstr ""
 
-#: html/base.html:107
+#: html/base.html:118
 msgid "Share"
 msgstr ""
 
-#: html/base.html:109
+#: html/base.html:120
 msgid "Share Gammu with the world!"
 msgstr ""
 
-#: html/base.html:112
+#: html/base.html:123
 msgid "Gammu on Google+"
 msgstr "Gammu på Google+"
 
-#: html/base.html:113
+#: html/base.html:124
 msgid "Gammu on Facebook"
 msgstr "Gammu på Facebook"
 
-#: html/base.html:114
+#: html/base.html:125
 msgid "Follow us on Twitter"
 msgstr "Följ oss på Twitter"
 
-#: html/base.html:115
-msgid "Follow us on Identi.ca"
-msgstr "Följ oss på Identi.ca"
-
-#: html/base.html:125 html/index.html:19
+#: html/base.html:135 html/index.html:19
 msgid "About"
 msgstr "Om"
 
-#: html/base.html:127 html/contribute/translate.html:61 html/gammu.html:4
+#: html/base.html:137 html/contribute/translate.html:61 html/gammu.html:4
 #: html/gammu.html.py:19
 msgid "Gammu"
 msgstr "Gammu"
 
 # msgid "&Wammu"
-#: html/base.html:128 html/contribute/translate.html:59 html/wammu.html:4
+#: html/base.html:138 html/contribute/translate.html:59 html/wammu.html:4
 #: html/wammu.html.py:22
 msgid "Wammu"
 msgstr "Wammu"
 
-#: html/base.html:129
+#: html/base.html:139
 msgid "python-gammu"
 msgstr ""
 
-#: html/base.html:130
+#: html/base.html:140
 msgid "SMSD"
 msgstr "SMSD"
 
-#: html/base.html:134 wammu/context_processors.py:39
+#: html/base.html:144 wammu/context_processors.py:39
 msgid "Support"
 msgstr "Support"
 
-#: html/base.html:136
+#: html/base.html:146
 msgid "Mailing lists"
 msgstr ""
 
-#: html/base.html:137
+#: html/base.html:147
 msgid "Online"
 msgstr ""
 
-#: html/base.html:138
+#: html/base.html:148
 msgid "Reporting bugs"
 msgstr ""
 
-#: html/base.html:139
+#: html/base.html:149
 msgid "Commercial support"
 msgstr ""
 
-#: html/base.html:143
+#: html/base.html:153
 msgid "Media"
 msgstr ""
 
-#: html/base.html:146 html/index.html:9 html/index.html.py:11
+#: html/base.html:156 html/index.html:9 html/index.html.py:11
 #: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
 #: wammu/context_processors.py:41
 msgid "Screenshots"
 msgstr ""
 
-#: html/base.html:147
+#: html/base.html:157
 msgid "Third party"
 msgstr ""
 
-#: html/base.html:148 html/index.html:54
+#: html/base.html:158 html/index.html:54
 msgid "News"
 msgstr ""
 
-#: html/base.html:152 html/docs/sidebar.html:2 html/gammu.html:69
+#: html/base.html:162 html/docs/sidebar.html:2 html/gammu.html:69
 #: html/libgammu.html:54 html/python-gammu.html:69 html/smsd.html:73
 #: html/support/sidebar.html:4 html/wammu.html:57
 #: wammu/context_processors.py:42
 msgid "Documentation"
 msgstr ""
 
-#: html/base.html:154 html/docs/sidebar.html:5
+#: html/base.html:164 html/docs/sidebar.html:5
 msgid "FAQ"
 msgstr ""
 
-#: html/base.html:155 html/docs/sidebar.html:7 html/sidebars/common.html:3
+#: html/base.html:165 html/docs/sidebar.html:7 html/sidebars/common.html:3
 #: phonedb/views.py:101
 msgid "Supported phones"
 msgstr ""
 
-#: html/base.html:156 html/docs/index.html:25 html/docs/sidebar.html:4
+#: html/base.html:166 html/docs/index.html:25 html/docs/sidebar.html:4
 msgid "Gammu Manual"
 msgstr ""
 
-#: html/base.html:157 html/phonedb/body.html:16
+#: html/base.html:167 html/phonedb/body.html:16
 msgid "Configuration"
 msgstr ""
 
-#: html/base.html:161 wammu/context_processors.py:43
+#: html/base.html:171 wammu/context_processors.py:43
 msgid "Contribute"
 msgstr ""
 
-#: html/base.html:163 html/contribute/sidebar.html:4
+#: html/base.html:173 html/contribute/sidebar.html:4
 msgid "Translate"
 msgstr ""
 
-#: html/base.html:164 html/contribute/sidebar.html:5
+#: html/base.html:174 html/contribute/sidebar.html:5
 msgid "Develop"
 msgstr ""
 
-#: html/base.html:166 html/contribute/sidebar.html:7
+#: html/base.html:176 html/contribute/sidebar.html:7
 msgid "Publicity"
 msgstr ""
 
-#: html/base.html:174
+#: html/base.html:184
 msgid "License"
 msgstr "Licens"
 
-#: html/base.html:175
+#: html/base.html:185
 msgid "Support Gammu/Wammu by donating money!"
 msgstr ""
 
-#: html/base.html:176
+#: html/base.html:186
 msgid "Search for Gammu/Wammu related questions"
 msgstr ""
 
 # msgid "Search:"
-#: html/base.html:176 html/phonedb/index.html:8
+#: html/base.html:186 html/phonedb/index.html:8
 msgid "Search"
 msgstr "Sök"
 
-#: html/base.html:177
+#: html/base.html:187
 msgid "Gammu and Wammu authors"
 msgstr ""
 
-#: html/base.html:177
+#: html/base.html:187
 msgid "Authors"
 msgstr ""
 
-#: html/base.html:178
+#: html/base.html:188
 msgid ""
 "Valid <a href=\"http://validator.w3.org/check/referer\">HTML</a> and <a href="
 "\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
@@ -1609,7 +1605,7 @@ msgstr "Webbplats:"
 msgid "Third Party News"
 msgstr ""
 
-#: html/news/entry.html:4 html/news/index.html:4 html/news/index.html.py:26
+#: html/news/entry.html:4 html/news/index.html:4 html/news/index.html.py:25
 #: news/feeds.py:9
 msgid "Wammu and Gammu News"
 msgstr ""
@@ -1631,18 +1627,14 @@ msgid "Atom"
 msgstr ""
 
 #: html/news/index.html:11
-msgid "identi.ca RSS"
-msgstr ""
-
-#: html/news/index.html:12
 msgid "Twitter RSS"
 msgstr ""
 
-#: html/news/index.html:14 html/screenshots/index.html:7
+#: html/news/index.html:13 html/screenshots/index.html:7
 msgid "Categories"
 msgstr "Kategorier"
 
-#: html/news/index.html:16
+#: html/news/index.html:15
 msgid "All news"
 msgstr "Alla nyheter"
 
@@ -3004,6 +2996,9 @@ msgstr ""
 #: wammu/context_processors.py:63
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr ""
+
+#~ msgid "Follow us on Identi.ca"
+#~ msgstr "Följ oss på Identi.ca"
 
 #~ msgid "Manual"
 #~ msgstr "Manuell"
