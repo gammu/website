@@ -8,11 +8,6 @@
 {% endblock %}
 
 {% block sidebar %}
-<h3>{% trans "Syndication" %}</h3>
-<ul>
-<li><a href="/phones/csv/">{% trans "CSV" %}</a></li>
-</ul>
-
 <h3>{% trans "Sponsors" %}</h3>
 
 <ul class="sponsors">
@@ -94,6 +89,8 @@ timestamp data.
 </p>
 
 <img src="{{ chart_url }}" />
+
+<p><a href="/phones/csv/">{% trans "Download all data as CSV" %}</a></p>
 
 {% endblock %}
 
