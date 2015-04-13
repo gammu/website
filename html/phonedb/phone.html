@@ -21,19 +21,6 @@
 {% endifnotequal %}
 {% endif %}
 </ul>
-<h3>{% trans "Similar Phones" %}</h3>
-
-{% if related %}
-<ul>
-{% for phone in related %}
-<li><a href="{{ phone.get_absolute_url}}">{{ phone.vendor.name }} 
-{{ phone.name }} 
-({{ phone.connection.name }})</a></li>
-{% endfor %}
-</ul>
-{% else %}
-<p>{% trans "None found." %}</p>
-{% endif %}
 {% endblock %}
 
 {% block sidebar %}
@@ -105,6 +92,17 @@ Created on {{ created }}.
 Tested with Gammu {{ version }}.
 {% endblocktrans %}
 </p>
+{% endif %}
+
+{% if related %}
+<h3>{% trans "Similar Phones" %}</h3>
+<ul>
+{% for phone in related %}
+<li><a href="{{ phone.get_absolute_url}}">{{ phone.vendor.name }} 
+{{ phone.name }} 
+({{ phone.connection.name }})</a></li>
+{% endfor %}
+</ul>
 {% endif %}
 
 {% endblock %}
