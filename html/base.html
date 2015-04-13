@@ -60,6 +60,17 @@
   <div class="collapse navbar-collapse" id="topbar-collapsible">
    <ul class="nav navbar-nav">
      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{% trans "Family" %} <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+        <li><a href="/gammu/">{% trans "Gammu" %}</a></li>
+        <li><a href="/wammu/">{% trans "Wammu" %}</a></li>
+        <li><a href="/python-gammu/">{% trans "python-gammu" %}</a></li>
+        <li><a href="/smsd/">{% trans "SMSD" %}</a></li>
+        <li><a href="/links/">{% trans "Third party" %}</a></li>
+    </ul>
+     </li>
+
+     <li class="dropdown">
         <a href="/support/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{% trans "Support" %} <span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
         <li><a href="/support/">{% trans "Overview" %}</a></li>
@@ -195,24 +206,6 @@
 
 <footer>
 <div class="row footnavi">
-    <div class="col-sm-3">
-    <span class="foottitle"><a href="/">{% trans "About" %}</a></span>
-    <ul>
-        <li><a href="/gammu/">{% trans "Gammu" %}</a></li>
-        <li><a href="/wammu/">{% trans "Wammu" %}</a></li>
-        <li><a href="/python-gammu/">{% trans "python-gammu" %}</a></li>
-        <li><a href="/smsd/">{% trans "SMSD" %}</a></li>
-    </ul>
-    </div>
-    <div class="col-sm-3">
-    <span class="foottitle">{% trans "Media" %}</span>
-    <ul>
-        <li><a href="/download/">{% trans "Downloads" %}</a></li>
-        <li><a href="/screenshots/">{% trans "Screenshots" %}</a></li>
-        <li><a href="/links/">{% trans "Third party" %}</a></li>
-        <li><a href="/news/">{% trans "News" %}</a></li>
-    </ul>
-    </div>
     <div class="col-sm-3">
     <span class="foottitle">{% trans "Share" %}</span>
     <ul>
