@@ -4,6 +4,8 @@
 from django.conf import settings
 from datetime import datetime
 from django.utils.translation import ugettext as _, get_language
+from news.models import Category
+
 
 def translations(request):
     path = request.get_full_path()
@@ -51,3 +53,9 @@ def feeds(request):
             {'url': '/news/rss/', 'title': _('Gammu and Wammu News Feed (RSS)'), 'type': 'application/rss+xml'},
             {'url': '/news/atom/', 'title': _('Gammu and Wammu News Feed (Atom)'), 'type': 'application/atom+xml'},
     ]}
+
+
+def data(request):
+    return {
+        'news_categories': Category.objects.all(),
+    }

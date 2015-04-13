@@ -11,10 +11,8 @@ from django.conf import settings
 
 def entry(request, slug, day = None, month = None, year = None):
     entry = get_object_or_404(Entry, slug = slug)
-    news_categories = Category.objects.order_by('slug')
     return render_to_response('news/entry.html', RequestContext(request, {
         'entry': entry,
-        'news_categories': news_categories,
     }))
 
 def index(request):
@@ -42,9 +40,6 @@ def render_news(request, objects, template):
     except (EmptyPage, InvalidPage):
         news = paginator.page(1)
 
-    news_categories = Category.objects.order_by('slug')
-
     return render_to_response(template, RequestContext(request, {
         'news': news,
-        'news_categories': news_categories,
     }))

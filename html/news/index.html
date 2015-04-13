@@ -10,14 +10,6 @@
 <li><a href="/news/atom/">{% trans "Atom" %}</a></li>
 <li><a href="http://twitter.com/statuses/user_timeline/67626012.rss">{% trans "Twitter RSS" %}</a></li>
 </ul>
-<h3>{% trans "Categories" %}</h3>
-<ul>
-<li><a href="/news/">{% trans "All news" %}</a></li>
-{% for cat in news_categories %}
-<li><a href="{{ cat.get_absolute_url }}">{{ cat.title }}</a></li>
-{% endfor %}
-</ul>
-
 {% endblock %}
 
 {% block content %}

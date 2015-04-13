@@ -125,6 +125,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'wammu.context_processors.message',
     'wammu.context_processors.dates',
     'wammu.context_processors.feeds',
+    'wammu.context_processors.data',
     )
 
 TEMPLATE_DIRS = (
