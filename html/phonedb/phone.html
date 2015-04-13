@@ -5,29 +5,24 @@
 {% block extrakeywords %},{{ vendor.name }},{{ phone.name }}{% endblock %}
 {% block title %}{{ vendor.name }} {{ phone.name }} - {% trans "Gammu Phone Database " %}{% endblock %}
 
-{% block sidebar_top %}
-<h3>{% trans "Navigation" %}</h3>
-<ul>
-<li><a href="/phones/">Phones Database</a></li>
-<li><a href="{{ vendor.get_absolute_url }}">{{ vendor.name }}</a></li>
-<li><a href="/phones/new/?vendor={{ vendor.slug }}&amp;name={{ phone.name|urlencode }}">{% trans "Add new record" %}</a></li>
+{% block content %}
+
+<ol class="breadcrumb">
+  <li><a href="/">{% trans "Home" %}</a></li>
+  <li><a href="/phones/">{% trans "Phones Database" %}</a></li>
+  <li><a href="{{ vendor.get_absolute_url }}">{{ vendor.name }}</a></li>
+  <li class="active">{{ vendor.name }} {{ phone.name }}</li>
+
 {% if user.is_superuser %}
-<li><a href="/admin/phonedb/phone/{{ phone.id }}/">{% trans "Edit" %}</a></li>
+<li class="pull-right action"><a href="/admin/phonedb/phone/{{ phone.id }}/">{% trans "Edit" %}</a></li>
 {% ifnotequal phone.state "deleted" %}
-<li><a href="{{ phone.get_absolute_url }}delete/">{% trans "Delete" %}</a></li>
+<li class="pull-right action"><a href="{{ phone.get_absolute_url }}delete/">{% trans "Delete" %}</a></li>
 {% endifnotequal %}
 {% ifnotequal phone.state "approved" %}
-<li><a href="{{ phone.get_absolute_url }}approve/">{% trans "Approve" %}</a></li>
+<li class="pull-right action"><a href="{{ phone.get_absolute_url }}approve/">{% trans "Approve" %}</a></li>
 {% endifnotequal %}
 {% endif %}
-</ul>
-{% endblock %}
-
-{% block sidebar %}
-
-{% endblock %}
-
-{% block content %}
+</ol>
 <h2>{{ vendor.name }} {{ phone.name }}</h2>
 
 {% ifequal phone.state "deleted" %}

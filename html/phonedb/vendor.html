@@ -5,15 +5,14 @@
 {% block extrakeywords %},{{ vendor.name }}{% endblock %}
 {% block title %}{{ vendor.name }} - {% trans "Gammu Phone Database " %}{% endblock %}
 
-{% block sidebar_top %}
-<h3>{% trans "Navigation" %}</h3>
-<ul>
-<li><a href="/phones/">Phones Database</a></li>
-<li><a href="/phones/new/?vendor={{ vendor.slug }}">{% trans "Add new record" %}</a></li>
-</ul>
-{% endblock %}
-
 {% block content %}
+
+<ol class="breadcrumb">
+  <li><a href="/">{% trans "Home" %}</a></li>
+  <li><a href="/phones/">{% trans "Phones Database" %}</a></li>
+  <li class="active">{{ vendor.name }}</li>
+  <li class="pull-right action"><a href="/phones/new/?vendor={{ vendor.slug }}"><i class="fa fa-plus"></i> {% trans "Add new record" %}</a></li>
+</ol>
 
 <h2>{{ vendor.name }}</h2>
 

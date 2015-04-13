@@ -73,3 +73,6 @@ div.screenshot img {
 .sponsors {
     font-size: small;
 }
+.breadcrumb .action:before {
+    content: "";
+}

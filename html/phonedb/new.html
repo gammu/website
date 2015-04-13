@@ -5,14 +5,13 @@
 {% block description %}{% trans "Database of supported phones in Gammu and Wammu, the software for managing GSM cell phones." %}{% endblock %}
 {% block title %}{% trans "Create New Record" %} - {% trans "Gammu Phone Database " %}{% endblock %}
 
-{% block sidebar_top %}
-<h3>{% trans "Navigation" %}</h3>
-<ul>
-<li><a href="/phones/">Phones Database</a></li>
-</ul>
-{% endblock %}
-
 {% block content %}
+
+<ol class="breadcrumb">
+  <li><a href="/">{% trans "Home" %}</a></li>
+  <li><a href="/phones/">{% trans "Phones Database" %}</a></li>
+  <li class="active">{% trans "Create New Record" %}</li>
+</ol>
 
 <h2>{% trans "Create New Record" %}</h2>
 
