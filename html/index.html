@@ -3,19 +3,9 @@
 
 {% block title %}{% trans "Wammu and Gammu" %}{% endblock %}
 
-{% block sidebar_top %}
-{% include "downloads/smalldownloads.html" %}
-
-<h3><a href="/screenshots/">{% trans "Screenshots" %}</a></h3>
-<p>
-<a href="/screenshots/" title="{% trans "Screenshots" %}">
-        <img src="{{ screenshot.image.url_180x120 }}"
-        alt="{{ screenshot.title }}" />
-</a>
-</p>
-{% endblock %}
-
 {% block content %}
+<div class="row">
+<div class="col-sm-12">
 <h2>{% trans "About" %}</h2>
 
 <p>
@@ -36,8 +26,12 @@ list of <a href="/contribute/wanted/"><strong>wanted skills</strong></a>, to
 get an idea who we are currently looking for.
 {% endblocktrans %}
 </p>
+</div>
 
-<div class="floatbox">
+</div>
+
+<div class="row">
+<div class="col-md-6">
     <h2>{% trans "Gammu family" %}</h2>
 <p>
 {% blocktrans %}
@@ -50,7 +44,7 @@ sharing same library.
 {% include "gammu-family.html" %}
 </div>
 
-<div class="floatbox">
+<div class="col-md-6">
     <h2><a href="/news/">{% trans "News" %}</a></h2>
     {% for entry in news %}
     <h3><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h3>
@@ -58,6 +52,6 @@ sharing same library.
     {% include "news/published.html" %}
     {% endfor %}
 </div>
+</div>
 
-<div class="clearer"></div>
 {% endblock %}
