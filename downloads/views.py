@@ -8,13 +8,11 @@ import GeoIP
 
 def get_mirrors(request):
     mirrors = Mirror.objects.all().order_by('id')
-    set_mirror = False
     try:
         try:
             mirror_id = request.GET['mirror']
         except (MultiValueDictKeyError, KeyError):
             mirror_id = request.COOKIES['mirror']
-        set_mirror = True
     except (MultiValueDictKeyError, KeyError):
         gi = GeoIP.new(GeoIP.GEOIP_MEMORY_CACHE)
         address = request.META.get('REMOTE_ADDR')
@@ -32,7 +30,7 @@ def get_mirrors(request):
     except Mirror.DoesNotExist:
         mirror = Mirror.objects.get(slug = 'cihar-com')
 
-    return (mirror, mirrors, set_mirror, mirror_id)
+    return (mirror, mirrors, mirror_id)
 
 def list(request, program, platform):
     if not program in [x[0] for x in PROGRAM_CHOICES]:
@@ -51,7 +49,7 @@ def list(request, program, platform):
     if stable_downloads.count() == 0:
         raise Http404('No such download option %s/%s.' % (program, platform))
 
-    mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
+    mirror, mirrors, mirror_id = get_mirrors(request)
 
     for c in PLATFORM_CHOICES:
         if platform == c[0]:
@@ -69,8 +67,6 @@ def list(request, program, platform):
         'mirrors': mirrors,
         'mirror': mirror,
     }))
-    if set_mirror:
-        result.set_cookie('mirror', mirror_id, max_age = 3600 * 24 * 365)
     return result
 
 def release(request, program,  version):
@@ -81,7 +77,7 @@ def release(request, program,  version):
     if downloads.count() == 0:
         raise Http404('No such download option %s/%s.' % (program, version))
 
-    mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
+    mirror, mirrors, mirror_id = get_mirrors(request)
 
     result = render_to_response('downloads/release.html', RequestContext(request, {
         'release': release,
@@ -91,8 +87,6 @@ def release(request, program,  version):
         'mirrors': mirrors,
         'mirror': mirror,
     }))
-    if set_mirror:
-        result.set_cookie('mirror', mirror_id, max_age = 3600 * 24 * 365)
     return result
 
 
@@ -104,7 +98,7 @@ def program(request, program):
 
     stable_release, testing_release = get_latest_releases(program)
 
-    mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
+    mirror, mirrors, mirror_id = get_mirrors(request)
 
     downloads = get_current_downloads(program, 'source')
 
@@ -120,7 +114,7 @@ def program(request, program):
     }))
 
 def download(request):
-    mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
+    mirror, mirrors, mirror_id = get_mirrors(request)
 
     downloads = get_current_downloads('gammu', 'source')
     downloads += get_current_downloads('wammu', 'source')
@@ -136,7 +130,7 @@ def doap(request, program):
     if not program in [x[0] for x in PROGRAM_CHOICES]:
         raise Http404('No such program %s.' % program)
 
-    mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
+    mirror, mirrors, mirror_id = get_mirrors(request)
 
     downloads = get_current_downloads(program, None)
 
@@ -151,7 +145,7 @@ def pad(request, program):
     if not program in [x[0] for x in PROGRAM_CHOICES]:
         raise Http404('No such program %s.' % program)
 
-    mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
+    mirror, mirrors, mirror_id = get_mirrors(request)
 
     downloads = get_current_downloads(program, 'source')
 
