@@ -82,12 +82,13 @@ phone to get some functionality, newer ones do not have support so far.
 
 <h3>{% trans "Manufacturers" %}</h3>
 
+<ul class="nav nav-pills">
 {% for vendor in vendors %}
-<a class="vendor" href="{{ vendor.get_absolute_url }}">{{ vendor.name }}
-({{ vendor.get_models_count }})
-</a>
+<li><a class="vendor list-group-item" href="{{ vendor.get_absolute_url }}">{{ vendor.name }}
+<span class="badge">{{ vendor.get_models_count }}</span>
+</a></li>
 {% endfor %}
-<div class="clearer"></div>
+</ul>
 
 <h3>{% trans "Recently Added Phones" %}</h3>
 {% include "phonedb/list.html" %}
