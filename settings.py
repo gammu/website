@@ -39,6 +39,16 @@ TIME_ZONE = 'Europe/Prague'
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'en-us'
 
+LANGUAGES = (
+    ('cs', u'Čeština'),
+    ('de', u'Deutsch'),
+    ('en', u'English'),
+    ('es', u'Español'),
+    ('fr', u'Français'),
+    ('pt-br', u'Português brasileiro'),
+    ('sk', u'Slovenčina'),
+)
+
 LOCALE_PATHS = ('%s/locale' % WEB_ROOT, )
 
 # If you set this to False, Django will make some optimizations so as not
@@ -108,6 +118,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'wammu.middleware.SiteLocaleMiddleware',
     'wammu.middleware.HTTPHeadersMiddleware',
 )
