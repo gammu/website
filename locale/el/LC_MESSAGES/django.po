@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-13 14:18+0200\n"
+"POT-Creation-Date: 2015-04-13 17:18+0200\n"
 "PO-Revision-Date: 2012-09-27 11:36+0200\n"
 "Last-Translator: Panagiotis Papazoglou <papaz_p@yahoo.com>\n"
 "Language-Team: Greek <http://hosted.weblate.org/projects/gammu/website/el/>\n"
@@ -156,8 +156,8 @@ msgstr ""
 msgid "Support"
 msgstr "Υποστήριξη"
 
-#: html/base.html:76 html/base.html.py:116 html/base.html.py:128
-#: html/base.html:140
+#: html/base.html:76 html/base.html.py:117 html/base.html.py:129
+#: html/base.html:141
 msgid "Overview"
 msgstr ""
 
@@ -195,136 +195,140 @@ msgid "Download Gammu"
 msgstr ""
 
 #: html/base.html:89 html/downloads/index.html:32
+msgid "Download python-gammu"
+msgstr ""
+
+#: html/base.html:90 html/downloads/index.html:39
 msgid "Download Wammu"
 msgstr ""
 
-#: html/base.html:94 html/index.html:25
+#: html/base.html:95 html/index.html:25
 msgid "News"
 msgstr ""
 
-#: html/base.html:96
+#: html/base.html:97
 msgid "All news"
 msgstr ""
 
-#: html/base.html:104 html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
+#: html/base.html:105 html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
 msgid "Screenshots"
 msgstr ""
 
-#: html/base.html:106
+#: html/base.html:107
 msgid "All screenshots"
 msgstr ""
 
-#: html/base.html:114 html/gammu.html:61 html/libgammu.html:46
+#: html/base.html:115 html/gammu.html:61 html/libgammu.html:46
 #: html/python-gammu.html:60 html/smsd.html:65 html/wammu.html:49
 msgid "Documentation"
 msgstr ""
 
-#: html/base.html:117 html/docs/index.html:21
+#: html/base.html:118 html/docs/index.html:21
 msgid "Gammu Manual"
 msgstr ""
 
-#: html/base.html:118
+#: html/base.html:119
 msgid "FAQ"
 msgstr ""
 
-#: html/base.html:119
+#: html/base.html:120
 msgid "For developers"
 msgstr ""
 
-#: html/base.html:120 html/phonedb/body.html:16
+#: html/base.html:121 html/phonedb/body.html:16
 msgid "Configuration"
 msgstr ""
 
-#: html/base.html:121 html/sidebars/common.html:3 phonedb/views.py:101
+#: html/base.html:122 html/sidebars/common.html:3 phonedb/views.py:101
 msgid "Supported phones"
 msgstr ""
 
-#: html/base.html:126
+#: html/base.html:127
 msgid "Contribute"
 msgstr ""
 
-#: html/base.html:129
+#: html/base.html:130
 msgid "Translate"
 msgstr ""
 
-#: html/base.html:130
+#: html/base.html:131
 msgid "Develop"
 msgstr ""
 
-#: html/base.html:131
+#: html/base.html:132
 msgid "Wanted skills"
 msgstr ""
 
-#: html/base.html:132
+#: html/base.html:133
 msgid "Publicity"
 msgstr ""
 
-#: html/base.html:133 html/base.html.py:211
+#: html/base.html:134 html/base.html.py:198
 msgid "Donate"
 msgstr "Δωρεά"
 
-#: html/base.html:138
+#: html/base.html:139
 msgid "Tools"
 msgstr ""
 
-#: html/base.html:141
+#: html/base.html:142
 msgid "PDU encoder"
 msgstr ""
 
-#: html/base.html:142
+#: html/base.html:143
 msgid "PDU decoder"
 msgstr ""
 
-#: html/base.html:143
+#: html/base.html:144
 msgid "Countries"
 msgstr ""
 
-#: html/base.html:144
+#: html/base.html:145
 msgid "Networks"
 msgstr ""
 
-#: html/base.html:162
+#: html/base.html:163
 msgid "Help with translations!"
 msgstr ""
 
-#: html/base.html:210
+#: html/base.html:197
 msgid "License"
 msgstr ""
 
-#: html/base.html:211
+#: html/base.html:198
 msgid "Support Gammu/Wammu by donating money!"
 msgstr ""
 
-#: html/base.html:212
+#: html/base.html:199
 msgid "Search for Gammu/Wammu related questions"
 msgstr ""
 
-#: html/base.html:212 html/phonedb/index.html:55 html/phonedb/search.html:13
+#: html/base.html:199 html/phonedb/index.html:55 html/phonedb/search.html:13
 #: html/phonedb/search.html.py:49 phonedb/forms.py:33
 msgid "Search"
 msgstr "Αναζήτηση"
 
-#: html/base.html:213
+#: html/base.html:200
 msgid "Gammu and Wammu authors"
 msgstr ""
 
-#: html/base.html:213
+#: html/base.html:200
 msgid "Authors"
 msgstr ""
 
-#: html/base.html:214
+#: html/base.html:201
 msgid "Gammu on Google+"
 msgstr ""
 
-#: html/base.html:215
+#: html/base.html:202
 msgid "Gammu on Facebook"
 msgstr ""
 
-#: html/base.html:216
+#: html/base.html:203
 msgid "Follow us on Twitter"
 msgstr ""
 
-#: html/base.html:217
+#: html/base.html:204
 msgid "Donate using PayPal"
 msgstr ""
 
@@ -367,7 +371,11 @@ msgid ""
 "better software.\n"
 msgstr ""
 
-#: html/donate.html:25
+#: html/donate.html:27
+msgid "Donate small amount in weekly intervals."
+msgstr ""
+
+#: html/donate.html:33
 msgid ""
 "\n"
 "The donation itself is being processed by <a\n"
@@ -377,22 +385,22 @@ msgid ""
 "donation to <code>michal@cihar.com</code>.\n"
 msgstr ""
 
-#: html/donate.html:42
+#: html/donate.html:50
 msgid "Bitcoin"
 msgstr ""
 
-#: html/donate.html:45
+#: html/donate.html:53
 #, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to <code>%(address)s</code>."
 msgstr ""
 
-#: html/donate.html:48
+#: html/donate.html:56
 msgid "Wire Transfer"
 msgstr ""
 
-#: html/donate.html:51
+#: html/donate.html:59
 msgid ""
 "\n"
 "If you want, you can use wire transfer as well to send me money. Use "
@@ -400,7 +408,7 @@ msgid ""
 "information to make the payment:\n"
 msgstr ""
 
-#: html/donate.html:59
+#: html/donate.html:67
 msgid ""
 "\n"
 "If you have an account in Czech Republic, you can use local (and cheaper) "
@@ -408,11 +416,11 @@ msgid ""
 "transfer to account 2300081892 / 2010.\n"
 msgstr ""
 
-#: html/donate.html:65
+#: html/donate.html:73
 msgid "Other Options"
 msgstr ""
 
-#: html/donate.html:67
+#: html/donate.html:75
 msgid ""
 "\n"
 "You can also give some presents to developers, currently here is <a\n"
@@ -421,11 +429,11 @@ msgid ""
 "Michal Čihař</a>.\n"
 msgstr ""
 
-#: html/donate.html:74
+#: html/donate.html:82
 msgid "Supporters"
 msgstr "Υποστηρικτές"
 
-#: html/donate.html:76
+#: html/donate.html:84
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
@@ -756,10 +764,9 @@ msgstr ""
 #: html/python-gammu.html:27
 msgid ""
 "\n"
-"Python module is distributed as part of <a href=\"/gammu/\">Gammu</a> so to "
-"download\n"
-"it just get <a href=\"/download/gammu/\">Gammu</a>. If you want to use "
-"binary\n"
+"Python module is now standalone, so please \n"
+"<a href=\"/download/python-gammu/\">download it separately</a>. If you want "
+"to use binary\n"
 "package, the daemon might be included in separate binary package in your\n"
 "distribution, try looking for something like <code>python-gammu</code>.\n"
 msgstr ""
@@ -1066,7 +1073,7 @@ msgid ""
 "clone Wammu and Gammu sources, use following commands:\n"
 msgstr ""
 
-#: html/contribute/code.html:53
+#: html/contribute/code.html:56
 msgid ""
 "\n"
 "Alternatively (if your firewall blocks git protocol), you can access\n"
@@ -1074,7 +1081,7 @@ msgid ""
 "<code>https://github.com/</code>.\n"
 msgstr ""
 
-#: html/contribute/code.html:61
+#: html/contribute/code.html:64
 msgid ""
 "\n"
 "Instructions for building and installing are included in file\n"
@@ -1083,22 +1090,22 @@ msgid ""
 "have <a href=\"http://www.cmake.org/\">CMake</a>.\n"
 msgstr ""
 
-#: html/contribute/code.html:68
+#: html/contribute/code.html:71
 msgid "Code Snapshots"
 msgstr ""
 
-#: html/contribute/code.html:70
+#: html/contribute/code.html:73
 msgid ""
 "\n"
 "If you for some reason do not want to use version control system, you can\n"
 "always download fresh snapshots of current code from GitHub.\n"
 msgstr ""
 
-#: html/contribute/code.html:77
+#: html/contribute/code.html:80
 msgid "Patch Submission"
 msgstr ""
 
-#: html/contribute/code.html:79
+#: html/contribute/code.html:82
 msgid ""
 "\n"
 "We really do not care much about the way you deliver us patches. However "
@@ -1110,11 +1117,11 @@ msgid ""
 "href=\"/support/bugs/\">bug tracker</a>.\n"
 msgstr ""
 
-#: html/contribute/code.html:90
+#: html/contribute/code.html:93
 msgid "Testing"
 msgstr ""
 
-#: html/contribute/code.html:92
+#: html/contribute/code.html:95
 msgid ""
 "Gammu comes with quite comprehensive testsuite, which is being run "
 "continuosly using <a href=\"https://travis-ci.org/gammu/gammu\">Travis</a>."
@@ -1642,23 +1649,23 @@ msgid ""
 "more details.\n"
 msgstr ""
 
-#: html/downloads/index.html:39
+#: html/downloads/index.html:46
 msgid "Syndication"
 msgstr ""
 
-#: html/downloads/index.html:41
+#: html/downloads/index.html:48
 msgid "DOAP for Wammu"
 msgstr ""
 
-#: html/downloads/index.html:42
+#: html/downloads/index.html:49
 msgid "DOAP for Gammu"
 msgstr ""
 
-#: html/downloads/index.html:43
+#: html/downloads/index.html:50
 msgid "PAD for Wammu"
 msgstr ""
 
-#: html/downloads/index.html:44
+#: html/downloads/index.html:51
 msgid "PAD for Gammu"
 msgstr ""
 
@@ -1848,6 +1855,10 @@ msgstr ""
 msgid ""
 "\n"
 "Published on %(date)s by <a href=\"mailto:%(email)s\">%(author)s</a>\n"
+msgstr ""
+
+#: html/news/python-gammu_index.html:4 html/news/python-gammu_index.html:6
+msgid "python-gammu news"
 msgstr ""
 
 #: html/news/wammu_index.html:4 html/news/wammu_index.html.py:6
@@ -2542,6 +2553,14 @@ msgid ""
 "see some bug here, please <a href=\"/support/bugs/\">report it</a>.\n"
 msgstr ""
 
+#: html/tools/countries.html:18
+msgid "Country code"
+msgstr ""
+
+#: html/tools/countries.html:18
+msgid "Countr name"
+msgstr ""
+
 #: html/tools/index.html:4 html/tools/index.html.py:8
 msgid "Tools for Wammu and Gammu"
 msgstr ""
@@ -2604,98 +2623,106 @@ msgid ""
 "see some bug here, please <a href=\"/support/bugs/\">report it</a>.\n"
 msgstr ""
 
-#: html/tools/pdudecode.html:5 html/tools/pdudecode.html.py:9
+#: html/tools/networks.html:18
+msgid "Network code"
+msgstr ""
+
+#: html/tools/networks.html:18
+msgid "Network name"
+msgstr ""
+
+#: html/tools/pdudecode.html:6 html/tools/pdudecode.html.py:12
 msgid "PDU decoder using Gammu"
 msgstr ""
 
-#: html/tools/pdudecode.html:16 html/tools/pduencode.html:16
+#: html/tools/pdudecode.html:18 html/tools/pduencode.html:18
 msgid "Go"
 msgstr ""
 
-#: html/tools/pdudecode.html:23
+#: html/tools/pdudecode.html:24
 msgid "PDU Decoding Result"
 msgstr ""
 
-#: html/tools/pdudecode.html:25 html/tools/pdudecode.html.py:55
-#: html/tools/pduencode.html:25
+#: html/tools/pdudecode.html:26 html/tools/pdudecode.html.py:56
+#: html/tools/pduencode.html:26
 #, python-format
 msgid "Message number %(id)s"
 msgstr ""
 
-#: html/tools/pdudecode.html:27
+#: html/tools/pdudecode.html:28
 msgid "Decoding failed with error:"
 msgstr ""
 
-#: html/tools/pdudecode.html:33 html/tools/pdudecode.html.py:35
+#: html/tools/pdudecode.html:34 html/tools/pdudecode.html.py:36
 #: tools/forms.py:13
 msgid "Text"
 msgstr "Κείμενο"
 
-#: html/tools/pdudecode.html:38
+#: html/tools/pdudecode.html:39
 msgid "UDH type"
 msgstr ""
 
-#: html/tools/pdudecode.html:39
+#: html/tools/pdudecode.html:40
 msgid "UDH header"
 msgstr ""
 
-#: html/tools/pdudecode.html:40
+#: html/tools/pdudecode.html:41
 msgid "Message part"
 msgstr ""
 
-#: html/tools/pdudecode.html:42
+#: html/tools/pdudecode.html:43
 msgid "SMSC"
 msgstr "SMSC"
 
-#: html/tools/pdudecode.html:43
+#: html/tools/pdudecode.html:44
 msgid "Validity"
 msgstr ""
 
-#: html/tools/pdudecode.html:44
+#: html/tools/pdudecode.html:45
 msgid "Type"
 msgstr "Είδος"
 
-#: html/tools/pdudecode.html:45
+#: html/tools/pdudecode.html:46
 msgid "Message Reference"
 msgstr ""
 
-#: html/tools/pdudecode.html:53
+#: html/tools/pdudecode.html:54
 msgid "SMS Data Decoding Result"
 msgstr ""
 
-#: html/tools/pdudecode.html:62
+#: html/tools/pdudecode.html:63
 msgid "MMS indicator"
 msgstr ""
 
-#: html/tools/pdudecode.html:63
+#: html/tools/pdudecode.html:64
 msgid "Title"
 msgstr ""
 
-#: html/tools/pdudecode.html:64
+#: html/tools/pdudecode.html:65
 msgid "Sender"
 msgstr ""
 
-#: html/tools/pdudecode.html:65
+#: html/tools/pdudecode.html:66
 msgid "Address"
 msgstr ""
 
-#: html/tools/pdudecode.html:66 tools/forms.py:14
+#: html/tools/pdudecode.html:67 tools/forms.py:14
 msgid "Class"
 msgstr ""
 
-#: html/tools/pdudecode.html:69
+#: html/tools/pdudecode.html:70
 msgid "Bitmap"
 msgstr ""
 
-#: html/tools/pdudecode.html:70
+#: html/tools/pdudecode.html:71
 msgid "Bitmaps"
 msgstr ""
 
-#: html/tools/pduencode.html:5 html/tools/pduencode.html.py:9
+#: html/tools/pduencode.html:6 html/tools/pduencode.html.py:12
 msgid "PDU encoder using Gammu"
 msgstr ""
 
-#: html/tools/pduencode.html:23
+#: html/tools/pduencode.html:24
 msgid "PDU data"
 msgstr ""
 
