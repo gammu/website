@@ -57,7 +57,14 @@
    
   <div class="collapse navbar-collapse" id="topbar-collapsible">
    <ul class="nav navbar-nav">
-     <li><a href="/support/">{% trans "Support" %}</a></li>
+     <li class="dropdown">
+        <a href="/support/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{% trans "Support" %} <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+        <li><a href="/support/">{% trans "Overview" %}</a></li>
+        <li><a href="/support/lists/">{% trans "Mailing lists and forums" %}</a></li>
+        <li><a href="/support/bugs/">{% trans "Reporting bugs" %}</a></li>
+        </ul>
+     </li>
    
      <li><a href="/download/">{% trans "Download" %}</a></li>
    
