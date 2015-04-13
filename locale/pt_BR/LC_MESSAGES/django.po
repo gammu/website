@@ -6,12 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
-"POT-Creation-Date: 2015-04-09 08:48+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-13 14:03+0200\n"
 "PO-Revision-Date: 2015-04-11 20:36+0200\n"
 "Last-Translator: Thiago Casotti <thiago.casotti@uol.com.br>\n"
-"Language-Team: Portuguese (Brazil) "
-"<https://hosted.weblate.org/projects/gammu/website/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"gammu/website/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -117,7 +117,7 @@ msgstr ""
 "hoje ele é o encarregado.\n"
 
 #: html/authors.html:29 html/authors.html.py:50 html/authors.html.py:66
-#: html/phonedb/vendor.html:21
+#: html/phonedb/vendor.html:20
 msgid "Website"
 msgstr "WebSite"
 
@@ -164,104 +164,29 @@ msgstr ""
 "Gammu and Wammu, o software para gerenciamento de celulares com a tecnologia "
 "GSM."
 
-#: html/base.html:73
-msgid "Page translations"
-msgstr "Tradução de páginas"
+#: html/base.html:63
+msgid "Family"
+msgstr ""
 
-#: html/base.html:78
-msgid "Translate!"
-msgstr "Traduza!"
-
-#: html/base.html:81
-msgid "Advertisement"
-msgstr "Anúncio"
-
-#: html/base.html:94 html/base.html.py:153 html/downloads/program.html:7
-#: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
-msgid "Downloads"
-msgstr "Downloads"
-
-#: html/base.html:102 html/base.html.py:173 html/base.html.py:183
-msgid "Donate"
-msgstr "Doe"
-
-#: html/base.html:104
-msgid "Support Gammu by <a href=\"/donate/\">donating</a>!"
-msgstr "Ajude Gammu <a href=\"/donate/\">doando</a>!"
-
-#: html/base.html:116
-msgid "Share"
-msgstr "Compartilhar"
-
-#: html/base.html:118
-msgid "Share Gammu with the world!"
-msgstr "Compartilhe Gammu com o mundo todo!"
-
-#: html/base.html:121
-msgid "Gammu on Google+"
-msgstr "Gammu no Google+"
-
-#: html/base.html:122
-msgid "Gammu on Facebook"
-msgstr "Gammu no Facebook"
-
-#: html/base.html:123
-msgid "Follow us on Twitter"
-msgstr "Siga a gente no Twitter"
-
-#: html/base.html:133 html/index.html:19
-msgid "About"
-msgstr "Sobre"
-
-#: html/base.html:135 html/contribute/translate.html:61 html/gammu.html:4
-#: html/gammu.html.py:19
+#: html/base.html:65 html/gammu.html:4 html/gammu.html.py:11
+#: html/contribute/translate.html:57
 msgid "Gammu"
 msgstr "Gammu"
 
-#: html/base.html:136 html/contribute/translate.html:59 html/wammu.html:4
-#: html/wammu.html.py:22
+#: html/base.html:66 html/wammu.html:4 html/wammu.html.py:14
+#: html/contribute/translate.html:55
 msgid "Wammu"
 msgstr "Wammu"
 
-#: html/base.html:137
+#: html/base.html:67
 msgid "python-gammu"
 msgstr "python-gammu"
 
-#: html/base.html:138
+#: html/base.html:68
 msgid "SMSD"
 msgstr "SMSD"
 
-#: html/base.html:142 wammu/context_processors.py:39
-msgid "Support"
-msgstr "Ajuda e Suporte"
-
-#: html/base.html:144
-msgid "Mailing lists"
-msgstr "Listas de mensagens"
-
-#: html/base.html:145
-msgid "Online"
-msgstr "Disponível"
-
-#: html/base.html:146
-msgid "Reporting bugs"
-msgstr "Reportando erros"
-
-#: html/base.html:147
-msgid "Commercial support"
-msgstr "Ajuda comercial"
-
-#: html/base.html:151
-msgid "Media"
-msgstr "Mídia"
-
-#: html/base.html:154 html/index.html:9 html/index.html.py:11
-#: html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
-#: wammu/context_processors.py:41
-msgid "Screenshots"
-msgstr "Fotos de tela/Prints"
-
-#: html/base.html:155
+#: html/base.html:69
 msgid "Third party"
 msgstr ""
 "Terceira parte\n"
@@ -269,994 +194,190 @@ msgstr ""
 "OR Terceira festa\n"
 "OR terceiros"
 
-#: html/base.html:156 html/index.html:54
+#: html/base.html:74
+msgid "Support"
+msgstr "Ajuda e Suporte"
+
+#: html/base.html:76 html/base.html.py:116 html/base.html.py:128
+#: html/base.html:140
+msgid "Overview"
+msgstr ""
+
+#: html/base.html:77
+#, fuzzy
+msgid "Mailing lists and forums"
+msgstr "Listas de mensagens"
+
+#: html/base.html:78
+msgid "Reporting bugs"
+msgstr "Reportando erros"
+
+#: html/base.html:79
+msgid "Online"
+msgstr "Disponível"
+
+#: html/base.html:80
+msgid "Commercial support"
+msgstr "Ajuda comercial"
+
+#: html/base.html:85 html/gammu-family.html:15 html/gammu-family.html.py:29
+#: html/gammu-family.html:43 html/gammu-family.html.py:60
+#: html/gammu-family.html:74 html/gammu.html:53 html/libgammu.html:37
+#: html/python-gammu.html:25 html/smsd.html:55 html/wammu.html:39
+#: html/downloads/list.html:4 html/downloads/program.html:4
+#: html/downloads/release.html:4
+msgid "Download"
+msgstr "Baixar"
+
+#: html/base.html:87
+#, fuzzy
+msgid "All downloads"
+msgstr "Downloads"
+
+#: html/base.html:88 html/downloads/index.html:25
+msgid "Download Gammu"
+msgstr "Baixe o Gammu"
+
+#: html/base.html:89 html/downloads/index.html:32
+msgid "Download Wammu"
+msgstr "Baixe o Wammu"
+
+#: html/base.html:94 html/index.html:25
 msgid "News"
 msgstr "Notícias"
 
-#: html/base.html:160 html/docs/sidebar.html:2 html/gammu.html:69
-#: html/libgammu.html:54 html/python-gammu.html:69 html/smsd.html:73
-#: html/support/sidebar.html:4 html/wammu.html:57
-#: wammu/context_processors.py:42
+#: html/base.html:96
+msgid "All news"
+msgstr "Todas as notícias"
+
+#: html/base.html:104 html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
+msgid "Screenshots"
+msgstr "Fotos de tela/Prints"
+
+#: html/base.html:106
+msgid "All screenshots"
+msgstr "Todos os screenshots"
+
+#: html/base.html:114 html/gammu.html:61 html/libgammu.html:46
+#: html/python-gammu.html:60 html/smsd.html:65 html/wammu.html:49
 msgid "Documentation"
 msgstr "Documentação"
 
-#: html/base.html:162 html/docs/sidebar.html:5
-msgid "FAQ"
-msgstr "Perguntas frequentes"
-
-#: html/base.html:163 html/docs/sidebar.html:7 html/sidebars/common.html:3
-#: phonedb/views.py:101
-msgid "Supported phones"
-msgstr "Telefones suportados"
-
-#: html/base.html:164 html/docs/index.html:25 html/docs/sidebar.html:4
+#: html/base.html:117 html/docs/index.html:21
 msgid "Gammu Manual"
 msgstr "Manual Gammu"
 
-#: html/base.html:165 html/phonedb/body.html:16
-msgid "Configuration"
-msgstr "Configuração"
-
-#: html/base.html:169 wammu/context_processors.py:43
-msgid "Contribute"
-msgstr "Contribua"
-
-#: html/base.html:171 html/contribute/sidebar.html:4
-msgid "Translate"
-msgstr "Traduza"
-
-#: html/base.html:172 html/contribute/sidebar.html:5
-msgid "Develop"
-msgstr "Desenvolva"
-
-#: html/base.html:174 html/contribute/sidebar.html:7
-msgid "Publicity"
-msgstr "Publique, divulgue"
-
-#: html/base.html:182
-msgid "License"
-msgstr "Licença"
-
-#: html/base.html:183
-msgid "Support Gammu/Wammu by donating money!"
-msgstr "Ajude Gammu/Wammu fazendo sua doação!"
-
-#: html/base.html:184
-msgid "Search for Gammu/Wammu related questions"
-msgstr "Procure por questões relacionadas a Gammu/Wammu"
-
-#: html/base.html:184 html/phonedb/index.html:8
-msgid "Search"
-msgstr "Procure"
-
-#: html/base.html:185
-msgid "Gammu and Wammu authors"
-msgstr "Autores de Gammu e Wammu"
-
-#: html/base.html:185
-msgid "Authors"
-msgstr "Autores"
-
-#: html/base.html:186
-msgid ""
-"Valid <a href=\"http://validator.w3.org/check/referer\">HTML</a> and <a href="
-"\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
-msgstr ""
-"Validadores <a href=\"http://validator.w3.org/check/referer\">HTML</a> e <a "
-"href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
-
-#: html/contribute/code.html:4 html/contribute/code.html.py:22
-msgid "Coding for Wammu and Gammu"
-msgstr "Programar para Wammu e Gammu"
-
-#: html/contribute/code.html:11 html/contribute/wanted.html:11
-msgid "Factoids"
-msgstr "Fatos"
-
-#: html/contribute/code.html:25
-msgid ""
-"\n"
-"Gammu is written in C and Wammu in <a\n"
-"href=\"http://www.python.org/\">Python</a>, so you will need knowledge of "
-"one of\n"
-"these languages to contribute code directly to the project. You will "
-"probably\n"
-"use some parts of <a href=\"/docs/devel/\">developer documentation</a> to\n"
-"understand the code. If you want to know what is planned to happen in Gammu\n"
-"and Wammu, please check the <a href=\"/docs/roadmap/\">roadmap</a>.\n"
-msgstr ""
-"\n"
-"O Gammu é escrito em C e o Wammu em <a\n"
-"href=\"http://www.python.org/\">Python</a>, então você precisará ter "
-"conhecimento\n"
-"em uma destas linguagens para fornecer código diretamente para o projeto.\n"
-"Você provavelmente irá usar algumas partes da <a href=\"/docs/devel/"
-"\">documentação\n"
-"do desenvolvedor</a> para entender o código. Se você quiser saber o que se "
-"espera acontecer\n"
-"no Gammu e Wammu, favor olher o <a href=\"/docs/roadmap/\">roadmap</a>.\n"
-
-#: html/contribute/code.html:36
-msgid "Version Control System"
-msgstr "Sistema de controle de versão"
-
-#: html/contribute/code.html:38
-msgid ""
-"\n"
-"We currently use <a href=\"http://git-scm.com/\">Git</a> as a version "
-"control\n"
-"system. It allows you create own local branch, develop the code and then\n"
-"submit us patches or merge request for the changes.\n"
-msgstr ""
-"\n"
-"Nós atualmente usamos o <a href=\"http://git-scm.com/\">Git</a> como o "
-"sistema de\n"
-"controle de versão. Ele permite criar seu próprio branch local, desenvolver "
-"o código\n"
-"e então nós enviar os pedidos de patch ou merge para mudanças.\n"
-
-#: html/contribute/code.html:46
-msgid ""
-"\n"
-"The Git repositories are being hosted on <a\n"
-"href=\"http://github.com/\">Github</a> service, in the\n"
-"<a href=\"http://github.com/gammu/\">Gammu</a> project. You can browse the "
-"code\n"
-"on their site or just clone the repository and investigate it locally. To\n"
-"clone Wammu and Gammu sources, use following commands:\n"
-msgstr ""
-"\n"
-"Os repositórios Git estão sendo hospedados no <a\n"
-"href=\"http://github.com/\">Github</a>, no projeto\n"
-"<a href=\"http://github.com/gammu/\">Gammu</a>. Você pode ver o código\n"
-"no site deles ou apenas clonar o repositório e investigá-lo localmente.\n"
-"Para clonar os códigos-fonte do Wammu e Gammu, use os seguintes comandos:\n"
-
-#: html/contribute/code.html:67
-msgid ""
-"\n"
-"Alternatively (if your firewall blocks git protocol), you can access\n"
-"repositories over https, just replace <code>git://github.com/</code> with\n"
-"<code>https://github.com/</code>.\n"
-msgstr ""
-"\n"
-"Alternativamente (se seu firewall bloquear o protocolo git), você pode "
-"acessar\n"
-"os repositórios com https, apenas substitua <code>git://github.com/</code> "
-"por\n"
-"<code>https://github.com/</code>.\n"
-
-#: html/contribute/code.html:75
-msgid ""
-"\n"
-"Instructions for building and installing are included in file\n"
-"<code>INSTALL</code> in both Gammu and Wammu. For compiling Gammu you need "
-"to\n"
-"have <a href=\"http://www.cmake.org/\">CMake</a>.\n"
-msgstr ""
-"\n"
-"Instruções para construir e instalar estão inclusas no arquivo\n"
-"<code>INSTALL</code> tanto no Gammu quanto no Wammu. Para compilar o Gammu "
-"você precisa\n"
-"ter o <a href=\"http://www.cmake.org/\">CMake</a>.\n"
-
-#: html/contribute/code.html:82
-msgid "Code Snapshots"
-msgstr "Snapshot de código"
-
-#: html/contribute/code.html:84
-msgid ""
-"\n"
-"If you for some reason do not want to use version control system, you can\n"
-"always download fresh snapshots of current code from GitHub.\n"
-msgstr ""
-"\n"
-"Se por algum motivo você não quiser utilizar o sistema de controle de "
-"versões, você pode\n"
-"realizar o download dos snapshots atualizados no GitHub.\n"
-
-#: html/contribute/code.html:91
-msgid "Patch Submission"
-msgstr "Envio de Patch"
-
-#: html/contribute/code.html:93
-msgid ""
-"\n"
-"We really do not care much about the way you deliver us patches. However "
-"the\n"
-"easiest thing is you use <code>git format-patch</code>, which allows us to\n"
-"easily include your changes. If you do not use git, any unified diff will\n"
-"serve it's purpose also very well. You can send patches to <a\n"
-"href=\"/support/lists/\">mailing lists</a> or to the <a\n"
-"href=\"/support/bugs/\">bug tracker</a>.\n"
-msgstr ""
-"\n"
-"Nós não nos importamos muito com o jeito que você nos entrega seus patches.\n"
-"No entanto, o jeito mais fácil é você usar <code>git format-patch</code>,\n"
-"que nos permite incluir facilmente suas mudanças. Se você não usar o git,\n"
-"qualquer diff unificado também alcançará seu objetivo muito bem.\n"
-"Você pode enviar os patches para <a href=\"/support/lists/\">listas de "
-"email</a>\n"
-"ou para o <a href=\"/support/bugs/\">rastreador de bugs</a>.\n"
-
-#: html/contribute/code.html:104
-msgid "Testing"
-msgstr "Teste"
-
-#: html/contribute/code.html:106
-msgid ""
-"Gammu comes with quite comprehensive testsuite, which is being run "
-"continuosly using <a href=\"https://travis-ci.org/gammu/gammu\">Travis</a>."
-msgstr ""
-"O Gammu vem com uma suíte de testes bem compreensiva, que é rodada "
-"continuamente usando o <a href=\"https://travis-ci.org/gammu/gammu\">Travis</"
-"a>."
-
-#: html/contribute/index.html:4 html/contribute/index.html.py:12
-msgid "Contribute to Wammu and Gammu"
-msgstr "Contribua com o Wammu e Gammu"
-
-#: html/contribute/index.html:15 html/contribute/wanted.html:25
-msgid ""
-"\n"
-"Gammu and Wammu are free software projects which are done by volunteers in\n"
-"their free time. There is never enough of volunteers so you are very "
-"welcome\n"
-"to help us in any way. You really do not need developer skills to help.\n"
-msgstr ""
-"\n"
-"Gammu e Wammu são projetos de software livre que são feitos por voluntários\n"
-"no seu tempo livre. Nunca temos voluntários demais então agradecemos muito a "
-"sua\n"
-"ajuda de qualquer maneira. Você não precisa ter habilidades de desenvolvedor "
-"para ajudar.\n"
-
-#: html/contribute/index.html:23
-msgid ""
-"\n"
-"Please check our list of <a href=\"/contribute/wanted/\"><strong>wanted\n"
-"skills</strong></a>, to get an idea who we are currently looking for.\n"
-msgstr ""
-"\n"
-"Favor olhar nossa lista de <a href=\"/contribute/wanted/"
-"\"><strong>habilidades\n"
-"desejadas</strong></a>, para ter uma ideia de quem nós estamos precisando.\n"
-
-#: html/contribute/index.html:29
-msgid "Using"
-msgstr "Uso"
-
-#: html/contribute/index.html:31
-msgid ""
-"\n"
-"Just using our tools and giving developers <a href=\"/support/bugs/\">good\n"
-"<strong>feedback</strong></a> can help a lot. Tell us what you would change "
-"or improve.\n"
-"You might be using our software in quite unique way and can not find out "
-"all\n"
-"use cases on our own!\n"
-msgstr ""
-"\n"
-"Apenas usar nossas ferramentas e dar um <a href=\"/support/bugs/\">bom\n"
-"<strong>feedback</strong></a> para nossos desenvolvedores pode ajudar "
-"muito.\n"
-"Conte-nos o que você mudaria ou melhoraria. Você pode estar usando nosso "
-"software\n"
-"de um jeito bem exclusivo e pode não descobrir todos os casos de uso "
-"sozinho!\n"
-
-#: html/contribute/index.html:40
-msgid ""
-"\n"
-"Also just <a href=\"/contribute/publicity/\"><strong>spreading</strong> a "
-"word</a> about tool you\n"
-"use and way you use it can help the project to attract more users and\n"
-"developers. Just don't be afraid of writing about our tools in your blog,\n"
-"twitter, facebook or whatever online media you use.\n"
-msgstr ""
-"\n"
-"Além disso, só <a href=\"/contribute/publicity/\"><strong>espalhar</strong> "
-"uma palavra</a>\n"
-"sobre a ferramenta que você usa e o jeito que você a usa pode ajudar o "
-"projeto\n"
-"a atrair mais usuários e desenvolvedores. Só não tenha medo de escrever\n"
-"sobre nossas ferramentas no seu blog, twitter, facebook\n"
-"ou qualquer outra mída online que você usa.\n"
-
-#: html/contribute/index.html:48
-msgid "Improving"
-msgstr "Melhoras"
-
-#: html/contribute/index.html:51
-msgid ""
-"\n"
-"There are lot of ways to improve the software. If you do not know how to "
-"write\n"
-"code, you can always <a\n"
-"href=\"/contribute/translate/\"><strong>translate</strong> to your\n"
-"language</a>.\n"
-"For developers with skills either in C or in Python, it might be easy to\n"
-"<a href=\"/contribute/code/\">contribute some <strong>code</strong></a>.\n"
-"Also the graphics in the applications is not really a top quality and if "
-"you\n"
-"are skilled in this area, your help would be also welcome!\n"
-msgstr ""
-"\n"
-"Existem muitos jeitos de melhorar o software. Se você não sabe como "
-"escrever\n"
-"código, você pode <a\n"
-"href=\"/contribute/translate/\"><strong>traduzir</strong> para sua língua</"
-"a>.\n"
-"Para os desenvolvedores com habilidades em C ou Python, pode ser fácil\n"
-"<a href=\"/contribute/code/\">contribuir com algum <strong>código</strong></"
-"a>.\n"
-"Os gráficos da aplicação também não são de primeira qualidade e se você\n"
-"for habilidoso nessa área, sua ajuda seria muito bem-vinda!\n"
-
-#: html/contribute/index.html:64
-msgid ""
-"\n"
-"You can also help just by regularly <a\n"
-"href=\"/contribute/code/#testing\">running a <strong>testsuite</strong></a> "
-"on\n"
-"your platform, especially if it some which we do not test so far.\n"
-msgstr ""
-"\n"
-"Você pode ajudar simplesmente <a\n"
-"href=\"/contribute/code/#testing\">rodando a <strong>suíte de testes</"
-"strong></a> \n"
-"regularmente na sua plataforma, especialmente se for alguma que não testamos "
-"até aora.\n"
-
-#: html/contribute/index.html:71
-msgid "Donating"
-msgstr "Doações"
-
-#: html/contribute/index.html:74
-msgid ""
-"\n"
-"And of course there is a option to appreciate the authors by <a\n"
-"href=\"/donate/\">donating them</a> some money or some items from their "
-"wishlist.\n"
-msgstr ""
-"\n"
-"E é claro que há uma opção de agradecer aos autores através de <a\n"
-"href=\"/donate/\">doar</a> algum dinheiro ou alguns itens da lista de "
-"desejos deles.\n"
-
-#: html/contribute/publicity.html:4 html/contribute/publicity.html.py:12
-msgid "Publicity for Wammu and Gammu"
-msgstr "Publicidade para Wammu e Gammu"
-
-#: html/contribute/publicity.html:15
-msgid ""
-"\n"
-"Publicity is vital for any project. If nobody would know about the project,\n"
-"nobody would use it. So spreading word about Gammu and Wammu might help a "
-"lot\n"
-"to gain new users and developers. \n"
-msgstr ""
-"\n"
-"A publicidade é vital para qualquer projeto. Se ninguém souber sobre o "
-"projeto,\n"
-"ninguém usaria ele. Então espalhar a palvra sobre o Gammu e Wammu pode "
-"ajudar muito\n"
-"a ganhar novos usuários e desenvolvedores.\n"
-
-#: html/contribute/publicity.html:23
-msgid ""
-"\n"
-"On the other side, if you found a bug, please do not leave it described "
-"just\n"
-"in your weblog, but <a href=\"/support/bugs/\">report it</a> to us. We "
-"really do\n"
-"not follow all blogs in the world to scan for bug reports.\n"
-msgstr ""
-"\n"
-"Por outro lado, se você encontrou um bug, por favor não deixe ele descrito "
-"apenas\n"
-"no seu blog, mas <a href=\"/support/bugs/\">informe-o</a> para nós. Nós não\n"
-"seguimos todos os blogs no mundo para verificar por relatórios de bugs.\n"
-
-#: html/contribute/publicity.html:30
-msgid "Third Party Applications"
-msgstr "Aplicações de Terceiros"
-
-#: html/contribute/publicity.html:33
-msgid ""
-"\n"
-"You've made some great tool using Gammu?  Don't hesitate to write about it. "
-"We\n"
-"can also list your tool on our <a href=\"/links/\">third party applications</"
-"a>\n"
-"page, what will in reward bring users to your project. Just <a\n"
-"href=\"/support/\">let us know</a> about it!\n"
-msgstr ""
-"\n"
-"Você criou alguma ferramenta incrível usando o Gammu? Não hesite em escrever "
-"sobre isso.\n"
-"Nós podemos listar sua ferramenta também na nossa página de\n"
-"<a href=\"/links/\">aplicações de terceiros</a>, o que resultará em levar\n"
-"usuários para o seu projeto. Apenas <a href=\"/support/\">conte-nos</a> "
-"sobre ela!\n"
-
-#: html/contribute/publicity.html:41
-msgid "Logos or Screenshots"
-msgstr "Logos ou Screenshots"
-
-#: html/contribute/publicity.html:43
-msgid ""
-"\n"
-"You can use any screenshots available on this website for your publicity "
-"posts\n"
-"as long as you follow <a href=\"/license/\">license terms</a>. Gammu and "
-"Wammu\n"
-"logos are available in various resolutions as well as in scalable format in\n"
-"<a href=\"/contribute/code/#vcs\">wammu source repository</a>.\n"
-msgstr ""
-"\n"
-"Você pode usar qualquer screenshot disponível neste site para posts de "
-"publicidade\n"
-"desde que você siga os <a href=\"/license/\">termos da licença</a>. Os logos "
-"do \n"
-"Gammu e do Wammu estão disponíveis em várias resoluções assim como formato "
-"escalável no\n"
-"<a href=\"/contribute/code/#vcs\">repositório de fontes do Wammu</a>.\n"
-
-#: html/contribute/sidebar.html:2
-msgid "Ways to contribute"
-msgstr "Modos de contribuir"
-
-#: html/contribute/sidebar.html:6
-msgid "Wanted skills"
-msgstr "Habilidades desejadas"
-
-#: html/contribute/translate.html:4 html/contribute/translate.html.py:12
-msgid "Translating Wammu and Gammu"
-msgstr "Tradução do Wammu e Gammu"
-
-#: html/contribute/translate.html:15
-msgid ""
-"\n"
-"If you know English and some other language, you can just bring Gammu and\n"
-"Wammu closer to the users who don't know English. Translating process is\n"
-"really easy and you can just occasionally translate few texts and do not "
-"have\n"
-"to spend much time on it.\n"
-msgstr ""
-"\n"
-"Se você conhece inglês e alguma outra língua, você pode levar o Gammu e\n"
-"o Wammu para mais perto dos usuários que não sabem inglês. O processo de "
-"tradução é\n"
-"bastante fácil e você pode simplesmente traduzir ocasionalmente alguns "
-"textos e não tem\n"
-"que gastar muito tempo com isso.\n"
-
-#: html/contribute/translate.html:22
-msgid "Gettext"
-msgstr "Gettext"
-
-#: html/contribute/translate.html:24
-msgid ""
-"\n"
-"All Gammu, Wammu and this website use <a\n"
-"href=\"http://en.wikipedia.org/wiki/GNU_gettext\">gettext</a> framework for\n"
-"translation of messages in user interface. In addition, Gammu uses gettext\n"
-"together with <a href=\"http://po4a.alioth.debian.org/\">po4a</a> to "
-"translate\n"
-"documentation. There exists variety of tools which can handle gettext\n"
-"translations, so you can choose the one which fits your needs.\n"
-msgstr ""
-"\n"
-"O Gammu, Wammu e este site usam o <a\n"
-"href=\"http://en.wikipedia.org/wiki/GNU_gettext\">framework gettext</a> "
-"para\n"
-"tradução das mensagens da interface do usuário. Além disso, o Gammu usa "
-"gettext\n"
-"junto com o <a href=\"http://po4a.alioth.debian.org/\">po4a</a> para "
-"traduzir\n"
-"a documentação. Lá existe uma variedade de ferramentas que podem manipular\n"
-"traduções gettext, então você pode escolher aquela que atender suas "
-"necessidades.\n"
-
-#: html/contribute/translate.html:34
-msgid "Translating po Files"
-msgstr "Tradução de Arquivos po"
-
-#: html/contribute/translate.html:36
-msgid ""
-"\n"
-"Traditional way of doing translations is to download po file, translate it\n"
-"using some editor (for example <a href=\"http://www.poedit.net/\">Poedit</"
-"a>)\n"
-"and then send updated po file to the author. You can do this when you are\n"
-"offline, but on the other side, it somehow prevents collaboration.\n"
-msgstr ""
-"\n"
-"O jeito tradicional de fazer traduções é baixar o arquivo po, traduzi-lo\n"
-"usando algum editor (por exemplo o <a href=\"http://www.poedit.net/"
-"\">Poedit</a>)\n"
-"e então enviar o arquivo atualizado para o autor. Você pode fazer isso "
-"quando você\n"
-"estiver offline, mas por outro lado, ele previne a colaboração de algum "
-"jeito.\n"
-
-#: html/contribute/translate.html:44
-msgid "Weblate"
-msgstr "Weblate"
-
-#: html/contribute/translate.html:46
-msgid ""
-"\n"
-"Another option is to use some web based system for translation, where lot "
-"of\n"
-"people can work on single translation as they just translate one text at "
-"once.\n"
-"We currently use <a href=\"https://weblate.org/\">Weblate</a> to\n"
-"manage translations. To start translating just create an account there and\n"
-"start translating. You can already see dozens of languages there, but if "
-"your\n"
-"one is missing, just <a href=\"/support/\">tell us</a> and we will add it. "
-"There\n"
-"are separate translations projects:\n"
-msgstr ""
-"\n"
-"Outra opção é usar algum sistema baseado em web para tradução, onde muitas\n"
-"pessoas podem trabalhar numa única tradução confirme elas traduzem apenas um "
-"texto por vez.\n"
-"Nós atualmente usamos o <a href=\"https://weblate.org/\">Weblate</a> para\n"
-"gerenciar as traduções. Para começar a traduzir apenas crie uma conta lá e "
-"comece a\n"
-"traduzir. Você já pode ver dúzias de idiomas lá, mas se o seu\n"
-"estiver faltando, apenas <a href=\"/support/\">fale para nós</a> e nós "
-"iremos adicionar ele.\n"
-"Existem projetos de traduções separados:\n"
-
-#: html/contribute/translate.html:58
-msgid "Introduction page"
-msgstr "Página de introdução"
-
-#: html/contribute/translate.html:60 html/libgammu.html:4
-#: html/libgammu.html.py:15
-msgid "libGammu"
-msgstr "libGammu"
-
-#: html/contribute/translate.html:62
-msgid "This website"
-msgstr "Este site"
-
-#: html/contribute/translate.html:66
-msgid ""
-"\n"
-"All languages are open to translated for anybody logged in by default. "
-"However\n"
-"if you want to have better control on some language <a href=\"/support/"
-"\">tell\n"
-"us</a> to allow others only to suggest translations. This usually brings\n"
-"better quality of translation and slower progress, so it's up to each\n"
-"translator to define policy.\n"
-msgstr ""
-"\n"
-"Todas as línguas estão abertas para serem traduzidas por qualquer um logado "
-"nela por padrão.\n"
-"Entretanto, se você quiser um controle melhor sobre alguma língua <a href=\"/"
-"support/\">conte\n"
-"para nós</a> para permitir outros somente sugerirem traduções. Isso "
-"normalmente traz\n"
-"uma qualidade melhor de tradução e progresso mais lento, então depende de "
-"cada tradutor\n"
-"definir a política.\n"
-
-#: html/contribute/translate.html:75
-msgid "Hints for Translators"
-msgstr "Dicas para Tradutores"
-
-#: html/contribute/translate.html:77
-msgid ""
-"\n"
-"In menu items, there is often used ampresand (&amp;), it means keybord\n"
-"shortcut for menu item. Please make those shortcuts unique in each menu. \n"
-msgstr ""
-"\n"
-"Em itens de menu, frequentemente aparecem (&amp;), isso significa\n"
-"um atalho de teclado para um item de menu. Por favor tornem estes atalhos "
-"únicos para cada menu.\n"
-
-#: html/contribute/translate.html:84
-msgid ""
-"\n"
-"Please test the translations in the program. Just download mo file from\n"
-"translation system and place it under\n"
-"<code>/usr/share/locale/aa/LC_MESSAGES/wammu.mo</code>, where <code>aa</"
-"code>\n"
-"is two letter code of your translation.\n"
-msgstr ""
-"\n"
-"Por faavor teste as traduções no programa. Apenas baixe o arquivo mo do\n"
-"sistema de tradução e coloque-o dentro de\n"
-"<code>/usr/share/locale/aa/LC_MESSAGES/wammu.mo</code>, onde <code>aa</"
-"code>\n"
-"é um código de duas letras da sua tradução.\n"
-
-#: html/contribute/translate.html:93
-#, python-format
-msgid ""
-"You should follow terminology as defined for your language in <a href="
-"\"%(url)s\">dictionary for the project</a>. If it is not defined, you can "
-"help creating one!"
-msgstr ""
-"Você deveria seguir a terminologia como definida para sua linguagem no <a "
-"href=\"%(url)s\">dicionário do projeto</a>. Se ele não estiver definido "
-"ainda, você pode ajudar a criar um!"
-
-#: html/contribute/translate.html:96
-msgid "What is Important?"
-msgstr "O que é importante?"
-
-#: html/contribute/translate.html:98
-msgid ""
-"\n"
-"If you will get to translation in bad shape, there is too much work. Use "
-"the\n"
-"following rules to find the most important things:\n"
-msgstr ""
-"\n"
-"Se você pegar uma tradução mal feita, há trabalho demais. Use as\n"
-"regras a seguir para descobrir as coisas mais importantes:\n"
-
-#: html/contribute/translate.html:105
-msgid ""
-"\n"
-"libGammu messages - there is just few of them and they are used also in "
-"Wammu.\n"
-"It is just good place to start and get to know some basic terminology.\n"
-msgstr ""
-"\n"
-"mensagens libGammu - há somente algumas delas e elas são usadas também no "
-"Wammu.\n"
-"É um bom lugar para começar a conhecer alguma terminologia básica.\n"
-
-#: html/contribute/translate.html:109
-msgid ""
-"\n"
-"Wammu translation - the is the application which is most frequently used by\n"
-"users with little English knowledge.\n"
-msgstr ""
-"\n"
-"Tradução do Wammu - esta é a aplicação que é mais frequentemente usada\n"
-"pelos usuários com pouco conhecimento no inglês.\n"
-
-#: html/contribute/translate.html:113
-msgid ""
-"\n"
-"Gammu translation - it's nice to have but not really a high priority.\n"
-msgstr ""
-"\n"
-"Tradução do Gammu - é legal de se ter mas não é exatamente uma prioridade "
-"alta.\n"
-
-#: html/contribute/translate.html:116
-msgid ""
-"\n"
-"Wammu website - there is lot of texts here and it's great to have the "
-"website\n"
-"translated for new users.\n"
-msgstr ""
-"\n"
-"Site do Wammu - existem muitos testos aqui e é ótimo de ter este site\n"
-"traduzido para os novos usuários.\n"
-
-#: html/contribute/translate.html:120
-msgid ""
-"\n"
-"Gammu documentation - it would be great to have this translated to many\n"
-"languages, but it is huge amount of text to translate.\n"
-msgstr ""
-"\n"
-"Documentação do Gammu - seria ótimo ter ela traduzida para muitas\n"
-"linguagens, mas é uma quantidade enorme de texto para traduzir.\n"
-
-#: html/contribute/wanted.html:4 html/contribute/wanted.html.py:22
-msgid "Wanted Skills for Wammu and Gammu"
-msgstr "Habilidades desejadas para o Wammu e Gammu"
-
-#: html/contribute/wanted.html:33
-msgid ""
-"\n"
-"Bellow is list of currently positions, which would be most helpful. If you\n"
-"won't find anything matching your skills, there still might be something "
-"where\n"
-"you can help, but was not found to be so important to be highlighted here. "
-"If\n"
-"you feel something could fit your skill, please \n"
-"<a href=\"/support/lists/\"><strong>contact us on mailing list</strong></"
-"a>.\n"
-msgstr ""
-"\n"
-"Abaixo está uma lista das posições atualmente mais úteis. Se você\n"
-"não encontrar nada correspondendo suas habilidades, pode haver algo\n"
-"onde você possa ajudar, mas não foi encontrado para ser tão importante\n"
-"a ponto de ser marcado aqui. Se você sente que algo poderia necessitar\n"
-"sua habilidade, favor <a href=\"/support/lists/\"><strong>nos contate na\n"
-"lista de email</strong></a>.\n"
-
-#: html/contribute/wanted.html:42
-msgid "Documentation writer"
-msgstr "Editor da documentação"
-
-#: html/contribute/wanted.html:45
-msgid ""
-"\n"
-"We have quite comprehensive <a href=\"/docs/manual/\">documentation</a>, "
-"though\n"
-"there are still lot of places where it could be extended. You don't need "
-"any \n"
-"special skill for this, writing plain text is enough.\n"
-msgstr ""
-"\n"
-"Nós temos uma <a href=\"/docs/manual/\">documentação</a> bem compreensiva,\n"
-"no entanto, existem muitos lugares que poderiam ser extendidos. Você não\n"
-"precisa de nenhuma habilidade especial para isso, escrever em texto extenso "
-"é o bastante.\n"
-
-#: html/contribute/wanted.html:52
-msgid "Community supporter"
-msgstr "Suporte da comunidade"
-
-#: html/contribute/wanted.html:55
-msgid ""
-"\n"
-"You have basic knowledge about Gammu and want to help others? Answering "
-"users\n"
-"questions or mailing list or IRC is the best you can do for them. Usually "
-"you \n"
-"don't need deep technical knowledge, most questions can be answered by "
-"looking \n"
-"at documentation.\n"
-msgstr ""
-"\n"
-"Você tem conhecimento básico sobre o Gammu e quer ajudar outros? Responder\n"
-"as perguntas dos usuários ou enviar um email ou IRC é o melhor que você pode "
-"fazer por eles.\n"
-"Normalmente você não precisa de nenhum conhecimento profundamente técnico, a "
-"maioria\n"
-"das perguntas pode ser respondida só de olhar a documentação.\n"
-
-#: html/contribute/wanted.html:63
-msgid "Windows Developer"
-msgstr "Desenvolvedor Windows"
-
-#: html/contribute/wanted.html:66
-msgid ""
-"\n"
-"Currently most of developers work on Linux or BSD. This leads to lacking\n"
-"support for Windows a bit. You probably need Visual Studio installed and "
-"you\n"
-"need some experiences with Windows API.\n"
-msgstr ""
-"\n"
-"Atualmente a maioria dos desenvolvedores trabalham com Linux ou BSD. Isso "
-"leva a falta\n"
-"de suporte para Windows. Você provavelmente precisa do Visual Studio "
-"instalado e você\n"
-"precisa ter alguma experiência com a API do Windows.\n"
-
-#: html/contribute/wanted.html:73
-msgid "Translators"
-msgstr "Tradutores"
-
-#: html/contribute/wanted.html:76
-msgid ""
-"\n"
-"There are always things to translate to almost any language, just check\n"
-"dedicated page <a href=\"/contribute/translate/\">about translating</a>.\n"
-msgstr ""
-"\n"
-"Existem sempre coisas para traduzir para quase qualquer idioma, apenas veja\n"
-"a página dedicada a <a href=\"/contribute/translate/\">tradução</a>.\n"
-
-#: html/contribute/wanted.html:82
-msgid "Graphics/Designer"
-msgstr "Gráficos/Designer"
-
-#: html/contribute/wanted.html:85
-msgid ""
-"\n"
-"Graphics and icons used in Wammu are quite poor quality right now. We would\n"
-"definitely make use of somebody more skilled in this area.\n"
-msgstr ""
-"\n"
-"Gráficos e ícones usados no Wammu são de uma qualidade bastante pobre "
-"agora.\n"
-"Nós definitivamente usaríamos alguém mais habilidoso nessa área.\n"
-
-#: html/contribute/wanted.html:91
-msgid "Symbian Developer"
-msgstr "Desenvolvedor Symbian"
-
-#: html/contribute/wanted.html:94
-msgid ""
-"\n"
-"Gammu currently lacks support for Symbian. The only way how this can be\n"
-"covered is implementing application for Symbian, which we can use as\n"
-"communication end point to which we can talk (gnapplet is currently used "
-"for\n"
-"this purpose, but it lacks support for recent Symbian versions).\n"
-msgstr ""
-"\n"
-"O Gammu atualmente fatal suporte ao Symbian. O único jeito de isso ser\n"
-"resolvido é implementando uma aplicação para Symbian, que nós podemos usar\n"
-"como ponto de comunicação com o qual nós podemos conversar (gnapplet é "
-"atualmente\n"
-"usado para este propósito, mas ele falta suporte para as versões recentes do "
-"Symbian).\n"
-
-#: html/contribute/wanted.html:103
-msgid ""
-"\n"
-"The very same probably applies to other modern platforms such as Android,\n"
-"Maemo or Windows Mobile.\n"
-msgstr ""
-"\n"
-"O mesmo provavelmente se aplica a outras plataformas modernas como o "
-"Android,\n"
-"Maemo ou Windows Mobile.\n"
-
-#: html/contribute/wanted.html:109
-msgid "Python Developer"
-msgstr "Desenvolvedor Python"
-
-#: html/contribute/wanted.html:112
-msgid ""
-"\n"
-"Wammu could use much more attention from developers than it currently gets.\n"
-"You will have quite free hands to move project forward and make it look as "
-"you\n"
-"wish.\n"
-msgstr ""
-"\n"
-"O Wammu poderia ter muito mais atenção dos desenvolvedores do que ele tem "
-"atualmente.\n"
-"Você terá as mãos bem livres para mover o projeto para frente e fazê-lo "
-"parecer como\n"
-"você quiser.\n"
-
-#: html/contribute/wanted.html:119
-msgid "C Developer"
-msgstr "Desenvolvedor C"
-
-#: html/contribute/wanted.html:122
-msgid ""
-"\n"
-"There is always lot of bugs and feature requests on Gammu core and more "
-"hands\n"
-"can manage them faster.\n"
-msgstr ""
-"\n"
-"Existem sempre muitos bugs e pedidos de função no núcleo do Gammu e mais "
-"mãos\n"
-"poderiam gerenciá-los mais rápido.\n"
-
-#: html/docs/index.html:4 html/docs/index.html.py:11
-msgid "Wammu and Gammu Documentation"
-msgstr "Documentação do Wammu e Gammu"
-
-#: html/docs/index.html:14
-msgid ""
-"\n"
-"The best user documentation for Gammu comes in <strong><a\n"
-"href=\"/docs/manual/\">The Gammu Manual</a></strong>. It covers all aspects "
-"from\n"
-"installing Gammu, configuring it, running the programs up to SMSD\n"
-"documentation and C or Python API.\n"
-msgstr ""
-"\n"
-"A melhor documentação do usuário para Gammu vem no <strong><a\n"
-"href=\"/docs/manual/\">Manual Gammu</a></strong>. Ele cobre todos os "
-"aspectos\n"
-"desde a instalação do Gammu, configuração, executação dos programas até\n"
-"a documentação do SMSD e da API C ou Python.\n"
-
-#: html/docs/index.html:22
-msgid "You can also download documentation in PDF:"
-msgstr "Você também pode baixar a documentação em PDF:"
-
-#: html/docs/index.html:26
-msgid "Gammu SMSD Daemon Manual"
-msgstr "Manual do Daemon SMSD do Gammu"
-
-#: html/docs/index.html:30
-msgid ""
-"\n"
-"For checking support of some phone model, the best source is <a\n"
-"href=\"/phones/\">Gammu Phone Database</a> which contains user experiences "
-"with\n"
-"Gammu and different phone models.\n"
-msgstr ""
-"\n"
-"Para verificar o suporte a algum modelo de telefone, a melhor fonte é\n"
-"o <a href=\"/phones/\">Banco de dados de telefones do Gammu</a> que contém "
-"as\n"
-"experiências dos usuários com o Gammu e os modelos diferentes de telefones.\n"
-
-#: html/docs/index.html:38
-msgid ""
-"\n"
-"If you still have some questions, please check <a\n"
-"href=\"/docs/manual/faq/\"><strong>Frequently Asked Questions</strong></a> "
-"before\n"
-"asking on <a href=\"/support/lists/\">mailing list</a>.\n"
-msgstr ""
-"\n"
-"Se você ainda tiver alguma pergunta, favor olhe a  <a\n"
-"href=\"/docs/manual/faq/\"><strong>FAQ</strong></a> antes\n"
-"de perguntá-la na  <a href=\"/support/lists/\">lista de emails</a>.\n"
-
-#: html/docs/index.html:45
-msgid "Developer Documentation"
-msgstr "Documentação do Desenvolvedor"
-
-#: html/docs/index.html:48
-msgid ""
-"\n"
-"The developer documentation is included in <strong><a\n"
-"href=\"/docs/manual/\">The Gammu Manual</a></strong>. You can find there\n"
-"documentation for <strong><a href=\"/docs/manual/python/\">Python\n"
-"API</a></strong>, <strong><a href=\"/docs/manual/c/\">libGammu C\n"
-"API</a></strong> or <strong><a href=\"/docs/manual/internal/\">internal API\n"
-"</a></strong>.\n"
-msgstr ""
-"\n"
-"A documentação do desenvolvedor está incluída no <strong><a\n"
-"href=\"/docs/manual/\">Manual Gammu</a></strong>. Você pode encontrar lá\n"
-"a documentação para a <strong><a href=\"/docs/manual/python/\">API Python\n"
-"</a></strong>, <strong><a href=\"/docs/manual/c/\">API C libGammu\n"
-"</a></strong> ou a <strong><a href=\"/docs/manual/internal/\">API interna\n"
-"</a></strong>.\n"
-
-#: html/docs/index.html:59
-msgid ""
-"\n"
-"As a developer, you might be also interested what is planned to happen in "
-"next\n"
-"Gammu and Wammu releases, you can find this information in the \n"
-"<a href=\"/docs/manual/project/roadmap.html\">roadmap</a>.\n"
-msgstr ""
-"\n"
-"Como um desenvolvedor, você pode estar interessado também no que está "
-"planejado\n"
-"para as próximas versões do Gammu e wammu, você pode encontrar essa "
-"informação\n"
-"no <a href=\"/docs/manual/project/roadmap.html\">roadmap</a>.\n"
-
-#: html/docs/index.html:67
-msgid ""
-"\n"
-"Additional hints about protocols can be found in <code>docs/develop</code> "
-"in\n"
-"Gammu sources or you might want to use git repository with <a\n"
-"href=\"http://github.com/gammu/gsm-docs/\">various GSM documentation</a>.\n"
-msgstr ""
-"\n"
-"Dicas adicionais sobre protocolos podem ser encontradas em <code>docs/"
-"develop</code>\n"
-"nas fontes do Gammu ou você pode querer usar o repositório git com <a\n"
-"href=\"http://github.com/gammu/gsm-docs/\">documentações de GSM variados</"
-"a>.\n"
-
-#: html/docs/sidebar.html:6
+#: html/base.html:118
+msgid "FAQ"
+msgstr "Perguntas frequentes"
+
+#: html/base.html:119
 msgid "For developers"
 msgstr "Para desenvolvedores"
 
-#: html/docs/sidebar.html:8
-msgid "Roadmap"
-msgstr "Roadmap"
+#: html/base.html:120 html/phonedb/body.html:16
+msgid "Configuration"
+msgstr "Configuração"
 
-#: html/donate-thanks.html:4 html/donate-thanks.html.py:11
+#: html/base.html:121 html/sidebars/common.html:3 phonedb/views.py:101
+msgid "Supported phones"
+msgstr "Telefones suportados"
+
+#: html/base.html:126
+msgid "Contribute"
+msgstr "Contribua"
+
+#: html/base.html:129
+msgid "Translate"
+msgstr "Traduza"
+
+#: html/base.html:130
+msgid "Develop"
+msgstr "Desenvolva"
+
+#: html/base.html:131
+msgid "Wanted skills"
+msgstr "Habilidades desejadas"
+
+#: html/base.html:132
+msgid "Publicity"
+msgstr "Publique, divulgue"
+
+#: html/base.html:133 html/base.html.py:211
+msgid "Donate"
+msgstr "Doe"
+
+#: html/base.html:138
+msgid "Tools"
+msgstr "Ferramentas"
+
+#: html/base.html:141
+msgid "PDU encoder"
+msgstr "Codificador PDU"
+
+#: html/base.html:142
+msgid "PDU decoder"
+msgstr "Decodificador PDU"
+
+#: html/base.html:143
+msgid "Countries"
+msgstr "Países"
+
+#: html/base.html:144
+msgid "Networks"
+msgstr "Redes"
+
+#: html/base.html:162
+#, fuzzy
+msgid "Help with translations!"
+msgstr "Tradução de páginas"
+
+#: html/base.html:210
+msgid "License"
+msgstr "Licença"
+
+#: html/base.html:211
+msgid "Support Gammu/Wammu by donating money!"
+msgstr "Ajude Gammu/Wammu fazendo sua doação!"
+
+#: html/base.html:212
+msgid "Search for Gammu/Wammu related questions"
+msgstr "Procure por questões relacionadas a Gammu/Wammu"
+
+#: html/base.html:212 html/phonedb/index.html:55 html/phonedb/search.html:13
+#: html/phonedb/search.html.py:49 phonedb/forms.py:33
+msgid "Search"
+msgstr "Procure"
+
+#: html/base.html:213
+msgid "Gammu and Wammu authors"
+msgstr "Autores de Gammu e Wammu"
+
+#: html/base.html:213
+msgid "Authors"
+msgstr "Autores"
+
+#: html/base.html:214
+msgid "Gammu on Google+"
+msgstr "Gammu no Google+"
+
+#: html/base.html:215
+msgid "Gammu on Facebook"
+msgstr "Gammu no Facebook"
+
+#: html/base.html:216
+msgid "Follow us on Twitter"
+msgstr "Siga a gente no Twitter"
+
+#: html/base.html:217
+msgid "Donate using PayPal"
+msgstr ""
+
+#: html/donate-thanks.html:4 html/donate-thanks.html.py:7
 msgid "Thank you for Donation!"
 msgstr "Muito obrigado por doar!"
 
-#: html/donate-thanks.html:14
+#: html/donate-thanks.html:10
 msgid ""
 "\n"
 "Thank you for donating to Gammu/Wammu! We will do our best to use the "
@@ -1267,11 +388,11 @@ msgstr ""
 "Obrigado por seu Donativos para Gammu / Wammu! Nós fazemos o melhor que\n"
 "podemos para usar seu dinheiro de maneira aproveitável.\n"
 
-#: html/donate.html:4 html/donate.html.py:11
+#: html/donate.html:4 html/donate.html.py:7
 msgid "Donate to Gammu"
 msgstr "Contribua para o Gammu"
 
-#: html/donate.html:14
+#: html/donate.html:10
 msgid ""
 "Gammu as a free software is project run by volunteers in their free time. To "
 "appreciate their work you can donate them in one of ways mentioned below."
@@ -1280,11 +401,11 @@ msgstr ""
 "livre. Para incentivar este trabalho você pode fazer doações através das "
 "formas abaixo."
 
-#: html/donate.html:17
+#: html/donate.html:13
 msgid "Donate Money"
 msgstr "Doar Dinheiro"
 
-#: html/donate.html:19
+#: html/donate.html:15
 msgid ""
 "\n"
 "Thank you for interesting in donating money to Gammu and Wammu projects. "
@@ -1305,7 +426,7 @@ msgstr ""
 "mas precisamos de mais para maior disponibilidade para criarmos software de "
 "melhor qualidade.\n"
 
-#: html/donate.html:29
+#: html/donate.html:25
 msgid ""
 "\n"
 "The donation itself is being processed by <a\n"
@@ -1320,11 +441,11 @@ msgstr ""
 "usando sua conta ou qualquer cartão de crédito. Você também pode enviar\n"
 "a doação diretamente a <code>michal@cihar.com</code>.\n"
 
-#: html/donate.html:46
+#: html/donate.html:42
 msgid "Bitcoin"
 msgstr "Bitcoin"
 
-#: html/donate.html:49
+#: html/donate.html:45
 #, python-format
 msgid ""
 "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -1333,11 +454,11 @@ msgstr ""
 "Você também pode usar <a href=\"http://www.bitcoin.org/\">Bitcoin, que é uma "
 "rede P2P</a> e me enviar Bitcoins para <code>%(address)s</code>."
 
-#: html/donate.html:52
+#: html/donate.html:48
 msgid "Wire Transfer"
 msgstr "Transferência Online"
 
-#: html/donate.html:55
+#: html/donate.html:51
 msgid ""
 "\n"
 "If you want, you can use wire transfer as well to send me money. Use "
@@ -1349,7 +470,7 @@ msgstr ""
 "diretamente.\n"
 "Use a seguinte informação para fazer doação:\n"
 
-#: html/donate.html:63
+#: html/donate.html:59
 msgid ""
 "\n"
 "If you have an account in Czech Republic, you can use local (and cheaper) "
@@ -1361,11 +482,11 @@ msgstr ""
 "transferência local\n"
 "para a conta 2300081892 / 2010.\n"
 
-#: html/donate.html:69
+#: html/donate.html:65
 msgid "Other Options"
 msgstr "Outras Opções"
 
-#: html/donate.html:71
+#: html/donate.html:67
 msgid ""
 "\n"
 "You can also give some presents to developers, currently here is <a\n"
@@ -1379,11 +500,11 @@ msgstr ""
 "para\n"
 "Michal Čihař</a>.\n"
 
-#: html/donate.html:78
+#: html/donate.html:74
 msgid "Supporters"
 msgstr "Oferecimento de"
 
-#: html/donate.html:80
+#: html/donate.html:76
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
@@ -1392,304 +513,7 @@ msgstr ""
 "desenvolvimento do gammu através\n"
 "de suporte financeiro."
 
-#: html/downloads/index.html:4
-msgid "Download Wammu and Gammu"
-msgstr "Baixe o Wammu e o Gammu"
-
-#: html/downloads/index.html:12
-msgid ""
-"\n"
-"Download\n"
-msgstr ""
-"\n"
-"Download\n"
-
-#: html/downloads/index.html:18
-msgid ""
-"\n"
-"You can download two programs here - <a href=\"/gammu/\">Gammu</a> and \n"
-"<a href=\"/wammu/\">Wammu</a>. Wammu is a GUI program, while Gammu a "
-"command\n"
-"line and it includes a <a href=\"/smsd/\">SMS daemon</a> and \n"
-"<a href=\"/python-gammu/\">Python bindings</a>. Please check linked pages "
-"for\n"
-"more details.\n"
-msgstr ""
-"\n"
-"Você pode baixar dois programas aqui - <a href=\"/gammu/\">Gammu</a> e\n"
-"<a href=\"/wammu/\">Wammu</a>. O Wammu é um programa GUI, enquanto o Gammu\n"
-"é uma linha de comando e inclui um <a href=\"/smsd/\">daemon SMS</a> e \n"
-"<a href=\"/python-gammu/\">Python bindings</a>. Favor olhar os links para\n"
-"mais detalhes.\n"
-
-#: html/downloads/index.html:29
-msgid "Download Gammu"
-msgstr "Baixe o Gammu"
-
-#: html/downloads/index.html:36
-msgid "Download Wammu"
-msgstr "Baixe o Wammu"
-
-#: html/downloads/index.html:43 html/phonedb/index.html:29
-msgid "Syndication"
-msgstr "Syndication"
-
-#: html/downloads/index.html:45
-msgid "DOAP for Wammu"
-msgstr "DOAP para Wammu"
-
-#: html/downloads/index.html:46
-msgid "DOAP for Gammu"
-msgstr "DOAP para Gammu"
-
-#: html/downloads/index.html:47
-msgid "PAD for Wammu"
-msgstr "PAD para Wammu"
-
-#: html/downloads/index.html:48
-msgid "PAD for Gammu"
-msgstr "PAD para Gammu"
-
-#: html/downloads/list.html:4 html/downloads/program.html:4
-#: html/downloads/release.html:4 html/gammu.html:61 html/libgammu.html:45
-#: html/python-gammu.html:34 html/smsd.html:63 html/wammu.html:47
-#: wammu/context_processors.py:40
-msgid "Download"
-msgstr "Baixar"
-
-#: html/downloads/list.html:8
-#, python-format
-msgid ""
-"\n"
-"Download %(program)s (%(platform)s)\n"
-msgstr ""
-"\n"
-"Baixe %(program)s (%(platform)s)\n"
-
-#: html/downloads/list.html:32
-msgid ""
-"\n"
-"Other platforms\n"
-msgstr ""
-"\n"
-"Outras plataformas\n"
-
-#: html/downloads/list.html:38
-msgid ""
-"\n"
-"You can not find your platform here? Choose the correct one <a href=\"../"
-"\">on complete listing</a>.\n"
-msgstr ""
-"\n"
-"Você não encontrou sua plataforma aqui? Escolha a correta <a href=\"../\">na "
-"lista completa</a>.\n"
-
-#: html/downloads/list.html:43
-msgid "Development version"
-msgstr "Versão de desenvolvimento"
-
-#: html/downloads/list.html:46
-msgid ""
-"Should you be interested in git access or git snapshots, you can find them "
-"on <a href=\"/contribute/code/\">development page</a>."
-msgstr ""
-"Se você estiver interessado no acesso ao git ou snapshots do git, você pode "
-"encontrá-los na <a href=\"/contribute/code\">páagina do desenvolvimento</a>."
-
-#: html/downloads/mirror.html:5
-msgid ""
-"\n"
-"Currently downloading from mirror:\n"
-msgstr ""
-"\n"
-"Baixando atualmente do mirror:\n"
-
-#: html/downloads/mirror.html:15
-msgid "Change"
-msgstr "Mudanças"
-
-#: html/downloads/platformlinks.html:7
-msgid "Debian packages"
-msgstr "Pacotes Debian"
-
-#: html/downloads/platformlinks.html:10
-msgid "Ubuntu packages"
-msgstr "Pacotes Ubuntu"
-
-#: html/downloads/platformlinks.html:13
-msgid "Ubuntu packages in PPA"
-msgstr "Pacotes Ubuntu nos repositórios PPA"
-
-#: html/downloads/platformlinks.html:17
-msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
-msgstr ""
-"Pacotes RPM (openSUSE, Fedora, Mandriva, SLES, RHEL, CentOS) última versão "
-"estável"
-
-#: html/downloads/platformlinks.html:19
-msgid "Development git snaphots and git access"
-msgstr "Snapshots de desenvolvimento git e acesso ao git"
-
-#: html/downloads/platformmessage.html:3
-msgid ""
-"\n"
-"Please select download option best fitting your platform. If you use Linux,\n"
-"your distribution most likely already contains binary packages, so the "
-"easiest\n"
-"way to get it is to install it directly from your distribution "
-"repositories.\n"
-msgstr ""
-"\n"
-"Por favor, selecione a opção de download que melhor se encaixa à sua "
-"plataforma.\n"
-"Se você usa Linux, é muito provável que ela já contenha pacotes binários, "
-"então o jeito mais fácil de obtê-las é instalar diretamente dos repositórios "
-"da sua distribuição.\n"
-
-#: html/downloads/program.html:19
-#, python-format
-msgid ""
-"\n"
-"Download %(program)s\n"
-msgstr ""
-"\n"
-"Baixe %(program)s\n"
-
-#: html/downloads/program.html:25
-#, python-format
-msgid ""
-"\n"
-"Thank you for interest in downloading <a href=\"/%(program_name)s/\">"
-"%(program)s</a>.\n"
-msgstr ""
-"\n"
-"Obrigado pelo interesse em baixar <a href=\"/%(program_name)s/\">"
-"%(program)s</a>.\n"
-
-#: html/downloads/program.html:33
-msgid "Current Releases"
-msgstr "Versões Atuais"
-
-#: html/downloads/programs/gammu-source.html:3
-msgid ""
-"\n"
-"You are downloading Gammu source code. To compile it you need some "
-"development\n"
-"environment for your platform and <a href=\"http://www.cmake.org/\">CMake</"
-"a>\n"
-"tool to configure the sources. There are also some optional requirements "
-"for\n"
-"additional features which are listed in INSTALL file in sources. This file\n"
-"also contains more detailed instructions about compiling Gammu.\n"
-msgstr ""
-"\n"
-"Você está baixando o código-fonte do Gammu. Para compilá-lo você precisa de "
-"algum\n"
-"ambiente de desenvolvimento para sua plataforma e do <a href=\"http://www."
-"cmake.org/\">CMake</a>\n"
-"para configurar as fontes. Existem também alguns requisitos opcionais para\n"
-"funções adicionais que são listadas no arquivo INSTALL em sources. Este "
-"arquivo\n"
-"também contém mais instruções detalhadas sobre a compilação do Gammu.\n"
-
-#: html/downloads/programs/gammu-win32.html:3
-msgid ""
-"\n"
-"You are downloading Gammu binaries for Windows. The files are available as\n"
-"installer (.exe) or just an archive (.zip). The -Minimal variant has "
-"slighly\n"
-"less features compiled in and contains Gammu.dll, which you might use in\n"
-"external programs. There are also python-gammu binaries, which include all\n"
-"needed parts to use python-gammu in your python programs, just choose the\n"
-"version matching Python version you use.\n"
-msgstr ""
-"\n"
-"Você está baixando os binários do Gammu para Windows. Os arquivos estão "
-"disponíveis como\n"
-"instalador (.exe) ou apenas um arquivo (.zip). A variante -Minimal tem um "
-"pouco\n"
-"menos funções compiladas nela e contém o Gammu.dll, que você pode usar em\n"
-"programas externos. Existem também binários python-gammu, que incluem todas "
-"as\n"
-"partes necessárias para usar o python-gammu nos seus programas python, "
-"apenas escolha\n"
-"a versão correspondente a versão Python que você usa.\n"
-
-#: html/downloads/programs/wammu-source.html:3
-msgid ""
-"\n"
-"You are downloading Wammu source code. Before you can run Wammu, you need "
-"to\n"
-"have installed <a href=\"/gammu/\">Gammu with python bindings</a>, <a\n"
-"href=\"http://www.python.org/\">Python</a> and <a\n"
-"href=\"http://wxpython.org/\">wxPython</a>. There are also some optional "
-"requirements for\n"
-"additional features which are listed in INSTALL file in sources. This file\n"
-"also contains more detailed instructions about installing Wammu.\n"
-msgstr ""
-"\n"
-"Você está baixando o código-fonte do Wammu. Antes de você rodar o Wammu, "
-"você precisa\n"
-"ter instalado o <a href=\"/gammu/\">Gammu com bindings python</a>, <a\n"
-"href=\"http://www.python.org/\">Python</a> e o <a\n"
-"href=\"http://wxpython.org/\">wxPython</a>. Também existem alguns requisitos "
-"opcionais\n"
-"para funções adicionais que são listadas no arquivo INSTALL em sources. Este "
-"arquivo\n"
-"também contém mais instruções detalhadas sobre a instalação do Wammu.\n"
-
-#: html/downloads/programs/wammu-win32.html:3
-msgid ""
-"\n"
-"You are downloading wammu binaries for Windows. The files are available as\n"
-"<strong>full installer (-setup.exe)</strong> which is probably the thing you "
-"want to download.\n"
-"If you want to handle all dependencies manually and want to use Python you\n"
-"have installed, you can get just the <strong>Python module\n"
-"(.win32.exe)</strong>.\n"
-msgstr ""
-"\n"
-"Você está baixando os binários do wammu para Windows. Os arquivos estão "
-"disponíveis como\n"
-"<strong>instalador completo(-setup.exe)</strong> que provavelmente é o que "
-"você quer baixar.\n"
-"Se você quer manipular todas as dependências manualmente e quer usar o "
-"Python que\n"
-"você instalou, você pode pegar apenas o <strong>módulo Python\n"
-"(.win32.exe)</strong>.\n"
-
-#: html/downloads/release.html:8
-#, python-format
-msgid ""
-"\n"
-"%(program)s %(version)s\n"
-msgstr ""
-"\n"
-"%(program)s %(version)s\n"
-
-#: html/downloads/release.html:15
-msgid "Changes"
-msgstr "Mudanças"
-
-#: html/downloads/release.html:21
-msgid "Files"
-msgstr "Arquivos"
-
-#: html/downloads/relinfo.html:4
-#, python-format
-msgid ""
-"\n"
-"Released on %(released)s, see <a href=\"%(url)s\">detailed information</a>.\n"
-msgstr ""
-"\n"
-"Lançado em %(released)s, veja a <a href=\"%(url)s\">informação detalhada</"
-"a>.\n"
-
-#: html/downloads/smalldownloads.html:2
-msgid "Source Downloads"
-msgstr "Download de Código-fonte"
-
-#: html/gammu-family.html:4
+#: html/gammu-family.html:8
 msgid ""
 "\n"
 "GUI program to manage contacts, todos, calendar and messages in your phone.\n"
@@ -1698,7 +522,13 @@ msgstr ""
 "Programa Interface Gráfico para gerenciar contatos, tarefas, calendário e "
 "mensagens no celular.\n"
 
-#: html/gammu-family.html:10
+#: html/gammu-family.html:14 html/gammu-family.html.py:28
+#: html/gammu-family.html:42 html/gammu-family.html.py:59
+#: html/gammu-family.html:73
+msgid "View details"
+msgstr ""
+
+#: html/gammu-family.html:22
 msgid ""
 "\n"
 "Command line utility which allows to use all libGammu features.\n"
@@ -1707,15 +537,7 @@ msgstr ""
 "Utilitário de linha de comando que permite usar todos os recursos da "
 "libGammu.\n"
 
-#: html/gammu-family.html:16
-msgid ""
-"\n"
-"Library exporting C API to talk to cell phones.\n"
-msgstr ""
-"\n"
-"API em C para comunicação com telefones celulares.\n"
-
-#: html/gammu-family.html:22
+#: html/gammu-family.html:36
 msgid ""
 "\n"
 "SMS daemon service to receive and send messages automatically.\n"
@@ -1723,7 +545,7 @@ msgstr ""
 "\n"
 "Daemon de SMS para enviar e receber mensagens automaticamente.\n"
 
-#: html/gammu-family.html:28
+#: html/gammu-family.html:53
 msgid ""
 "\n"
 "Python bindings for libGammu, so that you can use it from Python scripts.\n"
@@ -1731,23 +553,14 @@ msgstr ""
 "\n"
 "Ligações Python para libGammu, para utilização com scripts Python.\n"
 
-#: html/gammu-family.html:35
+#: html/gammu-family.html:67
+#, fuzzy
 msgid ""
 "\n"
-"Third party open source web-based SMS (Short Message Service) management "
-"which uses <a href=\"/smsd/\">Gammu SMSD</a>.\n"
+"Library exporting all Gammu functionality for use in C programs.\n"
 msgstr ""
 "\n"
-"Open source de terceiros para Gerenciamento de SMS através de Interface web-"
-"based (usando Navegador), o qual utiliza <a\n"
-"href=\"/smsd/\">SMSD Gammu</a>.\n"
-
-#: html/gammu-family.html:44
-msgid ""
-"Third party open source Node.JS client for <a href=\"/smsd/\">Gammu SMSD</a>."
-msgstr ""
-"Open source de terceiros, cliente Node.JS para <a href=\"/smsd/\">Gammu "
-"SMSD</a>."
+"API em C para comunicação com telefones celulares.\n"
 
 #: html/gammu-features.html:3
 msgid ""
@@ -1815,12 +628,7 @@ msgstr ""
 "funcionam como \n"
 "dispositivos de armazenamento USB e não são acessíveis através do Gammu)\n"
 
-#: html/gammu.html:11 html/libgammu.html:7 html/python-gammu.html:13
-#: html/smsd.html:13 html/wammu.html:11
-msgid "More information"
-msgstr "Mais informações"
-
-#: html/gammu.html:22
+#: html/gammu.html:14
 msgid ""
 "\n"
 "Gammu is the name of the project as well as name of command line utility,\n"
@@ -1835,7 +643,7 @@ msgstr ""
 "baseado\n"
 "na <a href=\"/libgammu/\">libGammu</a>.\n"
 
-#: html/gammu.html:30
+#: html/gammu.html:22
 msgid ""
 "\n"
 "Gammu command line utility provides access to wide range of phone features,\n"
@@ -1854,7 +662,7 @@ msgstr ""
 "com \n"
 "diversos aparelhos. Geralmente as seguintes funções são suportadas:\n"
 
-#: html/gammu.html:41
+#: html/gammu.html:33
 msgid ""
 "\n"
 "This project has originally forked from Gnokii and up to version 0.58 has "
@@ -1874,7 +682,7 @@ msgstr ""
 "existência \n"
 "do planeta Gammu no livro \"Heretics of Dune\" escrito por Frank Herbert.\n"
 
-#: html/gammu.html:50
+#: html/gammu.html:42
 msgid ""
 "\n"
 "The Gammu package does not include just this binary, but as well <a\n"
@@ -1891,7 +699,7 @@ msgstr ""
 "bindings</a> também que você pode usar para desenvolver sua própria\n"
 "aplicação de acesso a telefone móveis.\n"
 
-#: html/gammu.html:63
+#: html/gammu.html:55
 msgid ""
 "\n"
 "Just download <a href=\"/download/gammu/\">Gammu</a> for your platform and "
@@ -1902,7 +710,7 @@ msgstr ""
 "Apenas baixe <a href=\"/download/gammu/\">Gammu</a> para sua plataforma e "
 "use-o.\n"
 
-#: html/gammu.html:71
+#: html/gammu.html:63
 msgid ""
 "\n"
 "The best documentation is available in <a href=\"/docs/manual/\">The Gammu "
@@ -1919,7 +727,7 @@ msgstr ""
 "principal)</a> ou <a href=\"/docs/manual/config/\">gammu-rc (o\n"
 "arquivo de configuração)</a>.\n"
 
-#: html/gammu.html:80 html/wammu.html:66
+#: html/gammu.html:72 html/wammu.html:58
 msgid ""
 "\n"
 "Check also <a href=\"/docs/manual/faq/\">Frequently Asked Questions</a>.\n"
@@ -1928,11 +736,16 @@ msgstr ""
 "Veja também as <a href=\"/docs/manual/faq/\">Frequently Asked Questions</"
 "a>.\n"
 
+#: html/gammu.html:77 html/libgammu.html:55 html/python-gammu.html:76
+#: html/smsd.html:80 html/wammu.html:63
+msgid "More information"
+msgstr "Mais informações"
+
 #: html/index.html:4
 msgid "Wammu and Gammu"
 msgstr "Wammu e Gammu"
 
-#: html/index.html:22
+#: html/index.html:11
 msgid ""
 "\n"
 "<a href=\"/wammu/\">Wammu</a> is a program to manage data in your cell phone "
@@ -1954,39 +767,12 @@ msgstr ""
 "Siemens, Huawei\n"
 "e outros).\n"
 
-#: html/index.html:32
-msgid ""
-"\n"
-"Lot of people contribute to Gammu, you can see the major contributors on <a\n"
-"href=\"/authors/\">separate page</a>. If you want to join us, please check "
-"our\n"
-"list of <a href=\"/contribute/wanted/\"><strong>wanted skills</strong></a>, "
-"to\n"
-"get an idea who we are currently looking for.\n"
-msgstr ""
-"\n"
-"Muitas pessoas contribuem com o Gammu, e você pode ver os maiores \n"
-"contribuidores em uma <a href=\"/authors/\">página separada</a>. \n"
-"Se você quiser se unir a nós, favor veja nossa lista de <a \n"
-"href=\"/contribute/wanted/\"><strong>habilidades desejadas</strong></a>, \n"
-"para ter uma ideia de quem nós estamos procurando atualmente.\n"
+#: html/libgammu.html:4 html/libgammu.html.py:7
+#: html/contribute/translate.html:56
+msgid "libGammu"
+msgstr "libGammu"
 
-#: html/index.html:41
-msgid "Gammu family"
-msgstr "Família Gammu"
-
-#: html/index.html:43
-msgid ""
-"\n"
-"Gammu is now not only a single program but there is lot of useful tools\n"
-"sharing same library.\n"
-msgstr ""
-"\n"
-"Atualmente o Gammu não é apenas um programa isolado, mas uma série de "
-"ferramentas úteis \n"
-"que compartilham a mesma biblioteca.\n"
-
-#: html/libgammu.html:18
+#: html/libgammu.html:10
 msgid ""
 "\n"
 "libGammu is core library of Gammu project. It provides abstraction layer to\n"
@@ -2001,7 +787,7 @@ msgstr ""
 "Samsung, Siemens, Huawei entre outros). Usando esta biblioteca,\n"
 "você pode conversar com qualquer telefone usando a API padrão.\n"
 
-#: html/libgammu.html:28
+#: html/libgammu.html:20
 msgid ""
 "\n"
 "The API exposes all functionality you can do with the phone and among "
@@ -2012,7 +798,7 @@ msgstr ""
 "A API expõe todas a funcionalidade que você pode fazer com \n"
 "o telefone e ela fornece, entre outras, as seguintes funções:\n"
 
-#: html/libgammu.html:37
+#: html/libgammu.html:29
 msgid ""
 "\n"
 "This library is used in all other tools like <a href=\"/gammu/\">Gammu</a> "
@@ -2024,7 +810,7 @@ msgstr ""
 "como o <a href=\"/gammu/\">Gammu</a> ou o <a href=\"/smsd/\">Gammu SMS "
 "Daemon</a>.\n"
 
-#: html/libgammu.html:47
+#: html/libgammu.html:39
 msgid ""
 "\n"
 "The library is obviously distributed as part of <a href=\"/gammu/\">Gammu</"
@@ -2036,7 +822,7 @@ msgstr ""
 "\">Gammu</a> então para\n"
 "baixá-la apenas baixe o <a href=\"/download/gammu/\">Gammu</a>.\n"
 
-#: html/libgammu.html:56
+#: html/libgammu.html:48
 msgid ""
 "\n"
 "<a href=\"/docs/devel/api/\">API documentation</a> is available as well as "
@@ -2166,456 +952,16 @@ msgstr ""
 "Todos os produtos mencionados nestas páginas são marcas\n"
 "registradas de seus respectivos donos, aonde for apropriado.\n"
 
-#: html/links/index.html:4 html/links/index.html.py:7
-msgid "Third Party Applications using Gammu"
-msgstr "Aplicações de Terceiros usando o Gammu"
-
-#: html/links/index.html:22
-msgid "Website:"
-msgstr "Site:"
-
-#: html/news/contrib_index.html:4 html/news/contrib_index.html.py:6
-msgid "Third Party News"
-msgstr "Notícias de Terceiros"
-
-#: html/news/entry.html:4 html/news/index.html:4 html/news/index.html.py:25
-#: news/feeds.py:9
-msgid "Wammu and Gammu News"
-msgstr "Notícias do Wammu e Gammu"
-
-#: html/news/gammu_index.html:4 html/news/gammu_index.html.py:6
-msgid "Gammu News"
-msgstr "Notícias do Gammu"
-
-#: html/news/index.html:7
-msgid "Feeds"
-msgstr "Feeds"
-
-#: html/news/index.html:9 html/phonedb/index.html:31
-msgid "RSS"
-msgstr "RSS"
-
-#: html/news/index.html:10 html/phonedb/index.html:32
-msgid "Atom"
-msgstr "Atom"
-
-#: html/news/index.html:11
-msgid "Twitter RSS"
-msgstr "Twitter RSS"
-
-#: html/news/index.html:13 html/screenshots/index.html:7
-msgid "Categories"
-msgstr "Categorias"
-
-#: html/news/index.html:15
-msgid "All news"
-msgstr "Todas as notícias"
-
-#: html/news/published.html:4
-#, python-format
-msgid ""
-"\n"
-"Published on %(date)s by <a href=\"mailto:%(email)s\">%(author)s</a>\n"
-msgstr ""
-"\n"
-"Publicado em %(date)s por <a href=\"mailto:%(email)s\">%(author)s</a>\n"
-
-#: html/news/wammu_index.html:4 html/news/wammu_index.html.py:6
-msgid "Wammu News"
-msgstr "Notícias do Wammu"
-
-#: html/phonedb/body.html:3
-msgid "Supported Features"
-msgstr "Funções Suportadas"
-
-#: html/phonedb/body.html:13
-msgid "No features reported as working!"
-msgstr "Nenhuma função declarada em funcionamento!"
-
-#: html/phonedb/body.html:27
-msgid "Phone is reported not to be supported!"
-msgstr "O telefone é relatado como não suportado!"
-
-#: html/phonedb/body.html:34
-msgid "Reporter Note"
-msgstr "Nota do Relator"
-
-#: html/phonedb/index.html:4 html/phonedb/new.html:4 html/phonedb/phone.html:4
-#: html/phonedb/search.html:4
-msgid ""
-"Database of supported phones in Gammu and Wammu, the software for managing "
-"GSM cell phones."
-msgstr ""
-"Banco de dados de telefones suportados no Gammu e Wammu, o software para "
-"gerenciamento de telefones celulares GSM."
-
-#: html/phonedb/index.html:5 html/phonedb/index.html.py:48
-#: html/phonedb/new.html:5 html/phonedb/phone.html:6
-#: html/phonedb/search.html:5 html/phonedb/vendor.html:6
-msgid "Gammu Phone Database "
-msgstr "Banco de dados de Telefones do Gammu "
-
-#: html/phonedb/index.html:11 html/phonedb/index.html.py:24
-#: html/phonedb/new.html:50 html/phonedb/search.html:22
-#: html/tools/pdudecode.html:20 html/tools/pduencode.html:20
-msgid "Go"
-msgstr "Ir"
-
-#: html/phonedb/index.html:13
-msgid "Feature Search"
-msgstr "Função de Pesquisa"
-
-#: html/phonedb/index.html:33
-msgid "CSV"
-msgstr "CSV"
-
-#: html/phonedb/index.html:36
-msgid "Sponsors"
-msgstr "Patrocinadores"
-
-#: html/phonedb/index.html:51
-msgid ""
-"\n"
-"This page tries to collect list of phones supported by <a href=\"/libgammu/"
-"\">Gammu library</a>. To add model browse to manufacturer page, look whether "
-"model hasn't been entered yet and enter new model.\n"
-"You can find more information about mobile phones on <a\n"
-"href=\"http://tuxmobil.org/phones_linux.html\">TuxMobil</a>.\n"
-msgstr ""
-"\n"
-"Esta página tenta coletar a lista de telefones suportados pela <a href=\"/"
-"libgammu/\">biblioteca Gammu</a>. Para adicionar um modelo navegue pela "
-"página do fabricante, olhe qual modelo não foi inserido ainda e informe o "
-"novo modelo.\n"
-"Você pode encontrar mais informações sobre telefones móveis na <a\n"
-"href=\"http://tuxmobil.org/phones_linux.html\">TuxMobil</a>.\n"
-
-#: html/phonedb/index.html:58
-msgid ""
-"\n"
-"This list is filled in by users and thus there can be no warranty\n"
-"whether entered information is correct and accurate. If author decided to\n"
-"publish his email, you might consider asking him for details. Also <a\n"
-"href=\"https://lists.sourceforge.net/lists/listinfo/gammu-users\">gammu-"
-"users\n"
-"mailing list</a> is open to questions about supported phones.\n"
-msgstr ""
-"\n"
-"Esta lista é preenchida pelos usuários e portanto não pode haver garantia\n"
-"que as informações inseridas são corretas e precisas. Se o autor decidiu\n"
-"publicar o email dele, você pode considerar perguntá-lo por detalhes. Além "
-"disso, a\n"
-"<a href=\"https://lists.sourceforge.net/lists/listinfo/gammu-users\">lista "
-"de emails\n"
-"dos usuários gammu</a> está aberta para perguntas sobre os telefones "
-"suportados.\n"
-
-#: html/phonedb/index.html:67
-msgid ""
-"You can find general information about <a href=\"/docs/manual/faq/config.html"
-"\">configuring Gammu in FAQ</a>."
-msgstr ""
-"Você pode encontrar informações gerais sobre <a href=\"/docs/manual/faq/"
-"config.html\">configuração do Gammu na FAQ</a>."
-
-#: html/phonedb/index.html:70
-msgid ""
-"\n"
-"As this list is updated by users, you are welcome to <strong><a href=\"/"
-"phones/new/\">add new records</a></strong>.\n"
-msgstr ""
-"\n"
-"Como essa lista é atualizada pelos usuários, você é bem-vindo a <strong><a "
-"href=\"/phones/new/\">adicionar novos registros</a></strong>.\n"
-
-#: html/phonedb/index.html:75
-msgid ""
-"\n"
-"Generally any phone capable of AT commands or IrMC should be supported. "
-"Also\n"
-"any Nokia phone using Nokia OS should work. Symbian phones are poorly\n"
-"supported, for models with Symbian 9.0 and older you can install gnapplet "
-"to\n"
-"phone to get some functionality, newer ones do not have support so far.\n"
-msgstr ""
-"\n"
-"Geralmente qualquer telefone capaz de comandos AT ou IrMC deveriam ser "
-"suportados.\n"
-"Além disso, qualquer telefone usando o Nokia OS deve funcionar. Telefones "
-"Symbian mal são\n"
-"suportados, para modelos com Symbian 9.0 ou mais antigos você pode instalar "
-"o gnapplet no\n"
-"telefone para ter alguma funcionalidade, os mais novos não tem suporte até "
-"agora.\n"
-
-#: html/phonedb/index.html:83
-msgid "Manufacturers"
-msgstr "Fabricantes"
-
-#: html/phonedb/index.html:92
-msgid "Recently Added Phones"
-msgstr "Telefones Recentemente Adicionados"
-
-#: html/phonedb/index.html:95
-msgid "Phone Records Summary"
-msgstr "Sumário de Registro de Telefones"
-
-#: html/phonedb/index.html:99
-msgid ""
-"\n"
-"On following chart, you can see how number of records in phone database\n"
-"evolves over time. The rough step at the beginning is caused by absence of\n"
-"timestamp data.\n"
-msgstr ""
-"\n"
-"No gráfico a seguir, você pode ver como o número de registros no banco de "
-"dados\n"
-"de telefones evolui com o tempo. O passo mais difícil a princípio é causado "
-"pela\n"
-"ausência de dados de data e hora.\n"
-
-#: html/phonedb/list.html:5
-msgid "Name"
-msgstr "Nome"
-
-#: html/phonedb/list.html:5
-msgid "Connection"
-msgstr "Conexão"
-
-#: html/phonedb/list.html:5
-msgid "Supported features"
-msgstr "Recursos suportados"
-
-#: html/phonedb/list.html:22
-msgid "Not supported"
-msgstr "Não suportado"
-
-#: html/phonedb/new.html:5 html/phonedb/new.html.py:16
-msgid "Create New Record"
-msgstr "Criar Novo Registro"
-
-#: html/phonedb/new.html:8 html/phonedb/phone.html:9
-#: html/phonedb/search.html:8 html/phonedb/vendor.html:9
-msgid "Navigation"
-msgstr "Navegação"
-
-#: html/phonedb/new.html:19
-msgid ""
-"\n"
-"Thank you for improving Gammu phones database, but please note that this is\n"
-"not bug tracking system. Should you have any problems with Gammu, please\n"
-"<a href=\"/support/bugs/\">report them in the bug tracker</a>.\n"
-msgstr ""
-"\n"
-"Obrigado por melhorar o banco de dados de telefones do Gammu, mas favor "
-"saiba que isso\n"
-"não é um sistema de rastreio de bugs. Se você tiver algum problema com o "
-"Gammu, favor\n"
-"<a href=\"/support/bugs/\">informe-os no rastreador de bugs</a>.\n"
-
-#: html/phonedb/new.html:27
-msgid ""
-"\n"
-"Email and name fields are voluntary, you can choose how (and whether) the\n"
-"email will be shown to visitors. Email can be used by Gammu developers to\n"
-"contact you in case they want to test something with your phone or want to\n"
-"clarify some things you have entered.\n"
-msgstr ""
-"\n"
-"Os campos de email e nome são voluntários, você pode escolher como (e se) o\n"
-"email será exibido para visitantes. Email pode ser usado pelos "
-"desenvolvedores do Gammu\n"
-"para contatá-lo caso eles queiram testar algo com seu telefone ou queiram\n"
-"esclarecer algumas coisas que você inseriu.\n"
-
-#: html/phonedb/new.html:40
-msgid "Please enter text 'nospam':"
-msgstr "Favor digite o texto \"nospam\":"
-
-#: html/phonedb/phone.html:13 html/phonedb/vendor.html:12
-msgid "Add new record"
-msgstr "Adicionar novo registro"
-
-#: html/phonedb/phone.html:15
-msgid "Edit"
-msgstr "Editar"
-
-#: html/phonedb/phone.html:17
-msgid "Delete"
-msgstr "Deletar"
-
-#: html/phonedb/phone.html:20
-msgid "Approve"
-msgstr "Aprovar"
-
-#: html/phonedb/phone.html:24
-msgid "Similar Phones"
-msgstr "Telefones Similares"
-
-#: html/phonedb/phone.html:35
-msgid "None found."
-msgstr "Nenhum encontrado."
-
-#: html/phonedb/phone.html:48
-msgid ""
-"\n"
-"This record has been rejected for some reasons, you might want to check "
-"other\n"
-"records for same model (you can see them on right side).\n"
-msgstr ""
-"\n"
-"Este registro foi rejeitado por algum motivo, você pode querer olhar outros\n"
-"registros para o mesmo modelo (você pode vê-los no lado direito).\n"
-
-#: html/phonedb/phone.html:56
-msgid ""
-"\n"
-"This record has not been approved yet. This means that it might contain "
-"false\n"
-"information or there are better records for the same model (you can see "
-"them\n"
-"on right side).\n"
-msgstr ""
-"\n"
-"Este registro não foi aprovado ainda. Isso quer dizer que ele pode conter\n"
-"informações falsas ou existem registros melhores para o mesmo modelo (você "
-"pode\n"
-"vê-los no lado direito).\n"
-
-#: html/phonedb/phone.html:65
-#, python-format
-msgid ""
-"\n"
-"If this record contains wrong information, please <a\n"
-"href=\"/phones/new/?vendor=%(vendor)s&amp;name=%(phone)s\">add new record</"
-"a>\n"
-"with correct information and the record will be replaced after review.\n"
-"All records were filled in by users and there is no guarantee that they are\n"
-"correct.\n"
-msgstr ""
-"\n"
-"Se este registro contém informações erradas, favor <a\n"
-"href=\"/phones/new/?vendor=%(vendor)s&amp;name=%(phone)s\">adicione um novo "
-"registro</a>\n"
-"com as informações corretas e o registro será substituído após revisão.\n"
-"Todos os registros foram preenchidos por usuários e não há garantia de que\n"
-"eles estão corretos.\n"
-
-#: html/phonedb/phone.html:75
-msgid ""
-"\n"
-"More information about phone might be available on following sites:\n"
-msgstr ""
-"\n"
-"Mais informações sobre o telefone podem estar disponíveis nos sites a "
-"seguir:\n"
-
-#: html/phonedb/phone.html:88
-msgid "About entry"
-msgstr "Sobre"
-
-#: html/phonedb/phone.html:91
-#, python-format
-msgid ""
-"\n"
-"Created by %(author)s on %(created)s.\n"
-msgstr ""
-"\n"
-"Criado por %(author)s em %(created)s.\n"
-
-#: html/phonedb/phone.html:97
-#, python-format
-msgid ""
-"\n"
-"Created on %(created)s.\n"
-msgstr ""
-"\n"
-"Criado em %(created)s.\n"
-
-#: html/phonedb/phone.html:104
-#, python-format
-msgid ""
-"\n"
-"Tested with Gammu %(version)s.\n"
-msgstr ""
-"\n"
-"Testado com o Gammu %(version)s.\n"
-
-#: html/phonedb/search.html:5 html/phonedb/search.html.py:16
-msgid "Search Results"
-msgstr "Resultados da Pesquisa"
-
-#: html/phonedb/search.html:26
-#, python-format
-msgid ""
-"\n"
-"Found %(count)s results matching your query.\n"
-msgstr ""
-"\n"
-"Foram encontrados %(count)s resultados para sua pesquisa.\n"
-
-#: html/phonedb/vendor.html:4
-#, python-format
-msgid ""
-"Database of supported phones from %(vendor_name)s in Gammu and Wammu, the "
-"software for managing GSM cell phones."
-msgstr ""
-"Banco de dados de telefones suportados da %(vendor_name)s em Gammu e Wammu, "
-"o software de gerenciamento de telefones celulares GSM."
-
-#: html/phonedb/vendor.html:26
-#, python-format
-msgid ""
-"\n"
-"Information about phones from this manufacturer is also available on <a\n"
-"href=\"http://tuxmobil.org/phones_survey_%(tuxurl)s.html\">TuxMobil</a>.\n"
-msgstr ""
-"\n"
-"Informações sobre os telefones deste fabricante também estão disponíveis na "
-"<a\n"
-"href=\"http://tuxmobil.org/phones_survey_%(tuxurl)s.html\">TuxMobil</a>.\n"
-
-#: html/phonedb/vendor.html:35
-#, python-format
-msgid ""
-"\n"
-"There is currently %(count)s approved phone records from this vendor.\n"
-msgstr ""
-"\n"
-"Existem atualmente %(count)s registros de telefones aprovados deste "
-"fabricante.\n"
-
-#: html/phonedb/vendor.html:39
-msgid ""
-"\n"
-"There is currently none phone record from this vendor!\n"
-msgstr ""
-"\n"
-"Não há atualmente nenhum registro de telefone deste fabricante!\n"
-
-#: html/phonedb/vendor.html:44
-#, python-format
-msgid ""
-"\n"
-"To change existing entries, simply <a href=\"/phones/new/?vendor=%(slug)s"
-"\">add new one</a>, they will be reviewed and the\n"
-"old ones will get deleted eventually.\n"
-msgstr ""
-"\n"
-"Para mudar os registros existentes, simplesmente <a href=\"/phones/new/?"
-"vendor=%(slug)s\">adicione um novo</a>, eles serão revisados e os mais "
-"antigos serão eventualmente deletados.\n"
-
 #: html/python-gammu.html:4
 msgid "Python bindings form Gammu, the software for managing GSM cell phones."
 msgstr ""
 "Python bindings form Gammu, o software para gerenciamento de celulares GSM."
 
-#: html/python-gammu.html:6 html/python-gammu.html.py:22
+#: html/python-gammu.html:6 html/python-gammu.html.py:13
 msgid "Python bindings for Gammu"
 msgstr "Bindings Python para Gammu"
 
-#: html/python-gammu.html:25
+#: html/python-gammu.html:16
 msgid ""
 "\n"
 "Gammu also includes Python bindings which allow you to use (most) of <a\n"
@@ -2628,7 +974,7 @@ msgstr ""
 "href=\"/libgammu/\">Gammu</a> funcionalidade da língua <a\n"
 "href=\"http://python.org\">Python</a>.\n"
 
-#: html/python-gammu.html:36
+#: html/python-gammu.html:27
 msgid ""
 "\n"
 "Python module is distributed as part of <a href=\"/gammu/\">Gammu</a> so to "
@@ -2647,11 +993,11 @@ msgstr ""
 "na sua\n"
 "distribuição, tente procurar por algo como <code>python-gammu</code>.\n"
 
-#: html/python-gammu.html:44
+#: html/python-gammu.html:35
 msgid "Example"
 msgstr "Exemplo"
 
-#: html/python-gammu.html:47
+#: html/python-gammu.html:38
 msgid ""
 "\n"
 "Using python-gammu is quite simple, for example sending of the text "
@@ -2662,7 +1008,7 @@ msgstr ""
 "Usar o python-gammu é bem simples, por exemplo o envio de mensagem\n"
 "de texto pode ser feito pelo snippet a seguir:\n"
 
-#: html/python-gammu.html:71
+#: html/python-gammu.html:62
 msgid ""
 "\n"
 "<a href=\"/docs/devel/python/\">API documentation</a> is available, but you\n"
@@ -2677,7 +1023,7 @@ msgstr ""
 "href=\"/docs/devel/\">página da documentação do desenvolvedor</a> para mais "
 "detalhes.\n"
 
-#: html/python-gammu.html:80
+#: html/python-gammu.html:71
 msgid ""
 "\n"
 "Check also <a href=\"/docs/manual/faq/python.html\">Frequently Asked "
@@ -2686,46 +1032,26 @@ msgstr ""
 "\n"
 "Olhe também a <a href=\"/docs/manual/faq/python.html\">FAQ</a>.\n"
 
-#: html/s60.html:4 html/s60.html.py:11
+#: html/s60.html:4 html/s60.html.py:7
 msgid "Series60 remote applet installation"
 msgstr "Instalação do applet remoto do Series60"
 
-#: html/s60.html:13
+#: html/s60.html:9
 msgid "To install the applet to your phone, download following files:"
 msgstr "Para instalar o applet no seu telefone, baixe os arquivos a seguir:"
 
-#: html/s60.html:21
+#: html/s60.html:17
 msgid "Support libraries required to be installed on older phones:"
 msgstr ""
 "Bibliotecas de suporte que devem estar instaladas nos telefones mais antigos:"
 
-#: html/s60.html:29
+#: html/s60.html:25
 msgid ""
 "See <a href=\"http://wammu.eu/docs/manual/protocol/s60.html\">documentation</"
 "a> for more information."
 msgstr ""
 "Veja a <a href=\"http://wammu.eu/docs/manual/protocol/s60.html"
 "\">documentação</a> para mais informações."
-
-#: html/screenshots/contrib_index.html:4 html/screenshots/contrib_index.html:6
-msgid "Third Party Screenshots"
-msgstr "Screenshots de Terceiros"
-
-#: html/screenshots/gammu_index.html:4 html/screenshots/gammu_index.html:6
-msgid "Gammu Screenshots"
-msgstr "Screenshots do Gammu"
-
-#: html/screenshots/index.html:4 html/screenshots/index.html.py:19
-msgid "Wammu and Gammu Screenshots"
-msgstr "Screenshots do Wammu e do Gammu"
-
-#: html/screenshots/index.html:9
-msgid "All screenshots"
-msgstr "Todos os screenshots"
-
-#: html/screenshots/wammu_index.html:4 html/screenshots/wammu_index.html:6
-msgid "Wammu Screenshots"
-msgstr "Screenshots do Wammu"
 
 #: html/search.html:4 html/search.html.py:7
 msgid "Wammu and Gammu Search"
@@ -2765,20 +1091,16 @@ msgstr ""
 msgid "Latest News"
 msgstr "Últimas Notícias"
 
-#: html/sidebars/common.html:4
-msgid "How to contribute"
-msgstr "Como contribuir"
-
 #: html/smsd.html:4
 msgid "Gammu SMS Daemon, the software for mass processing SMS messages."
 msgstr ""
 "Daemon Gammu SMS, o software de processamento em massa de mensagens SMS."
 
-#: html/smsd.html:6 html/smsd.html.py:21
+#: html/smsd.html:6 html/smsd.html.py:13
 msgid "Gammu SMSD"
 msgstr "Gammu SMSD"
 
-#: html/smsd.html:24
+#: html/smsd.html:16
 msgid ""
 "\n"
 "Gammu SMS Daemon is a program that periodically scans GSM modem for "
@@ -2797,7 +1119,7 @@ msgstr ""
 "local. Ele é a ferramenta perfeita para gerenciar grandes quantidades de\n"
 "mensagens recebidas ou enviadas e automaticamente processá-las.\n"
 
-#: html/smsd.html:33
+#: html/smsd.html:25
 msgid ""
 "\n"
 "You can currently store received messages in files or in various databases.\n"
@@ -2822,7 +1144,7 @@ msgstr ""
 "backend não\n"
 "está atualmente disponível nos builds do Windows).\n"
 
-#: html/smsd.html:44
+#: html/smsd.html:36
 msgid ""
 "\n"
 "The package includes also tool <code>gammu-smsd-inject</code> which will "
@@ -2836,7 +1158,7 @@ msgstr ""
 "a criar mensagens de texto longas e a <code>gammu-smsd-monitor</code> que\n"
 "lhe permitirá monitorar o status atual do SMS Daemon do telefone.\n"
 
-#: html/smsd.html:52
+#: html/smsd.html:44
 msgid ""
 "\n"
 "For managing messages in the database, you can use <a\n"
@@ -2856,7 +1178,7 @@ msgstr ""
 "\">screenshots</a>\n"
 "para ver como ele se parece.\n"
 
-#: html/smsd.html:65
+#: html/smsd.html:57
 msgid ""
 "\n"
 "SMS Daemon is distributed as part of <a href=\"/gammu/\">Gammu</a> so to "
@@ -2874,7 +1196,7 @@ msgstr ""
 "binário, o daemon pode estar incluído em um pacote binário separado na sua\n"
 "distribuição, tente procurar por algo tipo <code>gammu-smsd</code>.\n"
 
-#: html/smsd.html:75
+#: html/smsd.html:67
 msgid ""
 "\n"
 "There is <a href=\"/docs/manual/smsd/\">SMS Daemon section in Gammu Manual</"
@@ -2891,7 +1213,7 @@ msgstr ""
 "no <a href=\"/docs/manual/\">manual Gammu</a> que é distribuído com o "
 "programa.\n"
 
-#: html/smsd.html:83
+#: html/smsd.html:75
 msgid ""
 "\n"
 "Check also <a href=\"/docs/manual/faq/smsd.html\">Frequently Asked "
@@ -2900,807 +1222,7 @@ msgstr ""
 "\n"
 "Olhe também a <a href=\"/docs/manual/faq/smsd.html\">FAQ</a>.\n"
 
-#: html/support/bugs.html:4 html/support/bugs.html.py:12
-msgid "Reporting Bugs in Wammu and Gammu"
-msgstr "Relatar bugs no Wammu e Gammu"
-
-#: html/support/bugs.html:15
-msgid ""
-"\n"
-"Use <a href=\"https://github.com/gammu/gammu/issues\">bug tracker</a> to "
-"report a bug or a\n"
-"feature requests. Please take care that you include all information "
-"necessary\n"
-"for the developer to investigate the problem. The most important things to\n"
-"include are:\n"
-msgstr ""
-"\n"
-"Use o <a href=\"https://github.com/gammu/gammu/issues\">rastreador de bugs</"
-"a> para relatar um bug ou\n"
-"um pedido de função. Favor cuide para que você inclua toda a informação "
-"necessária\n"
-"para o desenvolvedor investigar o problema. As coisas mais importantes a "
-"serem\n"
-"incluídas são:\n"
-
-#: html/support/bugs.html:25
-msgid ""
-"\n"
-"<strong>Phone information</strong> such as manufacturer and model are really "
-"necessary.\n"
-msgstr ""
-"\n"
-"<strong>Informação do telefone</strong> como fabricante e modelo são muito "
-"necessárias.\n"
-
-#: html/support/bugs.html:30
-msgid ""
-"\n"
-"Information about your <strong>operating system</strong> and it's version, "
-"do you use Windows, some Linux\n"
-"distribution, Mac OS X, BSD?\n"
-msgstr ""
-"\n"
-"Informações sobre seu <strong>sistema operacional</strong> e sua versão, "
-"você usa Windows, alguma\n"
-"distribuição do Linux, Mac OS X, BSD?\n"
-
-#: html/support/bugs.html:36
-msgid ""
-"\n"
-"Configuration you use, you can just include Gammu <strong>configuration\n"
-"file</strong>.\n"
-msgstr ""
-"\n"
-"Configuração que você usa, você pode simplesmente incluir o\n"
-"<strong>arquivo de configuração do Gammu</strong>.\n"
-
-#: html/support/bugs.html:42
-msgid ""
-"\n"
-"<strong>Debugging log</strong> of the communication, please see bellow how "
-"to obtain that.\n"
-msgstr ""
-"\n"
-"<strong>Debugar o log</strong> da comunicação, favor olhe abaixo como obter "
-"isso.\n"
-
-#: html/support/bugs.html:48
-msgid "Obtaining Debugging Log"
-msgstr "Obter o Debug de Log"
-
-#: html/support/bugs.html:51
-msgid ""
-"\n"
-"Debugging log contains transcription of communication between Gammu and "
-"your\n"
-"phone. As such it might contain your private data. If it is the case or you\n"
-"are not sure, you should mark the bug private, so that only developers are\n"
-"allowed to see the data in it, but it is not publicly accessible as other "
-"bug\n"
-"reports.\n"
-msgstr ""
-"\n"
-"Debug do log contém a transcrição da comunicação entre o Gammu e seu "
-"telefone.\n"
-"Assim ele pode conter seus dados privados. Se este for o caso ou você não "
-"tem\n"
-"certeza, você deve marcar este bug como privado, para que apenas os "
-"desenvolvedores\n"
-"tenham permissão de ver os dados dele, mas ele não será publicamente "
-"acessível como\n"
-"os outros relatórios de bug.\n"
-
-#: html/support/bugs.html:61
-msgid ""
-"\n"
-"To make Gammu generate debug log, you need to tell it to do so. It is "
-"possible\n"
-"either by command line (<code>gammu --debug textalldate --debug-file\n"
-"/tmp/gammu.log identify</code>) or using configuration file:\n"
-msgstr ""
-"\n"
-"Para fazer o Gammu gerar o log de debug, você precisa mandá-lo fazer isso.\n"
-"É possível tanto por linha de comando (<code>gammu --debug textalldate --"
-"debug-file\n"
-"/tmp/gammu.log identify</code>) qunato pelo arquivo de configuração:\n"
-
-#: html/support/bugs.html:77
-msgid ""
-"\n"
-"Wammu automatically creates debugging log in temporary directory\n"
-"(<code>/tmp</code> on Unix systems or Windows it is usually placed under\n"
-"<code>Application Data</code> folder in your profile), where it is kept in\n"
-"case Wammu has crashed. You can also save the current debug log while "
-"running\n"
-"Wammu from Help menu.\n"
-msgstr ""
-"\n"
-"O Wammu cria automaticamente o log de debug no diretório temporário\n"
-"(<code>/tmp</code> nos sistemas Unix ou Windows ele é normalmente colocado "
-"dentro\n"
-"da pasta <code>Application Data</code> no seu perfil), onde ele é guardado "
-"caso\n"
-"o Wammu tenha parado de funcionar. Você também pode salvar o log de debug "
-"atual\n"
-"durante a execução do Wammu pelo menu de Ajuda.\n"
-
-#: html/support/bugs.html:87
-msgid ""
-"\n"
-"Gammu SMSD logging is configured in more levels, to include all messages, "
-"set\n"
-"<code>debuglevel</code> to 255:\n"
-msgstr ""
-"\n"
-"O log SMSD do Gammu é configurado em mais nívels, para incluir todas as "
-"mensagens\n"
-"defina <code>debuglevel</code> para 255:\n"
-
-#: html/support/bugs.html:99
-msgid "Troubleshooting Windows Service"
-msgstr "Solução de problemas do Windows Service"
-
-#: html/support/bugs.html:102
-msgid ""
-"\n"
-"If Gammu fails to start as a Windows service (you will usually get \"Error\n"
-"1053: The service did not respond to the start or control request in a "
-"timely\n"
-"fashion\"), first check your SMSD logs. If they do not contain any useful "
-"hint,\n"
-"try starting SMSD manually with exactly same parameters as you installed "
-"the\n"
-"service (without -i). You should also check if you pass all paths as "
-"absolute\n"
-"(eg. path to configuraiton file).\n"
-msgstr ""
-"\n"
-"Se o Gammu falhar em iniciar como um serviço do Windows (você normalmente "
-"terá o \"Erro\n"
-"1053: o serviço não respondeu ao início ou pedido de controle em período "
-"hábil\"),\n"
-"primeiro veja seus logs do SMSD. Se eles não conterem nenhuma dica útil,\n"
-"tente iniciar o SMSD manualmente com exatamente os mesmos parâmetros que "
-"você\n"
-"instalou o serviço (sem -i). Você também deveria olhar se você passou todos "
-"os caminhos\n"
-"absolutos (ex: caminho para o arquivo de configuração).\n"
-
-#: html/support/bugs.html:113
-msgid ""
-"\n"
-"For example the command line can look like:\n"
-msgstr ""
-"\n"
-"Por exemplo, a linha de comando pode parecer:\n"
-
-#: html/support/bugs.html:123
-msgid ""
-"\n"
-"You now should be able to get errors from SMSD even if it fails to start as "
-"a\n"
-"service.\n"
-msgstr ""
-"\n"
-"Agora você deveria ser capaz de receber erros do SMSD mesmo se ele\n"
-"falhar em iniciar como um serviço.\n"
-
-#: html/support/buy.html:4 html/support/buy.html.py:12
-msgid "Commercial Support for Wammu and Gammu"
-msgstr "Suporte Comercial para Wammu e Gammu"
-
-#: html/support/buy.html:15
-msgid ""
-"\n"
-"Want to use Gammu in your commercial product? As long as you obey license\n"
-"terms, you are very welcome to do so. The software is licensed under GNU\n"
-"General Public License version 2 and there is no option to relicense it for\n"
-"you (basically it is technically impossible to get agreement from all\n"
-"contributors to change the license).\n"
-msgstr ""
-"\n"
-"Quer usar o Gammu no seu produto comercial? Desde que você obedeça aos "
-"termos\n"
-"de licença, você é muito bem-vindo a fazer isso. O software é licenciado sob "
-"a \n"
-"Licença Pública Geral GNU versão 2 e não há opção de relicenciá-la para\n"
-"você (basicamente é tecnicamente impossível ter um acordo de todos os\n"
-"contribuidores para mudar a licença).\n"
-
-#: html/support/buy.html:25
-msgid ""
-"\n"
-"However we can provide you some higher class support for your application.\n"
-"Should you need something like this, please do not hesitate to contact us\n"
-"either on some public place like <a href=\"/support/lists/\">mailing lists</"
-"a>\n"
-"or <a href=\"/support/online/\">Jabber or IRC chats</a> or if you do not "
-"want to\n"
-"disclose you project, you can contact directly <a href=\"/authors/"
-"\">authors</a>.\n"
-msgstr ""
-"\n"
-"No entanto nós podemos providenciar a você algum suporte de classe mais alta "
-"para sua aplicação.\n"
-"Se você precisar de algo assim, favor não hesite em nos contatar\n"
-"ou por algum lugar público como <a href=\"/support/lists/\">listas de email</"
-"a>\n"
-"ou pelos <a href=\"/support/online/\">chats Jabber ou IRC</a> ou se você não "
-"quer\n"
-"publicar seu projeto, você pode contatar diretamente os <a href=\"/authors/"
-"\">autores</a>.\n"
-
-#: html/support/buy.html:35
-msgid ""
-"\n"
-"We do not provide any fixed price support packages, simply because every\n"
-"project is really different and it's best to arrange conditions separately "
-"to\n"
-"match everybody needs.\n"
-msgstr ""
-"\n"
-"Nós não fornecemos nenhum pacotes de suporte por preço fixo, simplesmente "
-"porque\n"
-"cada projeto é muito diferente e é melhor organizar as condições "
-"separadamente\n"
-"para atender as necessidades de todo mundo.\n"
-
-#: html/support/buy.html:43
-msgid ""
-"\n"
-"If you just want to appreciate level of support you got for free, you can "
-"also\n"
-"<a href=\"/donate/\">donate</a> some money to the project.\n"
-msgstr ""
-"\n"
-"Se você só quer apreciar o nível de suporte que você recebeu de graça, você\n"
-"também pode <a href=\"/donate/\">doar</a> algum dinheiro para o projeto.\n"
-
-#: html/support/index.html:4 html/support/index.html.py:14
-msgid "Support for Wammu and Gammu"
-msgstr "Suporte para Wammu e Gammu"
-
-#: html/support/index.html:17
-msgid ""
-"\n"
-"Gammu and Wammu are free software projects. As such you can get some "
-"support\n"
-"from the community which is behind the project. The best way where to start "
-"is\n"
-"usually to check <a href=\"/docs/\"><strong>documentation</strong></a> "
-"whether you problem is not\n"
-"just a configuration issue or some well known situation.\n"
-msgstr ""
-"\n"
-"Gammu e Wammu são projetos de software livre. Assim você pode receber algum "
-"suporte\n"
-"da comunidade que está por trás do projeto. O melhor jeito de onde começar "
-"é\n"
-"normalmente olhar a <a href=\"/docs/\"><strong>documentação</strong></a> "
-"caso\n"
-"seu problema não seja apenas um problema de configuração ou alguma situação "
-"bem conhecida.\n"
-
-#: html/support/index.html:26
-msgid ""
-"\n"
-"If you are looking for list of <strong>supported phones</strong>, you can "
-"look\n"
-"into <a href=\"/phones/\"><strong>Gammu Phone Database</strong></a>. You "
-"can\n"
-"also share your experiences there, but if you had problems, please report "
-"bugs\n"
-"and do not write about problems only in phone database.\n"
-msgstr ""
-"\n"
-"Se você está procurando pela lista de <strong>telefones suportados</strong>, "
-"você pode olhar\n"
-"no <a href=\"/phones/\"><strong>Banco de dados de Telefones do Gammu</"
-"strong></a>. Você pode\n"
-"também compartilhar suas experiências lá, mas se você tiver problemas, favor "
-"relate os bugs\n"
-"e não escreva sobre os problemas somente no banco de dados de telefones.\n"
-
-#: html/support/index.html:34
-msgid "Stack Overflow"
-msgstr "Visão geral da pilha"
-
-#: html/support/index.html:37
-#, python-format
-msgid ""
-"You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
-msgstr ""
-"Você pode também fazer perguntas relacionadas em <a href=\"%(url)s\">Stack "
-"Overflow</a>."
-
-#: html/support/index.html:40
-msgid "Communication with Community"
-msgstr "Comunicação com a Comunidade"
-
-#: html/support/index.html:43
-msgid ""
-"\n"
-"If the <a href=\"/docs/\">documentation</a> does not help, you can try to "
-"look\n"
-"at <a href=\"/support/lists/\">mailing <strong>lists</strong></a>, first "
-"looking in the archives\n"
-"if somebody did not face the problem. You can also try reaching us on some \n"
-"<a href=\"/support/online/\">online communications channels</a> such as "
-"Jabber or\n"
-"IRC.\n"
-msgstr ""
-"\n"
-"Se a <a href=\"/docs/\">documentação</a> não ajudar, você também pode olhar\n"
-"nas <a href=\"/support/lists/\">listas de <strong>emails</strong></a>,\n"
-"primeiro olhe nos arquivos caso alguém não tenha enfrentado o problema.\n"
-"Você também pode tentar nos alcançar em algum <a href=\"/support/online/\">\n"
-"canal de comunicação online</a> como o Jabber ou IRC.\n"
-
-#: html/support/index.html:52
-msgid "Reporting Bugs"
-msgstr "Reportando Bugs"
-
-#: html/support/index.html:55
-msgid ""
-"\n"
-"Once you think you have hit a bug or want to file a feature request, please\n"
-"use a <a href=\"/support/bugs/\"><strong>bug</strong> tracker</a> to report "
-"them. Please be as\n"
-"descriptive as possible and do not forget include necessary information to\n"
-"reproduce the bug such as debug logs.\n"
-msgstr ""
-"\n"
-"Assim que você achar que encontrou um bug ou quer arquivos um pedido de "
-"função, favor\n"
-"use o <a href=\"/support/bugs/\">rastreador de <strong>bugs</strong></a> "
-"para relatá-los.\n"
-"Favor seja o mais descritivo possível e não esqueça de incluir as "
-"informações necessárias\n"
-"para reproduzir o bug como os logs de debug.\n"
-
-#: html/support/index.html:63
-msgid "Commercial Support"
-msgstr "Suporte Comercial"
-
-#: html/support/index.html:66
-msgid ""
-"\n"
-"Running some business application using Gammu, you might be interested in\n"
-"getting better level of support. Just <a href=\"/support/buy/\">contact the\n"
-"developers</a> and try to ask them for this.\n"
-msgstr ""
-"\n"
-"Caso você rode alguma aplicação comercial que usa o Gammu, você poderá "
-"estar\n"
-"interessado em receber um nível melhor de suporte. Apenas <a href=\"/support/"
-"buy/\">\n"
-"contate os desenvolvedores</a> e tente perguntar a eles por isto.\n"
-
-#: html/support/lists.html:4 html/support/lists.html.py:12
-msgid "Mailing Lists for Wammu and Gammu"
-msgstr "Listas de Email para o Wammu e o Gammu"
-
-#: html/support/lists.html:16
-msgid ""
-"\n"
-"Mailing lists are the main communication place for the community. Before\n"
-"asking questions there, you should search in the <a\n"
-"href=\"http://dir.gmane.org/gmane.linux.drivers.gammu\">archives</a> if "
-"somebody\n"
-"did not already solve similar issue. It sometimes happen that some version "
-"has\n"
-"well known problems which was faced by many users.\n"
-msgstr ""
-"\n"
-"Listas de email são o lugar principal de comunicação com a comunidade. "
-"Antes\n"
-"de fazer perguntas lá, você deve pesquisar nos <a\n"
-"href=\"http://dir.gmane.org/gmane.linux.drivers.gammu\">arquivos</a> se "
-"alguém\n"
-"já não resolveu um problema similar. As vezes acontece que alguma versão "
-"tem\n"
-"um problema bem conhecido que foi enfrentado por muitos usuários.\n"
-
-#: html/support/lists.html:26
-msgid ""
-"\n"
-"To post a message to the <a\n"
-"href=\"https://lists.sourceforge.net/lists/listinfo/gammu-users\">mailing\n"
-"list</a>, you need to be subscribed. While posting a message, please try to\n"
-"describe well your problem (basically you should follow same rules as when "
-"<a\n"
-"href=\"/support/bugs/\">reporting a bug</a>), avoid sending HTML mails and "
-"do\n"
-"proper quoting of replies, so that it is easy for others to follow the\n"
-"discussion.\n"
-msgstr ""
-"\n"
-"Para postar uma mensagem para a <a\n"
-"href=\"https://lists.sourceforge.net/lists/listinfo/gammu-users\">lista\n"
-"de emails</a>, você precisa estar inscrito. Enquanto postar uma mensagem, "
-"favor tente\n"
-"descrever bem o seu problema (basicamente você deve seguir as mesmas regras "
-"quando <a\n"
-"href=\"/support/bugs/\">relatar um bug</a>), evite enviar emails HTML e use\n"
-"citações apropriadas das respostas, assim será mais fácil para outros "
-"seguir\n"
-"a discussão.\n"
-
-#: html/support/lists.html:38
-msgid ""
-"\n"
-"Sometimes you can not expect immediate answers on the mailing list, so "
-"please\n"
-"be patient. People might be on vacation or simply busy with other things.\n"
-"Reposting the same message again to the mailing list or directly to authors\n"
-"will usually not give you faster answer, it might just upset involved "
-"people.\n"
-msgstr ""
-"\n"
-"As vezes você não pode esperar respostas imediatas na lista de emails, então "
-"favor\n"
-"seja paciente. As pessoas podem estar de férias ou simplesmente ocupadas com "
-"outras coisas.\n"
-"Repostar a mesma mensagem de novo na lista de emails ou diretamente para os "
-"autores\n"
-"geralmente não lhe derá uma resposta mais rápida, apenas incomodará as "
-"pessoas envolvidas.\n"
-
-#: html/support/lists.html:46
-msgid "Other Mailing Lists"
-msgstr "Outras Listas de Email"
-
-#: html/support/lists.html:49
-msgid ""
-"\n"
-"The main list where the discussion is being held is <a\n"
-"href=\"https://lists.sourceforge.net/lists/listinfo/gammu-users\">gammu-"
-"users@lists.sourceforge.net</a>.\n"
-"It's just generic place where users or developers can discuss anything "
-"related\n"
-"to Gammu (this includes Wammu or third party frontends like Kalkun).\n"
-msgstr ""
-"\n"
-"A lista principal de onde a discussão está sendo mantida é a <a\n"
-"href=\"https://lists.sourceforge.net/lists/listinfo/gammu-users\">gammu-"
-"users@lists.sourceforge.net</a>.\n"
-"É apenas um lugar genérico onde os usuários ou desenvolvedores podem "
-"discutir qualquer coisa relacionada\n"
-"ao Gammu (Isso inclui o Wammu ou interfaces de terceiros como o Kalkun).\n"
-
-#: html/support/lists.html:58
-msgid ""
-"\n"
-"In past, there used to be some problems with licensing of some code in "
-"Gammu\n"
-"and separate lists for this purpose has been created - <a\n"
-"href=\"https://lists.sourceforge.net/lists/listinfo/gammu-legal\">gammu-"
-"legal@lists.sourceforge.net</a>.\n"
-"It is not much used nowadays, but should you find any legal problems with\n"
-"Gammu, please use this mailing list.\n"
-msgstr ""
-"\n"
-"No passado, haviam alguns problemas com licenciamento de algum código no "
-"Gammu\n"
-"e listas separadas para este propósito foram criadas - <a\n"
-"href=\"https://lists.sourceforge.net/lists/listinfo/gammu-legal\">gammu-"
-"legal@lists.sourceforge.net</a>.\n"
-"Ela não é muito usada hoje em dia, mas se você encontrar algum problema "
-"legal com o\n"
-"Gammu, favor use esta lista de emails.\n"
-
-#: html/support/online.html:4 html/support/online.html.py:12
-msgid "Online Communication for Wammu and Gammu"
-msgstr "Comunicação Online para Wammu e Gammu"
-
-#: html/support/online.html:15
-msgid ""
-"\n"
-"Online communication is sometimes the best way to diagnose problems, but it "
-"is\n"
-"not always available, for example you might be in different time zone that\n"
-"people you want to chat with or simply the people are busy in this time. "
-"You\n"
-"can try asking here, but if you do not get any reaction, you should retry\n"
-"later or try to use <a href=\"/support/lists/\">mailing list</a>.\n"
-msgstr ""
-"\n"
-"Comunicação online é algumas vezes o melhor jeito de diagnosticar problemas, "
-"mas ela\n"
-"nem sempre está disponível, por exemplo, você pode estar em um fuso horário "
-"diferente\n"
-"em que as pessoas com quem você quer conversar ou simplesmente as pessoas "
-"estão ocupadas\n"
-"neste horário. Você pode tentar perguntar aqui, mas se você não receber "
-"nenhum reação,\n"
-"você deveria tentar novamente mais tarde ou tentar usar a <a href=\"/support/"
-"lists/\">lista de emails</a>.\n"
-
-#: html/support/online.html:24
-msgid "Jabber conference room"
-msgstr "Sala de conferência Jabber"
-
-#: html/support/online.html:27
-msgid ""
-"\n"
-"You can solve issues interactively using Jabber conference room <a\n"
-"href=\"xmpp:gammu@conference.cihar.com?join\">gammu@conference.cihar.com</"
-"a>,\n"
-"logs are available at <a\n"
-"href=\"http://logs.cihar.com/jabber/gammu@conference.cihar.com/\">logs.cihar."
-"com</a>.\n"
-"You can also use web based access to this room using <a\n"
-"href=\"http://jabber.cihar.com/muckl/\">MUCkl</a>.\n"
-msgstr ""
-"\n"
-"Você pode resolver problemas interativamente usando a sala de conferência "
-"Jabber <a\n"
-"href=\"xmpp:gammu@conference.cihar.com?join\">gammu@conference.cihar.com</"
-"a>,\n"
-"logs estão disponíveis em <a\n"
-"href=\"http://logs.cihar.com/jabber/gammu@conference.cihar.com/\">logs.cihar."
-"com</a>.\n"
-"Você pode também usar o acesso baseado na web para esta sala usando o <a\n"
-"href=\"http://jabber.cihar.com/muckl/\">MUCkl</a>.\n"
-
-#: html/support/online.html:37
-msgid "IRC"
-msgstr "IRC"
-
-#: html/support/online.html:40
-msgid ""
-"\n"
-"You are very welcome to #gammu at irc.freenode.net. Feel free to ask there\n"
-"your questions. If you don't get the answer immediately, don't worry and\n"
-"patiently wait until someone answers. The channel is low volume and it may\n"
-"take a while until someone notices your question.\n"
-msgstr ""
-"\n"
-"Você é muito bem-vindo ao #gammu na irc.freenode.net. Sinta-se livre para "
-"fazer\n"
-"suas perguntas. Se você não receber a resposta imediatamente, não se "
-"preocupe e\n"
-"espere pacientemente até que alguém responda. O canal está num volume baixo "
-"e\n"
-"pode levar um tempo até que alguém perceba sua pergunta.\n"
-
-#: html/support/online.html:50
-msgid ""
-"\n"
-"You can also find a robot called like CIA-42, which just sends a "
-"notifications\n"
-"there about every commit made to the Gammu source repository.\n"
-msgstr ""
-"\n"
-"Você também pode encontrar um robô chamado CIA-42, que apenas envia uma "
-"notificação\n"
-"lá sobre cada commit feito no repositório de fontes do Gammu.\n"
-
-#: html/support/sidebar.html:2
-msgid "Support links"
-msgstr "Links de suporte"
-
-#: html/support/sidebar.html:5
-msgid "Mailing list"
-msgstr "Lista de emails"
-
-#: html/support/sidebar.html:6
-msgid "Bug tracker"
-msgstr "Rastreador de bugs"
-
-#: html/support/sidebar.html:7
-msgid "Jabber chat room"
-msgstr "Sala de bate-papo Jabber"
-
-#: html/tools/countries.html:4 html/tools/countries.html.py:12
-msgid "GSM countries list from Gammu"
-msgstr "Lista de países GSM do Gammu"
-
-#: html/tools/countries.html:15
-msgid ""
-"\n"
-"This list contains GSM countries as are currently defined in Gammu. If you "
-"can \n"
-"see some bug here, please <a href=\"/support/bugs/\">report it</a>.\n"
-msgstr ""
-"\n"
-"Essa lista contém os países cujo GSMs estão atualmente definidos no Gammu.\n"
-"se você puder ver algum bug aqui, favor <a href=\"/support/bugs/\">informe-"
-"o</a>.\n"
-
-#: html/tools/index.html:4 html/tools/index.html.py:12
-msgid "Tools for Wammu and Gammu"
-msgstr "Ferramentas para Wammu e Gammu"
-
-#: html/tools/index.html:15
-msgid ""
-"\n"
-"You can find here various tools which you might find useful when working "
-"with\n"
-"GSM phones in general, not only when using Gammu/Wammu.\n"
-msgstr ""
-"\n"
-"Você pode encontrar aqui várias ferramentas que você pode achar úteis quanto "
-"trabalhar\n"
-"com telefones GSM em geral, não somente quando usar o Gammu/Wammu.\n"
-
-#: html/tools/index.html:21
-msgid "PDU decoding/encoding"
-msgstr "Decodificador/codificador PDU"
-
-#: html/tools/index.html:24
-msgid ""
-"\n"
-"The SMS messages are transfered in the network encoded in PDU encoding.\n"
-"Following tools allow you to decode or encode PDU into human readable form.\n"
-msgstr ""
-"\n"
-"As mensagens SMS são transferidas na rede criptografadas com PDU.\n"
-"As ferramentas a seguir lhe permitem decodificar ou codificar PDU em forma "
-"legível por humanos.\n"
-
-#: html/tools/index.html:33
-msgid "Useful for creating PDU data, which you can then submit to the phone."
-msgstr ""
-"Útil para criar dados PDU, que você pode enviar depois para o telefone."
-
-#: html/tools/index.html:36
-msgid "Useful for decoding PDU data, which you might get from your phone."
-msgstr ""
-"Útil para decodificar dados PDU, que você pode receber do seu telefone."
-
-#: html/tools/index.html:40
-msgid "Other tools"
-msgstr "Outras ferramentas"
-
-#: html/tools/index.html:43
-msgid "List of GSM codes for countries"
-msgstr "Lista de códigos GSM por países"
-
-#: html/tools/index.html:44
-msgid "List of GSM codes for networks"
-msgstr "Lista de códigos GSM por redes"
-
-#: html/tools/index.html:48
-msgid ""
-"\n"
-"Do you miss some functionality here? Don't hesitate and contact us on \n"
-"<a href=\"/support/lists/\">mailing lists</a> with your idea.\n"
-msgstr ""
-"\n"
-"Você sente falta de alguma funcionalidade aqui? Não hesite e nos contate "
-"nas\n"
-"<a href=\"/support/lists/\">listas de emails</a> com sua ideia.\n"
-
-#: html/tools/networks.html:4 html/tools/networks.html.py:12
-msgid "GSM networks list from Gammu"
-msgstr "Lista de redes GSM do Gammu"
-
-#: html/tools/networks.html:15
-msgid ""
-"\n"
-"This list contains GSM networks as are currently defined in Gammu. If you "
-"can \n"
-"see some bug here, please <a href=\"/support/bugs/\">report it</a>.\n"
-msgstr ""
-"\n"
-"Esta lista contém redes GSM conforme definidas atualmente no Gammu.\n"
-"Se você encontrar algum bug aqui, favor <a href=\"/support/bugs/\">informe-"
-"o</a>.\n"
-
-#: html/tools/pdudecode.html:5 html/tools/pdudecode.html.py:13
-msgid "PDU decoder using Gammu"
-msgstr "Decodificador PDU usando o Gammu"
-
-#: html/tools/pdudecode.html:27
-msgid "PDU Decoding Result"
-msgstr "Resultado da Decodificação PDU"
-
-#: html/tools/pdudecode.html:29 html/tools/pdudecode.html.py:59
-#: html/tools/pduencode.html:29
-#, python-format
-msgid "Message number %(id)s"
-msgstr "Número da mensagem %(id)s"
-
-#: html/tools/pdudecode.html:31
-msgid "Decoding failed with error:"
-msgstr "Falha na decodificação com erro:"
-
-#: html/tools/pdudecode.html:37 html/tools/pdudecode.html.py:39
-#: tools/forms.py:13
-msgid "Text"
-msgstr "Texto"
-
-#: html/tools/pdudecode.html:42
-msgid "UDH type"
-msgstr "Tipo UDH"
-
-#: html/tools/pdudecode.html:43
-msgid "UDH header"
-msgstr "Cabeçalho UDH"
-
-#: html/tools/pdudecode.html:44
-msgid "Message part"
-msgstr "Parte da mensagem"
-
-#: html/tools/pdudecode.html:46
-msgid "SMSC"
-msgstr "SMSC"
-
-#: html/tools/pdudecode.html:47
-msgid "Validity"
-msgstr "Validade"
-
-#: html/tools/pdudecode.html:48
-msgid "Type"
-msgstr "Tipo"
-
-#: html/tools/pdudecode.html:49
-msgid "Message Reference"
-msgstr "Referência da mensagem"
-
-#: html/tools/pdudecode.html:57
-msgid "SMS Data Decoding Result"
-msgstr "Resultado da Decodificação de Dados SMS"
-
-#: html/tools/pdudecode.html:66
-msgid "MMS indicator"
-msgstr "Indicador de MMS"
-
-#: html/tools/pdudecode.html:67
-msgid "Title"
-msgstr "Título"
-
-#: html/tools/pdudecode.html:68
-msgid "Sender"
-msgstr "Emissor"
-
-#: html/tools/pdudecode.html:69
-msgid "Address"
-msgstr "Endereço"
-
-#: html/tools/pdudecode.html:70 tools/forms.py:14
-msgid "Class"
-msgstr "Classe"
-
-#: html/tools/pdudecode.html:73
-msgid "Bitmap"
-msgstr "Bitmap"
-
-#: html/tools/pdudecode.html:74
-msgid "Bitmaps"
-msgstr "Bitmaps"
-
-#: html/tools/pduencode.html:5 html/tools/pduencode.html.py:13
-msgid "PDU encoder using Gammu"
-msgstr "Codificar PDU usando Gammu"
-
-#: html/tools/pduencode.html:27
-msgid "PDU data"
-msgstr "Dados PDU"
-
-#: html/tools/sidebar.html:2 wammu/context_processors.py:44
-msgid "Tools"
-msgstr "Ferramentas"
-
-#: html/tools/sidebar.html:4
-msgid "PDU encoder"
-msgstr "Codificador PDU"
-
-#: html/tools/sidebar.html:5
-msgid "PDU decoder"
-msgstr "Decodificador PDU"
-
-#: html/tools/sidebar.html:6
-msgid "Countries"
-msgstr "Países"
-
-#: html/tools/sidebar.html:7
-msgid "Networks"
-msgstr "Redes"
-
-#: html/wammu.html:25
+#: html/wammu.html:17
 msgid ""
 "\n"
 "Wammu is mobile phone manager running on Linux, Windows and possibly other\n"
@@ -3715,23 +1237,23 @@ msgstr ""
 "e o wxPython funcionam. A comunicação é feita pela biblioteca Gammu.\n"
 "Funções atualmente suportadas:\n"
 
-#: html/wammu.html:33
+#: html/wammu.html:25
 msgid ""
 "complete support (can read/edit/delete/copy) for contacts, todo, calendar"
 msgstr ""
 "suporte completo (pode ler/editar/deletar/copiar) para contatos, tarefas, "
 "calendário"
 
-#: html/wammu.html:34
+#: html/wammu.html:26
 msgid "can read/create/save/send/backup smses"
 msgstr "pode ler/criar/salvar/enviar/fazer backup de sms"
 
-#: html/wammu.html:35
+#: html/wammu.html:27
 msgid "sending files to phone (OBEX and Sony Ericsson phones only)"
 msgstr ""
 "enviar arquivos para o telefone (somente telefones OBEX e Sony Ericsson)"
 
-#: html/wammu.html:36
+#: html/wammu.html:28
 msgid ""
 "sms composer for multi part smses (currently only text and predefined bitmap/"
 "sound can be edited)"
@@ -3739,11 +1261,11 @@ msgstr ""
 "compositor de sms para sms multi-parte (atualmente somente texto e bitmaps/"
 "sons predefinidos podem ser editados)"
 
-#: html/wammu.html:37
+#: html/wammu.html:29
 msgid "display message including pictures and ringtones playback"
 msgstr "exibir mensagem incluindo imagens e reprodução de ringtones"
 
-#: html/wammu.html:38
+#: html/wammu.html:30
 msgid ""
 "support for backup and import in various formats (vCard, vCalendar, vTodo, "
 "iCalendar, gammu own backup,…)"
@@ -3751,26 +1273,26 @@ msgstr ""
 "suporte para backup e importação em vários formatos (vCard, vCalendar, "
 "vTodo, iCalendar, backup próprio do gammu, ...)"
 
-#: html/wammu.html:39
+#: html/wammu.html:31
 msgid ""
 "export messages to mail (IMAP4, maildir and mailbox storages are supported)"
 msgstr ""
 "exportar mensagems para email (armazenamento IMAP4, maildir e mailbox são "
 "suportados)"
 
-#: html/wammu.html:40
+#: html/wammu.html:32
 msgid "searching for phone"
 msgstr "pesquisar por telefone"
 
-#: html/wammu.html:41
+#: html/wammu.html:33
 msgid "translated into several languages"
 msgstr "traduzido em várias línguas"
 
-#: html/wammu.html:42
+#: html/wammu.html:34
 msgid "rated as best on many software servers"
 msgstr "considerado o melhor em muitos servidores de software"
 
-#: html/wammu.html:49
+#: html/wammu.html:41
 msgid ""
 "\n"
 "Wammu is included in many distributions, so please use the binary packages "
@@ -3789,7 +1311,7 @@ msgstr ""
 "para\n"
 "Windows</a>.\n"
 
-#: html/wammu.html:59
+#: html/wammu.html:51
 msgid ""
 "\n"
 "Wammu does not come with much documentation and there is hope that it will "
@@ -3847,6 +1369,2358 @@ msgstr ""
 "com as últimas funções. A versão estável mais recente é a <a href=\"%(url)s"
 "\">%(version)s</a>.\n"
 
+#: html/contribute/code.html:4 html/contribute/code.html.py:8
+msgid "Coding for Wammu and Gammu"
+msgstr "Programar para Wammu e Gammu"
+
+#: html/contribute/code.html:11
+msgid ""
+"\n"
+"Gammu is written in C and Wammu in <a\n"
+"href=\"http://www.python.org/\">Python</a>, so you will need knowledge of "
+"one of\n"
+"these languages to contribute code directly to the project. You will "
+"probably\n"
+"use some parts of <a href=\"/docs/devel/\">developer documentation</a> to\n"
+"understand the code. If you want to know what is planned to happen in Gammu\n"
+"and Wammu, please check the <a href=\"/docs/roadmap/\">roadmap</a>.\n"
+msgstr ""
+"\n"
+"O Gammu é escrito em C e o Wammu em <a\n"
+"href=\"http://www.python.org/\">Python</a>, então você precisará ter "
+"conhecimento\n"
+"em uma destas linguagens para fornecer código diretamente para o projeto.\n"
+"Você provavelmente irá usar algumas partes da <a href=\"/docs/devel/"
+"\">documentação\n"
+"do desenvolvedor</a> para entender o código. Se você quiser saber o que se "
+"espera acontecer\n"
+"no Gammu e Wammu, favor olher o <a href=\"/docs/roadmap/\">roadmap</a>.\n"
+
+#: html/contribute/code.html:22
+msgid "Version Control System"
+msgstr "Sistema de controle de versão"
+
+#: html/contribute/code.html:24
+msgid ""
+"\n"
+"We currently use <a href=\"http://git-scm.com/\">Git</a> as a version "
+"control\n"
+"system. It allows you create own local branch, develop the code and then\n"
+"submit us patches or merge request for the changes.\n"
+msgstr ""
+"\n"
+"Nós atualmente usamos o <a href=\"http://git-scm.com/\">Git</a> como o "
+"sistema de\n"
+"controle de versão. Ele permite criar seu próprio branch local, desenvolver "
+"o código\n"
+"e então nós enviar os pedidos de patch ou merge para mudanças.\n"
+
+#: html/contribute/code.html:32
+msgid ""
+"\n"
+"The Git repositories are being hosted on <a\n"
+"href=\"http://github.com/\">Github</a> service, in the\n"
+"<a href=\"http://github.com/gammu/\">Gammu</a> project. You can browse the "
+"code\n"
+"on their site or just clone the repository and investigate it locally. To\n"
+"clone Wammu and Gammu sources, use following commands:\n"
+msgstr ""
+"\n"
+"Os repositórios Git estão sendo hospedados no <a\n"
+"href=\"http://github.com/\">Github</a>, no projeto\n"
+"<a href=\"http://github.com/gammu/\">Gammu</a>. Você pode ver o código\n"
+"no site deles ou apenas clonar o repositório e investigá-lo localmente.\n"
+"Para clonar os códigos-fonte do Wammu e Gammu, use os seguintes comandos:\n"
+
+#: html/contribute/code.html:53
+msgid ""
+"\n"
+"Alternatively (if your firewall blocks git protocol), you can access\n"
+"repositories over https, just replace <code>git://github.com/</code> with\n"
+"<code>https://github.com/</code>.\n"
+msgstr ""
+"\n"
+"Alternativamente (se seu firewall bloquear o protocolo git), você pode "
+"acessar\n"
+"os repositórios com https, apenas substitua <code>git://github.com/</code> "
+"por\n"
+"<code>https://github.com/</code>.\n"
+
+#: html/contribute/code.html:61
+msgid ""
+"\n"
+"Instructions for building and installing are included in file\n"
+"<code>INSTALL</code> in both Gammu and Wammu. For compiling Gammu you need "
+"to\n"
+"have <a href=\"http://www.cmake.org/\">CMake</a>.\n"
+msgstr ""
+"\n"
+"Instruções para construir e instalar estão inclusas no arquivo\n"
+"<code>INSTALL</code> tanto no Gammu quanto no Wammu. Para compilar o Gammu "
+"você precisa\n"
+"ter o <a href=\"http://www.cmake.org/\">CMake</a>.\n"
+
+#: html/contribute/code.html:68
+msgid "Code Snapshots"
+msgstr "Snapshot de código"
+
+#: html/contribute/code.html:70
+msgid ""
+"\n"
+"If you for some reason do not want to use version control system, you can\n"
+"always download fresh snapshots of current code from GitHub.\n"
+msgstr ""
+"\n"
+"Se por algum motivo você não quiser utilizar o sistema de controle de "
+"versões, você pode\n"
+"realizar o download dos snapshots atualizados no GitHub.\n"
+
+#: html/contribute/code.html:77
+msgid "Patch Submission"
+msgstr "Envio de Patch"
+
+#: html/contribute/code.html:79
+msgid ""
+"\n"
+"We really do not care much about the way you deliver us patches. However "
+"the\n"
+"easiest thing is you use <code>git format-patch</code>, which allows us to\n"
+"easily include your changes. If you do not use git, any unified diff will\n"
+"serve it's purpose also very well. You can send patches to <a\n"
+"href=\"/support/lists/\">mailing lists</a> or to the <a\n"
+"href=\"/support/bugs/\">bug tracker</a>.\n"
+msgstr ""
+"\n"
+"Nós não nos importamos muito com o jeito que você nos entrega seus patches.\n"
+"No entanto, o jeito mais fácil é você usar <code>git format-patch</code>,\n"
+"que nos permite incluir facilmente suas mudanças. Se você não usar o git,\n"
+"qualquer diff unificado também alcançará seu objetivo muito bem.\n"
+"Você pode enviar os patches para <a href=\"/support/lists/\">listas de "
+"email</a>\n"
+"ou para o <a href=\"/support/bugs/\">rastreador de bugs</a>.\n"
+
+#: html/contribute/code.html:90
+msgid "Testing"
+msgstr "Teste"
+
+#: html/contribute/code.html:92
+msgid ""
+"Gammu comes with quite comprehensive testsuite, which is being run "
+"continuosly using <a href=\"https://travis-ci.org/gammu/gammu\">Travis</a>."
+msgstr ""
+"O Gammu vem com uma suíte de testes bem compreensiva, que é rodada "
+"continuamente usando o <a href=\"https://travis-ci.org/gammu/gammu\">Travis</"
+"a>."
+
+#: html/contribute/index.html:4 html/contribute/index.html.py:8
+msgid "Contribute to Wammu and Gammu"
+msgstr "Contribua com o Wammu e Gammu"
+
+#: html/contribute/index.html:11 html/contribute/wanted.html:11
+msgid ""
+"\n"
+"Gammu and Wammu are free software projects which are done by volunteers in\n"
+"their free time. There is never enough of volunteers so you are very "
+"welcome\n"
+"to help us in any way. You really do not need developer skills to help.\n"
+msgstr ""
+"\n"
+"Gammu e Wammu são projetos de software livre que são feitos por voluntários\n"
+"no seu tempo livre. Nunca temos voluntários demais então agradecemos muito a "
+"sua\n"
+"ajuda de qualquer maneira. Você não precisa ter habilidades de desenvolvedor "
+"para ajudar.\n"
+
+#: html/contribute/index.html:19
+msgid ""
+"\n"
+"Please check our list of <a href=\"/contribute/wanted/\"><strong>wanted\n"
+"skills</strong></a>, to get an idea who we are currently looking for.\n"
+msgstr ""
+"\n"
+"Favor olhar nossa lista de <a href=\"/contribute/wanted/"
+"\"><strong>habilidades\n"
+"desejadas</strong></a>, para ter uma ideia de quem nós estamos precisando.\n"
+
+#: html/contribute/index.html:25
+msgid "Using"
+msgstr "Uso"
+
+#: html/contribute/index.html:27
+msgid ""
+"\n"
+"Just using our tools and giving developers <a href=\"/support/bugs/\">good\n"
+"<strong>feedback</strong></a> can help a lot. Tell us what you would change "
+"or improve.\n"
+"You might be using our software in quite unique way and can not find out "
+"all\n"
+"use cases on our own!\n"
+msgstr ""
+"\n"
+"Apenas usar nossas ferramentas e dar um <a href=\"/support/bugs/\">bom\n"
+"<strong>feedback</strong></a> para nossos desenvolvedores pode ajudar "
+"muito.\n"
+"Conte-nos o que você mudaria ou melhoraria. Você pode estar usando nosso "
+"software\n"
+"de um jeito bem exclusivo e pode não descobrir todos os casos de uso "
+"sozinho!\n"
+
+#: html/contribute/index.html:36
+msgid ""
+"\n"
+"Also just <a href=\"/contribute/publicity/\"><strong>spreading</strong> a "
+"word</a> about tool you\n"
+"use and way you use it can help the project to attract more users and\n"
+"developers. Just don't be afraid of writing about our tools in your blog,\n"
+"twitter, facebook or whatever online media you use.\n"
+msgstr ""
+"\n"
+"Além disso, só <a href=\"/contribute/publicity/\"><strong>espalhar</strong> "
+"uma palavra</a>\n"
+"sobre a ferramenta que você usa e o jeito que você a usa pode ajudar o "
+"projeto\n"
+"a atrair mais usuários e desenvolvedores. Só não tenha medo de escrever\n"
+"sobre nossas ferramentas no seu blog, twitter, facebook\n"
+"ou qualquer outra mída online que você usa.\n"
+
+#: html/contribute/index.html:44
+msgid "Improving"
+msgstr "Melhoras"
+
+#: html/contribute/index.html:47
+msgid ""
+"\n"
+"There are lot of ways to improve the software. If you do not know how to "
+"write\n"
+"code, you can always <a\n"
+"href=\"/contribute/translate/\"><strong>translate</strong> to your\n"
+"language</a>.\n"
+"For developers with skills either in C or in Python, it might be easy to\n"
+"<a href=\"/contribute/code/\">contribute some <strong>code</strong></a>.\n"
+"Also the graphics in the applications is not really a top quality and if "
+"you\n"
+"are skilled in this area, your help would be also welcome!\n"
+msgstr ""
+"\n"
+"Existem muitos jeitos de melhorar o software. Se você não sabe como "
+"escrever\n"
+"código, você pode <a\n"
+"href=\"/contribute/translate/\"><strong>traduzir</strong> para sua língua</"
+"a>.\n"
+"Para os desenvolvedores com habilidades em C ou Python, pode ser fácil\n"
+"<a href=\"/contribute/code/\">contribuir com algum <strong>código</strong></"
+"a>.\n"
+"Os gráficos da aplicação também não são de primeira qualidade e se você\n"
+"for habilidoso nessa área, sua ajuda seria muito bem-vinda!\n"
+
+#: html/contribute/index.html:60
+msgid ""
+"\n"
+"You can also help just by regularly <a\n"
+"href=\"/contribute/code/#testing\">running a <strong>testsuite</strong></a> "
+"on\n"
+"your platform, especially if it some which we do not test so far.\n"
+msgstr ""
+"\n"
+"Você pode ajudar simplesmente <a\n"
+"href=\"/contribute/code/#testing\">rodando a <strong>suíte de testes</"
+"strong></a> \n"
+"regularmente na sua plataforma, especialmente se for alguma que não testamos "
+"até aora.\n"
+
+#: html/contribute/index.html:67
+msgid "Donating"
+msgstr "Doações"
+
+#: html/contribute/index.html:70
+msgid ""
+"\n"
+"And of course there is a option to appreciate the authors by <a\n"
+"href=\"/donate/\">donating them</a> some money or some items from their "
+"wishlist.\n"
+msgstr ""
+"\n"
+"E é claro que há uma opção de agradecer aos autores através de <a\n"
+"href=\"/donate/\">doar</a> algum dinheiro ou alguns itens da lista de "
+"desejos deles.\n"
+
+#: html/contribute/publicity.html:4 html/contribute/publicity.html.py:8
+msgid "Publicity for Wammu and Gammu"
+msgstr "Publicidade para Wammu e Gammu"
+
+#: html/contribute/publicity.html:11
+msgid ""
+"\n"
+"Publicity is vital for any project. If nobody would know about the project,\n"
+"nobody would use it. So spreading word about Gammu and Wammu might help a "
+"lot\n"
+"to gain new users and developers. \n"
+msgstr ""
+"\n"
+"A publicidade é vital para qualquer projeto. Se ninguém souber sobre o "
+"projeto,\n"
+"ninguém usaria ele. Então espalhar a palvra sobre o Gammu e Wammu pode "
+"ajudar muito\n"
+"a ganhar novos usuários e desenvolvedores.\n"
+
+#: html/contribute/publicity.html:19
+msgid ""
+"\n"
+"On the other side, if you found a bug, please do not leave it described "
+"just\n"
+"in your weblog, but <a href=\"/support/bugs/\">report it</a> to us. We "
+"really do\n"
+"not follow all blogs in the world to scan for bug reports.\n"
+msgstr ""
+"\n"
+"Por outro lado, se você encontrou um bug, por favor não deixe ele descrito "
+"apenas\n"
+"no seu blog, mas <a href=\"/support/bugs/\">informe-o</a> para nós. Nós não\n"
+"seguimos todos os blogs no mundo para verificar por relatórios de bugs.\n"
+
+#: html/contribute/publicity.html:26
+msgid "Third Party Applications"
+msgstr "Aplicações de Terceiros"
+
+#: html/contribute/publicity.html:29
+msgid ""
+"\n"
+"You've made some great tool using Gammu?  Don't hesitate to write about it. "
+"We\n"
+"can also list your tool on our <a href=\"/links/\">third party applications</"
+"a>\n"
+"page, what will in reward bring users to your project. Just <a\n"
+"href=\"/support/\">let us know</a> about it!\n"
+msgstr ""
+"\n"
+"Você criou alguma ferramenta incrível usando o Gammu? Não hesite em escrever "
+"sobre isso.\n"
+"Nós podemos listar sua ferramenta também na nossa página de\n"
+"<a href=\"/links/\">aplicações de terceiros</a>, o que resultará em levar\n"
+"usuários para o seu projeto. Apenas <a href=\"/support/\">conte-nos</a> "
+"sobre ela!\n"
+
+#: html/contribute/publicity.html:37
+msgid "Logos or Screenshots"
+msgstr "Logos ou Screenshots"
+
+#: html/contribute/publicity.html:39
+msgid ""
+"\n"
+"You can use any screenshots available on this website for your publicity "
+"posts\n"
+"as long as you follow <a href=\"/license/\">license terms</a>. Gammu and "
+"Wammu\n"
+"logos are available in various resolutions as well as in scalable format in\n"
+"<a href=\"/contribute/code/#vcs\">wammu source repository</a>.\n"
+msgstr ""
+"\n"
+"Você pode usar qualquer screenshot disponível neste site para posts de "
+"publicidade\n"
+"desde que você siga os <a href=\"/license/\">termos da licença</a>. Os logos "
+"do \n"
+"Gammu e do Wammu estão disponíveis em várias resoluções assim como formato "
+"escalável no\n"
+"<a href=\"/contribute/code/#vcs\">repositório de fontes do Wammu</a>.\n"
+
+#: html/contribute/translate.html:4 html/contribute/translate.html.py:8
+msgid "Translating Wammu and Gammu"
+msgstr "Tradução do Wammu e Gammu"
+
+#: html/contribute/translate.html:11
+msgid ""
+"\n"
+"If you know English and some other language, you can just bring Gammu and\n"
+"Wammu closer to the users who don't know English. Translating process is\n"
+"really easy and you can just occasionally translate few texts and do not "
+"have\n"
+"to spend much time on it.\n"
+msgstr ""
+"\n"
+"Se você conhece inglês e alguma outra língua, você pode levar o Gammu e\n"
+"o Wammu para mais perto dos usuários que não sabem inglês. O processo de "
+"tradução é\n"
+"bastante fácil e você pode simplesmente traduzir ocasionalmente alguns "
+"textos e não tem\n"
+"que gastar muito tempo com isso.\n"
+
+#: html/contribute/translate.html:18
+msgid "Gettext"
+msgstr "Gettext"
+
+#: html/contribute/translate.html:20
+msgid ""
+"\n"
+"All Gammu, Wammu and this website use <a\n"
+"href=\"http://en.wikipedia.org/wiki/GNU_gettext\">gettext</a> framework for\n"
+"translation of messages in user interface. In addition, Gammu uses gettext\n"
+"together with <a href=\"http://po4a.alioth.debian.org/\">po4a</a> to "
+"translate\n"
+"documentation. There exists variety of tools which can handle gettext\n"
+"translations, so you can choose the one which fits your needs.\n"
+msgstr ""
+"\n"
+"O Gammu, Wammu e este site usam o <a\n"
+"href=\"http://en.wikipedia.org/wiki/GNU_gettext\">framework gettext</a> "
+"para\n"
+"tradução das mensagens da interface do usuário. Além disso, o Gammu usa "
+"gettext\n"
+"junto com o <a href=\"http://po4a.alioth.debian.org/\">po4a</a> para "
+"traduzir\n"
+"a documentação. Lá existe uma variedade de ferramentas que podem manipular\n"
+"traduções gettext, então você pode escolher aquela que atender suas "
+"necessidades.\n"
+
+#: html/contribute/translate.html:30
+msgid "Translating po Files"
+msgstr "Tradução de Arquivos po"
+
+#: html/contribute/translate.html:32
+msgid ""
+"\n"
+"Traditional way of doing translations is to download po file, translate it\n"
+"using some editor (for example <a href=\"http://www.poedit.net/\">Poedit</"
+"a>)\n"
+"and then send updated po file to the author. You can do this when you are\n"
+"offline, but on the other side, it somehow prevents collaboration.\n"
+msgstr ""
+"\n"
+"O jeito tradicional de fazer traduções é baixar o arquivo po, traduzi-lo\n"
+"usando algum editor (por exemplo o <a href=\"http://www.poedit.net/"
+"\">Poedit</a>)\n"
+"e então enviar o arquivo atualizado para o autor. Você pode fazer isso "
+"quando você\n"
+"estiver offline, mas por outro lado, ele previne a colaboração de algum "
+"jeito.\n"
+
+#: html/contribute/translate.html:40
+msgid "Weblate"
+msgstr "Weblate"
+
+#: html/contribute/translate.html:42
+msgid ""
+"\n"
+"Another option is to use some web based system for translation, where lot "
+"of\n"
+"people can work on single translation as they just translate one text at "
+"once.\n"
+"We currently use <a href=\"https://weblate.org/\">Weblate</a> to\n"
+"manage translations. To start translating just create an account there and\n"
+"start translating. You can already see dozens of languages there, but if "
+"your\n"
+"one is missing, just <a href=\"/support/\">tell us</a> and we will add it. "
+"There\n"
+"are separate translations projects:\n"
+msgstr ""
+"\n"
+"Outra opção é usar algum sistema baseado em web para tradução, onde muitas\n"
+"pessoas podem trabalhar numa única tradução confirme elas traduzem apenas um "
+"texto por vez.\n"
+"Nós atualmente usamos o <a href=\"https://weblate.org/\">Weblate</a> para\n"
+"gerenciar as traduções. Para começar a traduzir apenas crie uma conta lá e "
+"comece a\n"
+"traduzir. Você já pode ver dúzias de idiomas lá, mas se o seu\n"
+"estiver faltando, apenas <a href=\"/support/\">fale para nós</a> e nós "
+"iremos adicionar ele.\n"
+"Existem projetos de traduções separados:\n"
+
+#: html/contribute/translate.html:54
+msgid "Introduction page"
+msgstr "Página de introdução"
+
+#: html/contribute/translate.html:58
+msgid "This website"
+msgstr "Este site"
+
+#: html/contribute/translate.html:62
+msgid ""
+"\n"
+"All languages are open to translated for anybody logged in by default. "
+"However\n"
+"if you want to have better control on some language <a href=\"/support/"
+"\">tell\n"
+"us</a> to allow others only to suggest translations. This usually brings\n"
+"better quality of translation and slower progress, so it's up to each\n"
+"translator to define policy.\n"
+msgstr ""
+"\n"
+"Todas as línguas estão abertas para serem traduzidas por qualquer um logado "
+"nela por padrão.\n"
+"Entretanto, se você quiser um controle melhor sobre alguma língua <a href=\"/"
+"support/\">conte\n"
+"para nós</a> para permitir outros somente sugerirem traduções. Isso "
+"normalmente traz\n"
+"uma qualidade melhor de tradução e progresso mais lento, então depende de "
+"cada tradutor\n"
+"definir a política.\n"
+
+#: html/contribute/translate.html:71
+msgid "Hints for Translators"
+msgstr "Dicas para Tradutores"
+
+#: html/contribute/translate.html:73
+msgid ""
+"\n"
+"In menu items, there is often used ampresand (&amp;), it means keybord\n"
+"shortcut for menu item. Please make those shortcuts unique in each menu. \n"
+msgstr ""
+"\n"
+"Em itens de menu, frequentemente aparecem (&amp;), isso significa\n"
+"um atalho de teclado para um item de menu. Por favor tornem estes atalhos "
+"únicos para cada menu.\n"
+
+#: html/contribute/translate.html:80
+msgid ""
+"\n"
+"Please test the translations in the program. Just download mo file from\n"
+"translation system and place it under\n"
+"<code>/usr/share/locale/aa/LC_MESSAGES/wammu.mo</code>, where <code>aa</"
+"code>\n"
+"is two letter code of your translation.\n"
+msgstr ""
+"\n"
+"Por faavor teste as traduções no programa. Apenas baixe o arquivo mo do\n"
+"sistema de tradução e coloque-o dentro de\n"
+"<code>/usr/share/locale/aa/LC_MESSAGES/wammu.mo</code>, onde <code>aa</"
+"code>\n"
+"é um código de duas letras da sua tradução.\n"
+
+#: html/contribute/translate.html:89
+#, python-format
+msgid ""
+"You should follow terminology as defined for your language in <a href="
+"\"%(url)s\">dictionary for the project</a>. If it is not defined, you can "
+"help creating one!"
+msgstr ""
+"Você deveria seguir a terminologia como definida para sua linguagem no <a "
+"href=\"%(url)s\">dicionário do projeto</a>. Se ele não estiver definido "
+"ainda, você pode ajudar a criar um!"
+
+#: html/contribute/translate.html:92
+msgid "What is Important?"
+msgstr "O que é importante?"
+
+#: html/contribute/translate.html:94
+msgid ""
+"\n"
+"If you will get to translation in bad shape, there is too much work. Use "
+"the\n"
+"following rules to find the most important things:\n"
+msgstr ""
+"\n"
+"Se você pegar uma tradução mal feita, há trabalho demais. Use as\n"
+"regras a seguir para descobrir as coisas mais importantes:\n"
+
+#: html/contribute/translate.html:101
+msgid ""
+"\n"
+"libGammu messages - there is just few of them and they are used also in "
+"Wammu.\n"
+"It is just good place to start and get to know some basic terminology.\n"
+msgstr ""
+"\n"
+"mensagens libGammu - há somente algumas delas e elas são usadas também no "
+"Wammu.\n"
+"É um bom lugar para começar a conhecer alguma terminologia básica.\n"
+
+#: html/contribute/translate.html:105
+msgid ""
+"\n"
+"Wammu translation - the is the application which is most frequently used by\n"
+"users with little English knowledge.\n"
+msgstr ""
+"\n"
+"Tradução do Wammu - esta é a aplicação que é mais frequentemente usada\n"
+"pelos usuários com pouco conhecimento no inglês.\n"
+
+#: html/contribute/translate.html:109
+msgid ""
+"\n"
+"Gammu translation - it's nice to have but not really a high priority.\n"
+msgstr ""
+"\n"
+"Tradução do Gammu - é legal de se ter mas não é exatamente uma prioridade "
+"alta.\n"
+
+#: html/contribute/translate.html:112
+msgid ""
+"\n"
+"Wammu website - there is lot of texts here and it's great to have the "
+"website\n"
+"translated for new users.\n"
+msgstr ""
+"\n"
+"Site do Wammu - existem muitos testos aqui e é ótimo de ter este site\n"
+"traduzido para os novos usuários.\n"
+
+#: html/contribute/translate.html:116
+msgid ""
+"\n"
+"Gammu documentation - it would be great to have this translated to many\n"
+"languages, but it is huge amount of text to translate.\n"
+msgstr ""
+"\n"
+"Documentação do Gammu - seria ótimo ter ela traduzida para muitas\n"
+"linguagens, mas é uma quantidade enorme de texto para traduzir.\n"
+
+#: html/contribute/wanted.html:4 html/contribute/wanted.html.py:8
+msgid "Wanted Skills for Wammu and Gammu"
+msgstr "Habilidades desejadas para o Wammu e Gammu"
+
+#: html/contribute/wanted.html:19
+msgid ""
+"\n"
+"Bellow is list of currently positions, which would be most helpful. If you\n"
+"won't find anything matching your skills, there still might be something "
+"where\n"
+"you can help, but was not found to be so important to be highlighted here. "
+"If\n"
+"you feel something could fit your skill, please \n"
+"<a href=\"/support/lists/\"><strong>contact us on mailing list</strong></"
+"a>.\n"
+msgstr ""
+"\n"
+"Abaixo está uma lista das posições atualmente mais úteis. Se você\n"
+"não encontrar nada correspondendo suas habilidades, pode haver algo\n"
+"onde você possa ajudar, mas não foi encontrado para ser tão importante\n"
+"a ponto de ser marcado aqui. Se você sente que algo poderia necessitar\n"
+"sua habilidade, favor <a href=\"/support/lists/\"><strong>nos contate na\n"
+"lista de email</strong></a>.\n"
+
+#: html/contribute/wanted.html:28
+msgid "Documentation writer"
+msgstr "Editor da documentação"
+
+#: html/contribute/wanted.html:31
+msgid ""
+"\n"
+"We have quite comprehensive <a href=\"/docs/manual/\">documentation</a>, "
+"though\n"
+"there are still lot of places where it could be extended. You don't need "
+"any \n"
+"special skill for this, writing plain text is enough.\n"
+msgstr ""
+"\n"
+"Nós temos uma <a href=\"/docs/manual/\">documentação</a> bem compreensiva,\n"
+"no entanto, existem muitos lugares que poderiam ser extendidos. Você não\n"
+"precisa de nenhuma habilidade especial para isso, escrever em texto extenso "
+"é o bastante.\n"
+
+#: html/contribute/wanted.html:38
+msgid "Community supporter"
+msgstr "Suporte da comunidade"
+
+#: html/contribute/wanted.html:41
+msgid ""
+"\n"
+"You have basic knowledge about Gammu and want to help others? Answering "
+"users\n"
+"questions or mailing list or IRC is the best you can do for them. Usually "
+"you \n"
+"don't need deep technical knowledge, most questions can be answered by "
+"looking \n"
+"at documentation.\n"
+msgstr ""
+"\n"
+"Você tem conhecimento básico sobre o Gammu e quer ajudar outros? Responder\n"
+"as perguntas dos usuários ou enviar um email ou IRC é o melhor que você pode "
+"fazer por eles.\n"
+"Normalmente você não precisa de nenhum conhecimento profundamente técnico, a "
+"maioria\n"
+"das perguntas pode ser respondida só de olhar a documentação.\n"
+
+#: html/contribute/wanted.html:49
+msgid "Windows Developer"
+msgstr "Desenvolvedor Windows"
+
+#: html/contribute/wanted.html:52
+msgid ""
+"\n"
+"Currently most of developers work on Linux or BSD. This leads to lacking\n"
+"support for Windows a bit. You probably need Visual Studio installed and "
+"you\n"
+"need some experiences with Windows API.\n"
+msgstr ""
+"\n"
+"Atualmente a maioria dos desenvolvedores trabalham com Linux ou BSD. Isso "
+"leva a falta\n"
+"de suporte para Windows. Você provavelmente precisa do Visual Studio "
+"instalado e você\n"
+"precisa ter alguma experiência com a API do Windows.\n"
+
+#: html/contribute/wanted.html:59
+msgid "Translators"
+msgstr "Tradutores"
+
+#: html/contribute/wanted.html:62
+msgid ""
+"\n"
+"There are always things to translate to almost any language, just check\n"
+"dedicated page <a href=\"/contribute/translate/\">about translating</a>.\n"
+msgstr ""
+"\n"
+"Existem sempre coisas para traduzir para quase qualquer idioma, apenas veja\n"
+"a página dedicada a <a href=\"/contribute/translate/\">tradução</a>.\n"
+
+#: html/contribute/wanted.html:68
+msgid "Graphics/Designer"
+msgstr "Gráficos/Designer"
+
+#: html/contribute/wanted.html:71
+msgid ""
+"\n"
+"Graphics and icons used in Wammu are quite poor quality right now. We would\n"
+"definitely make use of somebody more skilled in this area.\n"
+msgstr ""
+"\n"
+"Gráficos e ícones usados no Wammu são de uma qualidade bastante pobre "
+"agora.\n"
+"Nós definitivamente usaríamos alguém mais habilidoso nessa área.\n"
+
+#: html/contribute/wanted.html:77
+msgid "Symbian Developer"
+msgstr "Desenvolvedor Symbian"
+
+#: html/contribute/wanted.html:80
+msgid ""
+"\n"
+"Gammu currently lacks support for Symbian. The only way how this can be\n"
+"covered is implementing application for Symbian, which we can use as\n"
+"communication end point to which we can talk (gnapplet is currently used "
+"for\n"
+"this purpose, but it lacks support for recent Symbian versions).\n"
+msgstr ""
+"\n"
+"O Gammu atualmente fatal suporte ao Symbian. O único jeito de isso ser\n"
+"resolvido é implementando uma aplicação para Symbian, que nós podemos usar\n"
+"como ponto de comunicação com o qual nós podemos conversar (gnapplet é "
+"atualmente\n"
+"usado para este propósito, mas ele falta suporte para as versões recentes do "
+"Symbian).\n"
+
+#: html/contribute/wanted.html:89
+msgid ""
+"\n"
+"The very same probably applies to other modern platforms such as Android,\n"
+"Maemo or Windows Mobile.\n"
+msgstr ""
+"\n"
+"O mesmo provavelmente se aplica a outras plataformas modernas como o "
+"Android,\n"
+"Maemo ou Windows Mobile.\n"
+
+#: html/contribute/wanted.html:95
+msgid "Python Developer"
+msgstr "Desenvolvedor Python"
+
+#: html/contribute/wanted.html:98
+msgid ""
+"\n"
+"Wammu could use much more attention from developers than it currently gets.\n"
+"You will have quite free hands to move project forward and make it look as "
+"you\n"
+"wish.\n"
+msgstr ""
+"\n"
+"O Wammu poderia ter muito mais atenção dos desenvolvedores do que ele tem "
+"atualmente.\n"
+"Você terá as mãos bem livres para mover o projeto para frente e fazê-lo "
+"parecer como\n"
+"você quiser.\n"
+
+#: html/contribute/wanted.html:105
+msgid "C Developer"
+msgstr "Desenvolvedor C"
+
+#: html/contribute/wanted.html:108
+msgid ""
+"\n"
+"There is always lot of bugs and feature requests on Gammu core and more "
+"hands\n"
+"can manage them faster.\n"
+msgstr ""
+"\n"
+"Existem sempre muitos bugs e pedidos de função no núcleo do Gammu e mais "
+"mãos\n"
+"poderiam gerenciá-los mais rápido.\n"
+
+#: html/docs/index.html:4 html/docs/index.html.py:7
+msgid "Wammu and Gammu Documentation"
+msgstr "Documentação do Wammu e Gammu"
+
+#: html/docs/index.html:10
+msgid ""
+"\n"
+"The best user documentation for Gammu comes in <strong><a\n"
+"href=\"/docs/manual/\">The Gammu Manual</a></strong>. It covers all aspects "
+"from\n"
+"installing Gammu, configuring it, running the programs up to SMSD\n"
+"documentation and C or Python API.\n"
+msgstr ""
+"\n"
+"A melhor documentação do usuário para Gammu vem no <strong><a\n"
+"href=\"/docs/manual/\">Manual Gammu</a></strong>. Ele cobre todos os "
+"aspectos\n"
+"desde a instalação do Gammu, configuração, executação dos programas até\n"
+"a documentação do SMSD e da API C ou Python.\n"
+
+#: html/docs/index.html:18
+msgid "You can also download documentation in PDF:"
+msgstr "Você também pode baixar a documentação em PDF:"
+
+#: html/docs/index.html:22
+msgid "Gammu SMSD Daemon Manual"
+msgstr "Manual do Daemon SMSD do Gammu"
+
+#: html/docs/index.html:26
+msgid ""
+"\n"
+"For checking support of some phone model, the best source is <a\n"
+"href=\"/phones/\">Gammu Phone Database</a> which contains user experiences "
+"with\n"
+"Gammu and different phone models.\n"
+msgstr ""
+"\n"
+"Para verificar o suporte a algum modelo de telefone, a melhor fonte é\n"
+"o <a href=\"/phones/\">Banco de dados de telefones do Gammu</a> que contém "
+"as\n"
+"experiências dos usuários com o Gammu e os modelos diferentes de telefones.\n"
+
+#: html/docs/index.html:34
+msgid ""
+"\n"
+"If you still have some questions, please check <a\n"
+"href=\"/docs/manual/faq/\"><strong>Frequently Asked Questions</strong></a> "
+"before\n"
+"asking on <a href=\"/support/lists/\">mailing list</a>.\n"
+msgstr ""
+"\n"
+"Se você ainda tiver alguma pergunta, favor olhe a  <a\n"
+"href=\"/docs/manual/faq/\"><strong>FAQ</strong></a> antes\n"
+"de perguntá-la na  <a href=\"/support/lists/\">lista de emails</a>.\n"
+
+#: html/docs/index.html:41
+msgid "Developer Documentation"
+msgstr "Documentação do Desenvolvedor"
+
+#: html/docs/index.html:44
+msgid ""
+"\n"
+"The developer documentation is included in <strong><a\n"
+"href=\"/docs/manual/\">The Gammu Manual</a></strong>. You can find there\n"
+"documentation for <strong><a href=\"/docs/manual/python/\">Python\n"
+"API</a></strong>, <strong><a href=\"/docs/manual/c/\">libGammu C\n"
+"API</a></strong> or <strong><a href=\"/docs/manual/internal/\">internal API\n"
+"</a></strong>.\n"
+msgstr ""
+"\n"
+"A documentação do desenvolvedor está incluída no <strong><a\n"
+"href=\"/docs/manual/\">Manual Gammu</a></strong>. Você pode encontrar lá\n"
+"a documentação para a <strong><a href=\"/docs/manual/python/\">API Python\n"
+"</a></strong>, <strong><a href=\"/docs/manual/c/\">API C libGammu\n"
+"</a></strong> ou a <strong><a href=\"/docs/manual/internal/\">API interna\n"
+"</a></strong>.\n"
+
+#: html/docs/index.html:55
+msgid ""
+"\n"
+"As a developer, you might be also interested what is planned to happen in "
+"next\n"
+"Gammu and Wammu releases, you can find this information in the \n"
+"<a href=\"/docs/manual/project/roadmap.html\">roadmap</a>.\n"
+msgstr ""
+"\n"
+"Como um desenvolvedor, você pode estar interessado também no que está "
+"planejado\n"
+"para as próximas versões do Gammu e wammu, você pode encontrar essa "
+"informação\n"
+"no <a href=\"/docs/manual/project/roadmap.html\">roadmap</a>.\n"
+
+#: html/docs/index.html:63
+msgid ""
+"\n"
+"Additional hints about protocols can be found in <code>docs/develop</code> "
+"in\n"
+"Gammu sources or you might want to use git repository with <a\n"
+"href=\"http://github.com/gammu/gsm-docs/\">various GSM documentation</a>.\n"
+msgstr ""
+"\n"
+"Dicas adicionais sobre protocolos podem ser encontradas em <code>docs/"
+"develop</code>\n"
+"nas fontes do Gammu ou você pode querer usar o repositório git com <a\n"
+"href=\"http://github.com/gammu/gsm-docs/\">documentações de GSM variados</"
+"a>.\n"
+
+#: html/downloads/index.html:4
+msgid "Download Wammu and Gammu"
+msgstr "Baixe o Wammu e o Gammu"
+
+#: html/downloads/index.html:8
+msgid ""
+"\n"
+"Download\n"
+msgstr ""
+"\n"
+"Download\n"
+
+#: html/downloads/index.html:14
+msgid ""
+"\n"
+"You can download two programs here - <a href=\"/gammu/\">Gammu</a> and \n"
+"<a href=\"/wammu/\">Wammu</a>. Wammu is a GUI program, while Gammu a "
+"command\n"
+"line and it includes a <a href=\"/smsd/\">SMS daemon</a> and \n"
+"<a href=\"/python-gammu/\">Python bindings</a>. Please check linked pages "
+"for\n"
+"more details.\n"
+msgstr ""
+"\n"
+"Você pode baixar dois programas aqui - <a href=\"/gammu/\">Gammu</a> e\n"
+"<a href=\"/wammu/\">Wammu</a>. O Wammu é um programa GUI, enquanto o Gammu\n"
+"é uma linha de comando e inclui um <a href=\"/smsd/\">daemon SMS</a> e \n"
+"<a href=\"/python-gammu/\">Python bindings</a>. Favor olhar os links para\n"
+"mais detalhes.\n"
+
+#: html/downloads/index.html:39
+msgid "Syndication"
+msgstr "Syndication"
+
+#: html/downloads/index.html:41
+msgid "DOAP for Wammu"
+msgstr "DOAP para Wammu"
+
+#: html/downloads/index.html:42
+msgid "DOAP for Gammu"
+msgstr "DOAP para Gammu"
+
+#: html/downloads/index.html:43
+msgid "PAD for Wammu"
+msgstr "PAD para Wammu"
+
+#: html/downloads/index.html:44
+msgid "PAD for Gammu"
+msgstr "PAD para Gammu"
+
+#: html/downloads/list.html:8
+#, python-format
+msgid ""
+"\n"
+"Download %(program)s (%(platform)s)\n"
+msgstr ""
+"\n"
+"Baixe %(program)s (%(platform)s)\n"
+
+#: html/downloads/list.html:29
+#, fuzzy
+msgid "Binary packages"
+msgstr "Pacotes Debian"
+
+#: html/downloads/list.html:33 html/downloads/platformlinks.html:7
+msgid "Debian packages"
+msgstr "Pacotes Debian"
+
+#: html/downloads/list.html:36 html/downloads/platformlinks.html:10
+msgid "Ubuntu packages"
+msgstr "Pacotes Ubuntu"
+
+#: html/downloads/list.html:39 html/downloads/platformlinks.html:13
+msgid "Ubuntu packages in PPA"
+msgstr "Pacotes Ubuntu nos repositórios PPA"
+
+#: html/downloads/list.html:43 html/downloads/platformlinks.html:17
+msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
+msgstr ""
+"Pacotes RPM (openSUSE, Fedora, Mandriva, SLES, RHEL, CentOS) última versão "
+"estável"
+
+#: html/downloads/list.html:47
+msgid "Development version"
+msgstr "Versão de desenvolvimento"
+
+#: html/downloads/list.html:50
+msgid ""
+"Should you be interested in git access or git snapshots, you can find them "
+"on <a href=\"/contribute/code/\">development page</a>."
+msgstr ""
+"Se você estiver interessado no acesso ao git ou snapshots do git, você pode "
+"encontrá-los na <a href=\"/contribute/code\">páagina do desenvolvimento</a>."
+
+#: html/downloads/platformlinks.html:19
+msgid "Development git snaphots and git access"
+msgstr "Snapshots de desenvolvimento git e acesso ao git"
+
+#: html/downloads/platformmessage.html:3
+msgid ""
+"\n"
+"Please select download option best fitting your platform. If you use Linux,\n"
+"your distribution most likely already contains binary packages, so the "
+"easiest\n"
+"way to get it is to install it directly from your distribution "
+"repositories.\n"
+msgstr ""
+"\n"
+"Por favor, selecione a opção de download que melhor se encaixa à sua "
+"plataforma.\n"
+"Se você usa Linux, é muito provável que ela já contenha pacotes binários, "
+"então o jeito mais fácil de obtê-las é instalar diretamente dos repositórios "
+"da sua distribuição.\n"
+
+#: html/downloads/program.html:8
+#, python-format
+msgid ""
+"\n"
+"Download %(program)s\n"
+msgstr ""
+"\n"
+"Baixe %(program)s\n"
+
+#: html/downloads/program.html:14
+#, python-format
+msgid ""
+"\n"
+"Thank you for interest in downloading <a href=\"/%(program_name)s/\">"
+"%(program)s</a>.\n"
+msgstr ""
+"\n"
+"Obrigado pelo interesse em baixar <a href=\"/%(program_name)s/\">"
+"%(program)s</a>.\n"
+
+#: html/downloads/program.html:22
+msgid "Current Releases"
+msgstr "Versões Atuais"
+
+#: html/downloads/program.html:34 html/sidebars/gammu.html:4
+#: html/sidebars/wammu.html:4
+msgid "Downloads"
+msgstr "Downloads"
+
+#: html/downloads/release.html:8
+#, python-format
+msgid ""
+"\n"
+"%(program)s %(version)s\n"
+msgstr ""
+"\n"
+"%(program)s %(version)s\n"
+
+#: html/downloads/release.html:15
+msgid "Changes"
+msgstr "Mudanças"
+
+#: html/downloads/release.html:21
+msgid "Files"
+msgstr "Arquivos"
+
+#: html/downloads/relinfo.html:4
+#, python-format
+msgid ""
+"\n"
+"Released on %(released)s, see <a href=\"%(url)s\">detailed information</a>.\n"
+msgstr ""
+"\n"
+"Lançado em %(released)s, veja a <a href=\"%(url)s\">informação detalhada</"
+"a>.\n"
+
+#: html/downloads/smalldownloads.html:2
+msgid "Source Downloads"
+msgstr "Download de Código-fonte"
+
+#: html/downloads/programs/gammu-source.html:3
+msgid ""
+"\n"
+"You are downloading Gammu source code. To compile it you need some "
+"development\n"
+"environment for your platform and <a href=\"http://www.cmake.org/\">CMake</"
+"a>\n"
+"tool to configure the sources. There are also some optional requirements "
+"for\n"
+"additional features which are listed in INSTALL file in sources. This file\n"
+"also contains more detailed instructions about compiling Gammu.\n"
+msgstr ""
+"\n"
+"Você está baixando o código-fonte do Gammu. Para compilá-lo você precisa de "
+"algum\n"
+"ambiente de desenvolvimento para sua plataforma e do <a href=\"http://www."
+"cmake.org/\">CMake</a>\n"
+"para configurar as fontes. Existem também alguns requisitos opcionais para\n"
+"funções adicionais que são listadas no arquivo INSTALL em sources. Este "
+"arquivo\n"
+"também contém mais instruções detalhadas sobre a compilação do Gammu.\n"
+
+#: html/downloads/programs/gammu-source.html:12
+msgid ""
+"This source tarball contains Gammu command line utility, libGammu library "
+"and Gammu SMSD."
+msgstr ""
+
+#: html/downloads/programs/gammu-win32.html:3
+msgid ""
+"\n"
+"You are downloading Gammu binaries for Windows. The files are available as\n"
+"installer (.exe) or just an archive (.zip). The -Minimal variant has "
+"slighly\n"
+"less features compiled in and contains Gammu.dll, which you might use in\n"
+"external programs. There are also python-gammu binaries, which include all\n"
+"needed parts to use python-gammu in your python programs, just choose the\n"
+"version matching Python version you use.\n"
+msgstr ""
+"\n"
+"Você está baixando os binários do Gammu para Windows. Os arquivos estão "
+"disponíveis como\n"
+"instalador (.exe) ou apenas um arquivo (.zip). A variante -Minimal tem um "
+"pouco\n"
+"menos funções compiladas nela e contém o Gammu.dll, que você pode usar em\n"
+"programas externos. Existem também binários python-gammu, que incluem todas "
+"as\n"
+"partes necessárias para usar o python-gammu nos seus programas python, "
+"apenas escolha\n"
+"a versão correspondente a versão Python que você usa.\n"
+
+#: html/downloads/programs/wammu-source.html:3
+#, fuzzy
+msgid ""
+"\n"
+"You are downloading Wammu source code. Before you can run Wammu, you need "
+"to\n"
+"have installed <a href=\"/python-gammu/\">python-gammu</a>, <a\n"
+"href=\"http://www.python.org/\">Python</a> and <a\n"
+"href=\"http://wxpython.org/\">wxPython</a>. There are also some optional "
+"requirements for\n"
+"additional features which are listed in INSTALL file in sources. This file\n"
+"also contains more detailed instructions about installing Wammu.\n"
+msgstr ""
+"\n"
+"Você está baixando o código-fonte do Wammu. Antes de você rodar o Wammu, "
+"você precisa\n"
+"ter instalado o <a href=\"/gammu/\">Gammu com bindings python</a>, <a\n"
+"href=\"http://www.python.org/\">Python</a> e o <a\n"
+"href=\"http://wxpython.org/\">wxPython</a>. Também existem alguns requisitos "
+"opcionais\n"
+"para funções adicionais que são listadas no arquivo INSTALL em sources. Este "
+"arquivo\n"
+"também contém mais instruções detalhadas sobre a instalação do Wammu.\n"
+
+#: html/downloads/programs/wammu-win32.html:3
+msgid ""
+"\n"
+"You are downloading wammu binaries for Windows. The files are available as\n"
+"<strong>full installer (-setup.exe)</strong> which is probably the thing you "
+"want to download.\n"
+"If you want to handle all dependencies manually and want to use Python you\n"
+"have installed, you can get just the <strong>Python module\n"
+"(.win32.exe)</strong>.\n"
+msgstr ""
+"\n"
+"Você está baixando os binários do wammu para Windows. Os arquivos estão "
+"disponíveis como\n"
+"<strong>instalador completo(-setup.exe)</strong> que provavelmente é o que "
+"você quer baixar.\n"
+"Se você quer manipular todas as dependências manualmente e quer usar o "
+"Python que\n"
+"você instalou, você pode pegar apenas o <strong>módulo Python\n"
+"(.win32.exe)</strong>.\n"
+
+#: html/links/index.html:4 html/links/index.html.py:7
+msgid "Third Party Applications using Gammu"
+msgstr "Aplicações de Terceiros usando o Gammu"
+
+#: html/links/index.html:22
+msgid "Website:"
+msgstr "Site:"
+
+#: html/news/contrib_index.html:4 html/news/contrib_index.html.py:6
+msgid "Third Party News"
+msgstr "Notícias de Terceiros"
+
+#: html/news/entry.html:4 html/news/index.html:4 html/news/index.html.py:9
+#: news/feeds.py:9
+msgid "Wammu and Gammu News"
+msgstr "Notícias do Wammu e Gammu"
+
+#: html/news/gammu_index.html:4 html/news/gammu_index.html.py:6
+msgid "Gammu News"
+msgstr "Notícias do Gammu"
+
+#: html/news/index.html:7 html/phonedb/index.html:60
+msgid "RSS"
+msgstr "RSS"
+
+#: html/news/published.html:4
+#, python-format
+msgid ""
+"\n"
+"Published on %(date)s by <a href=\"mailto:%(email)s\">%(author)s</a>\n"
+msgstr ""
+"\n"
+"Publicado em %(date)s por <a href=\"mailto:%(email)s\">%(author)s</a>\n"
+
+#: html/news/wammu_index.html:4 html/news/wammu_index.html.py:6
+msgid "Wammu News"
+msgstr "Notícias do Wammu"
+
+#: html/phonedb/body.html:3
+msgid "Supported Features"
+msgstr "Funções Suportadas"
+
+#: html/phonedb/body.html:13
+msgid "No features reported as working!"
+msgstr "Nenhuma função declarada em funcionamento!"
+
+#: html/phonedb/body.html:27
+msgid "Phone is reported not to be supported!"
+msgstr "O telefone é relatado como não suportado!"
+
+#: html/phonedb/body.html:34
+msgid "Reporter Note"
+msgstr "Nota do Relator"
+
+#: html/phonedb/index.html:5 html/phonedb/new.html:5 html/phonedb/phone.html:4
+#: html/phonedb/search.html:5
+msgid ""
+"Database of supported phones in Gammu and Wammu, the software for managing "
+"GSM cell phones."
+msgstr ""
+"Banco de dados de telefones suportados no Gammu e Wammu, o software para "
+"gerenciamento de telefones celulares GSM."
+
+#: html/phonedb/index.html:6 html/phonedb/index.html.py:10
+#: html/phonedb/new.html:6 html/phonedb/phone.html:6
+#: html/phonedb/search.html:6 html/phonedb/vendor.html:6
+msgid "Gammu Phone Database "
+msgstr "Banco de dados de Telefones do Gammu "
+
+#: html/phonedb/index.html:13
+msgid ""
+"\n"
+"This page tries to collect list of phones supported by <a href=\"/libgammu/"
+"\">Gammu library</a>. To add model browse to manufacturer page, look whether "
+"model hasn't been entered yet and enter new model.\n"
+"You can find more information about mobile phones on <a\n"
+"href=\"http://tuxmobil.org/phones_linux.html\">TuxMobil</a>.\n"
+msgstr ""
+"\n"
+"Esta página tenta coletar a lista de telefones suportados pela <a href=\"/"
+"libgammu/\">biblioteca Gammu</a>. Para adicionar um modelo navegue pela "
+"página do fabricante, olhe qual modelo não foi inserido ainda e informe o "
+"novo modelo.\n"
+"Você pode encontrar mais informações sobre telefones móveis na <a\n"
+"href=\"http://tuxmobil.org/phones_linux.html\">TuxMobil</a>.\n"
+
+#: html/phonedb/index.html:20
+msgid ""
+"\n"
+"This list is filled in by users and thus there can be no warranty\n"
+"whether entered information is correct and accurate. If author decided to\n"
+"publish his email, you might consider asking him for details. Also <a\n"
+"href=\"https://lists.sourceforge.net/lists/listinfo/gammu-users\">gammu-"
+"users\n"
+"mailing list</a> is open to questions about supported phones.\n"
+msgstr ""
+"\n"
+"Esta lista é preenchida pelos usuários e portanto não pode haver garantia\n"
+"que as informações inseridas são corretas e precisas. Se o autor decidiu\n"
+"publicar o email dele, você pode considerar perguntá-lo por detalhes. Além "
+"disso, a\n"
+"<a href=\"https://lists.sourceforge.net/lists/listinfo/gammu-users\">lista "
+"de emails\n"
+"dos usuários gammu</a> está aberta para perguntas sobre os telefones "
+"suportados.\n"
+
+#: html/phonedb/index.html:29
+msgid ""
+"You can find general information about <a href=\"/docs/manual/faq/config.html"
+"\">configuring Gammu in FAQ</a>."
+msgstr ""
+"Você pode encontrar informações gerais sobre <a href=\"/docs/manual/faq/"
+"config.html\">configuração do Gammu na FAQ</a>."
+
+#: html/phonedb/index.html:32
+msgid ""
+"\n"
+"As this list is updated by users, you are welcome to <strong><a href=\"/"
+"phones/new/\">add new records</a></strong>.\n"
+msgstr ""
+"\n"
+"Como essa lista é atualizada pelos usuários, você é bem-vindo a <strong><a "
+"href=\"/phones/new/\">adicionar novos registros</a></strong>.\n"
+
+#: html/phonedb/index.html:37
+msgid ""
+"\n"
+"Generally any phone capable of AT commands or IrMC should be supported. "
+"Also\n"
+"any Nokia phone using Nokia OS should work. Symbian phones are poorly\n"
+"supported, for models with Symbian 9.0 and older you can install gnapplet "
+"to\n"
+"phone to get some functionality, newer ones do not have support so far.\n"
+msgstr ""
+"\n"
+"Geralmente qualquer telefone capaz de comandos AT ou IrMC deveriam ser "
+"suportados.\n"
+"Além disso, qualquer telefone usando o Nokia OS deve funcionar. Telefones "
+"Symbian mal são\n"
+"suportados, para modelos com Symbian 9.0 ou mais antigos você pode instalar "
+"o gnapplet no\n"
+"telefone para ter alguma funcionalidade, os mais novos não tem suporte até "
+"agora.\n"
+
+#: html/phonedb/index.html:45
+msgid "Manufacturers"
+msgstr "Fabricantes"
+
+#: html/phonedb/index.html:61
+msgid "Recently Added Phones"
+msgstr "Telefones Recentemente Adicionados"
+
+#: html/phonedb/index.html:66
+msgid "Phone Records Summary"
+msgstr "Sumário de Registro de Telefones"
+
+#: html/phonedb/index.html:70
+msgid ""
+"\n"
+"On following chart, you can see how number of records in phone database\n"
+"evolves over time. The rough step at the beginning is caused by absence of\n"
+"timestamp data.\n"
+msgstr ""
+"\n"
+"No gráfico a seguir, você pode ver como o número de registros no banco de "
+"dados\n"
+"de telefones evolui com o tempo. O passo mais difícil a princípio é causado "
+"pela\n"
+"ausência de dados de data e hora.\n"
+
+#: html/phonedb/index.html:79
+msgid "Download all data as CSV"
+msgstr ""
+
+#: html/phonedb/index.html:83
+msgid "Sponsors"
+msgstr "Patrocinadores"
+
+#: html/phonedb/list.html:5
+msgid "Name"
+msgstr "Nome"
+
+#: html/phonedb/list.html:5
+msgid "Connection"
+msgstr "Conexão"
+
+#: html/phonedb/list.html:5
+msgid "Supported features"
+msgstr "Recursos suportados"
+
+#: html/phonedb/list.html:22
+msgid "Not supported"
+msgstr "Não suportado"
+
+#: html/phonedb/new.html:6 html/phonedb/new.html.py:13
+#: html/phonedb/new.html:16
+msgid "Create New Record"
+msgstr "Criar Novo Registro"
+
+#: html/phonedb/new.html:11 html/phonedb/phone.html:11
+#: html/phonedb/search.html:11 html/phonedb/vendor.html:11
+msgid "Home"
+msgstr ""
+
+#: html/phonedb/new.html:12 html/phonedb/phone.html:12
+#: html/phonedb/search.html:12 html/phonedb/vendor.html:12
+#, fuzzy
+msgid "Phones Database"
+msgstr "Banco de dados de Telefones do Gammu"
+
+#: html/phonedb/new.html:19
+msgid ""
+"\n"
+"Thank you for improving Gammu phones database, but please note that this is\n"
+"not bug tracking system. Should you have any problems with Gammu, please\n"
+"<a href=\"/support/bugs/\">report them in the bug tracker</a>.\n"
+msgstr ""
+"\n"
+"Obrigado por melhorar o banco de dados de telefones do Gammu, mas favor "
+"saiba que isso\n"
+"não é um sistema de rastreio de bugs. Se você tiver algum problema com o "
+"Gammu, favor\n"
+"<a href=\"/support/bugs/\">informe-os no rastreador de bugs</a>.\n"
+
+#: html/phonedb/new.html:27
+msgid ""
+"\n"
+"Email and name fields are voluntary, you can choose how (and whether) the\n"
+"email will be shown to visitors. Email can be used by Gammu developers to\n"
+"contact you in case they want to test something with your phone or want to\n"
+"clarify some things you have entered.\n"
+msgstr ""
+"\n"
+"Os campos de email e nome são voluntários, você pode escolher como (e se) o\n"
+"email será exibido para visitantes. Email pode ser usado pelos "
+"desenvolvedores do Gammu\n"
+"para contatá-lo caso eles queiram testar algo com seu telefone ou queiram\n"
+"esclarecer algumas coisas que você inseriu.\n"
+
+#: html/phonedb/new.html:38
+msgid "Please enter text 'nospam':"
+msgstr "Favor digite o texto \"nospam\":"
+
+#: html/phonedb/phone.html:17
+msgid "Edit"
+msgstr "Editar"
+
+#: html/phonedb/phone.html:19
+msgid "Delete"
+msgstr "Deletar"
+
+#: html/phonedb/phone.html:22
+msgid "Approve"
+msgstr "Aprovar"
+
+#: html/phonedb/phone.html:30
+msgid ""
+"\n"
+"This record has been rejected for some reasons, you might want to check "
+"other\n"
+"records for same model (you can see them on right side).\n"
+msgstr ""
+"\n"
+"Este registro foi rejeitado por algum motivo, você pode querer olhar outros\n"
+"registros para o mesmo modelo (você pode vê-los no lado direito).\n"
+
+#: html/phonedb/phone.html:38
+msgid ""
+"\n"
+"This record has not been approved yet. This means that it might contain "
+"false\n"
+"information or there are better records for the same model (you can see "
+"them\n"
+"on right side).\n"
+msgstr ""
+"\n"
+"Este registro não foi aprovado ainda. Isso quer dizer que ele pode conter\n"
+"informações falsas ou existem registros melhores para o mesmo modelo (você "
+"pode\n"
+"vê-los no lado direito).\n"
+
+#: html/phonedb/phone.html:47
+#, python-format
+msgid ""
+"\n"
+"If this record contains wrong information, please <a\n"
+"href=\"/phones/new/?vendor=%(vendor)s&amp;name=%(phone)s\">add new record</"
+"a>\n"
+"with correct information and the record will be replaced after review.\n"
+"All records were filled in by users and there is no guarantee that they are\n"
+"correct.\n"
+msgstr ""
+"\n"
+"Se este registro contém informações erradas, favor <a\n"
+"href=\"/phones/new/?vendor=%(vendor)s&amp;name=%(phone)s\">adicione um novo "
+"registro</a>\n"
+"com as informações corretas e o registro será substituído após revisão.\n"
+"Todos os registros foram preenchidos por usuários e não há garantia de que\n"
+"eles estão corretos.\n"
+
+#: html/phonedb/phone.html:57
+msgid ""
+"\n"
+"More information about phone might be available on following sites:\n"
+msgstr ""
+"\n"
+"Mais informações sobre o telefone podem estar disponíveis nos sites a "
+"seguir:\n"
+
+#: html/phonedb/phone.html:70
+msgid "About entry"
+msgstr "Sobre"
+
+#: html/phonedb/phone.html:73
+#, python-format
+msgid ""
+"\n"
+"Created by %(author)s on %(created)s.\n"
+msgstr ""
+"\n"
+"Criado por %(author)s em %(created)s.\n"
+
+#: html/phonedb/phone.html:79
+#, python-format
+msgid ""
+"\n"
+"Created on %(created)s.\n"
+msgstr ""
+"\n"
+"Criado em %(created)s.\n"
+
+#: html/phonedb/phone.html:86
+#, python-format
+msgid ""
+"\n"
+"Tested with Gammu %(version)s.\n"
+msgstr ""
+"\n"
+"Testado com o Gammu %(version)s.\n"
+
+#: html/phonedb/phone.html:93
+msgid "Similar Phones"
+msgstr "Telefones Similares"
+
+#: html/phonedb/search.html:6 html/phonedb/search.html.py:17
+msgid "Search Results"
+msgstr "Resultados da Pesquisa"
+
+#: html/phonedb/search.html:20
+#, python-format
+msgid ""
+"\n"
+"Found %(count)s results matching your query.\n"
+msgstr ""
+"\n"
+"Foram encontrados %(count)s resultados para sua pesquisa.\n"
+
+#: html/phonedb/vendor.html:4
+#, python-format
+msgid ""
+"Database of supported phones from %(vendor_name)s in Gammu and Wammu, the "
+"software for managing GSM cell phones."
+msgstr ""
+"Banco de dados de telefones suportados da %(vendor_name)s em Gammu e Wammu, "
+"o software de gerenciamento de telefones celulares GSM."
+
+#: html/phonedb/vendor.html:14
+msgid "Add new record"
+msgstr "Adicionar novo registro"
+
+#: html/phonedb/vendor.html:25
+#, python-format
+msgid ""
+"\n"
+"Information about phones from this manufacturer is also available on <a\n"
+"href=\"http://tuxmobil.org/phones_survey_%(tuxurl)s.html\">TuxMobil</a>.\n"
+msgstr ""
+"\n"
+"Informações sobre os telefones deste fabricante também estão disponíveis na "
+"<a\n"
+"href=\"http://tuxmobil.org/phones_survey_%(tuxurl)s.html\">TuxMobil</a>.\n"
+
+#: html/phonedb/vendor.html:34
+#, python-format
+msgid ""
+"\n"
+"There is currently %(count)s approved phone records from this vendor.\n"
+msgstr ""
+"\n"
+"Existem atualmente %(count)s registros de telefones aprovados deste "
+"fabricante.\n"
+
+#: html/phonedb/vendor.html:38
+msgid ""
+"\n"
+"There is currently none phone record from this vendor!\n"
+msgstr ""
+"\n"
+"Não há atualmente nenhum registro de telefone deste fabricante!\n"
+
+#: html/phonedb/vendor.html:43
+#, python-format
+msgid ""
+"\n"
+"To change existing entries, simply <a href=\"/phones/new/?vendor=%(slug)s"
+"\">add new one</a>, they will be reviewed and the\n"
+"old ones will get deleted eventually.\n"
+msgstr ""
+"\n"
+"Para mudar os registros existentes, simplesmente <a href=\"/phones/new/?"
+"vendor=%(slug)s\">adicione um novo</a>, eles serão revisados e os mais "
+"antigos serão eventualmente deletados.\n"
+
+#: html/screenshots/contrib_index.html:4 html/screenshots/contrib_index.html:6
+msgid "Third Party Screenshots"
+msgstr "Screenshots de Terceiros"
+
+#: html/screenshots/gammu_index.html:4 html/screenshots/gammu_index.html:6
+msgid "Gammu Screenshots"
+msgstr "Screenshots do Gammu"
+
+#: html/screenshots/index.html:4 html/screenshots/index.html.py:8
+msgid "Wammu and Gammu Screenshots"
+msgstr "Screenshots do Wammu e do Gammu"
+
+#: html/screenshots/wammu_index.html:4 html/screenshots/wammu_index.html:6
+msgid "Wammu Screenshots"
+msgstr "Screenshots do Wammu"
+
+#: html/sidebars/common.html:4
+msgid "How to contribute"
+msgstr "Como contribuir"
+
+#: html/support/bugs.html:4 html/support/bugs.html.py:8
+msgid "Reporting Bugs in Wammu and Gammu"
+msgstr "Relatar bugs no Wammu e Gammu"
+
+#: html/support/bugs.html:11
+msgid ""
+"\n"
+"Use <a href=\"https://github.com/gammu/gammu/issues\">bug tracker</a> to "
+"report a bug or a\n"
+"feature requests. Please take care that you include all information "
+"necessary\n"
+"for the developer to investigate the problem. The most important things to\n"
+"include are:\n"
+msgstr ""
+"\n"
+"Use o <a href=\"https://github.com/gammu/gammu/issues\">rastreador de bugs</"
+"a> para relatar um bug ou\n"
+"um pedido de função. Favor cuide para que você inclua toda a informação "
+"necessária\n"
+"para o desenvolvedor investigar o problema. As coisas mais importantes a "
+"serem\n"
+"incluídas são:\n"
+
+#: html/support/bugs.html:21
+msgid ""
+"\n"
+"<strong>Phone information</strong> such as manufacturer and model are really "
+"necessary.\n"
+msgstr ""
+"\n"
+"<strong>Informação do telefone</strong> como fabricante e modelo são muito "
+"necessárias.\n"
+
+#: html/support/bugs.html:26
+msgid ""
+"\n"
+"Information about your <strong>operating system</strong> and it's version, "
+"do you use Windows, some Linux\n"
+"distribution, Mac OS X, BSD?\n"
+msgstr ""
+"\n"
+"Informações sobre seu <strong>sistema operacional</strong> e sua versão, "
+"você usa Windows, alguma\n"
+"distribuição do Linux, Mac OS X, BSD?\n"
+
+#: html/support/bugs.html:32
+msgid ""
+"\n"
+"Configuration you use, you can just include Gammu <strong>configuration\n"
+"file</strong>.\n"
+msgstr ""
+"\n"
+"Configuração que você usa, você pode simplesmente incluir o\n"
+"<strong>arquivo de configuração do Gammu</strong>.\n"
+
+#: html/support/bugs.html:38
+msgid ""
+"\n"
+"<strong>Debugging log</strong> of the communication, please see bellow how "
+"to obtain that.\n"
+msgstr ""
+"\n"
+"<strong>Debugar o log</strong> da comunicação, favor olhe abaixo como obter "
+"isso.\n"
+
+#: html/support/bugs.html:44
+msgid "Obtaining Debugging Log"
+msgstr "Obter o Debug de Log"
+
+#: html/support/bugs.html:47
+msgid ""
+"\n"
+"Debugging log contains transcription of communication between Gammu and "
+"your\n"
+"phone. As such it might contain your private data. If it is the case or you\n"
+"are not sure, you should mark the bug private, so that only developers are\n"
+"allowed to see the data in it, but it is not publicly accessible as other "
+"bug\n"
+"reports.\n"
+msgstr ""
+"\n"
+"Debug do log contém a transcrição da comunicação entre o Gammu e seu "
+"telefone.\n"
+"Assim ele pode conter seus dados privados. Se este for o caso ou você não "
+"tem\n"
+"certeza, você deve marcar este bug como privado, para que apenas os "
+"desenvolvedores\n"
+"tenham permissão de ver os dados dele, mas ele não será publicamente "
+"acessível como\n"
+"os outros relatórios de bug.\n"
+
+#: html/support/bugs.html:57
+msgid ""
+"\n"
+"To make Gammu generate debug log, you need to tell it to do so. It is "
+"possible\n"
+"either by command line (<code>gammu --debug textalldate --debug-file\n"
+"/tmp/gammu.log identify</code>) or using configuration file:\n"
+msgstr ""
+"\n"
+"Para fazer o Gammu gerar o log de debug, você precisa mandá-lo fazer isso.\n"
+"É possível tanto por linha de comando (<code>gammu --debug textalldate --"
+"debug-file\n"
+"/tmp/gammu.log identify</code>) qunato pelo arquivo de configuração:\n"
+
+#: html/support/bugs.html:73
+msgid ""
+"\n"
+"Wammu automatically creates debugging log in temporary directory\n"
+"(<code>/tmp</code> on Unix systems or Windows it is usually placed under\n"
+"<code>Application Data</code> folder in your profile), where it is kept in\n"
+"case Wammu has crashed. You can also save the current debug log while "
+"running\n"
+"Wammu from Help menu.\n"
+msgstr ""
+"\n"
+"O Wammu cria automaticamente o log de debug no diretório temporário\n"
+"(<code>/tmp</code> nos sistemas Unix ou Windows ele é normalmente colocado "
+"dentro\n"
+"da pasta <code>Application Data</code> no seu perfil), onde ele é guardado "
+"caso\n"
+"o Wammu tenha parado de funcionar. Você também pode salvar o log de debug "
+"atual\n"
+"durante a execução do Wammu pelo menu de Ajuda.\n"
+
+#: html/support/bugs.html:83
+msgid ""
+"\n"
+"Gammu SMSD logging is configured in more levels, to include all messages, "
+"set\n"
+"<code>debuglevel</code> to 255:\n"
+msgstr ""
+"\n"
+"O log SMSD do Gammu é configurado em mais nívels, para incluir todas as "
+"mensagens\n"
+"defina <code>debuglevel</code> para 255:\n"
+
+#: html/support/bugs.html:95
+msgid "Troubleshooting Windows Service"
+msgstr "Solução de problemas do Windows Service"
+
+#: html/support/bugs.html:98
+msgid ""
+"\n"
+"If Gammu fails to start as a Windows service (you will usually get \"Error\n"
+"1053: The service did not respond to the start or control request in a "
+"timely\n"
+"fashion\"), first check your SMSD logs. If they do not contain any useful "
+"hint,\n"
+"try starting SMSD manually with exactly same parameters as you installed "
+"the\n"
+"service (without -i). You should also check if you pass all paths as "
+"absolute\n"
+"(eg. path to configuraiton file).\n"
+msgstr ""
+"\n"
+"Se o Gammu falhar em iniciar como um serviço do Windows (você normalmente "
+"terá o \"Erro\n"
+"1053: o serviço não respondeu ao início ou pedido de controle em período "
+"hábil\"),\n"
+"primeiro veja seus logs do SMSD. Se eles não conterem nenhuma dica útil,\n"
+"tente iniciar o SMSD manualmente com exatamente os mesmos parâmetros que "
+"você\n"
+"instalou o serviço (sem -i). Você também deveria olhar se você passou todos "
+"os caminhos\n"
+"absolutos (ex: caminho para o arquivo de configuração).\n"
+
+#: html/support/bugs.html:109
+msgid ""
+"\n"
+"For example the command line can look like:\n"
+msgstr ""
+"\n"
+"Por exemplo, a linha de comando pode parecer:\n"
+
+#: html/support/bugs.html:119
+msgid ""
+"\n"
+"You now should be able to get errors from SMSD even if it fails to start as "
+"a\n"
+"service.\n"
+msgstr ""
+"\n"
+"Agora você deveria ser capaz de receber erros do SMSD mesmo se ele\n"
+"falhar em iniciar como um serviço.\n"
+
+#: html/support/buy.html:4 html/support/buy.html.py:8
+msgid "Commercial Support for Wammu and Gammu"
+msgstr "Suporte Comercial para Wammu e Gammu"
+
+#: html/support/buy.html:11
+msgid ""
+"\n"
+"Want to use Gammu in your commercial product? As long as you obey license\n"
+"terms, you are very welcome to do so. The software is licensed under GNU\n"
+"General Public License version 2 and there is no option to relicense it for\n"
+"you (basically it is technically impossible to get agreement from all\n"
+"contributors to change the license).\n"
+msgstr ""
+"\n"
+"Quer usar o Gammu no seu produto comercial? Desde que você obedeça aos "
+"termos\n"
+"de licença, você é muito bem-vindo a fazer isso. O software é licenciado sob "
+"a \n"
+"Licença Pública Geral GNU versão 2 e não há opção de relicenciá-la para\n"
+"você (basicamente é tecnicamente impossível ter um acordo de todos os\n"
+"contribuidores para mudar a licença).\n"
+
+#: html/support/buy.html:21
+msgid ""
+"\n"
+"However we can provide you some higher class support for your application.\n"
+"Should you need something like this, please do not hesitate to contact us\n"
+"either on some public place like <a href=\"/support/lists/\">mailing lists</"
+"a>\n"
+"or <a href=\"/support/online/\">Jabber or IRC chats</a> or if you do not "
+"want to\n"
+"disclose you project, you can contact directly <a href=\"/authors/"
+"\">authors</a>.\n"
+msgstr ""
+"\n"
+"No entanto nós podemos providenciar a você algum suporte de classe mais alta "
+"para sua aplicação.\n"
+"Se você precisar de algo assim, favor não hesite em nos contatar\n"
+"ou por algum lugar público como <a href=\"/support/lists/\">listas de email</"
+"a>\n"
+"ou pelos <a href=\"/support/online/\">chats Jabber ou IRC</a> ou se você não "
+"quer\n"
+"publicar seu projeto, você pode contatar diretamente os <a href=\"/authors/"
+"\">autores</a>.\n"
+
+#: html/support/buy.html:31
+msgid ""
+"\n"
+"We do not provide any fixed price support packages, simply because every\n"
+"project is really different and it's best to arrange conditions separately "
+"to\n"
+"match everybody needs.\n"
+msgstr ""
+"\n"
+"Nós não fornecemos nenhum pacotes de suporte por preço fixo, simplesmente "
+"porque\n"
+"cada projeto é muito diferente e é melhor organizar as condições "
+"separadamente\n"
+"para atender as necessidades de todo mundo.\n"
+
+#: html/support/buy.html:39
+msgid ""
+"\n"
+"If you just want to appreciate level of support you got for free, you can "
+"also\n"
+"<a href=\"/donate/\">donate</a> some money to the project.\n"
+msgstr ""
+"\n"
+"Se você só quer apreciar o nível de suporte que você recebeu de graça, você\n"
+"também pode <a href=\"/donate/\">doar</a> algum dinheiro para o projeto.\n"
+
+#: html/support/index.html:4 html/support/index.html.py:10
+msgid "Support for Wammu and Gammu"
+msgstr "Suporte para Wammu e Gammu"
+
+#: html/support/index.html:13
+msgid ""
+"\n"
+"Gammu and Wammu are free software projects. As such you can get some "
+"support\n"
+"from the community which is behind the project. The best way where to start "
+"is\n"
+"usually to check <a href=\"/docs/\"><strong>documentation</strong></a> "
+"whether you problem is not\n"
+"just a configuration issue or some well known situation.\n"
+msgstr ""
+"\n"
+"Gammu e Wammu são projetos de software livre. Assim você pode receber algum "
+"suporte\n"
+"da comunidade que está por trás do projeto. O melhor jeito de onde começar "
+"é\n"
+"normalmente olhar a <a href=\"/docs/\"><strong>documentação</strong></a> "
+"caso\n"
+"seu problema não seja apenas um problema de configuração ou alguma situação "
+"bem conhecida.\n"
+
+#: html/support/index.html:22
+msgid ""
+"\n"
+"If you are looking for list of <strong>supported phones</strong>, you can "
+"look\n"
+"into <a href=\"/phones/\"><strong>Gammu Phone Database</strong></a>. You "
+"can\n"
+"also share your experiences there, but if you had problems, please report "
+"bugs\n"
+"and do not write about problems only in phone database.\n"
+msgstr ""
+"\n"
+"Se você está procurando pela lista de <strong>telefones suportados</strong>, "
+"você pode olhar\n"
+"no <a href=\"/phones/\"><strong>Banco de dados de Telefones do Gammu</"
+"strong></a>. Você pode\n"
+"também compartilhar suas experiências lá, mas se você tiver problemas, favor "
+"relate os bugs\n"
+"e não escreva sobre os problemas somente no banco de dados de telefones.\n"
+
+#: html/support/index.html:30
+msgid "Stack Overflow"
+msgstr "Visão geral da pilha"
+
+#: html/support/index.html:33
+#, python-format
+msgid ""
+"You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
+msgstr ""
+"Você pode também fazer perguntas relacionadas em <a href=\"%(url)s\">Stack "
+"Overflow</a>."
+
+#: html/support/index.html:36
+msgid "Communication with Community"
+msgstr "Comunicação com a Comunidade"
+
+#: html/support/index.html:39
+msgid ""
+"\n"
+"If the <a href=\"/docs/\">documentation</a> does not help, you can try to "
+"look\n"
+"at <a href=\"/support/lists/\">mailing <strong>lists</strong></a>, first "
+"looking in the archives\n"
+"if somebody did not face the problem. You can also try reaching us on some \n"
+"<a href=\"/support/online/\">online communications channels</a> such as "
+"Jabber or\n"
+"IRC.\n"
+msgstr ""
+"\n"
+"Se a <a href=\"/docs/\">documentação</a> não ajudar, você também pode olhar\n"
+"nas <a href=\"/support/lists/\">listas de <strong>emails</strong></a>,\n"
+"primeiro olhe nos arquivos caso alguém não tenha enfrentado o problema.\n"
+"Você também pode tentar nos alcançar em algum <a href=\"/support/online/\">\n"
+"canal de comunicação online</a> como o Jabber ou IRC.\n"
+
+#: html/support/index.html:48
+msgid "Reporting Bugs"
+msgstr "Reportando Bugs"
+
+#: html/support/index.html:51
+msgid ""
+"\n"
+"Once you think you have hit a bug or want to file a feature request, please\n"
+"use a <a href=\"/support/bugs/\"><strong>bug</strong> tracker</a> to report "
+"them. Please be as\n"
+"descriptive as possible and do not forget include necessary information to\n"
+"reproduce the bug such as debug logs.\n"
+msgstr ""
+"\n"
+"Assim que você achar que encontrou um bug ou quer arquivos um pedido de "
+"função, favor\n"
+"use o <a href=\"/support/bugs/\">rastreador de <strong>bugs</strong></a> "
+"para relatá-los.\n"
+"Favor seja o mais descritivo possível e não esqueça de incluir as "
+"informações necessárias\n"
+"para reproduzir o bug como os logs de debug.\n"
+
+#: html/support/index.html:59
+msgid "Commercial Support"
+msgstr "Suporte Comercial"
+
+#: html/support/index.html:62
+msgid ""
+"\n"
+"Running some business application using Gammu, you might be interested in\n"
+"getting better level of support. Just <a href=\"/support/buy/\">contact the\n"
+"developers</a> and try to ask them for this.\n"
+msgstr ""
+"\n"
+"Caso você rode alguma aplicação comercial que usa o Gammu, você poderá "
+"estar\n"
+"interessado em receber um nível melhor de suporte. Apenas <a href=\"/support/"
+"buy/\">\n"
+"contate os desenvolvedores</a> e tente perguntar a eles por isto.\n"
+
+#: html/support/lists.html:4 html/support/lists.html.py:8
+msgid "Mailing Lists for Wammu and Gammu"
+msgstr "Listas de Email para o Wammu e o Gammu"
+
+#: html/support/lists.html:12
+msgid ""
+"\n"
+"Mailing lists are the main communication place for the community. Before\n"
+"asking questions there, you should search in the <a\n"
+"href=\"http://dir.gmane.org/gmane.linux.drivers.gammu\">archives</a> if "
+"somebody\n"
+"did not already solve similar issue. It sometimes happen that some version "
+"has\n"
+"well known problems which was faced by many users.\n"
+msgstr ""
+"\n"
+"Listas de email são o lugar principal de comunicação com a comunidade. "
+"Antes\n"
+"de fazer perguntas lá, você deve pesquisar nos <a\n"
+"href=\"http://dir.gmane.org/gmane.linux.drivers.gammu\">arquivos</a> se "
+"alguém\n"
+"já não resolveu um problema similar. As vezes acontece que alguma versão "
+"tem\n"
+"um problema bem conhecido que foi enfrentado por muitos usuários.\n"
+
+#: html/support/lists.html:22
+msgid ""
+"\n"
+"To post a message to the <a\n"
+"href=\"https://lists.sourceforge.net/lists/listinfo/gammu-users\">mailing\n"
+"list</a>, you need to be subscribed. While posting a message, please try to\n"
+"describe well your problem (basically you should follow same rules as when "
+"<a\n"
+"href=\"/support/bugs/\">reporting a bug</a>), avoid sending HTML mails and "
+"do\n"
+"proper quoting of replies, so that it is easy for others to follow the\n"
+"discussion.\n"
+msgstr ""
+"\n"
+"Para postar uma mensagem para a <a\n"
+"href=\"https://lists.sourceforge.net/lists/listinfo/gammu-users\">lista\n"
+"de emails</a>, você precisa estar inscrito. Enquanto postar uma mensagem, "
+"favor tente\n"
+"descrever bem o seu problema (basicamente você deve seguir as mesmas regras "
+"quando <a\n"
+"href=\"/support/bugs/\">relatar um bug</a>), evite enviar emails HTML e use\n"
+"citações apropriadas das respostas, assim será mais fácil para outros "
+"seguir\n"
+"a discussão.\n"
+
+#: html/support/lists.html:34
+msgid ""
+"\n"
+"Sometimes you can not expect immediate answers on the mailing list, so "
+"please\n"
+"be patient. People might be on vacation or simply busy with other things.\n"
+"Reposting the same message again to the mailing list or directly to authors\n"
+"will usually not give you faster answer, it might just upset involved "
+"people.\n"
+msgstr ""
+"\n"
+"As vezes você não pode esperar respostas imediatas na lista de emails, então "
+"favor\n"
+"seja paciente. As pessoas podem estar de férias ou simplesmente ocupadas com "
+"outras coisas.\n"
+"Repostar a mesma mensagem de novo na lista de emails ou diretamente para os "
+"autores\n"
+"geralmente não lhe derá uma resposta mais rápida, apenas incomodará as "
+"pessoas envolvidas.\n"
+
+#: html/support/lists.html:42
+msgid "Other Mailing Lists"
+msgstr "Outras Listas de Email"
+
+#: html/support/lists.html:45
+msgid ""
+"\n"
+"The main list where the discussion is being held is <a\n"
+"href=\"https://lists.sourceforge.net/lists/listinfo/gammu-users\">gammu-"
+"users@lists.sourceforge.net</a>.\n"
+"It's just generic place where users or developers can discuss anything "
+"related\n"
+"to Gammu (this includes Wammu or third party frontends like Kalkun).\n"
+msgstr ""
+"\n"
+"A lista principal de onde a discussão está sendo mantida é a <a\n"
+"href=\"https://lists.sourceforge.net/lists/listinfo/gammu-users\">gammu-"
+"users@lists.sourceforge.net</a>.\n"
+"É apenas um lugar genérico onde os usuários ou desenvolvedores podem "
+"discutir qualquer coisa relacionada\n"
+"ao Gammu (Isso inclui o Wammu ou interfaces de terceiros como o Kalkun).\n"
+
+#: html/support/lists.html:54
+msgid ""
+"\n"
+"In past, there used to be some problems with licensing of some code in "
+"Gammu\n"
+"and separate lists for this purpose has been created - <a\n"
+"href=\"https://lists.sourceforge.net/lists/listinfo/gammu-legal\">gammu-"
+"legal@lists.sourceforge.net</a>.\n"
+"It is not much used nowadays, but should you find any legal problems with\n"
+"Gammu, please use this mailing list.\n"
+msgstr ""
+"\n"
+"No passado, haviam alguns problemas com licenciamento de algum código no "
+"Gammu\n"
+"e listas separadas para este propósito foram criadas - <a\n"
+"href=\"https://lists.sourceforge.net/lists/listinfo/gammu-legal\">gammu-"
+"legal@lists.sourceforge.net</a>.\n"
+"Ela não é muito usada hoje em dia, mas se você encontrar algum problema "
+"legal com o\n"
+"Gammu, favor use esta lista de emails.\n"
+
+#: html/support/online.html:4 html/support/online.html.py:8
+msgid "Online Communication for Wammu and Gammu"
+msgstr "Comunicação Online para Wammu e Gammu"
+
+#: html/support/online.html:11
+msgid ""
+"\n"
+"Online communication is sometimes the best way to diagnose problems, but it "
+"is\n"
+"not always available, for example you might be in different time zone that\n"
+"people you want to chat with or simply the people are busy in this time. "
+"You\n"
+"can try asking here, but if you do not get any reaction, you should retry\n"
+"later or try to use <a href=\"/support/lists/\">mailing list</a>.\n"
+msgstr ""
+"\n"
+"Comunicação online é algumas vezes o melhor jeito de diagnosticar problemas, "
+"mas ela\n"
+"nem sempre está disponível, por exemplo, você pode estar em um fuso horário "
+"diferente\n"
+"em que as pessoas com quem você quer conversar ou simplesmente as pessoas "
+"estão ocupadas\n"
+"neste horário. Você pode tentar perguntar aqui, mas se você não receber "
+"nenhum reação,\n"
+"você deveria tentar novamente mais tarde ou tentar usar a <a href=\"/support/"
+"lists/\">lista de emails</a>.\n"
+
+#: html/support/online.html:20
+msgid "Jabber conference room"
+msgstr "Sala de conferência Jabber"
+
+#: html/support/online.html:23
+msgid ""
+"\n"
+"You can solve issues interactively using Jabber conference room <a\n"
+"href=\"xmpp:gammu@conference.cihar.com?join\">gammu@conference.cihar.com</"
+"a>,\n"
+"logs are available at <a\n"
+"href=\"http://logs.cihar.com/jabber/gammu@conference.cihar.com/\">logs.cihar."
+"com</a>.\n"
+"You can also use web based access to this room using <a\n"
+"href=\"http://jabber.cihar.com/muckl/\">MUCkl</a>.\n"
+msgstr ""
+"\n"
+"Você pode resolver problemas interativamente usando a sala de conferência "
+"Jabber <a\n"
+"href=\"xmpp:gammu@conference.cihar.com?join\">gammu@conference.cihar.com</"
+"a>,\n"
+"logs estão disponíveis em <a\n"
+"href=\"http://logs.cihar.com/jabber/gammu@conference.cihar.com/\">logs.cihar."
+"com</a>.\n"
+"Você pode também usar o acesso baseado na web para esta sala usando o <a\n"
+"href=\"http://jabber.cihar.com/muckl/\">MUCkl</a>.\n"
+
+#: html/support/online.html:33
+msgid "IRC"
+msgstr "IRC"
+
+#: html/support/online.html:36
+msgid ""
+"\n"
+"You are very welcome to #gammu at irc.freenode.net. Feel free to ask there\n"
+"your questions. If you don't get the answer immediately, don't worry and\n"
+"patiently wait until someone answers. The channel is low volume and it may\n"
+"take a while until someone notices your question.\n"
+msgstr ""
+"\n"
+"Você é muito bem-vindo ao #gammu na irc.freenode.net. Sinta-se livre para "
+"fazer\n"
+"suas perguntas. Se você não receber a resposta imediatamente, não se "
+"preocupe e\n"
+"espere pacientemente até que alguém responda. O canal está num volume baixo "
+"e\n"
+"pode levar um tempo até que alguém perceba sua pergunta.\n"
+
+#: html/support/online.html:46
+msgid ""
+"\n"
+"You can also find a robot called like CIA-42, which just sends a "
+"notifications\n"
+"there about every commit made to the Gammu source repository.\n"
+msgstr ""
+"\n"
+"Você também pode encontrar um robô chamado CIA-42, que apenas envia uma "
+"notificação\n"
+"lá sobre cada commit feito no repositório de fontes do Gammu.\n"
+
+#: html/tools/countries.html:4 html/tools/countries.html.py:8
+msgid "GSM countries list from Gammu"
+msgstr "Lista de países GSM do Gammu"
+
+#: html/tools/countries.html:11
+msgid ""
+"\n"
+"This list contains GSM countries as are currently defined in Gammu. If you "
+"can \n"
+"see some bug here, please <a href=\"/support/bugs/\">report it</a>.\n"
+msgstr ""
+"\n"
+"Essa lista contém os países cujo GSMs estão atualmente definidos no Gammu.\n"
+"se você puder ver algum bug aqui, favor <a href=\"/support/bugs/\">informe-"
+"o</a>.\n"
+
+#: html/tools/index.html:4 html/tools/index.html.py:8
+msgid "Tools for Wammu and Gammu"
+msgstr "Ferramentas para Wammu e Gammu"
+
+#: html/tools/index.html:11
+msgid ""
+"\n"
+"You can find here various tools which you might find useful when working "
+"with\n"
+"GSM phones in general, not only when using Gammu/Wammu.\n"
+msgstr ""
+"\n"
+"Você pode encontrar aqui várias ferramentas que você pode achar úteis quanto "
+"trabalhar\n"
+"com telefones GSM em geral, não somente quando usar o Gammu/Wammu.\n"
+
+#: html/tools/index.html:17
+msgid "PDU decoding/encoding"
+msgstr "Decodificador/codificador PDU"
+
+#: html/tools/index.html:20
+msgid ""
+"\n"
+"The SMS messages are transfered in the network encoded in PDU encoding.\n"
+"Following tools allow you to decode or encode PDU into human readable form.\n"
+msgstr ""
+"\n"
+"As mensagens SMS são transferidas na rede criptografadas com PDU.\n"
+"As ferramentas a seguir lhe permitem decodificar ou codificar PDU em forma "
+"legível por humanos.\n"
+
+#: html/tools/index.html:29
+msgid "Useful for creating PDU data, which you can then submit to the phone."
+msgstr ""
+"Útil para criar dados PDU, que você pode enviar depois para o telefone."
+
+#: html/tools/index.html:32
+msgid "Useful for decoding PDU data, which you might get from your phone."
+msgstr ""
+"Útil para decodificar dados PDU, que você pode receber do seu telefone."
+
+#: html/tools/index.html:36
+msgid "Other tools"
+msgstr "Outras ferramentas"
+
+#: html/tools/index.html:39
+msgid "List of GSM codes for countries"
+msgstr "Lista de códigos GSM por países"
+
+#: html/tools/index.html:40
+msgid "List of GSM codes for networks"
+msgstr "Lista de códigos GSM por redes"
+
+#: html/tools/index.html:44
+msgid ""
+"\n"
+"Do you miss some functionality here? Don't hesitate and contact us on \n"
+"<a href=\"/support/lists/\">mailing lists</a> with your idea.\n"
+msgstr ""
+"\n"
+"Você sente falta de alguma funcionalidade aqui? Não hesite e nos contate "
+"nas\n"
+"<a href=\"/support/lists/\">listas de emails</a> com sua ideia.\n"
+
+#: html/tools/networks.html:4 html/tools/networks.html.py:8
+msgid "GSM networks list from Gammu"
+msgstr "Lista de redes GSM do Gammu"
+
+#: html/tools/networks.html:11
+msgid ""
+"\n"
+"This list contains GSM networks as are currently defined in Gammu. If you "
+"can \n"
+"see some bug here, please <a href=\"/support/bugs/\">report it</a>.\n"
+msgstr ""
+"\n"
+"Esta lista contém redes GSM conforme definidas atualmente no Gammu.\n"
+"Se você encontrar algum bug aqui, favor <a href=\"/support/bugs/\">informe-"
+"o</a>.\n"
+
+#: html/tools/pdudecode.html:5 html/tools/pdudecode.html.py:9
+msgid "PDU decoder using Gammu"
+msgstr "Decodificador PDU usando o Gammu"
+
+#: html/tools/pdudecode.html:16 html/tools/pduencode.html:16
+msgid "Go"
+msgstr "Ir"
+
+#: html/tools/pdudecode.html:23
+msgid "PDU Decoding Result"
+msgstr "Resultado da Decodificação PDU"
+
+#: html/tools/pdudecode.html:25 html/tools/pdudecode.html.py:55
+#: html/tools/pduencode.html:25
+#, python-format
+msgid "Message number %(id)s"
+msgstr "Número da mensagem %(id)s"
+
+#: html/tools/pdudecode.html:27
+msgid "Decoding failed with error:"
+msgstr "Falha na decodificação com erro:"
+
+#: html/tools/pdudecode.html:33 html/tools/pdudecode.html.py:35
+#: tools/forms.py:13
+msgid "Text"
+msgstr "Texto"
+
+#: html/tools/pdudecode.html:38
+msgid "UDH type"
+msgstr "Tipo UDH"
+
+#: html/tools/pdudecode.html:39
+msgid "UDH header"
+msgstr "Cabeçalho UDH"
+
+#: html/tools/pdudecode.html:40
+msgid "Message part"
+msgstr "Parte da mensagem"
+
+#: html/tools/pdudecode.html:42
+msgid "SMSC"
+msgstr "SMSC"
+
+#: html/tools/pdudecode.html:43
+msgid "Validity"
+msgstr "Validade"
+
+#: html/tools/pdudecode.html:44
+msgid "Type"
+msgstr "Tipo"
+
+#: html/tools/pdudecode.html:45
+msgid "Message Reference"
+msgstr "Referência da mensagem"
+
+#: html/tools/pdudecode.html:53
+msgid "SMS Data Decoding Result"
+msgstr "Resultado da Decodificação de Dados SMS"
+
+#: html/tools/pdudecode.html:62
+msgid "MMS indicator"
+msgstr "Indicador de MMS"
+
+#: html/tools/pdudecode.html:63
+msgid "Title"
+msgstr "Título"
+
+#: html/tools/pdudecode.html:64
+msgid "Sender"
+msgstr "Emissor"
+
+#: html/tools/pdudecode.html:65
+msgid "Address"
+msgstr "Endereço"
+
+#: html/tools/pdudecode.html:66 tools/forms.py:14
+msgid "Class"
+msgstr "Classe"
+
+#: html/tools/pdudecode.html:69
+msgid "Bitmap"
+msgstr "Bitmap"
+
+#: html/tools/pdudecode.html:70
+msgid "Bitmaps"
+msgstr "Bitmaps"
+
+#: html/tools/pduencode.html:5 html/tools/pduencode.html.py:9
+msgid "PDU encoder using Gammu"
+msgstr "Codificar PDU usando Gammu"
+
+#: html/tools/pduencode.html:23
+msgid "PDU data"
+msgstr "Dados PDU"
+
 #: news/feeds.py:11
 msgid "Updates about Wammu and Gammu programs."
 msgstr "Atualizações sobre os programas Wammu e Gammu."
@@ -3859,27 +3733,31 @@ msgstr "Banco de dados de Telefones do Gammu"
 msgid "Gammu phone database updates."
 msgstr "Atualizações do banco de dados de telefones do Gammu."
 
-#: phonedb/forms.py:12
+#: phonedb/forms.py:13
 msgid "Search text"
 msgstr "Pesquisar por texto"
 
-#: phonedb/forms.py:14 phonedb/forms.py:25
+#: phonedb/forms.py:15 phonedb/forms.py:39
 msgid "Features"
 msgstr "Características"
 
-#: phonedb/forms.py:17
+#: phonedb/forms.py:18
 #, python-format
 msgid "%(description)s [<a href=\"%(url)s\">Link</a>]"
 msgstr "%(description)s [<a href=\"%(url)s\"> Link </a>]"
 
-#: phonedb/forms.py:27 phonedb/models.py:91
+#: phonedb/forms.py:41 phonedb/models.py:91
 msgid "Features which are working in Gammu."
 msgstr "Características que estão trabalhando em Gammu."
 
-#: phonedb/forms.py:29
+#: phonedb/forms.py:43
 #, python-format
 msgid "%(description)s (%(name)s)"
 msgstr "%(description)s (%(name)s)"
+
+#: phonedb/forms.py:81
+msgid "Save"
+msgstr ""
 
 #: phonedb/models.py:20
 msgid "Use [at] and [dot]"
@@ -4003,7 +3881,7 @@ msgstr "Feed do Banco de Dados de Telefones do Gammu (RSS)"
 msgid "Gammu Phone Database Feed (Atom)"
 msgstr "Feed to Banco de Dados de Telefones do Gammu (Atom)"
 
-#: phonedb/views.py:443
+#: phonedb/views.py:444
 msgid "Phone record has been created."
 msgstr "O registro de telefone foi criado."
 
@@ -4027,13 +3905,160 @@ msgstr "Recipiente"
 msgid "SMSC number"
 msgstr "Número SMSC"
 
-#: wammu/context_processors.py:62
+#: wammu/context_processors.py:54
 msgid "Gammu and Wammu News Feed (RSS)"
 msgstr "Feed de notícias do Gammu e Wammu (RSS)"
 
-#: wammu/context_processors.py:63
+#: wammu/context_processors.py:55
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Feed de notícias do Gammu e Wammu (Atom)"
+
+#~ msgid "Translate!"
+#~ msgstr "Traduza!"
+
+#~ msgid "Advertisement"
+#~ msgstr "Anúncio"
+
+#~ msgid "Support Gammu by <a href=\"/donate/\">donating</a>!"
+#~ msgstr "Ajude Gammu <a href=\"/donate/\">doando</a>!"
+
+#~ msgid "Share"
+#~ msgstr "Compartilhar"
+
+#~ msgid "Share Gammu with the world!"
+#~ msgstr "Compartilhe Gammu com o mundo todo!"
+
+#~ msgid "About"
+#~ msgstr "Sobre"
+
+#~ msgid "Media"
+#~ msgstr "Mídia"
+
+#~ msgid ""
+#~ "Valid <a href=\"http://validator.w3.org/check/referer\">HTML</a> and <a "
+#~ "href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
+#~ msgstr ""
+#~ "Validadores <a href=\"http://validator.w3.org/check/referer\">HTML</a> e "
+#~ "<a href=\"http://jigsaw.w3.org/css-validator/check/referer\">CSS</a>"
+
+#~ msgid "Factoids"
+#~ msgstr "Fatos"
+
+#~ msgid "Ways to contribute"
+#~ msgstr "Modos de contribuir"
+
+#~ msgid "Roadmap"
+#~ msgstr "Roadmap"
+
+#~ msgid ""
+#~ "\n"
+#~ "Other platforms\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Outras plataformas\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "You can not find your platform here? Choose the correct one <a href=\"../"
+#~ "\">on complete listing</a>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Você não encontrou sua plataforma aqui? Escolha a correta <a href=\"../"
+#~ "\">na lista completa</a>.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Currently downloading from mirror:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Baixando atualmente do mirror:\n"
+
+#~ msgid "Change"
+#~ msgstr "Mudanças"
+
+#~ msgid ""
+#~ "\n"
+#~ "Third party open source web-based SMS (Short Message Service) management "
+#~ "which uses <a href=\"/smsd/\">Gammu SMSD</a>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Open source de terceiros para Gerenciamento de SMS através de Interface "
+#~ "web-based (usando Navegador), o qual utiliza <a\n"
+#~ "href=\"/smsd/\">SMSD Gammu</a>.\n"
+
+#~ msgid ""
+#~ "Third party open source Node.JS client for <a href=\"/smsd/\">Gammu SMSD</"
+#~ "a>."
+#~ msgstr ""
+#~ "Open source de terceiros, cliente Node.JS para <a href=\"/smsd/\">Gammu "
+#~ "SMSD</a>."
+
+#~ msgid ""
+#~ "\n"
+#~ "Lot of people contribute to Gammu, you can see the major contributors on "
+#~ "<a\n"
+#~ "href=\"/authors/\">separate page</a>. If you want to join us, please "
+#~ "check our\n"
+#~ "list of <a href=\"/contribute/wanted/\"><strong>wanted skills</strong></"
+#~ "a>, to\n"
+#~ "get an idea who we are currently looking for.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Muitas pessoas contribuem com o Gammu, e você pode ver os maiores \n"
+#~ "contribuidores em uma <a href=\"/authors/\">página separada</a>. \n"
+#~ "Se você quiser se unir a nós, favor veja nossa lista de <a \n"
+#~ "href=\"/contribute/wanted/\"><strong>habilidades desejadas</strong></"
+#~ "a>, \n"
+#~ "para ter uma ideia de quem nós estamos procurando atualmente.\n"
+
+#~ msgid "Gammu family"
+#~ msgstr "Família Gammu"
+
+#~ msgid ""
+#~ "\n"
+#~ "Gammu is now not only a single program but there is lot of useful tools\n"
+#~ "sharing same library.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Atualmente o Gammu não é apenas um programa isolado, mas uma série de "
+#~ "ferramentas úteis \n"
+#~ "que compartilham a mesma biblioteca.\n"
+
+#~ msgid "Feeds"
+#~ msgstr "Feeds"
+
+#~ msgid "Atom"
+#~ msgstr "Atom"
+
+#~ msgid "Twitter RSS"
+#~ msgstr "Twitter RSS"
+
+#~ msgid "Categories"
+#~ msgstr "Categorias"
+
+#~ msgid "Feature Search"
+#~ msgstr "Função de Pesquisa"
+
+#~ msgid "CSV"
+#~ msgstr "CSV"
+
+#~ msgid "Navigation"
+#~ msgstr "Navegação"
+
+#~ msgid "None found."
+#~ msgstr "Nenhum encontrado."
+
+#~ msgid "Support links"
+#~ msgstr "Links de suporte"
+
+#~ msgid "Mailing list"
+#~ msgstr "Lista de emails"
+
+#~ msgid "Bug tracker"
+#~ msgstr "Rastreador de bugs"
+
+#~ msgid "Jabber chat room"
+#~ msgstr "Sala de bate-papo Jabber"
 
 #~ msgid "Micropayments"
 #~ msgstr "Micropagamentos"
