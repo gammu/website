@@ -7,12 +7,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2015-04-13 17:18+0200\n"
-"PO-Revision-Date: 2015-04-13 14:13+0200\n"
+"PO-Revision-Date: 2015-04-13 17:25+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/"
-">\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/>"
+"\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -220,9 +220,8 @@ msgid "Download Gammu"
 msgstr "Stáhnout Gammu"
 
 #: html/base.html:89 html/downloads/index.html:32
-#, fuzzy
 msgid "Download python-gammu"
-msgstr "Stáhnout Gammu"
+msgstr "Stáhnout python-gammu"
 
 #: html/base.html:90 html/downloads/index.html:39
 msgid "Download Wammu"
@@ -2193,9 +2192,8 @@ msgstr ""
 "Vydal <a href=\"mailto:%(email)s\">%(author)s</a> dne %(date)s\n"
 
 #: html/news/python-gammu_index.html:4 html/news/python-gammu_index.html:6
-#, fuzzy
 msgid "python-gammu news"
-msgstr "python-gammu"
+msgstr "Novinky o python-gammu"
 
 #: html/news/wammu_index.html:4 html/news/wammu_index.html.py:6
 msgid "Wammu News"
@@ -2834,9 +2832,8 @@ msgid "Mailing lists and forms for Wammu and Gammu"
 msgstr "Mailing listy pro Wammu a Gammu"
 
 #: html/support/lists.html:8
-#, fuzzy
 msgid "Mailing lists and forums for Wammu and Gammu"
-msgstr "Mailing listy pro Wammu a Gammu"
+msgstr "Mailing listy a fóra pro Wammu a Gammu"
 
 #: html/support/lists.html:11
 msgid ""
@@ -3000,14 +2997,12 @@ msgid ""
 msgstr ""
 
 #: html/tools/countries.html:18
-#, fuzzy
 msgid "Country code"
-msgstr "Země"
+msgstr "Kód země"
 
 #: html/tools/countries.html:18
-#, fuzzy
 msgid "Countr name"
-msgstr "Země"
+msgstr "Název země"
 
 #: html/tools/index.html:4 html/tools/index.html.py:8
 msgid "Tools for Wammu and Gammu"
@@ -3072,14 +3067,12 @@ msgid ""
 msgstr ""
 
 #: html/tools/networks.html:18
-#, fuzzy
 msgid "Network code"
-msgstr "Sítě"
+msgstr "Kód sítě"
 
 #: html/tools/networks.html:18
-#, fuzzy
 msgid "Network name"
-msgstr "Sítě"
+msgstr "Název sítě"
 
 #: html/tools/pdudecode.html:6 html/tools/pdudecode.html.py:12
 msgid "PDU decoder using Gammu"
