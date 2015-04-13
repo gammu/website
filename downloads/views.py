@@ -6,32 +6,6 @@ from django.utils.datastructures import MultiValueDictKeyError
 from django.db.models import Q
 import GeoIP
 
-def get_mirrors(request):
-    mirrors = Mirror.objects.all().order_by('id')
-    try:
-        try:
-            mirror_id = request.GET['mirror']
-        except (MultiValueDictKeyError, KeyError):
-            mirror_id = request.COOKIES['mirror']
-    except (MultiValueDictKeyError, KeyError):
-        gi = GeoIP.new(GeoIP.GEOIP_MEMORY_CACHE)
-        address = request.META.get('REMOTE_ADDR')
-        if address[:7] == '::ffff:':
-            address = address[7:]
-        country = gi.country_code_by_addr(address)
-        if country in ['CZ', 'SK', 'DE', 'PL', 'AT', 'HU', 'RU', 'UA', 'BL']:
-            mirror_id = 'cihar-com'
-#        elif country in ['GB', 'US', 'FR', 'NL', 'CA', 'DK', 'SE', 'FI']:
-#            mirror_id = 'clickcreations-com'
-        else:
-            mirror_id = 'sf-net'
-    try:
-        mirror = Mirror.objects.get(slug = mirror_id)
-    except Mirror.DoesNotExist:
-        mirror = Mirror.objects.get(slug = 'cihar-com')
-
-    return (mirror, mirrors, mirror_id)
-
 def list(request, program, platform):
     if not program in [x[0] for x in PROGRAM_CHOICES]:
         raise Http404('No such program %s.' % program)
@@ -49,8 +23,6 @@ def list(request, program, platform):
     if stable_downloads.count() == 0:
         raise Http404('No such download option %s/%s.' % (program, platform))
 
-    mirror, mirrors, mirror_id = get_mirrors(request)
-
     for c in PLATFORM_CHOICES:
         if platform == c[0]:
             platform_name = c[1]
@@ -64,8 +36,6 @@ def list(request, program, platform):
         'program': get_program(program),
         'program_name': program,
         'platform': platform_name,
-        'mirrors': mirrors,
-        'mirror': mirror,
     }))
     return result
 
@@ -77,15 +47,11 @@ def release(request, program,  version):
     if downloads.count() == 0:
         raise Http404('No such download option %s/%s.' % (program, version))
 
-    mirror, mirrors, mirror_id = get_mirrors(request)
-
     result = render_to_response('downloads/release.html', RequestContext(request, {
         'release': release,
         'downloads': downloads,
         'program': get_program(program),
         'program_name': program,
-        'mirrors': mirrors,
-        'mirror': mirror,
     }))
     return result
 
@@ -98,8 +64,6 @@ def program(request, program):
 
     stable_release, testing_release = get_latest_releases(program)
 
-    mirror, mirrors, mirror_id = get_mirrors(request)
-
     downloads = get_current_downloads(program, 'source')
 
     return render_to_response('downloads/program.html', RequestContext(request, {
@@ -109,19 +73,13 @@ def program(request, program):
         'downloads': downloads,
         'program': get_program(program),
         'program_name': program,
-        'mirrors': mirrors,
-        'mirror': mirror,
     }))
 
 def download(request):
-    mirror, mirrors, mirror_id = get_mirrors(request)
-
     downloads = get_current_downloads('gammu', 'source')
     downloads += get_current_downloads('wammu', 'source')
 
     return render_to_response('downloads/index.html', RequestContext(request, {
-        'mirrors': mirrors,
-        'mirror': mirror,
         'downloads': downloads,
         'platforms': PLATFORM_CHOICES[:1],
     }))
@@ -130,13 +88,9 @@ def doap(request, program):
     if not program in [x[0] for x in PROGRAM_CHOICES]:
         raise Http404('No such program %s.' % program)
 
-    mirror, mirrors, mirror_id = get_mirrors(request)
-
     downloads = get_current_downloads(program, None)
 
     return render_to_response('downloads/doap/%s.xml' % program, RequestContext(request, {
-        'mirrors': mirrors,
-        'mirror': mirror,
         'downloads': downloads[0][1],
         'release': downloads[0][0],
     }), content_type = 'application/xml')
@@ -145,16 +99,12 @@ def pad(request, program):
     if not program in [x[0] for x in PROGRAM_CHOICES]:
         raise Http404('No such program %s.' % program)
 
-    mirror, mirrors, mirror_id = get_mirrors(request)
-
     downloads = get_current_downloads(program, 'source')
 
     release = downloads[0][0]
     download = downloads[0][1].filter(location__iendswith='.zip')[0]
 
     return render_to_response('downloads/pad/%s.xml' % program, RequestContext(request, {
-        'mirrors': mirrors,
-        'mirror': mirror,
         'download': download,
         'release': release,
     }), content_type = 'application/xml')

@@ -4,7 +4,6 @@ from news.models import Entry, Category
 from screenshots.models import Screenshot
 from phonedb.models import Phone
 from downloads.models import get_current_downloads, get_latest_releases
-from downloads.views import get_mirrors
 
 from django.conf import settings
 
@@ -26,8 +25,6 @@ def process_version_feedback(request):
     return result
 
 def index(request):
-    mirror, mirrors, set_mirror, mirror_id = get_mirrors(request)
-
     downloads = get_current_downloads('gammu', 'source')
     downloads += get_current_downloads('wammu', 'source')
 
@@ -38,7 +35,6 @@ def index(request):
         'news': news,
         'screenshot': screenshot,
         'downloads': downloads,
-        'mirror': mirror,
         'phones': phones,
     }))
 
