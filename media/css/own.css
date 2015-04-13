@@ -11,38 +11,16 @@
     color: gray;
     border: none;
 }
-div.footnavi {
-    margin: 0;
-}
-div.footnavi span.foottitle {
-    font-size: 100%;
-    font-weight: normal;
-    margin: 0px 0px 0.5em 1em;
-    display: inline-block;
-}
-div.footnavi ul {
-    margin-top: 0px;
-    border-left: 1px dotted #000;
-    padding-left: 0.5em;
-    margin-left: 1em;
-}
-div.footnavi ul li {
-    list-style: none;
-    padding-left: 0;
-    margin-left: 0;
-}
 .languages {
     padding: .3em;
     background: white;
     display: none;
     position: absolute;
     width: 25em;
-
-background-image: linear-gradient(to bottom, #FFF 0px, #F8F8F8 100%);
-background-repeat: repeat-x;
-border-radius: 4px;
-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15) inset, 0px 1px 5px rgba(0, 0, 0, 0.075);
-
+    background-image: linear-gradient(to bottom, #FFF 0px, #F8F8F8 100%);
+    background-repeat: repeat-x;
+    border-radius: 4px;
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15) inset, 0px 1px 5px rgba(0, 0, 0, 0.075);
 }
 .choice {
     -moz-column-count:2; /* Firefox */
