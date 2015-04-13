@@ -19,6 +19,7 @@
 <h2>{% trans "Wammu and Gammu Screenshots" %}</h2>
 {% endblock %}
 
+<div class="container">
 {% for item in screenshots.object_list %}
 <div class="screenshot">
     <a href="{{ item.image.url }}"
@@ -29,7 +30,7 @@
     </a>
 </div>
 {% endfor %}
-<div class="clearer"></div>
+</div>
 
 <nav>
 <ul class="pagination">
