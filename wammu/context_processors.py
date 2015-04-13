@@ -34,16 +34,6 @@ def translations(request):
 
     return {'translations': langs}
 
-def menu(request):
-    return {'menu': [
-            {'title': _('Support'), 'link': '/support/'},
-            {'title': _('Download'), 'link': '/download/'},
-            {'title': _('Screenshots'), 'link': '/screenshots/'},
-            {'title': _('Documentation'), 'link': '/docs/'},
-            {'title': _('Contribute'), 'link': '/contribute/'},
-            {'title': _('Tools'), 'link': '/tools/'},
-            ]}
-
 def message(request):
     ret = {}
     if request.session.has_key('message'):

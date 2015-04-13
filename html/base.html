@@ -57,9 +57,18 @@
    
   <div class="collapse navbar-collapse" id="topbar-collapsible">
    <ul class="nav navbar-nav">
-   {% for item in menu %}
-     <li class="{{ item.class }}"><a href="{{ item.link }}">{{ item.title }}</a></li>
-   {% endfor %}
+     <li><a href="/support/">{% trans "Support" %}</a></li>
+   
+     <li><a href="/download/">{% trans "Download" %}</a></li>
+   
+     <li><a href="/screenshots/">{% trans "Screenshots" %}</a></li>
+   
+     <li><a href="/docs/">{% trans "Documentation" %}</a></li>
+   
+     <li><a href="/contribute/">{% trans "Contribute" %}</a></li>
+   
+     <li><a href="/tools/">{% trans "Tools" %}</a></li>
+
    </ul>
    <ul class="nav navbar-nav navbar-right">
    <li>

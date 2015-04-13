@@ -122,7 +122,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
     'django.core.context_processors.csrf',
     'wammu.context_processors.translations',
-    'wammu.context_processors.menu',
     'wammu.context_processors.message',
     'wammu.context_processors.dates',
     'wammu.context_processors.feeds',
