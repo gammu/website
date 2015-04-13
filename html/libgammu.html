@@ -3,14 +3,6 @@
 
 {% block title %}{% trans "libGammu" %}{% endblock %}
 
-{% block sidebar_top %}
-<h3>{% trans "More information" %}</h3>
-<ul>
-{% include "sidebars/gammu.html" %}
-{% include "sidebars/common.html" %}
-</ul>
-
-{% endblock %}
 {% block content %}
 <h2>{% trans "libGammu" %}</h2>
 
@@ -59,6 +51,12 @@ href="/docs/devel/internals/">internal documentation</a>. Please check <a
 href="/docs/devel/">developer documentation page</a> for more details.
 {% endblocktrans %}
 </p>
+
+<h3>{% trans "More information" %}</h3>
+<ul>
+{% include "sidebars/gammu.html" %}
+{% include "sidebars/common.html" %}
+</ul>
 
 {% endblock %}
 

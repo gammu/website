@@ -9,15 +9,6 @@
 <link rel="meta" title="DOAP" type="application/rdf+xml" href="/api/doap/gammu.xml" />
 {% endblock %}
 
-{% block sidebar_top %}
-<h3>{% trans "More information" %}</h3>
-<ul>
-{% include "sidebars/gammu.html" %}
-{% include "sidebars/common.html" %}
-</ul>
-
-{% endblock %}
-
 {% block content %}
 <h2>{% trans "Python bindings for Gammu" %}</h2>
 
@@ -81,6 +72,12 @@ href="/docs/devel/">developer documentation page</a> for more details.
 Check also <a href="/docs/manual/faq/python.html">Frequently Asked Questions</a>.
 {% endblocktrans %}
 </p>
+
+<h3>{% trans "More information" %}</h3>
+<ul>
+{% include "sidebars/gammu.html" %}
+{% include "sidebars/common.html" %}
+</ul>
 
 {% endblock %}
 

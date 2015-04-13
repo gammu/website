@@ -9,14 +9,6 @@
 <link rel="meta" title="DOAP" type="application/rdf+xml" href="/api/doap/gammu.xml" />
 {% endblock %}
 
-{% block sidebar_top %}
-<h3>{% trans "More information" %}</h3>
-<ul>
-{% include "sidebars/gammu.html" %}
-{% include "sidebars/common.html" %}
-</ul>
-
-{% endblock %}
 {% block content %}
 <h2>{% trans "Gammu SMSD" %}</h2>
 
@@ -85,8 +77,10 @@ Check also <a href="/docs/manual/faq/smsd.html">Frequently Asked Questions</a>.
 {% endblocktrans %}
 </p>
 
+<h3>{% trans "More information" %}</h3>
+<ul>
+{% include "sidebars/gammu.html" %}
+{% include "sidebars/common.html" %}
+</ul>
+
 {% endblock %}
-
-
-
-
