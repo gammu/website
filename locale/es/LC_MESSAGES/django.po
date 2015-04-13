@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-13 14:03+0200\n"
+"POT-Creation-Date: 2015-04-13 14:18+0200\n"
 "PO-Revision-Date: 2014-02-16 17:02+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone+weblate@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gammu/website/es/"
@@ -3147,20 +3147,10 @@ msgstr ""
 "sólo en la base de datos.\n"
 
 #: html/support/index.html:30
-msgid "Stack Overflow"
-msgstr ""
-
-#: html/support/index.html:33
-#, python-format
-msgid ""
-"You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
-msgstr ""
-
-#: html/support/index.html:36
 msgid "Communication with Community"
 msgstr "Comunicación y comunidad"
 
-#: html/support/index.html:39
+#: html/support/index.html:33
 msgid ""
 "\n"
 "If the <a href=\"/docs/\">documentation</a> does not help, you can try to "
@@ -3179,11 +3169,11 @@ msgstr ""
 "puedes intentar contactarnos en algún <a href=\"/support/online/\">canal de "
 "comunicación en linea</a> como Jabber o IRC.\n"
 
-#: html/support/index.html:48
+#: html/support/index.html:42
 msgid "Reporting Bugs"
 msgstr "Reportando errores"
 
-#: html/support/index.html:51
+#: html/support/index.html:45
 msgid ""
 "\n"
 "Once you think you have hit a bug or want to file a feature request, please\n"
@@ -3199,11 +3189,11 @@ msgstr ""
 "descriptivo como te sea posible y no te olvides de incluir la información "
 "necesaria para reproducir el error como los registros de depuración.\n"
 
-#: html/support/index.html:59
+#: html/support/index.html:53
 msgid "Commercial Support"
 msgstr "Soporte comercial"
 
-#: html/support/index.html:62
+#: html/support/index.html:56
 msgid ""
 "\n"
 "Running some business application using Gammu, you might be interested in\n"
@@ -3216,11 +3206,17 @@ msgstr ""
 "support/buy\">contacta a los desarrolladores</a> e intenta pedirles por "
 "eso.\n"
 
-#: html/support/lists.html:4 html/support/lists.html.py:8
-msgid "Mailing Lists for Wammu and Gammu"
+#: html/support/lists.html:4
+#, fuzzy
+msgid "Mailing lists and forms for Wammu and Gammu"
 msgstr "Listas de correo para Wammu y Gammu"
 
-#: html/support/lists.html:12
+#: html/support/lists.html:8
+#, fuzzy
+msgid "Mailing lists and forums for Wammu and Gammu"
+msgstr "Listas de correo para Wammu y Gammu"
+
+#: html/support/lists.html:11
 msgid ""
 "\n"
 "Mailing lists are the main communication place for the community. Before\n"
@@ -3238,7 +3234,7 @@ msgstr ""
 "ya resolvió un problema similar. A veces pasa que una versión tiene un "
 "problema conocido al que se enfrentaron varios usuarios.\n"
 
-#: html/support/lists.html:22
+#: html/support/lists.html:21
 msgid ""
 "\n"
 "To post a message to the <a\n"
@@ -3259,7 +3255,7 @@ msgstr ""
 "error</a>), evita enviar HTML y cita los mensajes correctamente para que sea "
 "más sencillo a los demás seguir la discusión.\n"
 
-#: html/support/lists.html:34
+#: html/support/lists.html:33
 msgid ""
 "\n"
 "Sometimes you can not expect immediate answers on the mailing list, so "
@@ -3277,11 +3273,21 @@ msgstr ""
 "los autores generalmente no te dará una respuesta más rápida, probablemente "
 "sólo moleste a la gente involucrada.\n"
 
-#: html/support/lists.html:42
+#: html/support/lists.html:41
+msgid "Stack Overflow"
+msgstr ""
+
+#: html/support/lists.html:44
+#, python-format
+msgid ""
+"You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
+msgstr ""
+
+#: html/support/lists.html:47
 msgid "Other Mailing Lists"
 msgstr "Otras listas de correo"
 
-#: html/support/lists.html:45
+#: html/support/lists.html:50
 msgid ""
 "\n"
 "The main list where the discussion is being held is <a\n"
@@ -3298,7 +3304,7 @@ msgstr ""
 "pueden discutir cualquier cosa relacionada con Gammu (lo que incluye Wammu o "
 "interfaces de terceros como Kalkun).\n"
 
-#: html/support/lists.html:54
+#: html/support/lists.html:59
 msgid ""
 "\n"
 "In past, there used to be some problems with licensing of some code in "
