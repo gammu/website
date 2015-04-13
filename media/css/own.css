@@ -11,11 +11,14 @@
     color: gray;
     border: none;
 }
+div.footnavi {
+    margin: 0;
+}
 div.footnavi span.foottitle {
     font-size: 100%;
     font-weight: normal;
     margin: 0px 0px 0.5em 1em;
-    display: block;
+    display: inline-block;
 }
 div.footnavi ul {
     margin-top: 0px;
