@@ -19,4 +19,12 @@ $(function () {
             languages.hide();
         }
     });
+    $('a.shot').colorbox({
+        rel:'gal',
+        maxWidth:'100%',
+        maxHeight:'100%',
+        width:'100%',
+        height:'100%',
+        current: '{current}/{total}',
+    });
 });

@@ -11,8 +11,7 @@
 <div class="container">
 {% for item in screenshots.object_list %}
 <div class="screenshot">
-    <a href="{{ item.image.url }}"
-    rel="lightbox[screenshots]" title="{{ item.title }}">
+    <a href="{{ item.image.url }}" class="shot" title="{{ item.title }}">
         <img src="{{ item.image.url_180x120 }}"
         alt="{{ item.title }}" /><br />
     {{ item.title }}
