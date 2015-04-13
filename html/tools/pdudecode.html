@@ -1,22 +1,23 @@
 {% extends "base.html" %}
 {% load i18n %}
 {% load encoding %}
+{% load crispy_forms_tags %}
 
 {% block title %}{% trans "PDU decoder using Gammu" %}{% endblock %}
 
 {% block content %}
 
-<h2>{% trans "PDU decoder using Gammu" %}</h2>
 <form action="/tools/pdu-decode/" method="POST">
+<div class="panel panel-default">
+  <div class="panel-heading"><h2 class="panel-title">{% trans "PDU decoder using Gammu" %}</h2></div>
+  <div class="panel-body">
 {% csrf_token %}
-<table>
-{{ form.as_table }}
-<tr><td></td>
-<td>
-<input type="submit" value="{% trans "Go" %}" />
-</td>
-</tr>
-</table>
+{{ form|crispy }}
+</div>
+<div class="panel-footer">
+<input type="submit" value="{% trans "Go" %}" class="button button-primary" />
+</div>
+</div>
 </form>
 
 {% if decoded %}
@@ -26,7 +27,7 @@
 {% if part.Error %}
 <p>{% trans "Decoding failed with error:" %} {{ part.Error.Text }} ({{ part.Error.Code }})</p>
 {% else %}
-<table>
+<table class="table">
 <tr><th>PDU</th><td class="hex">{{ part.PDU|wrap|linebreaksbr }}</td></tr>
 <tr><th>Number</th><td>{{ part.Number }}</td></tr>
 {% ifequal part.Coding "8bit" %}
@@ -57,7 +58,7 @@
 <p>Some parts of this message can not be properly decoded by Gammu!</p>
 {% endif %}
 {% for entry in part.Entries %}
-<table>
+<table class="table">
 {%if entry.MMSIndicator %}
 <tr><th colspan="2">{% trans "MMS indicator" %}</th></tr>
 <tr><th>{% trans "Title" %}</th><td>{{ entry.MMSIndicator.Title }}</td></tr>
