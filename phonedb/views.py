@@ -77,8 +77,8 @@ def get_chart_url():
     chart = SimpleLineChart(800, 300, y_range=[0, max_y])
 
 
-    chart.fill_solid(chart.BACKGROUND, 'ffd480')
-    chart.fill_solid(chart.CHART, 'ffd480')
+#    chart.fill_solid(chart.BACKGROUND, 'ffd480')
+#    chart.fill_solid(chart.CHART, 'ffd480')
 # Chart data
     chart.add_data(supported)
     chart.add_data(totals)
@@ -92,7 +92,7 @@ def get_chart_url():
 #chart.add_fill_range('76A4FB', 2, 3)
 # Set the vertical stripes
     month_stripes = 3.0
-    chart.fill_linear_stripes(Chart.CHART, 0, 'ffe4a0', month_stripes / len(alls), 'ffd480', month_stripes / len(alls))
+    chart.fill_linear_stripes(Chart.CHART, 0, 'ffffff', month_stripes / len(alls), 'cccccc', month_stripes / len(alls))
 
 # Set the horizontal dotted lines
     chart.set_grid(0, 10, 5, 5)
