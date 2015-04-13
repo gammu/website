@@ -14,11 +14,16 @@ see some bug here, please <a href="/support/bugs/">report it</a>.
 {% endblocktrans %}
 </p>
 
-<dl>
+<table class="table">
+<thead><tr><th>{% trans "Country code" %}</th><th>{% trans "Countr name" %}</th></tr></thead>
+<tbody>
 {% for country in countries %}
-<dt><a href="/tools/networks/?country={{ country.0 }}">{{ country.0 }}</a></dt>
-<dd><a href="/tools/networks/?country={{ country.0 }}">{{ country.1 }}</a></dd>
+<tr>
+<td><a href="/tools/networks/?country={{ country.0 }}">{{ country.0 }}</a></td>
+<td><a href="/tools/networks/?country={{ country.0 }}">{{ country.1 }}</a></td>
+</tr>
 {% endfor %}
-</dl>
+</tbody>
+</table>
 
 {% endblock %}

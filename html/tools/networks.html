@@ -14,11 +14,14 @@ see some bug here, please <a href="/support/bugs/">report it</a>.
 {% endblocktrans %}
 </p>
 
-<dl>
+<table class="table">
+<thead><tr><th>{% trans "Network code" %}</th><th>{% trans "Network name" %}</th></tr></thead>
+<tbody>
 {% for network in networks %}
-<dt>{{ network.0 }}</dt><dd>{{ network.1 }}</dd>
+<tr><td>{{ network.0 }}</td><td>{{ network.1 }}</td></tr>
 {% endfor %}
-</dl>
+</tbody>
+</table>
 
 {% endblock %}
 
