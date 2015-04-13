@@ -18,7 +18,7 @@ PROGRAM_CHOICES = (
     ('gammu', 'Gammu'),
     ('wammu', 'Wammu'),
     ('python-gammu', 'python-gammu'),
-    )
+)
 
 PROGRAM_URLS = {
     'gammu': '/gammu/',
@@ -29,7 +29,7 @@ PROGRAM_URLS = {
 PLATFORM_CHOICES = (
     ('source', ugettext_lazy('Source')),
     ('win32', ugettext_lazy('Windows binary')),
-    )
+)
 
 def get_latest_releases(program):
     '''
