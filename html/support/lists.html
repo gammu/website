@@ -7,7 +7,6 @@
 
 <h2>{% trans "Mailing Lists for Wammu and Gammu" %}</h2>
 
-
 <p>
 {% blocktrans %}
 Mailing lists are the main communication place for the community. Before
@@ -37,6 +36,12 @@ be patient. People might be on vacation or simply busy with other things.
 Reposting the same message again to the mailing list or directly to authors
 will usually not give you faster answer, it might just upset involved people.
 {% endblocktrans %}
+</p>
+
+<h3>{% trans "Stack Overflow" %}</h3>
+
+<p>
+{% blocktrans with "http://stackoverflow.com/tags/gammu/info" as url %}You can also ask related questions on <a href="{{ url }}">Stack Overflow</a>.{% endblocktrans %}
 </p>
 
 <h3>{% trans "Other Mailing Lists" %}</h3>
