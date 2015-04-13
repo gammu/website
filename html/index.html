@@ -4,10 +4,9 @@
 {% block title %}{% trans "Wammu and Gammu" %}{% endblock %}
 
 {% block content %}
-<div class="row">
-<div class="col-sm-12">
-<h2>{% trans "About" %}</h2>
 
+<div class="jumbotron">
+      <div class="container">
 <p>
 {% blocktrans %}
 <a href="/wammu/">Wammu</a> is a program to manage data in your cell phone such as contacts,
@@ -17,41 +16,17 @@ vendors (including Nokia, Sony-Ericsson, Motorola, Samsung, Siemens, Huawei
 and others).
 {% endblocktrans %}
 </p>
-
-<p>
-{% blocktrans %}
-Lot of people contribute to Gammu, you can see the major contributors on <a
-href="/authors/">separate page</a>. If you want to join us, please check our
-list of <a href="/contribute/wanted/"><strong>wanted skills</strong></a>, to
-get an idea who we are currently looking for.
-{% endblocktrans %}
-</p>
-</div>
-
-</div>
-
-<div class="row">
-<div class="col-md-6">
-    <h2>{% trans "Gammu family" %}</h2>
-<p>
-{% blocktrans %}
-Gammu is now not only a single program but there is lot of useful tools
-sharing same library.
-{% endblocktrans %}
-</p>
-
+      </div>
+    </div>
 
 {% include "gammu-family.html" %}
-</div>
 
-<div class="col-md-6">
+
     <h2><a href="/news/">{% trans "News" %}</a></h2>
     {% for entry in news %}
     <h3><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h3>
     {{ entry.excerpt_html|safe }}
     {% include "news/published.html" %}
     {% endfor %}
-</div>
-</div>
 
 {% endblock %}
