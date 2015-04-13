@@ -7,12 +7,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2015-04-13 14:03+0200\n"
-"PO-Revision-Date: 2015-03-02 16:04+0200\n"
+"PO-Revision-Date: 2015-04-13 14:13+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/"
-">\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/>"
+"\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -187,9 +187,8 @@ msgid "Overview"
 msgstr ""
 
 #: html/base.html:77
-#, fuzzy
 msgid "Mailing lists and forums"
-msgstr "Mailing listy"
+msgstr "Mailing listy a fóra"
 
 #: html/base.html:78
 msgid "Reporting bugs"
@@ -213,9 +212,8 @@ msgid "Download"
 msgstr "Stáhnout"
 
 #: html/base.html:87
-#, fuzzy
 msgid "All downloads"
-msgstr "Stáhnout"
+msgstr "Vše ke stažení"
 
 #: html/base.html:88 html/downloads/index.html:25
 msgid "Download Gammu"
@@ -311,9 +309,8 @@ msgid "Networks"
 msgstr "Sítě"
 
 #: html/base.html:162
-#, fuzzy
 msgid "Help with translations!"
-msgstr "Překlad stránky"
+msgstr "Pomozte s překlady!"
 
 #: html/base.html:210
 msgid "License"
@@ -525,13 +522,12 @@ msgstr ""
 "Rozhraní libGammu pro Python, takže jí můžete použít ze skriptů v Pythonu.\n"
 
 #: html/gammu-family.html:67
-#, fuzzy
 msgid ""
 "\n"
 "Library exporting all Gammu functionality for use in C programs.\n"
 msgstr ""
 "\n"
-"Knihovna zpřístupňující komunikaci s mobilními telefony přes C API.\n"
+"Knihovna zpřístupňující všechny funkce Gammu pro použití v programech v C.\n"
 
 #: html/gammu-features.html:3
 msgid ""
@@ -1987,9 +1983,8 @@ msgstr ""
 "Stáhnout %(program)s (%(platform)s)\n"
 
 #: html/downloads/list.html:29
-#, fuzzy
 msgid "Binary packages"
-msgstr "Balíčky pro Debian"
+msgstr "Balíčky pro distribuce"
 
 #: html/downloads/list.html:33 html/downloads/platformlinks.html:7
 msgid "Debian packages"
@@ -2342,9 +2337,8 @@ msgstr ""
 
 #: html/phonedb/new.html:12 html/phonedb/phone.html:12
 #: html/phonedb/search.html:12 html/phonedb/vendor.html:12
-#, fuzzy
 msgid "Phones Database"
-msgstr "Databáze telefonů Gammu"
+msgstr "Databáze telefonů"
 
 #: html/phonedb/new.html:19
 msgid ""
