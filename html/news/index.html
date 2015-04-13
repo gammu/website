@@ -3,16 +3,8 @@
 
 {% block title %}{% trans "Wammu and Gammu News" %}{% endblock %}
 
-{% block sidebar_top %}
-<h3>{% trans "Feeds" %}</h3>
-<ul>
-<li><a href="/news/rss/">{% trans "RSS" %}</a></li>
-<li><a href="/news/atom/">{% trans "Atom" %}</a></li>
-<li><a href="http://twitter.com/statuses/user_timeline/67626012.rss">{% trans "Twitter RSS" %}</a></li>
-</ul>
-{% endblock %}
-
 {% block content %}
+<a class="pull-right" href="/news/rss/"><i class="fa fa-rss" alt="{% trans "RSS" %}"></i></a>
 {% block listhead %}
 <h2>{% trans "Wammu and Gammu News" %}</h2>
 {% endblock %}
