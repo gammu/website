@@ -34,9 +34,6 @@ def render_screenshots(request, objects, template):
     except (EmptyPage, InvalidPage):
         screenshots = paginator.page(1)
 
-    screenshots_categories = Category.objects.order_by('slug')
-
     return render_to_response(template, RequestContext(request, {
         'screenshots': screenshots,
-        'screenshots_categories': screenshots_categories,
     }))

@@ -5,6 +5,7 @@ from django.conf import settings
 from datetime import datetime
 from django.utils.translation import ugettext as _, get_language
 from news.models import Category
+from screenshots.models import Category as ScreenshotCategory
 
 
 def translations(request):
@@ -58,4 +59,5 @@ def feeds(request):
 def data(request):
     return {
         'news_categories': Category.objects.all(),
+        'screenshot_categories': ScreenshotCategory.objects.all(),
     }
