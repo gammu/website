@@ -44,7 +44,6 @@ def message(request):
 def dates(request):
     return {
         'current_year': datetime.now().strftime('%Y'),
-        'generated': datetime.now().strftime('%a, %d %b %Y %H:%M:%S GMT'),
     }
 
 def feeds(request):
