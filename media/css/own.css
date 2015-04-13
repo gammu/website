@@ -70,3 +70,6 @@ div.screenshot img {
     max-height: 150px;
     overflow: hidden;
 }
+.sponsors {
+    font-size: small;
+}

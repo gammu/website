@@ -4,20 +4,6 @@
 {% block description %}{% trans "Database of supported phones in Gammu and Wammu, the software for managing GSM cell phones." %}{% endblock %}
 {% block title %}{% trans "Gammu Phone Database " %}{% endblock %}
 
-{% block sidebar_top %}
-{% endblock %}
-
-{% block sidebar %}
-<h3>{% trans "Sponsors" %}</h3>
-
-<ul class="sponsors">
-
-<li>Post on- <a href="http://www.cheap.buyessay.org">www.cheap.buyessay.org</a> to read</li>
-<li>Writing help on  <a href="http://essayseek.com">http://essayseek.com/</a></li>
-<li><a href="http://quickessaywritingservice.com">Get More Info</a></li>
-</ul>
-{% endblock %}
-
 {% block content %}
 
 <h2>{% trans "Gammu Phone Database " %}</h2>
@@ -77,6 +63,8 @@ phone to get some functionality, newer ones do not have support so far.
 <h3>{% trans "Recently Added Phones" %}</h3>
 {% include "phonedb/list.html" %}
 
+<div class="row">
+<div class="col-md-10">
 <h3>{% trans "Phone Records Summary" %}</h3>
 
 
@@ -91,6 +79,19 @@ timestamp data.
 <img src="{{ chart_url }}" />
 
 <p><a href="/phones/csv/">{% trans "Download all data as CSV" %}</a></p>
+</div>
+
+<div class="col-md-2">
+<h3>{% trans "Sponsors" %}</h3>
+
+<ul class="sponsors">
+
+<li>Post on- <a href="http://www.cheap.buyessay.org">www.cheap.buyessay.org</a> to read</li>
+<li>Writing help on  <a href="http://essayseek.com">http://essayseek.com/</a></li>
+<li><a href="http://quickessaywritingservice.com">Get More Info</a></li>
+</ul>
+</div>
+</div>
 
 {% endblock %}
 
