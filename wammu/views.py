@@ -67,7 +67,7 @@ def gammu(request):
     }))
 
 def pygammu(request):
-    category = Category.objects.get(slug = 'gammu')
+    category = Category.objects.get(slug = 'python-gammu')
     news = Entry.objects.filter(categories = category).order_by('-pub_date')[:settings.NEWS_ON_PRODUCT_PAGE]
     return render_to_response('python-gammu.html', RequestContext(request, {
         'news': news,
