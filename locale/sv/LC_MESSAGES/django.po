@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-13 17:18+0200\n"
+"POT-Creation-Date: 2015-04-13 17:27+0200\n"
 "PO-Revision-Date: 2014-02-17 20:21+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/gammu/website/sv/"
@@ -2413,11 +2413,7 @@ msgid ""
 "developers</a> and try to ask them for this.\n"
 msgstr ""
 
-#: html/support/lists.html:4
-msgid "Mailing lists and forms for Wammu and Gammu"
-msgstr ""
-
-#: html/support/lists.html:8
+#: html/support/lists.html:4 html/support/lists.html.py:8
 msgid "Mailing lists and forums for Wammu and Gammu"
 msgstr ""
 
@@ -2568,7 +2564,7 @@ msgstr "Länder"
 
 #: html/tools/countries.html:18
 #, fuzzy
-msgid "Countr name"
+msgid "Country name"
 msgstr "Länder"
 
 #: html/tools/index.html:4 html/tools/index.html.py:8

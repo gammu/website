@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-13 17:18+0200\n"
+"POT-Creation-Date: 2015-04-13 17:27+0200\n"
 "PO-Revision-Date: 2015-02-11 11:17+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gammu/website/de/"
@@ -3352,12 +3352,7 @@ msgstr ""
 "<a href=\"/support/buy/\">Kontaktieren Sie schnell und einfach unsere "
 "Entwickler</a> und fragen Sie gleich nach.\n"
 
-#: html/support/lists.html:4
-#, fuzzy
-msgid "Mailing lists and forms for Wammu and Gammu"
-msgstr "Mailing Listen für Gammu und Wammu"
-
-#: html/support/lists.html:8
+#: html/support/lists.html:4 html/support/lists.html.py:8
 #, fuzzy
 msgid "Mailing lists and forums for Wammu and Gammu"
 msgstr "Mailing Listen für Gammu und Wammu"
@@ -3579,7 +3574,7 @@ msgstr "Länder"
 
 #: html/tools/countries.html:18
 #, fuzzy
-msgid "Countr name"
+msgid "Country name"
 msgstr "Länder"
 
 #: html/tools/index.html:4 html/tools/index.html.py:8
@@ -3960,6 +3955,10 @@ msgstr "Gammu und Wammu News Feed (RSS)"
 #: wammu/context_processors.py:55
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu und Wammu News Feed (Atom)"
+
+#, fuzzy
+#~ msgid "Mailing lists and forms for Wammu and Gammu"
+#~ msgstr "Mailing Listen für Gammu und Wammu"
 
 #~ msgid "Translate!"
 #~ msgstr "Übersetze!"
