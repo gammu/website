@@ -64,6 +64,7 @@ def list(request, program, platform):
         'testing_downloads': testing_downloads,
         'program_include': 'downloads/programs/%s-%s.html' % (program, platform),
         'program': get_program(program),
+        'program_name': program,
         'platform': platform_name,
         'mirrors': mirrors,
         'mirror': mirror,
@@ -86,6 +87,7 @@ def release(request, program,  version):
         'release': release,
         'downloads': downloads,
         'program': get_program(program),
+        'program_name': program,
         'mirrors': mirrors,
         'mirror': mirror,
     }))

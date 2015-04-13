@@ -28,17 +28,23 @@ Download {{ program }} ({{ platform }})
 {% endwith %}
 {% endif %}
 
-<h3>
-{% blocktrans %}
-Other platforms
-{% endblocktrans %}
-</h3>
+<h3>{% trans "Binary packages" %}</h3>
 
-<p>
-{% blocktrans %}
-You can not find your platform here? Choose the correct one <a href="../">on complete listing</a>.
-{% endblocktrans %}
-</p>
+<ul>
+<li><a href="http://packages.debian.org/{{ program_name}}">
+    {% trans "Debian packages" %}
+    </a></li>
+<li><a href="http://packages.ubuntu.com/{{ program_name}}">
+    {% trans "Ubuntu packages" %}
+    </a></li>
+<li><a href="https://launchpad.net/~nijel/+archive/ppa">
+    {% trans "Ubuntu packages in PPA" %}
+    </a></li>
+<li>
+    <a href="http://software.opensuse.org/package/{{ program_name }}">
+    {% trans "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)" %}
+    </a></li>
+</ul>
 
 <h3>{% trans "Development version" %}</h3>
 
