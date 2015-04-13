@@ -5,24 +5,6 @@
 {% block title %}{% trans "Gammu Phone Database " %}{% endblock %}
 
 {% block sidebar_top %}
-<h3>{% trans "Search" %}</h3>
-<form action="/phones/search" method="GET">
-<input type="text" name="q" />
-<input type="submit" value="{% trans "Go" %}" />
-</form>
-<h3>{% trans "Feature Search" %}</h3>
-<form action="/phones/search" method="GET">
-<ul class="featuresearch">
-{% for feature in features %}
-<li>
-<input type="checkbox" name="feature" value="{{ feature.name }}" id="ft_{{ feature.name }}" />
-<label for="ft_{{ feature.name }}">{{ feature.get_description }} [<a
-href="/phones/search/{{ feature.name }}/">link</a>]</label>
-</li>
-{% endfor %}
-</ul>
-<input type="submit" value="{% trans "Go" %}" />
-</form>
 {% endblock %}
 
 {% block sidebar %}
@@ -89,6 +71,14 @@ phone to get some functionality, newer ones do not have support so far.
 </a></li>
 {% endfor %}
 </ul>
+
+<h3>{% trans "Search" %}</h3>
+<form action="/phones/search/" method="GET">
+<table>
+{{ form.as_table }}
+</table>
+<input type="submit" value="{% trans "Go" %}" />
+</form>
 
 <h3>{% trans "Recently Added Phones" %}</h3>
 {% include "phonedb/list.html" %}

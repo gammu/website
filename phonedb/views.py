@@ -132,6 +132,7 @@ def index(request):
         'features': Feature.objects.all().order_by('name'),
         'chart_url': get_chart_url(),
         'feeds': get_feeds(),
+        'form': SearchForm(),
     }))
 
 def search(request, featurename = None):
