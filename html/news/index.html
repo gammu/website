@@ -16,7 +16,8 @@
 {% endwith %}
 {% endfor %}
 
-<ul class="pages">
+<nav>
+<ul class="pagination">
 {% if news.has_previous %}
 <li><a href="?page={{ news.previous_page_number }}">&laquo;</a></li>
 {% else %}
@@ -31,6 +32,7 @@
 <li class="disabled"><span>&raquo;</span></li>
 {% endif %}
 </ul>
+</nav>
 
 {% endblock %}
 

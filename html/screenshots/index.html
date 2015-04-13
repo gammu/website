@@ -31,7 +31,8 @@
 {% endfor %}
 <div class="clearer"></div>
 
-<ul class="pages">
+<nav>
+<ul class="pagination">
 {% if screenshots.has_previous %}
 <li><a href="?page={{ screenshots.previous_page_number }}">&laquo;</a></li>
 {% else %}
@@ -46,6 +47,7 @@
 <li class="disabled"><span>&raquo;</span></li>
 {% endif %}
 </ul>
+</nav>
 
 {% endblock %}
 

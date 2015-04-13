@@ -52,7 +52,8 @@ old ones will get deleted eventually.
 {% include "phonedb/list.html" %}
 {% endwith %}
 
-<ul class="pages">
+<nav>
+<ul class="pagination">
 {% if phones.has_previous %}
 <li><a href="?page={{ phones.previous_page_number }}">&laquo;</a></li>
 {% else %}
@@ -67,6 +68,7 @@ old ones will get deleted eventually.
 <li class="disabled"><span>&raquo;</span></li>
 {% endif %}
 </ul>
+</nav>
 {% endif %}
 
 {% endblock %}

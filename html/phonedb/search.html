@@ -33,7 +33,8 @@ Found {{ count }} results matching your query.
 {% include "phonedb/list.html" %}
 {% endwith %}
 
-<ul class="pages">
+<nav>
+<ul class="pagination">
 {% if phones.has_previous %}
 <li><a href="?page={{ phones.previous_page_number }}">&laquo;</a></li>
 {% else %}
@@ -48,6 +49,7 @@ Found {{ count }} results matching your query.
 <li class="disabled"><span>&raquo;</span></li>
 {% endif %}
 </ul>
+</nav>
 {% endif %}
 
 {% endblock %}
