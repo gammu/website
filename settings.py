@@ -142,6 +142,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.sitemaps',
+    'crispy_forms',
     'news',
     'wammu',
     'downloads',
@@ -162,6 +163,8 @@ PHONES_ON_MAIN_PAGE = 5
 PHONES_IN_RSS = 10
 
 THUMBNAIL_SIZE = (180, 180)
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 SEND_BROKEN_LINK_EMAILS = True
 SERVER_EMAIL = 'django@wammu.eu'

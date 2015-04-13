@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% load crispy_forms_tags %}
 
 {% block description %}{% trans "Database of supported phones in Gammu and Wammu, the software for managing GSM cell phones." %}{% endblock %}
 {% block title %}{% trans "Gammu Phone Database " %}{% endblock %}
@@ -53,10 +54,7 @@ phone to get some functionality, newer ones do not have support so far.
 
 <h3>{% trans "Search" %}</h3>
 <form action="/phones/search/" method="GET">
-<table>
-{{ form.as_table }}
-</table>
-<input type="submit" value="{% trans "Go" %}" />
+{% crispy form %}
 </form>
 
 <a class="pull-right" href="/phones/rss/"><i class="fa fa-rss" alt="{% trans "RSS" %}"></i></a>

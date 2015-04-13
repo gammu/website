@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% load crispy_forms_tags %}
 
 {% block description %}{% trans "Database of supported phones in Gammu and Wammu, the software for managing GSM cell phones." %}{% endblock %}
 {% block title %}{% trans "Create New Record" %} - {% trans "Gammu Phone Database " %}{% endblock %}
@@ -34,23 +35,13 @@ clarify some things you have entered.
 
 <form action="/phones/new/" method="POST">
 {% csrf_token %}
-<table>
-{{ form.as_table }}
-<tr><td colspan="2">
+{% crispy form %}
 <noscript>{% trans "Please enter text 'nospam':" %} <input name="irobot" size="6" /></noscript>
 <script type="text/javascript">
 //<![CDATA[
 document.write(String.fromCharCode(60) + 'input type="hidden" name="irobot" value="no' + 'spam" />');
 //]]>
 </script>
-</td>
-</tr>
-<tr><td></td>
-<td>
-<input type="submit" value="{% trans "Go" %}" />
-</td>
-</tr>
-</table>
 </form>
 
 
