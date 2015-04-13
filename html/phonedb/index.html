@@ -10,8 +10,6 @@
 {% block sidebar %}
 <h3>{% trans "Syndication" %}</h3>
 <ul>
-<li><a href="/phones/rss/">{% trans "RSS" %}</a></li>
-<li><a href="/phones/atom/">{% trans "Atom" %}</a></li>
 <li><a href="/phones/csv/">{% trans "CSV" %}</a></li>
 </ul>
 
@@ -80,6 +78,7 @@ phone to get some functionality, newer ones do not have support so far.
 <input type="submit" value="{% trans "Go" %}" />
 </form>
 
+<a class="pull-right" href="/phones/rss/"><i class="fa fa-rss" alt="{% trans "RSS" %}"></i></a>
 <h3>{% trans "Recently Added Phones" %}</h3>
 {% include "phonedb/list.html" %}
 
