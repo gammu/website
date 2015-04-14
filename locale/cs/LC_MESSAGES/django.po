@@ -7,12 +7,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2015-04-14 16:04+0200\n"
-"PO-Revision-Date: 2015-04-13 17:27+0200\n"
+"PO-Revision-Date: 2015-04-14 16:11+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/"
-">\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/>"
+"\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -152,14 +152,13 @@ msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
 msgstr "Stránky Gammu a Wammu, programů pro práci s GSM mobilními telefony."
 
 #: html/base.html:56
-#, fuzzy
 #| msgid "Wammu and Gammu"
 msgid "Gammu and Wammu"
-msgstr "Wammu a Gammu"
+msgstr "Gammu a Wammu"
 
 #: html/base.html:63
 msgid "Family"
-msgstr ""
+msgstr "Rodina"
 
 #: html/base.html:70
 msgid "Third party"
@@ -172,7 +171,7 @@ msgstr "Podpora"
 #: html/base.html:77 html/base.html.py:118 html/base.html.py:130
 #: html/base.html:142
 msgid "Overview"
-msgstr ""
+msgstr "Přehled"
 
 #: html/base.html:78
 msgid "Mailing lists and forums"
@@ -343,7 +342,7 @@ msgstr "Sledujte nás na Twitteru"
 
 #: html/base.html:205
 msgid "Donate using PayPal"
-msgstr ""
+msgstr "Přispějte pomocí PayPalu"
 
 #: html/contribute/code.html:4 html/contribute/code.html.py:8
 msgid "Coding for Wammu and Gammu"
@@ -1062,7 +1061,7 @@ msgstr ""
 
 #: html/donate.html:27
 msgid "Donate small amount in weekly intervals."
-msgstr ""
+msgstr "Přispějte malou částkou každý týden."
 
 #: html/donate.html:33
 msgid ""
@@ -1294,7 +1293,7 @@ msgstr ""
 msgid ""
 "This source tarball contains Gammu command line utility, libGammu library "
 "and Gammu SMSD."
-msgstr ""
+msgstr "Tento archív obsahuje utilitu Gammu, knihovnu libGammu a Gammu SMSD."
 
 #: html/downloads/programs/gammu-win32.html:3
 msgid ""
@@ -1319,7 +1318,7 @@ msgstr ""
 #: html/downloads/programs/python-gammu-source.html:9
 #: html/python-gammu.html:35
 msgid "The easiest way to install it is using pip:"
-msgstr ""
+msgstr "Nejjednodušší je instalovat pomocí pip:"
 
 #: html/downloads/programs/wammu-source.html:3
 msgid ""
@@ -1395,7 +1394,7 @@ msgstr ""
 #: html/gammu-family.html:42 html/gammu-family.html.py:59
 #: html/gammu-family.html:73
 msgid "View details"
-msgstr ""
+msgstr "Zobrazit podrobnosti"
 
 #: html/gammu-family.html:22
 msgid ""
@@ -1597,21 +1596,20 @@ msgstr ""
 #: html/gammu.html:77 html/libgammu.html:55 html/python-gammu.html:80
 #: html/wammu.html:63
 msgid "Source code and issue tracker"
-msgstr ""
+msgstr "Zdrojový kód a sledování chyb"
 
 #: html/gammu.html:79 html/libgammu.html:57 html/python-gammu.html:82
 #: html/wammu.html:65
 msgid "Both source code and issue tracker are hosted on GitHub:"
-msgstr ""
+msgstr "Zdrojový kód i sledování chyb naleznete na GitHubu:"
 
 #: html/gammu.html:82 html/libgammu.html:60 html/python-gammu.html:85
 #: html/wammu.html:68
 msgid "Code repository"
-msgstr ""
+msgstr "Repozitář s kódem"
 
 #: html/gammu.html:83 html/libgammu.html:61 html/python-gammu.html:86
 #: html/wammu.html:69
-#, fuzzy
 #| msgid "Bug tracker"
 msgid "Issue tracker"
 msgstr "Sledování chyb"
@@ -1984,7 +1982,7 @@ msgstr ""
 
 #: html/phonedb/index.html:79
 msgid "Download all data as CSV"
-msgstr ""
+msgstr "Stáhnout všechna data jako CSV"
 
 #: html/phonedb/index.html:83
 msgid "Sponsors"
@@ -2014,7 +2012,7 @@ msgstr "Vytvořit nový záznam"
 #: html/phonedb/new.html:11 html/phonedb/phone.html:11
 #: html/phonedb/search.html:11 html/phonedb/vendor.html:11
 msgid "Home"
-msgstr ""
+msgstr "Domů"
 
 #: html/phonedb/new.html:12 html/phonedb/phone.html:12
 #: html/phonedb/search.html:12 html/phonedb/vendor.html:12
@@ -2445,7 +2443,6 @@ msgid "Reporting Bugs in Wammu and Gammu"
 msgstr "Hlášení chyb ve Wammu a Gammu"
 
 #: html/support/bugs.html:11
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "Use <a href=\"https://github.com/gammu/gammu/issues\">bug tracker</a> to "
@@ -2464,8 +2461,8 @@ msgid ""
 "include are:\n"
 msgstr ""
 "\n"
-"Pro hlášení chyb nebo nápadů navylepšení používejte <a href=\"http://bugs."
-"cihar.com/\">bug tracker</a>.\n"
+"Pro hlášení chyb nebo nápadů na vylepšení používejte sledování chyb na "
+"GitHubu.\n"
 "Prosím věnujte pozornost abyste poskytli všechny důležité informace, které\n"
 "vývojáři umožní analyzovat problém. Nejdůležitější věci \n"
 "jsou:\n"
@@ -2514,7 +2511,7 @@ msgstr ""
 
 #: html/support/bugs.html:44
 msgid "Issue trackers for individiual projects:"
-msgstr ""
+msgstr "Sledování chyb pro jednotlivé projekty:"
 
 #: html/support/bugs.html:52
 msgid "Obtaining Debugging Log"
@@ -2776,6 +2773,8 @@ msgstr ""
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
 msgstr ""
+"Na dotazy související s Gammu se můžete ptát i na <a href=\"%(url)s\">Stack "
+"Overflow</a>."
 
 #: html/support/lists.html:47
 msgid "Other Mailing Lists"
@@ -2913,7 +2912,7 @@ msgstr ""
 
 #: html/tools/index.html:17
 msgid "PDU decoding/encoding"
-msgstr ""
+msgstr "Dekódování a zakódování PDU"
 
 #: html/tools/index.html:20
 msgid ""
@@ -2924,11 +2923,11 @@ msgstr ""
 
 #: html/tools/index.html:29
 msgid "Useful for creating PDU data, which you can then submit to the phone."
-msgstr ""
+msgstr "Užitečné pro vytvoření PDU dat, která pak můžete použít s telefonem."
 
 #: html/tools/index.html:32
 msgid "Useful for decoding PDU data, which you might get from your phone."
-msgstr ""
+msgstr "Užitečné pro dekódování PDU dat, který jste přečetli z telefonu."
 
 #: html/tools/index.html:36
 msgid "Other tools"
@@ -3236,7 +3235,7 @@ msgstr "%(description)s (%(name)s)"
 
 #: phonedb/forms.py:81
 msgid "Save"
-msgstr ""
+msgstr "Uložit"
 
 #: phonedb/models.py:20
 msgid "Use [at] and [dot]"
