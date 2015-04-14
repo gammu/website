@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-14 15:58+0200\n"
+"POT-Creation-Date: 2015-04-14 15:59+0200\n"
 "PO-Revision-Date: 2014-02-16 17:02+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone+weblate@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gammu/website/es/"
@@ -2850,7 +2850,7 @@ msgstr ""
 "revisa más abajo sobre cómo obtenerlo.\n"
 
 #: html/support/bugs.html:44
-msgid "Issue tracker for individiual projects:"
+msgid "Issue trackers for individiual projects:"
 msgstr ""
 
 #: html/support/bugs.html:52
