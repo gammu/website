@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-14 15:59+0200\n"
+"POT-Creation-Date: 2015-04-14 16:04+0200\n"
 "PO-Revision-Date: 2013-11-25 12:56+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: French <http://hosted.weblate.org/projects/gammu/website/fr/"
@@ -174,55 +174,37 @@ msgstr "Wammu et Gammu"
 msgid "Family"
 msgstr ""
 
-#: html/base.html:65 html/contribute/translate.html:57 html/gammu.html:4
-#: html/gammu.html.py:11
-msgid "Gammu"
-msgstr "Gammu"
-
-#: html/base.html:66 html/contribute/translate.html:55 html/wammu.html:4
-#: html/wammu.html.py:14
-msgid "Wammu"
-msgstr "Wammu"
-
-#: html/base.html:67
-msgid "python-gammu"
-msgstr "python-gammu"
-
-#: html/base.html:68
-msgid "SMSD"
-msgstr "SMSD"
-
-#: html/base.html:69
+#: html/base.html:70
 msgid "Third party"
 msgstr "Troisième partie"
 
-#: html/base.html:74
+#: html/base.html:75
 msgid "Support"
 msgstr "Support"
 
-#: html/base.html:76 html/base.html.py:117 html/base.html.py:129
-#: html/base.html:141
+#: html/base.html:77 html/base.html.py:118 html/base.html.py:130
+#: html/base.html:142
 msgid "Overview"
 msgstr ""
 
-#: html/base.html:77
+#: html/base.html:78
 #, fuzzy
 msgid "Mailing lists and forums"
 msgstr "Liste de diffusion"
 
-#: html/base.html:78
+#: html/base.html:79
 msgid "Reporting bugs"
 msgstr "Rapport de problème"
 
-#: html/base.html:79
+#: html/base.html:80
 msgid "Online"
 msgstr "En ligne"
 
-#: html/base.html:80
+#: html/base.html:81
 msgid "Commercial support"
 msgstr "Support commercial"
 
-#: html/base.html:85 html/downloads/list.html:4 html/downloads/program.html:4
+#: html/base.html:86 html/downloads/list.html:4 html/downloads/program.html:4
 #: html/downloads/release.html:4 html/gammu-family.html:15
 #: html/gammu-family.html.py:29 html/gammu-family.html:43
 #: html/gammu-family.html.py:60 html/gammu-family.html:74 html/gammu.html:53
@@ -231,156 +213,156 @@ msgstr "Support commercial"
 msgid "Download"
 msgstr "Téléchargement"
 
-#: html/base.html:87
+#: html/base.html:88
 #, fuzzy
 msgid "All downloads"
 msgstr "Téléchargement"
 
-#: html/base.html:88 html/downloads/index.html:25
+#: html/base.html:89 html/downloads/index.html:25
 msgid "Download Gammu"
 msgstr ""
 
-#: html/base.html:89 html/downloads/index.html:32
+#: html/base.html:90 html/downloads/index.html:32
 #, fuzzy
 msgid "Download python-gammu"
 msgstr "python-gammu"
 
-#: html/base.html:90 html/downloads/index.html:39
+#: html/base.html:91 html/downloads/index.html:39
 msgid "Download Wammu"
 msgstr ""
 
-#: html/base.html:95 html/index.html:25
+#: html/base.html:96 html/index.html:25
 msgid "News"
 msgstr "Nouveautés"
 
-#: html/base.html:97
+#: html/base.html:98
 msgid "All news"
 msgstr "Toutes les nouvelles"
 
-#: html/base.html:105 html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
+#: html/base.html:106 html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
 msgid "Screenshots"
 msgstr "Impressions écran"
 
-#: html/base.html:107
+#: html/base.html:108
 msgid "All screenshots"
 msgstr ""
 
-#: html/base.html:115 html/gammu.html:61 html/libgammu.html:46
+#: html/base.html:116 html/gammu.html:61 html/libgammu.html:46
 #: html/python-gammu.html:64 html/smsd.html:65 html/wammu.html:49
 msgid "Documentation"
 msgstr "Documentation"
 
-#: html/base.html:118 html/docs/index.html:21
+#: html/base.html:119 html/docs/index.html:21
 msgid "Gammu Manual"
 msgstr "Manuel d'utilisation de Gammu"
 
-#: html/base.html:119
+#: html/base.html:120
 msgid "FAQ"
 msgstr "FAQ"
 
 # Selon le contexte.
-#: html/base.html:120
+#: html/base.html:121
 msgid "For developers"
 msgstr "Pour les développeurs"
 
-#: html/base.html:121 html/phonedb/body.html:16
+#: html/base.html:122 html/phonedb/body.html:16
 msgid "Configuration"
 msgstr "Configuration"
 
-#: html/base.html:122 html/sidebars/common.html:3 phonedb/views.py:101
+#: html/base.html:123 html/sidebars/common.html:3 phonedb/views.py:101
 msgid "Supported phones"
 msgstr "Téléphones supportés"
 
-#: html/base.html:127
+#: html/base.html:128
 msgid "Contribute"
 msgstr "Contribuer"
 
 # Peut etre modifié selon le contexte.
-#: html/base.html:130
+#: html/base.html:131
 msgid "Translate"
 msgstr "Traduire"
 
-#: html/base.html:131
+#: html/base.html:132
 msgid "Develop"
 msgstr "Développer"
 
-#: html/base.html:132
+#: html/base.html:133
 msgid "Wanted skills"
 msgstr ""
 
-#: html/base.html:133
+#: html/base.html:134
 msgid "Publicity"
 msgstr "Publicité"
 
-#: html/base.html:134 html/base.html.py:198
+#: html/base.html:135 html/base.html.py:199
 msgid "Donate"
 msgstr "Faire un don"
 
-#: html/base.html:139
+#: html/base.html:140
 msgid "Tools"
 msgstr ""
 
-#: html/base.html:142
+#: html/base.html:143
 msgid "PDU encoder"
 msgstr ""
 
-#: html/base.html:143
+#: html/base.html:144
 msgid "PDU decoder"
 msgstr ""
 
-#: html/base.html:144
+#: html/base.html:145
 msgid "Countries"
 msgstr ""
 
-#: html/base.html:145
+#: html/base.html:146
 msgid "Networks"
 msgstr ""
 
-#: html/base.html:163
+#: html/base.html:164
 #, fuzzy
 msgid "Help with translations!"
 msgstr "Page de traduction"
 
-#: html/base.html:197
+#: html/base.html:198
 msgid "License"
 msgstr "Licence"
 
-#: html/base.html:198
+#: html/base.html:199
 msgid "Support Gammu/Wammu by donating money!"
 msgstr "Soutenez Gammu/Wammu par des dons !"
 
 # Etrange...
-#: html/base.html:199
+#: html/base.html:200
 msgid "Search for Gammu/Wammu related questions"
 msgstr "Rechercher les questions relatives à Gammu/Wammu"
 
-#: html/base.html:199 html/phonedb/index.html:55 html/phonedb/search.html:13
+#: html/base.html:200 html/phonedb/index.html:55 html/phonedb/search.html:13
 #: html/phonedb/search.html.py:49 phonedb/forms.py:33
 msgid "Search"
 msgstr "Rechercher"
 
 # Déjà traduit.
-#: html/base.html:200
+#: html/base.html:201
 msgid "Gammu and Wammu authors"
 msgstr "Créateurs de Gammu et Wammu"
 
-#: html/base.html:200
+#: html/base.html:201
 msgid "Authors"
 msgstr "Créateurs"
 
-#: html/base.html:201
+#: html/base.html:202
 msgid "Gammu on Google+"
 msgstr "Gammu sur Google+"
 
-#: html/base.html:202
+#: html/base.html:203
 msgid "Gammu on Facebook"
 msgstr "Gammu sur Facebook"
 
-#: html/base.html:203
+#: html/base.html:204
 msgid "Follow us on Twitter"
 msgstr "Suivez nous sur Twitter"
 
-#: html/base.html:204
+#: html/base.html:205
 msgid "Donate using PayPal"
 msgstr ""
 
@@ -684,11 +666,6 @@ msgstr ""
 #: html/contribute/translate.html:54
 msgid "Introduction page"
 msgstr ""
-
-#: html/contribute/translate.html:56 html/libgammu.html:4
-#: html/libgammu.html.py:7
-msgid "libGammu"
-msgstr "libGammu"
 
 #: html/contribute/translate.html:58
 msgid "This website"
@@ -1343,11 +1320,11 @@ msgstr ""
 #: html/gammu-family.html:8
 msgid ""
 "\n"
-"GUI program to manage contacts, todos, calendar and messages in your phone.\n"
+"Command line utility which allows to use all libGammu features.\n"
 msgstr ""
 "\n"
-"Application graphique pour gérer vos contacts, tâches, calendrier et message "
-"de votre téléphone.\n"
+"Toutes les commandes de libGammu peuvent être utilisées en ligne de "
+"commande\n"
 
 #: html/gammu-family.html:14 html/gammu-family.html.py:28
 #: html/gammu-family.html:42 html/gammu-family.html.py:59
@@ -1358,19 +1335,19 @@ msgstr ""
 #: html/gammu-family.html:22
 msgid ""
 "\n"
-"Command line utility which allows to use all libGammu features.\n"
-msgstr ""
-"\n"
-"Toutes les commandes de libGammu peuvent être utilisées en ligne de "
-"commande\n"
-
-#: html/gammu-family.html:36
-msgid ""
-"\n"
 "SMS daemon service to receive and send messages automatically.\n"
 msgstr ""
 "\n"
 "Le Service SMS peut recevoir et envoyer des messages automatiquement.\n"
+
+#: html/gammu-family.html:36
+msgid ""
+"\n"
+"GUI program to manage contacts, todos, calendar and messages in your phone.\n"
+msgstr ""
+"\n"
+"Application graphique pour gérer vos contacts, tâches, calendrier et message "
+"de votre téléphone.\n"
 
 #: html/gammu-family.html:53
 msgid ""
@@ -1612,6 +1589,10 @@ msgstr ""
 "la couche d'abstraction pour travailler avec les différents téléphones "
 "cellulaires provenant de différents fournisseurs (y compris Nokia, Sony-"
 "Ericsson, Motorola, Samsung, Siemens, Huawei et autres).\n"
+
+#: html/libgammu.html:4 html/libgammu.html.py:7
+msgid "libGammu"
+msgstr "libGammu"
 
 #: html/libgammu.html:10
 msgid ""
@@ -3149,6 +3130,18 @@ msgstr "Flux vers les nouvelles Gammu et Wammu (RSS)"
 #: wammu/context_processors.py:55
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Flux vers les nouvelles Gammu et Wammu (Atom)"
+
+#~ msgid "Gammu"
+#~ msgstr "Gammu"
+
+#~ msgid "Wammu"
+#~ msgstr "Wammu"
+
+#~ msgid "python-gammu"
+#~ msgstr "python-gammu"
+
+#~ msgid "SMSD"
+#~ msgstr "SMSD"
 
 #, fuzzy
 #~ msgid "Mailing lists and forms for Wammu and Gammu"
