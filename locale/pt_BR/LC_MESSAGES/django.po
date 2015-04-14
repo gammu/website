@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-14 08:26+0200\n"
+"POT-Creation-Date: 2015-04-14 15:58+0200\n"
 "PO-Revision-Date: 2015-04-11 20:36+0200\n"
 "Last-Translator: Thiago Casotti <thiago.casotti@uol.com.br>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
@@ -1921,7 +1921,29 @@ msgstr ""
 "a>.\n"
 
 #: html/gammu.html:77 html/libgammu.html:55 html/python-gammu.html:80
-#: html/smsd.html:80 html/wammu.html:63
+#: html/wammu.html:63
+msgid "Source code and issue tracker"
+msgstr ""
+
+#: html/gammu.html:79 html/libgammu.html:57 html/python-gammu.html:82
+#: html/wammu.html:65
+msgid "Both source code and issue tracker are hosted on GitHub:"
+msgstr ""
+
+#: html/gammu.html:82 html/libgammu.html:60 html/python-gammu.html:85
+#: html/wammu.html:68
+msgid "Code repository"
+msgstr ""
+
+#: html/gammu.html:83 html/libgammu.html:61 html/python-gammu.html:86
+#: html/wammu.html:69
+#, fuzzy
+#| msgid "Bug tracker"
+msgid "Issue tracker"
+msgstr "Rastreador de bugs"
+
+#: html/gammu.html:86 html/libgammu.html:64 html/python-gammu.html:89
+#: html/smsd.html:80 html/wammu.html:72
 msgid "More information"
 msgstr "Mais informações"
 
@@ -2844,10 +2866,19 @@ msgid "Reporting Bugs in Wammu and Gammu"
 msgstr "Relatar bugs no Wammu e Gammu"
 
 #: html/support/bugs.html:11
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "Use <a href=\"https://github.com/gammu/gammu/issues\">bug tracker</a> to "
+#| "report a bug or a\n"
+#| "feature requests. Please take care that you include all information "
+#| "necessary\n"
+#| "for the developer to investigate the problem. The most important things "
+#| "to\n"
+#| "include are:\n"
 msgid ""
 "\n"
-"Use <a href=\"https://github.com/gammu/gammu/issues\">bug tracker</a> to "
-"report a bug or a\n"
+"Use issue tracker on GitHub to report bugs or\n"
 "feature requests. Please take care that you include all information "
 "necessary\n"
 "for the developer to investigate the problem. The most important things to\n"
@@ -2905,10 +2936,14 @@ msgstr ""
 "isso.\n"
 
 #: html/support/bugs.html:44
+msgid "Issue tracker for individiual projects:"
+msgstr ""
+
+#: html/support/bugs.html:52
 msgid "Obtaining Debugging Log"
 msgstr "Obter o Debug de Log"
 
-#: html/support/bugs.html:47
+#: html/support/bugs.html:55
 msgid ""
 "\n"
 "Debugging log contains transcription of communication between Gammu and "
@@ -2930,7 +2965,7 @@ msgstr ""
 "acessível como\n"
 "os outros relatórios de bug.\n"
 
-#: html/support/bugs.html:57
+#: html/support/bugs.html:65
 msgid ""
 "\n"
 "To make Gammu generate debug log, you need to tell it to do so. It is "
@@ -2944,7 +2979,7 @@ msgstr ""
 "debug-file\n"
 "/tmp/gammu.log identify</code>) qunato pelo arquivo de configuração:\n"
 
-#: html/support/bugs.html:73
+#: html/support/bugs.html:81
 msgid ""
 "\n"
 "Wammu automatically creates debugging log in temporary directory\n"
@@ -2964,7 +2999,7 @@ msgstr ""
 "atual\n"
 "durante a execução do Wammu pelo menu de Ajuda.\n"
 
-#: html/support/bugs.html:83
+#: html/support/bugs.html:91
 msgid ""
 "\n"
 "Gammu SMSD logging is configured in more levels, to include all messages, "
@@ -2976,11 +3011,11 @@ msgstr ""
 "mensagens\n"
 "defina <code>debuglevel</code> para 255:\n"
 
-#: html/support/bugs.html:95
+#: html/support/bugs.html:103
 msgid "Troubleshooting Windows Service"
 msgstr "Solução de problemas do Windows Service"
 
-#: html/support/bugs.html:98
+#: html/support/bugs.html:106
 msgid ""
 "\n"
 "If Gammu fails to start as a Windows service (you will usually get \"Error\n"
@@ -3006,7 +3041,7 @@ msgstr ""
 "os caminhos\n"
 "absolutos (ex: caminho para o arquivo de configuração).\n"
 
-#: html/support/bugs.html:109
+#: html/support/bugs.html:117
 msgid ""
 "\n"
 "For example the command line can look like:\n"
@@ -3014,7 +3049,7 @@ msgstr ""
 "\n"
 "Por exemplo, a linha de comando pode parecer:\n"
 
-#: html/support/bugs.html:119
+#: html/support/bugs.html:127
 msgid ""
 "\n"
 "You now should be able to get errors from SMSD even if it fails to start as "
@@ -4111,9 +4146,6 @@ msgstr "Feed de notícias do Gammu e Wammu (Atom)"
 
 #~ msgid "Mailing list"
 #~ msgstr "Lista de emails"
-
-#~ msgid "Bug tracker"
-#~ msgstr "Rastreador de bugs"
 
 #~ msgid "Jabber chat room"
 #~ msgstr "Sala de bate-papo Jabber"

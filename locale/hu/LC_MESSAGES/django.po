@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-14 08:26+0200\n"
+"POT-Creation-Date: 2015-04-14 15:58+0200\n"
 "PO-Revision-Date: 2012-10-19 22:11+0200\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <http://hosted.weblate.org/projects/gammu/website/"
@@ -1406,7 +1406,27 @@ msgid ""
 msgstr ""
 
 #: html/gammu.html:77 html/libgammu.html:55 html/python-gammu.html:80
-#: html/smsd.html:80 html/wammu.html:63
+#: html/wammu.html:63
+msgid "Source code and issue tracker"
+msgstr ""
+
+#: html/gammu.html:79 html/libgammu.html:57 html/python-gammu.html:82
+#: html/wammu.html:65
+msgid "Both source code and issue tracker are hosted on GitHub:"
+msgstr ""
+
+#: html/gammu.html:82 html/libgammu.html:60 html/python-gammu.html:85
+#: html/wammu.html:68
+msgid "Code repository"
+msgstr ""
+
+#: html/gammu.html:83 html/libgammu.html:61 html/python-gammu.html:86
+#: html/wammu.html:69
+msgid "Issue tracker"
+msgstr ""
+
+#: html/gammu.html:86 html/libgammu.html:64 html/python-gammu.html:89
+#: html/smsd.html:80 html/wammu.html:72
 msgid "More information"
 msgstr "További információ"
 
@@ -2093,8 +2113,7 @@ msgstr ""
 #: html/support/bugs.html:11
 msgid ""
 "\n"
-"Use <a href=\"https://github.com/gammu/gammu/issues\">bug tracker</a> to "
-"report a bug or a\n"
+"Use issue tracker on GitHub to report bugs or\n"
 "feature requests. Please take care that you include all information "
 "necessary\n"
 "for the developer to investigate the problem. The most important things to\n"
@@ -2131,10 +2150,14 @@ msgid ""
 msgstr ""
 
 #: html/support/bugs.html:44
+msgid "Issue tracker for individiual projects:"
+msgstr ""
+
+#: html/support/bugs.html:52
 msgid "Obtaining Debugging Log"
 msgstr ""
 
-#: html/support/bugs.html:47
+#: html/support/bugs.html:55
 msgid ""
 "\n"
 "Debugging log contains transcription of communication between Gammu and "
@@ -2146,7 +2169,7 @@ msgid ""
 "reports.\n"
 msgstr ""
 
-#: html/support/bugs.html:57
+#: html/support/bugs.html:65
 msgid ""
 "\n"
 "To make Gammu generate debug log, you need to tell it to do so. It is "
@@ -2155,7 +2178,7 @@ msgid ""
 "/tmp/gammu.log identify</code>) or using configuration file:\n"
 msgstr ""
 
-#: html/support/bugs.html:73
+#: html/support/bugs.html:81
 msgid ""
 "\n"
 "Wammu automatically creates debugging log in temporary directory\n"
@@ -2166,7 +2189,7 @@ msgid ""
 "Wammu from Help menu.\n"
 msgstr ""
 
-#: html/support/bugs.html:83
+#: html/support/bugs.html:91
 msgid ""
 "\n"
 "Gammu SMSD logging is configured in more levels, to include all messages, "
@@ -2174,11 +2197,11 @@ msgid ""
 "<code>debuglevel</code> to 255:\n"
 msgstr ""
 
-#: html/support/bugs.html:95
+#: html/support/bugs.html:103
 msgid "Troubleshooting Windows Service"
 msgstr ""
 
-#: html/support/bugs.html:98
+#: html/support/bugs.html:106
 msgid ""
 "\n"
 "If Gammu fails to start as a Windows service (you will usually get \"Error\n"
@@ -2193,13 +2216,13 @@ msgid ""
 "(eg. path to configuraiton file).\n"
 msgstr ""
 
-#: html/support/bugs.html:109
+#: html/support/bugs.html:117
 msgid ""
 "\n"
 "For example the command line can look like:\n"
 msgstr ""
 
-#: html/support/bugs.html:119
+#: html/support/bugs.html:127
 msgid ""
 "\n"
 "You now should be able to get errors from SMSD even if it fails to start as "

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-14 08:26+0200\n"
+"POT-Creation-Date: 2015-04-14 15:58+0200\n"
 "PO-Revision-Date: 2014-02-16 17:02+0200\n"
 "Last-Translator: Matías Bellone <matiasbellone+weblate@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gammu/website/es/"
@@ -1854,7 +1854,29 @@ msgstr ""
 "a>.\n"
 
 #: html/gammu.html:77 html/libgammu.html:55 html/python-gammu.html:80
-#: html/smsd.html:80 html/wammu.html:63
+#: html/wammu.html:63
+msgid "Source code and issue tracker"
+msgstr ""
+
+#: html/gammu.html:79 html/libgammu.html:57 html/python-gammu.html:82
+#: html/wammu.html:65
+msgid "Both source code and issue tracker are hosted on GitHub:"
+msgstr ""
+
+#: html/gammu.html:82 html/libgammu.html:60 html/python-gammu.html:85
+#: html/wammu.html:68
+msgid "Code repository"
+msgstr ""
+
+#: html/gammu.html:83 html/libgammu.html:61 html/python-gammu.html:86
+#: html/wammu.html:69
+#, fuzzy
+#| msgid "Bug tracker"
+msgid "Issue tracker"
+msgstr "Sistema de seguimiento de errores"
+
+#: html/gammu.html:86 html/libgammu.html:64 html/python-gammu.html:89
+#: html/smsd.html:80 html/wammu.html:72
 msgid "More information"
 msgstr "Más información"
 
@@ -2761,10 +2783,19 @@ msgid "Reporting Bugs in Wammu and Gammu"
 msgstr "Reportar errores en Wammu y Gammu"
 
 #: html/support/bugs.html:11
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "Use <a href=\"https://github.com/gammu/gammu/issues\">bug tracker</a> to "
+#| "report a bug or a\n"
+#| "feature requests. Please take care that you include all information "
+#| "necessary\n"
+#| "for the developer to investigate the problem. The most important things "
+#| "to\n"
+#| "include are:\n"
 msgid ""
 "\n"
-"Use <a href=\"https://github.com/gammu/gammu/issues\">bug tracker</a> to "
-"report a bug or a\n"
+"Use issue tracker on GitHub to report bugs or\n"
 "feature requests. Please take care that you include all information "
 "necessary\n"
 "for the developer to investigate the problem. The most important things to\n"
@@ -2819,10 +2850,14 @@ msgstr ""
 "revisa más abajo sobre cómo obtenerlo.\n"
 
 #: html/support/bugs.html:44
+msgid "Issue tracker for individiual projects:"
+msgstr ""
+
+#: html/support/bugs.html:52
 msgid "Obtaining Debugging Log"
 msgstr "Obteniendo el registro de depuración"
 
-#: html/support/bugs.html:47
+#: html/support/bugs.html:55
 msgid ""
 "\n"
 "Debugging log contains transcription of communication between Gammu and "
@@ -2840,7 +2875,7 @@ msgstr ""
 "como privado para que sólo los desarrolladores puedan ver la información en "
 "él y no pueda ser accedido públicamente como los demás reportes.\n"
 
-#: html/support/bugs.html:57
+#: html/support/bugs.html:65
 msgid ""
 "\n"
 "To make Gammu generate debug log, you need to tell it to do so. It is "
@@ -2856,7 +2891,7 @@ msgstr ""
 
 # Wouldn't dare translate Windows' data folder name in Spanish as I don't know
 # what it is called or if Wammu respects its translation in windows
-#: html/support/bugs.html:73
+#: html/support/bugs.html:81
 msgid ""
 "\n"
 "Wammu automatically creates debugging log in temporary directory\n"
@@ -2874,7 +2909,7 @@ msgstr ""
 "registro de depuración actual mientras Wammu ejecuta desde el menú de "
 "Ayuda.\n"
 
-#: html/support/bugs.html:83
+#: html/support/bugs.html:91
 msgid ""
 "\n"
 "Gammu SMSD logging is configured in more levels, to include all messages, "
@@ -2885,13 +2920,13 @@ msgstr ""
 "Los registros de Gammu SMSD son configurados en varios niveles, para incluir "
 "todos los mensajes, configura <code>debuglevel</code> a 255:\n"
 
-#: html/support/bugs.html:95
+#: html/support/bugs.html:103
 msgid "Troubleshooting Windows Service"
 msgstr "Depurando el servicio de Windows"
 
 # I wouldn't translate the error message as I'm not sure that it is actually
 # translated in Gammu
-#: html/support/bugs.html:98
+#: html/support/bugs.html:106
 msgid ""
 "\n"
 "If Gammu fails to start as a Windows service (you will usually get \"Error\n"
@@ -2915,7 +2950,7 @@ msgstr ""
 "pasando todas las rutas de forma absoluta (por ejemplo, la ruta del archivo "
 "de configuración).\n"
 
-#: html/support/bugs.html:109
+#: html/support/bugs.html:117
 msgid ""
 "\n"
 "For example the command line can look like:\n"
@@ -2923,7 +2958,7 @@ msgstr ""
 "\n"
 "Por ejemplo, la lína de órdenes puede ser algo similar a:\n"
 
-#: html/support/bugs.html:119
+#: html/support/bugs.html:127
 msgid ""
 "\n"
 "You now should be able to get errors from SMSD even if it fails to start as "
@@ -3972,9 +4007,6 @@ msgstr "Gammu y Wammu Noticias Feed (Atom)"
 
 #~ msgid "Mailing list"
 #~ msgstr "Lista de correo"
-
-#~ msgid "Bug tracker"
-#~ msgstr "Sistema de seguimiento de errores"
 
 #~ msgid "Jabber chat room"
 #~ msgstr "Sala de conferencias Jabber"
