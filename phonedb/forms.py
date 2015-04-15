@@ -3,7 +3,7 @@ from django import forms
 
 from phonedb.models import Feature, Phone
 
-from django.utils.translation import ugettext_lazy
+from django.utils.translation import ugettext_lazy, ugettext as _
 from django.utils.safestring import mark_safe
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Submit
@@ -12,13 +12,10 @@ from crispy_forms.layout import Layout, Submit
 class SearchForm(Form):
     q = forms.CharField(label = ugettext_lazy('Search text'), required = False)
     feature = forms.MultipleChoiceField(
-        label = ugettext_lazy('Features'),
-        required = False,
-        choices = [(f.name,
-            mark_safe(ugettext_lazy('%(description)s [<a href="%(url)s">Link</a>]') %
-                {'description': f.get_description(), 'url': '/phones/search/%s/' % f.name})
-                ) for f in Feature.objects.all()],
-        widget = forms.CheckboxSelectMultiple
+        label=ugettext_lazy('Features'),
+        required=False,
+        choices=(),
+        widget=forms.CheckboxSelectMultiple
     )
 
     def __init__(self, *args, **kwargs):
@@ -30,8 +27,14 @@ class SearchForm(Form):
         self.helper.layout = Layout(
             'q',
             'feature',
-            Submit('submit', ugettext_lazy('Search'), css_class='btn-default'),
+            Submit('submit', _('Search'), css_class='btn-default'),
         )
+        self.fields['feature'].choices = [
+            (f.name, mark_safe(_('%(description)s [<a href="%(url)s">Link</a>]') %
+                {'description': f.get_description(), 'url': '/phones/search/%s/' % f.name})
+            )
+            for f in Feature.objects.all()
+        ]
 
 
 class NewForm(ModelForm):
