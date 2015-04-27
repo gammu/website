@@ -2280,7 +2280,7 @@ msgstr ""
 "Als Entwickler haben Sie vielleicht Interesse an unseren Plänen für die "
 "nächsten Gammu und Wammu Versionen:\n"
 "Sie finden diese Informationen in unserer <a href=\"/docs/manual/project/"
-"roadmap.html/\">Roadmap</a>.\n"
+"roadmap.html\">Roadmap</a>.\n"
 
 #: html/docs/index.html:63
 msgid ""
