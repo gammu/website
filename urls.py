@@ -31,6 +31,7 @@ releases_dict = {
 
 class PagesSitemap(Sitemap):
     changefreq = 'weekly'
+
     def items(self):
         return [
             ('/', '%s/index.html' % settings.HTML_ROOT, 1),
@@ -67,7 +68,8 @@ class PagesSitemap(Sitemap):
             ('/downloads/wammu/', None, 0.2),
             ('/downloads/wammu/source/', None, 0.7),
             ('/links/', None, 0.4),
-            ]
+        ]
+
     def location(self, item):
         return item[0]
 
