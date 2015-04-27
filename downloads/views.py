@@ -1,4 +1,4 @@
-from django.shortcuts import render_to_response, get_object_or_404
+from django.shortcuts import render_to_response, get_object_or_404, redirect
 from django.template import RequestContext
 from downloads.models import Download, Release, get_program, get_latest_releases, get_current_downloads, PLATFORM_CHOICES, PROGRAM_CHOICES
 from django.http import Http404, HttpResponse
@@ -9,6 +9,9 @@ def list(request, program, platform):
         raise Http404('No such program %s.' % program)
     if not platform in [x[0] for x in PLATFORM_CHOICES]:
         raise Http404('No such platform %s.' % platform)
+
+    if platform == 'win32':
+        return redirect('downloads.views.list', program=program, platform='source')
 
     downloads = get_current_downloads(program, platform)
 
