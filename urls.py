@@ -64,7 +64,6 @@ class PagesSitemap(Sitemap):
             ('/screenshots/', None, 0.8),
             ('/downloads/gammu/', None, 0.7),
             ('/downloads/gammu/source/', None, 0.7),
-            ('/downloads/gammu/win32/', None, 0.7),
             ('/downloads/wammu/', None, 0.7),
             ('/downloads/wammu/source/', None, 0.7),
             ('/links/', None, 0.4),
