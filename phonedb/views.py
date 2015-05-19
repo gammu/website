@@ -221,7 +221,7 @@ def review(request):
 
 def vendor(request, vendorname):
     vendor = get_object_or_404(Vendor, slug = vendorname)
-    phones = Phone.objects.filter(vendor = vendor, state = 'approved').order_by('name')
+    phones = Phone.objects.filter(vendor = vendor, state__in=('approved', 'draft')).order_by('name')
 
     paginator = Paginator(phones, settings.PHONES_PER_PAGE, orphans = 5)
     try:
