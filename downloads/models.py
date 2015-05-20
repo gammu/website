@@ -204,7 +204,7 @@ class Download(models.Model):
         if self.size > 4 * 1024 * 1024:
             return '%d MiB' % self.get_size_mib()
         if self.size > 4 * 1024:
-            return '%d kiB' % self.get_size_kib()
+            return '%d KiB' % self.get_size_kib()
         return '%d B' % self.size
 
     def get_size_mib(self):
