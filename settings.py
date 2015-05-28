@@ -121,7 +121,16 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'wammu.middleware.SiteLocaleMiddleware',
     'wammu.middleware.HTTPHeadersMiddleware',
+    'rollbar.contrib.django.middleware.RollbarNotifierMiddleware',
 )
+
+ROLLBAR = {
+    'access_token': '',
+    'environment': 'development' if DEBUG else 'production',
+    'branch': 'master',
+    'root': '/home/nijel/wammu/',
+}
+
 
 ROOT_URLCONF = 'urls'
 
