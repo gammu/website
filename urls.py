@@ -137,7 +137,7 @@ urlpatterns = patterns('',
     (r'^news/$', 'news.views.index'),
     (r'^news/(?P<year>\d{4})/(?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<slug>[^/]*)/$',
         'news.views.entry'),
-    (r'^news/(?P<slug>.*)/$', 'news.views.category'),
+    (r'^news/(?P<slug>[^/]*)/$', 'news.views.category'),
 
     (r'^download/$', 'downloads.views.download'),
     (r'^download/(?P<program>[^/]*)/$', RedirectView.as_view(url='/download/%(program)s/source/')),
