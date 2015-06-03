@@ -19,7 +19,7 @@
   {% for feed in global_feeds %}
   <link rel="alternate" type="{{ feed.type }}" href="{{ feed.url }}" title="{{ feed.title }}"/>
   {% endfor %}
-  <link rel="canonical" href="http://wammu.eu/{{ request.path }}" /> 
+  <link rel="canonical" href="http://wammu.eu/{{ request.get_full_path }}" /> 
   {% for lang in translations %}
   <link rel="alternate" hreflang="{{ lang.code }}" href="{{ lang.url }}" />
   {% endfor %}
