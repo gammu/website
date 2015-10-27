@@ -27,7 +27,7 @@ class RssNewsFeed(Feed):
         return obj.author.email
 
     def item_categories(self, obj):
-        return [x.title for x in obj.categories.get_query_set()]
+        return [x.title for x in obj.categories.all()]
 
     def item_pubdate(self, obj):
         return obj.pub_date
