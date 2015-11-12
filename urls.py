@@ -191,7 +191,7 @@ urlpatterns = [
 
     # Screenshots
     url(r'^screenshots/$', 'screenshots.views.index'),
-    url(r'^screenshots/(?P<slug>.*)/$', 'screenshots.views.category'),
+    url(r'^screenshots/(?P<slug>[^/]*)/$', 'screenshots.views.category'),
 
     # Links
     url(r'^links/$', 'links.views.index'),
