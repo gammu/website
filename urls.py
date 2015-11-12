@@ -154,6 +154,7 @@ urlpatterns = [
     url(r'^phones/history.png$', 'phonedb.views.phones_chart'),
     url(r'^phones/new/$', 'phonedb.views.create'),
     url(r'^phones/new\.php/$', RedirectView.as_view(url='/phones/new/')),
+    url(r'^phones/list\.php', RedirectView.as_view(url='/phones/')),
     url(r'^phones/search/$', 'phonedb.views.search'),
     url(r'^phones/review/$', 'phonedb.views.review'),
     url(r'^phones/model.php/$', 'phonedb.views.phone_redirect'),
