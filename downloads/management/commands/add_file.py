@@ -6,6 +6,7 @@ from downloads.models import Release, Download
 
 class Command(BaseCommand):
     help = 'adds file to the release'
+    args = '<base> <program> <version> <type> <file>...'
 
     def handle(self, *args, **options):
         if len(args) < 5:
