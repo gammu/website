@@ -1,10 +1,10 @@
-from django.contrib.sites.models import get_current_site
+from django.contrib.sites.models import Site
 from django.utils import translation
 
 
 class SiteLocaleMiddleware(object):
     def process_request(self, request):
-        current_site = get_current_site(request)
+        current_site = Site.objects.get_current(request)
 
         lang = current_site.domain.split('.')[0]
         if len(lang) == 2 or len(lang) == 5:
