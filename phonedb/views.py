@@ -14,7 +14,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 
 from django.conf import settings
-from django.contrib.sites.models import Site, RequestSite
+from django.contrib.sites.models import RequestSite
 
 import datetime
 from pygooglechart import SimpleLineChart
@@ -299,10 +299,7 @@ def phones_csv(request):
     writer = csv.writer(response)
     phones = Phone.objects.filter(state__in = ['approved', 'draft']).order_by('id')
     writer.writerow(['Link','Manufacturer','Name','Author','Date','Connection','Features','Gammu-Version'])
-    if Site._meta.installed:
-        current_site = Site.objects.get_current()
-    else:
-        current_site = RequestSite(request)
+    current_site = RequestSite(request)
     for phone in phones:
         if phone.connection is None:
             conn = ''
