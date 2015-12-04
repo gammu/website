@@ -153,6 +153,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.sitemaps',
+    'django.contrib.sites',
     'crispy_forms',
     'news',
     'wammu',

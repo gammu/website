@@ -7,7 +7,7 @@ from downloads.models import get_current_downloads, get_latest_releases
 
 from django.conf import settings
 
-from django.contrib.sites.models import get_current_site
+from django.contrib.sites.models import Site
 # Create your views here.
 
 def process_version_feedback(request):
@@ -87,7 +87,7 @@ def static(request, page):
     }))
 
 def robots(request):
-    current_site = get_current_site(request)
+    current_site = Site.objects.get_current(request)
     return render_to_response('robots.txt', RequestContext(request, {
         'current_site': current_site,
     }), content_type = 'text/plain')
