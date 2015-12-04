@@ -4,8 +4,18 @@ from news.feeds import RssNewsFeed, AtomNewsFeed
 from news.models import Entry
 from phonedb.feeds import RssPhonesFeed, AtomPhonesFeed
 from phonedb.models import Phone, Vendor
+import donate.views
+import downloads.views
+import phonedb.views
+import screenshots.views
+import links.views
+import news.views
+import wammu.views
+import tools.views
 from django.contrib.sitemaps import GenericSitemap, Sitemap
+import django.contrib.sitemaps.views
 from django.views.generic import RedirectView
+import django.views.static
 from downloads.models import Release
 import os
 import datetime
@@ -94,84 +104,84 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^$', 'wammu.views.index'),
-    url(r'^gammu/$', 'wammu.views.gammu'),
-    url(r'^smsd/$', 'wammu.views.smsd'),
-    url(r'^wammu/$', 'wammu.views.wammu'),
-    url(r'^libgammu/$', 'wammu.views.libgammu'),
-    url(r'^python-gammu/$', 'wammu.views.pygammu'),
+    url(r'^$', wammu.views.index),
+    url(r'^gammu/$', wammu.views.gammu),
+    url(r'^smsd/$', wammu.views.smsd),
+    url(r'^wammu/$', wammu.views.wammu),
+    url(r'^libgammu/$', wammu.views.libgammu),
+    url(r'^python-gammu/$', wammu.views.pygammu),
 
-    url(r'^authors/$', 'wammu.views.static', {'page': 'authors.html'}),
-    url(r'^license/$', 'wammu.views.static', {'page': 'license.html'}),
-    url(r'^search/$', 'wammu.views.static', {'page': 'search.html'}),
+    url(r'^authors/$', wammu.views.static, {'page': 'authors.html'}),
+    url(r'^license/$', wammu.views.static, {'page': 'license.html'}),
+    url(r'^search/$', wammu.views.static, {'page': 'search.html'}),
 
-    url(r'^support/$', 'wammu.views.support'),
-    url(r'^support/bugs/$', 'wammu.views.static', {'page': 'support/bugs.html'}),
-    url(r'^support/lists/$', 'wammu.views.static', {'page': 'support/lists.html'}),
-    url(r'^support/online/$', 'wammu.views.static', {'page': 'support/online.html'}),
-    url(r'^support/buy/$', 'wammu.views.static', {'page': 'support/buy.html'}),
+    url(r'^support/$', wammu.views.support),
+    url(r'^support/bugs/$', wammu.views.static, {'page': 'support/bugs.html'}),
+    url(r'^support/lists/$', wammu.views.static, {'page': 'support/lists.html'}),
+    url(r'^support/online/$', wammu.views.static, {'page': 'support/online.html'}),
+    url(r'^support/buy/$', wammu.views.static, {'page': 'support/buy.html'}),
 
-    url(r'^contribute/$', 'wammu.views.static', {'page': 'contribute/index.html'}),
-    url(r'^contribute/code/$', 'wammu.views.static', {'page': 'contribute/code.html'}),
-    url(r'^contribute/translate/$', 'wammu.views.static', {'page': 'contribute/translate.html'}),
-    url(r'^contribute/publicity/$', 'wammu.views.static', {'page': 'contribute/publicity.html'}),
-    url(r'^contribute/wanted/$', 'wammu.views.static', {'page': 'contribute/wanted.html'}),
+    url(r'^contribute/$', wammu.views.static, {'page': 'contribute/index.html'}),
+    url(r'^contribute/code/$', wammu.views.static, {'page': 'contribute/code.html'}),
+    url(r'^contribute/translate/$', wammu.views.static, {'page': 'contribute/translate.html'}),
+    url(r'^contribute/publicity/$', wammu.views.static, {'page': 'contribute/publicity.html'}),
+    url(r'^contribute/wanted/$', wammu.views.static, {'page': 'contribute/wanted.html'}),
 
-    url(r'^docs/$', 'wammu.views.static', {'page': 'docs/index.html'}),
+    url(r'^docs/$', wammu.views.static, {'page': 'docs/index.html'}),
 
-    url(r'^s60/$', 'wammu.views.static', {'page': 's60.html'}),
+    url(r'^s60/$', wammu.views.static, {'page': 's60.html'}),
 
-    url(r'^tools/$', 'wammu.views.static', {'page': 'tools/index.html'}),
-    url(r'^tools/pdu-encode/$', 'tools.views.pduencode'),
-    url(r'^tools/pdu-decode/$', 'tools.views.pdudecode'),
-    url(r'^tools/countries/$', 'tools.views.countries'),
-    url(r'^tools/networks/$', 'tools.views.networks'),
+    url(r'^tools/$', wammu.views.static, {'page': 'tools/index.html'}),
+    url(r'^tools/pdu-encode/$', tools.views.pduencode),
+    url(r'^tools/pdu-decode/$', tools.views.pdudecode),
+    url(r'^tools/countries/$', tools.views.countries),
+    url(r'^tools/networks/$', tools.views.networks),
 
     # RSS feeds
     url(r'^news/rss/$', RssNewsFeed()),
     url(r'^news/atom/$', AtomNewsFeed()),
 
     # News
-    url(r'^news/$', 'news.views.index'),
+    url(r'^news/$', news.views.index),
     url(r'^news/(?P<year>\d{4})/(?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<slug>[^/]*)/$',
-        'news.views.entry'),
-    url(r'^news/(?P<slug>[^/]*)/$', 'news.views.category'),
+        news.views.entry),
+    url(r'^news/(?P<slug>[^/]*)/$', news.views.category),
 
-    url(r'^download/$', 'downloads.views.download'),
+    url(r'^download/$', downloads.views.download),
     url(r'^download/(?P<program>[^/]*)/$', RedirectView.as_view(url='/download/%(program)s/source/', permanent=True)),
-    url(r'^download/(?P<program>[^/]*)/(?P<version>[0-9.]*)/$', 'downloads.views.release'),
-    url(r'^download/(?P<program>[^/]*)/(?P<platform>[^/]*)/$', 'downloads.views.list'),
+    url(r'^download/(?P<program>[^/]*)/(?P<version>[0-9.]*)/$', downloads.views.release),
+    url(r'^download/(?P<program>[^/]*)/(?P<platform>[^/]*)/$', downloads.views.list),
 
     # RSS feeds
     url(r'^phones/rss/$', RssPhonesFeed()),
     url(r'^phones/atom/$', AtomPhonesFeed()),
 
 
-    url(r'^phones/csv/$', 'phonedb.views.phones_csv'),
+    url(r'^phones/csv/$', phonedb.views.phones_csv),
 
     # Phone database
-    url(r'^phones/$', 'phonedb.views.index'),
-    url(r'^phones/history.png$', 'phonedb.views.phones_chart'),
-    url(r'^phones/new/$', 'phonedb.views.create'),
+    url(r'^phones/$', phonedb.views.index),
+    url(r'^phones/history.png$', phonedb.views.phones_chart),
+    url(r'^phones/new/$', phonedb.views.create),
     url(r'^phones/new\.php/$', RedirectView.as_view(url='/phones/new/', permanent=True)),
     url(r'^phones/list\.php', RedirectView.as_view(url='/phones/', permanent=True)),
-    url(r'^phones/search/$', 'phonedb.views.search'),
-    url(r'^phones/review/$', 'phonedb.views.review'),
-    url(r'^phones/model.php/$', 'phonedb.views.phone_redirect'),
-    url(r'^phones/search/(?P<featurename>[^/]*)/$', 'phonedb.views.search'),
-    url(r'^phones/(?P<vendorname>[^/]*)/$', 'phonedb.views.vendor'),
-    url(r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/$', 'phonedb.views.phone'),
-    url(r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/delete/$', 'phonedb.views.delete'),
-    url(r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/approve/$', 'phonedb.views.approve'),
-    url(r'^phones/(?P<vendorname>[^/]*)/new/$', 'phonedb.views.create'),
+    url(r'^phones/search/$', phonedb.views.search),
+    url(r'^phones/review/$', phonedb.views.review),
+    url(r'^phones/model.php/$', phonedb.views.phone_redirect),
+    url(r'^phones/search/(?P<featurename>[^/]*)/$', phonedb.views.search),
+    url(r'^phones/(?P<vendorname>[^/]*)/$', phonedb.views.vendor),
+    url(r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/$', phonedb.views.phone),
+    url(r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/delete/$', phonedb.views.delete),
+    url(r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/approve/$', phonedb.views.approve),
+    url(r'^phones/(?P<vendorname>[^/]*)/new/$', phonedb.views.create),
 
     # API for Wammu
-    url(r'^api/phones/new/$', 'phonedb.views.create_wammu'),
+    url(r'^api/phones/new/$', phonedb.views.create_wammu),
 
     # DOAP/PAD syndication
-    url(r'^api/doap/(?P<program>[^/.]*).xml$', 'downloads.views.doap'),
-    url(r'^api/pad/(?P<program>[^/.]*).xml$', 'downloads.views.pad'),
-    url(r'^api/pad/padmap.txt$', 'downloads.views.padmap'),
+    url(r'^api/doap/(?P<program>[^/.]*).xml$', downloads.views.doap),
+    url(r'^api/pad/(?P<program>[^/.]*).xml$', downloads.views.pad),
+    url(r'^api/pad/padmap.txt$', downloads.views.padmap),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs'
     # to INSTALLED_APPS to enable admin documentation:
@@ -181,20 +191,20 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 
     # Media files
-    url(r'^media/(?P<path>.*)$', 'django.views.static.serve',
+    url(r'^media/(?P<path>.*)$', django.views.static.serve,
         {'document_root': './media'}),
 
 
     # Donations
-    url(r'^donate/$', 'donate.views.donate'),
-    url(r'^donate/thanks/$', 'donate.views.thanks'),
+    url(r'^donate/$', donate.views.donate),
+    url(r'^donate/thanks/$', donate.views.thanks),
 
     # Screenshots
-    url(r'^screenshots/$', 'screenshots.views.index'),
-    url(r'^screenshots/(?P<slug>[^/]*)/$', 'screenshots.views.category'),
+    url(r'^screenshots/$', screenshots.views.index),
+    url(r'^screenshots/(?P<slug>[^/]*)/$', screenshots.views.category),
 
     # Links
-    url(r'^links/$', 'links.views.index'),
+    url(r'^links/$', links.views.index),
 
     # Compatibility
     url(r'^install/$', RedirectView.as_view(url='/download/', permanent=True)),
@@ -204,11 +214,11 @@ urlpatterns = [
     url(r'^phones/features/(?P<featurename>[^/]*)/$', RedirectView.as_view(url='/phones/search/%(featurename)s/', permanent=True)),
 
     # Sitemap
-    url(r'^sitemap.xml$', 'django.contrib.sitemaps.views.index', {'sitemaps': sitemaps}),
-    url(r'^sitemap-(?P<section>.+)\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
+    url(r'^sitemap.xml$', django.contrib.sitemaps.views.index, {'sitemaps': sitemaps}),
+    url(r'^sitemap-(?P<section>.+)\.xml$', django.contrib.sitemaps.views.sitemap, {'sitemaps': sitemaps}),
 
     # Robots
-    url(r'^robots.txt$', 'wammu.views.robots'),
+    url(r'^robots.txt$', wammu.views.robots),
 
     # Redirects for crazy bots who investiage full urls
     url(r'^api/$', RedirectView.as_view(url='/download/', permanent=True)),
