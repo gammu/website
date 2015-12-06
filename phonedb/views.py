@@ -299,7 +299,7 @@ def phones_csv(request):
     writer = csv.writer(response)
     phones = Phone.objects.filter(state__in = ['approved', 'draft']).order_by('id')
     writer.writerow(['Link','Manufacturer','Name','Author','Date','Connection','Features','Gammu-Version'])
-    current_site = Site.models.get_current(request)
+    current_site = Site.objects.get_current(request)
     for phone in phones:
         if phone.connection is None:
             conn = ''
