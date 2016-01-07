@@ -6,13 +6,17 @@ from django.utils.translation import ugettext as _
 from django.conf import settings
 
 class RssPhonesFeed(Feed):
-    title = _('Gammu Phone Database')
     link = '/phones/'
-    description = _('Gammu phone database updates.')
     copyright = 'Copyright © 2003 - 2012 Michal Čihař'
     item_copyright = copyright
     title_template ='feeds/phones_title.html'
     description_template = 'feeds/phones_description.html'
+
+    def title(self):
+        return _('Gammu Phone Database')
+
+    def description(self):
+        return _('Gammu phone database updates.')
 
     def categories(self):
         return [x.name for x in Vendor.objects.all()]
