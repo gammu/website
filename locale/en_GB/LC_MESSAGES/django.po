@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-27 07:48+0100\n"
+"POT-Creation-Date: 2016-01-07 09:56+0100\n"
 "PO-Revision-Date: 2015-04-15 22:04+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
@@ -41,7 +41,7 @@ msgstr "%(program)s testing release %(version)s"
 msgid "Permission Denied"
 msgstr "Permission Denied"
 
-#: html/403.html:11 html/404.html:11
+#: html/403.html:11 html/404.html.py:11
 msgid ""
 "\n"
 "The page you are looking for was not found. Try choosing something from the\n"
@@ -51,7 +51,7 @@ msgstr ""
 "The page you are looking for was not found. Try choosing something from the\n"
 "navigation bellow or use <a href=\"/search/\">search facility</a>.\n"
 
-#: html/403.html:18 html/404.html:18
+#: html/403.html:18 html/404.html.py:18
 msgid ""
 "\n"
 "This site includes information about Gammu and Wammu, you might want to\n"
@@ -114,7 +114,7 @@ msgstr ""
 "project and he is still in the charge here.\n"
 
 #: html/authors.html:29 html/authors.html.py:50 html/authors.html.py:66
-#: html/phonedb/vendor.html:20
+#: html/authors.html:75 html/phonedb/vendor.html.py:20
 msgid "Website"
 msgstr "Website"
 
@@ -211,12 +211,12 @@ msgstr "Online"
 msgid "Commercial support"
 msgstr "Commercial support"
 
-#: html/base.html:83 html/downloads/list.html:4 html/downloads/program.html:4
-#: html/downloads/release.html:4 html/gammu-family.html:15
-#: html/gammu-family.html.py:29 html/gammu-family.html:43
-#: html/gammu-family.html.py:60 html/gammu-family.html:74 html/gammu.html:53
-#: html/libgammu.html:37 html/python-gammu.html:25 html/smsd.html:55
-#: html/wammu.html:39
+#: html/base.html:83 html/downloads/list.html.py:4
+#: html/downloads/program.html:4 html/downloads/release.html.py:4
+#: html/gammu-family.html:15 html/gammu-family.html.py:29
+#: html/gammu-family.html:43 html/gammu-family.html.py:60
+#: html/gammu-family.html:74 html/gammu.html.py:53 html/libgammu.html.py:37
+#: html/python-gammu.html:25 html/smsd.html.py:55 html/wammu.html.py:39
 msgid "Download"
 msgstr "Download"
 
@@ -225,20 +225,20 @@ msgstr "Download"
 msgid "All downloads"
 msgstr "Downloads"
 
-#: html/base.html:86 html/downloads/index.html:25
+#: html/base.html:86 html/downloads/index.html.py:25
 msgid "Download Gammu"
 msgstr "Download Gammu"
 
-#: html/base.html:87 html/downloads/index.html:32
+#: html/base.html:87 html/downloads/index.html.py:32
 #, fuzzy
 msgid "Download python-gammu"
 msgstr "Download Gammu"
 
-#: html/base.html:88 html/downloads/index.html:39
+#: html/base.html:88 html/downloads/index.html.py:39
 msgid "Download Wammu"
 msgstr "Download Wammu"
 
-#: html/base.html:93 html/index.html:25
+#: html/base.html:93 html/index.html.py:25
 msgid "News"
 msgstr "News"
 
@@ -246,7 +246,7 @@ msgstr "News"
 msgid "All news"
 msgstr "All news"
 
-#: html/base.html:103 html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
+#: html/base.html:103 html/sidebars/gammu.html.py:3 html/sidebars/wammu.html:3
 msgid "Screenshots"
 msgstr "Screenshots"
 
@@ -254,12 +254,12 @@ msgstr "Screenshots"
 msgid "All screenshots"
 msgstr "All screenshots"
 
-#: html/base.html:113 html/gammu.html:61 html/libgammu.html:46
-#: html/python-gammu.html:64 html/smsd.html:65 html/wammu.html:49
+#: html/base.html:113 html/gammu.html.py:61 html/libgammu.html.py:46
+#: html/python-gammu.html:64 html/smsd.html.py:65 html/wammu.html.py:49
 msgid "Documentation"
 msgstr "Documentation"
 
-#: html/base.html:116 html/docs/index.html:21
+#: html/base.html:116 html/docs/index.html.py:21
 msgid "Gammu Manual"
 msgstr "Gammu Manual"
 
@@ -271,11 +271,11 @@ msgstr "FAQ"
 msgid "For developers"
 msgstr "For developers"
 
-#: html/base.html:119 html/phonedb/body.html:16
+#: html/base.html:119 html/phonedb/body.html.py:16
 msgid "Configuration"
 msgstr "Configuration"
 
-#: html/base.html:120 html/sidebars/common.html:3 phonedb/views.py:101
+#: html/base.html:120 html/sidebars/common.html.py:3 phonedb/views.py:101
 msgid "Supported phones"
 msgstr "Supported phones"
 
@@ -340,7 +340,7 @@ msgstr "Support Gammu/Wammu by donating money!"
 msgid "Search for Gammu/Wammu related questions"
 msgstr "Search for Gammu/Wammu related questions"
 
-#: html/base.html:183 html/phonedb/index.html:55 html/phonedb/search.html:13
+#: html/base.html:183 html/phonedb/index.html.py:55 html/phonedb/search.html:13
 #: html/phonedb/search.html.py:49 phonedb/forms.py:30
 msgid "Search"
 msgstr "Search"
@@ -511,7 +511,7 @@ msgstr ""
 msgid "Contribute to Wammu and Gammu"
 msgstr "Contribute to Wammu and Gammu"
 
-#: html/contribute/index.html:11 html/contribute/wanted.html:11
+#: html/contribute/index.html:11 html/contribute/wanted.html.py:11
 msgid ""
 "\n"
 "Gammu and Wammu are free software projects which are done by volunteers in\n"
@@ -1449,19 +1449,19 @@ msgstr ""
 msgid "Binary packages"
 msgstr "Debian packages"
 
-#: html/downloads/list.html:33 html/downloads/platformlinks.html:7
+#: html/downloads/list.html:33 html/downloads/platformlinks.html.py:7
 msgid "Debian packages"
 msgstr "Debian packages"
 
-#: html/downloads/list.html:36 html/downloads/platformlinks.html:10
+#: html/downloads/list.html:36 html/downloads/platformlinks.html.py:10
 msgid "Ubuntu packages"
 msgstr "Ubuntu packages"
 
-#: html/downloads/list.html:39 html/downloads/platformlinks.html:13
+#: html/downloads/list.html:39 html/downloads/platformlinks.html.py:13
 msgid "Ubuntu packages in PPA"
 msgstr "Ubuntu packages in PPA"
 
-#: html/downloads/list.html:43 html/downloads/platformlinks.html:17
+#: html/downloads/list.html:43 html/downloads/platformlinks.html.py:17
 #, fuzzy
 msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
 msgstr ""
@@ -1524,7 +1524,7 @@ msgstr ""
 msgid "Current Releases"
 msgstr "Current Releases"
 
-#: html/downloads/program.html:34 html/sidebars/gammu.html:4
+#: html/downloads/program.html:34 html/sidebars/gammu.html.py:4
 #: html/sidebars/wammu.html:4
 msgid "Downloads"
 msgstr "Downloads"
@@ -1867,7 +1867,7 @@ msgstr ""
 "main program)</a> or <a href=\"/docs/manual/config/\">gammu-rc (the\n"
 "configuration file)</a>.\n"
 
-#: html/gammu.html:72 html/wammu.html:58
+#: html/gammu.html:72 html/wammu.html.py:58
 msgid ""
 "\n"
 "Check also <a href=\"/docs/manual/faq/\">Frequently Asked Questions</a>.\n"
@@ -1875,29 +1875,29 @@ msgstr ""
 "\n"
 "Check also <a href=\"/docs/manual/faq/\">Frequently Asked Questions</a>.\n"
 
-#: html/gammu.html:77 html/libgammu.html:55 html/python-gammu.html:80
+#: html/gammu.html:77 html/libgammu.html.py:55 html/python-gammu.html.py:80
 #: html/wammu.html:63
 msgid "Source code and issue tracker"
 msgstr ""
 
-#: html/gammu.html:79 html/libgammu.html:57 html/python-gammu.html:82
+#: html/gammu.html:79 html/libgammu.html.py:57 html/python-gammu.html.py:82
 #: html/wammu.html:65
 msgid "Both source code and issue tracker are hosted on GitHub:"
 msgstr ""
 
-#: html/gammu.html:82 html/libgammu.html:60 html/python-gammu.html:85
+#: html/gammu.html:82 html/libgammu.html.py:60 html/python-gammu.html.py:85
 #: html/wammu.html:68
 msgid "Code repository"
 msgstr ""
 
-#: html/gammu.html:83 html/libgammu.html:61 html/python-gammu.html:86
+#: html/gammu.html:83 html/libgammu.html.py:61 html/python-gammu.html.py:86
 #: html/wammu.html:69
 #, fuzzy
 msgid "Issue tracker"
 msgstr "Bug tracker"
 
-#: html/gammu.html:86 html/libgammu.html:64 html/python-gammu.html:89
-#: html/smsd.html:80 html/wammu.html:72
+#: html/gammu.html:86 html/libgammu.html.py:64 html/python-gammu.html.py:89
+#: html/smsd.html:80 html/wammu.html.py:72
 msgid "More information"
 msgstr "More information"
 
@@ -1927,7 +1927,7 @@ msgstr ""
 "vendors (including Nokia, Sony-Ericsson, Motorola, Samsung, Siemens, Huawei\n"
 "and others).\n"
 
-#: html/index.html:32 html/phonedb/index.html:83
+#: html/index.html:32 html/phonedb/index.html.py:83
 msgid "Sponsors"
 msgstr "Sponsors"
 
@@ -2129,7 +2129,7 @@ msgstr "Website:"
 msgid "Third Party News"
 msgstr "Third Party News"
 
-#: html/news/entry.html:4 html/news/index.html:4 html/news/index.html.py:9
+#: html/news/entry.html:4 html/news/index.html.py:4 html/news/index.html:9
 #: news/feeds.py:9
 msgid "Wammu and Gammu News"
 msgstr "Wammu and Gammu News"
@@ -2138,7 +2138,7 @@ msgstr "Wammu and Gammu News"
 msgid "Gammu News"
 msgstr "Gammu News"
 
-#: html/news/index.html:7 html/phonedb/index.html:60
+#: html/news/index.html:7 html/phonedb/index.html.py:60
 msgid "RSS"
 msgstr "RSS"
 
@@ -2176,8 +2176,8 @@ msgstr "Phone is reported not to be supported!"
 msgid "Reporter Note"
 msgstr "Reporter Note"
 
-#: html/phonedb/index.html:5 html/phonedb/new.html:5 html/phonedb/phone.html:4
-#: html/phonedb/search.html:5
+#: html/phonedb/index.html:5 html/phonedb/new.html.py:5
+#: html/phonedb/phone.html:4 html/phonedb/search.html.py:5
 msgid ""
 "Database of supported phones in Gammu and Wammu, the software for managing "
 "GSM cell phones."
@@ -2186,8 +2186,8 @@ msgstr ""
 "GSM cell phones."
 
 #: html/phonedb/index.html:6 html/phonedb/index.html.py:10
-#: html/phonedb/new.html:6 html/phonedb/phone.html:6 html/phonedb/search.html:6
-#: html/phonedb/vendor.html:6
+#: html/phonedb/new.html:6 html/phonedb/phone.html.py:6
+#: html/phonedb/search.html:6 html/phonedb/vendor.html.py:6
 msgid "Gammu Phone Database "
 msgstr "Gammu Phone Database "
 
@@ -2309,13 +2309,13 @@ msgstr "Not supported"
 msgid "Create New Record"
 msgstr "Create New Record"
 
-#: html/phonedb/new.html:11 html/phonedb/phone.html:11
-#: html/phonedb/search.html:11 html/phonedb/vendor.html:11
+#: html/phonedb/new.html:11 html/phonedb/phone.html.py:11
+#: html/phonedb/search.html:11 html/phonedb/vendor.html.py:11
 msgid "Home"
 msgstr ""
 
-#: html/phonedb/new.html:12 html/phonedb/phone.html:12
-#: html/phonedb/search.html:12 html/phonedb/vendor.html:12
+#: html/phonedb/new.html:12 html/phonedb/phone.html.py:12
+#: html/phonedb/search.html:12 html/phonedb/vendor.html.py:12
 #, fuzzy
 msgid "Phones Database"
 msgstr "Gammu Phone Database"
@@ -3481,7 +3481,7 @@ msgstr "Networks"
 msgid "PDU decoder using Gammu"
 msgstr "PDU decoder using Gammu"
 
-#: html/tools/pdudecode.html:18 html/tools/pduencode.html:18
+#: html/tools/pdudecode.html:18 html/tools/pduencode.html.py:18
 msgid "Go"
 msgstr "Go"
 
@@ -3870,7 +3870,7 @@ msgstr "Gammu Phone Database Feed (RSS)"
 msgid "Gammu Phone Database Feed (Atom)"
 msgstr "Gammu Phone Database Feed (Atom)"
 
-#: phonedb/views.py:444
+#: phonedb/views.py:441
 msgid "Phone record has been created."
 msgstr "Phone record has been created."
 
