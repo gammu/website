@@ -10,7 +10,10 @@ from crispy_forms.layout import Layout, Submit
 
 
 class SearchForm(Form):
-    q = forms.CharField(label = ugettext_lazy('Search text'), required = False)
+    q = forms.CharField(
+        label=ugettext_lazy('Search text'),
+        required=False
+    )
     feature = forms.MultipleChoiceField(
         label=ugettext_lazy('Features'),
         required=False,
