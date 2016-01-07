@@ -82,7 +82,7 @@ class NewForm(ModelForm):
             'email_garble',
             Submit('submit', ugettext_lazy('Save'), css_class='btn-default'),
         )
-        self.fields['feature'].choices = [
+        self.fields['features'].choices = [
             (f.id, _('%(description)s (%(name)s)') %
                 {'description': f.get_description(), 'name': f.name}
             ) for f in Feature.objects.all()
