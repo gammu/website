@@ -45,12 +45,8 @@ class NewForm(ModelForm):
         label = ugettext_lazy('Features'),
         required = False,
         help_text = ugettext_lazy('Features which are working in Gammu.'),
-        choices = [(f.id,
-            ugettext_lazy('%(description)s (%(name)s)') %
-                {'description': f.get_description(), 'name': f.name}
-                ) for f in Feature.objects.all()],
         widget = forms.CheckboxSelectMultiple
-        )
+    )
 
     class Meta:
         model = Phone
@@ -86,3 +82,8 @@ class NewForm(ModelForm):
             'email_garble',
             Submit('submit', ugettext_lazy('Save'), css_class='btn-default'),
         )
+        self.fields['feature'].choices = [
+            (f.id, _('%(description)s (%(name)s)') %
+                {'description': f.get_description(), 'name': f.name}
+            ) for f in Feature.objects.all()
+        ]
