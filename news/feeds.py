@@ -6,13 +6,17 @@ from django.utils.translation import ugettext as _
 from django.conf import settings
 
 class RssNewsFeed(Feed):
-    title = _('Wammu and Gammu News')
     link = '/news/'
-    description = _('Updates about Wammu and Gammu programs.')
     copyright = 'Copyright © 2003 - 2012 Michal Čihař'
     item_copyright = copyright
     title_template ='feeds/news_title.html'
     description_template = 'feeds/news_description.html'
+
+    def title(self):
+        return _('Wammu and Gammu News')
+
+    def description(self):
+        return _('Updates about Wammu and Gammu programs.')
 
     def categories(self):
         print [x.title for x in Category.objects.all()]
