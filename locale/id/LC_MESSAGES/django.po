@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-07 09:56+0100\n"
+"POT-Creation-Date: 2016-01-25 11:17+0100\n"
 "PO-Revision-Date: 2015-04-15 22:04+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/gammu/website/"
@@ -322,7 +322,7 @@ msgid "Search for Gammu/Wammu related questions"
 msgstr "Cari pertanyaan terkait Gammu/Wammu"
 
 #: html/base.html:183 html/phonedb/index.html.py:55 html/phonedb/search.html:13
-#: html/phonedb/search.html.py:49 phonedb/forms.py:30
+#: html/phonedb/search.html.py:49 phonedb/forms.py:33
 msgid "Search"
 msgstr "Cari"
 
@@ -1657,7 +1657,7 @@ msgid "Third Party News"
 msgstr ""
 
 #: html/news/entry.html:4 html/news/index.html.py:4 html/news/index.html:9
-#: news/feeds.py:9
+#: news/feeds.py:16
 msgid "Wammu and Gammu News"
 msgstr ""
 
@@ -2181,13 +2181,17 @@ msgid ""
 msgstr ""
 
 #: html/support/bugs.html:21
+msgid "<strong>Gammu version</strong> might rule out already fixed issues."
+msgstr ""
+
+#: html/support/bugs.html:24
 msgid ""
 "\n"
 "<strong>Phone information</strong> such as manufacturer and model are really "
 "necessary.\n"
 msgstr ""
 
-#: html/support/bugs.html:26
+#: html/support/bugs.html:29
 msgid ""
 "\n"
 "Information about your <strong>operating system</strong> and it's version, "
@@ -2195,29 +2199,29 @@ msgid ""
 "distribution, Mac OS X, BSD?\n"
 msgstr ""
 
-#: html/support/bugs.html:32
+#: html/support/bugs.html:35
 msgid ""
 "\n"
 "Configuration you use, you can just include Gammu <strong>configuration\n"
 "file</strong>.\n"
 msgstr ""
 
-#: html/support/bugs.html:38
+#: html/support/bugs.html:41
 msgid ""
 "\n"
 "<strong>Debugging log</strong> of the communication, please see bellow how "
 "to obtain that.\n"
 msgstr ""
 
-#: html/support/bugs.html:44
+#: html/support/bugs.html:47
 msgid "Issue trackers for individiual projects:"
 msgstr ""
 
-#: html/support/bugs.html:52
+#: html/support/bugs.html:55
 msgid "Obtaining Debugging Log"
 msgstr ""
 
-#: html/support/bugs.html:55
+#: html/support/bugs.html:58
 msgid ""
 "\n"
 "Debugging log contains transcription of communication between Gammu and "
@@ -2229,7 +2233,7 @@ msgid ""
 "reports.\n"
 msgstr ""
 
-#: html/support/bugs.html:65
+#: html/support/bugs.html:68
 msgid ""
 "\n"
 "To make Gammu generate debug log, you need to tell it to do so. It is "
@@ -2238,7 +2242,7 @@ msgid ""
 "/tmp/gammu.log identify</code>) or using configuration file:\n"
 msgstr ""
 
-#: html/support/bugs.html:81
+#: html/support/bugs.html:84
 msgid ""
 "\n"
 "Wammu automatically creates debugging log in temporary directory\n"
@@ -2249,7 +2253,7 @@ msgid ""
 "Wammu from Help menu.\n"
 msgstr ""
 
-#: html/support/bugs.html:91
+#: html/support/bugs.html:94
 msgid ""
 "\n"
 "Gammu SMSD logging is configured in more levels, to include all messages, "
@@ -2257,11 +2261,11 @@ msgid ""
 "<code>debuglevel</code> to 255:\n"
 msgstr ""
 
-#: html/support/bugs.html:103
+#: html/support/bugs.html:106
 msgid "Troubleshooting Windows Service"
 msgstr ""
 
-#: html/support/bugs.html:106
+#: html/support/bugs.html:109
 msgid ""
 "\n"
 "If Gammu fails to start as a Windows service (you will usually get \"Error\n"
@@ -2276,13 +2280,13 @@ msgid ""
 "(eg. path to configuraiton file).\n"
 msgstr ""
 
-#: html/support/bugs.html:117
+#: html/support/bugs.html:120
 msgid ""
 "\n"
 "For example the command line can look like:\n"
 msgstr ""
 
-#: html/support/bugs.html:127
+#: html/support/bugs.html:130
 msgid ""
 "\n"
 "You now should be able to get errors from SMSD even if it fails to start as "
@@ -2828,42 +2832,42 @@ msgid ""
 "%(version)s</a>.\n"
 msgstr ""
 
-#: news/feeds.py:11
+#: news/feeds.py:19
 msgid "Updates about Wammu and Gammu programs."
 msgstr ""
 
-#: phonedb/feeds.py:9
+#: phonedb/feeds.py:16
 msgid "Gammu Phone Database"
 msgstr ""
 
-#: phonedb/feeds.py:11
+#: phonedb/feeds.py:19
 msgid "Gammu phone database updates."
 msgstr ""
 
-#: phonedb/forms.py:13
+#: phonedb/forms.py:14
 msgid "Search text"
 msgstr ""
 
-#: phonedb/forms.py:15 phonedb/forms.py:42
+#: phonedb/forms.py:18 phonedb/forms.py:45
 msgid "Features"
 msgstr ""
 
-#: phonedb/forms.py:33
+#: phonedb/forms.py:36
 #, python-format
 msgid "%(description)s [<a href=\"%(url)s\">Link</a>]"
 msgstr ""
 
-#: phonedb/forms.py:44 phonedb/models.py:91
+#: phonedb/forms.py:47 phonedb/models.py:91
 msgid "Features which are working in Gammu."
 msgstr ""
 
-#: phonedb/forms.py:46
-#, python-format
-msgid "%(description)s (%(name)s)"
+#: phonedb/forms.py:83
+msgid "Save"
 msgstr ""
 
-#: phonedb/forms.py:84
-msgid "Save"
+#: phonedb/forms.py:86
+#, python-format
+msgid "%(description)s (%(name)s)"
 msgstr ""
 
 #: phonedb/models.py:20
