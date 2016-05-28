@@ -6,18 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2016-03-24 10:35+0100\n"
-"PO-Revision-Date: 2015-04-15 22:04+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
-"gammu/website/pt_BR/>\n"
+"PO-Revision-Date: 2016-05-28 20:44+0000\n"
+"Last-Translator: Renan Souza do Nascimento <renan.sn@icloud.com>\n"
+"Language-Team: Portuguese (Brazil) "
+"<https://hosted.weblate.org/projects/gammu/website/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.3-dev\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.7-dev\n"
 
 #: downloads/models.py:30
 msgid "Source"
@@ -175,9 +175,8 @@ msgstr ""
 "GSM."
 
 #: html/base.html:54
-#, fuzzy
 msgid "Gammu and Wammu"
-msgstr "Wammu e Gammu"
+msgstr "Gammu e Wammu"
 
 #: html/base.html:61
 msgid "Family"
@@ -201,9 +200,8 @@ msgid "Overview"
 msgstr ""
 
 #: html/base.html:76
-#, fuzzy
 msgid "Mailing lists and forums"
-msgstr "Listas de mensagens"
+msgstr "Listas de mensagens e fóruns"
 
 #: html/base.html:77
 msgid "Reporting bugs"
@@ -227,18 +225,16 @@ msgid "Download"
 msgstr "Baixar"
 
 #: html/base.html:86
-#, fuzzy
 msgid "All downloads"
-msgstr "Downloads"
+msgstr "Todos os downloads"
 
 #: html/base.html:87 html/downloads/index.html.py:25
 msgid "Download Gammu"
 msgstr "Baixe o Gammu"
 
 #: html/base.html:88 html/downloads/index.html.py:32
-#, fuzzy
 msgid "Download python-gammu"
-msgstr "Baixe o Gammu"
+msgstr "Baixe python-gammu"
 
 #: html/base.html:89 html/downloads/index.html.py:39
 msgid "Download Wammu"
