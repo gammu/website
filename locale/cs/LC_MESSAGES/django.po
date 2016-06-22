@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-24 10:35+0100\n"
+"POT-Creation-Date: 2016-06-22 17:36+0200\n"
 "PO-Revision-Date: 2015-04-14 16:11+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/"
@@ -38,11 +38,11 @@ msgstr "%(program)s, stabilní verze %(version)s"
 msgid "%(program)s testing release %(version)s"
 msgstr "%(program)s, testovací verze %(version)s"
 
-#: html/403.html:4 html/403.html.py:8
+#: html/403.html:4 html/403.html:8
 msgid "Permission Denied"
 msgstr "Přístup odmítnut"
 
-#: html/403.html:11 html/404.html.py:11
+#: html/403.html:11 html/404.html:11
 msgid ""
 "\n"
 "The page you are looking for was not found. Try choosing something from the\n"
@@ -52,7 +52,7 @@ msgstr ""
 "Požadovaná stránka nebyla nalezena. Zvolte jinou stránku z navigace níže\n"
 "nebo použijte <a href=\"/search/\">vyhledávání</a>.\n"
 
-#: html/403.html:18 html/404.html.py:18
+#: html/403.html:18 html/404.html:18
 msgid ""
 "\n"
 "This site includes information about Gammu and Wammu, you might want to\n"
@@ -62,11 +62,11 @@ msgstr ""
 "Tyto stránky obsahují informace o Gammu a Wammu, můžete chtít pokračovat\n"
 "na stránky následujících projektů:\n"
 
-#: html/404.html:4 html/404.html.py:8
+#: html/404.html:4 html/404.html:8
 msgid "Page Not Found"
 msgstr "Stránka nebyla nalezena"
 
-#: html/500.html:4 html/500.html.py:8
+#: html/500.html:4 html/500.html:8
 msgid "Server Error"
 msgstr "Chyba serveru"
 
@@ -81,7 +81,7 @@ msgstr ""
 "Server měl vážné problémy se zpracováním vašeho požadavku. Právě\n"
 "jsme vyslali vycvičené opice, aby tento problém opravily.\n"
 
-#: html/authors.html:4 html/authors.html.py:7
+#: html/authors.html:4 html/authors.html:7
 msgid "Wammu and Gammu Authors"
 msgstr "Autoři Gammu a Wammu"
 
@@ -112,8 +112,8 @@ msgstr ""
 "\">GUI aplikaci, která ho využívá</a>. V roce 2007 se stal správcem projektu "
 "Gammu a doposud jím stále je.\n"
 
-#: html/authors.html:29 html/authors.html.py:50 html/authors.html.py:66
-#: html/authors.html:75 html/phonedb/vendor.html.py:20
+#: html/authors.html:29 html/authors.html:50 html/authors.html:66
+#: html/authors.html:75 html/phonedb/vendor.html:20
 msgid "Website"
 msgstr "Webové stránky"
 
@@ -177,8 +177,7 @@ msgstr "Další aplikace"
 msgid "Support"
 msgstr "Podpora"
 
-#: html/base.html:75 html/base.html.py:116 html/base.html.py:128
-#: html/base.html:140
+#: html/base.html:75 html/base.html:116 html/base.html:128 html/base.html:140
 msgid "Overview"
 msgstr "Přehled"
 
@@ -198,12 +197,12 @@ msgstr "Živá"
 msgid "Commercial support"
 msgstr "Komerční podpora"
 
-#: html/base.html:84 html/downloads/list.html.py:4
-#: html/downloads/program.html:4 html/downloads/release.html.py:4
-#: html/gammu-family.html:15 html/gammu-family.html.py:29
-#: html/gammu-family.html:43 html/gammu-family.html.py:60
-#: html/gammu-family.html:74 html/gammu.html.py:53 html/libgammu.html.py:37
-#: html/python-gammu.html:25 html/smsd.html.py:55 html/wammu.html.py:39
+#: html/base.html:84 html/downloads/list.html:4 html/downloads/program.html:4
+#: html/downloads/release.html:4 html/gammu-family.html:15
+#: html/gammu-family.html:29 html/gammu-family.html:43
+#: html/gammu-family.html:60 html/gammu-family.html:74 html/gammu.html:53
+#: html/libgammu.html:37 html/python-gammu.html:25 html/smsd.html:55
+#: html/wammu.html:39
 msgid "Download"
 msgstr "Stáhnout"
 
@@ -211,19 +210,19 @@ msgstr "Stáhnout"
 msgid "All downloads"
 msgstr "Vše ke stažení"
 
-#: html/base.html:87 html/downloads/index.html.py:25
+#: html/base.html:87 html/downloads/index.html:25
 msgid "Download Gammu"
 msgstr "Stáhnout Gammu"
 
-#: html/base.html:88 html/downloads/index.html.py:32
+#: html/base.html:88 html/downloads/index.html:32
 msgid "Download python-gammu"
 msgstr "Stáhnout python-gammu"
 
-#: html/base.html:89 html/downloads/index.html.py:39
+#: html/base.html:89 html/downloads/index.html:39
 msgid "Download Wammu"
 msgstr "Stáhnout Wammu"
 
-#: html/base.html:94 html/index.html.py:25
+#: html/base.html:94 html/index.html:25
 msgid "News"
 msgstr "Novinky"
 
@@ -231,7 +230,7 @@ msgstr "Novinky"
 msgid "All news"
 msgstr "Všechny novinky"
 
-#: html/base.html:104 html/sidebars/gammu.html.py:3 html/sidebars/wammu.html:3
+#: html/base.html:104 html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
 msgid "Screenshots"
 msgstr "Obrázky"
 
@@ -239,12 +238,12 @@ msgstr "Obrázky"
 msgid "All screenshots"
 msgstr "Všechny obrázky"
 
-#: html/base.html:114 html/gammu.html.py:61 html/libgammu.html.py:46
-#: html/python-gammu.html:64 html/smsd.html.py:65 html/wammu.html.py:49
+#: html/base.html:114 html/gammu.html:61 html/libgammu.html:46
+#: html/python-gammu.html:64 html/smsd.html:65 html/wammu.html:49
 msgid "Documentation"
 msgstr "Dokumentace"
 
-#: html/base.html:117 html/docs/index.html.py:21
+#: html/base.html:117 html/docs/index.html:21
 msgid "Gammu Manual"
 msgstr "Manuál Gammu"
 
@@ -256,11 +255,11 @@ msgstr "ČKD"
 msgid "For developers"
 msgstr "Pro vývojáře"
 
-#: html/base.html:120 html/phonedb/body.html.py:16
+#: html/base.html:120 html/phonedb/body.html:16
 msgid "Configuration"
 msgstr "Nastavení"
 
-#: html/base.html:121 html/sidebars/common.html.py:3 phonedb/views.py:101
+#: html/base.html:121 html/sidebars/common.html:3 phonedb/views.py:101
 msgid "Supported phones"
 msgstr "Podporované telefony"
 
@@ -284,7 +283,7 @@ msgstr "Hledané schopnosti"
 msgid "Publicity"
 msgstr "Publicita"
 
-#: html/base.html:133 html/base.html.py:183
+#: html/base.html:133 html/base.html:183
 msgid "Donate"
 msgstr "Přispějte"
 
@@ -324,8 +323,8 @@ msgstr "Podpořte Gammu/Wammu přispěním peněz!"
 msgid "Search for Gammu/Wammu related questions"
 msgstr "Vyhledávání dotazů souvisejících s Gammu a Wammu"
 
-#: html/base.html:184 html/phonedb/index.html.py:55 html/phonedb/search.html:13
-#: html/phonedb/search.html.py:49 phonedb/forms.py:33
+#: html/base.html:184 html/phonedb/index.html:55 html/phonedb/search.html:13
+#: html/phonedb/search.html:49 phonedb/forms.py:33
 msgid "Search"
 msgstr "Hledej"
 
@@ -353,7 +352,7 @@ msgstr "Sledujte nás na Twitteru"
 msgid "Donate using PayPal"
 msgstr "Přispějte pomocí PayPalu"
 
-#: html/contribute/code.html:4 html/contribute/code.html.py:8
+#: html/contribute/code.html:4 html/contribute/code.html:8
 msgid "Coding for Wammu and Gammu"
 msgstr "Programování Wammu a Gammu"
 
@@ -477,11 +476,11 @@ msgid ""
 "continuosly using <a href=\"https://travis-ci.org/gammu/gammu\">Travis</a>."
 msgstr ""
 
-#: html/contribute/index.html:4 html/contribute/index.html.py:8
+#: html/contribute/index.html:4 html/contribute/index.html:8
 msgid "Contribute to Wammu and Gammu"
 msgstr "Přispějte do Wammu a Gammu"
 
-#: html/contribute/index.html:11 html/contribute/wanted.html.py:11
+#: html/contribute/index.html:11 html/contribute/wanted.html:11
 msgid ""
 "\n"
 "Gammu and Wammu are free software projects which are done by volunteers in\n"
@@ -575,7 +574,7 @@ msgstr ""
 "A samozřejmě můžete také autory ocenit finančním <a\n"
 "href=\"/donate/\">darem</a> nebo nějakým dárkem z jejich seznamu přání.\n"
 
-#: html/contribute/publicity.html:4 html/contribute/publicity.html.py:8
+#: html/contribute/publicity.html:4 html/contribute/publicity.html:8
 msgid "Publicity for Wammu and Gammu"
 msgstr "Publicita o Wammu a Gammu"
 
@@ -628,7 +627,7 @@ msgid ""
 "<a href=\"/contribute/code/#vcs\">wammu source repository</a>.\n"
 msgstr ""
 
-#: html/contribute/translate.html:4 html/contribute/translate.html.py:8
+#: html/contribute/translate.html:4 html/contribute/translate.html:8
 msgid "Translating Wammu and Gammu"
 msgstr "Překládání Wammu a Gammu"
 
@@ -807,7 +806,7 @@ msgstr ""
 "dokumentace Gammu - bylo by dobré mít dokumentaci přeloženou, \n"
 "ale jedná se o obrovské množství textu.\n"
 
-#: html/contribute/wanted.html:4 html/contribute/wanted.html.py:8
+#: html/contribute/wanted.html:4 html/contribute/wanted.html:8
 msgid "Wanted Skills for Wammu and Gammu"
 msgstr "Hledané schopnosti pro Wammu a Gammu"
 
@@ -941,7 +940,7 @@ msgstr ""
 "Vždy existuje spousta chyb a nápadů na vylepšení jádra Gammu a více \n"
 "lidí to zvládne rychleji.\n"
 
-#: html/docs/index.html:4 html/docs/index.html.py:7
+#: html/docs/index.html:4 html/docs/index.html:7
 msgid "Wammu and Gammu Documentation"
 msgstr "Dokumentace Wammu a Gammu"
 
@@ -1024,7 +1023,7 @@ msgid ""
 "href=\"http://github.com/gammu/gsm-docs/\">various GSM documentation</a>.\n"
 msgstr ""
 
-#: html/donate-thanks.html:4 html/donate-thanks.html.py:7
+#: html/donate-thanks.html:4 html/donate-thanks.html:7
 msgid "Thank you for Donation!"
 msgstr "Děkujeme Vám za váš příspěvek!"
 
@@ -1039,7 +1038,7 @@ msgstr ""
 "Děkujeme za příspěvek na Gammu/Wammu! Uděláme co budeme moci, aby byly "
 "peníze použity na něco užitečného.\n"
 
-#: html/donate.html:4 html/donate.html.py:7
+#: html/donate.html:4 html/donate.html:7
 msgid "Donate to Gammu"
 msgstr "Přispějte na Gammu"
 
@@ -1222,19 +1221,19 @@ msgstr ""
 msgid "Binary packages"
 msgstr "Balíčky pro distribuce"
 
-#: html/downloads/list.html:33 html/downloads/platformlinks.html.py:7
+#: html/downloads/list.html:33 html/downloads/platformlinks.html:7
 msgid "Debian packages"
 msgstr "Balíčky pro Debian"
 
-#: html/downloads/list.html:36 html/downloads/platformlinks.html.py:10
+#: html/downloads/list.html:36 html/downloads/platformlinks.html:10
 msgid "Ubuntu packages"
 msgstr "Balíčky pro Ubuntu"
 
-#: html/downloads/list.html:39 html/downloads/platformlinks.html.py:13
+#: html/downloads/list.html:39 html/downloads/platformlinks.html:13
 msgid "Ubuntu packages in PPA"
 msgstr "Balíčky pro Ubuntu v PPA"
 
-#: html/downloads/list.html:43 html/downloads/platformlinks.html.py:17
+#: html/downloads/list.html:43 html/downloads/platformlinks.html:17
 msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
 msgstr "RPM balíčky (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
 
@@ -1288,7 +1287,7 @@ msgstr ""
 msgid "Current Releases"
 msgstr "Aktuální vydání"
 
-#: html/downloads/program.html:34 html/sidebars/gammu.html.py:4
+#: html/downloads/program.html:34 html/sidebars/gammu.html:4
 #: html/sidebars/wammu.html:4
 msgid "Downloads"
 msgstr "Stáhnout"
@@ -1406,8 +1405,8 @@ msgstr ""
 "\n"
 "Utilita pro příkazovou řádku, která umožní použít vše, co libGammu umí.\n"
 
-#: html/gammu-family.html:14 html/gammu-family.html.py:28
-#: html/gammu-family.html:42 html/gammu-family.html.py:59
+#: html/gammu-family.html:14 html/gammu-family.html:28
+#: html/gammu-family.html:42 html/gammu-family.html:59
 #: html/gammu-family.html:73
 msgid "View details"
 msgstr "Zobrazit podrobnosti"
@@ -1600,7 +1599,7 @@ msgstr ""
 "(hlavní program)</a> nebo pro <a href=\"/docs/manual/config/\">gammu-rc\n"
 "(konfigurační soubor)</a>.\n"
 
-#: html/gammu.html:72 html/wammu.html.py:58
+#: html/gammu.html:72 html/wammu.html:58
 msgid ""
 "\n"
 "Check also <a href=\"/docs/manual/faq/\">Frequently Asked Questions</a>.\n"
@@ -1609,28 +1608,28 @@ msgstr ""
 "Podívejte se také na <a href=\"/docs/manual/faq/\">často kladené dotazy</"
 "a>.\n"
 
-#: html/gammu.html:77 html/libgammu.html.py:55 html/python-gammu.html.py:80
+#: html/gammu.html:77 html/libgammu.html:55 html/python-gammu.html:80
 #: html/wammu.html:63
 msgid "Source code and issue tracker"
 msgstr "Zdrojový kód a sledování chyb"
 
-#: html/gammu.html:79 html/libgammu.html.py:57 html/python-gammu.html.py:82
+#: html/gammu.html:79 html/libgammu.html:57 html/python-gammu.html:82
 #: html/wammu.html:65
 msgid "Both source code and issue tracker are hosted on GitHub:"
 msgstr "Zdrojový kód i sledování chyb naleznete na GitHubu:"
 
-#: html/gammu.html:82 html/libgammu.html.py:60 html/python-gammu.html.py:85
+#: html/gammu.html:82 html/libgammu.html:60 html/python-gammu.html:85
 #: html/wammu.html:68
 msgid "Code repository"
 msgstr "Repozitář s kódem"
 
-#: html/gammu.html:83 html/libgammu.html.py:61 html/python-gammu.html.py:86
+#: html/gammu.html:83 html/libgammu.html:61 html/python-gammu.html:86
 #: html/wammu.html:69
 msgid "Issue tracker"
 msgstr "Sledování chyb"
 
-#: html/gammu.html:86 html/libgammu.html.py:64 html/python-gammu.html.py:89
-#: html/smsd.html:80 html/wammu.html.py:72
+#: html/gammu.html:86 html/libgammu.html:64 html/python-gammu.html:89
+#: html/smsd.html:80 html/wammu.html:72
 msgid "More information"
 msgstr "Více informací"
 
@@ -1659,11 +1658,21 @@ msgstr ""
 "výrobců (například Nokia, Sony-Ericsson, Motorola, Samsung, Siemens, Huawei\n"
 "a další).\n"
 
-#: html/index.html:32 html/phonedb/index.html.py:83
+#: html/index.html:32 html/phonedb/index.html:83
 msgid "Sponsors"
 msgstr "Podporují"
 
-#: html/libgammu.html:4 html/libgammu.html.py:7
+#: html/index.html:34
+msgid "Support us on BountySource to get listed here!"
+msgstr ""
+
+#: html/index.html:36
+#, fuzzy
+#| msgid "Community supporter"
+msgid "Current supporters:"
+msgstr "Podpora komunity"
+
+#: html/libgammu.html:4 html/libgammu.html:7
 msgid "libGammu"
 msgstr "libGammu"
 
@@ -1729,7 +1738,7 @@ msgstr ""
 "<a\n"
 "href=\"/docs/devel/\">dokumentaci vývojáře</a> pro více informací.\n"
 
-#: html/license.html:4 html/license.html.py:7
+#: html/license.html:4 html/license.html:7
 msgid "Wammu and Gammu License"
 msgstr "Licence Gammu a Wammu"
 
@@ -1759,7 +1768,7 @@ msgstr ""
 "Free Software\n"
 "Foundation.\n"
 
-#: html/license.html:27 html/license.html.py:64
+#: html/license.html:27 html/license.html:64
 msgid ""
 "\n"
 "This program is distributed in the hope that it will be useful,\n"
@@ -1773,7 +1782,7 @@ msgstr ""
 "VHODNOSTI PRO URČITÝ ÚČEL.  Další podrobnosti hledejte v Obecné\n"
 "veřejné licenci GNU.\n"
 
-#: html/license.html:36 html/license.html.py:73
+#: html/license.html:36 html/license.html:73
 msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
@@ -1848,7 +1857,7 @@ msgstr ""
 msgid "Cookies"
 msgstr ""
 
-#: html/links/index.html:4 html/links/index.html.py:7
+#: html/links/index.html:4 html/links/index.html:7
 msgid "Third Party Applications using Gammu"
 msgstr "Aplikace jiných výrobců používající Gammu"
 
@@ -1856,20 +1865,20 @@ msgstr "Aplikace jiných výrobců používající Gammu"
 msgid "Website:"
 msgstr "Stránky:"
 
-#: html/news/contrib_index.html:4 html/news/contrib_index.html.py:6
+#: html/news/contrib_index.html:4 html/news/contrib_index.html:6
 msgid "Third Party News"
 msgstr "Novinky o dalších aplikacích"
 
-#: html/news/entry.html:4 html/news/index.html.py:4 html/news/index.html:9
+#: html/news/entry.html:4 html/news/index.html:4 html/news/index.html:9
 #: news/feeds.py:16
 msgid "Wammu and Gammu News"
 msgstr "Novinky o Wammu a Gammu"
 
-#: html/news/gammu_index.html:4 html/news/gammu_index.html.py:6
+#: html/news/gammu_index.html:4 html/news/gammu_index.html:6
 msgid "Gammu News"
 msgstr "Novinky o Gammu"
 
-#: html/news/index.html:7 html/phonedb/index.html.py:60
+#: html/news/index.html:7 html/phonedb/index.html:60
 msgid "RSS"
 msgstr "RSS"
 
@@ -1886,7 +1895,7 @@ msgstr ""
 msgid "python-gammu news"
 msgstr "Novinky o python-gammu"
 
-#: html/news/wammu_index.html:4 html/news/wammu_index.html.py:6
+#: html/news/wammu_index.html:4 html/news/wammu_index.html:6
 msgid "Wammu News"
 msgstr "Novinky o Wammu"
 
@@ -1906,8 +1915,8 @@ msgstr "Tento model je nahlášen jako nepodporovaný!"
 msgid "Reporter Note"
 msgstr "Poznámka zadavatele (anglicky)"
 
-#: html/phonedb/index.html:5 html/phonedb/new.html.py:5
-#: html/phonedb/phone.html:4 html/phonedb/search.html.py:5
+#: html/phonedb/index.html:5 html/phonedb/new.html:5 html/phonedb/phone.html:4
+#: html/phonedb/search.html:5
 msgid ""
 "Database of supported phones in Gammu and Wammu, the software for managing "
 "GSM cell phones."
@@ -1915,9 +1924,9 @@ msgstr ""
 "Databáze telefonů podporovaných Gammu a Wammu, programy pro práci s GSM "
 "mobilními telefony."
 
-#: html/phonedb/index.html:6 html/phonedb/index.html.py:10
-#: html/phonedb/new.html:6 html/phonedb/phone.html.py:6
-#: html/phonedb/search.html:6 html/phonedb/vendor.html.py:6
+#: html/phonedb/index.html:6 html/phonedb/index.html:10 html/phonedb/new.html:6
+#: html/phonedb/phone.html:6 html/phonedb/search.html:6
+#: html/phonedb/vendor.html:6
 msgid "Gammu Phone Database "
 msgstr "Databáze telefonů Gammu "
 
@@ -2023,17 +2032,17 @@ msgstr "Podporované funkce"
 msgid "Not supported"
 msgstr "Nepodporovaný"
 
-#: html/phonedb/new.html:6 html/phonedb/new.html.py:13 html/phonedb/new.html:16
+#: html/phonedb/new.html:6 html/phonedb/new.html:13 html/phonedb/new.html:16
 msgid "Create New Record"
 msgstr "Vytvořit nový záznam"
 
-#: html/phonedb/new.html:11 html/phonedb/phone.html.py:11
-#: html/phonedb/search.html:11 html/phonedb/vendor.html.py:11
+#: html/phonedb/new.html:11 html/phonedb/phone.html:11
+#: html/phonedb/search.html:11 html/phonedb/vendor.html:11
 msgid "Home"
 msgstr "Domů"
 
-#: html/phonedb/new.html:12 html/phonedb/phone.html.py:12
-#: html/phonedb/search.html:12 html/phonedb/vendor.html.py:12
+#: html/phonedb/new.html:12 html/phonedb/phone.html:12
+#: html/phonedb/search.html:12 html/phonedb/vendor.html:12
 msgid "Phones Database"
 msgstr "Databáze telefonů"
 
@@ -2156,7 +2165,7 @@ msgstr ""
 msgid "Similar Phones"
 msgstr "Podobné telefony"
 
-#: html/phonedb/search.html:6 html/phonedb/search.html.py:17
+#: html/phonedb/search.html:6 html/phonedb/search.html:17
 msgid "Search Results"
 msgstr "Výsledky hledání"
 
@@ -2224,7 +2233,7 @@ msgid "Python bindings form Gammu, the software for managing GSM cell phones."
 msgstr ""
 "Rozhraní libGammu pro Python, knihovna pro práci s GSM mobilními telefony."
 
-#: html/python-gammu.html:6 html/python-gammu.html.py:13
+#: html/python-gammu.html:6 html/python-gammu.html:13
 msgid "Python bindings for Gammu"
 msgstr "Rozhraní mezi Pythonem a Gammu"
 
@@ -2285,7 +2294,7 @@ msgstr ""
 "Podívejte se také na <a href=\"/docs/manual/faq/python.html\">často kladené "
 "dotazy</a>.\n"
 
-#: html/s60.html:4 html/s60.html.py:7
+#: html/s60.html:4 html/s60.html:7
 msgid "Series60 remote applet installation"
 msgstr "Instalace apletu Series60 remote"
 
@@ -2313,7 +2322,7 @@ msgstr "Obrázky dalších aplikací"
 msgid "Gammu Screenshots"
 msgstr "Obrázky Gammu"
 
-#: html/screenshots/index.html:4 html/screenshots/index.html.py:8
+#: html/screenshots/index.html:4 html/screenshots/index.html:8
 msgid "Wammu and Gammu Screenshots"
 msgstr "Obrázky Gammu a Wammu"
 
@@ -2321,7 +2330,7 @@ msgstr "Obrázky Gammu a Wammu"
 msgid "Wammu Screenshots"
 msgstr "Obrázky Wammu"
 
-#: html/search.html:4 html/search.html.py:7
+#: html/search.html:4 html/search.html:7
 msgid "Wammu and Gammu Search"
 msgstr "Vyhledávání pro Gammu a Wammu"
 
@@ -2365,7 +2374,7 @@ msgstr "Jak přispět"
 msgid "Gammu SMS Daemon, the software for mass processing SMS messages."
 msgstr "Gammu SMS démon, program pro hromadné zpracování SMS zpráv."
 
-#: html/smsd.html:6 html/smsd.html.py:13
+#: html/smsd.html:6 html/smsd.html:13
 msgid "Gammu SMSD"
 msgstr "Gammu SMSD"
 
@@ -2456,7 +2465,7 @@ msgstr ""
 "Podívejte se také na <a href=\"/docs/manual/faq/smsd.html\">často kladené "
 "dotazy</a>.\n"
 
-#: html/support/bugs.html:4 html/support/bugs.html.py:8
+#: html/support/bugs.html:4 html/support/bugs.html:8
 msgid "Reporting Bugs in Wammu and Gammu"
 msgstr "Hlášení chyb ve Wammu a Gammu"
 
@@ -2613,7 +2622,7 @@ msgid ""
 "service.\n"
 msgstr ""
 
-#: html/support/buy.html:4 html/support/buy.html.py:8
+#: html/support/buy.html:4 html/support/buy.html:8
 msgid "Commercial Support for Wammu and Gammu"
 msgstr "Komerční podpora pro Wammu a Gammu"
 
@@ -2665,7 +2674,7 @@ msgstr ""
 "Pokud jen chcete ocenit úroveň podpory, kterou jste dostali zadarmo, můžete\n"
 "také projektu <a href=\"/donate/\">přispět</a> nějaké peníze.\n"
 
-#: html/support/index.html:4 html/support/index.html.py:10
+#: html/support/index.html:4 html/support/index.html:10
 msgid "Support for Wammu and Gammu"
 msgstr "Podpora pro Wammu a Gammu"
 
@@ -2736,7 +2745,7 @@ msgid ""
 "developers</a> and try to ask them for this.\n"
 msgstr ""
 
-#: html/support/lists.html:4 html/support/lists.html.py:8
+#: html/support/lists.html:4 html/support/lists.html:8
 msgid "Mailing lists and forums for Wammu and Gammu"
 msgstr "Mailing listy a fóra pro Wammu a Gammu"
 
@@ -2816,7 +2825,7 @@ msgid ""
 "Gammu, please use this mailing list.\n"
 msgstr ""
 
-#: html/support/online.html:4 html/support/online.html.py:8
+#: html/support/online.html:4 html/support/online.html:8
 msgid "Online Communication for Wammu and Gammu"
 msgstr "Online komunikace pro Wammu a Gammu"
 
@@ -2891,7 +2900,7 @@ msgstr ""
 "Také tam naleznete robota se jménem jako CIA-42, který posílá upozornění\n"
 "na každou změnu provedenou ve veřejném repozítáři se zdrojovými kódy Gammu.\n"
 
-#: html/tools/countries.html:4 html/tools/countries.html.py:8
+#: html/tools/countries.html:4 html/tools/countries.html:8
 msgid "GSM countries list from Gammu"
 msgstr "Seznam zemí GSM sítí v Gammu"
 
@@ -2911,7 +2920,7 @@ msgstr "Kód země"
 msgid "Country name"
 msgstr "Název země"
 
-#: html/tools/index.html:4 html/tools/index.html.py:8
+#: html/tools/index.html:4 html/tools/index.html:8
 msgid "Tools for Wammu and Gammu"
 msgstr "Nástroje pro Wammu a Gammu"
 
@@ -2961,7 +2970,7 @@ msgid ""
 "<a href=\"/support/lists/\">mailing lists</a> with your idea.\n"
 msgstr ""
 
-#: html/tools/networks.html:4 html/tools/networks.html.py:8
+#: html/tools/networks.html:4 html/tools/networks.html:8
 msgid "GSM networks list from Gammu"
 msgstr "Seznam GSM sítí v Gammu"
 
@@ -2981,11 +2990,11 @@ msgstr "Kód sítě"
 msgid "Network name"
 msgstr "Název sítě"
 
-#: html/tools/pdudecode.html:6 html/tools/pdudecode.html.py:12
+#: html/tools/pdudecode.html:6 html/tools/pdudecode.html:12
 msgid "PDU decoder using Gammu"
 msgstr "Dekódování PDU pomocí Gammu"
 
-#: html/tools/pdudecode.html:18 html/tools/pduencode.html.py:18
+#: html/tools/pdudecode.html:18 html/tools/pduencode.html:18
 msgid "Go"
 msgstr "Odeslat"
 
@@ -2993,7 +3002,7 @@ msgstr "Odeslat"
 msgid "PDU Decoding Result"
 msgstr "Výsledek dekódování PDU"
 
-#: html/tools/pdudecode.html:26 html/tools/pdudecode.html.py:56
+#: html/tools/pdudecode.html:26 html/tools/pdudecode.html:56
 #: html/tools/pduencode.html:26
 #, python-format
 msgid "Message number %(id)s"
@@ -3003,8 +3012,7 @@ msgstr "Zpráva číslo %(id)s"
 msgid "Decoding failed with error:"
 msgstr "Dekódování selhalo s chybou:"
 
-#: html/tools/pdudecode.html:34 html/tools/pdudecode.html.py:36
-#: tools/forms.py:13
+#: html/tools/pdudecode.html:34 html/tools/pdudecode.html:36 tools/forms.py:13
 msgid "Text"
 msgstr "Text"
 
@@ -3068,7 +3076,7 @@ msgstr "Obrázek"
 msgid "Bitmaps"
 msgstr "Obrázky"
 
-#: html/tools/pduencode.html:6 html/tools/pduencode.html.py:12
+#: html/tools/pduencode.html:6 html/tools/pduencode.html:12
 msgid "PDU encoder using Gammu"
 msgstr "Zakódování PDU pomocí Gammu"
 
