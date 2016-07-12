@@ -61,8 +61,6 @@ phone to get some functionality, newer ones do not have support so far.
 <h3>{% trans "Recently Added Phones" %}</h3>
 {% include "phonedb/list.html" %}
 
-<div class="row">
-<div class="col-md-10">
 <h3>{% trans "Phone Records Summary" %}</h3>
 
 
@@ -77,16 +75,6 @@ timestamp data.
 <img src="{{ chart_url }}" />
 
 <p><a href="/phones/csv/">{% trans "Download all data as CSV" %}</a></p>
-</div>
-
-<div class="col-md-2">
-<h3>{% trans "Sponsors" %}</h3>
-
-<ul class="sponsors">
-
-</ul>
-</div>
-</div>
 
 {% endblock %}
 
