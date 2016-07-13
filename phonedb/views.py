@@ -108,7 +108,7 @@ def get_chart_url():
 
     chart.set_axis_labels(Axis.BOTTOM, years)
 
-    url = chart.get_url()
+    url = chart.get_url().replace('http:', 'https:')
     cache.set(cache_key, url, 3600)
     return url
 
