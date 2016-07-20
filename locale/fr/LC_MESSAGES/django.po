@@ -5,18 +5,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2016-06-22 17:36+0200\n"
-"PO-Revision-Date: 2015-04-16 17:40+0200\n"
-"Last-Translator: Francois Polito <francois.polito@openmailbox.org>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/gammu/website/fr/"
-">\n"
+"PO-Revision-Date: 2016-07-20 21:29+0000\n"
+"Last-Translator: Nabil BENDAFI <nabil@bendafi.fr>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/gammu/website/fr/>"
+"\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.3-dev\n"
+"X-Generator: Weblate 2.8-dev\n"
 
 #: downloads/models.py:30
 msgid "Source"
@@ -164,10 +164,9 @@ msgstr ""
 "et Manfred Jonsson.\n"
 
 #: html/authors.html:70
-#, fuzzy
 #| msgid "Other Options"
 msgid "Other contributors"
-msgstr "Autres options"
+msgstr "Autres contributeurs"
 
 #: html/base.html:12
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
@@ -175,9 +174,8 @@ msgstr ""
 "Site Web de Gammu et Wammu, le logiciel de gestion des téléphones portables."
 
 #: html/base.html:54
-#, fuzzy
 msgid "Gammu and Wammu"
-msgstr "Wammu et Gammu"
+msgstr "Gammu et Wammu"
 
 #: html/base.html:61
 msgid "Family"
@@ -196,9 +194,8 @@ msgid "Overview"
 msgstr "Vue d'ensemble"
 
 #: html/base.html:76
-#, fuzzy
 msgid "Mailing lists and forums"
-msgstr "Liste de diffusion"
+msgstr "Listes de diffusion et forums"
 
 #: html/base.html:77
 msgid "Reporting bugs"
@@ -222,18 +219,16 @@ msgid "Download"
 msgstr "Téléchargement"
 
 #: html/base.html:86
-#, fuzzy
 msgid "All downloads"
-msgstr "Téléchargement"
+msgstr "Tous les téléchargements"
 
 #: html/base.html:87 html/downloads/index.html:25
 msgid "Download Gammu"
 msgstr "Télécharger Gammu"
 
 #: html/base.html:88 html/downloads/index.html:32
-#, fuzzy
 msgid "Download python-gammu"
-msgstr "python-gammu"
+msgstr "Télécharger python-gammu"
 
 #: html/base.html:89 html/downloads/index.html:39
 msgid "Download Wammu"
@@ -296,7 +291,7 @@ msgstr "Développer"
 
 #: html/base.html:131
 msgid "Wanted skills"
-msgstr ""
+msgstr "Compétences recherchées"
 
 #: html/base.html:132
 msgid "Publicity"
@@ -308,28 +303,27 @@ msgstr "Faire un don"
 
 #: html/base.html:138
 msgid "Tools"
-msgstr ""
+msgstr "Outils"
 
 #: html/base.html:141
 msgid "PDU encoder"
-msgstr ""
+msgstr "Encodeur PDU"
 
 #: html/base.html:142
 msgid "PDU decoder"
-msgstr ""
+msgstr "Décodeur PDU"
 
 #: html/base.html:143
 msgid "Countries"
-msgstr ""
+msgstr "Pays"
 
 #: html/base.html:144
 msgid "Networks"
-msgstr ""
+msgstr "Réseaux"
 
 #: html/base.html:162
-#, fuzzy
 msgid "Help with translations!"
-msgstr "Page de traduction"
+msgstr "Aider aux traductions !"
 
 #: html/base.html:182
 msgid "License"
@@ -372,11 +366,11 @@ msgstr "Suivez nous sur Twitter"
 
 #: html/base.html:189
 msgid "Donate using PayPal"
-msgstr ""
+msgstr "Faire un don en utilisant PayPal"
 
 #: html/contribute/code.html:4 html/contribute/code.html:8
 msgid "Coding for Wammu and Gammu"
-msgstr ""
+msgstr "Developpez pour Wammu et Gammu"
 
 #: html/contribute/code.html:11
 msgid ""
@@ -390,10 +384,18 @@ msgid ""
 "understand the code. If you want to know what is planned to happen in Gammu\n"
 "and Wammu, please check the <a href=\"/docs/roadmap/\">roadmap</a>.\n"
 msgstr ""
+"\n"
+"Gammu est écrit en C et Wammu en <a href=\"http://www.python.org/\"> "
+"Python</a>, donc vous aurez besoin de connaissance de l’un de ces langages "
+"pour contribuer directement au projet. Vous utiliserez probablement "
+"certaines parties de la <a href=\"/docs/devel/\"> documentation "
+"développeur</a> pour comprendre le code. Si vous voulez en savoir plus sur "
+"l'evolution de Gammu et Wammu, veuillez consulter la <a href=\"/docs/roadmap/"
+"\"> feuille de route</a>.\n"
 
 #: html/contribute/code.html:22
 msgid "Version Control System"
-msgstr ""
+msgstr "Système de contrôle de version"
 
 #: html/contribute/code.html:24
 msgid ""
@@ -403,6 +405,11 @@ msgid ""
 "system. It allows you create own local branch, develop the code and then\n"
 "submit us patches or merge request for the changes.\n"
 msgstr ""
+"\n"
+"Nous utilisons actuellement <a href=\"http://git-scm.com/\"> Git</a> comme "
+"un système de contrôle de version. Il permet de vous créez votre propre "
+"branche locale, développez le code et ensuite nous soumettez des patches ou "
+"demande de fusion de vos modifications.\n"
 
 #: html/contribute/code.html:32
 msgid ""
@@ -414,6 +421,12 @@ msgid ""
 "on their site or just clone the repository and investigate it locally. To\n"
 "clone Wammu and Gammu sources, use following commands:\n"
 msgstr ""
+"\n"
+"Les dépôts Git sont hébergés sur <a href=\"http://github.com/\"> Github</a>, "
+"dans le projet <a href=\"http://github.com/gammu/\"> Gammu</a>. Vous pouvez "
+"parcourir le code sur leur site ou juste cloner le référentiel et étudiez-le "
+"localement. Pour cloner les sources Wammu et Gammu, utiliser la suite de "
+"commandes :\n"
 
 #: html/contribute/code.html:56
 msgid ""
@@ -422,6 +435,10 @@ msgid ""
 "repositories over https, just replace <code>git://github.com/</code> with\n"
 "<code>https://github.com/</code>.\n"
 msgstr ""
+"\n"
+"Sinon (si votre pare-feu bloque le protocole git), vous pouvez accéder aux "
+"référentiels via https, en remplacer <code>git://github.com/</code> par "
+"<code>https://github.com/</code>.\n"
 
 #: html/contribute/code.html:64
 msgid ""
@@ -431,10 +448,14 @@ msgid ""
 "to\n"
 "have <a href=\"http://www.cmake.org/\">CMake</a>.\n"
 msgstr ""
+"\n"
+"Les instructions pour générer et installer sont incluses dans le fichier "
+"<code>INSTALL</code> dans Wammu et Gammu. Pour la compilation Gammu, vous "
+"devrez avoir installer <a href=\"http://www.cmake.org/\"> CMake</a>.\n"
 
 #: html/contribute/code.html:71
 msgid "Code Snapshots"
-msgstr ""
+msgstr "Instantanés de code"
 
 #: html/contribute/code.html:73
 msgid ""
@@ -442,10 +463,14 @@ msgid ""
 "If you for some reason do not want to use version control system, you can\n"
 "always download fresh snapshots of current code from GitHub.\n"
 msgstr ""
+"\n"
+"Si pour une raison quelconque vous ne souhaitez pas utiliser le système de "
+"contrôle de version, vous pouvez toujours télécharger une archive du code "
+"actuel depuis GitHub.\n"
 
 #: html/contribute/code.html:80
 msgid "Patch Submission"
-msgstr ""
+msgstr "Soumission de patch"
 
 #: html/contribute/code.html:82
 msgid ""
@@ -461,17 +486,19 @@ msgstr ""
 
 #: html/contribute/code.html:93
 msgid "Testing"
-msgstr ""
+msgstr "Test"
 
 #: html/contribute/code.html:95
 msgid ""
 "Gammu comes with quite comprehensive testsuite, which is being run "
 "continuosly using <a href=\"https://travis-ci.org/gammu/gammu\">Travis</a>."
 msgstr ""
+"Gammu vient avec batterie de tests assez complets, exécution continue à l’"
+"aide de <a href=\"https://travis-ci.org/gammu/gammu\"> Travis</a>."
 
 #: html/contribute/index.html:4 html/contribute/index.html:8
 msgid "Contribute to Wammu and Gammu"
-msgstr ""
+msgstr "Contribuer à Wammu et Gammu"
 
 #: html/contribute/index.html:11 html/contribute/wanted.html:11
 msgid ""
@@ -481,6 +508,11 @@ msgid ""
 "welcome\n"
 "to help us in any way. You really do not need developer skills to help.\n"
 msgstr ""
+"\n"
+"Gammu et Wammu sont des projets de logiciels libres qui sont réalisés par "
+"des bénévoles sur leur temps libre. Il n'y a jamais assez de volontaires "
+"donc vous êtes les bienvenus pour nous aider de quelque manière que ce soit. "
+"Vous n’avez pas forcement besoin des compétences de développeur pour aider.\n"
 
 #: html/contribute/index.html:19
 msgid ""
@@ -488,6 +520,10 @@ msgid ""
 "Please check our list of <a href=\"/contribute/wanted/\"><strong>wanted\n"
 "skills</strong></a>, to get an idea who we are currently looking for.\n"
 msgstr ""
+"\n"
+"Veuillez consulter notre liste de <a href=\"/contribute/wanted/\"> <strong>"
+"compétences recherchées</strong></a>, pour avoir une idée de ce que nous "
+"recherchons actuellement.\n"
 
 #: html/contribute/index.html:25
 msgid "Using"
@@ -1374,14 +1410,13 @@ msgstr ""
 "Python.\n"
 
 #: html/gammu-family.html:67
-#, fuzzy
 msgid ""
 "\n"
 "Library exporting all Gammu functionality for use in C programs.\n"
 msgstr ""
 "\n"
-"Bibliothèque exportant une API C pour dialoguer avec des télephones "
-"portables.\n"
+"Bibliothèque exportant toutes les fonctionnalités de Gammu pour utilisation "
+"dans les programmes C.\n"
 
 #: html/gammu-features.html:3
 msgid ""
@@ -1571,9 +1606,8 @@ msgstr ""
 
 #: html/gammu.html:83 html/libgammu.html:61 html/python-gammu.html:86
 #: html/wammu.html:69
-#, fuzzy
 msgid "Issue tracker"
-msgstr "Système de suivi d'anomalies"
+msgstr "Gestionnaire d’incidents"
 
 #: html/gammu.html:86 html/libgammu.html:64 html/python-gammu.html:89
 #: html/smsd.html:80 html/wammu.html:72
@@ -1811,9 +1845,8 @@ msgstr ""
 "Publié le %(date)s par <a href=\"mailto:%(email)s\">%(author)s</a>\n"
 
 #: html/news/python-gammu_index.html:4 html/news/python-gammu_index.html:6
-#, fuzzy
 msgid "python-gammu news"
-msgstr "python-gammu"
+msgstr "actualités sur python-gammu"
 
 #: html/news/wammu_index.html:4 html/news/wammu_index.html:6
 msgid "Wammu News"
@@ -1944,9 +1977,8 @@ msgstr ""
 
 #: html/phonedb/new.html:12 html/phonedb/phone.html:12
 #: html/phonedb/search.html:12 html/phonedb/vendor.html:12
-#, fuzzy
 msgid "Phones Database"
-msgstr "Base de connaissances Gammu"
+msgstr "Base de données de téléphones"
 
 #: html/phonedb/new.html:19
 msgid ""
@@ -2545,9 +2577,8 @@ msgid ""
 msgstr ""
 
 #: html/support/lists.html:4 html/support/lists.html:8
-#, fuzzy
 msgid "Mailing lists and forums for Wammu and Gammu"
-msgstr "Liste de diffusion"
+msgstr "Listes de diffusion et forums pour Wammu et Gammu"
 
 #: html/support/lists.html:11
 msgid ""
@@ -2835,11 +2866,11 @@ msgstr ""
 
 #: html/tools/pdudecode.html:65
 msgid "Sender"
-msgstr ""
+msgstr "Expediteur"
 
 #: html/tools/pdudecode.html:66
 msgid "Address"
-msgstr ""
+msgstr "Adresse"
 
 #: html/tools/pdudecode.html:67 tools/forms.py:14
 msgid "Class"
