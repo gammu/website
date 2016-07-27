@@ -20,7 +20,7 @@
   {% for feed in global_feeds %}
   <link rel="alternate" type="{{ feed.type }}" href="{{ feed.url }}" title="{{ feed.title }}"/>
   {% endfor %}
-  <link rel="canonical" href="http://wammu.eu{{ request.get_full_path }}" /> 
+  <link rel="canonical" href="https://wammu.eu{{ request.get_full_path }}" /> 
   {% for lang in translations %}
   <link rel="alternate" hreflang="{{ lang.code }}" href="{{ lang.url }}" />
   {% endfor %}
@@ -178,14 +178,14 @@
 
 <footer>
   <ul id="footer">
-    <li>Copyright &copy; 2003 - {{ current_year }} <span class="vcard"><a class="url fn" href="http://cihar.com/">Michal Čihař</a><a href="mailto:michal@cihar.com" class="email"></a></span></li>
+    <li>Copyright &copy; 2003 - {{ current_year }} <span class="vcard"><a class="url fn" href="https://cihar.com/">Michal Čihař</a><a href="mailto:michal@cihar.com" class="email"></a></span></li>
     <li><a href="/license/">{% trans "License" %}</a></li>
     <li><a href="/donate/" title="{% trans "Support Gammu/Wammu by donating money!" %}">{% trans "Donate" %}</a></li>
     <li><a href="/search/" title="{% trans "Search for Gammu/Wammu related questions" %}">{% trans "Search" %}</a></li>
     <li><a href="/authors/" title="{% trans "Gammu and Wammu authors" %}">{% trans "Authors" %}</a></li>
     <li><a href="https://plus.google.com/104858815416760393584/?prsrc=3"><i class="fa fa-google-plus"></i> {% trans "Gammu on Google+" %}</a></li>
     <li><a href="https://www.facebook.com/wammu"><i class="fa fa-facebook-official"></i> {% trans "Gammu on Facebook" %}</a></li>
-    <li><a href="http://twitter.com/wammu"><i class="fa fa-twitter"></i> {% trans "Follow us on Twitter" %}</a></li>
+    <li><a href="https://twitter.com/wammu"><i class="fa fa-twitter"></i> {% trans "Follow us on Twitter" %}</a></li>
     <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=LQ7LTQVQ9LKD6"><i class="fa fa-paypal"></i> {% trans "Donate using PayPal" %}</a></li>
   </ul>
 </footer>
@@ -204,7 +204,7 @@
     g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<noscript><p><img src="http://stats.cihar.com/piwik.php?idsite=5" style="border:0;" alt="" /></p></noscript>
+<noscript><p><img src="https://stats.cihar.com/piwik.php?idsite=5" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
  </body>
 </html>

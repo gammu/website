@@ -14,7 +14,7 @@
     <Zip_Postal_Code>14900</Zip_Postal_Code>
     <Address_1>Zdiměřická 8</Address_1>
     <Address_2></Address_2>
-    <Company_WebSite_URL>http://cihar.com/</Company_WebSite_URL>
+    <Company_WebSite_URL>https://cihar.com/</Company_WebSite_URL>
     <Contact_Info>
       <Contact_First_Name>Michal</Contact_First_Name>
       <Contact_Last_Name>Čihař</Contact_Last_Name>
@@ -35,7 +35,7 @@
     </Support_Info>
     <GooglePlusPage>https://plus.google.com/110918911743040674916</GooglePlusPage>
     <LinkedinPage></LinkedinPage>
-    <TwitterCompanyPage>http://twitter.com/mcihar</TwitterCompanyPage>
+    <TwitterCompanyPage>https://twitter.com/mcihar</TwitterCompanyPage>
     <FacebookCompanyPage></FacebookCompanyPage>
     <CompanyStorePage></CompanyStorePage>
   </Company_Info>
@@ -90,11 +90,11 @@
   </Program_Info>
   <Web_Info>
     <Application_URLs>
-      <Application_Info_URL>http://wammu.eu/gammu/</Application_Info_URL>
-      <Application_Order_URL>http://wammu.eu/donate/</Application_Order_URL>
-      <Application_Screenshot_URL>http://wammu.eu/media/screenshots/gammu-screen.png</Application_Screenshot_URL>
-      <Application_Icon_URL>http://wammu.eu/media/images/wammu.gif</Application_Icon_URL>
-      <Application_XML_File_URL>http://wammu.eu/api/pad/gammu.xml</Application_XML_File_URL>
+      <Application_Info_URL>https://wammu.eu/gammu/</Application_Info_URL>
+      <Application_Order_URL>https://wammu.eu/donate/</Application_Order_URL>
+      <Application_Screenshot_URL>https://wammu.eu/media/screenshots/gammu-screen.png</Application_Screenshot_URL>
+      <Application_Icon_URL>https://wammu.eu/media/images/wammu.gif</Application_Icon_URL>
+      <Application_XML_File_URL>https://wammu.eu/api/pad/gammu.xml</Application_XML_File_URL>
     </Application_URLs>
     <Download_URLs>
       <Primary_Download_URL>{% getlink download %}</Primary_Download_URL>
@@ -152,9 +152,9 @@ this program; if not, write to the Free Software Foundation, Inc.,
     <NewsFeed_VERSION></NewsFeed_VERSION>
     <NewsFeed_URL></NewsFeed_URL>
     <NewsFeed_DESCRIPTION></NewsFeed_DESCRIPTION>
-    <NewsFeed_Feed_URL>http://wammu.eu/news/rss/</NewsFeed_Feed_URL>
+    <NewsFeed_Feed_URL>https://wammu.eu/news/rss/</NewsFeed_Feed_URL>
     <NewsFeed_Type>RSS 2.0</NewsFeed_Type>
-    <NewsFeed_Site_URL>http://wammu.eu/</NewsFeed_Site_URL>
+    <NewsFeed_Site_URL>https://wammu.eu/</NewsFeed_Site_URL>
     <NewsFeed_Author_First_Name></NewsFeed_Author_First_Name>
     <NewsFeed_Author_Last_Name></NewsFeed_Author_Last_Name>
     <NewsFeed_Author_Email></NewsFeed_Author_Email>
@@ -171,7 +171,7 @@ this program; if not, write to the Free Software Foundation, Inc.,
     <Headline>{{ release.get_description }}</Headline>
     <Summary>{{ release.description }}</Summary>
     <Press_Release_Plain>{{ release.changelog }}</Press_Release_Plain>
-    <Related_URL>http://wammu.eu{{ release.get_absolute_url }}</Related_URL>
+    <Related_URL>https://wammu.eu{{ release.get_absolute_url }}</Related_URL>
   </Press_Release>
   <Site>
     <Site_FORM></Site_FORM>
@@ -179,7 +179,7 @@ this program; if not, write to the Free Software Foundation, Inc.,
     <Site_URL></Site_URL>
     <Site_DESCRIPTION></Site_DESCRIPTION>
     <Site_Site_Title>Wammu and Gammu website</Site_Site_Title>
-    <Site_Site_URL>http://wammu.eu/</Site_Site_URL>
+    <Site_Site_URL>https://wammu.eu/</Site_Site_URL>
     <Site_Keywords>wammu,gammu,phone,gsm,mobile,cell,sms,smsd</Site_Keywords>
     <Site_Description_100>Wammu and Gammu website</Site_Description_100>
     <Site_Description_250>Wammu and Gammu website</Site_Description_250>
@@ -194,6 +194,6 @@ this program; if not, write to the Free Software Foundation, Inc.,
     <PADmap_VERSION>1.0</PADmap_VERSION>
     <PADmap_SCOPE>Company</PADmap_SCOPE>
     <PADmap_DESCRIPTION>Link to plain text file containing all your PAD URLs from current host</PADmap_DESCRIPTION>
-    <PADmap_Location>http://wammu.eu/api/pad/padmap.txt</PADmap_Location>
+    <PADmap_Location>https://wammu.eu/api/pad/padmap.txt</PADmap_Location>
   </PADmap>
 </XML_DIZ_INFO>

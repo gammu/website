@@ -112,7 +112,7 @@ class Phone(models.Model):
         result = []
         name = self.__unicode__().replace(' ', '_').replace('-', '_')
         result.append({
-            'url': 'http://wikipedia.org/wiki/%s' % name,
+            'url': 'https://wikipedia.org/wiki/%s' % name,
             'name': 'Wikipedia',
         })
         name = self.name.replace(' ', '_').replace('-', '_')

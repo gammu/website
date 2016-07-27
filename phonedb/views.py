@@ -309,7 +309,7 @@ def phones_csv(request):
         if author is None:
             author = ''
         writer.writerow([
-            'http://%s%s' % (current_site, phone.get_absolute_url()),
+            'https://%s%s' % (current_site, phone.get_absolute_url()),
             phone.vendor.name.encode('utf8'),
             phone.name.encode('utf8'),
             author.encode('utf8'),

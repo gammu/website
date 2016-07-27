@@ -127,10 +127,10 @@ class Release(models.Model):
                 'programname': get_program(self.program),
                 'version': self.version,
                 'description': self.description,
-                'programurl': 'http://%s%s' % (current_site, PROGRAM_URLS[self.program]),
-                'versionurl': 'http://%s%s' % (current_site, self.get_absolute_url()),
+                'programurl': 'https://%s%s' % (current_site, PROGRAM_URLS[self.program]),
+                'versionurl': 'https://%s%s' % (current_site, self.get_absolute_url()),
                 }
-            body = 'Full list of changes:\n\n%s\n\nYou can download it from <http://wammu.eu/download/>.\n\nSupport this program by donations <http://wammu.eu/donate/>.' % self.changelog
+            body = 'Full list of changes:\n\n%s\n\nYou can download it from <https://wammu.eu/download/>.\n\nSupport this program by donations <https://wammu.eu/donate/>.' % self.changelog
             identica_post = self.post_tweet
             identica_text = '#%s %s has been just released' % (
                 get_program(self.program),

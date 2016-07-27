@@ -237,8 +237,8 @@ urlpatterns = [
     url(r'^docs/devel/$', RedirectView.as_view(url='/docs/', permanent=True)),
     url(r'^docs/man/.*$', RedirectView.as_view(url='/docs/', permanent=True)),
     url(r'^wiki/$', RedirectView.as_view(url='/', permanent=True)),
-    url(r'^en/$', RedirectView.as_view(url='http://wammu.eu/', permanent=True)),
-    url(r'^cs/$', RedirectView.as_view(url='http://cs.wammu.eu/', permanent=True)),
-    url(r'^cz/$', RedirectView.as_view(url='http://cs.wammu.eu/', permanent=True)),
-    url(r'^es/$', RedirectView.as_view(url='http://es.wammu.eu/', permanent=True)),
+    url(r'^en/$', RedirectView.as_view(url='https://wammu.eu/', permanent=True)),
+    url(r'^cs/$', RedirectView.as_view(url='https://cs.wammu.eu/', permanent=True)),
+    url(r'^cz/$', RedirectView.as_view(url='https://cs.wammu.eu/', permanent=True)),
+    url(r'^es/$', RedirectView.as_view(url='https://es.wammu.eu/', permanent=True)),
 ]

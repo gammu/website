@@ -6,21 +6,21 @@
   <description xml:lang="en">Wammu is a mobile phone manager that uses Gammu as its backend. It works with any phone that Gammu supports, including many models from Nokia, Siemens, and Alcatel. It has complete support (read, edit, delete, copy) for contacts, todo, and calendar. It can read, save, and send SMS. It includes an SMS composer for multi-part SMS messages, and it can display SMS messages that include pictures. Currently, only text and predefined bitmaps or sounds can be edited in the SMS composer. It can export messages to an IMAP4 server (or other email storage).</description>
   <bug-database rdf:resource="https://github.com/gammu/gammu/issues" />
   <programming-language>Python</programming-language>
-  <download-page rdf:resource="http://wammu.eu/download/wammu/" />
-  <homepage rdf:resource="http://wammu.eu/" />
+  <download-page rdf:resource="https://wammu.eu/download/wammu/" />
+  <homepage rdf:resource="https://wammu.eu/" />
   <license rdf:resource="http://usefulinc.com/doap/licenses/gpl" />
-  <mailing-list rdf:resource="http://wammu.eu/support/lists/" />
-  <wiki rdf:resource="http://www.gammu.org/wiki/index.php?title=Gammu:Wammu" />
-  <screenshots rdf:resource="http://wammu.eu/screenshots/wammu/" />
-  <old-homepage rdf:resource="http://cihar.com/gammu/wammu/" />
-  <old-homepage rdf:resource="http://cihar.com/wammu/" />
-  <category rdf:resource="http://freshmeat.net/browse/247/"/>
-  <category rdf:resource="http://freshmeat.net/browse/130/"/>
-  <category rdf:resource="http://freshmeat.net/browse/861/"/>
+  <mailing-list rdf:resource="https://wammu.eu/support/lists/" />
+  <wiki rdf:resource="https://www.gammu.org/wiki/index.php?title=Gammu:Wammu" />
+  <screenshots rdf:resource="https://wammu.eu/screenshots/wammu/" />
+  <old-homepage rdf:resource="https://cihar.com/gammu/wammu/" />
+  <old-homepage rdf:resource="https://cihar.com/wammu/" />
+  <category rdf:resource="https://freshmeat.net/browse/247/"/>
+  <category rdf:resource="https://freshmeat.net/browse/130/"/>
+  <category rdf:resource="https://freshmeat.net/browse/861/"/>
   <maintainer>
     <foaf:Person>
       <foaf:name>Michal Čihař</foaf:name>
-      <foaf:homepage rdf:resource="http://cihar.com/" />
+      <foaf:homepage rdf:resource="https://cihar.com/" />
       <foaf:mbox rdf:resource="mailto:michal@cihar.com" />
       <foaf:mbox_sha1sum>6dd3e0747f1392564764e15a7dde1e27d4b978d0</foaf:mbox_sha1sum>
     </foaf:Person>
