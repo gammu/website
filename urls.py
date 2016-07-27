@@ -53,7 +53,6 @@ class PagesSitemap(Sitemap):
 
             ('/authors/', '%s/authors.html' % settings.HTML_ROOT, 0.9),
             ('/license/', '%s/libgammu.html' % settings.HTML_ROOT, 0.9),
-            ('/search/', '%s/search.html' % settings.HTML_ROOT, 0.3),
             ('/donate/', '%s/donate.html' % settings.HTML_ROOT, 0.3),
 
             ('/s60/', '%s/s60.html' % settings.HTML_ROOT, 0.3),
@@ -113,7 +112,7 @@ urlpatterns = [
 
     url(r'^authors/$', wammu.views.static, {'page': 'authors.html'}),
     url(r'^license/$', wammu.views.static, {'page': 'license.html'}),
-    url(r'^search/$', wammu.views.static, {'page': 'search.html'}),
+    url(r'^search/$', RedirectView.as_view(url='/', permanent=True)),
 
     url(r'^support/$', wammu.views.support),
     url(r'^support/bugs/$', wammu.views.static, {'page': 'support/bugs.html'}),
