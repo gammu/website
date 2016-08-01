@@ -2,43 +2,43 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Wammu website\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-01 15:00+0200\n"
-"PO-Revision-Date: 2012-10-19 22:11+0200\n"
-"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
-"Language-Team: Hungarian <http://hosted.weblate.org/projects/gammu/website/"
-"hu/>\n"
-"Language: hu\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 1.2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: downloads/models.py:30
 msgid "Source"
-msgstr "Forrás"
+msgstr ""
 
 #: downloads/models.py:31
 msgid "Windows binary"
-msgstr "Windows bináris"
+msgstr ""
 
 #: downloads/models.py:171
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr "%(program)s stabil kiadás %(version)s"
+msgstr ""
 
 #: downloads/models.py:176
 #, python-format
 msgid "%(program)s testing release %(version)s"
-msgstr "%(program)s teszt kiadás %(version)s"
+msgstr ""
 
 #: html/403.html:4 html/403.html:8
 msgid "Permission Denied"
-msgstr "Engedély megtagadva"
+msgstr ""
 
 #: html/403.html:11 html/404.html:11
 msgid ""
@@ -56,11 +56,11 @@ msgstr ""
 
 #: html/404.html:4 html/404.html:8
 msgid "Page Not Found"
-msgstr "Az oldal nem található"
+msgstr ""
 
 #: html/500.html:4 html/500.html:8
 msgid "Server Error"
-msgstr "Kiszolgáló hiba"
+msgstr ""
 
 #: html/500.html:11
 msgid ""
@@ -72,7 +72,7 @@ msgstr ""
 
 #: html/authors.html:4 html/authors.html:7
 msgid "Wammu and Gammu Authors"
-msgstr "Wammu és Gammu szerzők"
+msgstr ""
 
 #: html/authors.html:10
 msgid ""
@@ -95,7 +95,7 @@ msgstr ""
 #: html/authors.html:29 html/authors.html:50 html/authors.html:66
 #: html/authors.html:75 html/phonedb/vendor.html:20
 msgid "Website"
-msgstr "Weboldal"
+msgstr ""
 
 #: html/authors.html:34
 msgid "E-mail"
@@ -136,9 +136,8 @@ msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
 msgstr ""
 
 #: html/base.html:54
-#, fuzzy
 msgid "Gammu and Wammu"
-msgstr "Wammu és Gammu szerzők"
+msgstr ""
 
 #: html/base.html:61
 msgid "Family"
@@ -150,7 +149,7 @@ msgstr ""
 
 #: html/base.html:73
 msgid "Support"
-msgstr "Támogatás"
+msgstr ""
 
 #: html/base.html:75 html/base.html:116 html/base.html:128 html/base.html:140
 msgid "Overview"
@@ -260,7 +259,7 @@ msgstr ""
 
 #: html/base.html:133 html/base.html:183
 msgid "Donate"
-msgstr "Támogatás"
+msgstr ""
 
 #: html/base.html:138
 msgid "Tools"
@@ -301,7 +300,7 @@ msgstr ""
 #: html/base.html:184 html/phonedb/index.html:55 html/phonedb/search.html:13
 #: html/phonedb/search.html:49 phonedb/forms.py:33
 msgid "Search"
-msgstr "Keresés"
+msgstr ""
 
 #: html/base.html:185
 msgid "Gammu and Wammu authors"
@@ -755,7 +754,7 @@ msgstr ""
 
 #: html/contribute/wanted.html:38
 msgid "Community supporter"
-msgstr "Közösségi támogató"
+msgstr ""
 
 #: html/contribute/wanted.html:41
 msgid ""
@@ -1030,7 +1029,7 @@ msgstr ""
 
 #: html/donate.html:92 html/phonedb/index.html:79
 msgid "Supporters"
-msgstr "Támogatók"
+msgstr ""
 
 #: html/donate.html:94
 msgid ""
@@ -1419,7 +1418,7 @@ msgstr ""
 #: html/gammu.html:86 html/libgammu.html:64 html/python-gammu.html:89
 #: html/smsd.html:80 html/wammu.html:72
 msgid "More information"
-msgstr "További információ"
+msgstr ""
 
 #: html/index.html:4
 msgid "Wammu and Gammu"
@@ -1447,10 +1446,8 @@ msgid "Support us on BountySource to get listed here!"
 msgstr ""
 
 #: html/index.html:36
-#, fuzzy
-#| msgid "Community supporter"
 msgid "Current supporters:"
-msgstr "Közösségi támogató"
+msgstr ""
 
 #: html/libgammu.html:4 html/libgammu.html:7
 msgid "libGammu"
@@ -1511,7 +1508,6 @@ msgid ""
 msgstr ""
 
 #: html/license.html:18
-#, fuzzy
 msgid ""
 "\n"
 "This program is free software; you can redistribute it and/or\n"
@@ -1519,11 +1515,6 @@ msgid ""
 "as published by the Free Software Foundation; version 2\n"
 "of the License.\n"
 msgstr ""
-"\n"
-"Ez a program szabad szoftver; szabadon terjeszthető és/vagy módosítható\n"
-"a Free Software Foundation által közzétett GNU Általános Nyilvános\n"
-"engedély feltételei szerint; az Engedély 2. vagy (az Ön döntése alapján)\n"
-"bármelyik későbbi verziója szerint.\n"
 
 #: html/license.html:27 html/license.html:64
 msgid ""
@@ -1533,11 +1524,6 @@ msgid ""
 "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 msgstr ""
-"\n"
-"Ez a program abban a reményben készült, hogy használható,\n"
-"de BÁRMIFÉLE GARANCIA NÉLKÜL; bármiféle feltételezett, az ELADHATÓSÁGRA\n"
-"vagy ADOTT CÉLRA VALÓ ALKALMASSÁGRA vonatkozó garancia nélkül.\n"
-"Részletek tekintetében a GNU Általános Nyilvános engedély az irányadó.\n"
 
 #: html/license.html:36 html/license.html:73
 msgid ""
@@ -1595,7 +1581,7 @@ msgstr ""
 
 #: html/links/index.html:22
 msgid "Website:"
-msgstr "Weboldal:"
+msgstr ""
 
 #: html/news/contrib_index.html:4 html/news/contrib_index.html:6
 msgid "Third Party News"
@@ -1631,7 +1617,7 @@ msgstr ""
 
 #: html/phonedb/body.html:3
 msgid "Supported Features"
-msgstr "Támogatott funkciók"
+msgstr ""
 
 #: html/phonedb/body.html:13
 msgid "No features reported as working!"
@@ -1656,7 +1642,7 @@ msgstr ""
 #: html/phonedb/phone.html:6 html/phonedb/search.html:6
 #: html/phonedb/vendor.html:6
 msgid "Gammu Phone Database "
-msgstr "Gammu telefon-adatbázis "
+msgstr ""
 
 #: html/phonedb/index.html:13
 msgid ""
@@ -1705,7 +1691,7 @@ msgstr ""
 
 #: html/phonedb/index.html:45
 msgid "Manufacturers"
-msgstr "Gyártók"
+msgstr ""
 
 #: html/phonedb/index.html:61
 msgid "Recently Added Phones"
@@ -1729,19 +1715,19 @@ msgstr ""
 
 #: html/phonedb/list.html:5
 msgid "Name"
-msgstr "Név"
+msgstr ""
 
 #: html/phonedb/list.html:5
 msgid "Connection"
-msgstr "Kapcsolat"
+msgstr ""
 
 #: html/phonedb/list.html:5
 msgid "Supported features"
-msgstr "Támogatott funkciók"
+msgstr ""
 
 #: html/phonedb/list.html:22
 msgid "Not supported"
-msgstr "Nem támogatott"
+msgstr ""
 
 #: html/phonedb/new.html:6 html/phonedb/new.html:13 html/phonedb/new.html:16
 msgid "Create New Record"
@@ -1754,9 +1740,8 @@ msgstr ""
 
 #: html/phonedb/new.html:12 html/phonedb/phone.html:12
 #: html/phonedb/search.html:12 html/phonedb/vendor.html:12
-#, fuzzy
 msgid "Phones Database"
-msgstr "Gammu telefon-adatbázis"
+msgstr ""
 
 #: html/phonedb/new.html:19
 msgid ""
@@ -1781,7 +1766,7 @@ msgstr ""
 
 #: html/phonedb/phone.html:17
 msgid "Edit"
-msgstr "Szerkesztés"
+msgstr ""
 
 #: html/phonedb/phone.html:19
 msgid "Delete"
@@ -2559,7 +2544,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:34 html/tools/pdudecode.html:36 tools/forms.py:13
 msgid "Text"
-msgstr "Szöveg"
+msgstr ""
 
 #: html/tools/pdudecode.html:39
 msgid "UDH type"
@@ -2575,7 +2560,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:43
 msgid "SMSC"
-msgstr "SMSC"
+msgstr ""
 
 #: html/tools/pdudecode.html:44
 msgid "Validity"
@@ -2583,7 +2568,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:45
 msgid "Type"
-msgstr "Típus"
+msgstr ""
 
 #: html/tools/pdudecode.html:46
 msgid "Message Reference"
@@ -2706,7 +2691,7 @@ msgstr ""
 
 #: html/wammu_feedback.html:3
 msgid "Thank you for using Wammu"
-msgstr "Köszönjük, hogy a Wammu programot használja"
+msgstr ""
 
 #: html/wammu_feedback.html:5
 msgid ""
@@ -2739,7 +2724,7 @@ msgstr ""
 
 #: phonedb/feeds.py:16
 msgid "Gammu Phone Database"
-msgstr "Gammu telefon-adatbázis"
+msgstr ""
 
 #: phonedb/feeds.py:19
 msgid "Gammu phone database updates."
@@ -2773,19 +2758,19 @@ msgstr ""
 
 #: phonedb/models.py:20
 msgid "Use [at] and [dot]"
-msgstr "[at] és [dot] használata"
+msgstr ""
 
 #: phonedb/models.py:21
 msgid "Display it normally"
-msgstr "Hagyományos megjelenítés"
+msgstr ""
 
 #: phonedb/models.py:22
 msgid "Don't show email at all"
-msgstr "Ne jelenjenek meg e-mail levelek"
+msgstr ""
 
 #: phonedb/models.py:23
 msgid "Insert NOSPAM text at random position"
-msgstr "NOSPAM szöveg beillesztése véletlenszerű pozícióban"
+msgstr ""
 
 #: phonedb/models.py:27
 msgid "Draft"
@@ -2801,15 +2786,15 @@ msgstr ""
 
 #: phonedb/models.py:33
 msgid "Phone information"
-msgstr "Telefoninformáció"
+msgstr ""
 
 #: phonedb/models.py:34
 msgid "Sending and saving SMS"
-msgstr "RÖSZÜ küldése és mentése"
+msgstr ""
 
 #: phonedb/models.py:35
 msgid "Multimedia messaging"
-msgstr "Multimédiás üzenetek"
+msgstr ""
 
 #: phonedb/models.py:36
 msgid "Basic phonebook functions (name and phone number)"
@@ -2821,27 +2806,27 @@ msgstr ""
 
 #: phonedb/models.py:38
 msgid "Calendar entries"
-msgstr "Naptárbejegyzések"
+msgstr ""
 
 #: phonedb/models.py:39
 msgid "Todos"
-msgstr "Tennivalók"
+msgstr ""
 
 #: phonedb/models.py:40
 msgid "Filesystem manipulation"
-msgstr "Fájlrendszer módosítás"
+msgstr ""
 
 #: phonedb/models.py:41
 msgid "Reading and making calls"
-msgstr "Hívások áttekintése és indítása"
+msgstr ""
 
 #: phonedb/models.py:42
 msgid "Logos"
-msgstr "Logók"
+msgstr ""
 
 #: phonedb/models.py:43
 msgid "Ringtones"
-msgstr "Csengőhangok"
+msgstr ""
 
 #: phonedb/models.py:84
 #, python-format
@@ -2904,7 +2889,7 @@ msgstr ""
 
 #: tools/forms.py:15
 msgid "Unicode"
-msgstr "Unicode"
+msgstr ""
 
 #: tools/forms.py:16
 msgid "Recipient"
@@ -2921,21 +2906,3 @@ msgstr ""
 #: wammu/context_processors.py:55
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr ""
-
-#~ msgid "Gammu"
-#~ msgstr "Gammu"
-
-#~ msgid "Wammu"
-#~ msgstr "Wammu"
-
-#~ msgid "SMSD"
-#~ msgstr "SMSD"
-
-#~ msgid "About"
-#~ msgstr "Névjegy"
-
-#~ msgid "Phones Support"
-#~ msgstr "&Támogatás"
-
-#~ msgid "Is my phone supported?"
-#~ msgstr "Nem támogatott"
