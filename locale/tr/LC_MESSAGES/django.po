@@ -3,28 +3,29 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2016-08-01 15:00+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2016-08-01 16:18+0000\n"
+"Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
+"Language-Team: Turkish "
+"<https://hosted.weblate.org/projects/gammu/website/tr/>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.8-dev\n"
 
 #: downloads/models.py:30
 msgid "Source"
-msgstr ""
+msgstr "Kaynak"
 
 #: downloads/models.py:31
 msgid "Windows binary"
-msgstr ""
+msgstr "Windows ikili"
 
 #: downloads/models.py:171
 #, python-format
@@ -95,7 +96,7 @@ msgstr ""
 #: html/authors.html:29 html/authors.html:50 html/authors.html:66
 #: html/authors.html:75 html/phonedb/vendor.html:20
 msgid "Website"
-msgstr ""
+msgstr "Web sitesi"
 
 #: html/authors.html:34
 msgid "E-mail"
@@ -141,7 +142,7 @@ msgstr ""
 
 #: html/base.html:61
 msgid "Family"
-msgstr ""
+msgstr "Aile"
 
 #: html/base.html:68
 msgid "Third party"
@@ -287,7 +288,7 @@ msgstr ""
 
 #: html/base.html:182
 msgid "License"
-msgstr ""
+msgstr "Lisans"
 
 #: html/base.html:183
 msgid "Support Gammu/Wammu by donating money!"
@@ -1524,6 +1525,11 @@ msgid ""
 "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 msgstr ""
+"\n"
+"Bu program faydalı olacağı ümidiyle dağıtılmıştır,\n"
+"ancak HERHANGİ BİR GARANTİSİ YOKTUR;\n"
+"SATILABİLİRLİK veya ÖZEL BİR AMAÇ İÇİN UYGUNLUK garantisi yoktur.\n"
+"Ayrıntılar için GNU Genel Kamu Lisansına bakınız.\n"
 
 #: html/license.html:36 html/license.html:73
 msgid ""
@@ -1715,19 +1721,19 @@ msgstr ""
 
 #: html/phonedb/list.html:5
 msgid "Name"
-msgstr ""
+msgstr "Adı"
 
 #: html/phonedb/list.html:5
 msgid "Connection"
-msgstr ""
+msgstr "Bağlantı"
 
 #: html/phonedb/list.html:5
 msgid "Supported features"
-msgstr ""
+msgstr "Desteklenen özellikler"
 
 #: html/phonedb/list.html:22
 msgid "Not supported"
-msgstr ""
+msgstr "Desteklenmiyor"
 
 #: html/phonedb/new.html:6 html/phonedb/new.html:13 html/phonedb/new.html:16
 msgid "Create New Record"
@@ -1766,7 +1772,7 @@ msgstr ""
 
 #: html/phonedb/phone.html:17
 msgid "Edit"
-msgstr ""
+msgstr "Düzenle"
 
 #: html/phonedb/phone.html:19
 msgid "Delete"
@@ -2544,7 +2550,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:34 html/tools/pdudecode.html:36 tools/forms.py:13
 msgid "Text"
-msgstr ""
+msgstr "Metin"
 
 #: html/tools/pdudecode.html:39
 msgid "UDH type"
@@ -2560,15 +2566,15 @@ msgstr ""
 
 #: html/tools/pdudecode.html:43
 msgid "SMSC"
-msgstr ""
+msgstr "SMSC"
 
 #: html/tools/pdudecode.html:44
 msgid "Validity"
-msgstr ""
+msgstr "Geçerlilik"
 
 #: html/tools/pdudecode.html:45
 msgid "Type"
-msgstr ""
+msgstr "Tür"
 
 #: html/tools/pdudecode.html:46
 msgid "Message Reference"
@@ -2580,7 +2586,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:63
 msgid "MMS indicator"
-msgstr ""
+msgstr "MMS göstergesi"
 
 #: html/tools/pdudecode.html:64
 msgid "Title"
@@ -2588,19 +2594,19 @@ msgstr ""
 
 #: html/tools/pdudecode.html:65
 msgid "Sender"
-msgstr ""
+msgstr "Gönderen"
 
 #: html/tools/pdudecode.html:66
 msgid "Address"
-msgstr ""
+msgstr "Adres"
 
 #: html/tools/pdudecode.html:67 tools/forms.py:14
 msgid "Class"
-msgstr ""
+msgstr "Sınıf"
 
 #: html/tools/pdudecode.html:70
 msgid "Bitmap"
-msgstr ""
+msgstr "Bit eşlem"
 
 #: html/tools/pdudecode.html:71
 msgid "Bitmaps"
@@ -2758,19 +2764,19 @@ msgstr ""
 
 #: phonedb/models.py:20
 msgid "Use [at] and [dot]"
-msgstr ""
+msgstr "[at] ve [dot] kullan"
 
 #: phonedb/models.py:21
 msgid "Display it normally"
-msgstr ""
+msgstr "Normal olarak göster"
 
 #: phonedb/models.py:22
 msgid "Don't show email at all"
-msgstr ""
+msgstr "E-postayı hiçbir şekilde gösterme"
 
 #: phonedb/models.py:23
 msgid "Insert NOSPAM text at random position"
-msgstr ""
+msgstr "NOSPAM metnini rastgele bir konuma ekle"
 
 #: phonedb/models.py:27
 msgid "Draft"
@@ -2786,15 +2792,15 @@ msgstr ""
 
 #: phonedb/models.py:33
 msgid "Phone information"
-msgstr ""
+msgstr "Telefon bilgileri"
 
 #: phonedb/models.py:34
 msgid "Sending and saving SMS"
-msgstr ""
+msgstr "SMS gönderiliyor ve kaydediliyor"
 
 #: phonedb/models.py:35
 msgid "Multimedia messaging"
-msgstr ""
+msgstr "Çokluortam mesajlaşması"
 
 #: phonedb/models.py:36
 msgid "Basic phonebook functions (name and phone number)"
@@ -2806,27 +2812,27 @@ msgstr ""
 
 #: phonedb/models.py:38
 msgid "Calendar entries"
-msgstr ""
+msgstr "Takvim girişleri"
 
 #: phonedb/models.py:39
 msgid "Todos"
-msgstr ""
+msgstr "Yapılacaklar"
 
 #: phonedb/models.py:40
 msgid "Filesystem manipulation"
-msgstr ""
+msgstr "Dosya sistemi kötü kullanımı"
 
 #: phonedb/models.py:41
 msgid "Reading and making calls"
-msgstr ""
+msgstr "Okunuyor ve arama yapılıyor"
 
 #: phonedb/models.py:42
 msgid "Logos"
-msgstr ""
+msgstr "Logolar"
 
 #: phonedb/models.py:43
 msgid "Ringtones"
-msgstr ""
+msgstr "Zil sesleri"
 
 #: phonedb/models.py:84
 #, python-format
@@ -2889,15 +2895,15 @@ msgstr ""
 
 #: tools/forms.py:15
 msgid "Unicode"
-msgstr ""
+msgstr "Evrensel kod"
 
 #: tools/forms.py:16
 msgid "Recipient"
-msgstr ""
+msgstr "Alıcı"
 
 #: tools/forms.py:17
 msgid "SMSC number"
-msgstr ""
+msgstr "SMSC numarası"
 
 #: wammu/context_processors.py:54
 msgid "Gammu and Wammu News Feed (RSS)"
