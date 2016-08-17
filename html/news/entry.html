@@ -3,7 +3,7 @@
 
 {% block title %}{{ entry.title }} - {% trans "Wammu and Gammu News" %}{% endblock %}
 
-{% block description %}{{ entry.excerpt_html|safe }}{% endblock %}
+{% block description %}{{ entry.excerpt_html|striptags }}{% endblock %}
 
 {% block content %}
 <h2>{{ entry.title }}</h2>
