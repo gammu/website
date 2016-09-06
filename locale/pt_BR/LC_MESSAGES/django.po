@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 15:00+0200\n"
+"POT-Creation-Date: 2016-09-06 09:35+0200\n"
 "PO-Revision-Date: 2016-05-28 20:44+0000\n"
 "Last-Translator: Renan Souza do Nascimento <renan.sn@icloud.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
@@ -1424,64 +1424,11 @@ msgstr ""
 "Você também pode usar <a href=\"http://www.bitcoin.org/\">Bitcoin, que é uma "
 "rede P2P</a> e me enviar Bitcoins para <code>%(address)s</code>."
 
-#: html/donate.html:66
-msgid "Wire Transfer"
-msgstr "Transferência Online"
-
-#: html/donate.html:69
-msgid ""
-"\n"
-"If you want, you can use wire transfer as well to send me money. Use "
-"following\n"
-"information to make the payment:\n"
-msgstr ""
-"\n"
-"Se preferir pode usar transferência on-line bem como enviar dinheiro "
-"diretamente.\n"
-"Use a seguinte informação para fazer doação:\n"
-
-#: html/donate.html:77
-msgid ""
-"\n"
-"If you have an account in Czech Republic, you can use local (and cheaper) "
-"wire\n"
-"transfer to account 2300081892 / 2010.\n"
-msgstr ""
-"\n"
-"Se você possui conta bancária na República Checa, pode usar uma "
-"transferência local\n"
-"para a conta 2300081892 / 2010.\n"
-
-#: html/donate.html:83
-msgid "Other Options"
-msgstr "Outras Opções"
-
-#: html/donate.html:85
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "You can also give some presents to developers, currently here is <a\n"
-#| "href=\"http://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">Amazon "
-#| "wishlist for\n"
-#| "Michal Čihař</a>.\n"
-msgid ""
-"\n"
-"You can also give some presents to developers, currently here is <a\n"
-"href=\"https://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">Amazon wishlist "
-"for\n"
-"Michal Čihař</a>.\n"
-msgstr ""
-"\n"
-"Também pode presentear os desenvolvedores, atualmente na amazom <a\n"
-"href=\"http://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">Lista Presentes "
-"para\n"
-"Michal Čihař</a>.\n"
-
-#: html/donate.html:92 html/phonedb/index.html:79
+#: html/donate.html:66 html/phonedb/index.html:79
 msgid "Supporters"
 msgstr "Oferecimento de"
 
-#: html/donate.html:94
+#: html/donate.html:68
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
@@ -3056,15 +3003,24 @@ msgid "Obtaining Debugging Log"
 msgstr "Obter o Debug de Log"
 
 #: html/support/bugs.html:58
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "Debugging log contains transcription of communication between Gammu and "
+#| "your\n"
+#| "phone. As such it might contain your private data. If it is the case or "
+#| "you\n"
+#| "are not sure, you should mark the bug private, so that only developers "
+#| "are\n"
+#| "allowed to see the data in it, but it is not publicly accessible as other "
+#| "bug\n"
+#| "reports.\n"
 msgid ""
 "\n"
 "Debugging log contains transcription of communication between Gammu and "
 "your\n"
-"phone. As such it might contain your private data. If it is the case or you\n"
-"are not sure, you should mark the bug private, so that only developers are\n"
-"allowed to see the data in it, but it is not publicly accessible as other "
-"bug\n"
-"reports.\n"
+"phone. As such it might contain your private data. Please make sure you \n"
+"do not include such data in the report.\n"
 msgstr ""
 "\n"
 "Debug do log contém a transcrição da comunicação entre o Gammu e seu "
@@ -3077,7 +3033,7 @@ msgstr ""
 "acessível como\n"
 "os outros relatórios de bug.\n"
 
-#: html/support/bugs.html:68
+#: html/support/bugs.html:66
 msgid ""
 "\n"
 "To make Gammu generate debug log, you need to tell it to do so. It is "
@@ -3091,7 +3047,7 @@ msgstr ""
 "debug-file\n"
 "/tmp/gammu.log identify</code>) qunato pelo arquivo de configuração:\n"
 
-#: html/support/bugs.html:84
+#: html/support/bugs.html:82
 msgid ""
 "\n"
 "Wammu automatically creates debugging log in temporary directory\n"
@@ -3111,7 +3067,7 @@ msgstr ""
 "atual\n"
 "durante a execução do Wammu pelo menu de Ajuda.\n"
 
-#: html/support/bugs.html:94
+#: html/support/bugs.html:92
 msgid ""
 "\n"
 "Gammu SMSD logging is configured in more levels, to include all messages, "
@@ -3123,11 +3079,11 @@ msgstr ""
 "mensagens\n"
 "defina <code>debuglevel</code> para 255:\n"
 
-#: html/support/bugs.html:111
+#: html/support/bugs.html:109
 msgid "Troubleshooting Windows Service"
 msgstr "Solução de problemas do Windows Service"
 
-#: html/support/bugs.html:114
+#: html/support/bugs.html:112
 msgid ""
 "\n"
 "If Gammu fails to start as a Windows service (you will usually get \"Error\n"
@@ -3153,7 +3109,7 @@ msgstr ""
 "os caminhos\n"
 "absolutos (ex: caminho para o arquivo de configuração).\n"
 
-#: html/support/bugs.html:125
+#: html/support/bugs.html:123
 msgid ""
 "\n"
 "For example the command line can look like:\n"
@@ -3161,7 +3117,7 @@ msgstr ""
 "\n"
 "Por exemplo, a linha de comando pode parecer:\n"
 
-#: html/support/bugs.html:135
+#: html/support/bugs.html:133
 msgid ""
 "\n"
 "You now should be able to get errors from SMSD even if it fails to start as "
@@ -4095,6 +4051,54 @@ msgstr "Feed de notícias do Gammu e Wammu (RSS)"
 #: wammu/context_processors.py:55
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Feed de notícias do Gammu e Wammu (Atom)"
+
+#~ msgid "Wire Transfer"
+#~ msgstr "Transferência Online"
+
+#~ msgid ""
+#~ "\n"
+#~ "If you want, you can use wire transfer as well to send me money. Use "
+#~ "following\n"
+#~ "information to make the payment:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Se preferir pode usar transferência on-line bem como enviar dinheiro "
+#~ "diretamente.\n"
+#~ "Use a seguinte informação para fazer doação:\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "If you have an account in Czech Republic, you can use local (and cheaper) "
+#~ "wire\n"
+#~ "transfer to account 2300081892 / 2010.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Se você possui conta bancária na República Checa, pode usar uma "
+#~ "transferência local\n"
+#~ "para a conta 2300081892 / 2010.\n"
+
+#~ msgid "Other Options"
+#~ msgstr "Outras Opções"
+
+#, fuzzy
+#~| msgid ""
+#~| "\n"
+#~| "You can also give some presents to developers, currently here is <a\n"
+#~| "href=\"http://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">Amazon "
+#~| "wishlist for\n"
+#~| "Michal Čihař</a>.\n"
+#~ msgid ""
+#~ "\n"
+#~ "You can also give some presents to developers, currently here is <a\n"
+#~ "href=\"https://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">Amazon "
+#~ "wishlist for\n"
+#~ "Michal Čihař</a>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Também pode presentear os desenvolvedores, atualmente na amazom <a\n"
+#~ "href=\"http://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">Lista "
+#~ "Presentes para\n"
+#~ "Michal Čihař</a>.\n"
 
 #~ msgid "Wammu and Gammu Search"
 #~ msgstr "Pesquisa Wammu e Gammu"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 15:00+0200\n"
+"POT-Creation-Date: 2016-09-06 09:35+0200\n"
 "PO-Revision-Date: 2015-04-15 22:04+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
@@ -1400,64 +1400,11 @@ msgstr ""
 "peer network</a> and send me Bitcoins to "
 "<code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>."
 
-#: html/donate.html:66
-msgid "Wire Transfer"
-msgstr "Wire Transfer"
-
-#: html/donate.html:69
-msgid ""
-"\n"
-"If you want, you can use wire transfer as well to send me money. Use "
-"following\n"
-"information to make the payment:\n"
-msgstr ""
-"\n"
-"If you want, you can use wire transfer as well to send me money. Use "
-"following\n"
-"information to make the payment:\n"
-
-#: html/donate.html:77
-msgid ""
-"\n"
-"If you have an account in Czech Republic, you can use local (and cheaper) "
-"wire\n"
-"transfer to account 2300081892 / 2010.\n"
-msgstr ""
-"\n"
-"If you have an account in Czech Republic, you can use local (and cheaper) "
-"wire\n"
-"transfer to account 2300081892 / 2010.\n"
-
-#: html/donate.html:83
-msgid "Other Options"
-msgstr "Other Options"
-
-#: html/donate.html:85
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "You can also give some presents to developers, currently here is <a\n"
-#| "href=\"http://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">Amazon "
-#| "wishlist for\n"
-#| "Michal Čihař</a>.\n"
-msgid ""
-"\n"
-"You can also give some presents to developers, currently here is <a\n"
-"href=\"https://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">Amazon wishlist "
-"for\n"
-"Michal Čihař</a>.\n"
-msgstr ""
-"\n"
-"You can also give some presents to developers, currently here is <a\n"
-"href=\"http://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">Amazon wishlist "
-"for\n"
-"Michal Čihař</a>.\n"
-
-#: html/donate.html:92 html/phonedb/index.html:79
+#: html/donate.html:66 html/phonedb/index.html:79
 msgid "Supporters"
 msgstr "Supporters"
 
-#: html/donate.html:94
+#: html/donate.html:68
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
@@ -3001,15 +2948,24 @@ msgid "Obtaining Debugging Log"
 msgstr "Obtaining Debugging Log"
 
 #: html/support/bugs.html:58
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "Debugging log contains transcription of communication between Gammu and "
+#| "your\n"
+#| "phone. As such it might contain your private data. If it is the case or "
+#| "you\n"
+#| "are not sure, you should mark the bug private, so that only developers "
+#| "are\n"
+#| "allowed to see the data in it, but it is not publicly accessible as other "
+#| "bug\n"
+#| "reports.\n"
 msgid ""
 "\n"
 "Debugging log contains transcription of communication between Gammu and "
 "your\n"
-"phone. As such it might contain your private data. If it is the case or you\n"
-"are not sure, you should mark the bug private, so that only developers are\n"
-"allowed to see the data in it, but it is not publicly accessible as other "
-"bug\n"
-"reports.\n"
+"phone. As such it might contain your private data. Please make sure you \n"
+"do not include such data in the report.\n"
 msgstr ""
 "\n"
 "Debugging log contains transcription of communication between Gammu and "
@@ -3020,7 +2976,7 @@ msgstr ""
 "bug\n"
 "reports.\n"
 
-#: html/support/bugs.html:68
+#: html/support/bugs.html:66
 msgid ""
 "\n"
 "To make Gammu generate debug log, you need to tell it to do so. It is "
@@ -3034,7 +2990,7 @@ msgstr ""
 "either by command line (<code>gammu --debug textalldate --debug-file\n"
 "/tmp/gammu.log identify</code>) or using configuration file:\n"
 
-#: html/support/bugs.html:84
+#: html/support/bugs.html:82
 msgid ""
 "\n"
 "Wammu automatically creates debugging log in temporary directory\n"
@@ -3052,7 +3008,7 @@ msgstr ""
 "running\n"
 "Wammu from Help menu.\n"
 
-#: html/support/bugs.html:94
+#: html/support/bugs.html:92
 msgid ""
 "\n"
 "Gammu SMSD logging is configured in more levels, to include all messages, "
@@ -3064,11 +3020,11 @@ msgstr ""
 "set\n"
 "<code>debuglevel</code> to 255:\n"
 
-#: html/support/bugs.html:111
+#: html/support/bugs.html:109
 msgid "Troubleshooting Windows Service"
 msgstr "Troubleshooting Windows Service"
 
-#: html/support/bugs.html:114
+#: html/support/bugs.html:112
 msgid ""
 "\n"
 "If Gammu fails to start as a Windows service (you will usually get \"Error\n"
@@ -3094,7 +3050,7 @@ msgstr ""
 "absolute\n"
 "(eg. path to configuration file).\n"
 
-#: html/support/bugs.html:125
+#: html/support/bugs.html:123
 msgid ""
 "\n"
 "For example the command line can look like:\n"
@@ -3102,7 +3058,7 @@ msgstr ""
 "\n"
 "For example the command line can look like:\n"
 
-#: html/support/bugs.html:135
+#: html/support/bugs.html:133
 msgid ""
 "\n"
 "You now should be able to get errors from SMSD even if it fails to start as "
@@ -4006,6 +3962,54 @@ msgstr "Gammu and Wammu News Feed (RSS)"
 #: wammu/context_processors.py:55
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu and Wammu News Feed (Atom)"
+
+#~ msgid "Wire Transfer"
+#~ msgstr "Wire Transfer"
+
+#~ msgid ""
+#~ "\n"
+#~ "If you want, you can use wire transfer as well to send me money. Use "
+#~ "following\n"
+#~ "information to make the payment:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "If you want, you can use wire transfer as well to send me money. Use "
+#~ "following\n"
+#~ "information to make the payment:\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "If you have an account in Czech Republic, you can use local (and cheaper) "
+#~ "wire\n"
+#~ "transfer to account 2300081892 / 2010.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "If you have an account in Czech Republic, you can use local (and cheaper) "
+#~ "wire\n"
+#~ "transfer to account 2300081892 / 2010.\n"
+
+#~ msgid "Other Options"
+#~ msgstr "Other Options"
+
+#, fuzzy
+#~| msgid ""
+#~| "\n"
+#~| "You can also give some presents to developers, currently here is <a\n"
+#~| "href=\"http://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">Amazon "
+#~| "wishlist for\n"
+#~| "Michal Čihař</a>.\n"
+#~ msgid ""
+#~ "\n"
+#~ "You can also give some presents to developers, currently here is <a\n"
+#~ "href=\"https://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">Amazon "
+#~ "wishlist for\n"
+#~ "Michal Čihař</a>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "You can also give some presents to developers, currently here is <a\n"
+#~ "href=\"http://www.amazon.co.uk/gp/registry/3GVRYG2VNOZN1\">Amazon "
+#~ "wishlist for\n"
+#~ "Michal Čihař</a>.\n"
 
 #~ msgid "Wammu and Gammu Search"
 #~ msgstr "Wammu and Gammu Search"
