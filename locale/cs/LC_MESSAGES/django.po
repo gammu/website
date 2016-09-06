@@ -7,18 +7,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2016-09-06 09:35+0200\n"
-"PO-Revision-Date: 2016-06-22 15:38+0000\n"
+"PO-Revision-Date: 2016-09-06 08:20+0000\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/"
-">\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/>"
+"\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.7-dev\n"
+"X-Generator: Weblate 2.8\n"
 
 #: downloads/models.py:30
 msgid "Source"
@@ -355,7 +355,6 @@ msgid "Coding for Wammu and Gammu"
 msgstr "Programování Wammu a Gammu"
 
 #: html/contribute/code.html:11
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "Gammu is written in C and Wammu in <a\n"
@@ -381,11 +380,11 @@ msgid ""
 msgstr ""
 "\n"
 "Gammu je napsáno v C a Wammu v <a\n"
-"href=\"http://www.python.org/\">Pythonu</a>, takže pro programování budete "
+"href=\"https://www.python.org/\">Pythonu</a>, takže pro programování budete "
 "potřebovat znalost alespoň jednoho\n"
 "z těchto jazyků. Pro porozumění kódu se vám\n"
-"oravděpodobně bude hodit <a href=\"/docs/devel/\">vývojářská dokumentace</"
-"a>. Pokud chcete vědět, co se v budoucnu stane v Gammu a Wammu, \n"
+"oravděpodobně bude hodit <a href=\"/docs/devel/\">vývojářská dokumentace</a>"
+". Pokud chcete vědět, co se v budoucnu stane v Gammu a Wammu, \n"
 "podívejte se na <a href=\"/docs/roadmap/\">plán vývoje</a>.\n"
 
 #: html/contribute/code.html:22
@@ -393,7 +392,6 @@ msgid "Version Control System"
 msgstr "Verzovací systém"
 
 #: html/contribute/code.html:24
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "We currently use <a href=\"http://git-scm.com/\">Git</a> as a version "
@@ -408,13 +406,12 @@ msgid ""
 "submit us patches or merge request for the changes.\n"
 msgstr ""
 "\n"
-"V současné době používáme <a href=\"http://git-scm.com/\">Git</a> pro správu "
-"revizí.\n"
+"V současné době používáme <a href=\"https://git-scm.com/\">Git</a> pro "
+"správu revizí.\n"
 "Umožní vám vytvořit si vlastní vývojovou větev a pak nám\n"
 "odeslat patche nebo žádost o začlenění s vašimi změnami.\n"
 
 #: html/contribute/code.html:32
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "The Git repositories are being hosted on <a\n"
@@ -435,8 +432,8 @@ msgid ""
 msgstr ""
 "\n"
 "Repozitáře Git jsou hostovány na serveru <a\n"
-"href=\"http://github.com/\">Github</a> v projektu <a href=\"http://github."
-"com/gammu/\">Gammu</a>.\n"
+"href=\"https://github.com/\">Github</a> v projektu <a href=\""
+"https://github.com/gammu/\">Gammu</a>.\n"
 "Na jejich stránkách si můžete prohlížet kód nebo si zklonujte repozitář a "
 "můžete s nimi pracovat \n"
 "na vašem disku. Pro klonování kódu Wammu o Gammu použijte následující "
@@ -455,7 +452,6 @@ msgstr ""
 "<code>https://github.com/</code>.\n"
 
 #: html/contribute/code.html:64
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "Instructions for building and installing are included in file\n"
@@ -472,7 +468,7 @@ msgstr ""
 "\n"
 "Návod pro kompilaci a instalaci je obsažen v souboru\n"
 "<code>INSTALL.cs</code> jak v Gammu tak i v Wammu. Pro kompilaci Gammu\n"
-"budete potřebovat <a href=\"http://www.cmake.org/\">CMake</a>.\n"
+"budete potřebovat <a href=\"https://www.cmake.org/\">CMake</a>.\n"
 
 #: html/contribute/code.html:71
 msgid "Code Snapshots"
@@ -1116,7 +1112,6 @@ msgid "Donate small amount in weekly intervals."
 msgstr "Přispějte malou částkou každý týden."
 
 #: html/donate.html:43
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "The donation itself is being processed by <a\n"
@@ -1134,7 +1129,7 @@ msgid ""
 msgstr ""
 "\n"
 "Příspěvek je posílán přes <a\n"
-"href=\"http://www.paypal.com/\">PayPal</a>, kde můžete zaplatit buďto "
+"href=\"https://www.paypal.com/\">PayPal</a>, kde můžete zaplatit buďto "
 "jejich\n"
 "účtem nebo platební kartou. Příspěvek můžete také rovnou\n"
 "poslat na <code>michal@cihar.com</code>.\n"
@@ -1144,7 +1139,7 @@ msgid "Bitcoin"
 msgstr "Bitcoin"
 
 #: html/donate.html:63
-#, fuzzy, python-format
+#, python-format
 #| msgid ""
 #| "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
 #| "peer network</a> and send me Bitcoins to <code>%(address)s</code>."
@@ -1152,7 +1147,7 @@ msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to <code>%(address)s</code>."
 msgstr ""
-"Můžete také použít <a href=\"http://www.bitcoin.org/cs\">peer-to-peer síť "
+"Můžete také použít <a href=\"https://www.bitcoin.org/cs\">peer-to-peer síť "
 "Bitcoin</a> a poslat mi Bitcoiny na <code>%(address)s</code>."
 
 #: html/donate.html:66 html/phonedb/index.html:79
@@ -1744,7 +1739,6 @@ msgid "Wammu and Gammu License"
 msgstr "Licence Gammu a Wammu"
 
 #: html/license.html:10
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "Gammu, python-gammu and Wammu are released under <a\n"
@@ -1757,8 +1751,8 @@ msgid ""
 "Public License, version 2</a>.\n"
 msgstr ""
 "\n"
-"Gammu, python-gammu a Wammu jsou vydány pod <a\n"
-"href=\"http://creativecommons.org/licenses/GPL/2.0/deed.cs\">GNU General\n"
+"Gammu, python-gammu a Wammu jsou vydány pod <a href=\""
+"https://www.gnu.org/licenses/gpl-2.0.html\">GNU General\n"
 "Public License, verze 2</a>.\n"
 
 #: html/license.html:18
@@ -1808,7 +1802,6 @@ msgid "Website License"
 msgstr "Licence těchto stránek"
 
 #: html/license.html:47
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "Website code is released under <a\n"
@@ -1821,8 +1814,8 @@ msgid ""
 "Public License, version 2 or later</a>.\n"
 msgstr ""
 "\n"
-"Kód těchto stránek je licencován pod <a\n"
-"href=\"http://creativecommons.org/licenses/GPL/2.0/\">GNU General\n"
+"Kód těchto stránek je licencován pod <a href=\""
+"https://www.gnu.org/licenses/gpl-2.0.html\">GNU General\n"
 "Public License, verze 2 nebo novější</a>.\n"
 
 #: html/license.html:55
@@ -1844,7 +1837,6 @@ msgid "Website Content"
 msgstr "Licence obsahu stránek"
 
 #: html/license.html:83
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "Website content is released under \n"
@@ -1860,7 +1852,7 @@ msgid ""
 msgstr ""
 "\n"
 "Obsah těchto stránek je vydán pod licencí \n"
-"<a href=\"http://creativecommons.org/licenses/by-sa/3.0/deed.cs\">Creative "
+"<a href=\"https://creativecommons.org/licenses/by-sa/3.0/deed.cs\">Creative "
 "Commons\n"
 "Uveďte autora-Zachovejte licenci 3.0 Unported</a>.\n"
 
@@ -2255,7 +2247,6 @@ msgid "Python bindings for Gammu"
 msgstr "Rozhraní mezi Pythonem a Gammu"
 
 #: html/python-gammu.html:16
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "Gammu also includes Python bindings which allow you to use (most) of <a\n"
@@ -2270,7 +2261,7 @@ msgstr ""
 "\n"
 "Gammu také obsahyje rozhraní pro Python, které vám umožní použít (většinu)\n"
 "funkcí <a href=\"/libgammu/\">Gammu</a> z programovacího jazyka\n"
-"<a href=\"http://py.cz/\">Python</a>.\n"
+"<a href=\"http://python.cz/\">Python</a>.\n"
 
 #: html/python-gammu.html:27
 msgid ""
@@ -2330,7 +2321,6 @@ msgid "Support libraries required to be installed on older phones:"
 msgstr "Dodatečné knihovny, které mohou být potřeba pro starší telefony:"
 
 #: html/s60.html:25
-#, fuzzy
 #| msgid ""
 #| "See <a href=\"http://wammu.eu/docs/manual/protocol/s60.html"
 #| "\">documentation</a> for more information."
@@ -2338,8 +2328,8 @@ msgid ""
 "See <a href=\"https://wammu.eu/docs/manual/protocol/s60.html"
 "\">documentation</a> for more information."
 msgstr ""
-"Více informací naleznete v <a href=\"http://wammu.eu/docs/manual/protocol/"
-"s60.html\">dokumentaci</a>."
+"Více informací naleznete v <a href=\""
+"https://wammu.eu/docs/manual/protocol/s60.html\">dokumentaci</a>."
 
 #: html/screenshots/contrib_index.html:4 html/screenshots/contrib_index.html:6
 msgid "Third Party Screenshots"
