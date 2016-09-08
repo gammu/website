@@ -77,11 +77,7 @@ def program(request, program):
     }))
 
 def download(request):
-    downloads = get_current_downloads('gammu', 'source')
-    downloads += get_current_downloads('wammu', 'source')
-
     return render_to_response('downloads/index.html', RequestContext(request, {
-        'downloads': downloads,
         'platforms': PLATFORM_CHOICES[:1],
     }))
 
