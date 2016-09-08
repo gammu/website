@@ -27,7 +27,7 @@
   </maintainer>
 <repository>
     <GitRepository>
-      <location rdf:resource="git://github.com/gammu/wammu.git" />
+      <location rdf:resource="https://github.com/gammu/wammu.git" />
       <browse rdf:resource="https://github.com/gammu/wammu" />
     </GitRepository>
   </repository>
