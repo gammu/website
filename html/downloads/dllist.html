@@ -1,8 +1,15 @@
 {% load getlink %}
+
+{% regroup downloads by platform as download_list %}
+
+{% for download in download_list %}
+{{ download.grouper }}
+
 <ul>
-{% for item in downloads %}
+{% for item in download.list %}
 <li><a href="{% getlink item %}" class="piwik_download">{{ item.get_filename }}</a> ({{ item.get_size }})
     <div class="checksums">SHA1: <code>{{ item.sha1 }}</code></div></li>
 {% endfor %}
 </ul>
 
+{% endfor %}
