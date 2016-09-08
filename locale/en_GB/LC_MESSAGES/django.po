@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-08 13:28+0200\n"
+"POT-Creation-Date: 2016-09-08 16:17+0200\n"
 "PO-Revision-Date: 2015-04-15 22:04+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
@@ -218,7 +218,7 @@ msgstr "Commercial support"
 #: html/gammu-family.html:15 html/gammu-family.html:29
 #: html/gammu-family.html:43 html/gammu-family.html:60
 #: html/gammu-family.html:74 html/gammu.html:53 html/libgammu.html:37
-#: html/python-gammu.html:25 html/smsd.html:55 html/wammu.html:39
+#: html/python-gammu.html:25 html/smsd.html:56 html/wammu.html:39
 msgid "Download"
 msgstr "Download"
 
@@ -240,7 +240,7 @@ msgstr "Download Gammu"
 msgid "Download Wammu"
 msgstr "Download Wammu"
 
-#: html/base.html:94 html/index.html:25
+#: html/base.html:94 html/index.html:26
 msgid "News"
 msgstr "News"
 
@@ -257,7 +257,7 @@ msgid "All screenshots"
 msgstr "All screenshots"
 
 #: html/base.html:114 html/gammu.html:61 html/libgammu.html:46
-#: html/python-gammu.html:64 html/smsd.html:65 html/wammu.html:49
+#: html/python-gammu.html:64 html/smsd.html:66 html/wammu.html:49
 msgid "Documentation"
 msgstr "Documentation"
 
@@ -1886,28 +1886,28 @@ msgstr ""
 "Check also <a href=\"/docs/manual/faq/\">Frequently Asked Questions</a>.\n"
 
 #: html/gammu.html:77 html/libgammu.html:55 html/python-gammu.html:80
-#: html/wammu.html:63
+#: html/smsd.html:81 html/wammu.html:63
 msgid "Source code and issue tracker"
 msgstr ""
 
 #: html/gammu.html:79 html/libgammu.html:57 html/python-gammu.html:82
-#: html/wammu.html:65
+#: html/smsd.html:83 html/wammu.html:65
 msgid "Both source code and issue tracker are hosted on GitHub:"
 msgstr ""
 
 #: html/gammu.html:82 html/libgammu.html:60 html/python-gammu.html:85
-#: html/wammu.html:68
+#: html/smsd.html:86 html/wammu.html:68
 msgid "Code repository"
 msgstr ""
 
 #: html/gammu.html:83 html/libgammu.html:61 html/python-gammu.html:86
-#: html/wammu.html:69
+#: html/smsd.html:87 html/wammu.html:69
 #, fuzzy
 msgid "Issue tracker"
 msgstr "Bug tracker"
 
 #: html/gammu.html:86 html/libgammu.html:64 html/python-gammu.html:89
-#: html/smsd.html:80 html/wammu.html:72
+#: html/smsd.html:90 html/wammu.html:72
 msgid "More information"
 msgstr "More information"
 
@@ -1916,12 +1916,26 @@ msgid "Wammu and Gammu"
 msgstr "Wammu and Gammu"
 
 #: html/index.html:11
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "<a href=\"/wammu/\">Wammu</a> is a program to manage data in your cell "
+#| "phone such as contacts,\n"
+#| "calendar or messages. It is built on <a href=\"/libgammu/\">Gammu "
+#| "library</a>, which\n"
+#| "provides abstraction layer to work with different cell phones from "
+#| "different\n"
+#| "vendors (including Nokia, Sony-Ericsson, Motorola, Samsung, Siemens, "
+#| "Huawei\n"
+#| "and others).\n"
 msgid ""
 "\n"
 "<a href=\"/wammu/\">Wammu</a> is a program to manage data in your cell phone "
 "such as contacts,\n"
-"calendar or messages. It is built on <a href=\"/libgammu/\">Gammu library</"
-"a>, which\n"
+"calendar or messages. <a href=\"/smsd/\">Gammu SMSD</a> is a service to mass "
+"send and receive SMSD messages.\n"
+"Both these are built on top of <a href=\"/libgammu/\">Gammu library</a>, "
+"which\n"
 "provides abstraction layer to work with different cell phones from "
 "different\n"
 "vendors (including Nokia, Sony-Ericsson, Motorola, Samsung, Siemens, Huawei\n"
@@ -1937,15 +1951,15 @@ msgstr ""
 "vendors (including Nokia, Sony-Ericsson, Motorola, Samsung, Siemens, Huawei\n"
 "and others).\n"
 
-#: html/index.html:32
+#: html/index.html:33
 msgid "Sponsors"
 msgstr "Sponsors"
 
-#: html/index.html:34
+#: html/index.html:35
 msgid "Support us on BountySource to get listed here!"
 msgstr ""
 
-#: html/index.html:36
+#: html/index.html:37
 #, fuzzy
 #| msgid "Community supporter"
 msgid "Current supporters:"
@@ -2736,13 +2750,12 @@ msgstr ""
 msgid ""
 "\n"
 "You can currently store received messages in files or in various databases.\n"
-"<a href=\"https://www.mysql.com/\">MySQL</a> and <a\n"
-"href=\"https://www.postgresql.org/\">PostgreSQL</a> are supported natively "
+"<a href=\"/docs/manual/smsd/mysql.html\">MySQL</a> and <a\n"
+"href=\"/docs/manual/smsd/pgsql.html\">PostgreSQL</a> are supported natively "
 "and\n"
-"wide range of others (including <a href=\"https://www.sqlite.org/\">SQLite</"
-"a>)\n"
-"through <a href=\"http://libdbi.sourceforge.net/\">libdbi</a> (libdbi "
-"backend is\n"
+"wide range of others (including SQLite, Microsoft Access or Oracle)\n"
+"through <a href=\"/docs/manual/smsd/odbc.html\">ODBC</a> or\n"
+"<a href=\"/docs/manual/smsd/dbi.html\">libdbi</a> (libdbi backend is\n"
 "currently not available in Windows builds).\n"
 msgstr ""
 "\n"
@@ -2756,12 +2769,21 @@ msgstr ""
 "backend is\n"
 "currently not available in Windows builds).\n"
 
-#: html/smsd.html:36
+#: html/smsd.html:37
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "The package includes also tool <code>gammu-smsd-inject</code> which will "
+#| "help\n"
+#| "you creating long text messages and <code>gammu-smsd-monitor</code> "
+#| "which\n"
+#| "allows you to monitor current status of SMS Daemon or phone.\n"
 msgid ""
 "\n"
-"The package includes also tool <code>gammu-smsd-inject</code> which will "
-"help\n"
-"you creating long text messages and <code>gammu-smsd-monitor</code> which\n"
+"The package includes also tool <a href=\"/docs/manual/smsd/inject.html"
+"\"><code>gammu-smsd-inject</code></a> which will help\n"
+"you creating long text messages and <a href=\"/docs/manual/smsd/monitor.html"
+"\"><code>gammu-smsd-monitor</code></a> which\n"
 "allows you to monitor current status of SMS Daemon or phone.\n"
 msgstr ""
 "\n"
@@ -2770,7 +2792,7 @@ msgstr ""
 "you creating long text messages and <code>gammu-smsd-monitor</code> which\n"
 "allows you to monitor current status of SMS Daemon or phone.\n"
 
-#: html/smsd.html:44
+#: html/smsd.html:45
 #, fuzzy
 #| msgid ""
 #| "\n"
@@ -2800,7 +2822,7 @@ msgstr ""
 "it\n"
 "looks like.\n"
 
-#: html/smsd.html:57
+#: html/smsd.html:58
 msgid ""
 "\n"
 "SMS Daemon is distributed as part of <a href=\"/gammu/\">Gammu</a> so to "
@@ -2818,7 +2840,7 @@ msgstr ""
 "package, the daemon might be included in separate binary package in your\n"
 "distribution, try looking for something like <code>gammu-smsd</code>.\n"
 
-#: html/smsd.html:67
+#: html/smsd.html:68
 msgid ""
 "\n"
 "There is <a href=\"/docs/manual/smsd/\">SMS Daemon section in Gammu Manual</"
@@ -2834,7 +2856,7 @@ msgstr ""
 "in <a href=\"/docs/manual/\">The Gammu Manual</a> which is distributed with "
 "the program.\n"
 
-#: html/smsd.html:75
+#: html/smsd.html:76
 msgid ""
 "\n"
 "Check also <a href=\"/docs/manual/faq/smsd.html\">Frequently Asked "
