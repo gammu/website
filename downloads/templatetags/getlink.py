@@ -20,7 +20,7 @@ def platform_info(program, platform):
         if platform == c[0]:
             platform_name = c[1]
 
-    ret = ['<h4>{0}</h4>'.format(platform_name)]
+    ret = ['<h3>{0}</h3>'.format(platform_name)]
     ret.append(
         render_to_string(
             'downloads/programs/{0}-{1}.html'.format(
