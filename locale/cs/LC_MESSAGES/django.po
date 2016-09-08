@@ -7,12 +7,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
-"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
-"POT-Creation-Date: 2016-09-06 09:35+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-08 13:24+0200\n"
 "PO-Revision-Date: 2016-09-06 08:20+0000\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/>"
-"\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/"
+">\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,19 +21,23 @@ msgstr ""
 "X-Generator: Weblate 2.8\n"
 
 #: downloads/models.py:30
-msgid "Source"
+#, fuzzy
+#| msgid "Source"
+msgid "Source code"
 msgstr "Zdrojový kód"
 
 #: downloads/models.py:31
-msgid "Windows binary"
+#, fuzzy
+#| msgid "Windows binary"
+msgid "Windows binaries"
 msgstr "Program pro Windows"
 
-#: downloads/models.py:171
+#: downloads/models.py:167
 #, python-format
 msgid "%(program)s stable release %(version)s"
 msgstr "%(program)s, stabilní verze %(version)s"
 
-#: downloads/models.py:176
+#: downloads/models.py:172
 #, python-format
 msgid "%(program)s testing release %(version)s"
 msgstr "%(program)s, testovací verze %(version)s"
@@ -195,12 +199,11 @@ msgstr "Živá"
 msgid "Commercial support"
 msgstr "Komerční podpora"
 
-#: html/base.html:84 html/downloads/list.html:4 html/downloads/program.html:4
-#: html/downloads/release.html:4 html/gammu-family.html:15
-#: html/gammu-family.html:29 html/gammu-family.html:43
-#: html/gammu-family.html:60 html/gammu-family.html:74 html/gammu.html:53
-#: html/libgammu.html:37 html/python-gammu.html:25 html/smsd.html:55
-#: html/wammu.html:39
+#: html/base.html:84 html/downloads/detail.html:4 html/downloads/release.html:4
+#: html/gammu-family.html:15 html/gammu-family.html:29
+#: html/gammu-family.html:43 html/gammu-family.html:60
+#: html/gammu-family.html:74 html/gammu.html:53 html/libgammu.html:37
+#: html/python-gammu.html:25 html/smsd.html:55 html/wammu.html:39
 msgid "Download"
 msgstr "Stáhnout"
 
@@ -355,18 +358,6 @@ msgid "Coding for Wammu and Gammu"
 msgstr "Programování Wammu a Gammu"
 
 #: html/contribute/code.html:11
-#| msgid ""
-#| "\n"
-#| "Gammu is written in C and Wammu in <a\n"
-#| "href=\"http://www.python.org/\">Python</a>, so you will need knowledge of "
-#| "one of\n"
-#| "these languages to contribute code directly to the project. You will "
-#| "probably\n"
-#| "use some parts of <a href=\"/docs/devel/\">developer documentation</a> "
-#| "to\n"
-#| "understand the code. If you want to know what is planned to happen in "
-#| "Gammu\n"
-#| "and Wammu, please check the <a href=\"/docs/roadmap/\">roadmap</a>.\n"
 msgid ""
 "\n"
 "Gammu is written in C and Wammu in <a\n"
@@ -383,8 +374,8 @@ msgstr ""
 "href=\"https://www.python.org/\">Pythonu</a>, takže pro programování budete "
 "potřebovat znalost alespoň jednoho\n"
 "z těchto jazyků. Pro porozumění kódu se vám\n"
-"oravděpodobně bude hodit <a href=\"/docs/devel/\">vývojářská dokumentace</a>"
-". Pokud chcete vědět, co se v budoucnu stane v Gammu a Wammu, \n"
+"oravděpodobně bude hodit <a href=\"/docs/devel/\">vývojářská dokumentace</"
+"a>. Pokud chcete vědět, co se v budoucnu stane v Gammu a Wammu, \n"
 "podívejte se na <a href=\"/docs/roadmap/\">plán vývoje</a>.\n"
 
 #: html/contribute/code.html:22
@@ -392,12 +383,6 @@ msgid "Version Control System"
 msgstr "Verzovací systém"
 
 #: html/contribute/code.html:24
-#| msgid ""
-#| "\n"
-#| "We currently use <a href=\"http://git-scm.com/\">Git</a> as a version "
-#| "control\n"
-#| "system. It allows you create own local branch, develop the code and then\n"
-#| "submit us patches or merge request for the changes.\n"
 msgid ""
 "\n"
 "We currently use <a href=\"https://git-scm.com/\">Git</a> as a version "
@@ -412,15 +397,6 @@ msgstr ""
 "odeslat patche nebo žádost o začlenění s vašimi změnami.\n"
 
 #: html/contribute/code.html:32
-#| msgid ""
-#| "\n"
-#| "The Git repositories are being hosted on <a\n"
-#| "href=\"http://github.com/\">Github</a> service, in the\n"
-#| "<a href=\"http://github.com/gammu/\">Gammu</a> project. You can browse "
-#| "the code\n"
-#| "on their site or just clone the repository and investigate it locally. "
-#| "To\n"
-#| "clone Wammu and Gammu sources, use following commands:\n"
 msgid ""
 "\n"
 "The Git repositories are being hosted on <a\n"
@@ -432,32 +408,14 @@ msgid ""
 msgstr ""
 "\n"
 "Repozitáře Git jsou hostovány na serveru <a\n"
-"href=\"https://github.com/\">Github</a> v projektu <a href=\""
-"https://github.com/gammu/\">Gammu</a>.\n"
+"href=\"https://github.com/\">Github</a> v projektu <a href=\"https://github."
+"com/gammu/\">Gammu</a>.\n"
 "Na jejich stránkách si můžete prohlížet kód nebo si zklonujte repozitář a "
 "můžete s nimi pracovat \n"
 "na vašem disku. Pro klonování kódu Wammu o Gammu použijte následující "
 "příkazy:\n"
 
 #: html/contribute/code.html:56
-msgid ""
-"\n"
-"Alternatively (if your firewall blocks git protocol), you can access\n"
-"repositories over https, just replace <code>git://github.com/</code> with\n"
-"<code>https://github.com/</code>.\n"
-msgstr ""
-"\n"
-"Volitelně (pokud váš firewall blokuje protokol git) můžete k repozitářím "
-"přistupovat přes https, stačí nahradit <code>git://github.com/</code> za\n"
-"<code>https://github.com/</code>.\n"
-
-#: html/contribute/code.html:64
-#| msgid ""
-#| "\n"
-#| "Instructions for building and installing are included in file\n"
-#| "<code>INSTALL</code> in both Gammu and Wammu. For compiling Gammu you "
-#| "need to\n"
-#| "have <a href=\"http://www.cmake.org/\">CMake</a>.\n"
 msgid ""
 "\n"
 "Instructions for building and installing are included in file\n"
@@ -470,22 +428,22 @@ msgstr ""
 "<code>INSTALL.cs</code> jak v Gammu tak i v Wammu. Pro kompilaci Gammu\n"
 "budete potřebovat <a href=\"https://www.cmake.org/\">CMake</a>.\n"
 
-#: html/contribute/code.html:71
+#: html/contribute/code.html:63
 msgid "Code Snapshots"
 msgstr "Snapshoty zdrojového kódu"
 
-#: html/contribute/code.html:73
+#: html/contribute/code.html:65
 msgid ""
 "\n"
 "If you for some reason do not want to use version control system, you can\n"
 "always download fresh snapshots of current code from GitHub.\n"
 msgstr ""
 
-#: html/contribute/code.html:80
+#: html/contribute/code.html:72
 msgid "Patch Submission"
 msgstr "Posílání patchů"
 
-#: html/contribute/code.html:82
+#: html/contribute/code.html:74
 msgid ""
 "\n"
 "We really do not care much about the way you deliver us patches. However "
@@ -497,11 +455,11 @@ msgid ""
 "href=\"/support/bugs/\">bug tracker</a>.\n"
 msgstr ""
 
-#: html/contribute/code.html:93
+#: html/contribute/code.html:85
 msgid "Testing"
 msgstr "Testování"
 
-#: html/contribute/code.html:95
+#: html/contribute/code.html:87
 msgid ""
 "Gammu comes with quite comprehensive testsuite, which is being run "
 "continuosly using <a href=\"https://travis-ci.org/gammu/gammu\">Travis</a>."
@@ -1112,13 +1070,6 @@ msgid "Donate small amount in weekly intervals."
 msgstr "Přispějte malou částkou každý týden."
 
 #: html/donate.html:43
-#| msgid ""
-#| "\n"
-#| "The donation itself is being processed by <a\n"
-#| "href=\"http://www.paypal.com/\">PayPal</a> where you can pay either by "
-#| "their\n"
-#| "account or by using any major credit card. You can also directly send a\n"
-#| "donation to <code>michal@cihar.com</code>.\n"
 msgid ""
 "\n"
 "The donation itself is being processed by <a\n"
@@ -1140,9 +1091,6 @@ msgstr "Bitcoin"
 
 #: html/donate.html:63
 #, python-format
-#| msgid ""
-#| "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
-#| "peer network</a> and send me Bitcoins to <code>%(address)s</code>."
 msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to <code>%(address)s</code>."
@@ -1161,6 +1109,49 @@ msgid ""
 msgstr ""
 "Seznam společností nebo jednotlivců, kteří pravidelně přispívají na provoz "
 "těchto stránek a vývoj Gammu."
+
+#: html/downloads/detail.html:8
+#, python-format
+msgid ""
+"\n"
+"Download %(program)s\n"
+msgstr ""
+"\n"
+"Stáhnout %(program)s\n"
+
+#: html/downloads/detail.html:27
+#, fuzzy
+#| msgid "Binary packages"
+msgid "Linux binary packages"
+msgstr "Balíčky pro distribuce"
+
+#: html/downloads/detail.html:31 html/downloads/platformlinks.html:5
+msgid "Debian packages"
+msgstr "Balíčky pro Debian"
+
+#: html/downloads/detail.html:34 html/downloads/platformlinks.html:8
+msgid "Ubuntu packages"
+msgstr "Balíčky pro Ubuntu"
+
+#: html/downloads/detail.html:37 html/downloads/platformlinks.html:11
+msgid "Ubuntu packages in PPA"
+msgstr "Balíčky pro Ubuntu v PPA"
+
+#: html/downloads/detail.html:41 html/downloads/platformlinks.html:15
+msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
+msgstr "RPM balíčky (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
+
+#: html/downloads/detail.html:45
+msgid "Development version"
+msgstr "Vývojové verze"
+
+#: html/downloads/detail.html:48
+msgid ""
+"Should you be interested in git access or git snapshots, you can find them "
+"on <a href=\"/contribute/code/\">development page</a>."
+msgstr ""
+"Pokud se zajímáte o přístup ke gitu nebo snapshoty z něj, naleznete je na <a "
+"href=\"/contribute/code/\">stránce věnované vývoji</a>."
 
 #: html/downloads/index.html:4
 msgid "Download Wammu and Gammu"
@@ -1206,48 +1197,11 @@ msgstr "PAD pro Wammu"
 msgid "PAD for Gammu"
 msgstr "PAD pro Gammu"
 
-#: html/downloads/list.html:8
-#, python-format
-msgid ""
-"\n"
-"Download %(program)s (%(platform)s)\n"
+#: html/downloads/platformlinks.html:3
+msgid "Download sources or Windows binaries"
 msgstr ""
-"\n"
-"Stáhnout %(program)s (%(platform)s)\n"
 
-#: html/downloads/list.html:29
-msgid "Binary packages"
-msgstr "Balíčky pro distribuce"
-
-#: html/downloads/list.html:33 html/downloads/platformlinks.html:7
-msgid "Debian packages"
-msgstr "Balíčky pro Debian"
-
-#: html/downloads/list.html:36 html/downloads/platformlinks.html:10
-msgid "Ubuntu packages"
-msgstr "Balíčky pro Ubuntu"
-
-#: html/downloads/list.html:39 html/downloads/platformlinks.html:13
-msgid "Ubuntu packages in PPA"
-msgstr "Balíčky pro Ubuntu v PPA"
-
-#: html/downloads/list.html:43 html/downloads/platformlinks.html:17
-msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
-msgstr "RPM balíčky (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
-
-#: html/downloads/list.html:47
-msgid "Development version"
-msgstr "Vývojové verze"
-
-#: html/downloads/list.html:50
-msgid ""
-"Should you be interested in git access or git snapshots, you can find them "
-"on <a href=\"/contribute/code/\">development page</a>."
-msgstr ""
-"Pokud se zajímáte o přístup ke gitu nebo snapshoty z něj, naleznete je na <a "
-"href=\"/contribute/code/\">stránce věnované vývoji</a>."
-
-#: html/downloads/platformlinks.html:19
+#: html/downloads/platformlinks.html:17
 msgid "Development git snaphots and git access"
 msgstr "Vývojové snapshoty z gitu a přístup do gitu"
 
@@ -1260,35 +1214,6 @@ msgid ""
 "way to get it is to install it directly from your distribution "
 "repositories.\n"
 msgstr ""
-
-#: html/downloads/program.html:8
-#, python-format
-msgid ""
-"\n"
-"Download %(program)s\n"
-msgstr ""
-"\n"
-"Stáhnout %(program)s\n"
-
-#: html/downloads/program.html:14
-#, python-format
-msgid ""
-"\n"
-"Thank you for interest in downloading <a href=\"/%(program_name)s/\">"
-"%(program)s</a>.\n"
-msgstr ""
-"\n"
-"Děkujeme vám za zájem o stažení <a href=\"/%(program_name)s/\">%(program)s</"
-"a>.\n"
-
-#: html/downloads/program.html:22
-msgid "Current Releases"
-msgstr "Aktuální vydání"
-
-#: html/downloads/program.html:34 html/sidebars/gammu.html:4
-#: html/sidebars/wammu.html:4
-msgid "Downloads"
-msgstr "Stáhnout"
 
 #: html/downloads/programs/gammu-source.html:3
 msgid ""
@@ -1377,10 +1302,6 @@ msgstr ""
 #: html/downloads/release.html:15
 msgid "Changes"
 msgstr "Změny"
-
-#: html/downloads/release.html:21
-msgid "Files"
-msgstr "Soubory"
 
 #: html/downloads/relinfo.html:4
 #, python-format
@@ -1739,11 +1660,6 @@ msgid "Wammu and Gammu License"
 msgstr "Licence Gammu a Wammu"
 
 #: html/license.html:10
-#| msgid ""
-#| "\n"
-#| "Gammu, python-gammu and Wammu are released under <a\n"
-#| "href=\"http://creativecommons.org/licenses/GPL/2.0/\">GNU General\n"
-#| "Public License, version 2</a>.\n"
 msgid ""
 "\n"
 "Gammu, python-gammu and Wammu are released under <a\n"
@@ -1751,8 +1667,8 @@ msgid ""
 "Public License, version 2</a>.\n"
 msgstr ""
 "\n"
-"Gammu, python-gammu a Wammu jsou vydány pod <a href=\""
-"https://www.gnu.org/licenses/gpl-2.0.html\">GNU General\n"
+"Gammu, python-gammu a Wammu jsou vydány pod <a href=\"https://www.gnu.org/"
+"licenses/gpl-2.0.html\">GNU General\n"
 "Public License, verze 2</a>.\n"
 
 #: html/license.html:18
@@ -1802,11 +1718,6 @@ msgid "Website License"
 msgstr "Licence těchto stránek"
 
 #: html/license.html:47
-#| msgid ""
-#| "\n"
-#| "Website code is released under <a\n"
-#| "href=\"http://creativecommons.org/licenses/GPL/2.0/\">GNU General\n"
-#| "Public License, version 2 or later</a>.\n"
 msgid ""
 "\n"
 "Website code is released under <a\n"
@@ -1814,8 +1725,8 @@ msgid ""
 "Public License, version 2 or later</a>.\n"
 msgstr ""
 "\n"
-"Kód těchto stránek je licencován pod <a href=\""
-"https://www.gnu.org/licenses/gpl-2.0.html\">GNU General\n"
+"Kód těchto stránek je licencován pod <a href=\"https://www.gnu.org/licenses/"
+"gpl-2.0.html\">GNU General\n"
 "Public License, verze 2 nebo novější</a>.\n"
 
 #: html/license.html:55
@@ -1837,12 +1748,6 @@ msgid "Website Content"
 msgstr "Licence obsahu stránek"
 
 #: html/license.html:83
-#| msgid ""
-#| "\n"
-#| "Website content is released under \n"
-#| "<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative "
-#| "Commons\n"
-#| "Attribution-Share Alike 3.0 Unported</a>.\n"
 msgid ""
 "\n"
 "Website content is released under \n"
@@ -2247,11 +2152,6 @@ msgid "Python bindings for Gammu"
 msgstr "Rozhraní mezi Pythonem a Gammu"
 
 #: html/python-gammu.html:16
-#| msgid ""
-#| "\n"
-#| "Gammu also includes Python bindings which allow you to use (most) of <a\n"
-#| "href=\"/libgammu/\">Gammu</a> functionality from <a\n"
-#| "href=\"http://python.org\">Python</a> language.\n"
 msgid ""
 "\n"
 "Gammu also includes Python bindings which allow you to use (most) of <a\n"
@@ -2321,15 +2221,12 @@ msgid "Support libraries required to be installed on older phones:"
 msgstr "Dodatečné knihovny, které mohou být potřeba pro starší telefony:"
 
 #: html/s60.html:25
-#| msgid ""
-#| "See <a href=\"http://wammu.eu/docs/manual/protocol/s60.html"
-#| "\">documentation</a> for more information."
 msgid ""
 "See <a href=\"https://wammu.eu/docs/manual/protocol/s60.html"
 "\">documentation</a> for more information."
 msgstr ""
-"Více informací naleznete v <a href=\""
-"https://wammu.eu/docs/manual/protocol/s60.html\">dokumentaci</a>."
+"Více informací naleznete v <a href=\"https://wammu.eu/docs/manual/protocol/"
+"s60.html\">dokumentaci</a>."
 
 #: html/screenshots/contrib_index.html:4 html/screenshots/contrib_index.html:6
 msgid "Third Party Screenshots"
@@ -2354,6 +2251,10 @@ msgstr "Poslední novinky"
 #: html/sidebars/common.html:4
 msgid "How to contribute"
 msgstr "Jak přispět"
+
+#: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
+msgid "Downloads"
+msgstr "Stáhnout"
 
 #: html/smsd.html:4
 msgid "Gammu SMS Daemon, the software for mass processing SMS messages."
@@ -3367,6 +3268,40 @@ msgstr "Novinky o Gammu a Wammu (RSS)"
 #: wammu/context_processors.py:55
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Novinky o Gammu a Wammu (Atom)"
+
+#~ msgid ""
+#~ "\n"
+#~ "Alternatively (if your firewall blocks git protocol), you can access\n"
+#~ "repositories over https, just replace <code>git://github.com/</code> "
+#~ "with\n"
+#~ "<code>https://github.com/</code>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Volitelně (pokud váš firewall blokuje protokol git) můžete k repozitářím "
+#~ "přistupovat přes https, stačí nahradit <code>git://github.com/</code> za\n"
+#~ "<code>https://github.com/</code>.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Download %(program)s (%(platform)s)\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Stáhnout %(program)s (%(platform)s)\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Thank you for interest in downloading <a href=\"/%(program_name)s/\">"
+#~ "%(program)s</a>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Děkujeme vám za zájem o stažení <a href=\"/%(program_name)s/\">"
+#~ "%(program)s</a>.\n"
+
+#~ msgid "Current Releases"
+#~ msgstr "Aktuální vydání"
+
+#~ msgid "Files"
+#~ msgstr "Soubory"
 
 #~ msgid "Wire Transfer"
 #~ msgstr "Převod peněz"

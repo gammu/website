@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-06 09:35+0200\n"
+"POT-Creation-Date: 2016-09-08 13:24+0200\n"
 "PO-Revision-Date: 2015-04-15 22:04+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
@@ -20,19 +20,23 @@ msgstr ""
 "X-Generator: Weblate 2.3-dev\n"
 
 #: downloads/models.py:30
-msgid "Source"
+#, fuzzy
+#| msgid "Source"
+msgid "Source code"
 msgstr "Source"
 
 #: downloads/models.py:31
-msgid "Windows binary"
+#, fuzzy
+#| msgid "Windows binary"
+msgid "Windows binaries"
 msgstr "Windows binary"
 
-#: downloads/models.py:171
+#: downloads/models.py:167
 #, python-format
 msgid "%(program)s stable release %(version)s"
 msgstr "%(program)s stable release %(version)s"
 
-#: downloads/models.py:176
+#: downloads/models.py:172
 #, python-format
 msgid "%(program)s testing release %(version)s"
 msgstr "%(program)s testing release %(version)s"
@@ -210,12 +214,11 @@ msgstr "Online"
 msgid "Commercial support"
 msgstr "Commercial support"
 
-#: html/base.html:84 html/downloads/list.html:4 html/downloads/program.html:4
-#: html/downloads/release.html:4 html/gammu-family.html:15
-#: html/gammu-family.html:29 html/gammu-family.html:43
-#: html/gammu-family.html:60 html/gammu-family.html:74 html/gammu.html:53
-#: html/libgammu.html:37 html/python-gammu.html:25 html/smsd.html:55
-#: html/wammu.html:39
+#: html/base.html:84 html/downloads/detail.html:4 html/downloads/release.html:4
+#: html/gammu-family.html:15 html/gammu-family.html:29
+#: html/gammu-family.html:43 html/gammu-family.html:60
+#: html/gammu-family.html:74 html/gammu.html:53 html/libgammu.html:37
+#: html/python-gammu.html:25 html/smsd.html:55 html/wammu.html:39
 msgid "Download"
 msgstr "Download"
 
@@ -461,18 +464,6 @@ msgstr ""
 "clone Wammu and Gammu sources, use following commands:\n"
 
 #: html/contribute/code.html:56
-msgid ""
-"\n"
-"Alternatively (if your firewall blocks git protocol), you can access\n"
-"repositories over https, just replace <code>git://github.com/</code> with\n"
-"<code>https://github.com/</code>.\n"
-msgstr ""
-"\n"
-"Alternatively (if your firewall blocks git protocol), you can access\n"
-"repositories over https, just replace <code>git://github.com/</code> with\n"
-"<code>https://github.com/</code>.\n"
-
-#: html/contribute/code.html:64
 #, fuzzy
 #| msgid ""
 #| "\n"
@@ -493,11 +484,11 @@ msgstr ""
 "to\n"
 "have <a href=\"http://www.cmake.org/\">CMake</a>.\n"
 
-#: html/contribute/code.html:71
+#: html/contribute/code.html:63
 msgid "Code Snapshots"
 msgstr "Code Snapshots"
 
-#: html/contribute/code.html:73
+#: html/contribute/code.html:65
 msgid ""
 "\n"
 "If you for some reason do not want to use version control system, you can\n"
@@ -507,11 +498,11 @@ msgstr ""
 "If you for some reason do not want to use version control system, you can\n"
 "always download fresh snapshots of current code from GitHub.\n"
 
-#: html/contribute/code.html:80
+#: html/contribute/code.html:72
 msgid "Patch Submission"
 msgstr "Patch Submission"
 
-#: html/contribute/code.html:82
+#: html/contribute/code.html:74
 msgid ""
 "\n"
 "We really do not care much about the way you deliver us patches. However "
@@ -531,11 +522,11 @@ msgstr ""
 "href=\"/support/lists/\">mailing lists</a> or to the <a\n"
 "href=\"/support/bugs/\">bug tracker</a>.\n"
 
-#: html/contribute/code.html:93
+#: html/contribute/code.html:85
 msgid "Testing"
 msgstr "Testing"
 
-#: html/contribute/code.html:95
+#: html/contribute/code.html:87
 msgid ""
 "Gammu comes with quite comprehensive testsuite, which is being run "
 "continuosly using <a href=\"https://travis-ci.org/gammu/gammu\">Travis</a>."
@@ -1412,6 +1403,51 @@ msgstr ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
 
+#: html/downloads/detail.html:8
+#, python-format
+msgid ""
+"\n"
+"Download %(program)s\n"
+msgstr ""
+"\n"
+"Download %(program)s\n"
+
+#: html/downloads/detail.html:27
+#, fuzzy
+msgid "Linux binary packages"
+msgstr "Debian packages"
+
+#: html/downloads/detail.html:31 html/downloads/platformlinks.html:5
+msgid "Debian packages"
+msgstr "Debian packages"
+
+#: html/downloads/detail.html:34 html/downloads/platformlinks.html:8
+msgid "Ubuntu packages"
+msgstr "Ubuntu packages"
+
+#: html/downloads/detail.html:37 html/downloads/platformlinks.html:11
+msgid "Ubuntu packages in PPA"
+msgstr "Ubuntu packages in PPA"
+
+#: html/downloads/detail.html:41 html/downloads/platformlinks.html:15
+#, fuzzy
+msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
+msgstr ""
+"RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS) (latest stable "
+"version)"
+
+#: html/downloads/detail.html:45
+msgid "Development version"
+msgstr "Development version"
+
+#: html/downloads/detail.html:48
+msgid ""
+"Should you be interested in git access or git snapshots, you can find them "
+"on <a href=\"/contribute/code/\">development page</a>."
+msgstr ""
+"Should you be interested in git access or git snapshots, you can find them "
+"on <a href=\"/contribute/code/\">development page</a>."
+
 #: html/downloads/index.html:4
 msgid "Download Wammu and Gammu"
 msgstr "Download Wammu and Gammu"
@@ -1464,52 +1500,11 @@ msgstr "PAD for Wammu"
 msgid "PAD for Gammu"
 msgstr "PAD for Gammu"
 
-#: html/downloads/list.html:8
-#, python-format
-msgid ""
-"\n"
-"Download %(program)s (%(platform)s)\n"
+#: html/downloads/platformlinks.html:3
+msgid "Download sources or Windows binaries"
 msgstr ""
-"\n"
-"Download %(program)s (%(platform)s)\n"
 
-#: html/downloads/list.html:29
-#, fuzzy
-msgid "Binary packages"
-msgstr "Debian packages"
-
-#: html/downloads/list.html:33 html/downloads/platformlinks.html:7
-msgid "Debian packages"
-msgstr "Debian packages"
-
-#: html/downloads/list.html:36 html/downloads/platformlinks.html:10
-msgid "Ubuntu packages"
-msgstr "Ubuntu packages"
-
-#: html/downloads/list.html:39 html/downloads/platformlinks.html:13
-msgid "Ubuntu packages in PPA"
-msgstr "Ubuntu packages in PPA"
-
-#: html/downloads/list.html:43 html/downloads/platformlinks.html:17
-#, fuzzy
-msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
-msgstr ""
-"RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS) (latest stable "
-"version)"
-
-#: html/downloads/list.html:47
-msgid "Development version"
-msgstr "Development version"
-
-#: html/downloads/list.html:50
-msgid ""
-"Should you be interested in git access or git snapshots, you can find them "
-"on <a href=\"/contribute/code/\">development page</a>."
-msgstr ""
-"Should you be interested in git access or git snapshots, you can find them "
-"on <a href=\"/contribute/code/\">development page</a>."
-
-#: html/downloads/platformlinks.html:19
+#: html/downloads/platformlinks.html:17
 msgid "Development git snaphots and git access"
 msgstr "Development git snaphots and git access"
 
@@ -1528,35 +1523,6 @@ msgstr ""
 "easiest\n"
 "way to get it is to install it directly from your distribution "
 "repositories.\n"
-
-#: html/downloads/program.html:8
-#, python-format
-msgid ""
-"\n"
-"Download %(program)s\n"
-msgstr ""
-"\n"
-"Download %(program)s\n"
-
-#: html/downloads/program.html:14
-#, python-format
-msgid ""
-"\n"
-"Thank you for interest in downloading <a href=\"/%(program_name)s/\">"
-"%(program)s</a>.\n"
-msgstr ""
-"\n"
-"Thank you for interest in downloading <a href=\"/%(program_name)s/\">"
-"%(program)s</a>.\n"
-
-#: html/downloads/program.html:22
-msgid "Current Releases"
-msgstr "Current Releases"
-
-#: html/downloads/program.html:34 html/sidebars/gammu.html:4
-#: html/sidebars/wammu.html:4
-msgid "Downloads"
-msgstr "Downloads"
 
 #: html/downloads/programs/gammu-source.html:3
 #, fuzzy
@@ -1683,10 +1649,6 @@ msgstr ""
 #: html/downloads/release.html:15
 msgid "Changes"
 msgstr "Changes"
-
-#: html/downloads/release.html:21
-msgid "Files"
-msgstr "Files"
 
 #: html/downloads/relinfo.html:4
 #, python-format
@@ -2717,6 +2679,10 @@ msgstr "Latest News"
 #: html/sidebars/common.html:4
 msgid "How to contribute"
 msgstr "How to contribute"
+
+#: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
+msgid "Downloads"
+msgstr "Downloads"
 
 #: html/smsd.html:4
 msgid "Gammu SMS Daemon, the software for mass processing SMS messages."
@@ -3962,6 +3928,41 @@ msgstr "Gammu and Wammu News Feed (RSS)"
 #: wammu/context_processors.py:55
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu and Wammu News Feed (Atom)"
+
+#~ msgid ""
+#~ "\n"
+#~ "Alternatively (if your firewall blocks git protocol), you can access\n"
+#~ "repositories over https, just replace <code>git://github.com/</code> "
+#~ "with\n"
+#~ "<code>https://github.com/</code>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Alternatively (if your firewall blocks git protocol), you can access\n"
+#~ "repositories over https, just replace <code>git://github.com/</code> "
+#~ "with\n"
+#~ "<code>https://github.com/</code>.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Download %(program)s (%(platform)s)\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Download %(program)s (%(platform)s)\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Thank you for interest in downloading <a href=\"/%(program_name)s/\">"
+#~ "%(program)s</a>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Thank you for interest in downloading <a href=\"/%(program_name)s/\">"
+#~ "%(program)s</a>.\n"
+
+#~ msgid "Current Releases"
+#~ msgstr "Current Releases"
+
+#~ msgid "Files"
+#~ msgstr "Files"
 
 #~ msgid "Wire Transfer"
 #~ msgstr "Wire Transfer"
