@@ -2,7 +2,7 @@
 <ul>
 {% for item in downloads %}
 <li><a href="{% getlink item %}" class="piwik_download">{{ item.get_filename }}</a> ({{ item.get_size }})
-    <div class="checksums">MD5: <code>{{ item.md5 }}</code>, SHA1: <code>{{ item.sha1 }}</code></div></li>
+    <div class="checksums">SHA1: <code>{{ item.sha1 }}</code></div></li>
 {% endfor %}
 </ul>
 
