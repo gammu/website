@@ -4,16 +4,11 @@ from downloads.models import Download, Release, get_program, get_latest_releases
 from django.http import Http404, HttpResponse
 
 
-def list(request, program, platform):
+def detail(request, program):
     if not program in [x[0] for x in PROGRAM_CHOICES]:
         raise Http404('No such program %s.' % program)
-    if not platform in [x[0] for x in PLATFORM_CHOICES]:
-        raise Http404('No such platform %s.' % platform)
 
-    if platform == 'win32':
-        return redirect('downloads.views.list', program=program, platform='source')
-
-    downloads = get_current_downloads(program, platform)
+    downloads = get_current_downloads(program)
 
     stable_release, stable_downloads = downloads[0]
     try:
@@ -22,8 +17,9 @@ def list(request, program, platform):
         testing_release, testing_downloads = (None, None)
 
     if stable_downloads.count() == 0:
-        raise Http404('No such download option %s/%s.' % (program, platform))
+        raise Http404('No such download option %s.' % program)
 
+    platform = 'source'
     for c in PLATFORM_CHOICES:
         if platform == c[0]:
             platform_name = c[1]

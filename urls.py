@@ -147,9 +147,9 @@ urlpatterns = [
     url(r'^news/(?P<slug>[^/]*)/$', news.views.category),
 
     url(r'^download/$', downloads.views.download),
-    url(r'^download/(?P<program>[^/]*)/$', RedirectView.as_view(url='/download/%(program)s/source/', permanent=True)),
+    url(r'^download/(?P<program>[^/]*)/$', downloads.views.detail),
     url(r'^download/(?P<program>[^/]*)/(?P<version>[0-9.]*)/$', downloads.views.release),
-    url(r'^download/(?P<program>[^/]*)/(?P<platform>[^/]*)/$', downloads.views.list),
+    url(r'^download/(?P<program>[^/]*)/(?P<platform>[^/]*)/$', RedirectView.as_view(url='/download/%(program)s/', permanent=True)),
 
     # RSS feeds
     url(r'^phones/rss/$', RssPhonesFeed()),
