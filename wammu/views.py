@@ -3,7 +3,7 @@ from django.template import RequestContext
 from news.models import Entry, Category
 from screenshots.models import Screenshot
 from phonedb.models import Phone
-from downloads.models import get_current_downloads, get_latest_releases
+from downloads.models import get_latest_releases
 
 from django.conf import settings
 
@@ -25,9 +25,6 @@ def process_version_feedback(request):
     return result
 
 def index(request):
-    downloads = get_current_downloads('gammu', 'source')
-    downloads += get_current_downloads('wammu', 'source')
-
     news = Entry.objects.order_by('-pub_date')[:settings.NEWS_ON_MAIN_PAGE]
     try:
         screenshot = Screenshot.objects.filter(featured = True).order_by('?')[0]
@@ -37,7 +34,6 @@ def index(request):
     return render_to_response('index.html', RequestContext(request, {
         'news': news,
         'screenshot': screenshot,
-        'downloads': downloads,
         'phones': phones,
     }))
 
