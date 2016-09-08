@@ -1,6 +1,6 @@
-from django.shortcuts import render_to_response, get_object_or_404, redirect, render
+from django.shortcuts import render_to_response, get_object_or_404, render
 from django.template import RequestContext
-from downloads.models import Download, Release, get_program, get_latest_releases, get_current_downloads, PLATFORM_CHOICES, PROGRAM_CHOICES
+from downloads.models import Download, Release, get_program, get_current_downloads, PROGRAM_CHOICES
 from django.http import Http404, HttpResponse
 
 
