@@ -65,7 +65,7 @@ def program(request, program):
 
     stable_release, testing_release = get_latest_releases(program)
 
-    downloads = get_current_downloads(program, 'source')
+    downloads = get_current_downloads(program)
 
     return render_to_response('downloads/program.html', RequestContext(request, {
         'stable_release': stable_release,
@@ -83,7 +83,7 @@ def doap(request, program):
     if not program in [x[0] for x in PROGRAM_CHOICES]:
         raise Http404('No such program %s.' % program)
 
-    downloads = get_current_downloads(program, None)
+    downloads = get_current_downloads(program)
 
     return render_to_response('downloads/doap/%s.xml' % program, RequestContext(request, {
         'downloads': downloads[0][1],
@@ -94,7 +94,7 @@ def pad(request, program):
     if not program in [x[0] for x in PROGRAM_CHOICES]:
         raise Http404('No such program %s.' % program)
 
-    downloads = get_current_downloads(program, 'source')
+    downloads = get_current_downloads(program)
 
     release = downloads[0][0]
     download = downloads[0][1].filter(location__iendswith='.zip')[0]

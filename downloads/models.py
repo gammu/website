@@ -54,7 +54,7 @@ def get_program(name):
             return c[1]
     raise IndexError('Program does not exist!')
 
-def get_current_downloads(program, platform = 'source'):
+def get_current_downloads(program):
     '''
     Gets list of tuples for currently active downloads. The first one
     is always present and it's the stable one, the second one is
@@ -66,16 +66,12 @@ def get_current_downloads(program, platform = 'source'):
     stable_release, testing_release = get_latest_releases(program)
 
     stable_downloads = Download.objects.filter(release = stable_release)
-    if platform is not None:
-        stable_downloads = stable_downloads.filter(platform = platform)
     stable_downloads = stable_downloads.order_by('location')
 
     downloads.append((stable_release, stable_downloads))
 
     if testing_release is not None:
         testing_downloads = Download.objects.filter(release = testing_release).order_by('location')
-        if platform is not None:
-            testing_downloads = testing_downloads.filter(platform = platform)
         testing_downloads = testing_downloads.order_by('location')
         downloads.append((testing_release, testing_downloads))
 
