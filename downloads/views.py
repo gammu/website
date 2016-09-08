@@ -1,4 +1,4 @@
-from django.shortcuts import render_to_response, get_object_or_404, redirect
+from django.shortcuts import render_to_response, get_object_or_404, redirect, render
 from django.template import RequestContext
 from downloads.models import Download, Release, get_program, get_latest_releases, get_current_downloads, PLATFORM_CHOICES, PROGRAM_CHOICES
 from django.http import Http404, HttpResponse
@@ -77,9 +77,7 @@ def program(request, program):
     }))
 
 def download(request):
-    return render_to_response('downloads/index.html', RequestContext(request, {
-        'platforms': PLATFORM_CHOICES[:1],
-    }))
+    return render(request, 'downloads/index.html')
 
 def doap(request, program):
     if not program in [x[0] for x in PROGRAM_CHOICES]:
