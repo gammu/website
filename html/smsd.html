@@ -24,19 +24,19 @@ messages and automatically process them.
 <p>
 {% blocktrans %}
 You can currently store received messages in files or in various databases.
-<a href="https://www.mysql.com/">MySQL</a> and <a
-href="https://www.postgresql.org/">PostgreSQL</a> are supported natively and
-wide range of others (including <a href="https://www.sqlite.org/">SQLite</a>)
-through <a href="https://en.wikipedia.org/wiki/Open_Database_Connectivity">ODBC</a> or
-<a href="http://libdbi.sourceforge.net/">libdbi</a> (libdbi backend is
+<a href="/docs/manual/smsd/mysql.html">MySQL</a> and <a
+href="/docs/manual/smsd/pgsql.html">PostgreSQL</a> are supported natively and
+wide range of others (including SQLite, Microsoft Access or Oracle)
+through <a href="/docs/manual/smsd/odbc.html">ODBC</a> or
+<a href="/docs/manual/smsd/dbi.html">libdbi</a> (libdbi backend is
 currently not available in Windows builds).
 {% endblocktrans %} 
 </p>
 
 <p>
 {% blocktrans %}
-The package includes also tool <code>gammu-smsd-inject</code> which will help
-you creating long text messages and <code>gammu-smsd-monitor</code> which
+The package includes also tool <a href="/docs/manual/smsd/inject.html"><code>gammu-smsd-inject</code></a> which will help
+you creating long text messages and <a href="/docs/manual/smsd/monitor.html"><code>gammu-smsd-monitor</code></a> which
 allows you to monitor current status of SMS Daemon or phone.
 {% endblocktrans %} 
 </p>
