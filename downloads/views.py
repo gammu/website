@@ -19,20 +19,13 @@ def detail(request, program):
     if stable_downloads.count() == 0:
         raise Http404('No such download option %s.' % program)
 
-    platform = 'source'
-    for c in PLATFORM_CHOICES:
-        if platform == c[0]:
-            platform_name = c[1]
-
     result = render_to_response('downloads/detail.html', RequestContext(request, {
         'stable_release': stable_release,
         'testing_release': testing_release,
         'stable_downloads': stable_downloads,
         'testing_downloads': testing_downloads,
-        'program_include': 'downloads/programs/%s-%s.html' % (program, platform),
         'program': get_program(program),
         'program_name': program,
-        'platform': platform_name,
     }))
     return result
 

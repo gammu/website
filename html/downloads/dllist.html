@@ -3,7 +3,7 @@
 {% regroup downloads by platform as download_list %}
 
 {% for download in download_list %}
-{{ download.grouper }}
+{% platform_info program_name download.grouper %}
 
 <ul>
 {% for item in download.list %}
