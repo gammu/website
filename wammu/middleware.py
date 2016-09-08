@@ -4,15 +4,18 @@ from django.utils import translation
 
 class SiteLocaleMiddleware(object):
     def process_request(self, request):
-        current_site = Site.objects.get_current(request)
+        try:
+            current_site = Site.objects.get_current(request)
 
-        lang = current_site.domain.split('.')[0]
-        if lang == 'wammu':
-            translation.activate('en')
-        elif len(lang) == 2 or len(lang) == 5:
-            translation.activate(lang)
-            request.LANGUAGE_CODE = translation.get_language()
-        else:
+            lang = current_site.domain.split('.')[0]
+            if lang == 'wammu':
+                translation.activate('en')
+            elif len(lang) == 2 or len(lang) == 5:
+                translation.activate(lang)
+                request.LANGUAGE_CODE = translation.get_language()
+            else:
+                translation.activate('en')
+        except Site.DoesNotExist:
             translation.activate('en')
 
 
