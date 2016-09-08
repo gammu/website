@@ -53,27 +53,9 @@ def release(request, program,  version):
     return result
 
 
-def program(request, program):
-    if not program in [x[0] for x in PROGRAM_CHOICES]:
-        raise Http404('No such program %s.' % program)
-    if program in ['python-gammu']:
-        raise Http404('No such program %s.' % program)
-
-    stable_release, testing_release = get_latest_releases(program)
-
-    downloads = get_current_downloads(program)
-
-    return render_to_response('downloads/program.html', RequestContext(request, {
-        'stable_release': stable_release,
-        'testing_release': testing_release,
-        'platforms': PLATFORM_CHOICES[:1],
-        'downloads': downloads,
-        'program': get_program(program),
-        'program_name': program,
-    }))
-
 def download(request):
     return render(request, 'downloads/index.html')
+
 
 def doap(request, program):
     if not program in [x[0] for x in PROGRAM_CHOICES]:
