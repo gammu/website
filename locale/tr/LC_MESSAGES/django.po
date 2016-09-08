@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-08 13:24+0200\n"
+"POT-Creation-Date: 2016-09-08 13:28+0200\n"
 "PO-Revision-Date: 2016-08-01 16:18+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gammu/website/tr/"
@@ -1126,6 +1126,13 @@ msgid ""
 "external programs. There are also python-gammu binaries, which include all\n"
 "needed parts to use python-gammu in your python programs, just choose the\n"
 "version matching Python version you use.\n"
+msgstr ""
+
+#: html/downloads/programs/gammu-win32.html:14
+#, python-format
+msgid ""
+"You might need to install <a href=\"%(url)s\">Visual C++ Redistributable "
+"Packages</a> to run Gammu."
 msgstr ""
 
 #: html/downloads/programs/python-gammu-source.html:3

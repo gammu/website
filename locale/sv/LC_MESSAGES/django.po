@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-08 13:24+0200\n"
+"POT-Creation-Date: 2016-09-08 13:28+0200\n"
 "PO-Revision-Date: 2016-07-28 10:16+0000\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/gammu/website/sv/"
@@ -1129,6 +1129,13 @@ msgid ""
 "external programs. There are also python-gammu binaries, which include all\n"
 "needed parts to use python-gammu in your python programs, just choose the\n"
 "version matching Python version you use.\n"
+msgstr ""
+
+#: html/downloads/programs/gammu-win32.html:14
+#, python-format
+msgid ""
+"You might need to install <a href=\"%(url)s\">Visual C++ Redistributable "
+"Packages</a> to run Gammu."
 msgstr ""
 
 #: html/downloads/programs/python-gammu-source.html:3
