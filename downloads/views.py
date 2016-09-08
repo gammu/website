@@ -24,7 +24,7 @@ def detail(request, program):
         if platform == c[0]:
             platform_name = c[1]
 
-    result = render_to_response('downloads/list.html', RequestContext(request, {
+    result = render_to_response('downloads/detail.html', RequestContext(request, {
         'stable_release': stable_release,
         'testing_release': testing_release,
         'stable_downloads': stable_downloads,
