@@ -29,7 +29,10 @@ def index(request):
     downloads += get_current_downloads('wammu', 'source')
 
     news = Entry.objects.order_by('-pub_date')[:settings.NEWS_ON_MAIN_PAGE]
-    screenshot = Screenshot.objects.filter(featured = True).order_by('?')[0]
+    try:
+        screenshot = Screenshot.objects.filter(featured = True).order_by('?')[0]
+    except IndexError:
+        screenshot = None
     phones = Phone.objects.filter(state__in = ['approved', 'draft']).order_by('-created')[:settings.PHONES_ON_MAIN_PAGE]
     return render_to_response('index.html', RequestContext(request, {
         'news': news,
