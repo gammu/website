@@ -17,6 +17,6 @@ class Link(models.Model):
     def __unicode__(self):
         return self.title
 
-    def save(self):
+    def save(self, *args, **kwargs):
         self.description_html = markdown.markdown(self.description)
-        super(Link, self).save()
+        super(Link, self).save(*args, **kwargs)

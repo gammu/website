@@ -31,9 +31,9 @@ class Category(models.Model):
     def __unicode__(self):
         return self.title
 
-    def save(self):
+    def save(self, *args, **kwargs):
         self.description_html = markdown.markdown(self.description)
-        super(Category, self).save()
+        super(Category, self).save(*args, **kwargs)
 
     @models.permalink
     def get_absolute_url(self):
@@ -59,6 +59,6 @@ class Screenshot(models.Model):
     def __unicode__(self):
         return self.title
 
-    def save(self):
+    def save(self, *args, **kwargs):
         self.description_html = markdown.markdown(self.description)
-        super(Screenshot, self).save()
+        super(Screenshot, self).save(*args, **kwargs)

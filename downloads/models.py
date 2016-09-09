@@ -108,7 +108,7 @@ class Release(models.Model):
     post_news = models.BooleanField(default = True)
     post_tweet = models.BooleanField(default = True)
 
-    def save(self):
+    def save(self, *args, **kwargs):
         version = self.version.split('.')
         self.version_int = 0
         for num in version:
@@ -154,7 +154,7 @@ class Release(models.Model):
         self.post_tweet = False
         self.changelog_html = markdown.markdown(process_bug_links(self.changelog))
         self.description_html = markdown.markdown(self.description)
-        super(Release, self).save()
+        super(Release, self).save(*args, **kwargs)
 
     def __unicode__(self):
         return '%s-%s' % (self.program, self.version)
