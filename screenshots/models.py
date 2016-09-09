@@ -24,7 +24,7 @@ class Category(models.Model):
         blank = True
         )
 
-    class Meta:
+    class Meta(object):
         verbose_name_plural = 'Categories'
         ordering = ['title']
 

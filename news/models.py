@@ -27,7 +27,7 @@ class Category(models.Model):
         blank = True
         )
 
-    class Meta:
+    class Meta(object):
         verbose_name_plural = 'Categories'
         ordering = ['title']
 
@@ -71,7 +71,7 @@ class Entry(models.Model):
     identica_post = models.NullBooleanField('post to identi.ca', default = False, null = True)
     identica_text = models.CharField('identi.ca post text', max_length = 100, blank = True, null = True)
 
-    class Meta:
+    class Meta(object):
         get_latest_by = 'pub_date'
         ordering = ['-pub_date']
         verbose_name_plural = 'Entries'

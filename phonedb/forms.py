@@ -48,7 +48,7 @@ class NewForm(ModelForm):
         widget = forms.CheckboxSelectMultiple
     )
 
-    class Meta:
+    class Meta(object):
         model = Phone
         fields = (
             'vendor',
