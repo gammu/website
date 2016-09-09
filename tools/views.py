@@ -1,8 +1,7 @@
-# Create your views here.
 from forms import PDUDecodeForm, PDUEncodeForm
-from django.shortcuts import render_to_response
-from django.template import RequestContext
+from django.shortcuts import render
 import gammu
+
 
 def pduencode(request):
     pdu = None
@@ -35,14 +34,13 @@ def pduencode(request):
 
     else:
         form = PDUEncodeForm()
-    return render_to_response('tools/pduencode.html', RequestContext(request, {
+    return render(request, 'tools/pduencode.html', {
         'form': form,
         'pdu': pdu,
-    }))
+    })
 
 def pdudecode(request):
     decoded = None
-    error = None
     smsinfo = None
     if request.method == 'POST':
         form = PDUDecodeForm(request.POST)
@@ -80,22 +78,20 @@ def pdudecode(request):
 
     else:
         form = PDUDecodeForm()
-    return render_to_response('tools/pdudecode.html', RequestContext(request, {
+    return render(request, 'tools/pdudecode.html', {
         'form': form,
         'decoded': decoded,
         'smsinfo': smsinfo,
-    }))
+    })
 
 def countries(request):
-    import gammu
     countries = gammu.GSMCountries.items()
     countries.sort()
-    return render_to_response('tools/countries.html', RequestContext(request, {
+    return render(request, 'tools/countries.html', {
         'countries': countries,
-    }))
+    })
 
 def networks(request):
-    import gammu
     if request.GET.has_key('country'):
         country = request.GET['country']
         l = len(country)
@@ -103,6 +99,6 @@ def networks(request):
     else:
         networks = gammu.GSMNetworks.items()
     networks.sort()
-    return render_to_response('tools/networks.html', RequestContext(request, {
+    return render(request, 'tools/networks.html', {
         'networks': networks,
-    }))
+    })

@@ -1,5 +1,4 @@
-from django.shortcuts import render_to_response, get_object_or_404
-from django.template import RequestContext
+from django.shortcuts import render, get_object_or_404
 from news.models import Entry, Category
 
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
@@ -11,9 +10,9 @@ from django.conf import settings
 
 def entry(request, slug, day = None, month = None, year = None):
     entry = get_object_or_404(Entry, slug = slug)
-    return render_to_response('news/entry.html', RequestContext(request, {
+    return render(request, 'news/entry.html', {
         'entry': entry,
-    }))
+    })
 
 def index(request):
     objects = Entry.objects.order_by('-pub_date')
@@ -40,6 +39,6 @@ def render_news(request, objects, template):
     except (EmptyPage, InvalidPage):
         news = paginator.page(1)
 
-    return render_to_response(template, RequestContext(request, {
+    return render(request, template, {
         'news': news,
-    }))
+    })

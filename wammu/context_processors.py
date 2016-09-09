@@ -1,7 +1,6 @@
 # Context processors
 # -*- coding: UTF-8 -*-
 
-from django.conf import settings
 from datetime import datetime
 from django.utils.translation import ugettext as _, get_language
 from news.models import Category

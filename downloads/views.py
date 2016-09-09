@@ -1,5 +1,4 @@
-from django.shortcuts import render_to_response, get_object_or_404, render
-from django.template import RequestContext
+from django.shortcuts import render, get_object_or_404
 from downloads.models import Download, Release, get_program, get_current_downloads, PROGRAM_CHOICES
 from django.http import Http404, HttpResponse
 
@@ -19,14 +18,14 @@ def detail(request, program):
     if stable_downloads.count() == 0:
         raise Http404('No such download option %s.' % program)
 
-    result = render_to_response('downloads/detail.html', RequestContext(request, {
+    result = render(request, 'downloads/detail.html', {
         'stable_release': stable_release,
         'testing_release': testing_release,
         'stable_downloads': stable_downloads,
         'testing_downloads': testing_downloads,
         'program': get_program(program),
         'program_name': program,
-    }))
+    })
     return result
 
 def release(request, program,  version):
@@ -37,12 +36,12 @@ def release(request, program,  version):
     if downloads.count() == 0:
         raise Http404('No such download option %s/%s.' % (program, version))
 
-    result = render_to_response('downloads/release.html', RequestContext(request, {
+    result = render(request, 'downloads/release.html', {
         'release': release,
         'downloads': downloads,
         'program': get_program(program),
         'program_name': program,
-    }))
+    })
     return result
 
 
@@ -56,10 +55,11 @@ def doap(request, program):
 
     downloads = get_current_downloads(program)
 
-    return render_to_response('downloads/doap/%s.xml' % program, RequestContext(request, {
+    return render(request, 'downloads/doap/%s.xml' % program, {
         'downloads': downloads[0][1],
         'release': downloads[0][0],
-    }), content_type = 'application/xml')
+    }, content_type = 'application/xml')
+
 
 def pad(request, program):
     if not program in [x[0] for x in PROGRAM_CHOICES]:
@@ -70,10 +70,10 @@ def pad(request, program):
     release = downloads[0][0]
     download = downloads[0][1].filter(location__iendswith='.zip')[0]
 
-    return render_to_response('downloads/pad/%s.xml' % program, RequestContext(request, {
+    return render(request, 'downloads/pad/%s.xml' % program, {
         'download': download,
         'release': release,
-    }), content_type = 'application/xml')
+    }, content_type = 'application/xml')
 
 def padmap(request):
     '''

@@ -1,11 +1,10 @@
-from django.shortcuts import render_to_response
-from django.template import RequestContext
+from django.shortcuts import render
+
 
 def donate(request):
-    return render_to_response('donate.html', RequestContext(request, {
-    }))
+    return render(request, 'donate.html')
+
 
 def thanks(request):
-    return render_to_response('donate-thanks.html', RequestContext(request, {
-    }))
+    return render(request, 'donate-thanks.html')
 

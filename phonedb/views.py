@@ -1,8 +1,7 @@
-from django.shortcuts import render_to_response, get_object_or_404
+from django.shortcuts import get_object_or_404, render
 from django.views.decorators.csrf import csrf_exempt
 from django.http import Http404
 from django.db.models import Q
-from django.template import RequestContext
 from phonedb.models import Vendor, Phone, Feature, Connection, GARBLE_CHOICES
 from django.contrib import messages
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
@@ -127,14 +126,14 @@ def get_feeds():
 def index(request):
     vendors = Vendor.objects.all().order_by('name')
     phones = Phone.objects.filter(state__in = ['approved', 'draft']).order_by('-created')[:settings.PHONES_ON_INDEX]
-    return render_to_response('phonedb/index.html', RequestContext(request, {
+    return render(request, 'phonedb/index.html', {
         'vendors': vendors,
         'phones': phones,
         'features': Feature.objects.all().order_by('name'),
         'chart_url': get_chart_url(),
         'feeds': get_feeds(),
         'form': SearchForm(),
-    }))
+    })
 
 def search(request, featurename = None):
     # We need a copy, because we might want to add a feature from URL
@@ -186,12 +185,12 @@ def search(request, featurename = None):
     except (EmptyPage, InvalidPage):
         phones = paginator.page(1)
 
-    return render_to_response('phonedb/search.html', RequestContext(request, {
+    return render(request, 'phonedb/search.html', {
         'phones': phones,
         'urlparams': '&'.join(urlparams),
         'feeds': get_feeds(),
         'form': form,
-    }))
+    })
 
 @login_required
 def review(request):
@@ -215,10 +214,10 @@ def review(request):
     except (EmptyPage, InvalidPage):
         phones = paginator.page(1)
 
-    return render_to_response('phonedb/search.html', RequestContext(request, {
+    return render(request, 'phonedb/search.html', {
         'phones': phones,
         'feeds': get_feeds(),
-    }))
+    })
 
 def vendor(request, vendorname):
     vendor = get_object_or_404(Vendor, slug = vendorname)
@@ -239,11 +238,11 @@ def vendor(request, vendorname):
     except (EmptyPage, InvalidPage):
         phones = paginator.page(1)
 
-    return render_to_response('phonedb/vendor.html', RequestContext(request, {
+    return render(request, 'phonedb/vendor.html', {
         'vendor': vendor,
         'phones': phones,
         'feeds': get_feeds(),
-    }))
+    })
 
 def phone_redirect(request):
     try:
@@ -258,13 +257,13 @@ def phone(request, vendorname, id):
     vendor = get_object_or_404(Vendor, slug = vendorname)
     phone = get_object_or_404(Phone, id = id, vendor = vendor)
     related = Phone.objects.filter(vendor = vendor, name__icontains = phone.name).exclude(id = id).exclude(state = 'deleted')
-    return render_to_response('phonedb/phone.html', RequestContext(request, {
+    return render(request, 'phonedb/phone.html', {
         'vendor': vendor,
         'phone': phone,
         'related': related,
         'feeds': get_feeds(),
         'user': request.user,
-    }))
+    })
 
 @login_required
 def approve(request, vendorname, id):
@@ -476,7 +475,7 @@ def create(request, vendorname = None):
 
         form = NewForm(initial = initial)
 
-    return render_to_response('phonedb/new.html', RequestContext(request, {
+    return render(request, 'phonedb/new.html', {
         'form': form,
         'feeds': get_feeds(),
-    }))
+    })

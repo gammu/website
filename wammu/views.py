@@ -1,5 +1,4 @@
-from django.shortcuts import render_to_response
-from django.template import RequestContext
+from django.shortcuts import render
 from news.models import Entry, Category
 from screenshots.models import Screenshot
 from phonedb.models import Phone
@@ -31,15 +30,15 @@ def index(request):
     except IndexError:
         screenshot = None
     phones = Phone.objects.filter(state__in = ['approved', 'draft']).order_by('-created')[:settings.PHONES_ON_MAIN_PAGE]
-    return render_to_response('index.html', RequestContext(request, {
+    return render(request, 'index.html', {
         'news': news,
         'screenshot': screenshot,
         'phones': phones,
-    }))
+    })
 
 def support(request):
     context  = process_version_feedback(request)
-    return render_to_response('support/index.html', RequestContext(request, context))
+    return render(request, 'support/index.html', context)
 
 def wammu(request):
     category = Category.objects.get(slug = 'wammu')
@@ -47,46 +46,48 @@ def wammu(request):
     context  = process_version_feedback(request)
     context['news'] = news
     context['news_category'] = category
-    return render_to_response('wammu.html', RequestContext(request, context))
+    return render(request, 'wammu.html', context)
 
 def smsd(request):
     category = Category.objects.get(slug = 'gammu')
     news = Entry.objects.filter(categories = category).order_by('-pub_date')[:settings.NEWS_ON_PRODUCT_PAGE]
-    return render_to_response('smsd.html', RequestContext(request, {
+    return render(request, 'smsd.html', {
         'news': news,
         'news_category': category,
-    }))
+    })
 
 def gammu(request):
     category = Category.objects.get(slug = 'gammu')
     news = Entry.objects.filter(categories = category).order_by('-pub_date')[:settings.NEWS_ON_PRODUCT_PAGE]
-    return render_to_response('gammu.html', RequestContext(request, {
+    return render(request, 'gammu.html', {
         'news': news,
         'news_category': category,
-    }))
+    })
 
 def pygammu(request):
     category = Category.objects.get(slug = 'python-gammu')
     news = Entry.objects.filter(categories = category).order_by('-pub_date')[:settings.NEWS_ON_PRODUCT_PAGE]
-    return render_to_response('python-gammu.html', RequestContext(request, {
+    return render(request, 'python-gammu.html', {
         'news': news,
         'news_category': category,
-    }))
+    })
 
 def libgammu(request):
     category = Category.objects.get(slug = 'gammu')
     news = Entry.objects.filter(categories = category).order_by('-pub_date')[:settings.NEWS_ON_PRODUCT_PAGE]
-    return render_to_response('libgammu.html', RequestContext(request, {
+    return render(request, 'libgammu.html', {
         'news': news,
         'news_category': category,
-    }))
+    })
 
 def static(request, page):
-    return render_to_response(page, RequestContext(request, {
-    }))
+    return render(request, page)
 
 def robots(request):
-    current_site = Site.objects.get_current(request)
-    return render_to_response('robots.txt', RequestContext(request, {
+    try:
+        current_site = Site.objects.get_current(request)
+    except Site.DoesNotExist:
+        current_site = {'domain': 'wammu.eu'}
+    return render(request, 'robots.txt', {
         'current_site': current_site,
-    }), content_type = 'text/plain')
+    }, content_type = 'text/plain')

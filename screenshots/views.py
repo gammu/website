@@ -1,5 +1,4 @@
-from django.shortcuts import render_to_response, get_object_or_404
-from django.template import RequestContext
+from django.shortcuts import render, get_object_or_404
 from screenshots.models import Screenshot, Category
 
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
@@ -34,6 +33,6 @@ def render_screenshots(request, objects, template):
     except (EmptyPage, InvalidPage):
         screenshots = paginator.page(1)
 
-    return render_to_response(template, RequestContext(request, {
+    return render(request, template, {
         'screenshots': screenshots,
-    }))
+    })
