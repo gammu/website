@@ -3,3 +3,4 @@ django-crispy-forms>=1.4.0
 Markdown
 Pillow
 python-gammu
+pygooglechart
