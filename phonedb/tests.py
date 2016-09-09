@@ -90,3 +90,8 @@ class PhoneDBTest(TestCase):
         self.assertContains(response, 'TestPHone')
         response = self.client.get(reverse('phonedb-search-feature', kwargs={'featurename': 'info'}))
         self.assertContains(response, 'TestPHone')
+
+    def test_vendor_list(self):
+        self.test_add()
+        response = self.client.get(reverse('phonedb-vendor', kwargs={'vendorname': 'test'}))
+        self.assertContains(response, 'TestPHone')
