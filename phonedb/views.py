@@ -246,10 +246,10 @@ def vendor(request, vendorname):
 
 def phone_redirect(request):
     try:
-        id = int(request.GET['id'])
+        pk = int(request.GET['id'])
     except:
-        raise Http404('No such page!')
-    phone = get_object_or_404(Phone, id = id)
+        raise Http404('No such entry!')
+    phone = get_object_or_404(Phone, pk=pk)
     return HttpResponseRedirect(phone.get_absolute_url())
 
 def phone(request, vendorname, id):
