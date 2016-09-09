@@ -37,7 +37,7 @@ class Category(models.Model):
 
     @models.permalink
     def get_absolute_url(self):
-         return ('screenshots.views.category', (), { 'slug': self.slug })
+         return ('screenshots-category', (), { 'slug': self.slug })
 
 
 class Screenshot(models.Model):

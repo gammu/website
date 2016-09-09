@@ -103,18 +103,18 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^$', wammu.views.index),
-    url(r'^gammu/$', wammu.views.gammu),
-    url(r'^smsd/$', wammu.views.smsd),
-    url(r'^wammu/$', wammu.views.wammu),
-    url(r'^libgammu/$', wammu.views.libgammu),
-    url(r'^python-gammu/$', wammu.views.pygammu),
+    url(r'^$', wammu.views.index, name='home'),
+    url(r'^gammu/$', wammu.views.gammu, name='gammu'),
+    url(r'^smsd/$', wammu.views.smsd, name='smsd'),
+    url(r'^wammu/$', wammu.views.wammu, name='wammu'),
+    url(r'^libgammu/$', wammu.views.libgammu, name='libgammu'),
+    url(r'^python-gammu/$', wammu.views.pygammu, name='python-gammu'),
 
-    url(r'^authors/$', wammu.views.static, {'page': 'authors.html'}),
-    url(r'^license/$', wammu.views.static, {'page': 'license.html'}),
+    url(r'^authors/$', wammu.views.static, {'page': 'authors.html'}, name='authors'),
+    url(r'^license/$', wammu.views.static, {'page': 'license.html'}, name='license'),
     url(r'^search/$', RedirectView.as_view(url='/', permanent=True)),
 
-    url(r'^support/$', wammu.views.support),
+    url(r'^support/$', wammu.views.support, name='support'),
     url(r'^support/bugs/$', wammu.views.static, {'page': 'support/bugs.html'}),
     url(r'^support/lists/$', wammu.views.static, {'page': 'support/lists.html'}),
     url(r'^support/online/$', wammu.views.static, {'page': 'support/online.html'}),
@@ -141,14 +141,14 @@ urlpatterns = [
     url(r'^news/atom/$', AtomNewsFeed()),
 
     # News
-    url(r'^news/$', news.views.index),
+    url(r'^news/$', news.views.index, name='news'),
     url(r'^news/(?P<year>\d{4})/(?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<slug>[^/]*)/$',
-        news.views.entry),
-    url(r'^news/(?P<slug>[^/]*)/$', news.views.category),
+        news.views.entry, name='news-entry'),
+    url(r'^news/(?P<slug>[^/]*)/$', news.views.category, name='news-category'),
 
-    url(r'^download/$', downloads.views.download),
-    url(r'^download/(?P<program>[^/]*)/$', downloads.views.detail),
-    url(r'^download/(?P<program>[^/]*)/(?P<version>[0-9.]*)/$', downloads.views.release),
+    url(r'^download/$', downloads.views.download, name='downloads',),
+    url(r'^download/(?P<program>[^/]*)/$', downloads.views.detail, name='downloads-detail'),
+    url(r'^download/(?P<program>[^/]*)/(?P<version>[0-9.]*)/$', downloads.views.release, name='downloads-release'),
     url(r'^download/(?P<program>[^/]*)/(?P<platform>[^/]*)/$', RedirectView.as_view(url='/download/%(program)s/', permanent=True)),
 
     # RSS feeds
@@ -159,7 +159,7 @@ urlpatterns = [
     url(r'^phones/csv/$', phonedb.views.phones_csv),
 
     # Phone database
-    url(r'^phones/$', phonedb.views.index),
+    url(r'^phones/$', phonedb.views.index, name='phonedb'),
     url(r'^phones/history.png$', phonedb.views.phones_chart),
     url(r'^phones/new/$', phonedb.views.create),
     url(r'^phones/new\.php/$', RedirectView.as_view(url='/phones/new/', permanent=True)),
@@ -168,8 +168,8 @@ urlpatterns = [
     url(r'^phones/review/$', phonedb.views.review),
     url(r'^phones/model.php/$', phonedb.views.phone_redirect),
     url(r'^phones/search/(?P<featurename>[^/]*)/$', phonedb.views.search),
-    url(r'^phones/(?P<vendorname>[^/]*)/$', phonedb.views.vendor),
-    url(r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/$', phonedb.views.phone),
+    url(r'^phones/(?P<vendorname>[^/]*)/$', phonedb.views.vendor, name='phonedb-vendor'),
+    url(r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/$', phonedb.views.phone, 'phonedb-phone'),
     url(r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/delete/$', phonedb.views.delete),
     url(r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/approve/$', phonedb.views.approve),
     url(r'^phones/(?P<vendorname>[^/]*)/new/$', phonedb.views.create),
@@ -200,7 +200,7 @@ urlpatterns = [
 
     # Screenshots
     url(r'^screenshots/$', screenshots.views.index),
-    url(r'^screenshots/(?P<slug>[^/]*)/$', screenshots.views.category),
+    url(r'^screenshots/(?P<slug>[^/]*)/$', screenshots.views.category, name='screenshots-category'),
 
     # Links
     url(r'^links/$', links.views.index),

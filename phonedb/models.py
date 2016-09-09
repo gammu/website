@@ -54,7 +54,7 @@ class Vendor(models.Model):
 
     @models.permalink
     def get_absolute_url(self):
-         return ('phonedb.views.vendor', (), {'vendorname': self.slug})
+         return ('phonedb-vendor', (), {'vendorname': self.slug})
 
     def get_models_count(self):
         return Phone.objects.filter(vendor = self, state = 'approved').count()
@@ -138,7 +138,7 @@ class Phone(models.Model):
 
     @models.permalink
     def get_absolute_url(self):
-        return ('phonedb.views.phone', (), {'vendorname': self.vendor.slug, 'id': self.id })
+        return ('phonedb-phone', (), {'vendorname': self.vendor.slug, 'id': self.id })
 
     def get_author_email(self):
         if self.author_email == '':

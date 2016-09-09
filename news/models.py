@@ -43,7 +43,7 @@ class Category(models.Model):
 
     @models.permalink
     def get_absolute_url(self):
-         return ('news.views.category', (), { 'slug': self.slug })
+         return ('news-category', (), { 'slug': self.slug })
 
 class Entry(models.Model):
     # Metadata.
@@ -92,7 +92,7 @@ class Entry(models.Model):
 
     @models.permalink
     def get_absolute_url(self):
-         return ('news.views.entry', (), {
+         return ('news-entry', (), {
                 'year': self.pub_date.strftime('%Y'),
                 'month': self.pub_date.strftime('%m'),
                 'day': self.pub_date.strftime('%d'),

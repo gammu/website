@@ -179,7 +179,7 @@ class Release(models.Model):
 
     @models.permalink
     def get_absolute_url(self):
-         return ('downloads.views.release', (), { 'version': self.version, 'program': self.program })
+         return ('downloads-release', (), { 'version': self.version, 'program': self.program })
 
 
 class Download(models.Model):
