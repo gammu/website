@@ -34,6 +34,17 @@ class PhoneDBTest(TestCase):
         )
         self.assertContains(response, 'Phone record has been created.')
 
+    def test_add_prefill(self):
+        response = self.client.get(
+            reverse('phonedb-new'),
+            {
+                'vendor': 'test',
+                'name': 'TestingPHone',
+            }
+        )
+        self.assertContains(response, 'TestingPHone')
+        self.assertContains(response, '<option value="1" selected="selected">Test</option>')
+
     def test_csv(self):
         self.test_add()
         response = self.client.get(reverse('phonedb-csv'))
