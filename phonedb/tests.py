@@ -33,6 +33,7 @@ class PhoneDBTest(TestCase):
             follow=True
         )
         self.assertContains(response, 'Phone record has been created.')
+        self.assertContains(response, 'Test TestPHone')
 
     def test_add_wammu(self):
         response = self.client.post(
