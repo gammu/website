@@ -161,7 +161,7 @@ urlpatterns = [
     # Phone database
     url(r'^phones/$', phonedb.views.index, name='phonedb'),
     url(r'^phones/history.png$', phonedb.views.phones_chart),
-    url(r'^phones/new/$', phonedb.views.create),
+    url(r'^phones/new/$', phonedb.views.create, name='phonedb-new'),
     url(r'^phones/new\.php/$', RedirectView.as_view(url='/phones/new/', permanent=True)),
     url(r'^phones/list\.php', RedirectView.as_view(url='/phones/', permanent=True)),
     url(r'^phones/search/$', phonedb.views.search),
@@ -169,7 +169,7 @@ urlpatterns = [
     url(r'^phones/model.php/$', phonedb.views.phone_redirect),
     url(r'^phones/search/(?P<featurename>[^/]*)/$', phonedb.views.search),
     url(r'^phones/(?P<vendorname>[^/]*)/$', phonedb.views.vendor, name='phonedb-vendor'),
-    url(r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/$', phonedb.views.phone, 'phonedb-phone'),
+    url(r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/$', phonedb.views.phone, name='phonedb-phone'),
     url(r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/delete/$', phonedb.views.delete),
     url(r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/approve/$', phonedb.views.approve),
     url(r'^phones/(?P<vendorname>[^/]*)/new/$', phonedb.views.create),
