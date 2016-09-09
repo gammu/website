@@ -21,7 +21,7 @@ class Command(BaseCommand):
 
         for f in args[4:]:
             print "Adding %s..." % f
-            path, filename = os.path.split(f)
+            filename = os.path.basename(f)
 
             data = open(f).read()
 
