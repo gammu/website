@@ -156,7 +156,7 @@ urlpatterns = [
     url(r'^phones/atom/$', AtomPhonesFeed()),
 
 
-    url(r'^phones/csv/$', phonedb.views.phones_csv),
+    url(r'^phones/csv/$', phonedb.views.phones_csv, name='phonedb-csv'),
 
     # Phone database
     url(r'^phones/$', phonedb.views.index, name='phonedb'),

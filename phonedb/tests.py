@@ -33,3 +33,10 @@ class PhoneDBTest(TestCase):
             follow=True
         )
         self.assertContains(response, 'Phone record has been created.')
+
+    def test_csv(self):
+        self.test_add()
+        response = self.client.get(reverse('phonedb-csv'))
+        self.assertEqual(response.get('Content-Type'), 'text/csv')
+        self.assertContains(response, 'TestPHone')
+        self.assertContains(response, 'noreply[at]example[dot]com')
