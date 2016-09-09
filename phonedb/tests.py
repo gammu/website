@@ -1,5 +1,5 @@
-from django.test import TestCase
 from django.core.urlresolvers import reverse
+from django.test import TestCase
 
 from phonedb.models import Vendor, Feature, Connection
 
@@ -94,4 +94,9 @@ class PhoneDBTest(TestCase):
     def test_vendor_list(self):
         self.test_add()
         response = self.client.get(reverse('phonedb-vendor', kwargs={'vendorname': 'test'}))
+        self.assertContains(response, 'TestPHone')
+
+    def test_feed(self):
+        self.test_add()
+        response = self.client.get(reverse('phonedb-rss'), HTTP_HOST='example.com')
         self.assertContains(response, 'TestPHone')

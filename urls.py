@@ -152,7 +152,7 @@ urlpatterns = [
     url(r'^download/(?P<program>[^/]*)/(?P<platform>[^/]*)/$', RedirectView.as_view(url='/download/%(program)s/', permanent=True)),
 
     # RSS feeds
-    url(r'^phones/rss/$', RssPhonesFeed()),
+    url(r'^phones/rss/$', RssPhonesFeed(), name='phonedb-rss'),
     url(r'^phones/atom/$', AtomPhonesFeed()),
 
 
