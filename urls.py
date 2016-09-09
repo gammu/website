@@ -175,7 +175,7 @@ urlpatterns = [
     url(r'^phones/(?P<vendorname>[^/]*)/new/$', phonedb.views.create),
 
     # API for Wammu
-    url(r'^api/phones/new/$', phonedb.views.create_wammu),
+    url(r'^api/phones/new/$', phonedb.views.create_wammu, name='phonedb-api'),
 
     # DOAP/PAD syndication
     url(r'^api/doap/(?P<program>[^/.]*).xml$', downloads.views.doap),

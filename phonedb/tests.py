@@ -34,6 +34,32 @@ class PhoneDBTest(TestCase):
         )
         self.assertContains(response, 'Phone record has been created.')
 
+    def test_add_wammu(self):
+        response = self.client.post(
+            reverse('phonedb-api'),
+            {
+                'manufacturer': '1',
+                'name': 'TestPHone',
+                'connection': 'at',
+                'model': '',
+                'features': '1',
+                'gammu_version': '1.2.3',
+                'note': '',
+                'author_name': 'Nobody',
+                'author_email': 'noreply@example.com',
+                'email_garble': 'atdot',
+                'irobot': 'wammu',
+            },
+        )
+        self.assertContains(response, 'Entry created')
+
+    def test_add_wammu_missing(self):
+        response = self.client.post(
+            reverse('phonedb-api'),
+        )
+        self.assertContains(response, 'Invalid values')
+        self.assertContains(response, 'gammu_version')
+
     def test_add_prefill(self):
         response = self.client.get(
             reverse('phonedb-new'),
