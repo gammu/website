@@ -20,7 +20,7 @@ class Command(BaseCommand):
             dlpath = dlpath[:-1]
 
         for f in args[4:]:
-            print "Adding %s..." % f
+            self.stdout.write("Adding %s..." % f)
             filename = os.path.basename(f)
 
             data = open(f).read()
