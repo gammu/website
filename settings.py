@@ -4,7 +4,6 @@
 import os
 
 DEBUG = True
-TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     ('Michal Čihař', 'michal@cihar.com'),
@@ -103,12 +102,6 @@ STATICFILES_FINDERS = (
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = 'c=kt_6vtz&(418w-0(uti(q5&e76q#lc=%vuwzm&+ulqrkgyp3'
 
-# List of callables that know how to import templates from various sources.
-TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.Loader',
-    'django.template.loaders.app_directories.Loader',
-)
-
 MIDDLEWARE_CLASSES = (
     'django.middleware.gzip.GZipMiddleware',
 #    'django.middleware.cache.UpdateCacheMiddleware',
@@ -135,26 +128,33 @@ ROLLBAR = {
 
 ROOT_URLCONF = 'urls'
 
-TEMPLATE_CONTEXT_PROCESSORS = (
-    'django.contrib.auth.context_processors.auth',
-    'django.template.context_processors.debug',
-    'django.template.context_processors.i18n',
-    'django.template.context_processors.media',
-    'django.template.context_processors.request',
-    'django.template.context_processors.csrf',
-    'wammu.context_processors.translations',
-    'wammu.context_processors.message',
-    'wammu.context_processors.dates',
-    'wammu.context_processors.feeds',
-    'wammu.context_processors.data',
-    )
-
-TEMPLATE_DIRS = (
-    HTML_ROOT,
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
-)
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [
+            HTML_ROOT,
+        ],
+        'OPTIONS': {
+            'context_processors': [
+                'django.contrib.auth.context_processors.auth',
+                'django.template.context_processors.debug',
+                'django.template.context_processors.i18n',
+                'django.template.context_processors.media',
+                'django.template.context_processors.request',
+                'django.template.context_processors.csrf',
+                'wammu.context_processors.translations',
+                'wammu.context_processors.message',
+                'wammu.context_processors.dates',
+                'wammu.context_processors.feeds',
+                'wammu.context_processors.data',
+            ],
+            'loaders': [
+                'django.template.loaders.filesystem.Loader',
+                'django.template.loaders.app_directories.Loader',
+            ],
+        },
+    },
+]
 
 INSTALLED_APPS = (
     'django.contrib.auth',
