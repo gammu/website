@@ -131,10 +131,10 @@ urlpatterns = [
     url(r'^s60/$', wammu.views.static, {'page': 's60.html'}),
 
     url(r'^tools/$', wammu.views.static, {'page': 'tools/index.html'}),
-    url(r'^tools/pdu-encode/$', tools.views.pduencode),
-    url(r'^tools/pdu-decode/$', tools.views.pdudecode),
-    url(r'^tools/countries/$', tools.views.countries),
-    url(r'^tools/networks/$', tools.views.networks),
+    url(r'^tools/pdu-encode/$', tools.views.pduencode, name='pduencode'),
+    url(r'^tools/pdu-decode/$', tools.views.pdudecode, name='pdudecode'),
+    url(r'^tools/countries/$', tools.views.countries, name='countries'),
+    url(r'^tools/networks/$', tools.views.networks, name='networks'),
 
     # RSS feeds
     url(r'^news/rss/$', RssNewsFeed()),
