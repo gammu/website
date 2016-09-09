@@ -4,6 +4,7 @@ from django.http import Http404
 from django.db.models import Q
 from django.template import RequestContext
 from phonedb.models import Vendor, Phone, Feature, Connection, GARBLE_CHOICES
+from django.contrib import messages
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from django.core.exceptions import ValidationError
 from django.core.cache import cache
@@ -440,8 +441,8 @@ def create(request, vendorname = None):
             except socket.herror:
                 newphone.hostname = newphone.address
             newphone.save()
+            messages.add_message(request, messages.INFO, _('Phone record has been created.'))
             result = HttpResponseRedirect(newphone.get_absolute_url())
-            request.session['message'] = _('Phone record has been created.')
             result.set_cookie('phonedb_garble', form.cleaned_data['email_garble'].encode('utf-8'), max_age = 3600 * 24 * 365)
             result.set_cookie('phonedb_author', form.cleaned_data['author_name'].encode('utf-8'), max_age = 3600 * 24 * 365)
             result.set_cookie('phonedb_email', form.cleaned_data['author_email'].encode('utf-8'), max_age = 3600 * 24 * 365)

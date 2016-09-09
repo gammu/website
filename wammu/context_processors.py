@@ -37,13 +37,6 @@ def translations(request):
 
     return {'translations': langs}
 
-def message(request):
-    ret = {}
-    if request.session.has_key('message'):
-        ret['message'] = request.session['message']
-        del request.session['message']
-    return ret
-
 def dates(request):
     return {
         'current_year': datetime.now().strftime('%Y'),

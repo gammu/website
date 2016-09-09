@@ -166,11 +166,11 @@
    </div>
   </nav>
 
-{% if message %}
-<div class="alert alert-info" role="alert">
-{{ message }}
-</div>
-{% endif %}
+{% for message in messages %}
+    <div class="alert alert-info" role="alert">
+    {{ message }}
+    </div>
+{% endfor %}
 
 <div class="container">
 {% block content %}{% endblock %}
