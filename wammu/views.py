@@ -18,7 +18,7 @@ def process_version_feedback(request):
     if request.GET.has_key('version'):
         result['feedback'] = True
         version = request.GET['version']
-        last_rel, testing_rel = get_latest_releases('wammu')
+        last_rel = get_latest_releases('wammu')[0]
         if last_rel.version != version:
             result['update_release'] = last_rel
     return result
