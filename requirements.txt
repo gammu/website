@@ -4,3 +4,4 @@ Markdown
 Pillow
 python-gammu
 pygooglechart
+rollbar
