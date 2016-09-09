@@ -40,3 +40,16 @@ class PhoneDBTest(TestCase):
         self.assertEqual(response.get('Content-Type'), 'text/csv')
         self.assertContains(response, 'TestPHone')
         self.assertContains(response, 'noreply[at]example[dot]com')
+
+    def test_search(self):
+        response = self.client.get(reverse('phonedb-search'), {'feature': '1'})
+        self.assertContains(response, 'Found 0 results matching your query.')
+        response = self.client.get(reverse('phonedb-search-feature', kwargs={'featurename': 'info'}))
+        self.assertContains(response, 'Found 0 results matching your query.')
+
+        self.test_add()
+
+        response = self.client.get(reverse('phonedb-search'), {'feature': '1'})
+        self.assertContains(response, 'TestPHone')
+        response = self.client.get(reverse('phonedb-search-feature', kwargs={'featurename': 'info'}))
+        self.assertContains(response, 'TestPHone')
