@@ -6,30 +6,28 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2016-09-08 16:17+0200\n"
-"PO-Revision-Date: 2016-08-01 16:18+0000\n"
+"PO-Revision-Date: 2016-09-13 08:42+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
-"Language-Team: Turkish <https://hosted.weblate.org/projects/gammu/website/tr/"
-">\n"
+"Language-Team: Turkish "
+"<https://hosted.weblate.org/projects/gammu/website/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.8-dev\n"
+"X-Generator: Weblate 2.8\n"
 
 #: downloads/models.py:30
-#, fuzzy
 #| msgid "Source"
 msgid "Source code"
-msgstr "Kaynak"
+msgstr "Kaynak kodu"
 
 #: downloads/models.py:31
-#, fuzzy
 #| msgid "Windows binary"
 msgid "Windows binaries"
-msgstr "Windows ikili"
+msgstr "Windows ikili dosyaları"
 
 #: downloads/models.py:167
 #, python-format
