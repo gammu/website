@@ -72,10 +72,9 @@ class PagesSitemap(Sitemap):
             ('/docs/', '%s/docs/index.html' % settings.HTML_ROOT, 0.9),
 
             ('/screenshots/', None, 0.8),
-            ('/downloads/gammu/', None, 0.2),
-            ('/downloads/gammu/source/', None, 0.7),
-            ('/downloads/wammu/', None, 0.2),
-            ('/downloads/wammu/source/', None, 0.7),
+            ('/downloads/gammu/', None, 0.7),
+            ('/downloads/python-gammu/', None, 0.7),
+            ('/downloads/wammu/', None, 0.7),
             ('/links/', None, 0.4),
         ]
 
