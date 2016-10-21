@@ -213,7 +213,7 @@ urlpatterns = [
 
     # Sitemap
     url(r'^sitemap.xml$', django.contrib.sitemaps.views.index, {'sitemaps': sitemaps}, name='sitemap'),
-    url(r'^sitemap-(?P<section>.+)\.xml$', django.contrib.sitemaps.views.sitemap, {'sitemaps': sitemaps}, name='sitemap-section'),
+    url(r'^sitemap-(?P<section>.+)\.xml$', django.contrib.sitemaps.views.sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
 
     # Robots
     url(r'^robots.txt$', wammu.views.robots),
