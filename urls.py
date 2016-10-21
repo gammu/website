@@ -212,8 +212,8 @@ urlpatterns = [
     url(r'^phones/features/(?P<featurename>[^/]*)/$', RedirectView.as_view(url='/phones/search/%(featurename)s/', permanent=True)),
 
     # Sitemap
-    url(r'^sitemap.xml$', django.contrib.sitemaps.views.index, {'sitemaps': sitemaps}),
-    url(r'^sitemap-(?P<section>.+)\.xml$', django.contrib.sitemaps.views.sitemap, {'sitemaps': sitemaps}),
+    url(r'^sitemap.xml$', django.contrib.sitemaps.views.index, {'sitemaps': sitemaps}, name='sitemap'),
+    url(r'^sitemap-(?P<section>.+)\.xml$', django.contrib.sitemaps.views.sitemap, {'sitemaps': sitemaps}, name='sitemap-section'),
 
     # Robots
     url(r'^robots.txt$', wammu.views.robots),
