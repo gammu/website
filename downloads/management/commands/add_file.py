@@ -43,7 +43,7 @@ class Command(BaseCommand):
 
             dl.size = len(data)
 
-            dl.platform = args[3]
+            dl.platform = options['type']
 
             dl.location = '%s/%s' % (dlpath, filename)
 
