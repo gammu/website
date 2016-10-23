@@ -6,20 +6,25 @@ from downloads.models import Release, Download
 
 class Command(BaseCommand):
     help = 'adds file to the release'
-    args = '<base> <program> <version> <type> <file>...'
+
+    def add_arguments(self, parser):
+        super(Command, self).add_arguments(parser)
+        parser.add_argument('base')
+        parser.add_argument('program')
+        parser.add_argument('version')
+        parser.add_argument('type')
+        parser.add_argument('file', nargs='+')
 
     def handle(self, *args, **options):
-        if len(args) < 5:
-            raise CommandError('Usage: add_file /base/path program version type file...')
 
-        release = Release.objects.get(program = args[1], version = args[2])
+        release = Release.objects.get(program=options['program'], version=options['version'])
 
-        dlpath = args[0]
+        dlpath = options['base']
 
         while dlpath[-1] == '/':
             dlpath = dlpath[:-1]
 
-        for f in args[4:]:
+        for f in options['file']:
             self.stdout.write("Adding %s..." % f)
             filename = os.path.basename(f)
 
