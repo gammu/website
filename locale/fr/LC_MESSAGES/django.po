@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-08 16:17+0200\n"
+"POT-Creation-Date: 2016-11-16 13:53+0100\n"
 "PO-Revision-Date: 2016-07-20 21:29+0000\n"
 "Last-Translator: Nabil BENDAFI <nabil@bendafi.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gammu/website/fr/"
@@ -1085,19 +1085,19 @@ msgstr ""
 "mais il y en a beaucoup. Plus nous en avons, plus il nous est possible\n"
 "de développer un meilleur logiciel.\n"
 
-#: html/donate.html:27
-msgid "Donate monthly amount for sustainable development"
-msgstr ""
-
-#: html/donate.html:31
-msgid "Fund issues to motivate developers"
-msgstr ""
-
-#: html/donate.html:37
+#: html/donate.html:27 html/donate.html:33
 msgid "Donate small amount in weekly intervals."
 msgstr ""
 
+#: html/donate.html:39
+msgid "Donate monthly amount for sustainable development"
+msgstr ""
+
 #: html/donate.html:43
+msgid "Fund issues to motivate developers"
+msgstr ""
+
+#: html/donate.html:49
 #, fuzzy
 #| msgid ""
 #| "\n"
@@ -1122,11 +1122,11 @@ msgstr ""
 "Vous pouvez aussi envoyer directement vos dons à <code>michal@cihar.com</"
 "code>.\n"
 
-#: html/donate.html:60
+#: html/donate.html:66
 msgid "Bitcoin"
 msgstr "Bitcoin"
 
-#: html/donate.html:63
+#: html/donate.html:69
 #, fuzzy, python-format
 #| msgid ""
 #| "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -1139,11 +1139,11 @@ msgstr ""
 "a> (un réseau peer-to-peer) et m'envoyer des Bitcoins à <code>%(address)s</"
 "code>."
 
-#: html/donate.html:66 html/phonedb/index.html:79
+#: html/donate.html:72 html/phonedb/index.html:79
 msgid "Supporters"
 msgstr "Sponsors"
 
-#: html/donate.html:68
+#: html/donate.html:74
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
@@ -1170,11 +1170,11 @@ msgstr ""
 msgid "Ubuntu packages"
 msgstr ""
 
-#: html/downloads/detail.html:37 html/downloads/platformlinks.html:11
+#: html/downloads/detail.html:37 html/downloads/platformlinks.html:14
 msgid "Ubuntu packages in PPA"
 msgstr ""
 
-#: html/downloads/detail.html:41 html/downloads/platformlinks.html:15
+#: html/downloads/detail.html:41 html/downloads/platformlinks.html:18
 msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
 msgstr ""
 
@@ -1234,7 +1234,11 @@ msgstr ""
 msgid "Download sources or Windows binaries"
 msgstr ""
 
-#: html/downloads/platformlinks.html:17
+#: html/downloads/platformlinks.html:11
+msgid "Fedora packages"
+msgstr ""
+
+#: html/downloads/platformlinks.html:20
 msgid "Development git snaphots and git access"
 msgstr ""
 
@@ -3123,7 +3127,7 @@ msgstr "Flux vers la base de données Gammu (RSS)"
 msgid "Gammu Phone Database Feed (Atom)"
 msgstr "Flux vers la base de données Gammu (Atom)"
 
-#: phonedb/views.py:441
+#: phonedb/views.py:443
 msgid "Phone record has been created."
 msgstr "L'enregistrement du téléphone a bien été créé."
 
@@ -3147,11 +3151,11 @@ msgstr ""
 msgid "SMSC number"
 msgstr ""
 
-#: wammu/context_processors.py:54
+#: wammu/context_processors.py:46
 msgid "Gammu and Wammu News Feed (RSS)"
 msgstr "Flux vers les nouvelles Gammu et Wammu (RSS)"
 
-#: wammu/context_processors.py:55
+#: wammu/context_processors.py:47
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Flux vers les nouvelles Gammu et Wammu (Atom)"
 

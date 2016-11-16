@@ -5,12 +5,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
-"POT-Creation-Date: 2016-09-08 16:17+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-16 13:53+0100\n"
 "PO-Revision-Date: 2016-10-11 15:35+0000\n"
 "Last-Translator: mcnesium <weblate.org@mcnesium.com>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/gammu/website/de/>"
-"\n"
+"Language-Team: German <https://hosted.weblate.org/projects/gammu/website/de/"
+">\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -386,11 +386,11 @@ msgid ""
 "and Wammu, please check the <a href=\"/docs/roadmap/\">roadmap</a>.\n"
 msgstr ""
 "\n"
-"Gammu wurde in C programmiert, Wammu in <a href=\"https://www.python.org/\""
-">Python</a>, die Kenntnis einer dieser Sprachen ist also Voraussetzung um "
+"Gammu wurde in C programmiert, Wammu in <a href=\"https://www.python.org/"
+"\">Python</a>, die Kenntnis einer dieser Sprachen ist also Voraussetzung um "
 "Code direkt beizutragen.\n"
-"Sie werden vermutlich einige Teile der <a href=\"/docs/devel/\""
-">Entwicklerdokumentation</a> verwenden wollen, um den Code zu verstehen.\n"
+"Sie werden vermutlich einige Teile der <a href=\"/docs/devel/"
+"\">Entwicklerdokumentation</a> verwenden wollen, um den Code zu verstehen.\n"
 "Wenn Sie Informationen über derzeitig geplante Änderungen benötigen, lesen "
 "Sie bitte unsere <a href=\"/docs/roadmap/\">Roadmap</a>.\n"
 
@@ -424,9 +424,9 @@ msgid ""
 "clone Wammu and Gammu sources, use following commands:\n"
 msgstr ""
 "\n"
-"Die Git Speicher befinden sich auf <a href=\"https://github.com/\">Github</a>"
-", im speziellen finden Sie dort die Projekte <a href=\""
-"https://github.com/gammu/\">Gammu</a>.\n"
+"Die Git Speicher befinden sich auf <a href=\"https://github.com/\">Github</"
+"a>, im speziellen finden Sie dort die Projekte <a href=\"https://github.com/"
+"gammu/\">Gammu</a>.\n"
 "Sie können sich dort den Quelltext ansehen oder einfach die gesamte "
 "Datenbank kopieren und auf Ihrem Computer genau analysieren.\n"
 "Letzteres können Sie bequem mit folgenden Befehlen veranlassen:\n"
@@ -442,8 +442,8 @@ msgstr ""
 "\n"
 "Die Anleitung zum Bau und zur Installation finden Sie, sowohl bei Gammu, als "
 "auch bei Wammu, in der Datei <code>INSTALL</code>.\n"
-"Sie benötigen zum Kompilieren von Gammu <a href=\"https://www.cmake.org/\""
-">CMake</a>.\n"
+"Sie benötigen zum Kompilieren von Gammu <a href=\"https://www.cmake.org/"
+"\">CMake</a>.\n"
 
 #: html/contribute/code.html:63
 msgid "Code Snapshots"
@@ -743,9 +743,8 @@ msgstr ""
 "\n"
 "Gammu, Wammu und diese Webseite verwenden als Framework für Übersetzungen <a "
 "href=\"https://de.wikipedia.org/wiki/GNU_gettext\">gettext</a>.\n"
-"Zusätzlich zu gettext verwendet Gammu <a href=\""
-"https://po4a.alioth.debian.org/\">po4a</a>, um die Dokumentationen zu "
-"übersetzen.\n"
+"Zusätzlich zu gettext verwendet Gammu <a href=\"https://po4a.alioth.debian."
+"org/\">po4a</a>, um die Dokumentationen zu übersetzen.\n"
 "Es existiert eine breite Palette an Programmen, die gettext Übersetzungen "
 "ermöglichen.\n"
 "Sie können also einfach das für Sie Angenehmste auswählen.\n"
@@ -822,8 +821,8 @@ msgid ""
 msgstr ""
 "\n"
 "Jeder Registrierte kann jede Sprache übersetzen. Wenn Sie eine bessere "
-"Kontrolle über eine bestimmte Sprache benötigen, können Sie <a href=\""
-"/support/\">uns das mitteilen</a>, um anderen nur das Vorschlagen von "
+"Kontrolle über eine bestimmte Sprache benötigen, können Sie <a href=\"/"
+"support/\">uns das mitteilen</a>, um anderen nur das Vorschlagen von "
 "Übersetzungen zu ermöglichen. Diese Vorgehensweise kann höhere und "
 "einheitlichere Qualität bei Übersetzungen ergeben, allerdings auch "
 "langsameren Fortschritt mit sich bringen. Es liegt an jedem einzelnen "
@@ -1222,8 +1221,8 @@ msgstr ""
 "\n"
 "Zusätzliche Hinweise über die verwendeten Protokolle finden Sie im Quelltext "
 "unter<code>docs/develop</code>,\n"
-"oder Sie suchen in den git-Repositorys nach <a href=\""
-"https://github.com/gammu/gsm-docs/\">verschiedenen GSM Dokumentationen</a>.\n"
+"oder Sie suchen in den git-Repositorys nach <a href=\"https://github.com/"
+"gammu/gsm-docs/\">verschiedenen GSM Dokumentationen</a>.\n"
 
 #: html/donate-thanks.html:4 html/donate-thanks.html:7
 msgid "Thank you for Donation!"
@@ -1278,19 +1277,19 @@ msgstr ""
 "Mehr Geräte zur Verfügung zu haben heißt, wir können bessere Software "
 "gestalten.\n"
 
-#: html/donate.html:27
-msgid "Donate monthly amount for sustainable development"
-msgstr "Monatlichen Betrag für nachhaltige Entwicklung spenden"
-
-#: html/donate.html:31
-msgid "Fund issues to motivate developers"
-msgstr ""
-
-#: html/donate.html:37
+#: html/donate.html:27 html/donate.html:33
 msgid "Donate small amount in weekly intervals."
 msgstr "Kleinen Betrag in wöchentlichen Intervallen spenden."
 
+#: html/donate.html:39
+msgid "Donate monthly amount for sustainable development"
+msgstr "Monatlichen Betrag für nachhaltige Entwicklung spenden"
+
 #: html/donate.html:43
+msgid "Fund issues to motivate developers"
+msgstr ""
+
+#: html/donate.html:49
 msgid ""
 "\n"
 "The donation itself is being processed by <a\n"
@@ -1306,22 +1305,22 @@ msgstr ""
 "können ebenso eine direkte Spende an <code>michal@cihar.com</code> "
 "veranlassen.\n"
 
-#: html/donate.html:60
+#: html/donate.html:66
 msgid "Bitcoin"
 msgstr "Bitcoin"
 
-#: html/donate.html:63
+#: html/donate.html:69
 #, python-format
 msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to <code>%(address)s</code>."
 msgstr ""
 
-#: html/donate.html:66 html/phonedb/index.html:79
+#: html/donate.html:72 html/phonedb/index.html:79
 msgid "Supporters"
 msgstr "Unterstützer"
 
-#: html/donate.html:68
+#: html/donate.html:74
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
@@ -1350,11 +1349,11 @@ msgstr "Debian Pakete"
 msgid "Ubuntu packages"
 msgstr "Ubuntu Pakete"
 
-#: html/downloads/detail.html:37 html/downloads/platformlinks.html:11
+#: html/downloads/detail.html:37 html/downloads/platformlinks.html:14
 msgid "Ubuntu packages in PPA"
 msgstr "Ubuntu Pakete im PPA"
 
-#: html/downloads/detail.html:41 html/downloads/platformlinks.html:15
+#: html/downloads/detail.html:41 html/downloads/platformlinks.html:18
 #, fuzzy
 msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
 msgstr ""
@@ -1429,7 +1428,13 @@ msgstr "PAD für Gammu"
 msgid "Download sources or Windows binaries"
 msgstr ""
 
-#: html/downloads/platformlinks.html:17
+#: html/downloads/platformlinks.html:11
+#, fuzzy
+#| msgid "Debian packages"
+msgid "Fedora packages"
+msgstr "Debian Pakete"
+
+#: html/downloads/platformlinks.html:20
 msgid "Development git snaphots and git access"
 msgstr "Entwicklungs-Git-Snapshots und -Git-Zugang"
 
@@ -3934,7 +3939,7 @@ msgstr "Gammu Telefon Datenbank Feed (RSS)"
 msgid "Gammu Phone Database Feed (Atom)"
 msgstr "Gammu Telefon Datenbank Feed (Atom)"
 
-#: phonedb/views.py:441
+#: phonedb/views.py:443
 msgid "Phone record has been created."
 msgstr "Die Eintragung bezüglich diesem Telefon wurde erstellt."
 
@@ -3958,11 +3963,11 @@ msgstr "Empfänger"
 msgid "SMSC number"
 msgstr "SMSC-Nummer"
 
-#: wammu/context_processors.py:54
+#: wammu/context_processors.py:46
 msgid "Gammu and Wammu News Feed (RSS)"
 msgstr "Gammu und Wammu News Feed (RSS)"
 
-#: wammu/context_processors.py:55
+#: wammu/context_processors.py:47
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Gammu und Wammu News Feed (Atom)"
 
