@@ -6,12 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
-"POT-Creation-Date: 2016-11-16 13:53+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-07 17:08+0100\n"
 "PO-Revision-Date: 2016-11-16 13:32+0000\n"
 "Last-Translator: Helder Santana <helder.santana@systemsbr.com.br>\n"
-"Language-Team: Portuguese (Brazil) "
-"<https://hosted.weblate.org/projects/gammu/website/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"gammu/website/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1449,21 +1449,27 @@ msgstr "Pacotes Debian"
 msgid "Ubuntu packages"
 msgstr "Pacotes Ubuntu"
 
-#: html/downloads/detail.html:37 html/downloads/platformlinks.html:14
+#: html/downloads/detail.html:37 html/downloads/platformlinks.html:11
 msgid "Ubuntu packages in PPA"
 msgstr "Pacotes Ubuntu nos repositórios PPA"
 
-#: html/downloads/detail.html:41 html/downloads/platformlinks.html:18
+#: html/downloads/detail.html:40 html/downloads/platformlinks.html:14
+#, fuzzy
+#| msgid "Debian packages"
+msgid "Fedora packages"
+msgstr "Pacotes Debian"
+
+#: html/downloads/detail.html:44 html/downloads/platformlinks.html:18
 msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
 msgstr ""
 "Pacotes RPM (openSUSE, Fedora, Mandriva, SLES, RHEL, CentOS) última versão "
 "estável"
 
-#: html/downloads/detail.html:45
+#: html/downloads/detail.html:48
 msgid "Development version"
 msgstr "Versão de desenvolvimento"
 
-#: html/downloads/detail.html:48
+#: html/downloads/detail.html:51
 msgid ""
 "Should you be interested in git access or git snapshots, you can find them "
 "on <a href=\"/contribute/code/\">development page</a>."
@@ -1524,12 +1530,6 @@ msgstr "PAD para Gammu"
 #: html/downloads/platformlinks.html:3
 msgid "Download sources or Windows binaries"
 msgstr ""
-
-#: html/downloads/platformlinks.html:11
-#, fuzzy
-#| msgid "Debian packages"
-msgid "Fedora packages"
-msgstr "Pacotes Debian"
 
 #: html/downloads/platformlinks.html:20
 msgid "Development git snaphots and git access"

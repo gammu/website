@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-16 13:53+0100\n"
+"POT-Creation-Date: 2016-12-07 17:08+0100\n"
 "PO-Revision-Date: 2015-04-15 22:04+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gammu/website/es/"
@@ -1407,22 +1407,28 @@ msgstr "Paquetes para Debian"
 msgid "Ubuntu packages"
 msgstr "Paquetes para Ubuntu"
 
-#: html/downloads/detail.html:37 html/downloads/platformlinks.html:14
+#: html/downloads/detail.html:37 html/downloads/platformlinks.html:11
 msgid "Ubuntu packages in PPA"
 msgstr "Paquetes para Ubuntu en un PPA"
 
-#: html/downloads/detail.html:41 html/downloads/platformlinks.html:18
+#: html/downloads/detail.html:40 html/downloads/platformlinks.html:14
+#, fuzzy
+#| msgid "Debian packages"
+msgid "Fedora packages"
+msgstr "Paquetes para Debian"
+
+#: html/downloads/detail.html:44 html/downloads/platformlinks.html:18
 #, fuzzy
 msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
 msgstr ""
 "Paquetes RPM para openSUSE, Fedora, Mandriva, SLES, RHEL y CentOS (última "
 "versión estable)"
 
-#: html/downloads/detail.html:45
+#: html/downloads/detail.html:48
 msgid "Development version"
 msgstr "Versión para desarrolladores"
 
-#: html/downloads/detail.html:48
+#: html/downloads/detail.html:51
 msgid ""
 "Should you be interested in git access or git snapshots, you can find them "
 "on <a href=\"/contribute/code/\">development page</a>."
@@ -1483,12 +1489,6 @@ msgstr "PAD para Gammu"
 #: html/downloads/platformlinks.html:3
 msgid "Download sources or Windows binaries"
 msgstr ""
-
-#: html/downloads/platformlinks.html:11
-#, fuzzy
-#| msgid "Debian packages"
-msgid "Fedora packages"
-msgstr "Paquetes para Debian"
 
 #: html/downloads/platformlinks.html:20
 msgid "Development git snaphots and git access"

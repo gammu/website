@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-16 13:53+0100\n"
+"POT-Creation-Date: 2016-12-07 17:08+0100\n"
 "PO-Revision-Date: 2016-07-20 21:29+0000\n"
 "Last-Translator: Nabil BENDAFI <nabil@bendafi.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gammu/website/fr/"
@@ -1170,19 +1170,23 @@ msgstr ""
 msgid "Ubuntu packages"
 msgstr ""
 
-#: html/downloads/detail.html:37 html/downloads/platformlinks.html:14
+#: html/downloads/detail.html:37 html/downloads/platformlinks.html:11
 msgid "Ubuntu packages in PPA"
 msgstr ""
 
-#: html/downloads/detail.html:41 html/downloads/platformlinks.html:18
+#: html/downloads/detail.html:40 html/downloads/platformlinks.html:14
+msgid "Fedora packages"
+msgstr ""
+
+#: html/downloads/detail.html:44 html/downloads/platformlinks.html:18
 msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
 msgstr ""
 
-#: html/downloads/detail.html:45
+#: html/downloads/detail.html:48
 msgid "Development version"
 msgstr ""
 
-#: html/downloads/detail.html:48
+#: html/downloads/detail.html:51
 msgid ""
 "Should you be interested in git access or git snapshots, you can find them "
 "on <a href=\"/contribute/code/\">development page</a>."
@@ -1232,10 +1236,6 @@ msgstr ""
 
 #: html/downloads/platformlinks.html:3
 msgid "Download sources or Windows binaries"
-msgstr ""
-
-#: html/downloads/platformlinks.html:11
-msgid "Fedora packages"
 msgstr ""
 
 #: html/downloads/platformlinks.html:20
