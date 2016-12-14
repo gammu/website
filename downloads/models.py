@@ -78,23 +78,6 @@ def get_current_downloads(program):
     return downloads
 
 
-class Mirror(models.Model):
-    name = models.CharField(max_length = 250)
-    slug = models.SlugField(unique = True)
-    url = models.CharField(max_length = 250, help_text = 'Python format string, following keys are available: %(location)s, %(filename)s, %(version)s, %(program)s')
-
-    def __unicode__(self):
-        return self.name
-
-    def getlink(self, download):
-        return self.url % {
-            'location' : download.location,
-            'filename' : os.path.basename(download.location),
-            'version' : download.release.version,
-            'program' : download.release.program,
-        }
-        #+ '#!md5!' + download.md5
-
 class Release(models.Model):
     author = models.ForeignKey(User)
     program = models.CharField(max_length = 100, choices = PROGRAM_CHOICES)
