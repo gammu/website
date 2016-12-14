@@ -205,6 +205,7 @@ IGNORABLE_404_STARTS = ['/plugins/editors/tinymce', '/cgi-bin/']
 EMAIL_SUBJECT_PREFIX = '[wammu.eu] '
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     'wammu.eu',
     'cs.wammu.eu',
     'de.wammu.eu',
