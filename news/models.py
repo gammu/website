@@ -67,10 +67,6 @@ class Entry(models.Model):
         blank = False
         )
 
-    # Identi.ca integration
-    identica_post = models.NullBooleanField('post to identi.ca', default = False, null = True)
-    identica_text = models.CharField('identi.ca post text', max_length = 100, blank = True, null = True)
-
     class Meta(object):
         get_latest_by = 'pub_date'
         ordering = ['-pub_date']

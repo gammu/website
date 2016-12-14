@@ -89,7 +89,6 @@ class Release(models.Model):
     changelog_html = models.TextField(blank = True, null = True, editable = False)
     date = models.DateTimeField(auto_now_add = True)
     post_news = models.BooleanField(default = True)
-    post_tweet = models.BooleanField(default = True)
 
     def save(self, *args, **kwargs):
         version = self.version.split('.')
@@ -110,11 +109,6 @@ class Release(models.Model):
                 'versionurl': 'https://%s%s' % (current_site, self.get_absolute_url()),
                 }
             body = 'Full list of changes:\n\n%s\n\nYou can download it from <https://wammu.eu/download/>.\n\nSupport this program by donations <https://wammu.eu/donate/>.' % self.changelog
-            identica_post = self.post_tweet
-            identica_text = '#%s %s has been just released' % (
-                get_program(self.program),
-                self.version,
-                )
             title = '%s %s' % (
                 get_program(self.program),
                 self.version,
@@ -128,13 +122,10 @@ class Release(models.Model):
                 author = author,
                 excerpt = excerpt,
                 body = process_bug_links(body),
-                identica_post = identica_post,
-                identica_text = identica_text,
                 title = title,
                 slug = slug,
-                )
+            )
         self.post_news = False
-        self.post_tweet = False
         self.changelog_html = markdown.markdown(process_bug_links(self.changelog))
         self.description_html = markdown.markdown(self.description)
         super(Release, self).save(*args, **kwargs)
