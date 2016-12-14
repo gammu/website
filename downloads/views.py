@@ -68,7 +68,10 @@ def pad(request, program):
     downloads = get_current_downloads(program)
 
     release = downloads[0][0]
-    download = downloads[0][1].filter(location__iendswith='.zip')[0]
+    try:
+        download = downloads[0][1].filter(location__iendswith='windows.exe')[0]
+    except IndexError:
+        download = downloads[0][1].filter(location__iendswith='.zip')[0]
 
     return render(request, 'downloads/pad/%s.xml' % program, {
         'download': download,
