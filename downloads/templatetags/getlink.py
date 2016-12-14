@@ -1,15 +1,14 @@
 from django import template
 from django.template.loader import render_to_string
 from django.utils.safestring import mark_safe
-from downloads.models import Mirror, PLATFORM_CHOICES
+from downloads.models import PLATFORM_CHOICES
 
 register = template.Library()
 
 
 @register.simple_tag
-def getlink(dlname):
-    mirror = Mirror.objects.get(slug='cihar-com')
-    return mirror.getlink(dlname)
+def getlink(item):
+    return ''.join(('https://dl.cihar.com', item.location))
 
 
 @register.simple_tag
