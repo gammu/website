@@ -92,8 +92,8 @@
     <Application_URLs>
       <Application_Info_URL>https://wammu.eu/</Application_Info_URL>
       <Application_Order_URL>https://wammu.eu/donate/</Application_Order_URL>
-      <Application_Screenshot_URL>https://wammu.eu/media/screenshots/wammu-displaysms.png</Application_Screenshot_URL>
-      <Application_Icon_URL>https://wammu.eu/media/images/wammu.gif</Application_Icon_URL>
+      <Application_Screenshot_URL>http://wammu.eu/media/screenshots/wammu-displaysms.png</Application_Screenshot_URL>
+      <Application_Icon_URL>http://wammu.eu/media/images/wammu.gif</Application_Icon_URL>
       <Application_XML_File_URL>https://wammu.eu/api/pad/wammu.xml</Application_XML_File_URL>
     </Application_URLs>
     <Download_URLs>
