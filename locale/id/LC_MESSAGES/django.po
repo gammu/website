@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-07 17:08+0100\n"
+"POT-Creation-Date: 2017-02-07 11:21+0100\n"
 "PO-Revision-Date: 2016-06-23 01:50+0000\n"
 "Last-Translator: Tintus Ardi <greatkudo@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/gammu/website/"
@@ -31,12 +31,12 @@ msgstr "Sumber"
 msgid "Windows binaries"
 msgstr "biner windows"
 
-#: downloads/models.py:167
+#: downloads/models.py:141
 #, python-format
 msgid "%(program)s stable release %(version)s"
 msgstr "%(program)s dengan versi rilis stabil %(version)s"
 
-#: downloads/models.py:172
+#: downloads/models.py:146
 #, python-format
 msgid "%(program)s testing release %(version)s"
 msgstr "%(program)s rilis percobaan versi %(version)s"

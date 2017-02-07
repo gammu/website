@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-07 17:08+0100\n"
+"POT-Creation-Date: 2017-02-07 11:21+0100\n"
 "PO-Revision-Date: 2016-09-13 08:42+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gammu/website/tr/"
@@ -27,12 +27,12 @@ msgstr "Kaynak kodu"
 msgid "Windows binaries"
 msgstr "Windows ikili dosyaları"
 
-#: downloads/models.py:167
+#: downloads/models.py:141
 #, python-format
 msgid "%(program)s stable release %(version)s"
 msgstr ""
 
-#: downloads/models.py:172
+#: downloads/models.py:146
 #, python-format
 msgid "%(program)s testing release %(version)s"
 msgstr ""

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-07 17:08+0100\n"
+"POT-Creation-Date: 2017-02-07 11:21+0100\n"
 "PO-Revision-Date: 2015-04-15 22:03+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gammu/website/ru/"
@@ -31,12 +31,12 @@ msgstr "Исходный код"
 msgid "Windows binaries"
 msgstr "Исполняемый файл Windows"
 
-#: downloads/models.py:167
+#: downloads/models.py:141
 #, python-format
 msgid "%(program)s stable release %(version)s"
 msgstr "%(program)s стабильный релиз %(version)s"
 
-#: downloads/models.py:172
+#: downloads/models.py:146
 #, python-format
 msgid "%(program)s testing release %(version)s"
 msgstr "%(program)s тестовый релиз %(version)s"
