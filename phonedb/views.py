@@ -337,10 +337,10 @@ def create_wammu(request):
     version = 1
     response = HttpResponse(content_type='text/plain')
 
-    if not request.POST.has_key('irobot') or request.POST['irobot'] != 'wammu':
+    if 'irobot' not in request.POST or request.POST['irobot'] != 'wammu':
         invalid.append('irobot')
 
-    if request.POST.has_key('version'):
+    if 'version' in request.POST:
         version = int(request.POST['version'])
 
     phone = Phone()
@@ -409,7 +409,7 @@ def create_wammu(request):
     features = []
     for feature in Feature.objects.all():
         key = 'fts[%s]' % feature.name
-        if request.POST.has_key(key) and request.POST[key] == '1':
+        if key in request.POST and request.POST[key] == '1':
             features.append(feature)
 
     phone.save()
@@ -425,10 +425,10 @@ def create_wammu(request):
 
 def create(request, vendorname = None):
     # Check if we did not receive legacy request
-    if request.method == 'POST' and request.POST.has_key('irobot') and request.POST['irobot'] == 'wammu':
+    if request.method == 'POST' and 'irobot' in request.POST and request.POST['irobot'] == 'wammu':
         return create_wammu(request)
 
-    if request.method == 'POST' and request.POST.has_key('irobot') and request.POST['irobot'] == 'nospam':
+    if request.method == 'POST' and 'irobot' in request.POST and request.POST['irobot'] == 'nospam':
         form = NewForm(request.POST)
         if form.is_valid():
             newphone = form.save()

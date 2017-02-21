@@ -92,7 +92,7 @@ def countries(request):
     })
 
 def networks(request):
-    if request.GET.has_key('country'):
+    if 'country' in request.GET:
         country = request.GET['country']
         l = len(country)
         networks = [x for x in gammu.GSMNetworks.items() if x[0][:l] == country]

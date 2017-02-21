@@ -15,7 +15,7 @@ def process_version_feedback(request):
     value is dictionary to be fed to rendering context.
     '''
     result = {'feedback': False}
-    if request.GET.has_key('version'):
+    if 'version' in request.GET:
         result['feedback'] = True
         version = request.GET['version']
         last_rel = get_latest_releases('wammu')[0]
