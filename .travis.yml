@@ -3,6 +3,8 @@ python:
   - "2.7"
   - "3.5"
 install: 
+  # Get newer pip and whell for binary caching support
+  - pip install --upgrade pip wheel
   - pip install -r requirements-test.txt
 script: 
   - ./manage.py check
@@ -16,3 +18,5 @@ addons:
     - gammu
     packages:
     - libgammu-dev
+cache:
+  pip: true
