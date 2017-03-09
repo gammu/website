@@ -86,9 +86,8 @@ def pdudecode(request):
 
 def countries(request):
     countries = gammu.GSMCountries.items()
-    countries.sort()
     return render(request, 'tools/countries.html', {
-        'countries': countries,
+        'countries': sorted(countries),
     })
 
 def networks(request):
@@ -98,7 +97,6 @@ def networks(request):
         networks = [x for x in gammu.GSMNetworks.items() if x[0][:l] == country]
     else:
         networks = gammu.GSMNetworks.items()
-    networks.sort()
     return render(request, 'tools/networks.html', {
-        'networks': networks,
+        'networks': sorted(networks),
     })
