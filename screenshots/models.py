@@ -1,9 +1,10 @@
 from django.db import models
+from django.utils.encoding import python_2_unicode_compatible
 import markdown
 from screenshots.thumbs import ImageWithThumbsField
 
-# Create your models here.
 
+@python_2_unicode_compatible
 class Category(models.Model):
     """
     A category that an entry can belong to.
@@ -28,7 +29,7 @@ class Category(models.Model):
         verbose_name_plural = 'Categories'
         ordering = ['title']
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
     def save(self, *args, **kwargs):
@@ -40,6 +41,7 @@ class Category(models.Model):
          return ('screenshots-category', (), { 'slug': self.slug })
 
 
+@python_2_unicode_compatible
 class Screenshot(models.Model):
     title = models.CharField(max_length=250)
     description = models.TextField()
@@ -56,7 +58,7 @@ class Screenshot(models.Model):
         blank = False
         )
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
     def save(self, *args, **kwargs):

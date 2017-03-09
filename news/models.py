@@ -1,12 +1,13 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils.encoding import python_2_unicode_compatible
 
 import markdown
 
 import datetime
 
-# Create your models here.
 
+@python_2_unicode_compatible
 class Category(models.Model):
     """
     A category that an entry can belong to.
@@ -31,7 +32,7 @@ class Category(models.Model):
         verbose_name_plural = 'Categories'
         ordering = ['title']
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
     def save(self, *args, **kwargs):
@@ -42,6 +43,8 @@ class Category(models.Model):
     def get_absolute_url(self):
          return ('news-category', (), { 'slug': self.slug })
 
+
+@python_2_unicode_compatible
 class Entry(models.Model):
     # Metadata.
     author = models.ForeignKey(User)
@@ -72,7 +75,7 @@ class Entry(models.Model):
         ordering = ['-pub_date']
         verbose_name_plural = 'Entries'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
     def save(self, *args, **kwargs):

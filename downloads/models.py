@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.encoding import python_2_unicode_compatible
 
 from news.models import Category
 
@@ -78,6 +79,7 @@ def get_current_downloads(program):
     return downloads
 
 
+@python_2_unicode_compatible
 class Release(models.Model):
     author = models.ForeignKey(User)
     program = models.CharField(max_length = 100, choices = PROGRAM_CHOICES)
@@ -130,7 +132,7 @@ class Release(models.Model):
         self.description_html = markdown.markdown(self.description)
         super(Release, self).save(*args, **kwargs)
 
-    def __unicode__(self):
+    def __str__(self):
         return '%s-%s' % (self.program, self.version)
 
     def is_stable(self):
@@ -156,6 +158,7 @@ class Release(models.Model):
          return ('downloads-release', (), { 'version': self.version, 'program': self.program })
 
 
+@python_2_unicode_compatible
 class Download(models.Model):
     release = models.ForeignKey(Release)
     platform = models.CharField(max_length = 100, choices = PLATFORM_CHOICES)
@@ -164,8 +167,8 @@ class Download(models.Model):
     sha1 = models.CharField(max_length = 250)
     size = models.IntegerField()
 
-    def __unicode__(self):
-        return '%s (%s): %s' % (self.release.__unicode__(), self.platform, self.location)
+    def __str__(self):
+        return '%s (%s): %s' % (self.release, self.platform, self.location)
 
     def get_filename(self):
         return os.path.split(self.location)[1]

@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.encoding import python_2_unicode_compatible
 
 from django.utils.translation import ugettext_lazy, ugettext as _
 from django.core.exceptions import ValidationError
@@ -43,13 +44,15 @@ FEATURE_NAMES = {
     'ringtone': ugettext_lazy('Ringtones'),
 }
 
+
+@python_2_unicode_compatible
 class Vendor(models.Model):
     name = models.CharField(max_length = 250)
     url = models.URLField(max_length = 250)
     slug = models.SlugField(unique = True)
     tuxmobil = models.SlugField(null = True, blank = True)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
     @models.permalink
@@ -59,21 +62,26 @@ class Vendor(models.Model):
     def get_models_count(self):
         return Phone.objects.filter(vendor = self, state = 'approved').count()
 
+
+@python_2_unicode_compatible
 class Feature(models.Model):
     name = models.CharField(max_length = 250)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
     def get_description(self):
         return FEATURE_NAMES[self.name]
 
+
+@python_2_unicode_compatible
 class Connection(models.Model):
     name = models.CharField(max_length = 250)
     medium = models.CharField(max_length = 100, choices = CONNECTION_CHOICES)
 
-    def __unicode__(self):
+    def __str__(self):
         return '%s (%s)' % (self.name, self.medium)
+
 
 def phone_name_validator(value):
     parts = value.split()
@@ -84,6 +92,8 @@ def phone_name_validator(value):
             raise ValidationError(_('Phone name should not include vendor name: %s') % part)
     return value
 
+
+@python_2_unicode_compatible
 class Phone(models.Model):
     vendor = models.ForeignKey(Vendor)
     name = models.CharField(max_length = 250, help_text = ugettext_lazy('Phone name, please exclude vendor name.'), validators = [phone_name_validator])
@@ -101,7 +111,7 @@ class Phone(models.Model):
     address = models.CharField(max_length = 100, blank = True)
     hostname = models.CharField(max_length = 100, blank = True)
 
-    def __unicode__(self):
+    def __str__(self):
         return '%s %s' % (self.vendor.name, self.name)
 
     def save(self, *args, **kwargs):
@@ -110,7 +120,7 @@ class Phone(models.Model):
 
     def get_related_sites(self):
         result = []
-        name = self.__unicode__().replace(' ', '_').replace('-', '_')
+        name = self.__str__().replace(' ', '_').replace('-', '_')
         result.append({
             'url': 'https://wikipedia.org/wiki/%s' % name,
             'name': 'Wikipedia',
