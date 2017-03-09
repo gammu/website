@@ -45,10 +45,10 @@ def get_chart_url():
     alls = []
     years = []
 
-    for year in xrange(2006, endyear + 1):
+    for year in range(2006, endyear + 1):
         if year == endyear:
             endmonth = endmonthlast
-        for month in xrange(1, endmonth + 1):
+        for month in range(1, endmonth + 1):
             if month == 1:
                 years.append('%d' % year)
             else:
@@ -102,7 +102,7 @@ def get_chart_url():
         _('Approved records').encode('utf-8'),
         _('Total records').encode('utf-8')])
 
-    left_axis = map(lambda x: '%d' % x, xrange(0, max_y + 1, max_y / 10))
+    left_axis = map(lambda x: '%d' % x, range(0, max_y + 1, max_y / 10))
     left_axis[0] = ''
     chart.set_axis_labels(Axis.LEFT, left_axis)
 
