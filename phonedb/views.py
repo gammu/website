@@ -398,7 +398,7 @@ def create_wammu(request):
 
     try:
         phone.full_clean()
-    except ValidationError, e:
+    except ValidationError as e:
         invalid.extend(e.message_dict.keys())
         invalid = list(set(invalid))
 
