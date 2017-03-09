@@ -1,6 +1,6 @@
 from django.db import models
 import markdown
-from thumbs import ImageWithThumbsField
+from screenshots.thumbs import ImageWithThumbsField
 
 # Create your models here.
 
