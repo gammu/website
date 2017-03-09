@@ -1,3 +1,4 @@
+import binascii
 from tools.forms import PDUDecodeForm, PDUEncodeForm
 from django.shortcuts import render
 import gammu
@@ -30,7 +31,7 @@ def pduencode(request):
                 msg['Number'] = form.cleaned_data['number']
                 msg['Class'] = form.cleaned_data['cls']
             # Encode PDU
-            pdu = enumerate([gammu.EncodePDU(e, 'Submit').encode('hex') for e in encoded])
+            pdu = enumerate([binascii.hexlify(gammu.EncodePDU(e, 'Submit')) for e in encoded])
 
     else:
         form = PDUEncodeForm()
@@ -55,8 +56,8 @@ def pdudecode(request):
                     if type(d['Text']) == unicode:
                         d['TextHex'] = None
                     else:
-                        d['TextHex'] = d['Text'].encode('hex')
-                    d['UDH']['TextHex'] = d['UDH']['Text'].encode('hex')
+                        d['TextHex'] = binascii.hexlify(d['Text'])
+                    d['UDH']['TextHex'] = binascii.hexlify(d['UDH']['Text'])
                     d['Id'] = i + 1
                     d['PDU'] = part
                     decoded.append(d)
