@@ -7,7 +7,7 @@ from django.db.models import ImageField
 from django.db.models.fields.files import ImageFieldFile
 from PIL import Image
 from django.core.files.base import ContentFile
-import cStringIO
+from io import BytesIO
 
 def generate_thumb(img, thumb_size, format):
     """
@@ -52,7 +52,7 @@ def generate_thumb(img, thumb_size, format):
         image2 = image
         image2.thumbnail(thumb_size, Image.ANTIALIAS)
 
-    io = cStringIO.StringIO()
+    io = BytesIO()
     # PNG and GIF are the same, JPG is JPEG
     if format.upper()=='JPG':
         format = 'JPEG'
