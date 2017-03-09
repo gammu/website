@@ -1,7 +1,7 @@
 from django import template
 from django.template.defaultfilters import stringfilter
 from PIL import Image
-from StringIO import StringIO
+from io import StringIO
 
 register = template.Library()
 
