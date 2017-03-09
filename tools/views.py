@@ -2,6 +2,7 @@ import binascii
 from tools.forms import PDUDecodeForm, PDUEncodeForm
 from django.shortcuts import render
 import gammu
+import six
 
 
 def pduencode(request):
@@ -51,9 +52,9 @@ def pdudecode(request):
             parts = []
             for i, part in enumerate(form.cleaned_data['text'].split()):
                 try:
-                    d = gammu.DecodePDU(part.decode('hex'))
+                    d = gammu.DecodePDU(binascii.unhexlify(part))
                     parts.append([d])
-                    if type(d['Text']) == unicode:
+                    if isinstance(d['Text'], six.text_type):
                         d['TextHex'] = None
                     else:
                         d['TextHex'] = binascii.hexlify(d['Text'])
