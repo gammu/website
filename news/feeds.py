@@ -18,9 +18,6 @@ class RssNewsFeed(Feed):
     def description(self):
         return _('Updates about Wammu and Gammu programs.')
 
-    def categories(self):
-        print [x.title for x in Category.objects.all()]
-
     def items(self):
         return Entry.objects.order_by('-pub_date')[:settings.NEWS_IN_RSS]
 
