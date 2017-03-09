@@ -10,7 +10,6 @@ from django.core.cache import cache
 from django.utils.translation import ugettext as _
 import csv
 import socket
-import math
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 
@@ -73,7 +72,7 @@ def get_chart_url():
 #print totals
 #print alls
 
-    max_y = ((max(alls) / 100) + 1) * 100
+    max_y = int(((max(alls) / 100) + 1) * 100)
 
     chart = SimpleLineChart(800, 300, y_range=[0, max_y])
 
@@ -103,7 +102,7 @@ def get_chart_url():
         _('Approved records').encode('utf-8'),
         _('Total records').encode('utf-8')])
 
-    left_axis = map(lambda x: '%d' % x, range(0, max_y + 1, math.trunc(max_y / 10)))
+    left_axis = ['%d' % x for x in range(0, max_y + 1, int(max_y / 10))]
     left_axis[0] = ''
     chart.set_axis_labels(Axis.LEFT, left_axis)
 
