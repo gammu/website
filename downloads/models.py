@@ -165,6 +165,7 @@ class Download(models.Model):
     location = models.CharField(max_length = 250)
     md5 = models.CharField(max_length = 250)
     sha1 = models.CharField(max_length = 250)
+    sha256 = models.CharField(max_length = 250)
     size = models.IntegerField()
 
     def __str__(self):
