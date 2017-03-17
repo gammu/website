@@ -28,7 +28,8 @@ class Command(BaseCommand):
             self.stdout.write("Adding %s..." % f)
             filename = os.path.basename(f)
 
-            data = open(f).read()
+            with open(f, 'r') as handle:
+                data = handle.read()
 
             dl = Download()
             dl.release = release
