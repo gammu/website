@@ -41,6 +41,10 @@ class Command(BaseCommand):
             sha1.update(data)
             dl.sha1 = sha1.hexdigest()
 
+            sha256 = hashlib.sha256()
+            sha256.update(data)
+            dl.sha256 = sha256.hexdigest()
+
             dl.size = len(data)
 
             dl.platform = options['type']
