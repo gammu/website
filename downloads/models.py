@@ -92,6 +92,9 @@ class Release(models.Model):
     date = models.DateTimeField(auto_now_add = True)
     post_news = models.BooleanField(default = True)
 
+    class Meta(object):
+        ordering = ['-date']
+
     def save(self, *args, **kwargs):
         version = self.version.split('.')
         self.version_int = 0

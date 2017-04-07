@@ -52,6 +52,9 @@ class Vendor(models.Model):
     slug = models.SlugField(unique = True)
     tuxmobil = models.SlugField(null = True, blank = True)
 
+    class Meta(object):
+        ordering = ['name']
+
     def __str__(self):
         return self.name
 
@@ -110,6 +113,9 @@ class Phone(models.Model):
     created = models.DateTimeField(auto_now_add = True)
     address = models.CharField(max_length = 100, blank = True)
     hostname = models.CharField(max_length = 100, blank = True)
+
+    class Meta(object):
+        ordering = ['name']
 
     def __str__(self):
         return '%s %s' % (self.vendor.name, self.name)
