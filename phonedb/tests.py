@@ -72,7 +72,7 @@ class PhoneDBTest(TestCase):
             }
         )
         self.assertContains(response, 'TestingPHone')
-        self.assertContains(response, '<option value="1" selected="selected">Test</option>')
+        self.assertContains(response, '<option value="1" selected')
 
     def test_csv(self):
         self.test_add()
