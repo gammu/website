@@ -1,3 +1,4 @@
+from django.contrib.sites.models import Site
 from django.core.urlresolvers import reverse
 from django.test import TestCase
 
@@ -9,6 +10,7 @@ class PhoneDBTest(TestCase):
         Vendor.objects.create(name='Test', slug='test', url='https://example.com')
         Feature.objects.create(name='info')
         Connection.objects.create(name='at', medium='usb')
+        Site.objects.create(name='testserver', domain='testserver')
 
     def test_index(self):
         response = self.client.get(reverse('phonedb'))
@@ -99,5 +101,5 @@ class PhoneDBTest(TestCase):
 
     def test_feed(self):
         self.test_add()
-        response = self.client.get(reverse('phonedb-rss'), HTTP_HOST='example.com')
+        response = self.client.get(reverse('phonedb-rss'), HTTP_HOST='testserver')
         self.assertContains(response, 'TestPHone')
