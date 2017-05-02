@@ -5,30 +5,26 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2017-02-07 11:21+0100\n"
-"PO-Revision-Date: 2016-07-20 21:29+0000\n"
-"Last-Translator: Nabil BENDAFI <nabil@bendafi.fr>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/gammu/website/fr/"
-">\n"
+"PO-Revision-Date: 2017-05-02 21:42+0000\n"
+"Last-Translator: Kyodev <kyodev@yandex.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/gammu/website/fr/>"
+"\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.8-dev\n"
+"X-Generator: Weblate 2.14-dev\n"
 
 #: downloads/models.py:30
-#, fuzzy
-#| msgid "Source"
 msgid "Source code"
-msgstr "Source"
+msgstr "Code source"
 
 #: downloads/models.py:31
-#, fuzzy
-#| msgid "Windows binary"
 msgid "Windows binaries"
-msgstr "Exécutable Windows"
+msgstr "Exécutables Windows"
 
 #: downloads/models.py:141
 #, python-format
@@ -375,19 +371,6 @@ msgid "Coding for Wammu and Gammu"
 msgstr "Developpez pour Wammu et Gammu"
 
 #: html/contribute/code.html:11
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Gammu is written in C and Wammu in <a\n"
-#| "href=\"http://www.python.org/\">Python</a>, so you will need knowledge of "
-#| "one of\n"
-#| "these languages to contribute code directly to the project. You will "
-#| "probably\n"
-#| "use some parts of <a href=\"/docs/devel/\">developer documentation</a> "
-#| "to\n"
-#| "understand the code. If you want to know what is planned to happen in "
-#| "Gammu\n"
-#| "and Wammu, please check the <a href=\"/docs/roadmap/\">roadmap</a>.\n"
 msgid ""
 "\n"
 "Gammu is written in C and Wammu in <a\n"
@@ -400,11 +383,11 @@ msgid ""
 "and Wammu, please check the <a href=\"/docs/roadmap/\">roadmap</a>.\n"
 msgstr ""
 "\n"
-"Gammu est écrit en C et Wammu en <a href=\"http://www.python.org/\"> Python</"
-"a>, donc vous aurez besoin de connaissance de l’un de ces langages pour "
-"contribuer directement au projet. Vous utiliserez probablement certaines "
+"Gammu est écrit en C et Wammu en <a href=\"https://www.python.org/\"> "
+"Python</a>, donc vous aurez besoin de connaissance de l’un de ces langages "
+"pour contribuer au code de ce projet. Vous utiliserez probablement certaines "
 "parties de la <a href=\"/docs/devel/\"> documentation développeur</a> pour "
-"comprendre le code. Si vous voulez en savoir plus sur l'evolution de Gammu "
+"comprendre le code. Si vous voulez en savoir plus sur l'évolution de Gammu "
 "et Wammu, veuillez consulter la <a href=\"/docs/roadmap/\"> feuille de "
 "route</a>.\n"
 
@@ -413,13 +396,6 @@ msgid "Version Control System"
 msgstr "Système de contrôle de version"
 
 #: html/contribute/code.html:24
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "We currently use <a href=\"http://git-scm.com/\">Git</a> as a version "
-#| "control\n"
-#| "system. It allows you create own local branch, develop the code and then\n"
-#| "submit us patches or merge request for the changes.\n"
 msgid ""
 "\n"
 "We currently use <a href=\"https://git-scm.com/\">Git</a> as a version "
@@ -428,22 +404,12 @@ msgid ""
 "submit us patches or merge request for the changes.\n"
 msgstr ""
 "\n"
-"Nous utilisons actuellement <a href=\"http://git-scm.com/\"> Git</a> comme "
-"un système de contrôle de version. Il permet de vous créez votre propre "
-"branche locale, développez le code et ensuite nous soumettez des patches ou "
-"demande de fusion de vos modifications.\n"
+"Nous utilisons actuellement <a href=\"https://git-scm.com/\"> Git</a> comme "
+"un système de contrôle de version. Il vous permet de créer votre propre "
+"branche locale, de développer et ensuite de nous soumettre des patches ou de "
+"demander une fusion de vos modifications.\n"
 
 #: html/contribute/code.html:32
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "The Git repositories are being hosted on <a\n"
-#| "href=\"http://github.com/\">Github</a> service, in the\n"
-#| "<a href=\"http://github.com/gammu/\">Gammu</a> project. You can browse "
-#| "the code\n"
-#| "on their site or just clone the repository and investigate it locally. "
-#| "To\n"
-#| "clone Wammu and Gammu sources, use following commands:\n"
 msgid ""
 "\n"
 "The Git repositories are being hosted on <a\n"
@@ -454,20 +420,13 @@ msgid ""
 "clone Wammu and Gammu sources, use following commands:\n"
 msgstr ""
 "\n"
-"Les dépôts Git sont hébergés sur <a href=\"http://github.com/\"> Github</a>, "
-"dans le projet <a href=\"http://github.com/gammu/\"> Gammu</a>. Vous pouvez "
-"parcourir le code sur leur site ou juste cloner le référentiel et étudiez-le "
-"localement. Pour cloner les sources Wammu et Gammu, utiliser la suite de "
-"commandes :\n"
+"Les dépôts Git sont hébergés sur <a href=\"https://github.com/\"> Github</a>"
+", dans le projet <a href=\"https://github.com/gammu/\"> Gammu</a>. Vous "
+"pouvez parcourir le code sur ce site ou juste cloner le dépôt et l'étudier "
+"localement. Pour cloner les sources Wammu et Gammu, utiliser les commandes "
+"suivantes :\n"
 
 #: html/contribute/code.html:56
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Instructions for building and installing are included in file\n"
-#| "<code>INSTALL</code> in both Gammu and Wammu. For compiling Gammu you "
-#| "need to\n"
-#| "have <a href=\"http://www.cmake.org/\">CMake</a>.\n"
 msgid ""
 "\n"
 "Instructions for building and installing are included in file\n"
@@ -478,7 +437,7 @@ msgstr ""
 "\n"
 "Les instructions pour générer et installer sont incluses dans le fichier "
 "<code>INSTALL</code> dans Wammu et Gammu. Pour la compilation Gammu, vous "
-"devrez avoir installer <a href=\"http://www.cmake.org/\"> CMake</a>.\n"
+"devrez avoir installé <a href=\"http://www.cmake.org/\"> CMake</a>.\n"
 
 #: html/contribute/code.html:63
 msgid "Code Snapshots"
@@ -1098,14 +1057,6 @@ msgid "Fund issues to motivate developers"
 msgstr ""
 
 #: html/donate.html:49
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "The donation itself is being processed by <a\n"
-#| "href=\"http://www.paypal.com/\">PayPal</a> where you can pay either by "
-#| "their\n"
-#| "account or by using any major credit card. You can also directly send a\n"
-#| "donation to <code>michal@cihar.com</code>.\n"
 msgid ""
 "\n"
 "The donation itself is being processed by <a\n"
@@ -1115,29 +1066,24 @@ msgid ""
 "donation to <code>michal@cihar.com</code>.\n"
 msgstr ""
 "\n"
-"Le don est géré par <a href=\"http://paypal.com/\">Paypal</a> à partir du "
-"quel\n"
-"vous pouvez payer par votre compte ou utiliser la majorité des cartes de "
-"crédits.\n"
-"Vous pouvez aussi envoyer directement vos dons à <code>michal@cihar.com</"
-"code>.\n"
+"Le don est géré par <a href=\"https://paypal.com/\">Paypal</a> où vous "
+"pouvez payer avec votre compte ou utiliser les cartes de crédits courantes.\n"
+"Vous pouvez aussi envoyer directement vos dons à "
+"<code>michal@cihar.com</code>.\n"
 
 #: html/donate.html:66
 msgid "Bitcoin"
 msgstr "Bitcoin"
 
 #: html/donate.html:69
-#, fuzzy, python-format
-#| msgid ""
-#| "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
-#| "peer network</a> and send me Bitcoins to <code>%(address)s</code>."
+#, python-format
 msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to <code>%(address)s</code>."
 msgstr ""
-"Vous pouvez également utiliser <a href=\"http://www.bitcoin.org/\"> Bitcoin</"
-"a> (un réseau peer-to-peer) et m'envoyer des Bitcoins à <code>%(address)s</"
-"code>."
+"Vous pouvez également utiliser <a href=\"https://www.bitcoin.org/\"> "
+"Bitcoin</a> (un réseau peer-to-peer) et m'envoyer des Bitcoins à "
+"<code>%(address)s</code>."
 
 #: html/donate.html:72 html/phonedb/index.html:79
 msgid "Supporters"
@@ -1599,18 +1545,6 @@ msgid "Wammu and Gammu"
 msgstr "Wammu et Gammu"
 
 #: html/index.html:11
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "<a href=\"/wammu/\">Wammu</a> is a program to manage data in your cell "
-#| "phone such as contacts,\n"
-#| "calendar or messages. It is built on <a href=\"/libgammu/\">Gammu "
-#| "library</a>, which\n"
-#| "provides abstraction layer to work with different cell phones from "
-#| "different\n"
-#| "vendors (including Nokia, Sony-Ericsson, Motorola, Samsung, Siemens, "
-#| "Huawei\n"
-#| "and others).\n"
 msgid ""
 "\n"
 "<a href=\"/wammu/\">Wammu</a> is a program to manage data in your cell phone "
@@ -1626,10 +1560,11 @@ msgid ""
 msgstr ""
 "\n"
 "<a href=\"/wammu/\"> wammu</a> est un programme pour gérer des données dans "
-"votre téléphone portable, tels que calendrier, contacts et messages. Il est "
-"construit sur <a href=\"/libgammu/\">la bibliothèque Gammu</a> qui fournit "
-"la couche d'abstraction pour travailler avec les différents téléphones "
-"cellulaires provenant de différents fournisseurs (y compris Nokia, Sony-"
+"votre téléphone portable, tels que les contacts, le calendrier ou les "
+"messages. <a href=\"/smsd/\">Gammu SMSD</a> est un service pour envoyer en "
+"masse et recevoir des messages SMS. Ils sont construits sur <a href=\""
+"/libgammu/\">la bibliothèque Gammu</a> qui fournit la couche d'abstraction "
+"pour travailler avec les différents fournisseurs (y compris Nokia, Sony-"
 "Ericsson, Motorola, Samsung, Siemens, Huawei et autres).\n"
 
 #: html/index.html:33
@@ -1641,10 +1576,8 @@ msgid "Support us on BountySource to get listed here!"
 msgstr ""
 
 #: html/index.html:37
-#, fuzzy
-#| msgid "Community supporter"
 msgid "Current supporters:"
-msgstr "Animateur de communauté"
+msgstr "Supporters actuels :"
 
 #: html/libgammu.html:4 html/libgammu.html:7
 msgid "libGammu"
@@ -1710,12 +1643,6 @@ msgid "Wammu and Gammu License"
 msgstr "License Wammu et Gammu"
 
 #: html/license.html:10
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Gammu, python-gammu and Wammu are released under <a\n"
-#| "href=\"http://creativecommons.org/licenses/GPL/2.0/\">GNU General\n"
-#| "Public License, version 2</a>.\n"
 msgid ""
 "\n"
 "Gammu, python-gammu and Wammu are released under <a\n"
@@ -1723,9 +1650,9 @@ msgid ""
 "Public License, version 2</a>.\n"
 msgstr ""
 "\n"
-"Gammu, python-gammu et Wammu sont publiés sous la <a\n"
-"href=\"http://creativecommons.org/licenses/GPL/2.0/\">GNU General\n"
-"Public License, version 2</a>.\n"
+"Gammu, python-gammu et Wammu sont publiés sous la <a href=\""
+"https://www.gnu.org/licenses/gpl-2.0.html\">GNU General\n"
+"Public Licence, version 2</a>.\n"
 
 # free != gratuit ds ce contexte
 #: html/license.html:18
@@ -1771,12 +1698,6 @@ msgid "Website License"
 msgstr ""
 
 #: html/license.html:47
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Gammu, python-gammu and Wammu are released under <a\n"
-#| "href=\"http://creativecommons.org/licenses/GPL/2.0/\">GNU General\n"
-#| "Public License, version 2</a>.\n"
 msgid ""
 "\n"
 "Website code is released under <a\n"
@@ -1784,9 +1705,9 @@ msgid ""
 "Public License, version 2 or later</a>.\n"
 msgstr ""
 "\n"
-"Gammu, python-gammu et Wammu sont publiés sous la <a\n"
-"href=\"http://creativecommons.org/licenses/GPL/2.0/\">GNU General\n"
-"Public License, version 2</a>.\n"
+"Le code du site web est publié sous <a href=\""
+"https://www.gnu.org/licenses/gpl-2.0.html\">Licence GNU General\n"
+"Public, version 2 or suivante</a>.\n"
 
 #: html/license.html:55
 msgid ""
@@ -2845,7 +2766,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:70
 msgid "Bitmap"
-msgstr ""
+msgstr "Bitmap"
 
 #: html/tools/pdudecode.html:71
 msgid "Bitmaps"
@@ -3145,7 +3066,7 @@ msgstr "Unicode"
 
 #: tools/forms.py:16
 msgid "Recipient"
-msgstr ""
+msgstr "Destinataire"
 
 #: tools/forms.py:17
 msgid "SMSC number"
