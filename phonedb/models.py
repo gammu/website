@@ -63,7 +63,7 @@ class Vendor(models.Model):
          return ('phonedb-vendor', (), {'vendorname': self.slug})
 
     def get_models_count(self):
-        return Phone.objects.filter(vendor = self, state = 'approved').count()
+        return Phone.objects.filter(vendor = self, state__in = ['approved', 'draft']).count()
 
 
 @python_2_unicode_compatible
