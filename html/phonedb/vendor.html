@@ -31,8 +31,10 @@ href="http://tuxmobil.org/phones_survey_{{ tuxurl }}.html">TuxMobil</a>.
 
 <p>
 {% if phones.object_list %}
-{% blocktrans with phones.paginator.count as count %}
-There is currently {{ count }} approved phone records from this vendor.
+{% blocktrans count phones.paginator.count as count %}
+There is currently {{ count }} phone record from this vendor.
+{% plural %}
+There are currently {{ count }} phone records from this vendor.
 {% endblocktrans %}
 {% else %}
 {% blocktrans %}
