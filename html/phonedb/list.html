@@ -9,7 +9,12 @@
 <tbody>
 {% for phone in phones %}
 <tr>
-<td><a href="{{ phone.get_absolute_url }}">{{phone.vendor.name }} {{ phone.name }}</a></td>
+<td>
+{% if phone.state == 'approved' %}
+<span class="pull-right badge">{% trans "Approved" %}</span>
+{% endif %}
+<a href="{{ phone.get_absolute_url }}">{{phone.vendor.name }} {{ phone.name }}</a>
+</td>
 {% if phone.connection %}
 <td>
 {{ phone.connection.name }}
