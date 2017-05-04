@@ -11,7 +11,7 @@
 <tr>
 <td>
 {% if phone.state == 'approved' %}
-<span class="pull-right badge">{% trans "Approved" %}</span>
+<span class="pull-right badge" title="{% trans "This entry has been approved by project." %}">{% trans "Approved" %}</span>
 {% endif %}
 <a href="{{ phone.get_absolute_url }}">{{phone.vendor.name }} {{ phone.name }}</a>
 </td>
