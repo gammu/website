@@ -6,12 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
-"POT-Creation-Date: 2017-02-07 11:21+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-04 08:41+0200\n"
 "PO-Revision-Date: 2017-02-07 16:01+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
-"Language-Team: Turkish "
-"<https://hosted.weblate.org/projects/gammu/website/tr/>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/gammu/website/tr/"
+">\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,20 +19,20 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 2.12-dev\n"
 
-#: downloads/models.py:30
+#: downloads/models.py:31
 msgid "Source code"
 msgstr "Kaynak kodu"
 
-#: downloads/models.py:31
+#: downloads/models.py:32
 msgid "Windows binaries"
 msgstr "Windows ikili dosyaları"
 
-#: downloads/models.py:141
+#: downloads/models.py:146
 #, python-format
 msgid "%(program)s stable release %(version)s"
 msgstr ""
 
-#: downloads/models.py:146
+#: downloads/models.py:151
 #, python-format
 msgid "%(program)s testing release %(version)s"
 msgstr ""
@@ -1828,16 +1828,20 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"There is currently %(count)s approved phone records from this vendor.\n"
-msgstr ""
+"There is currently %(count)s phone record from this vendor.\n"
+msgid_plural ""
+"\n"
+"There are currently %(count)s phone records from this vendor.\n"
+msgstr[0] ""
+msgstr[1] ""
 
-#: html/phonedb/vendor.html:38
+#: html/phonedb/vendor.html:40
 msgid ""
 "\n"
 "There is currently none phone record from this vendor!\n"
 msgstr ""
 
-#: html/phonedb/vendor.html:43
+#: html/phonedb/vendor.html:45
 #, python-format
 msgid ""
 "\n"
@@ -2697,7 +2701,7 @@ msgstr ""
 msgid "%(description)s [<a href=\"%(url)s\">Link</a>]"
 msgstr ""
 
-#: phonedb/forms.py:47 phonedb/models.py:91
+#: phonedb/forms.py:47 phonedb/models.py:104
 msgid "Features which are working in Gammu."
 msgstr ""
 
@@ -2710,106 +2714,106 @@ msgstr ""
 msgid "%(description)s (%(name)s)"
 msgstr ""
 
-#: phonedb/models.py:20
+#: phonedb/models.py:21
 msgid "Use [at] and [dot]"
 msgstr "[at] ve [dot] kullan"
 
-#: phonedb/models.py:21
+#: phonedb/models.py:22
 msgid "Display it normally"
 msgstr "Normal olarak göster"
 
-#: phonedb/models.py:22
+#: phonedb/models.py:23
 msgid "Don't show email at all"
 msgstr "E-postayı hiçbir şekilde gösterme"
 
-#: phonedb/models.py:23
+#: phonedb/models.py:24
 msgid "Insert NOSPAM text at random position"
 msgstr "NOSPAM metnini rastgele bir konuma ekle"
 
-#: phonedb/models.py:27
+#: phonedb/models.py:28
 msgid "Draft"
 msgstr ""
 
-#: phonedb/models.py:28
+#: phonedb/models.py:29
 msgid "Approved"
 msgstr ""
 
-#: phonedb/models.py:29
+#: phonedb/models.py:30
 msgid "Deleted"
 msgstr ""
 
-#: phonedb/models.py:33
+#: phonedb/models.py:34
 msgid "Phone information"
 msgstr "Telefon bilgileri"
 
-#: phonedb/models.py:34
+#: phonedb/models.py:35
 msgid "Sending and saving SMS"
 msgstr "SMS gönderiliyor ve kaydediliyor"
 
-#: phonedb/models.py:35
+#: phonedb/models.py:36
 msgid "Multimedia messaging"
 msgstr "Çokluortam mesajlaşması"
 
-#: phonedb/models.py:36
+#: phonedb/models.py:37
 msgid "Basic phonebook functions (name and phone number)"
 msgstr ""
 
-#: phonedb/models.py:37
+#: phonedb/models.py:38
 msgid "Enhanced phonebook entries (eg. several numbers per entry)"
 msgstr ""
 
-#: phonedb/models.py:38
+#: phonedb/models.py:39
 msgid "Calendar entries"
 msgstr "Takvim girişleri"
 
-#: phonedb/models.py:39
+#: phonedb/models.py:40
 msgid "Todos"
 msgstr "Yapılacaklar"
 
-#: phonedb/models.py:40
+#: phonedb/models.py:41
 msgid "Filesystem manipulation"
 msgstr "Dosya sistemi kötü kullanımı"
 
-#: phonedb/models.py:41
+#: phonedb/models.py:42
 msgid "Reading and making calls"
 msgstr "Okunuyor ve arama yapılıyor"
 
-#: phonedb/models.py:42
+#: phonedb/models.py:43
 msgid "Logos"
 msgstr "Logolar"
 
-#: phonedb/models.py:43
+#: phonedb/models.py:44
 msgid "Ringtones"
 msgstr "Zil sesleri"
 
-#: phonedb/models.py:84
+#: phonedb/models.py:95
 #, python-format
 msgid "Phone name should not include vendor name: %s"
 msgstr ""
 
-#: phonedb/models.py:89
+#: phonedb/models.py:102
 msgid "Phone name, please exclude vendor name."
 msgstr ""
 
-#: phonedb/models.py:90
+#: phonedb/models.py:103
 msgid "Connection used in Gammu configuration."
 msgstr ""
 
-#: phonedb/models.py:92
+#: phonedb/models.py:105
 msgid "Model used in Gammu configuration, usually empty."
 msgstr ""
 
-#: phonedb/models.py:93
+#: phonedb/models.py:106
 msgid "Gammu version where you tested this phone."
 msgstr ""
 
-#: phonedb/models.py:94
+#: phonedb/models.py:107
 msgid ""
 "Any note about this phone and Gammu support for it. You can use <a href="
 "\"http://daringfireball.net/projects/markdown/syntax\">markdown markup</a>."
 msgstr ""
 
-#: phonedb/models.py:97
+#: phonedb/models.py:110
 msgid "Please choose how will be email handled in next field."
 msgstr ""
 
