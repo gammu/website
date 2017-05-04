@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-04 08:41+0200\n"
+"POT-Creation-Date: 2017-05-04 08:44+0200\n"
 "PO-Revision-Date: 2012-10-19 22:11+0200\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <http://hosted.weblate.org/projects/gammu/website/"
@@ -1690,7 +1690,15 @@ msgstr "Kapcsolat"
 msgid "Supported features"
 msgstr "Támogatott funkciók"
 
-#: html/phonedb/list.html:22
+#: html/phonedb/list.html:14
+msgid "This entry has been approved by project."
+msgstr ""
+
+#: html/phonedb/list.html:14 phonedb/models.py:29
+msgid "Approved"
+msgstr ""
+
+#: html/phonedb/list.html:27
 msgid "Not supported"
 msgstr "Nem támogatott"
 
@@ -2745,10 +2753,6 @@ msgstr "NOSPAM szöveg beillesztése véletlenszerű pozícióban"
 
 #: phonedb/models.py:28
 msgid "Draft"
-msgstr ""
-
-#: phonedb/models.py:29
-msgid "Approved"
 msgstr ""
 
 #: phonedb/models.py:30

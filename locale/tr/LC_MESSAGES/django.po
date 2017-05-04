@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-04 08:41+0200\n"
+"POT-Creation-Date: 2017-05-04 08:44+0200\n"
 "PO-Revision-Date: 2017-02-07 16:01+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gammu/website/tr/"
@@ -1678,7 +1678,15 @@ msgstr "Bağlantı"
 msgid "Supported features"
 msgstr "Desteklenen özellikler"
 
-#: html/phonedb/list.html:22
+#: html/phonedb/list.html:14
+msgid "This entry has been approved by project."
+msgstr ""
+
+#: html/phonedb/list.html:14 phonedb/models.py:29
+msgid "Approved"
+msgstr ""
+
+#: html/phonedb/list.html:27
 msgid "Not supported"
 msgstr "Desteklenmiyor"
 
@@ -2732,10 +2740,6 @@ msgstr "NOSPAM metnini rastgele bir konuma ekle"
 
 #: phonedb/models.py:28
 msgid "Draft"
-msgstr ""
-
-#: phonedb/models.py:29
-msgid "Approved"
 msgstr ""
 
 #: phonedb/models.py:30

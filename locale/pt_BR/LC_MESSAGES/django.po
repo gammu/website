@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-04 08:41+0200\n"
+"POT-Creation-Date: 2017-05-04 08:44+0200\n"
 "PO-Revision-Date: 2016-11-16 13:32+0000\n"
 "Last-Translator: Helder Santana <helder.santana@systemsbr.com.br>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
@@ -2402,7 +2402,15 @@ msgstr "Conexão"
 msgid "Supported features"
 msgstr "Recursos suportados"
 
-#: html/phonedb/list.html:22
+#: html/phonedb/list.html:14
+msgid "This entry has been approved by project."
+msgstr ""
+
+#: html/phonedb/list.html:14 phonedb/models.py:29
+msgid "Approved"
+msgstr "Aprovado"
+
+#: html/phonedb/list.html:27
 msgid "Not supported"
 msgstr "Não suportado"
 
@@ -3927,10 +3935,6 @@ msgstr "Insira o texto NOSPAM em posição aleatória"
 #: phonedb/models.py:28
 msgid "Draft"
 msgstr "Rascunho"
-
-#: phonedb/models.py:29
-msgid "Approved"
-msgstr "Aprovado"
 
 #: phonedb/models.py:30
 msgid "Deleted"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-04 08:41+0200\n"
+"POT-Creation-Date: 2017-05-04 08:44+0200\n"
 "PO-Revision-Date: 2016-07-28 10:16+0000\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/gammu/website/sv/"
@@ -1694,8 +1694,16 @@ msgstr "Anslutning"
 msgid "Supported features"
 msgstr "Funktioner som stöds"
 
+#: html/phonedb/list.html:14
+msgid "This entry has been approved by project."
+msgstr ""
+
+#: html/phonedb/list.html:14 phonedb/models.py:29
+msgid "Approved"
+msgstr ""
+
 # msgid "Not supported id: %s"
-#: html/phonedb/list.html:22
+#: html/phonedb/list.html:27
 msgid "Not supported"
 msgstr "Stöds inte"
 
@@ -2750,10 +2758,6 @@ msgstr "Infoga NOSPAM på slumpmässig position"
 
 #: phonedb/models.py:28
 msgid "Draft"
-msgstr ""
-
-#: phonedb/models.py:29
-msgid "Approved"
 msgstr ""
 
 #: phonedb/models.py:30

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-04 08:41+0200\n"
+"POT-Creation-Date: 2017-05-04 08:44+0200\n"
 "PO-Revision-Date: 2012-09-27 11:36+0200\n"
 "Last-Translator: Panagiotis Papazoglou <papaz_p@yahoo.com>\n"
 "Language-Team: Greek <http://hosted.weblate.org/projects/gammu/website/el/>\n"
@@ -1685,7 +1685,15 @@ msgstr "Σύνδεση"
 msgid "Supported features"
 msgstr "Υποστηριζόμενα χαρακτηριστικά"
 
-#: html/phonedb/list.html:22
+#: html/phonedb/list.html:14
+msgid "This entry has been approved by project."
+msgstr ""
+
+#: html/phonedb/list.html:14 phonedb/models.py:29
+msgid "Approved"
+msgstr ""
+
+#: html/phonedb/list.html:27
 msgid "Not supported"
 msgstr "Μη υποστηριζόμενο"
 
@@ -2740,10 +2748,6 @@ msgstr "Εισαγωγή κειμένου NOSPAM σε τυχαία θέση"
 
 #: phonedb/models.py:28
 msgid "Draft"
-msgstr ""
-
-#: phonedb/models.py:29
-msgid "Approved"
 msgstr ""
 
 #: phonedb/models.py:30
