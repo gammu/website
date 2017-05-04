@@ -7,18 +7,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2017-05-04 08:44+0200\n"
-"PO-Revision-Date: 2016-11-16 12:59+0000\n"
+"PO-Revision-Date: 2017-05-04 06:48+0000\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/"
-">\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/>"
+"\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.10-dev\n"
+"X-Generator: Weblate 2.14-dev\n"
 
 #: downloads/models.py:31
 msgid "Source code"
@@ -135,7 +135,7 @@ msgstr ""
 
 #: html/authors.html:55
 msgid "Gnokii authors"
-msgstr ""
+msgstr "Autoři Gnokii"
 
 #: html/authors.html:58
 msgid ""
@@ -1059,11 +1059,11 @@ msgstr "Přispějte malou částkou každý týden."
 
 #: html/donate.html:39
 msgid "Donate monthly amount for sustainable development"
-msgstr ""
+msgstr "Podpořte udržitelný vývoj a přispívejte peníze měsíčně"
 
 #: html/donate.html:43
 msgid "Fund issues to motivate developers"
-msgstr ""
+msgstr "Financujte vývoj a motivujte tím vývojáře"
 
 #: html/donate.html:49
 msgid ""
@@ -1197,7 +1197,7 @@ msgstr "PAD pro Gammu"
 
 #: html/downloads/platformlinks.html:3
 msgid "Download sources or Windows binaries"
-msgstr ""
+msgstr "Stáhnout zdrojové kódy nebo program pro Windows"
 
 #: html/downloads/platformlinks.html:20
 msgid "Development git snaphots and git access"
@@ -1250,6 +1250,8 @@ msgid ""
 "You might need to install <a href=\"%(url)s\">Visual C++ Redistributable "
 "Packages</a> to run Gammu."
 msgstr ""
+"Pro spuštění Gammu budete možná potřebovat i <a href=\"%(url)s\">Visual C++ "
+"Redistributable Packages</a>."
 
 #: html/downloads/programs/python-gammu-source.html:3
 msgid ""
@@ -1591,7 +1593,7 @@ msgstr "Podporují"
 
 #: html/index.html:35
 msgid "Support us on BountySource to get listed here!"
-msgstr ""
+msgstr "Pokud zde chcete být vidět, podpořte nás na BountySource!"
 
 #: html/index.html:37
 msgid "Current supporters:"
@@ -1952,7 +1954,7 @@ msgstr "Podporované funkce"
 
 #: html/phonedb/list.html:14
 msgid "This entry has been approved by project."
-msgstr ""
+msgstr "Tento záznam byl schválen projektem."
 
 #: html/phonedb/list.html:14 phonedb/models.py:29
 msgid "Approved"
@@ -2133,10 +2135,7 @@ msgstr ""
 "href=\"http://tuxmobil.org/phones_survey_%(tuxurl)s.html\">TuxMobil</a>.\n"
 
 #: html/phonedb/vendor.html:34
-#, fuzzy, python-format
-#| msgid ""
-#| "\n"
-#| "There is currently %(count)s approved phone records from this vendor.\n"
+#, python-format
 msgid ""
 "\n"
 "There is currently %(count)s phone record from this vendor.\n"
@@ -2145,13 +2144,13 @@ msgid_plural ""
 "There are currently %(count)s phone records from this vendor.\n"
 msgstr[0] ""
 "\n"
-"V současné době je zde %(count)s schválených záznamů od tohoto výrobce.\n"
+"V současné době zde je %(count)s záznam od tohoto výrobce.\n"
 msgstr[1] ""
 "\n"
-"V současné době je zde %(count)s schválených záznamů od tohoto výrobce.\n"
+"V současné době zde jsou %(count)s záznamy od tohoto výrobce.\n"
 msgstr[2] ""
 "\n"
-"V současné době je zde %(count)s schválených záznamů od tohoto výrobce.\n"
+"V současné době zde je %(count)s záznamů od tohoto výrobce.\n"
 
 #: html/phonedb/vendor.html:40
 msgid ""
