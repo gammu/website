@@ -2,6 +2,7 @@
 # -*- coding: UTF-8 -*-
 
 import os
+from django.http import Http404
 
 DEBUG = True
 
@@ -123,6 +124,9 @@ ROLLBAR = {
     'environment': 'development' if DEBUG else 'production',
     'branch': 'master',
     'root': '/home/nijel/wammu/',
+    'exception_level_filters': [
+         (Http404, 'ignored'),
+    ],
 }
 
 
