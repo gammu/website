@@ -18,7 +18,7 @@ def detail(request, program):
     if stable_downloads.count() == 0:
         raise Http404('No such download option %s.' % program)
 
-    result = render(request, 'downloads/detail.html', {
+    return render(request, 'downloads/detail.html', {
         'stable_release': stable_release,
         'testing_release': testing_release,
         'stable_downloads': stable_downloads,
@@ -26,7 +26,6 @@ def detail(request, program):
         'program': get_program(program),
         'program_name': program,
     })
-    return result
 
 def release(request, program,  version):
 
@@ -36,13 +35,12 @@ def release(request, program,  version):
     if downloads.count() == 0:
         raise Http404('No such download option %s/%s.' % (program, version))
 
-    result = render(request, 'downloads/release.html', {
+    return render(request, 'downloads/release.html', {
         'release': release,
         'downloads': downloads,
         'program': get_program(program),
         'program_name': program,
     })
-    return result
 
 
 def download(request):
