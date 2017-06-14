@@ -171,6 +171,9 @@ class Download(models.Model):
     sha256 = models.CharField(max_length = 250)
     size = models.IntegerField()
 
+    class Meta(object):
+        ordering = ['platform', 'location']
+
     def __str__(self):
         return '%s (%s): %s' % (self.release, self.platform, self.location)
 
