@@ -67,13 +67,11 @@ def get_current_downloads(program):
     stable_release, testing_release = get_latest_releases(program)
 
     stable_downloads = Download.objects.filter(release = stable_release)
-    stable_downloads = stable_downloads.order_by('location')
 
     downloads.append((stable_release, stable_downloads))
 
     if testing_release is not None:
-        testing_downloads = Download.objects.filter(release = testing_release).order_by('location')
-        testing_downloads = testing_downloads.order_by('location')
+        testing_downloads = Download.objects.filter(release = testing_release)
         downloads.append((testing_release, testing_downloads))
 
     return downloads

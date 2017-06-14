@@ -30,7 +30,7 @@ def detail(request, program):
 def release(request, program,  version):
 
     release = get_object_or_404(Release, program = program, version = version)
-    downloads = Download.objects.filter(release = release).order_by('platform', 'location')
+    downloads = Download.objects.filter(release = release)
 
     if downloads.count() == 0:
         raise Http404('No such download option %s/%s.' % (program, version))
