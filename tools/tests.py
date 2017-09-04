@@ -18,7 +18,7 @@ class ToolsTest(TestCase):
             reverse('pduencode'),
             {'text': 'Test', 'number': '800123456', 'cls': '0', 'smsc': '800123456'}
         )
-        self.assertContains(response, '068108103254f61100098108103254f60010ff04d4f29c0e')
+        self.assertContains(response, '068108103254f61100098108103254f600f0ff04d4f29c0e')
 
     def test_countries(self):
         response = self.client.get(reverse('countries'))
