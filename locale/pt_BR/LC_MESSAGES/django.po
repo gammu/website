@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-04 08:44+0200\n"
+"POT-Creation-Date: 2017-09-25 17:11+0200\n"
 "PO-Revision-Date: 2016-11-16 13:32+0000\n"
 "Last-Translator: Helder Santana <helder.santana@systemsbr.com.br>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
@@ -31,12 +31,12 @@ msgstr "Fonte"
 msgid "Windows binaries"
 msgstr "Binário do Windows"
 
-#: downloads/models.py:146
+#: downloads/models.py:144
 #, python-format
 msgid "%(program)s stable release %(version)s"
 msgstr "%(program)s versão estável %(version)s"
 
-#: downloads/models.py:151
+#: downloads/models.py:149
 #, python-format
 msgid "%(program)s testing release %(version)s"
 msgstr "testando %(program)s versão %(version)s"
@@ -1409,7 +1409,8 @@ msgstr "Bitcoin"
 #| "peer network</a> and send me Bitcoins to <code>%(address)s</code>."
 msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
-"peer network</a> and send me Bitcoins to <code>%(address)s</code>."
+"peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:%(address)s"
+"\">%(address)s</a></code>."
 msgstr ""
 "Você também pode usar <a href=\"http://www.bitcoin.org/\">Bitcoin, que é uma "
 "rede P2P</a> e me enviar Bitcoins para <code>%(address)s</code>."
@@ -1592,15 +1593,26 @@ msgid ""
 msgstr ""
 
 #: html/downloads/programs/gammu-win32.html:3
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "You are downloading Gammu binaries for Windows. The files are available "
+#| "as\n"
+#| "installer (.exe) or just an archive (.zip). The -Minimal variant has "
+#| "slighly\n"
+#| "less features compiled in and contains Gammu.dll, which you might use in\n"
+#| "external programs. There are also python-gammu binaries, which include "
+#| "all\n"
+#| "needed parts to use python-gammu in your python programs, just choose "
+#| "the\n"
+#| "version matching Python version you use.\n"
 msgid ""
 "\n"
 "You are downloading Gammu binaries for Windows. The files are available as\n"
 "installer (.exe) or just an archive (.zip). The -Minimal variant has "
 "slighly\n"
 "less features compiled in and contains Gammu.dll, which you might use in\n"
-"external programs. There are also python-gammu binaries, which include all\n"
-"needed parts to use python-gammu in your python programs, just choose the\n"
-"version matching Python version you use.\n"
+"external programs."
 msgstr ""
 "\n"
 "Você está baixando os binários do Gammu para Windows. Os arquivos estão "
@@ -1614,7 +1626,7 @@ msgstr ""
 "apenas escolha\n"
 "a versão correspondente a versão Python que você usa.\n"
 
-#: html/downloads/programs/gammu-win32.html:14
+#: html/downloads/programs/gammu-win32.html:11
 #, python-format
 msgid ""
 "You might need to install <a href=\"%(url)s\">Visual C++ Redistributable "
@@ -1629,8 +1641,18 @@ msgid ""
 "environment for your platform, Gammu and Python.\n"
 msgstr ""
 
-#: html/downloads/programs/python-gammu-source.html:9 html/python-gammu.html:35
+#: html/downloads/programs/python-gammu-source.html:9
+#: html/downloads/programs/python-gammu-win32.html:9 html/python-gammu.html:35
 msgid "The easiest way to install it is using pip:"
+msgstr ""
+
+#: html/downloads/programs/python-gammu-win32.html:3
+msgid ""
+"\n"
+"You are downloading python-gammu binaries for Windows. The current versions "
+"are available as\n"
+"installer only (.exe), just choose the version matching Python version you "
+"use.\n"
 msgstr ""
 
 #: html/downloads/programs/wammu-source.html:3
