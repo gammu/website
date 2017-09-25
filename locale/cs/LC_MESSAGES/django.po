@@ -7,18 +7,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2017-09-25 17:11+0200\n"
-"PO-Revision-Date: 2017-05-04 06:48+0000\n"
+"PO-Revision-Date: 2017-09-25 15:13+0000\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/"
-">\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/>"
+"\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.14-dev\n"
+"X-Generator: Weblate 2.17-dev\n"
 
 #: downloads/models.py:31
 msgid "Source code"
@@ -1086,17 +1086,15 @@ msgid "Bitcoin"
 msgstr "Bitcoin"
 
 #: html/donate.html:69
-#, fuzzy, python-format
-#| msgid ""
-#| "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
-#| "to-peer network</a> and send me Bitcoins to <code>%(address)s</code>."
+#, python-format
 msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:%(address)s"
 "\">%(address)s</a></code>."
 msgstr ""
 "Můžete také použít <a href=\"https://www.bitcoin.org/cs\">peer-to-peer síť "
-"Bitcoin</a> a poslat mi Bitcoiny na <code>%(address)s</code>."
+"Bitcoin</a> a poslat mi Bitcoiny na <code><a href=\"bitcoin:%(address)s\""
+">%(address)s</a></code>."
 
 #: html/donate.html:72 html/phonedb/index.html:79
 msgid "Supporters"
