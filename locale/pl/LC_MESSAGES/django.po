@@ -5,25 +5,23 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2017-09-25 17:11+0200\n"
-"PO-Revision-Date: 2015-04-15 22:04+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/gammu/website/pl/"
-">\n"
+"PO-Revision-Date: 2017-10-16 19:48+0000\n"
+"Last-Translator: Daria Szatan <bla_ke@tuta.io>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/gammu/website/pl/>"
+"\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.3-dev\n"
+"X-Generator: Weblate 2.17\n"
 
 #: downloads/models.py:31
-#, fuzzy
-#| msgid "Source"
 msgid "Source code"
-msgstr "Źródło"
+msgstr "Kod źródłowy"
 
 #: downloads/models.py:32
 #, fuzzy
@@ -123,7 +121,7 @@ msgstr "Strona internetowa"
 
 #: html/authors.html:34
 msgid "E-mail"
-msgstr ""
+msgstr "E-mail"
 
 #: html/authors.html:41
 msgid ""
@@ -144,7 +142,7 @@ msgstr ""
 
 #: html/authors.html:55
 msgid "Gnokii authors"
-msgstr ""
+msgstr "Autorzy Gnokii"
 
 #: html/authors.html:58
 msgid ""
@@ -161,17 +159,14 @@ msgstr ""
 "Pawel Kot i ManfredJonsson.\n"
 
 #: html/authors.html:70
-#, fuzzy
-#| msgid "Other Options"
 msgid "Other contributors"
-msgstr "Inne Opcje"
+msgstr "Inne osoby wnoszące wkład"
 
 #: html/base.html:12
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
 msgstr "Strona Wammu i Gammu, programom do zarządzania telefonami GSM."
 
 #: html/base.html:54
-#, fuzzy
 msgid "Gammu and Wammu"
 msgstr "Autorzy Gammu i Wammu"
 
@@ -190,7 +185,7 @@ msgstr "Wsparcie techniczne"
 
 #: html/base.html:75 html/base.html:116 html/base.html:128 html/base.html:140
 msgid "Overview"
-msgstr ""
+msgstr "Przegląd"
 
 #: html/base.html:76
 #, fuzzy
@@ -215,25 +210,23 @@ msgstr "Wsparcie płatne"
 #: html/gammu-family.html:74 html/gammu.html:53 html/libgammu.html:37
 #: html/python-gammu.html:25 html/smsd.html:56 html/wammu.html:39
 msgid "Download"
-msgstr ""
+msgstr "Pobierz"
 
 #: html/base.html:86
-#, fuzzy
 msgid "All downloads"
-msgstr "Pobierz"
+msgstr "Wszystkie pobrania"
 
 #: html/base.html:87 html/downloads/index.html:25
 msgid "Download Gammu"
-msgstr ""
+msgstr "Pobierz Gammu"
 
 #: html/base.html:88 html/downloads/index.html:32
-#, fuzzy
 msgid "Download python-gammu"
-msgstr "python-gammu"
+msgstr "Pobierz python-gammu"
 
 #: html/base.html:89 html/downloads/index.html:39
 msgid "Download Wammu"
-msgstr ""
+msgstr "Pobierz Wammu"
 
 #: html/base.html:94 html/index.html:26
 msgid "News"
@@ -241,7 +234,7 @@ msgstr "Nowości"
 
 #: html/base.html:96
 msgid "All news"
-msgstr ""
+msgstr "Wszystkie nowości"
 
 #: html/base.html:104 html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
 msgid "Screenshots"
@@ -249,7 +242,7 @@ msgstr "Screenshoty"
 
 #: html/base.html:106
 msgid "All screenshots"
-msgstr ""
+msgstr "Wszystkie zrzuty ekranu"
 
 #: html/base.html:114 html/gammu.html:61 html/libgammu.html:46
 #: html/python-gammu.html:64 html/smsd.html:66 html/wammu.html:49
@@ -258,7 +251,7 @@ msgstr "Dokumentacja"
 
 #: html/base.html:117 html/docs/index.html:21
 msgid "Gammu Manual"
-msgstr ""
+msgstr "Podręcznik Użytkowania Gammu"
 
 #: html/base.html:118
 msgid "FAQ"
@@ -270,7 +263,7 @@ msgstr "Dla deweloperów"
 
 #: html/base.html:120 html/phonedb/body.html:16
 msgid "Configuration"
-msgstr ""
+msgstr "Konfiguracja"
 
 #: html/base.html:121 html/sidebars/common.html:3 phonedb/views.py:101
 msgid "Supported phones"
@@ -291,7 +284,7 @@ msgstr "Programuj"
 
 #: html/base.html:131
 msgid "Wanted skills"
-msgstr ""
+msgstr "Oczekiwane umiejętności"
 
 #: html/base.html:132
 msgid "Publicity"
@@ -304,7 +297,7 @@ msgstr "Dotacja"
 
 #: html/base.html:138
 msgid "Tools"
-msgstr ""
+msgstr "Narzędzia"
 
 #: html/base.html:141
 msgid "PDU encoder"
@@ -321,7 +314,7 @@ msgstr "Współpraca"
 
 #: html/base.html:144
 msgid "Networks"
-msgstr ""
+msgstr "Sieci"
 
 #: html/base.html:162
 #, fuzzy
@@ -355,19 +348,19 @@ msgstr "Autorzy"
 
 #: html/base.html:186
 msgid "Gammu on Google+"
-msgstr ""
+msgstr "Gammu w Google+"
 
 #: html/base.html:187
 msgid "Gammu on Facebook"
-msgstr ""
+msgstr "Gammu na Facebooku"
 
 #: html/base.html:188
 msgid "Follow us on Twitter"
-msgstr ""
+msgstr "Śledź nas na Twitterze"
 
 #: html/base.html:189
 msgid "Donate using PayPal"
-msgstr ""
+msgstr "Wspomóż, używając Paypal"
 
 #: html/contribute/code.html:4 html/contribute/code.html:8
 msgid "Coding for Wammu and Gammu"
