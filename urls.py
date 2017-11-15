@@ -141,14 +141,14 @@ urlpatterns = [
 
     # News
     url(r'^news/$', news.views.index, name='news'),
-    url(r'^news/(?P<year>\d{4})/(?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<slug>[^/]*)/$',
+    url(r'^news/(?P<year>\d{4})/(?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<slug>[^/]+)/$',
         news.views.entry, name='news-entry'),
-    url(r'^news/(?P<slug>[^/]*)/$', news.views.category, name='news-category'),
+    url(r'^news/(?P<slug>[^/]+)/$', news.views.category, name='news-category'),
 
     url(r'^download/$', downloads.views.download, name='downloads',),
-    url(r'^download/(?P<program>[^/]*)/$', downloads.views.detail, name='downloads-detail'),
-    url(r'^download/(?P<program>[^/]*)/(?P<version>[0-9.]*)/$', downloads.views.release, name='downloads-release'),
-    url(r'^download/(?P<program>[^/]*)/(?P<platform>[^/]*)/$', RedirectView.as_view(url='/download/%(program)s/', permanent=True)),
+    url(r'^download/(?P<program>[^/]+)/$', downloads.views.detail, name='downloads-detail'),
+    url(r'^download/(?P<program>[^/]+)/(?P<version>[0-9.]+)/$', downloads.views.release, name='downloads-release'),
+    url(r'^download/(?P<program>[^/]+)/(?P<platform>[^/]+)/$', RedirectView.as_view(url='/download/%(program)s/', permanent=True)),
 
     # RSS feeds
     url(r'^phones/rss/$', RssPhonesFeed(), name='phonedb-rss'),
@@ -166,19 +166,19 @@ urlpatterns = [
     url(r'^phones/search/$', phonedb.views.search, name='phonedb-search'),
     url(r'^phones/review/$', phonedb.views.review),
     url(r'^phones/model.php/$', phonedb.views.phone_redirect),
-    url(r'^phones/search/(?P<featurename>[^/]*)/$', phonedb.views.search, name='phonedb-search-feature'),
-    url(r'^phones/(?P<vendorname>[^/]*)/$', phonedb.views.vendor, name='phonedb-vendor'),
-    url(r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/$', phonedb.views.phone, name='phonedb-phone'),
-    url(r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/delete/$', phonedb.views.delete),
-    url(r'^phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/approve/$', phonedb.views.approve),
-    url(r'^phones/(?P<vendorname>[^/]*)/new/$', phonedb.views.create),
+    url(r'^phones/search/(?P<featurename>[^/]+)/$', phonedb.views.search, name='phonedb-search-feature'),
+    url(r'^phones/(?P<vendorname>[^/]+)/$', phonedb.views.vendor, name='phonedb-vendor'),
+    url(r'^phones/(?P<vendorname>[^/]+)/(?P<id>[0-9]+)/$', phonedb.views.phone, name='phonedb-phone'),
+    url(r'^phones/(?P<vendorname>[^/]+)/(?P<id>[0-9]+)/delete/$', phonedb.views.delete),
+    url(r'^phones/(?P<vendorname>[^/]+)/(?P<id>[0-9]+)/approve/$', phonedb.views.approve),
+    url(r'^phones/(?P<vendorname>[^/]+)/new/$', phonedb.views.create),
 
     # API for Wammu
     url(r'^api/phones/new/$', phonedb.views.create_wammu, name='phonedb-api'),
 
     # DOAP/PAD syndication
-    url(r'^api/doap/(?P<program>[^/.]*).xml$', downloads.views.doap),
-    url(r'^api/pad/(?P<program>[^/.]*).xml$', downloads.views.pad),
+    url(r'^api/doap/(?P<program>[^/.]+).xml$', downloads.views.doap),
+    url(r'^api/pad/(?P<program>[^/.]+).xml$', downloads.views.pad),
     url(r'^api/pad/padmap.txt$', downloads.views.padmap),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs'
@@ -199,7 +199,7 @@ urlpatterns = [
 
     # Screenshots
     url(r'^screenshots/$', screenshots.views.index),
-    url(r'^screenshots/(?P<slug>[^/]*)/$', screenshots.views.category, name='screenshots-category'),
+    url(r'^screenshots/(?P<slug>[^/]+)/$', screenshots.views.category, name='screenshots-category'),
 
     # Links
     url(r'^links/$', links.views.index),
@@ -209,7 +209,7 @@ urlpatterns = [
     url(r'^improve/$', RedirectView.as_view(url='/contribute/', permanent=True)),
     url(r'^wammu.xml$', RedirectView.as_view(url='/api/pad/wammu.xml', permanent=True)),
     url(r'^wammu.doap$', RedirectView.as_view(url='/api/doap/wammu.xml', permanent=True)),
-    url(r'^phones/features/(?P<featurename>[^/]*)/$', RedirectView.as_view(url='/phones/search/%(featurename)s/', permanent=True)),
+    url(r'^phones/features/(?P<featurename>[^/]+)/$', RedirectView.as_view(url='/phones/search/%(featurename)s/', permanent=True)),
 
     # Sitemap
     url(r'^sitemap.xml$', django.contrib.sitemaps.views.index, {'sitemaps': sitemaps}, name='sitemap'),
@@ -227,7 +227,7 @@ urlpatterns = [
     url(r'^(?P<link>.*)/\)\.$', RedirectView.as_view(url='/%(link)s', permanent=True)),
     url(r'^(?P<link>.*)/\)$', RedirectView.as_view(url='/%(link)s', permanent=True)),
     url(r'^(?P<link>.*)/index\.php$', RedirectView.as_view(url='/%(link)s', permanent=True)),
-    url(r'^(?P<link>phones/(?P<vendorname>[^/]*)/(?P<id>[0-9]*)/),.*', RedirectView.as_view(url='/%(link)s', permanent=True)),
+    url(r'^(?P<link>phones/(?P<vendorname>[^/]+)/(?P<id>[0-9]+)/),.*', RedirectView.as_view(url='/%(link)s', permanent=True)),
     url(r'^snapshot/$', RedirectView.as_view(url='/download/', permanent=True)),
     url(r'^manual/$', RedirectView.as_view(url='/docs/manual/', permanent=True)),
     url(r'^docs/faq/$', RedirectView.as_view(url='/docs/manual/faq/', permanent=True)),
