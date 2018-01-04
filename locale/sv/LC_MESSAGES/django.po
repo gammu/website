@@ -5,24 +5,22 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2017-09-25 17:11+0200\n"
-"PO-Revision-Date: 2016-07-28 10:16+0000\n"
-"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
-"Language-Team: Swedish <https://hosted.weblate.org/projects/gammu/website/sv/"
-">\n"
+"PO-Revision-Date: 2018-01-05 09:35+0000\n"
+"Last-Translator: Sebastian Rasmussen <sebras@gmail.com>\n"
+"Language-Team: Swedish "
+"<https://hosted.weblate.org/projects/gammu/website/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.8-dev\n"
+"X-Generator: Weblate 2.19-dev\n"
 
 #: downloads/models.py:31
-#, fuzzy
-#| msgid "Source"
 msgid "Source code"
-msgstr "Källa"
+msgstr "Källkod"
 
 #: downloads/models.py:32
 msgid "Windows binaries"
@@ -748,9 +746,8 @@ msgstr ""
 
 # msgid "Not supported id: %s"
 #: html/contribute/wanted.html:38
-#, fuzzy
 msgid "Community supporter"
-msgstr "Stöds inte"
+msgstr "Gemenskapsstödgivare"
 
 #: html/contribute/wanted.html:41
 msgid ""
@@ -992,9 +989,8 @@ msgid ""
 msgstr ""
 
 #: html/donate.html:72 html/phonedb/index.html:79
-#, fuzzy
 msgid "Supporters"
-msgstr "&Support"
+msgstr "Stödgivare"
 
 #: html/donate.html:74
 msgid ""
@@ -1010,10 +1006,8 @@ msgid ""
 msgstr ""
 
 #: html/downloads/detail.html:27
-#, fuzzy
-#| msgid "Binary packages"
 msgid "Linux binary packages"
-msgstr "Binära paket"
+msgstr "Binära Linux-paket"
 
 #: html/downloads/detail.html:31 html/downloads/platformlinks.html:5
 msgid "Debian packages"
@@ -1028,10 +1022,8 @@ msgid "Ubuntu packages in PPA"
 msgstr ""
 
 #: html/downloads/detail.html:40 html/downloads/platformlinks.html:14
-#, fuzzy
-#| msgid "Debian packages"
 msgid "Fedora packages"
-msgstr "Debian-paket"
+msgstr "Fedora-paket"
 
 #: html/downloads/detail.html:44 html/downloads/platformlinks.html:18
 msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
@@ -1382,7 +1374,7 @@ msgstr ""
 #: html/gammu.html:86 html/libgammu.html:64 html/python-gammu.html:89
 #: html/smsd.html:90 html/wammu.html:72
 msgid "More information"
-msgstr "Mer information"
+msgstr "Vidare information"
 
 #: html/index.html:4
 msgid "Wammu and Gammu"
@@ -1413,9 +1405,8 @@ msgstr ""
 
 # msgid "Not supported id: %s"
 #: html/index.html:37
-#, fuzzy
 msgid "Current supporters:"
-msgstr "Stöds inte"
+msgstr "Aktuella stödgivare:"
 
 #: html/libgammu.html:4 html/libgammu.html:7
 msgid "libGammu"
@@ -2439,9 +2430,8 @@ msgid "Country code"
 msgstr "Landskod"
 
 #: html/tools/countries.html:18
-#, fuzzy
 msgid "Country name"
-msgstr "Länder"
+msgstr "Landsnamn"
 
 #: html/tools/index.html:4 html/tools/index.html:8
 msgid "Tools for Wammu and Gammu"
@@ -2557,7 +2547,7 @@ msgstr "SMSC"
 
 #: html/tools/pdudecode.html:44
 msgid "Validity"
-msgstr ""
+msgstr "Giltighet"
 
 #: html/tools/pdudecode.html:45
 msgid "Type"
@@ -2573,7 +2563,7 @@ msgstr ""
 
 #: html/tools/pdudecode.html:63
 msgid "MMS indicator"
-msgstr ""
+msgstr "MMS-indikator"
 
 #: html/tools/pdudecode.html:64
 msgid "Title"
@@ -2589,11 +2579,11 @@ msgstr "Adress"
 
 #: html/tools/pdudecode.html:67 tools/forms.py:14
 msgid "Class"
-msgstr ""
+msgstr "Klass"
 
 #: html/tools/pdudecode.html:70
 msgid "Bitmap"
-msgstr ""
+msgstr "Bitmapp"
 
 #: html/tools/pdudecode.html:71
 msgid "Bitmaps"
@@ -2799,7 +2789,7 @@ msgstr "Kalenderposter"
 
 #: phonedb/models.py:40
 msgid "Todos"
-msgstr "AttGöra"
+msgstr "Att-göra"
 
 #: phonedb/models.py:41
 msgid "Filesystem manipulation"
@@ -2882,7 +2872,7 @@ msgstr "Unicode"
 
 #: tools/forms.py:16
 msgid "Recipient"
-msgstr ""
+msgstr "Mottagare"
 
 #: tools/forms.py:17
 msgid "SMSC number"
