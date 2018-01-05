@@ -54,7 +54,7 @@
     <Program_Categories>Communication :: Misc. Communication,Programming :: Python,Programming :: C &amp; C++ &amp; C#,Utilities :: Miscellaneous</Program_Categories>
     <Program_Release_Status>Major Update</Program_Release_Status>
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
-    <Program_OS_Support>Win98,Win2000,WinXP,Win7 x32,Win7 x64,WinServer,WinVista,WinVista x64,Unix,Linux,Linux Console,Linux Gnome,Linux GPL,Linux Open Source,Mac OS X,Mac Other,Other</Program_OS_Support>
+    <Program_OS_Support>Win10,Win10 x32,Win10 x64,Win98,Win2000,WinXP,Win7 x32,Win7 x64,WinServer,WinVista,WinVista x64,Unix,Linux,Linux Console,Linux Gnome,Linux GPL,Linux Open Source,Mac OS X,Mac Other,Other</Program_OS_Support>
     <Program_Language>English,Afrikaans,Bulgarian,Catalan,ChineseSimplified,ChineseTraditional,Czech,Dutch,Estonian,Finnish,French,Galician,German,Greek,Hebrew,Hungarian,Indonesian,Italian,Korean,Polish,Portuguese,Russian,Slovak,Spanish,Swedish</Program_Language>
     <Program_Change_Info>{{ release.description }}</Program_Change_Info>
     <Program_System_Requirements>No special requirements.</Program_System_Requirements>
