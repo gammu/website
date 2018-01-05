@@ -7,12 +7,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
-"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
-"POT-Creation-Date: 2017-09-25 17:11+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-05 10:40+0100\n"
 "PO-Revision-Date: 2017-09-25 15:13+0000\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/>"
-"\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/"
+">\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1053,19 +1053,19 @@ msgid ""
 "better software.\n"
 msgstr ""
 
-#: html/donate.html:27 html/donate.html:33
+#: html/donate.html:27
 msgid "Donate small amount in weekly intervals."
 msgstr "Přispějte malou částkou každý týden."
 
-#: html/donate.html:39
+#: html/donate.html:33
 msgid "Donate monthly amount for sustainable development"
 msgstr "Podpořte udržitelný vývoj a přispívejte peníze měsíčně"
 
-#: html/donate.html:43
+#: html/donate.html:37
 msgid "Fund issues to motivate developers"
 msgstr "Financujte vývoj a motivujte tím vývojáře"
 
-#: html/donate.html:49
+#: html/donate.html:43
 msgid ""
 "\n"
 "The donation itself is being processed by <a\n"
@@ -1081,11 +1081,11 @@ msgstr ""
 "účtem nebo platební kartou. Příspěvek můžete také rovnou\n"
 "poslat na <code>michal@cihar.com</code>.\n"
 
-#: html/donate.html:66
+#: html/donate.html:60
 msgid "Bitcoin"
 msgstr "Bitcoin"
 
-#: html/donate.html:69
+#: html/donate.html:63
 #, python-format
 msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -1093,14 +1093,14 @@ msgid ""
 "\">%(address)s</a></code>."
 msgstr ""
 "Můžete také použít <a href=\"https://www.bitcoin.org/cs\">peer-to-peer síť "
-"Bitcoin</a> a poslat mi Bitcoiny na <code><a href=\"bitcoin:%(address)s\""
-">%(address)s</a></code>."
+"Bitcoin</a> a poslat mi Bitcoiny na <code><a href=\"bitcoin:%(address)s\">"
+"%(address)s</a></code>."
 
-#: html/donate.html:72 html/phonedb/index.html:79
+#: html/donate.html:66 html/phonedb/index.html:79
 msgid "Supporters"
 msgstr "Podporovatelé"
 
-#: html/donate.html:74
+#: html/donate.html:68
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
@@ -2245,6 +2245,11 @@ msgstr ""
 "Podívejte se také na <a href=\"/docs/manual/faq/python.html\">často kladené "
 "dotazy</a>.\n"
 
+#: html/python-gammu.html:91 html/sidebars/gammu.html:4
+#: html/sidebars/wammu.html:4
+msgid "Downloads"
+msgstr "Stáhnout"
+
 #: html/s60.html:4 html/s60.html:7
 msgid "Series60 remote applet installation"
 msgstr "Instalace apletu Series60 remote"
@@ -2288,10 +2293,6 @@ msgstr "Poslední novinky"
 #: html/sidebars/common.html:4
 msgid "How to contribute"
 msgstr "Jak přispět"
-
-#: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
-msgid "Downloads"
-msgstr "Stáhnout"
 
 #: html/smsd.html:4
 msgid "Gammu SMS Daemon, the software for mass processing SMS messages."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-25 17:11+0200\n"
+"POT-Creation-Date: 2018-01-05 10:40+0100\n"
 "PO-Revision-Date: 2016-11-16 13:32+0000\n"
 "Last-Translator: Helder Santana <helder.santana@systemsbr.com.br>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
@@ -1362,20 +1362,20 @@ msgstr ""
 "mas precisamos de mais para maior disponibilidade para criarmos software de "
 "melhor qualidade.\n"
 
-#: html/donate.html:27 html/donate.html:33
+#: html/donate.html:27
 msgid "Donate small amount in weekly intervals."
 msgstr "Doe pequenas quantias em intervalos semanais."
 
-#: html/donate.html:39
+#: html/donate.html:33
 #, fuzzy
 msgid "Donate monthly amount for sustainable development"
 msgstr "Doe quantias mensais para um desenvolvimento sustentável"
 
-#: html/donate.html:43
+#: html/donate.html:37
 msgid "Fund issues to motivate developers"
 msgstr ""
 
-#: html/donate.html:49
+#: html/donate.html:43
 #, fuzzy
 #| msgid ""
 #| "\n"
@@ -1398,11 +1398,11 @@ msgstr ""
 "usando sua conta ou qualquer cartão de crédito. Você também pode enviar\n"
 "a doação diretamente a <code>michal@cihar.com</code>.\n"
 
-#: html/donate.html:66
+#: html/donate.html:60
 msgid "Bitcoin"
 msgstr "Bitcoin"
 
-#: html/donate.html:69
+#: html/donate.html:63
 #, fuzzy, python-format
 #| msgid ""
 #| "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -1415,11 +1415,11 @@ msgstr ""
 "Você também pode usar <a href=\"http://www.bitcoin.org/\">Bitcoin, que é uma "
 "rede P2P</a> e me enviar Bitcoins para <code>%(address)s</code>."
 
-#: html/donate.html:72 html/phonedb/index.html:79
+#: html/donate.html:66 html/phonedb/index.html:79
 msgid "Supporters"
 msgstr "Oferecimento de"
 
-#: html/donate.html:74
+#: html/donate.html:68
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
@@ -2750,6 +2750,11 @@ msgstr ""
 "\n"
 "Olhe também a <a href=\"/docs/manual/faq/python.html\">FAQ</a>.\n"
 
+#: html/python-gammu.html:91 html/sidebars/gammu.html:4
+#: html/sidebars/wammu.html:4
+msgid "Downloads"
+msgstr "Downloads"
+
 #: html/s60.html:4 html/s60.html:7
 msgid "Series60 remote applet installation"
 msgstr "Instalação do applet remoto do Series60"
@@ -2798,10 +2803,6 @@ msgstr "Últimas Notícias"
 #: html/sidebars/common.html:4
 msgid "How to contribute"
 msgstr "Como contribuir"
-
-#: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
-msgid "Downloads"
-msgstr "Downloads"
 
 #: html/smsd.html:4
 msgid "Gammu SMS Daemon, the software for mass processing SMS messages."

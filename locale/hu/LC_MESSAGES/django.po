@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-25 17:11+0200\n"
+"POT-Creation-Date: 2018-01-05 10:40+0100\n"
 "PO-Revision-Date: 2012-10-19 22:11+0200\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <http://hosted.weblate.org/projects/gammu/website/"
@@ -957,19 +957,19 @@ msgid ""
 "better software.\n"
 msgstr ""
 
-#: html/donate.html:27 html/donate.html:33
+#: html/donate.html:27
 msgid "Donate small amount in weekly intervals."
 msgstr ""
 
-#: html/donate.html:39
+#: html/donate.html:33
 msgid "Donate monthly amount for sustainable development"
 msgstr ""
 
-#: html/donate.html:43
+#: html/donate.html:37
 msgid "Fund issues to motivate developers"
 msgstr ""
 
-#: html/donate.html:49
+#: html/donate.html:43
 msgid ""
 "\n"
 "The donation itself is being processed by <a\n"
@@ -979,11 +979,11 @@ msgid ""
 "donation to <code>michal@cihar.com</code>.\n"
 msgstr ""
 
-#: html/donate.html:66
+#: html/donate.html:60
 msgid "Bitcoin"
 msgstr ""
 
-#: html/donate.html:69
+#: html/donate.html:63
 #, python-format
 msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
@@ -991,11 +991,11 @@ msgid ""
 "\">%(address)s</a></code>."
 msgstr ""
 
-#: html/donate.html:72 html/phonedb/index.html:79
+#: html/donate.html:66 html/phonedb/index.html:79
 msgid "Supporters"
 msgstr "Támogatók"
 
-#: html/donate.html:74
+#: html/donate.html:68
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
@@ -1934,6 +1934,11 @@ msgid ""
 "Questions</a>.\n"
 msgstr ""
 
+#: html/python-gammu.html:91 html/sidebars/gammu.html:4
+#: html/sidebars/wammu.html:4
+msgid "Downloads"
+msgstr ""
+
 #: html/s60.html:4 html/s60.html:7
 msgid "Series60 remote applet installation"
 msgstr ""
@@ -1974,10 +1979,6 @@ msgstr ""
 
 #: html/sidebars/common.html:4
 msgid "How to contribute"
-msgstr ""
-
-#: html/sidebars/gammu.html:4 html/sidebars/wammu.html:4
-msgid "Downloads"
 msgstr ""
 
 #: html/smsd.html:4
