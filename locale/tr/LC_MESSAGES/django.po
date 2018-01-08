@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-05 10:40+0100\n"
+"POT-Creation-Date: 2018-01-05 14:19+0100\n"
 "PO-Revision-Date: 2017-02-07 16:01+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gammu/website/tr/"
@@ -1119,15 +1119,12 @@ msgstr ""
 
 #: html/downloads/programs/gammu-win32.html:3
 msgid ""
-"\n"
-"You are downloading Gammu binaries for Windows. The files are available as\n"
-"installer (.exe) or just an archive (.zip). The -Minimal variant has "
-"slighly\n"
-"less features compiled in and contains Gammu.dll, which you might use in\n"
-"external programs."
+"You are downloading Gammu installer for Windows. There is 32-bit version, 64-"
+"bit version and 32-bit version compiled with MSVC 9.0 to be compatible with "
+"Python 2.7."
 msgstr ""
 
-#: html/downloads/programs/gammu-win32.html:11
+#: html/downloads/programs/gammu-win32.html:7
 #, python-format
 msgid ""
 "You might need to install <a href=\"%(url)s\">Visual C++ Redistributable "
@@ -1171,13 +1168,9 @@ msgstr ""
 
 #: html/downloads/programs/wammu-win32.html:3
 msgid ""
-"\n"
-"You are downloading wammu binaries for Windows. The files are available as\n"
-"<strong>full installer (-setup.exe)</strong> which is probably the thing you "
-"want to download.\n"
-"If you want to handle all dependencies manually and want to use Python you\n"
-"have installed, you can get just the <strong>Python module\n"
-"(.win32.exe)</strong>.\n"
+"You are downloading standalone Wammu installer for Windows. If you want to "
+"use your system Python and install dependencies manually, please use pip "
+"tool to install Wammu."
 msgstr ""
 
 #: html/downloads/release.html:8
@@ -1751,7 +1744,7 @@ msgid ""
 "\n"
 "This record has been rejected for some reasons, you might want to check "
 "other\n"
-"records for same model (you can see them on right side).\n"
+"records for same model (you can see them on bottom of the page).\n"
 msgstr ""
 
 #: html/phonedb/phone.html:38
