@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2018-03-13 22:27+0100\n"
-"PO-Revision-Date: 2016-11-16 13:32+0000\n"
-"Last-Translator: Helder Santana <helder.santana@systemsbr.com.br>\n"
+"PO-Revision-Date: 2018-04-27 05:40+0000\n"
+"Last-Translator: Jeferson Oliveira <badkar266@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "gammu/website/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,19 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.10-dev\n"
+"X-Generator: Weblate 3.0-dev\n"
 
 #: downloads/models.py:31
-#, fuzzy
-#| msgid "Source"
 msgid "Source code"
-msgstr "Fonte"
+msgstr "Código fonte"
 
 #: downloads/models.py:32
-#, fuzzy
-#| msgid "Windows binary"
 msgid "Windows binaries"
-msgstr "Binário do Windows"
+msgstr "Binários do windows"
 
 #: downloads/models.py:144
 #, python-format
@@ -167,10 +163,8 @@ msgstr ""
 "Jonsson.\n"
 
 #: html/authors.html:70
-#, fuzzy
-#| msgid "Other Options"
 msgid "Other contributors"
-msgstr "Outras Opções"
+msgstr "Outros contribuidores"
 
 #: html/base.html:12
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
@@ -328,9 +322,8 @@ msgid "Networks"
 msgstr "Redes"
 
 #: html/base.html:162
-#, fuzzy
 msgid "Help with translations!"
-msgstr "Tradução de páginas"
+msgstr "Ajude com tradução!"
 
 #: html/base.html:182
 msgid "License"
@@ -378,19 +371,6 @@ msgid "Coding for Wammu and Gammu"
 msgstr "Programar para Wammu e Gammu"
 
 #: html/contribute/code.html:11
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Gammu is written in C and Wammu in <a\n"
-#| "href=\"http://www.python.org/\">Python</a>, so you will need knowledge of "
-#| "one of\n"
-#| "these languages to contribute code directly to the project. You will "
-#| "probably\n"
-#| "use some parts of <a href=\"/docs/devel/\">developer documentation</a> "
-#| "to\n"
-#| "understand the code. If you want to know what is planned to happen in "
-#| "Gammu\n"
-#| "and Wammu, please check the <a href=\"/docs/roadmap/\">roadmap</a>.\n"
 msgid ""
 "\n"
 "Gammu is written in C and Wammu in <a\n"
@@ -404,27 +384,22 @@ msgid ""
 msgstr ""
 "\n"
 "O Gammu é escrito em C e o Wammu em <a\n"
-"href=\"http://www.python.org/\">Python</a>, então você precisará ter "
-"conhecimento\n"
-"em uma destas linguagens para fornecer código diretamente para o projeto.\n"
-"Você provavelmente irá usar algumas partes da <a href=\"/docs/devel/"
-"\">documentação\n"
-"do desenvolvedor</a> para entender o código. Se você quiser saber o que se "
-"espera acontecer\n"
-"no Gammu e Wammu, favor olher o <a href=\"/docs/roadmap/\">roadmap</a>.\n"
+"href=\"https://www.python.org/\">Python</a>, então você precisará ter "
+"conhecimento em uma destas \n"
+"linguagens para contribuir com código diretamente para o projeto. Você "
+"provavelmente \n"
+"irá usar algumas partes da <a href=\"/docs/devel/\">documentação do "
+"desenvolvedor</a> para \n"
+"entender o código. Se você quiser saber o que está planejado para acontecer "
+"em Gammu\n"
+"e Wammu, por favor verifique o <a href=\"/docs/roadmap/\">mapa de "
+"navegação</a>.\n"
 
 #: html/contribute/code.html:22
 msgid "Version Control System"
 msgstr "Sistema de controle de versão"
 
 #: html/contribute/code.html:24
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "We currently use <a href=\"http://git-scm.com/\">Git</a> as a version "
-#| "control\n"
-#| "system. It allows you create own local branch, develop the code and then\n"
-#| "submit us patches or merge request for the changes.\n"
 msgid ""
 "\n"
 "We currently use <a href=\"https://git-scm.com/\">Git</a> as a version "
@@ -433,23 +408,13 @@ msgid ""
 "submit us patches or merge request for the changes.\n"
 msgstr ""
 "\n"
-"Nós atualmente usamos o <a href=\"http://git-scm.com/\">Git</a> como o "
+"Nós atualmente usamos o <a href=\"https://git-scm.com/\">Git</a> para "
 "sistema de\n"
 "controle de versão. Ele permite criar seu próprio branch local, desenvolver "
 "o código\n"
-"e então nós enviar os pedidos de patch ou merge para mudanças.\n"
+"e então nos enviar os patches ou merge request para as mudanças.\n"
 
 #: html/contribute/code.html:32
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "The Git repositories are being hosted on <a\n"
-#| "href=\"http://github.com/\">Github</a> service, in the\n"
-#| "<a href=\"http://github.com/gammu/\">Gammu</a> project. You can browse "
-#| "the code\n"
-#| "on their site or just clone the repository and investigate it locally. "
-#| "To\n"
-#| "clone Wammu and Gammu sources, use following commands:\n"
 msgid ""
 "\n"
 "The Git repositories are being hosted on <a\n"
@@ -460,20 +425,13 @@ msgid ""
 "clone Wammu and Gammu sources, use following commands:\n"
 msgstr ""
 "\n"
-"Os repositórios Git estão sendo hospedados no <a\n"
-"href=\"http://github.com/\">Github</a>, no projeto\n"
+"Os repositórios Git estão sendo hospedados no serviço <a\n"
+"href=\"https://github.com/\">Github</a>, no projeto\n"
 "<a href=\"http://github.com/gammu/\">Gammu</a>. Você pode ver o código\n"
 "no site deles ou apenas clonar o repositório e investigá-lo localmente.\n"
 "Para clonar os códigos-fonte do Wammu e Gammu, use os seguintes comandos:\n"
 
 #: html/contribute/code.html:56
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Instructions for building and installing are included in file\n"
-#| "<code>INSTALL</code> in both Gammu and Wammu. For compiling Gammu you "
-#| "need to\n"
-#| "have <a href=\"http://www.cmake.org/\">CMake</a>.\n"
 msgid ""
 "\n"
 "Instructions for building and installing are included in file\n"
@@ -483,9 +441,9 @@ msgid ""
 msgstr ""
 "\n"
 "Instruções para construir e instalar estão inclusas no arquivo\n"
-"<code>INSTALL</code> tanto no Gammu quanto no Wammu. Para compilar o Gammu "
-"você precisa\n"
-"ter o <a href=\"http://www.cmake.org/\">CMake</a>.\n"
+"<code>INSTALL</code> em ambos Gammu e Wammu. Para compilar o Gammu você "
+"precisa\n"
+"ter o <a href=\"https://www.cmake.org/\">CMake</a>.\n"
 
 #: html/contribute/code.html:63
 msgid "Code Snapshots"
@@ -776,18 +734,6 @@ msgid "Gettext"
 msgstr "Gettext"
 
 #: html/contribute/translate.html:20
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "All Gammu, Wammu and this website use <a\n"
-#| "href=\"http://en.wikipedia.org/wiki/GNU_gettext\">gettext</a> framework "
-#| "for\n"
-#| "translation of messages in user interface. In addition, Gammu uses "
-#| "gettext\n"
-#| "together with <a href=\"http://po4a.alioth.debian.org/\">po4a</a> to "
-#| "translate\n"
-#| "documentation. There exists variety of tools which can handle gettext\n"
-#| "translations, so you can choose the one which fits your needs.\n"
 msgid ""
 "\n"
 "All Gammu, Wammu and this website use <a\n"
@@ -800,12 +746,12 @@ msgid ""
 "translations, so you can choose the one which fits your needs.\n"
 msgstr ""
 "\n"
-"O Gammu, Wammu e este site usam o <a\n"
-"href=\"http://en.wikipedia.org/wiki/GNU_gettext\">framework gettext</a> "
+"Todo o Gammu, Wammu e este site usam <a\n"
+"href=\"https://en.wikipedia.org/wiki/GNU_gettext\">framework gettext</a> "
 "para\n"
 "tradução das mensagens da interface do usuário. Além disso, o Gammu usa "
 "gettext\n"
-"junto com o <a href=\"http://po4a.alioth.debian.org/\">po4a</a> para "
+"junto com o <a href=\"https://po4a.alioth.debian.org/\">po4a</a> para "
 "traduzir\n"
 "a documentação. Lá existe uma variedade de ferramentas que podem manipular\n"
 "traduções gettext, então você pode escolher aquela que atender suas "
@@ -816,16 +762,6 @@ msgid "Translating po Files"
 msgstr "Tradução de Arquivos po"
 
 #: html/contribute/translate.html:32
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Traditional way of doing translations is to download po file, translate "
-#| "it\n"
-#| "using some editor (for example <a href=\"http://www.poedit.net/\">Poedit</"
-#| "a>)\n"
-#| "and then send updated po file to the author. You can do this when you "
-#| "are\n"
-#| "offline, but on the other side, it somehow prevents collaboration.\n"
 msgid ""
 "\n"
 "Traditional way of doing translations is to download po file, translate it\n"
@@ -836,8 +772,8 @@ msgid ""
 msgstr ""
 "\n"
 "O jeito tradicional de fazer traduções é baixar o arquivo po, traduzi-lo\n"
-"usando algum editor (por exemplo o <a href=\"http://www.poedit.net/"
-"\">Poedit</a>)\n"
+"usando algum editor (por exemplo o <a href=\"https://www.poedit.net/\""
+">Poedit</a>)\n"
 "e então enviar o arquivo atualizado para o autor. Você pode fazer isso "
 "quando você\n"
 "estiver offline, mas por outro lado, ele previne a colaboração de algum "
@@ -1287,14 +1223,6 @@ msgstr ""
 "no <a href=\"/docs/manual/project/roadmap.html\">roadmap</a>.\n"
 
 #: html/docs/index.html:63
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Additional hints about protocols can be found in <code>docs/develop</"
-#| "code> in\n"
-#| "Gammu sources or you might want to use git repository with <a\n"
-#| "href=\"http://github.com/gammu/gsm-docs/\">various GSM documentation</"
-#| "a>.\n"
 msgid ""
 "\n"
 "Additional hints about protocols can be found in <code>docs/develop</code> "
@@ -1306,8 +1234,8 @@ msgstr ""
 "Dicas adicionais sobre protocolos podem ser encontradas em <code>docs/"
 "develop</code>\n"
 "nas fontes do Gammu ou você pode querer usar o repositório git com <a\n"
-"href=\"http://github.com/gammu/gsm-docs/\">documentações de GSM variados</"
-"a>.\n"
+"href=\"https://github.com/gammu/gsm-docs/\">documentações de GSM "
+"variados</a>.\n"
 
 #: html/donate-thanks.html:4 html/donate-thanks.html:7
 msgid "Thank you for Donation!"
@@ -1373,17 +1301,9 @@ msgstr "Doe quantias mensais para um desenvolvimento sustentável"
 
 #: html/donate.html:37
 msgid "Fund issues to motivate developers"
-msgstr ""
+msgstr "Questões de financiamento para motivar desenvolvedores"
 
 #: html/donate.html:43
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "The donation itself is being processed by <a\n"
-#| "href=\"http://www.paypal.com/\">PayPal</a> where you can pay either by "
-#| "their\n"
-#| "account or by using any major credit card. You can also directly send a\n"
-#| "donation to <code>michal@cihar.com</code>.\n"
 msgid ""
 "\n"
 "The donation itself is being processed by <a\n"
@@ -1394,7 +1314,7 @@ msgid ""
 msgstr ""
 "\n"
 "A doação é processada por <a \n"
-"href=\"http://www.paypal.com/\">PayPal</a> onde você pode pagar\n"
+"href=\"https://www.paypal.com/\">PayPal</a> onde você pode pagar\n"
 "usando sua conta ou qualquer cartão de crédito. Você também pode enviar\n"
 "a doação diretamente a <code>michal@cihar.com</code>.\n"
 
@@ -1403,17 +1323,15 @@ msgid "Bitcoin"
 msgstr "Bitcoin"
 
 #: html/donate.html:63
-#, fuzzy, python-format
-#| msgid ""
-#| "You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
-#| "peer network</a> and send me Bitcoins to <code>%(address)s</code>."
+#, python-format
 msgid ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
 "peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:%(address)s"
 "\">%(address)s</a></code>."
 msgstr ""
-"Você também pode usar <a href=\"http://www.bitcoin.org/\">Bitcoin, que é uma "
-"rede P2P</a> e me enviar Bitcoins para <code>%(address)s</code>."
+"You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
+"peer network</a> and send me Bitcoins to <code>3<a href=\"bitcoin:%(address)"
+"s\">4%(address)s5</a>6</code>7."
 
 #: html/donate.html:66 html/phonedb/index.html:79
 msgid "Supporters"
@@ -1438,9 +1356,8 @@ msgstr ""
 "Baixe %(program)s\n"
 
 #: html/downloads/detail.html:27
-#, fuzzy
 msgid "Linux binary packages"
-msgstr "Pacotes Debian"
+msgstr "Pacotes binários do linux"
 
 #: html/downloads/detail.html:31 html/downloads/platformlinks.html:5
 msgid "Debian packages"
@@ -1455,10 +1372,8 @@ msgid "Ubuntu packages in PPA"
 msgstr "Pacotes Ubuntu nos repositórios PPA"
 
 #: html/downloads/detail.html:40 html/downloads/platformlinks.html:14
-#, fuzzy
-#| msgid "Debian packages"
 msgid "Fedora packages"
-msgstr "Pacotes Debian"
+msgstr "Pacotes fedora"
 
 #: html/downloads/detail.html:44 html/downloads/platformlinks.html:18
 msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
@@ -1530,7 +1445,7 @@ msgstr "PAD para Gammu"
 
 #: html/downloads/platformlinks.html:3
 msgid "Download sources or Windows binaries"
-msgstr ""
+msgstr "Download do código fonte ou binários do Windows"
 
 #: html/downloads/platformlinks.html:20
 msgid "Development git snaphots and git access"
@@ -1553,18 +1468,6 @@ msgstr ""
 "da sua distribuição.\n"
 
 #: html/downloads/programs/gammu-source.html:3
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "You are downloading Gammu source code. To compile it you need some "
-#| "development\n"
-#| "environment for your platform and <a href=\"http://www.cmake.org/"
-#| "\">CMake</a>\n"
-#| "tool to configure the sources. There are also some optional requirements "
-#| "for\n"
-#| "additional features which are listed in INSTALL file in sources. This "
-#| "file\n"
-#| "also contains more detailed instructions about compiling Gammu.\n"
 msgid ""
 "\n"
 "You are downloading Gammu source code. To compile it you need some "
@@ -1579,8 +1482,8 @@ msgstr ""
 "\n"
 "Você está baixando o código-fonte do Gammu. Para compilá-lo você precisa de "
 "algum\n"
-"ambiente de desenvolvimento para sua plataforma e do <a href=\"http://www."
-"cmake.org/\">CMake</a>\n"
+"ambiente de desenvolvimento para sua plataforma e da ferramenta <a href=\""
+"https://www.cmake.org/\">CMake</a>\n"
 "para configurar as fontes. Existem também alguns requisitos opcionais para\n"
 "funções adicionais que são listadas no arquivo INSTALL em sources. Este "
 "arquivo\n"
