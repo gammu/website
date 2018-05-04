@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-13 22:27+0100\n"
+"POT-Creation-Date: 2018-05-04 10:27+0200\n"
 "PO-Revision-Date: 2018-01-05 09:35+0000\n"
 "Last-Translator: Sebastian Rasmussen <sebras@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/gammu/website/sv/"
@@ -988,11 +988,22 @@ msgid ""
 "\">%(address)s</a></code>."
 msgstr ""
 
-#: html/donate.html:66 html/phonedb/index.html:79
+#: html/donate.html:66
+msgid "Litecoin"
+msgstr ""
+
+#: html/donate.html:69
+#, python-format
+msgid ""
+"You can also use Litecoin and donate me to <code><a href=\"litecoin:"
+"%(address)s\">%(address)s</a></code>."
+msgstr ""
+
+#: html/donate.html:73 html/phonedb/index.html:79
 msgid "Supporters"
 msgstr "Stödgivare"
 
-#: html/donate.html:68
+#: html/donate.html:75
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
@@ -1025,15 +1036,21 @@ msgstr ""
 msgid "Fedora packages"
 msgstr "Fedora-paket"
 
-#: html/downloads/detail.html:44 html/downloads/platformlinks.html:18
+#: html/downloads/detail.html:43
+#, fuzzy
+#| msgid "Debian packages"
+msgid "Mageia packages"
+msgstr "Debian-paket"
+
+#: html/downloads/detail.html:47 html/downloads/platformlinks.html:18
 msgid "RPM packages (openSUSE, Fedora, Mageia, SLES, RHEL, CentOS)"
 msgstr ""
 
-#: html/downloads/detail.html:48
+#: html/downloads/detail.html:51
 msgid "Development version"
 msgstr ""
 
-#: html/downloads/detail.html:51
+#: html/downloads/detail.html:54
 msgid ""
 "Should you be interested in git access or git snapshots, you can find them "
 "on <a href=\"/contribute/code/\">development page</a>."

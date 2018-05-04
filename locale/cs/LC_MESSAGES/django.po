@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu web 2009\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-13 22:27+0100\n"
+"POT-Creation-Date: 2018-05-04 10:27+0200\n"
 "PO-Revision-Date: 2017-09-25 15:13+0000\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gammu/website/cs/"
@@ -1096,11 +1096,31 @@ msgstr ""
 "Bitcoin</a> a poslat mi Bitcoiny na <code><a href=\"bitcoin:%(address)s\">"
 "%(address)s</a></code>."
 
-#: html/donate.html:66 html/phonedb/index.html:79
+#: html/donate.html:66
+#, fuzzy
+#| msgid "Bitcoin"
+msgid "Litecoin"
+msgstr "Bitcoin"
+
+#: html/donate.html:69
+#, fuzzy, python-format
+#| msgid ""
+#| "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
+#| "to-peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:"
+#| "%(address)s\">%(address)s</a></code>."
+msgid ""
+"You can also use Litecoin and donate me to <code><a href=\"litecoin:"
+"%(address)s\">%(address)s</a></code>."
+msgstr ""
+"Můžete také použít <a href=\"https://www.bitcoin.org/cs\">peer-to-peer síť "
+"Bitcoin</a> a poslat mi Bitcoiny na <code><a href=\"bitcoin:%(address)s\">"
+"%(address)s</a></code>."
+
+#: html/donate.html:73 html/phonedb/index.html:79
 msgid "Supporters"
 msgstr "Podporovatelé"
 
-#: html/donate.html:68
+#: html/donate.html:75
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
@@ -1137,15 +1157,21 @@ msgstr "Balíčky pro Ubuntu v PPA"
 msgid "Fedora packages"
 msgstr "Balíčky pro Fedoru"
 
-#: html/downloads/detail.html:44 html/downloads/platformlinks.html:18
+#: html/downloads/detail.html:43
+#, fuzzy
+#| msgid "Debian packages"
+msgid "Mageia packages"
+msgstr "Balíčky pro Debian"
+
+#: html/downloads/detail.html:47 html/downloads/platformlinks.html:18
 msgid "RPM packages (openSUSE, Fedora, Mageia, SLES, RHEL, CentOS)"
 msgstr "RPM balíčky (openSUSE, Fedora, Mageia, SLES, RHEL, CentOS)"
 
-#: html/downloads/detail.html:48
+#: html/downloads/detail.html:51
 msgid "Development version"
 msgstr "Vývojové verze"
 
-#: html/downloads/detail.html:51
+#: html/downloads/detail.html:54
 msgid ""
 "Should you be interested in git access or git snapshots, you can find them "
 "on <a href=\"/contribute/code/\">development page</a>."

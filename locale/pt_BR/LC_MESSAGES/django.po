@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
-"POT-Creation-Date: 2018-03-13 22:27+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-04 10:27+0200\n"
 "PO-Revision-Date: 2018-04-27 05:40+0000\n"
 "Last-Translator: Jeferson Oliveira <badkar266@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
@@ -392,8 +392,8 @@ msgstr ""
 "desenvolvedor</a> para \n"
 "entender o código. Se você quiser saber o que está planejado para acontecer "
 "em Gammu\n"
-"e Wammu, por favor verifique o <a href=\"/docs/roadmap/\">mapa de "
-"navegação</a>.\n"
+"e Wammu, por favor verifique o <a href=\"/docs/roadmap/\">mapa de navegação</"
+"a>.\n"
 
 #: html/contribute/code.html:22
 msgid "Version Control System"
@@ -772,8 +772,8 @@ msgid ""
 msgstr ""
 "\n"
 "O jeito tradicional de fazer traduções é baixar o arquivo po, traduzi-lo\n"
-"usando algum editor (por exemplo o <a href=\"https://www.poedit.net/\""
-">Poedit</a>)\n"
+"usando algum editor (por exemplo o <a href=\"https://www.poedit.net/"
+"\">Poedit</a>)\n"
 "e então enviar o arquivo atualizado para o autor. Você pode fazer isso "
 "quando você\n"
 "estiver offline, mas por outro lado, ele previne a colaboração de algum "
@@ -1234,8 +1234,8 @@ msgstr ""
 "Dicas adicionais sobre protocolos podem ser encontradas em <code>docs/"
 "develop</code>\n"
 "nas fontes do Gammu ou você pode querer usar o repositório git com <a\n"
-"href=\"https://github.com/gammu/gsm-docs/\">documentações de GSM "
-"variados</a>.\n"
+"href=\"https://github.com/gammu/gsm-docs/\">documentações de GSM variados</"
+"a>.\n"
 
 #: html/donate-thanks.html:4 html/donate-thanks.html:7
 msgid "Thank you for Donation!"
@@ -1330,14 +1330,34 @@ msgid ""
 "\">%(address)s</a></code>."
 msgstr ""
 "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
-"peer network</a> and send me Bitcoins to <code>3<a href=\"bitcoin:%(address)"
-"s\">4%(address)s5</a>6</code>7."
+"peer network</a> and send me Bitcoins to <code>3<a href=\"bitcoin:%(address)s"
+"\">4%(address)s5</a>6</code>7."
 
-#: html/donate.html:66 html/phonedb/index.html:79
+#: html/donate.html:66
+#, fuzzy
+#| msgid "Bitcoin"
+msgid "Litecoin"
+msgstr "Bitcoin"
+
+#: html/donate.html:69
+#, fuzzy, python-format
+#| msgid ""
+#| "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
+#| "to-peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:"
+#| "%(address)s\">%(address)s</a></code>."
+msgid ""
+"You can also use Litecoin and donate me to <code><a href=\"litecoin:"
+"%(address)s\">%(address)s</a></code>."
+msgstr ""
+"You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
+"peer network</a> and send me Bitcoins to <code>3<a href=\"bitcoin:%(address)s"
+"\">4%(address)s5</a>6</code>7."
+
+#: html/donate.html:73 html/phonedb/index.html:79
 msgid "Supporters"
 msgstr "Oferecimento de"
 
-#: html/donate.html:68
+#: html/donate.html:75
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
@@ -1375,17 +1395,23 @@ msgstr "Pacotes Ubuntu nos repositórios PPA"
 msgid "Fedora packages"
 msgstr "Pacotes fedora"
 
-#: html/downloads/detail.html:44 html/downloads/platformlinks.html:18
+#: html/downloads/detail.html:43
+#, fuzzy
+#| msgid "Debian packages"
+msgid "Mageia packages"
+msgstr "Pacotes Debian"
+
+#: html/downloads/detail.html:47 html/downloads/platformlinks.html:18
 msgid "RPM packages (openSUSE, Fedora, Mageia, SLES, RHEL, CentOS)"
 msgstr ""
 "Pacotes RPM (openSUSE, Fedora, Mageia, SLES, RHEL, CentOS) última versão "
 "estável"
 
-#: html/downloads/detail.html:48
+#: html/downloads/detail.html:51
 msgid "Development version"
 msgstr "Versão de desenvolvimento"
 
-#: html/downloads/detail.html:51
+#: html/downloads/detail.html:54
 msgid ""
 "Should you be interested in git access or git snapshots, you can find them "
 "on <a href=\"/contribute/code/\">development page</a>."
@@ -1482,8 +1508,8 @@ msgstr ""
 "\n"
 "Você está baixando o código-fonte do Gammu. Para compilá-lo você precisa de "
 "algum\n"
-"ambiente de desenvolvimento para sua plataforma e da ferramenta <a href=\""
-"https://www.cmake.org/\">CMake</a>\n"
+"ambiente de desenvolvimento para sua plataforma e da ferramenta <a href="
+"\"https://www.cmake.org/\">CMake</a>\n"
 "para configurar as fontes. Existem também alguns requisitos opcionais para\n"
 "funções adicionais que são listadas no arquivo INSTALL em sources. Este "
 "arquivo\n"
