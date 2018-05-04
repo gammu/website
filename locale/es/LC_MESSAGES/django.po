@@ -1420,9 +1420,9 @@ msgstr "Paquetes para Debian"
 
 #: html/downloads/detail.html:44 html/downloads/platformlinks.html:18
 #, fuzzy
-msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
+msgid "RPM packages (openSUSE, Fedora, Mageia, SLES, RHEL, CentOS)"
 msgstr ""
-"Paquetes RPM para openSUSE, Fedora, Mandriva, SLES, RHEL y CentOS (última "
+"Paquetes RPM para openSUSE, Fedora, Mageia, SLES, RHEL y CentOS (última "
 "versión estable)"
 
 #: html/downloads/detail.html:48
@@ -4297,9 +4297,9 @@ msgstr "Gammu y Wammu Noticias Feed (Atom)"
 #~ msgid "identi.ca RSS"
 #~ msgstr "identi.ca RSS"
 
-#~ msgid "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)"
+#~ msgid "RPM packages (openSUSE, Fedora, Mageia) (latest testing version)"
 #~ msgstr ""
-#~ "Paquetes RPM para openSUSE, Fedora, Mandriva (última versión de pruebas)"
+#~ "Paquetes RPM para openSUSE, Fedora, Mageia (última versión de pruebas)"
 
 #~ msgid ""
 #~ "\n"

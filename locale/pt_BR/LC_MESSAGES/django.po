@@ -1376,9 +1376,9 @@ msgid "Fedora packages"
 msgstr "Pacotes fedora"
 
 #: html/downloads/detail.html:44 html/downloads/platformlinks.html:18
-msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
+msgid "RPM packages (openSUSE, Fedora, Mageia, SLES, RHEL, CentOS)"
 msgstr ""
-"Pacotes RPM (openSUSE, Fedora, Mandriva, SLES, RHEL, CentOS) última versão "
+"Pacotes RPM (openSUSE, Fedora, Mageia, SLES, RHEL, CentOS) última versão "
 "estável"
 
 #: html/downloads/detail.html:48
@@ -4339,8 +4339,8 @@ msgstr "Feed de notícias do Gammu e Wammu (Atom)"
 #~ msgid "identi.ca RSS"
 #~ msgstr "identi.ca RSS"
 
-#~ msgid "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)"
-#~ msgstr "Pacotes RPM (openSUSE, Fedora, Mandriva) (última versão de testes)"
+#~ msgid "RPM packages (openSUSE, Fedora, Mageia) (latest testing version)"
+#~ msgstr "Pacotes RPM (openSUSE, Fedora, Mageia) (última versão de testes)"
 
 #~ msgid ""
 #~ "\n"

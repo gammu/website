@@ -1085,7 +1085,7 @@ msgid "Fedora packages"
 msgstr ""
 
 #: html/downloads/detail.html:44 html/downloads/platformlinks.html:18
-msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
+msgid "RPM packages (openSUSE, Fedora, Mageia, SLES, RHEL, CentOS)"
 msgstr ""
 
 #: html/downloads/detail.html:48

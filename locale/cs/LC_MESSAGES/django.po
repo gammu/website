@@ -1138,8 +1138,8 @@ msgid "Fedora packages"
 msgstr "Balíčky pro Fedoru"
 
 #: html/downloads/detail.html:44 html/downloads/platformlinks.html:18
-msgid "RPM packages (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
-msgstr "RPM balíčky (openSUSE, Fedora, Madriva, SLES, RHEL, CentOS)"
+msgid "RPM packages (openSUSE, Fedora, Mageia, SLES, RHEL, CentOS)"
+msgstr "RPM balíčky (openSUSE, Fedora, Mageia, SLES, RHEL, CentOS)"
 
 #: html/downloads/detail.html:48
 msgid "Development version"
@@ -3616,8 +3616,8 @@ msgstr "Novinky o Gammu a Wammu (Atom)"
 #~ msgid "identi.ca RSS"
 #~ msgstr "identi.ca RSS"
 
-#~ msgid "RPM packages (openSUSE, Fedora, Madriva) (latest testing version)"
-#~ msgstr "RPM balíčky (openSUSE, Fedora, Madriva) (poslední testovací verze)"
+#~ msgid "RPM packages (openSUSE, Fedora, Mageia) (latest testing version)"
+#~ msgstr "RPM balíčky (openSUSE, Fedora, Mageia) (poslední testovací verze)"
 
 #~ msgid "Ubuntu packages in PPA (latest stable version)"
 #~ msgstr "Balíčky pro Ubuntu v PPA (poslední stabilní verze)"
