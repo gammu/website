@@ -105,19 +105,18 @@ STATICFILES_FINDERS = (
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = 'c=kt_6vtz&(418w-0(uti(q5&e76q#lc=%vuwzm&+ulqrkgyp3'
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
     'django.middleware.gzip.GZipMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'wammu.middleware.SiteLocaleMiddleware',
-    'wammu.middleware.HTTPHeadersMiddleware',
     'rollbar.contrib.django.middleware.RollbarNotifierMiddleware',
-)
+]
 
 ROLLBAR = {
     'access_token': '',
@@ -221,5 +220,4 @@ ALLOWED_HOSTS = [
     'sk.wammu.eu'
 ]
 
-# Force sane test runner
-TEST_RUNNER = 'django.test.runner.DiscoverRunner'
+X_FRAME_OPTIONS = 'DENY'

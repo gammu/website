@@ -3,6 +3,23 @@ from django.utils import translation
 
 
 class SiteLocaleMiddleware(object):
+    def __init__(self, get_response):
+        self.get_response = get_response
+        # One-time configuration and initialization.
+
+    def __call__(self, request):
+        # Code to be executed for each request before
+        # the view (and later middleware) are called.
+
+        self.process_request(request)
+
+        response = self.get_response(request)
+
+        # Code to be executed for each request/response after
+        # the view is called.
+
+        return response
+
     def process_request(self, request):
         try:
             current_site = Site.objects.get_current(request)
@@ -17,18 +34,3 @@ class SiteLocaleMiddleware(object):
                 translation.activate('en')
         except Site.DoesNotExist:
             translation.activate('en')
-
-
-class HTTPHeadersMiddleware(object):
-    """
-    Middleware that sets the Strict-Transport-Security HTTP header in HTTP
-    responses.
-
-    Does not set the header if it's already set.
-    """
-    def process_response(self, request, response):
-        # Don't set it if it's already in the response
-        if response.get('X-Frame-Options') is None:
-            response['X-Frame-Options'] = 'DENY'
-
-        return response
