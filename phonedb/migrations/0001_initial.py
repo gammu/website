@@ -48,7 +48,7 @@ class Migration(migrations.Migration):
                 ('created', models.DateTimeField(auto_now_add=True)),
                 ('address', models.CharField(max_length=100, blank=True)),
                 ('hostname', models.CharField(max_length=100, blank=True)),
-                ('connection', models.ForeignKey(blank=True, to='phonedb.Connection', help_text='Connection used in Gammu configuration.', null=True)),
+                ('connection', models.ForeignKey(blank=True, to='phonedb.Connection', help_text='Connection used in Gammu configuration.', null=True, on_delete=models.deletion.CASCADE)),
                 ('features', models.ManyToManyField(help_text='Features which are working in Gammu.', to='phonedb.Feature', blank=True)),
             ],
             options={
@@ -71,7 +71,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='phone',
             name='vendor',
-            field=models.ForeignKey(to='phonedb.Vendor'),
+            field=models.ForeignKey(to='phonedb.Vendor', on_delete=models.deletion.CASCADE),
             preserve_default=True,
         ),
     ]

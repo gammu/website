@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 ('url', models.URLField()),
                 ('description', models.TextField()),
                 ('description_html', models.TextField(editable=False, blank=True)),
-                ('screenshot', models.ForeignKey(blank=True, to='screenshots.Screenshot', null=True)),
+                ('screenshot', models.ForeignKey(blank=True, to='screenshots.Screenshot', null=True, on_delete=models.deletion.CASCADE)),
             ],
             options={
             },

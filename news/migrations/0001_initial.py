@@ -41,7 +41,7 @@ class Migration(migrations.Migration):
                 ('excerpt_html', models.TextField(null=True, editable=False, blank=True)),
                 ('identica_post', models.NullBooleanField(default=False, verbose_name=b'post to identi.ca')),
                 ('identica_text', models.CharField(max_length=100, null=True, verbose_name=b'identi.ca post text', blank=True)),
-                ('author', models.ForeignKey(to=settings.AUTH_USER_MODEL)),
+                ('author', models.ForeignKey(to=settings.AUTH_USER_MODEL, on_delete=models.deletion.CASCADE)),
                 ('categories', models.ManyToManyField(to='news.Category')),
             ],
             options={

@@ -52,7 +52,7 @@ class Migration(migrations.Migration):
                 ('date', models.DateTimeField(auto_now_add=True)),
                 ('post_news', models.BooleanField(default=True)),
                 ('post_tweet', models.BooleanField(default=True)),
-                ('author', models.ForeignKey(to=settings.AUTH_USER_MODEL)),
+                ('author', models.ForeignKey(to=settings.AUTH_USER_MODEL, on_delete=models.deletion.CASCADE)),
             ],
             options={
             },
@@ -61,7 +61,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='download',
             name='release',
-            field=models.ForeignKey(to='downloads.Release'),
+            field=models.ForeignKey(to='downloads.Release', on_delete=models.deletion.CASCADE),
             preserve_default=True,
         ),
     ]
