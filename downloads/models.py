@@ -79,7 +79,7 @@ def get_current_downloads(program):
 
 @python_2_unicode_compatible
 class Release(models.Model):
-    author = models.ForeignKey(User)
+    author = models.ForeignKey(User, on_delete=models.deletion.CASCADE)
     program = models.CharField(max_length = 100, choices = PROGRAM_CHOICES)
     version = models.CharField(max_length = 100)
     version_int = models.IntegerField(editable = False, blank = True)
@@ -161,7 +161,7 @@ class Release(models.Model):
 
 @python_2_unicode_compatible
 class Download(models.Model):
-    release = models.ForeignKey(Release)
+    release = models.ForeignKey(Release, on_delete=models.deletion.CASCADE)
     platform = models.CharField(max_length = 100, choices = PLATFORM_CHOICES)
     location = models.CharField(max_length = 250)
     md5 = models.CharField(max_length = 250)

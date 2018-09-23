@@ -47,7 +47,7 @@ class Category(models.Model):
 @python_2_unicode_compatible
 class Entry(models.Model):
     # Metadata.
-    author = models.ForeignKey(User)
+    author = models.ForeignKey(User, on_delete=models.deletion.CASCADE)
     pub_date = models.DateTimeField(
         u'Date posted',
         default=datetime.datetime.today,
