@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls import reverse
 from django.utils.encoding import python_2_unicode_compatible
 
 import markdown
@@ -39,9 +40,8 @@ class Category(models.Model):
         self.description_html = markdown.markdown(self.description)
         super(Category, self).save(*args, **kwargs)
 
-    @models.permalink
     def get_absolute_url(self):
-         return ('news-category', (), { 'slug': self.slug })
+         return reverse('news-category', kwargs={'slug': self.slug })
 
 
 @python_2_unicode_compatible
@@ -86,12 +86,15 @@ class Entry(models.Model):
         self.body_html = markdown.markdown(self.body, safe_mode = True)
         super(Entry, self).save(*args, **kwargs)
 
-    @models.permalink
     def get_absolute_url(self):
-         return ('news-entry', (), {
+         return reverse(
+            'news-entry',
+            kwargs={
                 'year': self.pub_date.strftime('%Y'),
                 'month': self.pub_date.strftime('%m'),
                 'day': self.pub_date.strftime('%d'),
-                'slug': self.slug })
+                'slug': self.slug
+            }
+        )
 
 

@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from django.utils.encoding import python_2_unicode_compatible
 
 from news.models import Category
@@ -154,9 +155,8 @@ class Release(models.Model):
     def get_program(self):
         return get_program(self.program)
 
-    @models.permalink
     def get_absolute_url(self):
-         return ('downloads-release', (), { 'version': self.version, 'program': self.program })
+         return reverse('downloads-release', kwargs={ 'version': self.version, 'program': self.program })
 
 
 @python_2_unicode_compatible

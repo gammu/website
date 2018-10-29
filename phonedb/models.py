@@ -1,6 +1,6 @@
 from django.db import models
+from django.urls import reverse
 from django.utils.encoding import python_2_unicode_compatible
-
 from django.utils.translation import ugettext_lazy, ugettext as _
 from django.core.exceptions import ValidationError
 
@@ -58,9 +58,8 @@ class Vendor(models.Model):
     def __str__(self):
         return self.name
 
-    @models.permalink
     def get_absolute_url(self):
-         return ('phonedb-vendor', (), {'vendorname': self.slug})
+         return reverse('phonedb-vendor', kwargs={'vendorname': self.slug})
 
     def get_models_count(self):
         return Phone.objects.filter(vendor = self, state__in = ['approved', 'draft']).count()
@@ -152,9 +151,8 @@ class Phone(models.Model):
 
         return result
 
-    @models.permalink
     def get_absolute_url(self):
-        return ('phonedb-phone', (), {'vendorname': self.vendor.slug, 'id': self.id })
+        return reverse('phonedb-phone', kwargs={'vendorname': self.vendor.slug, 'id': self.id })
 
     def get_author_email(self):
         if self.author_email == '':

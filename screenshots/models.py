@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from django.utils.encoding import python_2_unicode_compatible
 import markdown
 from screenshots.thumbs import ImageWithThumbsField
@@ -36,9 +37,8 @@ class Category(models.Model):
         self.description_html = markdown.markdown(self.description)
         super(Category, self).save(*args, **kwargs)
 
-    @models.permalink
     def get_absolute_url(self):
-         return ('screenshots-category', (), { 'slug': self.slug })
+         return reverse('screenshots-category', kwargs={ 'slug': self.slug })
 
 
 @python_2_unicode_compatible
