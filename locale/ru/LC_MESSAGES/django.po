@@ -5,19 +5,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2018-05-04 10:27+0200\n"
-"PO-Revision-Date: 2015-04-15 22:03+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
+"PO-Revision-Date: 2018-12-16 20:06+0000\n"
+"Last-Translator: Victor K <ktrace@yandex.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gammu/website/ru/"
 ">\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.3-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.4-dev\n"
 
 #: downloads/models.py:31
 #, fuzzy
@@ -26,10 +26,8 @@ msgid "Source code"
 msgstr "Исходный код"
 
 #: downloads/models.py:32
-#, fuzzy
-#| msgid "Windows binary"
 msgid "Windows binaries"
-msgstr "Исполняемый файл Windows"
+msgstr "Исполняемые файлы Windows"
 
 #: downloads/models.py:144
 #, python-format
@@ -137,10 +135,16 @@ msgid ""
 "resigned\n"
 "because lack of time. He is not active in the project anymore.\n"
 msgstr ""
+"\n"
+"Изначально Marcin начал свой проект ветвлением Gnokii, так как был не в \n"
+"восторге от некоторых фрагментов кода. Он внес большую часть ядра программы "
+"и\n"
+"модулей для Nokia и возглавлял проект до января 2007, после чего из-за \n"
+"нехватки времени выбыл. Больше он не участвует в проекте.\n"
 
 #: html/authors.html:55
 msgid "Gnokii authors"
-msgstr ""
+msgstr "Авторы Gnokii"
 
 #: html/authors.html:58
 msgid ""
@@ -151,10 +155,15 @@ msgid ""
 "Manfred\n"
 "Jonsson.\n"
 msgstr ""
+"\n"
+"Поскольку код изначально унаследован ответвлением проекта Gnokii, мы хотели "
+"бы\n"
+"поблагодарить всех участников, особенно Павла Яника, Павла Кота и Манфреда\n"
+"Йонссон.\n"
 
 #: html/authors.html:70
 msgid "Other contributors"
-msgstr ""
+msgstr "Прочие участники"
 
 #: html/base.html:12
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
@@ -180,20 +189,19 @@ msgstr "Поддержка"
 
 #: html/base.html:75 html/base.html:116 html/base.html:128 html/base.html:140
 msgid "Overview"
-msgstr ""
+msgstr "Обзор"
 
 #: html/base.html:76
-#, fuzzy
 msgid "Mailing lists and forums"
-msgstr "Списки рассылки"
+msgstr "Списки рассылки и форумы"
 
 #: html/base.html:77
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Сообщения об ошибках"
 
 #: html/base.html:78
 msgid "Online"
-msgstr ""
+msgstr "Оперативная связь"
 
 #: html/base.html:79
 msgid "Commercial support"
@@ -205,7 +213,7 @@ msgstr "Коммерческая поддержка"
 #: html/gammu-family.html:74 html/gammu.html:53 html/libgammu.html:37
 #: html/python-gammu.html:25 html/smsd.html:56 html/wammu.html:39
 msgid "Download"
-msgstr ""
+msgstr "Скачать"
 
 #: html/base.html:86
 #, fuzzy
@@ -214,31 +222,33 @@ msgstr "Cкачать"
 
 #: html/base.html:87 html/downloads/index.html:25
 msgid "Download Gammu"
-msgstr ""
+msgstr "Скачать Gammu"
 
 #: html/base.html:88 html/downloads/index.html:32
 msgid "Download python-gammu"
-msgstr ""
+msgstr "Скачать python-gammu"
 
 #: html/base.html:89 html/downloads/index.html:39
 msgid "Download Wammu"
-msgstr ""
+msgstr "Скачать Wammu"
 
 #: html/base.html:94 html/index.html:26
 msgid "News"
 msgstr "Новости"
 
 #: html/base.html:96
+#, fuzzy
 msgid "All news"
-msgstr ""
+msgstr "Новости"
 
 #: html/base.html:104 html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
 msgid "Screenshots"
 msgstr "Скриншоты"
 
 #: html/base.html:106
+#, fuzzy
 msgid "All screenshots"
-msgstr ""
+msgstr "Снимки экранов"
 
 #: html/base.html:114 html/gammu.html:61 html/libgammu.html:46
 #: html/python-gammu.html:64 html/smsd.html:66 html/wammu.html:49
@@ -247,7 +257,7 @@ msgstr "Документация"
 
 #: html/base.html:117 html/docs/index.html:21
 msgid "Gammu Manual"
-msgstr ""
+msgstr "Руководство по Gammu"
 
 #: html/base.html:118
 msgid "FAQ"
@@ -259,7 +269,7 @@ msgstr "Для разработчиков"
 
 #: html/base.html:120 html/phonedb/body.html:16
 msgid "Configuration"
-msgstr ""
+msgstr "Настройки"
 
 #: html/base.html:121 html/sidebars/common.html:3 phonedb/views.py:101
 msgid "Supported phones"
@@ -267,7 +277,7 @@ msgstr "Поддерживаемые телефоны"
 
 #: html/base.html:126
 msgid "Contribute"
-msgstr ""
+msgstr "Поучаствовать"
 
 #: html/base.html:129
 msgid "Translate"
@@ -275,20 +285,19 @@ msgstr "Перевести"
 
 #: html/base.html:130
 msgid "Develop"
-msgstr ""
+msgstr "Разработка"
 
 #: html/base.html:131
 msgid "Wanted skills"
-msgstr ""
+msgstr "Необходимые навыки"
 
 #: html/base.html:132
 msgid "Publicity"
 msgstr ""
 
 #: html/base.html:133 html/base.html:183
-#, fuzzy
 msgid "Donate"
-msgstr "Поддержать проект"
+msgstr "Финансовая поддержка"
 
 #: html/base.html:138
 msgid "Tools"
@@ -304,7 +313,7 @@ msgstr ""
 
 #: html/base.html:143
 msgid "Countries"
-msgstr ""
+msgstr "Страны"
 
 #: html/base.html:144
 msgid "Networks"
@@ -325,7 +334,7 @@ msgstr "Поддержите проекты Gammu/Wammu материально!"
 
 #: html/base.html:184
 msgid "Search for Gammu/Wammu related questions"
-msgstr ""
+msgstr "Поиск вопросов, связанных с Gammu/Wammu"
 
 #: html/base.html:184 html/phonedb/index.html:55 html/phonedb/search.html:13
 #: html/phonedb/search.html:49 phonedb/forms.py:33
@@ -355,11 +364,11 @@ msgstr ""
 
 #: html/base.html:189
 msgid "Donate using PayPal"
-msgstr ""
+msgstr "Поддержать через PayPal"
 
 #: html/contribute/code.html:4 html/contribute/code.html:8
 msgid "Coding for Wammu and Gammu"
-msgstr ""
+msgstr "Написание кода для Wammu и Gammu"
 
 #: html/contribute/code.html:11
 msgid ""
@@ -373,12 +382,21 @@ msgid ""
 "understand the code. If you want to know what is planned to happen in Gammu\n"
 "and Wammu, please check the <a href=\"/docs/roadmap/\">roadmap</a>.\n"
 msgstr ""
+"\n"
+"Gammu написан на C, а Wammu - на <a\n"
+"href=\"https://www.python.org/\">Python-е</a>, так что вам понадобится "
+"знание\n"
+"одного из этих языков, чтобы развивать код проекта. Возможно вам пригодятся\n"
+"некоторые главы <a href=\"/docs/devel/\">документации разработчика</a> для\n"
+"понимания кода. Если вы желаете узнать о планах развития  Gammu и Wammu,\n"
+"ознакомьтесь с <a href=\"/docs/roadmap/\">планом-графиком</a>.\n"
 
 #: html/contribute/code.html:22
 msgid "Version Control System"
 msgstr ""
 
 #: html/contribute/code.html:24
+#, fuzzy
 msgid ""
 "\n"
 "We currently use <a href=\"https://git-scm.com/\">Git</a> as a version "
@@ -386,6 +404,12 @@ msgid ""
 "system. It allows you create own local branch, develop the code and then\n"
 "submit us patches or merge request for the changes.\n"
 msgstr ""
+"\n"
+"На данный момент мы использует <a href=\"https://git-scm.com/\">Git</a> как "
+"систему\n"
+"контроля версий. Это позволяет вам создать локальный бранч, доработать код и "
+"поделиться\n"
+"с нами патчем или отправить пулл-реквест.\n"
 
 #: html/contribute/code.html:32
 msgid ""
@@ -397,6 +421,14 @@ msgid ""
 "on their site or just clone the repository and investigate it locally. To\n"
 "clone Wammu and Gammu sources, use following commands:\n"
 msgstr ""
+"\n"
+"Наши репозитории хостятся на сервисе <a href=\"https://github.com/\""
+">Github</a>,\n"
+"проект <a href=\"https://github.com/gammu/\">Gammu</a>. Вы может "
+"просматривать\n"
+"код прямо там или клонировать репозиторий и работать с ним локально. Чтобы "
+"получить\n"
+"исходники Wammu и Gammu, выполните команды:\n"
 
 #: html/contribute/code.html:56
 msgid ""
@@ -406,6 +438,10 @@ msgid ""
 "to\n"
 "have <a href=\"https://www.cmake.org/\">CMake</a>.\n"
 msgstr ""
+"\n"
+"Инструкции по сборке и установке включены в файл\n"
+"<code>INSTALL</code> и для Gammu и для Wammu. Для сборки Gammu вам\n"
+"понадобится <a href=\"https://www.cmake.org/\">CMake</a>.\n"
 
 #: html/contribute/code.html:63
 msgid "Code Snapshots"
@@ -417,6 +453,10 @@ msgid ""
 "If you for some reason do not want to use version control system, you can\n"
 "always download fresh snapshots of current code from GitHub.\n"
 msgstr ""
+"\n"
+"Если по каким-то причинам вы не желаете использовать систему контроля версий,"
+"\n"
+"вы всегда можете скачать свежий снапшот исходников с GitHub.\n"
 
 #: html/contribute/code.html:72
 msgid "Patch Submission"
@@ -433,20 +473,32 @@ msgid ""
 "href=\"/support/lists/\">mailing lists</a> or to the <a\n"
 "href=\"/support/bugs/\">bug tracker</a>.\n"
 msgstr ""
+"\n"
+"Нам неважен способ, который вы предпочтёте для отправки нам патчей. Самый "
+"простой \n"
+"путь - использовать <code>git format-patch</code>, который позволит нам "
+"легко добавить\n"
+"ваши изменения. Но если вы не используете git , обычный unified diff также\n"
+"подойдёт для этих целей. Вы можете оправить патчи в <a\n"
+"href=\"/support/lists/\">список рассылки</a> или на <a\n"
+"href=\"/support/bugs/\">багтрекер</a>.\n"
 
 #: html/contribute/code.html:85
 msgid "Testing"
-msgstr ""
+msgstr "Тестирование"
 
 #: html/contribute/code.html:87
 msgid ""
 "Gammu comes with quite comprehensive testsuite, which is being run "
 "continuosly using <a href=\"https://travis-ci.org/gammu/gammu\">Travis</a>."
 msgstr ""
+"Gammu поставляется с достаточно полным набором тестов, который запускается "
+"непрерывно с использованием <a href=\"https://travis-ci.org/gammu/gammu\""
+">Travis</a>."
 
 #: html/contribute/index.html:4 html/contribute/index.html:8
 msgid "Contribute to Wammu and Gammu"
-msgstr ""
+msgstr "Поспособствуйте Wammu и Gammu"
 
 #: html/contribute/index.html:11 html/contribute/wanted.html:11
 msgid ""
@@ -456,6 +508,12 @@ msgid ""
 "welcome\n"
 "to help us in any way. You really do not need developer skills to help.\n"
 msgstr ""
+"\n"
+"Gammu и Wammu - это проекты свободного программного обеспечения, которые \n"
+"выполняются добровольцами в их свободное время. Добровольцев много не бывает,"
+"\n"
+"поэтому мы очень рады помощи в любом случае. Вам не нужны особые навыки "
+"разработчика, чтобы помочь.\n"
 
 #: html/contribute/index.html:19
 msgid ""
@@ -463,10 +521,13 @@ msgid ""
 "Please check our list of <a href=\"/contribute/wanted/\"><strong>wanted\n"
 "skills</strong></a>, to get an idea who we are currently looking for.\n"
 msgstr ""
+"\n"
+"Ознакомьтесь со списком <a href=\"/contribute/wanted/\"><strong>желательных\n"
+"навыков</strong></a>, чтобы понять кто именно нам требуется.\n"
 
 #: html/contribute/index.html:25
 msgid "Using"
-msgstr ""
+msgstr "Использование"
 
 #: html/contribute/index.html:27
 msgid ""
@@ -478,6 +539,13 @@ msgid ""
 "all\n"
 "use cases on our own!\n"
 msgstr ""
+"\n"
+"Простое использование наших программ с <a href=\"/support/bugs/\">толковой\n"
+"<strong>обратной связью</strong></a> разработчикам уже нам поможет. "
+"Раскажите, что бы вы хотели изменить или улучшить.\n"
+"Вы можете использовать наше программное обеспечение совершенно уникальным "
+"способом и можете не найти все\n"
+"возможные способы использования!\n"
 
 #: html/contribute/index.html:36
 msgid ""
@@ -488,10 +556,17 @@ msgid ""
 "developers. Just don't be afraid of writing about our tools in your blog,\n"
 "twitter, facebook or whatever online media you use.\n"
 msgstr ""
+"\n"
+"Также <a href=\"/contribute/publicity/\"><strong>распространяйте</strong> "
+"отзывы</a> об используемом\n"
+"инструменте и чего им добились - это позволит привлеть больше пользователей "
+"и\n"
+"разработчиков. Не стесняйтесь писать о наших программах в свой блог,\n"
+"в Твиттер, facebook или любую другую социальную сеть.\n"
 
 #: html/contribute/index.html:44
 msgid "Improving"
-msgstr ""
+msgstr "Улучшения"
 
 #: html/contribute/index.html:47
 msgid ""
@@ -507,6 +582,16 @@ msgid ""
 "you\n"
 "are skilled in this area, your help would be also welcome!\n"
 msgstr ""
+"\n"
+"Есть множество способов улучшить программное обеспечение. Если вы не умеете "
+"писать код,\n"
+"вы можете поучаствовать в <a\n"
+"href=\"/contribute/translate/\"><strong>переводе</strong> на ваш\n"
+"язык</a>.\n"
+"Для разработчиков со знанием C или Python, возможно проще будет\n"
+"<a href=\"/contribute/code/\">помочь с <strong>кодом</strong></a>.\n"
+"Кроме того, графика в приложениях не самого высокого качества, и если вы\n"
+"продвинуты в этой области, ваша помощь будет также приветствоваться!\n"
 
 #: html/contribute/index.html:60
 msgid ""
@@ -516,10 +601,14 @@ msgid ""
 "on\n"
 "your platform, especially if it some which we do not test so far.\n"
 msgstr ""
+"\n"
+"Вы можете даже помочь просто <a\n"
+"href=\"/contribute/code/#testing\">запуская <strong>тесты</strong></a> на\n"
+"вашей платформе, особенно если это что-то, на чём мы пока не тестируем..\n"
 
 #: html/contribute/index.html:67
 msgid "Donating"
-msgstr ""
+msgstr "Финансовая помощь"
 
 #: html/contribute/index.html:70
 msgid ""
@@ -528,6 +617,10 @@ msgid ""
 "href=\"/donate/\">donating them</a> some money or some items from their "
 "wishlist.\n"
 msgstr ""
+"\n"
+"И конечно есть возможность поощрить авторов <a\n"
+"href=\"/donate/\">пожертвовав</a> немного денег или вещей из их списка "
+"желаний.\n"
 
 #: html/contribute/publicity.html:4 html/contribute/publicity.html:8
 msgid "Publicity for Wammu and Gammu"
@@ -541,6 +634,12 @@ msgid ""
 "lot\n"
 "to gain new users and developers. \n"
 msgstr ""
+"\n"
+"Публичность жизненно важна для любого проекта. Если бы никто не знал о "
+"проекте,\n"
+"никто бы его не использовал. Поэтому распространение информации о Gammu и "
+"Wammu может сильно помочь\n"
+"подключить новых пользователей и разработчиков. \n"
 
 #: html/contribute/publicity.html:19
 msgid ""
@@ -551,10 +650,16 @@ msgid ""
 "really do\n"
 "not follow all blogs in the world to scan for bug reports.\n"
 msgstr ""
+"\n"
+"С другой стороны, если вы нашли ошибку, пожалуйста, не ограничивайтесь её "
+"описанием\n"
+"в своем блоге, <a href=\"/support/bugs/\">сообщите оней</a> нам. У нас нет "
+"возможности\n"
+"вычитывать все блоги мира в поисках сообщений об ошибках.\n"
 
 #: html/contribute/publicity.html:26
 msgid "Third Party Applications"
-msgstr ""
+msgstr "Сторонние программы"
 
 #: html/contribute/publicity.html:29
 msgid ""
@@ -566,6 +671,13 @@ msgid ""
 "page, what will in reward bring users to your project. Just <a\n"
 "href=\"/support/\">let us know</a> about it!\n"
 msgstr ""
+"\n"
+"Вы сделали отличный инструмент, используя Gammu? Не стесняйтесь об этом "
+"написать. Мы\n"
+"также можете перечислить ваш инструмент в <a href=\"/links/\">сторонних "
+"приложениях</a>,\n"
+"что в награду приведет пользователей в ваш проект. Просто <а\n"
+"href=\"/support/\">дайте нам знать</a>!\n"
 
 #: html/contribute/publicity.html:37
 msgid "Logos or Screenshots"
