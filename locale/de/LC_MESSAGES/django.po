@@ -5,28 +5,26 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2018-05-04 10:27+0200\n"
-"PO-Revision-Date: 2016-10-11 15:35+0000\n"
-"Last-Translator: mcnesium <weblate.org@mcnesium.com>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/gammu/website/de/"
-">\n"
+"PO-Revision-Date: 2018-12-16 20:06+0000\n"
+"Last-Translator: ssantos <ssantos@web.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/gammu/website/de/>"
+"\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.9-dev\n"
+"X-Generator: Weblate 3.4-dev\n"
 
 #: downloads/models.py:31
 msgid "Source code"
 msgstr "Quelltext"
 
 #: downloads/models.py:32
-#, fuzzy
-#| msgid "Windows binary"
 msgid "Windows binaries"
-msgstr "Ausführbares Windows-Programm"
+msgstr "Ausführbare Windows-Programme"
 
 #: downloads/models.py:144
 #, python-format
@@ -862,16 +860,15 @@ msgstr ""
 "\" zu ersetzen ist.\n"
 
 #: html/contribute/translate.html:89
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "You should follow terminology as defined for your language in <a href="
 "\"%(url)s\">dictionary for the project</a>. If it is not defined, you can "
 "help creating one!"
 msgstr ""
-"\n"
-"Wir bitten Sie, die Regelwerke bezüglich <a href=\"https://hosted.weblate."
-"org/projects/terminology/\">Terminologie</a> zu beachten.\n"
-"Wenn keine Regeln vorhanden sind, helfen Sie, diese zu erstellen!\n"
+"Sie sollten die für Ihre Sprache definierte Terminologie in <a href=\"%(url)"
+"s\">Wörterbuch für das Projekt</a> verwenden. Wenn es nicht definiert ist, "
+"können Sie helfen, eine zu erstellen!"
 
 #: html/contribute/translate.html:92
 msgid "What is Important?"
@@ -978,6 +975,12 @@ msgid ""
 "any \n"
 "special skill for this, writing plain text is enough.\n"
 msgstr ""
+"\n"
+"Wir haben eine recht umfassende <a href=\"/docs/manual/\">Dokumentation</a>, "
+"allerdings\n"
+"gibt es noch viele Stellen an denen es erweitert werden kann. Sie brauchen "
+"keine\n"
+"besonderen Fähigkeiten dafür, Klartext zu schreiben genügt.\n"
 
 #: html/contribute/wanted.html:38
 msgid "Community supporter"
@@ -1287,7 +1290,7 @@ msgstr "Monatlichen Betrag für nachhaltige Entwicklung spenden"
 
 #: html/donate.html:37
 msgid "Fund issues to motivate developers"
-msgstr ""
+msgstr "Ausgaben finanzieren, um Entwickler zu motivieren"
 
 #: html/donate.html:43
 msgid ""
@@ -1316,12 +1319,13 @@ msgid ""
 "peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:%(address)s"
 "\">%(address)s</a></code>."
 msgstr ""
+"Sie können auch <a href=\"https://www.bitcoin.org/\">Bitcoin, ein Peer-to-"
+"Peer-Netzwerk</a> verwenden und schicken mir Bitcoins an <code><a href=\""
+"bitcoin:%(address)s\">%(address)s</a></code>."
 
 #: html/donate.html:66
-#, fuzzy
-#| msgid "Bitcoin"
 msgid "Litecoin"
-msgstr "Bitcoin"
+msgstr "Litecoin"
 
 #: html/donate.html:69
 #, python-format
@@ -1329,6 +1333,8 @@ msgid ""
 "You can also use Litecoin and donate me to <code><a href=\"litecoin:"
 "%(address)s\">%(address)s</a></code>."
 msgstr ""
+"Sie können auch Litecoin verwenden, um mir an <code><a href=\""
+"litecoin:%(address)s\">%(address)s</a></code> zu spenden."
 
 #: html/donate.html:73 html/phonedb/index.html:79
 msgid "Supporters"
@@ -1368,23 +1374,16 @@ msgid "Ubuntu packages in PPA"
 msgstr "Ubuntu Pakete im PPA"
 
 #: html/downloads/detail.html:40 html/downloads/platformlinks.html:14
-#, fuzzy
-#| msgid "Debian packages"
 msgid "Fedora packages"
-msgstr "Debian Pakete"
+msgstr "Fedora-Pakete"
 
 #: html/downloads/detail.html:43
-#, fuzzy
-#| msgid "Debian packages"
 msgid "Mageia packages"
-msgstr "Debian Pakete"
+msgstr "Mageia-Pakete"
 
 #: html/downloads/detail.html:47 html/downloads/platformlinks.html:18
-#, fuzzy
 msgid "RPM packages (openSUSE, Fedora, Mageia, SLES, RHEL, CentOS)"
-msgstr ""
-"RPM Pakete, aktuelle stabile Version (openSUSE, Fedora, Mageia, SLES, RHEL, "
-"CentOS)"
+msgstr "RPM-Pakete (openSUSE, Fedora, Mageia, SLES, RHEL, CentOS)"
 
 #: html/downloads/detail.html:51
 msgid "Development version"
@@ -1452,7 +1451,7 @@ msgstr "PAD für Gammu"
 
 #: html/downloads/platformlinks.html:3
 msgid "Download sources or Windows binaries"
-msgstr ""
+msgstr "Download von Quellen oder Windows-Binärdateien"
 
 #: html/downloads/platformlinks.html:20
 msgid "Development git snaphots and git access"
@@ -1501,6 +1500,8 @@ msgid ""
 "This source tarball contains Gammu command line utility, libGammu library "
 "and Gammu SMSD."
 msgstr ""
+"Dieser Quelltext-Tarball enthält das Gammu Kommandozeilenprogramm, die "
+"libGammu Bibliothek und Gammu SMSD."
 
 #: html/downloads/programs/gammu-win32.html:3
 msgid ""
