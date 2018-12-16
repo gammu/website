@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2018-05-04 10:27+0200\n"
-"PO-Revision-Date: 2018-12-16 20:06+0000\n"
+"PO-Revision-Date: 2018-12-16 20:27+0000\n"
 "Last-Translator: Victor K <ktrace@yandex.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gammu/website/ru/"
 ">\n"
@@ -674,14 +674,14 @@ msgstr ""
 "\n"
 "Вы сделали отличный инструмент, используя Gammu? Не стесняйтесь об этом "
 "написать. Мы\n"
-"также можете перечислить ваш инструмент в <a href=\"/links/\">сторонних "
-"приложениях</a>,\n"
-"что в награду приведет пользователей в ваш проект. Просто <а\n"
+"также можем упомянуть вашу работу на странице <a href=\"/links/\">сторонних "
+"приложений</a>,\n"
+"что в награду приведет пользователей в ваш проект. Просто <a\n"
 "href=\"/support/\">дайте нам знать</a>!\n"
 
 #: html/contribute/publicity.html:37
 msgid "Logos or Screenshots"
-msgstr ""
+msgstr "Логотипы и скриншоты"
 
 #: html/contribute/publicity.html:39
 msgid ""
@@ -696,7 +696,7 @@ msgstr ""
 
 #: html/contribute/translate.html:4 html/contribute/translate.html:8
 msgid "Translating Wammu and Gammu"
-msgstr ""
+msgstr "Перевод  Wammu и Gammu"
 
 #: html/contribute/translate.html:11
 msgid ""
