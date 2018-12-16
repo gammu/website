@@ -66,7 +66,12 @@ donation to <code>michal@cihar.com</code>.
 <h3>{% trans "Litecoin" %}</h3>
 
 <p>
+{% blocktrans with "MW7vxf8t8ELrFre5nrBGVgaB13ZemedP81" as address %}
+You can also use <a href="https://currencymarkets.today/LTC/">Litecoin</a> and donate me to <code><a href="litecoin:{{ address}}">{{ address }}</a></code>.
+{% endblock %}
+{% comment %}
 {% blocktrans with "MW7vxf8t8ELrFre5nrBGVgaB13ZemedP81" as address %}You can also use Litecoin and donate me to <code><a href="litecoin:{{ address}}">{{ address }}</a></code>.{% endblocktrans %}
+{% endcomment %}
 </p>
 
 
@@ -104,8 +109,6 @@ donation to <code>michal@cihar.com</code>.
 <p><a href="https://www.casinonline.news/casino-bonussen/">Casino bonussen</a></p>
 
 <p><a href="https://bestbonus.co.nz/free-spins/">Bestbonus.co.nz</a></p>
-
-<p><a href="https://currencymarkets.today/LTC/">Litecoin converter</a></p>
 
 </div>
 
