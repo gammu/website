@@ -66,9 +66,9 @@ donation to <code>michal@cihar.com</code>.
 <h3>{% trans "Litecoin" %}</h3>
 
 <p>
-{% block with "MW7vxf8t8ELrFre5nrBGVgaB13ZemedP81" as address %}
+{% with address="MW7vxf8t8ELrFre5nrBGVgaB13ZemedP81" %}
 You can also use <a href="https://currencymarkets.today/LTC/">Litecoin</a> and donate me to <code><a href="litecoin:{{ address}}">{{ address }}</a></code>.
-{% endblock %}
+{% endwith %}
 {% comment %}
 {% blocktrans with "MW7vxf8t8ELrFre5nrBGVgaB13ZemedP81" as address %}You can also use Litecoin and donate me to <code><a href="litecoin:{{ address}}">{{ address }}</a></code>.{% endblocktrans %}
 {% endcomment %}
