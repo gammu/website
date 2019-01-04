@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2018-05-04 10:27+0200\n"
-"PO-Revision-Date: 2019-01-04 17:06+0000\n"
+"PO-Revision-Date: 2019-01-05 20:06+0000\n"
 "Last-Translator: Victor K <ktrace@yandex.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gammu/website/ru/"
 ">\n"
@@ -1028,14 +1028,13 @@ msgid "Translators"
 msgstr "Переводчики"
 
 #: html/contribute/wanted.html:62
-#, fuzzy
 msgid ""
 "\n"
 "There are always things to translate to almost any language, just check\n"
 "dedicated page <a href=\"/contribute/translate/\">about translating</a>.\n"
 msgstr ""
 "\n"
-"Всегда есть что перевести практически на любой язык, просто проверьте\n"
+"Всегда есть что перевести практически на любой язык, уточните конкретнее\n"
 "на специальной странице <a href=\"/contribute/translate/\">о переводе</a>.\n"
 
 #: html/contribute/wanted.html:68
@@ -1454,11 +1453,11 @@ msgstr ""
 
 #: html/downloads/index.html:50
 msgid "PAD for Wammu"
-msgstr ""
+msgstr "PAD для Wammu"
 
 #: html/downloads/index.html:51
 msgid "PAD for Gammu"
-msgstr ""
+msgstr "PAD для Gammu"
 
 #: html/downloads/platformlinks.html:3
 msgid "Download sources or Windows binaries"
@@ -2462,11 +2461,13 @@ msgstr ""
 "Создано %(author)s на %(created)s.\n"
 
 #: html/phonedb/phone.html:79
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "Created on %(created)s.\n"
 msgstr ""
+"\n"
+"Создано %(created)s.\n"
 
 #: html/phonedb/phone.html:86
 #, python-format
