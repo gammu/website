@@ -25,6 +25,9 @@ def translations(request):
     if lang != 'de':
         langs.append({'url': 'https://de.wammu.eu%s' % path, 'name': u'Deutsch', 'code': 'de'})
 
+    if lang != 'ru':
+        langs.append({'url': 'https://ru.wammu.eu%s' % path, 'name': u'Русский', 'code': 'ru'})
+
     if lang != 'sk':
         langs.append({'url': 'https://sk.wammu.eu%s' % path, 'name': u'Slovenčina', 'code': 'sk'})
 
