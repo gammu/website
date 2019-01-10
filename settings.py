@@ -218,7 +218,8 @@ ALLOWED_HOSTS = [
     'es.wammu.eu',
     'fr.wammu.eu',
     'pt-br.wammu.eu',
-    'sk.wammu.eu'
+    'ru.wammu.eu',
+    'sk.wammu.eu',
 ]
 
 X_FRAME_OPTIONS = 'DENY'
