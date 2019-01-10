@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2018-05-04 10:27+0200\n"
-"PO-Revision-Date: 2019-01-05 20:06+0000\n"
+"PO-Revision-Date: 2019-01-10 11:41+0000\n"
 "Last-Translator: Victor K <ktrace@yandex.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gammu/website/ru/"
 ">\n"
@@ -173,11 +173,11 @@ msgstr "Gammu и Wammu"
 
 #: html/base.html:61
 msgid "Family"
-msgstr "Семья"
+msgstr "Семейство программ"
 
 #: html/base.html:68
 msgid "Third party"
-msgstr "Сотороний"
+msgstr "Сторонние программы"
 
 #: html/base.html:73
 msgid "Support"
@@ -1882,7 +1882,6 @@ msgid "Wammu and Gammu"
 msgstr "Wammu и Gammu"
 
 #: html/index.html:11
-#, fuzzy
 msgid ""
 "\n"
 "<a href=\"/wammu/\">Wammu</a> is a program to manage data in your cell phone "
@@ -3378,9 +3377,8 @@ msgstr ""
 "о каждом коммитеб сделанном в git-репозитарии Gammu.\n"
 
 #: html/tools/countries.html:4 html/tools/countries.html:8
-#, fuzzy
 msgid "GSM countries list from Gammu"
-msgstr "Список стран GSM от Gammu"
+msgstr "Список стран GSM, используемый Gammu"
 
 #: html/tools/countries.html:11
 msgid ""
@@ -3452,7 +3450,7 @@ msgstr "Прочие инструменты"
 
 #: html/tools/index.html:39
 msgid "List of GSM codes for countries"
-msgstr "Список GSM кодов для стран"
+msgstr "Список GSM-кодов для стран"
 
 #: html/tools/index.html:40
 msgid "List of GSM codes for networks"
@@ -3470,9 +3468,8 @@ msgstr ""
 "<a href=\"/support/lists/\">в списке рассылки</a>.\n"
 
 #: html/tools/networks.html:4 html/tools/networks.html:8
-#, fuzzy
 msgid "GSM networks list from Gammu"
-msgstr "Список GSM сетей от Gammu"
+msgstr "Список GSM сетей, используемый Gammu"
 
 #: html/tools/networks.html:11
 msgid ""
