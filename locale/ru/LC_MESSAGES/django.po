@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2018-05-04 10:27+0200\n"
-"PO-Revision-Date: 2019-01-11 20:06+0000\n"
+"PO-Revision-Date: 2019-01-12 18:09+0000\n"
 "Last-Translator: Victor K <ktrace@yandex.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gammu/website/ru/"
 ">\n"
@@ -91,8 +91,9 @@ msgid ""
 "can find the most visible here.\n"
 msgstr ""
 "\n"
+"\n"
 "Много людей участвовали в разработке Gammu, python-gammu и Wammu. Вы можете "
-"прочитать здесь большинство их имён здесь.\n"
+"прочитать большинство их имён здесь.\n"
 
 #: html/authors.html:19
 msgid ""
@@ -716,7 +717,7 @@ msgstr ""
 
 #: html/contribute/translate.html:18
 msgid "Gettext"
-msgstr ""
+msgstr "Gettext"
 
 #: html/contribute/translate.html:20
 msgid ""
@@ -764,7 +765,7 @@ msgstr ""
 
 #: html/contribute/translate.html:40
 msgid "Weblate"
-msgstr ""
+msgstr "Weblate"
 
 #: html/contribute/translate.html:42
 msgid ""
@@ -1436,11 +1437,11 @@ msgstr ""
 
 #: html/downloads/index.html:48
 msgid "DOAP for Wammu"
-msgstr ""
+msgstr "Описание проекта (DOAP) Wammu"
 
 #: html/downloads/index.html:49
 msgid "DOAP for Gammu"
-msgstr ""
+msgstr "Описание проекта (DOAP) Gammu"
 
 #: html/downloads/index.html:50
 msgid "PAD for Wammu"
@@ -1593,6 +1594,8 @@ msgid ""
 "\n"
 "%(program)s %(version)s\n"
 msgstr ""
+"\n"
+"%(program)s1 %(version)s2\n"
 
 #: html/downloads/release.html:15
 msgid "Changes"
@@ -1905,7 +1908,7 @@ msgstr "Уже поддержали:"
 
 #: html/libgammu.html:4 html/libgammu.html:7
 msgid "libGammu"
-msgstr ""
+msgstr "libGammu"
 
 #: html/libgammu.html:10
 msgid ""
@@ -2085,15 +2088,14 @@ msgstr ""
 "Attribution-Share Alike 3.0 Unported</a>.\n"
 
 #: html/license.html:91
-#, fuzzy
 msgid ""
 "\n"
 "All products mentioned on these pages are trademarks of their respective\n"
 "owners, where appropriate.\n"
 msgstr ""
 "\n"
-"Все продукты, упомянутые на этих страницах, являются торговыми марками их "
-"соответствующих\n"
+"Все продукты, упомянутые на этих страницах, являются соответствующими "
+"торговыми марками их \n"
 "владельцев, где это уместно.\n"
 
 #: html/links/index.html:4 html/links/index.html:7
@@ -2534,9 +2536,9 @@ msgid ""
 "href=\"https://python.org\">Python</a> language.\n"
 msgstr ""
 "\n"
-"Gammu также включает привязки к Python, которые позволяют использовать (в "
-"большинстве) <a\n"
-"href=\"/libgammu/\"> функциональность языка <a href=\"https://python.org\""
+"Gammu также включает привязки к Python, которые позволяют использовать (по "
+"большей части) функциональность <a\n"
+"href=\"/libgammu/\">Gammu</a> из  языка <a href=\"https://python.org\""
 ">Python</a>.\n"
 
 #: html/python-gammu.html:27
@@ -2653,7 +2655,7 @@ msgstr ""
 
 #: html/smsd.html:6 html/smsd.html:13
 msgid "Gammu SMSD"
-msgstr ""
+msgstr "Gammu SMSD"
 
 #: html/smsd.html:16
 msgid ""
@@ -3210,7 +3212,7 @@ msgstr ""
 
 #: html/support/lists.html:41
 msgid "Stack Overflow"
-msgstr ""
+msgstr "Stack Overflow"
 
 #: html/support/lists.html:44
 #, python-format
@@ -3291,7 +3293,7 @@ msgstr ""
 
 #: html/support/online.html:20
 msgid "IRC"
-msgstr ""
+msgstr "IRC"
 
 #: html/support/online.html:23
 msgid ""
@@ -3318,7 +3320,7 @@ msgstr ""
 "\n"
 "На канале вы может наблюдать бота по имени CIA-42 (ЦРУ-42), который посылает "
 "уведомления\n"
-"о каждом коммите сделанном в git-репозитарии Gammu.\n"
+"о каждом коммите, сделанном в git-репозитарии Gammu.\n"
 
 #: html/tools/countries.html:4 html/tools/countries.html:8
 msgid "GSM countries list from Gammu"
@@ -3440,7 +3442,7 @@ msgstr "Декодирование PDU с использованием Gammu"
 
 #: html/tools/pdudecode.html:18 html/tools/pduencode.html:18
 msgid "Go"
-msgstr ""
+msgstr "Go"
 
 #: html/tools/pdudecode.html:24
 msgid "PDU Decoding Result"
@@ -3637,7 +3639,6 @@ msgid "Thank you for using Wammu"
 msgstr "Спасибо за использование Wammu"
 
 #: html/wammu_feedback.html:5
-#, fuzzy
 msgid ""
 "\n"
 "I hope you like Wammu, but maybe you miss some features or would like to "
@@ -3646,9 +3647,9 @@ msgid ""
 "href=\"https://github.com/gammu/gammu/issues\">bug tracker</a>.\n"
 msgstr ""
 "\n"
-"Надеемся, вам понравится Wammu, но, может быть, вы упустите некоторые "
-"особенности или захотите \n"
-"некоторых улучшений. Если у вас есть идеи, пожалуйста, сообщите о них в <a\n"
+"Надеемся, вам понравится Wammu, но, может быть, вам не хватает некоторой "
+"функциональности или вы захотели \n"
+"что-то улучшить. Если у вас есть идеи, пожалуйста, сообщите о них в <a\n"
 "href=\"https://github.com/gammu/gammu/issues\">багтрекер</a>.\n"
 
 #: html/wammu_feedback.html:13
@@ -3712,7 +3713,7 @@ msgstr "Сохранить"
 #: phonedb/forms.py:86
 #, python-format
 msgid "%(description)s (%(name)s)"
-msgstr ""
+msgstr "%(description)s (%(name)s)"
 
 #: phonedb/models.py:21
 msgid "Use [at] and [dot]"
