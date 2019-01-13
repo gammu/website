@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2018-05-04 10:27+0200\n"
-"PO-Revision-Date: 2019-01-12 18:09+0000\n"
+"PO-Revision-Date: 2019-01-14 19:15+0000\n"
 "Last-Translator: Victor K <ktrace@yandex.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gammu/website/ru/"
 ">\n"
@@ -550,7 +550,7 @@ msgstr ""
 "\n"
 "Также <a href=\"/contribute/publicity/\"><strong>распространяйте</strong> "
 "отзывы</a> об используемом\n"
-"инструменте и чего им добились - это позволит привлеть больше пользователей "
+"инструменте и чего им добились - это позволит привлечь больше пользователей "
 "и\n"
 "разработчиков. Не стесняйтесь писать о наших программах в свой блог,\n"
 "в Твиттер, facebook или любую другую социальную сеть.\n"
@@ -644,7 +644,7 @@ msgstr ""
 "\n"
 "С другой стороны, если вы нашли ошибку, пожалуйста, не ограничивайтесь её "
 "описанием\n"
-"в своем блоге, <a href=\"/support/bugs/\">сообщите оней</a> нам. У нас нет "
+"в своем блоге, <a href=\"/support/bugs/\">сообщите о ней</a> нам. У нас нет "
 "возможности\n"
 "вычитывать все блоги мира в поисках сообщений об ошибках.\n"
 
@@ -790,11 +790,10 @@ msgstr ""
 "В настоящее время мы используем <a href=\"https://weblate.org/\">Weblate</a> "
 "для\n"
 "управления переводами. Чтобы приступить к переводу, просто создайте учетную "
-"запись там и\n"
-"начните переводить. Там уже можно увидеть десятки языков, но если ваш\n"
+"запись на нём и\n"
+"начните переводить. Там уже можно увидеть десятки языков, но если ваш язык\n"
 "отсутствует, просто <a href=\"/support/\">скажите нам</a> и мы его добавим. "
-"Там\n"
-"перевод разбит на отдельные проекты:\n"
+"Перевод разбит на отдельные проекты:\n"
 
 #: html/contribute/translate.html:54
 msgid "Introduction page"
@@ -820,10 +819,9 @@ msgstr ""
 "Однако\n"
 "если вы хотите лучше контролировать какой-то язык <a href=\"/support/\">"
 "скажите нам</a>\n"
-"и мы разрешим другим только предлагать переводы. Обычно это даёт\n"
-"лучшее качество перевода и замедляет сам процесс, так что это зависит от "
-"политики каждого\n"
-"из переводчиков.\n"
+"и мы разрешим другим только предлагать переводы. Обычно это замедляет "
+"процесс и улучшает качество перевода,\n"
+"так что выбор зависит от политики каждого из переводчиков.\n"
 
 #: html/contribute/translate.html:71
 msgid "Hints for Translators"
@@ -1338,9 +1336,8 @@ msgstr ""
 "litecoin:%(address)s\">%(address)s</a></code>."
 
 #: html/donate.html:73 html/phonedb/index.html:79
-#, fuzzy
 msgid "Supporters"
-msgstr "Поддержка"
+msgstr "Поддержавшие"
 
 #: html/donate.html:75
 msgid ""
@@ -1369,7 +1366,7 @@ msgstr "Пакеты Debian"
 
 #: html/downloads/detail.html:34 html/downloads/platformlinks.html:8
 msgid "Ubuntu packages"
-msgstr "пакеты Ubuntu"
+msgstr "Пакеты Ubuntu"
 
 #: html/downloads/detail.html:37 html/downloads/platformlinks.html:11
 msgid "Ubuntu packages in PPA"
@@ -1433,7 +1430,7 @@ msgstr ""
 
 #: html/downloads/index.html:46
 msgid "Syndication"
-msgstr ""
+msgstr "Синдикация"
 
 #: html/downloads/index.html:48
 msgid "DOAP for Wammu"
@@ -1457,7 +1454,7 @@ msgstr "Скачать исходники или бинарники для Windo
 
 #: html/downloads/platformlinks.html:20
 msgid "Development git snaphots and git access"
-msgstr ""
+msgstr "Снимки разработки в git и доступ к ним"
 
 #: html/downloads/platformmessage.html:3
 msgid ""
@@ -1665,7 +1662,6 @@ msgstr ""
 "Си.\n"
 
 #: html/gammu-features.html:3
-#, fuzzy
 msgid ""
 "\n"
 "Call listing, initiating and handling\n"
@@ -2145,8 +2141,9 @@ msgid "Supported Features"
 msgstr "Поддерживаемые функции"
 
 #: html/phonedb/body.html:13
+#, fuzzy
 msgid "No features reported as working!"
-msgstr ""
+msgstr "Нет функций с заявленной работоспособностью!"
 
 #: html/phonedb/body.html:27
 msgid "Phone is reported not to be supported!"
@@ -2154,7 +2151,7 @@ msgstr "Сообщается, что телефон не поддерживае�
 
 #: html/phonedb/body.html:34
 msgid "Reporter Note"
-msgstr ""
+msgstr "Примечание приславшего"
 
 #: html/phonedb/index.html:5 html/phonedb/new.html:5 html/phonedb/phone.html:4
 #: html/phonedb/search.html:5
@@ -2255,7 +2252,7 @@ msgstr "Недавно добавленные телефоны"
 
 #: html/phonedb/index.html:64
 msgid "Phone Records Summary"
-msgstr ""
+msgstr "Суммарное количество телефонов"
 
 #: html/phonedb/index.html:68
 msgid ""
@@ -2415,7 +2412,7 @@ msgstr ""
 
 #: html/phonedb/phone.html:70
 msgid "About entry"
-msgstr ""
+msgstr "Об этой записи"
 
 #: html/phonedb/phone.html:73
 #, python-format
@@ -2625,7 +2622,7 @@ msgstr ""
 
 #: html/screenshots/contrib_index.html:4 html/screenshots/contrib_index.html:6
 msgid "Third Party Screenshots"
-msgstr "Снимки экранов сторонних пользователей"
+msgstr "Снимки экранов сторонних программ"
 
 #: html/screenshots/gammu_index.html:4 html/screenshots/gammu_index.html:6
 msgid "Gammu Screenshots"
@@ -2825,7 +2822,7 @@ msgid ""
 msgstr ""
 "\n"
 "Информация о вашей <strong>операционной системе</strong> и ее версии, "
-"используее ли выт Windows, либо дистрибутив Linux,\n"
+"используете ли вы Windows, либо дистрибутив Linux,\n"
 "Mac OS X, BSD?\n"
 
 #: html/support/bugs.html:35
@@ -3075,7 +3072,7 @@ msgstr ""
 "в <a href=\"/phone/\"><strong>базу телефонов Gammu</strong></a>. Вы можете\n"
 "также поделиться своим опытом, но если у вас возникли проблемы, пожалуйста, "
 "сообщайте об ошибках на багтрекер\n"
-"и не пишите о проблемах в базе данных телефоннов.\n"
+"и не пишите о проблемах в базе данных телефонов.\n"
 
 #: html/support/index.html:30
 msgid "Communication with Community"
@@ -3599,8 +3596,9 @@ msgid "translated into several languages"
 msgstr "переведен на несколько языков"
 
 #: html/wammu.html:34
+#, fuzzy
 msgid "rated as best on many software servers"
-msgstr ""
+msgstr "высоко оценено на серверах с софтом"
 
 #: html/wammu.html:41
 msgid ""
@@ -3795,11 +3793,11 @@ msgstr "Имя телефона, пожалуйста, не указывайте
 
 #: phonedb/models.py:103
 msgid "Connection used in Gammu configuration."
-msgstr ""
+msgstr "Используемые подключения в конфигурации Gammu."
 
 #: phonedb/models.py:105
 msgid "Model used in Gammu configuration, usually empty."
-msgstr ""
+msgstr "Модель, используемая в конфигурации Gammu, обычно не указывается."
 
 #: phonedb/models.py:106
 msgid "Gammu version where you tested this phone."
