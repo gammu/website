@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2018-05-04 10:27+0200\n"
-"PO-Revision-Date: 2017-02-07 16:01+0000\n"
-"Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
+"PO-Revision-Date: 2019-02-01 10:11+0000\n"
+"Last-Translator: Mesut Akcan <makcan@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gammu/website/tr/"
 ">\n"
 "Language: tr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.12-dev\n"
+"X-Generator: Weblate 3.5-dev\n"
 
 #: downloads/models.py:31
 msgid "Source code"
@@ -30,16 +30,16 @@ msgstr "Windows ikili dosyaları"
 #: downloads/models.py:144
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr ""
+msgstr "%(program)s kararlı sürüm %(version)s"
 
 #: downloads/models.py:149
 #, python-format
 msgid "%(program)s testing release %(version)s"
-msgstr ""
+msgstr "%(program)s test sürümü %(version)s"
 
 #: html/403.html:4 html/403.html:8
 msgid "Permission Denied"
-msgstr ""
+msgstr "İzin reddedildi"
 
 #: html/403.html:11 html/404.html:11
 msgid ""
