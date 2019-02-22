@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-04 10:27+0200\n"
+"POT-Creation-Date: 2019-02-22 09:18+0100\n"
 "PO-Revision-Date: 2018-04-27 05:40+0000\n"
 "Last-Translator: Jeferson Oliveira <badkar266@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
@@ -19,20 +19,20 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 3.0-dev\n"
 
-#: downloads/models.py:31
+#: downloads/models.py:32
 msgid "Source code"
 msgstr "Código fonte"
 
-#: downloads/models.py:32
+#: downloads/models.py:33
 msgid "Windows binaries"
 msgstr "Binários do windows"
 
-#: downloads/models.py:144
+#: downloads/models.py:145
 #, python-format
 msgid "%(program)s stable release %(version)s"
 msgstr "%(program)s versão estável %(version)s"
 
-#: downloads/models.py:149
+#: downloads/models.py:150
 #, python-format
 msgid "%(program)s testing release %(version)s"
 msgstr "testando %(program)s versão %(version)s"
@@ -117,7 +117,7 @@ msgstr ""
 "hoje ele é o encarregado.\n"
 
 #: html/authors.html:29 html/authors.html:50 html/authors.html:66
-#: html/authors.html:75 html/phonedb/vendor.html:20
+#: html/phonedb/vendor.html:20
 msgid "Website"
 msgstr "WebSite"
 
@@ -161,10 +161,6 @@ msgstr ""
 "de agradecer a todos os que contribuiram por ele, especialmente Pavel Janik, "
 "Pawel Kot e Manfred\n"
 "Jonsson.\n"
-
-#: html/authors.html:70
-msgid "Other contributors"
-msgstr "Outros contribuidores"
 
 #: html/base.html:12
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
@@ -1137,9 +1133,9 @@ msgstr "Documentação do Wammu e Gammu"
 #: html/docs/index.html:10
 msgid ""
 "\n"
-"The best user documentation for Gammu comes in <strong><a\n"
-"href=\"/docs/manual/\">The Gammu Manual</a></strong>. It covers all aspects "
-"from\n"
+"The best user documentation for Gammu comes in <strong>\n"
+"<a href=\"/docs/manual/\">The Gammu Manual</a></strong>. It covers all "
+"aspects from\n"
 "installing Gammu, configuring it, running the programs up to SMSD\n"
 "documentation and C or Python API.\n"
 msgstr ""
@@ -1339,25 +1335,11 @@ msgstr ""
 msgid "Litecoin"
 msgstr "Bitcoin"
 
-#: html/donate.html:69
-#, fuzzy, python-format
-#| msgid ""
-#| "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
-#| "to-peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:"
-#| "%(address)s\">%(address)s</a></code>."
-msgid ""
-"You can also use Litecoin and donate me to <code><a href=\"litecoin:"
-"%(address)s\">%(address)s</a></code>."
-msgstr ""
-"You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-to-"
-"peer network</a> and send me Bitcoins to <code>3<a href=\"bitcoin:%(address)s"
-"\">4%(address)s5</a>6</code>7."
-
-#: html/donate.html:73 html/phonedb/index.html:79
+#: html/donate.html:78 html/phonedb/index.html:79
 msgid "Supporters"
 msgstr "Oferecimento de"
 
-#: html/donate.html:75
+#: html/donate.html:80
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
@@ -3821,7 +3803,7 @@ msgstr "Características"
 msgid "%(description)s [<a href=\"%(url)s\">Link</a>]"
 msgstr "%(description)s [<a href=\"%(url)s\"> Link </a>]"
 
-#: phonedb/forms.py:47 phonedb/models.py:104
+#: phonedb/forms.py:47 phonedb/models.py:103
 msgid "Features which are working in Gammu."
 msgstr "Características que estão trabalhando em Gammu."
 
@@ -3902,28 +3884,28 @@ msgstr "Logotipos"
 msgid "Ringtones"
 msgstr "Toques"
 
-#: phonedb/models.py:95
+#: phonedb/models.py:94
 #, python-format
 msgid "Phone name should not include vendor name: %s"
 msgstr "Nome do aparelho não deve incluir nome do fabricante: %s"
 
-#: phonedb/models.py:102
+#: phonedb/models.py:101
 msgid "Phone name, please exclude vendor name."
 msgstr "Nome do telefone, favor excluir nome do fornecedor."
 
-#: phonedb/models.py:103
+#: phonedb/models.py:102
 msgid "Connection used in Gammu configuration."
 msgstr "Conexão usada na configuração do Gammu."
 
-#: phonedb/models.py:105
+#: phonedb/models.py:104
 msgid "Model used in Gammu configuration, usually empty."
 msgstr "Modelo usado na configuração do Gammu, geralmente vazio."
 
-#: phonedb/models.py:106
+#: phonedb/models.py:105
 msgid "Gammu version where you tested this phone."
 msgstr "Versão do Gammu onde você testou este telefone."
 
-#: phonedb/models.py:107
+#: phonedb/models.py:106
 msgid ""
 "Any note about this phone and Gammu support for it. You can use <a href="
 "\"http://daringfireball.net/projects/markdown/syntax\">markdown markup</a>."
@@ -3932,7 +3914,7 @@ msgstr ""
 "pode usar a <a href=\"http://daringfireball.net/projects/markdown/syntax"
 "\">marcação markdown</a>."
 
-#: phonedb/models.py:110
+#: phonedb/models.py:109
 msgid "Please choose how will be email handled in next field."
 msgstr "Favor escolha como o email será manipulado no próximo campo."
 
@@ -3976,13 +3958,29 @@ msgstr "Recipiente"
 msgid "SMSC number"
 msgstr "Número SMSC"
 
-#: wammu/context_processors.py:46
+#: wammu/context_processors.py:49
 msgid "Gammu and Wammu News Feed (RSS)"
 msgstr "Feed de notícias do Gammu e Wammu (RSS)"
 
-#: wammu/context_processors.py:47
+#: wammu/context_processors.py:50
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr "Feed de notícias do Gammu e Wammu (Atom)"
+
+#~ msgid "Other contributors"
+#~ msgstr "Outros contribuidores"
+
+#, fuzzy
+#~| msgid ""
+#~| "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
+#~| "to-peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:"
+#~| "%(address)s\">%(address)s</a></code>."
+#~ msgid ""
+#~ "You can also use Litecoin and donate me to <code><a href=\"litecoin:"
+#~ "%(address)s\">%(address)s</a></code>."
+#~ msgstr ""
+#~ "You can also use <a href=\"https://www.bitcoin.org/\">Bitcoin is a peer-"
+#~ "to-peer network</a> and send me Bitcoins to <code>3<a href=\"bitcoin:"
+#~ "%(address)s\">4%(address)s5</a>6</code>7."
 
 #, fuzzy
 #~| msgid ""

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-04 10:27+0200\n"
+"POT-Creation-Date: 2019-02-22 09:18+0100\n"
 "PO-Revision-Date: 2017-10-16 19:48+0000\n"
 "Last-Translator: Daria Szatan <bla_ke@tuta.io>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gammu/website/pl/"
@@ -19,22 +19,22 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.17\n"
 
-#: downloads/models.py:31
+#: downloads/models.py:32
 msgid "Source code"
 msgstr "Kod źródłowy"
 
-#: downloads/models.py:32
+#: downloads/models.py:33
 #, fuzzy
 #| msgid "Windows binary"
 msgid "Windows binaries"
 msgstr "Program pod Windows"
 
-#: downloads/models.py:144
+#: downloads/models.py:145
 #, python-format
 msgid "%(program)s stable release %(version)s"
 msgstr "Wersja stabilna %(program)s %(version)s"
 
-#: downloads/models.py:149
+#: downloads/models.py:150
 #, python-format
 msgid "%(program)s testing release %(version)s"
 msgstr "Wersja testowa %(program)s %(version)s"
@@ -115,7 +115,7 @@ msgstr ""
 "to stanowisko do dziś.\n"
 
 #: html/authors.html:29 html/authors.html:50 html/authors.html:66
-#: html/authors.html:75 html/phonedb/vendor.html:20
+#: html/phonedb/vendor.html:20
 msgid "Website"
 msgstr "Strona internetowa"
 
@@ -157,10 +157,6 @@ msgstr ""
 "Jako że kod powstał jako odgałęzienie projektu Gnokii, chcielibyśmy "
 "podziękować wszystkim jego kontrybutorom, a w szczególności Pavel Janík, "
 "Pawel Kot i ManfredJonsson.\n"
-
-#: html/authors.html:70
-msgid "Other contributors"
-msgstr "Inne osoby wnoszące wkład"
 
 #: html/base.html:12
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
@@ -886,9 +882,9 @@ msgstr ""
 #: html/docs/index.html:10
 msgid ""
 "\n"
-"The best user documentation for Gammu comes in <strong><a\n"
-"href=\"/docs/manual/\">The Gammu Manual</a></strong>. It covers all aspects "
-"from\n"
+"The best user documentation for Gammu comes in <strong>\n"
+"<a href=\"/docs/manual/\">The Gammu Manual</a></strong>. It covers all "
+"aspects from\n"
 "installing Gammu, configuring it, running the programs up to SMSD\n"
 "documentation and C or Python API.\n"
 msgstr ""
@@ -1050,19 +1046,12 @@ msgstr ""
 msgid "Litecoin"
 msgstr ""
 
-#: html/donate.html:69
-#, python-format
-msgid ""
-"You can also use Litecoin and donate me to <code><a href=\"litecoin:"
-"%(address)s\">%(address)s</a></code>."
-msgstr ""
-
-#: html/donate.html:73 html/phonedb/index.html:79
+#: html/donate.html:78 html/phonedb/index.html:79
 #, fuzzy
 msgid "Supporters"
 msgstr "Wsparcie techniczne"
 
-#: html/donate.html:75
+#: html/donate.html:80
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
@@ -2825,7 +2814,7 @@ msgstr ""
 msgid "%(description)s [<a href=\"%(url)s\">Link</a>]"
 msgstr ""
 
-#: phonedb/forms.py:47 phonedb/models.py:104
+#: phonedb/forms.py:47 phonedb/models.py:103
 msgid "Features which are working in Gammu."
 msgstr ""
 
@@ -2906,34 +2895,34 @@ msgstr "Logo"
 msgid "Ringtones"
 msgstr "Dźwięki dzwonka"
 
-#: phonedb/models.py:95
+#: phonedb/models.py:94
 #, python-format
 msgid "Phone name should not include vendor name: %s"
 msgstr ""
 
-#: phonedb/models.py:102
+#: phonedb/models.py:101
 msgid "Phone name, please exclude vendor name."
 msgstr ""
 
-#: phonedb/models.py:103
+#: phonedb/models.py:102
 msgid "Connection used in Gammu configuration."
 msgstr ""
 
-#: phonedb/models.py:105
+#: phonedb/models.py:104
 msgid "Model used in Gammu configuration, usually empty."
 msgstr ""
 
-#: phonedb/models.py:106
+#: phonedb/models.py:105
 msgid "Gammu version where you tested this phone."
 msgstr ""
 
-#: phonedb/models.py:107
+#: phonedb/models.py:106
 msgid ""
 "Any note about this phone and Gammu support for it. You can use <a href="
 "\"http://daringfireball.net/projects/markdown/syntax\">markdown markup</a>."
 msgstr ""
 
-#: phonedb/models.py:110
+#: phonedb/models.py:109
 msgid "Please choose how will be email handled in next field."
 msgstr ""
 
@@ -2977,13 +2966,16 @@ msgstr ""
 msgid "SMSC number"
 msgstr "Numer SMSC"
 
-#: wammu/context_processors.py:46
+#: wammu/context_processors.py:49
 msgid "Gammu and Wammu News Feed (RSS)"
 msgstr ""
 
-#: wammu/context_processors.py:47
+#: wammu/context_processors.py:50
 msgid "Gammu and Wammu News Feed (Atom)"
 msgstr ""
+
+#~ msgid "Other contributors"
+#~ msgstr "Inne osoby wnoszące wkład"
 
 #~ msgid "Other Options"
 #~ msgstr "Inne Opcje"
