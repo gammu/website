@@ -6,6 +6,8 @@ python:
 install: 
   # Get newer pip and whell for binary caching support
   - pip install --upgrade pip wheel
+  # Older version for compatibility with older Gammu
+  - pip install python-gammu==2.6
   - pip install -r requirements-test.txt
 script: 
   - ./manage.py check
