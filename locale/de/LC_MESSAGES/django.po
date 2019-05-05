@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2019-02-22 09:18+0100\n"
-"PO-Revision-Date: 2019-04-23 15:48+0000\n"
-"Last-Translator: CurlingTongs <o11577482@nwytg.net>\n"
+"PO-Revision-Date: 2019-05-06 20:48+0000\n"
+"Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gammu/website/de/>"
 "\n"
 "Language: de\n"
@@ -1845,9 +1845,8 @@ msgstr "Code-Repository"
 
 #: html/gammu.html:83 html/libgammu.html:61 html/python-gammu.html:86
 #: html/smsd.html:87 html/wammu.html:69
-#, fuzzy
 msgid "Issue tracker"
-msgstr "Fehlerdatenbank"
+msgstr "Ticketsystem"
 
 #: html/gammu.html:86 html/libgammu.html:64 html/python-gammu.html:89
 #: html/smsd.html:90 html/wammu.html:72
@@ -2402,12 +2401,6 @@ msgid "Approve"
 msgstr "Bestätigen"
 
 #: html/phonedb/phone.html:30
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "This record has been rejected for some reasons, you might want to check "
-#| "other\n"
-#| "records for same model (you can see them on right side).\n"
 msgid ""
 "\n"
 "This record has been rejected for some reasons, you might want to check "
@@ -2415,9 +2408,9 @@ msgid ""
 "records for same model (you can see them on bottom of the page).\n"
 msgstr ""
 "\n"
-"Dieser Bericht wurde zurückgewiesen.\n"
-"Vielleicht möchten Sie andere Berichte zu diesem Modell anschauen (Sie "
-"finden diese auf der rechten Seite).\n"
+"Dieser Bericht wurde zurückgewiesen. Vielleicht möchten Sie andere Berichte "
+"zu \n"
+"diesem Modell anschauen (Sie finden diese unten auf der Seite).\n"
 
 #: html/phonedb/phone.html:38
 msgid ""
@@ -2557,7 +2550,7 @@ msgstr ""
 "Derzeit liegt kein Bericht über diesen Hersteller vor!\n"
 
 #: html/phonedb/vendor.html:45
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "\n"
 "To change existing entries, simply <a href=\"/phones/new/?vendor=%(slug)s"
@@ -2565,9 +2558,9 @@ msgid ""
 "old ones will get deleted eventually.\n"
 msgstr ""
 "\n"
-"Wenn Sie einen Eintrag ändern möchten, <a href=\"/phones/new?vendor=%(slug)s"
-"\">erstellen Sie einfach einen neuen</a>, dieser wird überprüft und ersetzt "
-"in Folge die älteren.\n"
+"Wenn Sie einen Eintrag ändern möchten, <a href=\"/phones/new?vendor=%(slug)"
+"s\">erstellen Sie einfach einen neuen</a>, dieser wird überprüft und ersetzt "
+"schließlich die älteren.\n"
 
 #: html/python-gammu.html:4
 msgid "Python bindings form Gammu, the software for managing GSM cell phones."
@@ -2580,12 +2573,6 @@ msgid "Python bindings for Gammu"
 msgstr "Python Anbindung für Gammu"
 
 #: html/python-gammu.html:16
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Gammu also includes Python bindings which allow you to use (most) of <a\n"
-#| "href=\"/libgammu/\">Gammu</a> functionality from <a\n"
-#| "href=\"http://python.org\">Python</a> language.\n"
 msgid ""
 "\n"
 "Gammu also includes Python bindings which allow you to use (most) of <a\n"
@@ -2594,8 +2581,8 @@ msgid ""
 msgstr ""
 "\n"
 "Gammu bietet Ihnen Python Anbindungen, wodurch Sie (fast) alle Funktionen "
-"von <a href=\"/libgammu/\">Gammu</a> per <a href=\"http://python.org"
-"\">Python</a> nutzen können.\n"
+"von <a href=\"/libgammu/\">Gammu</a> per <a href=\"https://python.org\""
+">Python</a> nutzen können.\n"
 
 #: html/python-gammu.html:27
 msgid ""
