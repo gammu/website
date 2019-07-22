@@ -3281,7 +3281,7 @@ msgid "PDU text"
 msgstr "PDU text"
 
 #: tools/forms.py:10
-msgid "You can provide more messages, each on seaprate line."
+msgid "You can provide more messages, each on separate line."
 msgstr "Můžete zadat více zpráv, každou na samostatné řádce."
 
 #: tools/forms.py:15

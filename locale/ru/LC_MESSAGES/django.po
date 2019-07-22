@@ -3840,7 +3840,7 @@ msgstr "текст PDU"
 
 #: tools/forms.py:10
 #, fuzzy
-msgid "You can provide more messages, each on seaprate line."
+msgid "You can provide more messages, each on separate line."
 msgstr "Вы можете предоставить больше сообщений, каждое на отдельной строке."
 
 #: tools/forms.py:15
