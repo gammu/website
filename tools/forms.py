@@ -7,7 +7,7 @@ class PDUDecodeForm(Form):
         label = ugettext_lazy('PDU text'),
         regex = '^([a-fA-F0-9]{2})+([\r\n]+([a-fA-F0-9]{2})+)*$',
         widget = forms.Textarea,
-        help_text = ugettext_lazy('You can provide more messages, each on seaprate line.'))
+        help_text = ugettext_lazy('You can provide more messages, each on separate line.'))
 
 class PDUEncodeForm(Form):
     text = forms.CharField(label = ugettext_lazy('Text'))
