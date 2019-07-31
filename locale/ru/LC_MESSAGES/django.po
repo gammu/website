@@ -5,19 +5,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2019-02-22 09:18+0100\n"
-"PO-Revision-Date: 2019-01-14 19:15+0000\n"
-"Last-Translator: Victor K <ktrace@yandex.ru>\n"
+"PO-Revision-Date: 2019-07-31 17:44+0000\n"
+"Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gammu/website/ru/"
 ">\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.4-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.8-dev\n"
 
 #: downloads/models.py:32
 msgid "Source code"
@@ -1117,14 +1117,6 @@ msgid "Wammu and Gammu Documentation"
 msgstr "Документация по Wammu и Gammu"
 
 #: html/docs/index.html:10
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "The best user documentation for Gammu comes in <strong>\n"
-#| "<A href=\"/docs/manual/\">The Gammu Manual</a></strong>. It covers all "
-#| "aspects from\n"
-#| "installing Gammu, configuring it, running the programs up to SMSD\n"
-#| "documentation and C or Python API.\n"
 msgid ""
 "\n"
 "The best user documentation for Gammu comes in <strong>\n"
@@ -1137,7 +1129,7 @@ msgstr ""
 "Лучшая пользовательская документация для Gammu поставляется в <strong><a\n"
 "href=\"/docs/manual/\">Руководстве по Gammu</a></strong>. Она охватывает все "
 "аспекты, начиная с\n"
-"установки Gammu, настройки, запуске программ до документации по SMSD и API "
+"установки Gammu, настройки, запуска программ до документации по SMSD и API "
 "для C или Python.\n"
 
 #: html/docs/index.html:18
@@ -1159,7 +1151,7 @@ msgstr ""
 "\n"
 "Для проверки поддержки некоторых моделей телефонов лучшим источником "
 "является <a\n"
-"href=\"/phone/\">база данных телефонов Gammu</a>, содержащая информацию об "
+"href=\"/phones/\">база данных телефонов Gammu</a>, содержащая информацию об "
 "опыте работы пользователей \n"
 "Gammu с различными моделями телефонов.\n"
 
@@ -2486,8 +2478,14 @@ msgid_plural ""
 "\n"
 "There are currently %(count)s phone records from this vendor.\n"
 msgstr[0] ""
+"\n"
+"В настоящее время имеется %(count)s телефон этого производителя в базе.\n"
 msgstr[1] ""
+"\n"
+"В настоящее время имеется %(count)s телефона этого производителя в базе.\n"
 msgstr[2] ""
+"\n"
+"В настоящее время имеется %(count)s телефонов этого производителя в базе.\n"
 
 #: html/phonedb/vendor.html:40
 msgid ""
@@ -3574,7 +3572,7 @@ msgid ""
 "iCalendar, gammu own backup,…)"
 msgstr ""
 "поддержка резервного копирования и импорта в различных форматах (vCard, "
-"vCalendar, vTodo, iCalendar, собсвенный бэкап gammu,...)"
+"vCalendar, vTodo, iCalendar, собственный бэкап gammu,...)"
 
 #: html/wammu.html:31
 msgid ""
@@ -3592,9 +3590,8 @@ msgid "translated into several languages"
 msgstr "переведен на несколько языков"
 
 #: html/wammu.html:34
-#, fuzzy
 msgid "rated as best on many software servers"
-msgstr "высоко оценено на серверах с софтом"
+msgstr "оценивается как лучший на многих серверах программного обеспечения"
 
 #: html/wammu.html:41
 msgid ""
