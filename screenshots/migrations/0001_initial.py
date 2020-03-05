@@ -33,7 +33,7 @@ class Migration(migrations.Migration):
                 ('title', models.CharField(max_length=250)),
                 ('description', models.TextField()),
                 ('description_html', models.TextField(editable=False, blank=True)),
-                ('image', screenshots.thumbs.ImageWithThumbsField(upload_to=b'screenshots')),
+                ('image', screenshots.thumbs.ImageWithThumbsField(upload_to='screenshots')),
                 ('featured', models.BooleanField()),
                 ('categories', models.ManyToManyField(to='screenshots.Category')),
             ],

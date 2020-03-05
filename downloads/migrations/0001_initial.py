@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
             name='Download',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('platform', models.CharField(max_length=100, choices=[(b'source', 'Source'), (b'win32', 'Windows binary')])),
+                ('platform', models.CharField(max_length=100, choices=[('source', 'Source'), ('win32', 'Windows binary')])),
                 ('location', models.CharField(max_length=250)),
                 ('md5', models.CharField(max_length=250)),
                 ('sha1', models.CharField(max_length=250)),
@@ -32,7 +32,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('name', models.CharField(max_length=250)),
                 ('slug', models.SlugField(unique=True)),
-                ('url', models.CharField(help_text=b'Python format string, following keys are available: %(location)s, %(filename)s, %(version)s, %(program)s', max_length=250)),
+                ('url', models.CharField(help_text='Python format string, following keys are available: %(location)s, %(filename)s, %(version)s, %(program)s', max_length=250)),
             ],
             options={
             },
@@ -42,7 +42,7 @@ class Migration(migrations.Migration):
             name='Release',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('program', models.CharField(max_length=100, choices=[(b'gammu', b'Gammu'), (b'wammu', b'Wammu'), (b'python-gammu', b'python-gammu')])),
+                ('program', models.CharField(max_length=100, choices=[('gammu', 'Gammu'), ('wammu', 'Wammu'), ('python-gammu', 'python-gammu')])),
                 ('version', models.CharField(max_length=100)),
                 ('version_int', models.IntegerField(editable=False, blank=True)),
                 ('description', models.TextField()),

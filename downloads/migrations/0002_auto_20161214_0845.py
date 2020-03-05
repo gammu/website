@@ -18,6 +18,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='download',
             name='platform',
-            field=models.CharField(choices=[(b'source', 'Source code'), (b'win32', 'Windows binaries')], max_length=100),
+            field=models.CharField(choices=[('source', 'Source code'), ('win32', 'Windows binaries')], max_length=100),
         ),
     ]

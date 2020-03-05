@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('name', models.CharField(max_length=250)),
-                ('medium', models.CharField(max_length=100, choices=[(b'usb', b'USB'), (b'serial', b'Serial'), (b'irda', b'IrDA'), (b'bluetooth', b'Bluetooth'), (b'other', b'Other')])),
+                ('medium', models.CharField(max_length=100, choices=[('usb', 'USB'), ('serial', 'Serial'), ('irda', 'IrDA'), ('bluetooth', 'Bluetooth'), ('other', 'Other')])),
             ],
             options={
             },
@@ -43,8 +43,8 @@ class Migration(migrations.Migration):
                 ('note_html', models.TextField(editable=False, blank=True)),
                 ('author_name', models.CharField(max_length=250, blank=True)),
                 ('author_email', models.EmailField(help_text='Please choose how will be email handled in next field.', max_length=250, blank=True)),
-                ('email_garble', models.CharField(default=b'atdot', max_length=100, choices=[(b'atdot', 'Use [at] and [dot]'), (b'none', 'Display it normally'), (b'hide', "Don't show email at all"), (b'nospam', 'Insert NOSPAM text at random position')])),
-                ('state', models.CharField(default=b'draft', max_length=100, db_index=True, choices=[(b'draft', 'Draft'), (b'approved', 'Approved'), (b'deleted', 'Deleted')])),
+                ('email_garble', models.CharField(default='atdot', max_length=100, choices=[('atdot', 'Use [at] and [dot]'), ('none', 'Display it normally'), ('hide', "Don't show email at all"), ('nospam', 'Insert NOSPAM text at random position')])),
+                ('state', models.CharField(default='draft', max_length=100, db_index=True, choices=[('draft', 'Draft'), ('approved', 'Approved'), ('deleted', 'Deleted')])),
                 ('created', models.DateTimeField(auto_now_add=True)),
                 ('address', models.CharField(max_length=100, blank=True)),
                 ('hostname', models.CharField(max_length=100, blank=True)),
