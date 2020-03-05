@@ -5,4 +5,3 @@ Pillow
 python-gammu
 pygooglechart
 rollbar
-six
