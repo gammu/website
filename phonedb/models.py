@@ -45,8 +45,8 @@ FEATURE_NAMES = {
 
 
 class Vendor(models.Model):
-    name = models.CharField(max_length = 250)
-    url = models.URLField(max_length = 250)
+    name = models.CharField(max_length = 250, unique=True)
+    url = models.URLField(max_length = 250, unique=True)
     slug = models.SlugField(unique = True)
     tuxmobil = models.SlugField(null = True, blank = True)
 
@@ -64,7 +64,7 @@ class Vendor(models.Model):
 
 
 class Feature(models.Model):
-    name = models.CharField(max_length = 250)
+    name = models.CharField(max_length = 250, unique=True)
 
     def __str__(self):
         return self.name
@@ -74,7 +74,7 @@ class Feature(models.Model):
 
 
 class Connection(models.Model):
-    name = models.CharField(max_length = 250)
+    name = models.CharField(max_length = 250, unique=True)
     medium = models.CharField(max_length = 100, choices = CONNECTION_CHOICES)
 
     def __str__(self):
@@ -93,7 +93,7 @@ def phone_name_validator(value):
 
 class Phone(models.Model):
     vendor = models.ForeignKey(Vendor, on_delete=models.deletion.CASCADE)
-    name = models.CharField(max_length = 250, help_text = ugettext_lazy('Phone name, please exclude vendor name.'), validators = [phone_name_validator])
+    name = models.CharField(max_length = 250, help_text = ugettext_lazy('Phone name, please exclude vendor name.'), validators = [phone_name_validator], db_index=True)
     connection = models.ForeignKey(Connection, null = True, blank = True, help_text = ugettext_lazy('Connection used in Gammu configuration.'), on_delete=models.deletion.CASCADE)
     features = models.ManyToManyField(Feature, help_text = ugettext_lazy('Features which are working in Gammu.'), blank = True)
     model = models.CharField(max_length = 100, blank = True, help_text = ugettext_lazy('Model used in Gammu configuration, usually empty.'))
