@@ -1,4 +1,5 @@
 *.pyc
 *.mo
 *.swp
-wammu.db
+wammu.db*
+.venv
