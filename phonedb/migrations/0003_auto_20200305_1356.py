@@ -31,9 +31,4 @@ class Migration(migrations.Migration):
             name='name',
             field=models.CharField(max_length=250, unique=True),
         ),
-        migrations.AlterField(
-            model_name='vendor',
-            name='url',
-            field=models.URLField(max_length=250, unique=True),
-        ),
     ]
