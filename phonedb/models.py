@@ -1,6 +1,5 @@
 from django.db import models
 from django.urls import reverse
-from django.utils.encoding import python_2_unicode_compatible
 from django.utils.translation import ugettext_lazy, ugettext as _
 from django.core.exceptions import ValidationError
 
@@ -45,7 +44,6 @@ FEATURE_NAMES = {
 }
 
 
-@python_2_unicode_compatible
 class Vendor(models.Model):
     name = models.CharField(max_length = 250)
     url = models.URLField(max_length = 250)
@@ -65,7 +63,6 @@ class Vendor(models.Model):
         return Phone.objects.filter(vendor = self, state__in = ['approved', 'draft']).count()
 
 
-@python_2_unicode_compatible
 class Feature(models.Model):
     name = models.CharField(max_length = 250)
 
@@ -76,7 +73,6 @@ class Feature(models.Model):
         return FEATURE_NAMES[self.name]
 
 
-@python_2_unicode_compatible
 class Connection(models.Model):
     name = models.CharField(max_length = 250)
     medium = models.CharField(max_length = 100, choices = CONNECTION_CHOICES)
@@ -95,7 +91,6 @@ def phone_name_validator(value):
     return value
 
 
-@python_2_unicode_compatible
 class Phone(models.Model):
     vendor = models.ForeignKey(Vendor, on_delete=models.deletion.CASCADE)
     name = models.CharField(max_length = 250, help_text = ugettext_lazy('Phone name, please exclude vendor name.'), validators = [phone_name_validator])

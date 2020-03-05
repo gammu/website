@@ -1,14 +1,12 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
-from django.utils.encoding import python_2_unicode_compatible
 
 import markdown
 
 import datetime
 
 
-@python_2_unicode_compatible
 class Category(models.Model):
     """
     A category that an entry can belong to.
@@ -44,7 +42,6 @@ class Category(models.Model):
          return reverse('news-category', kwargs={'slug': self.slug })
 
 
-@python_2_unicode_compatible
 class Entry(models.Model):
     # Metadata.
     author = models.ForeignKey(User, on_delete=models.deletion.CASCADE)

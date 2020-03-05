@@ -1,6 +1,5 @@
 from django.db import models
 from django.urls import reverse
-from django.utils.encoding import python_2_unicode_compatible
 
 from news.models import Category
 
@@ -78,7 +77,6 @@ def get_current_downloads(program):
     return downloads
 
 
-@python_2_unicode_compatible
 class Release(models.Model):
     author = models.ForeignKey(User, on_delete=models.deletion.CASCADE)
     program = models.CharField(max_length = 100, choices = PROGRAM_CHOICES)
@@ -159,7 +157,6 @@ class Release(models.Model):
          return reverse('downloads-release', kwargs={ 'version': self.version, 'program': self.program })
 
 
-@python_2_unicode_compatible
 class Download(models.Model):
     release = models.ForeignKey(Release, on_delete=models.deletion.CASCADE)
     platform = models.CharField(max_length = 100, choices = PLATFORM_CHOICES)
