@@ -1,8 +1,8 @@
 language: python
 dist: bionic
 python:
-  - "2.7"
   - "3.5"
+  - "3.7"
 install: 
   # Get newer pip and whell for binary caching support
   - pip install --upgrade pip wheel
