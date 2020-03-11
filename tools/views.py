@@ -71,11 +71,15 @@ def pdudecode(request):
             smsinfo = []
             part = 1
             for x in linked:
-                d = gammu.DecodeSMS(x)
-                if d is not None:
-                    d['Id'] = part
+                try:
+                    d = gammu.DecodeSMS(x)
+                    if d is not None:
+                        d['Id'] = part
+                        part = part + 1
+                        smsinfo.append(d)
+                except UnicodeDecodeError as err:
+                    smsinfo.append({"Error": str(err), "Id": part, "Unknown": True})
                     part = part + 1
-                    smsinfo.append(d)
 
     else:
         form = PDUDecodeForm()
