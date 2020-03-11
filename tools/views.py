@@ -62,7 +62,7 @@ def pdudecode(request):
                     d['PDU'] = part
                     decoded.append(d)
                 except gammu.GSMError as e:
-                    decoded.append({'Error': e[0]})
+                    decoded.append({'Error': e.args[0]})
                 except Exception as e:
                     decoded.append({'Error': {'Text': str(e)}})
             # Link multipart messages
