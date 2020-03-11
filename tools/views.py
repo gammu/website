@@ -31,7 +31,7 @@ def pduencode(request):
                 msg['Number'] = form.cleaned_data['number']
                 msg['Class'] = form.cleaned_data['cls']
             # Encode PDU
-            pdu = enumerate([binascii.hexlify(gammu.EncodePDU(e, 'Submit').decode()) for e in encoded])
+            pdu = enumerate([gammu.EncodePDU(e, 'Submit').hex() for e in encoded])
 
     else:
         form = PDUEncodeForm()
@@ -54,10 +54,10 @@ def pdudecode(request):
                     d = gammu.DecodePDU(binascii.unhexlify(part))
                     parts.append([d])
                     if isinstance(d['Text'], bytes):
-                        d['TextHex'] = None
+                        d['TextHex'] = d['Text'].hex()
                     else:
-                        d['TextHex'] = binascii.hexlify(d['Text']).decode()
-                    d['UDH']['TextHex'] = binascii.hexlify(d['UDH']['Text']).decode()
+                        d['TextHex'] = None
+                    d['UDH']['TextHex'] = d['UDH']['Text'].hex()
                     d['Id'] = i + 1
                     d['PDU'] = part
                     decoded.append(d)
