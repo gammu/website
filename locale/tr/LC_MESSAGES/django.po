@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2019-02-22 09:18+0100\n"
-"PO-Revision-Date: 2019-02-01 10:11+0000\n"
-"Last-Translator: Mesut Akcan <makcan@gmail.com>\n"
+"PO-Revision-Date: 2020-10-06 18:31+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gammu/website/tr/"
 ">\n"
 "Language: tr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.5-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 #: downloads/models.py:32
 msgid "Source code"
@@ -47,6 +47,9 @@ msgid ""
 "The page you are looking for was not found. Try choosing something from the\n"
 "navigation bellow or use <a href=\"/search/\">search facility</a>.\n"
 msgstr ""
+"\n"
+"Aradığınız sayfa bulunamadı. Aşağıdaki gezinme bölümünden bir şey seçmeyi\n"
+"deneyin veya <a href=\"/search/\">arama özelliğini</a> kullanın.\n"
 
 #: html/403.html:18 html/404.html:18
 msgid ""
@@ -54,14 +57,17 @@ msgid ""
 "This site includes information about Gammu and Wammu, you might want to\n"
 "continue to pages of following projects:\n"
 msgstr ""
+"\n"
+"Bu site Gammu ve Wammu hakkında bilgiler içermektedir, aşağıdaki projelerin\n"
+"sayfalarına devam etmek isteyebilirsiniz:\n"
 
 #: html/404.html:4 html/404.html:8
 msgid "Page Not Found"
-msgstr ""
+msgstr "Sayfa Bulunamadı"
 
 #: html/500.html:4 html/500.html:8
 msgid "Server Error"
-msgstr ""
+msgstr "Sunucu Hatası"
 
 #: html/500.html:11
 msgid ""
@@ -70,10 +76,14 @@ msgid ""
 "our\n"
 "trained monkeys to fix the issue.\n"
 msgstr ""
+"\n"
+"Sunucu isteğinizi yerine getirirken ciddi sorunlar yaşadı. Sorunu düzeltmek "
+"için\n"
+"eğitimli maymunlarımızı gönderdik.\n"
 
 #: html/authors.html:4 html/authors.html:7
 msgid "Wammu and Gammu Authors"
-msgstr ""
+msgstr "Wammu ve Gammu Yazarları"
 
 #: html/authors.html:10
 msgid ""
@@ -81,6 +91,9 @@ msgid ""
 "Lot of people contributed to Gammu, python-gammu and Wammu in the past. You\n"
 "can find the most visible here.\n"
 msgstr ""
+"\n"
+"Geçmişte pek çok kişi Gammu, python-gammu ve Wammu'ya katkıda bulundu. En\n"
+"görünür olanları burada bulabilirsiniz.\n"
 
 #: html/authors.html:19
 msgid ""
