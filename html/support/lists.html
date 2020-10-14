@@ -5,37 +5,10 @@
 
 {% block content %}
 
-<h2>{% trans "Mailing lists and forums for Wammu and Gammu" %}</h2>
+<h2>{% trans "Discussion forum for Gammu and Wammu" %}</h2>
 
 <p>
-{% blocktrans %}
-Mailing lists are the main communication place for the community. Before
-asking questions there, you should search in the <a
-href="https://dir.gmane.org/gmane.linux.drivers.gammu">archives</a> if somebody
-did not already solve similar issue. It sometimes happen that some version has
-well known problems which was faced by many users.
-{% endblocktrans %}
-</p>
-
-<p>
-{% blocktrans %}
-To post a message to the <a
-href="https://lists.sourceforge.net/lists/listinfo/gammu-users">mailing
-list</a>, you need to be subscribed. While posting a message, please try to
-describe well your problem (basically you should follow same rules as when <a
-href="/support/bugs/">reporting a bug</a>), avoid sending HTML mails and do
-proper quoting of replies, so that it is easy for others to follow the
-discussion.
-{% endblocktrans %}
-</p>
-
-<p>
-{% blocktrans %}
-Sometimes you can not expect immediate answers on the mailing list, so please
-be patient. People might be on vacation or simply busy with other things.
-Reposting the same message again to the mailing list or directly to authors
-will usually not give you faster answer, it might just upset involved people.
-{% endblocktrans %}
+{% blocktrans with url="https://github.com/gammu/gammu/discussions" %}There is a <a href="{{ url }}">discussion forum on GitHub</a>, where you can discuss with other community members and share your ideas.{% endblocktrans %}
 </p>
 
 <h3>{% trans "Stack Overflow" %}</h3>
@@ -44,7 +17,11 @@ will usually not give you faster answer, it might just upset involved people.
 {% blocktrans with "https://stackoverflow.com/tags/gammu/info" as url %}You can also ask related questions on <a href="{{ url }}">Stack Overflow</a>.{% endblocktrans %}
 </p>
 
-<h3>{% trans "Other Mailing Lists" %}</h3>
+<h3>{% trans "Past Mailing Lists" %}</h3>
+
+<p>
+{% blocktrans with url="https://sourceforge.net/p/gammu/mailman/gammu-users/" %}There used to be mailing list in a past, you can check its <a href="{{ url }}">archives</a> for previous discussions.{% endblocktrans %}
+</p>
 
 <p>
 {% blocktrans %}
