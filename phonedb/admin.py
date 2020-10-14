@@ -5,8 +5,8 @@ class VendorAdmin(admin.ModelAdmin):
     prepopulated_fields = {
         'slug': ('name', )
     }
-    list_display = ('name', 'url', 'slug', 'tuxmobil')
-    search_fields = ['name', 'url', 'slug', 'tuxmobil']
+    list_display = ('name', 'url', 'slug')
+    search_fields = ['name', 'url', 'slug']
 
 admin.site.register(Vendor, VendorAdmin)
 

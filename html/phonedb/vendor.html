@@ -20,15 +20,6 @@
 {% trans "Website" %}: <a href="{{ vendor.url }}">{{ vendor.url }}</a>
 </p>
 
-{% if vendor.tuxmobil %}
-<p>
-{% blocktrans with vendor.tuxmobil as tuxurl %}
-Information about phones from this manufacturer is also available on <a
-href="http://tuxmobil.org/phones_survey_{{ tuxurl }}.html">TuxMobil</a>.
-{% endblocktrans %}
-</p>
-{% endif %}
-
 <p>
 {% if phones.object_list %}
 {% blocktrans count phones.paginator.count as count %}

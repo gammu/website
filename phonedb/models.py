@@ -48,7 +48,6 @@ class Vendor(models.Model):
     name = models.CharField(max_length = 250, unique=True)
     url = models.URLField(max_length = 250)
     slug = models.SlugField(unique = True)
-    tuxmobil = models.SlugField(null = True, blank = True)
 
     class Meta(object):
         ordering = ['name']
