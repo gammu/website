@@ -7,9 +7,9 @@
 <h2>{% trans "Wammu and Gammu Documentation" %}</h2>
 
 <p>
-{% blocktrans %}
+{% blocktrans with url="https://docs.gammu.org/" %}
 The best user documentation for Gammu comes in <strong>
-<a href="/docs/manual/">The Gammu Manual</a></strong>. It covers all aspects from
+<a href="{{ url }}/">The Gammu Manual</a></strong>. It covers all aspects from
 installing Gammu, configuring it, running the programs up to SMSD
 documentation and C or Python API.
 {% endblocktrans %}
@@ -18,8 +18,8 @@ documentation and C or Python API.
 <p>{% blocktrans %}You can also download documentation in PDF:{% endblocktrans %}</p>
 
 <ul>
-<li><a href="/docs/pdf/gammu.pdf">{% trans "Gammu Manual" %}</a></li>
-<li><a href="/docs/pdf/smsd.pdf">{% trans "Gammu SMSD Daemon Manual" %}</a></li>
+<li><a href="https://docs.gammu.org/gammu.pdf">{% trans "Gammu Manual" %}</a></li>
+<li><a href="https://docs.gammu.org/smsd.pdf">{% trans "Gammu SMSD Daemon Manual" %}</a></li>
 </ul>
 
 <p>
@@ -31,9 +31,9 @@ Gammu and different phone models.
 </p>
 
 <p>
-{% blocktrans %}
+{% blocktrans with url="https://docs.gammu.org/" %}
 If you still have some questions, please check
-<a href="/docs/manual/faq/"><strong>Frequently Asked Questions</strong></a> before
+<a href="{{ url }}/faq"><strong>Frequently Asked Questions</strong></a> before
 asking on the <a href="/support/lists/">mailing list</a>.
 {% endblocktrans %}
 </p>
@@ -41,20 +41,20 @@ asking on the <a href="/support/lists/">mailing list</a>.
 <h3>{% trans "Developer Documentation" %}</h3>
 
 <p>
-{% blocktrans %}
+{% blocktrans with url="https://docs.gammu.org/" %}
 The developer documentation is included in <strong>
-<a href="/docs/manual/">The Gammu Manual</a></strong>. You can find there
-documentation for <strong><a href="/docs/manual/python/">Python API</a></strong>,
-<strong><a href="/docs/manual/c/">libGammu C API</a></strong> or
-<strong><a href="/docs/manual/internal/">internal API</a></strong>.
+<a href="{{ url }}">The Gammu Manual</a></strong>. You can find there
+documentation for <strong><a href="{{ url }}python/">Python API</a></strong>,
+<strong><a href="{{ url }}c/">libGammu C API</a></strong> or
+<strong><a href="{{ url }}internal/">internal API</a></strong>.
 {% endblocktrans %}
 </p>
 
 <p>
-{% blocktrans %}
+{% blocktrans with url="https://docs.gammu.org/" %}
 As a developer, you might be also interested what is planned to happen in
-the next Gammu and Wammu releases, you can find this information in the 
-<a href="/docs/manual/project/roadmap.html">roadmap</a>.
+the next Gammu and Wammu releases, you can find this information in the
+<a href="{{ url }}project/roadmap.html">roadmap</a>.
 {% endblocktrans %}
 </p>
 
