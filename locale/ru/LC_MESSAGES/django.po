@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2020-10-14 09:02+0200\n"
-"PO-Revision-Date: 2020-04-24 06:29+0000\n"
+"PO-Revision-Date: 2020-11-29 09:29+0000\n"
 "Last-Translator: Artem <KovalevArtem.ru@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gammu/website/ru/"
 ">\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.0.2-dev\n"
+"X-Generator: Weblate 4.4-dev\n"
 
 #: downloads/models.py:31
 msgid "Source code"
@@ -2195,26 +2195,15 @@ msgid "Gammu Phone Database "
 msgstr "База телефонов Gammu "
 
 #: html/phonedb/index.html:13
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "This page tries to collect list of phones supported by <a href=\"/"
-#| "libgammu/\">Gammu library</a>. To add model browse to manufacturer page, "
-#| "look whether model hasn't been entered yet and enter new model.\n"
-#| "You can find more information about mobile phones on <a\n"
-#| "href=\"http://tuxmobil.org/phones_linux.html\">TuxMobil</a>.\n"
 msgid ""
 "This page tries to collect list of phones supported by <a href=\"/libgammu/"
 "\">Gammu library</a>. To add model browse to manufacturer page, look whether "
 "model hasn't been entered yet and enter new model."
 msgstr ""
-"\n"
 "Эта страница - попытка собрать список телефонов, поддерживаемых <a href=\"/"
 "libgammu/\">библиотекой Gammu</a>. Чтобы добавить модель, перейдите на "
 "страницу производителя и посмотрите, не была ли модель уже добавлена, и "
-"введите новую модель.\n"
-"Дополнительную информацию о мобильных телефонах можно найти на странице <a\n"
-"href=\"http://tuxmobil.org/phones_linux.html\">TuxMobil</a>.\n"
+"введите новую модель."
 
 #: html/phonedb/index.html:16
 #, fuzzy
