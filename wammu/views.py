@@ -39,7 +39,7 @@ def get_random_screenshot():
 
 def index(request):
     news = Entry.objects.order_by('-pub_date')[:settings.NEWS_ON_MAIN_PAGE]
-    screenshot = get_random_screenshots()
+    screenshot = get_random_screenshot()
     phones = Phone.objects.filter(state__in = ['approved', 'draft']).order_by('-created')[:settings.PHONES_ON_MAIN_PAGE]
     return render(request, 'index.html', {
         'news': news,
