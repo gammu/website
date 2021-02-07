@@ -48,6 +48,7 @@ class Entry(models.Model):
     pub_date = models.DateTimeField(
         u'Date posted',
         default=datetime.datetime.today,
+        db_index=True,
         )
     slug = models.SlugField(
         unique_for_date = 'pub_date',

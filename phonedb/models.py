@@ -103,7 +103,7 @@ class Phone(models.Model):
     author_email = models.EmailField(max_length = 250, blank = True, help_text = ugettext_lazy('Please choose how will be email handled in next field.'))
     email_garble = models.CharField(max_length = 100, choices = GARBLE_CHOICES, default = 'atdot')
     state = models.CharField(max_length = 100, choices = STATE_CHOICES, db_index = True, default = 'draft')
-    created = models.DateTimeField(auto_now_add = True)
+    created = models.DateTimeField(auto_now_add = True, db_index=True)
     address = models.CharField(max_length = 100, blank = True)
     hostname = models.CharField(max_length = 100, blank = True)
 
