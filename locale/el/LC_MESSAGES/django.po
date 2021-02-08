@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Wammu website\n"
 "Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2020-10-14 09:02+0200\n"
-"PO-Revision-Date: 2021-02-05 17:42+0000\n"
+"PO-Revision-Date: 2021-02-09 23:50+0000\n"
 "Last-Translator: Michalis <michalisntovas@yahoo.gr>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/gammu/website/el/>"
 "\n"
@@ -101,7 +101,7 @@ msgstr "Ιστότοπος"
 
 #: html/authors.html:34
 msgid "E-mail"
-msgstr ""
+msgstr "Ηλεκτρονικό ταχυδρομείο"
 
 #: html/authors.html:41
 msgid ""
@@ -1548,20 +1548,20 @@ msgstr ""
 
 #: html/links/index.html:22
 msgid "Website:"
-msgstr "Ιστοσελίδα:"
+msgstr "Ιστότοπος:"
 
 #: html/news/contrib_index.html:4 html/news/contrib_index.html:6
 msgid "Third Party News"
-msgstr ""
+msgstr "Νέα τρίτων"
 
 #: html/news/entry.html:4 html/news/index.html:4 html/news/index.html:9
 #: news/feeds.py:16
 msgid "Wammu and Gammu News"
-msgstr ""
+msgstr "Νέα Wammu και Gammu"
 
 #: html/news/gammu_index.html:4 html/news/gammu_index.html:6
 msgid "Gammu News"
-msgstr ""
+msgstr "Νέα Gammu"
 
 #: html/news/index.html:7 html/phonedb/index.html:56
 msgid "RSS"
@@ -1576,11 +1576,11 @@ msgstr ""
 
 #: html/news/python-gammu_index.html:4 html/news/python-gammu_index.html:6
 msgid "python-gammu news"
-msgstr ""
+msgstr "νέα python-gammu"
 
 #: html/news/wammu_index.html:4 html/news/wammu_index.html:6
 msgid "Wammu News"
-msgstr ""
+msgstr "Νέα Wammu"
 
 #: html/phonedb/body.html:3
 msgid "Supported Features"
@@ -1738,15 +1738,15 @@ msgstr ""
 
 #: html/phonedb/phone.html:17
 msgid "Edit"
-msgstr "Διόρθωση"
+msgstr "Επεξεργασία"
 
 #: html/phonedb/phone.html:19
 msgid "Delete"
-msgstr ""
+msgstr "Διαγραφή"
 
 #: html/phonedb/phone.html:22
 msgid "Approve"
-msgstr ""
+msgstr "Έγκριση"
 
 #: html/phonedb/phone.html:30
 msgid ""
