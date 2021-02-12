@@ -19,7 +19,10 @@ from pygooglechart import Axis, Chart, SimpleLineChart
 from phonedb.forms import NewForm, SearchForm
 from phonedb.models import GARBLE_CHOICES, Connection, Feature, Phone, Vendor
 
-# Create your views here.
+# API responses, need to stay for Wammu compatibility
+INVALID = "Invalid values: %s"
+OKAY = "Entry created, id=%d, url=/gammu/phonedb/%s/%d"
+OKAY_V2 = "Entry created, id=%d, url=%s"
 
 
 def get_chart_url():
@@ -406,9 +409,6 @@ def create_wammu(request):
     """
     Compatibility interface for Wammu.
     """
-    INVALID = "Invalid values: %s"
-    OKAY = "Entry created, id=%d, url=/gammu/phonedb/%s/%d"
-    OKAY_V2 = "Entry created, id=%d, url=%s"
     invalid = []
     version = 1
     response = HttpResponse(content_type="text/plain")
