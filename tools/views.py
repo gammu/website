@@ -116,8 +116,7 @@ def countries(request):
 def networks(request):
     if "country" in request.GET:
         country = request.GET["country"]
-        l = len(country)
-        networks = [x for x in gammu.GSMNetworks.items() if x[0][:l] == country]
+        networks = [x for x in gammu.GSMNetworks.items() if x[0].startswith(country)]
     else:
         networks = gammu.GSMNetworks.items()
     return render(
