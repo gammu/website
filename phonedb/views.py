@@ -289,7 +289,7 @@ def vendor(request, vendorname):
 def phone_redirect(request):
     try:
         pk = int(request.GET["id"])
-    except:
+    except Exception:
         raise Http404("No such entry!")
     phone = get_object_or_404(Phone, pk=pk)
     return HttpResponseRedirect(phone.get_absolute_url())
@@ -411,53 +411,53 @@ def create_wammu(request):  # noqa: C901
 
     try:
         phone.vendor = Vendor.objects.get(pk=int(request.POST["manufacturer"]))
-    except:
+    except Exception:
         invalid.append("vendor")
 
     try:
         phone.name = request.POST["name"]
         if len(phone.name) == 0:
             invalid.append("name")
-    except:
+    except Exception:
         invalid.append("name")
 
     try:
         phone.connection = Connection.objects.get(name=request.POST["connection"])
-    except:
+    except Exception:
         invalid.append("connection")
 
     try:
         phone.model = request.POST["model"]
         if phone.model == "auto":
             phone.model = ""
-    except:
+    except Exception:
         invalid.append("model")
 
     try:
         phone.note = request.POST["note"]
-    except:
+    except Exception:
         invalid.append("note")
 
     try:
         phone.author_name = request.POST["author_name"]
-    except:
+    except Exception:
         invalid.append("author_name")
 
     try:
         phone.author_email = request.POST["author_email"]
-    except:
+    except Exception:
         invalid.append("author_email")
 
     try:
         phone.email_garble = request.POST["email_garble"]
         if phone.email_garble not in (x[0] for x in GARBLE_CHOICES):
             invalid.append("email_garble")
-    except:
+    except Exception:
         invalid.append("email_garble")
 
     try:
         phone.gammu_version = request.POST["gammu_version"]
-    except:
+    except Exception:
         invalid.append("gammu_version")
 
     try:
@@ -541,23 +541,23 @@ def create(request, vendorname=None):  # noqa: C901
             else:
                 vendor = Vendor.objects.get(slug=request.GET["vendor"])
             initial["vendor"] = vendor.id
-        except:
+        except Exception:
             pass
         try:
             initial["name"] = request.GET["name"]
-        except:
+        except Exception:
             pass
         try:
             initial["email_garble"] = request.COOKIES["phonedb_garble"]
-        except:
+        except Exception:
             pass
         try:
             initial["author_name"] = request.COOKIES["phonedb_author"]
-        except:
+        except Exception:
             pass
         try:
             initial["author_email"] = request.COOKIES["phonedb_email"]
-        except:
+        except Exception:
             pass
 
         form = NewForm(initial=initial)
