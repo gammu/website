@@ -19,13 +19,17 @@ def entry(request, slug, day=None, month=None, year=None):
 
 
 def index(request):
-    objects = Entry.objects.order_by("-pub_date")
+    objects = Entry.objects.order_by("-pub_date").prefetch_related("author")
     return render_news(request, objects, "news/index.html")
 
 
 def category(request, slug):
     category = get_object_or_404(Category, slug=slug)
-    objects = Entry.objects.filter(categories=category).order_by("-pub_date")
+    objects = (
+        Entry.objects.filter(categories=category)
+        .order_by("-pub_date")
+        .prefetch_related("author")
+    )
     return render_news(request, objects, "news/%s_index.html" % slug)
 
 

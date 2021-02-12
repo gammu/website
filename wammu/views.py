@@ -41,7 +41,9 @@ def get_random_screenshot():
 
 
 def index(request):
-    news = Entry.objects.order_by("-pub_date")[: settings.NEWS_ON_MAIN_PAGE]
+    news = Entry.objects.order_by("-pub_date").prefetch_related("author")[
+        : settings.NEWS_ON_MAIN_PAGE
+    ]
     screenshot = get_random_screenshot()
     phones = Phone.objects.filter(state__in=["approved", "draft"]).order_by("-created")[
         : settings.PHONES_ON_MAIN_PAGE
@@ -64,9 +66,11 @@ def support(request):
 
 def wammu(request):
     category = Category.objects.get(slug="wammu")
-    news = Entry.objects.filter(categories=category).order_by("-pub_date")[
-        : settings.NEWS_ON_PRODUCT_PAGE
-    ]
+    news = (
+        Entry.objects.filter(categories=category)
+        .order_by("-pub_date")
+        .prefetch_related("author")[: settings.NEWS_ON_PRODUCT_PAGE]
+    )
     context = process_version_feedback(request)
     context["news"] = news
     context["news_category"] = category
@@ -75,9 +79,11 @@ def wammu(request):
 
 def smsd(request):
     category = Category.objects.get(slug="gammu")
-    news = Entry.objects.filter(categories=category).order_by("-pub_date")[
-        : settings.NEWS_ON_PRODUCT_PAGE
-    ]
+    news = (
+        Entry.objects.filter(categories=category)
+        .order_by("-pub_date")
+        .prefetch_related("author")[: settings.NEWS_ON_PRODUCT_PAGE]
+    )
     return render(
         request,
         "smsd.html",
@@ -90,9 +96,11 @@ def smsd(request):
 
 def gammu(request):
     category = Category.objects.get(slug="gammu")
-    news = Entry.objects.filter(categories=category).order_by("-pub_date")[
-        : settings.NEWS_ON_PRODUCT_PAGE
-    ]
+    news = (
+        Entry.objects.filter(categories=category)
+        .order_by("-pub_date")
+        .prefetch_related("author")[: settings.NEWS_ON_PRODUCT_PAGE]
+    )
     return render(
         request,
         "gammu.html",
@@ -120,9 +128,11 @@ def pygammu(request):
 
 def libgammu(request):
     category = Category.objects.get(slug="gammu")
-    news = Entry.objects.filter(categories=category).order_by("-pub_date")[
-        : settings.NEWS_ON_PRODUCT_PAGE
-    ]
+    news = (
+        Entry.objects.filter(categories=category)
+        .order_by("-pub_date")
+        .prefetch_related("author")[: settings.NEWS_ON_PRODUCT_PAGE]
+    )
     return render(
         request,
         "libgammu.html",
