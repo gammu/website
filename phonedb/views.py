@@ -405,7 +405,7 @@ def phones_csv(request):
 
 
 @csrf_exempt
-def create_wammu(request):
+def create_wammu(request):  # noqa: C901
     """
     Compatibility interface for Wammu.
     """
@@ -500,7 +500,7 @@ def create_wammu(request):
     return response
 
 
-def create(request, vendorname=None):
+def create(request, vendorname=None):  # noqa: C901
     # Check if we did not receive legacy request
     if (
         request.method == "POST"
