@@ -3,12 +3,12 @@ from django.contrib.syndication.views import Feed
 from django.utils.feedgenerator import Atom1Feed
 from django.utils.translation import ugettext as _
 
-from news.models import Category, Entry
+from news.models import Entry
 
 
 class RssNewsFeed(Feed):
     link = "/news/"
-    copyright = "Copyright © 2003 - 2012 Michal Čihař"
+    copyright = "Copyright © 2003 - 2021 Michal Čihař"
     item_copyright = copyright
     title_template = "feeds/news_title.html"
     description_template = "feeds/news_description.html"
