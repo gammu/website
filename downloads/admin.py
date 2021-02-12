@@ -1,5 +1,6 @@
-from downloads.models import Download, Release
 from django.contrib import admin
+
+from downloads.models import Download, Release
 
 admin.site.register(Download)
 

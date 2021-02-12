@@ -93,12 +93,11 @@ Tested with Gammu {{ version }}.
 <h3>{% trans "Similar Phones" %}</h3>
 <ul>
 {% for phone in related %}
-<li><a href="{{ phone.get_absolute_url}}">{{ phone.vendor.name }} 
-{{ phone.name }} 
+<li><a href="{{ phone.get_absolute_url}}">{{ phone.vendor.name }}
+{{ phone.name }}
 ({{ phone.connection.name }})</a></li>
 {% endfor %}
 </ul>
 {% endif %}
 
 {% endblock %}
-

@@ -4,11 +4,11 @@ os: linux
 python:
   - "3.7"
   - "3.8"
-install: 
+install:
   # Get newer pip and whell for binary caching support
   - pip install --upgrade pip wheel
   - pip install -r requirements-test.txt
-script: 
+script:
   - ./manage.py check
   - coverage run --source=. ./manage.py test
 after_success:
@@ -16,6 +16,6 @@ after_success:
 addons:
   apt:
     packages:
-    - libgammu-dev
+      - libgammu-dev
 cache:
   pip: true

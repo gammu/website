@@ -1,25 +1,26 @@
-# -*- coding: UTF-8 -*-
+from django.conf import settings
 from django.contrib.syndication.views import Feed
-from news.models import Entry, Category
 from django.utils.feedgenerator import Atom1Feed
 from django.utils.translation import ugettext as _
-from django.conf import settings
+
+from news.models import Category, Entry
+
 
 class RssNewsFeed(Feed):
-    link = '/news/'
-    copyright = 'Copyright © 2003 - 2012 Michal Čihař'
+    link = "/news/"
+    copyright = "Copyright © 2003 - 2012 Michal Čihař"
     item_copyright = copyright
-    title_template ='feeds/news_title.html'
-    description_template = 'feeds/news_description.html'
+    title_template = "feeds/news_title.html"
+    description_template = "feeds/news_description.html"
 
     def title(self):
-        return _('Wammu and Gammu News')
+        return _("Wammu and Gammu News")
 
     def description(self):
-        return _('Updates about Wammu and Gammu programs.')
+        return _("Updates about Wammu and Gammu programs.")
 
     def items(self):
-        return Entry.objects.order_by('-pub_date')[:settings.NEWS_IN_RSS]
+        return Entry.objects.order_by("-pub_date")[: settings.NEWS_IN_RSS]
 
     def item_author_name(self, obj):
         return obj.author.get_full_name()
@@ -33,7 +34,7 @@ class RssNewsFeed(Feed):
     def item_pubdate(self, obj):
         return obj.pub_date
 
+
 class AtomNewsFeed(RssNewsFeed):
     feed_type = Atom1Feed
     subtitle = RssNewsFeed.description
-

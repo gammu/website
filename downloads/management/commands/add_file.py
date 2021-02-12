@@ -1,34 +1,38 @@
-from django.core.management.base import BaseCommand, CommandError
 import hashlib
 import os
-from downloads.models import Release, Download
+
+from django.core.management.base import BaseCommand, CommandError
+
+from downloads.models import Download, Release
 
 
 class Command(BaseCommand):
-    help = 'adds file to the release'
+    help = "adds file to the release"
 
     def add_arguments(self, parser):
-        super(Command, self).add_arguments(parser)
-        parser.add_argument('base')
-        parser.add_argument('program')
-        parser.add_argument('version')
-        parser.add_argument('type')
-        parser.add_argument('file', nargs='+')
+        super().add_arguments(parser)
+        parser.add_argument("base")
+        parser.add_argument("program")
+        parser.add_argument("version")
+        parser.add_argument("type")
+        parser.add_argument("file", nargs="+")
 
     def handle(self, *args, **options):
 
-        release = Release.objects.get(program=options['program'], version=options['version'])
+        release = Release.objects.get(
+            program=options["program"], version=options["version"]
+        )
 
-        dlpath = options['base']
+        dlpath = options["base"]
 
-        while dlpath[-1] == '/':
+        while dlpath[-1] == "/":
             dlpath = dlpath[:-1]
 
-        for f in options['file']:
+        for f in options["file"]:
             self.stdout.write("Adding %s..." % f)
             filename = os.path.basename(f)
 
-            with open(f, 'rb') as handle:
+            with open(f, "rb") as handle:
                 data = handle.read()
 
             dl = Download()
@@ -48,8 +52,8 @@ class Command(BaseCommand):
 
             dl.size = len(data)
 
-            dl.platform = options['type']
+            dl.platform = options["type"]
 
-            dl.location = '%s/%s' % (dlpath, filename)
+            dl.location = f"{dlpath}/{filename}"
 
             dl.save()

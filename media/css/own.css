@@ -1,59 +1,60 @@
 .navbar-brand > img {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
 }
 #footer li {
-    font-size: small;
-    list-style: none;
-    float: left;
-	padding: 1em;
-    color: gray;
-    border: none;
+  font-size: small;
+  list-style: none;
+  float: left;
+  padding: 1em;
+  color: gray;
+  border: none;
 }
 .languages {
-    padding: .3em;
-    background: white;
-    display: none;
-    position: absolute;
-    width: 25em;
-    background-image: linear-gradient(to bottom, #FFF 0px, #F8F8F8 100%);
-    background-repeat: repeat-x;
-    border-radius: 4px;
-    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15) inset, 0px 1px 5px rgba(0, 0, 0, 0.075);
+  padding: 0.3em;
+  background: white;
+  display: none;
+  position: absolute;
+  width: 25em;
+  background-image: linear-gradient(to bottom, #fff 0px, #f8f8f8 100%);
+  background-repeat: repeat-x;
+  border-radius: 4px;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15) inset,
+    0px 1px 5px rgba(0, 0, 0, 0.075);
 }
 .choice {
-    -moz-column-count:2; /* Firefox */
-    -ms-column-count:2; /* MSIE */
-    -webkit-column-count:2; /* Safari and Chrome */
-    column-count:2;
+  -moz-column-count: 2; /* Firefox */
+  -ms-column-count: 2; /* MSIE */
+  -webkit-column-count: 2; /* Safari and Chrome */
+  column-count: 2;
 }
 .languages a {
-    display: block;
-    padding: .2em;
-    text-align: center;
+  display: block;
+  padding: 0.2em;
+  text-align: center;
 }
 .navbar-right {
-    margin-right: 0;
+  margin-right: 0;
 }
 .responsive-ad {
-    height: 6em;
-    margin: .5em 0 0.5em 0;
+  height: 6em;
+  margin: 0.5em 0 0.5em 0;
 }
 
 div.screenshot {
-    float: left;
-    margin: 0.7em;
-    padding: 0.2em;
+  float: left;
+  margin: 0.7em;
+  padding: 0.2em;
 }
 
 div.screenshot img {
-    max-height: 150px;
-    overflow: hidden;
+  max-height: 150px;
+  overflow: hidden;
 }
 .sponsors {
-    font-size: small;
+  font-size: small;
 }
 .breadcrumb .action:before {
-    content: "";
+  content: "";
 }

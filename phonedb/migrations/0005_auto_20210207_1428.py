@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('phonedb', '0004_remove_vendor_tuxmobil'),
+        ("phonedb", "0004_remove_vendor_tuxmobil"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='phone',
-            name='created',
+            model_name="phone",
+            name="created",
             field=models.DateTimeField(auto_now_add=True, db_index=True),
         ),
     ]

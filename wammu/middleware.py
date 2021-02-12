@@ -2,7 +2,7 @@ from django.contrib.sites.models import Site
 from django.utils import translation
 
 
-class SiteLocaleMiddleware(object):
+class SiteLocaleMiddleware:
     def __init__(self, get_response):
         self.get_response = get_response
         # One-time configuration and initialization.
@@ -24,13 +24,13 @@ class SiteLocaleMiddleware(object):
         try:
             current_site = Site.objects.get_current(request)
 
-            lang = current_site.domain.split('.')[0]
-            if lang == 'wammu':
-                translation.activate('en')
+            lang = current_site.domain.split(".")[0]
+            if lang == "wammu":
+                translation.activate("en")
             elif len(lang) == 2 or len(lang) == 5:
                 translation.activate(lang)
                 request.LANGUAGE_CODE = translation.get_language()
             else:
-                translation.activate('en')
+                translation.activate("en")
         except Site.DoesNotExist:
-            translation.activate('en')
+            translation.activate("en")
