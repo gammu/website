@@ -147,9 +147,13 @@ def index(request):
         .order_by("name")
         .annotate(models_count=Count("phone"))
     )
-    phones = Phone.objects.filter(state__in=["approved", "draft"]).order_by("-created")[
-        : settings.PHONES_ON_INDEX
-    ]
+    phones = (
+        Phone.objects.filter(state__in=["approved", "draft"])
+        .order_by("-created")
+        .prefetch_related("vendor", "features", "connection")[
+            : settings.PHONES_ON_INDEX
+        ]
+    )
     return render(
         request,
         "phonedb/index.html",
@@ -174,7 +178,9 @@ def search(request, featurename=None):
         query = form.cleaned_data["q"]
         features = list(set(form.cleaned_data["feature"]))
 
-        phones = Phone.objects.exclude(state="deleted")
+        phones = Phone.objects.exclude(state="deleted").prefetch_related(
+            "vendor", "features", "connection"
+        )
         urlparams = []
 
         # Filter for features
@@ -193,7 +199,9 @@ def search(request, featurename=None):
                     Q(vendor__name__icontains=part) | Q(name__icontains=part)
                 )
     else:
-        phones = Phone.objects.all()
+        phones = Phone.objects.all().prefetch_related(
+            "vendor", "features", "connection"
+        )
         urlparams = []
 
     # Sort results
@@ -228,7 +236,9 @@ def search(request, featurename=None):
 
 @login_required
 def review(request):
-    phones = Phone.objects.filter(state="draft")
+    phones = Phone.objects.filter(state="draft").prefetch_related(
+        "vendor", "features", "connection"
+    )
 
     # Sort results
     phones = phones.order_by("vendor__name", "name")
@@ -260,9 +270,11 @@ def review(request):
 
 def vendor(request, vendorname):
     vendor = get_object_or_404(Vendor, slug=vendorname)
-    phones = Phone.objects.filter(
-        vendor=vendor, state__in=("approved", "draft")
-    ).order_by("name")
+    phones = (
+        Phone.objects.filter(vendor=vendor, state__in=("approved", "draft"))
+        .order_by("name")
+        .prefetch_related("vendor", "features", "connection")
+    )
 
     paginator = Paginator(phones, settings.PHONES_PER_PAGE, orphans=5)
     try:
@@ -307,6 +319,7 @@ def phone(request, vendorname, id):
         Phone.objects.filter(vendor=vendor, name__icontains=phone.name)
         .exclude(id=id)
         .exclude(state="deleted")
+        .prefetch_related("vendor", "features", "connection")
     )
     return render(
         request,
@@ -355,7 +368,11 @@ def phones_csv(request):
     response["Content-Disposition"] = "attachment; filename=gammu-phones.csv"
 
     writer = csv.writer(response)
-    phones = Phone.objects.filter(state__in=["approved", "draft"]).order_by("id")
+    phones = (
+        Phone.objects.filter(state__in=["approved", "draft"])
+        .order_by("id")
+        .prefetch_related("vendor", "features", "connection")
+    )
     writer.writerow(
         [
             "Link",
