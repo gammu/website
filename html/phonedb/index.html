@@ -43,7 +43,7 @@ phone to get some functionality, newer ones do not have support so far.
 <ul class="nav nav-pills">
 {% for vendor in vendors %}
 <li><a class="vendor list-group-item" href="{{ vendor.get_absolute_url }}">{{ vendor.name }}
-<span class="badge">{{ vendor.get_models_count }}</span>
+<span class="badge">{{ vendor.models_count }}</span>
 </a></li>
 {% endfor %}
 </ul>

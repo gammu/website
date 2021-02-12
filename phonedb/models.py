@@ -61,11 +61,6 @@ class Vendor(models.Model):
     def get_absolute_url(self):
         return reverse("phonedb-vendor", kwargs={"vendorname": self.slug})
 
-    def get_models_count(self):
-        return Phone.objects.filter(
-            vendor=self, state__in=["approved", "draft"]
-        ).count()
-
 
 class Feature(models.Model):
     name = models.CharField(max_length=250, unique=True)

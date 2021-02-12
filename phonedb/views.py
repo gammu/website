@@ -9,7 +9,7 @@ from django.contrib.sites.models import Site
 from django.core.cache import cache
 from django.core.exceptions import ValidationError
 from django.core.paginator import EmptyPage, InvalidPage, Paginator
-from django.db.models import Q
+from django.db.models import Count, Q
 from django.http import Http404, HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
 from django.utils.translation import ugettext as _
@@ -142,7 +142,11 @@ def get_feeds():
 
 
 def index(request):
-    vendors = Vendor.objects.all().order_by("name")
+    vendors = (
+        Vendor.objects.filter(phone__state__in=["approved", "draft"])
+        .order_by("name")
+        .annotate(models_count=Count("phone"))
+    )
     phones = Phone.objects.filter(state__in=["approved", "draft"]).order_by("-created")[
         : settings.PHONES_ON_INDEX
     ]
