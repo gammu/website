@@ -462,7 +462,7 @@ def create_wammu(request):  # noqa: C901
 
     try:
         phone.email_garble = request.POST["email_garble"]
-        if not phone.email_garble in [x[0] for x in GARBLE_CHOICES]:
+        if phone.email_garble not in (x[0] for x in GARBLE_CHOICES):
             invalid.append("email_garble")
     except:
         invalid.append("email_garble")

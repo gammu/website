@@ -11,7 +11,7 @@ from downloads.models import (
 
 
 def detail(request, program):
-    if not program in [x[0] for x in PROGRAM_CHOICES]:
+    if program not in (x[0] for x in PROGRAM_CHOICES):
         raise Http404("No such program %s." % program)
 
     downloads = get_current_downloads(program)
@@ -64,7 +64,7 @@ def download(request):
 
 
 def doap(request, program):
-    if not program in [x[0] for x in PROGRAM_CHOICES]:
+    if program not in (x[0] for x in PROGRAM_CHOICES):
         raise Http404("No such program %s." % program)
 
     downloads = get_current_downloads(program)
@@ -81,7 +81,7 @@ def doap(request, program):
 
 
 def pad(request, program):
-    if not program in [x[0] for x in PROGRAM_CHOICES]:
+    if program not in (x[0] for x in PROGRAM_CHOICES):
         raise Http404("No such program %s." % program)
 
     downloads = get_current_downloads(program)
