@@ -31,9 +31,6 @@ def get_chart_url():
     if url is not None:
         return url
     enddate = datetime.datetime.now()
-    # This works badly, we will rather render only chart for month after
-    # it has finished
-    # + datetime.timedelta(days=30)
     endyear = enddate.year
     endmonthlast = enddate.month
     endmonth = 12
@@ -78,18 +75,10 @@ def get_chart_url():
             alls.append(all_val)
             dates.append("%d-%02d" % (year, month))
 
-    # print dates
-    # print unsupported
-    # print supported
-    # print totals
-    # print alls
-
     max_y = int(((max(alls) / 100) + 1) * 100)
 
     chart = SimpleLineChart(800, 300, y_range=[0, max_y])
 
-    #    chart.fill_solid(chart.BACKGROUND, 'ffd480')
-    #    chart.fill_solid(chart.CHART, 'ffd480')
     # Chart data
     chart.add_data(supported)
     chart.add_data(totals)
@@ -100,7 +89,6 @@ def get_chart_url():
     # Set the line colour to blue
     chart.set_colours(["00FF00", "FF0000", "0000FF", "00000000"])
 
-    # chart.add_fill_range('76A4FB', 2, 3)
     # Set the vertical stripes
     month_stripes = 3.0
     chart.fill_linear_stripes(

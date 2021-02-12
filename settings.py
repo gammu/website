@@ -6,10 +6,7 @@ from django.http import Http404
 
 DEBUG = True
 
-ADMINS = (
-    ("Michal Čihař", "michal@cihar.com"),
-    # ('Your Name', 'your_email@domain.com'),
-)
+ADMINS = (("Michal Čihař", "michal@cihar.com"),)
 
 MANAGERS = ADMINS
 
@@ -63,29 +60,24 @@ USE_I18N = True
 USE_L10N = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
-# Example: "/home/media/media.lawrence.com/media/"
 MEDIA_ROOT = "%s/media/" % WEB_ROOT
 
 HTML_ROOT = "%s/html/" % WEB_ROOT
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
-# Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
 MEDIA_URL = "/media/"
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
-# Example: "/home/media/media.lawrence.com/static/"
 STATIC_ROOT = ""
 
 # URL prefix for static files.
-# Example: "http://media.lawrence.com/static/"
 STATIC_URL = "/static/"
 
 # URL prefix for admin static files -- CSS, JavaScript and images.
 # Make sure to use a trailing slash.
-# Examples: "http://foo.com/static/admin/", "/static/admin/".
 ADMIN_MEDIA_PREFIX = "/static/admin/"
 
 # Additional locations of static files
