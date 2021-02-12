@@ -7,6 +7,7 @@ from django.conf import settings
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.contrib.sitemaps import GenericSitemap, Sitemap
+from django.urls import path
 from django.views.generic import RedirectView
 
 import donate.views
@@ -302,3 +303,7 @@ urlpatterns = [
     url(r"^cz/$", RedirectView.as_view(url="https://cs.wammu.eu/", permanent=True)),
     url(r"^es/$", RedirectView.as_view(url="https://es.wammu.eu/", permanent=True)),
 ]
+if settings.DEBUG and "debug_toolbar" in settings.INSTALLED_APPS:
+    import debug_toolbar
+
+    urlpatterns += [path("__debug__/", include(debug_toolbar.urls))]

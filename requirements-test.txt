@@ -1,3 +1,4 @@
 -r requirements.txt
 coverage
+django_debug_toolbar==3.2
 pre-commit==2.10.1

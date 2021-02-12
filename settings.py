@@ -160,6 +160,7 @@ INSTALLED_APPS = (
     "django.contrib.admindocs",
     "django.contrib.sitemaps",
     "django.contrib.sites",
+    "django.contrib.staticfiles",
     "django.contrib.messages",
     "crispy_forms",
     "news",
@@ -212,6 +213,7 @@ EMAIL_SUBJECT_PREFIX = "[wammu.eu] "
 
 ALLOWED_HOSTS = [
     "127.0.0.1",
+    "localhost",
     "wammu.eu",
     "cs.wammu.eu",
     "de.wammu.eu",
@@ -223,3 +225,8 @@ ALLOWED_HOSTS = [
 ]
 
 X_FRAME_OPTIONS = "DENY"
+
+if DEBUG:
+    INSTALLED_APPS += ("debug_toolbar",)
+    MIDDLEWARE.append("debug_toolbar.middleware.DebugToolbarMiddleware")
+    INTERNAL_IPS = ("127.0.0.1",)
