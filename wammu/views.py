@@ -1,16 +1,10 @@
-from random import randint
-
 from django.conf import settings
 from django.contrib.sites.models import Site
-from django.core.cache import cache
 from django.shortcuts import render
 
 from downloads.models import get_latest_releases
 from news.models import Category, Entry
 from phonedb.models import Phone
-from screenshots.models import Screenshot
-
-# Create your views here.
 
 
 def process_version_feedback(request):
@@ -28,23 +22,10 @@ def process_version_feedback(request):
     return result
 
 
-def get_random_screenshot():
-    cache_key = "wammu-featured-screenshots"
-    featured = Screenshot.objects.filter(featured=True)
-    num_screenshots = cache.get(cache_key)
-    if num_screenshots is None:
-        num_screenshots = featured.count()
-        cache.set(cache_key, num_screenshots, 24 * 3600)
-    if num_screenshots == 0:
-        return None
-    return featured[randint(0, num_screenshots - 1)]
-
-
 def index(request):
     news = Entry.objects.order_by("-pub_date").prefetch_related("author")[
         : settings.NEWS_ON_MAIN_PAGE
     ]
-    screenshot = get_random_screenshot()
     phones = Phone.objects.filter(state__in=["approved", "draft"]).order_by("-created")[
         : settings.PHONES_ON_MAIN_PAGE
     ]
@@ -53,7 +34,6 @@ def index(request):
         "index.html",
         {
             "news": news,
-            "screenshot": screenshot,
             "phones": phones,
         },
     )
