@@ -34,7 +34,7 @@ def pduencode(request):
                 msg["Number"] = form.cleaned_data["number"]
                 msg["Class"] = form.cleaned_data["cls"]
             # Encode PDU
-            pdu = enumerate([gammu.EncodePDU(e, "Submit").hex() for e in encoded])
+            pdu = enumerate(gammu.EncodePDU(e, "Submit").hex() for e in encoded)
 
     else:
         form = PDUEncodeForm()
