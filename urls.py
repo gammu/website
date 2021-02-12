@@ -5,6 +5,7 @@ import django.contrib.sitemaps.views
 import django.views.static
 from django.conf import settings
 from django.conf.urls import include, url
+from django.contrib import admin
 from django.contrib.sitemaps import GenericSitemap, Sitemap
 from django.views.generic import RedirectView
 
@@ -107,8 +108,6 @@ sitemaps = {
     "vendors": GenericSitemap(vendors_dict, priority=0.2, changefreq="monthly"),
     "pages": PagesSitemap(),
 }
-
-from django.contrib import admin
 
 admin.autodiscover()
 
