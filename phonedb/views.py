@@ -191,7 +191,7 @@ def search(request, featurename=None):
                 phones = phones.filter(features__name=feature)
 
         # Filter for query string
-        if query is not None:
+        if query:
             urlparams.append("q=%s" % query)
             query = query.strip()
             for part in query.split():
