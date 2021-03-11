@@ -25,10 +25,10 @@ OKAY = "Entry created, id=%d, url=/gammu/phonedb/%s/%d"
 OKAY_V2 = "Entry created, id=%d, url=%s"
 
 
-def get_chart_url():
+def get_chart_url(force=False):
     cache_key = "phonedb-chart-url-%s" % settings.LANGUAGE_CODE
     url = cache.get(cache_key)
-    if url is not None:
+    if url is not None and not force:
         return url
     enddate = datetime.datetime.now()
     endyear = enddate.year
@@ -118,7 +118,7 @@ def get_chart_url():
     chart.set_axis_labels(Axis.BOTTOM, years)
 
     url = chart.get_url().replace("http:", "https:")
-    cache.set(cache_key, url, 3600)
+    cache.set(cache_key, url, 3600 * 24)
     return url
 
 
