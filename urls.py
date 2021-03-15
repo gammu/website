@@ -30,7 +30,7 @@ news_dict = {
 }
 
 phones_dict = {
-    "queryset": Phone.objects.all().exclude(state="deleted"),
+    "queryset": Phone.objects.exclude(state="deleted").prefetch_related("vendor"),
     "date_field": "created",
 }
 
