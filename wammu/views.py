@@ -26,7 +26,7 @@ def index(request):
     news = Entry.objects.order_by("-pub_date").prefetch_related("author")[
         : settings.NEWS_ON_MAIN_PAGE
     ]
-    phones = Phone.objects.filter(state__in=["approved", "draft"]).order_by("-created")[
+    phones = Phone.objects.exclude(state="deleted").order_by("-created")[
         : settings.PHONES_ON_MAIN_PAGE
     ]
     return render(

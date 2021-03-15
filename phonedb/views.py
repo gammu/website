@@ -142,13 +142,9 @@ def get_feeds():
 
 
 def index(request):
-    vendors = (
-        Vendor.objects.filter(phone__state__in=["approved", "draft"])
-        .order_by("name")
-        .annotate(models_count=Count("phone"))
-    )
+    vendors = Vendor.objects.order_by("name").annotate(models_count=Count("phone"))
     phones = (
-        Phone.objects.filter(state__in=["approved", "draft"])
+        Phone.objects.exclude(state="deleted")
         .order_by("-created")
         .prefetch_related("vendor", "features", "connection")[
             : settings.PHONES_ON_INDEX
@@ -271,7 +267,8 @@ def review(request):
 def vendor(request, vendorname):
     vendor = get_object_or_404(Vendor, slug=vendorname)
     phones = (
-        Phone.objects.filter(vendor=vendor, state__in=("approved", "draft"))
+        Phone.objects.filter(vendor=vendor)
+        .exclude(state="deleted")
         .order_by("name")
         .prefetch_related("vendor", "features", "connection")
     )
@@ -369,7 +366,7 @@ def phones_csv(request):
 
     writer = csv.writer(response)
     phones = (
-        Phone.objects.filter(state__in=["approved", "draft"])
+        Phone.objects.exclude(state="deleted")
         .order_by("id")
         .prefetch_related("vendor", "features", "connection")
     )

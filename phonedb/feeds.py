@@ -23,9 +23,9 @@ class RssPhonesFeed(Feed):
         return [x.name for x in Vendor.objects.all()]
 
     def items(self):
-        return Phone.objects.filter(state__in=["approved", "draft"]).order_by(
-            "-created"
-        )[: settings.PHONES_IN_RSS]
+        return Phone.objects.exclude(state="deleted").order_by("-created")[
+            : settings.PHONES_IN_RSS
+        ]
 
     def item_author_name(self, obj):
         return obj.get_author_name()
