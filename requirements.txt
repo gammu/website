@@ -1,5 +1,5 @@
 Django==3.1.7
-django-crispy-forms==1.11.1
+django-crispy-forms==1.11.2
 Markdown==3.3.4
 Pillow==8.1.2
 pygooglechart==0.4.0
