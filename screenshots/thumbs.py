@@ -77,7 +77,7 @@ class ImageWithThumbsFieldFile(ImageFieldFile):
                     return ""
                 else:
                     split = self.url.rsplit(".", 1)
-                    thumb_url = "{}.{}x{}.{}".format(split[0], w, h, split[1])
+                    thumb_url = f"{split[0]}.{w}x{h}.{split[1]}"
                     return thumb_url
 
             for size in self.field.sizes:
@@ -91,7 +91,7 @@ class ImageWithThumbsFieldFile(ImageFieldFile):
             for size in self.field.sizes:
                 (w, h) = size
                 split = self.name.rsplit(".", 1)
-                thumb_name = "{}.{}x{}.{}".format(split[0], w, h, split[1])
+                thumb_name = f"{split[0]}.{w}x{h}.{split[1]}"
 
                 # you can use another thumbnailing function if you like
                 thumb_content = generate_thumb(content, size, split[1])
@@ -108,7 +108,7 @@ class ImageWithThumbsFieldFile(ImageFieldFile):
             for size in self.field.sizes:
                 (w, h) = size
                 split = name.rsplit(".", 1)
-                thumb_name = "{}.{}x{}.{}".format(split[0], w, h, split[1])
+                thumb_name = f"{split[0]}.{w}x{h}.{split[1]}"
                 try:
                     self.storage.delete(thumb_name)
                 except Exception:
