@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2020-10-14 09:02+0200\n"
-"PO-Revision-Date: 2020-03-02 17:32+0000\n"
-"Last-Translator: Wellington Terumi Uemura <wellingtonuemura@gmail.com>\n"
+"PO-Revision-Date: 2021-05-22 23:32+0000\n"
+"Last-Translator: Helder Santana <helder.santana@systemsbr.com.br>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "gammu/website/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: downloads/models.py:31
 msgid "Source code"
@@ -1155,13 +1155,6 @@ msgid "Gammu SMSD Daemon Manual"
 msgstr "Manual do Daemon SMSD do Gammu"
 
 #: html/docs/index.html:26
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "For checking support of some phone model, the best source is <a\n"
-#| "href=\"/phones/\">Gammu Phone Database</a> which contains user "
-#| "experiences with\n"
-#| "Gammu and different phone models.\n"
 msgid ""
 "\n"
 "For checking support of some phone model, the best source is\n"
@@ -1173,16 +1166,9 @@ msgstr ""
 "Para verificar o suporte a algum modelo de telefone, a melhor fonte é\n"
 "o <a href=\"/phones/\">Banco de dados de telefones do Gammu</a> que contém "
 "as\n"
-"experiências dos usuários com o Gammu e os modelos diferentes de telefones.\n"
+"experiências dos usuários com o Gammu e os diferentes modelos de telefones.\n"
 
 #: html/docs/index.html:34
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "If you still have some questions, please check <a\n"
-#| "href=\"/docs/manual/faq/\"><strong>Frequently Asked Questions</strong></"
-#| "a> before\n"
-#| "asking on <a href=\"/support/lists/\">mailing list</a>.\n"
 msgid ""
 "\n"
 "If you still have some questions, please check\n"
@@ -1191,9 +1177,9 @@ msgid ""
 "asking on the <a href=\"/support/lists/\">mailing list</a>.\n"
 msgstr ""
 "\n"
-"Se você ainda tiver alguma pergunta, favor olhe a  <a\n"
+"Se você ainda tiver alguma dúvida, verifique a <a\n"
 "href=\"/docs/manual/faq/\"><strong>FAQ</strong></a> antes\n"
-"de perguntá-la na  <a href=\"/support/lists/\">lista de emails</a>.\n"
+"de perguntar na <a href=\"/support/lists/\">lista de emails</a>.\n"
 
 #: html/docs/index.html:41
 msgid "Developer Documentation"
@@ -1228,13 +1214,6 @@ msgstr ""
 "</a></strong>.\n"
 
 #: html/docs/index.html:54
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "As a developer, you might be also interested what is planned to happen in "
-#| "next\n"
-#| "Gammu and Wammu releases, you can find this information in the \n"
-#| "<a href=\"/docs/manual/project/roadmap.html\">roadmap</a>.\n"
 msgid ""
 "\n"
 "As a developer, you might be also interested what is planned to happen in\n"
@@ -1242,21 +1221,13 @@ msgid ""
 "<a href=\"/docs/manual/project/roadmap.html\">roadmap</a>.\n"
 msgstr ""
 "\n"
-"Como um desenvolvedor, você pode estar interessado também no que está "
+"Como desenvolvedor, você pode estar interessado também no que está "
 "planejado\n"
 "para as próximas versões do Gammu e wammu, você pode encontrar essa "
-"informação\n"
-"no <a href=\"/docs/manual/project/roadmap.html\">roadmap</a>.\n"
+"informação no\n"
+"<a href=\"/docs/manual/project/roadmap.html\">roadmap</a>.\n"
 
 #: html/docs/index.html:62
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Additional hints about protocols can be found in <code>docs/develop</"
-#| "code> in\n"
-#| "Gammu sources or you might want to use git repository with <a\n"
-#| "href=\"https://github.com/gammu/gsm-docs/\">various GSM documentation</"
-#| "a>.\n"
 msgid ""
 "\n"
 "Additional hints about protocols can be found in <code>docs/develop</code> "
@@ -1266,11 +1237,11 @@ msgid ""
 "a>.\n"
 msgstr ""
 "\n"
-"Dicas adicionais sobre protocolos podem ser encontradas em <code>docs/"
-"develop</code>\n"
-"nas fontes do Gammu ou você pode querer usar o repositório git com <a\n"
-"href=\"https://github.com/gammu/gsm-docs/\">documentações de GSM variados</"
-"a>.\n"
+"Informações adicionais sobre protocolos podem ser encontradas em <code>docs/"
+"develop</code> nos\n"
+"fontes do Gammu ou, se preferir, no repositório Git em\n"
+"<a href=\"https://github.com/gammu/gsm-docs/\">documentações de GSM "
+"variados</a>.\n"
 
 #: html/donate-thanks.html:4 html/donate-thanks.html:7
 msgid "Thank you for Donation!"
@@ -2199,26 +2170,15 @@ msgid "Gammu Phone Database "
 msgstr "Banco de dados de Telefones do Gammu "
 
 #: html/phonedb/index.html:13
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "This page tries to collect list of phones supported by <a href=\"/"
-#| "libgammu/\">Gammu library</a>. To add model browse to manufacturer page, "
-#| "look whether model hasn't been entered yet and enter new model.\n"
-#| "You can find more information about mobile phones on <a\n"
-#| "href=\"http://tuxmobil.org/phones_linux.html\">TuxMobil</a>.\n"
 msgid ""
 "This page tries to collect list of phones supported by <a href=\"/libgammu/"
 "\">Gammu library</a>. To add model browse to manufacturer page, look whether "
 "model hasn't been entered yet and enter new model."
 msgstr ""
-"\n"
 "Esta página tenta coletar a lista de telefones suportados pela <a href=\"/"
 "libgammu/\">biblioteca Gammu</a>. Para adicionar um modelo navegue pela "
-"página do fabricante, olhe qual modelo não foi inserido ainda e informe o "
-"novo modelo.\n"
-"Você pode encontrar mais informações sobre telefones móveis na <a\n"
-"href=\"http://tuxmobil.org/phones_linux.html\">TuxMobil</a>.\n"
+"página do fabricante, procure pelo modelo que ainda não foi inserido e "
+"informe o novo modelo."
 
 #: html/phonedb/index.html:16
 #, fuzzy
@@ -3182,10 +3142,8 @@ msgid "Mailing lists and forums for Wammu and Gammu"
 msgstr "Listas de Email para o Wammu e o Gammu"
 
 #: html/support/lists.html:8
-#, fuzzy
-#| msgid "Mailing lists and forums for Wammu and Gammu"
 msgid "Discussion forum for Gammu and Wammu"
-msgstr "Listas de Email para o Wammu e o Gammu"
+msgstr "Fórum de discussão para Gammu e Wammu"
 
 #: html/support/lists.html:11
 #, python-format
@@ -3193,6 +3151,8 @@ msgid ""
 "There is a <a href=\"%(url)s\">discussion forum on GitHub</a>, where you can "
 "discuss with other community members and share your ideas."
 msgstr ""
+"Existe um <a href=\"%(url)s\">fórum de discussão no GitHub</a>, onde você "
+"pode discutir com outros membros da comunidade e compartilhar suas ideias."
 
 #: html/support/lists.html:14
 msgid "Stack Overflow"
@@ -3207,10 +3167,8 @@ msgstr ""
 "Overflow</a>."
 
 #: html/support/lists.html:20
-#, fuzzy
-#| msgid "Other Mailing Lists"
 msgid "Past Mailing Lists"
-msgstr "Outras Listas de Email"
+msgstr "Listas de discussão anteriores"
 
 #: html/support/lists.html:23
 #, fuzzy
