@@ -402,7 +402,7 @@ def phones_csv(request):
                 author.encode("utf8"),
                 phone.created.isoformat().encode("utf8"),
                 conn.encode("utf8"),
-                ",".join([f.name for f in phone.features.all()]).encode("utf8"),
+                ",".join(f.name for f in phone.features.all()).encode("utf8"),
                 phone.gammu_version.encode("utf8"),
             ]
         )
