@@ -116,7 +116,6 @@ class ImageWithThumbsFieldFile(ImageFieldFile):
 
 
 class ImageWithThumbsField(ImageField):
-    attr_class = ImageWithThumbsFieldFile
     """
     Usage example:
     ==============
@@ -159,6 +158,8 @@ class ImageWithThumbsField(ImageField):
     Add method to regenerate thubmnails
 
     """
+
+    attr_class = ImageWithThumbsFieldFile
 
     def __init__(
         self,
