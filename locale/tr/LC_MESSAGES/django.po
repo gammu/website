@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2020-10-14 09:02+0200\n"
-"PO-Revision-Date: 2020-10-06 18:31+0000\n"
-"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"PO-Revision-Date: 2022-03-13 07:59+0000\n"
+"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gammu/website/tr/"
 ">\n"
 "Language: tr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.3-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #: downloads/models.py:31
 msgid "Source code"
@@ -113,7 +113,7 @@ msgstr "Web sitesi"
 
 #: html/authors.html:34
 msgid "E-mail"
-msgstr ""
+msgstr "E-posta"
 
 #: html/authors.html:41
 msgid ""
@@ -129,7 +129,7 @@ msgstr ""
 
 #: html/authors.html:55
 msgid "Gnokii authors"
-msgstr ""
+msgstr "Gnokii yazarları"
 
 #: html/authors.html:58
 msgid ""
@@ -144,10 +144,11 @@ msgstr ""
 #: html/base.html:12
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
 msgstr ""
+"GSM cep telefonlarını yönetme yazılımı olan Gammu ve Wammu'nun web sitesi."
 
 #: html/base.html:54
 msgid "Gammu and Wammu"
-msgstr ""
+msgstr "Gammu ve Wammu"
 
 #: html/base.html:61
 msgid "Family"
@@ -155,31 +156,31 @@ msgstr "Aile"
 
 #: html/base.html:68
 msgid "Third party"
-msgstr ""
+msgstr "Üçüncü taraf"
 
 #: html/base.html:73
 msgid "Support"
-msgstr ""
+msgstr "Destek"
 
 #: html/base.html:75 html/base.html:116 html/base.html:128 html/base.html:140
 msgid "Overview"
-msgstr ""
+msgstr "Genel bakış"
 
 #: html/base.html:76
 msgid "Mailing lists and forums"
-msgstr ""
+msgstr "E-posta listeleri ve forumlar"
 
 #: html/base.html:77
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Hata bildirimi"
 
 #: html/base.html:78
 msgid "Online"
-msgstr ""
+msgstr "Çevrim içi"
 
 #: html/base.html:79
 msgid "Commercial support"
-msgstr ""
+msgstr "Ticari destek"
 
 #: html/base.html:84 html/downloads/detail.html:4 html/downloads/release.html:4
 #: html/gammu-family.html:15 html/gammu-family.html:29
@@ -187,112 +188,112 @@ msgstr ""
 #: html/gammu-family.html:74 html/gammu.html:53 html/libgammu.html:37
 #: html/python-gammu.html:25 html/smsd.html:56 html/wammu.html:39
 msgid "Download"
-msgstr ""
+msgstr "İndir"
 
 #: html/base.html:86
 msgid "All downloads"
-msgstr ""
+msgstr "Tüm indirmeler"
 
 #: html/base.html:87 html/downloads/index.html:25
 msgid "Download Gammu"
-msgstr ""
+msgstr "Gammu'yu indir"
 
 #: html/base.html:88 html/downloads/index.html:32
 msgid "Download python-gammu"
-msgstr ""
+msgstr "python-gammu'yu indir"
 
 #: html/base.html:89 html/downloads/index.html:39
 msgid "Download Wammu"
-msgstr ""
+msgstr "Wammu'yu indir"
 
 #: html/base.html:94 html/index.html:26
 msgid "News"
-msgstr ""
+msgstr "Haberler"
 
 #: html/base.html:96
 msgid "All news"
-msgstr ""
+msgstr "Tüm haberler"
 
 #: html/base.html:104 html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
 msgid "Screenshots"
-msgstr ""
+msgstr "Ekran görüntüleri"
 
 #: html/base.html:106
 msgid "All screenshots"
-msgstr ""
+msgstr "Tüm ekran görüntüleri"
 
 #: html/base.html:114 html/gammu.html:61 html/libgammu.html:46
 #: html/python-gammu.html:64 html/smsd.html:66 html/wammu.html:49
 msgid "Documentation"
-msgstr ""
+msgstr "Belgelendirme"
 
 #: html/base.html:117 html/docs/index.html:21
 msgid "Gammu Manual"
-msgstr ""
+msgstr "Gammu kılavuzu"
 
 #: html/base.html:118
 msgid "FAQ"
-msgstr ""
+msgstr "SSS"
 
 #: html/base.html:119
 msgid "For developers"
-msgstr ""
+msgstr "Geliştiriciler için"
 
 #: html/base.html:120 html/phonedb/body.html:16
 msgid "Configuration"
-msgstr ""
+msgstr "Yapılandırma"
 
 #: html/base.html:121 html/sidebars/common.html:3 phonedb/views.py:101
 msgid "Supported phones"
-msgstr ""
+msgstr "Desteklenen telefonlar"
 
 #: html/base.html:126
 msgid "Contribute"
-msgstr ""
+msgstr "Katkıda bulun"
 
 #: html/base.html:129
 msgid "Translate"
-msgstr ""
+msgstr "Çevir"
 
 #: html/base.html:130
 msgid "Develop"
-msgstr ""
+msgstr "Geliştir"
 
 #: html/base.html:131
 msgid "Wanted skills"
-msgstr ""
+msgstr "Aranan beceriler"
 
 #: html/base.html:132
 msgid "Publicity"
-msgstr ""
+msgstr "Tanıtım"
 
 #: html/base.html:133 html/base.html:183
 msgid "Donate"
-msgstr ""
+msgstr "Bağış yap"
 
 #: html/base.html:138
 msgid "Tools"
-msgstr ""
+msgstr "Araçlar"
 
 #: html/base.html:141
 msgid "PDU encoder"
-msgstr ""
+msgstr "PDU kodlayıcı"
 
 #: html/base.html:142
 msgid "PDU decoder"
-msgstr ""
+msgstr "PDU kod çözücü"
 
 #: html/base.html:143
 msgid "Countries"
-msgstr ""
+msgstr "Ülkeler"
 
 #: html/base.html:144
 msgid "Networks"
-msgstr ""
+msgstr "Ağlar"
 
 #: html/base.html:162
 msgid "Help with translations!"
-msgstr ""
+msgstr "Çevirilere yardım edin!"
 
 #: html/base.html:182
 msgid "License"
@@ -300,44 +301,44 @@ msgstr "Lisans"
 
 #: html/base.html:183
 msgid "Support Gammu/Wammu by donating money!"
-msgstr ""
+msgstr "Para bağışlayarak Gammu/Wammu'yu destekleyin!"
 
 #: html/base.html:184
 msgid "Search for Gammu/Wammu related questions"
-msgstr ""
+msgstr "Gammu/Wammu ile ilgili soruları arayın"
 
 #: html/base.html:184 html/phonedb/index.html:51 html/phonedb/search.html:13
 #: html/phonedb/search.html:49 phonedb/forms.py:33
 msgid "Search"
-msgstr ""
+msgstr "Ara"
 
 #: html/base.html:185
 msgid "Gammu and Wammu authors"
-msgstr ""
+msgstr "Gammu ve Wammu yazarları"
 
 #: html/base.html:185
 msgid "Authors"
-msgstr ""
+msgstr "Yazarlar"
 
 #: html/base.html:186
 msgid "Gammu on Google+"
-msgstr ""
+msgstr "Google+'da Gammu"
 
 #: html/base.html:187
 msgid "Gammu on Facebook"
-msgstr ""
+msgstr "Facebook'ta Gammu"
 
 #: html/base.html:188
 msgid "Follow us on Twitter"
-msgstr ""
+msgstr "Bizi Twitter'da takip edin"
 
 #: html/base.html:189
 msgid "Donate using PayPal"
-msgstr ""
+msgstr "PayPal ile bağış yapın"
 
 #: html/contribute/code.html:4 html/contribute/code.html:8
 msgid "Coding for Wammu and Gammu"
-msgstr ""
+msgstr "Wammu ve Gammu için Kod Yazma"
 
 #: html/contribute/code.html:11
 msgid ""
@@ -354,7 +355,7 @@ msgstr ""
 
 #: html/contribute/code.html:22
 msgid "Version Control System"
-msgstr ""
+msgstr "Sürüm Denetim Sistemi"
 
 #: html/contribute/code.html:24
 msgid ""
@@ -398,7 +399,7 @@ msgstr ""
 
 #: html/contribute/code.html:72
 msgid "Patch Submission"
-msgstr ""
+msgstr "Yama Gönderimi"
 
 #: html/contribute/code.html:74
 msgid ""
@@ -414,17 +415,20 @@ msgstr ""
 
 #: html/contribute/code.html:85
 msgid "Testing"
-msgstr ""
+msgstr "Test Etme"
 
 #: html/contribute/code.html:87
 msgid ""
 "Gammu comes with quite comprehensive testsuite, which is being run "
 "continuosly using <a href=\"https://travis-ci.org/gammu/gammu\">Travis</a>."
 msgstr ""
+"Gammu, <a href=\"https://travis-ci.org/gammu/gammu\">Travis</a> kullanılarak "
+"sürekli olarak çalıştırılan oldukça kapsamlı bir test paketi ile birlikte "
+"gelmektedir."
 
 #: html/contribute/index.html:4 html/contribute/index.html:8
 msgid "Contribute to Wammu and Gammu"
-msgstr ""
+msgstr "Wammu ve Gammu'ya Katkıda Bulunun"
 
 #: html/contribute/index.html:11 html/contribute/wanted.html:11
 msgid ""
@@ -434,6 +438,13 @@ msgid ""
 "welcome\n"
 "to help us in any way. You really do not need developer skills to help.\n"
 msgstr ""
+"\n"
+"Gammu ve Wammu, gönüllüler tarafından boş zamanlarında yapılan özgür yazılım "
+"projeleridir.\n"
+"Hiçbir zaman yeterli sayıda gönüllü olmaz, bu yüzden bize herhangi bir "
+"şekilde yardım etmenizden\n"
+"memnuniyet duyarız. Gerçekten yardım etmek için geliştirici becerilerine "
+"ihtiyacınız yok.\n"
 
 #: html/contribute/index.html:19
 msgid ""
@@ -441,6 +452,10 @@ msgid ""
 "Please check our list of <a href=\"/contribute/wanted/\"><strong>wanted\n"
 "skills</strong></a>, to get an idea who we are currently looking for.\n"
 msgstr ""
+"\n"
+"Şu anda kimi aradığımız hakkında bir fikir edinmek için lütfen\n"
+"<a href=\"/contribute/wanted/\"><strong>aranan beceriler</strong></a> "
+"listemize bakın.\n"
 
 #: html/contribute/index.html:25
 msgid "Using"
@@ -1023,31 +1038,31 @@ msgstr ""
 
 #: html/downloads/detail.html:31 html/downloads/platformlinks.html:5
 msgid "Debian packages"
-msgstr ""
+msgstr "Debian paketleri"
 
 #: html/downloads/detail.html:34 html/downloads/platformlinks.html:8
 msgid "Ubuntu packages"
-msgstr ""
+msgstr "Ubuntu paketleri"
 
 #: html/downloads/detail.html:37 html/downloads/platformlinks.html:11
 msgid "Ubuntu packages in PPA"
-msgstr ""
+msgstr "PPA'da Ubuntu paketleri"
 
 #: html/downloads/detail.html:40 html/downloads/platformlinks.html:14
 msgid "Fedora packages"
-msgstr ""
+msgstr "Fedora paketleri"
 
 #: html/downloads/detail.html:43
 msgid "Mageia packages"
-msgstr ""
+msgstr "Mageia paketleri"
 
 #: html/downloads/detail.html:47 html/downloads/platformlinks.html:18
 msgid "RPM packages (openSUSE, Fedora, Mageia, SLES, RHEL, CentOS)"
-msgstr ""
+msgstr "RPM paketleri (openSUSE, Fedora, Mageia, SLES, RHEL, CentOS)"
 
 #: html/downloads/detail.html:51
 msgid "Development version"
-msgstr ""
+msgstr "Geliştirme sürümü"
 
 #: html/downloads/detail.html:54
 msgid ""
@@ -1464,7 +1479,7 @@ msgstr ""
 
 #: html/license.html:4 html/license.html:7
 msgid "Wammu and Gammu License"
-msgstr ""
+msgstr "Wammu ve Gammu Lisansı"
 
 #: html/license.html:10
 msgid ""
@@ -1473,6 +1488,10 @@ msgid ""
 "href=\"https://www.gnu.org/licenses/gpl-2.0.html\">GNU General\n"
 "Public License, version 2</a>.\n"
 msgstr ""
+"\n"
+"Gammu, python-gammu ve Wammu <a\n"
+"href=\"https://www.gnu.org/licenses/gpl-2.0.html\">GNU Genel\n"
+"Kamu Lisansı, sürüm 2</a> altında lisanslanmıştır.\n"
 
 #: html/license.html:18
 msgid ""
@@ -1482,6 +1501,11 @@ msgid ""
 "as published by the Free Software Foundation; version 2\n"
 "of the License.\n"
 msgstr ""
+"\n"
+"Bu program özgür bir yazılımdır; Özgür Yazılım Vakfı\n"
+"tarafından yayınlanan GNU Genel Kamu Lisansı, Lisansın\n"
+"2. sürümü koşulları altında yeniden dağıtabilir ve/veya\n"
+"değiştirebilirsiniz.\n"
 
 #: html/license.html:27 html/license.html:64
 msgid ""
@@ -1505,10 +1529,15 @@ msgid ""
 "Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, "
 "USA.\n"
 msgstr ""
+"\n"
+"Bu programla birlikte GNU Genel Kamu Lisansının bir kopyasını almış\n"
+"olmalısınız; almadıysanız Foundation, Inc., 51 Franklin Street, Fifth Floor,"
+"\n"
+"Boston, MA  02110-1301, USA adresine yazın.\n"
 
 #: html/license.html:44
 msgid "Website License"
-msgstr ""
+msgstr "Web Sitesi Lisansı"
 
 #: html/license.html:47
 msgid ""
@@ -1517,6 +1546,10 @@ msgid ""
 "href=\"https://www.gnu.org/licenses/gpl-2.0.html\">GNU General\n"
 "Public License, version 2 or later</a>.\n"
 msgstr ""
+"\n"
+"Web sitesinin kodları <a\n"
+"href=\"https://www.gnu.org/licenses/gpl-2.0.html\">GNU Genel\n"
+"Kamu Lisansı, sürüm 2 veya sonrası</a> altında lisanslanmıştır.\n"
 
 #: html/license.html:55
 msgid ""
@@ -1526,10 +1559,15 @@ msgid ""
 "as published by the Free Software Foundation; either version 2\n"
 "of the License, or (at your option) any later version.\n"
 msgstr ""
+"\n"
+"Bu program özgür bir yazılımdır; Özgür Yazılım Vakfı tarafından\n"
+"yayınlanan GNU Genel Kamu Lisansı, Lisansın 2. sürümü veya\n"
+"(tercihinize bağlı olarak) herhangi bir sonraki sürümü koşulları\n"
+"altında yeniden dağıtabilir ve/veya değiştirebilirsiniz.\n"
 
 #: html/license.html:80
 msgid "Website Content"
-msgstr ""
+msgstr "Web Sitesi İçeriği"
 
 #: html/license.html:83
 msgid ""
@@ -1539,6 +1577,11 @@ msgid ""
 "Commons\n"
 "Attribution-Share Alike 3.0 Unported</a>.\n"
 msgstr ""
+"\n"
+"Web sitesi içeriği \n"
+"<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">Creative "
+"Commons\n"
+"Atıf-AynıLisanslaPaylaş 3.0 Unported</a> lisansı altında yayınlanmıştır.\n"
 
 #: html/license.html:91
 msgid ""
@@ -1546,31 +1589,35 @@ msgid ""
 "All products mentioned on these pages are trademarks of their respective\n"
 "owners, where appropriate.\n"
 msgstr ""
+"\n"
+"Bu sayfalarda adı geçen tüm ürünler, uygun olduğu şekilde ilgili "
+"sahiplerinin\n"
+"ticari markalarıdır.\n"
 
 #: html/links/index.html:4 html/links/index.html:7
 msgid "Third Party Applications using Gammu"
-msgstr ""
+msgstr "Gammu Kullanan Üçüncü Taraf Uygulamaları"
 
 #: html/links/index.html:22
 msgid "Website:"
-msgstr ""
+msgstr "Web sitesi:"
 
 #: html/news/contrib_index.html:4 html/news/contrib_index.html:6
 msgid "Third Party News"
-msgstr ""
+msgstr "Üçüncü Taraf Haberleri"
 
 #: html/news/entry.html:4 html/news/index.html:4 html/news/index.html:9
 #: news/feeds.py:16
 msgid "Wammu and Gammu News"
-msgstr ""
+msgstr "Wammu ve Gammu Haberleri"
 
 #: html/news/gammu_index.html:4 html/news/gammu_index.html:6
 msgid "Gammu News"
-msgstr ""
+msgstr "Gammu Haberleri"
 
 #: html/news/index.html:7 html/phonedb/index.html:56
 msgid "RSS"
-msgstr ""
+msgstr "RSS"
 
 #: html/news/published.html:4
 #, python-format
@@ -1578,30 +1625,33 @@ msgid ""
 "\n"
 "Published on %(date)s by <a href=\"mailto:%(email)s\">%(author)s</a>\n"
 msgstr ""
+"\n"
+"<a href=\"mailto:%(email)s\">%(author)s</a> tarafından %(date)s tarihinde "
+"yayınlandı\n"
 
 #: html/news/python-gammu_index.html:4 html/news/python-gammu_index.html:6
 msgid "python-gammu news"
-msgstr ""
+msgstr "python-gammu haberleri"
 
 #: html/news/wammu_index.html:4 html/news/wammu_index.html:6
 msgid "Wammu News"
-msgstr ""
+msgstr "Wammu Haberleri"
 
 #: html/phonedb/body.html:3
 msgid "Supported Features"
-msgstr ""
+msgstr "Desteklenen Özellikler"
 
 #: html/phonedb/body.html:13
 msgid "No features reported as working!"
-msgstr ""
+msgstr "Çalışıyor olarak bildirilen özellik yok!"
 
 #: html/phonedb/body.html:27
 msgid "Phone is reported not to be supported!"
-msgstr ""
+msgstr "Telefonun desteklenmediği bildirildi!"
 
 #: html/phonedb/body.html:34
 msgid "Reporter Note"
-msgstr ""
+msgstr "Bildirenin Notu"
 
 #: html/phonedb/index.html:5 html/phonedb/new.html:5 html/phonedb/phone.html:4
 #: html/phonedb/search.html:5
@@ -1609,12 +1659,14 @@ msgid ""
 "Database of supported phones in Gammu and Wammu, the software for managing "
 "GSM cell phones."
 msgstr ""
+"GSM cep telefonlarını yönetme yazılımı olan Gammu ve Wammu'da desteklenen "
+"telefonların veri tabanı."
 
 #: html/phonedb/index.html:6 html/phonedb/index.html:10 html/phonedb/new.html:6
 #: html/phonedb/phone.html:6 html/phonedb/search.html:6
 #: html/phonedb/vendor.html:6
 msgid "Gammu Phone Database "
-msgstr ""
+msgstr "Gammu Telefon Veri Tabanı "
 
 #: html/phonedb/index.html:13
 msgid ""
@@ -1679,7 +1731,7 @@ msgstr ""
 
 #: html/phonedb/index.html:73
 msgid "Download all data as CSV"
-msgstr ""
+msgstr "Tüm verileri CSV olarak indir"
 
 #: html/phonedb/list.html:5
 msgid "Name"
@@ -1695,11 +1747,11 @@ msgstr "Desteklenen özellikler"
 
 #: html/phonedb/list.html:14
 msgid "This entry has been approved by project."
-msgstr ""
+msgstr "Bu girdi proje tarafından onaylandı."
 
 #: html/phonedb/list.html:14 phonedb/models.py:28
 msgid "Approved"
-msgstr ""
+msgstr "Onaylandı"
 
 #: html/phonedb/list.html:27
 msgid "Not supported"
@@ -1707,17 +1759,17 @@ msgstr "Desteklenmiyor"
 
 #: html/phonedb/new.html:6 html/phonedb/new.html:13 html/phonedb/new.html:16
 msgid "Create New Record"
-msgstr ""
+msgstr "Yeni Kayıt Oluştur"
 
 #: html/phonedb/new.html:11 html/phonedb/phone.html:11
 #: html/phonedb/search.html:11 html/phonedb/vendor.html:11
 msgid "Home"
-msgstr ""
+msgstr "Ana Sayfa"
 
 #: html/phonedb/new.html:12 html/phonedb/phone.html:12
 #: html/phonedb/search.html:12 html/phonedb/vendor.html:12
 msgid "Phones Database"
-msgstr ""
+msgstr "Telefon Veri Tabanı"
 
 #: html/phonedb/new.html:19
 msgid ""
@@ -1746,11 +1798,11 @@ msgstr "Düzenle"
 
 #: html/phonedb/phone.html:19
 msgid "Delete"
-msgstr ""
+msgstr "Sil"
 
 #: html/phonedb/phone.html:22
 msgid "Approve"
-msgstr ""
+msgstr "Onayla"
 
 #: html/phonedb/phone.html:30
 msgid ""
@@ -1787,10 +1839,12 @@ msgid ""
 "\n"
 "More information about phone might be available on following sites:\n"
 msgstr ""
+"\n"
+"Telefon hakkında daha fazla bilgi aşağıdaki sitelerde bulunabilir:\n"
 
 #: html/phonedb/phone.html:70
 msgid "About entry"
-msgstr ""
+msgstr "Girdi hakkında"
 
 #: html/phonedb/phone.html:73
 #, python-format
@@ -1798,6 +1852,8 @@ msgid ""
 "\n"
 "Created by %(author)s on %(created)s.\n"
 msgstr ""
+"\n"
+"%(author)s tarafından %(created)s tarihinde oluşturuldu.\n"
 
 #: html/phonedb/phone.html:79
 #, python-format
@@ -1805,6 +1861,8 @@ msgid ""
 "\n"
 "Created on %(created)s.\n"
 msgstr ""
+"\n"
+"%(created)s tarihinde oluşturuldu.\n"
 
 #: html/phonedb/phone.html:86
 #, python-format
@@ -1812,14 +1870,16 @@ msgid ""
 "\n"
 "Tested with Gammu %(version)s.\n"
 msgstr ""
+"\n"
+"Gammu %(version)s ile test edildi.\n"
 
 #: html/phonedb/phone.html:93
 msgid "Similar Phones"
-msgstr ""
+msgstr "Benzer Telefonlar"
 
 #: html/phonedb/search.html:6 html/phonedb/search.html:17
 msgid "Search Results"
-msgstr ""
+msgstr "Arama Sonuçları"
 
 #: html/phonedb/search.html:20
 #, python-format
@@ -1827,6 +1887,8 @@ msgid ""
 "\n"
 "Found %(count)s results matching your query.\n"
 msgstr ""
+"\n"
+"Sorgunuzla eşleşen %(count)s sonuç bulundu.\n"
 
 #: html/phonedb/vendor.html:4
 #, python-format
@@ -1834,10 +1896,12 @@ msgid ""
 "Database of supported phones from %(vendor_name)s in Gammu and Wammu, the "
 "software for managing GSM cell phones."
 msgstr ""
+"GSM cep telefonlarını yönetme yazılımı Gammu ve Wammu'da desteklenen "
+"%(vendor_name)s telefonların veri tabanı."
 
 #: html/phonedb/vendor.html:14
 msgid "Add new record"
-msgstr ""
+msgstr "Yeni kayıt ekle"
 
 #: html/phonedb/vendor.html:25
 #, python-format
@@ -1848,13 +1912,19 @@ msgid_plural ""
 "\n"
 "There are currently %(count)s phone records from this vendor.\n"
 msgstr[0] ""
+"\n"
+"Şu anda bu satıcıdan %(count)s telefon kaydı var.\n"
 msgstr[1] ""
+"\n"
+"Şu anda bu satıcıdan %(count)s telefon kaydı var.\n"
 
 #: html/phonedb/vendor.html:31
 msgid ""
 "\n"
 "There is currently none phone record from this vendor!\n"
 msgstr ""
+"\n"
+"Şu anda bu satıcıdan hiçbir telefon kaydı yok!\n"
 
 #: html/phonedb/vendor.html:36
 #, python-format
@@ -1893,7 +1963,7 @@ msgstr ""
 
 #: html/python-gammu.html:39
 msgid "Example"
-msgstr ""
+msgstr "Örnek"
 
 #: html/python-gammu.html:42
 msgid ""
@@ -1944,27 +2014,27 @@ msgstr ""
 
 #: html/screenshots/contrib_index.html:4 html/screenshots/contrib_index.html:6
 msgid "Third Party Screenshots"
-msgstr ""
+msgstr "Üçüncü Taraf Ekran Görüntüleri"
 
 #: html/screenshots/gammu_index.html:4 html/screenshots/gammu_index.html:6
 msgid "Gammu Screenshots"
-msgstr ""
+msgstr "Gammu Ekran Görüntüleri"
 
 #: html/screenshots/index.html:4 html/screenshots/index.html:8
 msgid "Wammu and Gammu Screenshots"
-msgstr ""
+msgstr "Wammu ve Gammu Ekran Görüntüleri"
 
 #: html/screenshots/wammu_index.html:4 html/screenshots/wammu_index.html:6
 msgid "Wammu Screenshots"
-msgstr ""
+msgstr "Wammu Ekran Görüntüleri"
 
 #: html/shortnews.html:2
 msgid "Latest News"
-msgstr ""
+msgstr "Son Haberler"
 
 #: html/sidebars/common.html:4
 msgid "How to contribute"
-msgstr ""
+msgstr "Nasıl katkıda bulunulur"
 
 #: html/smsd.html:4
 msgid "Gammu SMS Daemon, the software for mass processing SMS messages."
@@ -2279,7 +2349,7 @@ msgstr ""
 
 #: html/support/index.html:53
 msgid "Commercial Support"
-msgstr ""
+msgstr "Ticari Destek"
 
 #: html/support/index.html:56
 msgid ""
@@ -2291,11 +2361,11 @@ msgstr ""
 
 #: html/support/lists.html:4
 msgid "Mailing lists and forums for Wammu and Gammu"
-msgstr ""
+msgstr "Wammu ve Gammu için e-posta listeleri ve forumlar"
 
 #: html/support/lists.html:8
 msgid "Discussion forum for Gammu and Wammu"
-msgstr ""
+msgstr "Gammu ve Wammu için tartışma forumu"
 
 #: html/support/lists.html:11
 #, python-format
@@ -2306,7 +2376,7 @@ msgstr ""
 
 #: html/support/lists.html:14
 msgid "Stack Overflow"
-msgstr ""
+msgstr "Stack Overflow"
 
 #: html/support/lists.html:17
 #, python-format
@@ -2316,7 +2386,7 @@ msgstr ""
 
 #: html/support/lists.html:20
 msgid "Past Mailing Lists"
-msgstr ""
+msgstr "Geçmiş E-Posta Listeleri"
 
 #: html/support/lists.html:23
 msgid ""
@@ -2343,7 +2413,7 @@ msgstr ""
 
 #: html/support/online.html:4 html/support/online.html:8
 msgid "Online Communication for Wammu and Gammu"
-msgstr ""
+msgstr "Wammu ve Gammu için Çevrim İçi İletişim"
 
 #: html/support/online.html:11
 msgid ""
@@ -2359,7 +2429,7 @@ msgstr ""
 
 #: html/support/online.html:20
 msgid "IRC"
-msgstr ""
+msgstr "IRC"
 
 #: html/support/online.html:23
 msgid ""
@@ -2392,15 +2462,15 @@ msgstr ""
 
 #: html/tools/countries.html:18
 msgid "Country code"
-msgstr ""
+msgstr "Ülke kodu"
 
 #: html/tools/countries.html:18
 msgid "Country name"
-msgstr ""
+msgstr "Ülke adı"
 
 #: html/tools/index.html:4 html/tools/index.html:8
 msgid "Tools for Wammu and Gammu"
-msgstr ""
+msgstr "Wammu ve Gammu için araçlar"
 
 #: html/tools/index.html:11
 msgid ""
@@ -2409,10 +2479,14 @@ msgid ""
 "with\n"
 "GSM phones in general, not only when using Gammu/Wammu.\n"
 msgstr ""
+"\n"
+"Burada, yalnızca Gammu/Wammu kullanırken değil, genel olarak GSM "
+"telefonlarıyla\n"
+"çalışırken yararlı bulabileceğiniz çeşitli araçları bulabilirsiniz.\n"
 
 #: html/tools/index.html:17
 msgid "PDU decoding/encoding"
-msgstr ""
+msgstr "PDU kod çözme/kodlama"
 
 #: html/tools/index.html:20
 msgid ""
@@ -2420,26 +2494,34 @@ msgid ""
 "The SMS messages are transfered in the network encoded in PDU encoding.\n"
 "Following tools allow you to decode or encode PDU into human readable form.\n"
 msgstr ""
+"\n"
+"SMS mesajları, ağ üzerinde PDU kodlamasında kodlanmış olarak aktarılır.\n"
+"Aşağıdaki araçlar, PDU kodunu okunabilir biçimde çözmenize veya kodlamanıza "
+"olanak tanır.\n"
 
 #: html/tools/index.html:29
 msgid "Useful for creating PDU data, which you can then submit to the phone."
 msgstr ""
+"Daha sonra telefona gönderebileceğiniz PDU verileri oluşturmak için "
+"kullanışlıdır."
 
 #: html/tools/index.html:32
 msgid "Useful for decoding PDU data, which you might get from your phone."
 msgstr ""
+"Telefonunuzdan alabileceğiniz PDU verilerinin kodunu çözmek için "
+"kullanışlıdır."
 
 #: html/tools/index.html:36
 msgid "Other tools"
-msgstr ""
+msgstr "Diğer araçlar"
 
 #: html/tools/index.html:39
 msgid "List of GSM codes for countries"
-msgstr ""
+msgstr "Ülkeler için GSM kodlarının listesi"
 
 #: html/tools/index.html:40
 msgid "List of GSM codes for networks"
-msgstr ""
+msgstr "Ağlar için GSM kodlarının listesi"
 
 #: html/tools/index.html:44
 msgid ""
@@ -2462,11 +2544,11 @@ msgstr ""
 
 #: html/tools/networks.html:18
 msgid "Network code"
-msgstr ""
+msgstr "Ağ kodu"
 
 #: html/tools/networks.html:18
 msgid "Network name"
-msgstr ""
+msgstr "Ağ adı"
 
 #: html/tools/pdudecode.html:6 html/tools/pdudecode.html:12
 msgid "PDU decoder using Gammu"
@@ -2496,15 +2578,15 @@ msgstr "Metin"
 
 #: html/tools/pdudecode.html:40
 msgid "UDH type"
-msgstr ""
+msgstr "UDH türü"
 
 #: html/tools/pdudecode.html:41
 msgid "UDH header"
-msgstr ""
+msgstr "UDH başlığı"
 
 #: html/tools/pdudecode.html:42
 msgid "Message part"
-msgstr ""
+msgstr "Mesaj bölümü"
 
 #: html/tools/pdudecode.html:44
 msgid "SMSC"
@@ -2532,7 +2614,7 @@ msgstr "MMS göstergesi"
 
 #: html/tools/pdudecode.html:69
 msgid "Title"
-msgstr ""
+msgstr "Başlık"
 
 #: html/tools/pdudecode.html:70
 msgid "Sender"
@@ -2668,15 +2750,15 @@ msgstr ""
 
 #: news/feeds.py:19
 msgid "Updates about Wammu and Gammu programs."
-msgstr ""
+msgstr "Wammu ve Gammu programları hakkında güncellemeler."
 
 #: phonedb/feeds.py:16
 msgid "Gammu Phone Database"
-msgstr ""
+msgstr "Gammu Telefon Veri Tabanı"
 
 #: phonedb/feeds.py:19
 msgid "Gammu phone database updates."
-msgstr ""
+msgstr "Gammu telefon veri tabanı güncellemeleri."
 
 #: phonedb/forms.py:14
 msgid "Search text"
@@ -2684,25 +2766,25 @@ msgstr ""
 
 #: phonedb/forms.py:18 phonedb/forms.py:45
 msgid "Features"
-msgstr ""
+msgstr "Özellikler"
 
 #: phonedb/forms.py:36
 #, python-format
 msgid "%(description)s [<a href=\"%(url)s\">Link</a>]"
-msgstr ""
+msgstr "%(description)s [<a href=\"%(url)s\">Bağlantı</a>]"
 
 #: phonedb/forms.py:47 phonedb/models.py:97
 msgid "Features which are working in Gammu."
-msgstr ""
+msgstr "Gammu'da çalışan özellikler."
 
 #: phonedb/forms.py:83
 msgid "Save"
-msgstr ""
+msgstr "Kaydet"
 
 #: phonedb/forms.py:86
 #, python-format
 msgid "%(description)s (%(name)s)"
-msgstr ""
+msgstr "%(description)s (%(name)s)"
 
 #: phonedb/models.py:20
 msgid "Use [at] and [dot]"
@@ -2775,61 +2857,64 @@ msgstr "Zil sesleri"
 #: phonedb/models.py:89
 #, python-format
 msgid "Phone name should not include vendor name: %s"
-msgstr ""
+msgstr "Telefon adı, satıcı adını içermemelidir: %s"
 
 #: phonedb/models.py:95
 msgid "Phone name, please exclude vendor name."
-msgstr ""
+msgstr "Telefon adı, lütfen satıcı adını hariç tutun."
 
 #: phonedb/models.py:96
 msgid "Connection used in Gammu configuration."
-msgstr ""
+msgstr "Gammu yapılandırmasında kullanılan bağlantı."
 
 #: phonedb/models.py:98
 msgid "Model used in Gammu configuration, usually empty."
-msgstr ""
+msgstr "Gammu yapılandırmasında kullanılan model, genellikle boştur."
 
 #: phonedb/models.py:99
 msgid "Gammu version where you tested this phone."
-msgstr ""
+msgstr "Bu telefonu test ettiğiniz Gammu sürümü."
 
 #: phonedb/models.py:100
 msgid ""
 "Any note about this phone and Gammu support for it. You can use <a href="
 "\"http://daringfireball.net/projects/markdown/syntax\">markdown markup</a>."
 msgstr ""
+"Bu telefon ve Gammu desteği hakkında herhangi bir not. <a href=\"http"
+"://daringfireball.net/projects/markdown/syntax\">Markdown biçimlendirmesi</"
+"a> kullanabilirsiniz."
 
 #: phonedb/models.py:103
 msgid "Please choose how will be email handled in next field."
-msgstr ""
+msgstr "Lütfen bir sonraki alanda e-postanın nasıl ele alınacağını seçin."
 
 #: phonedb/views.py:102
 msgid "Approved records"
-msgstr ""
+msgstr "Onaylanan kayıtlar"
 
 #: phonedb/views.py:103
 msgid "Total records"
-msgstr ""
+msgstr "Toplam kayıtlar"
 
 #: phonedb/views.py:121
 msgid "Gammu Phone Database Feed (RSS)"
-msgstr ""
+msgstr "Gammu Telefon Veri Tabanı Akışı (RSS)"
 
 #: phonedb/views.py:122
 msgid "Gammu Phone Database Feed (Atom)"
-msgstr ""
+msgstr "Gammu Telefon Veri Tabanı Akışı (Atom)"
 
 #: phonedb/views.py:443
 msgid "Phone record has been created."
-msgstr ""
+msgstr "Telefon kaydı oluşturuldu."
 
 #: tools/forms.py:7
 msgid "PDU text"
-msgstr ""
+msgstr "PDU metni"
 
 #: tools/forms.py:10
 msgid "You can provide more messages, each on separate line."
-msgstr ""
+msgstr "Her biri ayrı satırda olmak üzere daha fazla mesaj sağlayabilirsiniz."
 
 #: tools/forms.py:15
 msgid "Unicode"
@@ -2845,8 +2930,8 @@ msgstr "SMSC numarası"
 
 #: wammu/context_processors.py:49
 msgid "Gammu and Wammu News Feed (RSS)"
-msgstr ""
+msgstr "Gammu ve Wammu Haber Akışı (RSS)"
 
 #: wammu/context_processors.py:50
 msgid "Gammu and Wammu News Feed (Atom)"
-msgstr ""
+msgstr "Gammu ve Wammu Haber Akışı (Atom)"
