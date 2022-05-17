@@ -1,7 +1,7 @@
 Django==3.2.13
 django-crispy-forms==1.14.0
 Markdown==3.3.7
-Pillow==9.1.0
+Pillow==9.1.1
 pygooglechart==0.4.0
 python-gammu==3.2.4
 rollbar==0.16.2
