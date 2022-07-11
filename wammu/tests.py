@@ -2,7 +2,7 @@
 Tests for sitemaps.
 """
 
-from xml.etree import cElementTree as ElementTree
+from xml.etree import ElementTree as ElementTree
 
 from django.contrib.sites.models import Site
 from django.test import TestCase
