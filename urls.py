@@ -4,10 +4,9 @@ import os
 import django.contrib.sitemaps.views
 import django.views.static
 from django.conf import settings
-from django.conf.urls import include, url
 from django.contrib import admin
 from django.contrib.sitemaps import GenericSitemap, Sitemap
-from django.urls import path
+from django.urls import include, path, re_path
 from django.views.generic import RedirectView
 
 import donate.views
@@ -113,195 +112,206 @@ sitemaps = {
 admin.autodiscover()
 
 urlpatterns = [
-    url(r"^$", wammu.views.index, name="home"),
-    url(r"^gammu/$", wammu.views.gammu, name="gammu"),
-    url(r"^smsd/$", wammu.views.smsd, name="smsd"),
-    url(r"^wammu/$", wammu.views.wammu, name="wammu"),
-    url(r"^libgammu/$", wammu.views.libgammu, name="libgammu"),
-    url(r"^python-gammu/$", wammu.views.pygammu, name="python-gammu"),
-    url(r"^authors/$", wammu.views.static, {"page": "authors.html"}, name="authors"),
-    url(r"^license/$", wammu.views.static, {"page": "license.html"}, name="license"),
-    url(r"^search/$", RedirectView.as_view(url="/", permanent=True)),
-    url(r"^support/$", wammu.views.support, name="support"),
-    url(r"^support/bugs/$", wammu.views.static, {"page": "support/bugs.html"}),
-    url(r"^support/lists/$", wammu.views.static, {"page": "support/lists.html"}),
-    url(r"^support/online/$", wammu.views.static, {"page": "support/online.html"}),
-    url(r"^support/buy/$", wammu.views.static, {"page": "support/buy.html"}),
-    url(r"^contribute/$", wammu.views.static, {"page": "contribute/index.html"}),
-    url(r"^contribute/code/$", wammu.views.static, {"page": "contribute/code.html"}),
-    url(
+    re_path(r"^$", wammu.views.index, name="home"),
+    re_path(r"^gammu/$", wammu.views.gammu, name="gammu"),
+    re_path(r"^smsd/$", wammu.views.smsd, name="smsd"),
+    re_path(r"^wammu/$", wammu.views.wammu, name="wammu"),
+    re_path(r"^libgammu/$", wammu.views.libgammu, name="libgammu"),
+    re_path(r"^python-gammu/$", wammu.views.pygammu, name="python-gammu"),
+    re_path(
+        r"^authors/$", wammu.views.static, {"page": "authors.html"}, name="authors"
+    ),
+    re_path(
+        r"^license/$", wammu.views.static, {"page": "license.html"}, name="license"
+    ),
+    re_path(r"^search/$", RedirectView.as_view(url="/", permanent=True)),
+    re_path(r"^support/$", wammu.views.support, name="support"),
+    re_path(r"^support/bugs/$", wammu.views.static, {"page": "support/bugs.html"}),
+    re_path(r"^support/lists/$", wammu.views.static, {"page": "support/lists.html"}),
+    re_path(r"^support/online/$", wammu.views.static, {"page": "support/online.html"}),
+    re_path(r"^support/buy/$", wammu.views.static, {"page": "support/buy.html"}),
+    re_path(r"^contribute/$", wammu.views.static, {"page": "contribute/index.html"}),
+    re_path(
+        r"^contribute/code/$", wammu.views.static, {"page": "contribute/code.html"}
+    ),
+    re_path(
         r"^contribute/translate/$",
         wammu.views.static,
         {"page": "contribute/translate.html"},
     ),
-    url(
+    re_path(
         r"^contribute/publicity/$",
         wammu.views.static,
         {"page": "contribute/publicity.html"},
     ),
-    url(
+    re_path(
         r"^contribute/wanted/$", wammu.views.static, {"page": "contribute/wanted.html"}
     ),
-    url(r"^docs/$", wammu.views.static, {"page": "docs/index.html"}),
-    url(r"^s60/$", wammu.views.static, {"page": "s60.html"}),
-    url(r"^tools/$", wammu.views.static, {"page": "tools/index.html"}),
-    url(r"^tools/pdu-encode/$", tools.views.pduencode, name="pduencode"),
-    url(r"^tools/pdu-decode/$", tools.views.pdudecode, name="pdudecode"),
-    url(r"^tools/countries/$", tools.views.countries, name="countries"),
-    url(r"^tools/networks/$", tools.views.networks, name="networks"),
+    re_path(r"^docs/$", wammu.views.static, {"page": "docs/index.html"}),
+    re_path(r"^s60/$", wammu.views.static, {"page": "s60.html"}),
+    re_path(r"^tools/$", wammu.views.static, {"page": "tools/index.html"}),
+    re_path(r"^tools/pdu-encode/$", tools.views.pduencode, name="pduencode"),
+    re_path(r"^tools/pdu-decode/$", tools.views.pdudecode, name="pdudecode"),
+    re_path(r"^tools/countries/$", tools.views.countries, name="countries"),
+    re_path(r"^tools/networks/$", tools.views.networks, name="networks"),
     # RSS feeds
-    url(r"^news/rss/$", RssNewsFeed()),
-    url(r"^news/atom/$", AtomNewsFeed()),
+    re_path(r"^news/rss/$", RssNewsFeed()),
+    re_path(r"^news/atom/$", AtomNewsFeed()),
     # News
-    url(r"^news/$", news.views.index, name="news"),
-    url(
+    re_path(r"^news/$", news.views.index, name="news"),
+    re_path(
         r"^news/(?P<year>\d{4})/(?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<slug>[^/]+)/$",
         news.views.entry,
         name="news-entry",
     ),
-    url(r"^news/(?P<slug>[^/]+)/$", news.views.category, name="news-category"),
-    url(
+    re_path(r"^news/(?P<slug>[^/]+)/$", news.views.category, name="news-category"),
+    re_path(
         r"^download/$",
         downloads.views.download,
         name="downloads",
     ),
-    url(
+    re_path(
         r"^download/(?P<program>[^/]+)/$",
         downloads.views.detail,
         name="downloads-detail",
     ),
-    url(
+    re_path(
         r"^download/(?P<program>[^/]+)/(?P<version>[0-9.]+)/$",
         downloads.views.release,
         name="downloads-release",
     ),
-    url(
+    re_path(
         r"^download/(?P<program>[^/]+)/(?P<platform>[^/]+)/$",
         RedirectView.as_view(url="/download/%(program)s/", permanent=True),
     ),
     # RSS feeds
-    url(r"^phones/rss/$", RssPhonesFeed(), name="phonedb-rss"),
-    url(r"^phones/atom/$", AtomPhonesFeed()),
-    url(r"^phones/csv/$", phonedb.views.phones_csv, name="phonedb-csv"),
+    re_path(r"^phones/rss/$", RssPhonesFeed(), name="phonedb-rss"),
+    re_path(r"^phones/atom/$", AtomPhonesFeed()),
+    re_path(r"^phones/csv/$", phonedb.views.phones_csv, name="phonedb-csv"),
     # Phone database
-    url(r"^phones/$", phonedb.views.index, name="phonedb"),
-    url(r"^phones/history.png$", phonedb.views.phones_chart),
-    url(r"^phones/new/$", phonedb.views.create, name="phonedb-new"),
-    url(
+    re_path(r"^phones/$", phonedb.views.index, name="phonedb"),
+    re_path(r"^phones/history.png$", phonedb.views.phones_chart),
+    re_path(r"^phones/new/$", phonedb.views.create, name="phonedb-new"),
+    re_path(
         r"^phones/new\.php/$", RedirectView.as_view(url="/phones/new/", permanent=True)
     ),
-    url(r"^phones/list\.php", RedirectView.as_view(url="/phones/", permanent=True)),
-    url(r"^phones/search/$", phonedb.views.search, name="phonedb-search"),
-    url(r"^phones/review/$", phonedb.views.review),
-    url(r"^phones/model.php/$", phonedb.views.phone_redirect),
-    url(
+    re_path(r"^phones/list\.php", RedirectView.as_view(url="/phones/", permanent=True)),
+    re_path(r"^phones/search/$", phonedb.views.search, name="phonedb-search"),
+    re_path(r"^phones/review/$", phonedb.views.review),
+    re_path(r"^phones/model.php/$", phonedb.views.phone_redirect),
+    re_path(
         r"^phones/search/(?P<featurename>[^/]+)/$",
         phonedb.views.search,
         name="phonedb-search-feature",
     ),
-    url(
+    re_path(
         r"^phones/(?P<vendorname>[^/]+)/$", phonedb.views.vendor, name="phonedb-vendor"
     ),
-    url(
+    re_path(
         r"^phones/(?P<vendorname>[^/]+)/(?P<id>[0-9]+)/$",
         phonedb.views.phone,
         name="phonedb-phone",
     ),
-    url(r"^phones/(?P<vendorname>[^/]+)/(?P<id>[0-9]+)/delete/$", phonedb.views.delete),
-    url(
+    re_path(
+        r"^phones/(?P<vendorname>[^/]+)/(?P<id>[0-9]+)/delete/$", phonedb.views.delete
+    ),
+    re_path(
         r"^phones/(?P<vendorname>[^/]+)/(?P<id>[0-9]+)/approve/$", phonedb.views.approve
     ),
-    url(r"^phones/(?P<vendorname>[^/]+)/new/$", phonedb.views.create),
+    re_path(r"^phones/(?P<vendorname>[^/]+)/new/$", phonedb.views.create),
     # API for Wammu
-    url(r"^api/phones/new/$", phonedb.views.create_wammu, name="phonedb-api"),
+    re_path(r"^api/phones/new/$", phonedb.views.create_wammu, name="phonedb-api"),
     # DOAP/PAD syndication
-    url(r"^api/doap/(?P<program>[^/.]+).xml$", downloads.views.doap),
-    url(r"^api/pad/(?P<program>[^/.]+).xml$", downloads.views.pad),
-    url(r"^api/pad/padmap.txt$", downloads.views.padmap),
+    re_path(r"^api/doap/(?P<program>[^/.]+).xml$", downloads.views.doap),
+    re_path(r"^api/pad/(?P<program>[^/.]+).xml$", downloads.views.pad),
+    re_path(r"^api/pad/padmap.txt$", downloads.views.padmap),
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs'
-    # to INSTALLED_APPS to enable admin documentation:
-    url(r"^admin/doc/", include("django.contrib.admindocs.urls")),
-    # Uncomment the next line to enable the admin:
-    url(r"^admin/", admin.site.urls),
+    path("admin/", admin.site.urls),
     # Media files
-    url(
+    re_path(
         r"^media/(?P<path>.*)$", django.views.static.serve, {"document_root": "./media"}
     ),
     # Donations
-    url(r"^donate/$", donate.views.donate),
-    url(r"^donate/thanks/$", donate.views.thanks),
+    re_path(r"^donate/$", donate.views.donate),
+    re_path(r"^donate/thanks/$", donate.views.thanks),
     # Screenshots
-    url(r"^screenshots/$", screenshots.views.index),
-    url(
+    re_path(r"^screenshots/$", screenshots.views.index),
+    re_path(
         r"^screenshots/(?P<slug>[^/]+)/$",
         screenshots.views.category,
         name="screenshots-category",
     ),
     # Links
-    url(r"^links/$", links.views.index),
+    re_path(r"^links/$", links.views.index),
     # Compatibility
-    url(r"^install/$", RedirectView.as_view(url="/download/", permanent=True)),
-    url(r"^improve/$", RedirectView.as_view(url="/contribute/", permanent=True)),
-    url(r"^wammu.xml$", RedirectView.as_view(url="/api/pad/wammu.xml", permanent=True)),
-    url(
+    re_path(r"^install/$", RedirectView.as_view(url="/download/", permanent=True)),
+    re_path(r"^improve/$", RedirectView.as_view(url="/contribute/", permanent=True)),
+    re_path(
+        r"^wammu.xml$", RedirectView.as_view(url="/api/pad/wammu.xml", permanent=True)
+    ),
+    re_path(
         r"^wammu.doap$", RedirectView.as_view(url="/api/doap/wammu.xml", permanent=True)
     ),
-    url(
+    re_path(
         r"^phones/features/(?P<featurename>[^/]+)/$",
         RedirectView.as_view(url="/phones/search/%(featurename)s/", permanent=True),
     ),
     # Sitemap
-    url(
+    re_path(
         r"^sitemap.xml$",
         django.contrib.sitemaps.views.index,
         {"sitemaps": sitemaps},
         name="sitemap",
     ),
-    url(
+    re_path(
         r"^sitemap-(?P<section>.+)\.xml$",
         django.contrib.sitemaps.views.sitemap,
         {"sitemaps": sitemaps},
         name="django.contrib.sitemaps.views.sitemap",
     ),
     # Robots
-    url(r"^robots.txt$", wammu.views.robots),
+    re_path(r"^robots.txt$", wammu.views.robots),
     # Redirects for crazy bots who investiage full urls
-    url(r"^api/$", RedirectView.as_view(url="/download/", permanent=True)),
-    url(r"^api/doap/$", RedirectView.as_view(url="/download/", permanent=True)),
-    url(r"^api/pad/$", RedirectView.as_view(url="/download/", permanent=True)),
+    re_path(r"^api/$", RedirectView.as_view(url="/download/", permanent=True)),
+    re_path(r"^api/doap/$", RedirectView.as_view(url="/download/", permanent=True)),
+    re_path(r"^api/pad/$", RedirectView.as_view(url="/download/", permanent=True)),
     # Broken links
-    url(r"^(?P<link>.*)/\)\.$", RedirectView.as_view(url="/%(link)s", permanent=True)),
-    url(r"^(?P<link>.*)/\)$", RedirectView.as_view(url="/%(link)s", permanent=True)),
-    url(
+    re_path(
+        r"^(?P<link>.*)/\)\.$", RedirectView.as_view(url="/%(link)s", permanent=True)
+    ),
+    re_path(
+        r"^(?P<link>.*)/\)$", RedirectView.as_view(url="/%(link)s", permanent=True)
+    ),
+    re_path(
         r"^(?P<link>.*)/index\.php$",
         RedirectView.as_view(url="/%(link)s", permanent=True),
     ),
-    url(
+    re_path(
         r"^(?P<link>phones/(?P<vendorname>[^/]+)/(?P<id>[0-9]+)/),.*",
         RedirectView.as_view(url="/%(link)s", permanent=True),
     ),
-    url(r"^snapshot/$", RedirectView.as_view(url="/download/", permanent=True)),
-    url(
+    re_path(r"^snapshot/$", RedirectView.as_view(url="/download/", permanent=True)),
+    re_path(
         r"^manual/$",
         RedirectView.as_view(url="https://docs.gammu.org/", permanent=True),
     ),
-    url(
+    re_path(
         r"^docs/faq/$",
         RedirectView.as_view(url="https://docs.gammu.org/faq/", permanent=True),
     ),
-    url(
+    re_path(
         r"^docs/roadmap/$",
         RedirectView.as_view(
             url="https://docs.gammu.org/project/roadmap.html", permanent=True
         ),
     ),
-    url(r"^docs/devel/$", RedirectView.as_view(url="/docs/", permanent=True)),
-    url(r"^docs/man/.*$", RedirectView.as_view(url="/docs/", permanent=True)),
-    url(r"^wiki/$", RedirectView.as_view(url="/", permanent=True)),
-    url(r"^en/$", RedirectView.as_view(url="https://wammu.eu/", permanent=True)),
-    url(r"^cs/$", RedirectView.as_view(url="https://cs.wammu.eu/", permanent=True)),
-    url(r"^cz/$", RedirectView.as_view(url="https://cs.wammu.eu/", permanent=True)),
-    url(r"^es/$", RedirectView.as_view(url="https://es.wammu.eu/", permanent=True)),
+    re_path(r"^docs/devel/$", RedirectView.as_view(url="/docs/", permanent=True)),
+    re_path(r"^docs/man/.*$", RedirectView.as_view(url="/docs/", permanent=True)),
+    re_path(r"^wiki/$", RedirectView.as_view(url="/", permanent=True)),
+    re_path(r"^en/$", RedirectView.as_view(url="https://wammu.eu/", permanent=True)),
+    re_path(r"^cs/$", RedirectView.as_view(url="https://cs.wammu.eu/", permanent=True)),
+    re_path(r"^cz/$", RedirectView.as_view(url="https://cs.wammu.eu/", permanent=True)),
+    re_path(r"^es/$", RedirectView.as_view(url="https://es.wammu.eu/", permanent=True)),
 ]
 if settings.DEBUG and "debug_toolbar" in settings.INSTALLED_APPS:
     import debug_toolbar
