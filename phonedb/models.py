@@ -4,8 +4,8 @@ import markdown
 from django.core.exceptions import ValidationError
 from django.db import models
 from django.urls import reverse
-from django.utils.translation import ugettext as _
-from django.utils.translation import ugettext_lazy
+from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy
 
 # Create your models here.
 
@@ -18,32 +18,32 @@ CONNECTION_CHOICES = (
 )
 
 GARBLE_CHOICES = (
-    ("atdot", ugettext_lazy("Use [at] and [dot]")),
-    ("none", ugettext_lazy("Display it normally")),
-    ("hide", ugettext_lazy("Don't show email at all")),
-    ("nospam", ugettext_lazy("Insert NOSPAM text at random position")),
+    ("atdot", gettext_lazy("Use [at] and [dot]")),
+    ("none", gettext_lazy("Display it normally")),
+    ("hide", gettext_lazy("Don't show email at all")),
+    ("nospam", gettext_lazy("Insert NOSPAM text at random position")),
 )
 
 STATE_CHOICES = (
-    ("draft", ugettext_lazy("Draft")),
-    ("approved", ugettext_lazy("Approved")),
-    ("deleted", ugettext_lazy("Deleted")),
+    ("draft", gettext_lazy("Draft")),
+    ("approved", gettext_lazy("Approved")),
+    ("deleted", gettext_lazy("Deleted")),
 )
 
 FEATURE_NAMES = {
-    "info": ugettext_lazy("Phone information"),
-    "sms": ugettext_lazy("Sending and saving SMS"),
-    "mms": ugettext_lazy("Multimedia messaging"),
-    "phonebook": ugettext_lazy("Basic phonebook functions (name and phone number)"),
-    "enhancedphonebook": ugettext_lazy(
+    "info": gettext_lazy("Phone information"),
+    "sms": gettext_lazy("Sending and saving SMS"),
+    "mms": gettext_lazy("Multimedia messaging"),
+    "phonebook": gettext_lazy("Basic phonebook functions (name and phone number)"),
+    "enhancedphonebook": gettext_lazy(
         "Enhanced phonebook entries (eg. several numbers per entry)"
     ),
-    "calendar": ugettext_lazy("Calendar entries"),
-    "todo": ugettext_lazy("Todos"),
-    "filesystem": ugettext_lazy("Filesystem manipulation"),
-    "call": ugettext_lazy("Reading and making calls"),
-    "logo": ugettext_lazy("Logos"),
-    "ringtone": ugettext_lazy("Ringtones"),
+    "calendar": gettext_lazy("Calendar entries"),
+    "todo": gettext_lazy("Todos"),
+    "filesystem": gettext_lazy("Filesystem manipulation"),
+    "call": gettext_lazy("Reading and making calls"),
+    "logo": gettext_lazy("Logos"),
+    "ringtone": gettext_lazy("Ringtones"),
 }
 
 
@@ -96,7 +96,7 @@ class Phone(models.Model):
     vendor = models.ForeignKey(Vendor, on_delete=models.deletion.CASCADE)
     name = models.CharField(
         max_length=250,
-        help_text=ugettext_lazy("Phone name, please exclude vendor name."),
+        help_text=gettext_lazy("Phone name, please exclude vendor name."),
         validators=[phone_name_validator],
         db_index=True,
     )
@@ -104,27 +104,27 @@ class Phone(models.Model):
         Connection,
         null=True,
         blank=True,
-        help_text=ugettext_lazy("Connection used in Gammu configuration."),
+        help_text=gettext_lazy("Connection used in Gammu configuration."),
         on_delete=models.deletion.CASCADE,
     )
     features = models.ManyToManyField(
         Feature,
-        help_text=ugettext_lazy("Features which are working in Gammu."),
+        help_text=gettext_lazy("Features which are working in Gammu."),
         blank=True,
     )
     model = models.CharField(
         max_length=100,
         blank=True,
-        help_text=ugettext_lazy("Model used in Gammu configuration, usually empty."),
+        help_text=gettext_lazy("Model used in Gammu configuration, usually empty."),
     )
     gammu_version = models.CharField(
         max_length=100,
         blank=True,
-        help_text=ugettext_lazy("Gammu version where you tested this phone."),
+        help_text=gettext_lazy("Gammu version where you tested this phone."),
     )
     note = models.TextField(
         blank=True,
-        help_text=ugettext_lazy(
+        help_text=gettext_lazy(
             'Any note about this phone and Gammu support for it. You can use <a href="http://daringfireball.net/projects/markdown/syntax">markdown markup</a>.'
         ),
     )
@@ -133,7 +133,7 @@ class Phone(models.Model):
     author_email = models.EmailField(
         max_length=250,
         blank=True,
-        help_text=ugettext_lazy(
+        help_text=gettext_lazy(
             "Please choose how will be email handled in next field."
         ),
     )

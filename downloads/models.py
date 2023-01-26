@@ -5,8 +5,8 @@ import markdown
 from django.contrib.auth.models import User
 from django.db import models
 from django.urls import reverse
-from django.utils.translation import ugettext as _
-from django.utils.translation import ugettext_lazy
+from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy
 
 from news.models import Category
 from wammu.helpers import process_bug_links
@@ -24,8 +24,8 @@ PROGRAM_URLS = {
 }
 
 PLATFORM_CHOICES = (
-    ("source", ugettext_lazy("Source code")),
-    ("win32", ugettext_lazy("Windows binaries")),
+    ("source", gettext_lazy("Source code")),
+    ("win32", gettext_lazy("Windows binaries")),
 )
 
 

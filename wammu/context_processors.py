@@ -3,7 +3,7 @@
 from datetime import datetime
 
 from django.utils.translation import get_language
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 
 from news.models import Category
 from screenshots.models import Category as ScreenshotCategory

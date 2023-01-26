@@ -3,16 +3,16 @@ from crispy_forms.layout import Layout, Submit
 from django import forms
 from django.forms import Form, ModelForm
 from django.utils.safestring import mark_safe
-from django.utils.translation import ugettext as _
-from django.utils.translation import ugettext_lazy
+from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy
 
 from phonedb.models import Feature, Phone
 
 
 class SearchForm(Form):
-    q = forms.CharField(label=ugettext_lazy("Search text"), required=False)
+    q = forms.CharField(label=gettext_lazy("Search text"), required=False)
     feature = forms.MultipleChoiceField(
-        label=ugettext_lazy("Features"),
+        label=gettext_lazy("Features"),
         required=False,
         choices=(),
         widget=forms.CheckboxSelectMultiple,
@@ -46,9 +46,9 @@ class SearchForm(Form):
 
 class NewForm(ModelForm):
     features = forms.MultipleChoiceField(
-        label=ugettext_lazy("Features"),
+        label=gettext_lazy("Features"),
         required=False,
-        help_text=ugettext_lazy("Features which are working in Gammu."),
+        help_text=gettext_lazy("Features which are working in Gammu."),
         widget=forms.CheckboxSelectMultiple,
     )
 
@@ -84,7 +84,7 @@ class NewForm(ModelForm):
             "author_name",
             "author_email",
             "email_garble",
-            Submit("submit", ugettext_lazy("Save"), css_class="btn-default"),
+            Submit("submit", gettext_lazy("Save"), css_class="btn-default"),
         )
         self.fields["features"].choices = [
             (

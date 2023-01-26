@@ -12,7 +12,7 @@ from django.core.paginator import EmptyPage, InvalidPage, Paginator
 from django.db.models import Count, Q
 from django.http import Http404, HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 from django.views.decorators.csrf import csrf_exempt
 from pygooglechart import Axis, Chart, SimpleLineChart
 
