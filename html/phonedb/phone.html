@@ -15,25 +15,25 @@
 
 {% if user.is_superuser %}
 <li class="pull-right action"><a href="/admin/phonedb/phone/{{ phone.id }}/">{% trans "Edit" %}</a></li>
-{% ifnotequal phone.state "deleted" %}
+{% if phone.state != "deleted" %}
 <li class="pull-right action"><a href="{{ phone.get_absolute_url }}delete/">{% trans "Delete" %}</a></li>
-{% endifnotequal %}
-{% ifnotequal phone.state "approved" %}
+{% endif%}
+{% if phone.state != "approved" %}
 <li class="pull-right action"><a href="{{ phone.get_absolute_url }}approve/">{% trans "Approve" %}</a></li>
-{% endifnotequal %}
+{% endif %}
 {% endif %}
 </ol>
 <h2>{{ vendor.name }} {{ phone.name }}</h2>
 
-{% ifequal phone.state "deleted" %}
+{% if phone.state == "deleted" %}
 <div class="alert alert-warning" role="alert">
 {% blocktrans %}
 This record has been rejected for some reasons, you might want to check other
 records for same model (you can see them on bottom of the page).
 {% endblocktrans %}
 </div>
-{% endifequal %}
-{% ifequal phone.state "draft" %}
+{% endif %}
+{% if phone.state == "draft" %}
 <div class="alert alert-warning" role="alert">
 {% blocktrans %}
 This record has not been approved yet. This means that it might contain false
@@ -41,7 +41,7 @@ information or there are better records for the same model (you can see them
 on right side).
 {% endblocktrans %}
 </div>
-{% endifequal %}
+{% endif %}
 
 <p>
 {% blocktrans with vendor.slug as vendor and phone.name|urlencode as phone %}

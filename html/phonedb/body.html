@@ -17,7 +17,7 @@
 
 <pre>
 [gammu]
-port = {% ifequal phone.connection.medium "bluetooth" %}BLUETOOTH ADDRESS OF PHONE{% else %}DEVICE NAME{% endifequal %}
+port = {% if phone.connection.medium == "bluetooth" %}BLUETOOTH ADDRESS OF PHONE{% else %}DEVICE NAME{% endif %}
 connection = {{ phone.connection.name }}
 {% if phone.model %}model = {{ phone.model }}{% endif %}</pre>
 

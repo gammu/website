@@ -31,16 +31,16 @@
 <table class="table">
 <tr><th>PDU</th><td class="hex">{{ part.PDU|wrap|linebreaksbr }}</td></tr>
 <tr><th>Number</th><td>{{ part.Number }}</td></tr>
-{% ifequal part.Coding "8bit" %}
+{% if part.Coding == "8bit" %}
 <tr><th>{% trans "Text" %}</th><td class="hex">{{ part.TextHex|wrap|linebreaksbr }}</td></tr>
 {% else %}
 <tr><th>{% trans "Text" %}</th><td>{{ part.Text }}</td></tr>
-{% endifequal %}
-{% ifnotequal part.UDH.Type "NoUDH" %}
+{% endif %}
+{% if part.UDH.Type != "NoUDH" %}
 <tr><th>{% trans "UDH type" %}</th><td>{{ part.UDH.Type }}</td></tr>
 <tr><th>{% trans "UDH header" %}</th><td class="hex">{{ part.UDH.TextHex }}</td></tr>
 <tr><th>{% trans "Message part" %}</th><td>{{ part.UDH.PartNumber }} / {{ part.UDH.AllParts }}</td></tr>
-{% endifnotequal %}
+{% endif %}
 <tr><th>{% trans "SMSC" %}</th><td>{{ part.SMSC.Number }}</td></tr>
 <tr><th>{% trans "Validity" %}</th><td>{{ part.SMSC.Validity }}</td></tr>
 <tr><th>{% trans "Type" %}</th><td>{{ part.Type }}</td></tr>

@@ -28,7 +28,7 @@
 <li class="disabled"><span>&laquo;</span></li>
 {% endif %}
 {% for page in screenshots.paginator.page_range %}
-<li {% ifequal page screenshots.number %} class="active" {% endifequal %}><a href="?page={{ page }}">{{ page }}</a></li>
+<li {% if page == screenshots.number %} class="active" {% endif %}><a href="?page={{ page }}">{{ page }}</a></li>
 {% endfor %}
 {% if screenshots.has_next %}
 <li><a href="?page={{ screenshots.next_page_number }}">&raquo;</a></li>
