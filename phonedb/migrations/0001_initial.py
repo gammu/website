@@ -4,7 +4,6 @@ import phonedb.models
 
 
 class Migration(migrations.Migration):
-
     dependencies = []
 
     operations = [

@@ -40,7 +40,6 @@ def detail(request, program):
 
 
 def release(request, program, version):
-
     release = get_object_or_404(Release, program=program, version=version)
     downloads = Download.objects.filter(release=release)
 

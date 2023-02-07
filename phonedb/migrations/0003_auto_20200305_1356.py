@@ -6,7 +6,6 @@ import phonedb.models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("phonedb", "0002_auto_20170407_1451"),
     ]

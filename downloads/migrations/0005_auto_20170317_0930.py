@@ -28,7 +28,6 @@ def add_sha256(apps, schema_editor):
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("downloads", "0004_download_sha256"),
     ]
