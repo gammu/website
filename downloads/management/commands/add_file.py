@@ -18,7 +18,6 @@ class Command(BaseCommand):
         parser.add_argument("file", nargs="+")
 
     def handle(self, *args, **options):
-
         release = Release.objects.get(
             program=options["program"], version=options["version"]
         )

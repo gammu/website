@@ -4,7 +4,6 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("phonedb", "0004_remove_vendor_tuxmobil"),
     ]

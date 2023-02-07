@@ -14,7 +14,6 @@ def getlink(item):
 
 @register.simple_tag
 def platform_info(program, platform):
-
     platform_name = platform
     for c in PLATFORM_CHOICES:
         if platform == c[0]:

@@ -4,7 +4,6 @@ import screenshots.thumbs
 
 
 class Migration(migrations.Migration):
-
     dependencies = []
 
     operations = [
