@@ -1,3 +1,4 @@
+crispy-bootstrap3==2022.1
 Django==4.1.7
 django-crispy-forms==1.14.0
 Markdown==3.4.1
