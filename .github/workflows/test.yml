@@ -27,7 +27,7 @@ jobs:
       - name: Install apt dependencies
         run: |
           sudo apt-get update
-          sudo apt-get purge libodbc2
+          sudo apt-get purge libodbc2 libodbcinst2
           sudo apt-get install -y libgammu-dev
       - name: Install pip dependencies
         run: |
