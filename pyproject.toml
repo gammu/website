@@ -1,0 +1,15 @@
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+# Should be fixed:
+# D10 - we are missing many docstrings
+# D20 - bad formatting of many docstrings
+# D40 - bad formatting of many docstrings
+# DJ001 - null on text fields
+# E501 - line too long
+ignore = ["D10", "D20", "D40", "DJ001", "E501"]
+select = ["E", "F", "B", "A", "C4", "DJ", "D", "ERA", "EXE", "G", "T20", "RET", "SLF", "N"]
+
+[tool.ruff.mccabe]
+max-complexity = 16
