@@ -3,6 +3,7 @@ from django.contrib import admin
 from news.models import Category, Entry
 
 
+@admin.register(Entry)
 class EntryAdmin(admin.ModelAdmin):
     date_hierarchy = "pub_date"
     list_display = ("title", "pub_date", "author")
@@ -13,11 +14,6 @@ class EntryAdmin(admin.ModelAdmin):
     }
 
 
-admin.site.register(Entry, EntryAdmin)
-
-
+@admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("title",)}
-
-
-admin.site.register(Category, CategoryAdmin)
