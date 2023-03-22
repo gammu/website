@@ -13,12 +13,7 @@ class SiteLocaleMiddleware:
 
         self.process_request(request)
 
-        response = self.get_response(request)
-
-        # Code to be executed for each request/response after
-        # the view is called.
-
-        return response
+        return self.get_response(request)
 
     def process_request(self, request):
         try:

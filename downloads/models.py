@@ -30,8 +30,7 @@ PLATFORM_CHOICES = (
 
 
 def get_latest_releases(program):
-    """
-    Returns tuple with last release information for given program.
+    """Returns tuple with last release information for given program.
     First is stable, second is testing, which can be None.
     """
     releases = Release.objects.filter(program=program)
@@ -57,12 +56,10 @@ def get_program(name):
 
 
 def get_current_downloads(program):
-    """
-    Gets list of tuples for currently active downloads. The first one
+    """Gets list of tuples for currently active downloads. The first one
     is always present and it's the stable one, the second one is
     testing if available.
     """
-
     downloads = []
 
     stable_release, testing_release = get_latest_releases(program)
@@ -150,11 +147,10 @@ class Release(models.Model):
                 "program": self.get_program(),
                 "version": self.version,
             }
-        else:
-            return _("%(program)s testing release %(version)s") % {
-                "program": self.get_program(),
-                "version": self.version,
-            }
+        return _("%(program)s testing release %(version)s") % {
+            "program": self.get_program(),
+            "version": self.version,
+        }
 
     def get_program(self):
         return get_program(self.program)

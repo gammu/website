@@ -9,7 +9,7 @@ register = template.Library()
 
 @register.filter
 @stringfilter
-def hex(value):
+def hex(value):  # noqa: A001
     return value.encode("hex")
 
 

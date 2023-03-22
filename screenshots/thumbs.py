@@ -1,6 +1,5 @@
-"""
-django-thumbs by Antonio Melé
-http://django.es
+"""django-thumbs by Antonio Melé
+http://django.es.
 """
 from io import BytesIO
 
@@ -10,11 +9,11 @@ from django.db.models.fields.files import ImageFieldFile
 from PIL import Image
 
 
-def generate_thumb(img, thumb_size, format):
-    """
-    Generates a thumbnail image and returns a ContentFile object with the thumbnail
+def generate_thumb(img, thumb_size, format):  # noqa: D417, A002
+    """Generates a thumbnail image and returns a ContentFile object with the thumbnail.
 
-    Parameters:
+    Parameters
+    ----------
     ===========
     img         File object
 
@@ -23,7 +22,6 @@ def generate_thumb(img, thumb_size, format):
     format      format of the original image ('jpeg','gif','png',...)
                 (this format will be used for the generated thumbnail, too)
     """
-
     img.seek(0)  # see http://code.djangoproject.com/ticket/8222 for details
     image = Image.open(img)
 
@@ -56,16 +54,14 @@ def generate_thumb(img, thumb_size, format):
     io = BytesIO()
     # PNG and GIF are the same, JPG is JPEG
     if format.upper() == "JPG":
-        format = "JPEG"
+        format = "JPEG"  # noqa: A001
 
     image2.save(io, format)
     return ContentFile(io.getvalue())
 
 
 class ImageWithThumbsFieldFile(ImageFieldFile):
-    """
-    See ImageWithThumbsField for usage example
-    """
+    """See ImageWithThumbsField for usage example."""
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -75,10 +71,8 @@ class ImageWithThumbsFieldFile(ImageFieldFile):
             def get_size(self, size):
                 if not self:
                     return ""
-                else:
-                    split = self.url.rsplit(".", 1)
-                    thumb_url = f"{split[0]}.{w}x{h}.{split[1]}"
-                    return thumb_url
+                split = self.url.rsplit(".", 1)
+                return f"{split[0]}.{w}x{h}.{split[1]}"
 
             for size in self.field.sizes:
                 (w, h) = size
@@ -116,10 +110,9 @@ class ImageWithThumbsFieldFile(ImageFieldFile):
 
 
 class ImageWithThumbsField(ImageField):
-    """
-    Usage example:
+    """Usage example:
     ==============
-    photo = ImageWithThumbsField(upload_to='images', sizes=((125,125),(300,200),)
+    photo = ImageWithThumbsField(upload_to='images', sizes=((125,125),(300,200),).
 
     To retrieve image URL, exactly the same way as with ImageField:
         my_object.photo.url

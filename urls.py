@@ -208,15 +208,15 @@ urlpatterns = [
         r"^phones/(?P<vendorname>[^/]+)/$", phonedb.views.vendor, name="phonedb-vendor"
     ),
     re_path(
-        r"^phones/(?P<vendorname>[^/]+)/(?P<id>[0-9]+)/$",
+        r"^phones/(?P<vendorname>[^/]+)/(?P<pk>[0-9]+)/$",
         phonedb.views.phone,
         name="phonedb-phone",
     ),
     re_path(
-        r"^phones/(?P<vendorname>[^/]+)/(?P<id>[0-9]+)/delete/$", phonedb.views.delete
+        r"^phones/(?P<vendorname>[^/]+)/(?P<pk>[0-9]+)/delete/$", phonedb.views.delete
     ),
     re_path(
-        r"^phones/(?P<vendorname>[^/]+)/(?P<id>[0-9]+)/approve/$", phonedb.views.approve
+        r"^phones/(?P<vendorname>[^/]+)/(?P<pk>[0-9]+)/approve/$", phonedb.views.approve
     ),
     re_path(r"^phones/(?P<vendorname>[^/]+)/new/$", phonedb.views.create),
     # API for Wammu
@@ -287,7 +287,7 @@ urlpatterns = [
         RedirectView.as_view(url="/%(link)s", permanent=True),
     ),
     re_path(
-        r"^(?P<link>phones/(?P<vendorname>[^/]+)/(?P<id>[0-9]+)/),.*",
+        r"^(?P<link>phones/(?P<vendorname>[^/]+)/(?P<pk>[0-9]+)/),.*",
         RedirectView.as_view(url="/%(link)s", permanent=True),
     ),
     re_path(r"^snapshot/$", RedirectView.as_view(url="/download/", permanent=True)),

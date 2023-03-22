@@ -302,19 +302,19 @@ def vendor(request, vendorname):
 def phone_redirect(request):
     try:
         pk = int(request.GET["id"])
-    except Exception:
-        raise Http404("No such entry!")
+    except Exception as error:
+        raise Http404("No such entry!") from error
     phone = get_object_or_404(Phone, pk=pk)
     return HttpResponseRedirect(phone.get_absolute_url())
 
 
-def phone(request, vendorname, id):
-    id = int(id)
+def phone(request, vendorname, pk):
+    pk = int(pk)
     vendor = get_object_or_404(Vendor, slug=vendorname)
-    phone = get_object_or_404(Phone, id=id, vendor=vendor)
+    phone = get_object_or_404(Phone, pk=pk, vendor=vendor)
     related = (
         Phone.objects.filter(vendor=vendor, name__icontains=phone.name)
-        .exclude(id=id)
+        .exclude(pk=pk)
         .exclude(state="deleted")
         .prefetch_related("vendor", "features", "connection")
     )
@@ -332,10 +332,10 @@ def phone(request, vendorname, id):
 
 
 @login_required
-def approve(request, vendorname, id):
-    id = int(id)
+def approve(request, vendorname, pk):
+    pk = int(pk)
     vendor = get_object_or_404(Vendor, slug=vendorname)
-    phone = get_object_or_404(Phone, id=id, vendor=vendor)
+    phone = get_object_or_404(Phone, pk=pk, vendor=vendor)
 
     if not request.user.is_superuser:
         return HttpResponseRedirect(phone.get_absolute_url())
@@ -346,10 +346,10 @@ def approve(request, vendorname, id):
 
 
 @login_required
-def delete(request, vendorname, id):
-    id = int(id)
+def delete(request, vendorname, pk):
+    pk = int(pk)
     vendor = get_object_or_404(Vendor, slug=vendorname)
-    phone = get_object_or_404(Phone, id=id, vendor=vendor)
+    phone = get_object_or_404(Phone, pk=pk, vendor=vendor)
 
     if not request.user.is_superuser:
         return HttpResponseRedirect(phone.get_absolute_url())
@@ -367,7 +367,7 @@ def phones_csv(request):
     writer = csv.writer(response)
     phones = (
         Phone.objects.exclude(state="deleted")
-        .order_by("id")
+        .order_by("pk")
         .prefetch_related("vendor", "features", "connection")
     )
     writer.writerow(
@@ -412,9 +412,7 @@ def phones_csv(request):
 
 @csrf_exempt
 def create_wammu(request):  # noqa: C901
-    """
-    Compatibility interface for Wammu.
-    """
+    """Compatibility interface for Wammu."""
     invalid = []
     version = 1
     response = HttpResponse(content_type="text/plain")
@@ -500,9 +498,9 @@ def create_wammu(request):  # noqa: C901
         phone.features.add(feature)
 
     if version == 2:
-        response.write(OKAY_V2 % (phone.id, phone.get_absolute_url()))
+        response.write(OKAY_V2 % (phone.pk, phone.get_absolute_url()))
     else:
-        response.write(OKAY % (phone.id, phone.vendor.slug, phone.id))
+        response.write(OKAY % (phone.pk, phone.vendor.slug, phone.pk))
     return response
 
 
@@ -558,7 +556,7 @@ def create(request, vendorname=None):  # noqa: C901
                 vendor = Vendor.objects.get(slug=vendorname)
             else:
                 vendor = Vendor.objects.get(slug=request.GET["vendor"])
-            initial["vendor"] = vendor.id
+            initial["vendor"] = vendor.pk
         except Exception:
             pass
         try:

@@ -200,15 +200,14 @@ class Phone(models.Model):
     def get_author_email(self):
         if self.author_email == "":
             return None
-        elif self.email_garble == "hide":
+        if self.email_garble == "hide":
             return None
-        elif self.email_garble == "none":
+        if self.email_garble == "none":
             return self.author_email
-        elif self.email_garble == "atdot":
+        if self.email_garble == "atdot":
             return self.author_email.replace("@", "[at]").replace(".", "[dot]")
-        else:
-            pos = random.randint(0, len(self.author_email))
-            return self.author_email[:pos] + "NOSPAM" + self.author_email[pos:]
+        pos = random.randint(0, len(self.author_email))
+        return self.author_email[:pos] + "NOSPAM" + self.author_email[pos:]
 
     def get_author_name(self):
         if self.author_name == "":
@@ -229,7 +228,6 @@ class Phone(models.Model):
 
         if html:
             return f'<a href="mailto:{mail}">{name}</a>'
-        else:
-            if mail == name:
-                return mail
-            return f"{name} ({mail})"
+        if mail == name:
+            return mail
+        return f"{name} ({mail})"

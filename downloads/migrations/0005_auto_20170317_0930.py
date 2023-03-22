@@ -14,7 +14,7 @@ def add_sha256(apps, schema_editor):
         filename = os.path.join(settings.FILES_ROOT, download.location.lstrip("/"))
 
         if not os.path.exists(filename):
-            print(f"File not found: {filename}")
+            print(f"File not found: {filename}")  # noqa: T201
             continue
 
         with open(filename) as handle:

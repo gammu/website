@@ -1,5 +1,4 @@
-"""
-WSGI config for Gamu website project.
+"""WSGI config for Gamu website project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

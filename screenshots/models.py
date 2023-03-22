@@ -6,10 +6,7 @@ from screenshots.thumbs import ImageWithThumbsField
 
 
 class Category(models.Model):
-    """
-    A category that an entry can belong to.
-
-    """
+    """A category that an entry can belong to."""
 
     title = models.CharField(max_length=250)
     slug = models.SlugField(

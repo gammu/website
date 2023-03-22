@@ -7,7 +7,7 @@ from downloads.models import Download, Release
 
 
 class Command(BaseCommand):
-    help = "adds file to the release"
+    help = "adds file to the release"  # noqa: A003
 
     def add_arguments(self, parser):
         super().add_arguments(parser)

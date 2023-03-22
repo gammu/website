@@ -1,6 +1,4 @@
-"""
-Tests for sitemaps.
-"""
+"""Tests for sitemaps."""
 
 from xml.etree import ElementTree as ElementTree
 

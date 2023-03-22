@@ -8,8 +8,7 @@ from phonedb.models import Phone
 
 
 def process_version_feedback(request):
-    """
-    Handles feedback from Wammu, which includes version URL parameter. Return
+    """Handles feedback from Wammu, which includes version URL parameter. Return
     value is dictionary to be fed to rendering context.
     """
     result = {"feedback": False}
