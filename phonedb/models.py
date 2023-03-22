@@ -194,7 +194,7 @@ class Phone(models.Model):
 
     def get_absolute_url(self):
         return reverse(
-            "phonedb-phone", kwargs={"vendorname": self.vendor.slug, "id": self.id}
+            "phonedb-phone", kwargs={"vendorname": self.vendor.slug, "pk": self.pk}
         )
 
     def get_author_email(self):
