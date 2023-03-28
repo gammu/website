@@ -1,5 +1,5 @@
-"""django-thumbs by Antonio Melé
-http://django.es.
+"""
+django-thumbs by Antonio Meléhttp://django.es.
 """
 from io import BytesIO
 
@@ -10,7 +10,8 @@ from PIL import Image
 
 
 def generate_thumb(img, thumb_size, format):  # noqa: D417, A002
-    """Generates a thumbnail image and returns a ContentFile object with the thumbnail.
+    """
+    Generates a thumbnail image and returns a ContentFile object with the thumbnail.
 
     Parameters
     ----------
@@ -110,7 +111,8 @@ class ImageWithThumbsFieldFile(ImageFieldFile):
 
 
 class ImageWithThumbsField(ImageField):
-    """Usage example:
+    """
+    Usage example:
     ==============
     photo = ImageWithThumbsField(upload_to='images', sizes=((125,125),(300,200),).
 

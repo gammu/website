@@ -1,5 +1,6 @@
 #!/usr/bin/python
-"""Script to automatically merge pending translations from Pootle into po files.
+"""
+Script to automatically merge pending translations from Pootle into po files.
 
 It only accepts those, which are not translated or fuzzy.
 """
