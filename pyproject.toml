@@ -2,6 +2,7 @@
 profile = "black"
 
 [tool.ruff]
+format = "github"
 # Should be fixed:
 # D10 - we are missing many docstrings
 # D20 - bad formatting of many docstrings
