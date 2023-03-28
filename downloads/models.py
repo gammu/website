@@ -30,7 +30,8 @@ PLATFORM_CHOICES = (
 
 
 def get_latest_releases(program):
-    """Returns tuple with last release information for given program.
+    """
+    Returns tuple with last release information for given program.
     First is stable, second is testing, which can be None.
     """
     releases = Release.objects.filter(program=program)
@@ -56,7 +57,8 @@ def get_program(name):
 
 
 def get_current_downloads(program):
-    """Gets list of tuples for currently active downloads. The first one
+    """
+    Gets list of tuples for currently active downloads. The first one
     is always present and it's the stable one, the second one is
     testing if available.
     """
@@ -89,6 +91,9 @@ class Release(models.Model):
 
     class Meta:
         ordering = ["-date"]
+
+    def __str__(self):
+        return f"{self.program}-{self.version}"
 
     def save(self, *args, **kwargs):
         version = self.version.split(".")
@@ -135,8 +140,11 @@ class Release(models.Model):
         self.description_html = markdown.markdown(self.description)
         super().save(*args, **kwargs)
 
-    def __str__(self):
-        return f"{self.program}-{self.version}"
+    def get_absolute_url(self):
+        return reverse(
+            "downloads-release",
+            kwargs={"version": self.version, "program": self.program},
+        )
 
     def is_stable(self):
         return self.version_int % 100 < 90
@@ -154,12 +162,6 @@ class Release(models.Model):
 
     def get_program(self):
         return get_program(self.program)
-
-    def get_absolute_url(self):
-        return reverse(
-            "downloads-release",
-            kwargs={"version": self.version, "program": self.program},
-        )
 
 
 class Download(models.Model):

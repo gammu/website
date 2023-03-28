@@ -157,6 +157,11 @@ class Phone(models.Model):
         self.note_html = markdown.markdown(self.note)
         super().save(*args, **kwargs)
 
+    def get_absolute_url(self):
+        return reverse(
+            "phonedb-phone", kwargs={"vendorname": self.vendor.slug, "pk": self.pk}
+        )
+
     def get_related_sites(self):
         result = []
         name = self.__str__().replace(" ", "_").replace("-", "_")
@@ -191,11 +196,6 @@ class Phone(models.Model):
             )
 
         return result
-
-    def get_absolute_url(self):
-        return reverse(
-            "phonedb-phone", kwargs={"vendorname": self.vendor.slug, "pk": self.pk}
-        )
 
     def get_author_email(self):
         if self.author_email == "":
