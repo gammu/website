@@ -107,5 +107,7 @@ class PhoneDBTest(TestCase):
 
     def test_feed(self):
         self.test_add()
-        response = self.client.get(reverse("phonedb-rss"), HTTP_HOST="testserver")
+        response = self.client.get(
+            reverse("phonedb-rss"), headers={"host": "testserver"}
+        )
         self.assertContains(response, "TestPHone")
