@@ -22,17 +22,17 @@ repos:
     hooks:
       - id: isort
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.11.0
+    rev: v3.13.0
     hooks:
       - id: pyupgrade
         args: [--py39-plus]
   - repo: https://github.com/adamchainz/django-upgrade
-    rev: "1.14.1"
+    rev: "1.15.0"
     hooks:
       - id: django-upgrade
         args: [--target-version, "4.2"]
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: "v0.0.290"
+    rev: "v0.0.291"
     hooks:
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix]
@@ -68,7 +68,7 @@ repos:
           |yaml|yml\
           )$"
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v8.49.0
+    rev: v8.50.0
     hooks:
       - id: eslint
         args: ["--format=compact"]
