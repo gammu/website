@@ -14,7 +14,7 @@ repos:
       - id: mixed-line-ending
         args: [--fix=lf]
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.32.0
+    rev: v1.33.0
     hooks:
       - id: yamllint
   - repo: https://github.com/pycqa/isort
@@ -32,12 +32,12 @@ repos:
       - id: django-upgrade
         args: [--target-version, "4.2"]
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: "v0.1.4"
+    rev: "v0.1.5"
     hooks:
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix]
   - repo: https://github.com/psf/black
-    rev: 23.10.1
+    rev: 23.11.0
     hooks:
       - id: black
   - repo: https://github.com/asottile/blacken-docs
@@ -54,7 +54,7 @@ repos:
       - id: pretty-format-toml
         args: [--autofix]
   - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v3.0.3
+    rev: v3.1.0
     hooks:
       - id: prettier
         files: "\\.(\
