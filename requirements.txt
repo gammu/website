@@ -5,4 +5,4 @@ Markdown==3.5.1
 Pillow==10.1.0
 pygooglechart==0.4.0
 python-gammu==3.2.4
-rollbar==0.16.3
+rollbar==1.0.0
