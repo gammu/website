@@ -12,6 +12,7 @@ from django.core.paginator import EmptyPage, InvalidPage, Paginator
 from django.db.models import Count, Q
 from django.http import Http404, HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
+from django.utils import timezone
 from django.utils.translation import gettext as _
 from django.views.decorators.csrf import csrf_exempt
 from pygooglechart import Axis, Chart, SimpleLineChart
@@ -30,7 +31,7 @@ def get_chart_url(force=False):
     url = cache.get(cache_key)
     if url is not None and not force:
         return url
-    enddate = datetime.datetime.now()
+    enddate = timezone.now()
     endyear = enddate.year
     endmonthlast = enddate.month
     endmonth = 12

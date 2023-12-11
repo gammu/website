@@ -4,6 +4,7 @@ import markdown
 from django.contrib.auth.models import User
 from django.db import models
 from django.urls import reverse
+from django.utils import timezone
 
 
 class Category(models.Model):
@@ -66,7 +67,7 @@ class Entry(models.Model):
 
     def save(self, *args, **kwargs):
         if self.pub_date is None:
-            self.pub_date = datetime.datetime.now()
+            self.pub_date = timezone.now()
         if self.excerpt:
             self.excerpt_html = markdown.markdown(self.excerpt)
         self.body_html = markdown.markdown(self.body, safe_mode=True)

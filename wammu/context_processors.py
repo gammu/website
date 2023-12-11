@@ -1,7 +1,7 @@
 # Context processors
 
-from datetime import datetime
 
+from django.utils import timezone
 from django.utils.translation import get_language
 from django.utils.translation import gettext as _
 
@@ -64,7 +64,7 @@ def translations(request):
 
 def dates(request):
     return {
-        "current_year": datetime.now().strftime("%Y"),
+        "current_year": timezone.now().strftime("%Y"),
     }
 
 
