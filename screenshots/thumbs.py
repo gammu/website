@@ -112,6 +112,8 @@ class ImageWithThumbsFieldFile(ImageFieldFile):
 
 class ImageWithThumbsField(ImageField):
     """
+    Image with a thumbnails.
+
     Usage example:
     ==============
     photo = ImageWithThumbsField(upload_to='images', sizes=((125,125),(300,200),).
