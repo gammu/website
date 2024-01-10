@@ -52,7 +52,10 @@ def get_chart_url(force=False):
             else:
                 years.append("")
 
-            time_range = (datetime.date(1900, 1, 1), datetime.date(year, month, 1))
+            time_range = (
+                datetime.datetime(1900, 1, 1, tzinfo=datetime.timezone.utc),
+                datetime.datetime(year, month, 1, tzinfo=datetime.timezone.utc),
+            )
 
             supported_val = (
                 Phone.objects.exclude(state="deleted")
