@@ -70,7 +70,9 @@ def get_chart_url(force=False):
                 .count()
             )
             all_val = Phone.objects.filter(
-                created__lt=datetime.date(year, month, 1)
+                created__lt=datetime.datetime(
+                    year, month, 1, tzinfo=datetime.timezone.utc
+                )
             ).count()
 
             supported.append(supported_val)
