@@ -37,7 +37,7 @@ repos:
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix]
   - repo: https://github.com/psf/black
-    rev: 23.12.1
+    rev: 24.1.1
     hooks:
       - id: black
   - repo: https://github.com/asottile/blacken-docs
@@ -68,7 +68,7 @@ repos:
           |yaml|yml\
           )$"
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v9.0.0-alpha.1
+    rev: v9.0.0-alpha.2
     hooks:
       - id: eslint
         args: ["--format=compact"]
