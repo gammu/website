@@ -1,6 +1,7 @@
 """
 django-thumbs by Antonio Meléhttp://django.es.
 """
+
 from io import BytesIO
 
 from django.core.files.base import ContentFile
