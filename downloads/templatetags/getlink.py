@@ -9,7 +9,7 @@ register = template.Library()
 
 @register.simple_tag
 def getlink(item):
-    return "".join(("https://dl.cihar.com", item.location))
+    return f"https://dl.cihar.com{item.location}"
 
 
 @register.simple_tag

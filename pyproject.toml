@@ -5,6 +5,7 @@ profile = "black"
 extend-safe-fixes = [
   "D",
   "TCH",
+  "FLY",
   "SIM"
 ]
 # Should be fixed:
@@ -23,7 +24,6 @@ ignore = [
   "RUF012",
   "BLE001",
   "S110",
-  "FLY002",  # TODO
   "S308",
   "S311",
   "FBT002",
