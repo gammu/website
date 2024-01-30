@@ -5,6 +5,7 @@ Script to automatically merge pending translations from Pootle into po files.
 It only accepts those, which are not translated or fuzzy.
 """
 
+import contextlib
 import sys
 
 import polib
@@ -21,10 +22,8 @@ for updateentry in poupdate:
         continue
     if origentry.msgstr == "" or "fuzzy" in origentry.flags:
         origentry.msgstr = updateentry.msgstr
-        try:
+        with contextlib.suppress(AttributeError):
             origentry.msgstr_plural = updateentry.msgstr_plural
-        except AttributeError:
-            pass
         if "fuzzy" in origentry.flags:
             origentry.flags.remove("fuzzy")
 

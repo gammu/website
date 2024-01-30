@@ -2,6 +2,7 @@
 django-thumbs by Antonio Meléhttp://django.es.
 """
 
+import contextlib
 from io import BytesIO
 
 from django.core.files.base import ContentFile
@@ -105,10 +106,8 @@ class ImageWithThumbsFieldFile(ImageFieldFile):
                 (w, h) = size
                 split = name.rsplit(".", 1)
                 thumb_name = f"{split[0]}.{w}x{h}.{split[1]}"
-                try:
+                with contextlib.suppress(Exception):
                     self.storage.delete(thumb_name)
-                except Exception:
-                    pass
 
 
 class ImageWithThumbsField(ImageField):

@@ -1,3 +1,4 @@
+import contextlib
 import csv
 import datetime
 import socket
@@ -402,10 +403,7 @@ def phones_csv(request):
     except Site.DoesNotExist:
         current_site = "wammu.eu"
     for phone in phones:
-        if phone.connection is None:
-            conn = ""
-        else:
-            conn = phone.connection.name
+        conn = "" if phone.connection is None else phone.connection.name
         author = phone.get_author(html=False)
         if author is None:
             author = ""
@@ -576,22 +574,14 @@ def create(request, vendorname=None):
             initial["vendor"] = vendor.pk
         except Exception:
             pass
-        try:
+        with contextlib.suppress(Exception):
             initial["name"] = request.GET["name"]
-        except Exception:
-            pass
-        try:
+        with contextlib.suppress(Exception):
             initial["email_garble"] = request.COOKIES["phonedb_garble"]
-        except Exception:
-            pass
-        try:
+        with contextlib.suppress(Exception):
             initial["author_name"] = request.COOKIES["phonedb_author"]
-        except Exception:
-            pass
-        try:
+        with contextlib.suppress(Exception):
             initial["author_email"] = request.COOKIES["phonedb_email"]
-        except Exception:
-            pass
 
         form = NewForm(initial=initial)
 

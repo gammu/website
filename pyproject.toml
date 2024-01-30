@@ -2,6 +2,11 @@
 profile = "black"
 
 [tool.ruff]
+extend-safe-fixes = [
+  "D",
+  "TCH",
+  "SIM"
+]
 # Should be fixed:
 # D10 - we are missing many docstrings
 # D20 - bad formatting of many docstrings
@@ -18,7 +23,6 @@ ignore = [
   "RUF012",
   "BLE001",
   "S110",
-  "SIM105",  # TODO
   "FLY002",  # TODO
   "S308",
   "S311",
@@ -27,7 +31,6 @@ ignore = [
   "PLR0915",
   "PLR0913",
   "S105",
-  "SIM108",  # TODO
   "EM102",
   "PLR2004",
   "PERF203",
