@@ -8,7 +8,7 @@ from phonedb.models import Phone, Vendor
 
 class RssPhonesFeed(Feed):
     link = "/phones/"
-    copyright = "Copyright © Michal Čihař"  # noqa: A003
+    copyright = "Copyright © Michal Čihař"
     item_copyright = copyright
     title_template = "feeds/phones_title.html"
     description_template = "feeds/phones_description.html"

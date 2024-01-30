@@ -98,7 +98,8 @@ class Migration(migrations.Migration):
                 (
                     "author",
                     models.ForeignKey(
-                        to=settings.AUTH_USER_MODEL, on_delete=models.deletion.CASCADE
+                        to=settings.AUTH_USER_MODEL,
+                        on_delete=models.deletion.CASCADE,
                     ),
                 ),
             ],
@@ -109,7 +110,8 @@ class Migration(migrations.Migration):
             model_name="download",
             name="release",
             field=models.ForeignKey(
-                to="downloads.Release", on_delete=models.deletion.CASCADE
+                to="downloads.Release",
+                on_delete=models.deletion.CASCADE,
             ),
             preserve_default=True,
         ),

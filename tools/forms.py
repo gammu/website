@@ -15,7 +15,8 @@ class PDUDecodeForm(Form):
 class PDUEncodeForm(Form):
     text = forms.CharField(label=gettext_lazy("Text"))
     cls = forms.ChoiceField(
-        label=gettext_lazy("Class"), choices=[(0, "0 - Standard"), (1, "1 - Flash")]
+        label=gettext_lazy("Class"),
+        choices=[(0, "0 - Standard"), (1, "1 - Flash")],
     )
     unicode = forms.BooleanField(label=gettext_lazy("Unicode"), required=False)
     number = forms.CharField(label=gettext_lazy("Recipient"))

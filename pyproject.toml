@@ -8,9 +8,43 @@ profile = "black"
 # D40 - bad formatting of many docstrings
 # DJ001 - null on text fields
 # E501 - line too long
-ignore = ["D10", "D20", "D40", "DJ001", "E501", "D212"]
+ignore = [
+  "D10",
+  "D20",
+  "D40",
+  "DJ001",
+  "E501",
+  "D212",
+  "RUF012",
+  "BLE001",
+  "S110",
+  "SIM105",  # TODO
+  "FLY002",  # TODO
+  "S308",
+  "S311",
+  "FBT002",
+  "PLR0912",
+  "PLR0915",
+  "PLR0913",
+  "S105",
+  "SIM108",  # TODO
+  "EM102",
+  "PLR2004",
+  "PERF203",
+  "DTZ006",
+  "ARG001",
+  "ARG002",
+  "PLC0414",
+  "S314",
+  "S324",
+  "TRY003",
+  "EM101",
+  "PT",
+  "PTH",
+  "ANN"
+]
 output-format = "github"
-select = ["E", "F", "B", "A", "C4", "DJ", "D", "ERA", "EXE", "G", "T20", "RET", "SLF", "N"]
+select = ["ALL"]
 
 [tool.ruff.mccabe]
 max-complexity = 16

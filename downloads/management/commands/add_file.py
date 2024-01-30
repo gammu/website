@@ -7,7 +7,7 @@ from downloads.models import Download, Release
 
 
 class Command(BaseCommand):
-    help = "adds file to the release"  # noqa: A003
+    help = "adds file to the release"
 
     def add_arguments(self, parser):
         super().add_arguments(parser)
@@ -19,7 +19,8 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         release = Release.objects.get(
-            program=options["program"], version=options["version"]
+            program=options["program"],
+            version=options["version"],
         )
 
         dlpath = options["base"]

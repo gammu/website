@@ -30,7 +30,7 @@ class Migration(migrations.Migration):
                 (
                     "description",
                     models.TextField(
-                        help_text="A short description of the category, to be used in list pages."
+                        help_text="A short description of the category, to be used in list pages.",
                     ),
                 ),
                 ("description_html", models.TextField(editable=False, blank=True)),

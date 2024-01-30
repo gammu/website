@@ -18,7 +18,7 @@ DATABASES = {
         "PASSWORD": "",  # Not used with sqlite3.
         "HOST": "",  # Set to empty string for localhost. Not used with sqlite3.
         "PORT": "",  # Set to empty string for default. Not used with sqlite3.
-    }
+    },
 }
 
 WEB_ROOT = os.path.dirname(os.path.abspath(__file__))

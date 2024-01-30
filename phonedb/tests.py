@@ -85,7 +85,7 @@ class PhoneDBTest(TestCase):
         response = self.client.get(reverse("phonedb-search"), {"feature": "1"})
         self.assertContains(response, "Found 0 results matching your query.")
         response = self.client.get(
-            reverse("phonedb-search-feature", kwargs={"featurename": "info"})
+            reverse("phonedb-search-feature", kwargs={"featurename": "info"}),
         )
         self.assertContains(response, "Found 0 results matching your query.")
 
@@ -94,20 +94,21 @@ class PhoneDBTest(TestCase):
         response = self.client.get(reverse("phonedb-search"), {"feature": "1"})
         self.assertContains(response, "TestPHone")
         response = self.client.get(
-            reverse("phonedb-search-feature", kwargs={"featurename": "info"})
+            reverse("phonedb-search-feature", kwargs={"featurename": "info"}),
         )
         self.assertContains(response, "TestPHone")
 
     def test_vendor_list(self):
         self.test_add()
         response = self.client.get(
-            reverse("phonedb-vendor", kwargs={"vendorname": "test"})
+            reverse("phonedb-vendor", kwargs={"vendorname": "test"}),
         )
         self.assertContains(response, "TestPHone")
 
     def test_feed(self):
         self.test_add()
         response = self.client.get(
-            reverse("phonedb-rss"), headers={"host": "testserver"}
+            reverse("phonedb-rss"),
+            headers={"host": "testserver"},
         )
         self.assertContains(response, "TestPHone")

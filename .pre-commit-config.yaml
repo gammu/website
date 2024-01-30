@@ -1,99 +1,68 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
-    hooks:
-      - id: trailing-whitespace
-      - id: end-of-file-fixer
-      - id: check-yaml
-      - id: check-toml
-      - id: requirements-txt-fixer
-      - id: check-merge-conflict
-      - id: debug-statements
-      - id: mixed-line-ending
-        args: [--fix=lf]
-  - repo: https://github.com/adrienverge/yamllint
-    rev: v1.33.0
-    hooks:
-      - id: yamllint
-  - repo: https://github.com/pycqa/isort
-    rev: 5.13.2
-    hooks:
-      - id: isort
-  - repo: https://github.com/asottile/pyupgrade
-    rev: v3.15.0
-    hooks:
-      - id: pyupgrade
-        args: [--py39-plus]
-  - repo: https://github.com/adamchainz/django-upgrade
-    rev: "1.15.0"
-    hooks:
-      - id: django-upgrade
-        args: [--target-version, "4.2"]
-  - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: "v0.1.14"
-    hooks:
-      - id: ruff
-        args: [--fix, --exit-non-zero-on-fix]
-  - repo: https://github.com/psf/black
-    rev: 24.1.1
-    hooks:
-      - id: black
-  - repo: https://github.com/asottile/blacken-docs
-    rev: 1.16.0
-    hooks:
-      - id: blacken-docs
-  - repo: meta
-    hooks:
-      - id: check-hooks-apply
-      - id: check-useless-excludes
-  - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-    rev: v2.12.0
-    hooks:
-      - id: pretty-format-toml
-        args: [--autofix]
-  - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v4.0.0-alpha.8
-    hooks:
-      - id: prettier
-        files: "\\.(\
-          css|less|scss\
-          |graphql|gql\
-          |js|jsx\
-          |json\
-          |md|markdown|mdown|mkdn\
-          |mdx\
-          |vue\
-          |yaml|yml\
-          )$"
-  - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v9.0.0-alpha.2
-    hooks:
-      - id: eslint
-        args: ["--format=compact"]
-        additional_dependencies:
-          - prettier@2.2.1
-          - eslint@>=6.2.2
-          - eslint-plugin-import@>=2.18.0
-          - eslint-plugin-node@>=9.1.0
-          - eslint-plugin-promise@>=4.2.1
-          - eslint-plugin-standard@>=4.0.0
-          - eslint-config-prettier@latest
-          - eslint-plugin-prettier@latest
-  - repo: https://github.com/awebdeveloper/pre-commit-stylelint
-    rev: 0.0.2
-    hooks:
-      - id: stylelint
-        args: ["--formatter=compact"]
-        additional_dependencies:
-          - stylelint@latest
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.5.0
+  hooks:
+  - id: trailing-whitespace
+  - id: end-of-file-fixer
+  - id: check-yaml
+  - id: check-toml
+  - id: requirements-txt-fixer
+  - id: check-merge-conflict
+  - id: debug-statements
+  - id: mixed-line-ending
+    args: [--fix=lf]
+- repo: https://github.com/adrienverge/yamllint
+  rev: v1.33.0
+  hooks:
+  - id: yamllint
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  rev: v0.1.14
+  hooks:
+  - id: ruff
+    args: [--fix, --exit-non-zero-on-fix]
+  - id: ruff-format
+- repo: https://github.com/asottile/blacken-docs
+  rev: 1.16.0
+  hooks:
+  - id: blacken-docs
+- repo: meta
+  hooks:
+  - id: check-hooks-apply
+  - id: check-useless-excludes
+- repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+  rev: v2.12.0
+  hooks:
+  - id: pretty-format-toml
+    args: [--autofix]
+  - id: pretty-format-yaml
+    args: [--autofix, --indent, '2']
+- repo: https://github.com/pre-commit/mirrors-prettier
+  rev: v4.0.0-alpha.8
+  hooks:
+  - id: prettier
+    files: \.(css|less|scss|graphql|gql|js|jsx|json|md|markdown|mdown|mkdn|mdx|vue)$
+- repo: https://github.com/pre-commit/mirrors-eslint
+  rev: v9.0.0-alpha.2
+  hooks:
+  - id: eslint
+    args: [--format=compact]
+    additional_dependencies:
+    - prettier@2.2.1
+    - eslint@>=6.2.2
+    - eslint-plugin-import@>=2.18.0
+    - eslint-plugin-node@>=9.1.0
+    - eslint-plugin-promise@>=4.2.1
+    - eslint-plugin-standard@>=4.0.0
+    - eslint-config-prettier@latest
+    - eslint-plugin-prettier@latest
+- repo: https://github.com/awebdeveloper/pre-commit-stylelint
+  rev: 0.0.2
+  hooks:
+  - id: stylelint
+    args: [--formatter=compact]
+    additional_dependencies:
+    - stylelint@latest
 
-exclude: "^\
-  media/colorbox/colorbox.css|\
-  media/colorbox/jquery.colorbox-min.js|\
-  html/downloads/doap/wammu.xml|\
-  html/downloads/doap/gammu.xml|\
-  html/downloads/pad/gammu.xml|\
-  html/downloads/pad/wammu.xml\
-  $"
+exclude: ^media/colorbox/colorbox.css|media/colorbox/jquery.colorbox-min.js|html/downloads/doap/wammu.xml|html/downloads/doap/gammu.xml|html/downloads/pad/gammu.xml|html/downloads/pad/wammu.xml$

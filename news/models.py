@@ -12,10 +12,11 @@ class Category(models.Model):
 
     title = models.CharField(max_length=250)
     slug = models.SlugField(
-        unique=True, help_text="Used in the URL for the category. Must be unique."
+        unique=True,
+        help_text="Used in the URL for the category. Must be unique.",
     )
     description = models.TextField(
-        help_text="A short description of the category, to be used in list pages."
+        help_text="A short description of the category, to be used in list pages.",
     )
     description_html = models.TextField(editable=False, blank=True)
 

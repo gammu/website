@@ -33,7 +33,7 @@ class Migration(migrations.Migration):
                 (
                     "description",
                     models.TextField(
-                        help_text="A short description of the category, to be used in list pages."
+                        help_text="A short description of the category, to be used in list pages.",
                     ),
                 ),
                 ("description_html", models.TextField(editable=False, blank=True)),
@@ -59,7 +59,8 @@ class Migration(migrations.Migration):
                 (
                     "pub_date",
                     models.DateTimeField(
-                        default=datetime.datetime.today, verbose_name="Date posted"
+                        default=datetime.datetime.today,
+                        verbose_name="Date posted",
                     ),
                 ),
                 (
@@ -80,7 +81,8 @@ class Migration(migrations.Migration):
                 (
                     "identica_post",
                     models.NullBooleanField(
-                        default=False, verbose_name="post to identi.ca"
+                        default=False,
+                        verbose_name="post to identi.ca",
                     ),
                 ),
                 (
@@ -95,7 +97,8 @@ class Migration(migrations.Migration):
                 (
                     "author",
                     models.ForeignKey(
-                        to=settings.AUTH_USER_MODEL, on_delete=models.deletion.CASCADE
+                        to=settings.AUTH_USER_MODEL,
+                        on_delete=models.deletion.CASCADE,
                     ),
                 ),
                 ("categories", models.ManyToManyField(to="news.Category")),

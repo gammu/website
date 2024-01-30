@@ -24,7 +24,7 @@ def xpm2png(value):
     xpm = """/* XPM */
 static char * ala_xpm[] = {
 "%s"};""" % '",\n"'.join(
-        value
+        value,
     )
     xpm = xpm.replace("None", "#ffffff").replace("Black", "#000000")
     io = StringIO(xpm)

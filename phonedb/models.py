@@ -36,7 +36,7 @@ FEATURE_NAMES = {
     "mms": gettext_lazy("Multimedia messaging"),
     "phonebook": gettext_lazy("Basic phonebook functions (name and phone number)"),
     "enhancedphonebook": gettext_lazy(
-        "Enhanced phonebook entries (eg. several numbers per entry)"
+        "Enhanced phonebook entries (eg. several numbers per entry)",
     ),
     "calendar": gettext_lazy("Calendar entries"),
     "todo": gettext_lazy("Todos"),
@@ -87,7 +87,7 @@ def phone_name_validator(value):
     for part in parts:
         if part.lower() in vendor_names:
             raise ValidationError(
-                _("Phone name should not include vendor name: %s") % part
+                _("Phone name should not include vendor name: %s") % part,
             )
     return value
 
@@ -125,7 +125,7 @@ class Phone(models.Model):
     note = models.TextField(
         blank=True,
         help_text=gettext_lazy(
-            'Any note about this phone and Gammu support for it. You can use <a href="http://daringfireball.net/projects/markdown/syntax">markdown markup</a>.'
+            'Any note about this phone and Gammu support for it. You can use <a href="http://daringfireball.net/projects/markdown/syntax">markdown markup</a>.',
         ),
     )
     note_html = models.TextField(editable=False, blank=True)
@@ -134,14 +134,19 @@ class Phone(models.Model):
         max_length=250,
         blank=True,
         help_text=gettext_lazy(
-            "Please choose how will be email handled in next field."
+            "Please choose how will be email handled in next field.",
         ),
     )
     email_garble = models.CharField(
-        max_length=100, choices=GARBLE_CHOICES, default="atdot"
+        max_length=100,
+        choices=GARBLE_CHOICES,
+        default="atdot",
     )
     state = models.CharField(
-        max_length=100, choices=STATE_CHOICES, db_index=True, default="draft"
+        max_length=100,
+        choices=STATE_CHOICES,
+        db_index=True,
+        default="draft",
     )
     created = models.DateTimeField(auto_now_add=True, db_index=True)
     address = models.CharField(max_length=100, blank=True)
@@ -159,7 +164,8 @@ class Phone(models.Model):
 
     def get_absolute_url(self):
         return reverse(
-            "phonedb-phone", kwargs={"vendorname": self.vendor.slug, "pk": self.pk}
+            "phonedb-phone",
+            kwargs={"vendorname": self.vendor.slug, "pk": self.pk},
         )
 
     def get_related_sites(self):
@@ -169,7 +175,7 @@ class Phone(models.Model):
             {
                 "url": "https://wikipedia.org/wiki/%s" % name,
                 "name": "Wikipedia",
-            }
+            },
         )
         name = self.name.replace(" ", "_").replace("-", "_")
         vendor = self.vendor.name.replace("-", "_").replace(" ", "_")
@@ -177,7 +183,7 @@ class Phone(models.Model):
             {
                 "url": f"http://www.mobile-phone-directory.org/Phones/{vendor}/{vendor}_{name}.html",
                 "name": "The Mobile Phone Directory",
-            }
+            },
         )
         if self.vendor.slug == "nokia":
             name = self.name.replace(" ", "_")
@@ -192,7 +198,7 @@ class Phone(models.Model):
                     "url": "http://www.developer.nokia.com/Devices/Device_specifications/%s/"
                     % name,
                     "name": "Nokia Developer",
-                }
+                },
             )
 
         return result

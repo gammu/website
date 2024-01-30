@@ -71,8 +71,11 @@ def get_chart_url(force=False):
             )
             all_val = Phone.objects.filter(
                 created__lt=datetime.datetime(
-                    year, month, 1, tzinfo=datetime.timezone.utc
-                )
+                    year,
+                    month,
+                    1,
+                    tzinfo=datetime.timezone.utc,
+                ),
             ).count()
 
             supported.append(supported_val)
@@ -114,7 +117,7 @@ def get_chart_url(force=False):
             _("Supported phones").encode("utf-8"),
             _("Approved records").encode("utf-8"),
             _("Total records").encode("utf-8"),
-        ]
+        ],
     )
 
     left_axis = ["%d" % x for x in range(0, max_y + 1, int(max_y / 10))]
@@ -181,7 +184,9 @@ def search(request, featurename=None):
         features = list(set(form.cleaned_data["feature"]))
 
         phones = Phone.objects.exclude(state="deleted").prefetch_related(
-            "vendor", "features", "connection"
+            "vendor",
+            "features",
+            "connection",
         )
         urlparams = []
 
@@ -198,11 +203,13 @@ def search(request, featurename=None):
             query = query.strip()
             for part in query.split():
                 phones = phones.filter(
-                    Q(vendor__name__icontains=part) | Q(name__icontains=part)
+                    Q(vendor__name__icontains=part) | Q(name__icontains=part),
                 )
     else:
         phones = Phone.objects.all().prefetch_related(
-            "vendor", "features", "connection"
+            "vendor",
+            "features",
+            "connection",
         )
         urlparams = []
 
@@ -239,7 +246,9 @@ def search(request, featurename=None):
 @login_required
 def review(request):
     phones = Phone.objects.filter(state="draft").prefetch_related(
-        "vendor", "features", "connection"
+        "vendor",
+        "features",
+        "connection",
     )
 
     # Sort results
@@ -386,7 +395,7 @@ def phones_csv(request):
             "Connection",
             "Features",
             "Gammu-Version",
-        ]
+        ],
     )
     try:
         current_site = Site.objects.get_current(request)
@@ -410,7 +419,7 @@ def phones_csv(request):
                 conn.encode("utf8"),
                 ",".join(f.name for f in phone.features.all()).encode("utf8"),
                 phone.gammu_version.encode("utf8"),
-            ]
+            ],
         )
 
     return response
@@ -510,7 +519,7 @@ def create_wammu(request):  # noqa: C901
     return response
 
 
-def create(request, vendorname=None):  # noqa: C901
+def create(request, vendorname=None):
     # Check if we did not receive legacy request
     if (
         request.method == "POST"
@@ -536,7 +545,9 @@ def create(request, vendorname=None):  # noqa: C901
                 newphone.hostname = newphone.address
             newphone.save()
             messages.add_message(
-                request, messages.INFO, _("Phone record has been created.")
+                request,
+                messages.INFO,
+                _("Phone record has been created."),
             )
             result = HttpResponseRedirect(newphone.get_absolute_url())
             result.set_cookie(

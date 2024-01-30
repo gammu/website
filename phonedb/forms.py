@@ -37,7 +37,7 @@ class SearchForm(Form):
                     % {
                         "description": f.get_description(),
                         "url": "/phones/search/%s/" % f.name,
-                    }
+                    },
                 ),
             )
             for f in Feature.objects.all()

@@ -44,7 +44,7 @@ def get_latest_releases(program):
     else:
         latest_testing = latest_version
         latest_stable = releases.filter(
-            version_int__lt=10 + ((latest_version.version_int / 100) * 100)
+            version_int__lt=10 + ((latest_version.version_int / 100) * 100),
         ).order_by("-version_int")[0]
     return (latest_stable, latest_testing)
 
@@ -110,19 +110,14 @@ class Release(models.Model):
                 programname=get_program(self.program),
                 version=self.version,
                 description=self.description,
-                programurl="https://{}{}".format(
-                    current_site, PROGRAM_URLS[self.program]
-                ),
+                programurl=f"https://{current_site}{PROGRAM_URLS[self.program]}",
                 versionurl=f"https://{current_site}{self.get_absolute_url()}",
             )
             body = (
                 "Full list of changes:\n\n%s\n\nYou can download it from <https://wammu.eu/download/>.\n\nSupport this program by donations <https://wammu.eu/donate/>."
                 % self.changelog
             )
-            title = "{} {}".format(
-                get_program(self.program),
-                self.version,
-            )
+            title = f"{get_program(self.program)} {self.version}"
             slug = "{}-{}".format(
                 self.program,
                 self.version.replace(".", "-"),

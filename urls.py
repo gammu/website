@@ -185,7 +185,8 @@ urlpatterns = [
     re_path(r"^phones/history.png$", phonedb.views.phones_chart),
     path("phones/new/", phonedb.views.create, name="phonedb-new"),
     re_path(
-        r"^phones/new\.php/$", RedirectView.as_view(url="/phones/new/", permanent=True)
+        r"^phones/new\.php/$",
+        RedirectView.as_view(url="/phones/new/", permanent=True),
     ),
     re_path(r"^phones/list\.php", RedirectView.as_view(url="/phones/", permanent=True)),
     path("phones/search/", phonedb.views.search, name="phonedb-search"),
@@ -215,7 +216,9 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     # Media files
     re_path(
-        r"^media/(?P<path>.*)$", django.views.static.serve, {"document_root": "./media"}
+        r"^media/(?P<path>.*)$",
+        django.views.static.serve,
+        {"document_root": "./media"},
     ),
     # Donations
     path("donate/", donate.views.donate),
@@ -233,10 +236,12 @@ urlpatterns = [
     path("install/", RedirectView.as_view(url="/download/", permanent=True)),
     path("improve/", RedirectView.as_view(url="/contribute/", permanent=True)),
     re_path(
-        r"^wammu.xml$", RedirectView.as_view(url="/api/pad/wammu.xml", permanent=True)
+        r"^wammu.xml$",
+        RedirectView.as_view(url="/api/pad/wammu.xml", permanent=True),
     ),
     re_path(
-        r"^wammu.doap$", RedirectView.as_view(url="/api/doap/wammu.xml", permanent=True)
+        r"^wammu.doap$",
+        RedirectView.as_view(url="/api/doap/wammu.xml", permanent=True),
     ),
     path(
         "phones/features/<str:featurename>/",
@@ -263,10 +268,12 @@ urlpatterns = [
     path("api/pad/", RedirectView.as_view(url="/download/", permanent=True)),
     # Broken links
     re_path(
-        r"^(?P<link>.*)/\)\.$", RedirectView.as_view(url="/%(link)s", permanent=True)
+        r"^(?P<link>.*)/\)\.$",
+        RedirectView.as_view(url="/%(link)s", permanent=True),
     ),
     re_path(
-        r"^(?P<link>.*)/\)$", RedirectView.as_view(url="/%(link)s", permanent=True)
+        r"^(?P<link>.*)/\)$",
+        RedirectView.as_view(url="/%(link)s", permanent=True),
     ),
     re_path(
         r"^(?P<link>.*)/index\.php$",
@@ -288,7 +295,8 @@ urlpatterns = [
     path(
         "docs/roadmap/",
         RedirectView.as_view(
-            url="https://docs.gammu.org/project/roadmap.html", permanent=True
+            url="https://docs.gammu.org/project/roadmap.html",
+            permanent=True,
         ),
     ),
     path("docs/devel/", RedirectView.as_view(url="/docs/", permanent=True)),

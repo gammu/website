@@ -19,7 +19,7 @@ def pduencode(request):
                     {
                         "ID": "ConcatenatedTextLong",
                         "Buffer": form.cleaned_data["text"],
-                    }
+                    },
                 ],
             }
             # Encode SMS

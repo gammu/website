@@ -17,37 +17,37 @@ def translations(request):
 
     if lang != "cs":
         langs.append(
-            {"url": "https://cs.wammu.eu%s" % path, "name": "Česky", "code": "cs"}
+            {"url": "https://cs.wammu.eu%s" % path, "name": "Česky", "code": "cs"},
         )
 
     if lang != "en":
         langs.append(
-            {"url": "https://wammu.eu%s" % path, "name": "English", "code": "en"}
+            {"url": "https://wammu.eu%s" % path, "name": "English", "code": "en"},
         )
 
     if lang != "es":
         langs.append(
-            {"url": "https://es.wammu.eu%s" % path, "name": "Español", "code": "es"}
+            {"url": "https://es.wammu.eu%s" % path, "name": "Español", "code": "es"},
         )
 
     if lang != "de":
         langs.append(
-            {"url": "https://de.wammu.eu%s" % path, "name": "Deutsch", "code": "de"}
+            {"url": "https://de.wammu.eu%s" % path, "name": "Deutsch", "code": "de"},
         )
 
     if lang != "ru":
         langs.append(
-            {"url": "https://ru.wammu.eu%s" % path, "name": "Русский", "code": "ru"}
+            {"url": "https://ru.wammu.eu%s" % path, "name": "Русский", "code": "ru"},
         )
 
     if lang != "sk":
         langs.append(
-            {"url": "https://sk.wammu.eu%s" % path, "name": "Slovenčina", "code": "sk"}
+            {"url": "https://sk.wammu.eu%s" % path, "name": "Slovenčina", "code": "sk"},
         )
 
     if lang != "fr":
         langs.append(
-            {"url": "https://fr.wammu.eu%s" % path, "name": "Français", "code": "fr"}
+            {"url": "https://fr.wammu.eu%s" % path, "name": "Français", "code": "fr"},
         )
 
     if lang != "pt-br":
@@ -56,7 +56,7 @@ def translations(request):
                 "url": "https://pt-br.wammu.eu%s" % path,
                 "name": "Português brasileiro",
                 "code": "pt-BR",
-            }
+            },
         )
 
     return {"translations": langs}
@@ -81,7 +81,7 @@ def feeds(request):
                 "title": _("Gammu and Wammu News Feed (Atom)"),
                 "type": "application/atom+xml",
             },
-        ]
+        ],
     }
 
 

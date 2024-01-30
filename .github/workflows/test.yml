@@ -8,36 +8,36 @@ jobs:
     strategy:
       matrix:
         python-version:
-          - "3.11"
-          - "3.12"
+        - '3.11'
+        - '3.12'
     name: Python ${{ matrix.python-version }}
 
     steps:
-      - uses: actions/checkout@v4
-      - name: Cache pip
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles('**/requirements*.txt') }}
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v5
-        with:
-          python-version: ${{ matrix.python-version }}
-      - name: Install apt dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get purge libodbc2 libodbcinst2 unixodbc-common
-          sudo apt-get install -y libgammu-dev
-      - name: Install pip dependencies
-        run: |
-          python -m pip install --upgrade pip wheel
-          pip install -r requirements-test.txt
-      - name: Check
-        run: ./manage.py check
-      - name: Test
-        run: coverage run --source=. ./manage.py test
-      - name: Coverage
-        run: coverage xml
-      - uses: codecov/codecov-action@v3
-        with:
-          name: Python ${{ matrix.python-version }}, ${{ matrix.os }}
+    - uses: actions/checkout@v4
+    - name: Cache pip
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles('**/requirements*.txt') }}
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install apt dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get purge libodbc2 libodbcinst2 unixodbc-common
+        sudo apt-get install -y libgammu-dev
+    - name: Install pip dependencies
+      run: |
+        python -m pip install --upgrade pip wheel
+        pip install -r requirements-test.txt
+    - name: Check
+      run: ./manage.py check
+    - name: Test
+      run: coverage run --source=. ./manage.py test
+    - name: Coverage
+      run: coverage xml
+    - uses: codecov/codecov-action@v3
+      with:
+        name: Python ${{ matrix.python-version }}, ${{ matrix.os }}

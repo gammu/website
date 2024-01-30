@@ -182,7 +182,8 @@ class Migration(migrations.Migration):
             model_name="phone",
             name="vendor",
             field=models.ForeignKey(
-                to="phonedb.Vendor", on_delete=models.deletion.CASCADE
+                to="phonedb.Vendor",
+                on_delete=models.deletion.CASCADE,
             ),
             preserve_default=True,
         ),
