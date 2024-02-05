@@ -24,6 +24,7 @@ def generate_thumb(img, thumb_size, format):  # noqa: D417, A002
 
     format      format of the original image ('jpeg','gif','png',...)
                 (this format will be used for the generated thumbnail, too)
+
     """
     img.seek(0)  # see http://code.djangoproject.com/ticket/8222 for details
     image = Image.open(img)
