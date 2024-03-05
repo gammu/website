@@ -23,7 +23,7 @@ DATABASES = {
 
 WEB_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-FILES_ROOT = "/srv/http/dl.cihar.com/"
+FILES_ROOT = "/home/nijel/srv/dl.cihar.com/"
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
