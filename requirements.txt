@@ -2,7 +2,7 @@ crispy-bootstrap3==2024.1
 Django==5.0.3
 django-crispy-forms==2.1
 Markdown==3.6
-Pillow==10.2.0
+Pillow==10.3.0
 pygooglechart==0.4.0
 python-gammu==3.2.4
 rollbar==1.0.0
