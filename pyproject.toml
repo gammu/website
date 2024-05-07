@@ -2,6 +2,9 @@
 profile = "black"
 
 [tool.ruff]
+output-format = "github"
+
+[tool.ruff.lint]
 extend-safe-fixes = [
   "D",
   "TCH",
@@ -44,10 +47,11 @@ ignore = [
   "EM101",
   "PT",
   "PTH",
-  "ANN"
+  "ANN",
+  "COM812",
+  "ISC001"
 ]
-output-format = "github"
 select = ["ALL"]
 
-[tool.ruff.mccabe]
+[tool.ruff.lint.mccabe]
 max-complexity = 16

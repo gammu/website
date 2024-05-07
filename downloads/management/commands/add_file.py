@@ -29,7 +29,7 @@ class Command(BaseCommand):
             dlpath = dlpath[:-1]
 
         for f in options["file"]:
-            self.stdout.write("Adding %s..." % f)
+            self.stdout.write(f"Adding {f}...")
             filename = os.path.basename(f)
 
             with open(f, "rb") as handle:

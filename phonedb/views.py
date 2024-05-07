@@ -28,7 +28,7 @@ OKAY_V2 = "Entry created, id=%d, url=%s"
 
 
 def get_chart_url(force=False):
-    cache_key = "phonedb-chart-url-%s" % settings.LANGUAGE_CODE
+    cache_key = f"phonedb-chart-url-{settings.LANGUAGE_CODE}"
     url = cache.get(cache_key)
     if url is not None and not force:
         return url
@@ -195,12 +195,12 @@ def search(request, featurename=None):
         if len(features) > 0:
             phones = phones.filter(connection__isnull=False)
             for feature in features:
-                urlparams.append("feature=%s" % feature)
+                urlparams.append(f"feature={feature}")
                 phones = phones.filter(features__name=feature)
 
         # Filter for query string
         if query:
-            urlparams.append("q=%s" % query)
+            urlparams.append(f"q={query}")
             query = query.strip()
             for part in query.split():
                 phones = phones.filter(
@@ -501,7 +501,7 @@ def create_wammu(request):  # noqa: C901
 
     features = []
     for feature in Feature.objects.all():
-        key = "fts[%s]" % feature.name
+        key = f"fts[{feature.name}]"
         if key in request.POST and request.POST[key] == "1":
             features.append(feature)
 

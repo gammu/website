@@ -17,43 +17,43 @@ def translations(request):
 
     if lang != "cs":
         langs.append(
-            {"url": "https://cs.wammu.eu%s" % path, "name": "Česky", "code": "cs"},
+            {"url": f"https://cs.wammu.eu{path}", "name": "Česky", "code": "cs"},
         )
 
     if lang != "en":
         langs.append(
-            {"url": "https://wammu.eu%s" % path, "name": "English", "code": "en"},
+            {"url": f"https://wammu.eu{path}", "name": "English", "code": "en"},
         )
 
     if lang != "es":
         langs.append(
-            {"url": "https://es.wammu.eu%s" % path, "name": "Español", "code": "es"},
+            {"url": f"https://es.wammu.eu{path}", "name": "Español", "code": "es"},
         )
 
     if lang != "de":
         langs.append(
-            {"url": "https://de.wammu.eu%s" % path, "name": "Deutsch", "code": "de"},
+            {"url": f"https://de.wammu.eu{path}", "name": "Deutsch", "code": "de"},
         )
 
     if lang != "ru":
         langs.append(
-            {"url": "https://ru.wammu.eu%s" % path, "name": "Русский", "code": "ru"},
+            {"url": f"https://ru.wammu.eu{path}", "name": "Русский", "code": "ru"},
         )
 
     if lang != "sk":
         langs.append(
-            {"url": "https://sk.wammu.eu%s" % path, "name": "Slovenčina", "code": "sk"},
+            {"url": f"https://sk.wammu.eu{path}", "name": "Slovenčina", "code": "sk"},
         )
 
     if lang != "fr":
         langs.append(
-            {"url": "https://fr.wammu.eu%s" % path, "name": "Français", "code": "fr"},
+            {"url": f"https://fr.wammu.eu{path}", "name": "Français", "code": "fr"},
         )
 
     if lang != "pt-br":
         langs.append(
             {
-                "url": "https://pt-br.wammu.eu%s" % path,
+                "url": f"https://pt-br.wammu.eu{path}",
                 "name": "Português brasileiro",
                 "code": "pt-BR",
             },

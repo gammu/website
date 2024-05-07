@@ -49,7 +49,7 @@ LANGUAGES = (
     ("sk", "Slovenčina"),
 )
 
-LOCALE_PATHS = ("%s/locale" % WEB_ROOT,)
+LOCALE_PATHS = (f"{WEB_ROOT}/locale",)
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
@@ -59,9 +59,9 @@ USE_I18N = True
 # calendars according to the current locale
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
-MEDIA_ROOT = "%s/media/" % WEB_ROOT
+MEDIA_ROOT = f"{WEB_ROOT}/media/"
 
-HTML_ROOT = "%s/html/" % WEB_ROOT
+HTML_ROOT = f"{WEB_ROOT}/html/"
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.

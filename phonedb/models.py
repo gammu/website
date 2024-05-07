@@ -173,7 +173,7 @@ class Phone(models.Model):
         name = self.__str__().replace(" ", "_").replace("-", "_")
         result.append(
             {
-                "url": "https://wikipedia.org/wiki/%s" % name,
+                "url": f"https://wikipedia.org/wiki/{name}",
                 "name": "Wikipedia",
             },
         )
@@ -195,8 +195,7 @@ class Phone(models.Model):
                 name = name[:-1] + "_fold"
             result.append(
                 {
-                    "url": "http://www.developer.nokia.com/Devices/Device_specifications/%s/"
-                    % name,
+                    "url": f"http://www.developer.nokia.com/Devices/Device_specifications/{name}/",
                     "name": "Nokia Developer",
                 },
             )

@@ -22,9 +22,11 @@ def base64(value):
 @register.filter
 def xpm2png(value):
     xpm = """/* XPM */
-static char * ala_xpm[] = {
-"%s"};""" % '",\n"'.join(
-        value,
+static char * ala_xpm[] = {{
+"{}"}};""".format(
+        '",\n"'.join(
+            value,
+        )
     )
     xpm = xpm.replace("None", "#ffffff").replace("Black", "#000000")
     io = StringIO(xpm)
@@ -41,6 +43,6 @@ static char * ala_xpm[] = {
 def wrap(value):
     ret = ""
     while len(value) > 0:
-        ret += "%s\n" % value[:32]
+        ret += f"{value[:32]}\n"
         value = value[32:]
     return ret

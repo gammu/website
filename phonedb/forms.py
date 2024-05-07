@@ -36,7 +36,7 @@ class SearchForm(Form):
                     _('%(description)s [<a href="%(url)s">Link</a>]')
                     % {
                         "description": f.get_description(),
-                        "url": "/phones/search/%s/" % f.name,
+                        "url": f"/phones/search/{f.name}/",
                     },
                 ),
             )

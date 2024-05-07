@@ -15,7 +15,7 @@ def index(request):
 def category(request, slug):
     category = get_object_or_404(Category, slug=slug)
     objects = Screenshot.objects.filter(categories=category).order_by("title")
-    return render_screenshots(request, objects, "screenshots/%s_index.html" % slug)
+    return render_screenshots(request, objects, f"screenshots/{slug}_index.html")
 
 
 def render_screenshots(request, objects, template):

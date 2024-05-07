@@ -96,8 +96,9 @@ class ImageWithThumbsFieldFile(ImageFieldFile):
 
                 thumb_name_ = self.storage.save(thumb_name, thumb_content)
 
-                if not thumb_name == thumb_name_:
-                    raise ValueError("There is already a file named %s" % thumb_name)
+                if thumb_name != thumb_name_:
+                    msg = f"There is already a file named {thumb_name}"
+                    raise ValueError(msg)
 
     def delete(self, save=True):
         name = self.name

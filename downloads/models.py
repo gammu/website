@@ -113,10 +113,7 @@ class Release(models.Model):
                 programurl=f"https://{current_site}{PROGRAM_URLS[self.program]}",
                 versionurl=f"https://{current_site}{self.get_absolute_url()}",
             )
-            body = (
-                "Full list of changes:\n\n%s\n\nYou can download it from <https://wammu.eu/download/>.\n\nSupport this program by donations <https://wammu.eu/donate/>."
-                % self.changelog
-            )
+            body = f"Full list of changes:\n\n{self.changelog}\n\nYou can download it from <https://wammu.eu/download/>.\n\nSupport this program by donations <https://wammu.eu/donate/>."
             title = f"{get_program(self.program)} {self.version}"
             slug = "{}-{}".format(
                 self.program,

@@ -30,7 +30,7 @@ def category(request, slug):
         .order_by("-pub_date")
         .prefetch_related("author")
     )
-    return render_news(request, objects, "news/%s_index.html" % slug)
+    return render_news(request, objects, f"news/{slug}_index.html")
 
 
 def render_news(request, objects, template):

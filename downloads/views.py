@@ -12,7 +12,8 @@ from downloads.models import (
 
 def detail(request, program):
     if program not in (x[0] for x in PROGRAM_CHOICES):
-        raise Http404("No such program %s." % program)
+        msg = f"No such program {program}."
+        raise Http404(msg)
 
     downloads = get_current_downloads(program)
 
@@ -23,7 +24,8 @@ def detail(request, program):
         testing_release, testing_downloads = (None, None)
 
     if stable_downloads.count() == 0:
-        raise Http404("No such download option %s." % program)
+        msg = f"No such download option {program}."
+        raise Http404(msg)
 
     return render(
         request,
@@ -64,13 +66,14 @@ def download(request):
 
 def doap(request, program):
     if program not in (x[0] for x in PROGRAM_CHOICES):
-        raise Http404("No such program %s." % program)
+        msg = f"No such program {program}."
+        raise Http404(msg)
 
     downloads = get_current_downloads(program)
 
     return render(
         request,
-        "downloads/doap/%s.xml" % program,
+        f"downloads/doap/{program}.xml",
         {
             "downloads": downloads[0][1],
             "release": downloads[0][0],
@@ -81,7 +84,8 @@ def doap(request, program):
 
 def pad(request, program):
     if program not in (x[0] for x in PROGRAM_CHOICES):
-        raise Http404("No such program %s." % program)
+        msg = f"No such program {program}."
+        raise Http404(msg)
 
     downloads = get_current_downloads(program)
 
@@ -96,7 +100,7 @@ def pad(request, program):
 
     return render(
         request,
-        "downloads/pad/%s.xml" % program,
+        f"downloads/pad/{program}.xml",
         {
             "download": download,
             "release": release,
