@@ -18,13 +18,13 @@ repos:
   hooks:
   - id: yamllint
 - repo: https://github.com/astral-sh/ruff-pre-commit
-  rev: v0.4.10
+  rev: v0.5.0
   hooks:
   - id: ruff
     args: [--fix, --exit-non-zero-on-fix]
   - id: ruff-format
 - repo: https://github.com/asottile/blacken-docs
-  rev: 1.16.0
+  rev: 1.18.0
   hooks:
   - id: blacken-docs
 - repo: meta
@@ -44,7 +44,7 @@ repos:
   - id: prettier
     files: \.(css|less|scss|graphql|gql|js|jsx|json|md|markdown|mdown|mkdn|mdx|vue)$
 - repo: https://github.com/pre-commit/mirrors-eslint
-  rev: v9.5.0
+  rev: v9.6.0
   hooks:
   - id: eslint
     args: [--format=compact]
