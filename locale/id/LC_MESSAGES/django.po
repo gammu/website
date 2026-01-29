@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2020-10-14 09:02+0200\n"
-"PO-Revision-Date: 2017-10-04 10:46+0000\n"
-"Last-Translator: developerchan1 <developerchan1@gmail.com>\n"
+"PO-Revision-Date: 2026-01-30 13:01+0000\n"
+"Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/gammu/website/"
 "id/>\n"
 "Language: id\n"
@@ -17,33 +17,29 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.17-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: downloads/models.py:31
-#, fuzzy
-#| msgid "Source"
 msgid "Source code"
-msgstr "Sumber"
+msgstr "Kode sumber"
 
 #: downloads/models.py:32
-#, fuzzy
-#| msgid "Windows binary"
 msgid "Windows binaries"
-msgstr "biner windows"
+msgstr "Biner Windows"
 
 #: downloads/models.py:143
 #, python-format
 msgid "%(program)s stable release %(version)s"
-msgstr "%(program)s dengan versi rilis stabil %(version)s"
+msgstr "Rilis stabil %(program)s %(version)s"
 
 #: downloads/models.py:148
 #, python-format
 msgid "%(program)s testing release %(version)s"
-msgstr "%(program)s rilis percobaan versi %(version)s"
+msgstr "Rilis pengujian %(program)s %(version)s"
 
 #: html/403.html:4 html/403.html:8
 msgid "Permission Denied"
-msgstr "Izin Ditolak"
+msgstr "Izin ditolak"
 
 #: html/403.html:11 html/404.html:11
 msgid ""
@@ -52,9 +48,9 @@ msgid ""
 "navigation bellow or use <a href=\"/search/\">search facility</a>.\n"
 msgstr ""
 "\n"
-"Halaman yang Anda cari tidak ditemukan. Coba pilih yang lain dari\n"
-"navigasi di bawah atau gunakan <a href=\"/search/\">fasilitas pencarian</"
-"a>.\n"
+"Halaman yang Anda cari tidak ditemukan. Coba pilih sesuatu dari\n"
+"navigasi di bawah atau gunakan <a href=\"/search/\">fasilitas pencarian</a>"
+".\n"
 
 #: html/403.html:18 html/404.html:18
 msgid ""
@@ -63,16 +59,16 @@ msgid ""
 "continue to pages of following projects:\n"
 msgstr ""
 "\n"
-"Situs ini mengandung informasi tentang Gammu dan Wammu, Anda mungkin ingin\n"
-"melanjutkan ke halaman proyek berikut:\n"
+"Situs ini memuat informasi tentang Gammu dan Wammu, Anda mungkin ingin\n"
+"melanjutkan ke halaman proyek-proyek berikut:\n"
 
 #: html/404.html:4 html/404.html:8
 msgid "Page Not Found"
-msgstr "Halaman Tidak Ditemukan"
+msgstr "Halaman tidak ditemukan"
 
 #: html/500.html:4 html/500.html:8
 msgid "Server Error"
-msgstr "Server Gagal"
+msgstr "Kesalahan server"
 
 #: html/500.html:11
 msgid ""
@@ -82,9 +78,9 @@ msgid ""
 "trained monkeys to fix the issue.\n"
 msgstr ""
 "\n"
-"Server mengalami masalah serius saat melayani permintaan Anda. Kami sedang "
-"mengirim\n"
-"kera-kera terlatih untuk mengatasi masalah ini.\n"
+"Server mengalami masalah serius saat melayani permintaan Anda. Kami baru "
+"saja mengirim\n"
+"monyet-monyet terlatih kami untuk memperbaiki masalah ini.\n"
 
 #: html/authors.html:4 html/authors.html:7
 msgid "Wammu and Gammu Authors"
@@ -97,9 +93,9 @@ msgid ""
 "can find the most visible here.\n"
 msgstr ""
 "\n"
-"Banyak yang ikut berkontribusi untuk Gammu, python-gammu dan Wammu "
-"sebelumnya. Anda\n"
-"bisa melihat yang tercantum di sini.\n"
+"Banyak orang telah berkontribusi pada Gammu, python-gammu, dan Wammu di masa "
+"lalu. Anda\n"
+"dapat menemukan yang paling menonjol di sini.\n"
 
 #: html/authors.html:19
 msgid ""
@@ -111,11 +107,20 @@ msgid ""
 "application on top of it</a>. In 2007 he has become maintainer of the Gammu\n"
 "project and he is still in the charge here.\n"
 msgstr ""
+"\n"
+"Michal mulai berkontribusi sekitar tahun 2002 dengan peningkatan pada modul "
+"AT\n"
+"dan kemudian menyumbangkan modul untuk ponsel Alcatel. Setelah itu ia "
+"menulis <a\n"
+"href=\"/python-gammu/\">binding Python untuk Gammu</a> dan <a href=\"/wammu/"
+"\">aplikasi\n"
+"GUI di atasnya</a>. Pada 2007 ia menjadi pemelihara proyek Gammu\n"
+"dan hingga kini masih bertanggung jawab di sini.\n"
 
 #: html/authors.html:29 html/authors.html:50 html/authors.html:66
 #: html/phonedb/vendor.html:20
 msgid "Website"
-msgstr "Situs"
+msgstr "Situs web"
 
 #: html/authors.html:34
 msgid "E-mail"
@@ -132,10 +137,17 @@ msgid ""
 "resigned\n"
 "because lack of time. He is not active in the project anymore.\n"
 msgstr ""
+"\n"
+"Marcin awalnya memulai proyek ini sebagai fork dari Gnokii karena ia tidak\n"
+"puas dengan beberapa bagian dari kode yang ada. Ia menyumbangkan sebagian "
+"besar inti dan\n"
+"modul Nokia serta memimpin proyek hingga Januari 2007, ketika ia "
+"mengundurkan diri\n"
+"karena kekurangan waktu. Ia tidak lagi aktif dalam proyek ini.\n"
 
 #: html/authors.html:55
 msgid "Gnokii authors"
-msgstr ""
+msgstr "Penulis Gnokii"
 
 #: html/authors.html:58
 msgid ""
@@ -146,15 +158,19 @@ msgid ""
 "Manfred\n"
 "Jonsson.\n"
 msgstr ""
+"\n"
+"Karena kode ini awalnya dimulai sebagai fork dari proyek Gnokii, kami ingin\n"
+"mengucapkan terima kasih kepada semua kontributor di sana, khususnya Pavel "
+"Janík, Pawel Kot, dan Manfred\n"
+"Jonsson.\n"
 
 #: html/base.html:12
 msgid "Website of Gammu and Wammu, the software for managing GSM cell phones."
-msgstr "Situs Gammu dan Wammu, perangkat lunak antar muka telepon selular GSM."
+msgstr "Situs web Gammu dan Wammu, perangkat lunak untuk mengelola ponsel GSM."
 
 #: html/base.html:54
-#, fuzzy
 msgid "Gammu and Wammu"
-msgstr "Penulis Gammu dan Wammu"
+msgstr "Gammu dan Wammu"
 
 #: html/base.html:61
 msgid "Family"
@@ -170,20 +186,19 @@ msgstr "Dukungan"
 
 #: html/base.html:75 html/base.html:116 html/base.html:128 html/base.html:140
 msgid "Overview"
-msgstr ""
+msgstr "Ikhtisar"
 
 #: html/base.html:76
-#, fuzzy
 msgid "Mailing lists and forums"
-msgstr "Mailing list"
+msgstr "Milis dan forum"
 
 #: html/base.html:77
 msgid "Reporting bugs"
-msgstr "Laporkan bug"
+msgstr "Pelaporan bug"
 
 #: html/base.html:78
 msgid "Online"
-msgstr "Terhubung"
+msgstr "Daring"
 
 #: html/base.html:79
 msgid "Commercial support"
@@ -195,25 +210,23 @@ msgstr "Dukungan komersial"
 #: html/gammu-family.html:74 html/gammu.html:53 html/libgammu.html:37
 #: html/python-gammu.html:25 html/smsd.html:56 html/wammu.html:39
 msgid "Download"
-msgstr ""
+msgstr "Unduh"
 
 #: html/base.html:86
-#, fuzzy
 msgid "All downloads"
-msgstr "Unduh"
+msgstr "Semua unduhan"
 
 #: html/base.html:87 html/downloads/index.html:25
 msgid "Download Gammu"
-msgstr ""
+msgstr "Unduh Gammu"
 
 #: html/base.html:88 html/downloads/index.html:32
-#, fuzzy
 msgid "Download python-gammu"
-msgstr "python-gammu"
+msgstr "Unduh python-gammu"
 
 #: html/base.html:89 html/downloads/index.html:39
 msgid "Download Wammu"
-msgstr ""
+msgstr "Unduh Wammu"
 
 #: html/base.html:94 html/index.html:26
 msgid "News"
@@ -221,15 +234,15 @@ msgstr "Berita"
 
 #: html/base.html:96
 msgid "All news"
-msgstr ""
+msgstr "Semua berita"
 
 #: html/base.html:104 html/sidebars/gammu.html:3 html/sidebars/wammu.html:3
 msgid "Screenshots"
-msgstr ""
+msgstr "Tangkapan layar"
 
 #: html/base.html:106
 msgid "All screenshots"
-msgstr ""
+msgstr "Semua tangkapan layar"
 
 #: html/base.html:114 html/gammu.html:61 html/libgammu.html:46
 #: html/python-gammu.html:64 html/smsd.html:66 html/wammu.html:49
@@ -238,15 +251,15 @@ msgstr "Dokumentasi"
 
 #: html/base.html:117 html/docs/index.html:21
 msgid "Gammu Manual"
-msgstr "Petunjuk Gammu"
+msgstr "Manual Gammu"
 
 #: html/base.html:118
 msgid "FAQ"
-msgstr "Pertanyaan Paling Sering"
+msgstr "FAQ"
 
 #: html/base.html:119
 msgid "For developers"
-msgstr ""
+msgstr "Untuk pengembang"
 
 #: html/base.html:120 html/phonedb/body.html:16
 msgid "Configuration"
@@ -254,11 +267,11 @@ msgstr "Konfigurasi"
 
 #: html/base.html:121 html/sidebars/common.html:3 phonedb/views.py:101
 msgid "Supported phones"
-msgstr "Telepon yang didukung"
+msgstr "Ponsel yang didukung"
 
 #: html/base.html:126
 msgid "Contribute"
-msgstr "Kontribusi"
+msgstr "Berkontribusi"
 
 #: html/base.html:129
 msgid "Translate"
@@ -266,11 +279,11 @@ msgstr "Terjemahkan"
 
 #: html/base.html:130
 msgid "Develop"
-msgstr "Pengembangan"
+msgstr "Kembangkan"
 
 #: html/base.html:131
 msgid "Wanted skills"
-msgstr ""
+msgstr "Keterampilan yang dibutuhkan"
 
 #: html/base.html:132
 msgid "Publicity"
@@ -278,32 +291,31 @@ msgstr "Publisitas"
 
 #: html/base.html:133 html/base.html:183
 msgid "Donate"
-msgstr "Sumbang"
+msgstr "Donasi"
 
 #: html/base.html:138
 msgid "Tools"
-msgstr "Peralatan"
+msgstr "Alat"
 
 #: html/base.html:141
 msgid "PDU encoder"
-msgstr ""
+msgstr "Pengode PDU"
 
 #: html/base.html:142
 msgid "PDU decoder"
-msgstr ""
+msgstr "Pendekode PDU"
 
 #: html/base.html:143
 msgid "Countries"
-msgstr ""
+msgstr "Negara"
 
 #: html/base.html:144
 msgid "Networks"
-msgstr ""
+msgstr "Jaringan"
 
 #: html/base.html:162
-#, fuzzy
 msgid "Help with translations!"
-msgstr "Halaman terjemahan"
+msgstr "Bantu penerjemahan!"
 
 #: html/base.html:182
 msgid "License"
@@ -332,23 +344,23 @@ msgstr "Penulis"
 
 #: html/base.html:186
 msgid "Gammu on Google+"
-msgstr "Gammu pada Google+"
+msgstr "Gammu di Google+"
 
 #: html/base.html:187
 msgid "Gammu on Facebook"
-msgstr "Gammu pada Facebook"
+msgstr "Gammu di Facebook"
 
 #: html/base.html:188
 msgid "Follow us on Twitter"
-msgstr "Pantau kami di Twitter"
+msgstr "Ikuti kami di Twitter"
 
 #: html/base.html:189
 msgid "Donate using PayPal"
-msgstr ""
+msgstr "Donasi menggunakan PayPal"
 
 #: html/contribute/code.html:4 html/contribute/code.html:8
 msgid "Coding for Wammu and Gammu"
-msgstr ""
+msgstr "Pemrograman untuk Wammu dan Gammu"
 
 #: html/contribute/code.html:11
 msgid ""
@@ -362,10 +374,20 @@ msgid ""
 "understand the code. If you want to know what is planned to happen in Gammu\n"
 "and Wammu, please check the <a href=\"/docs/roadmap/\">roadmap</a>.\n"
 msgstr ""
+"\n"
+"Gammu ditulis dalam C dan Wammu dalam <a\n"
+"href=\"https://www.python.org/\">Python</a>, jadi Anda akan membutuhkan "
+"pengetahuan salah satu dari\n"
+"bahasa ini untuk berkontribusi kode secara langsung ke proyek. Anda mungkin\n"
+"akan menggunakan beberapa bagian dari <a href=\"/docs/devel/\">dokumentasi "
+"pengembang</a> untuk\n"
+"memahami kode. Jika Anda ingin mengetahui apa yang direncanakan terjadi di "
+"Gammu\n"
+"dan Wammu, silakan lihat <a href=\"/docs/roadmap/\">peta jalan</a>.\n"
 
 #: html/contribute/code.html:22
 msgid "Version Control System"
-msgstr ""
+msgstr "Sistem Kontrol Versi"
 
 #: html/contribute/code.html:24
 msgid ""
@@ -375,6 +397,13 @@ msgid ""
 "system. It allows you create own local branch, develop the code and then\n"
 "submit us patches or merge request for the changes.\n"
 msgstr ""
+"\n"
+"Saat ini kami menggunakan <a href=\"https://git-scm.com/\">Git</a> sebagai "
+"sistem kontrol\n"
+"versi. Ini memungkinkan Anda membuat cabang lokal sendiri, mengembangkan "
+"kode, lalu\n"
+"mengirimkan patch atau permintaan penggabungan kepada kami untuk perubahan "
+"tersebut.\n"
 
 #: html/contribute/code.html:32
 msgid ""
@@ -386,6 +415,13 @@ msgid ""
 "on their site or just clone the repository and investigate it locally. To\n"
 "clone Wammu and Gammu sources, use following commands:\n"
 msgstr ""
+"\n"
+"Repositori Git dihosting pada layanan <a\n"
+"href=\"https://github.com/\">Github</a>, dalam proyek\n"
+"<a href=\"https://github.com/gammu/\">Gammu</a>. Anda dapat menelusuri kode\n"
+"di situs mereka atau cukup mengklon repositori dan memeriksanya secara "
+"lokal. Untuk\n"
+"mengklon sumber Wammu dan Gammu, gunakan perintah berikut:\n"
 
 #: html/contribute/code.html:56
 msgid ""
@@ -395,10 +431,15 @@ msgid ""
 "to\n"
 "have <a href=\"https://www.cmake.org/\">CMake</a>.\n"
 msgstr ""
+"\n"
+"Instruksi untuk membangun dan memasang disertakan dalam berkas\n"
+"<code>INSTALL</code> baik di Gammu maupun Wammu. Untuk mengompilasi Gammu "
+"Anda perlu\n"
+"memiliki <a href=\"https://www.cmake.org/\">CMake</a>.\n"
 
 #: html/contribute/code.html:63
 msgid "Code Snapshots"
-msgstr ""
+msgstr "Snapshot kode"
 
 #: html/contribute/code.html:65
 msgid ""
@@ -406,10 +447,14 @@ msgid ""
 "If you for some reason do not want to use version control system, you can\n"
 "always download fresh snapshots of current code from GitHub.\n"
 msgstr ""
+"\n"
+"Jika karena suatu alasan Anda tidak ingin menggunakan sistem kontrol versi, "
+"Anda\n"
+"selalu dapat mengunduh snapshot terbaru dari kode saat ini dari GitHub.\n"
 
 #: html/contribute/code.html:72
 msgid "Patch Submission"
-msgstr ""
+msgstr "Pengiriman patch"
 
 #: html/contribute/code.html:74
 msgid ""
@@ -422,20 +467,34 @@ msgid ""
 "href=\"/support/lists/\">mailing lists</a> or to the <a\n"
 "href=\"/support/bugs/\">bug tracker</a>.\n"
 msgstr ""
+"\n"
+"Kami sebenarnya tidak terlalu peduli dengan cara Anda menyampaikan patch "
+"kepada kami. Namun\n"
+"cara termudah adalah menggunakan <code>git format-patch</code>, yang "
+"memungkinkan kami untuk\n"
+"dengan mudah menyertakan perubahan Anda. Jika Anda tidak menggunakan git, "
+"diff terpadu\n"
+"apa pun juga akan berfungsi dengan sangat baik. Anda dapat mengirim patch ke "
+"<a\n"
+"href=\"/support/lists/\">milis</a> atau ke <a\n"
+"href=\"/support/bugs/\">pelacak bug</a>.\n"
 
 #: html/contribute/code.html:85
 msgid "Testing"
-msgstr ""
+msgstr "Pengujian"
 
 #: html/contribute/code.html:87
 msgid ""
 "Gammu comes with quite comprehensive testsuite, which is being run "
 "continuosly using <a href=\"https://travis-ci.org/gammu/gammu\">Travis</a>."
 msgstr ""
+"Gammu dilengkapi dengan rangkaian pengujian yang cukup komprehensif, yang "
+"dijalankan secara berkelanjutan menggunakan <a href=\"https://travis-ci.org/"
+"gammu/gammu\">Travis</a>."
 
 #: html/contribute/index.html:4 html/contribute/index.html:8
 msgid "Contribute to Wammu and Gammu"
-msgstr ""
+msgstr "Berkontribusi pada Wammu dan Gammu"
 
 #: html/contribute/index.html:11 html/contribute/wanted.html:11
 msgid ""
@@ -445,6 +504,13 @@ msgid ""
 "welcome\n"
 "to help us in any way. You really do not need developer skills to help.\n"
 msgstr ""
+"\n"
+"Gammu dan Wammu adalah proyek perangkat lunak bebas yang dikerjakan oleh "
+"para relawan\n"
+"di waktu luang mereka. Tidak pernah ada cukup relawan sehingga Anda sangat "
+"dipersilakan\n"
+"untuk membantu kami dengan cara apa pun. Anda benar-benar tidak perlu "
+"keterampilan pengembang untuk membantu.\n"
 
 #: html/contribute/index.html:19
 msgid ""
@@ -452,10 +518,14 @@ msgid ""
 "Please check our list of <a href=\"/contribute/wanted/\"><strong>wanted\n"
 "skills</strong></a>, to get an idea who we are currently looking for.\n"
 msgstr ""
+"\n"
+"Silakan lihat daftar <a href=\"/contribute/wanted/\"><strong>keterampilan\n"
+"yang dibutuhkan</strong></a> kami, untuk mendapatkan gambaran siapa yang "
+"saat ini kami cari.\n"
 
 #: html/contribute/index.html:25
 msgid "Using"
-msgstr ""
+msgstr "Menggunakan"
 
 #: html/contribute/index.html:27
 msgid ""
@@ -467,6 +537,14 @@ msgid ""
 "all\n"
 "use cases on our own!\n"
 msgstr ""
+"\n"
+"Cukup menggunakan alat kami dan memberi para pengembang <a href=\"/support/"
+"bugs/\">umpan balik\n"
+"<strong>yang baik</strong></a> dapat sangat membantu. Beri tahu kami apa "
+"yang akan Anda ubah atau tingkatkan.\n"
+"Anda mungkin menggunakan perangkat lunak kami dengan cara yang cukup unik "
+"dan kami tidak bisa menemukan semua\n"
+"kasus penggunaan sendiri!\n"
 
 #: html/contribute/index.html:36
 msgid ""
@@ -477,10 +555,17 @@ msgid ""
 "developers. Just don't be afraid of writing about our tools in your blog,\n"
 "twitter, facebook or whatever online media you use.\n"
 msgstr ""
+"\n"
+"Selain itu, cukup <a href=\"/contribute/publicity/\"><strong>"
+"menyebarluaskan</strong> kabar</a> tentang alat yang\n"
+"Anda gunakan dan cara Anda menggunakannya dapat membantu proyek menarik "
+"lebih banyak pengguna dan\n"
+"pengembang. Jangan takut menulis tentang alat kami di blog Anda,\n"
+"twitter, facebook, atau media daring apa pun yang Anda gunakan.\n"
 
 #: html/contribute/index.html:44
 msgid "Improving"
-msgstr ""
+msgstr "Meningkatkan"
 
 #: html/contribute/index.html:47
 msgid ""
@@ -496,6 +581,19 @@ msgid ""
 "you\n"
 "are skilled in this area, your help would be also welcome!\n"
 msgstr ""
+"\n"
+"Ada banyak cara untuk meningkatkan perangkat lunak. Jika Anda tidak tahu "
+"cara menulis\n"
+"kode, Anda selalu dapat <a\n"
+"href=\"/contribute/translate/\"><strong>menerjemahkan</strong> ke\n"
+"bahasa Anda</a>.\n"
+"Bagi pengembang yang memiliki keterampilan baik di C maupun Python, mungkin "
+"mudah untuk\n"
+"<a href=\"/contribute/code/\">menyumbangkan beberapa <strong>kode</strong></"
+"a>.\n"
+"Selain itu, grafis dalam aplikasi sebenarnya tidak terlalu berkualitas "
+"tinggi dan jika\n"
+"Anda memiliki keterampilan di bidang ini, bantuan Anda juga akan diterima!\n"
 
 #: html/contribute/index.html:60
 msgid ""
@@ -505,10 +603,16 @@ msgid ""
 "on\n"
 "your platform, especially if it some which we do not test so far.\n"
 msgstr ""
+"\n"
+"Anda juga dapat membantu hanya dengan secara rutin <a\n"
+"href=\"/contribute/code/#testing\">menjalankan <strong>rangkaian pengujian</"
+"strong></a> di\n"
+"platform Anda, terutama jika itu adalah platform yang sejauh ini belum kami "
+"uji.\n"
 
 #: html/contribute/index.html:67
 msgid "Donating"
-msgstr ""
+msgstr "Berdonasi"
 
 #: html/contribute/index.html:70
 msgid ""
@@ -517,10 +621,14 @@ msgid ""
 "href=\"/donate/\">donating them</a> some money or some items from their "
 "wishlist.\n"
 msgstr ""
+"\n"
+"Dan tentu saja ada opsi untuk menghargai para penulis dengan <a\n"
+"href=\"/donate/\">memberi mereka donasi</a> berupa uang atau beberapa item "
+"dari daftar keinginan mereka.\n"
 
 #: html/contribute/publicity.html:4 html/contribute/publicity.html:8
 msgid "Publicity for Wammu and Gammu"
-msgstr ""
+msgstr "Publisitas untuk Wammu dan Gammu"
 
 #: html/contribute/publicity.html:11
 msgid ""
@@ -530,6 +638,12 @@ msgid ""
 "lot\n"
 "to gain new users and developers. \n"
 msgstr ""
+"\n"
+"Publisitas sangat penting bagi proyek apa pun. Jika tidak ada yang tahu "
+"tentang proyek tersebut,\n"
+"tidak ada yang akan menggunakannya. Jadi menyebarluaskan kabar tentang Gammu "
+"dan Wammu dapat sangat membantu\n"
+"untuk mendapatkan pengguna dan pengembang baru. \n"
 
 #: html/contribute/publicity.html:19
 msgid ""
@@ -540,10 +654,16 @@ msgid ""
 "really do\n"
 "not follow all blogs in the world to scan for bug reports.\n"
 msgstr ""
+"\n"
+"Di sisi lain, jika Anda menemukan bug, mohon jangan membiarkannya hanya "
+"dideskripsikan\n"
+"di weblog Anda, tetapi <a href=\"/support/bugs/\">laporkan</a> kepada kami. "
+"Kami benar-benar\n"
+"tidak mengikuti semua blog di dunia untuk memindai laporan bug.\n"
 
 #: html/contribute/publicity.html:26
 msgid "Third Party Applications"
-msgstr ""
+msgstr "Aplikasi pihak ketiga"
 
 #: html/contribute/publicity.html:29
 msgid ""
@@ -555,10 +675,18 @@ msgid ""
 "page, what will in reward bring users to your project. Just <a\n"
 "href=\"/support/\">let us know</a> about it!\n"
 msgstr ""
+"\n"
+"Anda membuat alat hebat menggunakan Gammu? Jangan ragu untuk menuliskannya. "
+"Kami\n"
+"juga dapat mencantumkan alat Anda di halaman <a href=\"/links/\">aplikasi "
+"pihak ketiga</a>\n"
+"kami, yang sebagai imbalannya akan membawa pengguna ke proyek Anda. Cukup "
+"<a\n"
+"href=\"/support/\">beri tahu kami</a> tentang itu!\n"
 
 #: html/contribute/publicity.html:37
 msgid "Logos or Screenshots"
-msgstr ""
+msgstr "Logo atau tangkapan layar"
 
 #: html/contribute/publicity.html:39
 msgid ""
@@ -570,10 +698,18 @@ msgid ""
 "logos are available in various resolutions as well as in scalable format in\n"
 "<a href=\"/contribute/code/#vcs\">wammu source repository</a>.\n"
 msgstr ""
+"\n"
+"Anda dapat menggunakan tangkapan layar apa pun yang tersedia di situs web "
+"ini untuk posting publisitas Anda\n"
+"selama Anda mematuhi <a href=\"/license/\">ketentuan lisensi</a>. Logo Gammu "
+"dan Wammu\n"
+"juga tersedia dalam berbagai resolusi serta dalam format yang dapat "
+"diskalakan di\n"
+"<a href=\"/contribute/code/#vcs\">repositori sumber Wammu</a>.\n"
 
 #: html/contribute/translate.html:4 html/contribute/translate.html:8
 msgid "Translating Wammu and Gammu"
-msgstr ""
+msgstr "Menerjemahkan Wammu dan Gammu"
 
 #: html/contribute/translate.html:11
 msgid ""
@@ -584,10 +720,18 @@ msgid ""
 "have\n"
 "to spend much time on it.\n"
 msgstr ""
+"\n"
+"Jika Anda mengetahui bahasa Inggris dan bahasa lain, Anda dapat mendekatkan "
+"Gammu dan\n"
+"Wammu kepada pengguna yang tidak mengetahui bahasa Inggris. Proses "
+"penerjemahan\n"
+"sangat mudah dan Anda bisa sesekali menerjemahkan beberapa teks saja dan "
+"tidak\n"
+"harus menghabiskan banyak waktu untuk itu.\n"
 
 #: html/contribute/translate.html:18
 msgid "Gettext"
-msgstr ""
+msgstr "Gettext"
 
 #: html/contribute/translate.html:20
 msgid ""
@@ -601,10 +745,20 @@ msgid ""
 "documentation. There exists variety of tools which can handle gettext\n"
 "translations, so you can choose the one which fits your needs.\n"
 msgstr ""
+"\n"
+"Semua Gammu, Wammu, dan situs web ini menggunakan kerangka kerja <a\n"
+"href=\"https://en.wikipedia.org/wiki/GNU_gettext\">gettext</a> untuk\n"
+"terjemahan pesan di antarmuka pengguna. Selain itu, Gammu menggunakan "
+"gettext\n"
+"bersama dengan <a href=\"https://po4a.alioth.debian.org/\">po4a</a> untuk "
+"menerjemahkan\n"
+"dokumentasi. Ada berbagai macam alat yang dapat menangani\n"
+"terjemahan gettext, sehingga Anda dapat memilih yang sesuai dengan kebutuhan "
+"Anda.\n"
 
 #: html/contribute/translate.html:30
 msgid "Translating po Files"
-msgstr ""
+msgstr "Menerjemahkan berkas po"
 
 #: html/contribute/translate.html:32
 msgid ""
@@ -615,10 +769,18 @@ msgid ""
 "and then send updated po file to the author. You can do this when you are\n"
 "offline, but on the other side, it somehow prevents collaboration.\n"
 msgstr ""
+"\n"
+"Cara tradisional melakukan penerjemahan adalah dengan mengunduh berkas po, "
+"menerjemahkannya\n"
+"menggunakan suatu editor (misalnya <a href=\"https://www.poedit.net/\">"
+"Poedit</a>)\n"
+"dan kemudian mengirim berkas po yang telah diperbarui kepada penulis. Anda "
+"dapat melakukan ini saat\n"
+"luring, tetapi di sisi lain, hal ini agak menghambat kolaborasi.\n"
 
 #: html/contribute/translate.html:40
 msgid "Weblate"
-msgstr ""
+msgstr "Weblate"
 
 #: html/contribute/translate.html:42
 msgid ""
@@ -635,14 +797,28 @@ msgid ""
 "There\n"
 "are separate translations projects:\n"
 msgstr ""
+"\n"
+"Opsi lainnya adalah menggunakan sistem penerjemahan berbasis web, di mana "
+"banyak orang\n"
+"dapat mengerjakan satu terjemahan karena mereka cukup menerjemahkan satu "
+"teks pada satu waktu.\n"
+"Saat ini kami menggunakan <a href=\"https://weblate.org/\">Weblate</a> "
+"untuk\n"
+"mengelola terjemahan. Untuk mulai menerjemahkan, cukup buat akun di sana "
+"dan\n"
+"mulai menerjemahkan. Anda sudah dapat melihat puluhan bahasa di sana, tetapi "
+"jika\n"
+"bahasa Anda belum ada, cukup <a href=\"/support/\">beri tahu kami</a> dan "
+"kami akan menambahkannya. Di sana\n"
+"ada proyek-proyek terjemahan terpisah:\n"
 
 #: html/contribute/translate.html:54
 msgid "Introduction page"
-msgstr ""
+msgstr "Halaman pengantar"
 
 #: html/contribute/translate.html:58
 msgid "This website"
-msgstr ""
+msgstr "Situs web ini"
 
 #: html/contribute/translate.html:62
 msgid ""
@@ -655,10 +831,20 @@ msgid ""
 "better quality of translation and slower progress, so it's up to each\n"
 "translator to define policy.\n"
 msgstr ""
+"\n"
+"Secara bawaan, semua bahasa terbuka untuk diterjemahkan oleh siapa pun yang "
+"masuk. Namun\n"
+"jika Anda ingin memiliki kontrol yang lebih baik atas suatu bahasa, <a "
+"href=\"/support/\">beri\n"
+"tahu kami</a> agar mengizinkan orang lain hanya untuk mengusulkan "
+"terjemahan. Ini biasanya menghasilkan\n"
+"kualitas terjemahan yang lebih baik namun kemajuan yang lebih lambat, jadi "
+"terserah tiap\n"
+"penerjemah untuk menentukan kebijakannya.\n"
 
 #: html/contribute/translate.html:71
 msgid "Hints for Translators"
-msgstr ""
+msgstr "Petunjuk untuk Penerjemah"
 
 #: html/contribute/translate.html:73
 msgid ""
@@ -666,6 +852,10 @@ msgid ""
 "In menu items, there is often used ampresand (&amp;), it means keybord\n"
 "shortcut for menu item. Please make those shortcuts unique in each menu. \n"
 msgstr ""
+"\n"
+"Pada item menu, sering digunakan ampersand (&amp;), itu berarti pintasan\n"
+"papan ketik untuk item menu. Harap buat pintasan tersebut unik di setiap "
+"menu. \n"
 
 #: html/contribute/translate.html:80
 msgid ""
@@ -676,6 +866,12 @@ msgid ""
 "code>\n"
 "is two letter code of your translation.\n"
 msgstr ""
+"\n"
+"Harap uji terjemahan di dalam program. Cukup unduh berkas mo dari\n"
+"sistem penerjemahan dan letakkan di bawah\n"
+"<code>/usr/share/locale/aa/LC_MESSAGES/wammu.mo</code>, di mana <code>aa</"
+"code>\n"
+"adalah kode dua huruf untuk terjemahan Anda.\n"
 
 #: html/contribute/translate.html:89
 #, python-format
@@ -684,10 +880,13 @@ msgid ""
 "\"%(url)s\">dictionary for the project</a>. If it is not defined, you can "
 "help creating one!"
 msgstr ""
+"Anda harus mengikuti terminologi sebagaimana ditetapkan untuk bahasa Anda "
+"dalam <a href=\"%(url)s\">kamus untuk proyek</a>. Jika belum ditetapkan, "
+"Anda dapat membantu membuatnya!"
 
 #: html/contribute/translate.html:92
 msgid "What is Important?"
-msgstr ""
+msgstr "Apa yang Penting?"
 
 #: html/contribute/translate.html:94
 msgid ""
@@ -696,6 +895,10 @@ msgid ""
 "the\n"
 "following rules to find the most important things:\n"
 msgstr ""
+"\n"
+"Jika Anda menemui terjemahan dalam kondisi buruk, pekerjaannya terlalu "
+"banyak. Gunakan\n"
+"aturan berikut untuk menemukan hal-hal yang paling penting:\n"
 
 #: html/contribute/translate.html:101
 msgid ""
@@ -704,6 +907,9 @@ msgid ""
 "Wammu.\n"
 "It is just good place to start and get to know some basic terminology.\n"
 msgstr ""
+"\n"
+"Pesan libGammu - jumlahnya hanya sedikit dan juga digunakan di Wammu.\n"
+"Ini tempat yang baik untuk memulai dan mengenal beberapa terminologi dasar.\n"
 
 #: html/contribute/translate.html:105
 msgid ""
@@ -711,12 +917,17 @@ msgid ""
 "Wammu translation - the is the application which is most frequently used by\n"
 "users with little English knowledge.\n"
 msgstr ""
+"\n"
+"Terjemahan Wammu - ini adalah aplikasi yang paling sering digunakan oleh\n"
+"pengguna dengan pengetahuan bahasa Inggris yang minim.\n"
 
 #: html/contribute/translate.html:109
 msgid ""
 "\n"
 "Gammu translation - it's nice to have but not really a high priority.\n"
 msgstr ""
+"\n"
+"Terjemahan Gammu - bagus untuk dimiliki, tetapi bukan prioritas tinggi.\n"
 
 #: html/contribute/translate.html:112
 msgid ""
@@ -725,6 +936,9 @@ msgid ""
 "website\n"
 "translated for new users.\n"
 msgstr ""
+"\n"
+"Situs web Wammu - ada banyak teks di sini dan sangat bagus jika situs web\n"
+"diterjemahkan untuk pengguna baru.\n"
 
 #: html/contribute/translate.html:116
 msgid ""
@@ -732,10 +946,13 @@ msgid ""
 "Gammu documentation - it would be great to have this translated to many\n"
 "languages, but it is huge amount of text to translate.\n"
 msgstr ""
+"\n"
+"Dokumentasi Gammu - akan sangat baik jika ini diterjemahkan ke banyak\n"
+"bahasa, tetapi jumlah teks yang harus diterjemahkan sangat besar.\n"
 
 #: html/contribute/wanted.html:4 html/contribute/wanted.html:8
 msgid "Wanted Skills for Wammu and Gammu"
-msgstr ""
+msgstr "Keterampilan yang Dibutuhkan untuk Wammu dan Gammu"
 
 #: html/contribute/wanted.html:19
 msgid ""
@@ -749,10 +966,19 @@ msgid ""
 "<a href=\"/support/lists/\"><strong>contact us on mailing list</strong></"
 "a>.\n"
 msgstr ""
+"\n"
+"Di bawah ini adalah daftar posisi saat ini, yang akan paling membantu. Jika "
+"Anda\n"
+"tidak menemukan apa pun yang sesuai dengan keterampilan Anda, masih mungkin "
+"ada sesuatu di mana\n"
+"Anda dapat membantu, tetapi tidak dianggap cukup penting untuk disorot di "
+"sini. Jika\n"
+"Anda merasa sesuatu bisa sesuai dengan keterampilan Anda, silakan \n"
+"<a href=\"/support/lists/\"><strong>hubungi kami di milis</strong></a>.\n"
 
 #: html/contribute/wanted.html:28
 msgid "Documentation writer"
-msgstr ""
+msgstr "Penulis dokumentasi"
 
 #: html/contribute/wanted.html:31
 msgid ""
@@ -763,10 +989,15 @@ msgid ""
 "any \n"
 "special skill for this, writing plain text is enough.\n"
 msgstr ""
+"\n"
+"Kami memiliki <a href=\"/docs/manual/\">dokumentasi</a> yang cukup "
+"komprehensif, meskipun\n"
+"masih ada banyak bagian yang bisa diperluas. Anda tidak memerlukan \n"
+"keterampilan khusus untuk ini, menulis teks biasa sudah cukup.\n"
 
 #: html/contribute/wanted.html:38
 msgid "Community supporter"
-msgstr ""
+msgstr "Pendukung komunitas"
 
 #: html/contribute/wanted.html:41
 msgid ""
@@ -779,10 +1010,18 @@ msgid ""
 "looking \n"
 "at documentation.\n"
 msgstr ""
+"\n"
+"Anda memiliki pengetahuan dasar tentang Gammu dan ingin membantu orang lain? "
+"Menjawab pertanyaan pengguna\n"
+"di milis atau IRC adalah hal terbaik yang dapat Anda lakukan untuk mereka. "
+"Biasanya\n"
+"Anda tidak memerlukan pengetahuan teknis yang mendalam; sebagian besar "
+"pertanyaan dapat dijawab dengan melihat\n"
+"dokumentasi.\n"
 
 #: html/contribute/wanted.html:49
 msgid "Windows Developer"
-msgstr ""
+msgstr "Pengembang Windows"
 
 #: html/contribute/wanted.html:52
 msgid ""
@@ -792,10 +1031,16 @@ msgid ""
 "you\n"
 "need some experiences with Windows API.\n"
 msgstr ""
+"\n"
+"Saat ini sebagian besar pengembang bekerja di Linux atau BSD. Hal ini "
+"menyebabkan\n"
+"dukungan untuk Windows agak kurang. Anda kemungkinan perlu memasang Visual "
+"Studio dan\n"
+"memiliki beberapa pengalaman dengan Windows API.\n"
 
 #: html/contribute/wanted.html:59
 msgid "Translators"
-msgstr ""
+msgstr "Penerjemah"
 
 #: html/contribute/wanted.html:62
 msgid ""
@@ -803,10 +1048,14 @@ msgid ""
 "There are always things to translate to almost any language, just check\n"
 "dedicated page <a href=\"/contribute/translate/\">about translating</a>.\n"
 msgstr ""
+"\n"
+"Selalu ada hal yang perlu diterjemahkan ke hampir semua bahasa; silakan "
+"lihat\n"
+"halaman khusus <a href=\"/contribute/translate/\">tentang penerjemahan</a>.\n"
 
 #: html/contribute/wanted.html:68
 msgid "Graphics/Designer"
-msgstr ""
+msgstr "Grafis/Desainer"
 
 #: html/contribute/wanted.html:71
 msgid ""
@@ -814,10 +1063,14 @@ msgid ""
 "Graphics and icons used in Wammu are quite poor quality right now. We would\n"
 "definitely make use of somebody more skilled in this area.\n"
 msgstr ""
+"\n"
+"Grafis dan ikon yang digunakan di Wammu saat ini kualitasnya cukup buruk. "
+"Kami pasti\n"
+"akan memanfaatkan bantuan seseorang yang lebih terampil di bidang ini.\n"
 
 #: html/contribute/wanted.html:77
 msgid "Symbian Developer"
-msgstr ""
+msgstr "Pengembang Symbian"
 
 #: html/contribute/wanted.html:80
 msgid ""
@@ -828,6 +1081,14 @@ msgid ""
 "for\n"
 "this purpose, but it lacks support for recent Symbian versions).\n"
 msgstr ""
+"\n"
+"Saat ini Gammu kurang memiliki dukungan untuk Symbian. Satu-satunya cara "
+"agar ini bisa\n"
+"dicakup adalah dengan mengimplementasikan aplikasi untuk Symbian, yang dapat "
+"kami gunakan sebagai\n"
+"titik akhir komunikasi yang dapat kami ajak berbicara (gnapplet saat ini "
+"digunakan untuk\n"
+"keperluan ini, tetapi tidak mendukung versi Symbian yang terbaru).\n"
 
 #: html/contribute/wanted.html:89
 msgid ""
@@ -835,10 +1096,14 @@ msgid ""
 "The very same probably applies to other modern platforms such as Android,\n"
 "Maemo or Windows Mobile.\n"
 msgstr ""
+"\n"
+"Hal yang sama kemungkinan berlaku juga untuk platform modern lainnya seperti "
+"Android,\n"
+"Maemo, atau Windows Mobile.\n"
 
 #: html/contribute/wanted.html:95
 msgid "Python Developer"
-msgstr ""
+msgstr "Pengembang Python"
 
 #: html/contribute/wanted.html:98
 msgid ""
@@ -848,10 +1113,16 @@ msgid ""
 "you\n"
 "wish.\n"
 msgstr ""
+"\n"
+"Wammu membutuhkan jauh lebih banyak perhatian dari para pengembang "
+"dibandingkan yang didapatkannya saat ini.\n"
+"Anda akan memiliki keleluasaan yang cukup besar untuk memajukan proyek dan "
+"membuatnya tampak sesuai\n"
+"dengan yang Anda inginkan.\n"
 
 #: html/contribute/wanted.html:105
 msgid "C Developer"
-msgstr ""
+msgstr "Pengembang C"
 
 #: html/contribute/wanted.html:108
 msgid ""
@@ -860,10 +1131,14 @@ msgid ""
 "hands\n"
 "can manage them faster.\n"
 msgstr ""
+"\n"
+"Selalu ada banyak bug dan permintaan fitur pada inti Gammu, dan lebih banyak "
+"orang\n"
+"dapat menanganinya lebih cepat.\n"
 
 #: html/docs/index.html:4 html/docs/index.html:7
 msgid "Wammu and Gammu Documentation"
-msgstr ""
+msgstr "Dokumentasi Wammu dan Gammu"
 
 #: html/docs/index.html:10
 msgid ""
@@ -874,14 +1149,21 @@ msgid ""
 "installing Gammu, configuring it, running the programs up to SMSD\n"
 "documentation and C or Python API.\n"
 msgstr ""
+"\n"
+"Dokumentasi pengguna terbaik untuk Gammu ada di <strong>\n"
+"<a href=\"/docs/manual/\">Manual Gammu</a></strong>. Dokumentasi ini "
+"mencakup semua aspek mulai dari\n"
+"memasang Gammu, mengonfigurasinya, menjalankan program hingga dokumentasi "
+"SMSD\n"
+"dan API C atau Python.\n"
 
 #: html/docs/index.html:18
 msgid "You can also download documentation in PDF:"
-msgstr ""
+msgstr "Anda juga dapat mengunduh dokumentasi dalam PDF:"
 
 #: html/docs/index.html:22
 msgid "Gammu SMSD Daemon Manual"
-msgstr ""
+msgstr "Manual Daemon Gammu SMSD"
 
 #: html/docs/index.html:26
 msgid ""
@@ -891,6 +1173,11 @@ msgid ""
 "experiences with\n"
 "Gammu and different phone models.\n"
 msgstr ""
+"\n"
+"Untuk memeriksa dukungan untuk model ponsel tertentu, sumber terbaik adalah\n"
+"<a href=\"/phones/\">Basis Data Ponsel Gammu</a> yang berisi pengalaman "
+"pengguna dengan\n"
+"Gammu dan berbagai model ponsel.\n"
 
 #: html/docs/index.html:34
 msgid ""
@@ -900,10 +1187,15 @@ msgid ""
 "a> before\n"
 "asking on the <a href=\"/support/lists/\">mailing list</a>.\n"
 msgstr ""
+"\n"
+"Jika Anda masih memiliki pertanyaan, silakan periksa\n"
+"<a href=\"/docs/manual/faq/\"><strong>Pertanyaan yang Sering Diajukan</"
+"strong></a> sebelum\n"
+"bertanya di <a href=\"/support/lists/\">milis</a>.\n"
 
 #: html/docs/index.html:41
 msgid "Developer Documentation"
-msgstr ""
+msgstr "Dokumentasi pengembang"
 
 #: html/docs/index.html:44
 msgid ""
@@ -915,6 +1207,13 @@ msgid ""
 "<strong><a href=\"/docs/manual/c/\">libGammu C API</a></strong> or\n"
 "<strong><a href=\"/docs/manual/internal/\">internal API</a></strong>.\n"
 msgstr ""
+"\n"
+"Dokumentasi pengembang disertakan di <strong>\n"
+"<a href=\"/docs/manual/\">Manual Gammu</a></strong>. Anda dapat menemukan\n"
+"dokumentasi untuk <strong><a href=\"/docs/manual/python/\">API Python</a></"
+"strong>,\n"
+"<strong><a href=\"/docs/manual/c/\">API C libGammu</a></strong> atau\n"
+"<strong><a href=\"/docs/manual/internal/\">API internal</a></strong>.\n"
 
 #: html/docs/index.html:54
 msgid ""
@@ -923,6 +1222,12 @@ msgid ""
 "the next Gammu and Wammu releases, you can find this information in the \n"
 "<a href=\"/docs/manual/project/roadmap.html\">roadmap</a>.\n"
 msgstr ""
+"\n"
+"Sebagai pengembang, Anda mungkin juga tertarik dengan apa yang direncanakan "
+"terjadi\n"
+"dalam rilis Gammu dan Wammu berikutnya; Anda dapat menemukan informasi ini "
+"di\n"
+"<a href=\"/docs/manual/project/roadmap.html\">peta jalan</a>.\n"
 
 #: html/docs/index.html:62
 msgid ""
@@ -933,10 +1238,16 @@ msgid ""
 "<a href=\"https://github.com/gammu/gsm-docs/\">various GSM documentation</"
 "a>.\n"
 msgstr ""
+"\n"
+"Petunjuk tambahan tentang protokol dapat ditemukan di <code>docs/develop</"
+"code> pada\n"
+"sumber Gammu atau Anda mungkin ingin menggunakan repositori Git yang berisi\n"
+"<a href=\"https://github.com/gammu/gsm-docs/\">berbagai dokumentasi GSM</a>"
+".\n"
 
 #: html/donate-thanks.html:4 html/donate-thanks.html:7
 msgid "Thank you for Donation!"
-msgstr "Terimakasih atas sumbangan Anda!"
+msgstr "Terima kasih atas Donasi Anda!"
 
 #: html/donate-thanks.html:10
 msgid ""
@@ -946,25 +1257,26 @@ msgid ""
 "money in useful way.\n"
 msgstr ""
 "\n"
-"Terimakasih atas sumbangan Anda untuk Gammu/Wammu! Kami akan berusaha\n"
-"menggunakannya sebaik mungkin.\n"
+"Terima kasih telah berdonasi untuk Gammu/Wammu! Kami akan melakukan yang "
+"terbaik untuk menggunakan uang\n"
+"donasi dengan cara yang bermanfaat.\n"
 
 #: html/donate.html:4 html/donate.html:7
 msgid "Donate to Gammu"
-msgstr "Sumbang untuk Gammu"
+msgstr "Donasi ke Gammu"
 
 #: html/donate.html:10
 msgid ""
 "Gammu as a free software is project run by volunteers in their free time. To "
 "appreciate their work you can donate them in one of ways mentioned below."
 msgstr ""
-"Gammu adalah perangkat lunak gratis yang dibuat oleh relawan di sela waktu "
-"mereka. Untuk menghargai karya mereka, Anda bisa turut\n"
-"menyumbangkan dengan cara-cara di bawah ini."
+"Gammu sebagai perangkat lunak bebas adalah proyek yang dijalankan oleh para "
+"relawan di waktu luang mereka. Untuk menghargai kerja mereka, Anda dapat "
+"berdonasi kepada mereka dengan salah satu cara yang disebutkan di bawah ini."
 
 #: html/donate.html:13
 msgid "Donate Money"
-msgstr "Menyumbangkan Uang"
+msgstr "Donasi uang"
 
 #: html/donate.html:15
 msgid ""
@@ -979,23 +1291,27 @@ msgid ""
 "better software.\n"
 msgstr ""
 "\n"
-"Terimakasih telah turut menyumbang untuk proyek Gammu dan Wammu. Uang ini\n"
-"bisa memotivasi pengembang dan turut membantu menyediakan perangkat keras\n"
-"sebagai media ujicoba. Kami memang sudah mempunyai beberapa ponsel, namun\n"
-"masih banyak ponsel di luar sana yang ingin kami sediakan\n"
-"perangkat lunaknya.\n"
+"Terima kasih telah berminat untuk menyumbangkan uang kepada proyek Gammu dan "
+"Wammu. Uang\n"
+"ini dapat menjadi motivasi bagi para pengembang serta menjadi dana untuk "
+"membeli\n"
+"perangkat keras yang diperlukan untuk pengujian. Kami sudah memiliki "
+"beberapa ponsel, tetapi\n"
+"jumlahnya memang sangat banyak dan memiliki lebih banyak perangkat yang "
+"tersedia memungkinkan kami membuat\n"
+"perangkat lunak yang lebih baik.\n"
 
 #: html/donate.html:27
 msgid "Donate small amount in weekly intervals."
-msgstr ""
+msgstr "Donasi sejumlah kecil dengan interval mingguan."
 
 #: html/donate.html:33
 msgid "Donate monthly amount for sustainable development"
-msgstr ""
+msgstr "Donasi jumlah bulanan untuk pengembangan yang berkelanjutan"
 
 #: html/donate.html:37
 msgid "Fund issues to motivate developers"
-msgstr ""
+msgstr "Danai isu untuk memotivasi pengembang"
 
 #: html/donate.html:43
 msgid ""
@@ -1006,10 +1322,17 @@ msgid ""
 "account or by using any major credit card. You can also directly send a\n"
 "donation to <code>michal@cihar.com</code>.\n"
 msgstr ""
+"\n"
+"Donasi itu sendiri diproses oleh <a\n"
+"href=\"https://www.paypal.com/\">PayPal</a> tempat Anda dapat membayar baik "
+"menggunakan\n"
+"akun mereka maupun menggunakan kartu kredit utama apa pun. Anda juga dapat "
+"langsung mengirim\n"
+"donasi ke <code>michal@cihar.com</code>.\n"
 
 #: html/donate.html:60
 msgid "Bitcoin"
-msgstr ""
+msgstr "Bitcoin"
 
 #: html/donate.html:63
 #, python-format
@@ -1018,22 +1341,25 @@ msgid ""
 "peer network</a> and send me Bitcoins to <code><a href=\"bitcoin:%(address)s"
 "\">%(address)s</a></code>."
 msgstr ""
+"Anda juga dapat menggunakan <a href=\"https://www.bitcoin.org/\">Bitcoin "
+"adalah jaringan peer-to-peer</a> dan mengirimkan saya Bitcoin ke <code><a "
+"href=\"bitcoin:%(address)s\">%(address)s</a></code>."
 
 #: html/donate.html:66
 msgid "Litecoin"
-msgstr ""
+msgstr "Litecoin"
 
 #: html/donate.html:78
 msgid "Supporters"
-msgstr "Pengukung"
+msgstr "Para pendukung"
 
 #: html/donate.html:80
 msgid ""
 "List of companies or individuals who regularly support this website or Gammu "
 "development financially."
 msgstr ""
-"Daftar perusahaan atau pribadi yang secara rutin mendukung keuangan situs "
-"ini atau pengembangan Gammu."
+"Daftar perusahaan atau individu yang secara rutin mendukung situs web ini "
+"atau pengembangan Gammu secara finansial."
 
 #: html/downloads/detail.html:8
 #, python-format
@@ -1041,54 +1367,60 @@ msgid ""
 "\n"
 "Download %(program)s\n"
 msgstr ""
+"\n"
+"Unduh %(program)s\n"
 
 #: html/downloads/detail.html:27
 msgid "Linux binary packages"
-msgstr ""
+msgstr "Paket biner Linux"
 
 #: html/downloads/detail.html:31 html/downloads/platformlinks.html:5
 msgid "Debian packages"
-msgstr ""
+msgstr "Paket Debian"
 
 #: html/downloads/detail.html:34 html/downloads/platformlinks.html:8
 msgid "Ubuntu packages"
-msgstr ""
+msgstr "Paket Ubuntu"
 
 #: html/downloads/detail.html:37 html/downloads/platformlinks.html:11
 msgid "Ubuntu packages in PPA"
-msgstr ""
+msgstr "Paket Ubuntu di PPA"
 
 #: html/downloads/detail.html:40 html/downloads/platformlinks.html:14
 msgid "Fedora packages"
-msgstr ""
+msgstr "Paket Fedora"
 
 #: html/downloads/detail.html:43
 msgid "Mageia packages"
-msgstr ""
+msgstr "Paket Mageia"
 
 #: html/downloads/detail.html:47 html/downloads/platformlinks.html:18
 msgid "RPM packages (openSUSE, Fedora, Mageia, SLES, RHEL, CentOS)"
-msgstr ""
+msgstr "Paket RPM (openSUSE, Fedora, Mageia, SLES, RHEL, CentOS)"
 
 #: html/downloads/detail.html:51
 msgid "Development version"
-msgstr ""
+msgstr "Versi pengembangan"
 
 #: html/downloads/detail.html:54
 msgid ""
 "Should you be interested in git access or git snapshots, you can find them "
 "on <a href=\"/contribute/code/\">development page</a>."
 msgstr ""
+"Jika Anda tertarik dengan akses git atau snapshot git, Anda dapat "
+"menemukannya di <a href=\"/contribute/code/\">halaman pengembangan</a>."
 
 #: html/downloads/index.html:4
 msgid "Download Wammu and Gammu"
-msgstr ""
+msgstr "Unduh Wammu dan Gammu"
 
 #: html/downloads/index.html:8
 msgid ""
 "\n"
 "Download\n"
 msgstr ""
+"\n"
+"Unduh\n"
 
 #: html/downloads/index.html:14
 msgid ""
@@ -1101,34 +1433,43 @@ msgid ""
 "for\n"
 "more details.\n"
 msgstr ""
+"\n"
+"Anda dapat mengunduh dua program di sini - <a href=\"/gammu/\">Gammu</a> "
+"dan\n"
+"<a href=\"/wammu/\">Wammu</a>. Wammu adalah program GUI, sedangkan Gammu "
+"adalah baris\n"
+"perintah dan mencakup <a href=\"/smsd/\">daemon SMS</a> dan\n"
+"<a href=\"/python-gammu/\">binding Python</a>. Silakan periksa halaman yang "
+"ditautkan untuk\n"
+"rincian lebih lanjut.\n"
 
 #: html/downloads/index.html:46
 msgid "Syndication"
-msgstr ""
+msgstr "SindikasI"
 
 #: html/downloads/index.html:48
 msgid "DOAP for Wammu"
-msgstr ""
+msgstr "DOAP untuk Wammu"
 
 #: html/downloads/index.html:49
 msgid "DOAP for Gammu"
-msgstr ""
+msgstr "DOAP untuk Gammu"
 
 #: html/downloads/index.html:50
 msgid "PAD for Wammu"
-msgstr ""
+msgstr "PAD untuk Wammu"
 
 #: html/downloads/index.html:51
 msgid "PAD for Gammu"
-msgstr ""
+msgstr "PAD untuk Gammu"
 
 #: html/downloads/platformlinks.html:3
 msgid "Download sources or Windows binaries"
-msgstr ""
+msgstr "Unduh sumber atau biner Windows"
 
 #: html/downloads/platformlinks.html:20
 msgid "Development git snaphots and git access"
-msgstr ""
+msgstr "Snapshot git pengembangan dan akses git"
 
 #: html/downloads/platformmessage.html:3
 msgid ""
@@ -1139,6 +1480,13 @@ msgid ""
 "way to get it is to install it directly from your distribution "
 "repositories.\n"
 msgstr ""
+"\n"
+"Silakan pilih opsi unduhan yang paling sesuai dengan platform Anda. Jika "
+"Anda menggunakan Linux,\n"
+"distribusi Anda kemungkinan besar sudah berisi paket biner, sehingga cara "
+"termudah\n"
+"untuk mendapatkannya adalah dengan memasangnya langsung dari repositori "
+"distribusi Anda.\n"
 
 #: html/downloads/programs/gammu-source.html:3
 msgid ""
@@ -1152,12 +1500,22 @@ msgid ""
 "additional features which are listed in INSTALL file in sources. This file\n"
 "also contains more detailed instructions about compiling Gammu.\n"
 msgstr ""
+"\n"
+"Anda sedang mengunduh kode sumber Gammu. Untuk mengompilasinya Anda "
+"memerlukan lingkungan\n"
+"pengembangan untuk platform Anda dan alat <a href=\"https://www.cmake.org/\">"
+"CMake</a>\n"
+"untuk mengonfigurasi sumber. Ada juga beberapa persyaratan opsional untuk\n"
+"fitur tambahan yang tercantum dalam berkas INSTALL di sumber. Berkas ini\n"
+"juga memuat instruksi yang lebih rinci tentang cara mengompilasi Gammu.\n"
 
 #: html/downloads/programs/gammu-source.html:12
 msgid ""
 "This source tarball contains Gammu command line utility, libGammu library "
 "and Gammu SMSD."
 msgstr ""
+"Arsip tar sumber ini berisi utilitas baris perintah Gammu, pustaka libGammu, "
+"dan Gammu SMSD."
 
 #: html/downloads/programs/gammu-win32.html:3
 msgid ""
@@ -1165,6 +1523,9 @@ msgid ""
 "bit version and 32-bit version compiled with MSVC 9.0 to be compatible with "
 "Python 2.7."
 msgstr ""
+"Anda sedang mengunduh penginstal Gammu untuk Windows. Ada versi 32-bit, "
+"versi 64-bit, dan versi 32-bit yang dikompilasi dengan MSVC 9.0 agar "
+"kompatibel dengan Python 2.7."
 
 #: html/downloads/programs/gammu-win32.html:7
 #, python-format
@@ -1172,6 +1533,8 @@ msgid ""
 "You might need to install <a href=\"%(url)s\">Visual C++ Redistributable "
 "Packages</a> to run Gammu."
 msgstr ""
+"Anda mungkin perlu memasang <a href=\"%(url)s\">Paket Visual C++ "
+"Redistributable</a> untuk menjalankan Gammu."
 
 #: html/downloads/programs/python-gammu-source.html:3
 msgid ""
@@ -1180,11 +1543,15 @@ msgid ""
 "development\n"
 "environment for your platform, Gammu and Python.\n"
 msgstr ""
+"\n"
+"Anda sedang mengunduh kode sumber python-gammu. Untuk mengompilasinya Anda "
+"memerlukan lingkungan pengembangan\n"
+"untuk platform Anda, Gammu, dan Python.\n"
 
 #: html/downloads/programs/python-gammu-source.html:9
 #: html/downloads/programs/python-gammu-win32.html:9 html/python-gammu.html:35
 msgid "The easiest way to install it is using pip:"
-msgstr ""
+msgstr "Cara termudah untuk memasangnya adalah menggunakan pip:"
 
 #: html/downloads/programs/python-gammu-win32.html:3
 msgid ""
@@ -1194,6 +1561,11 @@ msgid ""
 "installer only (.exe), just choose the version matching Python version you "
 "use.\n"
 msgstr ""
+"\n"
+"Anda sedang mengunduh biner python-gammu untuk Windows. Versi saat ini "
+"tersedia sebagai\n"
+"penginstal saja (.exe); cukup pilih versi yang sesuai dengan versi Python "
+"yang Anda gunakan.\n"
 
 #: html/downloads/programs/wammu-source.html:3
 msgid ""
@@ -1207,6 +1579,15 @@ msgid ""
 "additional features which are listed in INSTALL file in sources. This file\n"
 "also contains more detailed instructions about installing Wammu.\n"
 msgstr ""
+"\n"
+"Anda sedang mengunduh kode sumber Wammu. Sebelum Anda dapat menjalankan "
+"Wammu, Anda perlu\n"
+"memasang <a href=\"/python-gammu/\">python-gammu</a>, <a\n"
+"href=\"https://www.python.org/\">Python</a> dan <a\n"
+"href=\"https://wxpython.org/\">wxPython</a>. Ada juga beberapa persyaratan "
+"opsional untuk\n"
+"fitur tambahan yang tercantum dalam berkas INSTALL di sumber. Berkas ini\n"
+"juga memuat instruksi yang lebih rinci tentang cara memasang Wammu.\n"
 
 #: html/downloads/programs/wammu-win32.html:3
 msgid ""
@@ -1214,6 +1595,9 @@ msgid ""
 "use your system Python and install dependencies manually, please use pip "
 "tool to install Wammu."
 msgstr ""
+"Anda sedang mengunduh penginstal Wammu mandiri untuk Windows. Jika Anda "
+"ingin menggunakan Python sistem Anda dan memasang dependensi secara manual, "
+"silakan gunakan alat pip untuk memasang Wammu."
 
 #: html/downloads/release.html:8
 #, python-format
@@ -1221,10 +1605,12 @@ msgid ""
 "\n"
 "%(program)s %(version)s\n"
 msgstr ""
+"\n"
+"%(program)s %(version)s\n"
 
 #: html/downloads/release.html:15
 msgid "Changes"
-msgstr ""
+msgstr "Perubahan"
 
 #: html/downloads/relinfo.html:4
 #, python-format
@@ -1232,10 +1618,13 @@ msgid ""
 "\n"
 "Released on %(released)s, see <a href=\"%(url)s\">detailed information</a>.\n"
 msgstr ""
+"\n"
+"Dirilis pada %(released)s, lihat <a href=\"%(url)s\">informasi terperinci</a>"
+".\n"
 
 #: html/downloads/smalldownloads.html:2
 msgid "Source Downloads"
-msgstr ""
+msgstr "Unduhan sumber"
 
 #: html/gammu-family.html:8
 msgid ""
@@ -1243,13 +1632,13 @@ msgid ""
 "Command line utility which allows to use all libGammu features.\n"
 msgstr ""
 "\n"
-"Utilitas command line yang mengizinkan penggunaan seluruh fitur libGammu.\n"
+"Utilitas baris perintah yang memungkinkan penggunaan semua fitur libGammu.\n"
 
 #: html/gammu-family.html:14 html/gammu-family.html:28
 #: html/gammu-family.html:42 html/gammu-family.html:59
 #: html/gammu-family.html:73
 msgid "View details"
-msgstr ""
+msgstr "Lihat rincian"
 
 #: html/gammu-family.html:22
 msgid ""
@@ -1257,7 +1646,7 @@ msgid ""
 "SMS daemon service to receive and send messages automatically.\n"
 msgstr ""
 "\n"
-"Layanan SMS untuk menerima dan mengirim pesan secara otomatis.\n"
+"Layanan daemon SMS untuk menerima dan mengirim pesan secara otomatis.\n"
 
 #: html/gammu-family.html:36
 msgid ""
@@ -1265,29 +1654,34 @@ msgid ""
 "GUI program to manage contacts, todos, calendar and messages in your phone.\n"
 msgstr ""
 "\n"
-"Program antar muka grafis untuk mengatur kontak, jadwal, kalender dan pesan "
-"pada telepon Anda.\n"
+"Program GUI untuk mengelola kontak, tugas, kalender, dan pesan di ponsel "
+"Anda.\n"
 
 #: html/gammu-family.html:53
 msgid ""
 "\n"
 "Python bindings for libGammu, so that you can use it from Python scripts.\n"
 msgstr ""
+"\n"
+"Binding Python untuk libGammu, sehingga Anda dapat menggunakannya dari skrip "
+"Python.\n"
 
 #: html/gammu-family.html:67
-#, fuzzy
 msgid ""
 "\n"
 "Library exporting all Gammu functionality for use in C programs.\n"
 msgstr ""
 "\n"
-"Pustaka pengekspor C API untuk berhubungan dengan telepon selular.\n"
+"Pustaka yang mengekspor semua fungsionalitas Gammu untuk digunakan dalam "
+"program C.\n"
 
 #: html/gammu-features.html:3
 msgid ""
 "\n"
 "Call listing, initiating and handling\n"
 msgstr ""
+"\n"
+"Pencantuman panggilan, memulai, dan menangani\n"
 
 #: html/gammu-features.html:6
 msgid ""
@@ -1295,7 +1689,7 @@ msgid ""
 "SMS retrieval, backup and sending\n"
 msgstr ""
 "\n"
-"Menyimpan SMS, backup dan pengiriman\n"
+"Pengambilan, pencadangan, dan pengiriman SMS\n"
 
 #: html/gammu-features.html:9
 msgid ""
@@ -1303,7 +1697,7 @@ msgid ""
 "MMS retrieval\n"
 msgstr ""
 "\n"
-"Penyimpanan MMS\n"
+"Pengambilan MMS\n"
 
 #: html/gammu-features.html:12
 msgid ""
@@ -1312,7 +1706,8 @@ msgid ""
 "vCard)\n"
 msgstr ""
 "\n"
-"Daftar buku telepon, ekspor dan impor (juga dari format standar seperti\n"
+"Pencantuman buku telepon, ekspor dan impor (juga dari format standar "
+"seperti\n"
 "vCard)\n"
 
 #: html/gammu-features.html:16
@@ -1323,7 +1718,7 @@ msgid ""
 "vCalendar or iCalendar)\n"
 msgstr ""
 "\n"
-"Kalender dan daftar jadwal, ekspor dan impor (termasuk format standar "
+"Pencantuman kalender dan tugas, ekspor dan impor (juga dari format standar "
 "seperti\n"
 "vCalendar atau iCalendar)\n"
 
@@ -1333,7 +1728,7 @@ msgid ""
 "Retrieval of phone and network information\n"
 msgstr ""
 "\n"
-"Mendapatkan informasi telepon dan jaringan\n"
+"Pengambilan informasi ponsel dan jaringan\n"
 
 #: html/gammu-features.html:23
 msgid ""
@@ -1341,6 +1736,10 @@ msgid ""
 "Access to phone file system (note that some phones work also as USB storage\n"
 "devices and those are not accessible through Gammu)\n"
 msgstr ""
+"\n"
+"Akses ke sistem berkas ponsel (perhatikan bahwa beberapa ponsel juga "
+"berfungsi sebagai perangkat\n"
+"penyimpanan USB dan perangkat tersebut tidak dapat diakses melalui Gammu)\n"
 
 #: html/gammu.html:14
 msgid ""
@@ -1350,6 +1749,11 @@ msgid ""
 "top\n"
 "of <a href=\"/libgammu/\">libGammu</a>.\n"
 msgstr ""
+"\n"
+"Gammu adalah nama proyek sekaligus nama utilitas baris perintah,\n"
+"yang dapat Anda gunakan untuk mengendalikan ponsel Anda. Ini ditulis dalam C "
+"dan dibangun di atas\n"
+"<a href=\"/libgammu/\">libGammu</a>.\n"
 
 #: html/gammu.html:22
 msgid ""
@@ -1361,6 +1765,13 @@ msgid ""
 "various\n"
 "phones. Generally following features are supported:\n"
 msgstr ""
+"\n"
+"Utilitas baris perintah Gammu menyediakan akses ke berbagai fitur ponsel,\n"
+"namun tingkat dukungannya berbeda-beda antar ponsel dan Anda mungkin ingin "
+"memeriksa\n"
+"<a href=\"/phones/\">Basis Data Ponsel Gammu</a> untuk pengalaman pengguna "
+"dengan berbagai\n"
+"ponsel. Secara umum fitur berikut didukung:\n"
 
 #: html/gammu.html:33
 msgid ""
@@ -1373,6 +1784,13 @@ msgid ""
 "Gammu\n"
 "from the \"Heretics of Dune\" book written by Frank Herbert exists.\n"
 msgstr ""
+"\n"
+"Proyek ini awalnya merupakan fork dari Gnokii dan hingga versi 0.58 bernama\n"
+"MyGnokii2. Kemudian kebutuhan akan nama yang lebih baik muncul dan Gammu "
+"dipilih sebagai\n"
+"akronim dari Gammu All Mobile Management Utilities, tanpa mengetahui bahwa "
+"Gammu\n"
+"dari buku \"Heretics of Dune\" yang ditulis oleh Frank Herbert memang ada.\n"
 
 #: html/gammu.html:42
 msgid ""
@@ -1383,6 +1801,14 @@ msgid ""
 "bindings</a> which you can use to develop own application accessing mobile\n"
 "phone.\n"
 msgstr ""
+"\n"
+"Paket Gammu tidak hanya menyertakan biner ini, tetapi juga <a\n"
+"href=\"/smsd/\">Gammu SMS Daemon</a>, <a\n"
+"href=\"/libgammu/\">pustaka Gammu</a> dan <a href=\"/python-gammu/\">"
+"binding\n"
+"Python</a> yang dapat Anda gunakan untuk mengembangkan aplikasi sendiri yang "
+"mengakses\n"
+"ponsel.\n"
 
 #: html/gammu.html:55
 msgid ""
@@ -1391,6 +1817,10 @@ msgid ""
 "use\n"
 "it.\n"
 msgstr ""
+"\n"
+"Cukup unduh <a href=\"/download/gammu/\">Gammu</a> untuk platform Anda dan "
+"gunakan\n"
+"itu.\n"
 
 #: html/gammu.html:63
 msgid ""
@@ -1401,32 +1831,41 @@ msgid ""
 "main program)</a> or <a href=\"/docs/manual/config/\">gammu-rc (the\n"
 "configuration file)</a>.\n"
 msgstr ""
+"\n"
+"Dokumentasi terbaik tersedia di <a href=\"/docs/manual/\">Manual Gammu</a> "
+"yang didistribusikan bersama program. Anda juga dapat melihat\n"
+"dokumentasi daring untuk <a href=\"/docs/manual/gammu/\">gammu (program\n"
+"utama)</a> atau <a href=\"/docs/manual/config/\">gammu-rc (berkas\n"
+"konfigurasi)</a>.\n"
 
 #: html/gammu.html:72 html/wammu.html:58
 msgid ""
 "\n"
 "Check also <a href=\"/docs/manual/faq/\">Frequently Asked Questions</a>.\n"
 msgstr ""
+"\n"
+"Periksa juga <a href=\"/docs/manual/faq/\">Pertanyaan yang Sering Diajukan</"
+"a>.\n"
 
 #: html/gammu.html:77 html/libgammu.html:55 html/python-gammu.html:80
 #: html/smsd.html:81 html/wammu.html:63
 msgid "Source code and issue tracker"
-msgstr ""
+msgstr "Kode sumber dan pelacak isu"
 
 #: html/gammu.html:79 html/libgammu.html:57 html/python-gammu.html:82
 #: html/smsd.html:83 html/wammu.html:65
 msgid "Both source code and issue tracker are hosted on GitHub:"
-msgstr ""
+msgstr "Kode sumber maupun pelacak isu dihosting di GitHub:"
 
 #: html/gammu.html:82 html/libgammu.html:60 html/python-gammu.html:85
 #: html/smsd.html:86 html/wammu.html:68
 msgid "Code repository"
-msgstr ""
+msgstr "Repositori kode"
 
 #: html/gammu.html:83 html/libgammu.html:61 html/python-gammu.html:86
 #: html/smsd.html:87 html/wammu.html:69
 msgid "Issue tracker"
-msgstr ""
+msgstr "Pelacak isu"
 
 #: html/gammu.html:86 html/libgammu.html:64 html/python-gammu.html:89
 #: html/smsd.html:90 html/wammu.html:72
@@ -1435,7 +1874,7 @@ msgstr "Informasi lebih lanjut"
 
 #: html/index.html:4
 msgid "Wammu and Gammu"
-msgstr ""
+msgstr "Wammu dan Gammu"
 
 #: html/index.html:11
 msgid ""
@@ -1451,24 +1890,32 @@ msgid ""
 "vendors (including Nokia, Sony-Ericsson, Motorola, Samsung, Siemens, Huawei\n"
 "and others).\n"
 msgstr ""
+"\n"
+"<a href=\"/wammu/\">Wammu</a> adalah program untuk mengelola data di ponsel "
+"Anda seperti kontak,\n"
+"kalender, atau pesan. <a href=\"/smsd/\">Gammu SMSD</a> adalah layanan untuk "
+"mengirim dan menerima SMS massal.\n"
+"Keduanya dibangun di atas <a href=\"/libgammu/\">pustaka Gammu</a>, yang\n"
+"menyediakan lapisan abstraksi untuk bekerja dengan berbagai ponsel dari "
+"berbagai\n"
+"vendor (termasuk Nokia, Sony-Ericsson, Motorola, Samsung, Siemens, Huawei\n"
+"dan lainnya).\n"
 
 #: html/index.html:33
 msgid "Sponsors"
-msgstr ""
+msgstr "Sponsor"
 
 #: html/index.html:35
 msgid "Support us on BountySource to get listed here!"
-msgstr ""
+msgstr "Dukung kami di BountySource untuk dicantumkan di sini!"
 
 #: html/index.html:37
-#, fuzzy
-#| msgid "Not supported"
 msgid "Current supporters:"
-msgstr "Tidak didukung"
+msgstr "Pendukung saat ini:"
 
 #: html/libgammu.html:4 html/libgammu.html:7
 msgid "libGammu"
-msgstr ""
+msgstr "libGammu"
 
 #: html/libgammu.html:10
 msgid ""
@@ -1478,6 +1925,14 @@ msgid ""
 "Sony-Ericsson, Motorola, Samsung, Siemens, Huawei and others). Using this\n"
 "library you can talk to any phone using standard API.\n"
 msgstr ""
+"\n"
+"libGammu adalah pustaka inti dari proyek Gammu. Pustaka ini menyediakan "
+"lapisan abstraksi untuk\n"
+"bekerja dengan berbagai ponsel dari berbagai vendor (termasuk Nokia,\n"
+"Sony-Ericsson, Motorola, Samsung, Siemens, Huawei dan lainnya). Dengan "
+"menggunakan\n"
+"pustaka ini Anda dapat berkomunikasi dengan ponsel apa pun menggunakan API "
+"standar.\n"
 
 #: html/libgammu.html:20
 msgid ""
@@ -1486,6 +1941,10 @@ msgid ""
 "others\n"
 "it provides following features:\n"
 msgstr ""
+"\n"
+"API mengekspos semua fungsionalitas yang dapat Anda lakukan dengan ponsel "
+"dan antara lain\n"
+"menyediakan fitur-fitur berikut:\n"
 
 #: html/libgammu.html:29
 msgid ""
@@ -1494,6 +1953,10 @@ msgid ""
 "or <a\n"
 "href=\"/smsd/\">Gammu SMS Daemon</a>.\n"
 msgstr ""
+"\n"
+"Pustaka ini digunakan di semua alat lain seperti <a href=\"/gammu/\">Gammu</"
+"a> atau <a\n"
+"href=\"/smsd/\">Gammu SMS Daemon</a>.\n"
 
 #: html/libgammu.html:39
 msgid ""
@@ -1502,6 +1965,10 @@ msgid ""
 "a> so to download\n"
 "it just get <a href=\"/download/gammu/\">Gammu</a>.\n"
 msgstr ""
+"\n"
+"Pustaka ini jelas didistribusikan sebagai bagian dari <a href=\"/gammu/\">"
+"Gammu</a> sehingga untuk mengunduhnya\n"
+"cukup dapatkan <a href=\"/download/gammu/\">Gammu</a>.\n"
 
 #: html/libgammu.html:48
 msgid ""
@@ -1511,10 +1978,15 @@ msgid ""
 "href=\"/docs/devel/internals/\">internal documentation</a>. Please check <a\n"
 "href=\"/docs/devel/\">developer documentation page</a> for more details.\n"
 msgstr ""
+"\n"
+"<a href=\"/docs/devel/api/\">Dokumentasi API</a> juga tersedia, وكذلك <a\n"
+"href=\"/docs/devel/internals/\">dokumentasi internal</a>. Silakan lihat <a\n"
+"href=\"/docs/devel/\">halaman dokumentasi pengembang</a> untuk rincian lebih "
+"lanjut.\n"
 
 #: html/license.html:4 html/license.html:7
 msgid "Wammu and Gammu License"
-msgstr ""
+msgstr "Lisensi Wammu dan Gammu"
 
 #: html/license.html:10
 msgid ""
@@ -1523,6 +1995,10 @@ msgid ""
 "href=\"https://www.gnu.org/licenses/gpl-2.0.html\">GNU General\n"
 "Public License, version 2</a>.\n"
 msgstr ""
+"\n"
+"Gammu, python-gammu, dan Wammu dirilis di bawah <a\n"
+"href=\"https://www.gnu.org/licenses/gpl-2.0.html\">GNU General\n"
+"Public License, versi 2</a>.\n"
 
 #: html/license.html:18
 msgid ""
@@ -1532,6 +2008,12 @@ msgid ""
 "as published by the Free Software Foundation; version 2\n"
 "of the License.\n"
 msgstr ""
+"\n"
+"Program ini adalah perangkat lunak bebas; Anda dapat mendistribusikannya "
+"kembali dan/atau\n"
+"memodifikasinya berdasarkan ketentuan GNU General Public License\n"
+"sebagaimana diterbitkan oleh Free Software Foundation; versi 2\n"
+"dari Lisensi tersebut.\n"
 
 #: html/license.html:27 html/license.html:64
 msgid ""
@@ -1542,11 +2024,10 @@ msgid ""
 "GNU General Public License for more details.\n"
 msgstr ""
 "\n"
-"Program ini didistribusikan dengan harapan dapat memberikan manfaat,\n"
-"tetapi TANPA DISERTAI JAMINAN APAPUN; bahkan tanpa jaminan yang tersirat "
-"atas\n"
-"NILAI JUALNYA atau PROPORSIONALNYA UNTUK TUJUAN TERTENTU.  Lihat\n"
-"rincian selengkapnya pada GNU General Public License.\n"
+"Program ini didistribusikan dengan harapan akan berguna,\n"
+"tetapi TANPA JAMINAN APA PUN; bahkan tanpa jaminan tersirat\n"
+"atas KELAYAKAN DAGANG atau KESESUAIAN UNTUK TUJUAN TERTENTU. Lihat\n"
+"GNU General Public License untuk rincian lebih lanjut.\n"
 
 #: html/license.html:36 html/license.html:73
 msgid ""
@@ -1556,10 +2037,15 @@ msgid ""
 "Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, "
 "USA.\n"
 msgstr ""
+"\n"
+"Anda seharusnya telah menerima salinan GNU General Public License\n"
+"bersama program ini; jika tidak, tulislah ke Free Software\n"
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, "
+"USA.\n"
 
 #: html/license.html:44
 msgid "Website License"
-msgstr ""
+msgstr "Lisensi situs web"
 
 #: html/license.html:47
 msgid ""
@@ -1568,6 +2054,10 @@ msgid ""
 "href=\"https://www.gnu.org/licenses/gpl-2.0.html\">GNU General\n"
 "Public License, version 2 or later</a>.\n"
 msgstr ""
+"\n"
+"Kode situs web dirilis di bawah <a\n"
+"href=\"https://www.gnu.org/licenses/gpl-2.0.html\">GNU General\n"
+"Public License, versi 2 atau lebih baru</a>.\n"
 
 #: html/license.html:55
 msgid ""
@@ -1577,10 +2067,16 @@ msgid ""
 "as published by the Free Software Foundation; either version 2\n"
 "of the License, or (at your option) any later version.\n"
 msgstr ""
+"\n"
+"Program ini adalah perangkat lunak bebas; Anda dapat mendistribusikannya "
+"kembali dan/atau\n"
+"memodifikasinya berdasarkan ketentuan GNU General Public License\n"
+"sebagaimana diterbitkan oleh Free Software Foundation; baik versi 2\n"
+"dari Lisensi tersebut, atau (sesuai pilihan Anda) versi yang lebih baru.\n"
 
 #: html/license.html:80
 msgid "Website Content"
-msgstr ""
+msgstr "Konten situs web"
 
 #: html/license.html:83
 msgid ""
@@ -1590,6 +2086,11 @@ msgid ""
 "Commons\n"
 "Attribution-Share Alike 3.0 Unported</a>.\n"
 msgstr ""
+"\n"
+"Konten situs web dirilis di bawah\n"
+"<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">Creative "
+"Commons\n"
+"Atribusi-BerbagiSerupa 3.0 Unported</a>.\n"
 
 #: html/license.html:91
 msgid ""
@@ -1597,31 +2098,34 @@ msgid ""
 "All products mentioned on these pages are trademarks of their respective\n"
 "owners, where appropriate.\n"
 msgstr ""
+"\n"
+"Semua produk yang disebutkan di halaman-halaman ini adalah merek dagang "
+"milik pemiliknya masing-masing, jika berlaku.\n"
 
 #: html/links/index.html:4 html/links/index.html:7
 msgid "Third Party Applications using Gammu"
-msgstr ""
+msgstr "Aplikasi pihak ketiga yang menggunakan Gammu"
 
 #: html/links/index.html:22
 msgid "Website:"
-msgstr ""
+msgstr "Situs web:"
 
 #: html/news/contrib_index.html:4 html/news/contrib_index.html:6
 msgid "Third Party News"
-msgstr ""
+msgstr "Berita pihak ketiga"
 
 #: html/news/entry.html:4 html/news/index.html:4 html/news/index.html:9
 #: news/feeds.py:16
 msgid "Wammu and Gammu News"
-msgstr ""
+msgstr "Berita Wammu dan Gammu"
 
 #: html/news/gammu_index.html:4 html/news/gammu_index.html:6
 msgid "Gammu News"
-msgstr ""
+msgstr "Berita Gammu"
 
 #: html/news/index.html:7 html/phonedb/index.html:56
 msgid "RSS"
-msgstr ""
+msgstr "RSS"
 
 #: html/news/published.html:4
 #, python-format
@@ -1629,31 +2133,32 @@ msgid ""
 "\n"
 "Published on %(date)s by <a href=\"mailto:%(email)s\">%(author)s</a>\n"
 msgstr ""
+"\n"
+"Diterbitkan pada %(date)s oleh <a href=\"mailto:%(email)s\">%(author)s</a>\n"
 
 #: html/news/python-gammu_index.html:4 html/news/python-gammu_index.html:6
-#, fuzzy
 msgid "python-gammu news"
-msgstr "python-gammu"
+msgstr "Berita python-gammu"
 
 #: html/news/wammu_index.html:4 html/news/wammu_index.html:6
 msgid "Wammu News"
-msgstr ""
+msgstr "Berita Wammu"
 
 #: html/phonedb/body.html:3
 msgid "Supported Features"
-msgstr ""
+msgstr "Fitur yang didukung"
 
 #: html/phonedb/body.html:13
 msgid "No features reported as working!"
-msgstr ""
+msgstr "Tidak ada fitur yang dilaporkan berfungsi!"
 
 #: html/phonedb/body.html:27
 msgid "Phone is reported not to be supported!"
-msgstr ""
+msgstr "Ponsel dilaporkan tidak didukung!"
 
 #: html/phonedb/body.html:34
 msgid "Reporter Note"
-msgstr ""
+msgstr "Catatan pelapor"
 
 #: html/phonedb/index.html:5 html/phonedb/new.html:5 html/phonedb/phone.html:4
 #: html/phonedb/search.html:5
@@ -1661,12 +2166,14 @@ msgid ""
 "Database of supported phones in Gammu and Wammu, the software for managing "
 "GSM cell phones."
 msgstr ""
+"Basis data ponsel yang didukung di Gammu dan Wammu, perangkat lunak untuk "
+"mengelola ponsel GSM."
 
 #: html/phonedb/index.html:6 html/phonedb/index.html:10 html/phonedb/new.html:6
 #: html/phonedb/phone.html:6 html/phonedb/search.html:6
 #: html/phonedb/vendor.html:6
 msgid "Gammu Phone Database "
-msgstr ""
+msgstr "Basis Data Ponsel Gammu "
 
 #: html/phonedb/index.html:13
 msgid ""
@@ -1674,6 +2181,9 @@ msgid ""
 "\">Gammu library</a>. To add model browse to manufacturer page, look whether "
 "model hasn't been entered yet and enter new model."
 msgstr ""
+"Halaman ini mencoba mengumpulkan daftar ponsel yang didukung oleh <a href=\"/"
+"libgammu/\">pustaka Gammu</a>. Untuk menambahkan model, buka halaman "
+"pabrikan, lihat apakah model belum dimasukkan, lalu masukkan model baru."
 
 #: html/phonedb/index.html:16
 msgid ""
@@ -1684,12 +2194,22 @@ msgid ""
 "href=\"https://github.com/gammu/gammu/discussions\">Gammu discussion\n"
 "forum</a> is open to questions about supported phones.\n"
 msgstr ""
+"\n"
+"Daftar ini diisi oleh pengguna sehingga tidak ada jaminan\n"
+"apakah informasi yang dimasukkan benar dan akurat. Jika penulis memutuskan "
+"untuk\n"
+"mempublikasikan emailnya, Anda dapat mempertimbangkan untuk menanyakannya "
+"untuk rincian. Selain itu, <a\n"
+"href=\"https://github.com/gammu/gammu/discussions\">forum diskusi\n"
+"Gammu</a> terbuka untuk pertanyaan tentang ponsel yang didukung.\n"
 
 #: html/phonedb/index.html:25
 msgid ""
 "You can find general information about <a href=\"/docs/manual/faq/config.html"
 "\">configuring Gammu in FAQ</a>."
 msgstr ""
+"Anda dapat menemukan informasi umum tentang <a href=\"/docs/manual/faq/"
+"config.html\">mengonfigurasi Gammu di FAQ</a>."
 
 #: html/phonedb/index.html:28
 msgid ""
@@ -1697,6 +2217,10 @@ msgid ""
 "As this list is updated by users, you are welcome to <strong><a href=\"/"
 "phones/new/\">add new records</a></strong>.\n"
 msgstr ""
+"\n"
+"Secara umum, Anda dipersilakan untuk <strong><a href=\"/phones/new/\">"
+"menambahkan catatan baru</a></strong> karena daftar ini diperbarui oleh "
+"pengguna.\n"
 
 #: html/phonedb/index.html:33
 msgid ""
@@ -1708,18 +2232,27 @@ msgid ""
 "to\n"
 "phone to get some functionality, newer ones do not have support so far.\n"
 msgstr ""
+"\n"
+"Secara umum, ponsel apa pun yang mampu menjalankan perintah AT atau IrMC "
+"seharusnya didukung. Juga\n"
+"ponsel Nokia apa pun yang menggunakan Nokia OS seharusnya berfungsi. Ponsel "
+"Symbian didukung dengan buruk;\n"
+"untuk model dengan Symbian 9.0 dan yang lebih lama Anda dapat memasang "
+"gnapplet di\n"
+"ponsel untuk mendapatkan beberapa fungsionalitas, sedangkan yang lebih baru "
+"belum didukung sejauh ini.\n"
 
 #: html/phonedb/index.html:41
 msgid "Manufacturers"
-msgstr ""
+msgstr "Pabrikan"
 
 #: html/phonedb/index.html:57
 msgid "Recently Added Phones"
-msgstr ""
+msgstr "Ponsel yang baru ditambahkan"
 
 #: html/phonedb/index.html:60
 msgid "Phone Records Summary"
-msgstr ""
+msgstr "Ringkasan catatan ponsel"
 
 #: html/phonedb/index.html:64
 msgid ""
@@ -1728,10 +2261,16 @@ msgid ""
 "evolves over time. The rough step at the beginning is caused by absence of\n"
 "timestamp data.\n"
 msgstr ""
+"\n"
+"Pada bagan berikut, Anda dapat melihat bagaimana jumlah catatan dalam basis "
+"data ponsel\n"
+"berkembang dari waktu ke waktu. Lonjakan kasar di awal disebabkan oleh tidak "
+"adanya\n"
+"data stempel waktu.\n"
 
 #: html/phonedb/index.html:73
 msgid "Download all data as CSV"
-msgstr ""
+msgstr "Unduh semua data sebagai CSV"
 
 #: html/phonedb/list.html:5
 msgid "Name"
@@ -1747,11 +2286,11 @@ msgstr "Fitur yang didukung"
 
 #: html/phonedb/list.html:14
 msgid "This entry has been approved by project."
-msgstr ""
+msgstr "Entri ini telah disetujui oleh proyek."
 
 #: html/phonedb/list.html:14 phonedb/models.py:28
 msgid "Approved"
-msgstr ""
+msgstr "Disetujui"
 
 #: html/phonedb/list.html:27
 msgid "Not supported"
@@ -1759,17 +2298,17 @@ msgstr "Tidak didukung"
 
 #: html/phonedb/new.html:6 html/phonedb/new.html:13 html/phonedb/new.html:16
 msgid "Create New Record"
-msgstr ""
+msgstr "Buat catatan baru"
 
 #: html/phonedb/new.html:11 html/phonedb/phone.html:11
 #: html/phonedb/search.html:11 html/phonedb/vendor.html:11
 msgid "Home"
-msgstr ""
+msgstr "Beranda"
 
 #: html/phonedb/new.html:12 html/phonedb/phone.html:12
 #: html/phonedb/search.html:12 html/phonedb/vendor.html:12
 msgid "Phones Database"
-msgstr ""
+msgstr "Basis data ponsel"
 
 #: html/phonedb/new.html:19
 msgid ""
@@ -1778,6 +2317,12 @@ msgid ""
 "not bug tracking system. Should you have any problems with Gammu, please\n"
 "<a href=\"/support/bugs/\">report them in the bug tracker</a>.\n"
 msgstr ""
+"\n"
+"Terima kasih telah meningkatkan basis data ponsel Gammu, tetapi harap "
+"dicatat bahwa ini\n"
+"bukan sistem pelacakan bug. Jika Anda mengalami masalah dengan Gammu, "
+"silakan\n"
+"<a href=\"/support/bugs/\">laporkan di pelacak bug</a>.\n"
 
 #: html/phonedb/new.html:27
 msgid ""
@@ -1787,10 +2332,18 @@ msgid ""
 "contact you in case they want to test something with your phone or want to\n"
 "clarify some things you have entered.\n"
 msgstr ""
+"\n"
+"Kolom email dan nama bersifat sukarela; Anda dapat memilih bagaimana (dan "
+"apakah)\n"
+"email akan ditampilkan kepada pengunjung. Email dapat digunakan oleh "
+"pengembang Gammu untuk\n"
+"menghubungi Anda jika mereka ingin menguji sesuatu dengan ponsel Anda atau "
+"ingin\n"
+"mengklarifikasi beberapa hal yang Anda masukkan.\n"
 
 #: html/phonedb/new.html:38
 msgid "Please enter text 'nospam':"
-msgstr ""
+msgstr "Silakan masukkan teks 'nospam':"
 
 #: html/phonedb/phone.html:17
 msgid "Edit"
@@ -1798,11 +2351,11 @@ msgstr "Sunting"
 
 #: html/phonedb/phone.html:19
 msgid "Delete"
-msgstr ""
+msgstr "Hapus"
 
 #: html/phonedb/phone.html:22
 msgid "Approve"
-msgstr ""
+msgstr "Setujui"
 
 #: html/phonedb/phone.html:30
 msgid ""
@@ -1811,6 +2364,10 @@ msgid ""
 "other\n"
 "records for same model (you can see them on bottom of the page).\n"
 msgstr ""
+"\n"
+"Catatan ini telah ditolak karena beberapa alasan; Anda mungkin ingin "
+"memeriksa catatan lain\n"
+"untuk model yang sama (Anda dapat melihatnya di bagian bawah halaman).\n"
 
 #: html/phonedb/phone.html:38
 msgid ""
@@ -1821,6 +2378,12 @@ msgid ""
 "them\n"
 "on right side).\n"
 msgstr ""
+"\n"
+"Catatan ini belum disetujui. Ini berarti catatan ini mungkin berisi "
+"informasi yang salah\n"
+"atau ada catatan yang lebih baik untuk model yang sama (Anda dapat "
+"melihatnya\n"
+"di sisi kanan).\n"
 
 #: html/phonedb/phone.html:47
 #, python-format
@@ -1833,16 +2396,28 @@ msgid ""
 "All records were filled in by users and there is no guarantee that they are\n"
 "correct.\n"
 msgstr ""
+"\n"
+"Jika catatan ini berisi informasi yang salah, silakan <a\n"
+"href=\"/phones/new/?vendor=%(vendor)s&amp;name=%(phone)s\">tambahkan catatan "
+"baru</a>\n"
+"dengan informasi yang benar dan catatan tersebut akan digantikan setelah "
+"ditinjau.\n"
+"Semua catatan diisi oleh pengguna dan tidak ada jaminan bahwa catatan "
+"tersebut\n"
+"benar.\n"
 
 #: html/phonedb/phone.html:57
 msgid ""
 "\n"
 "More information about phone might be available on following sites:\n"
 msgstr ""
+"\n"
+"Informasi lebih lanjut tentang ponsel mungkin tersedia di situs-situs "
+"berikut:\n"
 
 #: html/phonedb/phone.html:70
 msgid "About entry"
-msgstr ""
+msgstr "Tentang entri"
 
 #: html/phonedb/phone.html:73
 #, python-format
@@ -1850,6 +2425,8 @@ msgid ""
 "\n"
 "Created by %(author)s on %(created)s.\n"
 msgstr ""
+"\n"
+"Dibuat oleh %(author)s pada %(created)s.\n"
 
 #: html/phonedb/phone.html:79
 #, python-format
@@ -1857,6 +2434,8 @@ msgid ""
 "\n"
 "Created on %(created)s.\n"
 msgstr ""
+"\n"
+"Dibuat pada %(created)s.\n"
 
 #: html/phonedb/phone.html:86
 #, python-format
@@ -1864,14 +2443,16 @@ msgid ""
 "\n"
 "Tested with Gammu %(version)s.\n"
 msgstr ""
+"\n"
+"Diuji dengan Gammu %(version)s.\n"
 
 #: html/phonedb/phone.html:93
 msgid "Similar Phones"
-msgstr ""
+msgstr "Ponsel serupa"
 
 #: html/phonedb/search.html:6 html/phonedb/search.html:17
 msgid "Search Results"
-msgstr ""
+msgstr "Hasil pencarian"
 
 #: html/phonedb/search.html:20
 #, python-format
@@ -1879,6 +2460,8 @@ msgid ""
 "\n"
 "Found %(count)s results matching your query.\n"
 msgstr ""
+"\n"
+"Ditemukan %(count)s hasil yang cocok dengan kueri Anda.\n"
 
 #: html/phonedb/vendor.html:4
 #, python-format
@@ -1886,10 +2469,12 @@ msgid ""
 "Database of supported phones from %(vendor_name)s in Gammu and Wammu, the "
 "software for managing GSM cell phones."
 msgstr ""
+"Basis data ponsel yang didukung dari %(vendor_name)s di Gammu dan Wammu, "
+"perangkat lunak untuk mengelola ponsel GSM."
 
 #: html/phonedb/vendor.html:14
 msgid "Add new record"
-msgstr ""
+msgstr "Tambahkan catatan baru"
 
 #: html/phonedb/vendor.html:25
 #, python-format
@@ -1900,12 +2485,16 @@ msgid_plural ""
 "\n"
 "There are currently %(count)s phone records from this vendor.\n"
 msgstr[0] ""
+"\n"
+"Saat ini ada %(count)s catatan ponsel dari vendor ini.\n"
 
 #: html/phonedb/vendor.html:31
 msgid ""
 "\n"
 "There is currently none phone record from this vendor!\n"
 msgstr ""
+"\n"
+"Saat ini tidak ada catatan ponsel dari vendor ini!\n"
 
 #: html/phonedb/vendor.html:36
 #, python-format
@@ -1915,14 +2504,18 @@ msgid ""
 "\">add new one</a>, they will be reviewed and the\n"
 "old ones will get deleted eventually.\n"
 msgstr ""
+"\n"
+"Untuk mengubah entri yang ada, cukup <a href=\"/phones/new/?vendor=%(slug)"
+"s\">tambahkan yang baru</a>; entri tersebut akan ditinjau dan\n"
+"entri lama pada akhirnya akan dihapus.\n"
 
 #: html/python-gammu.html:4
 msgid "Python bindings form Gammu, the software for managing GSM cell phones."
-msgstr ""
+msgstr "Binding Python dari Gammu, perangkat lunak untuk mengelola ponsel GSM."
 
 #: html/python-gammu.html:6 html/python-gammu.html:13
 msgid "Python bindings for Gammu"
-msgstr ""
+msgstr "Binding Python untuk Gammu"
 
 #: html/python-gammu.html:16
 msgid ""
@@ -1931,6 +2524,11 @@ msgid ""
 "href=\"/libgammu/\">Gammu</a> functionality from <a\n"
 "href=\"https://python.org\">Python</a> language.\n"
 msgstr ""
+"\n"
+"Gammu juga menyertakan binding Python yang memungkinkan Anda menggunakan "
+"(sebagian besar) fungsionalitas <a\n"
+"href=\"/libgammu/\">Gammu</a> dari bahasa <a\n"
+"href=\"https://python.org\">Python</a>.\n"
 
 #: html/python-gammu.html:27
 msgid ""
@@ -1941,10 +2539,16 @@ msgid ""
 "package, the daemon might be included in separate binary package in your\n"
 "distribution, try looking for something like <code>python-gammu</code>.\n"
 msgstr ""
+"\n"
+"Modul Python kini berdiri sendiri, jadi silakan \n"
+"<a href=\"/download/python-gammu/\">unduh secara terpisah</a>. Jika Anda "
+"ingin menggunakan paket\n"
+"biner, daemon mungkin disertakan dalam paket biner terpisah di\n"
+"distribusi Anda; coba cari sesuatu seperti <code>python-gammu</code>.\n"
 
 #: html/python-gammu.html:39
 msgid "Example"
-msgstr ""
+msgstr "Contoh"
 
 #: html/python-gammu.html:42
 msgid ""
@@ -1953,6 +2557,9 @@ msgid ""
 "message \n"
 "can be done by following snippet:\n"
 msgstr ""
+"\n"
+"Menggunakan python-gammu cukup sederhana; misalnya, pengiriman pesan teks\n"
+"dapat dilakukan dengan cuplikan berikut:\n"
 
 #: html/python-gammu.html:66
 msgid ""
@@ -1962,6 +2569,13 @@ msgid ""
 "href=\"/docs/devel/api/\">libGammu documentation</a>. Please check <a\n"
 "href=\"/docs/devel/\">developer documentation page</a> for more details.\n"
 msgstr ""
+"\n"
+"<a href=\"/docs/devel/python/\">Dokumentasi API</a> tersedia, tetapi Anda\n"
+"mungkin juga akan merasa <a\n"
+"href=\"/docs/devel/api/\">dokumentasi libGammu</a> berguna. Silakan lihat "
+"<a\n"
+"href=\"/docs/devel/\">halaman dokumentasi pengembang</a> untuk rincian lebih "
+"lanjut.\n"
 
 #: html/python-gammu.html:75
 msgid ""
@@ -1969,61 +2583,67 @@ msgid ""
 "Check also <a href=\"/docs/manual/faq/python.html\">Frequently Asked "
 "Questions</a>.\n"
 msgstr ""
+"\n"
+"Periksa juga <a href=\"/docs/manual/faq/python.html\">Pertanyaan yang Sering "
+"Diajukan</a>.\n"
 
 #: html/python-gammu.html:91 html/sidebars/gammu.html:4
 #: html/sidebars/wammu.html:4
 msgid "Downloads"
-msgstr "Unduh"
+msgstr "Unduhan"
 
 #: html/s60.html:4 html/s60.html:7
 msgid "Series60 remote applet installation"
-msgstr ""
+msgstr "Instalasi applet jarak jauh Series60"
 
 #: html/s60.html:9
 msgid "To install the applet to your phone, download following files:"
-msgstr ""
+msgstr "Untuk memasang applet ke ponsel Anda, unduh berkas berikut:"
 
 #: html/s60.html:17
 msgid "Support libraries required to be installed on older phones:"
-msgstr ""
+msgstr "Pustaka dukungan yang perlu dipasang pada ponsel lama:"
 
 #: html/s60.html:25
 msgid ""
 "See <a href=\"https://wammu.eu/docs/manual/protocol/s60.html"
 "\">documentation</a> for more information."
 msgstr ""
+"Lihat <a href=\"https://wammu.eu/docs/manual/protocol/s60.html\">"
+"dokumentasi</a> untuk informasi lebih lanjut."
 
 #: html/screenshots/contrib_index.html:4 html/screenshots/contrib_index.html:6
 msgid "Third Party Screenshots"
-msgstr ""
+msgstr "Tangkapan layar pihak ketiga"
 
 #: html/screenshots/gammu_index.html:4 html/screenshots/gammu_index.html:6
 msgid "Gammu Screenshots"
-msgstr ""
+msgstr "Tangkapan layar Gammu"
 
 #: html/screenshots/index.html:4 html/screenshots/index.html:8
 msgid "Wammu and Gammu Screenshots"
-msgstr ""
+msgstr "Tangkapan layar Wammu dan Gammu"
 
 #: html/screenshots/wammu_index.html:4 html/screenshots/wammu_index.html:6
 msgid "Wammu Screenshots"
-msgstr ""
+msgstr "Tangkapan layar Wammu"
 
 #: html/shortnews.html:2
 msgid "Latest News"
-msgstr ""
+msgstr "Berita terbaru"
 
 #: html/sidebars/common.html:4
 msgid "How to contribute"
-msgstr ""
+msgstr "Cara berkontribusi"
 
 #: html/smsd.html:4
 msgid "Gammu SMS Daemon, the software for mass processing SMS messages."
 msgstr ""
+"Gammu SMS Daemon, perangkat lunak untuk pemrosesan pesan SMS secara massal."
 
 #: html/smsd.html:6 html/smsd.html:13
 msgid "Gammu SMSD"
-msgstr ""
+msgstr "Gammu SMSD"
 
 #: html/smsd.html:16
 msgid ""
@@ -2036,6 +2656,14 @@ msgid ""
 "sent\n"
 "messages and automatically process them.\n"
 msgstr ""
+"\n"
+"Gammu SMS Daemon adalah program yang secara berkala memindai modem GSM untuk "
+"pesan yang diterima,\n"
+"menyimpannya di penyimpanan yang ditentukan, dan juga mengirim pesan yang "
+"diantrikan di\n"
+"penyimpanan ini. Ini adalah alat yang sempurna untuk mengelola sejumlah "
+"besar pesan yang diterima atau dikirim\n"
+"dan memprosesnya secara otomatis.\n"
 
 #: html/smsd.html:25
 msgid ""
@@ -2049,6 +2677,16 @@ msgid ""
 "<a href=\"/docs/manual/smsd/dbi.html\">libdbi</a> (libdbi backend is\n"
 "currently not available in Windows builds).\n"
 msgstr ""
+"\n"
+"Saat ini Anda dapat menyimpan pesan yang diterima ke dalam berkas atau ke "
+"berbagai basis data.\n"
+"<a href=\"/docs/manual/smsd/mysql.html\">MySQL</a> dan <a\n"
+"href=\"/docs/manual/smsd/pgsql.html\">PostgreSQL</a> didukung secara native "
+"dan\n"
+"berbagai macam lainnya (termasuk SQLite, Microsoft Access, atau Oracle)\n"
+"melalui <a href=\"/docs/manual/smsd/odbc.html\">ODBC</a> atau\n"
+"<a href=\"/docs/manual/smsd/dbi.html\">libdbi</a> (backend libdbi\n"
+"saat ini tidak tersedia pada build Windows).\n"
 
 #: html/smsd.html:37
 msgid ""
@@ -2059,6 +2697,12 @@ msgid ""
 "\"><code>gammu-smsd-monitor</code></a> which\n"
 "allows you to monitor current status of SMS Daemon or phone.\n"
 msgstr ""
+"\n"
+"Paket ini juga menyertakan alat <a href=\"/docs/manual/smsd/inject.html\">"
+"<code>gammu-smsd-inject</code></a> yang akan membantu\n"
+"Anda membuat pesan teks panjang dan <a href=\"/docs/manual/smsd/"
+"monitor.html\"><code>gammu-smsd-monitor</code></a> yang\n"
+"memungkinkan Anda memantau status terkini SMS Daemon atau ponsel.\n"
 
 #: html/smsd.html:45
 msgid ""
@@ -2071,6 +2715,15 @@ msgid ""
 "it\n"
 "looks like.\n"
 msgstr ""
+"\n"
+"Untuk mengelola pesan di basis data, Anda dapat menggunakan frontend <a\n"
+"href=\"https://kalkun.sourceforge.net/\">Kalkun</a>, yang menyediakan "
+"antarmuka web\n"
+"untuk pesan dan buku telepon. Saat ini hanya bekerja dengan basis data "
+"MySQL.\n"
+"Periksa <a href=\"/screenshots/contrib/\">tangkapan layar</a> untuk melihat "
+"seperti apa\n"
+"tampilannya.\n"
 
 #: html/smsd.html:58
 msgid ""
@@ -2082,6 +2735,13 @@ msgid ""
 "package, the daemon might be included in separate binary package in your\n"
 "distribution, try looking for something like <code>gammu-smsd</code>.\n"
 msgstr ""
+"\n"
+"SMS Daemon didistribusikan sebagai bagian dari <a href=\"/gammu/\">Gammu</a> "
+"sehingga untuk mengunduhnya\n"
+"cukup dapatkan <a href=\"/download/gammu/\">Gammu</a>. Jika Anda ingin "
+"menggunakan paket biner,\n"
+"daemon mungkin disertakan dalam paket biner terpisah di distribusi Anda;\n"
+"coba cari sesuatu seperti <code>gammu-smsd</code>.\n"
 
 #: html/smsd.html:68
 msgid ""
@@ -2092,6 +2752,11 @@ msgid ""
 "in <a href=\"/docs/manual/\">The Gammu Manual</a> which is distributed with "
 "the program.\n"
 msgstr ""
+"\n"
+"Ada <a href=\"/docs/manual/smsd/\">bagian SMS Daemon di Manual Gammu</a>\n"
+"yang mencakup semua aspek penggunaan SMSD; dokumentasi serupa tersedia\n"
+"di <a href=\"/docs/manual/\">Manual Gammu</a> yang didistribusikan bersama "
+"program.\n"
 
 #: html/smsd.html:76
 msgid ""
@@ -2099,10 +2764,13 @@ msgid ""
 "Check also <a href=\"/docs/manual/faq/smsd.html\">Frequently Asked "
 "Questions</a>.\n"
 msgstr ""
+"\n"
+"Periksa juga <a href=\"/docs/manual/faq/smsd.html\">Pertanyaan yang Sering "
+"Diajukan</a>.\n"
 
 #: html/support/bugs.html:4 html/support/bugs.html:8
 msgid "Reporting Bugs in Wammu and Gammu"
-msgstr ""
+msgstr "Melaporkan Bug di Wammu dan Gammu"
 
 #: html/support/bugs.html:11
 msgid ""
@@ -2113,10 +2781,18 @@ msgid ""
 "for the developer to investigate the problem. The most important things to\n"
 "include are:\n"
 msgstr ""
+"\n"
+"Gunakan pelacak isu di GitHub untuk melaporkan bug atau\n"
+"permintaan fitur. Harap pastikan Anda menyertakan semua informasi yang "
+"diperlukan\n"
+"agar pengembang dapat menyelidiki masalah tersebut. Hal-hal terpenting yang "
+"perlu\n"
+"disertakan adalah:\n"
 
 #: html/support/bugs.html:21
 msgid "<strong>Gammu version</strong> might rule out already fixed issues."
 msgstr ""
+"<strong>Versi Gammu</strong> dapat mengesampingkan isu yang sudah diperbaiki."
 
 #: html/support/bugs.html:24
 msgid ""
@@ -2124,6 +2800,9 @@ msgid ""
 "<strong>Phone information</strong> such as manufacturer and model are really "
 "necessary.\n"
 msgstr ""
+"\n"
+"<strong>Informasi ponsel</strong> seperti pabrikan dan model benar-benar "
+"diperlukan.\n"
 
 #: html/support/bugs.html:29
 msgid ""
@@ -2132,6 +2811,10 @@ msgid ""
 "do you use Windows, some Linux\n"
 "distribution, Mac OS X, BSD?\n"
 msgstr ""
+"\n"
+"Informasi tentang <strong>sistem operasi</strong> Anda dan versinya; apakah "
+"Anda menggunakan Windows, suatu distribusi Linux,\n"
+"Mac OS X, BSD?\n"
 
 #: html/support/bugs.html:35
 msgid ""
@@ -2139,6 +2822,10 @@ msgid ""
 "Configuration you use, you can just include Gammu <strong>configuration\n"
 "file</strong>.\n"
 msgstr ""
+"\n"
+"Konfigurasi yang Anda gunakan; Anda cukup menyertakan <strong>berkas "
+"konfigurasi\n"
+"Gammu</strong>.\n"
 
 #: html/support/bugs.html:41
 msgid ""
@@ -2146,14 +2833,17 @@ msgid ""
 "<strong>Debugging log</strong> of the communication, please see bellow how "
 "to obtain that.\n"
 msgstr ""
+"\n"
+"<strong>Log debug</strong> komunikasi; silakan lihat di bawah cara "
+"mendapatkannya.\n"
 
 #: html/support/bugs.html:47
 msgid "Issue trackers for individiual projects:"
-msgstr ""
+msgstr "Pelacak isu untuk tiap proyek:"
 
 #: html/support/bugs.html:55
 msgid "Obtaining Debugging Log"
-msgstr ""
+msgstr "Mendapatkan Log Debug"
 
 #: html/support/bugs.html:58
 msgid ""
@@ -2163,6 +2853,10 @@ msgid ""
 "phone. As such it might contain your private data. Please make sure you \n"
 "do not include such data in the report.\n"
 msgstr ""
+"\n"
+"Log debug berisi transkripsi komunikasi antara Gammu dan\n"
+"ponsel Anda. Karena itu log dapat memuat data pribadi Anda. Pastikan Anda\n"
+"tidak menyertakan data tersebut dalam laporan.\n"
 
 #: html/support/bugs.html:66
 msgid ""
@@ -2172,6 +2866,12 @@ msgid ""
 "either by command line (<code>gammu --debug textalldate --debug-file\n"
 "/tmp/gammu.log identify</code>) or using configuration file:\n"
 msgstr ""
+"\n"
+"Agar Gammu menghasilkan log debug, Anda perlu memintanya untuk melakukannya. "
+"Ini bisa\n"
+"dilakukan melalui baris perintah (<code>gammu --debug textalldate --debug-"
+"file\n"
+"/tmp/gammu.log identify</code>) atau menggunakan berkas konfigurasi:\n"
 
 #: html/support/bugs.html:82
 msgid ""
@@ -2183,6 +2883,14 @@ msgid ""
 "running\n"
 "Wammu from Help menu.\n"
 msgstr ""
+"\n"
+"Wammu secara otomatis membuat log debug di direktori sementara\n"
+"(<code>/tmp</code> pada sistem Unix, sedangkan di Windows biasanya "
+"ditempatkan di dalam\n"
+"folder <code>Application Data</code> pada profil Anda), dan disimpan\n"
+"untuk berjaga-jaga jika Wammu mengalami crash. Anda juga dapat menyimpan log "
+"debug saat ini ketika menjalankan\n"
+"Wammu dari menu Help.\n"
 
 #: html/support/bugs.html:92
 msgid ""
@@ -2191,10 +2899,14 @@ msgid ""
 "set\n"
 "<code>debuglevel</code> to 255:\n"
 msgstr ""
+"\n"
+"Pencatatan (logging) Gammu SMSD dikonfigurasi pada beberapa level; untuk "
+"menyertakan semua pesan, atur\n"
+"<code>debuglevel</code> ke 255:\n"
 
 #: html/support/bugs.html:109
 msgid "Troubleshooting Windows Service"
-msgstr ""
+msgstr "Pemecahan masalah Layanan Windows"
 
 #: html/support/bugs.html:112
 msgid ""
@@ -2210,12 +2922,26 @@ msgid ""
 "absolute\n"
 "(eg. path to configuraiton file).\n"
 msgstr ""
+"\n"
+"Jika Gammu gagal memulai sebagai layanan Windows (biasanya Anda akan "
+"mendapatkan \"Error\n"
+"1053: The service did not respond to the start or control request in a "
+"timely\n"
+"fashion\"), pertama periksa log SMSD Anda. Jika log tidak berisi petunjuk "
+"yang berguna,\n"
+"coba jalankan SMSD secara manual dengan parameter yang persis sama seperti "
+"saat Anda memasang\n"
+"layanan (tanpa -i). Anda juga harus memeriksa apakah Anda memberikan semua "
+"path sebagai path absolut\n"
+"(misalnya path ke berkas konfigurasi).\n"
 
 #: html/support/bugs.html:123
 msgid ""
 "\n"
 "For example the command line can look like:\n"
 msgstr ""
+"\n"
+"Sebagai contoh, baris perintahnya dapat terlihat seperti:\n"
 
 #: html/support/bugs.html:133
 msgid ""
@@ -2224,10 +2950,14 @@ msgid ""
 "a\n"
 "service.\n"
 msgstr ""
+"\n"
+"Sekarang Anda seharusnya dapat memperoleh kesalahan dari SMSD meskipun gagal "
+"memulai sebagai\n"
+"layanan.\n"
 
 #: html/support/buy.html:4 html/support/buy.html:8
 msgid "Commercial Support for Wammu and Gammu"
-msgstr ""
+msgstr "Dukungan Komersial untuk Wammu dan Gammu"
 
 #: html/support/buy.html:11
 msgid ""
@@ -2238,6 +2968,16 @@ msgid ""
 "you (basically it is technically impossible to get agreement from all\n"
 "contributors to change the license).\n"
 msgstr ""
+"\n"
+"Ingin menggunakan Gammu dalam produk komersial Anda? Selama Anda mematuhi "
+"ketentuan\n"
+"lisensi, Anda sangat dipersilakan untuk melakukannya. Perangkat lunak ini "
+"dilisensikan di bawah GNU\n"
+"General Public License versi 2 dan tidak ada opsi untuk melisensikannya "
+"ulang untuk\n"
+"Anda (pada dasarnya, secara teknis mustahil memperoleh persetujuan dari "
+"semua\n"
+"kontributor untuk mengubah lisensi).\n"
 
 #: html/support/buy.html:21
 msgid ""
@@ -2251,6 +2991,15 @@ msgid ""
 "disclose you project, you can contact directly <a href=\"/authors/"
 "\">authors</a>.\n"
 msgstr ""
+"\n"
+"Namun kami dapat menyediakan dukungan yang lebih tinggi kelasnya untuk "
+"aplikasi Anda.\n"
+"Jika Anda membutuhkan hal seperti ini, jangan ragu untuk menghubungi kami\n"
+"baik di tempat publik seperti <a href=\"/support/lists/\">milis</a>\n"
+"ataupun <a href=\"/support/online/\">chat Jabber atau IRC</a>, atau jika "
+"Anda tidak ingin\n"
+"mengungkapkan proyek Anda, Anda dapat menghubungi langsung <a href=\"/"
+"authors/\">para penulis</a>.\n"
 
 #: html/support/buy.html:31
 msgid ""
@@ -2260,6 +3009,11 @@ msgid ""
 "to\n"
 "match everybody needs.\n"
 msgstr ""
+"\n"
+"Kami tidak menyediakan paket dukungan dengan harga tetap, karena setiap\n"
+"proyek benar-benar berbeda dan paling baik mengatur ketentuan secara "
+"terpisah agar\n"
+"sesuai dengan kebutuhan semua pihak.\n"
 
 #: html/support/buy.html:39
 msgid ""
@@ -2268,10 +3022,14 @@ msgid ""
 "also\n"
 "<a href=\"/donate/\">donate</a> some money to the project.\n"
 msgstr ""
+"\n"
+"Jika Anda hanya ingin menghargai tingkat dukungan yang Anda dapatkan secara "
+"gratis, Anda juga dapat\n"
+"<a href=\"/donate/\">berdonasi</a> sejumlah uang untuk proyek ini.\n"
 
 #: html/support/index.html:4 html/support/index.html:10
 msgid "Support for Wammu and Gammu"
-msgstr ""
+msgstr "Dukungan untuk Wammu dan Gammu"
 
 #: html/support/index.html:13
 msgid ""
@@ -2284,6 +3042,14 @@ msgid ""
 "whether you problem is not\n"
 "just a configuration issue or some well known situation.\n"
 msgstr ""
+"\n"
+"Gammu dan Wammu adalah proyek perangkat lunak bebas. Karena itu Anda dapat "
+"memperoleh dukungan\n"
+"dari komunitas yang berada di balik proyek ini. Cara terbaik untuk memulai "
+"biasanya\n"
+"adalah memeriksa <a href=\"/docs/\"><strong>dokumentasi</strong></a> apakah "
+"masalah Anda bukan\n"
+"hanya isu konfigurasi atau situasi yang sudah dikenal.\n"
 
 #: html/support/index.html:22
 msgid ""
@@ -2296,10 +3062,18 @@ msgid ""
 "bugs\n"
 "and do not write about problems only in phone database.\n"
 msgstr ""
+"\n"
+"Jika Anda mencari daftar <strong>ponsel yang didukung</strong>, Anda dapat "
+"melihat\n"
+"<a href=\"/phones/\"><strong>Basis Data Ponsel Gammu</strong></a>. Anda juga "
+"dapat\n"
+"berbagi pengalaman Anda di sana, tetapi jika Anda mengalami masalah, mohon "
+"laporkan bug\n"
+"dan jangan menulis tentang masalah hanya di basis data ponsel.\n"
 
 #: html/support/index.html:30
 msgid "Communication with Community"
-msgstr ""
+msgstr "Komunikasi dengan Komunitas"
 
 #: html/support/index.html:33
 msgid ""
@@ -2313,10 +3087,20 @@ msgid ""
 "Jabber or\n"
 "IRC.\n"
 msgstr ""
+"\n"
+"Jika <a href=\"/docs/\">dokumentasi</a> tidak membantu, Anda dapat mencoba "
+"melihat\n"
+"<a href=\"/support/lists/\">arsip <strong>milis</strong></a> terlebih "
+"dahulu, untuk memastikan\n"
+"apakah ada orang yang belum pernah menghadapi masalah tersebut. Anda juga "
+"dapat mencoba menghubungi kami melalui\n"
+"saluran komunikasi daring seperti <a href=\"/support/online/\">Jabber</a> "
+"atau\n"
+"IRC.\n"
 
 #: html/support/index.html:42
 msgid "Reporting Bugs"
-msgstr ""
+msgstr "Melaporkan Bug"
 
 #: html/support/index.html:45
 msgid ""
@@ -2327,10 +3111,17 @@ msgid ""
 "descriptive as possible and do not forget include necessary information to\n"
 "reproduce the bug such as debug logs.\n"
 msgstr ""
+"\n"
+"Setelah Anda yakin telah menemukan bug atau ingin mengajukan permintaan "
+"fitur, silakan\n"
+"gunakan <a href=\"/support/bugs/\"><strong>pelacak bug</strong></a> untuk "
+"melaporkannya. Harap jelaskan\n"
+"sebisa mungkin dan jangan lupa menyertakan informasi yang diperlukan untuk\n"
+"mereproduksi bug, seperti log debug.\n"
 
 #: html/support/index.html:53
 msgid "Commercial Support"
-msgstr ""
+msgstr "Dukungan komersial"
 
 #: html/support/index.html:56
 msgid ""
@@ -2339,16 +3130,19 @@ msgid ""
 "getting better level of support. Just <a href=\"/support/buy/\">contact the\n"
 "developers</a> and try to ask them for this.\n"
 msgstr ""
+"\n"
+"Menjalankan aplikasi bisnis menggunakan Gammu, Anda mungkin tertarik untuk\n"
+"mendapatkan tingkat dukungan yang lebih baik. Cukup <a href=\"/support/buy/"
+"\">hubungi\n"
+"pengembang</a> dan coba tanyakan kepada mereka tentang hal ini.\n"
 
 #: html/support/lists.html:4
-#, fuzzy
 msgid "Mailing lists and forums for Wammu and Gammu"
-msgstr "Mailing list"
+msgstr "Milis dan forum untuk Wammu dan Gammu"
 
 #: html/support/lists.html:8
-#, fuzzy
 msgid "Discussion forum for Gammu and Wammu"
-msgstr "Mailing list"
+msgstr "Forum diskusi untuk Gammu dan Wammu"
 
 #: html/support/lists.html:11
 #, python-format
@@ -2356,20 +3150,24 @@ msgid ""
 "There is a <a href=\"%(url)s\">discussion forum on GitHub</a>, where you can "
 "discuss with other community members and share your ideas."
 msgstr ""
+"Ada <a href=\"%(url)s\">forum diskusi di GitHub</a>, tempat Anda dapat "
+"berdiskusi dengan anggota komunitas lain dan membagikan ide Anda."
 
 #: html/support/lists.html:14
 msgid "Stack Overflow"
-msgstr ""
+msgstr "Stack Overflow"
 
 #: html/support/lists.html:17
 #, python-format
 msgid ""
 "You can also ask related questions on <a href=\"%(url)s\">Stack Overflow</a>."
 msgstr ""
+"Anda juga dapat mengajukan pertanyaan terkait di <a href=\"%(url)s\">Stack "
+"Overflow</a>."
 
 #: html/support/lists.html:20
 msgid "Past Mailing Lists"
-msgstr ""
+msgstr "Milis terdahulu"
 
 #: html/support/lists.html:23
 msgid ""
@@ -2381,6 +3179,13 @@ msgid ""
 "related\n"
 "to Gammu (this includes Wammu or third party frontends like Kalkun).\n"
 msgstr ""
+"\n"
+"Milis utama tempat diskusi diadakan adalah <a\n"
+"href=\"https://sourceforge.net/p/gammu/mailman/gammu-users/\">gammu-"
+"users@lists.sourceforge.net</a>.\n"
+"Ini adalah tempat umum tempat pengguna maupun pengembang dapat mendiskusikan "
+"apa pun yang terkait\n"
+"dengan Gammu (termasuk Wammu atau frontend pihak ketiga seperti Kalkun).\n"
 
 #: html/support/lists.html:32
 msgid ""
@@ -2393,10 +3198,19 @@ msgid ""
 "It is not much used nowadays, but should you find any legal problems with\n"
 "Gammu, please use this mailing list.\n"
 msgstr ""
+"\n"
+"Di masa lalu, pernah ada beberapa masalah dengan pelisensian sebagian kode "
+"di Gammu\n"
+"dan milis terpisah dibuat untuk tujuan ini - <a\n"
+"href=\"https://sourceforge.net/p/gammu/mailman/gammu-legal/\">gammu-"
+"legal@lists.sourceforge.net</a>.\n"
+"Kini milis tersebut tidak banyak digunakan, tetapi jika Anda menemukan "
+"masalah hukum terkait\n"
+"Gammu, silakan gunakan milis ini.\n"
 
 #: html/support/online.html:4 html/support/online.html:8
 msgid "Online Communication for Wammu and Gammu"
-msgstr ""
+msgstr "Komunikasi Daring untuk Wammu dan Gammu"
 
 #: html/support/online.html:11
 msgid ""
@@ -2409,10 +3223,19 @@ msgid ""
 "can try asking here, but if you do not get any reaction, you should retry\n"
 "later or try to use <a href=\"/support/lists/\">mailing list</a>.\n"
 msgstr ""
+"\n"
+"Komunikasi daring kadang merupakan cara terbaik untuk mendiagnosis masalah, "
+"tetapi tidak\n"
+"selalu tersedia; misalnya Anda mungkin berada di zona waktu berbeda dengan\n"
+"orang yang ingin Anda ajak chat atau orang-orang tersebut sedang sibuk pada "
+"saat itu. Anda\n"
+"dapat mencoba bertanya di sini, tetapi jika Anda tidak mendapat reaksi, Anda "
+"sebaiknya mencoba lagi\n"
+"anti atau gunakan <a href=\"/support/lists/\">milis</a>.\n"
 
 #: html/support/online.html:20
 msgid "IRC"
-msgstr ""
+msgstr "IRC"
 
 #: html/support/online.html:23
 msgid ""
@@ -2422,6 +3245,12 @@ msgid ""
 "patiently wait until someone answers. The channel is low volume and it may\n"
 "take a while until someone notices your question.\n"
 msgstr ""
+"\n"
+"Anda sangat dipersilakan ke #gammu di irc.freenode.net. Silakan bertanya\n"
+"di sana. Jika Anda tidak langsung mendapatkan jawaban, jangan khawatir dan\n"
+"tunggulah dengan sabar sampai seseorang menjawab. Kanal ini lalu lintasnya "
+"rendah dan mungkin\n"
+"membutuhkan waktu sampai seseorang menyadari pertanyaan Anda.\n"
 
 #: html/support/online.html:33
 msgid ""
@@ -2430,10 +3259,14 @@ msgid ""
 "notifications\n"
 "there about every commit made to the Gammu source repository.\n"
 msgstr ""
+"\n"
+"Anda juga dapat menemukan robot bernama CIA-42, yang hanya mengirimkan "
+"notifikasi\n"
+"di sana tentang setiap commit yang dibuat ke repositori sumber Gammu.\n"
 
 #: html/tools/countries.html:4 html/tools/countries.html:8
 msgid "GSM countries list from Gammu"
-msgstr ""
+msgstr "Daftar negara GSM dari Gammu"
 
 #: html/tools/countries.html:11
 msgid ""
@@ -2442,18 +3275,22 @@ msgid ""
 "can \n"
 "see some bug here, please <a href=\"/support/bugs/\">report it</a>.\n"
 msgstr ""
+"\n"
+"Daftar ini berisi negara GSM sebagaimana saat ini didefinisikan di Gammu. "
+"Jika Anda\n"
+"melihat bug di sini, silakan <a href=\"/support/bugs/\">laporkan</a>.\n"
 
 #: html/tools/countries.html:18
 msgid "Country code"
-msgstr ""
+msgstr "Kode negara"
 
 #: html/tools/countries.html:18
 msgid "Country name"
-msgstr ""
+msgstr "Nama negara"
 
 #: html/tools/index.html:4 html/tools/index.html:8
 msgid "Tools for Wammu and Gammu"
-msgstr ""
+msgstr "Alat untuk Wammu dan Gammu"
 
 #: html/tools/index.html:11
 msgid ""
@@ -2462,10 +3299,14 @@ msgid ""
 "with\n"
 "GSM phones in general, not only when using Gammu/Wammu.\n"
 msgstr ""
+"\n"
+"Anda dapat menemukan berbagai alat di sini yang mungkin berguna ketika "
+"bekerja dengan\n"
+"ponsel GSM secara umum, tidak hanya ketika menggunakan Gammu/Wammu.\n"
 
 #: html/tools/index.html:17
 msgid "PDU decoding/encoding"
-msgstr ""
+msgstr "Dekode/enkode PDU"
 
 #: html/tools/index.html:20
 msgid ""
@@ -2473,26 +3314,33 @@ msgid ""
 "The SMS messages are transfered in the network encoded in PDU encoding.\n"
 "Following tools allow you to decode or encode PDU into human readable form.\n"
 msgstr ""
+"\n"
+"Pesan SMS ditransfer di jaringan dalam bentuk terenkode dengan enkode PDU.\n"
+"Alat berikut memungkinkan Anda mendekode atau mengenkode PDU ke bentuk yang "
+"dapat dibaca manusia.\n"
 
 #: html/tools/index.html:29
 msgid "Useful for creating PDU data, which you can then submit to the phone."
 msgstr ""
+"Berguna untuk membuat data PDU, yang kemudian dapat Anda kirimkan ke ponsel."
 
 #: html/tools/index.html:32
 msgid "Useful for decoding PDU data, which you might get from your phone."
 msgstr ""
+"Berguna untuk mendekode data PDU, yang mungkin Anda dapatkan dari ponsel "
+"Anda."
 
 #: html/tools/index.html:36
 msgid "Other tools"
-msgstr ""
+msgstr "Alat lain"
 
 #: html/tools/index.html:39
 msgid "List of GSM codes for countries"
-msgstr ""
+msgstr "Daftar kode GSM untuk negara"
 
 #: html/tools/index.html:40
 msgid "List of GSM codes for networks"
-msgstr ""
+msgstr "Daftar kode GSM untuk jaringan"
 
 #: html/tools/index.html:44
 msgid ""
@@ -2500,10 +3348,14 @@ msgid ""
 "Do you miss some functionality here? Don't hesitate and contact us on \n"
 "<a href=\"/support/lists/\">mailing lists</a> with your idea.\n"
 msgstr ""
+"\n"
+"Apakah Anda merasa ada fungsionalitas yang kurang di sini? Jangan ragu dan "
+"hubungi kami di\n"
+"<a href=\"/support/lists/\">milis</a> dengan ide Anda.\n"
 
 #: html/tools/networks.html:4 html/tools/networks.html:8
 msgid "GSM networks list from Gammu"
-msgstr ""
+msgstr "Daftar jaringan GSM dari Gammu"
 
 #: html/tools/networks.html:11
 msgid ""
@@ -2512,36 +3364,40 @@ msgid ""
 "can \n"
 "see some bug here, please <a href=\"/support/bugs/\">report it</a>.\n"
 msgstr ""
+"\n"
+"Daftar ini berisi jaringan GSM sebagaimana saat ini didefinisikan di Gammu. "
+"Jika Anda\n"
+"melihat bug di sini, silakan <a href=\"/support/bugs/\">laporkan</a>.\n"
 
 #: html/tools/networks.html:18
 msgid "Network code"
-msgstr ""
+msgstr "Kode jaringan"
 
 #: html/tools/networks.html:18
 msgid "Network name"
-msgstr ""
+msgstr "Nama jaringan"
 
 #: html/tools/pdudecode.html:6 html/tools/pdudecode.html:12
 msgid "PDU decoder using Gammu"
-msgstr ""
+msgstr "Pendekode PDU menggunakan Gammu"
 
 #: html/tools/pdudecode.html:18 html/tools/pduencode.html:18
 msgid "Go"
-msgstr ""
+msgstr "Jalankan"
 
 #: html/tools/pdudecode.html:24
 msgid "PDU Decoding Result"
-msgstr ""
+msgstr "Hasil Dekode PDU"
 
 #: html/tools/pdudecode.html:26 html/tools/pdudecode.html:57
 #: html/tools/pduencode.html:26
 #, python-format
 msgid "Message number %(id)s"
-msgstr ""
+msgstr "Nomor pesan %(id)s"
 
 #: html/tools/pdudecode.html:28
 msgid "Decoding failed with error:"
-msgstr ""
+msgstr "Dekode gagal dengan kesalahan:"
 
 #: html/tools/pdudecode.html:35 html/tools/pdudecode.html:37 tools/forms.py:13
 msgid "Text"
@@ -2549,15 +3405,15 @@ msgstr "Teks"
 
 #: html/tools/pdudecode.html:40
 msgid "UDH type"
-msgstr ""
+msgstr "Tipe UDH"
 
 #: html/tools/pdudecode.html:41
 msgid "UDH header"
-msgstr ""
+msgstr "Header UDH"
 
 #: html/tools/pdudecode.html:42
 msgid "Message part"
-msgstr ""
+msgstr "Bagian pesan"
 
 #: html/tools/pdudecode.html:44
 msgid "SMSC"
@@ -2565,7 +3421,7 @@ msgstr "SMSC"
 
 #: html/tools/pdudecode.html:45
 msgid "Validity"
-msgstr "Keabsahan"
+msgstr "Masa berlaku"
 
 #: html/tools/pdudecode.html:46
 msgid "Type"
@@ -2573,11 +3429,11 @@ msgstr "Tipe"
 
 #: html/tools/pdudecode.html:47
 msgid "Message Reference"
-msgstr ""
+msgstr "Referensi pesan"
 
 #: html/tools/pdudecode.html:55
 msgid "SMS Data Decoding Result"
-msgstr ""
+msgstr "Hasil Dekode Data SMS"
 
 #: html/tools/pdudecode.html:68
 msgid "MMS indicator"
@@ -2597,7 +3453,7 @@ msgstr "Alamat"
 
 #: html/tools/pdudecode.html:72 tools/forms.py:14
 msgid "Class"
-msgstr "Class"
+msgstr "Kelas"
 
 #: html/tools/pdudecode.html:75
 msgid "Bitmap"
@@ -2605,11 +3461,11 @@ msgstr "Bitmap"
 
 #: html/tools/pdudecode.html:76
 msgid "Bitmaps"
-msgstr ""
+msgstr "Bitmap"
 
 #: html/tools/pduencode.html:6 html/tools/pduencode.html:12
 msgid "PDU encoder using Gammu"
-msgstr ""
+msgstr "Pengode PDU menggunakan Gammu"
 
 #: html/tools/pduencode.html:24
 msgid "PDU data"
@@ -2623,53 +3479,64 @@ msgid ""
 "The\n"
 "communication is made by Gammu library. Currently supported features: \n"
 msgstr ""
+"\n"
+"Wammu adalah pengelola ponsel yang berjalan di Linux, Windows, dan "
+"kemungkinan platform lain\n"
+"di mana <a href=\"/libgammu/\">libGammu</a> dan wxPython berfungsi.\n"
+"Komunikasi dilakukan oleh pustaka Gammu. Fitur yang saat ini didukung: \n"
 
 #: html/wammu.html:25
 msgid ""
 "complete support (can read/edit/delete/copy) for contacts, todo, calendar"
 msgstr ""
+"dukungan lengkap (dapat membaca/menyunting/menghapus/menyalin) untuk kontak, "
+"tugas, kalender"
 
 #: html/wammu.html:26
 msgid "can read/create/save/send/backup smses"
-msgstr ""
+msgstr "dapat membaca/membuat/menyimpan/mengirim/mencadangkan SMS"
 
 #: html/wammu.html:27
 msgid "sending files to phone (OBEX and Sony Ericsson phones only)"
-msgstr ""
-"sedang mengirim file ke perangkat (hanya mendukung OBEX dan Sony Ericsson)"
+msgstr "mengirim berkas ke ponsel (hanya OBEX dan ponsel Sony Ericsson)"
 
 #: html/wammu.html:28
 msgid ""
 "sms composer for multi part smses (currently only text and predefined bitmap/"
 "sound can be edited)"
 msgstr ""
+"penyusun SMS untuk SMS multi-bagian (saat ini hanya teks dan bitmap/suara "
+"bawaan yang dapat disunting)"
 
 #: html/wammu.html:29
 msgid "display message including pictures and ringtones playback"
-msgstr ""
+msgstr "menampilkan pesan termasuk gambar dan pemutaran nada dering"
 
 #: html/wammu.html:30
 msgid ""
 "support for backup and import in various formats (vCard, vCalendar, vTodo, "
 "iCalendar, gammu own backup,…)"
 msgstr ""
+"dukungan untuk pencadangan dan impor dalam berbagai format (vCard, "
+"vCalendar, vTodo, iCalendar, cadangan milik Gammu sendiri,…)"
 
 #: html/wammu.html:31
 msgid ""
 "export messages to mail (IMAP4, maildir and mailbox storages are supported)"
 msgstr ""
+"mengekspor pesan ke email (penyimpanan IMAP4, maildir, dan mailbox didukung)"
 
 #: html/wammu.html:32
 msgid "searching for phone"
-msgstr ""
+msgstr "mencari ponsel"
 
 #: html/wammu.html:33
 msgid "translated into several languages"
-msgstr ""
+msgstr "diterjemahkan ke beberapa bahasa"
 
 #: html/wammu.html:34
 msgid "rated as best on many software servers"
-msgstr ""
+msgstr "dinilai sebagai yang terbaik di banyak server perangkat lunak"
 
 #: html/wammu.html:41
 msgid ""
@@ -2681,6 +3548,13 @@ msgid ""
 "can also <a href=\"/download/wammu/\">dowload sources or binaries for\n"
 "Windows</a>.\n"
 msgstr ""
+"\n"
+"Wammu disertakan dalam banyak distribusi, jadi silakan gunakan paket biner "
+"jika\n"
+"memungkinkan; hal ini menurunkan risiko terjadinya sesuatu yang salah selama "
+"instalasi. Anda\n"
+"juga dapat <a href=\"/download/wammu/\">mengunduh sumber atau biner untuk\n"
+"Windows</a>.\n"
 
 #: html/wammu.html:51
 msgid ""
@@ -2690,10 +3564,14 @@ msgid ""
 "intiutive enough. You can check it's command line parameters in wammu man "
 "page.\n"
 msgstr ""
+"\n"
+"Wammu tidak dilengkapi dengan banyak dokumentasi dan diharapkan cukup\n"
+"intuitif. Anda dapat memeriksa parameter baris perintahnya di halaman manual "
+"wammu.\n"
 
 #: html/wammu_feedback.html:3
 msgid "Thank you for using Wammu"
-msgstr "Terimakasih sudah menggunakan Wammu"
+msgstr "Terima kasih telah menggunakan Wammu"
 
 #: html/wammu_feedback.html:5
 msgid ""
@@ -2703,6 +3581,11 @@ msgid ""
 "some improvements. If you have any ideas, please report them in <a\n"
 "href=\"https://github.com/gammu/gammu/issues\">bug tracker</a>.\n"
 msgstr ""
+"\n"
+"Saya harap Anda menyukai Wammu, tetapi mungkin Anda merasa ada beberapa "
+"fitur yang kurang atau ingin melihat\n"
+"beberapa peningkatan. Jika Anda punya ide, silakan laporkan di <a\n"
+"href=\"https://github.com/gammu/gammu/issues\">pelacak bug</a>.\n"
 
 #: html/wammu_feedback.html:13
 msgid ""
@@ -2710,6 +3593,9 @@ msgid ""
 "You are also welcome to share experiences with your phone in <a\n"
 "href=\"/phones/\">Gammu phone database</a> if you already haven't done so.\n"
 msgstr ""
+"\n"
+"Anda juga dipersilakan untuk membagikan pengalaman dengan ponsel Anda di <a\n"
+"href=\"/phones/\">basis data ponsel Gammu</a> jika Anda belum melakukannya.\n"
 
 #: html/wammu_feedback.html:21
 #, python-format
@@ -2719,44 +3605,49 @@ msgid ""
 "latest features. The latest stable version is <a href=\"%(url)s\">"
 "%(version)s</a>.\n"
 msgstr ""
+"\n"
+"Anda menggunakan versi yang lebih lama; silakan tingkatkan untuk mendapatkan "
+"versi yang paling stabil dengan\n"
+"fitur terbaru. Versi stabil terbaru adalah <a href=\"%(url)s\">%(version)s</"
+"a>.\n"
 
 #: news/feeds.py:19
 msgid "Updates about Wammu and Gammu programs."
-msgstr ""
+msgstr "Pembaruan tentang program Wammu dan Gammu."
 
 #: phonedb/feeds.py:16
 msgid "Gammu Phone Database"
-msgstr ""
+msgstr "Basis Data Ponsel Gammu"
 
 #: phonedb/feeds.py:19
 msgid "Gammu phone database updates."
-msgstr ""
+msgstr "Pembaruan basis data ponsel Gammu."
 
 #: phonedb/forms.py:14
 msgid "Search text"
-msgstr ""
+msgstr "Cari teks"
 
 #: phonedb/forms.py:18 phonedb/forms.py:45
 msgid "Features"
-msgstr ""
+msgstr "Fitur"
 
 #: phonedb/forms.py:36
 #, python-format
 msgid "%(description)s [<a href=\"%(url)s\">Link</a>]"
-msgstr ""
+msgstr "%(description)s [<a href=\"%(url)s\">Tautan</a>]"
 
 #: phonedb/forms.py:47 phonedb/models.py:97
 msgid "Features which are working in Gammu."
-msgstr ""
+msgstr "Fitur yang berfungsi di Gammu."
 
 #: phonedb/forms.py:83
 msgid "Save"
-msgstr ""
+msgstr "Simpan"
 
 #: phonedb/forms.py:86
 #, python-format
 msgid "%(description)s (%(name)s)"
-msgstr ""
+msgstr "%(description)s (%(name)s)"
 
 #: phonedb/models.py:20
 msgid "Use [at] and [dot]"
@@ -2764,7 +3655,7 @@ msgstr "Gunakan [at] dan [dot]"
 
 #: phonedb/models.py:21
 msgid "Display it normally"
-msgstr "Menampilkannya dengan normal"
+msgstr "Tampilkan secara normal"
 
 #: phonedb/models.py:22
 msgid "Don't show email at all"
@@ -2772,19 +3663,19 @@ msgstr "Jangan tampilkan email sama sekali"
 
 #: phonedb/models.py:23
 msgid "Insert NOSPAM text at random position"
-msgstr "Sisipkan teks NOSPAM pada posisi acak"
+msgstr "Sisipkan teks NOSPAM di posisi acak"
 
 #: phonedb/models.py:27
 msgid "Draft"
-msgstr ""
+msgstr "Draf"
 
 #: phonedb/models.py:29
 msgid "Deleted"
-msgstr ""
+msgstr "Dihapus"
 
 #: phonedb/models.py:33
 msgid "Phone information"
-msgstr "Informasi telepon"
+msgstr "Informasi ponsel"
 
 #: phonedb/models.py:34
 msgid "Sending and saving SMS"
@@ -2796,11 +3687,11 @@ msgstr "Pesan multimedia"
 
 #: phonedb/models.py:36
 msgid "Basic phonebook functions (name and phone number)"
-msgstr ""
+msgstr "Fungsi buku telepon dasar (nama dan nomor telepon)"
 
 #: phonedb/models.py:37
 msgid "Enhanced phonebook entries (eg. several numbers per entry)"
-msgstr ""
+msgstr "Entri buku telepon tingkat lanjut (misalnya beberapa nomor per entri)"
 
 #: phonedb/models.py:38
 msgid "Calendar entries"
@@ -2808,11 +3699,11 @@ msgstr "Entri kalender"
 
 #: phonedb/models.py:39
 msgid "Todos"
-msgstr "Todos"
+msgstr "Tugas"
 
 #: phonedb/models.py:40
 msgid "Filesystem manipulation"
-msgstr "Manipulasi file sistem"
+msgstr "Manipulasi sistem berkas"
 
 #: phonedb/models.py:41
 msgid "Reading and making calls"
@@ -2829,61 +3720,65 @@ msgstr "Nada dering"
 #: phonedb/models.py:89
 #, python-format
 msgid "Phone name should not include vendor name: %s"
-msgstr ""
+msgstr "Nama ponsel tidak boleh menyertakan nama vendor: %s"
 
 #: phonedb/models.py:95
 msgid "Phone name, please exclude vendor name."
-msgstr ""
+msgstr "Nama ponsel, harap jangan sertakan nama vendor."
 
 #: phonedb/models.py:96
 msgid "Connection used in Gammu configuration."
-msgstr ""
+msgstr "Koneksi yang digunakan dalam konfigurasi Gammu."
 
 #: phonedb/models.py:98
 msgid "Model used in Gammu configuration, usually empty."
-msgstr ""
+msgstr "Model yang digunakan dalam konfigurasi Gammu, biasanya kosong."
 
 #: phonedb/models.py:99
 msgid "Gammu version where you tested this phone."
-msgstr ""
+msgstr "Versi Gammu saat Anda menguji ponsel ini."
 
 #: phonedb/models.py:100
 msgid ""
 "Any note about this phone and Gammu support for it. You can use <a href="
 "\"http://daringfireball.net/projects/markdown/syntax\">markdown markup</a>."
 msgstr ""
+"Catatan apa pun tentang ponsel ini dan dukungan Gammu untuknya. Anda dapat "
+"menggunakan <a href=\"http://daringfireball.net/projects/markdown/syntax\">"
+"markup markdown</a>."
 
 #: phonedb/models.py:103
 msgid "Please choose how will be email handled in next field."
-msgstr ""
+msgstr "Silakan pilih bagaimana email akan ditangani pada kolom berikutnya."
 
 #: phonedb/views.py:102
 msgid "Approved records"
-msgstr ""
+msgstr "Catatan yang disetujui"
 
 #: phonedb/views.py:103
 msgid "Total records"
-msgstr ""
+msgstr "Total catatan"
 
 #: phonedb/views.py:121
 msgid "Gammu Phone Database Feed (RSS)"
-msgstr ""
+msgstr "Umpan Basis Data Ponsel Gammu (RSS)"
 
 #: phonedb/views.py:122
 msgid "Gammu Phone Database Feed (Atom)"
-msgstr ""
+msgstr "Umpan Basis Data Ponsel Gammu (Atom)"
 
 #: phonedb/views.py:443
 msgid "Phone record has been created."
-msgstr "Catatan telepon telah tercipta."
+msgstr "Catatan ponsel telah dibuat."
 
 #: tools/forms.py:7
 msgid "PDU text"
-msgstr "teks PDU"
+msgstr "Teks PDU"
 
 #: tools/forms.py:10
 msgid "You can provide more messages, each on separate line."
 msgstr ""
+"Anda dapat memberikan lebih banyak pesan, masing-masing pada baris terpisah."
 
 #: tools/forms.py:15
 msgid "Unicode"
@@ -2899,11 +3794,11 @@ msgstr "Nomor SMSC"
 
 #: wammu/context_processors.py:49
 msgid "Gammu and Wammu News Feed (RSS)"
-msgstr ""
+msgstr "Umpan Berita Gammu dan Wammu (RSS)"
 
 #: wammu/context_processors.py:50
 msgid "Gammu and Wammu News Feed (Atom)"
-msgstr ""
+msgstr "Umpan Berita Gammu dan Wammu (Atom)"
 
 #, fuzzy
 #~| msgid "Other Options"
