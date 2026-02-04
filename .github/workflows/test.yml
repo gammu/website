@@ -4,12 +4,14 @@ on: [push, pull_request]
 
 jobs:
   test:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         python-version:
         - '3.11'
         - '3.12'
+        - '3.13'
+        - '3.14'
     name: Python ${{ matrix.python-version }}
 
     steps:
