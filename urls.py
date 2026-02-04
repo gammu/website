@@ -94,7 +94,9 @@ class PagesSitemap(Sitemap):
     def lastmod(self, item):
         if item[1] is None:
             return None
-        (_mode, _ino, _dev, _nlink, _uid, _gid, _size, _atime, mtime, _ctime) = os.stat(item[1])
+        (_mode, _ino, _dev, _nlink, _uid, _gid, _size, _atime, mtime, _ctime) = os.stat(
+            item[1]
+        )
         return datetime.datetime.fromtimestamp(mtime)
 
     def priority(self, item):
