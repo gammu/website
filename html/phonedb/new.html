@@ -38,7 +38,17 @@ clarify some things you have entered.
 <noscript>{% trans "Please enter text 'nospam':" %} <input name="irobot" size="6" /></noscript>
 <script type="text/javascript">
 //<![CDATA[
-document.write(String.fromCharCode(60) + 'input type="hidden" name="irobot" value="no' + 'spam" />');
+(function () {
+  var form = document.forms[0];
+  if (!form) {
+    return;
+  }
+  var input = document.createElement('input');
+  input.type = 'hidden';
+  input.name = 'irobot';
+  input.value = 'nospam';
+  form.appendChild(input);
+})();
 //]]>
 </script>
 </form>
