@@ -41,7 +41,7 @@ def get_chart_url(force=False):
     unsupported = []
     supported = []
     totals = []
-    alls = []
+    total_records = []
     years = []
 
     for year in range(2006, endyear + 1):
@@ -82,17 +82,17 @@ def get_chart_url(force=False):
             supported.append(supported_val)
             unsupported.append(unsupported_val)
             totals.append(unsupported_val + supported_val)
-            alls.append(all_val)
+            total_records.append(all_val)
             dates.append(f"{year}-{month:02}")
 
-    max_y = int(((max(alls) / 100) + 1) * 100)
+    max_y = int(((max(total_records) / 100) + 1) * 100)
 
     chart = SimpleLineChart(800, 300, y_range=[0, max_y])
 
     # Chart data
     chart.add_data(supported)
     chart.add_data(totals)
-    chart.add_data(alls)
+    chart.add_data(total_records)
     # Lowest value
     chart.add_data([0] * 2)
 
@@ -105,9 +105,9 @@ def get_chart_url(force=False):
         Chart.CHART,
         0,
         "ffffff",
-        month_stripes / len(alls),
+        month_stripes / len(total_records),
         "cccccc",
-        month_stripes / len(alls),
+        month_stripes / len(total_records),
     )
 
     # Set the horizontal dotted lines
