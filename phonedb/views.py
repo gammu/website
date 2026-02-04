@@ -49,7 +49,7 @@ def get_chart_url(force=False):
             endmonth = endmonthlast
         for month in range(1, endmonth + 1):
             if month == 1:
-                years.append("%d" % year)
+                years.append(f"{year}")
             else:
                 years.append("")
 
@@ -83,7 +83,7 @@ def get_chart_url(force=False):
             unsupported.append(unsupported_val)
             totals.append(unsupported_val + supported_val)
             alls.append(all_val)
-            dates.append("%d-%02d" % (year, month))
+            dates.append(f"{year}-{month:02}")
 
     max_y = int(((max(alls) / 100) + 1) * 100)
 
@@ -121,7 +121,7 @@ def get_chart_url(force=False):
         ],
     )
 
-    left_axis = ["%d" % x for x in range(0, max_y + 1, int(max_y / 10))]
+    left_axis = [f"{x}" for x in range(0, max_y + 1, int(max_y / 10))]
     left_axis[0] = ""
     chart.set_axis_labels(Axis.LEFT, left_axis)
 
