@@ -111,8 +111,6 @@ sitemaps = {
     "pages": PagesSitemap(),
 }
 
-admin.autodiscover()
-
 urlpatterns = [
     path("", wammu.views.index, name="home"),
     path("gammu/", wammu.views.gammu, name="gammu"),
