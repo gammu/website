@@ -94,10 +94,9 @@ class PagesSitemap(Sitemap):
     def lastmod(self, item):
         if item[1] is None:
             return None
-        (_mode, _ino, _dev, _nlink, _uid, _gid, _size, _atime, mtime, _ctime) = os.stat(
-            item[1]
-        )
-        return datetime.datetime.fromtimestamp(mtime)
+        stat_result = os.stat(item[1])
+        mtime = stat_result.st_mtime
+        return datetime.datetime.fromtimestamp(mtime, tz=datetime.timezone.utc)
 
     def priority(self, item):
         return item[2]
@@ -110,8 +109,6 @@ sitemaps = {
     "vendors": GenericSitemap(vendors_dict, priority=0.2, changefreq="monthly"),
     "pages": PagesSitemap(),
 }
-
-admin.autodiscover()
 
 urlpatterns = [
     path("", wammu.views.index, name="home"),
@@ -216,12 +213,7 @@ urlpatterns = [
     re_path(r"^api/pad/padmap.txt$", downloads.views.padmap),
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs'
     path("admin/", admin.site.urls),
-    # Media files
-    re_path(
-        r"^media/(?P<path>.*)$",
-        django.views.static.serve,
-        {"document_root": "./media"},
-    ),
+    # Media files are only served by Django in development; in production use a proper web server.
     # Donations
     path("donate/", donate.views.donate),
     path("donate/thanks/", donate.views.thanks),
