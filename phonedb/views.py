@@ -318,7 +318,7 @@ def vendor(request, vendorname):
 def phone_redirect(request):
     try:
         pk = int(request.GET["id"])
-    except Exception as error:
+    except (KeyError, ValueError) as error:
         raise Http404("No such entry!") from error
     phone = get_object_or_404(Phone, pk=pk)
     return HttpResponseRedirect(phone.get_absolute_url())
@@ -440,53 +440,53 @@ def create_wammu(request):  # noqa: C901
 
     try:
         phone.vendor = Vendor.objects.get(pk=int(request.POST["manufacturer"]))
-    except Exception:
+    except (KeyError, ValueError, Vendor.DoesNotExist):
         invalid.append("vendor")
 
     try:
         phone.name = request.POST["name"]
         if len(phone.name) == 0:
             invalid.append("name")
-    except Exception:
+    except KeyError:
         invalid.append("name")
 
     try:
         phone.connection = Connection.objects.get(name=request.POST["connection"])
-    except Exception:
+    except (KeyError, Connection.DoesNotExist):
         invalid.append("connection")
 
     try:
         phone.model = request.POST["model"]
         if phone.model == "auto":
             phone.model = ""
-    except Exception:
+    except KeyError:
         invalid.append("model")
 
     try:
         phone.note = request.POST["note"]
-    except Exception:
+    except KeyError:
         invalid.append("note")
 
     try:
         phone.author_name = request.POST["author_name"]
-    except Exception:
+    except KeyError:
         invalid.append("author_name")
 
     try:
         phone.author_email = request.POST["author_email"]
-    except Exception:
+    except KeyError:
         invalid.append("author_email")
 
     try:
         phone.email_garble = request.POST["email_garble"]
         if phone.email_garble not in (x[0] for x in GARBLE_CHOICES):
             invalid.append("email_garble")
-    except Exception:
+    except KeyError:
         invalid.append("email_garble")
 
     try:
         phone.gammu_version = request.POST["gammu_version"]
-    except Exception:
+    except KeyError:
         invalid.append("gammu_version")
 
     try:
