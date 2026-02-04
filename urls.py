@@ -216,12 +216,7 @@ urlpatterns = [
     re_path(r"^api/pad/padmap.txt$", downloads.views.padmap),
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs'
     path("admin/", admin.site.urls),
-    # Media files
-    re_path(
-        r"^media/(?P<path>.*)$",
-        django.views.static.serve,
-        {"document_root": "./media"},
-    ),
+    # Media files are only served by Django in development; in production use a proper web server.
     # Donations
     path("donate/", donate.views.donate),
     path("donate/thanks/", donate.views.thanks),
