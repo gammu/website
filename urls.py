@@ -97,7 +97,7 @@ class PagesSitemap(Sitemap):
         (_mode, _ino, _dev, _nlink, _uid, _gid, _size, _atime, mtime, _ctime) = os.stat(
             item[1]
         )
-        return datetime.datetime.fromtimestamp(mtime)
+        return datetime.datetime.fromtimestamp(mtime, tz=datetime.timezone.utc)
 
     def priority(self, item):
         return item[2]
