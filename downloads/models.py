@@ -106,19 +106,10 @@ class Release(models.Model):
         if self.post_news:
             author = self.author
             current_site = "wammu.eu"
-            excerpt = "[{programname}]({programurl}) [{version}]({versionurl}) has been just released. {description}".format(
-                programname=get_program(self.program),
-                version=self.version,
-                description=self.description,
-                programurl=f"https://{current_site}{PROGRAM_URLS[self.program]}",
-                versionurl=f"https://{current_site}{self.get_absolute_url()}",
-            )
+            excerpt = f"[{get_program(self.program)}](https://{current_site}{PROGRAM_URLS[self.program]}) [{self.version}](https://{current_site}{self.get_absolute_url()}) has been just released. {self.description}"
             body = f"Full list of changes:\n\n{self.changelog}\n\nYou can download it from <https://wammu.eu/download/>.\n\nSupport this program by donations <https://wammu.eu/donate/>."
             title = f"{get_program(self.program)} {self.version}"
-            slug = "{}-{}".format(
-                self.program,
-                self.version.replace(".", "-"),
-            )
+            slug = f"{self.program}-{self.version.replace('.', '-')}"
             category = Category.objects.get(slug=self.program)
             category.entry_set.create(
                 author=author,
@@ -176,13 +167,13 @@ class Download(models.Model):
 
     def get_size(self):
         if self.size > 4 * 1024 * 1024:
-            return "%d MiB" % self.get_size_mib()
+            return f"{self.get_size_mib()} MiB"
         if self.size > 4 * 1024:
-            return "%d KiB" % self.get_size_kib()
-        return "%d B" % self.size
+            return f"{self.get_size_kib()} KiB"
+        return f"{self.size} B"
 
     def get_size_mib(self):
-        return self.size / (1024 * 1024)
+        return self.size // (1024 * 1024)
 
     def get_size_kib(self):
-        return self.size / (1024)
+        return self.size // (1024)

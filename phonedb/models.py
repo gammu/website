@@ -188,11 +188,11 @@ class Phone(models.Model):
         if self.vendor.slug == "nokia":
             name = self.name.replace(" ", "_")
             if name[-1:] == "c" and name[-2:-1] in "0123456789":
-                name = name[:-1] + "_classic"
+                name = f"{name[:-1]}_classic"
             elif name[-1:] == "s" and name[-2:-1] in "0123456789":
-                name = name[:-1] + "_slide"
+                name = f"{name[:-1]}_slide"
             elif name[-1:] == "f" and name[-2:-1] in "0123456789":
-                name = name[:-1] + "_fold"
+                name = f"{name[:-1]}_fold"
             result.append(
                 {
                     "url": f"http://www.developer.nokia.com/Devices/Device_specifications/{name}/",
@@ -212,7 +212,7 @@ class Phone(models.Model):
         if self.email_garble == "atdot":
             return self.author_email.replace("@", "[at]").replace(".", "[dot]")
         pos = random.randint(0, len(self.author_email))
-        return self.author_email[:pos] + "NOSPAM" + self.author_email[pos:]
+        return f"{self.author_email[:pos]}NOSPAM{self.author_email[pos:]}"
 
     def get_author_name(self):
         if self.author_name == "":
