@@ -1,6 +1,6 @@
 """Tests for sitemaps."""
 
-from xml.etree import ElementTree as ElementTree
+from xml.etree import ElementTree as ET
 
 from django.contrib.sites.models import Site
 from django.test import TestCase
@@ -14,11 +14,11 @@ class SitemapTest(TestCase):
         self.assertContains(response, "<sitemapindex")
 
         # Parse it
-        tree = ElementTree.fromstring(response.content)
+        tree = ET.fromstring(response.content)
         sitemaps = tree.findall("{http://www.sitemaps.org/schemas/sitemap/0.9}sitemap")
         for sitemap in sitemaps:
             location = sitemap.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc")
             response = self.client.get(location.text)
             self.assertContains(response, "<urlset")
             # Try if it's a valid XML
-            ElementTree.fromstring(response.content)
+            ET.fromstring(response.content)
