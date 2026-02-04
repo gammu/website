@@ -318,7 +318,7 @@ def vendor(request, vendorname):
 def phone_redirect(request):
     try:
         pk = int(request.GET["id"])
-    except Exception as error:
+    except (KeyError, ValueError) as error:
         raise Http404("No such entry!") from error
     phone = get_object_or_404(Phone, pk=pk)
     return HttpResponseRedirect(phone.get_absolute_url())
