@@ -572,7 +572,7 @@ def create(request, vendorname=None):
             else:
                 vendor = Vendor.objects.get(slug=request.GET["vendor"])
             initial["vendor"] = vendor.pk
-        except Exception:
+        except (KeyError, Vendor.DoesNotExist, Vendor.MultipleObjectsReturned):
             pass
         with contextlib.suppress(Exception):
             initial["name"] = request.GET["name"]
