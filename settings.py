@@ -193,7 +193,6 @@ SERVER_EMAIL = "django@wammu.eu"
 
 CACHE_BACKEND = "db://cache"
 
-DEFAULT_CONTENT_TYPE = "application/xhtml+xml"
 DEFAULT_CONTENT_TYPE = "text/html"
 DEFAULT_CHARSET = "utf-8"
 
