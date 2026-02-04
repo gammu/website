@@ -9,7 +9,7 @@ from news.models import Entry
 class RssNewsFeed(Feed):
     link = "/news/"
     copyright = "Copyright © Michal Čihař"
-    item_copyright = copyright
+    item_copyright = copyright  # noqa: A003
     title_template = "feeds/news_title.html"
     description_template = "feeds/news_description.html"
 
