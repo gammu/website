@@ -120,6 +120,11 @@ ROLLBAR = {
     ],
 }
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.wammu.eu",
+    "https://wammu.eu",
+]
+
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
 ROOT_URLCONF = "urls"
