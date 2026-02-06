@@ -125,6 +125,14 @@ CSRF_TRUSTED_ORIGINS = [
     "https://wammu.eu",
 ]
 
+# Configure Django to work behind a reverse proxy
+# Trust X-Forwarded-Proto header from the proxy to correctly identify HTTPS
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+# Use X-Forwarded-Host header to get the original host
+USE_X_FORWARDED_HOST = True
+# Use X-Forwarded-Port header to get the original port
+USE_X_FORWARDED_PORT = True
+
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
 ROOT_URLCONF = "urls"
