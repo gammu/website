@@ -1,5 +1,5 @@
 crispy-bootstrap3==2024.1
-Django==5.2.12
+Django==6.0.3
 django-crispy-forms==2.6
 Markdown==3.10.2
 Pillow==12.1.1
