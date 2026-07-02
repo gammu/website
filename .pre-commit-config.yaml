@@ -49,7 +49,7 @@ repos:
   - id: eslint
     args: [--format=compact]
     additional_dependencies:
-    - prettier@3.9.1
+    - prettier@3.9.3
     - eslint@>=6.2.2
     - eslint-plugin-import@>=2.18.0
     - eslint-plugin-n@18.2.1
