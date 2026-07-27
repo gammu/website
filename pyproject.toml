@@ -19,6 +19,7 @@ extend-safe-fixes = [
 # E501 - line too long
 ignore = [
   "D10",
+  "CPY001",
   "D20",
   "D40",
   "DJ001",
