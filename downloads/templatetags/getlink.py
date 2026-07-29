@@ -9,6 +9,8 @@ register = template.Library()
 
 @register.simple_tag
 def getlink(item):
+    if item.location.startswith("https://github.com/"):
+        return item.location
     return f"https://dl.cihar.com{item.location}"
 
 

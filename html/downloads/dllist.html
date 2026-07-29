@@ -8,7 +8,7 @@
 <ul>
 {% for item in download.list %}
 <li><a href="{% getlink item %}" class="piwik_download">{{ item.get_filename }}</a> ({{ item.get_size }})
-    <div class="checksums">{% if item.sha256 %}SHA256: <code>{{ item.sha256 }}</code>{% else %}SHA1: <code>{{ item.sha1 }}</code>{% endif %}</div></li>
+    {% if item.sha256 %}<div class="checksums">SHA256: <code>{{ item.sha256 }}</code></div>{% elif item.sha1 %}<div class="checksums">SHA1: <code>{{ item.sha1 }}</code></div>{% elif item.md5 %}<div class="checksums">MD5: <code>{{ item.md5 }}</code></div>{% endif %}</li>
 {% endfor %}
 </ul>
 
