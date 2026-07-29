@@ -1,7 +1,6 @@
 import os
 import os.path
 
-import markdown
 from django.contrib.auth.models import User
 from django.db import models
 from django.urls import reverse
@@ -10,7 +9,7 @@ from django.utils.translation import gettext as _
 from django.utils.translation import gettext_lazy
 
 from news.models import Category
-from wammu.helpers import process_bug_links
+from wammu.helpers import process_bug_links, render_markdown
 
 PROGRAM_CHOICES = (
     ("gammu", "Gammu"),
@@ -127,8 +126,10 @@ class Release(models.Model):
                 slug=slug,
             )
         self.post_news = False
-        self.changelog_html = markdown.markdown(process_bug_links(self.changelog))
-        self.description_html = markdown.markdown(self.description)
+        self.changelog_html = render_markdown(
+            process_bug_links(self.changelog or ""),
+        )
+        self.description_html = render_markdown(self.description)
         super().save(*args, **kwargs)
 
     def get_absolute_url(self):

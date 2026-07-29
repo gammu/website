@@ -8,8 +8,11 @@ from django.conf import settings
 from django.contrib.auth.models import User
 from django.core.management import call_command
 from django.core.management.base import CommandError
+from django.db import connection
+from django.db.migrations.executor import MigrationExecutor
 from django.template.loader import render_to_string
-from django.test import TestCase
+from django.test import TestCase, TransactionTestCase
+from django.utils import timezone
 
 from downloads.management.commands.sync_github_releases import (
     SYNC_NAME,
@@ -94,6 +97,10 @@ class SyncGitHubReleasesTest(TestCase):
         return stdout.getvalue(), stderr.getvalue()
 
     def test_imports_release_news_and_selected_assets(self):
+        release_notes = (
+            "* Fixed an important bug in "
+            "https://github.com/gammu/python-gammu/pull/123."
+        )
         source = github_asset("Gammu-1.2.3.tar.gz", size=2048)
         installer = github_asset("Gammu-1.2.3-Windows.exe")
         windows_wheel = github_asset("python_gammu-1.2.3-cp313-win_amd64.whl")
@@ -107,6 +114,7 @@ class SyncGitHubReleasesTest(TestCase):
             {
                 "gammu": [
                     github_release(
+                        body=release_notes,
                         assets=[
                             source,
                             installer,
@@ -129,7 +137,11 @@ class SyncGitHubReleasesTest(TestCase):
             release.date,
             datetime.fromisoformat("2026-07-28T07:49:15+00:00"),
         )
-        self.assertEqual(release.changelog, "* Fixed an important bug.")
+        self.assertEqual(release.changelog, release_notes)
+        self.assertIn(
+            '<a href="https://github.com/gammu/python-gammu/pull/123">',
+            release.changelog_html,
+        )
         self.assertEqual(
             release.description,
             "This release is available from GitHub.",
@@ -149,7 +161,11 @@ class SyncGitHubReleasesTest(TestCase):
             list(entry.categories.values_list("slug", flat=True)),
             ["gammu"],
         )
-        self.assertIn("* Fixed an important bug.", entry.body)
+        self.assertIn(release_notes, entry.body)
+        self.assertIn(
+            '<a href="https://github.com/gammu/python-gammu/pull/123">',
+            entry.body_html,
+        )
 
         downloads = list(release.download_set.order_by("location"))
         self.assertEqual(len(downloads), 5)
@@ -375,3 +391,70 @@ class DownloadRenderingTest(TestCase):
 
         self.assertNotIn('class="checksums"', rendered)
         self.assertIn("https://github.com/gammu/gammu/releases/download/", rendered)
+
+
+class GitHubReleaseNotesMigrationTest(TransactionTestCase):
+    migrate_from = [
+        ("downloads", "0008_github_releases"),
+        ("news", "0003_auto_20210207_1428"),
+    ]
+    migrate_to = [
+        ("downloads", "0009_rerender_github_release_notes"),
+        ("news", "0003_auto_20210207_1428"),
+    ]
+
+    def setUp(self):
+        executor = MigrationExecutor(connection)
+        executor.migrate(self.migrate_from)
+        old_apps = executor.loader.project_state(self.migrate_from).apps
+
+        user_model = old_apps.get_model("auth", "User")
+        release_model = old_apps.get_model("downloads", "Release")
+        entry_model = old_apps.get_model("news", "Entry")
+        author = user_model.objects.create(
+            username=SYNC_USERNAME,
+            is_active=False,
+        )
+        url = "https://github.com/gammu/python-gammu/pull/123"
+        self.release_id = release_model.objects.create(
+            author=author,
+            program="python-gammu",
+            version="1.2.3",
+            version_int=10203,
+            description="GitHub release.",
+            description_html="<p>stale</p>",
+            changelog=f"* Fixed by @nijel in {url}",
+            changelog_html="<p>stale</p>",
+            date=timezone.now(),
+            post_news=False,
+        ).pk
+        self.entry_id = entry_model.objects.create(
+            author=author,
+            pub_date=timezone.now(),
+            slug="python-gammu-1-2-3",
+            title="python-gammu 1.2.3",
+            body=f"Full list of changes:\n\n* Fixed by @nijel in {url}",
+            body_html="<p>stale</p>",
+            excerpt="Release excerpt.",
+            excerpt_html="<p>stale</p>",
+        ).pk
+
+        executor = MigrationExecutor(connection)
+        executor.migrate(self.migrate_to)
+        self.apps = executor.loader.project_state(self.migrate_to).apps
+
+    def tearDown(self):
+        executor = MigrationExecutor(connection)
+        executor.migrate(executor.loader.graph.leaf_nodes())
+        super().tearDown()
+
+    def test_existing_release_and_news_html_is_rerendered(self):
+        release_model = self.apps.get_model("downloads", "Release")
+        entry_model = self.apps.get_model("news", "Entry")
+
+        release = release_model.objects.get(pk=self.release_id)
+        entry = entry_model.objects.get(pk=self.entry_id)
+
+        expected = '<a href="https://github.com/gammu/python-gammu/pull/123">'
+        self.assertIn(expected, release.changelog_html)
+        self.assertIn(expected, entry.body_html)

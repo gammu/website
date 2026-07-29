@@ -1,10 +1,11 @@
 import datetime
 
-import markdown
 from django.contrib.auth.models import User
 from django.db import models
 from django.urls import reverse
 from django.utils import timezone
+
+from wammu.helpers import render_markdown
 
 
 class Category(models.Model):
@@ -28,7 +29,7 @@ class Category(models.Model):
         return self.title
 
     def save(self, *args, **kwargs):
-        self.description_html = markdown.markdown(self.description)
+        self.description_html = render_markdown(self.description)
         super().save(*args, **kwargs)
 
     def get_absolute_url(self):
@@ -70,8 +71,8 @@ class Entry(models.Model):
         if self.pub_date is None:
             self.pub_date = timezone.now()
         if self.excerpt:
-            self.excerpt_html = markdown.markdown(self.excerpt)
-        self.body_html = markdown.markdown(self.body, safe_mode=True)
+            self.excerpt_html = render_markdown(self.excerpt)
+        self.body_html = render_markdown(self.body)
         super().save(*args, **kwargs)
 
     def get_absolute_url(self):
