@@ -55,7 +55,7 @@ class PagesSitemap(Sitemap):
             ("/smsd/", f"{settings.HTML_ROOT}/smsd.html", 1),
             ("/python-gammu/", f"{settings.HTML_ROOT}/python-gammu.html", 1),
             ("/authors/", f"{settings.HTML_ROOT}/authors.html", 0.9),
-            ("/license/", f"{settings.HTML_ROOT}/libgammu.html", 0.9),
+            ("/license/", f"{settings.HTML_ROOT}/license.html", 0.9),
             ("/donate/", f"{settings.HTML_ROOT}/donate.html", 0.3),
             ("/s60/", f"{settings.HTML_ROOT}/s60.html", 0.3),
             ("/support/", f"{settings.HTML_ROOT}/support/index.html", 0.9),
