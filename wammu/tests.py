@@ -33,6 +33,8 @@ class FrontendTest(TestCase):
         self.assertContains(response, "/static/images/icons.svg")
         self.assertContains(response, "data-lightbox-dialog")
         self.assertContains(response, "data-menu", count=9)
+        self.assertContains(response, 'class="product-card"', count=5)
+        self.assertNotContains(response, "View details")
 
         for removed_integration in (
             "bootstrap",
