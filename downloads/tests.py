@@ -217,7 +217,7 @@ class SyncGitHubReleasesTest(TestCase):
         self.assertFalse(Release.objects.exists())
         self.assertFalse(Entry.objects.exists())
         self.assertFalse(Download.objects.exists())
-        self.assertIn("Created 0 releases and 0 downloads; skipped 1 releases", stdout)
+        self.assertEqual(stdout, "")
         self.assertIn("no supported downloads", stderr)
 
     def test_sync_user_backfills_missing_display_metadata(self):
@@ -257,7 +257,7 @@ class SyncGitHubReleasesTest(TestCase):
 
         self.assertEqual(Release.objects.count(), 1)
         self.assertEqual(Entry.objects.count(), 0)
-        self.assertIn("skipped 4 releases", stdout)
+        self.assertEqual(stdout, "")
         self.assertIn("unsupported tag 'v1.2.6'", stderr)
 
     def test_existing_release_is_not_refreshed(self):
@@ -276,7 +276,7 @@ class SyncGitHubReleasesTest(TestCase):
                 github_asset("Gammu-1.2.3-Windows.exe"),
             ],
         )
-        stdout, _stderr = self.run_sync(
+        stdout, stderr = self.run_sync(
             {"gammu": [changed], "python-gammu": [], "wammu": []},
         )
 
@@ -284,7 +284,8 @@ class SyncGitHubReleasesTest(TestCase):
         self.assertEqual(release.changelog, "Original notes")
         self.assertEqual(Download.objects.count(), 1)
         self.assertEqual(Entry.objects.count(), 1)
-        self.assertIn("Created 0 releases and 0 downloads", stdout)
+        self.assertEqual(stdout, "")
+        self.assertEqual(stderr, "")
 
     def test_malformed_release_rolls_back_all_imports(self):
         malformed = github_release("2.0.0")

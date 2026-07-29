@@ -51,13 +51,14 @@ class Command(BaseCommand):
                     created_releases += 1
                     created_downloads += result
 
-        self.stdout.write(
-            self.style.SUCCESS(
-                f"Created {created_releases} releases and "
-                f"{created_downloads} downloads; skipped "
-                f"{skipped_releases} releases.",
-            ),
-        )
+        if created_releases:
+            self.stdout.write(
+                self.style.SUCCESS(
+                    f"Created {created_releases} releases and "
+                    f"{created_downloads} downloads; skipped "
+                    f"{skipped_releases} releases.",
+                ),
+            )
 
     def fetch_releases(self, repository):
         url = f"https://api.github.com/repos/gammu/{repository}/releases?per_page=100"
