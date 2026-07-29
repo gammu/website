@@ -1,20 +1,132 @@
+import datetime
+import xml.etree.ElementTree as ET
+from unittest import mock
+
 from django.contrib.sites.models import Site
+from django.core.cache import cache
+from django.core.management import call_command
 from django.test import TestCase
 from django.urls import reverse
+from django.utils import translation
 
-from phonedb.models import Connection, Feature, Vendor
+from phonedb.charts import get_phone_records_chart
+from phonedb.models import Connection, Feature, Phone, Vendor
 
 
 class PhoneDBTest(TestCase):
     def setUp(self):
-        Vendor.objects.create(name="Test", slug="test", url="https://example.com")
+        cache.clear()
+        self.vendor = Vendor.objects.create(
+            name="Test",
+            slug="test",
+            url="https://example.com",
+        )
         Feature.objects.create(name="info")
-        Connection.objects.create(name="at", medium="usb")
+        self.connection = Connection.objects.create(name="at", medium="usb")
         Site.objects.create(name="testserver", domain="testserver")
 
     def test_index(self):
         response = self.client.get(reverse("phonedb"))
-        self.assertContains(response, "https://www.google.com/chart")
+        self.assertContains(response, reverse("phonedb-chart"))
+        self.assertNotContains(response, "google.com/chart")
+
+    def test_chart(self):
+        response = self.client.get(reverse("phonedb-chart"))
+
+        self.assertEqual(response["Content-Type"], "image/svg+xml")
+        self.assertNotContains(response, "google.com")
+        root = ET.fromstring(response.content)
+        namespace = {"svg": "http://www.w3.org/2000/svg"}
+        self.assertEqual(root.tag, "{http://www.w3.org/2000/svg}svg")
+        self.assertEqual(root.attrib["viewBox"], "0 0 800 300")
+        polylines = root.findall(".//svg:polyline", namespace)
+        self.assertEqual(
+            {polyline.attrib["class"] for polyline in polylines},
+            {
+                "series supported-phones",
+                "series approved-records",
+                "series total-records",
+            },
+        )
+        self.assertEqual(
+            {
+                polyline.attrib["class"]: polyline.attrib["stroke"]
+                for polyline in polylines
+            },
+            {
+                "series supported-phones": "#009e73",
+                "series approved-records": "#b7791f",
+                "series total-records": "#0072b2",
+            },
+        )
+        self.assertTrue(
+            all(polyline.attrib["stroke-linecap"] == "round" for polyline in polylines),
+        )
+        chart_text = "".join(root.itertext())
+        self.assertIn("Supported phones", chart_text)
+        self.assertIn("Approved records", chart_text)
+        self.assertIn("Total records", chart_text)
+
+    def test_chart_data(self):
+        phone = Phone.objects.create(
+            vendor=self.vendor,
+            name="Chart phone",
+            connection=self.connection,
+            state="approved",
+        )
+        Phone.objects.filter(pk=phone.pk).update(
+            created=datetime.datetime(
+                2006,
+                1,
+                15,
+                tzinfo=datetime.timezone.utc,
+            ),
+        )
+
+        response = self.client.get(reverse("phonedb-chart"))
+        root = ET.fromstring(response.content)
+        polylines = root.findall(
+            ".//svg:polyline",
+            {"svg": "http://www.w3.org/2000/svg"},
+        )
+        for polyline in polylines:
+            y_values = {
+                float(point.split(",")[1])
+                for point in polyline.attrib["points"].split()
+            }
+            self.assertGreater(len(y_values), 1)
+
+    def test_chart_legacy_redirect(self):
+        response = self.client.get(reverse("phonedb-chart-legacy"))
+
+        self.assertRedirects(
+            response,
+            reverse("phonedb-chart"),
+            status_code=301,
+            fetch_redirect_response=False,
+        )
+
+    @mock.patch("phonedb.charts.render_phone_records_chart")
+    def test_chart_cache(self, render_chart):
+        render_chart.side_effect = [b"english", b"czech", b"refreshed"]
+
+        with translation.override("en"):
+            self.assertEqual(get_phone_records_chart(), b"english")
+            self.assertEqual(get_phone_records_chart(), b"english")
+        with translation.override("cs"):
+            self.assertEqual(get_phone_records_chart(), b"czech")
+        with translation.override("en"):
+            self.assertEqual(get_phone_records_chart(force=True), b"refreshed")
+
+        self.assertEqual(render_chart.call_count, 3)
+
+    @mock.patch(
+        "phonedb.management.commands.update_charts_url.get_phone_records_chart",
+    )
+    def test_update_chart_command(self, get_chart):
+        call_command("update_charts_url")
+
+        get_chart.assert_called_once_with(force=True)
 
     def test_add(self):
         response = self.client.post(

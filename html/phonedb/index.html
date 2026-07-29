@@ -68,7 +68,13 @@ timestamp data.
 {% endblocktrans %}
 </p>
 
-<img src="{{ chart_url }}" />
+<img
+  class="img-responsive"
+  src="{% url "phonedb-chart" %}"
+  width="800"
+  height="300"
+  alt="{% trans "Phone Records Summary" %}"
+/>
 
 <p><a href="/phones/csv/">{% trans "Download all data as CSV" %}</a></p>
 

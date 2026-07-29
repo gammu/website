@@ -1,10 +1,10 @@
 from django.core.management.base import BaseCommand
 
-from phonedb.views import get_chart_url
+from phonedb.charts import get_phone_records_chart
 
 
 class Command(BaseCommand):
-    help = "updates chart URL"
+    help = "updates cached phone records summary chart"
 
     def handle(self, *args, **options):
-        get_chart_url(force=True)
+        get_phone_records_chart(force=True)

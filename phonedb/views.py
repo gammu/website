@@ -1,23 +1,20 @@
 import contextlib
 import csv
-import datetime
 import socket
 
 from django.conf import settings
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.sites.models import Site
-from django.core.cache import cache
 from django.core.exceptions import ValidationError
 from django.core.paginator import EmptyPage, InvalidPage, Paginator
 from django.db.models import Count, Q
 from django.http import Http404, HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
-from django.utils import timezone
 from django.utils.translation import gettext as _
 from django.views.decorators.csrf import csrf_exempt
-from pygooglechart import Axis, Chart, SimpleLineChart
 
+from phonedb.charts import get_phone_records_chart
 from phonedb.forms import NewForm, SearchForm
 from phonedb.models import GARBLE_CHOICES, Connection, Feature, Phone, Vendor
 
@@ -27,113 +24,8 @@ OKAY = "Entry created, id=%d, url=/gammu/phonedb/%s/%d"
 OKAY_V2 = "Entry created, id=%d, url=%s"
 
 
-def get_chart_url(force=False):
-    cache_key = f"phonedb-chart-url-{settings.LANGUAGE_CODE}"
-    url = cache.get(cache_key)
-    if url is not None and not force:
-        return url
-    enddate = timezone.now()
-    endyear = enddate.year
-    endmonthlast = enddate.month
-    endmonth = 12
-
-    dates = []
-    unsupported = []
-    supported = []
-    totals = []
-    total_records = []
-    years = []
-
-    for year in range(2006, endyear + 1):
-        if year == endyear:
-            endmonth = endmonthlast
-        for month in range(1, endmonth + 1):
-            if month == 1:
-                years.append(f"{year}")
-            else:
-                years.append("")
-
-            time_range = (
-                datetime.datetime(1900, 1, 1, tzinfo=datetime.timezone.utc),
-                datetime.datetime(year, month, 1, tzinfo=datetime.timezone.utc),
-            )
-
-            supported_val = (
-                Phone.objects.exclude(state="deleted")
-                .filter(connection__isnull=False)
-                .filter(created__range=time_range)
-                .count()
-            )
-            unsupported_val = (
-                Phone.objects.exclude(state="deleted")
-                .filter(connection__isnull=True)
-                .filter(created__range=time_range)
-                .count()
-            )
-            all_val = Phone.objects.filter(
-                created__lt=datetime.datetime(
-                    year,
-                    month,
-                    1,
-                    tzinfo=datetime.timezone.utc,
-                ),
-            ).count()
-
-            supported.append(supported_val)
-            unsupported.append(unsupported_val)
-            totals.append(unsupported_val + supported_val)
-            total_records.append(all_val)
-            dates.append(f"{year}-{month:02}")
-
-    max_y = int(((max(total_records) / 100) + 1) * 100)
-
-    chart = SimpleLineChart(800, 300, y_range=[0, max_y])
-
-    # Chart data
-    chart.add_data(supported)
-    chart.add_data(totals)
-    chart.add_data(total_records)
-    # Lowest value
-    chart.add_data([0] * 2)
-
-    # Set the line colour to blue
-    chart.set_colours(["00FF00", "FF0000", "0000FF", "00000000"])
-
-    # Set the vertical stripes
-    month_stripes = 3.0
-    chart.fill_linear_stripes(
-        Chart.CHART,
-        0,
-        "ffffff",
-        month_stripes / len(total_records),
-        "cccccc",
-        month_stripes / len(total_records),
-    )
-
-    # Set the horizontal dotted lines
-    chart.set_grid(0, 10, 5, 5)
-
-    chart.set_legend(
-        [
-            _("Supported phones").encode("utf-8"),
-            _("Approved records").encode("utf-8"),
-            _("Total records").encode("utf-8"),
-        ],
-    )
-
-    left_axis = [f"{x}" for x in range(0, max_y + 1, int(max_y / 10))]
-    left_axis[0] = ""
-    chart.set_axis_labels(Axis.LEFT, left_axis)
-
-    chart.set_axis_labels(Axis.BOTTOM, years)
-
-    url = chart.get_url().replace("http:", "https:")
-    cache.set(cache_key, url, 3600 * 24)
-    return url
-
-
 def phones_chart(request):
-    return HttpResponseRedirect(get_chart_url())
+    return HttpResponse(get_phone_records_chart(), content_type="image/svg+xml")
 
 
 def get_feeds():
@@ -167,7 +59,6 @@ def index(request):
             "vendors": vendors,
             "phones": phones,
             "features": Feature.objects.all().order_by("name"),
-            "chart_url": get_chart_url(),
             "feeds": get_feeds(),
             "form": SearchForm(),
         },

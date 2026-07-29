@@ -181,7 +181,12 @@ urlpatterns = [
     path("phones/csv/", phonedb.views.phones_csv, name="phonedb-csv"),
     # Phone database
     path("phones/", phonedb.views.index, name="phonedb"),
-    re_path(r"^phones/history.png$", phonedb.views.phones_chart),
+    path("phones/history.svg", phonedb.views.phones_chart, name="phonedb-chart"),
+    path(
+        "phones/history.png",
+        RedirectView.as_view(pattern_name="phonedb-chart", permanent=True),
+        name="phonedb-chart-legacy",
+    ),
     path("phones/new/", phonedb.views.create, name="phonedb-new"),
     re_path(
         r"^phones/new\.php/$",
