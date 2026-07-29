@@ -380,8 +380,7 @@ summary::-webkit-details-marker {
 .hero {
   margin: -1.5rem 0 2rem;
   padding: clamp(2rem, 5vw, 4rem) 0;
-  border-bottom: 1px solid var(--color-border);
-  background: linear-gradient(135deg, #eef3f6, #f9fafb);
+  background: #f4f6f8;
   box-shadow: 0 0 0 100vmax #f4f6f8;
   color: #3d4951;
   font-size: clamp(1.05rem, 2vw, 1.25rem);
