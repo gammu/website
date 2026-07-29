@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% load static %}
 
 {% block description %}{% blocktrans with vendor.name as vendor_name %}Database of supported phones from {{ vendor_name }} in Gammu and Wammu, the software for managing GSM cell phones.{% endblocktrans %}{% endblock %}
 {% block extrakeywords %},{{ vendor.name }}{% endblock %}
@@ -7,11 +8,11 @@
 
 {% block content %}
 
-<ol class="breadcrumb">
+<ol class="breadcrumbs">
   <li><a href="/">{% trans "Home" %}</a></li>
   <li><a href="/phones/">{% trans "Phones Database" %}</a></li>
   <li class="active">{{ vendor.name }}</li>
-  <li class="pull-right action"><a href="/phones/new/?vendor={{ vendor.slug }}"><i class="fa fa-plus"></i> {% trans "Add new record" %}</a></li>
+  <li class="breadcrumbs__action"><a href="/phones/new/?vendor={{ vendor.slug }}"><svg class="icon" aria-hidden="true"><use href="{% static "images/icons.svg" %}#add"></use></svg> {% trans "Add new record" %}</a></li>
 </ol>
 
 <h2>{{ vendor.name }}</h2>

@@ -178,8 +178,6 @@ INSTALLED_APPS = (
     "django.contrib.sites",
     "django.contrib.staticfiles",
     "django.contrib.messages",
-    "crispy_forms",
-    "crispy_bootstrap3",
     "news",
     "wammu",
     "downloads",
@@ -201,9 +199,6 @@ PHONES_IN_RSS = 10
 
 THUMBNAIL_SIZE = (180, 180)
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap3"
-CRISPY_TEMPLATE_PACK = "bootstrap3"
-
 SEND_BROKEN_LINK_EMAILS = True
 SERVER_EMAIL = "django@wammu.eu"
 
@@ -218,11 +213,7 @@ USE_ETAGS = True
 IGNORABLE_404_ENDS = [
     "logo.png",
     "logo_001.png",
-    "piwik.js",
-    "piwik.js/",
-    "piwik.php",
     "michal@cihar.com",
-    "piwik.php/",
 ]
 IGNORABLE_404_STARTS = ["/plugins/editors/tinymce", "/cgi-bin/"]
 

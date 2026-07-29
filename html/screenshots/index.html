@@ -8,15 +8,14 @@
 <h2>{% trans "Wammu and Gammu Screenshots" %}</h2>
 {% endblock %}
 
-<div class="container">
+<div class="screenshot-grid">
 {% for item in screenshots.object_list %}
-<div class="screenshot">
-    <a href="{{ item.image.url }}" class="shot" title="{{ item.title }}">
-        <img src="{{ item.image.url_180x120 }}"
-        alt="{{ item.title }}" /><br />
-    {{ item.title }}
+<figure class="screenshot-card">
+    <a href="{{ item.image.url }}" data-lightbox-link data-lightbox-group="screenshots" data-caption="{{ item.title }}">
+        <img src="{{ item.image.url_180x120 }}" alt="{{ item.title }}">
     </a>
-</div>
+    <figcaption>{{ item.title }}</figcaption>
+</figure>
 {% endfor %}
 </div>
 

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load i18n %}
-{% load crispy_forms_tags %}
+{% load static %}
 
 {% block description %}{% trans "Database of supported phones in Gammu and Wammu, the software for managing GSM cell phones." %}{% endblock %}
 {% block title %}{% trans "Gammu Phone Database " %}{% endblock %}
@@ -40,20 +40,25 @@ phone to get some functionality, newer ones do not have support so far.
 
 <h3>{% trans "Manufacturers" %}</h3>
 
-<ul class="nav nav-pills">
+<ul class="manufacturer-list">
 {% for vendor in vendors %}
-<li><a class="vendor list-group-item" href="{{ vendor.get_absolute_url }}">{{ vendor.name }}
-<span class="badge">{{ vendor.models_count }}</span>
+<li><a class="manufacturer-link" href="{{ vendor.get_absolute_url }}">{{ vendor.name }}
+<span class="count-badge">{{ vendor.models_count }}</span>
 </a></li>
 {% endfor %}
 </ul>
 
 <h3>{% trans "Search" %}</h3>
-<form action="/phones/search/" method="GET">
-{% crispy form %}
+<form action="/phones/search/" method="get" class="site-form site-form--horizontal">
+{% include "forms/form_fields.html" %}
+<div class="form-actions">
+  <button type="submit" name="submit" class="button">{% trans "Search" %}</button>
+</div>
 </form>
 
-<a class="pull-right" href="/phones/rss/"><i class="fa fa-rss" alt="{% trans "RSS" %}"></i></a>
+<a class="feed-link" href="/phones/rss/" aria-label="{% trans "RSS" %}">
+  <svg class="icon" aria-hidden="true"><use href="{% static "images/icons.svg" %}#rss"></use></svg>
+</a>
 <h3>{% trans "Recently Added Phones" %}</h3>
 {% include "phonedb/list.html" %}
 
@@ -69,7 +74,7 @@ timestamp data.
 </p>
 
 <img
-  class="img-responsive"
+  class="responsive-image"
   src="{% url "phonedb-chart" %}"
   width="800"
   height="300"

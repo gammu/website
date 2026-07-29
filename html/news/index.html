@@ -1,10 +1,13 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% load static %}
 
 {% block title %}{% trans "Wammu and Gammu News" %}{% endblock %}
 
 {% block content %}
-<a class="pull-right" href="/news/rss/"><i class="fa fa-rss" alt="{% trans "RSS" %}"></i></a>
+<a class="feed-link" href="/news/rss/" aria-label="{% trans "RSS" %}">
+  <svg class="icon" aria-hidden="true"><use href="{% static "images/icons.svg" %}#rss"></use></svg>
+</a>
 {% block listhead %}
 <h2>{% trans "Wammu and Gammu News" %}</h2>
 {% endblock %}

@@ -6,6 +6,10 @@ class ToolsTest(TestCase):
     def test_pdudecode(self):
         response = self.client.post(reverse("pdudecode"), {"text": "xxx"})
         self.assertContains(response, "Enter a valid value.")
+        self.assertContains(response, "form-field--invalid")
+        self.assertContains(
+            response, 'aria-describedby="id_text_helptext id_text_error"'
+        )
         response = self.client.post(
             reverse("pdudecode"),
             {

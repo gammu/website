@@ -1,5 +1,3 @@
-from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Layout, Submit
 from django import forms
 from django.forms import Form, ModelForm
 from django.utils.safestring import mark_safe
@@ -20,15 +18,6 @@ class SearchForm(Form):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.helper = FormHelper()
-        self.helper.form_class = "form-horizontal"
-        self.helper.label_class = "col-lg-2"
-        self.helper.field_class = "col-lg-10"
-        self.helper.layout = Layout(
-            "q",
-            "feature",
-            Submit("submit", _("Search"), css_class="btn-default"),
-        )
         self.fields["feature"].choices = [
             (
                 f.name,
@@ -69,23 +58,6 @@ class NewForm(ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.helper = FormHelper()
-        self.helper.form_class = "form-horizontal"
-        self.helper.label_class = "col-lg-2"
-        self.helper.field_class = "col-lg-10"
-        self.helper.layout = Layout(
-            "vendor",
-            "name",
-            "connection",
-            "model",
-            "features",
-            "gammu_version",
-            "note",
-            "author_name",
-            "author_email",
-            "email_garble",
-            Submit("submit", gettext_lazy("Save"), css_class="btn-default"),
-        )
         self.fields["features"].choices = [
             (
                 f.id,

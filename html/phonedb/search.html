@@ -1,13 +1,12 @@
 {% extends "base.html" %}
 {% load i18n %}
-{% load crispy_forms_tags %}
 
 {% block description %}{% trans "Database of supported phones in Gammu and Wammu, the software for managing GSM cell phones." %}{% endblock %}
 {% block title %}{% trans "Search Results" %} - {% trans "Gammu Phone Database " %}{% endblock %}
 
 {% block content %}
 
-<ol class="breadcrumb">
+<ol class="breadcrumbs">
   <li><a href="/">{% trans "Home" %}</a></li>
   <li><a href="/phones/">{% trans "Phones Database" %}</a></li>
   <li class="active">{% trans "Search" %}</li>
@@ -47,8 +46,11 @@ Found {{ count }} results matching your query.
 {% endif %}
 
 <h3>{% trans "Search" %}</h3>
-<form action="/phones/search/" method="GET">
-{% crispy form %}
+<form action="/phones/search/" method="get" class="site-form site-form--horizontal">
+{% include "forms/form_fields.html" %}
+<div class="form-actions">
+  <button type="submit" name="submit" class="button">{% trans "Search" %}</button>
+</div>
 </form>
 
 {% endblock %}

@@ -1,23 +1,22 @@
 {% extends "base.html" %}
 {% load i18n %}
 {% load encoding %}
-{% load crispy_forms_tags %}
 
 {% block title %}{% trans "PDU decoder using Gammu" %}{% endblock %}
 
 {% block content %}
 
-<form action="/tools/pdu-decode/" method="POST">
-<div class="panel panel-default">
-  <div class="panel-heading"><h2 class="panel-title">{% trans "PDU decoder using Gammu" %}</h2></div>
-  <div class="panel-body">
+<form action="/tools/pdu-decode/" method="post" class="site-form">
+<section class="tool-card">
+  <header class="tool-card__header"><h2>{% trans "PDU decoder using Gammu" %}</h2></header>
+  <div class="tool-card__body">
 {% csrf_token %}
-{{ form|crispy }}
-</div>
-<div class="panel-footer">
-<input type="submit" value="{% trans "Go" %}" class="btn btn-primary" />
-</div>
-</div>
+{% include "forms/form_fields.html" %}
+  </div>
+  <footer class="tool-card__footer">
+    <button type="submit" class="button button--primary">{% trans "Go" %}</button>
+  </footer>
+</section>
 </form>
 
 {% if decoded %}
@@ -28,7 +27,7 @@
 <p>{% trans "Decoding failed with error:" %} {{ part.Error.Text }} ({{ part.Error.Code }})</p>
 <p>Please help improving Gammu decoder and submit <a href="https://github.com/gammu/gammu/issues/new?title=PDU decode error: {{ part.Error.Text }} ({{ part.Error.Code }})&amp;body=PDU: {{ form.cleaned_data.text }}">an issue</a> describing the error and including the PDU payload.</p>
 {% else %}
-<table class="table">
+<table class="data-table">
 <tr><th>PDU</th><td class="hex">{{ part.PDU|wrap|linebreaksbr }}</td></tr>
 <tr><th>Number</th><td>{{ part.Number }}</td></tr>
 {% if part.Coding == "8bit" %}
@@ -63,7 +62,7 @@
 <p>Please help improving Gammu decoder and submit <a href="https://github.com/gammu/gammu/issues/new?title=PDU decode error: {{ part.Error }}&amp;body=PDU: {{ form.cleaned_data.text }}">an issue</a> describing the error and including the PDU payload.</p>
 {% endif %}
 {% for entry in part.Entries %}
-<table class="table">
+<table class="data-table">
 {%if entry.MMSIndicator %}
 <tr><th colspan="2">{% trans "MMS indicator" %}</th></tr>
 <tr><th>{% trans "Title" %}</th><td>{{ entry.MMSIndicator.Title }}</td></tr>

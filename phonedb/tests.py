@@ -29,6 +29,10 @@ class PhoneDBTest(TestCase):
         response = self.client.get(reverse("phonedb"))
         self.assertContains(response, reverse("phonedb-chart"))
         self.assertNotContains(response, "google.com/chart")
+        self.assertContains(response, 'class="site-form site-form--horizontal"')
+        self.assertContains(response, 'name="q"')
+        self.assertContains(response, 'name="feature"')
+        self.assertContains(response, ">Search</button>")
 
     def test_chart(self):
         response = self.client.get(reverse("phonedb-chart"))
@@ -185,6 +189,17 @@ class PhoneDBTest(TestCase):
         )
         self.assertContains(response, "TestingPHone")
         self.assertContains(response, '<option value="1" selected')
+
+    def test_add_form_errors(self):
+        response = self.client.post(
+            reverse("phonedb-new"),
+            {"irobot": "nospam"},
+        )
+
+        self.assertContains(response, "form-field--invalid")
+        self.assertContains(response, 'aria-invalid="true"')
+        self.assertContains(response, 'id="id_name_helptext"')
+        self.assertContains(response, ">Save</button>")
 
     def test_csv(self):
         self.test_add()

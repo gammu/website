@@ -12,9 +12,9 @@
 
 <div class="appshot">
     <a href="{{ item.screenshot.image.url }}"
-    rel="lightbox[screenshots]" title="{{ item.screenshot.title }}">
+    data-lightbox-link data-lightbox-group="applications" data-caption="{{ item.screenshot.title }}">
         <img src="{{ item.screenshot.image.url_180x120 }}"
-        alt="{{ item.screenshot.title }}" />
+        alt="{{ item.screenshot.title }}">
     </a>
 </div>
 {% endif %}

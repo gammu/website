@@ -22,3 +22,27 @@ class SitemapTest(TestCase):
             self.assertContains(response, "<urlset")
             # Try if it's a valid XML
             ET.fromstring(response.content)
+
+
+class FrontendTest(TestCase):
+    def test_first_party_frontend(self):
+        response = self.client.get("/")
+
+        self.assertContains(response, "/static/css/own.css")
+        self.assertContains(response, "/static/js/init.js")
+        self.assertContains(response, "/static/images/icons.svg")
+        self.assertContains(response, "data-lightbox-dialog")
+        self.assertContains(response, "data-menu", count=9)
+
+        for removed_integration in (
+            "bootstrap",
+            "crispy",
+            "jquery",
+            "colorbox",
+            "font-awesome",
+            "piwik",
+            "piwik_download",
+            "_paq",
+            "stats.cihar.com",
+        ):
+            self.assertNotContains(response, removed_integration)

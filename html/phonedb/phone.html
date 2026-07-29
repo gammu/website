@@ -7,26 +7,26 @@
 
 {% block content %}
 
-<ol class="breadcrumb">
+<ol class="breadcrumbs">
   <li><a href="/">{% trans "Home" %}</a></li>
   <li><a href="/phones/">{% trans "Phones Database" %}</a></li>
   <li><a href="{{ vendor.get_absolute_url }}">{{ vendor.name }}</a></li>
   <li class="active">{{ vendor.name }} {{ phone.name }}</li>
 
 {% if user.is_superuser %}
-<li class="pull-right action"><a href="/admin/phonedb/phone/{{ phone.id }}/">{% trans "Edit" %}</a></li>
+<li class="breadcrumbs__action"><a href="/admin/phonedb/phone/{{ phone.id }}/">{% trans "Edit" %}</a></li>
 {% if phone.state != "deleted" %}
-<li class="pull-right action"><a href="{{ phone.get_absolute_url }}delete/">{% trans "Delete" %}</a></li>
+<li class="breadcrumbs__action"><a href="{{ phone.get_absolute_url }}delete/">{% trans "Delete" %}</a></li>
 {% endif%}
 {% if phone.state != "approved" %}
-<li class="pull-right action"><a href="{{ phone.get_absolute_url }}approve/">{% trans "Approve" %}</a></li>
+<li class="breadcrumbs__action"><a href="{{ phone.get_absolute_url }}approve/">{% trans "Approve" %}</a></li>
 {% endif %}
 {% endif %}
 </ol>
 <h2>{{ vendor.name }} {{ phone.name }}</h2>
 
 {% if phone.state == "deleted" %}
-<div class="alert alert-warning" role="alert">
+<div class="notice notice--warning" role="alert">
 {% blocktrans %}
 This record has been rejected for some reasons, you might want to check other
 records for same model (you can see them on bottom of the page).
@@ -34,7 +34,7 @@ records for same model (you can see them on bottom of the page).
 </div>
 {% endif %}
 {% if phone.state == "draft" %}
-<div class="alert alert-warning" role="alert">
+<div class="notice notice--warning" role="alert">
 {% blocktrans %}
 This record has not been approved yet. This means that it might contain false
 information or there are better records for the same model (you can see them

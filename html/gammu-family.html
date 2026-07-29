@@ -1,8 +1,9 @@
 {% load i18n %}
+{% load static %}
 
-<div class="row">
+<div class="product-grid">
 
-<div class="col-md-4">
+<article class="product-card">
     <h3><a href="/gammu/">Gammu</a></h3>
 <p>
 {% blocktrans %}
@@ -11,12 +12,12 @@ Command line utility which allows to use all libGammu features.
 </p>
 
 <p>
-<a class="btn btn-default" href="/gammu/" role="button"><i class="fa fa-search"></i> {% trans "View details" %}</a>
-<a class="btn btn-success pull-right" href="/download/gammu/" role="button"><i class="fa fa-download"></i> {% trans "Download" %}</a>
+<a class="button" href="/gammu/"><svg class="icon" aria-hidden="true"><use href="{% static "images/icons.svg" %}#search"></use></svg> {% trans "View details" %}</a>
+<a class="button button--download" href="/download/gammu/"><svg class="icon" aria-hidden="true"><use href="{% static "images/icons.svg" %}#download"></use></svg> {% trans "Download" %}</a>
 </p>
-</div>
+</article>
 
-<div class="col-md-4">
+<article class="product-card">
     <h3><a href="/smsd/">SMSD</a></h3>
 <p>
 {% blocktrans %}
@@ -25,12 +26,12 @@ SMS daemon service to receive and send messages automatically.
 </p>
 
 <p>
-<a class="btn btn-default" href="/smsd/" role="button"><i class="fa fa-search"></i> {% trans "View details" %}</a>
-<a class="btn btn-success pull-right" href="/download/gammu/" role="button"><i class="fa fa-download"></i> {% trans "Download" %}</a>
+<a class="button" href="/smsd/"><svg class="icon" aria-hidden="true"><use href="{% static "images/icons.svg" %}#search"></use></svg> {% trans "View details" %}</a>
+<a class="button button--download" href="/download/gammu/"><svg class="icon" aria-hidden="true"><use href="{% static "images/icons.svg" %}#download"></use></svg> {% trans "Download" %}</a>
 </p>
-</div>
+</article>
 
-<div class="col-md-4">
+<article class="product-card">
     <h3><a href="/wammu/">Wammu</a></h3>
 <p>
 {% blocktrans %}
@@ -39,15 +40,12 @@ GUI program to manage contacts, todos, calendar and messages in your phone.
 </p>
 
 <p>
-<a class="btn btn-default" href="/wammu/" role="button"><i class="fa fa-search"></i> {% trans "View details" %}</a>
-<a class="btn btn-success pull-right" href="/download/wammu/" role="button"><i class="fa fa-download"></i> {% trans "Download" %}</a>
+<a class="button" href="/wammu/"><svg class="icon" aria-hidden="true"><use href="{% static "images/icons.svg" %}#search"></use></svg> {% trans "View details" %}</a>
+<a class="button button--download" href="/download/wammu/"><svg class="icon" aria-hidden="true"><use href="{% static "images/icons.svg" %}#download"></use></svg> {% trans "Download" %}</a>
 </p>
-</div>
+</article>
 
-</div>
-
-<div class="row">
-<div class="col-md-4 col-md-offset-2">
+<article class="product-card">
     <h3><a href="/python-gammu/">python-gammu</a></h3>
 <p>
 {% blocktrans %}
@@ -56,12 +54,12 @@ Python bindings for libGammu, so that you can use it from Python scripts.
 </p>
 
 <p>
-<a class="btn btn-default" href="/python-gammu/" role="button"><i class="fa fa-search"></i> {% trans "View details" %}</a>
-<a class="btn btn-success pull-right" href="/download/python-gammu/" role="button"><i class="fa fa-download"></i> {% trans "Download" %}</a>
+<a class="button" href="/python-gammu/"><svg class="icon" aria-hidden="true"><use href="{% static "images/icons.svg" %}#search"></use></svg> {% trans "View details" %}</a>
+<a class="button button--download" href="/download/python-gammu/"><svg class="icon" aria-hidden="true"><use href="{% static "images/icons.svg" %}#download"></use></svg> {% trans "Download" %}</a>
 </p>
-</div>
+</article>
 
-<div class="col-md-4">
+<article class="product-card">
     <h3><a href="/libgammu/">libGammu</a></h3>
 <p>
 {% blocktrans %}
@@ -70,8 +68,8 @@ Library exporting all Gammu functionality for use in C programs.
 </p>
 
 <p>
-<a class="btn btn-default" href="/libgammu/" role="button"><i class="fa fa-search"></i> {% trans "View details" %}</a>
-<a class="btn btn-success pull-right" href="/download/gammu/" role="button"><i class="fa fa-download"></i> {% trans "Download" %}</a>
+<a class="button" href="/libgammu/"><svg class="icon" aria-hidden="true"><use href="{% static "images/icons.svg" %}#search"></use></svg> {% trans "View details" %}</a>
+<a class="button button--download" href="/download/gammu/"><svg class="icon" aria-hidden="true"><use href="{% static "images/icons.svg" %}#download"></use></svg> {% trans "Download" %}</a>
 </p>
-</div>
+</article>
 </div>

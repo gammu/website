@@ -1,5 +1,5 @@
 {% load i18n %}
-<table class="table">
+<table class="data-table">
 <thead>
 <tr>
 <th>{% trans "Name" %}</th><th>{% trans "Connection" %}</th><th>{% trans "Supported features" %}</th>
@@ -11,7 +11,7 @@
 <tr>
 <td>
 {% if phone.state == 'approved' %}
-<span class="pull-right badge" title="{% trans "This entry has been approved by project." %}">{% trans "Approved" %}</span>
+<span class="status-badge" title="{% trans "This entry has been approved by project." %}">{% trans "Approved" %}</span>
 {% endif %}
 <a href="{{ phone.get_absolute_url }}">{{phone.vendor.name }} {{ phone.name }}</a>
 </td>

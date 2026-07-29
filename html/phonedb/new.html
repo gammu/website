@@ -1,13 +1,12 @@
 {% extends "base.html" %}
 {% load i18n %}
-{% load crispy_forms_tags %}
 
 {% block description %}{% trans "Database of supported phones in Gammu and Wammu, the software for managing GSM cell phones." %}{% endblock %}
 {% block title %}{% trans "Create New Record" %} - {% trans "Gammu Phone Database " %}{% endblock %}
 
 {% block content %}
 
-<ol class="breadcrumb">
+<ol class="breadcrumbs">
   <li><a href="/">{% trans "Home" %}</a></li>
   <li><a href="/phones/">{% trans "Phones Database" %}</a></li>
   <li class="active">{% trans "Create New Record" %}</li>
@@ -32,25 +31,13 @@ clarify some things you have entered.
 {% endblocktrans %}
 </p>
 
-<form action="/phones/new/" method="POST">
+<form action="/phones/new/" method="post" class="site-form site-form--horizontal" data-antispam-form>
 {% csrf_token %}
-{% crispy form %}
+{% include "forms/form_fields.html" %}
+<div class="form-actions">
+  <button type="submit" name="submit" class="button button--primary">{% trans "Save" %}</button>
+</div>
 <noscript>{% trans "Please enter text 'nospam':" %} <input name="irobot" size="6" /></noscript>
-<script type="text/javascript">
-//<![CDATA[
-(function () {
-  var form = document.forms[0];
-  if (!form) {
-    return;
-  }
-  var input = document.createElement('input');
-  input.type = 'hidden';
-  input.name = 'irobot';
-  input.value = 'nospam';
-  form.appendChild(input);
-})();
-//]]>
-</script>
 </form>
 
 
