@@ -5,6 +5,7 @@ import markdown
 from django.contrib.auth.models import User
 from django.db import models
 from django.urls import reverse
+from django.utils import timezone
 from django.utils.translation import gettext as _
 from django.utils.translation import gettext_lazy
 
@@ -86,10 +87,16 @@ class Release(models.Model):
     description_html = models.TextField(editable=False, blank=True)
     changelog = models.TextField(blank=True, null=True)
     changelog_html = models.TextField(blank=True, null=True, editable=False)
-    date = models.DateTimeField(auto_now_add=True)
+    date = models.DateTimeField(default=timezone.now)
     post_news = models.BooleanField(default=True)
 
     class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=("program", "version"),
+                name="unique_program_version",
+            ),
+        ]
         ordering = ["-date"]
 
     def __str__(self):
@@ -115,6 +122,7 @@ class Release(models.Model):
                 author=author,
                 excerpt=excerpt,
                 body=process_bug_links(body),
+                pub_date=self.date,
                 title=title,
                 slug=slug,
             )
@@ -150,10 +158,10 @@ class Release(models.Model):
 class Download(models.Model):
     release = models.ForeignKey(Release, on_delete=models.deletion.CASCADE)
     platform = models.CharField(max_length=100, choices=PLATFORM_CHOICES)
-    location = models.CharField(max_length=250)
-    md5 = models.CharField(max_length=250)
-    sha1 = models.CharField(max_length=250)
-    sha256 = models.CharField(max_length=250)
+    location = models.CharField(max_length=500)
+    md5 = models.CharField(max_length=250, blank=True, default="")
+    sha1 = models.CharField(max_length=250, blank=True, default="")
+    sha256 = models.CharField(max_length=250, blank=True, default="")
     size = models.IntegerField()
 
     class Meta:
