@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Community Support for Wammu and Gammu" %}{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "Community Support for Wammu and Gammu" %}</h2>
+
+<p>
+{% blocktrans with url="https://github.com/gammu/gammu/discussions" %}
+Use the <a href="{{ url }}">Gammu discussion forum on GitHub</a> to ask
+questions, discuss solutions with other community members, share your
+experiences, or suggest ideas. Search existing discussions before starting a
+new one, as somebody might have already solved a similar problem.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+For bugs and feature requests, use the
+<a href="/support/bugs/">project issue trackers</a>. Do not post security
+vulnerabilities publicly; the bug-reporting page provides private reporting
+links for Gammu and python-gammu.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+For commercial support or a sensitive legal matter, see the
+<a href="/support/buy/">private contact options</a>.
+{% endblocktrans %}
+</p>
+
+{% endblock %}

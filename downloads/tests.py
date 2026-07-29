@@ -3,6 +3,7 @@ import json
 from datetime import datetime
 from unittest.mock import patch
 from urllib.error import URLError
+from xml.etree import ElementTree as ET
 
 from django.conf import settings
 from django.contrib.auth.models import User
@@ -350,6 +351,27 @@ class GitHubAPITest(TestCase):
 
 
 class DownloadRenderingTest(TestCase):
+    def test_doap_uses_support_forum(self):
+        namespace = {"doap": "http://usefulinc.com/ns/doap#"}
+
+        for program in ("gammu", "wammu"):
+            with self.subTest(program=program):
+                rendered = render_to_string(
+                    f"downloads/doap/{program}.xml",
+                    {"downloads": []},
+                )
+                project = ET.fromstring(rendered)
+                support_forum = project.find("doap:support-forum", namespace)
+
+                self.assertIsNotNone(support_forum)
+                self.assertEqual(
+                    support_forum.attrib[
+                        "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource"
+                    ],
+                    "https://github.com/gammu/gammu/discussions",
+                )
+                self.assertIsNone(project.find("doap:mailing-list", namespace))
+
     def test_getlink_preserves_github_and_legacy_locations(self):
         github_download = Download(
             location="https://github.com/gammu/gammu/releases/download/1.2.3/file.zip",

@@ -9,7 +9,7 @@
   <download-page rdf:resource="https://wammu.eu/download/gammu/" />
   <homepage rdf:resource="https://wammu.eu/gammu/" />
   <license rdf:resource="http://usefulinc.com/doap/licenses/gpl" />
-  <mailing-list rdf:resource="https://wammu.eu/support/lists/" />
+  <support-forum rdf:resource="https://github.com/gammu/gammu/discussions" />
   <wiki rdf:resource="https://www.gammu.org/wiki/index.php?title=Gammu:Main_Page" />
   <screenshots rdf:resource="https://wammu.eu/screenshots/gammu/" />
   <old-homepage rdf:resource="https://cihar.com/gammu/" />

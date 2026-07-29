@@ -9,8 +9,10 @@ from news.models import Category
 
 
 class SitemapTest(TestCase):
-    def test_sitemaps(self):
+    def setUp(self):
         Site.objects.create(domain="testserver")
+
+    def test_sitemaps(self):
         # Get root sitemap
         response = self.client.get("/sitemap.xml")
         self.assertContains(response, "<sitemapindex")
@@ -24,6 +26,75 @@ class SitemapTest(TestCase):
             self.assertContains(response, "<urlset")
             # Try if it's a valid XML
             ET.fromstring(response.content)
+
+    def test_support_sitemap_uses_community_page(self):
+        response = self.client.get("/sitemap-pages.xml")
+
+        self.assertContains(response, "/support/community/")
+        self.assertNotContains(response, "/support/lists/")
+        self.assertNotContains(response, "/support/online/")
+
+
+class SupportPagesTest(TestCase):
+    def test_community_page(self):
+        response = self.client.get("/support/community/")
+
+        self.assertContains(
+            response,
+            "https://github.com/gammu/gammu/discussions",
+        )
+        self.assertContains(response, "/support/bugs/")
+        self.assertContains(response, "/support/buy/")
+
+    def test_pages_do_not_advertise_retired_channels(self):
+        for page_url in (
+            "/support/",
+            "/support/community/",
+            "/support/buy/",
+            "/docs/",
+            "/contribute/code/",
+            "/contribute/wanted/",
+            "/tools/",
+        ):
+            with self.subTest(page_url=page_url):
+                rendered = self.client.get(page_url).content.decode().lower()
+                for retired_channel in (
+                    "mailing list",
+                    "irc",
+                    "jabber",
+                    "freenode",
+                    "sourceforge",
+                    "stack overflow",
+                    "/support/lists/",
+                    "/support/online/",
+                ):
+                    self.assertNotIn(retired_channel, rendered)
+
+    def test_legacy_community_urls_redirect_permanently(self):
+        for legacy_url in ("/support/lists/", "/support/online/"):
+            with self.subTest(legacy_url=legacy_url):
+                self.assertRedirects(
+                    self.client.get(legacy_url),
+                    "/support/community/",
+                    status_code=301,
+                    fetch_redirect_response=False,
+                )
+
+    def test_private_vulnerability_reporting(self):
+        response = self.client.get("/support/bugs/")
+
+        self.assertContains(
+            response,
+            "https://github.com/gammu/gammu/security/advisories/new",
+        )
+        self.assertContains(
+            response,
+            "https://github.com/gammu/python-gammu/security/advisories/new",
+        )
+        self.assertContains(
+            response,
+            "Do not disclose security vulnerabilities in a public issue",
+        )
 
 
 class FrontendTest(TestCase):
