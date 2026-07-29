@@ -9,15 +9,25 @@
 
 {% block content %}
 
-{% include "wammu_feedback.html" %}
-
 <h2>Wammu</h2>
+
+<div class="notice notice--warning" role="note">
+<p><strong>{% trans "Wammu is not currently maintained." %}</strong></p>
+<p>
+{% blocktrans %}
+It does not work with current Python versions or current python-gammu
+releases. This page and the downloads are retained for users of older systems.
+{% endblocktrans %}
+</p>
+</div>
+
+{% include "wammu_feedback.html" %}
 
 <p>
 {% blocktrans %}
-Wammu is mobile phone manager running on Linux, Windows and possibly other
-platforms, where <a href="/libgammu/">libGammu</a> and wxPython works. The
-communication is made by Gammu library. Currently supported features:
+Wammu is a graphical phone manager built with
+<a href="/libgammu/">libGammu</a> and wxPython. It was designed to run on
+Linux, Windows and other platforms. Its historical feature set includes:
 {% endblocktrans %}
 </p>
 
@@ -34,23 +44,22 @@ communication is made by Gammu library. Currently supported features:
 <li>{% blocktrans %}rated as best on many software servers{% endblocktrans %}</li>
 </ul>
 
-{% include "shortnews.html" %}
+{% include "shortnews.html" with archived=True %}
 
 <h3>{% trans "Download" %}</h3>
 <p>
 {% blocktrans %}
-Wammu is included in many distributions, so please use the binary packages if
-applicable, it lowers risk of something going wrong during installation. You
-can also <a href="/download/wammu/">dowload sources or binaries for
-Windows</a>.
+Legacy source archives and Windows binaries remain available on the
+<a href="/download/wammu/">Wammu download page</a>. Distribution packages,
+where still available, may only work on older systems.
 {% endblocktrans %}
 </p>
 
 <h3>{% trans "Documentation" %}</h3>
 <p>
 {% blocktrans %}
-Wammu does not come with much documentation and there is hope that it will be
-intiutive enough. You can check it's command line parameters in wammu man page.
+Wammu has limited documentation. Its command-line parameters are described in
+the wammu manual page included with the application.
 {% endblocktrans %}
 </p>
 
@@ -62,7 +71,12 @@ Check also <a href="https://docs.gammu.org/faq/">Frequently Asked Questions</a>.
 
 <h3>{% trans "Source code and issue tracker" %}</h3>
 
-<p>{% trans "Both source code and issue tracker are hosted on GitHub:" %}</p>
+<p>
+{% blocktrans %}
+The source code and historical issue tracker remain available on GitHub, but
+issues are not actively triaged:
+{% endblocktrans %}
+</p>
 
 <ul>
 <li><a href="https://github.com/gammu/wammu/">{% trans "Code repository" %}</a></li>

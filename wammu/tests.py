@@ -5,6 +5,8 @@ from xml.etree import ElementTree as ET
 from django.contrib.sites.models import Site
 from django.test import TestCase
 
+from news.models import Category
+
 
 class SitemapTest(TestCase):
     def test_sitemaps(self):
@@ -33,7 +35,8 @@ class FrontendTest(TestCase):
         self.assertContains(response, "/static/images/icons.svg")
         self.assertContains(response, "data-lightbox-dialog")
         self.assertContains(response, "data-menu", count=9)
-        self.assertContains(response, 'class="product-card"', count=5)
+        self.assertContains(response, '<article class="product-card', count=5)
+        self.assertNotContains(response, "Not currently maintained")
         self.assertNotContains(response, "View details")
 
         for removed_integration in (
@@ -48,3 +51,17 @@ class FrontendTest(TestCase):
             "stats.cihar.com",
         ):
             self.assertNotContains(response, removed_integration)
+
+    def test_wammu_maintenance_status(self):
+        Category.objects.create(
+            title="Wammu",
+            slug="wammu",
+            description="Wammu news",
+        )
+        response = self.client.get("/wammu/")
+
+        self.assertContains(response, "Wammu is not currently maintained.")
+        self.assertContains(response, "current Python versions")
+        self.assertContains(response, "current python-gammu")
+        self.assertContains(response, "News archive")
+        self.assertContains(response, "issues are not actively triaged")
