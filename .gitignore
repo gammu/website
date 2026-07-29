@@ -2,4 +2,6 @@
 *.mo
 *.swp
 wammu.db*
+/static
+/node_modules
 .venv

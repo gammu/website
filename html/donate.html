@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% load static %}
 
 {% block title %}{% trans "Donate to Gammu" %}{% endblock %}
 
@@ -75,7 +76,7 @@ donation to <code>michal@cihar.com</code>.
 
 <div class="col-md-6">
 
-<p><a href="http://www.smseagle.eu/"><img src="/media/images/logos/smseagle.png" alt="SMSEagle" /></a></p>
+<p><a href="http://www.smseagle.eu/"><img src="{% static "images/logos/smseagle.png" %}" alt="SMSEagle" /></a></p>
 
 </div>
 

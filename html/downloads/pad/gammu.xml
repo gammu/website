@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 {% load getlink %}
+{% load static %}
 <XML_DIZ_INFO>
   <MASTER_PAD_VERSION_INFO>
     <MASTER_PAD_VERSION>4.0</MASTER_PAD_VERSION>
@@ -91,7 +92,7 @@
       <Application_Info_URL>https://wammu.eu/gammu/</Application_Info_URL>
       <Application_Order_URL>https://wammu.eu/donate/</Application_Order_URL>
       <Application_Screenshot_URL>http://wammu.eu/media/screenshots/gammu-screen.png</Application_Screenshot_URL>
-      <Application_Icon_URL>http://wammu.eu/media/images/wammu.gif</Application_Icon_URL>
+      <Application_Icon_URL>http://wammu.eu{% static "images/wammu.gif" %}</Application_Icon_URL>
       <Application_XML_File_URL>https://wammu.eu/api/pad/gammu.xml</Application_XML_File_URL>
     </Application_URLs>
     <Download_URLs>
