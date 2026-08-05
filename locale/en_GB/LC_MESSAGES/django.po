@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wammu website\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: gammu-users@lists.sourceforge.net\n"
 "POT-Creation-Date: 2026-07-29 14:35+0200\n"
-"PO-Revision-Date: 2026-04-02 17:09+0000\n"
+"PO-Revision-Date: 2026-08-06 20:04+0000\n"
 "Last-Translator: Andi Chandler <andi@gowling.com>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
 "gammu/website/en_GB/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 2026.8.1.dev0\n"
 
 #: downloads/models.py:27
 #, fuzzy
@@ -363,7 +363,7 @@ msgstr "Authors"
 
 #: html/base.html:193
 msgid "Close"
-msgstr ""
+msgstr "Close"
 
 #: html/base.html:203
 msgid "Previous"
@@ -1072,16 +1072,6 @@ msgid "Community supporter"
 msgstr "Community supporter"
 
 #: html/contribute/wanted.html:41
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "You have basic knowledge about Gammu and want to help others? Answering "
-#| "users\n"
-#| "questions or mailing list or IRC is the best you can do for them. Usually "
-#| "you \n"
-#| "don't need deep technical knowledge, most questions can be answered by "
-#| "looking \n"
-#| "at documentation.\n"
 msgid ""
 "\n"
 "You have basic knowledge about Gammu and want to help others? Answering "
@@ -1094,11 +1084,10 @@ msgstr ""
 "\n"
 "You have basic knowledge about Gammu and want to help others? Answering "
 "users\n"
-"questions or mailing list or IRC is the best you can do for them. Usually "
-"you \n"
-"don't need deep technical knowledge, most questions can be answered by "
-"looking \n"
-"at documentation.\n"
+"questions in the community forum is one of the best things you can do for\n"
+"them. Usually you don't need deep technical knowledge, as most questions "
+"can\n"
+"be answered by looking at documentation.\n"
 
 #: html/contribute/wanted.html:49
 msgid "Windows Developer"
@@ -1215,14 +1204,7 @@ msgid "Wammu and Gammu Documentation"
 msgstr "Wammu and Gammu Documentation"
 
 #: html/docs/index.html:10
-#, fuzzy, python-format
-#| msgid ""
-#| "\n"
-#| "The best user documentation for Gammu comes in <strong>\n"
-#| "<a href=\"/docs/manual/\">The Gammu Manual</a></strong>. It covers all "
-#| "aspects from\n"
-#| "installing Gammu, configuring it, running the programs up to SMSD\n"
-#| "documentation and C or Python API.\n"
+#, python-format
 msgid ""
 "\n"
 "The best user documentation for Gammu comes in <strong>\n"
@@ -1232,8 +1214,8 @@ msgid ""
 "documentation and C or Python API.\n"
 msgstr ""
 "\n"
-"The best user documentation for Gammu comes in <strong><a\n"
-"href=\"/docs/manual/\">The Gammu Manual</a></strong>. It covers all aspects "
+"The best user documentation for Gammu comes in <strong>\n"
+"<a href=\"%(url)s/\">The Gammu Manual</a></strong>. It covers all aspects "
 "from\n"
 "installing Gammu, configuring it, running the programs up to SMSD\n"
 "documentation and C or Python API.\n"
@@ -1268,13 +1250,7 @@ msgstr ""
 "Gammu and different phone models.\n"
 
 #: html/docs/index.html:34
-#, fuzzy, python-format
-#| msgid ""
-#| "\n"
-#| "If you still have some questions, please check <a\n"
-#| "href=\"/docs/manual/faq/\"><strong>Frequently Asked Questions</strong></"
-#| "a> before\n"
-#| "asking on <a href=\"/support/lists/\">mailing list</a>.\n"
+#, python-format
 msgid ""
 "\n"
 "If you still have some questions, please check\n"
@@ -1283,26 +1259,17 @@ msgid ""
 "asking in the <a href=\"/support/community/\">community forum</a>.\n"
 msgstr ""
 "\n"
-"If you still have some questions, please check <a\n"
-"href=\"/docs/manual/faq/\"><strong>Frequently Asked Questions</strong></a> "
+"If you still have some questions, please check\n"
+"<a href=\"%(url)s/faq\"><strong>Frequently Asked Questions</strong></a> "
 "before\n"
-"asking on <a href=\"/support/lists/\">mailing list</a>.\n"
+"asking in the <a href=\"/support/community/\">community forum</a>.\n"
 
 #: html/docs/index.html:41
 msgid "Developer Documentation"
 msgstr "Developer Documentation"
 
 #: html/docs/index.html:44
-#, fuzzy, python-format
-#| msgid ""
-#| "\n"
-#| "The developer documentation is included in <strong>\n"
-#| "<a href=\"/docs/manual/\">The Gammu Manual</a></strong>. You can find "
-#| "there\n"
-#| "documentation for <strong><a href=\"/docs/manual/python/\">Python API</"
-#| "a></strong>,\n"
-#| "<strong><a href=\"/docs/manual/c/\">libGammu C API</a></strong> or\n"
-#| "<strong><a href=\"/docs/manual/internal/\">internal API</a></strong>.\n"
+#, python-format
 msgid ""
 "\n"
 "The developer documentation is included in <strong>\n"
@@ -1314,20 +1281,14 @@ msgid ""
 msgstr ""
 "\n"
 "The developer documentation is included in <strong>\n"
-"<a href=\"/docs/manual/\">The Gammu Manual</a></strong>. You can find there\n"
-"documentation for <strong><a href=\"/docs/manual/python/\">Python API</a></"
-"strong>,\n"
-"<strong><a href=\"/docs/manual/c/\">libGammu C API</a></strong> or\n"
-"<strong><a href=\"/docs/manual/internal/\">internal API</a></strong>.\n"
+"<a href=\"%(url)s\">The Gammu Manual</a></strong>. You can find there\n"
+"documentation for <strong><a href=\"%(url)spython/\">Python API</a></strong>"
+",\n"
+"<strong><a href=\"%(url)sc/\">libGammu C API</a></strong> or\n"
+"<strong><a href=\"%(url)sinternal/\">internal API</a></strong>.\n"
 
 #: html/docs/index.html:54
-#, fuzzy, python-format
-#| msgid ""
-#| "\n"
-#| "As a developer, you might be also interested what is planned to happen in "
-#| "next\n"
-#| "Gammu and Wammu releases, you can find this information in the \n"
-#| "<a href=\"/docs/manual/project/roadmap.html\">roadmap</a>.\n"
+#, python-format
 msgid ""
 "\n"
 "As a developer, you might be also interested what is planned to happen in\n"
@@ -1335,10 +1296,9 @@ msgid ""
 "<a href=\"%(url)sproject/roadmap.html\">roadmap</a>.\n"
 msgstr ""
 "\n"
-"As a developer, you might be also interested what is planned to happen in "
-"next\n"
-"Gammu and Wammu releases, you can find this information in the \n"
-"<a href=\"/docs/manual/project/roadmap.html\">roadmap</a>.\n"
+"As a developer, you might be also interested what is planned to happen in\n"
+"the next Gammu and Wammu releases, you can find this information in the\n"
+"<a href=\"%(url)sproject/roadmap.html\">roadmap</a>.\n"
 
 #: html/docs/index.html:62
 #, fuzzy
@@ -1471,14 +1431,13 @@ msgid "Litecoin"
 msgstr "Bitcoin"
 
 #: html/donate.html:66
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "You can also use Litecoin and donate me to <code><a href=\"litecoin:"
 "%(address)s\">%(address)s</a></code>."
 msgstr ""
-"You can also use <a href=\"http://www.bitcoin.org/\">Bitcoin is a peer-to-"
-"peer network</a> and send me Bitcoins to "
-"<code>14e4wDDEUuzycjqnnZhzQJMKZLq9aa8Y9h</code>."
+"You can also use Litecoin and donate me to <code><a href=\"litecoin:%"
+"(address)s\">%(address)s</a></code>."
 
 #: html/downloads/detail.html:8
 #, python-format
@@ -3374,16 +3333,6 @@ msgid "Reporting Bugs"
 msgstr "Reporting Bugs"
 
 #: html/support/index.html:43
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Once you think you have hit a bug or want to file a feature request, "
-#| "please\n"
-#| "use a <a href=\"/support/bugs/\"><strong>bug</strong> tracker</a> to "
-#| "report them. Please be as\n"
-#| "descriptive as possible and do not forget include necessary information "
-#| "to\n"
-#| "reproduce the bug such as debug logs.\n"
 msgid ""
 "\n"
 "Once you think you have hit a bug or want to file a feature request, please\n"
@@ -3397,8 +3346,9 @@ msgstr ""
 "Once you think you have hit a bug or want to file a feature request, please\n"
 "use a <a href=\"/support/bugs/\"><strong>bug</strong> tracker</a> to report "
 "them. Please be as\n"
-"descriptive as possible and do not forget include necessary information to\n"
-"reproduce the bug such as debug logs.\n"
+"descriptive as possible and include the information needed to reproduce the\n"
+"bug, such as debug logs. Security vulnerabilities in Gammu or python-gammu\n"
+"should be <a href=\"/support/bugs/\">reported privately</a>.\n"
 
 #: html/support/index.html:52
 msgid "Commercial Support"
