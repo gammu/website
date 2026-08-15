@@ -8,7 +8,7 @@ class PDUDecodeForm(Form):
         label=gettext_lazy("PDU text"),
         regex="^([a-fA-F0-9]{2})+([\r\n]+([a-fA-F0-9]{2})+)*$",
         widget=forms.Textarea,
-        max_lenght=5000,
+        max_length=5000,
         help_text=gettext_lazy("You can provide more messages, each on separate line."),
     )
 
