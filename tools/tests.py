@@ -1,8 +1,24 @@
 from django.test import TestCase
 from django.urls import reverse
 
+from tools.forms import PDUDecodeForm
+
 
 class ToolsTest(TestCase):
+    def test_pdudecode_limits(self):
+        self.assertTrue(PDUDecodeForm({"text": "00\n" * 49 + "00"}).is_valid())
+        self.assertFalse(PDUDecodeForm({"text": "00\n" * 50 + "00"}).is_valid())
+        self.assertTrue(PDUDecodeForm({"text": "00" * 256}).is_valid())
+        self.assertFalse(PDUDecodeForm({"text": "00" * 257}).is_valid())
+
+    def test_pdudecode_malformed_special_messages(self):
+        for pdu in (
+            "004000810004000000000000000807120500ffff0000",
+            "00400081000400000000000000100b0504158a00000003ce010130017f7f",
+        ):
+            response = self.client.post(reverse("pdudecode"), {"text": pdu})
+            self.assertEqual(response.status_code, 200)
+
     def test_pdudecode(self):
         response = self.client.post(reverse("pdudecode"), {"text": "xxx"})
         self.assertContains(response, "Enter a valid value.")

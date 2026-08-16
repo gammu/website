@@ -12,6 +12,19 @@ class PDUDecodeForm(Form):
         help_text=gettext_lazy("You can provide more messages, each on separate line."),
     )
 
+    def clean_text(self):
+        value = self.cleaned_data["text"]
+        messages = value.split()
+        if len(messages) > 50:
+            raise forms.ValidationError(
+                gettext_lazy("You can provide at most 50 PDU messages.")
+            )
+        if any(len(message) > 512 for message in messages):
+            raise forms.ValidationError(
+                gettext_lazy("Each PDU can contain at most 512 hexadecimal characters.")
+            )
+        return value
+
 
 class PDUEncodeForm(Form):
     text = forms.CharField(label=gettext_lazy("Text"), max_length=1000)
