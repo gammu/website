@@ -83,7 +83,7 @@ class PhoneDBTest(TestCase):
                 2006,
                 1,
                 15,
-                tzinfo=datetime.timezone.utc,
+                tzinfo=datetime.UTC,
             ),
         )
 
