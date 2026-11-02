@@ -50,14 +50,14 @@ def _get_chart_data():
         last_month = now.month if year == now.year else 12
         for month in range(1, last_month + 1):
             boundaries.append(
-                datetime.datetime(year, month, 1, tzinfo=datetime.timezone.utc),
+                datetime.datetime(year, month, 1, tzinfo=datetime.UTC),
             )
             years.append(str(year) if month == 1 else "")
 
     all_dates = []
     approved_dates = []
     supported_dates = []
-    chart_start = datetime.datetime(1900, 1, 1, tzinfo=datetime.timezone.utc)
+    chart_start = datetime.datetime(1900, 1, 1, tzinfo=datetime.UTC)
     for created, state, connection_id in Phone.objects.values_list(
         "created",
         "state",
