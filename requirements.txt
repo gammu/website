@@ -1,5 +1,5 @@
 Django==5.2.19
-Markdown==3.11.2
+Markdown==3.11.3
 Pillow==13.0.0
 python-gammu==3.5.1
 rollbar==1.5.0
