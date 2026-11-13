@@ -1,5 +1,5 @@
 import bisect
-import datetime
+import datetime as dt
 import xml.etree.ElementTree as ET
 
 from django.conf import settings
@@ -50,14 +50,14 @@ def _get_chart_data():
         last_month = now.month if year == now.year else 12
         for month in range(1, last_month + 1):
             boundaries.append(
-                datetime.datetime(year, month, 1, tzinfo=datetime.UTC),
+                dt.datetime(year, month, 1, tzinfo=dt.UTC),
             )
             years.append(str(year) if month == 1 else "")
 
     all_dates = []
     approved_dates = []
     supported_dates = []
-    chart_start = datetime.datetime(1900, 1, 1, tzinfo=datetime.UTC)
+    chart_start = dt.datetime(1900, 1, 1, tzinfo=dt.UTC)
     for created, state, connection_id in Phone.objects.values_list(
         "created",
         "state",

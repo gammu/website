@@ -1,4 +1,4 @@
-import datetime
+import datetime as dt
 import xml.etree.ElementTree as ET
 from unittest import mock
 
@@ -79,11 +79,11 @@ class PhoneDBTest(TestCase):
             state="approved",
         )
         Phone.objects.filter(pk=phone.pk).update(
-            created=datetime.datetime(
+            created=dt.datetime(
                 2006,
                 1,
                 15,
-                tzinfo=datetime.UTC,
+                tzinfo=dt.UTC,
             ),
         )
 

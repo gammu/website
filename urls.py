@@ -1,4 +1,4 @@
-import datetime
+import datetime as dt
 import os
 
 import django.contrib.sitemaps.views
@@ -99,7 +99,7 @@ class PagesSitemap(Sitemap):
             return None
         stat_result = os.stat(item[1])
         mtime = stat_result.st_mtime
-        return datetime.datetime.fromtimestamp(mtime, tz=datetime.UTC)
+        return dt.datetime.fromtimestamp(mtime, tz=dt.UTC)
 
     def priority(self, item):
         return item[2]

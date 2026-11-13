@@ -1,4 +1,4 @@
-import datetime
+import datetime as dt
 
 from django.conf import settings
 from django.db import migrations, models
@@ -59,7 +59,7 @@ class Migration(migrations.Migration):
                 (
                     "pub_date",
                     models.DateTimeField(
-                        default=datetime.datetime.today,
+                        default=dt.datetime.today,
                         verbose_name="Date posted",
                     ),
                 ),

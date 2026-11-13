@@ -1,4 +1,4 @@
-import datetime
+import datetime as dt
 
 from django.contrib.auth.models import User
 from django.db import models
@@ -41,7 +41,7 @@ class Entry(models.Model):
     author = models.ForeignKey(User, on_delete=models.deletion.CASCADE)
     pub_date = models.DateTimeField(
         "Date posted",
-        default=datetime.datetime.today,
+        default=dt.datetime.today,
         db_index=True,
     )
     slug = models.SlugField(
